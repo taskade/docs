@@ -1,0 +1,1437 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Taskade Public API",
+    "description": "Taskade, the AI-Powered Productivity Platform.",
+    "version": "0.1.0"
+  },
+  "components": {
+    "securitySchemes": {
+      "oAuthAuthorizationCode": {
+        "type": "oauth2",
+        "flows": {
+          "authorizationCode": {
+            "authorizationUrl": "https://www.taskade.com/oauth2/authorize",
+            "tokenUrl": "https://www.taskade.com/oauth2/token",
+            "scopes": {}
+          }
+        }
+      },
+      "personalAccessToken": { "type": "http", "scheme": "bearer" }
+    },
+    "schemas": {
+      "Project": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" }
+        },
+        "required": ["id"],
+        "additionalProperties": false
+      },
+      "ProjectShare": {
+        "type": "object",
+        "properties": {
+          "checkUrl": { "type": "string", "format": "uri" },
+          "editUrl": { "type": "string", "format": "uri" },
+          "viewUrl": { "type": "string", "format": "uri" }
+        },
+        "required": ["editUrl", "viewUrl"],
+        "additionalProperties": false,
+        "description": "The share links of a project"
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "ok": { "type": "boolean", "enum": [false] },
+          "message": { "type": "string" },
+          "code": { "type": "string" },
+          "statusMessage": { "type": "string" }
+        },
+        "required": ["ok", "message", "code", "statusMessage"],
+        "additionalProperties": false,
+        "description": "Error description"
+      },
+      "Task": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "format": "uuid" },
+          "text": { "type": "string" },
+          "parentId": { "type": "string", "format": "uuid" },
+          "completed": { "type": "boolean" }
+        },
+        "required": ["id"],
+        "additionalProperties": false
+      },
+      "Date": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string", "example": "yyyy-mm-dd", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+          "time": {
+            "type": "string",
+            "example": "hh:mm:ss",
+            "pattern": "^(?:[0-1][0-9]|[2][0-3]):[0-5][0-9](?::[0-5][0-9])?$",
+            "nullable": true
+          },
+          "timezone": { "type": "string", "example": "America/New_York", "nullable": true }
+        },
+        "required": ["date"],
+        "additionalProperties": false
+      },
+      "SpaceAgent": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string", "minLength": 1 },
+          "space_id": { "type": "string" },
+          "data": {
+            "type": "object",
+            "properties": {
+              "commands": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string", "minLength": 1 },
+                    "prompt": { "type": "string", "minLength": 1 },
+                    "id": { "type": "string", "minLength": 1 },
+                    "isBackgroundJob": { "type": "boolean", "default": false },
+                    "searchToolEnabled": { "type": "boolean" }
+                  },
+                  "required": ["name", "prompt", "id"],
+                  "additionalProperties": false
+                }
+              },
+              "description": { "type": "string" },
+              "persona": {
+                "type": "string",
+                "enum": [
+                  "standup-comedian",
+                  "life-coach",
+                  "career-counselor",
+                  "nutritionist",
+                  "product-manager",
+                  "personal-trainer",
+                  "life-hacker",
+                  "travel-advisor",
+                  "mindfulness-coach",
+                  "financial-advisor",
+                  "language-tutor",
+                  "travel-guide",
+                  "marketing-expert",
+                  "software-developer",
+                  "diy-expert",
+                  "journalist",
+                  "tech-writer",
+                  "professional-chef",
+                  "professional-salesperson",
+                  "startup-tech-lawyer",
+                  "startup-idea-generator",
+                  "graphic-designer",
+                  "academic-researcher",
+                  "customer-support-agent",
+                  "hr-consultant"
+                ]
+              },
+              "tone": {
+                "type": "string",
+                "enum": [
+                  "authoritative",
+                  "clinical",
+                  "cold",
+                  "confident",
+                  "cynical",
+                  "emotional",
+                  "empathetic",
+                  "formal",
+                  "friendly",
+                  "humourous",
+                  "informal",
+                  "ironic",
+                  "optimistic",
+                  "pessimistic",
+                  "playful",
+                  "sarcastic",
+                  "serious",
+                  "sympathetic",
+                  "tentative",
+                  "warm",
+                  "creative",
+                  "inspiring",
+                  "casual"
+                ]
+              },
+              "avatar": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": { "type": "string", "enum": ["emoji"] },
+                      "data": {
+                        "type": "object",
+                        "properties": { "value": { "type": "string" } },
+                        "required": ["value"],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": ["type", "data"],
+                    "additionalProperties": false
+                  }
+                ]
+              },
+              "knowledgeEnabled": { "type": "boolean" }
+            },
+            "required": ["commands"],
+            "additionalProperties": false
+          }
+        },
+        "required": ["id", "name", "space_id", "data"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "paths": {
+    "/workspaces/{workspaceId}/projects": {
+      "post": {
+        "operationId": "workspaceCreateProject",
+        "tags": ["Workspace"],
+        "description": "Create a project in a workspace",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "contentType": {
+                    "type": "string",
+                    "enum": ["text/markdown"]
+                  },
+                  "content": { "type": "string" }
+                },
+                "required": ["contentType", "content"],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": true
+        },
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "workspaceId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Project creation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "item": { "$ref": "#/components/schemas/Project" }
+                  },
+                  "required": ["ok", "item"],
+                  "additionalProperties": false,
+                  "description": "Successful Project creation"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/workspaces": {
+      "get": {
+        "operationId": "workspacesGet",
+        "tags": ["Workspace"],
+        "description": "Get all workspaces for a user",
+        "responses": {
+          "200": {
+            "description": "Workspaces",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": { "type": "string" },
+                          "name": { "type": "string" }
+                        },
+                        "required": ["id", "name"],
+                        "additionalProperties": false,
+                        "nullable": true
+                      }
+                    }
+                  },
+                  "required": ["ok", "items"],
+                  "additionalProperties": false,
+                  "description": "Workspaces"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/workspaces/{workspaceId}/folders": {
+      "get": {
+        "operationId": "workspaceFoldersGet",
+        "tags": ["Workspace"],
+        "description": "Get all folders for a workspace",
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "workspaceId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Folders",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": { "type": "string" },
+                          "name": { "type": "string" }
+                        },
+                        "required": ["id", "name"],
+                        "additionalProperties": false,
+                        "nullable": true
+                      }
+                    }
+                  },
+                  "required": ["ok", "items"],
+                  "additionalProperties": false,
+                  "description": "Folders"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/projects/{projectId}/copy": {
+      "post": {
+        "operationId": "projectCopy",
+        "tags": ["Project"],
+        "description": "Copy a project to a folder",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "folderId": { "type": "string", "minLength": 1 },
+                  "projectTitle": { "type": "string", "minLength": 1 }
+                },
+                "required": ["folderId"],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": true
+        },
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "projectId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Project Copied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean" },
+                    "item": {
+                      "$ref": "#/components/schemas/Project",
+                      "nullable": true
+                    }
+                  },
+                  "required": ["ok", "item"],
+                  "additionalProperties": false,
+                  "description": "Successful Project Copied"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/projects": {
+      "post": {
+        "operationId": "projectCreate",
+        "tags": ["Project"],
+        "description": "Create a project in a folder",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "folderId": { "type": "string", "minLength": 1 },
+                  "contentType": {
+                    "type": "string",
+                    "enum": ["text/markdown"]
+                  },
+                  "content": { "type": "string" }
+                },
+                "required": ["folderId", "contentType", "content"],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Project creation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean" },
+                    "item": {
+                      "$ref": "#/components/schemas/Project",
+                      "nullable": true
+                    }
+                  },
+                  "required": ["ok", "item"],
+                  "additionalProperties": false,
+                  "description": "Successful Project creation"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/projects/{projectId}/shareLink": {
+      "get": {
+        "operationId": "projectShareLinkGet",
+        "tags": ["Project"],
+        "description": "Get share link for the project",
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "projectId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Share link",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "item": {
+                      "$ref": "#/components/schemas/ProjectShare",
+                      "nullable": true,
+                      "description": "The share links of a project"
+                    }
+                  },
+                  "required": ["ok", "item"],
+                  "additionalProperties": false,
+                  "description": "Share link"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "operationId": "projectShareLinkEnable",
+        "tags": ["Project"],
+        "description": "Enable share link in the project",
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "projectId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Share link successfully created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "item": { "$ref": "#/components/schemas/ProjectShare" }
+                  },
+                  "required": ["ok", "item"],
+                  "additionalProperties": false,
+                  "description": "Share link successfully created"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/projects/{projectId}/tasks": {
+      "get": {
+        "operationId": "projectTasksGet",
+        "tags": ["Project"],
+        "description": "Get all tasks for a project",
+        "parameters": [
+          {
+            "schema": { "type": "number", "default": 100 },
+            "in": "query",
+            "name": "limit",
+            "required": false
+          },
+          {
+            "schema": { "type": "string", "format": "uuid" },
+            "in": "query",
+            "name": "after",
+            "required": false,
+            "description": "Parameter for cursor-based pagination. Specify task ID to get tasks after it. Do not specify both before and after."
+          },
+          {
+            "schema": { "type": "string", "format": "uuid" },
+            "in": "query",
+            "name": "before",
+            "required": false,
+            "description": "Parameter for cursor-based pagination. Specify task ID to get tasks before it. Do not specify both before and after."
+          },
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "projectId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Tasks",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "items": {
+                      "type": "array",
+                      "items": { "$ref": "#/components/schemas/Task" }
+                    }
+                  },
+                  "required": ["ok", "items"],
+                  "additionalProperties": false,
+                  "description": "Tasks"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/projects/{projectId}/tasks/{taskId}/complete": {
+      "post": {
+        "operationId": "taskComplete",
+        "tags": ["Task"],
+        "description": "Complete a task in a project",
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "projectId",
+            "required": true
+          },
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "taskId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful complete a Task",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "item": {
+                      "$ref": "#/components/schemas/Task",
+                      "nullable": true
+                    }
+                  },
+                  "required": ["ok", "item"],
+                  "additionalProperties": false,
+                  "description": "Successful complete a Task"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/projects/{projectId}/tasks/": {
+      "post": {
+        "operationId": "taskCreate",
+        "tags": ["Task"],
+        "description": "Create a task in a project",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tasks": {
+                    "type": "array",
+                    "items": {
+                      "allOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "contentType": {
+                              "type": "string",
+                              "enum": ["text/markdown", "text/plain"]
+                            },
+                            "content": { "type": "string", "maxLength": 2000 }
+                          },
+                          "required": ["contentType", "content"]
+                        },
+                        {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "taskId": {
+                                  "enum": ["null"],
+                                  "nullable": true
+                                },
+                                "placement": {
+                                  "type": "string",
+                                  "enum": ["afterbegin", "beforeend"]
+                                }
+                              },
+                              "required": ["placement"],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "taskId": { "type": "string" },
+                                "placement": {
+                                  "type": "string",
+                                  "enum": [
+                                    "beforebegin",
+                                    "afterbegin",
+                                    "beforeend",
+                                    "afterend"
+                                  ]
+                                }
+                              },
+                              "required": ["taskId", "placement"],
+                              "additionalProperties": false
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "maxItems": 20
+                  }
+                },
+                "required": ["tasks"],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": true
+        },
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "projectId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Tasks creation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "item": {
+                      "type": "array",
+                      "items": { "$ref": "#/components/schemas/Task" }
+                    }
+                  },
+                  "required": ["ok", "item"],
+                  "additionalProperties": false,
+                  "description": "Successful Tasks creation"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/projects/{projectId}/tasks/{taskId}": {
+      "delete": {
+        "operationId": "taskDelete",
+        "tags": ["Task"],
+        "description": "Delete a task in a project",
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "projectId",
+            "required": true
+          },
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "taskId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Task deletion",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "item": {
+                      "$ref": "#/components/schemas/Task",
+                      "nullable": true
+                    }
+                  },
+                  "required": ["ok", "item"],
+                  "additionalProperties": false,
+                  "description": "Successful Task deletion"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "operationId": "taskGet",
+        "tags": ["Task"],
+        "description": "Get task with id",
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "projectId",
+            "required": true
+          },
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "taskId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Task",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean" },
+                    "item": {
+                      "$ref": "#/components/schemas/Task",
+                      "nullable": true
+                    }
+                  },
+                  "required": ["ok", "item"],
+                  "additionalProperties": false,
+                  "description": "Task"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/projects/{projectId}/tasks/{taskId}/assignees/{assigneeHandle}": {
+      "delete": {
+        "operationId": "taskDeleteAssignees",
+        "tags": ["Task"],
+        "description": "Remove assignee from a task",
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "projectId",
+            "required": true
+          },
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "taskId",
+            "required": true
+          },
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "assigneeHandle",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Task Assignment deletion",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "item": {
+                      "$ref": "#/components/schemas/Task",
+                      "nullable": true
+                    }
+                  },
+                  "required": ["ok", "item"],
+                  "additionalProperties": false,
+                  "description": "Successful Task Assignment deletion"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/projects/{projectId}/tasks/{taskId}/date": {
+      "delete": {
+        "operationId": "taskDeleteDate",
+        "tags": ["Task"],
+        "description": "Delete date of a task",
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "projectId",
+            "required": true
+          },
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "taskId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Task Date deletion",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "item": {
+                      "$ref": "#/components/schemas/Task",
+                      "nullable": true
+                    }
+                  },
+                  "required": ["ok", "item"],
+                  "additionalProperties": false,
+                  "description": "Successful Task Date deletion"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "operationId": "taskPutDate",
+        "tags": ["Task"],
+        "description": "Create or update date for a task",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "start": { "$ref": "#/components/schemas/Date" },
+                  "end": { "$ref": "#/components/schemas/Date" }
+                },
+                "required": ["start"],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": true
+        },
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "projectId",
+            "required": true
+          },
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "taskId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Task Date create or update",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "item": {
+                      "$ref": "#/components/schemas/Task",
+                      "nullable": true
+                    }
+                  },
+                  "required": ["ok", "item"],
+                  "additionalProperties": false,
+                  "description": "Successful Task Date create or update"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/projects/{projectId}/tasks/{taskId}/assignees": {
+      "put": {
+        "operationId": "taskPutAssignees",
+        "tags": ["Task"],
+        "description": "Task assignment",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "handles": {
+                    "type": "array",
+                    "items": { "type": "string", "minLength": 1 }
+                  }
+                },
+                "required": ["handles"],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": true
+        },
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "projectId",
+            "required": true
+          },
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "taskId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Task assignment",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "item": {
+                      "$ref": "#/components/schemas/Task",
+                      "nullable": true
+                    }
+                  },
+                  "required": ["ok", "item"],
+                  "additionalProperties": false,
+                  "description": "Successful Task assignment"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/folders/{folderId}/projects": {
+      "get": {
+        "operationId": "folderProjectsGet",
+        "tags": ["Folder"],
+        "description": "Get all projects in a folder, or in the home folder of a workspace.",
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "folderId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Projects",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Project",
+                        "nullable": true
+                      }
+                    }
+                  },
+                  "required": ["ok", "items"],
+                  "additionalProperties": false,
+                  "description": "Projects"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/folders/{folderId}/agents": {
+      "post": {
+        "operationId": "folderCreateAgent",
+        "tags": ["Folder"],
+        "description": "Create an agent in a folder, or in the home folder of a workspace.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "data": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "type": { "type": "string", "enum": ["data"] },
+                          "data": {
+                            "$ref": "#/components/schemas/SpaceAgent/properties/data"
+                          }
+                        },
+                        "required": ["type", "data"],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "type": { "type": "string", "enum": ["template"] },
+                          "template": {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "Tasker",
+                                  "Researcher",
+                                  "Marketer",
+                                  "EmailWriter",
+                                  "Sales",
+                                  "CustomerSupport",
+                                  "ProjectManager",
+                                  "ContentCreator",
+                                  "Copywriter",
+                                  "LegalAdvisor",
+                                  "SeoSpecialist",
+                                  "ProductivityCoach",
+                                  "EngineeringExpert",
+                                  "Translator",
+                                  "Summarizer",
+                                  "ResumeBuilder",
+                                  "Storyteller",
+                                  "Tutor",
+                                  "BrandStrategist",
+                                  "SocialMediaSpecialist",
+                                  "BusinessStrategist",
+                                  "FinancialAnalyst",
+                                  "HumanResourcesManager",
+                                  "DataScientist",
+                                  "ITConsultant",
+                                  "FinancialAdvisor",
+                                  "HealthCoach",
+                                  "SustainabilityConsultant",
+                                  "UXDesigner",
+                                  "QualityAssuranceAnalyst",
+                                  "ProductManager",
+                                  "GrowthHacker",
+                                  "BusinessDevelopmentManager",
+                                  "PublicRelationsSpecialist",
+                                  "EventPlanner",
+                                  "DataAnalyst",
+                                  "Editor",
+                                  "CEO",
+                                  "InterviewCoach",
+                                  "TechSupportAdvisor",
+                                  "Doctor",
+                                  "BlogExpert",
+                                  "TweetOptimizer",
+                                  "EmailMarketer",
+                                  "CourseCreator",
+                                  "ScriptCreator",
+                                  "ScreenplayWriter",
+                                  "Proofreader",
+                                  "SalesColdEmailCoach",
+                                  "CodeExplainer",
+                                  "CreativeWritingCoach",
+                                  "AdvertisingCopywriter",
+                                  "VideoScriptWriter"
+                                ]
+                              },
+                              "avatar": {
+                                "$ref": "#/components/schemas/SpaceAgent/properties/data/properties/avatar"
+                              }
+                            },
+                            "required": ["type"],
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": ["type", "template"],
+                        "additionalProperties": false
+                      }
+                    ]
+                  }
+                },
+                "required": ["name", "data"],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": true
+        },
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "folderId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "item": { "$ref": "#/components/schemas/SpaceAgent" }
+                  },
+                  "required": ["ok", "item"],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me/projects": {
+      "get": {
+        "operationId": "meProjectsGet",
+        "tags": ["Me"],
+        "description": "Get all projects of mine",
+        "parameters": [
+          {
+            "schema": { "type": "number", "default": 100 },
+            "in": "query",
+            "name": "limit",
+            "required": false
+          },
+          {
+            "schema": { "type": "number", "default": 1 },
+            "in": "query",
+            "name": "page",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": ["viewed-asc", "viewed-desc"],
+              "default": "viewed-desc"
+            },
+            "in": "query",
+            "name": "sort",
+            "required": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Projects",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "items": {
+                      "type": "array",
+                      "items": { "$ref": "#/components/schemas/Project" }
+                    }
+                  },
+                  "required": ["ok", "items"],
+                  "additionalProperties": false,
+                  "description": "Projects"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/agents/{agentId}/publicAccess": {
+      "put": {
+        "operationId": "agentPublicAccessEnable",
+        "tags": ["Agent"],
+        "description": "Enable public access in the agent",
+        "parameters": [
+          {
+            "schema": { "type": "string" },
+            "in": "path",
+            "name": "agentId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Public access successfully enabled",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": { "type": "boolean", "enum": [true] },
+                    "publicUrl": { "type": "string", "format": "uri" }
+                  },
+                  "required": ["ok", "publicUrl"],
+                  "additionalProperties": false,
+                  "description": "Public access successfully enabled"
+                }
+              }
+            }
+          },
+          "4XX": {
+            "description": "Error description",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "https://www.taskade.com/api/v1",
+      "description": "Public API server"
+    }
+  ],
+  "security": [{ "oAuthAuthorizationCode": [], "personalAccessToken": [] }]
+}
