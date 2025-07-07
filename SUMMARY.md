@@ -2,29 +2,37 @@
 
 * [Introduction](README.md)
 
-## 👋 Getting Started <a href="#start" id="start"></a>
+## ✨ The Vision
 
+* [The HyperCard of the AI Era](vision/README.md)
+* [Core Architecture](vision/architecture.md)
+* [Specs & Interoperability](vision/specs-and-interoperability.md)
+
+## 🤖 TaskOS (The AI App Generator)
+
+* [Introduction to TaskOS](taskos/introduction.md)
+
+## 🧰 AI Kits (Available Today)
+
+* [Explore AI Kits Gallery](https://taskade.com/kits)
+* [AI Kits Documentation](https://help.taskade.com/en/articles/10378721-taskade-ai-kits)
+
+## ⚙️ Core API: Building Blocks
+
+* [Authentication](start/authentication.md)
 * [Personal Tokens](start/personal-tokens.md)
-* [OAuth 2.0 Authentication](start/authentication.md)
-
-## 🤖 TaskOS (Coming Soon)
-
-* [Introduction](taskos/introduction.md)
-
-## ⚙️ API reference <a href="#api" id="api"></a>
-
 * [Workspaces](api/workspaces/README.md)
   * [Get Workspaces](api/workspaces/get-workspaces.md)
   * [Get Projects](api/workspaces/get-projects.md)
   * [Get Folders](api/workspaces/get-folders.md)
-* [Folders](api/folders/README.md)
-  * [Get Folder Projects](api/folders/get-folder-projects.md)
-  * [Generate Agent in Folder](api/folders/generate-agent-in-folder.md)
-  * [Create Agent in Folder](api/folders/create-agent-in-folder.md)
-  * [Get Folder Agents](api/folders/get-folder-agents.md)
-  * [Get Folder Medias](api/folders/get-folder-medias.md)
-  * [Get Folder Project Templates](api/folders/get-folder-project-templates.md)
-* [Projects](api/projects/README.md)
+* [Apps (Subspaces)](api/folders/README.md)
+  * [Get Projects in App](api/folders/get-folder-projects.md)
+  * [Generate Agent in App](api/folders/generate-agent-in-folder.md)
+  * [Create Agent in App](api/folders/create-agent-in-folder.md)
+  * [Get Agents in App](api/folders/get-folder-agents.md)
+  * [Get Media in App](api/folders/get-folder-medias.md)
+  * [Get Templates in App](api/folders/get-folder-project-templates.md)
+* [Knowledge (Projects)](api/projects/README.md)
   * [Get Project](api/projects/get-project.md)
   * [Complete Project](api/projects/complete-project.md)
   * [Restore Project](api/projects/restore-project.md)
@@ -57,7 +65,7 @@
   * [Get Task Field](api/tasks/get-task-field.md)
   * [Update Task Field](api/tasks/update-task-field.md)
   * [Delete Task Field](api/tasks/delete-task-field.md)
-* [Agents](api/agents/README.md)
+* [Intelligence (Agents)](api/agents/README.md)
   * [Get Agent](api/agents/get-agent.md)
   * [Delete Agent](api/agents/delete-agent.md)
   * [Update Agent](api/agents/update-agent.md)
@@ -71,6 +79,7 @@
   * [Get Conversations](api/agents/get-agent-convos.md)
   * [Get Conversation](api/agents/get-agent-convo.md)
   * [Inbound Webhooks](api/agents/inbound-webhooks.md)
+* [Action (Automations)](api/automations/README.md)
 * [Media](api/media/README.md)
   * [Get Media](api/media/get-media.md)
   * [Delete Media](api/media/delete-media.md)

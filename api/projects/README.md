@@ -1,4 +1,19 @@
-# Projects API
+# Knowledge (Projects)
+
+The **Knowledge Layer** is the foundation of every intelligent app you build in Taskade. This is the structured memory that your AI Agents use to understand context, make decisions, and provide insightful responses. This layer is powered by **Taskade Projects**.
+
+A Project is a flexible, powerful resource that can be used as:
+
+*   A structured database for a CRM or a directory.
+*   A content repository for a knowledge base or documentation site.
+*   A task list for a project management system.
+*   A queue for processing data in an automation workflow.
+
+These endpoints allow you to create, read, update, and delete the Projects that form the Knowledge Layer of your applications.
+
+### Learn More
+
+*   **[Agent Knowledge & Memory ›](https://help.taskade.com/en/articles/9495190-agent-knowledge-memory)**
 
 ## Summary of Endpoints
 
