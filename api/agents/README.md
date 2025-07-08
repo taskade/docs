@@ -1,4 +1,19 @@
-# Agents API
+# Intelligence (Agents)
+
+The **Intelligence Layer** is the brain of your application. It's where reasoning, logic, and autonomous action take place. This layer is powered by **Taskade's AI Agents**.
+
+An Agent is more than just a chatbot. It is an autonomous worker that can be configured with a specific personality, skillset, and access to knowledge. You can use Agents to:
+
+*   **Power a Chatbot:** Provide intelligent, context-aware answers to user queries based on the app's Knowledge Layer.
+*   **Execute Complex Tasks:** Trigger agents via automations to perform multi-step operations like analyzing data, qualifying leads, or summarizing documents.
+*   **Collaborate with Humans:** Assign tasks to agents and have them work alongside your team members within a project.
+
+These endpoints allow you to create, manage, and interact with the AI Agents that bring your applications to life.
+
+### Learn More
+
+*   **[Custom AI Agents ›](https://help.taskade.com/en/articles/8958457-custom-ai-agents)**
+*   **[Tools for AI Agents ›](https://help.taskade.com/en/articles/9314171-tools-for-ai-agents)**
 
 ## Summary of Endpoints
 
