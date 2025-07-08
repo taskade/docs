@@ -8,10 +8,6 @@ Today, we stand at a similar inflection point with artificial intelligence. The 
 
 Our vision is to create the **HyperCard of the AI Era**. We are building a platform that empowers anyone—from solo entrepreneurs to enterprise teams—to build powerful, AI-driven web applications without writing a line of code.
 
-### From Productivity to Creation
-
-Taskade began as a tool to enhance productivity. Now, we are evolving into a platform for creation.
-
 | Then (HyperCard)             | Now (Taskade)                                       |
 | ---------------------------- | ----------------------------------------------------- |
 | Stack of Cards               | **Subspace as a Web App**                             |
@@ -19,6 +15,10 @@ Taskade began as a tool to enhance productivity. Now, we are evolving into a pla
 | HyperTalk (Scripting)        | **AI Agents & Automations (Logic)**                   |
 | Local, Standalone Apps       | **Cloud-native, Collaborative Apps**                  |
 | Floppy Disk Sharing          | **One-Click Sharing & Embedding**                       |
+
+### From Productivity to Creation
+
+Taskade began as a tool to enhance productivity. Now, we are evolving into a platform for creation.
 
 ### The Philosophy: Instant Value, Infinite Extensibility
 

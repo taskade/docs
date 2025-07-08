@@ -9,6 +9,8 @@ A Project is a flexible, powerful resource that can be used as:
 *   A task list for a project management system.
 *   A queue for processing data in an automation workflow.
 
+**Task Add-ons** – Every project node can be enriched with optional add-ons including **attachments**, **assignments**, **timers / due-dates**, **reactions & comments**, **custom fields**, and **AI pills** for context-aware suggestions.  These add-ons travel with the node and are fully accessible via the Tasks API.
+
 These endpoints allow you to create, read, update, and delete the Projects that form the Knowledge Layer of your applications.
 
 ### Learn More

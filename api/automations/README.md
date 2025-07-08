@@ -239,6 +239,16 @@ curl -X POST https://www.taskade.com/api/v1/automations \
   }'
 ```
 
+## Comprehensive Automation Documentation
+
+For detailed automation documentation, including integrations, actions, triggers, and recipes, see our dedicated automation section:
+
+*   **[Automations Overview ›](../../automation/README.md)**
+*   **[Supported Integrations ›](../../automation/integrations.md)**
+*   **[Actions Reference ›](../../automation/actions.md)**
+*   **[Triggers Reference ›](../../automation/triggers.md)**
+*   **[Automation Recipes ›](../../automation/recipes.md)**
+
 ### Learn More
 
 *   **[Getting Started with Automation ›](https://help.taskade.com/en/articles/8958467-getting-started-with-automation)**

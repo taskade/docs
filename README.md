@@ -26,13 +26,52 @@ Inspired by the revolutionary simplicity of HyperCard, which empowered anyone to
 
 ## The App Generator Vision
 
-At the heart of Taskade is **TaskOS**, our AI App Generator. It works backward from your intent, transforming a simple goal—like "create a customer feedback portal" or "build an automated sales tracker"—into a complete, functional application.
+At the heart of Taskade is **[TaskOS](taskos/introduction.md)**, our AI App Generator that embodies the HyperCard philosophy: *anyone should be able to create powerful software*. It works backward from your intent, transforming a simple goal—like "create a customer feedback portal" or "build an automated sales tracker"—into a complete, functional application.
+
+Just as HyperCard democratized software creation in the 1980s, TaskOS democratizes AI app creation today. But instead of static cards and scripts, you get living, intelligent systems that think, learn, and act.
 
 Each generated app is a **Subspace**, a self-contained ecosystem with three core pillars:
 
-1.  **🧠 Knowledge (Memory):** Structured data using **Taskade Projects**. This is the memory and context that makes your app smart.
-2.  **🤖 Intelligence (Logic):** **AI Agents** that can reason, plan, and execute tasks based on the knowledge they possess.
-3.  **⚡ Action (Execution):** **Automations**, forms, and API integrations that connect your app to the world and get work done.
+1.  **🧠 Knowledge (Memory):** Structured data using **[Taskade Projects](api/projects/README.md)**. This is the memory and context that makes your app smart.
+2.  **🤖 Intelligence (Logic):** **[AI Agents](api/agents/README.md)** that can reason, plan, and execute tasks based on the knowledge they possess.
+3.  **⚡ Action (Execution):** **[Automations](automation/README.md)**, forms, and API integrations that connect your app to the world and get work done.
+
+### The HyperCard Parallel
+
+| HyperCard (1987) | TaskOS (2025) |
+|------------------|---------------|
+| **Cards** → Static information containers | **Projects** → Dynamic, real-time data structures |
+| **Stacks** → Collections of related cards | **Subspaces** → Complete AI-powered applications |
+| **HyperTalk** → Simple scripting language | **Natural Language** → Describe what you want |
+| **Buttons & Fields** → User interface elements | **Agents & Automations** → Intelligent interactions |
+| **Linking** → Navigate between cards | **Integrations** → Connect to any external service |
+
+```mermaid
+graph TB
+    subgraph "The HyperCard Vision (1987)"
+        A1[Card: Customer Info]
+        A2[Card: Order History]
+        A3[Button: Calculate Total]
+        A4[Script: Update Database]
+        A1 --> A2
+        A2 --> A3
+        A3 --> A4
+    end
+    
+    subgraph "TaskOS Reality (2024)"
+        B1[Project: Customer Database]
+        B2[Agent: Sales Assistant]
+        B3[Automation: Process Orders]
+        B4[Integration: Update CRM]
+        B1 --> B2
+        B2 --> B3
+        B3 --> B4
+    end
+    
+    A1 -.-> B1
+    A3 -.-> B2
+    A4 -.-> B3
+```
 
 ### AI Kits: Ready-to-Deploy Workflows
 
@@ -62,6 +101,7 @@ First, you'll need to authenticate with our API:
 - [Learn about Authentication](start/authentication.md)
 
 ### 2. Create Your First Subspace
+A **Subspace** is an application container, similar to a folder. All your app's data, agents, and workflows will live inside it.
 ```bash
 # Create a new app container
 curl -X POST https://www.taskade.com/api/v1/folders \
@@ -88,7 +128,7 @@ curl -X POST https://www.taskade.com/api/v1/folders/YOUR_SUBSPACE_ID/agents/gene
   -d '{"prompt": "Create a customer support agent that can analyze feedback and suggest improvements"}'
 ```
 
-**Action Layer:** Set up automations (via the Taskade interface or upcoming automation API)
+**Action Layer:** Set up automations through the Taskade interface. You can also use our [upcoming Automation API](automation/README.md#api-access-coming-soon) for programmatic control.
 
 ### 4. Deploy Your App
 Your Subspace is now a living application! Share it with your team or make it public.
@@ -97,12 +137,28 @@ Your Subspace is now a living application! Share it with your team or make it pu
 
 Based on Taskade's execution layer for AI collaboration:
 
-- **Agents**: Autonomous teammates that can think, learn, and act. Agents read from project context, run tools, and trigger workflows.
-- **Projects**: Real-time, tree-structured documents that serve as shared memory and execution hubs.
-- **Automations**: Logic-based workflows with triggers (e.g. form submitted, time-based) and actions (e.g. create task, ask AI).
-- **Generator**: One prompt creates everything you need: Project + Agent + Automation, all pre-wired to execute.
-- **Kits**: Bundled agent workflows designed for sales, marketing, support, HR, and more.
+- **Subspaces (Apps)**: Self-contained applications, like HyperCard stacks, but powered by AI
+- **Projects (Knowledge)**: Real-time, tree-structured documents that serve as shared memory and execution hubs
+- **Agents (Intelligence)**: Autonomous teammates that can think, learn, and act. Agents read from project context, run tools, and trigger workflows. Learn more in our [Automations Deep Dive](automation/README.md).
+- **Automations (Actions)**: Logic-based workflows with triggers (e.g. form submitted, time-based) and actions (e.g. create task, ask AI).
+- **Generator (TaskOS)**: One prompt creates everything you need: Project + Agent + Automation, all pre-wired to execute. Get started with our [Genesis No-Code Builder](genesis/README.md).
+- **AI Kits**: Bundled agent workflows designed for sales, marketing, support, HR, and more.
 - **Views**: List, Board, Table, Calendar, Mind Map, Org Chart, Gantt. Each view is powered by the same underlying tree structure.
+
+### The Generator Workflow
+
+```mermaid
+graph LR
+    A[💡 Idea] --> B[📊 Project]
+    B --> C[🤖 Agent]
+    C --> D[⚡ Automation]
+    D --> E[🚀 Execution]
+    
+    A1["I need a customer<br/>feedback system"] --> B1["Customer Feedback<br/>Project Structure"]
+    B1 --> C1["Sentiment Analysis<br/>Agent"]
+    C1 --> D1["Auto-Route to<br/>Support Team"]
+    D1 --> E1["Live Application<br/>Ready to Use"]
+```
 
 ## The Future: Open & Interoperable
 
@@ -132,6 +188,8 @@ Taskade's platform is built on a robust, real-time architecture that includes:
 - **[⚙️ Core API Reference](api/workspaces/README.md)** - Build with our building blocks
 - **[🔗 OpenAPI Specification](https://www.taskade.com/api/documentation/static/index.html#/)** - Complete API documentation
 - **[🧰 AI Kits Gallery](https://taskade.com/kits)** - Explore ready-to-deploy workflows
+- **[⚡ Automations Deep Dive](automation/README.md)** - Explore the automation engine
+- **[💡 Genesis No-Code Builder](genesis/README.md)** - Create apps with natural language
 
 ## LLM Integration
 
@@ -148,6 +206,7 @@ For AI and LLM developers working with Taskade:
 - **[Community Forum](https://www.taskade.com/feedback/public-api)** - Connect with other developers
 - **[Changelog](https://www.taskade.com/blog/product-updates/)** - Stay updated with new features
 - **[AI Kits Gallery](https://taskade.com/kits)** - Browse and install community workflows
+- **[Contributing Guide](contributing.md)** - Join our open-source community
 
 ---
 

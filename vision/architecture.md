@@ -51,3 +51,13 @@ The Action layer connects your app to the world. This is where **Automations, Fo
 *   **Presentation Layer:** The Action layer culminates in the branded web app UI—the beautiful, interactive interface that your users will see and interact with.
 
 Together, these three pillars create a powerful flywheel: Actions capture data into the Knowledge base, the Knowledge base provides context to the Intelligence, and the Intelligence drives new Actions. This is the engine that powers every app you create on Taskade. 
+
+### 🌐 Real-time Collaboration
+
+Taskade’s realtime engine ensures that every keystroke is synchronized across all participants in **sub-second latency**.  Edits are merged conflict-free using an Operational-Transformation (OT) algorithm, and live cursors show exactly where teammates are working.  This realtime foundation powers chat, document editing, task updates, and agent insights—helping distributed teams stay perfectly in-sync.
+
+### 🔎 Hybrid Search & Discovery
+
+Across each workspace Taskade provides a **hybrid search** engine that combines traditional keyword matching with AI-powered semantic (vector) search.  Results are automatically scoped to the current workspace, giving instant access to projects, tasks, agents, automations, and media without leaking data across organizations.
+
+Together, these capabilities complement the Knowledge → Intelligence → Action flywheel and make every Subspace feel responsive, discoverable, and collaborative. 

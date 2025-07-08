@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [The HyperCard of the AI Era](README.md)
 
 ## ✨ The Vision
 
@@ -8,19 +8,27 @@
 * [Core Architecture](vision/architecture.md)
 * [Specs & Interoperability](vision/specs-and-interoperability.md)
 
+## 🎯 Taskade Genesis (No-Code Creation)
+
+* [Genesis Overview](genesis/README.md)
+
 ## 🤖 TaskOS (The AI App Generator)
 
 * [Introduction to TaskOS](taskos/introduction.md)
+* [Project Views Explained](taskos/project-views.md)
 
 ## 🧰 AI Kits (Available Today)
 
 * [Explore AI Kits Gallery](https://taskade.com/kits)
 * [AI Kits Documentation](https://help.taskade.com/en/articles/10378721-taskade-ai-kits)
 
-## ⚙️ Core API: Building Blocks
+## 🚀 Getting Started
 
 * [Authentication](start/authentication.md)
 * [Personal Tokens](start/personal-tokens.md)
+
+## 📊 Core API: Building Blocks
+
 * [Workspaces](api/workspaces/README.md)
   * [Get Workspaces](api/workspaces/get-workspaces.md)
   * [Get Projects](api/workspaces/get-projects.md)
@@ -80,12 +88,30 @@
   * [Get Conversation](api/agents/get-agent-convo.md)
   * [Inbound Webhooks](api/agents/inbound-webhooks.md)
 * [Action (Automations)](api/automations/README.md)
+
+## ⚡ Automations (Deep Dive)
+
+* [Automations Overview](automation/README.md)
+* [Supported Integrations](automation/integrations.md)
+* [Actions Reference](automation/actions.md)
+* [Triggers Reference](automation/triggers.md)
+* [Automation Recipes](automation/recipes.md)
+
+## 📁 Additional Resources
+
 * [Media](api/media/README.md)
   * [Get Media](api/media/get-media.md)
   * [Delete Media](api/media/delete-media.md)
 * [Me](api/me/README.md)
   * [Get Projects](api/me/projects.md)
-* [Specifications](https://www.taskade.com/api/documentation/static/index.html#/)
+
+## 📖 API Reference
+
+* [OpenAPI Specification](https://www.taskade.com/api/documentation/static/index.html#/)
+
+## 🤝 Community & Support
+
+* [Contributing](contributing.md)
 
 ## 🔗 Links
 

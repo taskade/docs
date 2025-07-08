@@ -14,7 +14,7 @@ layout:
 
 # Introduction to TaskOS
 
-**TaskOS** is Taskade's agentic operating system—the engine that transforms natural language prompts into complete, intelligent applications. It orchestrates the three core pillars of every Subspace: Knowledge, Intelligence, and Action.
+**TaskOS** is Taskade's agentic operating system—the engine that transforms natural language prompts into complete, intelligent applications. It orchestrates the three core pillars of every Subspace: Knowledge, Intelligence, and Action. *If you prefer a fully no-code experience, check out [Taskade Genesis](../genesis/README.md), which provides a Genesis prompt builder powered by TaskOS under the hood.*
 
 ## How TaskOS Works
 
