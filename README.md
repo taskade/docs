@@ -1,5 +1,5 @@
 ---
-description: "Build the next generation of AI-powered applications with Taskade's complete platform for productivity, collaboration, and intelligent automation."
+description: "The productivity platform with living DNA. Your workspace becomes a digital organism where every project, agent, automation, and piece of knowledge connects to form the genetic code of everything you build."
 cover: .gitbook/assets/ss-api3.png
 coverY: 0
 layout:
