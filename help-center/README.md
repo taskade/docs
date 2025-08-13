@@ -11,12 +11,12 @@ Welcome to the Taskade Help Center! Here you'll find comprehensive guides, tutor
 * **[Account Management](account-management/README.md)** - Manage your account and team
 * **[Troubleshooting](troubleshooting/README.md)** - Common issues and solutions
 
-## Developer Resources
+## Advanced Users
 
-For developers building with Taskade:
-* **[Genesis No-Code Creation](../genesis/README.md)** - Build apps without coding
-* **[API Documentation](../api/README.md)** - Complete developer reference
-* **[Automations Guide](../automation/README.md)** - Workflow automation capabilities
+Ready to build custom solutions? These advanced guides help you create exactly what your business needs:
+* **[Genesis App Builder](../genesis/README.md)** - Build custom apps without coding
+* **[Developer API](../api/README.md)** - For technical teams who want full control
+* **[Advanced Automations](../automation/README.md)** - Complex workflow automation
 
 ## 🎯 Popular Topics
 
@@ -27,34 +27,46 @@ New to Taskade? These guides will get you up and running quickly.
 Explore Taskade's powerful features and learn how to use them effectively.
 
 ### 🤖 AI Features
-Discover how Taskade's AI capabilities can supercharge your productivity, including the revolutionary Genesis app generator.
+Transform your workflow with intelligent AI that learns and automates your work:
+
+**Quick Start Guides:**
+- **[AI Agents Getting Started](ai-features/ai-agents-getting-started.md)** - Create your first AI team member
+- **[Automation Getting Started](ai-features/automation-getting-started.md)** - Put routine tasks on autopilot  
+- **[Genesis Quick Start](ai-features/genesis-getting-started.md)** - Build apps without coding in 5 minutes
+
+**Comprehensive Resources:**
+- **[Genesis Examples](ai-features/genesis-examples.md)** - 50+ real business applications with exact prompts
+- **[Genesis Prompt Library](ai-features/genesis-prompt-library.md)** - Copy-paste prompts for any industry
+
+**What You Can Build:** Customer portals, booking systems, feedback apps, team dashboards, and automated workflows that save hours daily.
 
 ## 🔧 Integrations
 
 Learn how to connect Taskade with your favorite tools and services.
 
-* [Available Integrations](integrations/overview.md)
-* [Zapier Integration](integrations/zapier.md)
-* [Calendar Sync](integrations/calendar.md)
-* [API & Webhooks](integrations/api-webhooks.md)
+* [Getting Started with Automation](https://help.taskade.com/en/articles/8958467-getting-started-with-automation)
+* [AI Automation Collection](https://help.taskade.com/en/collections/8400803-ai-automation)
+* [Available Integrations](integrations/README.md)
+* **Calendar Sync** - Google Calendar, Outlook, and more
+* **API & Webhooks** - Build custom integrations
 
 ## 👤 Account Management
 
 Manage your account settings, billing, and team administration.
 
-* [Profile Settings](account-management/profile.md)
-* [Billing & Subscriptions](account-management/billing.md)
-* [Team Management](account-management/team.md)
-* [Security Settings](account-management/security.md)
+* **Profile Settings** - Update your personal information
+* **Billing & Subscriptions** - Manage payments and plans  
+* **Team Management** - Invite and manage team members
+* **Security Settings** - Two-factor authentication and security
 
 ## 🛠️ Troubleshooting
 
 Having issues? Check our troubleshooting guides for quick solutions.
 
-* [Common Issues](troubleshooting/common-issues.md)
-* [Login Problems](troubleshooting/login.md)
-* [Sync Issues](troubleshooting/sync.md)
-* [Performance Tips](troubleshooting/performance.md)
+* **Common Issues** - Frequently reported problems and solutions
+* **Login Problems** - Can't access your account?
+* **Sync Issues** - Data not syncing across devices
+* **Performance Tips** - Speed up Taskade performance
 
 ## 💬 Still Need Help?
 
@@ -64,4 +76,4 @@ Having issues? Check our troubleshooting guides for quick solutions.
 
 ---
 
-*For developer documentation and API reference, visit our [Developer Docs](../README.md).*
+*For advanced features and custom development, visit our [Technical Documentation](../README.md).*
