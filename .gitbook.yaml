@@ -1,0 +1,20 @@
+root: ./
+
+structure:
+  readme: README.md
+  summary: SUMMARY.md
+
+redirects:
+  docs/updates: changelog
+  docs/help-and-guides: features  
+  docs/developer-api: developers
+  docs/genesis-no-code-apps: genesis
+  help-center/ai-features: features/ai-features
+  help-center/features: features
+
+integrations:
+  googleAnalytics:
+    trackingId: "GA-TRACKING-ID"
+
+git:
+  editLinkPattern: 'https://github.com/taskade/docs/edit/main/{{path}}'

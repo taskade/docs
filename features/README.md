@@ -1,148 +1,139 @@
 # Core Features
 
-Discover Taskade's powerful features designed to transform how your team collaborates, manages projects, and gets work done.
+**Everything you need to build better workflows and collaborate smarter.**
 
-## 📊 **Projects & Data Management**
+Taskade brings together the essential tools for modern productivity in one unified platform. No more switching between different apps or losing context across scattered tools.
 
-### **Flexible Project Structures**
-Create projects that adapt to any workflow - from simple task lists to complex data management systems.
+## 🎯 **Smart Project Management**
 
-- **Multiple Views**: Switch between List, Board, Calendar, Table, Mind Map, Org Chart, Gantt, and Action views
-- **Custom Fields**: Add dropdowns, dates, numbers, text, and more to structure your data
-- **Templates**: Save project structures as reusable templates for consistent workflows
-- **Real-time Sync**: See changes instantly across all team members and devices
+### **Flexible Data That Works For You**
+- **No Rigid Templates**: Your projects adapt to your workflow, not the other way around
+- **Any Structure**: Flat lists, deep hierarchies, or mixed approaches - whatever makes sense
+- **Live Updates**: Changes sync instantly across your entire team
+- **Version History**: Never lose work with automatic versioning
 
-### **Advanced Data Organization**
-- **Nested Hierarchies**: Create unlimited levels of tasks, subtasks, and sections
-- **Tags & Labels**: Organize and filter content with flexible tagging systems
-- **Search & Filter**: Find anything instantly with powerful search and filtering
-- **Cross-References**: Link related projects and tasks for better organization
+### **8 Views, Same Data**
+Switch between different perspectives without losing any information:
 
-[Learn more about Projects →](projects.md)
+| View | Best For | Example Use Case |
+|------|----------|------------------|
+| **📋 List** | Simple task tracking | Daily to-dos, meeting agendas |
+| **📊 Board** | Workflow management | Project pipelines, content calendars |
+| **📅 Calendar** | Time-based planning | Event scheduling, deadline tracking |
+| **📈 Table** | Data analysis | Budget tracking, inventory management |
+| **🧠 Mind Map** | Brainstorming | Strategy planning, knowledge mapping |
+| **🏢 Org Chart** | Team structures | Reporting relationships, project hierarchies |
+| **📋 Action** | Task execution | Sprint planning, workflow automation |
+| **📊 Gantt** | Timeline planning | Project scheduling, dependency tracking |
 
-## 🤖 **AI Agents & Intelligence**
+## 🤖 **AI-Powered Intelligence**
 
-### **Custom AI Assistants**
-Deploy specialized AI agents that understand your business context and can take actions on your behalf.
+### **AI That Actually Understands Context**
+- **Smart Content Generation**: AI that knows your business and projects
+- **Automatic Organization**: Intelligent categorization and tagging
+- **Contextual Suggestions**: Recommendations based on your workflow patterns
+- **Natural Language Processing**: Turn ideas into structured data
 
-- **Role-Based Agents**: Create agents for specific functions (Sales, Support, Research, etc.)
-- **Knowledge Training**: Feed agents your documents, projects, and data for context
-- **Custom Commands**: Define specific actions your agents can perform
-- **Tool Integration**: Connect agents to external services and APIs
+### **Custom AI Agents**
+Deploy specialized AI assistants for any role:
+- **Research Agents**: Gather and synthesize information
+- **Content Agents**: Write, edit, and optimize your content  
+- **Support Agents**: Handle customer inquiries and routing
+- **Analysis Agents**: Process data and generate insights
 
-### **Intelligent Automation**
-- **Smart Workflows**: AI suggests and creates automation based on your patterns
-- **Content Generation**: Generate tasks, summaries, and documentation automatically
-- **Data Processing**: AI categorizes, analyzes, and structures your information
-- **Decision Support**: Get AI recommendations for project planning and execution
+[Learn more about AI Agents →](../ai-features/ai-agents-getting-started.md)
 
-[Learn more about AI Agents →](ai-agents.md)
+## ⚡ **Automation That Just Works**
 
-## ⚡ **Collaboration & Communication**
+### **Connect Everything**
+- **100+ Native Integrations**: Gmail, Slack, Google Workspace, and more
+- **Custom Webhooks**: Connect any service with API access
+- **Smart Triggers**: Automate based on time, events, or data changes
+- **Intelligent Actions**: AI-powered workflow decisions
 
-### **Real-time Teamwork**
-Work together seamlessly with features designed for modern distributed teams.
+### **Popular Automation Ideas**
+- **Daily Standups**: Auto-generate team check-ins from completed work
+- **Content Workflows**: From idea → draft → review → publish automatically
+- **Customer Onboarding**: Trigger welcome sequences and setup tasks
+- **Lead Management**: Route and qualify prospects intelligently
 
-- **Live Editing**: Multiple people can edit the same project simultaneously
-- **Comments & Mentions**: Discuss work directly in context with @mentions
-- **Activity Streams**: Stay updated on project changes and team activity
-- **Video Chat Integration**: Built-in video calls for instant communication
+[Explore Automation →](../ai-features/automation-getting-started.md)
 
-### **Team Management**
-- **Role-based Permissions**: Control who can view, edit, and manage different content
-- **Guest Access**: Share specific projects with external collaborators
-- **Team Workspaces**: Organize teams into separate workspaces with shared resources
-- **Activity Tracking**: Monitor team productivity and project progress
+## 👥 **Team Collaboration**
 
-[Learn more about Collaboration →](collaboration.md)
+### **Real-Time Everything**
+- **Live Editing**: Multiple people, same document, no conflicts
+- **Instant Comments**: Context-aware discussions right in your work
+- **Smart Notifications**: Get alerted to what matters, skip the noise
+- **Activity Streams**: See what's happening across all projects
 
-## 🎨 **Views & Visualization**
+### **Permission & Access Control**
+- **Role-Based Security**: Control what team members can see and edit
+- **Guest Access**: Share specific projects without full workspace access  
+- **Audit Trails**: Track all changes and activity
+- **Single Sign-On**: Enterprise authentication integration
 
-### **8 Powerful Views**
-See your work the way that makes most sense for your workflow:
+## 📱 **Cross-Platform Access**
 
-- **📋 List View**: Traditional task lists with nested hierarchies
-- **📊 Board View**: Kanban-style boards for workflow management  
-- **📅 Calendar View**: Schedule and timeline management
-- **📝 Table View**: Spreadsheet-like data management
-- **🧠 Mind Map**: Visual brainstorming and idea organization
-- **👥 Org Chart**: Team structure and hierarchy visualization
-- **📈 Gantt View**: Project timeline and dependency tracking
-- **⚡ Action View**: Workflow and process visualization
+### **Available Everywhere**
+- **Web App**: Full-featured browser experience
+- **Desktop Apps**: Native Windows, Mac, and Linux applications
+- **Mobile Apps**: iOS and Android with offline capabilities
+- **API Access**: Build custom integrations and workflows
 
-### **Customizable Layouts**
-- **View Switching**: Instantly switch between different perspectives of the same data
-- **Custom Filters**: Create saved filters for different team members or use cases
-- **Personalized Dashboards**: Each team member can customize their view preferences
-- **Responsive Design**: Perfect experience on desktop, tablet, and mobile
+### **Offline Capabilities**
+- **Sync When Connected**: Work offline, sync when back online
+- **Local Storage**: Important data cached on your device
+- **Conflict Resolution**: Smart merging when multiple people edit offline
 
-[Learn more about Views →](views.md)
+## 🔒 **Enterprise-Ready Security**
 
-## 🔄 **Automations & Workflows**
+### **Built for Business**
+- **SOC 2 Compliance**: Audited security controls
+- **GDPR Compliant**: EU privacy regulation adherence  
+- **End-to-End Encryption**: Your data stays private
+- **Regular Security Audits**: Continuous monitoring and improvement
 
-### **No-Code Automation**
-Create sophisticated workflows without writing code:
+### **Advanced Controls**
+- **IP Whitelisting**: Restrict access by location
+- **Two-Factor Authentication**: Additional security layer
+- **Data Export**: Full data portability and backup
+- **Custom Retention**: Control how long data is stored
 
-- **Trigger-Based Actions**: Automate responses to project changes, deadlines, and events
-- **Multi-step Workflows**: Chain multiple actions together for complex processes
-- **Conditional Logic**: Create smart workflows that adapt based on data and context
-- **Schedule Automation**: Run processes on schedules or at specific times
+## 📊 **Analytics & Insights**
 
-### **100+ Integrations**
-Connect Taskade to your existing tool stack:
+### **Understand Your Work**
+- **Productivity Metrics**: Time tracking and completion rates
+- **Team Performance**: Identify bottlenecks and optimize workflows
+- **Project Analytics**: Success patterns and areas for improvement
+- **Custom Reporting**: Build dashboards for stakeholders
 
-- **Communication**: Slack, Microsoft Teams, Discord
-- **Productivity**: Google Workspace, Microsoft 365, Notion
-- **Development**: GitHub, GitLab, Jira, Trello
-- **CRM & Sales**: HubSpot, Salesforce, Pipedrive
-- **And many more...**
+### **Smart Recommendations**
+- **Workflow Optimization**: AI suggests process improvements
+- **Resource Allocation**: Balance workload across team members
+- **Deadline Predictions**: Forecast project completion dates
+- **Risk Identification**: Early warning for potential issues
 
-[Learn more about Automations →](../automation/README.md)
+## 🎨 **Customization & Branding**
 
-## 📱 **Mobile & Cross-Platform**
+### **Make It Yours**
+- **Custom Themes**: Match your brand colors and style
+- **Logo Integration**: Add your company branding
+- **Custom Domains**: White-label client portals
+- **Branded Sharing**: Professional external sharing
 
-### **Native Mobile Apps**
-Full-featured mobile experience with offline capabilities:
+## 🚀 **Getting Started**
 
-- **iOS and Android Apps**: Native apps optimized for mobile productivity
-- **Offline Mode**: Work without internet, sync when reconnected
-- **Voice Commands**: Create tasks and notes using voice input
-- **Push Notifications**: Stay updated on important changes and deadlines
+### **For New Users**
+1. **[Quick Start Guide →](../getting-started/README.md)** - Get productive in 10 minutes
+2. **[Create Your First Project →](https://taskade.com/new)** - Start with a template or blank project
+3. **[Invite Your Team →](https://taskade.com/invite)** - Collaboration is better together
 
-### **Web & Desktop**
-- **Progressive Web App**: Install Taskade as a desktop application
-- **Cross-Device Sync**: Seamless experience across all your devices
-- **Keyboard Shortcuts**: Power-user features for efficient navigation
-- **Dark Mode**: Easy on the eyes for long work sessions
-
-## 🔒 **Security & Enterprise**
-
-### **Enterprise-Grade Security**
-- **SOC 2 Compliance**: Certified security practices and controls
-- **GDPR Compliance**: Full compliance with international privacy regulations  
-- **End-to-End Encryption**: Your data is encrypted in transit and at rest
-- **Two-Factor Authentication**: Additional security for account access
-
-### **Enterprise Management**
-- **Single Sign-On (SSO)**: Integrate with your existing identity provider
-- **Admin Controls**: Centralized management of users, permissions, and settings
-- **Audit Logs**: Track all user activity and changes for compliance
-- **Custom Domains**: Brand your workspace with your organization's domain
-
-## 🎯 **Getting Started with Features**
-
-### **New to Taskade?**
-1. **[Create Your First Project →](../getting-started/README.md)**
-2. **[Set Up Your Team →](teams.md)**
-3. **[Try Different Views →](views.md)**
-4. **[Create Your First AI Agent →](ai-agents.md)**
-
-### **Ready for Advanced Features?**
-1. **[Build Custom Automations →](../automation/README.md)**
-2. **[Deploy AI Agents →](../ai-features/ai-agents-getting-started.md)**
-3. **[Create Genesis Apps →](../genesis/README.md)**
-4. **[Integrate with APIs →](../developers/README.md)**
+### **For Power Users**
+1. **[Advanced Features →](advanced-features.md)** - Unlock the full potential
+2. **[Automation Setup →](../ai-features/automation-getting-started.md)** - Streamline repetitive work
+3. **[API Integration →](../developers/README.md)** - Build custom solutions
 
 ---
 
-*Ready to unlock the full potential of your team's productivity? Explore these features and discover what Taskade can do for your workflow.*
+**💡 Ready to transform how your team works? The best way to understand Taskade is to try it with your actual work. Start with one small project and see the difference.**

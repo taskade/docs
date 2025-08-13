@@ -19,20 +19,19 @@
 * [Troubleshooting](genesis/troubleshooting.md)
 * [FAQ](genesis/faq.md)
 
-## 🤖 AI Features
-
-* [AI Features Overview](help-center/ai-features/README.md)
-* [AI Agents Getting Started](help-center/ai-features/ai-agents-getting-started.md)
-* [Automation Getting Started](help-center/ai-features/automation-getting-started.md)
-* [Genesis Quick Start](help-center/ai-features/genesis-getting-started.md)
-* [Genesis Examples](help-center/ai-features/genesis-examples.md)
-* [Genesis Prompt Library](help-center/ai-features/genesis-prompt-library.md)
-
-## 📊 Core Platform
+## 📊 Core Features
 
 * [Features Overview](features/README.md)
+* [AI Agents Getting Started](features/ai-features/ai-agents-getting-started.md)
+* [Automation Getting Started](features/ai-features/automation-getting-started.md)
 * [TaskOS Engine](taskos/introduction.md)
 * [Project Views](taskos/project-views.md)
+
+## 🤝 Team Collaboration
+
+* [Account Management](help-center/account-management/README.md)
+* [Integrations](help-center/integrations/README.md)
+* [Troubleshooting](help-center/troubleshooting/README.md)
 
 ## 🏗️ Platform Vision
 
@@ -122,17 +121,6 @@
 * [Actions Reference](automation/actions.md)
 * [Triggers Reference](automation/triggers.md)
 * [Automation Recipes](automation/recipes.md)
-
----
-
-## 📚 Help & User Guides
-
-* [Help Center](help-center/README.md)
-* [Getting Started](help-center/getting-started/README.md)
-* [Features](help-center/features/README.md)
-* [Integrations](help-center/integrations/README.md)
-* [Account Management](help-center/account-management/README.md)
-* [Troubleshooting](help-center/troubleshooting/README.md)
 
 ---
 

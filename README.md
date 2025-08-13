@@ -50,8 +50,8 @@ Create complete business applications just by describing what you need:
 
 #### 🤖 **AI Features** 
 Supercharge your productivity with intelligent automation:
-- **[AI Agents Getting Started →](ai-features/ai-agents-getting-started.md)** - Create your first AI assistant
-- **[Automation Basics →](ai-features/automation-getting-started.md)** - Put routine work on autopilot
+- **[AI Agents Getting Started →](features/ai-features/ai-agents-getting-started.md)** - Create your first AI assistant
+- **[Automation Basics →](features/ai-features/automation-getting-started.md)** - Put routine work on autopilot
 
 ### **For Developers & Technical Teams**
 
