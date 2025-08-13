@@ -18,43 +18,60 @@ layout:
     visible: true
 ---
 
-{% hint style="info" %}
-**New to Taskade?** Start with our [Quick Start Guide](getting-started/README.md) to get productive in 10 minutes, or jump directly to [Genesis](genesis/README.md) to build your first no-code app!
+{% hint style="success" %}
+**New to Taskade?** Your workspace comes with a default **Home Subspace** where you can instantly build apps with [Genesis](genesis/README.md) or start with our [Quick Start Guide](getting-started/README.md). Each subspace becomes a complete app powered by your workspace's living DNA!
 {% endhint %}
 
 # Welcome to Taskade
 
-**The productivity platform that actually gets how you work.**
+**Start with Genesis. Build anything. Your workspace is the foundation.**
 
-Tired of juggling 10 different apps just to get things done? Taskade combines project management, AI assistance, and team collaboration in one place that doesn't suck. Whether you're organizing a side project, managing a remote team, or building the next big thing, Taskade adapts to *your* workflow instead of forcing you into theirs.
+Every Taskade workspace begins with your **Home Subspace** — a living foundation where each subspace becomes a complete application. Whether you're building a customer feedback system, inventory tracker, or team dashboard, Genesis transforms your ideas into working apps in minutes, all powered by your workspace's interconnected intelligence.
 
 ## 🎯 What is Taskade?
 
-**The productivity platform with living DNA.**
+**Where every workspace becomes a foundation for unlimited apps.**
 
-Think of your workspace as a digital organism — every project, agent, automation, and piece of knowledge connects to form the genetic code of everything you build. Unlike static productivity tools, Taskade creates a **living ecosystem** that learns, adapts, and evolves with your business.
+Your Taskade workspace is your **Home Subspace** — the living foundation that powers everything you build. Each new subspace you create becomes a complete application, whether it's a customer portal, project tracker, or business dashboard. Genesis connects the dots between your workspace's intelligence and the apps you need.
 
-Here's what makes your workspace alive:
-- **📊 Intelligent Projects** - Data structures that grow and adapt to your needs
-- **🤖 Learning AI Agents** - Digital team members trained on your business knowledge
-- **⚡ Reactive Automations** - Business reflexes that respond instantly to events
-- **🧬 Connected Intelligence** - Everything learns from everything else
+**Here's how it works:**
+- **🏠 Home Workspace** - Your default workspace with a generator input field at the top
+- **📱 App = Complete Application** - Each app you create becomes a full business solution
+- **🧬 Living DNA** - Your workspace's agents, automations, and projects power every app
+- **🔗 Connected Intelligence** - Apps share intelligence and learn from each other
 
-**Real Talk:** Most productivity apps treat your data like it's dead. Taskade makes it alive.
+**The Genesis Interface:** Open any workspace and you'll see a prominent input field at the top. Just describe what you need in plain English, and Genesis builds a complete app in minutes. Your existing projects and folders appear as app tiles below the generator.
+
+### **Every Workspace Contains:**
+- **Generator Input** - The AI-powered field where you describe apps to build
+- **🤖 AI Agents** - Persistent left panel assistant trained on your business
+- **⚡ Smart Automations** - Connect to 100+ services automatically  
+- **📊 App Tiles** - Your existing projects/folders, now enhanced as complete apps
+- **🧬 Preview Mode** - Every app gets a live preview tab for instant testing
 
 ## 🚀 Quick Start
 
 {% tabs %}
-{% tab title="Business Users" %}
-### **📚 [Getting Started →](getting-started/README.md)**
-Core features and everything you need to be productive:
-- **[Features Overview →](features/README.md)** - Platform capabilities
-- **[AI Agents →](features/ai-features/ai-agents-getting-started.md)** - AI assistants
-
-### **🎯 [Genesis: No-Code Apps →](genesis/README.md)**
-Build complete applications without coding:
-- **[Create Your First App →](genesis/getting-started.md)** - Step-by-step guide
+{% tab title="Start with Genesis" %}
+### **🎯 [Build Your First App →](genesis/getting-started.md)**
+Transform your ideas into working applications in minutes:
+- **[What is Genesis? →](genesis/README.md)** - Your workspace's app-building superpower
 - **[Templates & Examples →](genesis/examples-and-templates.md)** - Ready-to-use solutions
+- **[5-Minute Tutorial →](genesis/getting-started.md)** - From idea to working app
+
+### **🏠 Understanding Your Workspace**
+- **Generator Interface** - Prominent input field at the top of every workspace
+- **App Tiles** - Your Teams/Folders/Projects now appear as app tiles below the input
+- **AI Agent Panel** - Persistent left-side assistant that helps build and refine apps
+- **Preview Mode** - Every app gets a live preview tab for instant testing and sharing
+{% endtab %}
+
+{% tab title="Learn the Platform" %}
+### **📚 [Platform Overview →](getting-started/README.md)**
+Understand how your workspace powers unlimited apps:
+- **[Features Overview →](features/README.md)** - Platform capabilities
+- **[AI Agents →](features/ai-features/ai-agents-getting-started.md)** - Your workspace's intelligence
+- **[Smart Automations →](features/ai-features/automation-getting-started.md)** - Business reflexes
 {% endtab %}
 
 {% tab title="Developers" %}
@@ -93,35 +110,37 @@ Latest updates and releases:
 - **Integration Ecosystem**: 100+ native integrations with popular tools
 - **Scalable Infrastructure**: Built to handle teams of any size
 
-## 🌟 What People Actually Build With This
+## 🌟 What People Build with Genesis Apps
 
-### **Side Projects That Don't Die**
-*"Finally, a way to track my 47 ongoing projects without losing my mind."*
-- Personal knowledge bases that actually get used
-- Habit trackers that sync with your calendar
-- Investment portfolios with automated news alerts
-- Learning projects with progress tracking
+### **Customer-Facing Applications**
+*"Built a complete booking system for my yoga studio in 3 minutes."*
+- **Restaurant Feedback Apps** - Customer reviews with instant manager alerts
+- **Appointment Booking Systems** - Online scheduling with payment integration
+- **Support Ticket Portals** - Customer service with automated routing
+- **Event Registration Apps** - Sign-ups with capacity limits and reminders
 
-### **Remote Team Coordination** 
-*"No more 'can you see my screen?' or 'let me send you that link again.'"*
-- Async standup reports that don't require meetings
-- Project handoffs that actually include all the context
-- Client work where everyone knows what's happening
-- Documentation that stays updated (automatically)
+### **Internal Business Tools** 
+*"Created our inventory tracker that automatically reorders supplies."*
+- **Lead Management Systems** - Sales pipeline with follow-up automation
+- **Employee Onboarding Apps** - Streamlined new hire workflows
+- **Expense Reporting Tools** - Receipt uploads with approval processes
+- **Team Dashboard Apps** - KPI monitoring with real-time updates
 
-### **Content & Creator Workflows**
-*"I went from scattered Google Docs to an actual content system."*
-- Video production pipelines with automatic status updates
-- Social media calendars that post themselves
-- Newsletter workflows that track performance
-- Brand asset libraries with AI-powered search
+### **Creative & Content Workflows**
+*"My entire content production system runs on Genesis apps now."*
+- **Content Calendar Apps** - Social media scheduling with auto-posting
+- **Video Production Trackers** - Workflow management with status updates
+- **Brand Asset Libraries** - AI-powered search and organization
+- **Newsletter Management Apps** - Content creation with performance tracking
 
-### **Micro-SaaS & Bootstrapped Businesses**
-*"Built our entire customer onboarding system in an afternoon."*
-- Customer feedback loops with Slack integration
-- Lead qualification systems that route automatically
-- Product roadmaps that sync with user requests
-- Support systems that scale without hiring
+### **Data & Analytics Applications**
+*"I process customer feedback automatically and get insights instantly."*
+- **Survey Collection Apps** - Form responses with smart categorization
+- **Analytics Dashboards** - Business metrics with automated reporting
+- **Inventory Management Apps** - Stock tracking with reorder alerts
+- **Project Progress Trackers** - Timeline management with team notifications
+
+**Every app is built using the generator input field at the top of your workspace and appears as a clickable tile below. Each tile contains a complete application with its own Preview tab, powered by your workspace's living DNA.**
 
 ## 🧬 Your Workspace's Living DNA
 
@@ -143,17 +162,17 @@ The living connections that make everything learn from everything else — your 
 
 ## 🎉 What's New
 
-### **🧬 Genesis: Living DNA Apps**
-Revolutionary AI that awakens your workspace's genetic code to create complete business applications from a single prompt.
+### **🧬 Genesis: One Workspace, Unlimited Apps**
+Revolutionary AI that transforms each subspace into a complete application. Your Home Subspace becomes the foundation for unlimited business applications — each powered by your workspace's living DNA.
 
-### **🤖 Multi-Model AI Agents**
-Deploy specialized digital team members powered by GPT-5, Claude-4, and advanced reasoning models — each trained on your unique business DNA.
+### **🏠 Home Subspace Intelligence**
+Every workspace starts with a Home Subspace containing AI agents, automations, and knowledge that power all your Genesis apps. Each new subspace inherits and extends this intelligence.
 
-### **📱 Mobile DNA Development**
-Build and train your living workspace directly from your mobile device — your DNA evolves wherever you are.
+### **📱 Instant Live Applications**
+Every app you create gets an individual URL immediately — no deployment needed. Share links directly via email, social media, or embed on your website. Apps work in any browser on desktop, tablet, or mobile.
 
-### **⚡ Intelligent DNA Reactions**
-Automations that learn from your patterns and optimize themselves — your business reflexes get faster and smarter over time.
+### **🔗 Connected App Ecosystem**
+Apps built from the same workspace share intelligence and learn from each other. Your customer feedback app can inform your inventory app, which can trigger your marketing automations — all powered by the same living DNA foundation.
 
 [See all updates →](changelog/README.md)
 
