@@ -31,7 +31,7 @@
 * [TaskOS: The AI Engine](taskos/introduction.md)
 * [Project Views](taskos/project-views.md)
 
-## 💻 Developer API
+## 💻 Developers
 
 * [Developer Hub](developers/README.md)
 * [Authentication](start/authentication.md)
