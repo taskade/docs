@@ -1,234 +1,156 @@
 # Taskade Genesis
 
-**Taskade Genesis** is your no-code creation layer — generate intelligent apps from a single prompt. Every Genesis app is backed by structured Projects, Agents, and Automations that work together as a cohesive system. **Genesis is built on top of [TaskOS](../taskos/introduction.md), the same engine developers can access programmatically, so anything you create here can later be extended in code.**
+> **Build professional apps in minutes, not months**  
+> Transform your business ideas into working applications using nothing but plain English.
 
-## What is Genesis?
+## What is Taskade Genesis?
 
-Genesis is Taskade's **AI App Generator** that transforms natural language descriptions into fully functional applications. It's designed for non-technical users who want to create powerful AI-powered tools without writing code.
+Taskade Genesis is an AI-powered app generator that creates complete business applications from a single prompt. Unlike traditional app builders that only create interfaces, Genesis gives you everything you need to run a real business application by intelligently combining Taskade's four core pillars.
 
-### The Magic of One-Prompt Creation
+**Think of it like this:** Instead of hiring developers, learning to code, or struggling with complex app builders, you simply describe what you need in plain English, and Genesis builds it for you — complete with a database, smart features, and connections to your favorite business tools.
 
-Simply describe what you want to build:
+Genesis offers **two powerful creation modes** to suit different needs:
 
-- *"Create a customer feedback portal that analyzes sentiment and routes issues to the right team"*
-- *"Build a content calendar that generates blog ideas and tracks publication status"*
-- *"Make a lead qualification system that scores prospects and schedules follow-ups"*
+### 🏗️ **Project-Based Apps** (Traditional Genesis)
+Create structured workspaces with intelligent data management, AI assistants, and automated workflows.
 
-Genesis understands your intent and generates:
-- **📊 Structured Projects** (your app's data layer)
-- **🤖 Intelligent Agents** (your app's reasoning layer)
-- **⚡ Smart Automations** (your app's action layer)
+- **📊 Smart Data Storage** - Flexible database that grows with your needs
+- **🤖 AI Assistant Built-In** - Learns your business and helps users automatically  
+- **⚡ Connects to Everything** - Integrates with 100+ business tools
+- **📁 File & Document Support** - Upload and organize business documents
+- **🔒 Enterprise Security** - Role-based permissions and data protection
 
-## Genesis vs. Developer API
+### ⚡ **Space Apps** (New React Generation) 
+Generate complete React web applications deployed to live URLs with real-time data integration.
 
-Understanding the difference between Genesis and our Developer API:
+- **🌐 Complete Web Applications** - Full-stack React apps with modern UI
+- **🚀 Live Deployment** - Automatic hosting on Fly.io with global CDN
+- **🔗 Data Integration** - Connects seamlessly to your Taskade projects
+- **🎨 Modern Styling** - Responsive design with Tailwind CSS
+- **⚡ Real-time Updates** - Changes sync instantly across your workspace
 
-| Feature | Taskade Genesis | Developer API |
-|---------|----------------|---------------|
-| **Target Users** | Business users, non-developers | Developers, technical teams |
-| **Creation Method** | Natural language prompts | Code and API calls |
-| **App Generation** | ✅ Full app from single prompt | ❌ Manual assembly required |
-| **Visual Editor** | ✅ Drag-and-drop interface | ❌ Code-based configuration |
-| **Template Library** | ✅ Pre-built app templates | ✅ API-based templates |
-| **Custom Integrations** | ❌ Limited to built-in options | ✅ Unlimited via webhooks/API |
-| **Programmatic Control** | ❌ GUI-based management | ✅ Full programmatic control |
-| **Hosting** | ✅ Automatic Taskade hosting | ✅ Self-hosted or Taskade |
-| **Sharing** | ✅ One-click public sharing | ✅ Custom domain integration |
+## The Genesis Difference
+
+| **Traditional Development** | **Taskade Genesis** |
+|---------------------------|-------------------|
+| ❌ Write technical specifications | ✅ Describe your business needs |
+| ❌ Hire developers and manage teams | ✅ Your idea becomes an app in minutes |
+| ❌ Debug code and fix bugs | ✅ Changes through simple conversations |
+| ❌ Handle servers and security | ✅ Everything managed automatically |
+| ❌ Months of development cycles | ✅ Start getting user feedback today |
+
+## Quick Start
+
+Ready to build your first app? Here's what you need:
+
+- A Taskade account ([Sign up free](https://taskade.com/signup))
+- A clear business problem you want to solve
+- 5-10 minutes of your time
+
+[Understand the Core Pillars →](core-pillars.md) | [Get Started →](getting-started.md)
+
+## What You Can Build
+
+Genesis works for any business challenge you face:
+
+### **Customer-Facing Applications**
+- **Customer Portals** - "Clients can submit support requests and track progress without calling"
+- **Booking Systems** - "Customers book appointments online, payments handled automatically"
+- **Feedback Collection** - "Gather customer reviews and get instant alerts for issues"
+- **Event Registration** - "Handle RSVPs, payments, and send reminders"
+
+### **Business Operations**
+- **Team Dashboards** - "See your business metrics and KPIs in one place"
+- **Inventory Tracking** - "Know when you're running low and reorder automatically"
+- **Project Management** - "Keep your team organized with tasks and deadlines"
+- **Lead Management** - "Capture leads from your website and follow up automatically"
+
+### **Industry-Specific Solutions**
+- **Healthcare Patient Portals** - Appointment scheduling with HIPAA compliance
+- **Restaurant Management** - Order tracking, feedback, and staff scheduling
+- **Real Estate CRM** - Lead tracking, property management, client portals
+- **Education Platforms** - Course management, student tracking, resource sharing
+
+**Real Success Stories:**
+- *"I built a customer feedback system for my restaurant in 3 minutes. Now I get Slack alerts for any rating below 4 stars."*
+- *"Created a booking system for my yoga studio that handles payments and sends calendar invites automatically."*
+- *"Made an inventory tracker that emails my supplier when I'm running low on products."*
+
+[See Examples →](examples-and-templates.md)
 
 ## How Genesis Works
 
-### 1. **Describe Your Vision**
-Tell Genesis what you want to build in plain English. Be specific about:
-- What problem you're solving
-- Who will use the app
-- What actions it should perform
-- What data it should track
+Genesis is powered by the **TAA (Taskade AI Assistant) Unified System** and combines four essential components:
 
-### 2. **AI Generation Process**
-Genesis analyzes your prompt and:
-- Designs the optimal project structure
-- Creates relevant AI agents with appropriate personalities
-- Sets up automations for key workflows
-- Configures forms and public interfaces
-
-### 3. **Instant Deployment**
-Your app is immediately available with:
-- A shareable public URL
-- Team collaboration features
-- Real-time updates and notifications
-- Mobile-responsive design
-
-### 4. **Iterate and Improve**
-Use the visual editor to:
-- Refine agent personalities
-- Adjust automation triggers
-- Customize project views
-- Add team members
-
-## Popular Genesis Templates
-
-### 🎯 **Lead Generation Kit**
-- Lead capture forms
-- AI qualification agents
-- CRM integration automations
-- Sales team notifications
-
-### 🎧 **Customer Support Hub**
-- Ticket intake forms
-- AI categorization agents
-- Routing automations
-- Satisfaction surveys
-
-### 📝 **Content Creation Studio**
-- Content calendar projects
-- Research and writing agents
-- Publishing automations
-- Performance tracking
-
-### 🏢 **Project Management Suite**
-- Task tracking projects
-- Progress monitoring agents
-- Team notification automations
-- Reporting dashboards
-
-## Getting Started with Genesis
-
-### Step 1: Access Genesis
-Visit [taskade.com/create](https://taskade.com/create) and sign in to your account.
-
-### Step 2: Describe Your App
-Use the prompt interface to describe your desired application:
-
-```
-"Create a customer onboarding system that:
-- Collects new customer information via form
-- Assigns onboarding tasks to team members
-- Sends welcome emails and reminders
-- Tracks completion progress
-- Generates completion reports"
+### The Four Pillars of Genesis
+```mermaid
+graph TD
+    A[Your Genesis App] --> B[Projects - Data & Knowledge]
+    A --> C[AI Agents - Intelligence Layer]
+    A --> D[Automation Flows - Action Layer]
+    A --> E[Media Files - Knowledge & Attachments]
+    
+    B -->|Knowledge Source| C
+    B -->|Data Triggers| D
+    C -->|Smart Actions| D
+    D -->|Data Updates| B
+    
+    style A fill:#4a90e2,color:#fff
+    style B fill:#2ecc71,color:#fff
+    style C fill:#e74c3c,color:#fff
+    style D fill:#f39c12,color:#fff
+    style E fill:#9b59b6,color:#fff
 ```
 
-### Step 3: Review & Customize
-Genesis will generate your app structure. Review and customize:
-- Project templates and views
-- Agent personalities and capabilities
-- Automation triggers and actions
-- Forms and public interfaces
+**When you say:** *"I need customers to submit feedback about their dining experience"*
 
-### Step 4: Launch & Share
-Your app is ready! You can:
-- Share the public URL with users
-- Invite team members to collaborate
-- Monitor usage and performance
-- Iterate based on feedback
+**Genesis creates:**
+1. **📊 A Database** - Stores all feedback with ratings, comments, and customer info
+2. **🤖 A Smart Assistant** - Learns from feedback patterns and can respond to customers
+3. **⚡ Automatic Actions** - Sends you alerts for low ratings, emails customers back
+4. **📁 File Storage** - Lets customers upload photos of their food
 
-## Advanced Genesis Features
+**The magic:** You don't need to set up databases, write code, or configure anything. Genesis handles all the technical stuff while you focus on your business.
 
-### **Smart Templates**
-Genesis learns from successful apps and suggests relevant templates based on your industry and use case.
+[Learn more about the Core Pillars →](core-pillars.md)
 
-### **Multi-Agent Workflows**
-Create complex workflows where multiple agents collaborate:
-- Research agent gathers information
-- Writing agent creates content
-- Review agent checks quality
-- Publishing agent handles distribution
+## Space Apps vs Project Apps
 
-### **Dynamic Forms**
-Generate forms that adapt based on user responses:
-- Conditional field visibility
-- Smart validation rules
-- Multi-step workflows
-- Progress indicators
+| Feature | Space Apps | Project Apps |
+|---------|------------|--------------|
+| **Output** | React web applications | Structured workspaces |
+| **URL** | Live preview URLs | Taskade workspace URLs |
+| **Sharing** | Public web links | Team member access |
+| **Customization** | Full visual control | Template-based views |
+| **Data** | Project integration | Native project structure |
+| **Hosting** | Fly.io deployment | Taskade platform |
+| **Use Cases** | Customer-facing apps | Internal workflows |
+| **AI Models** | GPT-5 & Claude-4 | Standard Genesis AI |
 
-### **Real-time Collaboration**
-Built-in collaboration features:
-- Live editing and updates
-- Team member permissions
-- Activity feeds and notifications
-- Version history
+## Getting Started Paths
 
-## When to Use Genesis vs. API
+### For Business Users (No Technical Background)
+1. [Getting Started Guide](getting-started.md) - Your first app in 5 minutes
+2. [Examples & Templates](examples-and-templates.md) - Ready-to-use prompts
+3. [Best Practices](best-practices.md) - Write better prompts, get better results
 
-### Choose **Genesis** when you:
-- Want to create apps quickly without coding
-- Need standard business workflows
-- Prefer visual editing and management
-- Want automatic hosting and sharing
-- Are prototyping or testing ideas
+### For Advanced Users
+1. [Core Pillars](core-pillars.md) - Understand how Genesis components work together
+2. [Advanced Features](advanced-features.md) - TAA system, multi-model AI, complex integrations
+3. [API Documentation](../api/genesis/README.md) - Programmatic access to Genesis
 
-### Choose **Developer API** when you:
-- Need custom integrations with external systems
-- Want programmatic control over app behavior
-- Are building complex, multi-system workflows
-- Need to integrate with existing codebases
-- Require custom domain and branding
+### Need Help?
+1. [Troubleshooting Guide](troubleshooting.md) - Fix common issues
+2. [FAQ](faq.md) - Quick answers to common questions
+3. [Community Support](https://taskade.com/community) - Connect with other users
 
-## Migration Path
+## Help & Support
 
-### From Genesis to API
-If you outgrow Genesis, you can:
-1. Export your app configuration
-2. Use our API to recreate the structure
-3. Add custom integrations and logic
-4. Maintain the same core functionality
-
-### From API to Genesis
-You can also use Genesis for rapid prototyping:
-1. Create a quick prototype with Genesis
-2. Test with users and gather feedback
-3. Rebuild with API for production
-4. Add advanced features and integrations
-
-## Success Stories
-
-### **SaaS Company: Customer Onboarding**
-*"Genesis helped us create a customer onboarding system in 30 minutes that used to take weeks to build. The AI agents handle initial setup while automations keep our team informed."*
-
-### **Marketing Agency: Content Pipeline**
-*"We use Genesis to manage content creation for 20+ clients. Each client gets a custom app with their brand, but we can deploy new ones instantly."*
-
-### **Consulting Firm: Project Management**
-*"Genesis transformed how we manage client projects. The AI agents help with project planning while automations keep everyone updated on progress."*
-
-## Limitations & Considerations
-
-### Current Limitations
-- Limited to Taskade's built-in integrations
-- No custom code or advanced logic
-- Taskade hosting only (no self-hosting)
-- Visual customization constraints
-
-### Future Enhancements
-- Custom integration marketplace
-- Advanced workflow logic
-- White-label hosting options
-- Enhanced visual customization
-
-## Getting Help
-
-### **Learning Resources**
-- [Genesis Tutorial Series](https://help.taskade.com/genesis)
-- [Template Gallery](https://taskade.com/templates)
-- [Video Walkthroughs](https://taskade.com/tutorials)
-
-### **Community Support**
-- [Genesis Community Forum](https://taskade.com/community/genesis)
-- [Template Sharing](https://taskade.com/share)
-- [Success Stories](https://taskade.com/stories)
-
-### **Expert Assistance**
-- [1-on-1 Setup Sessions](https://taskade.com/setup)
-- [Custom Template Creation](https://taskade.com/custom)
-- [Team Training](https://taskade.com/training)
+- **Help Center:** [help.taskade.com](https://help.taskade.com/en/collections/14476419-taskade-genesis)
+- **Video Tutorials:** [youtube.com/taskade](https://youtube.com/taskade)
+- **Email Support:** [support@taskade.com](mailto:support@taskade.com)
+- **Community:** [taskade.com/community](https://taskade.com/community)
 
 ---
 
-> **Ready to create your first app?**  
-> → [Try Genesis now](https://taskade.com/create)
-
-> **Need more control?**  
-> → [Explore our Developer API](../api/README.md)
-
-> **Want to see examples?**  
-> → [Browse the Template Gallery](https://taskade.com/templates) 
+*Ready to transform your business ideas into working applications? [Start building with Genesis →](https://taskade.com)*

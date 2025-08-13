@@ -93,12 +93,17 @@ Whether you're a seasoned developer or just starting, our API and upcoming SDK p
 
 ## Quick Start
 
-Ready to build your first AI-powered application? Here's how to get started:
+Ready to build your first AI-powered application? Choose your path:
 
-### 1. Get Your API Key
-First, you'll need to authenticate with our API:
-- [Get a Personal Access Token](start/personal-tokens.md)
-- [Learn about Authentication](start/authentication.md)
+### 🎯 **No-Code Path: Genesis**
+Build complete applications with natural language - no programming required:
+- **[Start with Genesis →](genesis/getting-started.md)** - Create your first app in 5 minutes
+- **[See Examples →](genesis/examples-and-templates.md)** - Ready-to-use templates for any business
+
+### 🛠️ **Developer Path: API**
+Build with full programmatic control using our APIs:
+- **[Get Your API Key](start/personal-tokens.md)** - Authenticate with our API
+- **[Authentication Guide](start/authentication.md)** - Learn the authentication methods
 
 ### 2. Create Your First Subspace
 A **Subspace** is an application container, similar to a folder. All your app's data, agents, and workflows will live inside it.
@@ -202,11 +207,30 @@ For AI and LLM developers working with Taskade:
 
 ## Community & Support
 
-- **[Help Center](https://help.taskade.com/)** - Comprehensive guides and tutorials
+- **[Help Center](help-center/README.md)** - Comprehensive guides and tutorials right here in the docs
 - **[Community Forum](https://www.taskade.com/feedback/public-api)** - Connect with other developers
-- **[Changelog](https://www.taskade.com/blog/product-updates/)** - Stay updated with new features
+- **[Changelog](changelog/README.md)** - Stay updated with new features and releases  
 - **[AI Kits Gallery](https://taskade.com/kits)** - Browse and install community workflows
 - **[Contributing Guide](contributing.md)** - Join our open-source community
+
+---
+
+## Ready to Start Building?
+
+### 🚀 **For Everyone**: Try Genesis No-Code
+Perfect for business users, founders, and non-technical teams:
+- **[Build Your First App →](genesis/getting-started.md)**
+- **[Browse Templates →](genesis/examples-and-templates.md)**
+
+### 💻 **For Developers**: Dive Into APIs  
+Perfect for technical teams who want full control:
+- **[API Documentation →](api/README.md)**
+- **[Authentication Setup →](start/authentication.md)**
+
+### ❓ **Need Help?**
+- **[Help Center →](help-center/README.md)** - Guides and tutorials
+- **[Community Forum →](https://www.taskade.com/feedback/public-api)** - Connect with other builders
+- **[Live Support →](https://help.taskade.com/)** - Get direct help from our team
 
 ---
 
