@@ -6,7 +6,7 @@
 
 * [Quick Start Guide](getting-started/README.md)
 
-## 🧬 Genesis: No-Code Apps
+## 🧬 Genesis
 
 * [What is Genesis?](genesis/README.md)
 * [Your First App in 5 Minutes](genesis/getting-started.md)
