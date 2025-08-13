@@ -1,5 +1,5 @@
 ---
-description: "Build the next generation of AI-powered applications, from intelligent internal tools to public-facing web apps, on Taskade's agentic platform."
+description: "The productivity platform with living DNA. Your workspace becomes a digital organism where every project, agent, automation, and piece of knowledge connects to form the genetic code of everything you build."
 cover: .gitbook/assets/ss-api3.png
 coverY: 0
 layout:
@@ -18,222 +18,203 @@ layout:
     visible: true
 ---
 
-# The HyperCard of the AI Era
+{% hint style="info" %}
+**New to Taskade?** Start with our [Quick Start Guide](getting-started/README.md) to get productive in 10 minutes, or jump directly to [Genesis](genesis/README.md) to build your first no-code app!
+{% endhint %}
 
-Welcome to the Taskade API, a platform for building the next generation of intelligent applications. We are moving beyond productivity tools to offer something far more powerful: a complete system for generating, hosting, and scaling AI-powered web apps from a single prompt.
+# Welcome to Taskade
 
-Inspired by the revolutionary simplicity of HyperCard, which empowered anyone to build software, Taskade is designed to democratize AI app creation. Our goal is to let you transform ideas into living, intelligent systems—without getting bogged down in complex infrastructure.
+**The productivity platform that actually gets how you work.**
 
-## The App Generator Vision
+Tired of juggling 10 different apps just to get things done? Taskade combines project management, AI assistance, and team collaboration in one place that doesn't suck. Whether you're organizing a side project, managing a remote team, or building the next big thing, Taskade adapts to *your* workflow instead of forcing you into theirs.
 
-At the heart of Taskade is **[TaskOS](taskos/introduction.md)**, our AI App Generator that embodies the HyperCard philosophy: *anyone should be able to create powerful software*. It works backward from your intent, transforming a simple goal—like "create a customer feedback portal" or "build an automated sales tracker"—into a complete, functional application.
+## 🎯 What is Taskade?
 
-Just as HyperCard democratized software creation in the 1980s, TaskOS democratizes AI app creation today. But instead of static cards and scripts, you get living, intelligent systems that think, learn, and act.
+**The productivity platform with living DNA.**
 
-Each generated app is a **Subspace**, a self-contained ecosystem with three core pillars:
+Think of your workspace as a digital organism — every project, agent, automation, and piece of knowledge connects to form the genetic code of everything you build. Unlike static productivity tools, Taskade creates a **living ecosystem** that learns, adapts, and evolves with your business.
 
-1.  **🧠 Knowledge (Memory):** Structured data using **[Taskade Projects](api/projects/README.md)**. This is the memory and context that makes your app smart.
-2.  **🤖 Intelligence (Logic):** **[AI Agents](api/agents/README.md)** that can reason, plan, and execute tasks based on the knowledge they possess.
-3.  **⚡ Action (Execution):** **[Automations](automation/README.md)**, forms, and API integrations that connect your app to the world and get work done.
+Here's what makes your workspace alive:
+- **📊 Intelligent Projects** - Data structures that grow and adapt to your needs
+- **🤖 Learning AI Agents** - Digital team members trained on your business knowledge
+- **⚡ Reactive Automations** - Business reflexes that respond instantly to events
+- **🧬 Connected Intelligence** - Everything learns from everything else
 
-### The HyperCard Parallel
+**Real Talk:** Most productivity apps treat your data like it's dead. Taskade makes it alive.
 
-| HyperCard (1987) | TaskOS (2025) |
-|------------------|---------------|
-| **Cards** → Static information containers | **Projects** → Dynamic, real-time data structures |
-| **Stacks** → Collections of related cards | **Subspaces** → Complete AI-powered applications |
-| **HyperTalk** → Simple scripting language | **Natural Language** → Describe what you want |
-| **Buttons & Fields** → User interface elements | **Agents & Automations** → Intelligent interactions |
-| **Linking** → Navigate between cards | **Integrations** → Connect to any external service |
+## 🚀 Quick Start
 
-```mermaid
-graph TB
-    subgraph "The HyperCard Vision (1987)"
-        A1[Card: Customer Info]
-        A2[Card: Order History]
-        A3[Button: Calculate Total]
-        A4[Script: Update Database]
-        A1 --> A2
-        A2 --> A3
-        A3 --> A4
-    end
-    
-    subgraph "TaskOS Reality (2024)"
-        B1[Project: Customer Database]
-        B2[Agent: Sales Assistant]
-        B3[Automation: Process Orders]
-        B4[Integration: Update CRM]
-        B1 --> B2
-        B2 --> B3
-        B3 --> B4
-    end
-    
-    A1 -.-> B1
-    A3 -.-> B2
-    A4 -.-> B3
-```
+{% tabs %}
+{% tab title="Business Users" %}
+### **📚 [Getting Started →](getting-started/README.md)**
+Core features and everything you need to be productive:
+- **[Features Overview →](features/README.md)** - Platform capabilities
+- **[AI Agents →](features/ai-features/ai-agents-getting-started.md)** - AI assistants
 
-### AI Kits: Ready-to-Deploy Workflows
+### **🎯 [Genesis: No-Code Apps →](genesis/README.md)**
+Build complete applications without coding:
+- **[Create Your First App →](genesis/getting-started.md)** - Step-by-step guide
+- **[Templates & Examples →](genesis/examples-and-templates.md)** - Ready-to-use solutions
+{% endtab %}
 
-Today, you can experience this vision through **[Taskade AI Kits](https://taskade.com/kits)**—pre-built bundles of projects, agents, automations, and templates that anyone can install and use in seconds.
+{% tab title="Developers" %}
+### **💻 [Developer Hub →](developers/README.md)**
+APIs and technical integrations for building on Taskade:
+- **[API Documentation →](api/README.md)** - Complete technical reference
+- **[Automations →](automation/README.md)** - Connect to 100+ services
+- **[Authentication →](start/authentication.md)** - API keys and OAuth setup
+{% endtab %}
 
-Popular kits include:
-- **AI Lead Generation Kit**: Complete lead management with capture forms and qualification agents
-- **Customer Support Kit**: Automated ticket processing with AI triage and routing
-- **Content Marketing Kit**: Research, generation, and publishing workflows
-- **Real Estate News Kit**: Automated industry news monitoring and summarization
+{% tab title="Updates" %}
+### **📰 [Changelog →](changelog/README.md)**
+Latest updates and releases:
+- **[2025 Releases →](changelog/2025/README.md)** - Genesis, AI agents, mobile development
+- **[What's New →](changelog/README.md#recent-highlights)** - Latest breakthrough features
+{% endtab %}
+{% endtabs %}
 
-## What You Can Build
+## ✨ Core Features
 
-Whether you're a seasoned developer or just starting, our API and upcoming SDK provide the building blocks to create:
+### **Smart Project Management**
+- **Flexible Data Structures**: Projects that adapt to any workflow
+- **8 Different Views**: List, Board, Calendar, Table, Mind Map, Org Chart, Gantt, Action
+- **Real-time Collaboration**: See changes instantly across your team
+- **Custom Fields & Templates**: Tailor projects to your specific needs
 
-*   **Internal Tools:** Build custom CRMs, project dashboards, and internal knowledge bases that are powered by agents who understand your team's data.
-*   **Public-Facing Apps:** Launch branded landing pages, customer support portals, lead capture forms, and booking systems with AI assistants built-in.
-*   **Agentic Workflows:** Design complex automations where AI agents collaborate to process information, make decisions, and interact with external services.
+### **AI-Powered Intelligence** 
+- **Custom AI Agents**: Deploy specialized assistants for any role
+- **Automated Workflows**: Connect apps and automate repetitive tasks
+- **Smart Content Generation**: AI that understands your business context
+- **Intelligent Data Processing**: Automatic categorization and insights
 
-## Quick Start
+### **Enterprise-Ready Platform**
+- **Security & Compliance**: SOC 2, GDPR, and enterprise-grade security
+- **Team Management**: Role-based permissions and access control
+- **Integration Ecosystem**: 100+ native integrations with popular tools
+- **Scalable Infrastructure**: Built to handle teams of any size
 
-Ready to build your first AI-powered application? Choose your path:
+## 🌟 What People Actually Build With This
 
-### 🎯 **No-Code Path: Genesis**
-Build complete applications with natural language - no programming required:
-- **[Start with Genesis →](genesis/README.md)** - Create your first app in 5 minutes
-- **[See Examples →](help-center/ai-features/genesis-examples.md)** - Ready-to-use templates for any business
-- **[Genesis Quick Start Guide](help-center/ai-features/genesis-getting-started.md)** - Step-by-step beginner tutorial
+### **Side Projects That Don't Die**
+*"Finally, a way to track my 47 ongoing projects without losing my mind."*
+- Personal knowledge bases that actually get used
+- Habit trackers that sync with your calendar
+- Investment portfolios with automated news alerts
+- Learning projects with progress tracking
 
-### 🛠️ **Developer Path: API**
-Build with full programmatic control using our APIs:
-- **[Get Your API Key](start/personal-tokens.md)** - Authenticate with our API
-- **[Authentication Guide](start/authentication.md)** - Learn the authentication methods
-- **[Complete Integration Reference](automation/comprehensive-integrations.md)** - All available triggers and actions
+### **Remote Team Coordination** 
+*"No more 'can you see my screen?' or 'let me send you that link again.'"*
+- Async standup reports that don't require meetings
+- Project handoffs that actually include all the context
+- Client work where everyone knows what's happening
+- Documentation that stays updated (automatically)
 
-### 2. Create Your First Subspace
-A **Subspace** is an application container, similar to a folder. All your app's data, agents, and workflows will live inside it.
-```bash
-# Create a new app container
-curl -X POST https://www.taskade.com/api/v1/folders \
-  -H "Authorization: Bearer YOUR_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"name": "My First AI App", "color": "#4a90e2"}'
-```
+### **Content & Creator Workflows**
+*"I went from scattered Google Docs to an actual content system."*
+- Video production pipelines with automatic status updates
+- Social media calendars that post themselves
+- Newsletter workflows that track performance
+- Brand asset libraries with AI-powered search
 
-### 3. Build the Three Pillars
+### **Micro-SaaS & Bootstrapped Businesses**
+*"Built our entire customer onboarding system in an afternoon."*
+- Customer feedback loops with Slack integration
+- Lead qualification systems that route automatically
+- Product roadmaps that sync with user requests
+- Support systems that scale without hiring
 
-**Knowledge Layer:** Create a project to store your data
-```bash
-# Create a project (your app's memory)
-curl -X POST https://www.taskade.com/api/v1/projects \
-  -H "Authorization: Bearer YOUR_TOKEN" \
-  -d '{"name": "Customer Feedback", "folderId": "YOUR_SUBSPACE_ID"}'
-```
+## 🧬 Your Workspace's Living DNA
 
-**Intelligence Layer:** Deploy an AI agent
-```bash
-# Generate an agent for your app
-curl -X POST https://www.taskade.com/api/v1/folders/YOUR_SUBSPACE_ID/agents/generate \
-  -H "Authorization: Bearer YOUR_TOKEN" \
-  -d '{"prompt": "Create a customer support agent that can analyze feedback and suggest improvements"}'
-```
+Taskade isn't built on static layers — it's built on **living DNA strands** that interweave to create intelligent, adaptive experiences:
 
-**Action Layer:** Set up automations through the Taskade interface. You can also use our [upcoming Automation API](automation/README.md#api-access-coming-soon) for programmatic control.
+### **🧠 Intelligence DNA**
+AI agents that learn from your workspace and become specialized digital team members with unique knowledge and capabilities.
 
-### 4. Deploy Your App
-Your Subspace is now a living application! Share it with your team or make it public.
+### **⚡ Action DNA**
+Automations that act as your business's nervous system, detecting events and coordinating responses across 100+ integrated tools.
 
-## Core Concepts
+### **📚 Knowledge DNA**
+Projects and data that form your organizational memory, storing and surfacing information in flexible, interconnected structures.
 
-Based on Taskade's execution layer for AI collaboration:
+### **🔄 Evolution DNA**
+The living connections that make everything learn from everything else — your workspace gets smarter with every interaction.
 
-- **Subspaces (Apps)**: Self-contained applications, like HyperCard stacks, but powered by AI
-- **Projects (Knowledge)**: Real-time, tree-structured documents that serve as shared memory and execution hubs
-- **Agents (Intelligence)**: Autonomous teammates that can think, learn, and act. Agents read from project context, run tools, and trigger workflows. Learn more in our [Automations Deep Dive](automation/README.md).
-- **Automations (Actions)**: Logic-based workflows with triggers (e.g. form submitted, time-based) and actions (e.g. create task, ask AI).
-- **Generator (TaskOS)**: One prompt creates everything you need: Project + Agent + Automation, all pre-wired to execute. Get started with our [Genesis No-Code Builder](genesis/README.md).
-- **AI Kits**: Bundled agent workflows designed for sales, marketing, support, HR, and more.
-- **Views**: List, Board, Table, Calendar, Mind Map, Org Chart, Gantt. Each view is powered by the same underlying tree structure.
+[Explore the living architecture →](vision/architecture.md)
 
-### The Generator Workflow
+## 🎉 What's New
 
-```mermaid
-graph LR
-    A[💡 Idea] --> B[📊 Project]
-    B --> C[🤖 Agent]
-    C --> D[⚡ Automation]
-    D --> E[🚀 Execution]
-    
-    A1["I need a customer<br/>feedback system"] --> B1["Customer Feedback<br/>Project Structure"]
-    B1 --> C1["Sentiment Analysis<br/>Agent"]
-    C1 --> D1["Auto-Route to<br/>Support Team"]
-    D1 --> E1["Live Application<br/>Ready to Use"]
-```
+### **🧬 Genesis: Living DNA Apps**
+Revolutionary AI that awakens your workspace's genetic code to create complete business applications from a single prompt.
 
-## The Future: Open & Interoperable
+### **🤖 Multi-Model AI Agents**
+Deploy specialized digital team members powered by GPT-5, Claude-4, and advanced reasoning models — each trained on your unique business DNA.
 
-We're building toward a future where entire AI applications can be packaged, shared, and version-controlled as `.tsk` files (Taskade System Kits). This will enable:
+### **📱 Mobile DNA Development**
+Build and train your living workspace directly from your mobile device — your DNA evolves wherever you are.
 
-- **Version Control:** Store entire app architectures in Git
-- **Sharing & Reusability:** Export and import complete systems
-- **Interoperability:** Convert systems from other platforms
-- **Headless Management:** Programmatic deployment via CLI/API
+### **⚡ Intelligent DNA Reactions**
+Automations that learn from your patterns and optimize themselves — your business reflexes get faster and smarter over time.
 
-Today's [AI Kits](https://taskade.com/kits) are the foundation for this future standard.
+[See all updates →](changelog/README.md)
 
-## Architecture Overview
+## 💡 Ready to Transform Your Workflow?
 
-Taskade's platform is built on a robust, real-time architecture that includes:
+{% hint style="success" %}
+**Ready to get started?** [Create your free account](https://taskade.com/signup) and build your first Genesis app in minutes!
+{% endhint %}
 
-- **Real-time Collaboration:** Operational transformation for conflict-free editing
-- **Flexible Views:** 8 different project perspectives (List, Board, Calendar, Table, Mind Map, Org Chart, Action Sheet, Gantt)
-- **Enterprise Security:** Role-based permissions and audit trails
-- **Hybrid Search:** Keyword + semantic search with AI embeddings
-- **100+ Integrations:** Connect with your existing tools and workflows
+<div data-full-width="true">
 
-## Developer Resources
+<figure><img src=".gitbook/assets/ss-api3.png" alt="Taskade Platform Overview"><figcaption><p>The productivity platform with living DNA - where your workspace becomes a digital organism</p></figcaption></figure>
 
-- **[📚 Vision & Architecture](vision/README.md)** - Understand the big picture
-- **[🤖 TaskOS Introduction](taskos/introduction.md)** - Learn about the AI App Generator
-- **[⚙️ Core API Reference](api/workspaces/README.md)** - Build with our building blocks
-- **[🔗 OpenAPI Specification](https://www.taskade.com/api/documentation/static/index.html#/)** - Complete API documentation
-- **[🧰 AI Kits Gallery](https://taskade.com/kits)** - Explore ready-to-deploy workflows
-- **[⚡ Automations Deep Dive](automation/README.md)** - Explore the automation engine
-- **[💡 Genesis No-Code Builder](genesis/README.md)** - Create apps with natural language
+</div>
 
-## LLM Integration
+### **🚀 Start Building Today**
 
-For AI and LLM developers working with Taskade:
+{% tabs %}
+{% tab title="Free Account" %}
+**[Create Your Free Account →](https://taskade.com/signup)**
 
-- **Structured Output**: Use Markdown with lists, checkboxes, and headings
-- **Project Views**: Recommend appropriate views based on intent (Gantt for timelines, Board for workflows)
-- **Knowledge Enhancement**: Suggest PDFs, YouTube videos, or web links to improve agent performance
-- **Agent-Native**: Think in tasks, not prompts. Workflows follow: Idea → Project → Agent → Automation → Execution
+Get started with Taskade's living DNA platform:
+- Unlimited projects and AI agents
+- 100+ automation integrations  
+- Real-time collaboration
+- Mobile and desktop apps
+{% endtab %}
 
-## Community & Support
+{% tab title="Templates" %}
+**[Explore Templates →](https://taskade.com/templates)**
 
-- **[Help Center](help-center/README.md)** - Comprehensive guides and tutorials right here in the docs
-- **[Community Forum](https://www.taskade.com/feedback/public-api)** - Connect with other developers
-- **[Changelog](changelog/README.md)** - Stay updated with new features and releases  
-- **[AI Kits Gallery](https://taskade.com/kits)** - Browse and install community workflows
-- **[Contributing Guide](contributing.md)** - Join our open-source community
+Jump-start your productivity:
+- Project management templates
+- AI agent configurations
+- Automation workflows
+- Industry-specific solutions
+{% endtab %}
+
+{% tab title="AI Kits" %}
+**[Browse AI Kits →](https://taskade.com/kits)**
+
+Ready-to-use AI solutions:
+- Business automation kits
+- Creative workflow agents
+- Data analysis templates
+- Custom AI assistants
+{% endtab %}
+{% endtabs %}
+
+### **📚 Learn & Connect**
+
+| Resource | Description |
+| --- | --- |
+| **[Help Center](https://help.taskade.com)** | Comprehensive guides and tutorials |
+| **[Community Forum](https://www.taskade.com/feedback)** | Connect with other users and share tips |
+| **[Video Tutorials](https://youtube.com/taskade)** | Step-by-step video guides |
+| **[API Documentation](developers/README.md)** | Technical reference for developers |
+| **[Status Page](https://status.taskade.com)** | Real-time platform status |
 
 ---
 
-## Ready to Start Building?
-
-### 🚀 **For Everyone**: Try Genesis No-Code
-Perfect for business users, founders, and non-technical teams:
-- **[Build Your First App →](genesis/getting-started.md)**
-- **[Browse Templates →](genesis/examples-and-templates.md)**
-
-### 💻 **For Developers**: Dive Into APIs  
-Perfect for technical teams who want full control:
-- **[API Documentation →](api/README.md)**
-- **[Authentication Setup →](start/authentication.md)**
-
-### ❓ **Need Help?**
-- **[Help Center →](help-center/README.md)** - Guides and tutorials
-- **[Community Forum →](https://www.taskade.com/feedback/public-api)** - Connect with other builders
-- **[Live Support →](https://help.taskade.com/)** - Get direct help from our team
-
----
-
-We're thrilled to see what you will build. Let's invent the future together. 🚀
+{% hint style="info" %}
+**Questions?** Join our [community forum](https://www.taskade.com/feedback) or check out our [comprehensive help center](https://help.taskade.com) for detailed guides and tutorials.
+{% endhint %}
