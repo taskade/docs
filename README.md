@@ -19,7 +19,7 @@ layout:
 ---
 
 {% hint style="success" %}
-**New to Taskade?** Your workspace comes with a default **Home Subspace** where you can instantly build apps with [Genesis](genesis/README.md) or start with our [Quick Start Guide](getting-started/README.md). Each subspace becomes a complete app powered by your workspace's living DNA!
+**New to Taskade?** Your workspace comes with a default **Home Subspace** where you can instantly build apps with [Genesis](genesis/README.md) or start with our [Quick Start Guide](getting-started/README.md). Each subspace becomes a complete app powered by your workspace's living DNA! **[GITBOOK SYNC TEST - Aug 13 2025 8:10am]**
 {% endhint %}
 
 # Welcome to Taskade
