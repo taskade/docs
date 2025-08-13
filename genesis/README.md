@@ -1,5 +1,10 @@
 # Introducing Taskade Genesis: Build Business Apps in Minutes
 
+> Taskade Genesis
+> One Prompt. One App.
+> Imagine it. Run it live.
+> Powered by your Workspace — the backend + brain of your app.
+
 **Transform your business ideas into working applications using nothing but plain English - no coding required.**
 
 ---

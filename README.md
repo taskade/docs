@@ -20,6 +20,8 @@ layout:
 
 # Welcome to Taskade
 
+> Taskade Genesis — One Prompt. One App. Imagine it. Run it live. Powered by your Workspace — the backend + brain of your app.
+
 **The productivity platform that actually gets how you work.**
 
 Tired of juggling 10 different apps just to get things done? Taskade combines project management, AI assistance, and team collaboration in one place that doesn't suck. Whether you're organizing a side project, managing a remote team, or building the next big thing, Taskade adapts to *your* workflow instead of forcing you into theirs.

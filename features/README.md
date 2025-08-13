@@ -43,6 +43,16 @@ Deploy specialized AI assistants for any role:
 
 [Learn more about AI Agents →](../ai-features/ai-agents-getting-started.md)
 
+### Core Pillars (Workspace = Backend + Brain)
+- Agents: Custom AI assistants you can configure and train  
+  - Reference: [Custom AI Agents](https://help.taskade.com/en/articles/8958457-custom-ai-agents)
+- Knowledge/Memory: Train agents with your documents, links, media  
+  - Reference: [Agent Knowledge & Memory](https://help.taskade.com/en/articles/9495190-agent-knowledge-memory#h_a7aa762d50)
+- Tools & Commands: Extend agents with actions and plugins  
+  - Reference: [Tools for AI Agents](https://help.taskade.com/en/articles/9314171-tools-for-ai-agents)
+- Automations: Triggers and actions across 100+ services  
+  - Reference: [Getting Started with Automation](https://help.taskade.com/en/articles/8958467-getting-started-with-automation)
+
 ## ⚡ **Automation That Just Works**
 
 ### **Connect Everything**
