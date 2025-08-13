@@ -93,12 +93,19 @@ Whether you're a seasoned developer or just starting, our API and upcoming SDK p
 
 ## Quick Start
 
-Ready to build your first AI-powered application? Here's how to get started:
+Ready to build your first AI-powered application? Choose your path:
 
-### 1. Get Your API Key
-First, you'll need to authenticate with our API:
-- [Get a Personal Access Token](start/personal-tokens.md)
-- [Learn about Authentication](start/authentication.md)
+### 🎯 **No-Code Path: Genesis**
+Build complete applications with natural language - no programming required:
+- **[Start with Genesis →](genesis/README.md)** - Create your first app in 5 minutes
+- **[See Examples →](help-center/ai-features/genesis-examples.md)** - Ready-to-use templates for any business
+- **[Genesis Quick Start Guide](help-center/ai-features/genesis-getting-started.md)** - Step-by-step beginner tutorial
+
+### 🛠️ **Developer Path: API**
+Build with full programmatic control using our APIs:
+- **[Get Your API Key](start/personal-tokens.md)** - Authenticate with our API
+- **[Authentication Guide](start/authentication.md)** - Learn the authentication methods
+- **[Complete Integration Reference](automation/comprehensive-integrations.md)** - All available triggers and actions
 
 ### 2. Create Your First Subspace
 A **Subspace** is an application container, similar to a folder. All your app's data, agents, and workflows will live inside it.

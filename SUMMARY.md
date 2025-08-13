@@ -109,7 +109,34 @@
 
 * [OpenAPI Specification](https://www.taskade.com/api/documentation/static/index.html#/)
 
-## 🤝 Community & Support
+## 📚 Help & Guides
+
+* [Help Center](help-center/README.md)
+* [Getting Started](help-center/getting-started/README.md)
+* [Features](help-center/features/README.md)
+* [AI Features](help-center/ai-features/README.md)
+  * [AI Agents Getting Started](help-center/ai-features/ai-agents-getting-started.md)
+  * [Automation Getting Started](help-center/ai-features/automation-getting-started.md)
+  * [Genesis Quick Start](help-center/ai-features/genesis-getting-started.md)
+  * [Genesis Examples](help-center/ai-features/genesis-examples.md)
+  * [Genesis Prompt Library](help-center/ai-features/genesis-prompt-library.md)
+* [Integrations](help-center/integrations/README.md)
+* [Account Management](help-center/account-management/README.md)
+* [Troubleshooting](help-center/troubleshooting/README.md)
+
+## 🏗️ Architecture
+
+* [Platform Vision](vision/README.md)
+* [Core Architecture](vision/architecture.md)
+* [Specs & Interoperability](vision/specs-and-interoperability.md)
+
+## 📰 Updates
+
+* [Latest Changes](changelog/README.md)
+* [2025 Releases](changelog/2025/README.md)
+* [2024 Archive](changelog/2024/README.md)
+
+## 🤝 Community
 
 * [Contributing](contributing.md)
 

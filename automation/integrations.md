@@ -38,7 +38,7 @@ Taskade connects to **100+ tools and services** across communication, productivi
 | **HubSpot** | Contact created, deal updated | Create contact, update deal, send email | OAuth 2.0 / API Key |
 | **Salesforce** | Lead created, opportunity updated | Create lead, update opportunity, assign | OAuth 2.0 |
 | **Pipedrive** | Deal created, activity added | Create deal, add activity, update stage | OAuth 2.0 / API Key |
-| **Zapier** | Webhook received | Trigger Zap, send data | Webhook URL |
+| **Custom Webhooks** | Webhook received | Send HTTP request, trigger workflow | API Key / Bearer Token |
 
 ### 📧 Marketing & Sales
 
@@ -182,4 +182,5 @@ Enterprise customers get priority support for custom integrations.
 > **Want to contribute an integration?**  
 > → [Submit a request](https://taskade.com/community) to our community
 
-→ **Next: [Browse Actions & Triggers](./actions.md)** 
+→ **Next: [Browse Actions & Triggers](./actions.md)**  
+→ **Complete Reference: [Comprehensive Automation Integrations](./comprehensive-integrations.md)** 

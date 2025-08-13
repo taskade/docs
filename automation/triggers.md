@@ -102,7 +102,7 @@ Triggers are events that start automations. They monitor for specific conditions
 | Trigger | Description | Configuration | Example Use Case |
 |---------|-------------|---------------|------------------|
 | `webhook.custom` | Custom webhook endpoint | `url`, `method`, `auth` | External integrations |
-| `webhook.zapier` | Zapier webhook | `zapUrl`, `filters` | Zapier automations |
+| `webhook.custom` | Custom webhook endpoint | `url`, `method`, `auth` | External integrations |
 | `webhook.ifttt` | IFTTT webhook | `iftttKey`, `event` | IFTTT triggers |
 
 ### API Triggers
