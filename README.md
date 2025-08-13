@@ -36,30 +36,25 @@ Here's what you get:
 
 **Real Talk:** Most productivity apps are built by people who've never actually used them daily. Taskade is different.
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
-Choose your path based on what you want to accomplish:
+### **📚 [Getting Started →](getting-started/README.md)**
+Core features and everything you need to be productive:
+- **[Features Overview →](features/README.md)** - Platform capabilities
+- **[AI Agents →](features/ai-features/ai-agents-getting-started.md)** - AI assistants
 
-### **For Teams & Business Users**
+### **🎯 [Genesis: No-Code Apps →](genesis/README.md)**
+Build complete applications without coding:
+- **[Create Your First App →](genesis/getting-started.md)** - Step-by-step guide
+- **[Templates & Examples →](genesis/examples-and-templates.md)** - Ready-to-use solutions
 
-#### 🎯 **Genesis: No-Code App Builder**
-Create complete business applications just by describing what you need:
-- **[Build Your First App →](genesis/README.md)** - Transform ideas into working apps in minutes
-- **[Quick Start Guide →](genesis/getting-started.md)** - Step-by-step tutorial  
-- **[Templates & Examples →](genesis/examples-and-templates.md)** - Ready-to-use business solutions
+### **💻 [Developers →](developers/README.md)**
+APIs and technical integrations:
+- **[API Documentation →](api/README.md)** - Complete technical reference
+- **[Automations →](automation/README.md)** - Connect to 100+ services
 
-#### 🤖 **AI Features** 
-Supercharge your productivity with intelligent automation:
-- **[AI Agents Getting Started →](features/ai-features/ai-agents-getting-started.md)** - Create your first AI assistant
-- **[Automation Basics →](features/ai-features/automation-getting-started.md)** - Put routine work on autopilot
-
-### **For Developers & Technical Teams**
-
-#### 🛠️ **Developer Documentation**
-Build custom integrations and applications with our APIs:
-- **[Developer Quickstart →](developers/README.md)** - API setup and authentication
-- **[Core API Reference →](developers/api/README.md)** - Complete technical documentation
-- **[Automations & Integrations →](developers/automations/README.md)** - Connect to 100+ external services
+### **📰 [Changelog →](changelog/README.md)**
+Latest updates and releases
 
 ## ✨ Core Features
 

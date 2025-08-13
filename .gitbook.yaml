@@ -6,11 +6,9 @@ structure:
 
 redirects:
   docs/updates: changelog
-  docs/help-and-guides: features  
+  docs/help-and-guides: /  
   docs/developer-api: developers
   docs/genesis-no-code-apps: genesis
-  help-center/ai-features: features/ai-features
-  help-center/features: features
 
 integrations:
   googleAnalytics:
