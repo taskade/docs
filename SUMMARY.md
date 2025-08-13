@@ -4,6 +4,7 @@
 
 ## 🚀 Getting Started
 
+* [Quick Start Guide](getting-started/README.md)
 * [Authentication](start/authentication.md)
 * [Personal Tokens](start/personal-tokens.md)
 
@@ -18,17 +19,34 @@
 * [Troubleshooting](genesis/troubleshooting.md)
 * [FAQ](genesis/faq.md)
 
-## 🧰 AI Kits: Ready-to-Use
+## 🤖 AI Features
 
-* [Explore AI Kits Gallery](https://taskade.com/kits)
-* [AI Kits Documentation](https://help.taskade.com/en/articles/10378721-taskade-ai-kits)
+* [AI Features Overview](help-center/ai-features/README.md)
+* [AI Agents Getting Started](help-center/ai-features/ai-agents-getting-started.md)
+* [Automation Getting Started](help-center/ai-features/automation-getting-started.md)
+* [Genesis Quick Start](help-center/ai-features/genesis-getting-started.md)
+* [Genesis Examples](help-center/ai-features/genesis-examples.md)
+* [Genesis Prompt Library](help-center/ai-features/genesis-prompt-library.md)
 
-## 🤖 TaskOS: The AI Engine
+## 📊 Core Platform
 
-* [Introduction](taskos/introduction.md)
+* [Features Overview](features/README.md)
+* [TaskOS Engine](taskos/introduction.md)
 * [Project Views](taskos/project-views.md)
 
-## 🔧 Developer API
+## 🏗️ Platform Vision
+
+* [Platform Vision](vision/README.md)
+* [Core Architecture](vision/architecture.md)
+* [Specs & Interoperability](vision/specs-and-interoperability.md)
+
+---
+
+## 💻 Developer Documentation
+
+* [Developer Hub](developers/README.md)
+
+### Core API Reference
 
 * [Workspaces](api/workspaces/README.md)
   * [Get Workspaces](api/workspaces/get-workspaces.md)
@@ -96,40 +114,35 @@
 * [Genesis API](api/genesis/README.md)
 * [Automations API](api/automations/README.md)
 
-## ⚡ Automations
+### Automation Development
 
-* [Overview](automation/README.md)
-* [Integrations](automation/integrations.md)
-* [Actions](automation/actions.md)
-* [Triggers](automation/triggers.md)
-* [Recipes](automation/recipes.md)
+* [Automations Overview](automation/README.md)
+* [Integrations Guide](automation/integrations.md)
+* [Complete Integration Reference](automation/comprehensive-integrations.md)
+* [Actions Reference](automation/actions.md)
+* [Triggers Reference](automation/triggers.md)
+* [Automation Recipes](automation/recipes.md)
 
-## 📚 Help & Guides
+---
+
+## 📚 Help & User Guides
 
 * [Help Center](help-center/README.md)
 * [Getting Started](help-center/getting-started/README.md)
 * [Features](help-center/features/README.md)
-* [AI Features](help-center/ai-features/README.md)
-  * [AI Agents Getting Started](help-center/ai-features/ai-agents-getting-started.md)
-  * [Automation Getting Started](help-center/ai-features/automation-getting-started.md)
-  * [Genesis Quick Start](help-center/ai-features/genesis-getting-started.md)
-  * [Genesis Examples](help-center/ai-features/genesis-examples.md)
-  * [Genesis Prompt Library](help-center/ai-features/genesis-prompt-library.md)
 * [Integrations](help-center/integrations/README.md)
 * [Account Management](help-center/account-management/README.md)
 * [Troubleshooting](help-center/troubleshooting/README.md)
 
-## 🏗️ Architecture
+---
 
-* [Platform Vision](vision/README.md)
-* [Core Architecture](vision/architecture.md)
-* [Specs & Interoperability](vision/specs-and-interoperability.md)
+## 📰 Changelog
 
-## 📰 Updates
-
-* [Latest Changes](changelog/README.md)
+* [Latest Updates](changelog/README.md)
 * [2025 Releases](changelog/2025/README.md)
 * [2024 Archive](changelog/2024/README.md)
+
+---
 
 ## 🤝 Community
 

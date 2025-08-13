@@ -1,6 +1,8 @@
 # Quick Start Guide
 
-Welcome to Taskade! Get up and running in minutes with this step-by-step guide to creating your first project, setting up your team, and exploring our AI-powered features.
+**Get productive in 10 minutes, not 10 hours.**
+
+Skip the usual "productivity theater" and actually start getting stuff done. This guide gets you from zero to "wow, this actually works" as fast as possible. No fluff, no lengthy tutorials about features you'll never use.
 
 ## 🚀 **Create Your Account** (1 minute)
 
@@ -82,11 +84,11 @@ Switch between views to see your project from different perspectives:
 4. Connect your Slack workspace (if you use Slack)
 5. Test the automation by completing a task
 
-### **Popular Automation Ideas**
-- **Daily Standups**: Automatically create daily check-in tasks
-- **Deadline Reminders**: Send notifications before due dates
-- **Status Updates**: Post project progress to Slack/email
-- **Lead Management**: Route new form submissions to team members
+### **Automation Ideas That Actually Matter**
+- **"Did I finish my goals today?"**: Auto-generate a daily reflection with your completed tasks
+- **"Stop forgetting important stuff"**: Send yourself reminders before deadlines (not after)
+- **"Keep the team in the loop"**: Auto-post weekly progress summaries to Slack
+- **"Never lose a good idea again"**: Save interesting links/articles to a research project automatically
 
 ## 🎯 **Customize Your Experience** (3 minutes)
 
