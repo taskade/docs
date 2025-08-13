@@ -1,9 +1,8 @@
-# Introducing Taskade Genesis: Build Business Apps in Minutes
+# Taskade Genesis
 
-> Taskade Genesis
-> One Prompt. One App.
-> Imagine it. Run it live.
-> Powered by your Workspace — the backend + brain of your app.
+**One Prompt. One App.  
+Imagine it. Run it live.  
+Powered by your Workspace — the living DNA behind your app.**
 
 **Transform your business ideas into working applications using nothing but plain English - no coding required.**
 
@@ -11,9 +10,11 @@
 
 ## What is Taskade Genesis?
 
-Imagine having a personal app developer who works instantly and understands your business perfectly. That's Taskade Genesis.
+**Yes — the DNA analogy works perfectly for Taskade Genesis.**
 
-Genesis is an AI-powered app builder that creates complete business applications from a single description. Simply describe what you need in plain English (like "I need customers to book appointments online"), and Genesis builds a fully functional app for you in minutes.
+Each Genesis app is unique, alive, and powered by a structured "genetic" code from your Taskade Workspace — the agents, automations, projects, and databases that form its core. Just as DNA encodes the blueprint of life, your workspace encodes the blueprint of your app — a living backend and brain that grows, adapts, and evolves with every idea you bring to life.
+
+Genesis is an AI-powered app builder that creates complete business applications from a single description. Simply describe what you need in plain English (like "I need customers to book appointments online"), and Genesis builds a fully functional app for you in minutes — powered by your workspace's living DNA.
 
 **Unlike other app builders that only create forms or interfaces, Genesis gives you everything you need to run a real business application:**
 
@@ -104,33 +105,35 @@ Genesis works for virtually any business process:
 
 ---
 
-## How Genesis Works: The Magic Behind the Scenes
+## How Genesis Works: Your Workspace as Living DNA
 
-When you describe your app to Genesis, it automatically creates four essential components that work together seamlessly:
+When you describe your app to Genesis, it doesn't build from scratch — it awakens the living DNA already in your workspace. Your agents, automations, projects, and knowledge become the genetic code that powers your unique application.
 
-### **1. Smart Database (Projects)**
-- Stores all your business data automatically
-- Creates custom fields for your specific needs
-- Handles customer info, orders, feedback, inventory - whatever you need
-- **Example:** Customer feedback stored with ratings, comments, photos, and follow-up status
+Genesis automatically combines four essential DNA components that work together seamlessly:
 
-### **2. AI Assistant (Agents)**  
-- Learns your business from uploaded documents and data patterns
-- Answers customer questions automatically
-- Makes smart decisions based on your business rules
-- **Example:** Booking assistant that knows your services, availability, and policies
+### **1. Knowledge DNA (Projects & Media)**
+- Your business data and intelligence stored in flexible, living structures
+- Creates custom fields and relationships that evolve with your needs
+- Trains AI assistants with your documents, policies, and business knowledge
+- **Example:** Customer feedback with ratings, comments, photos — all connected to your menu and service policies
 
-### **3. Automatic Actions (Automations)**
-- Connects your app to email, Slack, payment systems, and 100+ tools
-- Triggers actions when events happen (new booking, low rating, etc.)
-- Handles complex multi-step workflows automatically
-- **Example:** When someone books an appointment → sends confirmation → adds to calendar → charges payment
+### **2. Intelligence DNA (AI Agents)**  
+- Your business brain that learns, adapts, and makes decisions
+- Understands your unique processes and customer interactions
+- Provides personalized responses based on your workspace knowledge
+- **Example:** Booking assistant that knows your services, availability, pricing, and special requirements
 
-### **4. File & Knowledge Management (Media)**
-- Handles document uploads and photo submissions
-- Trains your AI assistant on business documents and policies  
-- Stores and organizes files automatically
-- **Example:** Upload your menu so the AI can answer food questions accurately
+### **3. Action DNA (Automations)**
+- Your business reflexes that respond instantly to events and triggers
+- Connects to 100+ external tools and systems seamlessly
+- Executes complex workflows without human intervention
+- **Example:** New booking → sends confirmation → updates calendar → processes payment → notifies team → follows up
+
+### **4. Living Memory (Workspace Integration)**
+- Everything connects and learns from everything else
+- Your app grows smarter with each interaction and data point
+- Cross-references patterns to improve decisions and predictions
+- **Example:** Inventory alerts that learn seasonal patterns, customer preferences, and supplier reliability
 
 ---
 

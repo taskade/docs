@@ -20,23 +20,23 @@ layout:
 
 # Welcome to Taskade
 
-> Taskade Genesis — One Prompt. One App. Imagine it. Run it live. Powered by your Workspace — the backend + brain of your app.
-
 **The productivity platform that actually gets how you work.**
 
 Tired of juggling 10 different apps just to get things done? Taskade combines project management, AI assistance, and team collaboration in one place that doesn't suck. Whether you're organizing a side project, managing a remote team, or building the next big thing, Taskade adapts to *your* workflow instead of forcing you into theirs.
 
 ## 🎯 What is Taskade?
 
-**Think Notion meets ChatGPT meets Zapier, but actually usable.**
+**The productivity platform with living DNA.**
 
-Here's what you get:
-- **📊 Projects That Make Sense** - No more fighting with rigid templates. Your data, your structure.
-- **🤖 AI That Actually Helps** - Not just another chatbot. These agents learn your projects and can actually do stuff.
-- **⚡ Automation That Works** - Connect your tools without becoming a YAML engineer.
-- **🎨 Views That Don't Suck** - Switch between lists, kanban, calendar, or mind maps. Same data, different perspective.
+Think of your workspace as a digital organism — every project, agent, automation, and piece of knowledge connects to form the genetic code of everything you build. Unlike static productivity tools, Taskade creates a **living ecosystem** that learns, adapts, and evolves with your business.
 
-**Real Talk:** Most productivity apps are built by people who've never actually used them daily. Taskade is different.
+Here's what makes your workspace alive:
+- **📊 Intelligent Projects** - Data structures that grow and adapt to your needs
+- **🤖 Learning AI Agents** - Digital team members trained on your business knowledge
+- **⚡ Reactive Automations** - Business reflexes that respond instantly to events
+- **🧬 Connected Intelligence** - Everything learns from everything else
+
+**Real Talk:** Most productivity apps treat your data like it's dead. Taskade makes it alive.
 
 ## 🚀 Quick Start
 
@@ -108,34 +108,37 @@ Latest updates and releases
 - Product roadmaps that sync with user requests
 - Support systems that scale without hiring
 
-## 🏗️ Platform Architecture
+## 🧬 Your Workspace's Living DNA
 
-Taskade is built on three core pillars that work together seamlessly:
+Taskade isn't built on static layers — it's built on **living DNA strands** that interweave to create intelligent, adaptive experiences:
 
-### **Knowledge Layer**
-Your data, documents, and project information stored in flexible, searchable structures.
+### **🧠 Intelligence DNA**
+AI agents that learn from your workspace and become specialized digital team members with unique knowledge and capabilities.
 
-### **Intelligence Layer** 
-AI agents that understand your business context and can take actions on your behalf.
+### **⚡ Action DNA**
+Automations that act as your business's nervous system, detecting events and coordinating responses across 100+ integrated tools.
 
-### **Action Layer**
-Automations and integrations that connect your workspace to the broader ecosystem of business tools.
+### **📚 Knowledge DNA**
+Projects and data that form your organizational memory, storing and surfacing information in flexible, interconnected structures.
 
-[Learn more about our architecture →](vision/architecture.md)
+### **🔄 Evolution DNA**
+The living connections that make everything learn from everything else — your workspace gets smarter with every interaction.
+
+[Explore the living architecture →](vision/architecture.md)
 
 ## 🎉 What's New
 
-### **🧬 Genesis App Generator**
-Revolutionary AI-powered application creation from natural language descriptions.
+### **🧬 Genesis: Living DNA Apps**
+Revolutionary AI that awakens your workspace's genetic code to create complete business applications from a single prompt.
 
-### **🤖 Advanced AI Agents**
-Deploy specialized AI assistants with custom knowledge and capabilities.
+### **🤖 Multi-Model AI Agents**
+Deploy specialized digital team members powered by GPT-5, Claude-4, and advanced reasoning models — each trained on your unique business DNA.
 
-### **📱 Mobile AI Development**
-Build and train AI agents directly from your mobile device.
+### **📱 Mobile DNA Development**
+Build and train your living workspace directly from your mobile device — your DNA evolves wherever you are.
 
-### **⚡ Enhanced Automations**
-Connect to 100+ services with intelligent workflow suggestions.
+### **⚡ Intelligent DNA Reactions**
+Automations that learn from your patterns and optimize themselves — your business reflexes get faster and smarter over time.
 
 [See all updates →](changelog/README.md)
 
