@@ -1,5 +1,6 @@
 # Integrations
 
+<<<<<<< HEAD
 Connect Taskade with the apps you already use every day! Our integrations help you bring all your work together in one place, so you spend less time switching between different tools.
 
 ## Available Integrations
@@ -9,6 +10,16 @@ Connect Taskade with the apps you already use every day! Our integrations help y
 * [Complete Integration Reference](../../automation/integrations.md) - All available triggers and actions
 * **Calendar Sync** - Sync with Google Calendar, Outlook, and more
 * **API & Webhooks** - Build custom integrations
+=======
+Connect Taskade with your favorite tools and services to create a seamless workflow ecosystem. Our integrations help you centralize your work and reduce context switching.
+
+## Available Integrations
+
+* [Integration Overview](overview.md) - Complete list of available integrations
+* [Zapier Integration](zapier.md) - Connect with 5000+ apps through Zapier
+* [Calendar Sync](calendar.md) - Sync with Google Calendar, Outlook, and more
+* [API & Webhooks](api-webhooks.md) - Build custom integrations
+>>>>>>> origin/main
 
 ## Popular Integrations
 
@@ -39,6 +50,7 @@ Connect Taskade with the apps you already use every day! Our integrations help y
 
 ## Custom Integrations
 
+<<<<<<< HEAD
 ### For Technical Teams
 - Full API access for custom connections
 - Real-time notifications between apps
@@ -49,6 +61,17 @@ Connect Taskade with the apps you already use every day! Our integrations help y
 - Pre-made automation templates you can use right away
 - Simple point-and-click automation builder (no coding needed!)
 - Smart suggestions for automations that save you time
+=======
+### API Access
+- RESTful API for custom integrations
+- Real-time webhooks for event notifications
+- SDKs and libraries for popular programming languages
+
+### Zapier Platform
+- 5000+ app connections through Zapier
+- Pre-built automation templates
+- Custom trigger and action configurations
+>>>>>>> origin/main
 
 ## Setting Up Integrations
 
@@ -58,6 +81,7 @@ Connect Taskade with the apps you already use every day! Our integrations help y
 4. **Authorize Access**: Grant necessary permissions
 5. **Configure Sync**: Set up data synchronization preferences
 
+<<<<<<< HEAD
 ## Tips for Success
 
 - **Start Small**: Connect just 1-2 of your most important apps first
@@ -65,6 +89,15 @@ Connect Taskade with the apps you already use every day! Our integrations help y
 - **Keep It Updated**: Make sure your data stays current everywhere
 - **Stay Secure**: Only give apps the permissions they actually need
 - **Check Regularly**: Make sure your connections are working smoothly
+=======
+## Integration Best Practices
+
+- **Start Simple**: Begin with one or two key integrations
+- **Map Workflows**: Understand how data flows between systems
+- **Regular Sync**: Ensure data stays current across platforms
+- **Security First**: Review permissions and access levels
+- **Monitor Performance**: Check integration health regularly
+>>>>>>> origin/main
 
 ---
 

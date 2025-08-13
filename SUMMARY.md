@@ -1,46 +1,40 @@
 # Table of contents
 
-* [The HyperCard of the AI Era](README.md)
-
-## ✨ The Vision
-
-* [The HyperCard of the AI Era](vision/README.md)
-* [Core Architecture](vision/architecture.md)
-* [Specs & Interoperability](vision/specs-and-interoperability.md)
-
-## 🎯 Taskade Genesis (No-Code Creation)
-
-* [Genesis Overview](genesis/README.md)
-
-## 🤖 TaskOS (The AI App Generator)
-
-* [Introduction to TaskOS](taskos/introduction.md)
-* [Project Views Explained](taskos/project-views.md)
-
-## 🧰 AI Kits (Available Today)
-
-* [Explore AI Kits Gallery](https://taskade.com/kits)
-* [AI Kits Documentation](https://help.taskade.com/en/articles/10378721-taskade-ai-kits)
+* [Welcome to Taskade](README.md)
 
 ## 🚀 Getting Started
 
 * [Authentication](start/authentication.md)
 * [Personal Tokens](start/personal-tokens.md)
 
-## 📊 Core API: Building Blocks
+## 🎯 Genesis: No-Code Apps
+
+* [What is Genesis?](genesis/README.md)
+* [Core Concepts](genesis/core-pillars.md)
+* [Your First App](genesis/getting-started.md)
+* [Templates & Examples](genesis/examples-and-templates.md)
+* [Advanced Features](genesis/advanced-features.md)
+* [Best Practices](genesis/best-practices.md)
+* [Troubleshooting](genesis/troubleshooting.md)
+* [FAQ](genesis/faq.md)
+
+## 🧰 AI Kits: Ready-to-Use
+
+* [Explore AI Kits Gallery](https://taskade.com/kits)
+* [AI Kits Documentation](https://help.taskade.com/en/articles/10378721-taskade-ai-kits)
+
+## 🤖 TaskOS: The AI Engine
+
+* [Introduction](taskos/introduction.md)
+* [Project Views](taskos/project-views.md)
+
+## 🔧 Developer API
 
 * [Workspaces](api/workspaces/README.md)
   * [Get Workspaces](api/workspaces/get-workspaces.md)
   * [Get Projects](api/workspaces/get-projects.md)
   * [Get Folders](api/workspaces/get-folders.md)
-* [Apps (Subspaces)](api/folders/README.md)
-  * [Get Projects in App](api/folders/get-folder-projects.md)
-  * [Generate Agent in App](api/folders/generate-agent-in-folder.md)
-  * [Create Agent in App](api/folders/create-agent-in-folder.md)
-  * [Get Agents in App](api/folders/get-folder-agents.md)
-  * [Get Media in App](api/folders/get-folder-medias.md)
-  * [Get Templates in App](api/folders/get-folder-project-templates.md)
-* [Knowledge (Projects)](api/projects/README.md)
+* [Projects](api/projects/README.md)
   * [Get Project](api/projects/get-project.md)
   * [Complete Project](api/projects/complete-project.md)
   * [Restore Project](api/projects/restore-project.md)
@@ -73,7 +67,7 @@
   * [Get Task Field](api/tasks/get-task-field.md)
   * [Update Task Field](api/tasks/update-task-field.md)
   * [Delete Task Field](api/tasks/delete-task-field.md)
-* [Intelligence (Agents)](api/agents/README.md)
+* [AI Agents](api/agents/README.md)
   * [Get Agent](api/agents/get-agent.md)
   * [Delete Agent](api/agents/delete-agent.md)
   * [Update Agent](api/agents/update-agent.md)
@@ -87,27 +81,28 @@
   * [Get Conversations](api/agents/get-agent-convos.md)
   * [Get Conversation](api/agents/get-agent-convo.md)
   * [Inbound Webhooks](api/agents/inbound-webhooks.md)
-* [Action (Automations)](api/automations/README.md)
-
-## ⚡ Automations (Deep Dive)
-
-* [Automations Overview](automation/README.md)
-* [Supported Integrations](automation/integrations.md)
-* [Actions Reference](automation/actions.md)
-* [Triggers Reference](automation/triggers.md)
-* [Automation Recipes](automation/recipes.md)
-
-## 📁 Additional Resources
-
+* [Folders](api/folders/README.md)
+  * [Get Projects in Folder](api/folders/get-folder-projects.md)
+  * [Generate Agent in Folder](api/folders/generate-agent-in-folder.md)
+  * [Create Agent in Folder](api/folders/create-agent-in-folder.md)
+  * [Get Agents in Folder](api/folders/get-folder-agents.md)
+  * [Get Media in Folder](api/folders/get-folder-medias.md)
+  * [Get Templates in Folder](api/folders/get-folder-project-templates.md)
 * [Media](api/media/README.md)
   * [Get Media](api/media/get-media.md)
   * [Delete Media](api/media/delete-media.md)
 * [Me](api/me/README.md)
-  * [Get Projects](api/me/projects.md)
+  * [My Projects](api/me/projects.md)
+* [Genesis API](api/genesis/README.md)
+* [Automations API](api/automations/README.md)
 
-## 📖 API Reference
+## ⚡ Automations
 
-* [OpenAPI Specification](https://www.taskade.com/api/documentation/static/index.html#/)
+* [Overview](automation/README.md)
+* [Integrations](automation/integrations.md)
+* [Actions](automation/actions.md)
+* [Triggers](automation/triggers.md)
+* [Recipes](automation/recipes.md)
 
 ## 📚 Help & Guides
 
@@ -139,10 +134,5 @@
 ## 🤝 Community
 
 * [Contributing](contributing.md)
-
-## 🔗 Links
-
-* [Taskade](https://www.taskade.com/)
-* [Changelog](https://www.taskade.com/blog/product-updates/)
-* [Documentation](https://help.taskade.com/)
+* [OpenAPI Specification](https://www.taskade.com/api/documentation/static/index.html#/)
 * [Community Forum](https://www.taskade.com/feedback/public-api)

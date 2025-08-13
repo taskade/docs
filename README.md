@@ -209,11 +209,30 @@ For AI and LLM developers working with Taskade:
 
 ## Community & Support
 
-- **[Help Center](https://help.taskade.com/)** - Comprehensive guides and tutorials
+- **[Help Center](help-center/README.md)** - Comprehensive guides and tutorials right here in the docs
 - **[Community Forum](https://www.taskade.com/feedback/public-api)** - Connect with other developers
-- **[Changelog](https://www.taskade.com/blog/product-updates/)** - Stay updated with new features
+- **[Changelog](changelog/README.md)** - Stay updated with new features and releases  
 - **[AI Kits Gallery](https://taskade.com/kits)** - Browse and install community workflows
 - **[Contributing Guide](contributing.md)** - Join our open-source community
+
+---
+
+## Ready to Start Building?
+
+### 🚀 **For Everyone**: Try Genesis No-Code
+Perfect for business users, founders, and non-technical teams:
+- **[Build Your First App →](genesis/getting-started.md)**
+- **[Browse Templates →](genesis/examples-and-templates.md)**
+
+### 💻 **For Developers**: Dive Into APIs  
+Perfect for technical teams who want full control:
+- **[API Documentation →](api/README.md)**
+- **[Authentication Setup →](start/authentication.md)**
+
+### ❓ **Need Help?**
+- **[Help Center →](help-center/README.md)** - Guides and tutorials
+- **[Community Forum →](https://www.taskade.com/feedback/public-api)** - Connect with other builders
+- **[Live Support →](https://help.taskade.com/)** - Get direct help from our team
 
 ---
 
