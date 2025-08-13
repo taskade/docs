@@ -4,6 +4,10 @@
 Imagine it. Run it live.  
 Powered by your Workspace — the living DNA behind your app.**
 
+{% hint style="success" %}
+**New to Genesis?** Follow our [5-minute getting started guide](getting-started.md) to build your first business app from a simple description!
+{% endhint %}
+
 **Transform your business ideas into working applications using nothing but plain English - no coding required.**
 
 ---

@@ -6,13 +6,31 @@ structure:
 
 redirects:
   docs/updates: changelog
-  docs/help-and-guides: /  
+  docs/help-and-guides: /
   docs/developer-api: developers
   docs/genesis-no-code-apps: genesis
+  help-center/ai-features: features/ai-features
+  api-docs: developers
+  automation-guide: automation
 
 integrations:
   googleAnalytics:
     trackingId: "GA-TRACKING-ID"
-
+  intercom:
+    appId: "INTERCOM_APP_ID"
+  
 git:
   editLinkPattern: 'https://github.com/taskade/docs/edit/main/{{path}}'
+
+customization:
+  favicon: .gitbook/assets/favicon.ico
+  logo: .gitbook/assets/taskade-logo.png
+  
+site:
+  title: "Taskade Documentation"
+  description: "The productivity platform with living DNA. Your workspace becomes a digital organism where every project, agent, automation, and piece of knowledge connects to form the genetic code of everything you build."
+  
+pdf:
+  cover: true
+  toc: true
+  pageBreaks: true

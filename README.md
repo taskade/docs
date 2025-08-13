@@ -18,6 +18,10 @@ layout:
     visible: true
 ---
 
+{% hint style="info" %}
+**New to Taskade?** Start with our [Quick Start Guide](getting-started/README.md) to get productive in 10 minutes, or jump directly to [Genesis](genesis/README.md) to build your first no-code app!
+{% endhint %}
+
 # Welcome to Taskade
 
 **The productivity platform that actually gets how you work.**
@@ -40,6 +44,8 @@ Here's what makes your workspace alive:
 
 ## 🚀 Quick Start
 
+{% tabs %}
+{% tab title="Business Users" %}
 ### **📚 [Getting Started →](getting-started/README.md)**
 Core features and everything you need to be productive:
 - **[Features Overview →](features/README.md)** - Platform capabilities
@@ -49,14 +55,23 @@ Core features and everything you need to be productive:
 Build complete applications without coding:
 - **[Create Your First App →](genesis/getting-started.md)** - Step-by-step guide
 - **[Templates & Examples →](genesis/examples-and-templates.md)** - Ready-to-use solutions
+{% endtab %}
 
-### **💻 [Developers →](developers/README.md)**
-APIs and technical integrations:
+{% tab title="Developers" %}
+### **💻 [Developer Hub →](developers/README.md)**
+APIs and technical integrations for building on Taskade:
 - **[API Documentation →](api/README.md)** - Complete technical reference
 - **[Automations →](automation/README.md)** - Connect to 100+ services
+- **[Authentication →](start/authentication.md)** - API keys and OAuth setup
+{% endtab %}
 
+{% tab title="Updates" %}
 ### **📰 [Changelog →](changelog/README.md)**
-Latest updates and releases
+Latest updates and releases:
+- **[2025 Releases →](changelog/2025/README.md)** - Genesis, AI agents, mobile development
+- **[What's New →](changelog/README.md#recent-highlights)** - Latest breakthrough features
+{% endtab %}
+{% endtabs %}
 
 ## ✨ Core Features
 
@@ -144,16 +159,62 @@ Automations that learn from your patterns and optimize themselves — your busin
 
 ## 💡 Ready to Transform Your Workflow?
 
-### **Start Building Today**
-- **[Create Your Free Account →](https://taskade.com/signup)**
-- **[Explore Templates →](https://taskade.com/templates)**
-- **[Browse AI Kits →](https://taskade.com/kits)**
+{% hint style="success" %}
+**Ready to get started?** [Create your free account](https://taskade.com/signup) and build your first Genesis app in minutes!
+{% endhint %}
 
-### **Get Support & Connect**
-- **[Help Center →](https://help.taskade.com)** - Comprehensive guides and tutorials
-- **[Community Forum →](https://www.taskade.com/feedback)** - Connect with other users
-- **[Video Tutorials →](https://youtube.com/taskade)** - Learn with step-by-step guides
+<div data-full-width="true">
+
+<figure><img src=".gitbook/assets/ss-api3.png" alt="Taskade Platform Overview"><figcaption><p>The productivity platform with living DNA - where your workspace becomes a digital organism</p></figcaption></figure>
+
+</div>
+
+### **🚀 Start Building Today**
+
+{% tabs %}
+{% tab title="Free Account" %}
+**[Create Your Free Account →](https://taskade.com/signup)**
+
+Get started with Taskade's living DNA platform:
+- Unlimited projects and AI agents
+- 100+ automation integrations  
+- Real-time collaboration
+- Mobile and desktop apps
+{% endtab %}
+
+{% tab title="Templates" %}
+**[Explore Templates →](https://taskade.com/templates)**
+
+Jump-start your productivity:
+- Project management templates
+- AI agent configurations
+- Automation workflows
+- Industry-specific solutions
+{% endtab %}
+
+{% tab title="AI Kits" %}
+**[Browse AI Kits →](https://taskade.com/kits)**
+
+Ready-to-use AI solutions:
+- Business automation kits
+- Creative workflow agents
+- Data analysis templates
+- Custom AI assistants
+{% endtab %}
+{% endtabs %}
+
+### **📚 Learn & Connect**
+
+| Resource | Description |
+| --- | --- |
+| **[Help Center](https://help.taskade.com)** | Comprehensive guides and tutorials |
+| **[Community Forum](https://www.taskade.com/feedback)** | Connect with other users and share tips |
+| **[Video Tutorials](https://youtube.com/taskade)** | Step-by-step video guides |
+| **[API Documentation](developers/README.md)** | Technical reference for developers |
+| **[Status Page](https://status.taskade.com)** | Real-time platform status |
 
 ---
 
-*Ready to build the future of work? Start with Taskade today and discover what's possible when AI meets productivity.*
+{% hint style="info" %}
+**Questions?** Join our [community forum](https://www.taskade.com/feedback) or check out our [comprehensive help center](https://help.taskade.com) for detailed guides and tutorials.
+{% endhint %}

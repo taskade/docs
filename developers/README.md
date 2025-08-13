@@ -2,17 +2,49 @@
 
 **Build on a platform designed for technical depth and architectural elegance.**
 
+{% hint style="info" %}
+**New to Taskade's API?** Start with our [authentication guide](../start/authentication.md) and make your first API request in minutes.
+{% endhint %}
+
 Taskade's API is built around operational transformation, real-time data synchronization, and a unified intelligence layer that powers everything from simple CRUD operations to complex AI-driven workflows. Whether you're building integrations, automating processes, or creating entirely new applications, the platform provides both high-level abstractions and low-level control.
 
 ## 🚀 Quick Start
 
-New to Taskade's API? Get up and running in minutes:
+{% tabs %}
+{% tab title="First API Call" %}
+### **[Quickstart Guide →](../start/authentication.md)**
+Set up your development environment, get API keys, and make your first request in under 5 minutes.
 
-### **[Quickstart Guide →](getting-started/README.md)**
-Set up your development environment, get API keys, and make your first request.
+```bash
+curl -H "Authorization: Bearer YOUR_API_KEY" \
+  https://www.taskade.com/api/v1/workspaces
+```
+{% endtab %}
 
-### **[Authentication →](getting-started/authentication.md)**  
-Learn about API keys, OAuth, and security best practices.
+{% tab title="Authentication" %}
+### **[Authentication Guide →](../start/personal-tokens.md)**  
+Learn about API keys, OAuth, and security best practices for production applications.
+
+**Supported methods:**
+- Personal Access Tokens (recommended for development)
+- OAuth 2.0 (recommended for production)
+{% endtab %}
+
+{% tab title="SDKs & Tools" %}
+### **SDKs & Libraries**
+Official and community-maintained libraries:
+
+**Official:**
+- REST API with OpenAPI spec
+- Webhook integrations
+- Real-time WebSocket API
+
+**Community:**
+- Python SDK (coming soon)
+- Node.js SDK (coming soon)
+- Postman collection
+{% endtab %}
+{% endtabs %}
 
 ## 🛠️ Core APIs
 
