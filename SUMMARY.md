@@ -1,34 +1,58 @@
-# Table of contents
+# Table of Contents
 
-* [Welcome to Taskade](README.md)
+* [👋 Welcome to Taskade](README.md)
 
 ## 🚀 Getting Started
 
-* [Authentication](start/authentication.md)
-* [Personal Tokens](start/personal-tokens.md)
+* [Quick Start Guide](getting-started/README.md)
+* [Authentication & Setup](start/authentication.md)
+* [Personal Access Tokens](start/personal-tokens.md)
 
-## 🎯 Genesis: No-Code Apps
+## 🧬 Genesis: No-Code Apps
 
 * [What is Genesis?](genesis/README.md)
-* [Core Concepts](genesis/core-pillars.md)
-* [Your First App](genesis/getting-started.md)
-* [Templates & Examples](genesis/examples-and-templates.md)
+* [Getting Started in 5 Minutes](genesis/getting-started.md)
+* [Examples & Templates](genesis/examples-and-templates.md)
+* [Core Pillars](genesis/core-pillars.md)
 * [Advanced Features](genesis/advanced-features.md)
 * [Best Practices](genesis/best-practices.md)
-* [Troubleshooting](genesis/troubleshooting.md)
 * [FAQ](genesis/faq.md)
+* [Troubleshooting](genesis/troubleshooting.md)
 
-## 🧰 AI Kits: Ready-to-Use
+## 📊 Core Features
 
-* [Explore AI Kits Gallery](https://taskade.com/kits)
-* [AI Kits Documentation](https://help.taskade.com/en/articles/10378721-taskade-ai-kits)
-
-## 🤖 TaskOS: The AI Engine
-
-* [Introduction](taskos/introduction.md)
+* [Platform Overview](features/README.md)
+* [AI Features](features/ai-features/README.md)
+  * [AI Agents Getting Started](features/ai-features/ai-agents-getting-started.md)
+  * [Automation Getting Started](features/ai-features/automation-getting-started.md)
+  * [Genesis Examples](features/ai-features/genesis-examples.md)
+  * [Genesis Getting Started](features/ai-features/genesis-getting-started.md)
+  * [Prompt Library](features/ai-features/genesis-prompt-library.md)
+* [TaskOS Engine](taskos/introduction.md)
 * [Project Views](taskos/project-views.md)
 
-## 🔧 Developer API
+## 📚 Help & Support
+
+* [Help Center](help-center/README.md)
+* [Getting Started Guide](help-center/getting-started/README.md)
+* [Account Management](help-center/account-management/README.md)
+* [Features Overview](help-center/features/README.md)
+* [Integrations Guide](help-center/integrations/README.md)
+* [Troubleshooting](help-center/troubleshooting/README.md)
+
+## 🏗️ Platform Architecture
+
+* [Vision & Architecture](vision/README.md)
+* [Core Architecture](vision/architecture.md)
+* [Specs & Interoperability](vision/specs-and-interoperability.md)
+
+---
+
+## 💻 Developer Documentation
+
+* [Developer Hub](developers/README.md)
+
+### Core API Reference
 
 * [Workspaces](api/workspaces/README.md)
   * [Get Workspaces](api/workspaces/get-workspaces.md)
@@ -36,10 +60,10 @@
   * [Get Folders](api/workspaces/get-folders.md)
 * [Projects](api/projects/README.md)
   * [Get Project](api/projects/get-project.md)
+  * [Create Project](api/projects/create-project.md)
   * [Complete Project](api/projects/complete-project.md)
   * [Restore Project](api/projects/restore-project.md)
   * [Copy Project](api/projects/copy-project.md)
-  * [Create Project](api/projects/create-project.md)
   * [Create From Template](api/projects/create-from-template.md)
   * [Get Project Members](api/projects/get-project-members.md)
   * [Get Project Fields](api/projects/get-project-fields.md)
@@ -55,30 +79,30 @@
   * [Complete Task](api/tasks/complete-task.md)
   * [Uncomplete Task](api/tasks/uncomplete-task.md)
   * [Delete Task](api/tasks/delete-task.md)
-  * [Get Task Assignees](api/tasks/get-task-assignees.md)
+  * [Task Assignees](api/tasks/get-task-assignees.md)
   * [Update Task Assignees](api/tasks/update-task-assignees.md)
   * [Delete Task Assignees](api/tasks/delete-task-assignees.md)
-  * [Get Task Date](api/tasks/get-task-date.md)
+  * [Task Dates](api/tasks/get-task-date.md)
   * [Update Task Date](api/tasks/update-task-date.md)
   * [Delete Task Date](api/tasks/delete-task-date.md)
-  * [Get Task Note](api/tasks/get-task-note.md)
+  * [Task Notes](api/tasks/get-task-note.md)
   * [Update Task Note](api/tasks/update-task-note.md)
   * [Delete Task Note](api/tasks/delete-task-note.md)
-  * [Get Task Field](api/tasks/get-task-field.md)
+  * [Task Fields](api/tasks/get-task-field.md)
   * [Update Task Field](api/tasks/update-task-field.md)
   * [Delete Task Field](api/tasks/delete-task-field.md)
 * [AI Agents](api/agents/README.md)
   * [Get Agent](api/agents/get-agent.md)
   * [Delete Agent](api/agents/delete-agent.md)
   * [Update Agent](api/agents/update-agent.md)
-  * [Get Public Agent](api/agents/get-public-agent.md)
+  * [Public Agents](api/agents/get-public-agent.md)
   * [Update Public Agent](api/agents/update-public-agent.md)
-  * [Update Agent Public Access](api/agents/update-agent-public-access.md)
-  * [Add Project to Knowledge](api/agents/add-project-to-agent-knowledge.md)
+  * [Update Public Access](api/agents/update-agent-public-access.md)
+  * [Agent Knowledge](api/agents/add-project-to-agent-knowledge.md)
   * [Add Media to Knowledge](api/agents/add-media-to-agent-knowledge.md)
-  * [Remove Project from Knowledge](api/agents/remove-project-from-agent-knowledge.md)
-  * [Remove Media from Knowledge](api/agents/remove-media-from-agent-knowledge.md)
-  * [Get Conversations](api/agents/get-agent-convos.md)
+  * [Remove Project Knowledge](api/agents/remove-project-from-agent-knowledge.md)
+  * [Remove Media Knowledge](api/agents/remove-media-from-agent-knowledge.md)
+  * [Agent Conversations](api/agents/get-agent-convos.md)
   * [Get Conversation](api/agents/get-agent-convo.md)
   * [Inbound Webhooks](api/agents/inbound-webhooks.md)
 * [Folders](api/folders/README.md)
@@ -96,43 +120,29 @@
 * [Genesis API](api/genesis/README.md)
 * [Automations API](api/automations/README.md)
 
-## ⚡ Automations
+### Automation Development
 
-* [Overview](automation/README.md)
-* [Integrations](automation/integrations.md)
-* [Actions](automation/actions.md)
-* [Triggers](automation/triggers.md)
-* [Recipes](automation/recipes.md)
+* [Automations Overview](automation/README.md)
+* [Integrations Guide](automation/integrations.md)
+* [Complete Integration Reference](automation/comprehensive-integrations.md)
+* [Actions Reference](automation/actions.md)
+* [Triggers Reference](automation/triggers.md)
+* [Automation Recipes](automation/recipes.md)
 
-## 📚 Help & Guides
+---
 
-* [Help Center](help-center/README.md)
-* [Getting Started](help-center/getting-started/README.md)
-* [Features](help-center/features/README.md)
-* [AI Features](help-center/ai-features/README.md)
-  * [AI Agents Getting Started](help-center/ai-features/ai-agents-getting-started.md)
-  * [Automation Getting Started](help-center/ai-features/automation-getting-started.md)
-  * [Genesis Quick Start](help-center/ai-features/genesis-getting-started.md)
-  * [Genesis Examples](help-center/ai-features/genesis-examples.md)
-  * [Genesis Prompt Library](help-center/ai-features/genesis-prompt-library.md)
-* [Integrations](help-center/integrations/README.md)
-* [Account Management](help-center/account-management/README.md)
-* [Troubleshooting](help-center/troubleshooting/README.md)
+## 📰 Changelog
 
-## 🏗️ Architecture
-
-* [Platform Vision](vision/README.md)
-* [Core Architecture](vision/architecture.md)
-* [Specs & Interoperability](vision/specs-and-interoperability.md)
-
-## 📰 Updates
-
-* [Latest Changes](changelog/README.md)
+* [Latest Updates](changelog/README.md)
 * [2025 Releases](changelog/2025/README.md)
 * [2024 Archive](changelog/2024/README.md)
 
-## 🤝 Community
+---
 
-* [Contributing](contributing.md)
+## 🤝 Community & Resources
+
+* [Contributing Guide](contributing.md)
 * [OpenAPI Specification](https://www.taskade.com/api/documentation/static/index.html#/)
 * [Community Forum](https://www.taskade.com/feedback/public-api)
+* [Support](https://help.taskade.com)
+* [Status Page](https://status.taskade.com)
