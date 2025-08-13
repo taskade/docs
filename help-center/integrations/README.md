@@ -1,5 +1,16 @@
 # Integrations
 
+<<<<<<< HEAD
+Connect Taskade with the apps you already use every day! Our integrations help you bring all your work together in one place, so you spend less time switching between different tools.
+
+## Available Integrations
+
+* [Getting Started with Automation](https://help.taskade.com/en/articles/8958467-getting-started-with-automation) - Complete automation guide
+* [AI Automation Collection](https://help.taskade.com/en/collections/8400803-ai-automation) - All automation resources
+* [Complete Integration Reference](../../automation/integrations.md) - All available triggers and actions
+* **Calendar Sync** - Sync with Google Calendar, Outlook, and more
+* **API & Webhooks** - Build custom integrations
+=======
 Connect Taskade with your favorite tools and services to create a seamless workflow ecosystem. Our integrations help you centralize your work and reduce context switching.
 
 ## Available Integrations
@@ -8,6 +19,7 @@ Connect Taskade with your favorite tools and services to create a seamless workf
 * [Zapier Integration](zapier.md) - Connect with 5000+ apps through Zapier
 * [Calendar Sync](calendar.md) - Sync with Google Calendar, Outlook, and more
 * [API & Webhooks](api-webhooks.md) - Build custom integrations
+>>>>>>> origin/main
 
 ## Popular Integrations
 
@@ -38,6 +50,18 @@ Connect Taskade with your favorite tools and services to create a seamless workf
 
 ## Custom Integrations
 
+<<<<<<< HEAD
+### For Technical Teams
+- Full API access for custom connections
+- Real-time notifications between apps
+- Developer tools and code libraries available
+
+### Easy Automation Setup
+- 100+ ready-to-use connections with your favorite apps
+- Pre-made automation templates you can use right away
+- Simple point-and-click automation builder (no coding needed!)
+- Smart suggestions for automations that save you time
+=======
 ### API Access
 - RESTful API for custom integrations
 - Real-time webhooks for event notifications
@@ -47,6 +71,7 @@ Connect Taskade with your favorite tools and services to create a seamless workf
 - 5000+ app connections through Zapier
 - Pre-built automation templates
 - Custom trigger and action configurations
+>>>>>>> origin/main
 
 ## Setting Up Integrations
 
@@ -56,6 +81,15 @@ Connect Taskade with your favorite tools and services to create a seamless workf
 4. **Authorize Access**: Grant necessary permissions
 5. **Configure Sync**: Set up data synchronization preferences
 
+<<<<<<< HEAD
+## Tips for Success
+
+- **Start Small**: Connect just 1-2 of your most important apps first
+- **Plan Your Flow**: Think about how information should move between your apps
+- **Keep It Updated**: Make sure your data stays current everywhere
+- **Stay Secure**: Only give apps the permissions they actually need
+- **Check Regularly**: Make sure your connections are working smoothly
+=======
 ## Integration Best Practices
 
 - **Start Simple**: Begin with one or two key integrations
@@ -63,6 +97,7 @@ Connect Taskade with your favorite tools and services to create a seamless workf
 - **Regular Sync**: Ensure data stays current across platforms
 - **Security First**: Review permissions and access levels
 - **Monitor Performance**: Check integration health regularly
+>>>>>>> origin/main
 
 ---
 
