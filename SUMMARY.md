@@ -1,19 +1,16 @@
-# Table of Contents
+# Table of contents
 
 * [👋 Welcome to Taskade](README.md)
 
 ## 🚀 Getting Started
 
 * [Quick Start Guide](getting-started/README.md)
-* [Authentication & Setup](start/authentication.md)
-* [Personal Access Tokens](start/personal-tokens.md)
 
 ## 🧬 Genesis: No-Code Apps
 
 * [What is Genesis?](genesis/README.md)
-* [Getting Started in 5 Minutes](genesis/getting-started.md)
+* [Your First App in 5 Minutes](genesis/getting-started.md)
 * [Examples & Templates](genesis/examples-and-templates.md)
-* [Core Pillars](genesis/core-pillars.md)
 * [Advanced Features](genesis/advanced-features.md)
 * [Best Practices](genesis/best-practices.md)
 * [FAQ](genesis/faq.md)
@@ -28,29 +25,54 @@
   * [Genesis Examples](features/ai-features/genesis-examples.md)
   * [Genesis Getting Started](features/ai-features/genesis-getting-started.md)
   * [Prompt Library](features/ai-features/genesis-prompt-library.md)
-* [TaskOS Engine](taskos/introduction.md)
+
+## 🤖 AI Kits: Ready-to-Use
+
+* [TaskOS: The AI Engine](taskos/introduction.md)
 * [Project Views](taskos/project-views.md)
 
-## 📚 Help & Support
+## 💻 Developer API
+
+* [Developer Hub](developers/README.md)
+* [Authentication](start/authentication.md)
+* [Personal Tokens](start/personal-tokens.md)
+
+## ⚡ Automations
+
+* [Automations Overview](automation/README.md)
+* [Integrations Guide](automation/integrations.md)
+* [Complete Integration Reference](automation/comprehensive-integrations.md)
+
+## 📚 Help & Guides
 
 * [Help Center](help-center/README.md)
-* [Getting Started Guide](help-center/getting-started/README.md)
 * [Account Management](help-center/account-management/README.md)
-* [Features Overview](help-center/features/README.md)
-* [Integrations Guide](help-center/integrations/README.md)
 * [Troubleshooting](help-center/troubleshooting/README.md)
 
-## 🏗️ Platform Architecture
+## 🏗️ Architecture
 
 * [Vision & Architecture](vision/README.md)
 * [Core Architecture](vision/architecture.md)
 * [Specs & Interoperability](vision/specs-and-interoperability.md)
 
+## 📰 Updates
+
+* [Latest Updates](changelog/README.md)
+* [2025 Releases](changelog/2025/README.md)
+* [2024 Archive](changelog/2024/README.md)
+
+## 🤝 Community
+
+* [Contributing Guide](contributing.md)
+* [Community Forum](https://www.taskade.com/feedback/public-api)
+* [Support](https://help.taskade.com)
+* [Status Page](https://status.taskade.com)
+
 ---
 
-## 💻 Developer Documentation
+<details>
 
-* [Developer Hub](developers/README.md)
+<summary>🔧 <strong>Advanced API Reference</strong> (For Developers)</summary>
 
 ### Core API Reference
 
@@ -122,27 +144,12 @@
 
 ### Automation Development
 
-* [Automations Overview](automation/README.md)
-* [Integrations Guide](automation/integrations.md)
-* [Complete Integration Reference](automation/comprehensive-integrations.md)
 * [Actions Reference](automation/actions.md)
 * [Triggers Reference](automation/triggers.md)
 * [Automation Recipes](automation/recipes.md)
 
----
-
-## 📰 Changelog
-
-* [Latest Updates](changelog/README.md)
-* [2025 Releases](changelog/2025/README.md)
-* [2024 Archive](changelog/2024/README.md)
+</details>
 
 ---
 
-## 🤝 Community & Resources
-
-* [Contributing Guide](contributing.md)
 * [OpenAPI Specification](https://www.taskade.com/api/documentation/static/index.html#/)
-* [Community Forum](https://www.taskade.com/feedback/public-api)
-* [Support](https://help.taskade.com)
-* [Status Page](https://status.taskade.com)

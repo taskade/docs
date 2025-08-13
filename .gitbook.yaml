@@ -23,12 +23,23 @@ git:
   editLinkPattern: 'https://github.com/taskade/docs/edit/main/{{path}}'
 
 customization:
-  favicon: .gitbook/assets/favicon.ico
-  logo: .gitbook/assets/taskade-logo.png
+  favicon: .gitbook/assets/ss-api3.png
+  logo: .gitbook/assets/ss-api3.png
   
 site:
-  title: "Taskade Documentation"
+  title: "Taskade"
   description: "The productivity platform with living DNA. Your workspace becomes a digital organism where every project, agent, automation, and piece of knowledge connects to form the genetic code of everything you build."
+  
+navigation:
+  links:
+    - title: "Main App"
+      url: "https://www.taskade.com/"
+    - title: "Developers"
+      url: "/developers"
+    - title: "Changelog" 
+      url: "/changelog"
+    - title: "Help Center"
+      url: "https://help.taskade.com/"
   
 pdf:
   cover: true

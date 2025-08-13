@@ -70,10 +70,10 @@ Official and community-maintained libraries:
 
 ## 🎯 Genesis API
 
-### **[App Generation API](genesis-api/README.md)**
+### **[Genesis API](../api/genesis/README.md)**
 **Multi-modal AI system with code generation and deployment pipeline**. Genesis combines GPT-5 and Claude-4 in a unified TAA (Taskade AI Assistant) architecture. The system performs AST-level code analysis, dependency resolution, and automated testing before deployment to Fly.io infrastructure.
 
-### **[Space Apps Management](genesis-api/space-apps.md)**
+### **[Space Apps & Deployment](../api/genesis/README.md#space-apps)**
 **Full-stack React applications with real-time data binding**. Generated apps include TypeScript, Tailwind CSS, and automatic API client generation. Apps are deployed as serverless functions with edge caching and automatic scaling. Supports hot reloading and incremental builds.
 
 ## 📚 Resources
@@ -81,10 +81,10 @@ Official and community-maintained libraries:
 ### **[OpenAPI Specification](https://www.taskade.com/api/documentation/static/index.html#/)**
 Interactive API documentation with live testing capabilities.
 
-### **[SDKs & Libraries](tools/README.md)**
+### **[SDKs & Libraries](../api/README.md#sdks-and-tools)**
 Official and community-maintained libraries for popular languages.
 
-### **[Rate Limits & Best Practices](resources/rate-limits.md)**
+### **[API Best Practices](../api/README.md#best-practices)**
 **Performance characteristics and scaling guidelines**. The platform handles 100k+ requests/second with P95 latency under 50ms. Rate limits are enforced using token bucket algorithms with burst capacity. Includes guidance on connection pooling, request batching, and optimal retry strategies.
 
 ## 💡 What You Can Build
@@ -122,5 +122,5 @@ Monitor API uptime and service announcements.
 
 **Ready to start building?** 
 
-🚀 **[Get Your API Key →](getting-started/authentication.md)**  
+🚀 **[Get Your API Key →](../start/authentication.md)**  
 💬 **[Join Our Community →](https://www.taskade.com/feedback/public-api)**
