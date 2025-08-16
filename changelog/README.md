@@ -5,10 +5,27 @@ Welcome to the Taskade Changelog! Here you'll find all the latest updates, new f
 ## 📅 Latest Updates
 
 ### [2025 Releases](2025/README.md)
-The latest features and improvements in Taskade
+Revolutionary AI features including Genesis app generation and agent orchestration
 
 ### [2024 Archive](2024/README.md)
-Previous year's updates and releases
+Agent-powered automation, AI teams, and advanced integrations
+
+## 📚 Historical Archives
+
+### [2023 AI Breakthrough](2023/README.md)
+The AI transformation year - from basic AI commands to powerful agents
+
+### [2022 AI & Automation](2022/README.md)
+Zapier integration launch and the introduction of Taskade AI
+
+### [2021 Major Redesigns](2021/README.md)
+Taskade V4, version history, and comprehensive feature additions
+
+### [2020 Remote Collaboration](2020/README.md)
+Video conferencing, real-time collaboration, and Product Hunt #1
+
+### [2017-2019 Foundation Years](2017-2019/README.md)
+Platform launch, core features, multiple views, and $5M funding round
 
 ## 🎯 What's New
 
@@ -22,13 +39,20 @@ The latest breakthrough features from 2025:
 
 ## 🚀 Recent Highlights
 
-The most exciting updates from 2025:
+The most exciting updates from across Taskade's evolution:
 
+### 2025: The Genesis Era
 * **🧬 Genesis Preview (August 9)** - AI app generation with agent orchestration and password protection
 * **🤖 Workflow Revolution (July 13)** - Generate workflows, agent teams, and subspaces through conversation
 * **📱 Mobile AI (June 12)** - Build agents on mobile with YouTube training and interactive widgets
-* **🚁 Autopilot Beta (May 22)** - Automated execution with CSV imports and Gmail integration  
-* **🔄 Agentic Workflows (April 21)** - Self-managing workflows with AI categorization and lead enrichment
+* **🚁 Autopilot Beta (May 22)** - Automated execution with CSV imports and Gmail integration
+
+### Major Historical Milestones
+* **🤖 AI Breakthrough (2023)** - From basic AI commands to intelligent agents and roundtable discussions
+* **🔌 Automation Era (2022)** - Zapier integration and the revolutionary introduction of Taskade AI
+* **🎨 Design Evolution (2021)** - Taskade V4 redesign, version history, and comprehensive productivity features
+* **👥 Collaboration Foundation (2020)** - Real-time multiplayer, video conferencing, and Product Hunt #1
+* **🏗️ Platform Genesis (2017-2019)** - Multiple views, team permissions, $5M funding, and core collaboration features
 
 ## 📋 Release Categories
 
