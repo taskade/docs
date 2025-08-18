@@ -514,7 +514,7 @@ To learn more about setting up and using these integrations:
 1. **[Getting Started with Automation](https://help.taskade.com/en/articles/8958467-getting-started-with-automation)** - Complete beginner's guide
 2. **[AI Automation Collection](https://help.taskade.com/en/collections/8400803-ai-automation)** - All automation resources
 3. **[Community Forum](https://www.taskade.com/feedback/public-api)** - Get help from the community
-4. **[Developer API](api/README.md)** - Build custom integrations
+4. **[Developer API](../api/README.md)** - Build custom integrations
 
 ---
 

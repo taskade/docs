@@ -6,9 +6,9 @@ Explore Taskade's comprehensive feature set designed to enhance your productivit
 
 **For detailed API documentation on these features:**
 
-- **[Projects API](api/projects/README.md)** - Create and manage project data programmatically
-- **[Tasks API](api/tasks/README.md)** - Build task management functionality
-- **[AI Agents API](api/agents/README.md)** - Integrate intelligent assistants
+- **[Projects API](../../api/projects/README.md)** - Create and manage project data programmatically
+- **[Tasks API](../../api/tasks/README.md)** - Build task management functionality
+- **[AI Agents API](../../api/agents/README.md)** - Integrate intelligent assistants
 - **[Automations](../../automation/README.md)** - Workflow automation and integrations
 - **[Genesis Examples](../../genesis/examples-and-templates.md)** - Ready-to-use app templates
 

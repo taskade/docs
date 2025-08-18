@@ -58,15 +58,15 @@ Official and community-maintained libraries:
 
 ## 🛠️ Core APIs
 
-### **[Workspaces & Projects](api/workspaces/README.md)**
+### **[Workspaces & Projects](../api/workspaces/README.md)**
 
 **Tree-structured data with operational transformation**. Projects are implemented as conflict-free replicated data types (CRDTs) enabling real-time collaboration without central coordination. Each project maintains a versioned DAG of changes with sub-second synchronization across clients.
 
-### **[Tasks & Data](api/tasks/README.md)**
+### **[Tasks & Data](../api/tasks/README.md)**
 
 **Event-sourced task management with rich field types**. Tasks support complex data relationships, custom field schemas, and atomic batch operations. The system maintains audit trails and supports time-travel queries for debugging and analytics.
 
-### **[AI Agents](api/agents/README.md)**
+### **[AI Agents](../api/agents/README.md)**
 
 **Stateful AI agents with persistent memory and tool access**. Each agent maintains its own knowledge graph derived from project data, documents, and conversation history. Agents can be composed into multi-agent workflows with dependency resolution and error handling.
 
@@ -86,11 +86,11 @@ Official and community-maintained libraries:
 
 ## 🎯 Genesis API
 
-### **[Genesis API](api/genesis/README.md)**
+### **[Genesis API](../api/genesis/README.md)**
 
 **Multi-modal AI system with code generation and deployment pipeline**. Genesis combines GPT-5 and Claude-4 in a unified TAA (Taskade AI Assistant) architecture. The system performs AST-level code analysis, dependency resolution, and automated testing before deployment to Fly.io infrastructure.
 
-### **[Space Apps & Deployment](api/genesis/README.md#space-apps)**
+### **[Space Apps & Deployment](../api/genesis/README.md#space-apps)**
 
 **Full-stack React applications with real-time data binding**. Generated apps include TypeScript, Tailwind CSS, and automatic API client generation. Apps are deployed as serverless functions with edge caching and automatic scaling. Supports hot reloading and incremental builds.
 
@@ -100,11 +100,11 @@ Official and community-maintained libraries:
 
 Interactive API documentation with live testing capabilities.
 
-### **[SDKs & Libraries](api/README.md#sdks-and-tools)**
+### **[SDKs & Libraries](../api/README.md#sdks-and-tools)**
 
 Official and community-maintained libraries for popular languages.
 
-### **[API Best Practices](api/README.md#best-practices)**
+### **[API Best Practices](../api/README.md#best-practices)**
 
 **Performance characteristics and scaling guidelines**. The platform handles 100k+ requests/second with P95 latency under 50ms. Rate limits are enforced using token bucket algorithms with burst capacity. Includes guidance on connection pooling, request batching, and optimal retry strategies.
 

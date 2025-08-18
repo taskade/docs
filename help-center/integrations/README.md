@@ -111,4 +111,4 @@ Connect Taskade with the apps you already use every day! Our integrations help y
 
 ---
 
-_Need help with API development? Check our [Developer Documentation](api/README.md) for technical details and code examples._
+_Need help with API development? Check our [Developer Documentation](../../api/README.md) for technical details and code examples._

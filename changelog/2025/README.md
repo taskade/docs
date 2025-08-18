@@ -209,7 +209,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ## 🔗 Related Resources
 
 - **[Genesis Documentation](../../genesis/README.md)** - Complete guide to no-code app creation
-- **[API Reference](api/README.md)** - Developer documentation for programmatic access
+- **[API Reference](../../api/README.md)** - Developer documentation for programmatic access
 - **[Help Center](../../help-center/README.md)** - User guides and tutorials
 
 ---
