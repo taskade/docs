@@ -7,6 +7,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ### 🧬 **August 9, 2025** - Taskade Genesis Preview
 
 **🚀 Major Features:**
+
 - **🧬 Genesis Preview** – One prompt → live, shareable AI app powered by your Workspace (projects, databases, agents, automations)
 - **🤖 Agent Orchestration Mode** – Agents plan and execute as a team
 - **👥 AI Teams in Automations** – Ask Agent Team as an action in flows
@@ -15,6 +16,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 - **🔌 New & Enhanced Integrations** – Reddit, Discord, Slack, WhatsApp Business, Google Sheets
 
 **✨ Enhancements:**
+
 - Copy & Duplicate Automations
 - Visual activity indicators for agents, smart link integration, easier setup
 - Better triggers, filtering, delays, and controls in Automation
@@ -25,6 +27,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ### 🤖 **July 13, 2025** - Generate Workflows, Agent Teams, and Subspaces
 
 **🚀 Major Features:**
+
 - **⚡ Workflow Generator** – Build, branch, loop, filter, trigger, act via chat
 - **👥 AI Agent Teams** – Roles, tools, knowledge with Auto/Everyone/Orchestrate modes
 - **🏗️ Generate Subspaces with Autopilot** – Projects, agents, and flows from a prompt
@@ -34,6 +37,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 - **📝 AI Forms** – Dynamic fields, templates, automation triggers
 
 **✨ Enhancements:**
+
 - Agent autonomy, tools, and conversation starters
 - Automation UI/visualization improvements, Reddit and Slack upgrades
 - Table View performance, filtering, keyboard navigation
@@ -44,12 +48,14 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ### 📱 **June 12, 2025** - Mobile Agents, Automation, Fields, and Widgets
 
 **🚀 Major Features:**
+
 - **📱 Build/Train/Launch Agents on Mobile** – Tools, prompts, knowledge
 - **⚡ Generate Projects & Agents with AI** – One prompt setup
 - **📊 Custom Fields on Mobile** – Status, priority, owners
 - **🏠 Agent Widgets & Favorites** – Home screen shortcuts (iOS/Android)
 
 **✨ Enhancements:**
+
 - Launch automations from mobile, modern UI, improved table view, polished onboarding
 - Developer tools: Taskade MCP server and OpenAPI codegen toolkit
 - Performance, bug fixes, stability across mobile
@@ -59,6 +65,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ### 🚁 **May 22, 2025** - Autopilot Beta, CSV→Tables, Forms, Gmail, DALL·E 3
 
 **🚀 Major Features:**
+
 - **🚁 Taskade Autopilot (Beta)** – Generate agents, projects, automations from a prompt
 - **📥 CSV → AI Tables** – Map columns to custom fields
 - **📩 AI Forms** – Email/phone fields with validation
@@ -67,6 +74,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 - **🪄 DALL·E 3** – Image generation action and agent tool
 
 **✨ Enhancements:**
+
 - Agent conversation starters, UI polish, public access confirmations
 - Automation: forms date/phone/email/URL, GitHub/Gmail triggers, Stripe (beta), HTTP presets
 - Table View per-project config and filters
@@ -77,6 +85,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ### 🔄 **April 6, 2025** - Agentic Workflows, Categorize with AI, Mail Hook
 
 **🚀 Major Features:**
+
 - **🪄 AI Project Studio v3** – Let AI create structured projects with tasks, timelines, roles, and custom fields
 - **🧠 Categorize with AI** – Tag, group, classify with presets
 - **📥 Mail Hook Trigger** – Launch workflows by email
@@ -85,6 +94,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 - **🎁 AI Kits Gallery** – One‑click installable kits
 
 **✨ Enhancements:**
+
 - Automation: RSS multi-feed, Calendly filtering, Stripe beta, project actions
 - Table View: created/modified/completed fields, assignee/status filtering
 - Import & Knowledge: improved labeling and link handling
@@ -95,6 +105,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ### 📊 **March 29, 2025** - New Table View, Task Automation, Multi-Feed YouTube & RSS
 
 **🚀 Major Features:**
+
 - **📊 Supercharged Table View** – Duplicate custom fields; Created/Modified By/Date
 - **⚡ One-Click Task Automation** – Task Manual Trigger from projects
 - **🎥 YouTube Trigger (Multi-Channel)** – Track multiple channels
@@ -107,6 +118,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ### 🧭 **March 4, 2025** - New Workspace Navigation, Instant AI Kits, o3 Support, New Triggers
 
 **🚀 Major Features:**
+
 - **📍 Workspace Navigation** – Faster switching across projects, agents, automations, media
 - **🎁 Instant AI Kit Creation** – Turn folders into AI Kits in one click
 - **🧠 o3 Reasoning Models** – o3‑mini low/medium/high for agents
@@ -119,6 +131,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ### 🧪 **February 19, 2025** - Live AI Kits, Agent History, Dynamic Tools, AI Forms End Page
 
 **🚀 Major Features:**
+
 - **🧩 Live Preview in AI Kits** – Edit/preview shared kits
 - **🕑 AI Agent History in Projects** – Trace and rerun agent commands
 - **⚡ Agent Tool Output** – Structured output control
@@ -132,6 +145,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ### 🎁 **February 8, 2025** - AI Kits, Unlimited Agent Training, New Automation UI, Array→String
 
 **🚀 Major Features:**
+
 - **🎁 Taskade AI Kits** – One‑click installable workspaces (agents, automations, projects)
 - **🌐 Unlimited Web Links** – Projects as live agent knowledge
 - **🧩 Simpler Automation UI** – Redesigned trigger/action menu
@@ -144,6 +158,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ### 🔗 **January 27, 2025** - Agent Widgets, Branded Links, Delay & Schedule, GitHub & Facebook
 
 **🚀 Major Features:**
+
 - **🤖 Agent Widgets** – Embed agents anywhere; track via Public Agent Inbox
 - **✅ Custom Domains (CNAME)** – Branded public agent links
 - **🔮 Delay Action** – Time workflows; Schedule Trigger pairing
@@ -158,6 +173,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ### 🔁 **January 12, 2025** - Loops, WhatsApp Business, Agent Search & Exports
 
 **🚀 Major Features:**
+
 - **🔁 Loop Action** – Batch/nested processing
 - **💬 WhatsApp Business** – Automate messaging in flows
 - **🔎 Agent Search** – Sidebar agent discovery
@@ -171,6 +187,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ### 📜 **January 1, 2025** - Year in Review: Agents, Automation, Human 🤝 AI
 
 **Highlights:**
+
 - 500k AI agents created, 1.5M automations run, 112B tokens processed, 17M tasks completed
 - Autonomous agents; dynamic web knowledge; web scraper; multi‑agent collaboration; share/publish agents; integrated tools; import anything
 - Automation generator; custom field triggers; RSS/YouTube; Google Workspace; Slack/Teams/Discord; social automations
@@ -182,6 +199,7 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ## 🗺️ Q4 2025 Roadmap
 
 **Coming Next:**
+
 - **🎨 Advanced Templates** - Industry-specific app templates (CRM, E-commerce, etc.)
 - **🔌 API Generation** - Automatic REST API creation for Genesis applications
 - **📊 Visual Database Designer** - Drag-and-drop database schema creation
@@ -191,9 +209,9 @@ Welcome to Taskade's 2025 product updates! This year marks a revolutionary break
 ## 🔗 Related Resources
 
 - **[Genesis Documentation](../../genesis/README.md)** - Complete guide to no-code app creation
-- **[API Reference](../../api/README.md)** - Developer documentation for programmatic access
+- **[API Reference](api/README.md)** - Developer documentation for programmatic access
 - **[Help Center](../../help-center/README.md)** - User guides and tutorials
 
 ---
 
-*For previous releases, see our [2024 Archive](../2024/README.md)*
+_For previous releases, see our [2024 Archive](../2024/README.md)_
