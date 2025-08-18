@@ -14,7 +14,7 @@ layout:
 
 # Introduction to TaskOS
 
-**TaskOS** is Taskade's agentic operating system—the engine that transforms natural language prompts into complete, intelligent applications. It orchestrates the three core pillars of every Subspace: Knowledge, Intelligence, and Action. *If you prefer a fully no-code experience, check out [Taskade Genesis](../genesis/README.md), which provides a Genesis prompt builder powered by TaskOS under the hood.*
+**TaskOS** is Taskade's agentic operating system—the engine that transforms natural language prompts into complete, intelligent applications. It orchestrates the three core pillars of every Subspace: Knowledge, Intelligence, and Action. _If you prefer a fully no-code experience, check out [Taskade Genesis](../genesis/README.md), which provides a Genesis prompt builder powered by TaskOS under the hood._
 
 ## How TaskOS Works
 
@@ -32,16 +32,19 @@ The TaskOS vision is already realized through **[Taskade AI Kits](https://taskad
 ### Real Kit Examples
 
 **AI Lead Generation Kit**
+
 - **Knowledge**: Lead Tracker project with custom fields for contact info, qualification status, and source
 - **Intelligence**: Lead Processing Agent that qualifies prospects and suggests next actions
 - **Action**: Automated lead capture form that feeds directly into the tracker and triggers agent analysis
 
 **Customer Support Kit**
+
 - **Knowledge**: Support Ticket Tracker with priority, category, and resolution status fields
 - **Intelligence**: Customer Support Agent that triages tickets and suggests responses
 - **Action**: Public support form with automatic ticket creation and agent-powered routing
 
 **Real Estate News Kit**
+
 - **Knowledge**: RSS Tracker project for aggregating industry news
 - **Intelligence**: News Researcher Agent that analyzes and summarizes articles
 - **Action**: Automated RSS feed processing with scheduled reports
@@ -66,6 +69,7 @@ This follows the workflow: **Idea → Project → Agent → Automation → Execu
 TaskOS is built on Taskade's robust real-time collaboration platform, featuring:
 
 ### Core Components
+
 - **Real-time Document System**: Operational transformation for conflict-free collaborative editing
 - **GraphQL API Layer**: Type-safe API with subscriptions for live updates
 - **Permission System**: Role-based access control with fine-grained permissions
@@ -73,6 +77,7 @@ TaskOS is built on Taskade's robust real-time collaboration platform, featuring:
 - **AI Integration**: LangChain-powered agents with tool access and memory
 
 ### Agent Capabilities
+
 ```typescript
 // Example agent configuration
 const agentConfig = {
@@ -81,21 +86,30 @@ const agentConfig = {
     {
       id: "analyze_feedback",
       name: "Analyze Feedback",
-      prompt: "Analyze customer feedback and identify key themes, sentiment, and actionable insights"
+      prompt:
+        "Analyze customer feedback and identify key themes, sentiment, and actionable insights",
     },
     {
       id: "prioritize_features",
-      name: "Prioritize Features", 
-      prompt: "Rank feature requests by impact, effort, and strategic alignment"
-    }
+      name: "Prioritize Features",
+      prompt:
+        "Rank feature requests by impact, effort, and strategic alignment",
+    },
   ],
-  tools: ["knowledge_search", "web_search", "project_context", "automation_trigger"],
-  knowledgeEnabled: true
-}
+  tools: [
+    "knowledge_search",
+    "web_search",
+    "project_context",
+    "automation_trigger",
+  ],
+  knowledgeEnabled: true,
+};
 ```
 
 ### Automation Workflows
+
 TaskOS supports complex multi-step automations:
+
 - **100+ Integrations**: Slack, GitHub, HubSpot, Google Workspace, and more
 - **Event-driven Triggers**: Form submissions, webhooks, schedules, project events
 - **AI-powered Actions**: Content generation, data analysis, decision making
@@ -104,6 +118,7 @@ TaskOS supports complex multi-step automations:
 ## Creating and Sharing Workflows
 
 ### Current: AI Kits
+
 Today, you can package and share complete workflows as AI Kits:
 
 1. **Create**: Build your project, agent, and automation in a folder
@@ -118,7 +133,7 @@ We're evolving toward the **Taskade System Kit** (`.tsk`) format for even greate
 ```
 my-app.tsk/
 ├── project.json      # Data schema and initial content
-├── agent.json        # AI agent configuration and commands  
+├── agent.json        # AI agent configuration and commands
 ├── automation.json   # Workflow definitions and triggers
 ├── knowledge/        # Training materials and context
 │   └── domain-guide.pdf
@@ -126,6 +141,7 @@ my-app.tsk/
 ```
 
 This will enable:
+
 - **Version Control**: Track entire application architectures in Git
 - **Programmatic Creation**: Build kits via CLI and API
 - **Cross-Platform Compatibility**: Export/import between different platforms
@@ -136,18 +152,21 @@ This will enable:
 TaskOS excels at creating applications that combine structured data, AI reasoning, and automated workflows:
 
 ### Internal Tools
+
 - **Smart CRM**: Lead scoring, automated follow-ups, and sales insights
-- **Project Dashboard**: AI-powered status updates and risk analysis  
+- **Project Dashboard**: AI-powered status updates and risk analysis
 - **Knowledge Base**: Intelligent search and content recommendations
 - **Bug Tracker**: Automated triage, assignment, and resolution tracking
 
 ### Public-Facing Apps
+
 - **Customer Support Portal**: AI chatbot with knowledge base integration
 - **Lead Capture System**: Intelligent form processing and qualification
 - **Feedback Collection**: Automated analysis and reporting
 - **Booking System**: Smart scheduling with conflict resolution
 
 ### Agentic Workflows
+
 - **Content Pipeline**: Research, generation, review, and publishing
 - **Data Processing**: Ingestion, analysis, and reporting automation
 - **Quality Assurance**: Automated testing and compliance checking
@@ -158,6 +177,7 @@ TaskOS excels at creating applications that combine structured data, AI reasonin
 TaskOS is designed for both **prompt-driven generation** and **programmatic customization**:
 
 ### Prompt-to-App Generation (Coming Soon)
+
 ```bash
 # Generate a complete application from a prompt
 curl -X POST https://www.taskade.com/api/v1/generate \
@@ -166,6 +186,7 @@ curl -X POST https://www.taskade.com/api/v1/generate \
 ```
 
 ### Current: Component-by-Component Building
+
 ```bash
 # Create the knowledge layer
 curl -X POST https://www.taskade.com/api/v1/projects \
@@ -183,16 +204,19 @@ curl -X POST https://www.taskade.com/api/v1/folders/SUBSPACE_ID/agents/generate 
 For developers building with LLMs and TaskOS:
 
 ### Structured Output Format
+
 - Use Markdown with structured lists, checkboxes, and headings
 - Generate structured output (Project + Agent + Automation) for broad user intents
 - Prefer brevity, clarity, and utility in all outputs
 
 ### Content Recommendations
+
 - Suggest appropriate project views: list, board, table, calendar, mindmap, gantt, orgchart
 - Recommend knowledge uploads (PDFs, YouTube videos, web links) to enhance agents
 - Link contextual knowledge for better agent performance
 
 ### Best Practices
+
 - TaskOS is agent-native, real-time, and structured
 - Agents are vertical and domain-specific, not general chatbots
 - Workflows follow: Idea → Project → Agent → Automation → Execution
@@ -212,8 +236,8 @@ TaskOS leverages Taskade's full platform capabilities:
 
 1. **[Explore AI Kits](https://taskade.com/kits)** - See TaskOS in action with pre-built workflows
 2. **[Install a Kit](https://help.taskade.com/en/articles/10378721-taskade-ai-kits)** - Experience the one-click deployment process
-3. **[Learn the Architecture](../vision/architecture.md)** - Understand how the pieces fit together  
-4. **[Try the API](../api/workspaces/README.md)** - Start building with our building blocks
+3. **[Learn the Architecture](../vision/architecture.md)** - Understand how the pieces fit together
+4. **[Try the API](api/workspaces/README.md)** - Start building with our building blocks
 5. **[Join the Community](https://www.taskade.com/feedback/public-api)** - Connect with other developers
 
 ---
@@ -221,4 +245,3 @@ TaskOS leverages Taskade's full platform capabilities:
 **TaskOS is available today through AI Kits.** The Core API provides the building blocks for custom development, while the full prompt-to-app Generator and `.tsk` standard are coming soon.
 
 Experience the future of AI-powered application development at [taskade.com/kits](https://taskade.com/kits).
-

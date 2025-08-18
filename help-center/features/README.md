@@ -6,11 +6,11 @@ Explore Taskade's comprehensive feature set designed to enhance your productivit
 
 **For detailed API documentation on these features:**
 
-* **[Projects API](../../api/projects/README.md)** - Create and manage project data programmatically
-* **[Tasks API](../../api/tasks/README.md)** - Build task management functionality  
-* **[AI Agents API](../../api/agents/README.md)** - Integrate intelligent assistants
-* **[Automations](../../automation/README.md)** - Workflow automation and integrations
-* **[Genesis Examples](../../genesis/examples-and-templates.md)** - Ready-to-use app templates
+- **[Projects API](api/projects/README.md)** - Create and manage project data programmatically
+- **[Tasks API](api/tasks/README.md)** - Build task management functionality
+- **[AI Agents API](api/agents/README.md)** - Integrate intelligent assistants
+- **[Automations](../../automation/README.md)** - Workflow automation and integrations
+- **[Genesis Examples](../../genesis/examples-and-templates.md)** - Ready-to-use app templates
 
 ## Project Views
 
@@ -48,4 +48,4 @@ Taskade offers multiple project views to match different work styles:
 
 ---
 
-*Want to supercharge your productivity? Explore our [AI Features](../ai-features/README.md) to see how artificial intelligence can help you work smarter.*
+_Want to supercharge your productivity? Explore our [AI Features](../ai-features/README.md) to see how artificial intelligence can help you work smarter._
