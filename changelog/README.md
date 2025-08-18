@@ -85,7 +85,7 @@ Each release entry includes:
 
 ## 🔗 Related Resources
 
-- [Developer API Changelog](api/README.md) - Technical API changes
+- [Developer API Changelog](../api/README.md) - Technical API changes
 - [Help Center](../help-center/README.md) - User guides and documentation
 - [GitHub Releases](https://github.com/taskade/docs/releases) - Technical release notes
 

@@ -16,7 +16,7 @@ Welcome to the Taskade Help Center! Here you'll find comprehensive guides, tutor
 Ready to build custom solutions? These advanced guides help you create exactly what your business needs:
 
 - **[Genesis App Builder](../genesis/README.md)** - Build custom apps without coding
-- **[Developer API](api/README.md)** - For technical teams who want full control
+- **[Developer API](../api/README.md)** - For technical teams who want full control
 - **[Advanced Automations](../automation/README.md)** - Complex workflow automation
 
 ## 🎯 Popular Topics

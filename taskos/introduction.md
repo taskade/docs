@@ -237,7 +237,7 @@ TaskOS leverages Taskade's full platform capabilities:
 1. **[Explore AI Kits](https://taskade.com/kits)** - See TaskOS in action with pre-built workflows
 2. **[Install a Kit](https://help.taskade.com/en/articles/10378721-taskade-ai-kits)** - Experience the one-click deployment process
 3. **[Learn the Architecture](../vision/architecture.md)** - Understand how the pieces fit together
-4. **[Try the API](api/workspaces/README.md)** - Start building with our building blocks
+4. **[Try the API](../api/workspaces/README.md)** - Start building with our building blocks
 5. **[Join the Community](https://www.taskade.com/feedback/public-api)** - Connect with other developers
 
 ---
