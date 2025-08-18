@@ -89,7 +89,7 @@ Create professional applications with:
 
 - **[Community Forum](https://taskade.com/community)** - Get help from other users
 - **[Official Help Center](https://help.taskade.com)** - Step-by-step guides and tutorials
-- **[Technical Documentation](api/README.md)** - For advanced users and developers
+- **[Technical Documentation](../../api/README.md)** - For advanced users and developers
 
 ### Templates & Ready-to-Use Examples
 
@@ -110,8 +110,8 @@ Create professional applications with:
 
 For technical implementation:
 
-- [Genesis API Documentation](api/genesis/README.md)
-- [Automations API Reference](api/automations/README.md)
+- [Genesis API Documentation](../../api/genesis/README.md)
+- [Automations API Reference](../../api/automations/README.md)
 - [Complete Integration Guide](../../automation/comprehensive-integrations.md)
 
 ---
