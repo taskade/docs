@@ -1,6 +1,14 @@
-# 2024 Changelog Archive
+# 2024 Living DNA: Intelligence + Action + Knowledge + Evolution
 
-This page contains all Taskade updates from 2024. For the latest updates, see [2025 Changelog](../2025/README.md).
+**The Breakthrough Year** - AI agents become autonomous teams. The four pillars of intelligent systems emerge to lay the foundation for Genesis.
+
+> *"This was the year everything came together. Intelligence inherited from projects, actions coordinated through agents, knowledge shared across systems, and evolution became continuous. The Living DNA framework wasn't just built - it came alive."*
+
+---
+
+## 🧬 Living DNA Framework Year
+
+The breakthrough year when AI agents evolved from individual assistants into autonomous teams, establishing the four pillars that would enable Genesis: **Intelligence**, **Action**, **Knowledge**, and **Evolution**.
 
 ## December 2024
 
@@ -253,4 +261,20 @@ This page contains all Taskade updates from 2024. For the latest updates, see [2
 
 ---
 
-*[Back to Latest Changelog](../README.md) | [View 2025 Updates](../2025/README.md)*
+## 🧬 The Living DNA Foundation
+
+**2024's Essential Contributions to Genesis:**
+
+1. **🧠 Intelligence Pillar** - AI agents learned to inherit knowledge from projects and evolve contextually
+2. **⚡ Action Pillar** - Autonomous workflows emerged with agents coordinating as self-managing teams  
+3. **📚 Knowledge Pillar** - Information became interconnected, searchable, and dynamically updating
+4. **🔄 Evolution Pillar** - Systems learned to improve themselves based on usage patterns and feedback
+
+These four pillars became the **Living DNA** that powers Genesis applications - enabling them to think, act, remember, and evolve autonomously.
+
+---
+
+**Next in the Genesis Timeline:** [2025 Genesis Era](../2025/README.md) - One Prompt. One App.
+**Previous Era:** [2023 AI Breakthrough](../2023/README.md) - From Commands to Agents
+
+*[Return to The Genesis Timeline](../README.md)*
