@@ -124,11 +124,16 @@
 - [Core Architecture](vision/architecture.md)
 - [Specs & Interoperability](vision/specs-and-interoperability.md)
 
-## 📰 Updates
+## 📰 The Genesis Timeline
 
-- [Latest Updates](changelog/README.md)
-- [2025 Releases](changelog/2025/README.md)
-- [2024 Archive](changelog/2024/README.md)
+- [The Genesis Timeline](changelog/README.md)
+- [2025 Genesis Era](changelog/2025/README.md)
+- [2024 Living DNA](changelog/2024/README.md)
+- [2023 AI Breakthrough](changelog/2023/README.md)
+- [2022 AI & Automation](changelog/2022/README.md)
+- [2021 Major Redesigns](changelog/2021/README.md)
+- [2020 Remote Collaboration](changelog/2020/README.md)
+- [2017-2019 Foundation Years](changelog/2017-2019/README.md)
 
 ## 🤝 Community
 
