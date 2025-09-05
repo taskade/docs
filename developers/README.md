@@ -6,7 +6,7 @@
 **New to Taskade's API?** Start with our [authentication guide](../start/authentication.md) and make your first API request in minutes.
 {% endhint %}
 
-Taskade's API is built around operational transformation, real-time data synchronization, and a unified intelligence layer that powers everything from simple CRUD operations to complex AI-driven workflows. Whether you're building integrations, automating processes, or creating entirely new applications, the platform provides both high-level abstractions and low-level control.
+Taskade's API is built around real-time data synchronization and a unified intelligence layer that powers everything from simple CRUD operations to complex AI-driven workflows. Whether you're building integrations, automating processes, or creating entirely new applications, the platform provides both high-level abstractions and low-level control.
 
 ## 🚀 Quick Start
 
@@ -60,7 +60,7 @@ Official and community-maintained libraries:
 
 ### **[Workspaces & Projects](../api/workspaces/README.md)**
 
-**Tree-structured data with operational transformation**. Projects are implemented as conflict-free replicated data types (CRDTs) enabling real-time collaboration without central coordination. Each project maintains a versioned DAG of changes with sub-second synchronization across clients.
+**Tree-structured data with real-time synchronization**. Projects support conflict-free collaborative editing with instant synchronization across all connected clients. Each project maintains versioned change history for reliable collaboration.
 
 ### **[Tasks & Data](../api/tasks/README.md)**
 
@@ -74,11 +74,11 @@ Official and community-maintained libraries:
 
 ### **[Automation System](../automation/README.md)**
 
-**Event-driven architecture with guaranteed delivery**. Built on a distributed event bus using Apache Kafka for reliable message processing. Supports exactly-once delivery semantics, dead letter queues, and automatic retry with exponential backoff.
+**Event-driven architecture with guaranteed delivery**. Built on a distributed event system for reliable message processing. Supports exactly-once delivery semantics, failure handling, and automatic retry with exponential backoff.
 
 ### **[Triggers & Actions](../automation/triggers.md)**
 
-**Reactive programming model with 99.9% uptime**. Triggers are implemented as lightweight watchers with microsecond-level change detection. Actions support circuit breakers, bulkheads, and timeout patterns for robust external service integration.
+**Reactive programming model with high reliability**. Triggers provide real-time event detection and processing. Actions include robust error handling and timeout patterns for reliable external service integration.
 
 ### **[Integration Reference](../automation/comprehensive-integrations.md)**
 
@@ -106,13 +106,13 @@ Official and community-maintained libraries for popular languages.
 
 ### **[API Best Practices](../api/README.md#best-practices)**
 
-**Performance characteristics and scaling guidelines**. The platform handles 100k+ requests/second with P95 latency under 50ms. Rate limits are enforced using token bucket algorithms with burst capacity. Includes guidance on connection pooling, request batching, and optimal retry strategies.
+**Performance characteristics and scaling guidelines**. The platform is built for high-throughput applications with enterprise-grade performance. Rate limits are implemented to ensure fair usage across all users. Includes guidance on connection pooling, request batching, and optimal retry strategies.
 
 ## 💡 What You Can Build
 
 ### **Distributed Systems & Data Processing**
 
-- **Real-time analytics pipelines** with sub-second latency using WebSocket streams
+- **Real-time analytics pipelines** with instant updates using WebSocket streams
 - **Multi-tenant SaaS platforms** with isolated data partitioning and row-level security
 - **Event-sourced architectures** with automatic snapshots and replay capabilities
 - **Microservice orchestration** with automated dependency injection and health monitoring

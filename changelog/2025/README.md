@@ -196,7 +196,7 @@ The culmination of eight years of evolution - from collaborative productivity to
 
 **Highlights:**
 
-- 500k AI agents created, 1.5M automations run, 112B tokens processed, 17M tasks completed
+- Millions of AI agents created, automations run, and tasks completed across the platform
 - Autonomous agents; dynamic web knowledge; web scraper; multi‑agent collaboration; share/publish agents; integrated tools; import anything
 - Automation generator; custom field triggers; RSS/YouTube; Google Workspace; Slack/Teams/Discord; social automations
 - Unified human‑AI collaboration space with shared chats and agent teams

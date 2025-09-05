@@ -66,7 +66,7 @@ POST /v1/genesis/space-apps
     "id": "space_app_12345",
     "space_id": "space_67890",
     "app_id": "default",
-    "preview_url": "https://app-67890.fly.dev",
+    "preview_url": "https://app-67890.genesis-demo.com",
     "status": "deployed",
     "created_at": "2024-01-15T10:30:00Z",
     "data": {
@@ -101,7 +101,7 @@ GET /v1/genesis/space-apps/{space_app_id}
     "id": "space_app_12345",
     "space_id": "space_67890",
     "app_id": "default",
-    "preview_url": "https://app-67890.fly.dev",
+    "preview_url": "https://app-67890.genesis-demo.com",
     "status": "deployed",
     "commit_id": "commit_xyz789",
     "gateway_token": "gateway_token_secure",
@@ -156,7 +156,7 @@ POST /v1/genesis/space-apps/{space_app_id}/deploy
   "deployment": {
     "status": "deploying",
     "machine_id": "machine_new789",
-    "preview_url": "https://app-67890.fly.dev",
+    "preview_url": "https://app-67890.genesis-demo.com",
     "started_at": "2024-01-15T11:05:00Z"
   }
 }
@@ -178,7 +178,7 @@ GET /v1/spaces/{space_id}/apps
     {
       "id": "space_app_12345",
       "app_id": "default",
-      "preview_url": "https://app-67890.fly.dev",
+      "preview_url": "https://app-67890.genesis-demo.com",
       "status": "deployed",
       "created_at": "2024-01-15T10:30:00Z"
     }
@@ -404,7 +404,7 @@ Get notified when Space App events occur:
     "space_app": {
       "id": "space_app_12345",
       "space_id": "space_67890",
-      "preview_url": "https://app-67890.fly.dev",
+      "preview_url": "https://app-67890.genesis-demo.com",
       "status": "deployed"
     }
   }

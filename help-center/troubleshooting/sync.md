@@ -12,7 +12,7 @@
 
 ### **How Sync Works**
 
-Taskade uses **real-time synchronization** powered by operational transformation:
+Taskade uses **real-time synchronization** with advanced algorithms:
 
 ```yaml
 Sync Architecture:
@@ -300,7 +300,7 @@ Common Permission Problems:
 ```yaml
 Conflict Resolution:
   Automatic Resolution:
-    - Taskade uses operational transformation
+    - Taskade uses advanced synchronization algorithms
     - Most conflicts resolved automatically
     - Last save typically wins for simple changes
   
