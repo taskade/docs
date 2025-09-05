@@ -1,38 +1,38 @@
 # Advanced Features
 
-Once you've mastered the basics of Genesis, these advanced features will help you build more sophisticated and powerful applications. These features leverage the deep integration between Taskade's core pillars and the TAA (Taskade AI Assistant) Unified System that powers Genesis.
+Ready to take your Genesis app to the next level? These powerful features help you build even smarter and more capable applications. No coding required—just plain English descriptions of what you want!
 
-## Understanding the TAA Unified System
+## How Genesis Gets So Smart
 
-The **TAA Unified System** is the intelligent orchestration layer that makes Genesis possible. It coordinates between:
+Genesis works like having a whole tech team at your fingertips. Behind the scenes, it coordinates different tools to make your app intelligent:
 
-- **Project Management Tools** - Create and manage data structures
-- **AI Agent Tools** - Deploy and train intelligent assistants  
-- **Automation Tools** - Build complex workflows and integrations
-- **Media Tools** - Process and organize knowledge sources
-- **Navigation Tools** - Connect everything into a cohesive user experience
+- **Smart Data Storage** - Organizes information automatically
+- **AI Assistants** - Learns your business and helps users  
+- **Workflow Automation** - Connects to your favorite business tools
+- **File Handling** - Manages documents, photos, and uploads seamlessly
+- **Easy Navigation** - Creates user-friendly interfaces that just work
 
-This unified approach means your Genesis apps have access to enterprise-grade capabilities that would normally require months of development.
+The best part? You describe what you want, and Genesis handles all the technical complexity for you.
 
-## Working with Data
+## Organizing Your Data Like a Pro
 
-Your Genesis app automatically creates a structured database, but you can customize how data is organized and used.
+Genesis automatically creates smart storage for your information, but you can make it even better organized for your specific needs.
 
-### Custom Data Structures
+### Making Data Work for Your Business
 
-**Create organized data categories:**
+**Organize information into clear categories:**
 ```
-"Create separate sections for different types of feedback: food quality, service experience, and facility cleanliness. Each section should have its own rating scale and specific questions."
-```
-
-**Add dropdown menus for consistency:**
-```
-"Add a dropdown for customers to select which location they visited: Downtown, Mall, or Airport location."
+"I want separate sections for different feedback types: how was the food, how was the service, and how was the restaurant cleanliness. Give each section its own 1-5 star rating and room for comments."
 ```
 
-**Include reference fields:**
+**Use dropdowns to keep things consistent:**
 ```
-"Include a field to capture the server's name so we can recognize great service and provide targeted feedback to staff."
+"Add a dropdown menu so customers can pick which location they visited: our Downtown spot, Mall location, or Airport branch."
+```
+
+**Track important details:**
+```
+"Add a field for the server's name so we can recognize when someone gives great service and share the feedback with our team."
 ```
 
 ### Data Relationships
@@ -47,20 +47,20 @@ Your Genesis app automatically creates a structured database, but you can custom
 "Each project should have multiple tasks underneath it, and each task can have subtasks with individual deadlines and assignees."
 ```
 
-## AI Agent Customization
+## Making Your AI Assistant Amazing
 
-Every Genesis app includes custom AI agents powered by advanced language models (GPT-4.1, Claude-4, o3-mini, o4-mini) that can be trained for your specific business needs.
+Every Genesis app comes with its own AI assistant that learns about your business. Think of it as hiring a super-smart employee who never sleeps and always knows exactly what to do!
 
-### AI Model Selection for Your Agents
+### Your AI Gets the Best Brain Available
 
-Genesis automatically selects the best AI model for your use case, but you can specify preferences:
+Genesis automatically picks the smartest AI for your needs, but you can ask for specific types:
 
-| **Model** | **Best For** | **Speed** | **Capabilities** |
-|-----------|--------------|-----------|------------------|
-| **GPT-4.1** | Complex reasoning, strategic planning | Medium | ⭐⭐⭐⭐⭐ Advanced problem-solving |
-| **Claude-4 Sonnet** | Writing, analysis, creative tasks | Fast | ⭐⭐⭐⭐⭐ Excellent communication |
-| **o4-mini** | Balanced performance, coding tasks | Fast | ⭐⭐⭐⭐☆ Reliable and efficient |
-| **o3-mini** | Quick responses, simple tasks | Very Fast | ⭐⭐⭐☆☆ Efficient for basic needs |
+| **AI Type** | **What It's Great At** | **How Fast** | **Perfect For** |
+|-------------|------------------------|--------------|-----------------|
+| **Super Smart** | Complex decisions, planning ahead | Medium speed | ⭐⭐⭐⭐⭐ Solving tricky business problems |
+| **Great Communicator** | Writing, understanding people | Fast | ⭐⭐⭐⭐⭐ Talking with customers beautifully |
+| **Reliable Worker** | Getting things done consistently | Fast | ⭐⭐⭐⭐☆ Handling everyday tasks perfectly |
+| **Quick Responder** | Fast answers, simple tasks | Super fast | ⭐⭐⭐☆☆ When speed matters most |
 
 ### Comprehensive Agent Training
 
@@ -153,6 +153,79 @@ Create specialized commands for specific business tasks:
 ```
 "When the Customer Service Agent encounters a technical issue beyond basic troubleshooting, automatically hand off the conversation to the Technical Support Agent with full context and conversation history."
 ```
+
+### AI-Powered Agent Creation
+
+**TAA Creates Agents for You:**
+
+Your Taskade AI Assistant (TAA) can now build custom AI agents automatically based on your needs:
+
+```
+"TAA, create a marketing assistant agent that helps with content planning"
+"Set up a customer service bot for handling FAQ questions"  
+"Build a sales agent that qualifies leads from our contact form"
+```
+
+**Automatic Configuration:**
+- TAA determines the optimal agent personality and tone
+- Automatically selects appropriate AI models (GPT-4.1, Claude-4, etc.)
+- Configures relevant tools and integrations
+- Sets up proper knowledge sources and training
+
+### Public Agent Publishing
+
+**Share Your Agents with the World:**
+
+Transform your private AI agents into public resources accessible to anyone:
+
+**One-Click Publishing:**
+```
+"Make my customer support agent public so customers can get help 24/7"
+"Publish our product expert agent for potential clients to explore our services"
+"Create a public FAQ bot for our website visitors"
+```
+
+**Public Agent Features:**
+- Unique public URL for each agent (e.g., `agent.taskade.com/your-support-bot`)
+- Customizable branding and appearance 
+- Usage analytics and conversation insights
+- Community discovery through the agent marketplace
+
+### Embeddable AI Agents
+
+**Agents Anywhere on the Web:**
+
+Embed your public agents directly into websites, documentation, or any web page:
+
+```html
+<!-- Simple embed code -->
+<iframe src="https://agent.taskade.com/embed/your-agent-id" 
+        width="400" 
+        height="600" 
+        frameborder="0">
+</iframe>
+
+<!-- Advanced embed with customization -->
+<script src="https://agent.taskade.com/embed.js"></script>
+<div id="taskade-agent" 
+     data-agent-id="your-agent-id"
+     data-theme="light"
+     data-position="bottom-right">
+</div>
+```
+
+**Embedding Use Cases:**
+- **Customer Support**: Add help chat to any page
+- **Product Guides**: Interactive product exploration
+- **Lead Qualification**: Pre-qualify visitors before sales calls
+- **Documentation**: Interactive help within knowledge bases
+- **Training**: Embedded learning assistants in educational content
+
+**Embedding Customization:**
+- Match your website's design and branding
+- Control agent positioning and behavior
+- Customize conversation starters and prompts
+- Set up analytics and conversation tracking
 
 ## Advanced Automations
 

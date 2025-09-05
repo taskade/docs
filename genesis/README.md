@@ -162,14 +162,17 @@ Generate complete React web applications deployed to live URLs with real-time da
 - **🔗 Data Integration** - Connects seamlessly to your Taskade projects
 - **🎨 Modern Styling** - Responsive design with Tailwind CSS
 - **⚡ Real-time Updates** - Changes sync instantly across your workspace
+- **📁 File Upload Support** - Handle files, images, and documents seamlessly
+- **🌍 Custom Domains** - Publish under your own branded domain
+- **🍴 Community Sharing** - Share and fork apps with the global community
 
 | Feature | Space Apps | Project Apps |
 |---------|------------|--------------|
 | **Output** | React web applications | Structured workspaces |
-| **URL** | Live preview URLs | Taskade workspace URLs |
-| **Sharing** | Public web links | Team member access |
-| **Customization** | Full visual control | Template-based views |
-| **Use Cases** | Customer-facing apps | Internal workflows |
+| **URL** | Live preview URLs or custom domains | Taskade workspace URLs |
+| **Sharing** | Public web links + community sharing | Team member access |
+| **Customization** | Full visual control + branding | Template-based views |
+| **Use Cases** | Customer-facing apps, professional tools | Internal workflows |
 
 ---
 
@@ -281,6 +284,38 @@ A complete feedback system that:
 **Time to build:** 3 minutes  
 **No coding required:** ✅  
 **Fully functional:** ✅
+
+---
+
+## 🌍 Community & Professional Features
+
+### **Community Sharing & Forking**
+Transform your Genesis apps from private solutions into community resources:
+
+- **🌐 Share with Community**: Publish your apps to the global Taskade marketplace
+- **🍴 One-Click Forking**: Copy complete apps from the community with all features intact
+- **📊 App Discovery**: Browse apps by industry, features, and popularity ratings
+- **⭐ Community Reviews**: Rate and review apps to help others find quality solutions
+
+### **Professional Custom Domains**
+Elevate your apps with branded, professional domains:
+
+- **🏢 Your Brand, Your Domain**: `app.yourcompany.com` instead of random Taskade URLs
+- **🔒 Automatic SSL**: Security certificates generated and managed automatically
+- **⚡ Global CDN**: Fast loading worldwide with enterprise infrastructure
+- **🎨 Complete Branding**: Remove all Taskade references for white-label solutions
+
+### **Advanced File Handling**
+Genesis apps now support sophisticated file operations:
+
+- **📁 File Upload Forms**: Accept resumes, photos, documents from users
+- **📋 Multi-File Processing**: Handle multiple files with smart organization
+- **🔄 Webhook File Transfer**: Receive files through automation workflows
+- **💾 Secure Storage**: Enterprise-grade file security and backup
+
+[Learn about Community Sharing →](community-and-sharing.md)  
+[Set up Custom Domains →](custom-domains.md)  
+[Explore Space Apps →](space-apps-guide.md)
 
 ---
 
