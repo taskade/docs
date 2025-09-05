@@ -508,4 +508,4 @@ Results:
 
 **🚀 Ready to transform your data collection with AI?** Start with a simple feedback form and discover how artificial intelligence can make every form submission more valuable and actionable.
 
-*For more advanced AI integrations, explore our [AI Agents documentation](./ai-agents-getting-started.md) and [Automation workflows](../automation/README.md).*
+*For more advanced AI integrations, explore our [AI Agents documentation](./ai-features/ai-agents-getting-started.md) and [Automation workflows](../automation/README.md).*
