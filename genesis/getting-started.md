@@ -132,10 +132,12 @@ Your app is ready! Now test it thoroughly before sharing with others.
 ### **Test Checklist**
 
 - ✅ **User experience:** Is it easy to understand and use?
-- ✅ **Mobile-friendly:** Does it work well on phones?
+- ✅ **Mobile-friendly:** Does it work well on phones and tablets?
 - ✅ **Data capture:** Is important information being saved?
 - ✅ **Automations:** Are emails and notifications working?
-- ✅ **File uploads:** Can users attach photos/documents if needed?
+- ✅ **File uploads:** Can users attach photos/documents seamlessly?
+- ✅ **File processing:** Are uploaded files being handled correctly by automations?
+- ✅ **Professional appearance:** Does it look polished and branded appropriately?
 
 ### **Common First-Time Issues**
 
@@ -189,26 +191,47 @@ Need adjustments? Genesis makes changes instantly through conversation.
 
 Your app is ready for the real world! You've built something that solves a real business problem, and now it's time to put it in front of actual users.
 
-Getting it live is simple:
+### **Publishing Options**
 
-1. **Publish**: Click **Publish** in the top-right corner. Once this is done:
+1. **Private Use**: Keep it within your workspace for team use
+2. **Custom Domain**: Publish under your branded domain (e.g., `app.yourcompany.com`)
+3. **Share with Community**: Publish to the global Taskade marketplace for others to discover and fork
+4. **Public Link**: Get a shareable URL for external users
 
-   - (2) **Copy** the **direct** **app** **link** or **share your app on social media.**
+### **Getting It Live**
 
-   - (3) **Embed** the app on your website or blog.
+1. **Click "Publish"** in the top-right corner
+2. **Choose your publishing option:**
+   - **Public Link**: Instant shareable URL
+   - **Custom Domain**: Professional branded experience  
+   - **Community Sharing**: Help others while showcasing your skills
 
-   - (4) **Share** the app **on your social media**.
+3. **Copy the link** and share with your intended audience
 
-Your app is instantly available and ready for users!
+### **Community Sharing Benefits**
+
+If you've built something that could help other businesses:
+
+- **Share with Community**: Your app appears in the marketplace
+- **Help Others**: Teams worldwide can fork and use your solution
+- **Build Reputation**: Showcase your problem-solving skills
+- **Get Feedback**: Community reviews help improve your solutions
+
+### **Professional Deployment**
+
+For business use, consider these options:
+
+- **Custom Domain**: `portal.yourcompany.com` instead of random URLs
+- **Branded Experience**: Remove all Taskade references for white-label solutions
+- **SSL Security**: Automatic HTTPS for professional trust
+- **Global CDN**: Fast loading worldwide
 
 Share your success story and get featured:
 
-- **Post** about your creation on LinkedIn, Twitter, Reddit, or your favorite platform.
-
-- **Show** before/after: "I had this business problem, now I have this solution."
-
-- Tag us @taskade — we love seeing what you've built.
-- **Join** our community to see what other makers are working on.
+- **Post** about your creation on LinkedIn, Twitter, Reddit, or your favorite platform
+- **Show** before/after: "I had this business problem, now I have this solution"
+- Tag us @taskade — we love seeing what you've built
+- **Join** our community to see what other makers are working on
 
 ---
 
