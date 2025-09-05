@@ -29,7 +29,7 @@
 ```yaml
 Real-time Sync Features:
   - Instant updates across all devices
-  - Conflict-free editing with operational transformation
+  - Conflict-free collaborative editing
   - Offline changes sync automatically when reconnected
   - Cross-device cursor tracking and live collaboration
   - Background sync maintains data consistency

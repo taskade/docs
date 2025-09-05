@@ -31,20 +31,20 @@
 ## 🛠️ **Developer Documentation: Hacker News Approach**
 
 ### **Tone & Language**
-- ✅ **Technical Precision**: "Operational transformation, real-time data synchronization, unified intelligence layer"
-- ✅ **Architecture Focus**: "CRDTs enabling real-time collaboration without central coordination"
-- ✅ **Performance Details**: "P95 latency under 50ms", "100k+ requests/second"
+- ✅ **Technical Precision**: "Real-time data synchronization, unified intelligence layer"
+- ✅ **Architecture Focus**: "Advanced synchronization enabling seamless real-time collaboration"
+- ✅ **Performance Details**: "Enterprise-grade performance and reliability"
 - ✅ **Technical Depth**: Specific implementation details and design decisions
 
 ### **Content Focus**
-- ✅ **System Architecture**: CRDTs, event sourcing, distributed systems
-- ✅ **Performance Metrics**: Concrete numbers, latency, throughput
-- ✅ **Technical Innovation**: Multi-modal AI, AST-level code analysis
-- ✅ **Engineering Excellence**: Circuit breakers, bulkheads, retry patterns
+- ✅ **System Architecture**: Distributed systems and real-time synchronization
+- ✅ **Performance Metrics**: Enterprise-grade scalability and reliability
+- ✅ **Technical Innovation**: Multi-modal AI and advanced code analysis
+- ✅ **Engineering Excellence**: Robust error handling and retry patterns
 
 ### **Examples**  
 **BEFORE (Generic):** "Create and manage workspaces, folders, and projects programmatically"  
-**AFTER (Technical):** "Tree-structured data with operational transformation. Projects are implemented as conflict-free replicated data types (CRDTs)"
+**AFTER (Technical):** "Tree-structured data with real-time synchronization. Projects support conflict-free collaborative editing"
 
 **BEFORE (Simple):** "Deploy and manage intelligent AI agents"  
 **AFTER (Detailed):** "Stateful AI agents with persistent memory and tool access. Each agent maintains its own knowledge graph with dependency resolution"

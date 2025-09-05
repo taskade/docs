@@ -241,7 +241,7 @@ Bandwidth Recommendations:
 Enterprise Network Requirements:
   Whitelist Domains:
     - *.taskade.com (all subdomains)
-    - taskade-assets.s3.amazonaws.com
+    - content delivery network endpoints
     - WebSocket connections on port 443
   
   Proxy Configuration:
