@@ -641,4 +641,4 @@ Sales Team Results:
 
 **🧠 Ready to transform your scattered information into AI-powered intelligence?** Start with organizing your most frequently needed documents, then expand to comprehensive knowledge coverage.
 
-*For advanced AI agent training techniques, see our [AI Agents Guide](./ai-agents-getting-started.md). For automation of knowledge processes, check out [Advanced Automation Actions](../automation/advanced-actions.md).*
+*For advanced AI agent training techniques, see our [AI Agents Guide](./ai-features/ai-agents-getting-started.md). For automation of knowledge processes, check out [Advanced Automation Actions](../automation/advanced-actions.md).*
