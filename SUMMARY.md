@@ -28,6 +28,11 @@
   - [Genesis Examples](features/ai-features/genesis-examples.md)
   - [Genesis Getting Started](features/ai-features/genesis-getting-started.md)
   - [Prompt Library](features/ai-features/genesis-prompt-library.md)
+- [AI Forms: Smart Data Collection](features/ai-forms.md)
+- [Knowledge Management](features/knowledge-management.md)
+- [Mobile & Tablet Optimization](features/mobile-optimization.md)
+- [Project Views Mastery](features/project-views-mastery.md)
+- [Industry Use Cases](features/industry-use-cases.md)
 
 ## 🤖 AI Kits: Ready-to-Use
 
@@ -112,6 +117,7 @@
 ## ⚡ Automations
 
 - [Automations Overview](automation/README.md)
+- [Advanced Automation Actions](automation/advanced-actions.md)
 - [Integrations Guide](automation/integrations.md)
 - [Complete Integration Reference](automation/comprehensive-integrations.md)
 
