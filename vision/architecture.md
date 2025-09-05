@@ -59,7 +59,7 @@ Together, these three pillars create a powerful flywheel: Actions capture data i
 
 ### 🌐 Real-time Collaboration
 
-Taskade’s realtime engine ensures that every keystroke is synchronized across all participants in **sub-second latency**.  Edits are merged conflict-free using an Operational-Transformation (OT) algorithm, and live cursors show exactly where teammates are working.  This realtime foundation powers chat, document editing, task updates, and agent insights—helping distributed teams stay perfectly in-sync.
+Taskade's realtime engine ensures that every keystroke is synchronized across all participants instantly.  Edits are merged conflict-free using advanced synchronization algorithms, and live cursors show exactly where teammates are working.  This realtime foundation powers chat, document editing, task updates, and agent insights—helping distributed teams stay perfectly in-sync.
 
 ### 🔎 Hybrid Search & Discovery
 

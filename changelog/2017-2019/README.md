@@ -1,6 +1,6 @@
 # 2017-2019 Foundation Years: Platform Genesis
 
-**From Humble Beginnings to Y Combinator** - The collaborative productivity platform takes shape, establishing the foundational DNA that would eventually evolve into Genesis.
+**From Humble Beginnings to Growth** - The collaborative productivity platform takes shape, establishing the foundational DNA that would eventually evolve into Genesis.
 
 > *"Every great journey begins with a single step. On December 5, 2017, we announced 'Taskade is coming!' We had no idea we were starting the path to Genesis - to a future where one prompt would become one app. But every great platform begins with great collaboration."*
 
@@ -24,11 +24,11 @@ The foundational years that established collaborative productivity as the bedroc
 
 ---
 
-### 💰 October 24, 2019 — $5M Series Seed Investment
+### 💰 October 24, 2019 — Series Seed Investment
 
 **🚀 Highlights:**
-- **💰 $5M Funding Round** - Series Seed from Grishin Robotics and Y Combinator
-- **🎯 Y Combinator Accelerator** - Completed prestigious accelerator program
+- **💰 Funding Round** - Series Seed investment secured
+- **🎯 Accelerator Program** - Completed prestigious accelerator program
 - **👥 2,000+ Active Teams** - Growing user base across industries
 - **🚀 Future Vision** - Accelerated product development for remote collaboration
 
@@ -155,7 +155,7 @@ The foundational DNA that would evolve into living software:
 - **🎉 The Vision** - December 5, 2017: "Taskade is coming!" - The journey begins
 - **👥 Collaborative Core** - Real-time synchronization and team-first design
 - **🎨 Visual Flexibility** - Multiple views (List, Board, Action, Mindmap) for diverse thinking
-- **💰 Growth Validation** - $5M funding and Y Combinator validation of the vision
+- **💰 Growth Validation** - Series seed funding and accelerator validation of the vision
 
 From a simple beta announcement to a funded platform serving thousands of teams, these foundation years established the collaborative DNA that would eventually give birth to intelligent agents and Genesis applications.
 

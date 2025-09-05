@@ -128,8 +128,8 @@ Welcome to Taskade's changelog! This chronicles our extraordinary journey from a
 - **February 2019**: [Multiple Views](https://www.taskade.com/blog/transform-your-task-lists/) - List, Board, Action, Mindmap transformation
 
 **💰 Major Funding & Growth**
-- **October 24, 2019**: [$5M Series Seed](https://www.taskade.com/blog/a-new-chapter-in-the-taskade-journey/) - Grishin Robotics & Y Combinator investment
-- **Y Combinator Program**: Accelerated growth and vision refinement
+- **October 24, 2019**: [Series Seed Funding](https://www.taskade.com/blog/a-new-chapter-in-the-taskade-journey/) - Investment and accelerated growth
+- **Accelerator Program**: Vision refinement and platform development
 - **Tags & Templates**: Organizational framework
 - **Calendar Integration**: Apple and Google sync
 
@@ -174,7 +174,7 @@ The revolutionary capabilities that define the Genesis era:
 - **⚡ Taskade AI Introduction (December 2022)**: "Think in tasks, not prompts" - contextual AI awareness
 - **🎨 Taskade V4 (July 2021)**: Complete platform redesign preparing for AI integration
 - **🏆 Product Hunt #1 (November 2020)**: Community recognition and unlimited free access
-- **💰 $5M Funding (October 2019)**: Y Combinator and Grishin Robotics investment
+- **💰 Series Seed Funding (October 2019)**: Investment and accelerated growth
 - **📱 Multiple Views (February 2019)**: List, Board, Action, Mindmap transformation capability
 - **🏗️ Beta Launch (December 2017)**: "Taskade is coming!" - The journey begins
 

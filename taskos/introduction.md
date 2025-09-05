@@ -70,7 +70,7 @@ TaskOS is built on Taskade's robust real-time collaboration platform, featuring:
 
 ### Core Components
 
-- **Real-time Document System**: Operational transformation for conflict-free collaborative editing
+- **Real-time Document System**: Advanced algorithms for conflict-free collaborative editing
 - **GraphQL API Layer**: Type-safe API with subscriptions for live updates
 - **Permission System**: Role-based access control with fine-grained permissions
 - **Search & Discovery**: Hybrid search combining keyword and semantic (vector) search
