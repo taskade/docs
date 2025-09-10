@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Getting Started with Taskade Genesis
 
 Build complete AI-powered applications from a single prompt - no coding required! Genesis transforms your business ideas into working apps with databases, smart AI agents, and automated workflows.
