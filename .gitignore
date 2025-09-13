@@ -3,6 +3,8 @@ help-center/_imported/
 .gitbook/assets/imported/
 
 # Import scripts and temporary files
+scripts/
+package.json
 *-urls.txt
 test-urls.txt
 discovered-urls.txt
