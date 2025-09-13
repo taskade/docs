@@ -11,6 +11,7 @@
 - [What is Genesis?](genesis/README.md)
 - [Your First App in 5 Minutes](genesis/getting-started.md)
 - [Examples & Templates](genesis/examples-and-templates.md)
+- [Build Without Permission Manifesto](https://www.taskade.com/blog/build-without-permission)
 - [Space Apps: React Applications](genesis/space-apps-guide.md)
 - [Community Sharing & Forking](genesis/community-and-sharing.md)
 - [Custom Domains & Branding](genesis/custom-domains.md)
