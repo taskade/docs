@@ -163,6 +163,104 @@ Don't see your service listed? You can create custom integrations using:
 - Image and document processing
 - Cloud storage integration
 
+## Detailed Integration Examples
+
+### Google Calendar Integration
+
+**Automatic Event Creation:**
+- **Trigger:** Task with due date added
+- **Action:** Create Google Calendar event
+- **Use Case:** Never miss project deadlines
+
+**Meeting Follow-up:**
+- **Trigger:** Calendar event ends
+- **Action:** Create follow-up tasks in Taskade
+- **Use Case:** Ensure meeting action items are tracked
+
+**Project Milestone Sync:**
+- **Trigger:** Project phase completed
+- **Action:** Update calendar with next milestone
+- **Use Case:** Keep stakeholders informed of progress
+
+### Google Sheets Integration
+
+**Data Collection:**
+- **Trigger:** Form submission
+- **Action:** Add row to Google Sheets
+- **Use Case:** Centralized data tracking and analysis
+
+**Inventory Management:**
+- **Trigger:** Task completed (inventory check)
+- **Action:** Update stock levels in spreadsheet
+- **Use Case:** Real-time inventory tracking
+
+**Performance Reporting:**
+- **Trigger:** Weekly schedule
+- **Action:** Generate report from Taskade data to Sheets
+- **Use Case:** Automated team performance dashboards
+
+### Social Media Integrations
+
+**LinkedIn Content Sharing:**
+- **Trigger:** Content approved in review project
+- **Action:** Post to LinkedIn company page
+- **Use Case:** Automated content distribution
+
+**Twitter/X Engagement:**
+- **Trigger:** Mention detected
+- **Action:** Create task for social media manager
+- **Use Case:** Never miss customer interactions
+
+**YouTube Content Workflow:**
+- **Trigger:** Video uploaded
+- **Action:** Create promotion tasks and schedule posts
+- **Use Case:** Comprehensive video marketing automation
+
+### WhatsApp Business Integration
+
+WhatsApp Business integration enhances your communication strategy by automating customer interactions, managing inquiries, and enabling AI-powered responses.
+
+#### **Setup & Configuration**
+1. **Connect WhatsApp Business Account** - Link your verified business account
+2. **Configure System User Access Token** - Set up API authentication
+3. **Verify Business Account ID** - Ensure proper account linking
+4. **Test Connection** - Send test message to verify setup
+
+#### **Available Actions**
+
+| Action | Description | Parameters | Use Case |
+|--------|-------------|------------|----------|
+| **Send Message** | Send text message to contact | `phoneNumber`, `message`, `messageType` | Customer notifications, support responses |
+| **Send Template Message** | Send pre-approved template | `templateId`, `phoneNumber`, `variables` | Order confirmations, appointment reminders |
+| **Send Media Message** | Send images, documents, audio | `phoneNumber`, `mediaUrl`, `mediaType`, `caption` | Product catalogs, instruction manuals |
+| **Get Message Status** | Check delivery status | `messageId` | Track message delivery and read receipts |
+
+#### **Real-World Use Cases**
+
+**Customer Support Automation:**
+- **Trigger:** WhatsApp message received
+- **Action:** Create support ticket, auto-reply with case number
+- **AI Enhancement:** Sentiment analysis, automatic categorization
+- **Follow-up:** Route to appropriate specialist based on message content
+
+**Order Management:**
+- **Trigger:** Order status changed in system
+- **Action:** Send WhatsApp notification with tracking info
+- **Personalization:** Include customer name, order details, estimated delivery
+- **Escalation:** Alert if delivery is delayed
+
+**Lead Qualification:**
+- **Trigger:** WhatsApp message from new contact
+- **Action:** Run AI agent to qualify lead, update CRM
+- **Automation:** Schedule follow-up, assign to sales rep
+- **Integration:** Sync with HubSpot, Salesforce, or other CRM
+
+**Appointment Reminders:**
+- **Trigger:** 24 hours before appointment
+- **Action:** Send WhatsApp reminder with appointment details
+- **Options:** Include reschedule link, location map
+- **Confirmation:** Request confirmation reply, update calendar
+
 ## Getting Help
 
 ### **Documentation**

@@ -1,8 +1,12 @@
 # Core Features
 
-**Your Workspace: The Living DNA of Everything You Build**
+**Build Without Permission: Your Workspace is the Living DNA of Everything You Build**
+
+We build for the outsiders, the underestimated, the ones who were never given a seat at the table but showed up anyway.
 
 Taskade isn't just another productivity platform — it's a living ecosystem where every project, agent, automation, and piece of knowledge connects to form the DNA of your digital workspace. Each component learns from the others, creating intelligence that grows stronger with every interaction.
+
+**Our Vision:** We believe the future of work isn't just humans using AI. It's humans and AI working as one.
 
 ---
 

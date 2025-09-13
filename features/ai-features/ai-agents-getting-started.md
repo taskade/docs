@@ -4,13 +4,25 @@ Transform your workspace with smart AI assistants that understand your business 
 
 ## What are AI Agents?
 
-Think of AI Agents as smart team members who:
+AI Agents are specialized assistants designed to automate activities like research, data analysis, and content creation. Think of them as smart team members who:
+
 - 🧠 **Learn your business** by reading your documents and projects
 - 🤖 **Answer questions** about your work and processes
 - ⚡ **Take actions** like creating tasks, sending emails, or updating spreadsheets  
 - 🔄 **Work 24/7** without breaks, weekends, or vacations
+- 🎯 **Specialize in specific roles** like marketing, legal, customer service, or research
 
 **Real example:** Your "Customer Service Agent" can instantly answer questions about your products, create support tickets, and even draft response emails - all based on your existing knowledge base.
+
+### What Can AI Agents Help With?
+
+| **Area** | **Tasks** |
+|----------|-----------|
+| **Task Automation** | • Auto-categorize tasks<br>• Prioritize by keywords<br>• Estimate duration<br>• Recommend task owners |
+| **Knowledge Retrieval** | • Fetch relevant documents<br>• Answer team questions<br>• Recommend reading material<br>• Suggest internal resources |
+| **Feedback & Improvement** | • Collect and analyze feedback<br>• Offer improvement insights<br>• Benchmark against past projects<br>• Highlight success stories |
+| **Meetings** | • Summarize discussions<br>• Recommend next steps<br>• Extract action items |
+| **Creative Assistance** | • Offer writing/editing aid<br>• Generate content ideas<br>• Review and improve copy |
 
 ## When Should You Create an AI Agent?
 
@@ -94,6 +106,52 @@ Make your agent smart by giving it information:
 - Product demos and presentations  
 - Industry webinars and conferences
 
+## 🧠 Understanding Agent Knowledge & Memory
+
+Your agent's knowledge is what makes it truly powerful for your business. This is the foundation that powers Genesis apps - your workspace's living DNA.
+
+### Types of Agent Memory
+
+#### **Session Memory**
+- Remembers conversation context during a chat
+- Maintains topic continuity 
+- Resets when conversation ends
+
+#### **Knowledge Memory** 
+- Permanent information from uploaded documents
+- Your business-specific data and processes
+- Forms the core intelligence for Genesis apps
+
+#### **Project Memory**
+- Live connection to your workspace projects
+- Updates automatically as your data changes
+- Powers the "living DNA" that makes each Genesis app unique
+
+### Advanced Knowledge Training
+
+#### **Bulk Training**
+Upload multiple knowledge sources at once:
+- Multiple files simultaneously
+- Several web links in one batch  
+- Connect multiple projects together
+- Perfect for comprehensive agent training
+
+#### **Knowledge Formats Supported**
+
+| **File Types** | **Web Resources** |
+|----------------|-------------------|
+| 📄 .pdf, .docx, .txt, .md | 🎥 YouTube videos |
+| 📊 .xlsx, .csv | 📰 Blog articles |
+| 📋 .pptx | 🐦 Social media posts |
+| 📚 .epub | 📰 News websites |
+
+#### **Knowledge Management Best Practices**
+- **Review sources** regularly for relevance
+- **Update documents** when business information changes
+- **Remove outdated** resources to maintain accuracy
+- **Test knowledge** by asking your agent questions
+- **Monitor performance** and refine training data
+
 ### Step 5: Create Custom Commands
 
 Give your agent specific skills with custom commands:
@@ -158,6 +216,56 @@ Give your agent specific skills with custom commands:
 1. Click the **⊞ Manage agents** button
 2. Star your favorite agents
 3. Access them quickly from the right sidebar
+
+## 📎 **Enhanced File Attachments**
+
+TAA conversations now support rich file interactions with complete visibility and context.
+
+### **Drag & Drop File Magic**
+Simply drag any file directly into your TAA chat:
+- **Images**: JPG, PNG, GIF, WebP - TAA analyzes visual content
+- **Documents**: PDF, DOC, TXT - TAA reads and processes text
+- **Spreadsheets**: CSV, Excel - TAA analyzes data and creates insights
+- **Code Files**: Python, JavaScript, etc. - TAA reviews and suggests improvements
+
+### **Visible File Context**
+Files now appear directly alongside your messages instead of being hidden:
+- **Chronological Organization**: See exactly when each file was shared
+- **Visual Thumbnails**: Quick preview of images and documents
+- **File Status Indicators**: Clear confirmation when files are processed
+- **Conversation Flow**: Files integrate naturally with your discussion
+
+### **Professional Use Cases**
+
+**Document Analysis:**
+```
+You: [Attach quarterly_report.pdf] "Summarize the key findings and create action items"
+TAA: "I've analyzed your Q3 report. Here are the 5 key findings..."
+```
+
+**Image Processing:**
+```
+You: [Attach screenshot.png] "What's wrong with this UI design?"
+TAA: "Looking at your interface, I notice 3 usability issues..."
+```
+
+**Data Insights:**
+```
+You: [Attach sales_data.csv] "What trends do you see in this data?"
+TAA: "Analyzing your sales data, I found these patterns..."
+```
+
+**Code Review:**
+```
+You: [Attach app.py] "Review this code for security issues"
+TAA: "I've reviewed your Python code. Here are potential security concerns..."
+```
+
+### **File Management Features**
+- **Rename Conversations**: Turn "Chat with TAA" into "Q3 Report Analysis"
+- **File History**: Access previously shared files from conversation history
+- **Cross-Reference**: TAA remembers files from earlier in the conversation
+- **Batch Processing**: Upload multiple related files for comprehensive analysis
 
 ## Advanced Features
 
@@ -237,6 +345,156 @@ Ready to build your AI team?
 - [Browse the AI Agent Gallery](https://taskade.com/agents) for community examples
 - [Watch tutorial videos](https://youtube.com/taskade) for step-by-step guides
 - [Join our community](https://taskade.com/community) to share and learn
+
+## 🚀 Next Steps
+
+### **Build Without Permission**
+
+You don't need permission to start. Not to ship. Not to define the system.
+
+Your AI agents are just the beginning. Transform them into complete business applications with Genesis - the HyperCard moment for the AI era.
+
+**[Read the Manifesto →](https://www.taskade.com/blog/build-without-permission)** - Build Without Permission
+
+### **Build Genesis Apps with Your Agents**
+Transform your AI agents into complete business applications. One prompt = one app. Your workspace = the backend. Your agents = the team.
+
+- **[Genesis Getting Started →](../../genesis/getting-started.md)** - Build your first app in 5 minutes
+- **[Genesis Examples →](../../genesis/examples-and-templates.md)** - See what others have built
+
+### **Connect Agents to Automations**
+Make your agents work automatically:
+- **[Automation Getting Started →](automation-getting-started.md)** - Put agents on autopilot
+- **[Integration Guide →](../../automation/integrations.md)** - Connect to 100+ services
+
+### **Advanced Knowledge Management**
+Supercharge your agents with better knowledge:
+- **[Knowledge Management Guide →](../knowledge-management.md)** - Organize information effectively
+- **[Project Views →](../project-views-mastery.md)** - Structure data for AI understanding
+
+## 🎯 Advanced Agent Features
+
+### **Command Modes: How Your Agent Thinks**
+
+Command modes dictate how your AI agents approach tasks - whether by following specific instructions or by autonomously setting goals and working towards them.
+
+#### **Available Command Modes**
+
+| Mode | Description | Best For | Example |
+|------|-------------|----------|---------|
+| **Default Mode** | Follows specific instructions directly | Simple, straightforward tasks | "Write an email to customer about order delay" |
+| **Plan & Execute V1** | Creates a plan, then executes step by step | Complex multi-step tasks | "Increase sales revenue" → Agent creates strategy plan |
+| **Plan & Execute V2** | Advanced planning with iterative refinement | Complex goals requiring adaptation | "Improve team productivity" → Agent analyzes, plans, adapts |
+
+#### **When to Use Plan & Execute Modes**
+
+**✅ Use Plan & Execute for:**
+- Complex business problems without clear solutions
+- Goals that require research and analysis
+- Multi-step processes that need coordination
+- Strategic planning and decision-making
+
+**❌ Use Default Mode for:**
+- Simple, direct tasks with clear instructions
+- Quick responses and straightforward actions
+- Tasks where you want specific output format
+- Routine operations with established procedures
+
+#### **Plan & Execute Examples**
+
+**Example 1 - Specific Goal:**
+```
+Input: "I need strategies to increase sales revenue."
+Agent Process:
+1. Analyzes current sales data and trends
+2. Researches market opportunities
+3. Creates comprehensive strategy plan
+4. Provides actionable recommendations
+```
+
+**Example 2 - Problem Statement:**
+```
+Input: "Our sales are declining."
+Agent Process:
+1. Investigates potential causes
+2. Analyzes market conditions and competition
+3. Develops diagnostic framework
+4. Suggests targeted solutions
+```
+
+**Example 3 - Improvement Goal:**
+```
+Input: "I need advice on employee productivity improvement."
+Agent Process:
+1. Assesses current productivity metrics
+2. Identifies bottlenecks and challenges
+3. Researches best practices and solutions
+4. Creates implementation roadmap
+```
+
+#### **Configuring Command Modes**
+
+1. **Edit your agent** and go to the **Commands** tab
+2. **Select a command** you want to modify
+3. **Choose the command mode** from the dropdown
+4. **Test the command** with sample input
+5. **Adjust as needed** based on results
+
+### **Bulk AI Commands: Process Multiple Tasks at Once**
+
+Apply AI commands to multiple tasks simultaneously for efficient batch processing.
+
+#### **How Bulk Commands Work**
+
+1. **Select multiple tasks** in your project (hold Ctrl/Cmd while clicking)
+2. **Right-click** or use the AI assistant panel
+3. **Choose a bulk command** from the available options
+4. **AI processes all selected tasks** with the same command
+5. **Review and refine** results as needed
+
+#### **Available Bulk AI Commands**
+
+| Command | Action | Best For | Example |
+|---------|--------|----------|---------|
+| **🟪 Research** | Search the web to learn about topics | Market research, fact-checking | Research competitors for each product |
+| **🟪 SEO** | Fetch top Google Search results | Content optimization, keyword research | Find SEO keywords for blog topics |
+| **🟠 Summarize** | Shrink down long discussions or notes | Meeting notes, document reviews | Summarize customer feedback responses |
+| **🟤 Turn into Action Items** | Convert ideas into actionable steps | Project planning, brainstorming | Turn feature requests into development tasks |
+| **🟡 Prioritize** | Prioritize tasks based on importance | Task management, sprint planning | Rank support tickets by urgency |
+| **🔴 Continue Writing** | Expand on existing content | Content creation, documentation | Expand product descriptions |
+| **⚪️ Brainstorm** | Develop ideas in seconds | Creative projects, problem-solving | Generate marketing campaign ideas |
+| **🔵 Rewrite** | Refine words for clarity and impact | Content editing, communication | Improve email templates |
+| **🟢 Outline** | Turn ideas into structured plans | Project planning, content strategy | Create article outlines from topics |
+| **🟥 Fix Spelling and Grammar** | Edit out mistakes | Content review, documentation | Clean up imported content |
+
+#### **Custom Agent Bulk Commands**
+
+You can also use your custom AI agent commands with multiple tasks:
+
+1. **Create custom commands** in your agent settings
+2. **Select multiple tasks** that need the same processing
+3. **Choose your custom agent command** from the bulk options
+4. **AI applies your specialized command** to all selected tasks
+
+**Example Use Cases:**
+- **Sales Agent**: Qualify multiple leads simultaneously
+- **Content Agent**: Generate social media posts for multiple products
+- **Support Agent**: Categorize multiple customer inquiries
+- **Research Agent**: Analyze multiple competitor websites
+
+#### **Bulk Command Best Practices**
+
+**✅ Do:**
+- Group similar tasks for bulk processing
+- Review results and refine as needed
+- Use consistent formatting across tasks
+- Test commands on small batches first
+
+**❌ Don't:**
+- Mix different task types in one bulk operation
+- Apply complex commands to too many tasks at once
+- Skip reviewing AI-generated results
+- Use bulk commands for tasks requiring individual attention
 
 ---
 

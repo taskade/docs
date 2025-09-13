@@ -18,12 +18,50 @@
 - **Push notifications** for real-time updates and alerts
 - **Biometric authentication** for secure, fast access
 - **Camera integration** for document scanning and photo uploads
+- **Quick Add Widget** for instant task creation from home screen
+- **Natural language processing** for smart date and time recognition
+- **Voice input support** for hands-free task creation
 
 #### **Progressive Web App (PWA)**
 - **Install directly from browser** - no app store required
 - **Offline functionality** for critical workflows
 - **Native-like experience** on any device
 - **Automatic updates** without manual app store downloads
+
+### **Quick Add Widget: Instant Productivity**
+
+The Quick Add widget is a powerful companion tool that lives on your device's home screen, enabling instant task creation without opening the main app.
+
+#### **Widget Features**
+- **Home screen access** - Add tasks instantly from your device's home screen
+- **Smart date recognition** - Natural language processing for dates and times
+- **Project selection** - Quick access to your most-used projects
+- **Voice input** - Speak your tasks for hands-free creation
+- **Offline support** - Tasks sync automatically when connection is restored
+
+#### **Setting Up Quick Add**
+
+**iOS Setup:**
+1. Long-press on home screen to enter edit mode
+2. Tap the "+" button to add widgets
+3. Search for "Taskade" and select Quick Add widget
+4. Choose widget size and placement
+5. Configure default project and settings
+
+**Android Setup:**
+1. Long-press on home screen
+2. Select "Widgets" from the menu
+3. Find and drag Taskade Quick Add widget
+4. Resize and position as needed
+5. Tap to configure default settings
+
+#### **Smart Date Suggestions**
+The widget uses natural language processing to automatically detect dates and times:
+
+- **"Meeting tomorrow at 3pm"** → Sets due date for tomorrow 3:00 PM
+- **"Call client next Monday"** → Sets due date for next Monday
+- **"Review report by Friday"** → Sets due date for this Friday
+- **"Dentist appointment in 2 weeks"** → Sets due date 14 days from now
 
 ### **Cross-Platform Synchronization**
 ```yaml

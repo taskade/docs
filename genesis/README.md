@@ -1,6 +1,7 @@
 # Taskade Genesis
 
-**One Prompt. One App.  
+**Build Without Permission.  
+One Prompt. One App.  
 Imagine it. Run it live.  
 Powered by your Workspace — the living DNA behind your app.**
 
@@ -8,7 +9,24 @@ Powered by your Workspace — the living DNA behind your app.**
 **New to Genesis?** Follow our [5-minute getting started guide](getting-started.md) to build your first business app from a simple description!
 {% endhint %}
 
-**Transform your business ideas into working applications using nothing but plain English - no coding required.**
+**We build for the outsiders, the underestimated, the ones who were never given a seat at the table but showed up anyway.**
+
+Transform your business ideas into working applications using nothing but plain English - no coding required. Genesis is the breakthrough moment - the HyperCard moment for the AI era.
+
+---
+
+## Our Vision
+
+We believe the future of work isn't just humans using AI. It's humans and AI working as one.
+
+- **One prompt = one app** - Turn any idea into working software instantly
+- **Your workspace = the backend** - All your data, agents, and automations power every app
+- **Your agents = the team** - AI assistants trained on your business knowledge
+- **Your automations = the execution** - Workflows that respond to events automatically
+
+Software should be alive. And now, it is.
+
+**Read the full manifesto**: [Build Without Permission: The Taskade Genesis Manifesto](https://www.taskade.com/blog/build-without-permission)
 
 ---
 
@@ -80,19 +98,31 @@ Genesis is perfect for common business challenges:
 
 Genesis works for virtually any business process:
 
-### **Customer-Facing Apps**
-- **Booking Systems** - Online appointment scheduling with payments
-- **Feedback Forms** - Collect reviews with automatic follow-up
-- **Support Portals** - Customer service with ticket tracking
-- **Registration Systems** - Event sign-ups with capacity limits
-- **Quote Requests** - Project inquiries with file uploads
+### **📊 App Categories & Use Cases**
 
-### **Internal Business Tools**
-- **Inventory Tracking** - Stock management with reorder alerts
-- **Lead Management** - Sales pipeline with follow-up reminders
-- **Team Dashboards** - KPI monitoring and reporting
-- **Employee Onboarding** - Streamlined new hire processes
-- **Expense Reporting** - Receipt uploads with approval workflows
+| Category | App Type | Business Problem | Genesis Solution | Build Time |
+|----------|----------|------------------|------------------|------------|
+| **Customer-Facing** | Booking System | "Phone keeps ringing during busy hours" | Online scheduling with automatic confirmations | 3-5 min |
+| **Customer-Facing** | Feedback Portal | "Customers complain but we never hear about it" | Real-time reviews with instant manager alerts | 2-3 min |
+| **Customer-Facing** | Support Portal | "Customer issues get lost in email chaos" | Ticket system with smart routing and tracking | 4-6 min |
+| **Customer-Facing** | Event Registration | "Manual sign-ups are overwhelming during launches" | Automated registration with capacity management | 3-4 min |
+| **Internal Operations** | Inventory Tracker | "Always running out of popular items" | Stock monitoring with automatic reorder alerts | 5-7 min |
+| **Internal Operations** | Lead Management | "Sales prospects fall through the cracks" | Pipeline tracker with automated follow-ups | 6-8 min |
+| **Internal Operations** | Team Dashboard | "No visibility into team performance" | KPI monitoring with real-time updates | 4-5 min |
+| **Internal Operations** | Employee Onboarding | "New hires feel lost and overwhelmed" | Step-by-step workflow with progress tracking | 7-10 min |
+
+### **🚀 Industry-Specific Quick Starts**
+
+| Industry | Most Popular App | What It Does | Why It Works |
+|----------|------------------|--------------|--------------|
+| **Restaurants** | Customer Feedback System | Collects ratings, alerts for issues, tracks trends | Immediate response to problems, improved service |
+| **Healthcare** | Appointment Scheduler | Online booking, reminders, patient info | Reduces phone calls, prevents no-shows |
+| **Agencies** | Client Project Tracker | Progress updates, file sharing, approvals | Keeps clients informed, reduces check-in calls |
+| **E-commerce** | Inventory Manager | Stock tracking, reorder alerts, supplier data | Never miss sales due to stockouts |
+| **Consulting** | Lead Qualifier | Contact forms, scoring, CRM integration | Focus time on high-value prospects |
+| **Content Teams** | Publication Pipeline | Content calendar, assignments, performance | Consistent output without chaos |
+| **Events** | Registration System | Sign-ups, payments, attendee management | Smooth event experience from start to finish |
+| **Real Estate** | Property Inquiry Hub | Lead capture, property matching, follow-up | Convert more inquiries into viewings |
 
 ### **Real Success Stories**
 

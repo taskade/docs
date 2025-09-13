@@ -41,9 +41,16 @@ Every automation follows this simple pattern:
 Pick from these popular triggers:
 
 **📝 Form Submitted** - Great for lead capture, feedback collection
-**✅ Task Completed** - Perfect for progress notifications
+**✅ Task Completed** - Perfect for progress notifications  
 **📅 Schedule** - Use for daily/weekly reports, reminders
 **🔗 Webhook** - Connect with other apps and services
+**🤖 Agent Trigger** - Let AI agents initiate automation flows
+**📧 Mailhook** - Trigger automations via email
+**📋 Task Added** - When new tasks are created
+**👤 Task Assigned** - When tasks are assigned to team members
+**📆 Task Due** - When tasks with due dates become due
+**💬 New Comment** - When comments are added to tasks
+**🔄 Custom Field Updated** - When project fields change
 
 **Example:** Let's choose "Task Completed"
 
@@ -72,8 +79,29 @@ Pick what happens automatically:
 
 **🤖 AI Actions**
 - Ask your AI agent questions
-- Generate reports or summaries
+- Generate reports or summaries  
 - Analyze and categorize data
+- Create structured outputs (JSON, tables)
+- Process and filter information
+- Make intelligent decisions
+
+**🔄 Data Actions**
+- Add tasks to projects
+- Update custom fields
+- Move tasks between projects
+- Create new projects from templates
+- Upload files to media library
+- Scrape webpage content
+- Convert files to text
+- Transcribe YouTube videos
+
+**🌐 Integration Actions**
+- HTTP requests to any API
+- Google Sheets updates
+- Calendar event creation
+- Social media posting
+- Email marketing campaigns
+- CRM record updates
 
 **Example:** "Send a message to #general channel: 'Great work! [Task Name] has been completed by [Person Name]'"
 

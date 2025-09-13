@@ -1,12 +1,22 @@
-# The HyperCard of the AI Era
+# Build Without Permission: The HyperCard of the AI Era
 
 In 1987, Apple released HyperCard, a piece of software that fundamentally changed personal computing. For the first time, it gave non-programmers the power to create their own interactive software—from simple databases to complex adventure games—using a simple, card-based metaphor. It democratized creation.
 
+For a brief moment, the tools to build were in the hands of everyone. Then they disappeared.
+
+For decades, software creation was locked behind IDEs, APIs, gatekeepers, and teams. Until now.
+
+**We build for the outsiders, the underestimated, the ones who were never given a seat at the table but showed up anyway.**
+
 Today, we stand at a similar inflection point with artificial intelligence. The power of large language models is immense, but harnessing it to build real, useful applications remains complex.
 
-**This is where Taskade comes in.**
+**This is where Taskade Genesis comes in.**
 
 Our vision is to create the **HyperCard of the AI Era**. We are building a platform that empowers anyone—from solo entrepreneurs to enterprise teams—to build powerful, AI-driven web applications without writing a line of code.
+
+**You don't need permission anymore. Not to start. Not to ship. Not to define the system.**
+
+**Read the full manifesto**: [Build Without Permission: The Taskade Genesis Manifesto](https://www.taskade.com/blog/build-without-permission)
 
 | Then (HyperCard)             | Now (Taskade)                                       |
 | ---------------------------- | ----------------------------------------------------- |

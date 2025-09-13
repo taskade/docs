@@ -4,6 +4,41 @@
 
 ---
 
+## What Is Taskade Genesis?
+
+**Genesis is the HyperCard moment for the AI era.** 
+
+In 1987, Apple launched HyperCard - a tool that let anyone build software by stacking cards. It was simple, playful, powerful. For a brief moment, the tools to build were in the hands of everyone. Then they disappeared.
+
+For decades, software creation was locked behind IDEs, APIs, gatekeepers, and teams. Until now.
+
+**Taskade Genesis is the HyperCard of the AI era.** One prompt. One app. A new system for a new generation.
+
+Genesis is an AI app builder that creates complete business applications from a single prompt. You describe what you need, and Genesis builds a working app in minutes. Not a mockup or prototype, but fully functional software.
+
+**We build for people like us:**
+- The ones spinning 15 plates
+- Founders with ideas but no engineering team
+- Students, misfits, tinkerers
+- The ones who never quite fit in but always knew they were meant to build something that does
+
+**Unlike other app builders, Genesis gives you:**
+- **Complete Applications** - Not just interfaces, but working business logic
+- **Instant Deployment** - Your app is live and shareable immediately
+- **AI-Powered Intelligence** - Apps that understand and process your data
+- **Zero Technical Complexity** - Focus on business value, not code
+
+### Why This Approach Works
+
+| Traditional Development 🥱 | With Taskade Genesis ❤️ |
+|---------------------------|-------------------------|
+| ❌ Write technical specifications, wireframes, and database schemas | ✅ Describe your business needs like talking to a trusted colleague |
+| ❌ Hire developers, configure servers, and manage development environments | ✅ Your idea becomes a working app in just a few minutes. It's that simple! |
+| ❌ Debug API endpoints, handle authentication, coordinate teams | ✅ Changes happen through simple conversations with Taskade AI |
+| ❌ Implement SSL certificates, security audits, and vulnerability management | ✅ Security and compliance are handled automatically within Taskade |
+| ❌ Maintain servers, apply patches, monitor performance, handle scaling | ✅ Focus on your business while we handle technical details |
+| ❌ Months of development cycles, testing phases, and deployment | ✅ Start getting real user feedback today and iterate quickly |
+
 ## Before You Start
 
 ### What You Need
@@ -11,6 +46,10 @@
 - ✅ **A Taskade account** - [Sign up free](https://taskade.com/signup) if you don't have one
 - ✅ **A business problem to solve** - Something that wastes your time or frustrates customers
 - ✅ **5 minutes of focused time** - No distractions, just you and your business challenge
+
+### What You Can Build
+
+By the end of this guide, you'll have built and published a fully functional app. It can be a client portal, tracker, or dashboard. The only limitation is your imagination. Genesis handles the technical complexity, you focus on business value.
 
 ### What You'll Learn
 
@@ -44,6 +83,63 @@ Start by thinking about something in your business that could work better. Commo
 - _"Team performance data is hard to track"_
 
 **Your turn:** Write down the ONE business problem you want to solve first.
+
+---
+
+## 🧬 Understanding Your Workspace DNA
+
+Before we build your app, it's important to understand what makes Genesis apps so powerful: **your workspace's living DNA**.
+
+### Your Workspace = Your App's Brain
+
+Every Genesis app is powered by your workspace's intelligence:
+
+**🧠 AI Agents** - Your digital team members with specialized knowledge
+- Customer service agents that know your products
+- Marketing agents that understand your brand voice  
+- Research agents that can analyze data and trends
+
+**📊 Projects** - Your business knowledge and data
+- Customer information and interaction history
+- Product catalogs and inventory data
+- Team processes and standard operating procedures
+
+**⚡ Automations** - Your business reflexes
+- Automatic follow-ups and notifications
+- Data processing and categorization
+- Integration with your existing tools
+
+### Why This Matters for Your App
+
+When you describe an app to Genesis, it doesn't build from scratch. Instead, it **awakens the intelligence already living in your workspace**:
+
+- Your booking app knows your services because your workspace knows your services
+- Your support app responds like your team because it's trained on your team's knowledge
+- Your inventory app understands your products because your projects contain your product data
+
+**This is what makes each Genesis app unique - it carries the DNA of your specific business.**
+
+---
+
+## 🕐 **Genesis Version History**
+
+Every Genesis app includes complete version history! Track every change, collaborate with confidence, and never lose work again.
+
+### **Automatic Change Tracking**
+- **Every Edit Recorded**: Layout changes, content updates, configuration modifications - all automatically saved
+- **Visual Timeline**: Browse your app's evolution with clear timestamps and change summaries  
+- **Team Collaboration**: See exactly who made which changes and when
+- **One-Click Restore**: Roll back to any previous version instantly
+
+### **Professional Development Workflow**
+Genesis version history uses enterprise-grade infrastructure (Pulsar message queuing) to ensure no changes are ever lost, even during high traffic periods. This creates a bulletproof audit trail perfect for:
+
+- **Client Work**: Show clients exactly what was built and when
+- **Team Projects**: Track contributions and resolve conflicts easily  
+- **Experimentation**: Try bold changes knowing you can always revert
+- **Compliance**: Maintain complete records for regulated industries
+
+**Access Version History**: Click the version dropdown in any Genesis app to explore your complete development timeline.
 
 ---
 
