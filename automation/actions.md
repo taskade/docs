@@ -8,25 +8,45 @@ Actions are the tasks that automations can perform. Each action connects to a sp
 
 | Action | Description | Parameters | Example |
 |--------|-------------|------------|---------|
-| `taskade.createProject` | Creates a new project | `name`, `folderId`, `template` | Create "Customer Feedback" project |
-| `taskade.createTask` | Creates a new task | `projectId`, `title`, `content`, `assignee` | Add task "Review feedback #123" |
-| `taskade.updateTask` | Updates an existing task | `taskId`, `title`, `content`, `status` | Mark task as completed |
-| `taskade.moveTask` | Moves task to different project | `taskId`, `targetProjectId` | Move to "Processed" project |
-| `taskade.addComment` | Adds comment to task | `taskId`, `comment`, `author` | Add "Customer contacted" note |
-| `taskade.assignTask` | Assigns task to team member | `taskId`, `userId` | Assign to support specialist |
-| `taskade.setDueDate` | Sets task due date | `taskId`, `dueDate` | Set deadline for follow-up |
-| `taskade.addTag` | Adds tag to task | `taskId`, `tag` | Tag as "urgent" or "bug" |
+| **Create Project** | Sets up a new project in your workspace/folder | `name`, `folderId`, `template`, `defaultView` | Create "Customer Feedback" project from template |
+| **Create Project From Template** | Uses a pre-defined or custom template | `templateId`, `name`, `folderId` | Create project from "Support Workflow" template |
+| **Add Task** | Adds a new task to an existing project | `projectId`, `title`, `content`, `assignee`, `dueDate` | Add task "Review feedback #123" |
+| **Mark Task as Completed** | Automatically marks a task as done | `taskId`, `completedBy`, `completionNote` | Mark task complete with resolution note |
+| **Move Task** | Moves a task to a different project/space | `taskId`, `targetProjectId`, `position` | Move to "Processed" project |
+| **Assign Task** | Assigns a task to someone | `taskId`, `userId`, `notifyAssignee` | Assign to support specialist with notification |
+| **Update Custom Fields** | Updates custom fields within projects | `taskId`, `fieldId`, `value` | Set priority to "High", status to "In Progress" |
+| **Find Task(s)** | Searches for tasks within projects | `projectId`, `searchCriteria`, `maxResults` | Find all tasks assigned to user |
+| **Transform Array to String** | Converts task arrays into readable text | `array`, `separator`, `format` | Convert task list to comma-separated string |
 
 ### Agent Commands
 
 | Action | Description | Parameters | Example |
 |--------|-------------|------------|---------|
-| `agent.runCommand` | Executes agent command | `agentId`, `command`, `input` | Run "analyze_sentiment" command |
-| `agent.askQuestion` | Asks agent a question | `agentId`, `question`, `context` | "What's the priority of this ticket?" |
-| `agent.summarize` | Summarizes content | `agentId`, `content`, `length` | Create brief summary of feedback |
-| `agent.categorize` | Categorizes content | `agentId`, `content`, `categories` | Classify as "bug", "feature", "question" |
-| `agent.translate` | Translates text | `agentId`, `text`, `targetLanguage` | Translate feedback to English |
-| `agent.extract` | Extracts structured data | `agentId`, `content`, `schema` | Extract contact info from email |
+| **Ask AI** | Uses AI to answer questions | `question`, `context`, `model` | "What's the priority of this ticket?" |
+| **Generate with AI** | Uses AI to generate content or responses | `prompt`, `contentType`, `length` | Generate email response to customer |
+| **Respond with AI** | Automatically provides AI-generated responses | `input`, `responseType`, `tone` | Auto-respond to common inquiries |
+| **Ask Agent** | Uses a custom AI agent to respond to a query | `agentId`, `question`, `context` | Query specialized support agent |
+| **Run Agent Command** | Uses a custom AI agent command | `agentId`, `commandId`, `input` | Run "analyze_sentiment" command |
+| **Ask Agent With Structured Output** | Structures the output of agent replies | `agentId`, `query`, `outputSchema` | Get JSON response with specific fields |
+| **Prompt AI** | Give the model detailed instructions | `prompt`, `systemMessage`, `temperature` | Custom AI processing with specific instructions |
+| **Categorize with AI** | Classify text into defined categories | `input`, `labels[]`, `multiLabel` | Categorize incoming support messages |
+| **Generate Image (DALL·E 3)** | Create images from prompts | `prompt`, `size`, `style` | Generate header images for blog posts |
+| **Add Knowledge to Agent** | Transcribes knowledge and adds it to an agent | `agentId`, `content`, `source` | Train agent with new documentation |
+| **Add Project to Agent Knowledge** | Automatically trains AI agents with project content | `agentId`, `projectId`, `includeCompleted` | Add project data to agent's knowledge base |
+
+### Data Processing & Utilities
+
+| Action | Description | Parameters | Example |
+|--------|-------------|------------|---------|
+| **Scrape Webpage** | Extract the contents of a web page | `url`, `selector`, `format` | Extract product info from competitor site |
+| **Convert File to Text** | Convert a source file into text | `fileUrl`, `fileType`, `extractImages` | Convert PDF manual to searchable text |
+| **Transcribe YouTube Video** | Turn a YouTube video into text | `videoUrl`, `language`, `includeTimestamps` | Create transcript of training video |
+| **Upload File to Media** | Upload file through URL to workspace media | `fileUrl`, `fileName`, `folderId` | Save document to project media library |
+| **Send HTTP Request** | Makes an API request to an endpoint with multipart file support | `method`, `url`, `headers`, `body`, `files` | Call external API with file attachments |
+| **Search Web** | Searches the web for information | `query`, `maxResults`, `safeSearch` | Research topic for content creation |
+| **Filter Data** | Performs actions only when data meets conditions | `data`, `condition`, `operator` | Process only high-priority tickets |
+| **Loop** | Iterates through data for batch processing | `array`, `actions`, `maxIterations` | Process multiple form submissions |
+| **Branch** | Creates different workflow paths based on conditions | `condition`, `trueActions`, `falseActions` | Route tickets based on urgency level |
 
 ## Communication Actions
 
@@ -264,6 +284,111 @@ Actions are the tasks that automations can perform. Each action connects to a sp
   ]
 }
 ```
+
+---
+
+## 📁 **Advanced File Handling**
+
+Recent updates have significantly enhanced automation file processing capabilities.
+
+### **Multipart File Uploads**
+
+HTTP actions now support multipart file uploads, enabling seamless integration with modern APIs:
+
+```json
+{
+  "action": "Send HTTP Request",
+  "method": "POST",
+  "url": "https://api.example.com/upload",
+  "headers": {
+    "Authorization": "Bearer {{token}}"
+  },
+  "files": {
+    "document": "{{file_from_trigger}}",
+    "thumbnail": "{{generated_image}}"
+  },
+  "body": {
+    "title": "{{document_title}}",
+    "category": "{{document_type}}"
+  }
+}
+```
+
+### **Enhanced Webhook File Processing**
+
+Webhooks can now receive and process multipart/form-data, perfect for:
+
+- **Document Processing Workflows**: Automatically process uploaded files
+- **Image Analysis Pipelines**: Analyze images submitted through forms
+- **File Validation Systems**: Check file types and sizes before processing
+
+### **Smart Form Field Mapping**
+
+When forms trigger automations that create tasks, the system intelligently maps form field labels to task custom fields:
+
+- **Automatic Matching**: "Priority Level" dropdown → Priority custom field
+- **Type Recognition**: Date fields map to date custom fields automatically
+- **Dynamic Options**: Dropdown values sync with custom field options
+
+### **Professional Use Cases**
+
+**Document Approval Workflow:**
+```
+Form Upload → File Validation → Manager Notification → Approval Task Creation
+```
+
+**Image Processing Pipeline:**
+```
+Image Upload → AI Analysis → Metadata Extraction → Database Storage
+```
+
+**Client Onboarding System:**
+```
+Document Collection → Verification → CRM Update → Welcome Email
+```
+
+### **File Type Support**
+
+Automations now handle a wide range of file types:
+- **Documents**: PDF, DOC, DOCX, TXT, RTF
+- **Images**: JPG, PNG, GIF, WebP, SVG
+- **Spreadsheets**: CSV, XLS, XLSX
+- **Archives**: ZIP, RAR, 7Z
+- **Media**: MP4, MP3, WAV, MOV
+
+## 🆕 Recently Added Actions
+
+### Advanced AI Actions
+
+| Action | Description | Parameters | Example |
+|--------|-------------|------------|---------|
+| **Ask Agent Team** | Send prompts to AI Teams for collaborative responses | `teamId`, `prompt`, `executionMode`, `processingType` | Get varied responses from specialized team |
+| **Delay** | Pauses automation workflow for specified time | `delayFor`, `delayUntil`, `timeUnit` | Wait 5 minutes before sending reminder |
+| **Move Completed Tasks** | Moves completed tasks to specified project | `sourceProjectId`, `targetProjectId`, `includeSubtasks` | Archive finished tasks automatically |
+
+### Schedule & Time Management
+
+| Action | Description | Parameters | Example |
+|--------|-------------|------------|---------|
+| **Schedule Trigger** | Runs automations at specified intervals | `frequency`, `time`, `timezone`, `dayOfWeek` | Daily report at 9 AM |
+| **Delay Until Date** | Waits until specific date/time | `targetDateTime`, `timezone` | Wait until project deadline |
+| **Recurring Schedule** | Repeats actions on schedule | `cronExpression`, `startDate`, `endDate` | Weekly team updates |
+
+### Advanced Data Processing
+
+| Action | Description | Parameters | Example |
+|--------|-------------|------------|---------|
+| **Transform Array to String** | Converts arrays to formatted strings | `array`, `separator`, `format`, `includeIndex` | Convert task list to numbered list |
+| **Custom Field Update** | Updates custom fields with conditional logic | `projectId`, `taskId`, `fieldMappings`, `conditions` | Set priority based on keywords |
+| **Mailhook Processing** | Process emails sent to automation endpoints | `emailAddress`, `subjectFilters`, `bodyParsing` | Create tasks from support emails |
+
+### Professional Workflow Actions
+
+| Action | Description | Parameters | Example |
+|--------|-------------|------------|---------|
+| **Project Template Creation** | Creates projects from dynamic templates | `templateId`, `variables`, `targetFolder` | Generate client project from template |
+| **Task Assignment with Rules** | Assigns tasks based on workload and skills | `taskId`, `assignmentRules`, `notificationSettings` | Auto-assign to least busy qualified person |
+| **Workflow State Management** | Manages complex workflow states | `workflowId`, `currentState`, `transitions` | Move through approval process |
 
 ---
 

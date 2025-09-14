@@ -10,6 +10,12 @@
 
 ## 🎯 The Multi-View Philosophy
 
+### **The "Wow" Moment**
+
+*You're planning a product launch in List View, organizing tasks step by step. Suddenly you realize you need to see how everything fits together visually. One click to Mind Map View and... holy shit. The entire project structure reveals itself as a connected web of ideas, dependencies, and opportunities you never noticed.*
+
+**That's the magic: Same data, completely different insights. Instantly.**
+
 ### **One Data Source, Multiple Perspectives**
 
 Unlike other tools that force you into rigid formats, Taskade's views are different lenses for the same information:
@@ -133,6 +139,25 @@ Hierarchical Thinking:
 - **Sales processes** and lead management
 - **Project phases** with hand-offs between teams
 - **Content calendars** and editorial workflows
+- **Software development** sprints and feature tracking
+- **Event planning** with multiple coordination stages
+- **Hiring processes** from application to onboarding
+
+### **Board View Advanced Features**
+
+**Kanban-Inspired Workflow Management:**
+- **Visual task progression** - See work move through defined stages
+- **Drag-and-drop simplicity** - Move tasks between columns instantly
+- **Customizable columns** - Create stages that match your specific process
+- **WIP (Work in Progress) limits** - Control task flow to maintain quality
+- **Swimlanes** - Organize by team member, priority, or project type
+- **Color coding** - Visual indicators for task types, priorities, or deadlines
+
+**Board View Best Practices:**
+- **Keep columns focused** - Each column should represent a clear work state
+- **Limit work in progress** - Too many tasks in progress reduces efficiency
+- **Regular column reviews** - Ensure tasks move smoothly through stages
+- **Use swimlanes strategically** - Group related work for better organization
 
 ### **Board Setup Strategies**
 
@@ -285,6 +310,17 @@ Conference Planning Calendar:
 - **Contact management** and CRM functionality
 - **Financial tracking** and budget management
 - **Performance analysis** and reporting
+
+### **Advanced Table Features**
+
+| Feature | Description | Best For |
+|---------|-------------|----------|
+| **Column Management** | Resize, reorder, hide/show columns | Customizing data display |
+| **Custom Fields** | Add dropdowns, dates, numbers, text | Structured data entry |
+| **Sorting & Filtering** | Multi-column sorting, advanced filters | Finding specific data |
+| **Fill with AI** | Auto-populate cells using AI assistance | Bulk data completion |
+| **Export Options** | CSV, Excel, PDF export capabilities | Reporting and analysis |
+| **Cell Types** | Text, numbers, dates, checkboxes, dropdowns | Data validation |
 
 ### **Table Configuration Mastery**
 
@@ -510,6 +546,18 @@ Action View Benefits:
 - **Complex project scheduling** with dependencies
 - **Resource allocation** and capacity planning
 - **Milestone tracking** and deadline management
+
+### **Advanced Gantt Features**
+
+| Feature | Description | Best For |
+|---------|-------------|----------|
+| **Dependencies** | Link tasks (FS, SS, FF, SF) to model real-world constraints | Accurate timelines |
+| **Critical Path** | Highlight tasks that drive delivery date | Risk management |
+| **Baselines** | Save and compare timeline snapshots over time | Tracking slippage |
+| **Milestones** | Zero-duration checkpoints for key deliverables | Executive reporting |
+| **Resource Load** | Visualize workload across assignees | Capacity planning |
+| **Zoom Levels** | Day/Week/Month/Quarter views | Multi-horizon planning |
+| **Export** | Share timeline views externally | Client updates |
 - **Critical path analysis** and risk assessment
 - **Stakeholder communication** and progress reporting
 

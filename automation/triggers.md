@@ -8,23 +8,24 @@ Triggers are events that start automations. They monitor for specific conditions
 
 | Trigger | Description | Data Available | Example Use Case |
 |---------|-------------|----------------|------------------|
-| `taskade.taskCreated` | Task is created in project | `task`, `project`, `creator` | Auto-assign based on keywords |
-| `taskade.taskCompleted` | Task is marked complete | `task`, `project`, `completedBy` | Notify stakeholders |
-| `taskade.taskAssigned` | Task is assigned to user | `task`, `assignee`, `assigner` | Send notification to assignee |
-| `taskade.taskDueSoon` | Task due date approaching | `task`, `project`, `dueDate` | Send reminder notifications |
-| `taskade.taskOverdue` | Task is past due date | `task`, `project`, `daysOverdue` | Escalate to manager |
-| `taskade.commentAdded` | Comment added to task | `task`, `comment`, `author` | Notify task assignee |
-| `taskade.projectCreated` | New project created | `project`, `creator`, `folder` | Set up project templates |
-| `taskade.memberAdded` | Member added to project | `project`, `member`, `inviter` | Send welcome message |
+| **Task Added** | Triggers whenever a new task is created in a selected project | `task`, `project`, `creator` | Auto-assign based on keywords, create follow-up tasks |
+| **Task Completed** | Activates when a task is marked as completed | `task`, `project`, `completedBy` | Notify stakeholders, trigger next phase |
+| **Task Assigned** | Triggers when a task is assigned to you or a team member | `task`, `assignee`, `assigner` | Send notification to assignee, update workload tracking |
+| **Task Due** | Triggers when a task with a due date is due | `task`, `project`, `dueDate` | Send reminder notifications, escalate overdue items |
+| **Task Custom Field Updated** | Triggers when a custom field is updated | `task`, `field`, `oldValue`, `newValue` | Update external systems, notify relevant teams |
+| **Task Manual Trigger** | Manually trigger task-based automations from within projects | `task`, `project`, `triggerUser` | On-demand processing, manual workflow initiation |
+| **Project Completed** | Triggers when a project is completed | `project`, `completedBy`, `completionDate` | Archive resources, generate reports, notify clients |
+| **New Comment** | Triggers when a new comment is made on tasks | `task`, `comment`, `author` | Notify task assignee, log communication |
+| **New Due Date** | Triggers when a new due date is added to a task | `task`, `dueDate`, `setter` | Update calendars, adjust resource allocation |
 
 ### Agent Events
 
 | Trigger | Description | Data Available | Example Use Case |
 |---------|-------------|----------------|------------------|
-| `agent.conversationStarted` | New conversation with agent | `agent`, `user`, `message` | Log interaction start |
-| `agent.commandExecuted` | Agent command completed | `agent`, `command`, `result`, `user` | Process command results |
-| `agent.errorOccurred` | Agent encountered error | `agent`, `error`, `context` | Alert administrators |
-| `agent.responseGenerated` | Agent generated response | `agent`, `response`, `conversation` | Quality check responses |
+| **Agent Trigger** | Enables AI Agents to optionally run actions during a conversation | `agent`, `conversation`, `command`, `user` | Process agent responses, trigger follow-up actions |
+| **Agent Public Chat Ended** | Triggers when the public agent conversation comes to an end | `agent`, `conversation`, `endReason`, `duration` | Collect feedback, analyze conversation quality |
+| **Agent Command Executed** | Agent command completed successfully | `agent`, `command`, `result`, `user` | Process command results, update knowledge base |
+| **Agent Error Occurred** | Agent encountered error during processing | `agent`, `error`, `context`, `user` | Alert administrators, log issues for improvement |
 
 ## External Service Triggers
 
@@ -32,10 +33,11 @@ Triggers are events that start automations. They monitor for specific conditions
 
 | Trigger | Description | Data Available | Example Use Case |
 |---------|-------------|----------------|------------------|
-| `form.submitted` | Public form submitted | `form`, `responses`, `submitter` | Process lead information |
-| `webhook.received` | HTTP webhook received | `payload`, `headers`, `source` | Handle external system events |
-| `api.called` | API endpoint called | `endpoint`, `parameters`, `caller` | Process API requests |
-| `page.visited` | Website page visited | `page`, `visitor`, `referrer` | Track user behavior |
+| **Form Trigger (AI Forms)** | Triggers when a form is used/submitted | `form`, `responses`, `submitter`, `timestamp` | Process lead information, create support tickets |
+| **Webhook** | Triggers actions through requests received from external services | `payload`, `headers`, `source`, `method` | Handle external system events, API integrations |
+| **Mailhook Trigger** | Trigger automation flows by sending tasks & data to a unique email address | `email`, `sender`, `subject`, `body`, `attachments` | Email-to-task conversion, support ticket creation |
+| **Schedule** | Schedules the automation to run every hour, day, week, or month | `schedule`, `timestamp`, `frequency` | Recurring reports, maintenance tasks, reminders |
+| **Delay** | Pause automation for a specified time period or until a specific date/time | `delayType`, `duration`, `targetDate` | Workflow timing control, follow-up sequences |
 
 ### Communication Triggers
 
@@ -344,6 +346,32 @@ Use authentication and validation for webhook triggers.
 
 ### 5. **Test Thoroughly**
 Test triggers with various scenarios and edge cases.
+
+## 🆕 Recently Added Triggers
+
+### Advanced Agent Triggers
+
+| Trigger | Description | Data Available | Example Use Case |
+|---------|-------------|----------------|------------------|
+| **Agent Tool Trigger** | Triggers when agent uses specific tools during conversations | `agent`, `tool`, `toolInput`, `toolOutput` | Process tool results, update external systems |
+| **Agent Response Generated** | Triggers after agent generates response | `agent`, `response`, `confidence`, `sources` | Quality control, response logging |
+| **Agent Knowledge Updated** | Triggers when agent knowledge base is modified | `agent`, `knowledgeItem`, `updateType`, `source` | Sync knowledge across systems |
+
+### Enhanced Communication Triggers
+
+| Trigger | Description | Data Available | Example Use Case |
+|---------|-------------|----------------|------------------|
+| **Mailhook Advanced** | Enhanced email processing with parsing rules | `email`, `parsedFields`, `attachments`, `rules` | Smart ticket routing, data extraction |
+| **Form Submission with Validation** | Form trigger with built-in validation | `form`, `validatedData`, `errors`, `submitter` | Quality-controlled data entry |
+| **Webhook with Authentication** | Secure webhook with signature validation | `payload`, `signature`, `timestamp`, `source` | Secure API integrations |
+
+### Professional Workflow Triggers
+
+| Trigger | Description | Data Available | Example Use Case |
+|---------|-------------|----------------|------------------|
+| **Project Phase Change** | Triggers on project milestone transitions | `project`, `phase`, `previousPhase`, `trigger` | Phase-based notifications, resource allocation |
+| **Team Member Added** | Triggers when new member joins project | `project`, `member`, `role`, `inviter` | Onboarding workflows, access provisioning |
+| **Deadline Approaching** | Configurable deadline warnings | `task`, `project`, `timeRemaining`, `thresholds` | Smart escalation, resource reallocation |
 
 ---
 

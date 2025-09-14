@@ -6,11 +6,18 @@
 
 - [Quick Start Guide](getting-started/README.md)
 
-## 🧬 Genesis
+## 🧠 Taskade AI
+
+- [AI Features Overview](features/ai-features/README.md)
+- [AI Agents Getting Started](features/ai-features/ai-agents-getting-started.md)
+- [Automation Getting Started](features/ai-features/automation-getting-started.md)
+- [Prompt Library (Complete)](features/ai-features/genesis-prompt-library.md)
+
+## 🧬 Genesis (App Builder)
 
 - [What is Genesis?](genesis/README.md)
 - [Your First App in 5 Minutes](genesis/getting-started.md)
-- [Examples & Templates](genesis/examples-and-templates.md)
+- [Examples, Templates & Use Cases](genesis/examples-and-templates.md)
 - [Space Apps: React Applications](genesis/space-apps-guide.md)
 - [Community Sharing & Forking](genesis/community-and-sharing.md)
 - [Custom Domains & Branding](genesis/custom-domains.md)
@@ -22,6 +29,8 @@
 ## 📊 Core Features
 
 - [Platform Overview](features/README.md)
+- [Collaboration](features/collaboration.md)
+- [Workspaces](features/workspaces.md)
 - [AI Features](features/ai-features/README.md)
   - [AI Agents Getting Started](features/ai-features/ai-agents-getting-started.md)
   - [Automation Getting Started](features/ai-features/automation-getting-started.md)
@@ -120,6 +129,7 @@
 - [Advanced Automation Actions](automation/advanced-actions.md)
 - [Integrations Guide](automation/integrations.md)
 - [Complete Integration Reference](automation/comprehensive-integrations.md)
+
 
 ## 📚 Help & Guides
 

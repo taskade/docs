@@ -8,13 +8,22 @@ Genesis is like having a personal app developer who works instantly. You describ
 
 ### How is this different from other app builders?
 
-Most app builders give you pretty forms but no brain. Genesis gives you the complete package:
+Genesis gives you the complete backend: Databases, Automation Workflows, AI Agents, and Integrations. Other tools just make interfaces.
+
+**Genesis provides:**
 - **Smart database** that stores your data automatically
 - **AI assistant** that learns your business and helps customers
 - **Automatic actions** that connect to your email, Slack, payment systems, etc.
 - **Real functionality** - not just mockups or prototypes
+- **Complete backend infrastructure** - hosting, security, and scaling handled automatically
 
-Other tools make you figure out databases, hosting, integrations, and all the technical stuff. Genesis handles everything.
+**Other app builders require:**
+- Manual database setup and configuration
+- Separate hosting and deployment
+- Third-party integrations you have to configure yourself
+- Technical knowledge for backend functionality
+
+Genesis handles all the technical complexity so you can focus on your business.
 
 ### What kinds of apps can I build?
 

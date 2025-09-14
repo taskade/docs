@@ -22,9 +22,22 @@ layout:
 **New to Taskade?** Your workspace comes with a default **Home Subspace** where you can instantly build apps with [Genesis](genesis/README.md) or start with our [Quick Start Guide](getting-started/README.md). Each subspace becomes a complete app powered by your workspace's living DNA!
 {% endhint %}
 
+{% hint style="warning" %}
+**Contributing to this documentation?** This is a PUBLIC repository. Please read our [Security Guidelines](SECURITY.md) before contributing to avoid accidentally committing sensitive information.
+{% endhint %}
+
 # Welcome to Taskade
 
-**Start with Genesis. Build anything. Your workspace is the foundation.**
+**Build Without Permission. Start with Genesis. Your workspace is the foundation.**
+
+We believe the future of work isn't just humans using AI. It's humans and AI working as one.
+
+- One prompt = one app.
+- Your workspace = the backend.
+- Your agents = the team.
+- Your automations = the execution.
+
+Software should be alive. And now, it is.
 
 Every Taskade workspace begins with your **Home Subspace** — a living foundation where each subspace becomes a complete application. Whether you're building a customer feedback system, inventory tracker, or team dashboard, Genesis transforms your ideas into working apps in minutes, all powered by your workspace's interconnected intelligence.
 

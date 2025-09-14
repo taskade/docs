@@ -1,6 +1,33 @@
 # AI Features
 
-Save hours every week with smart AI assistants that handle your routine work automatically. No technical skills needed!
+**The moment you realize your workspace is actually intelligent.**
+
+Save hours every week with Taskade AI - not just another chatbot, but your workspace's living intelligence that powers everything from simple tasks to complete business applications through Genesis.
+
+## 🌟 The "Wow" Moment
+
+You say: *"I need a complete customer onboarding system for my consulting business"*
+
+**30 seconds later**, Taskade AI has created:
+- 📋 **Client intake project** with smart questionnaires
+- 🤖 **Customer success agent** that answers 90% of questions  
+- ⚡ **Automated workflow** from first contact to project delivery
+- 📊 **Progress dashboard** showing client health at a glance
+- 📱 **Client portal app** they can access anytime via Genesis Preview
+
+**That's not AI assistance. That's digital magic.**
+
+## 🧠 What Makes Taskade AI Different
+
+Imagine having someone who:
+- ✅ **Remembers everything** - Every project detail, team preference, successful pattern
+- ✅ **Sees connections** - Links related work across projects and time
+- ✅ **Predicts needs** - Suggests solutions before problems appear
+- ✅ **Never forgets** - Learns from every interaction to serve you better
+- ✅ **Works 24/7** - Available whenever inspiration strikes
+- ✅ **Speaks your language** - Understands your business, not just generic tasks
+
+**Taskade AI isn't just another AI chatbot. It's your workspace's living intelligence that powers Genesis apps and automations.**
 
 ## 🚀 Quick Start Guides
 
@@ -15,13 +42,9 @@ New to Taskade AI? Start here:
 ### AI Agents: Smart Assistants
 
 - **[AI Agents Getting Started](ai-agents-getting-started.md)** - Create your first AI team member
-- **[Tools for AI Agents](https://help.taskade.com/en/articles/10383275-tools-for-ai-agents)** - Add superpowers to your agents
-- **[Agent Knowledge & Memory](https://help.taskade.com/en/collections/14491816-agent-knowledge-memory)** - Train agents with your data
-
 ### Automation: Put Work on Autopilot
 
 - **[Automation Getting Started](automation-getting-started.md)** - Automate your first workflow
-- **[Getting Started with Automation](https://help.taskade.com/en/articles/8958467-getting-started-with-automation)** - Official automation guide
 
 ## 💡 What You Can Build
 
@@ -88,7 +111,6 @@ Create professional applications with:
 ### Need Help Getting Started?
 
 - **[Community Forum](https://taskade.com/community)** - Get help from other users
-- **[Official Help Center](https://help.taskade.com)** - Step-by-step guides and tutorials
 - **[Technical Documentation](../../api/README.md)** - For advanced users and developers
 
 ### Templates & Ready-to-Use Examples

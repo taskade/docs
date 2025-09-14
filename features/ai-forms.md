@@ -44,12 +44,41 @@
 ```
 
 #### **Option B: Form Builder Interface**
-1. Go to your workspace
-2. Click **"Create"** → **"AI Form"**
-3. Choose from templates or start blank
-4. Add AI-powered field types
+1. Go to your workspace **Automations** tab
+2. Click **"Create automation flow"**
+3. Add **"AI Forms"** as your trigger
+4. Configure form settings and fields
+5. Add automation actions for processing responses
 
-### **Step 2: Configure AI-Powered Fields**
+### **Step 2: Configure Form Settings**
+
+| Setting | Description | Example |
+|---------|-------------|---------|
+| **Form Title** | Choose a unique title for your form | "Customer Feedback Survey" |
+| **Form Description** | Describe the purpose of the form | "Help us improve your experience" |
+| **Submit Button Text** | Choose a title for the submission button | "Submit Feedback" |
+| **Form End Page** | Display an end screen with custom text | "Thank you! We'll respond within 24 hours" |
+
+### **Step 3: Choose Form Fields**
+
+AI Forms include customizable field types to collect different kinds of information:
+
+| Field Type | Description | Best For | AI Enhancement |
+|------------|-------------|----------|----------------|
+| **Short Text** | For short answers like a name or title | Names, titles, keywords | Auto-validation, spell check |
+| **Long Text** | For longer answers like comments | Feedback, descriptions | Sentiment analysis, categorization |
+| **Option Dropdown** | A list of choices where one is selected | Categories, preferences | Smart suggestions based on context |
+| **Number** | For numbers like age or quantity | Ages, quantities, scores | Range validation, statistical analysis |
+| **File** | Lets users upload files | Documents, images, attachments | Content analysis, OCR processing |
+| **Phone** | For phone numbers | Contact information | Format validation, region detection |
+| **Email** | For email addresses | Contact information | Domain validation, duplicate detection |
+| **Date** | A calendar to pick a date | Appointments, deadlines | Smart date suggestions, conflict detection |
+| **Rating** | For giving ratings (stars/numbers) | Satisfaction, quality scores | Trend analysis, alert thresholds |
+| **Single-Select** | Allow one option from predefined list | Multiple choice questions | Response pattern analysis |
+| **Multi-Select** | Allow multiple options | Interests, features, tags | Correlation analysis, preference mapping |
+| **URL** | Accept web addresses or links | Website links, references | Link validation, content preview |
+
+### **Step 4: Configure AI-Powered Processing**
 
 #### **Smart Rating Fields**
 ```yaml
@@ -179,6 +208,45 @@ Step Configuration:
 - **Abandonment Prevention**: AI detects when users might leave and offers assistance
 - **Smart Save & Resume**: AI automatically saves progress at optimal points
 - **Completion Prediction**: AI estimates time remaining and adjusts accordingly
+
+---
+
+## 🚀 Form Templates & Quick Start
+
+### **Start with AI Form Templates**
+
+Don't want to build forms from scratch? Choose from pre-built templates:
+
+| Template Type | Use Case | Included Fields | Automation Actions |
+|---------------|----------|-----------------|-------------------|
+| **Customer Feedback** | Collect product/service feedback | Rating, comments, contact info | Auto-categorize, notify team |
+| **Lead Qualification** | Qualify potential customers | Company, budget, timeline | Score leads, assign to sales |
+| **Support Ticket** | Technical support requests | Issue type, priority, description | Route to specialists, create tasks |
+| **Event Registration** | Event sign-ups and RSVPs | Name, email, dietary restrictions | Send confirmations, update attendee list |
+| **Job Application** | Collect job applications | Resume upload, experience, availability | Screen candidates, schedule interviews |
+| **Survey Research** | Market research and surveys | Multiple choice, ratings, demographics | Analyze trends, generate reports |
+
+### **Share and Use Forms**
+
+Once your form is ready, you have multiple sharing options:
+
+#### **Public Link Sharing**
+- Get a direct URL to share via email, social media, or messaging
+- Customize the form URL for branding consistency
+- Track submission analytics and response rates in real-time
+
+#### **Website Embedding**
+```html
+<iframe src="https://forms.taskade.com/your-form-id" 
+        width="100%" height="600px" frameborder="0">
+</iframe>
+```
+
+#### **Configure Form Visibility**
+- **Public**: Anyone with the link can access
+- **Workspace Only**: Restricted to team members
+- **Password Protected**: Require password for access
+- **Time-Limited**: Set expiration date for form availability
 
 ---
 

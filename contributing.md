@@ -2,6 +2,18 @@
 
 This documentation is open source and we welcome contributions from the community. Whether you're fixing a typo, adding examples, or writing new sections, your help makes these docs better for everyone.
 
+## 🚨 **SECURITY FIRST: READ THIS BEFORE CONTRIBUTING**
+
+**⚠️ This is a PUBLIC repository that powers [docs.taskade.com](https://docs.taskade.com)**
+
+**NEVER commit sensitive information!** Before making any contributions, please read our **[Security Guidelines](SECURITY.md)** to understand what should never be committed to this public repository.
+
+### Quick Security Checklist:
+- [ ] ✅ No `.env` files or API keys
+- [ ] ✅ No credentials or tokens  
+- [ ] ✅ No import scripts or temporary data
+- [ ] ✅ Run `git status` and `git diff --cached` before committing
+
 ## 🚀 Quick Start
 
 ### 1. **Fork the Repository**

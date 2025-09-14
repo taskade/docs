@@ -41,9 +41,20 @@ Every automation follows this simple pattern:
 Pick from these popular triggers:
 
 **📝 Form Submitted** - Great for lead capture, feedback collection
-**✅ Task Completed** - Perfect for progress notifications
+**✅ Task Completed** - Perfect for progress notifications  
 **📅 Schedule** - Use for daily/weekly reports, reminders
-**🔗 Webhook** - Connect with other apps and services
+**🔗 Webhook** - Connect with other apps and services through HTTP requests
+**🤖 Agent Trigger** - Let AI agents initiate automation flows
+**📧 Mailhook** - Trigger automations via email
+**📋 Task Added** - When new tasks are created in selected projects
+**👤 Task Assigned** - When tasks are assigned to team members
+**📆 Task Due** - When tasks with due dates become due
+**💬 New Comment** - When comments are added to tasks
+**🔄 Custom Field Updated** - When project custom fields change
+**🏁 Project Completed** - When entire projects are marked complete
+**🤖 Agent Response Trigger** - When AI agents provide specific responses
+**🎯 Agent Tool Trigger** - When agents use specific tools
+**📱 Agent Public Chat Ended** - When public agent conversations end
 
 **Example:** Let's choose "Task Completed"
 
@@ -71,9 +82,44 @@ Pick what happens automatically:
 - Calendar events
 
 **🤖 AI Actions**
-- Ask your AI agent questions
-- Generate reports or summaries
-- Analyze and categorize data
+- **Ask Agent** - Query your custom AI agents for insights
+- **Ask Agent with Structured Output** - Get responses in JSON/table format
+- **Taskade AI** - Use built-in AI for content generation and analysis
+- **Categorize with AI** - Automatically sort and label content
+- **DALL-E 3 Image Generation** - Create images from text descriptions
+- Generate reports, summaries, and analysis
+- Process and filter information intelligently
+- Make data-driven decisions automatically
+
+**🔄 Data Actions**
+- **Add Task** - Create new tasks with specific details
+- **Assign Task** - Automatically assign tasks to team members
+- **Mark Task as Completed** - Complete tasks when conditions are met
+- **Move Task** - Transfer tasks between projects
+- **Move Completed Tasks** - Archive finished work automatically
+- **Create Project** - Generate new projects from templates
+- **Project Template** - Use predefined project structures
+- **Update Custom Fields** - Modify project-specific data
+- **Upload File to Media** - Add files to your media library
+- **Add Knowledge to Agent** - Train agents with new information
+- **Add Project to Agent Knowledge** - Connect projects to agent learning
+
+**🌐 Web & Content Actions**
+- **Scrape Webpage** - Extract content from websites
+- **Search Web** - Find information online automatically
+- **Convert File to Text** - Transform documents into readable text
+- **Transcribe YouTube Video** - Convert video content to text
+- **Filter Data** - Process and clean information
+- **Transform Array into String** - Convert data formats
+- **Find Tasks** - Locate specific tasks based on criteria
+
+**🌐 Integration Actions**
+- HTTP requests to any API
+- Google Sheets updates
+- Calendar event creation
+- Social media posting
+- Email marketing campaigns
+- CRM record updates
 
 **Example:** "Send a message to #general channel: 'Great work! [Task Name] has been completed by [Person Name]'"
 
@@ -177,7 +223,6 @@ Ready to automate your workflow?
 
 **Need more help?**
 - [Complete Integration Reference](../../automation/comprehensive-integrations.md) - All available triggers and actions
-- [AI Automation Collection](https://help.taskade.com/en/collections/8400803-ai-automation) - Advanced tutorials
 - [Community Forum](https://www.taskade.com/feedback/public-api) - Get help from other users
 
 ---

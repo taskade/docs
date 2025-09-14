@@ -3,8 +3,53 @@
 **Turn your brilliant Genesis app into something that helps business owners everywhere. Share what you've built, discover amazing solutions from others, and copy complete apps with just one click.**
 
 {% hint style="success" %}
-**New Feature!** Now you can share your Genesis apps with business owners worldwide and instantly copy apps that others have built. It's like having a library of business solutions!
+**Latest Features!** Revolutionary app forking, embeddable public agents, and professional publishing with paywalls are now live! Share your Genesis apps globally, monetize premium solutions, and fork complete applications with one click.
 {% endhint %}
+
+---
+
+## 🍴 **Revolutionary App Forking**
+
+The most powerful way to learn and build is by starting with working solutions. Genesis now lets you fork (copy) any community app with complete fidelity.
+
+### **What is App Forking?**
+
+Forking creates a complete, independent copy of a Genesis app in your workspace. Unlike simple templates, forking gives you:
+
+- **Complete Workspace Clone**: All projects, agents, automations, and media files
+- **Working Integrations**: Connections and workflows that function immediately  
+- **Full Customization Rights**: Modify, rebrand, and extend however you want
+- **Independent Evolution**: Your forked app develops separately from the original
+
+### **One-Click Complete Duplication**
+
+When you fork a Genesis app, you get:
+
+| What Gets Copied | Details |
+|------------------|---------|
+| **🎨 App Interface** | Complete layout, styling, and user experience |
+| **📊 Projects & Data** | All project structures with example data |
+| **🤖 AI Agents** | Trained agents with their knowledge and personalities |
+| **⚡ Automations** | Working workflows and integrations |
+| **📁 Media Files** | Images, documents, and assets |
+| **🔧 Configuration** | Settings, permissions, and customizations |
+
+### **Professional Use Cases**
+
+**For Agencies:**
+- Fork client portal templates and customize for each client
+- Start with proven solutions instead of building from scratch
+- Maintain consistent quality across client projects
+
+**For Entrepreneurs:**
+- Copy successful business models and adapt to your market
+- Learn from working examples of complex workflows
+- Accelerate time-to-market with proven foundations
+
+**For Teams:**
+- Share internal tools across departments
+- Standardize processes with working templates
+- Enable non-technical team members to deploy solutions
 
 ---
 
@@ -28,6 +73,89 @@ When you share your Genesis app with the community, it goes into a public librar
 - Apps containing sensitive business data or processes
 - Highly customized solutions that won't transfer well
 - Work-in-progress apps that aren't ready for public use
+
+---
+
+## 💰 **Professional Publishing with Paywalls**
+
+Transform your Genesis apps into revenue-generating solutions with professional publishing features.
+
+### **Monetize Your Expertise**
+
+Create premium Genesis apps that users pay to access:
+
+- **Subscription Models**: Monthly or yearly access to your app
+- **One-Time Purchases**: Pay once, use forever
+- **Tiered Access**: Different features for different price points
+- **Usage-Based Pricing**: Pay per transaction or interaction
+
+### **Perfect for:**
+
+**Consultants & Agencies:**
+- Client assessment tools and calculators
+- Industry-specific templates and workflows
+- Diagnostic and analysis applications
+
+**SaaS Entrepreneurs:**
+- Niche business tools and utilities
+- Specialized dashboards and reporting
+- Process automation solutions
+
+**Content Creators:**
+- Educational tools and courses
+- Interactive guides and tutorials
+- Community management platforms
+
+### **Professional Features**
+
+| Feature | Benefit |
+|---------|---------|
+| **🔒 Access Control** | Secure paywall integration with usage tracking |
+| **📊 Analytics** | Detailed metrics on user engagement and revenue |
+| **💳 Payment Processing** | Seamless integration with Stripe and PayPal |
+| **🎨 Custom Branding** | Your logo, colors, and domain |
+| **📈 A/B Testing** | Optimize pricing and features for maximum revenue |
+
+---
+
+## 🤖 **Embeddable Public AI Agents**
+
+Share your AI expertise by embedding trained agents directly into websites, documentation, or any web page.
+
+### **Agents Anywhere**
+
+Your public AI agents can now be embedded with a simple code snippet:
+
+```html
+<iframe src="https://agents.taskade.com/your-agent-id" 
+        width="400" height="600" 
+        frameborder="0">
+</iframe>
+```
+
+### **Use Cases**
+
+**Customer Support:**
+- Embed support agents on your website
+- Provide 24/7 assistance with your product knowledge
+- Handle common questions automatically
+
+**Lead Generation:**
+- Qualification agents that assess potential clients
+- Interactive consultations that capture contact info
+- Product recommendation engines
+
+**Education & Training:**
+- Subject matter experts embedded in courses
+- Interactive tutors for complex topics
+- Assessment and feedback systems
+
+### **Professional Integration**
+
+- **Seamless Branding**: Agents match your website's design
+- **Custom Domains**: Host agents on your own domain
+- **Analytics Tracking**: Monitor conversations and effectiveness
+- **Lead Capture**: Automatically collect user information
 
 ---
 

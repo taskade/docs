@@ -552,6 +552,257 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 3. **Have backup plans** for critical workflows in case integrations fail
 4. **Train your team** on how to use and troubleshoot advanced features
 
+## 🚀 **Power User Prompts & Use Cases**
+
+Ready to unlock Genesis's full potential? Here are advanced prompts and real-world scenarios that show how Taskade powers your business success.
+
+### **🎯 Smart Business Prompts**
+
+**Customer Experience Apps:**
+```
+"Create a restaurant feedback system where customers rate food quality, service speed, and cleanliness on a 1-5 scale. When someone gives a rating below 3, immediately send me a Slack alert with their feedback and contact info so I can follow up personally within 30 minutes."
+```
+
+**Team Productivity Apps:**
+```
+"Build a project handoff system where when someone marks a task as 'Ready for Review', it automatically assigns it to the next person, sends them a notification with all the context, and creates a deadline 2 days from now. If they don't respond in 24 hours, escalate to the team lead."
+```
+
+**Sales & Lead Management:**
+```
+"Make a lead qualification app where prospects fill out their business size, budget range, and timeline. Automatically score them as Hot (budget >$10K, timeline <30 days), Warm, or Cold, then route Hot leads to my CRM and send me an instant notification with their details."
+```
+
+### **🔗 Connecting the Dots: How Taskade Powers You**
+
+**Your Workspace = Your Business Brain:**
+Every Genesis app you build learns from your workspace's existing knowledge. Your customer data, team processes, and business intelligence all work together automatically.
+
+**Example: Restaurant Chain Owner**
+- **Morning**: Check your feedback app (powered by customer data from all locations)
+- **Afternoon**: Your inventory app (connected to the same customer preferences) suggests menu adjustments
+- **Evening**: Your staff scheduling app (knowing busy periods from feedback data) optimizes tomorrow's shifts
+
+**The Magic:** All three apps share the same business intelligence, making each one smarter.
+
+### **🎨 Creative Workflow Prompts**
+
+**Content Production Pipeline:**
+```
+"Create a video production tracker where I can upload scripts, assign roles (writer, editor, thumbnail designer), set deadlines, and track progress. When a video is marked 'Complete', automatically post it to our content calendar and notify the social media team."
+```
+
+**Brand Asset Management:**
+```
+"Build a brand library where team members can upload logos, photos, and graphics with tags like 'summer campaign' or 'product shots'. Make it searchable so anyone can quickly find the right assets, and track who downloaded what for usage reporting."
+```
+
+### **📊 Data-Driven Decision Making**
+
+**Business Intelligence Prompts:**
+```
+"Create a dashboard that shows me this week's customer feedback scores, compares them to last month, identifies trending complaints, and suggests which locations need attention. Update it automatically every morning at 9 AM."
+```
+
+**Performance Tracking:**
+```
+"Build a team productivity app that tracks project completion rates, identifies bottlenecks, and shows me which team members might need support. Send me a weekly summary every Friday with actionable insights."
+```
+
+### **⚡ Automation That Actually Helps**
+
+**Smart Follow-ups:**
+- When a customer books a service, automatically send them preparation instructions 24 hours before
+- If a project deadline is approaching and tasks aren't complete, notify the team lead
+- When inventory runs low, create a reorder task and assign it to the purchasing manager
+
+**Intelligent Routing:**
+- Route customer complaints to different departments based on keywords
+- Assign leads to sales reps based on territory and availability
+- Escalate urgent issues to managers automatically
+
+### **🌟 Real Success Stories**
+
+**"I built our entire client onboarding system in 20 minutes"**
+*Marketing Agency Owner*
+- New clients fill out a detailed intake form
+- Automatically creates project folders with their brand assets
+- Assigns team members based on service type
+- Sends welcome email with timeline and next steps
+
+**"My food truck's daily operations run themselves now"**
+*Food Truck Entrepreneur*
+- Morning inventory check creates shopping lists
+- Customer orders track popular items for tomorrow's prep
+- End-of-day sales automatically update ingredient needs
+- Weather alerts suggest menu adjustments
+
+**"Our remote team finally feels connected"**
+*Startup Founder*
+- Daily standup app collects updates without meetings
+- Project handoffs include all context and files
+- Team celebration app highlights wins and milestones
+- Knowledge sharing app captures lessons learned
+
+### **💡 Pro Tips for Advanced Users**
+
+**Start Small, Think Big:**
+Begin with one workflow that annoys you daily, then gradually connect it to other parts of your business.
+
+**Use Natural Language:**
+Don't overthink the technical details. Describe what you want like you're talking to a smart assistant.
+
+**Connect Everything:**
+The more your apps share data, the smarter they become. Let Taskade's intelligence work for you.
+
+**Iterate Quickly:**
+Build a basic version first, use it for a week, then refine based on what you learn.
+
+---
+
+## 🕐 **Genesis Version History**
+
+Genesis automatically tracks every change you make to your apps, creating a complete development timeline with one-click restoration.
+
+### **What Gets Tracked**
+Every modification to your Genesis app is automatically recorded:
+
+| **Change Type** | **Details Captured** |
+|-----------------|---------------------|
+| **Content Modifications** | Text updates, layout changes, field additions |
+| **Configuration Changes** | Settings updates, permission modifications |
+| **Feature Additions** | New functionality, tool integrations |
+| **Design Updates** | Styling changes, theme modifications |
+| **Integration Changes** | Automation updates, API connections |
+
+### **View & Restore Versions**
+When you need to undo changes or your app breaks after an update:
+
+1. **Open your Genesis app** in the workspace
+2. **Click "Restore Version"** in the top-right corner
+3. **Browse the timeline** to see all previous versions
+4. **Choose the version** you want to restore
+5. **Click "Restore Version"** to instantly revert
+
+### **Professional Benefits**
+- **Client Work**: Show development progress with complete audit trail
+- **Team Collaboration**: See exactly who made which changes when
+- **Safe Experimentation**: Try bold changes knowing you can always revert
+- **Compliance**: Maintain complete records for regulated industries
+
+---
+
+## 🗄️ **Database Projects: Your App's Data Foundation**
+
+When Genesis creates an app, it automatically generates database projects that serve as your app's intelligent data layer.
+
+### **What Are Database Projects?**
+Database projects are smart storage systems that:
+- **Structure Data Automatically** based on your app's needs
+- **Sync in Real-Time** between your app interface and database
+- **Train AI Agents** with your business data and patterns
+- **Trigger Automations** when data changes or meets conditions
+
+### **Perfect For Business Applications**
+| **App Type** | **Database Use** | **Smart Features** |
+|--------------|------------------|-------------------|
+| **Customer Portals** | Client data, project history | AI agents trained on customer patterns |
+| **Booking Systems** | Appointments, customer records | Automatic availability management |
+| **Inventory Apps** | Product catalogs, stock levels | Smart reorder alerts |
+| **CRM Applications** | Leads, contacts, sales data | Predictive lead scoring |
+
+### **Genesis-Generated vs Manual Databases**
+
+**Automatic Generation (Recommended):**
+```
+"Create a yoga studio booking app with a customer database, class schedule database, and instructor database."
+```
+Genesis analyzes your needs and creates optimized data structures automatically.
+
+**Manual Database Creation:**
+1. **Open your app** in Taskade
+2. **Click + New Project** within the app's dashboard
+3. **Choose template** or start blank
+4. **Configure custom fields** for your data
+5. **Ask Genesis** to connect the database to your app
+
+### **Database Automation Examples**
+
+**Booking App Workflows:**
+- New appointment → Send confirmation → Block calendar → Process payment
+- Cancellation → Refund payment → Open time slot → Notify waitlist
+
+**CRM App Intelligence:**
+- High lead score → Assign to sales rep → Create follow-up task
+- Deal stage change → Set reminder → Update forecast → Notify team
+
+**Inventory Management:**
+- Low stock → Create purchase order → Notify supplier → Update catalog
+
+---
+
+## 📤 **Embedding & Publishing**
+
+Share your Genesis apps with the world through powerful embedding and publishing options.
+
+### **Embed Projects in Websites**
+Embed entire projects on your website or blog with live updates:
+
+1. **Open your project** and select the desired view
+2. **Click the Share button** in the top-right corner
+3. **Select the Embed tab** and click Copy
+4. **Paste the embed code** into your website
+5. **Customize dimensions** and footer visibility
+
+### **Embed Settings**
+| **Setting** | **Options** | **Use Case** |
+|-------------|-------------|--------------|
+| **Dimensions** | Custom width/height | Fit your website layout |
+| **Footer Visibility** | Show/hide Taskade branding | Professional presentation |
+| **Theme** | Light/dark/auto | Match your site design |
+| **Permissions** | View-only/interactive | Control user access |
+
+### **Professional Publishing**
+- **Live Updates**: Changes sync automatically to embedded projects
+- **Responsive Design**: Works on desktop, tablet, and mobile
+- **Custom Domains**: Use your own domain for professional branding
+- **Access Control**: Set permissions for different user groups
+
+---
+
+## 🔄 **Workflow Generator: AI-Powered Automation**
+
+Build complex automation flows using natural language with the revolutionary Workflow Generator.
+
+### **What's Possible?**
+Create sophisticated automations instantly:
+
+- **"When a form is submitted, create a task, notify the team, and send follow-up emails."**
+- **"Monitor X for new content, summarize it, and create a new project for each item."**
+- **"Every Monday, generate a progress report for X and share it with stakeholders."**
+- **"Create an AI Agent that processes customer feedback and assigns follow-up."**
+
+### **Key Features**
+
+| **Feature** | **What It Means** |
+|-------------|-------------------|
+| **⚡ Instant Creation** | Build complex flows in minutes instead of hours |
+| **💬 Natural Language** | Describe complexity—AI does the technical work |
+| **🔧 Intelligent Editing** | Modify workflows with plain-English requests |
+| **📊 Smart Recommendations** | AI suggests optimizations and improvements |
+| **🔗 Built-in Integrations** | Connect 100+ apps with guided setup |
+
+### **Smart Editing Commands**
+- **"Add a Slack notification to this workflow and branching logic."**
+- **"Change the trigger to run daily instead of weekly, and add looping."**
+- **"Include error handling if the API call fails."**
+
+### **Getting Started**
+1. **Visit** [taskade.com/create/flow](https://taskade.com/create/flow) or navigate to **Automations › Create Flow**
+2. **Describe your workflow** in natural language
+3. **Watch the generator** build, refine, and optimize automatically
+4. **Test and refine** with additional natural language commands
+
 ---
 
 **Ready to implement advanced features?** Start with one area that would have the biggest impact on your business, implement it thoroughly, and then gradually add more sophisticated capabilities.
