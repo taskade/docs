@@ -5,11 +5,35 @@ help-center/_imported/
 # Import scripts and temporary files
 scripts/
 package.json
+package-lock.json
 *-urls.txt
 test-urls.txt
 discovered-urls.txt
 priority-urls.txt
 help-center-urls.txt
+IMPORT_ORGANIZATION.md
+
+# Internal strategy and analysis documents (should not be public)
+AUDIENCE_OPTIMIZATION_SUMMARY.md
+COMPREHENSIVE_ENHANCEMENT_PLAN.md
+SESSION_CHANGES_SUMMARY.md
+TASKADE_DNA_MESSAGING.md
+GITBOOK_TRANSFORMATION_PLAN.md
+PENDING_CHANGES_REVIEW.md
+*_PLAN.md
+*_SUMMARY.md
+*_MESSAGING.md
+
+# Environment variables and secrets (NEVER COMMIT THESE!)
+.env
+.env.*
+!.env.example.template
+*.key
+*.pem
+*credentials*
+*secrets*
+config/local.json
+config/production.json
 
 # Node modules (if any)
 node_modules/
@@ -30,11 +54,14 @@ Thumbs.db
 *.swo
 *~
 
-# Logs
+# Logs and import files
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+import-log.txt
+robust-import-log.txt
+*-import-log.txt
 
 # Runtime data
 pids
