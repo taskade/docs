@@ -8,6 +8,26 @@ Each example includes the exact prompt, expected results, and real success metri
 
 Want to see what's actually possible with Genesis? Explore these interactive demos built by real users with their exact prompts.
 
+### **📚 Template Gallery**
+
+Taskade features hundreds of project frameworks you can use to kickstart all kinds of projects. All templates in the **[Template Gallery](https://www.taskade.com/templates)** are fully customizable and Genesis-ready.
+
+**Available Template Categories:**
+- 🏡 **Personal** - Life management, habit tracking, goal setting
+- ⚡️ **Project Management** - Team coordination, milestone tracking
+- 🎓 **Education** - Course planning, research organization
+- 📝 **Task Management** - Workflow optimization, productivity systems
+- ☕️ **Product Management** - Feature planning, roadmap development
+- 💼 **Business** - Strategy planning, meeting management
+- 🎨 **Creative** - Content planning, design workflows
+- 🔬 **Research** - Data collection, analysis frameworks
+
+**Genesis Integration**: Every template can be enhanced with Genesis AI to add:
+- **Smart Automation** - Automatic task creation and updates
+- **AI Agents** - Specialized assistants for each template type
+- **Dynamic Forms** - Data collection that adapts to your needs
+- **Real-Time Analytics** - Progress tracking and insights
+
 ### **📊 App Categories & Business Impact**
 
 | Category | Most Popular App | Business Problem Solved | Success Metrics | Build Time |
