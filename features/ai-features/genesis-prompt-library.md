@@ -43,6 +43,68 @@ bookings and send reminder texts 24 hours before appointments."
 ```
 *Clear, specific, includes user experience and automation*
 
+## 🌟 "Wow Moment" Prompts
+
+*These create instant user delight and viral sharing - the kind of results that make people say "how did it do that?"*
+
+### **✨ The Complete Business Generator**
+```
+"Create a complete customer onboarding system for my consulting business - 
+include a client portal, project tracking, automated follow-ups, 
+and a feedback collection system"
+```
+**The Magic**: Taskade AI creates 4 interconnected systems in 30 seconds
+- 📋 Project template with phases and milestones  
+- 💻 Client portal app with progress tracking via Genesis Preview
+- ⚡ Email automation sequence with personalization
+- 🤖 Customer success agent that answers questions
+- 📊 Analytics dashboard showing client health
+
+**Why It Works**: Shows Taskade's unified intelligence - one request, complete business system.
+
+### **🎪 The Event Orchestrator**
+```
+"Plan and manage our company retreat - 
+handle registration, logistics, feedback, and follow-up"
+```
+**The Magic**: Taskade AI orchestrates the entire event lifecycle
+- 📅 Registration app with dietary preferences and room assignments
+- 📋 Logistics project with vendor coordination and timelines
+- 🤖 Event assistant agent answering attendee questions  
+- ⚡ Automated check-in system with badges and welcome packets
+- 📊 Real-time feedback collection during sessions
+
+**Why It Works**: Demonstrates end-to-end automation and intelligence coordination.
+
+### **🚀 The Growth Machine**
+```
+"Build a content marketing system that turns our expertise into leads automatically. 
+Include content calendar planning, writing assistance, lead magnet creation, 
+automated nurturing sequences, and performance analytics"
+```
+**The Magic**: Complete marketing automation ecosystem
+- 📅 Content calendar with research and topic suggestions
+- ✍️ AI writing assistant that matches your brand voice
+- 🧲 Lead magnet generator (calculators, assessments, guides)
+- ⚡ Automated nurturing sequences based on engagement
+- 📊 Analytics tracking content performance to customer acquisition
+
+**Why It Works**: Shows how AI can handle complex, multi-step business processes.
+
+### **🎯 The Mind Reader**
+```
+"Create a customer feedback system that automatically categorizes complaints, 
+routes them to the right team, drafts responses, and tracks resolution"
+```
+**The Magic**: AI-powered customer service automation
+- 📝 Smart form that adapts questions based on issue type
+- 🧠 AI categorization and sentiment analysis
+- 🎯 Automatic routing to specialized team members
+- ✉️ Draft responses that match your company tone
+- 📊 Resolution tracking and customer satisfaction monitoring
+
+**Why It Works**: Demonstrates AI understanding and intelligent automation.
+
 ## 🚀 Starter App Prompts
 
 Start small and focus on one clear idea. Here are quick wins to try first:

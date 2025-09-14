@@ -660,6 +660,69 @@ Build a basic version first, use it for a week, then refine based on what you le
 
 ---
 
+## 🕐 **Genesis Version History**
+
+Genesis automatically tracks every change you make to your apps, creating a complete development timeline with one-click restoration.
+
+### **What Gets Tracked**
+Every modification to your Genesis app is automatically recorded:
+
+| **Change Type** | **Details Captured** |
+|-----------------|---------------------|
+| **Content Modifications** | Text updates, layout changes, field additions |
+| **Configuration Changes** | Settings updates, permission modifications |
+| **Feature Additions** | New functionality, tool integrations |
+| **Data Structure Changes** | Field modifications, relationship updates |
+| **Automation Updates** | Workflow changes, trigger modifications |
+
+### **Restoration Made Simple**
+**One-Click Rollback**: Instantly restore any previous version
+- View side-by-side comparisons of changes
+- Restore specific sections without affecting other parts
+- Maintain user data while reverting functionality
+
+### **Professional Development Benefits**
+- **Client Confidence**: Show complete development history
+- **Safe Experimentation**: Try bold changes knowing you can always revert
+- **Compliance**: Maintain complete records for regulated industries
+- **Team Coordination**: See who made what changes when
+
+---
+
+## 🗄️ **Database Projects: Your App's Data Foundation**
+
+When Genesis creates an app, it automatically generates database projects that serve as your app's intelligent data layer.
+
+### **What Are Database Projects?**
+Database projects are smart storage systems that:
+- **Structure Data Automatically** based on your app's needs
+- **Sync in Real-Time** between your app interface and database
+- **Train AI Agents** with your business data and patterns
+- **Trigger Automations** when data changes or meets conditions
+
+### **Perfect For Business Applications**
+| **App Type** | **Database Use** | **Smart Features** |
+|--------------|------------------|-------------------|
+| **Customer Portals** | Client data, project history | AI agents trained on customer patterns |
+| **Inventory Systems** | Stock levels, supplier info | Automatic reorder triggers |
+| **Support Platforms** | Ticket data, resolution patterns | Smart routing and response suggestions |
+| **Sales Dashboards** | Lead data, conversion metrics | Predictive analytics and follow-up automation |
+
+### **Database Intelligence Features**
+- **Smart Relationships**: Automatically connects related data
+- **Pattern Recognition**: Identifies trends and anomalies
+- **Predictive Insights**: Suggests actions based on data patterns
+- **Real-Time Sync**: Updates instantly across all connected systems
+
+### **Getting Started with Database Projects**
+1. **Let Genesis Create**: Your database structure is built automatically
+2. **Review the Structure**: Check the generated fields and relationships
+3. **Customize as Needed**: Add custom fields or modify relationships
+4. **Connect Automations**: Set up triggers for data changes
+5. **Train AI Agents**: Let agents learn from your data patterns
+
+---
+
 **Ready to implement advanced features?** Start with one area that would have the biggest impact on your business, implement it thoroughly, and then gradually add more sophisticated capabilities.
 
 **Need help with complex implementations?** The Genesis AI agent can guide you through setting up advanced features and troubleshooting complex workflows.

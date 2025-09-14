@@ -24,6 +24,9 @@ Triggers are events that start automations. They monitor for specific conditions
 |---------|-------------|----------------|------------------|
 | **Agent Trigger** | Enables AI Agents to optionally run actions during a conversation | `agent`, `conversation`, `command`, `user` | Process agent responses, trigger follow-up actions |
 | **Agent Public Chat Ended** | Triggers when the public agent conversation comes to an end | `agent`, `conversation`, `endReason`, `duration` | Collect feedback, analyze conversation quality |
+| **Agent Tool Trigger** | Triggers when agent uses specific tools during conversations | `agent`, `tool`, `toolInput`, `toolOutput` | Process tool results, update external systems |
+| **Agent Response Generated** | Triggers after agent generates response | `agent`, `response`, `confidence`, `sources` | Quality control, response logging |
+| **Agent Knowledge Updated** | Triggers when agent knowledge base is modified | `agent`, `knowledgeItem`, `updateType`, `source` | Sync knowledge across systems |
 | **Agent Command Executed** | Agent command completed successfully | `agent`, `command`, `result`, `user` | Process command results, update knowledge base |
 | **Agent Error Occurred** | Agent encountered error during processing | `agent`, `error`, `context`, `user` | Alert administrators, log issues for improvement |
 
