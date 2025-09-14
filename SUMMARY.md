@@ -23,6 +23,8 @@
 ## 📊 Core Features
 
 - [Platform Overview](features/README.md)
+- [Collaboration](features/collaboration.md)
+- [Workspaces](features/workspaces.md)
 - [AI Features](features/ai-features/README.md)
   - [AI Agents Getting Started](features/ai-features/ai-agents-getting-started.md)
   - [Automation Getting Started](features/ai-features/automation-getting-started.md)

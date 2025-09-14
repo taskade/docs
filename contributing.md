@@ -2,6 +2,18 @@
 
 This documentation is open source and we welcome contributions from the community. Whether you're fixing a typo, adding examples, or writing new sections, your help makes these docs better for everyone.
 
+## 🔒 **SECURITY FIRST**
+
+**⚠️ CRITICAL:** This is a **PUBLIC** repository. Never commit sensitive information!
+
+**Quick Security Checklist:**
+- [ ] ✅ No API keys, tokens, or credentials
+- [ ] ✅ No internal company data or strategies  
+- [ ] ✅ No `.env` files or config with secrets
+- [ ] ✅ All examples use placeholder values
+
+→ **[Read Full Security Guidelines](SECURITY.md)**
+
 ## 🚀 Quick Start
 
 ### 1. **Fork the Repository**

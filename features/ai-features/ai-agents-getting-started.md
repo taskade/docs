@@ -498,4 +498,55 @@ You can also use your custom AI agent commands with multiple tasks:
 
 ---
 
+## 🤖 **AI Team Generator: Multi-Agent Teams**
+
+Create entire teams of specialized AI agents with a single prompt using the revolutionary AI Team Generator.
+
+### **What is AI Team Generator?**
+The AI Team Generator lets you create complete multi-agent teams instantly. Just describe your use case, and Taskade automatically generates a fully configured AI Team with tailored roles, behaviors, and specialized toolkits.
+
+### **When to Use AI Team Generator**
+
+| **Scenario** | **Why It's Perfect** |
+|--------------|---------------------|
+| **Complex Workflows** | Multiple agents tackle different parts of a workflow |
+| **Uncertain Structure** | AI designs the optimal team composition for you |
+| **Time Constraints** | Save hours of manual agent configuration |
+| **Best Practice Learning** | See how experts structure multi-agent systems |
+
+### **Example AI Team Generations**
+
+**Prompt:** *"Create a product launch team for a SaaS startup"*
+
+**Generated Team:**
+- **🎯 Product Manager Agent** - Roadmap planning, feature prioritization
+- **📊 Market Research Agent** - Competitor analysis, user research
+- **✍️ Content Marketing Agent** - Blog posts, social media, email campaigns  
+- **📈 Growth Marketing Agent** - SEO optimization, conversion tracking
+- **🎨 Design Agent** - Visual assets, UI/UX feedback
+- **💬 Customer Success Agent** - Onboarding flows, support documentation
+
+**Prompt:** *"Build a legal compliance team for healthcare"*
+
+**Generated Team:**
+- **⚖️ Compliance Officer Agent** - HIPAA regulations, audit preparation
+- **📋 Documentation Agent** - Policy creation, procedure updates
+- **🔍 Risk Assessment Agent** - Vulnerability analysis, mitigation strategies
+- **📊 Reporting Agent** - Compliance reports, regulatory filings
+- **🎓 Training Agent** - Staff education, certification tracking
+
+### **How It Works**
+1. **Describe Your Need** - "I need a team for [specific use case]"
+2. **AI Analyzes Requirements** - Identifies roles, skills, and workflows needed
+3. **Generates Specialized Agents** - Each with custom instructions and tools
+4. **Ready to Deploy** - Start using your team immediately
+
+### **Pro Tips for AI Team Generator**
+- **Be Specific** - Include industry, company size, and key challenges
+- **Mention Tools** - Reference systems you want integrated (Slack, Sheets, etc.)
+- **Define Outcomes** - What success looks like for your team
+- **Iterate** - Refine the prompt if the first generation isn't perfect
+
+---
+
 **💡 Pro Tip:** Your best agent is one that solves a real problem you face daily. Start there, and expand as you discover new possibilities!
