@@ -211,7 +211,104 @@ Workspaces are the foundational containers that organize your teams, projects, a
 - **Connected Apps**: Manage third-party integrations
 - **API Access**: Configure developer access and tokens
 - **Webhook Settings**: Set up external system notifications
-- **SSO Configuration**: Enterprise single sign-on setup
+- **Enterprise Security**: Advanced authentication and access controls
+
+---
+
+## 🔒 **Enterprise Security & Compliance**
+
+### **Single Sign-On (SSO) Integration**
+
+Taskade supports enterprise-grade authentication through multiple identity providers:
+
+| **Provider** | **Protocol** | **Features** | **Best For** |
+|--------------|--------------|--------------|--------------|
+| **Google Workspace** | SAML 2.0 | Directory sync, MFA support | Google-first organizations |
+| **Microsoft Azure AD** | SAML 2.0 | Conditional access, device compliance | Microsoft 365 environments |
+| **Okta** | SAML 2.0 | Advanced identity management | Multi-app enterprises |
+| **Generic SAML** | SAML 2.0 | Custom identity providers | Specialized security needs |
+
+### **SSO Setup Process**
+
+**1. Identity Provider Configuration**
+- Configure SAML application in your IdP
+- Set ACS URL: `https://www.taskade.com/auth/saml/callback`
+- Configure attribute mapping for email and name
+- Download IdP certificate and metadata
+
+**2. Taskade Configuration**
+- Navigate to Workspace Settings → Security
+- Upload IdP certificate and configure metadata
+- Test SSO connection with test user
+- Enable for all workspace members
+
+**3. User Provisioning**
+- **Automatic**: Users created on first SSO login
+- **Manual**: Pre-create users with email matching
+- **SCIM**: Automated user lifecycle management (Enterprise)
+
+### **SCIM User Provisioning**
+
+Automate user lifecycle management with SCIM 2.0 support:
+
+| **Capability** | **Description** | **Business Benefit** |
+|----------------|-----------------|---------------------|
+| **Auto-Provisioning** | Create users automatically from IdP | Instant workspace access for new hires |
+| **De-provisioning** | Remove access when users leave | Immediate security compliance |
+| **Profile Sync** | Keep user information updated | Accurate directory information |
+| **Group Management** | Sync team memberships | Consistent access across systems |
+
+### **Advanced Access Controls**
+
+| **Feature** | **Description** | **Use Case** |
+|-------------|-----------------|--------------|
+| **IP Restrictions** | Limit access to specific IP ranges | Office-only access policies |
+| **Device Management** | Control access by device type/status | BYOD security compliance |
+| **Session Management** | Configure session timeouts and limits | Enhanced security for sensitive data |
+| **MFA Enforcement** | Require multi-factor authentication | Additional security layer |
+
+### **Audit & Compliance**
+
+| **Audit Type** | **Information Tracked** | **Retention** |
+|----------------|------------------------|---------------|
+| **User Activity** | Login/logout, project access, data changes | 1 year (configurable) |
+| **Administrative Actions** | Permission changes, user management, settings | 3 years (compliance) |
+| **Data Access** | File downloads, sharing actions, exports | 90 days (privacy) |
+| **Security Events** | Failed logins, suspicious activity, policy violations | 5 years (security) |
+
+### **Data Protection & Privacy**
+
+**Encryption Standards**
+- **In Transit**: TLS 1.3 for all communications
+- **At Rest**: AES-256 encryption for stored data
+- **Key Management**: Hardware security modules (HSMs)
+- **Certificate Management**: Automated renewal and rotation
+
+**Privacy Controls**
+- **Data Residency**: Choose data storage regions
+- **Data Retention**: Configurable retention policies
+- **Right to Deletion**: GDPR-compliant data removal
+- **Data Portability**: Complete data export capabilities
+
+**Compliance Certifications**
+- **SOC 2 Type II**: Security and availability controls
+- **GDPR**: European data protection compliance
+- **CCPA**: California privacy rights compliance
+- **HIPAA**: Healthcare data protection (Enterprise)
+
+### **Enterprise Administration**
+
+**Centralized Management**
+- **Multi-Workspace Control**: Manage multiple workspaces from single admin panel
+- **Policy Templates**: Standardized security policies across workspaces
+- **Bulk Operations**: Mass user management and permission updates
+- **Automated Reporting**: Scheduled compliance and usage reports
+
+**Advanced Monitoring**
+- **Real-time Alerts**: Security events and policy violations
+- **Usage Analytics**: Detailed workspace and user activity metrics
+- **Performance Monitoring**: System health and response times
+- **Custom Dashboards**: Executive and administrative reporting views
 
 ## 🎯 Best Practices
 
