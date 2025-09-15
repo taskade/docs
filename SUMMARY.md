@@ -16,7 +16,7 @@
 - [**Examples & Templates**](genesis/examples-and-templates.md) - *Real business applications*
 
 ### **⚡ Advanced Capabilities** 
-- [**Space Apps: React Applications**](genesis/space-apps-guide.md) - *Professional web apps*
+- [**Space Apps: Professional Web Applications**](genesis/space-apps-guide.md) - *Deploy live web apps instantly*
 - [**Advanced Features**](genesis/advanced-features.md) - *Power user techniques*
 - [**Custom Domains & Branding**](genesis/custom-domains.md) - *Professional deployment*
 
