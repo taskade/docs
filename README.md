@@ -35,7 +35,17 @@ We believe the future of work isn't just humans using AI. It's humans and AI wor
 
 Software should be alive. And now, it is.
 
-Every Taskade workspace begins with your **Home Subspace** — a living foundation where each subspace becomes a complete application. Whether you're building a customer feedback system, inventory tracker, or team dashboard, Genesis transforms your ideas into working apps in minutes, all powered by your workspace's interconnected intelligence.
+## What You Can Build in Minutes
+
+| **App Type** | **Description** | **Build Time** |
+|--------------|-----------------|----------------|
+| **Customer Feedback** | Reviews with instant alerts for issues | 3 minutes |
+| **Appointment Booking** | Online scheduling with auto-confirmations | 4 minutes |
+| **Inventory Tracker** | Stock monitoring with reorder alerts | 5 minutes |
+| **Support Tickets** | Issue tracking with smart routing | 4 minutes |
+| **Lead Capture** | Contact forms with CRM integration | 3 minutes |
+
+**How it works:** Describe your app → Genesis builds everything → Your app is live with a shareable URL
 
 ## 🎯 What is Taskade?
 
@@ -60,44 +70,22 @@ Your Taskade workspace is your **Home Subspace** — the living foundation that 
 
 ## 🚀 Quick Start
 
-{% tabs %}
-{% tab title="Start with Genesis" %}
-### **🎯 [Build Your First App →](genesis/getting-started.md)**
-Transform your ideas into working applications in minutes:
-- **[What is Genesis? →](genesis/README.md)** - Your workspace's app-building superpower
-- **[Templates & Examples →](genesis/examples-and-templates.md)** - Ready-to-use solutions
-- **[5-Minute Tutorial →](genesis/getting-started.md)** - From idea to working app
+### 🚀 **Build Your First App** (5 minutes)
+1. **[Follow the Tutorial](genesis/getting-started.md)** - Step-by-step app building
+2. **[Copy Working Prompts](genesis/examples-and-templates.md)** - Proven templates  
+3. **[Industry Examples](features/industry-use-cases.md)** - Healthcare, finance, retail guides
 
-### **🏠 Understanding Your Workspace**
-- **Generator Interface** - Prominent input field at the top of every workspace
-- **App Tiles** - Your Teams/Folders/Projects now appear as app tiles below the input
-- **AI Agent Panel** - Persistent left-side assistant that helps build and refine apps
-- **Preview Mode** - Every app gets a live preview tab for instant testing and sharing
-{% endtab %}
+### 🤖 **Create AI Agents** (10 minutes)  
+1. **[AI Agent Tutorial](features/ai-features/ai-agents-getting-started.md)** - Your first AI assistant
+2. **[Agent Prompt Library](features/ai-features/genesis-prompt-library.md)** - Ready-to-use configurations
 
-{% tab title="Learn the Platform" %}
-### **📚 [Platform Overview →](getting-started/README.md)**
-Understand how your workspace powers unlimited apps:
-- **[Features Overview →](features/README.md)** - Platform capabilities
-- **[AI Agents →](features/ai-features/ai-agents-getting-started.md)** - Your workspace's intelligence
-- **[Smart Automations →](features/ai-features/automation-getting-started.md)** - Business reflexes
-{% endtab %}
+### ⚡ **Set Up Automations** (15 minutes)
+1. **[Automation Basics](features/ai-features/automation-getting-started.md)** - Connect your tools
+2. **[Integration Guide](automation/integrations.md)** - 100+ supported services
 
-{% tab title="Developers" %}
-### **💻 [Developer Hub →](developers/README.md)**
-APIs and technical integrations for building on Taskade:
-- **[API Documentation →](api/README.md)** - Complete technical reference
-- **[Automations →](automation/README.md)** - Connect to 100+ services
-- **[Authentication →](start/authentication.md)** - API keys and OAuth setup
-{% endtab %}
-
-{% tab title="Updates" %}
-### **📰 [Changelog →](changelog/README.md)**
-Latest updates and releases:
-- **[2025 Releases →](changelog/2025/README.md)** - Genesis, AI agents, mobile development
-- **[What's New →](changelog/README.md#recent-highlights)** - Latest breakthrough features
-{% endtab %}
-{% endtabs %}
+### 💻 **For Developers**
+- **[API Documentation](api/README.md)** - Complete technical reference  
+- **[Authentication Setup](start/authentication.md)** - Get your API keys
 
 ## ✨ Core Features
 
