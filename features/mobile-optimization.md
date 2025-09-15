@@ -13,6 +13,7 @@
 ### **Native Applications**
 
 #### **iOS & Android Apps**
+
 - **Full feature parity** with desktop versions
 - **Offline capabilities** for viewing and editing projects
 - **Push notifications** for real-time updates and alerts
@@ -23,6 +24,7 @@
 - **Voice input support** for hands-free task creation
 
 #### **Progressive Web App (PWA)**
+
 - **Install directly from browser** - no app store required
 - **Offline functionality** for critical workflows
 - **Native-like experience** on any device
@@ -33,6 +35,7 @@
 The Quick Add widget is a powerful companion tool that lives on your device's home screen, enabling instant task creation without opening the main app.
 
 #### **Widget Features**
+
 - **Home screen access** - Add tasks instantly from your device's home screen
 - **Smart date recognition** - Natural language processing for dates and times
 - **Project selection** - Quick access to your most-used projects
@@ -42,6 +45,7 @@ The Quick Add widget is a powerful companion tool that lives on your device's ho
 #### **Setting Up Quick Add**
 
 **iOS Setup:**
+
 1. Long-press on home screen to enter edit mode
 2. Tap the "+" button to add widgets
 3. Search for "Taskade" and select Quick Add widget
@@ -49,6 +53,7 @@ The Quick Add widget is a powerful companion tool that lives on your device's ho
 5. Configure default project and settings
 
 **Android Setup:**
+
 1. Long-press on home screen
 2. Select "Widgets" from the menu
 3. Find and drag Taskade Quick Add widget
@@ -56,6 +61,7 @@ The Quick Add widget is a powerful companion tool that lives on your device's ho
 5. Tap to configure default settings
 
 #### **Smart Date Suggestions**
+
 The widget uses natural language processing to automatically detect dates and times:
 
 - **"Meeting tomorrow at 3pm"** → Sets due date for tomorrow 3:00 PM
@@ -64,6 +70,7 @@ The widget uses natural language processing to automatically detect dates and ti
 - **"Dentist appointment in 2 weeks"** → Sets due date 14 days from now
 
 ### **Cross-Platform Synchronization**
+
 ```yaml
 Real-time Sync Features:
   - Instant updates across all devices
@@ -80,6 +87,7 @@ Real-time Sync Features:
 ### **Adaptive Interface Design**
 
 #### **Screen Size Optimization**
+
 ```css
 /* Mobile breakpoints automatically handled by Taskade */
 Mobile (320-768px):
@@ -103,26 +111,27 @@ Desktop (1024px+):
 ### **Touch-First Interaction Design**
 
 #### **Gesture Support**
-- **Swipe actions** for quick task completion and navigation
+
+- **Swipe actions** for quick navigation
 - **Long press** for context menus and advanced options
 - **Pull to refresh** for real-time content updates
-- **Pinch to zoom** for detailed view manipulation
 - **Drag and drop** for intuitive task and project organization
 
 #### **Mobile-Optimized Controls**
+
 ```yaml
 Touch Interface Elements:
   Buttons:
     - Minimum 44px touch targets
     - Clear visual feedback on tap
     - Appropriate spacing between interactive elements
-  
+
   Forms:
     - Large, easy-to-tap input fields
     - Smart keyboard types (email, number, URL)
     - Auto-complete and smart suggestions
     - Clear error messaging and validation
-  
+
   Navigation:
     - Bottom tab bars for thumb accessibility
     - Hamburger menus for secondary navigation
@@ -136,6 +145,7 @@ Touch Interface Elements:
 ### **Creating Mobile-First Apps**
 
 #### **Mobile-Optimized Prompts**
+
 ```
 Good Mobile App Prompt:
 "Create a restaurant feedback app that works perfectly on phones:
@@ -143,11 +153,12 @@ Good Mobile App Prompt:
 - Simple text input with auto-resize
 - One-handed photo upload with camera integration
 - Big submit button that's thumb-accessible
-- Thank you screen that fits phone screens
+- Create a Thank you screen that fits phone screens
 - Automatic keyboard optimization for each field type"
 ```
 
 #### **Responsive Layout Strategies**
+
 ```yaml
 Mobile Layout Best Practices:
   Form Design:
@@ -155,13 +166,13 @@ Mobile Layout Best Practices:
     - Logical tab order for keyboard users
     - Minimal scrolling required
     - Clear progress indicators
-  
+
   Content Display:
     - Card-based layouts for easy scanning
     - Generous white space for readability
     - Hierarchical typography with clear headings
     - Collapsible sections for complex content
-  
+
   Navigation:
     - Bottom navigation for primary actions
     - Sticky headers with essential controls
@@ -172,6 +183,7 @@ Mobile Layout Best Practices:
 ### **Mobile Performance Optimization**
 
 #### **Fast Loading & Smooth Interactions**
+
 ```javascript
 // Mobile optimization techniques automatically applied:
 {
@@ -196,6 +208,7 @@ Mobile Layout Best Practices:
 ```
 
 #### **Battery & Data Conservation**
+
 - **Efficient background sync** to minimize battery drain
 - **Compressed data transfer** for slower connections
 - **Smart update scheduling** during optimal network conditions
@@ -208,6 +221,7 @@ Mobile Layout Best Practices:
 ### **Mobile-Optimized View Types**
 
 #### **Action View - Mobile-First Design**
+
 ```yaml
 Action View Features:
   - Designed specifically for mobile workflow
@@ -219,6 +233,7 @@ Action View Features:
 ```
 
 #### **Responsive Board View**
+
 ```yaml
 Mobile Board Adaptations:
   - Horizontal scrolling for swim lanes
@@ -229,6 +244,7 @@ Mobile Board Adaptations:
 ```
 
 #### **Calendar View Mobile Enhancements**
+
 ```yaml
 Mobile Calendar Features:
   - Month/week/day views optimized for small screens
@@ -241,6 +257,7 @@ Mobile Calendar Features:
 ### **View Switching on Mobile**
 
 #### **Smart View Recommendations**
+
 ```javascript
 // Automatic view recommendations based on device
 {
@@ -266,36 +283,8 @@ Mobile Calendar Features:
 
 ## 🔄 Mobile Workflows & Automations
 
-### **Location-Based Automations**
-
-#### **GPS-Triggered Actions**
-```json
-{
-  "locationAutomation": {
-    "trigger": {
-      "type": "location.enter",
-      "place": "office",
-      "radius": "100m"
-    },
-    "actions": [
-      {
-        "type": "project.open",
-        "project": "daily_standup"
-      },
-      {
-        "type": "notification.send",
-        "message": "Welcome to the office! Your daily tasks are ready."
-      },
-      {
-        "type": "agent.activate",
-        "agent": "office_assistant"
-      }
-    ]
-  }
-}
-```
-
 #### **Time-Based Mobile Context**
+
 ```json
 {
   "contextualAutomation": {
@@ -321,41 +310,18 @@ Mobile Calendar Features:
 ### **Voice & Camera Integration**
 
 #### **Voice-to-Text Capabilities**
+
 ```yaml
 Voice Features:
   Task Creation:
     - "Add task: Call client about project update"
     - "Create meeting: Team sync tomorrow 2 PM"
     - "Note: Great idea during lunch meeting"
-  
-  Search & Navigation:
-    - "Find project about marketing campaign"
-    - "Open customer feedback project"
-    - "Show me today's tasks"
-  
+
   Dictation Support:
     - Long-form content creation
     - Meeting notes and summaries
     - Comment and feedback capture
-```
-
-#### **Camera-Enhanced Workflows**
-```yaml
-Camera Integration:
-  Document Scanning:
-    - Receipt capture for expense reports
-    - Business card scanning with contact creation
-    - Whiteboard photo with automatic enhancement
-  
-  QR Code Actions:
-    - Quick project access via QR codes
-    - Event check-ins and registrations
-    - Inventory management and tracking
-  
-  Visual Task Creation:
-    - Photo-based task creation
-    - Image annotation and markup
-    - Visual progress documentation
 ```
 
 ---
@@ -365,20 +331,21 @@ Camera Integration:
 ### **Mobile-First Genesis Design**
 
 #### **Design Principles**
+
 ```yaml
 Mobile-First Checklist:
   User Interface:
     - Thumb-friendly navigation zones
-    - High contrast for outdoor visibility  
+    - High contrast for outdoor visibility
     - Larger text for readability
     - Simplified information architecture
-  
+
   User Experience:
     - Single-purpose screens
     - Minimal cognitive load
     - Clear visual hierarchy
     - Obvious call-to-action buttons
-  
+
   Performance:
     - Fast initial load (under 3 seconds)
     - Smooth 60fps animations
@@ -387,6 +354,7 @@ Mobile-First Checklist:
 ```
 
 #### **Progressive Enhancement Strategy**
+
 ```javascript
 // Feature detection and progressive enhancement
 {
@@ -410,21 +378,21 @@ Mobile-First Checklist:
 ### **Testing Across Devices**
 
 #### **Device Testing Strategy**
+
 ```yaml
 Testing Matrix:
   Devices:
     - iPhone SE (small screen baseline)
     - iPhone 14 Pro (current iOS standard)
-    - Samsung Galaxy S23 (Android flagship)
+    - Pixel 9 Pro (Android flagship)
     - iPad Air (tablet experience)
     - Various Android tablets
-  
+
   Connection Types:
     - 5G (optimal experience)
     - 4G LTE (standard experience)
     - 3G (degraded but functional)
-    - Offline mode (core functionality)
-  
+
   Operating Systems:
     - iOS 15+ (minimum supported)
     - Android 10+ (minimum supported)
@@ -438,6 +406,7 @@ Testing Matrix:
 ### **Mobile-Specific Metrics**
 
 #### **Performance Tracking**
+
 ```javascript
 {
   "mobileMetrics": {
@@ -466,18 +435,19 @@ Testing Matrix:
 ### **Continuous Mobile Optimization**
 
 #### **A/B Testing for Mobile**
+
 ```yaml
 Mobile Optimization Tests:
   Interface Elements:
     - Button sizes (44px vs 48px vs 52px)
     - Navigation patterns (bottom tabs vs hamburger)
     - Color schemes (high contrast vs brand colors)
-  
+
   Workflow Improvements:
     - Form length (single page vs multi-step)
     - Input methods (typing vs voice vs selection)
     - Confirmation patterns (immediate vs delayed feedback)
-  
+
   Content Strategy:
     - Information density (minimal vs comprehensive)
     - Media usage (images vs icons vs text-only)
@@ -491,39 +461,40 @@ Mobile Optimization Tests:
 ### **Mobile-Specific APIs**
 
 #### **Device Capability Detection**
+
 ```javascript
 // Automatic mobile optimization based on device capabilities
 const deviceCapabilities = {
   screen: {
-    size: window.innerWidth < 768 ? 'mobile' : 'desktop',
+    size: window.innerWidth < 768 ? "mobile" : "desktop",
     density: window.devicePixelRatio,
-    orientation: screen.orientation?.type
+    orientation: screen.orientation?.type,
   },
   performance: {
     connection: navigator.connection?.effectiveType,
     memory: navigator.deviceMemory,
-    cores: navigator.hardwareConcurrency
+    cores: navigator.hardwareConcurrency,
   },
   features: {
-    touchSupport: 'ontouchstart' in window,
-    geolocation: 'geolocation' in navigator,
-    camera: 'mediaDevices' in navigator,
-    voiceRecognition: 'webkitSpeechRecognition' in window
-  }
+    touchSupport: "ontouchstart" in window,
+    geolocation: "geolocation" in navigator,
+    camera: "mediaDevices" in navigator,
+    voiceRecognition: "webkitSpeechRecognition" in window,
+  },
 };
 ```
 
 #### **Service Worker for Offline Support**
+
 ```javascript
 // Offline functionality for mobile apps
-self.addEventListener('fetch', event => {
-  if (event.request.url.includes('/api/')) {
+self.addEventListener("fetch", (event) => {
+  if (event.request.url.includes("/api/")) {
     event.respondWith(
-      caches.match(event.request)
-        .then(response => {
-          // Return cached version or fetch from network
-          return response || fetch(event.request);
-        })
+      caches.match(event.request).then((response) => {
+        // Return cached version or fetch from network
+        return response || fetch(event.request);
+      })
     );
   }
 });
@@ -532,36 +503,38 @@ self.addEventListener('fetch', event => {
 ### **Mobile App Embedding**
 
 #### **Responsive Iframe Integration**
+
 ```html
 <!-- Responsive embedding for mobile-optimized apps -->
 <div class="taskade-mobile-app">
-  <iframe 
+  <iframe
     src="https://your-app.taskade.com"
     frameborder="0"
     style="width:100%;height:100vh;border:none;"
     allow="camera;microphone;geolocation"
-    loading="lazy">
+    loading="lazy"
+  >
   </iframe>
 </div>
 
 <style>
-.taskade-mobile-app {
-  position: relative;
-  width: 100%;
-  max-width: 414px; /* iPhone Pro Max width */
-  margin: 0 auto;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-@media (max-width: 768px) {
   .taskade-mobile-app {
-    max-width: 100%;
-    border-radius: 0;
-    box-shadow: none;
+    position: relative;
+    width: 100%;
+    max-width: 414px; /* iPhone Pro Max width */
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
   }
-}
+
+  @media (max-width: 768px) {
+    .taskade-mobile-app {
+      max-width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
 </style>
 ```
 
@@ -572,13 +545,11 @@ self.addEventListener('fetch', event => {
 ### **Real-World Mobile Implementations**
 
 #### **Field Service Management App**
+
 ```yaml
 Use Case: Technician workflow management
 Mobile Features:
-  - GPS location tracking for job routing
-  - Camera for before/after photos
   - Voice notes for hands-free reporting
-  - Offline sync for remote locations
   - Push notifications for urgent jobs
 
 Results:
@@ -589,29 +560,25 @@ Results:
 ```
 
 #### **Event Check-in System**
+
 ```yaml
 Use Case: Conference registration and networking
 Mobile Features:
-  - QR code scanning for rapid check-ins
-  - NFC badge tap for contact exchange
-  - Photo capture for attendee verification
   - Real-time capacity monitoring
   - Push notifications for session alerts
 
 Results:
-  - 80% faster check-in process
-  - 95% reduction in registration queues
   - 50% increase in networking connections
   - Zero paper waste elimination
 ```
 
 #### **Restaurant Ordering Platform**
+
 ```yaml
 Use Case: Mobile-first food ordering
 Mobile Features:
   - Touch-optimized menu navigation
   - Visual dish selection with photos
-  - Voice search for menu items
   - Apple Pay/Google Pay integration
   - Real-time order tracking
 
@@ -629,6 +596,7 @@ Results:
 ### **Pre-Launch Mobile Audit**
 
 #### **Performance Checklist**
+
 - [ ] **Page load time < 3 seconds** on 4G connection
 - [ ] **Touch targets minimum 44px** for all interactive elements
 - [ ] **Text size 16px+** to prevent zoom on iOS
@@ -636,6 +604,7 @@ Results:
 - [ ] **Battery usage optimization** for background processes
 
 #### **User Experience Checklist**
+
 - [ ] **Thumb-friendly navigation** zones utilized
 - [ ] **Single-column layouts** for narrow screens
 - [ ] **Clear visual hierarchy** with adequate contrast
@@ -643,21 +612,23 @@ Results:
 - [ ] **Form optimization** with appropriate keyboard types
 
 #### **Feature Integration Checklist**
+
 - [ ] **Camera integration** tested across devices
 - [ ] **Voice input** functionality verified
-- [ ] **GPS features** working with proper permissions
 - [ ] **Push notifications** configured and tested
 - [ ] **Deep linking** for seamless app navigation
 
 ### **Ongoing Mobile Maintenance**
 
 #### **Weekly Monitoring**
+
 - Monitor mobile analytics for performance degradation
 - Review user feedback specific to mobile experience
 - Test critical user flows on various devices
 - Update any broken responsive design elements
 
 #### **Monthly Optimization**
+
 - Analyze mobile usage patterns and optimize accordingly
 - Update mobile-specific features based on user needs
 - Test on latest device releases and OS versions
@@ -669,31 +640,32 @@ Results:
 
 ### **Mobile Widget Ecosystem**
 
-| **Widget Type** | **Functionality** | **Business Use Case** |
-|-----------------|-------------------|---------------------|
-| **Quick Add Widget** | Add tasks with NLP date recognition | Capture ideas instantly |
-| **Agent Chat Widget** | Direct agent communication | Get answers without opening app |
-| **Project Status Widget** | Live project progress display | Monitor KPIs at a glance |
-| **Team Activity Widget** | Real-time team updates | Stay connected to team progress |
+| **Widget Type**           | **Functionality**                   | **Business Use Case**           |
+| ------------------------- | ----------------------------------- | ------------------------------- |
+| **Quick Add Widget**      | Add tasks with NLP date recognition | Capture ideas instantly         |
+| **Agent Chat Widget**     | Direct agent communication          | Get answers without opening app |
+| **Project Status Widget** | Live project progress display       | Monitor KPIs at a glance        |
+| **Team Activity Widget**  | Real-time team updates              | Stay connected to team progress |
 
 ### **Mobile Automation Triggers**
 
-| **Trigger** | **Mobile Advantage** | **Example Use Case** |
-|-------------|---------------------|---------------------|
-| **Location-Based** | GPS integration | Auto-create tasks when arriving at client site |
-| **Time-Based** | Background processing | Daily standup reminders |
-| **Photo Upload** | Camera integration | Auto-categorize expense receipts |
-| **Voice Command** | Hands-free operation | Create tasks while driving |
+| **Trigger**       | **Mobile Advantage**  | **Example Use Case**             |
+| ----------------- | --------------------- | -------------------------------- |
+| **Time-Based**    | Background processing | Daily standup reminders          |
+| **Photo Upload**  | Camera integration    | Auto-categorize expense receipts |
+| **Voice Command** | Hands-free operation  | Create tasks while driving       |
 
 ### **Offline-First Architecture**
 
 **Smart Sync Technology:**
+
 - **Conflict Resolution** - Intelligent merging of offline changes
 - **Priority Queuing** - Critical updates sync first
 - **Bandwidth Optimization** - Compress data for mobile networks
 - **Background Sync** - Updates happen seamlessly
 
 **Offline Capabilities:**
+
 - **Full Project Access** - Work on cached projects
 - **Agent Conversations** - Continue chats offline
 - **Task Management** - Create, edit, complete tasks
@@ -701,22 +673,23 @@ Results:
 
 ### **Mobile Security & Privacy**
 
-| **Security Feature** | **Protection Level** | **Business Benefit** |
-|---------------------|---------------------|---------------------|
-| **Biometric Lock** | Device-level security | Secure sensitive data |
-| **App-Level Encryption** | End-to-end protection | Compliance ready |
-| **Remote Wipe** | Enterprise control | Protect lost devices |
-| **VPN Integration** | Network security | Secure remote access |
+| **Security Feature**     | **Protection Level**  | **Business Benefit** |
+| ------------------------ | --------------------- | -------------------- |
+| **App-Level Encryption** | End-to-end protection | Compliance ready     |
+| **Remote Wipe**          | Enterprise control    | Protect lost devices |
+| **VPN Integration**      | Network security      | Secure remote access |
 
 ### **Mobile Performance Optimization**
 
 **Battery Efficiency:**
+
 - **Smart Background Processing** - Minimize battery drain
 - **Adaptive Refresh Rates** - Reduce unnecessary updates
 - **Power-Aware Sync** - Sync less frequently on low battery
 - **Dark Mode Optimization** - Reduce OLED power consumption
 
 **Memory Management:**
+
 - **Intelligent Caching** - Keep frequently used data in memory
 - **Progressive Loading** - Load content as needed
 - **Memory Cleanup** - Automatic garbage collection
@@ -726,4 +699,4 @@ Results:
 
 **📱 Ready to create mobile-optimized experiences?** Start with mobile-first Genesis prompts and progressive enhancement strategies to ensure your apps work beautifully on every device.
 
-*For more mobile development insights, explore our [Genesis Space Apps Guide](../genesis/space-apps-guide.md) and [Advanced Automation](../automation/advanced-actions.md) for location-based workflows.*
+_For more mobile development insights, explore our [Genesis Space Apps Guide](../genesis/space-apps-guide.md) and [Advanced Automation](../automation/advanced-actions.md) for location-based workflows._
