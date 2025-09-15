@@ -211,6 +211,101 @@ curl -X POST https://www.taskade.com/api/v1/automations \
   }'
 ```
 
+## 🚀 Advanced Automation Patterns
+
+### **Multi-Agent Orchestration**
+
+Create sophisticated workflows where multiple AI agents collaborate on complex tasks:
+
+```yaml
+Content Production Pipeline:
+  Trigger: "New blog topic submitted via form"
+  
+  Agent 1 - Research Agent:
+    - Analyze topic and gather relevant data
+    - Create research brief with sources
+    - Pass findings to Content Agent
+  
+  Agent 2 - Content Agent:
+    - Generate article outline based on research
+    - Write first draft using research data
+    - Pass draft to Editor Agent
+  
+  Agent 3 - Editor Agent:
+    - Review content for quality and accuracy
+    - Suggest improvements and edits
+    - Finalize content for publication
+  
+  Final Actions:
+    - Create task in Editorial Calendar
+    - Notify marketing team via Slack
+    - Schedule social media promotion
+```
+
+### **Conditional Logic Workflows**
+
+Build intelligent decision trees that adapt based on data:
+
+| **Condition** | **Action Path** | **Business Logic** |
+|---------------|-----------------|-------------------|
+| **Lead Score > 80** | Route to Sales Team | Hot prospects get immediate attention |
+| **Lead Score 50-80** | Nurture Campaign | Warm leads need more engagement |
+| **Lead Score < 50** | Educational Content | Cold leads need value-first approach |
+
+### **Error Handling & Recovery**
+
+Build resilient automations that handle failures gracefully:
+
+```yaml
+Robust Email Campaign:
+  Primary Action: "Send via Mailchimp"
+  
+  Error Handling:
+    - If Mailchimp fails → Try SendGrid backup
+    - If both fail → Create manual task for team
+    - Log all attempts in error tracking project
+    - Send alert to admin via Slack
+  
+  Success Tracking:
+    - Update campaign metrics in dashboard
+    - Create follow-up tasks based on engagement
+    - Trigger next sequence in nurture campaign
+```
+
+### **Data Transformation Pipelines**
+
+Process and enrich data as it flows through your system:
+
+```yaml
+Customer Data Enrichment:
+  Input: "Raw form submission"
+  
+  Transformation Steps:
+    1. Validate email format and domain
+    2. Enrich with company data from Clearbit
+    3. Score lead based on ICP criteria
+    4. Categorize by industry and company size
+    5. Assign to appropriate sales rep
+  
+  Output: "Fully qualified lead record"
+```
+
+### **Agentic Automation Loops**
+
+Create self-improving systems that learn and adapt:
+
+```yaml
+Customer Success Automation:
+  Continuous Loop:
+    1. Monitor customer health scores
+    2. AI Agent analyzes usage patterns
+    3. Predicts churn risk using historical data
+    4. Automatically creates intervention tasks
+    5. Tracks intervention success rates
+    6. Updates prediction model with results
+    7. Improves future predictions
+```
+
 ## Next Steps
 
 - **[Explore Integration Options](./integrations.md)**

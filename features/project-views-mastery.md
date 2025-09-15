@@ -310,6 +310,52 @@ CRM Table Setup:
     - Notes (Rich text for context)
 ```
 
+#### **Fill with AI: Intelligent Data Population**
+
+Transform your Table View into an AI-powered data processing engine that automatically fills columns with intelligent analysis.
+
+| **AI Action** | **Use Case** | **Business Impact** |
+|---------------|--------------|-------------------|
+| **Translate** | Multi-language customer data | Global business expansion |
+| **Summarize** | Long feedback into key points | Quick decision making |
+| **Extract** | Pull specific data from text | Automated data entry |
+| **Categorize** | Auto-assign tags and labels | Consistent data organization |
+| **Custom Analysis** | Business-specific intelligence | Tailored insights |
+
+**Fill with AI Examples:**
+
+**Marketing Campaign Analysis:**
+```yaml
+Campaign Data Table:
+  - Campaign Name: "Q4 Product Launch"
+  - Description: "Comprehensive multi-channel campaign targeting enterprise clients..."
+  - AI Analysis: "High-value B2B campaign with strong ROI potential"
+  - Category: [AI fills] "Enterprise Marketing"
+  - Priority: [AI fills] "High"
+  - Budget Recommendation: [AI fills] "$50,000-75,000"
+```
+
+**Customer Feedback Processing:**
+```yaml
+Feedback Table:
+  - Customer: "John Smith - TechCorp"
+  - Feedback: "The software is great but the onboarding process was confusing..."
+  - Sentiment: [AI fills] "Mixed - Positive product, Negative experience"
+  - Action Items: [AI fills] "Improve onboarding documentation"
+  - Priority: [AI fills] "Medium"
+  - Department: [AI fills] "Customer Success"
+```
+
+**Lead Qualification:**
+```yaml
+Lead Table:
+  - Company: "StartupXYZ"
+  - Description: "50-person SaaS company looking for project management..."
+  - Qualification: [AI fills] "High - Perfect ICP match"
+  - Deal Size: [AI fills] "$15,000-25,000 annually"
+  - Next Action: [AI fills] "Schedule demo call"
+```
+
 #### **Advanced Filtering and Sorting**
 ```javascript
 // Table view power user techniques
