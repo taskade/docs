@@ -22,10 +22,10 @@ config/production.json
 ### **API Keys & Tokens**
 ```bash
 # ❌ Examples of what NOT to commit:
-INTERCOM_ACCESS_TOKEN=ic_your_token_placeholder_here
-GITHUB_TOKEN=github_token_placeholder_here
+TASKADE_API_TOKEN=your_api_token_here
+GITHUB_TOKEN=your_github_token_here
 DATABASE_URL=postgres://user:password@host:5432/db
-STRIPE_SECRET_KEY=stripe_key_placeholder_here
+OPENAI_API_KEY=your_openai_key_here
 ```
 
 ### **Import Scripts & Temporary Data**
@@ -44,9 +44,9 @@ Instead of `.env`, create `.env.example.template`:
 ```bash
 # ✅ Safe template example:
 # .env.example.template
-INTERCOM_CLIENT_ID=your_client_id_placeholder
-INTERCOM_CLIENT_SECRET=your_client_secret_placeholder
-INTERCOM_ACCESS_TOKEN=your_access_token_placeholder
+TASKADE_API_TOKEN=your_api_token_placeholder
+GITHUB_TOKEN=your_github_token_placeholder
+OPENAI_API_KEY=your_openai_key_placeholder
 ```
 
 ### **2. Check Before Committing**
