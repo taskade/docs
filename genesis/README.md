@@ -6,98 +6,12 @@ Imagine it. Run it live.
 Powered by your Workspace — the living DNA behind your app.**
 
 {% hint style="success" %}
-**Ready to build?** Follow our [5-minute tutorial](getting-started.md) to create your first app!
+**New to Genesis?** Follow our [5-minute getting started guide](getting-started.md) to build your first business app from a simple description!
 {% endhint %}
 
-## How It Works: 3 Simple Steps
+**We build for the outsiders, the underestimated, the ones who were never given a seat at the table but showed up anyway.**
 
-### Step 1: Describe Your App
-```
-"Create a customer feedback system where customers can rate our service, leave comments, and we get notified of low ratings immediately."
-```
-
-### Step 2: Genesis Builds Everything
-- ✅ Customer-facing form with ratings and comments
-- ✅ Database to store all feedback  
-- ✅ AI agent to analyze sentiment and priority
-- ✅ Automatic Slack alerts for low ratings
-- ✅ Dashboard for your team to review feedback
-
-### Step 3: Your App is Live
-- 🔗 **Instant URL**: Share immediately via link or embed
-- 📱 **Works Everywhere**: Desktop, tablet, mobile browsers
-- 🔒 **Secure by Default**: Enterprise-grade security included
-
----
-
-## What You Get With Every App
-
-**Genesis builds complete business applications, not just forms:**
-
-| **Component** | **What It Does** | **Example** |
-|---------------|------------------|-------------|
-| **📊 Smart Database** | Stores and organizes your data | Customer info, orders, feedback |
-| **🤖 AI Agent** | Answers questions, processes requests | "What's my order status?" → Agent checks and responds |
-| **⚡ Automations** | Connects to your tools automatically | New order → Email receipt + Slack notification |
-| **📱 Live Interface** | Works on any device, any browser | Customers use on phones, you manage on desktop |
-| **🔒 Security** | Enterprise-grade protection | User permissions, data encryption, audit logs |
-
-## Copy-Paste Prompts That Work
-
-### Customer Service Apps
-```
-"Create a support ticket system where customers can submit issues, upload screenshots, and track resolution status. Send Slack alerts for urgent issues."
-```
-
-### Business Operations  
-```
-"Build an inventory tracker where I can add products, track stock levels, and get alerts when items run low. Include barcode scanning."
-```
-
-### Client Management
-```
-"Make a client portal where customers can view their project status, download files, and schedule meetings. Include payment processing."
-```
-
----
-
-## Common Business Problems → Genesis Solutions
-
-| **Problem** | **Genesis Solution** | **Build Time** |
-|-------------|---------------------|----------------|
-| "Customers keep calling with same questions" | FAQ app with search + AI chat | 3 minutes |
-| "Appointment booking is email chaos" | Online scheduler with auto-confirmations | 4 minutes |
-| "I never know when inventory runs low" | Stock tracker with reorder alerts | 5 minutes |
-| "Lead info gets lost in emails" | Lead capture with CRM integration | 6 minutes |
-| "Manual follow-ups get forgotten" | Automated reminder system | 3 minutes |
-| "Customer feedback disappears" | Review system with instant alerts | 4 minutes |
-
----
-
-## Popular App Types
-
-### Customer-Facing Apps
-- **Booking Systems** - Online scheduling with auto-confirmations
-- **Feedback Portals** - Reviews with instant manager alerts  
-- **Support Tickets** - Issue tracking with smart routing
-- **Event Registration** - Sign-ups with capacity management
-
-### Internal Operations
-- **Inventory Trackers** - Stock monitoring with reorder alerts
-- **Lead Management** - Pipeline tracking with auto follow-ups
-- **Team Dashboards** - KPI monitoring with real-time updates
-- **Employee Onboarding** - Step-by-step workflows with progress tracking
-
-### Industry Examples
-| **Industry** | **Popular App** | **What It Solves** |
-|--------------|-----------------|-------------------|
-| **Restaurants** | Customer Feedback | Get instant alerts for bad reviews |
-| **Healthcare** | Appointment Booking | Reduce phone calls, prevent no-shows |
-| **Agencies** | Client Portals | Keep clients updated, reduce check-ins |
-| **E-commerce** | Inventory Management | Never run out of popular items |
-| **Real Estate** | Lead Capture | Convert more inquiries to viewings |
-
-**👀 Want step-by-step tutorials?** Check out our [Industry Use Cases](../features/industry-use-cases.md) for detailed guides.
+Transform your business ideas into working applications using nothing but plain English - no coding required. Genesis is the breakthrough moment - the HyperCard moment for the AI era.
 
 ---
 
@@ -116,22 +30,465 @@ Software should be alive. And now, it is.
 
 ---
 
-## Next Steps: Start Building
+## What is Taskade Genesis?
 
-### 🚀 Quick Start (5 minutes)
-1. **[Try the Tutorial](getting-started.md)** - Build your first app step-by-step
-2. **[Copy Working Prompts](examples-and-templates.md)** - Use proven templates
-3. **[See Industry Examples](../features/industry-use-cases.md)** - Get specific tutorials
+**Yes — the DNA analogy works perfectly for Taskade Genesis.**
 
-### 📚 Learn More
-- **[Advanced Features](advanced-features.md)** - Custom domains, APIs, integrations
-- **[Best Practices](best-practices.md)** - Tips for better apps
-- **[Troubleshooting](troubleshooting.md)** - Common issues and solutions
+Each Genesis app is unique, alive, and powered by a structured "genetic" code from your Taskade Workspace — the agents, automations, projects, and databases that form its core. Just as DNA encodes the blueprint of life, your workspace encodes the blueprint of your app — a living backend and brain that grows, adapts, and evolves with every idea you bring to life.
 
-### 💬 Get Help
-- **[FAQ](faq.md)** - Common questions answered
-- **[Community](community-and-sharing.md)** - Share and learn from others
+Genesis is an AI-powered app builder that creates complete business applications from a single description. Simply describe what you need in plain English (like "I need customers to book appointments online"), and Genesis builds a fully functional app for you in minutes — powered by your workspace's living DNA.
+
+**Unlike other app builders that only create forms or interfaces, Genesis gives you everything you need to run a real business application:**
+
+- 🗂️ **Smart Database** - Stores your data automatically
+- 🤖 **AI Assistant** - Learns your business and helps customers  
+- ⚡ **Automatic Actions** - Connects to email, Slack, payments, and 100+ tools
+- 📁 **File Management** - Handles documents, photos, and uploads
+- 🔒 **Enterprise Security** - Protects your data and controls access
 
 ---
 
-**Ready to build your first app?** [Start the 5-minute tutorial →](getting-started.md)
+## Why Genesis Changes Everything
+
+### Before Genesis: App Development Was Hard
+
+❌ **Months of development time**  
+❌ **Expensive developers and technical teams**  
+❌ **Complex technical specifications**  
+❌ **Ongoing maintenance and bug fixes**  
+❌ **Servers, hosting, and security headaches**
+
+### With Genesis: App Development Is Simple
+
+✅ **Working apps in 2-15 minutes**  
+✅ **Describe your needs in plain English**  
+✅ **No technical knowledge required**  
+✅ **Changes through simple conversations**  
+✅ **Everything managed automatically**
+
+---
+
+## What Problems Does Genesis Solve?
+
+Genesis is perfect for common business challenges:
+
+### **Customer Service & Communication**
+- "Customers keep calling with the same questions"
+- "I lose track of customer feedback and requests"  
+- "We need a better way to handle support tickets"
+
+### **Booking & Scheduling**
+- "Appointment booking is a mess of back-and-forth emails"
+- "Double bookings happen too often"
+- "Customers want to book online 24/7"
+
+### **Data Collection & Management**
+- "I never know when inventory is running low"
+- "Lead information gets lost in emails"
+- "We need to track project progress better"
+
+### **Team Operations**
+- "Manual processes waste too much time"
+- "Important follow-ups get forgotten"
+- "We need better workflow automation"
+
+---
+
+## What Can You Build?
+
+Genesis works for virtually any business process:
+
+### **📊 App Categories & Use Cases**
+
+| Category | App Type | Business Problem | Genesis Solution | Build Time |
+|----------|----------|------------------|------------------|------------|
+| **Customer-Facing** | Booking System | "Phone keeps ringing during busy hours" | Online scheduling with automatic confirmations | 3-5 min |
+| **Customer-Facing** | Feedback Portal | "Customers complain but we never hear about it" | Real-time reviews with instant manager alerts | 2-3 min |
+| **Customer-Facing** | Support Portal | "Customer issues get lost in email chaos" | Ticket system with smart routing and tracking | 4-6 min |
+| **Customer-Facing** | Event Registration | "Manual sign-ups are overwhelming during launches" | Automated registration with capacity management | 3-4 min |
+| **Internal Operations** | Inventory Tracker | "Always running out of popular items" | Stock monitoring with automatic reorder alerts | 5-7 min |
+| **Internal Operations** | Lead Management | "Sales prospects fall through the cracks" | Pipeline tracker with automated follow-ups | 6-8 min |
+| **Internal Operations** | Team Dashboard | "No visibility into team performance" | KPI monitoring with real-time updates | 4-5 min |
+| **Internal Operations** | Employee Onboarding | "New hires feel lost and overwhelmed" | Step-by-step workflow with progress tracking | 7-10 min |
+
+### **🚀 Industry-Specific Quick Starts**
+
+| Industry | Most Popular App | What It Does | Why It Works |
+|----------|------------------|--------------|--------------|
+| **Restaurants** | Customer Feedback System | Collects ratings, alerts for issues, tracks trends | Immediate response to problems, improved service |
+| **Healthcare** | Appointment Scheduler | Online booking, reminders, patient info | Reduces phone calls, prevents no-shows |
+| **Agencies** | Client Project Tracker | Progress updates, file sharing, approvals | Keeps clients informed, reduces check-in calls |
+| **E-commerce** | Inventory Manager | Stock tracking, reorder alerts, supplier data | Never miss sales due to stockouts |
+| **Consulting** | Lead Qualifier | Contact forms, scoring, CRM integration | Focus time on high-value prospects |
+| **Content Teams** | Publication Pipeline | Content calendar, assignments, performance | Consistent output without chaos |
+| **Events** | Registration System | Sign-ups, payments, attendee management | Smooth event experience from start to finish |
+| **Real Estate** | Property Inquiry Hub | Lead capture, property matching, follow-up | Convert more inquiries into viewings |
+
+### **Real Success Stories**
+
+> *"I built a customer feedback system for my restaurant in 3 minutes. Now I get Slack alerts for any rating below 4 stars and can respond immediately."*  
+> **— Maria, Restaurant Owner**
+
+> *"Created a booking system for my yoga studio that handles payments and sends calendar invites automatically. Saves me 2 hours every day."*  
+> **— David, Yoga Instructor**
+
+> *"Made an inventory tracker that emails my supplier when I'm running low on products. No more stockouts!"*  
+> **— Sarah, Retail Store Owner**
+
+[See More Examples →](examples-and-templates.md)
+
+---
+
+## How Genesis Works: Your Workspace as Living DNA
+
+When you describe your app to Genesis, it doesn't build from scratch — it awakens the living DNA already in your workspace. Your agents, automations, projects, and knowledge become the genetic code that powers your unique application.
+
+Genesis automatically combines four essential DNA components that work together seamlessly:
+
+### **1. Knowledge DNA (Projects & Media)**
+- Your business data and intelligence stored in flexible, living structures
+- Creates custom fields and relationships that evolve with your needs
+- Trains AI assistants with your documents, policies, and business knowledge
+- **Example:** Customer feedback with ratings, comments, photos — all connected to your menu and service policies
+
+### **2. Intelligence DNA (AI Agents)**  
+- Your business brain that learns, adapts, and makes decisions
+- Understands your unique processes and customer interactions
+- Provides personalized responses based on your workspace knowledge
+- **Example:** Booking assistant that knows your services, availability, pricing, and special requirements
+
+### **3. Action DNA (Automations)**
+- Your business reflexes that respond instantly to events and triggers
+- Connects to 100+ external tools and systems seamlessly
+- Executes complex workflows without human intervention
+- **Example:** New booking → sends confirmation → updates calendar → processes payment → notifies team → follows up
+
+### **4. Living Memory (Workspace Integration)**
+- Everything connects and learns from everything else
+- Your app grows smarter with each interaction and data point
+- Cross-references patterns to improve decisions and predictions
+- **Example:** Inventory alerts that learn seasonal patterns, customer preferences, and supplier reliability
+
+---
+
+## Two Powerful Creation Modes
+
+Genesis offers two ways to build applications based on your needs:
+
+### 🏗️ **Project-Based Apps** (Traditional Genesis)
+Create structured workspaces with intelligent data management, AI assistants, and automated workflows.
+
+- **📊 Smart Data Storage** - Flexible database that grows with your needs
+- **🤖 AI Assistant Built-In** - Learns your business and helps users automatically  
+- **⚡ Connects to Everything** - Integrates with 100+ business tools
+- **📁 File & Document Support** - Upload and organize business documents
+- **🔒 Enterprise Security** - Role-based permissions and data protection
+
+### ⚡ **Space Apps** (React Web Applications) 
+Generate complete React web applications deployed to live URLs with real-time data integration.
+
+- **🌐 Complete Web Applications** - Full-stack React apps with modern UI
+- **🚀 Live Deployment** - Automatic hosting on Fly.io with global CDN
+- **🔗 Data Integration** - Connects seamlessly to your Taskade projects
+- **🎨 Modern Styling** - Responsive design with Tailwind CSS
+- **⚡ Real-time Updates** - Changes sync instantly across your workspace
+- **📁 File Upload Support** - Handle files, images, and documents seamlessly
+- **🌍 Custom Domains** - Publish under your own branded domain
+- **🍴 Community Sharing** - Share and fork apps with the global community
+
+| Feature | Space Apps | Project Apps |
+|---------|------------|--------------|
+| **Output** | React web applications | Structured workspaces |
+| **URL** | Live preview URLs or custom domains | Taskade workspace URLs |
+| **Sharing** | Public web links + community sharing | Team member access |
+| **Customization** | Full visual control + branding | Template-based views |
+| **Use Cases** | Customer-facing apps, professional tools | Internal workflows |
+
+---
+
+## Getting Started: Your First App in 5 Minutes
+
+### **Step 1: Think About Your Problem (1 minute)**
+
+Before opening Genesis, identify a specific business frustration:
+- What takes too much of your time?
+- Where do customers get confused?
+- What manual process could be automated?
+- What information do you lose track of?
+
+### **Step 2: Describe Your Solution (2 minutes)**
+
+Be specific about three key things:
+
+**Who will use it:**
+```
+"Our customers need to..."
+"My team should be able to..."
+"Clients want to..."
+```
+
+**What they need to do:**
+```
+"...book appointments and pay online"
+"...submit feedback with photos"
+"...track their project status"
+```
+
+**What happens next:**
+```
+"...get confirmation emails and calendar invites"
+"...trigger manager alerts for low ratings"
+"...receive automatic progress updates"
+```
+
+### **Step 3: Let Genesis Build (1 minute)**
+
+1. Open Genesis in your Taskade workspace
+2. Paste your description into the prompt box
+3. Click "Generate" and watch Genesis work
+4. Wait 30-60 seconds for your complete app
+
+### **Step 4: Test Your App (1 minute)**
+
+1. Click "Preview" to see your live app
+2. Try all features as if you're a real user
+3. Submit test data to see automations work
+4. Check for email notifications, Slack messages, etc.
+
+### **Step 5: Make It Perfect (30 seconds)**
+
+Need adjustments? Just tell Genesis what to change:
+
+```
+"Add our company colors: blue and white"
+"Make the button bigger for mobile users"  
+"Send thank you emails to everyone who submits feedback"
+"Only alert managers for ratings below 3 stars"
+```
+
+[Complete Getting Started Guide →](getting-started.md)
+
+---
+
+## Example: Building a Restaurant Feedback App
+
+Let's walk through a real example:
+
+### **The Problem**
+*"Customers leave reviews on Google and Yelp, but we don't see them quickly enough to respond to problems. We need a way to collect feedback directly and get immediate alerts for issues."*
+
+### **The Genesis Prompt**
+```
+I run a restaurant and need customers to submit feedback about their dining experience. They should rate food quality, service speed, and overall satisfaction on a 1-5 scale, plus leave optional comments and upload photos if they want. When someone gives us 3 stars or lower, immediately alert our manager via Slack so we can follow up personally. All feedback should be stored in a dashboard where we can see trends and respond to individual reviews.
+```
+
+### **What Genesis Builds**
+
+**📊 Smart Database**
+- Customer feedback storage with ratings, comments, photos
+- Automatic timestamp and contact info capture
+- Searchable database of all feedback
+
+**🤖 AI Assistant**
+- Learns your menu and service policies
+- Can categorize feedback automatically
+- Suggests appropriate responses to reviews
+
+**⚡ Automatic Actions**
+- Slack alerts for ratings 3 stars or below
+- Thank you emails to all customers
+- Weekly summary reports to management
+
+**📁 File Handling**
+- Customer photo uploads
+- Menu PDFs for AI training
+- Brand assets and logos
+
+### **The Result**
+A complete feedback system that:
+- Collects detailed customer feedback 24/7
+- Alerts management instantly about problems
+- Provides data insights for improvement
+- Maintains professional customer communication
+
+**Time to build:** 3 minutes  
+**No coding required:** ✅  
+**Fully functional:** ✅
+
+---
+
+## 🌍 Community & Professional Features
+
+### **Community Sharing & Forking**
+Transform your Genesis apps from private solutions into community resources:
+
+- **🌐 Share with Community**: Publish your apps to the global Taskade marketplace
+- **🍴 One-Click Forking**: Copy complete apps from the community with all features intact
+- **📊 App Discovery**: Browse apps by industry, features, and popularity ratings
+- **⭐ Community Reviews**: Rate and review apps to help others find quality solutions
+
+### **Professional Custom Domains**
+Elevate your apps with branded, professional domains:
+
+- **🏢 Your Brand, Your Domain**: `app.yourcompany.com` instead of random Taskade URLs
+- **🔒 Automatic SSL**: Security certificates generated and managed automatically
+- **⚡ Global CDN**: Fast loading worldwide with enterprise infrastructure
+- **🎨 Complete Branding**: Remove all Taskade references for white-label solutions
+
+### **Advanced File Handling**
+Genesis apps now support sophisticated file operations:
+
+- **📁 File Upload Forms**: Accept resumes, photos, documents from users
+- **📋 Multi-File Processing**: Handle multiple files with smart organization
+- **🔄 Webhook File Transfer**: Receive files through automation workflows
+- **💾 Secure Storage**: Enterprise-grade file security and backup
+
+[Learn about Community Sharing →](community-and-sharing.md)  
+[Set up Custom Domains →](custom-domains.md)  
+[Explore Space Apps →](space-apps-guide.md)
+
+---
+
+## Advanced Features (When You're Ready)
+
+As your needs grow, Genesis apps can handle sophisticated business requirements:
+
+### **Enterprise Integrations**
+Connect to 100+ business tools including:
+- **CRM Systems:** HubSpot, Salesforce, Pipedrive
+- **Communication:** Slack, Microsoft Teams, Discord
+- **Email Marketing:** Mailchimp, Constant Contact
+- **Payments:** Stripe, PayPal, Square
+- **File Storage:** Google Drive, Dropbox, OneDrive
+- **Accounting:** QuickBooks, Xero
+
+### **Advanced AI Capabilities**
+- **Multi-Modal Understanding:** Analyze photos along with text feedback
+- **Predictive Analytics:** Forecast inventory needs and busy periods
+- **Cross-Project Intelligence:** Connect data from multiple business areas
+- **Custom Commands:** Create specialized shortcuts for your team
+
+### **Sophisticated Automations**
+- **Multi-Step Workflows:** Complex approval processes with conditions
+- **Smart Routing:** Route requests based on content and priority
+- **Dynamic Content:** Personalize responses based on customer history
+- **Intelligent Filtering:** Categorize and prioritize automatically
+
+### **Role-Based Access Control**
+- **Customer Access:** Submit and view their own information
+- **Staff Access:** See relevant data for their responsibilities  
+- **Manager Access:** Full dashboard and analytics
+- **Time-Based Permissions:** Restrict access during certain hours
+
+[Learn About Advanced Features →](advanced-features.md)
+
+---
+
+## Security & Compliance
+
+Genesis apps are built with enterprise-grade security:
+
+### **Data Protection**
+- **Encryption in transit and at rest**
+- **Role-based access controls**
+- **Automatic backups and disaster recovery**
+- **Regular security monitoring and audits**
+
+### **Privacy Compliance**
+- **GDPR compliant** with data processing agreements
+- **User consent management** built into apps
+- **Data export and deletion tools** for user requests
+- **Privacy policy templates** for your applications
+
+### **Business Continuity**
+- **99.9% uptime SLA** for paid plans
+- **Multiple data centers** for redundancy
+- **Automatic failover systems**
+- **24/7 monitoring and support**
+
+---
+
+## Best Practices for Success
+
+### **Writing Effective Prompts**
+Use the magic formula: **Industry + Users + Problem + Solution + Outcome**
+
+❌ **Too vague:** "I need a booking system"
+
+✅ **Perfect:** "I run a massage therapy practice where clients book 60-minute sessions with specific therapists. Clients should see available times, pay deposits, and get confirmations, while we handle cancellations and send reminders."
+
+### **Testing Your App**
+- **Use real scenarios** from your actual business
+- **Test on mobile devices** if customers will use phones
+- **Try edge cases** that might break the workflow
+- **Get feedback** from actual team members and customers
+
+### **Making Changes**
+- **One change at a time** for best results
+- **Be specific** about what you want adjusted
+- **Test each change** before adding more features
+- **Document** what works for your team
+
+[Complete Best Practices Guide →](best-practices.md)
+
+---
+
+## Common Questions
+
+### **"How much does Genesis cost?"**
+Genesis is included with your Taskade subscription:
+- **Free Plan:** Basic app creation with essential features
+- **Pro Plan:** Unlimited apps with advanced integrations
+- **Business Plan:** Team collaboration and enterprise features
+
+[View current pricing →](https://taskade.com/pricing)
+
+### **"Do I own the apps I create?"**
+Yes, completely. Your apps, data, and content belong to you. You can export your data anytime and are never locked into the platform.
+
+### **"Is my data secure?"**
+Absolutely. Taskade uses enterprise-grade security with encryption, SOC 2 compliance, and regular security audits. Your data is protected with the same standards used by major financial institutions.
+
+### **"Can I customize the look and feel?"**
+Yes! Specify your brand colors, logo, and style preferences. Genesis can match your company's visual identity and communication tone.
+
+### **"What if I need help?"**
+Multiple support options available:
+- Built-in AI assistant for guidance
+- Help documentation and video tutorials  
+- Email support for technical questions
+- Community forums for inspiration and tips
+
+### **"Can I change my app after it's built?"**
+Absolutely! Just describe any changes you want and Genesis implements them immediately. Your app evolves with your business needs.
+
+[More Questions? Check our FAQ →](faq.md)
+
+---
+
+## Ready to Transform Your Business?
+
+Stop wasting time on manual processes and start building solutions that work for you.
+
+### **Get Started Now**
+1. **[Sign up for Taskade](https://taskade.com/signup)** (free account available)
+2. **Open Genesis** in your workspace
+3. **Describe your business challenge** in plain English
+4. **Watch your app come to life** in minutes
+
+### **Need Inspiration?**
+- **[Browse example apps →](examples-and-templates.md)** for your industry
+- **[Watch video tutorials →](https://youtube.com/taskade)** to see Genesis in action
+- **[Join the community →](https://taskade.com/community)** to learn from other users
+
+### **Questions?**
+- **Help Center:** [help.taskade.com](https://help.taskade.com/en/collections/14476419-taskade-genesis)
+- **Email Support:** [support@taskade.com](mailto:support@taskade.com)
+- **Live Chat:** Available in your Taskade dashboard
+- **Troubleshooting:** [Common issues and solutions →](troubleshooting.md)
+
+---
+
+**Ready to build your first app? [Start with Genesis →](https://taskade.com)**
+
+*Transform your business ideas into working applications today - no coding required.*
