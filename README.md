@@ -24,7 +24,16 @@ layout:
 
 # Welcome to Taskade
 
-**Build business applications from simple descriptions. No coding required.**
+**Build Without Permission. Start with Genesis. Your workspace is the foundation.**
+
+We believe the future of work isn't just humans using AI. It's humans and AI working as one.
+
+- One prompt = one app.
+- Your workspace = the backend.
+- Your agents = the team.
+- Your automations = the execution.
+
+Software should be alive. And now, it is.
 
 ## What You Can Build in Minutes
 
@@ -38,22 +47,26 @@ layout:
 
 **How it works:** Describe your app → Genesis builds everything → Your app is live with a shareable URL
 
-## 🎯 Three Ways to Use Taskade
+## 🎯 What is Taskade?
 
-### 1. 🚀 Genesis: Build Apps Instantly
-- **Describe your app** in plain English
-- **Genesis builds everything** - database, interface, AI, automations  
-- **Get a live URL** to share immediately
+**Where every workspace becomes a foundation for unlimited apps.**
 
-### 2. 🤖 AI Agents: Smart Assistants
-- **Create specialized agents** for any role (support, sales, research)
-- **Train with your data** - documents, policies, knowledge base
-- **Deploy anywhere** - websites, Slack, internal tools
+Your Taskade workspace is your **Home Subspace** — the living foundation that powers everything you build. Each new subspace you create becomes a complete application, whether it's a customer portal, project tracker, or business dashboard. Genesis connects the dots between your workspace's intelligence and the apps you need.
 
-### 3. ⚡ Smart Automations
-- **Connect 100+ tools** - Slack, email, CRM, payment systems
-- **Trigger workflows** from forms, schedules, or events
-- **AI-powered processing** - analyze, categorize, route automatically
+**Here's how it works:**
+- **🏠 Home Workspace** - Your default workspace with a generator input field at the top
+- **📱 App = Complete Application** - Each app you create becomes a full business solution
+- **🧬 Living DNA** - Your workspace's agents, automations, and projects power every app
+- **🔗 Connected Intelligence** - Apps share intelligence and learn from each other
+
+**The Genesis Interface:** Open any workspace and you'll see a prominent input field at the top. Just describe what you need in plain English, and Genesis builds a complete app in minutes. Your existing projects and folders appear as app tiles below the generator.
+
+### **Every Workspace Contains:**
+- **Generator Input** - The AI-powered field where you describe apps to build
+- **🤖 AI Agents** - Persistent left panel assistant trained on your business
+- **⚡ Smart Automations** - Connect to 100+ services automatically  
+- **📊 App Tiles** - Your existing projects/folders, now enhanced as complete apps
+- **🧬 Preview Mode** - Every app gets a live preview tab for instant testing
 
 ## 🚀 Quick Start
 
@@ -124,26 +137,25 @@ layout:
 - **Inventory Management Apps** - Stock tracking with reorder alerts
 - **Project Progress Trackers** - Timeline management with team notifications
 
-**Every app gets its own URL and can be shared immediately. Build once, use everywhere.**
+**Every app is built using the generator input field at the top of your workspace and appears as a clickable tile below. Each tile contains a complete application with its own Preview tab, powered by your workspace's living DNA.**
 
-## 🔧 How Everything Connects
+## 🧬 Your Workspace's Living DNA
 
-**Your apps share intelligence and learn from each other:**
+Taskade isn't built on static layers — it's built on **living DNA strands** that interweave to create intelligent, adaptive experiences:
 
-### **📊 Smart Data Sharing**
-- Customer data from your booking app → Automatically updates your CRM
-- Inventory alerts from your tracker → Triggers purchase orders
-- Support tickets from your portal → Updates customer profiles
+### **🧠 Intelligence DNA**
+AI agents that learn from your workspace and become specialized digital team members with unique knowledge and capabilities.
 
-### **🤖 AI Gets Smarter**  
-- Feedback from multiple apps → Improves AI responses across all systems
-- Customer patterns → Better recommendations and routing
-- Performance data → Optimizes workflows automatically
+### **⚡ Action DNA**
+Automations that act as your business's nervous system, detecting events and coordinating responses across 100+ integrated tools.
 
-### **⚡ Workflows Connect**
-- New customer signs up → Creates profile + sends welcome email + adds to newsletter
-- Low inventory alert → Orders supplies + notifies team + updates forecasts
-- Support ticket resolved → Updates knowledge base + follows up with customer
+### **📚 Knowledge DNA**
+Projects and data that form your organizational memory, storing and surfacing information in flexible, interconnected structures.
+
+### **🔄 Evolution DNA**
+The living connections that make everything learn from everything else — your workspace gets smarter with every interaction.
+
+[Explore the living architecture →](vision/architecture.md)
 
 ## 🎉 What's New
 

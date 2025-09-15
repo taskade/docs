@@ -1,6 +1,9 @@
-# Genesis: AI App Builder
+# Taskade Genesis
 
-**Build business applications from simple descriptions. No coding required.**
+**Build Without Permission.  
+One Prompt. One App.  
+Imagine it. Run it live.  
+Powered by your Workspace — the living DNA behind your app.**
 
 {% hint style="success" %}
 **Ready to build?** Follow our [5-minute tutorial](getting-started.md) to create your first app!
@@ -95,6 +98,21 @@
 | **Real Estate** | Lead Capture | Convert more inquiries to viewings |
 
 **👀 Want step-by-step tutorials?** Check out our [Industry Use Cases](../features/industry-use-cases.md) for detailed guides.
+
+---
+
+## Our Vision
+
+We believe the future of work isn't just humans using AI. It's humans and AI working as one.
+
+- **One prompt = one app** - Turn any idea into working software instantly
+- **Your workspace = the backend** - All your data, agents, and automations power every app
+- **Your agents = the team** - AI assistants trained on your business knowledge
+- **Your automations = the execution** - Workflows that respond to events automatically
+
+Software should be alive. And now, it is.
+
+**Read the full manifesto**: [Build Without Permission: The Taskade Genesis Manifesto](https://www.taskade.com/blog/build-without-permission)
 
 ---
 
