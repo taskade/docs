@@ -6,36 +6,49 @@
 
 - [Quick Start Guide](getting-started/README.md)
 
-## 🧬 Genesis
+## 🧬 **Genesis: No-Code App Builder**
 
-- [What is Genesis?](genesis/README.md)
-- [Your First App in 5 Minutes](genesis/getting-started.md)
-- [Examples & Templates](genesis/examples-and-templates.md)
-- [Build Without Permission Manifesto](https://www.taskade.com/blog/build-without-permission)
-- [Space Apps: React Applications](genesis/space-apps-guide.md)
-- [Community Sharing & Forking](genesis/community-and-sharing.md)
-- [Custom Domains & Branding](genesis/custom-domains.md)
-- [Advanced Features](genesis/advanced-features.md)
-- [Best Practices](genesis/best-practices.md)
-- [FAQ](genesis/faq.md)
-- [Troubleshooting](genesis/troubleshooting.md)
+*Build complete business applications from simple descriptions*
 
-## 📊 Core Features
+### **🚀 Getting Started**
+- [**What is Genesis?**](genesis/README.md) - *The future of app development*
+- [**Your First App in 5 Minutes**](genesis/getting-started.md) - *From idea to working app*
+- [**Examples & Templates**](genesis/examples-and-templates.md) - *Real business applications*
 
-- [Platform Overview](features/README.md)
-- [Collaboration](features/collaboration.md)
-- [Workspaces](features/workspaces.md)
-- [AI Features](features/ai-features/README.md)
-  - [AI Agents Getting Started](features/ai-features/ai-agents-getting-started.md)
-  - [Automation Getting Started](features/ai-features/automation-getting-started.md)
-  - [Genesis Examples](features/ai-features/genesis-examples.md)
-  - [Genesis Getting Started](features/ai-features/genesis-getting-started.md)
-  - [Prompt Library](features/ai-features/genesis-prompt-library.md)
-- [AI Forms: Smart Data Collection](features/ai-forms.md)
-- [Knowledge Management](features/knowledge-management.md)
-- [Mobile & Tablet Optimization](features/mobile-optimization.md)
-- [Project Views Mastery](features/project-views-mastery.md)
-- [Industry Use Cases](features/industry-use-cases.md)
+### **⚡ Advanced Capabilities** 
+- [**Space Apps: React Applications**](genesis/space-apps-guide.md) - *Professional web apps*
+- [**Advanced Features**](genesis/advanced-features.md) - *Power user techniques*
+- [**Custom Domains & Branding**](genesis/custom-domains.md) - *Professional deployment*
+
+### **🤝 Community & Support**
+- [**Community Sharing & Forking**](genesis/community-and-sharing.md) - *Learn from others*
+- [**Best Practices**](genesis/best-practices.md) - *Proven strategies*
+- [**FAQ**](genesis/faq.md) - *Common questions answered*
+- [**Troubleshooting**](genesis/troubleshooting.md) - *Problem solving guide*
+
+### **🎯 Philosophy**
+- [**Build Without Permission Manifesto**](https://www.taskade.com/blog/build-without-permission) - *Why we exist*
+
+## 📊 **Complete Platform Guide**
+
+*Everything you need to master Taskade's full capabilities*
+
+### **🧠 AI-Powered Workspace**
+- [**AI Features Mega-Guide**](features/ai-features/README.md) - *Complete AI capabilities in one place*
+  - [AI Agents: Your Digital Team](features/ai-features/ai-agents-getting-started.md)
+  - [Automation: Workflows on Autopilot](features/ai-features/automation-getting-started.md)
+  - [Prompt Library: Copy-Paste Magic](features/ai-features/genesis-prompt-library.md)
+- [**AI Forms: Smart Data Collection**](features/ai-forms.md)
+
+### **🏢 Business Solutions**
+- [**Industry Solutions: Complete Applications**](features/industry-use-cases.md) - *Healthcare, Finance, Legal & More*
+- [**Collaboration: Team Productivity**](features/collaboration.md) - *Real-time teamwork made simple*
+- [**Workspaces: Enterprise Control**](features/workspaces.md) - *Security, compliance & management*
+
+### **⚡ Power User Features**
+- [**Project Views Mastery**](features/project-views-mastery.md) - *Lists, boards, calendars & more*
+- [**Mobile & Tablet Optimization**](features/mobile-optimization.md) - *Productivity on the go*
+- [**Knowledge Management**](features/knowledge-management.md) - *Organize everything*
 
 ## 🤖 AI Kits: Ready-to-Use
 
@@ -117,12 +130,17 @@
 - [Genesis API](api/genesis/README.md)
 - [Automations API](api/automations/README.md)
 
-## ⚡ Automations
+## ⚡ **Automation: Workflows on Autopilot**
 
-- [Automations Overview](automation/README.md)
-- [Advanced Automation Actions](automation/advanced-actions.md)
-- [Integrations Guide](automation/integrations.md)
-- [Complete Integration Reference](automation/comprehensive-integrations.md)
+*Put your business processes on autopilot with smart automation*
+
+### **🎯 Complete Automation Guide**
+- [**Automation Overview**](automation/README.md) - *Transform your workflows*
+- [**Integrations Mega-Guide**](automation/integrations.md) - *Connect to 100+ tools*
+- [**Advanced Actions**](automation/advanced-actions.md) - *Power user workflows*
+
+### **📚 Extended Resources**
+- [**Complete Integration Reference**](automation/comprehensive-integrations.md) - *Deep integration guides*
 
 ## 📚 Help & Guides
 
