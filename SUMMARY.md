@@ -60,7 +60,6 @@
 - [Developer Hub](developers/README.md)
 - [Authentication](start/authentication.md)
 - [Personal Tokens](start/personal-tokens.md)
-- [**Git Tutorial**](start/git.md) - *A concise guide to using Git*
 
 ## 🔧 API Reference
 
