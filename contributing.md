@@ -207,6 +207,189 @@ Current community requests include:
 - Advanced API usage patterns
 - Performance optimization guides
 
+## 💬 Providing Feedback and Suggestions for Taskade
+
+Your feedback helps us build a better Taskade! We welcome suggestions, bug reports, and feature requests from our community.
+
+{% hint style="success" %}
+Every suggestion, whether it's a small improvement or a major feature idea, helps shape the future of remote work and productivity tools.
+{% endhint %}
+
+### Sharing Your Love for Taskade
+
+Love using Taskade? Here's how you can help spread the word and support our growth:
+
+#### **⭐ Leave App Store Reviews**
+Your positive reviews help others discover Taskade:
+- **App Store**: Search for "Taskade" and leave a 5-star review
+- **Google Play**: Find Taskade and share your experience
+- **Why it matters**: Reviews help new users find our apps in searches
+
+#### **📱 Share on Social Media**
+Spread the Taskade love on your favorite platforms:
+- **Twitter/X**: Tag us @taskade and share your favorite features
+- **LinkedIn**: Share how Taskade improves your productivity
+- **Facebook**: Join our community and share your workflows
+- **Instagram**: Screenshot your beautiful projects and tag us
+
+#### **💎 Upgrade Your Account**
+Support our development by upgrading to premium:
+- **Enhanced features**: AI agents, unlimited projects, advanced automations
+- **Priority support**: Faster response times and dedicated assistance
+- **Early access**: New features before they're publicly released
+
+**Ready to upgrade?** Visit [taskade.com/pricing](https://www.taskade.com/pricing) to see premium plans.
+
+#### **📖 Tell Your Network**
+Share Taskade with friends, colleagues, and communities:
+- **Team adoption**: Introduce Taskade to your workplace
+- **Industry groups**: Recommend it in professional communities
+- **Student groups**: Share with classmates and study groups
+- **Word of mouth**: The best marketing is personal recommendation
+
+### How to Share Your Ideas
+
+#### **Method 1: Email Support**
+Send your questions and suggestions directly to our team:
+- **Email**: [support@taskade.com](mailto:support@taskade.com)
+- **Best for**: Detailed feedback, bug reports, and complex suggestions
+
+#### **Method 2: Contact Form**
+Use our official contact page for structured feedback:
+- **Visit**: [taskade.com/contact](https://www.taskade.com/contact)
+- **Best for**: Feature requests, partnership inquiries, and general feedback
+
+#### **Method 3: Feedback Channel**
+Join our active community feedback platform:
+- **Visit**: [taskade.com/feedback/feature-requests](https://www.taskade.com/feedback/feature-requests)
+- **Best for**: Submitting bugs, voting on feature requests, and tracking community suggestions
+
+### What Makes a Great Suggestion?
+
+#### **Clear and Specific**
+Instead of "Make it better," try:
+- ✅ **Good**: "Add keyboard shortcut Ctrl+Shift+N to create a new project from any view"
+- ❌ **Too vague**: "The interface needs improvement"
+
+#### **Include Context**
+Help us understand your use case:
+- **Your role**: "As a project manager..."
+- **Current workflow**: "Currently I have to..."
+- **Desired outcome**: "It would be great if..."
+
+#### **Provide Examples**
+- **Screenshots** of current behavior
+- **Mockups** of proposed changes
+- **Similar features** from other tools you like
+
+### Types of Feedback We Love
+
+#### **Feature Requests**
+- New functionality you'd like to see
+- Improvements to existing features
+- Integration requests with other tools
+- Workflow enhancements
+
+#### **Bug Reports**
+- Steps to reproduce the issue
+- Expected vs. actual behavior
+- Browser/device information
+- Screenshots or screen recordings
+
+#### **UX Improvements**
+- Confusing workflows
+- Missing keyboard shortcuts
+- Mobile experience issues
+- Accessibility concerns
+
+#### **Performance Feedback**
+- Slow loading times
+- Memory usage issues
+- Offline functionality gaps
+- Large project handling
+
+### Community Engagement
+
+#### **Join the Conversation**
+Connect with other Taskade users and share your ideas:
+
+- **Facebook**: [facebook.com/taskade](https://www.facebook.com/taskade)
+- **Reddit**: [reddit.com/r/Taskade/](https://www.reddit.com/r/Taskade/)
+- **YouTube**: [youtube.com/taskade](https://www.youtube.com/taskade)
+
+#### **Why Community Feedback Matters**
+- **Prioritization**: Popular requests get attention faster
+- **Validation**: See if others share your needs
+- **Collaboration**: Work together on solutions
+- **Updates**: Get notified when features are implemented
+
+### What Happens to Your Feedback?
+
+#### **Our Review Process**
+1. **Initial Triage**: Team reviews within 24-48 hours
+2. **Categorization**: Bugs, features, or improvements
+3. **Community Voting**: Popular requests rise to the top
+4. **Implementation Planning**: Added to our development roadmap
+5. **Updates**: You'll receive status notifications
+
+#### **Response Times**
+- **Bug Reports**: Acknowledged within 24 hours
+- **Feature Requests**: Reviewed within 1 week
+- **Complex Suggestions**: May take longer for thorough evaluation
+
+### Implementation Timeline
+
+#### **Quick Wins (Days to Weeks)**
+- Bug fixes and small improvements
+- Minor UI/UX enhancements
+- Simple feature additions
+
+#### **Major Features (Weeks to Months)**
+- Complex new functionality
+- Major workflow changes
+- Large integrations
+
+#### **Strategic Initiatives (Months to Quarters)**
+- Platform-wide changes
+- Major architectural updates
+- New product categories
+
+### Recognition and Impact
+
+#### **Your Contribution Matters**
+- Every suggestion helps us understand user needs
+- Community input shapes our product roadmap
+- Active contributors may be featured in our community highlights
+- Top suggesters sometimes get early access to new features
+
+#### **Track Your Impact**
+- **Feedback Channel**: Vote on and track your suggestions
+- **Changelog**: See when your ideas become reality at [taskade.com/blog/updates](https://taskade.com/blog/updates)
+- **Community**: Share success stories when your suggestions are implemented
+
+### Best Practices for Effective Feedback
+
+#### **Be Constructive**
+- Focus on problems and solutions, not just complaints
+- Acknowledge what works well before suggesting improvements
+- Consider the broader impact on all users
+
+#### **Stay Engaged**
+- Follow up on your suggestions periodically
+- Provide additional context if requested
+- Update your requests based on new information
+
+#### **Collaborate with Others**
+- Upvote similar suggestions to increase visibility
+- Combine related ideas into comprehensive requests
+- Share workarounds while waiting for official solutions
+
+---
+
+**Ready to share your ideas? Let's shape the future of remote work together!** 🎉
+
+Whether it's a small tweak or a game-changing feature, your feedback helps make Taskade better for everyone. We read every suggestion and use them to guide our development priorities.
+
 ## 🛠️ Technical Setup
 
 ### **Local Development**

@@ -102,11 +102,78 @@ Performance Checklist:
 3. **Update** Taskade to latest version
 4. **Check system requirements**
 
+#### **Platform-Specific Recovery Steps**:
+
+**Desktop Apps:**
+- **macOS**: Right-click Taskade icon in Dock → **Quit**
+- **Windows**: Press **Alt + F4** to force quit
+- **Reinstall**: Download latest version from taskade.com/downloads
+
+**iOS (iPhone/iPad):**
+1. Close app completely (swipe up from bottom, swipe up on Taskade)
+2. Restart device (hold power + volume button)
+3. Redownload from App Store if issues persist
+
+**Android:**
+1. Go to Settings → Apps → Taskade → **Force stop**
+2. Clear cache: Settings → Apps → Taskade → Storage → **Clear Cache**
+3. Clear data if needed, then restart device
+4. Reinstall from Google Play Store if problems continue
+
+**Web Browser:**
+1. **Chrome**: Click ⋮ → More tools → Clear browsing data → Cached images and files
+2. **Firefox**: Hamburger menu → Options → Privacy & Security → Cookies and Site Data → Clear cached web content
+3. **Edge**: Three dots → Settings → Privacy & services → Clear browsing data → Cached images and files
+
 #### **Prevention**:
 - Keep Taskade updated
 - Don't overload projects with excessive data
 - Regular device maintenance
 - Monitor device temperature (overheating can cause issues)
+- Close unused browser tabs
+- Ensure stable internet connection
+
+---
+
+## 🌐 ISP & Network Blocking Issues
+
+### **Taskade Blocked by ISP**
+
+#### **Symptoms**:
+- Can't access taskade.com or app won't load
+- Error messages about blocked content
+- Works on mobile data but not WiFi
+- Colleagues can access but you can't
+
+#### **Root Cause**:
+Some internet service providers (ISPs) use security software that can mistakenly block access to Taskade domains. This is rare but can happen with certain network configurations or security policies.
+
+#### **Solutions**:
+
+1. **Contact Your ISP**:
+   - Most effective long-term solution
+   - Explain that Taskade is a legitimate business application
+   - Request Taskade be added to their allowlist
+
+2. **Interim Workaround - Use CloudFlare VPN**:
+   ```
+   Quick Setup:
+   1. Visit https://1.1.1.1/ in your web browser
+   2. Choose your operating system
+   3. Follow the installation instructions
+   4. Reopen Taskade and test the connection
+   ```
+
+3. **Alternative Network Solutions**:
+   - Try different WiFi network (coffee shop, library)
+   - Use mobile hotspot/data instead of WiFi
+   - Connect via VPN (NordVPN, ExpressVPN, etc.)
+   - Use work/school network if available
+
+#### **Prevention**:
+- Keep ISP contact information handy
+- Have backup internet options ready
+- Use VPN as permanent solution if needed
 
 ---
 

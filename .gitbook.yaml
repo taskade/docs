@@ -12,6 +12,25 @@ redirects:
   help-center/ai-features: features/ai-features
   api-docs: developers
   automation-guide: automation
+  mobile-guide: mobile
+  integrations-guide: integrations
+  troubleshooting-guide: troubleshooting
+  best-practices-guide: best-practices
+  enterprise-guide: enterprise-features
+  templates-guide: templates
+  collaboration-guide: features/collaboration
+  ai-agents-guide: features/ai-features/ai-agents-getting-started
+  project-views-guide: features/project-views-mastery
+  workspace-guide: features/workspaces
+  # Genesis-first redirects
+  genesis-ai: genesis
+  ai-app-builder: genesis
+  no-code-platform: genesis
+  workspace-dna: features/workspaces
+  living-dna: features/workspaces
+  tutorial-guide: Taskade-Tutorial
+  comprehensive-api: api/comprehensive-api-guide
+  industry-solutions: features/industry-solutions
 
 integrations:
   googleAnalytics:
@@ -27,19 +46,23 @@ customization:
   logo: .gitbook/assets/ss-api3.png
   
 site:
-  title: "Taskade"
-  description: "The productivity platform with living DNA. Your workspace becomes a digital organism where every project, agent, automation, and piece of knowledge connects to form the genetic code of everything you build."
+  title: "Taskade Documentation - AI-Powered Productivity Platform"
+  description: "Complete guide to Taskade Genesis - build AI apps with one prompt. Master workspaces, automation, AI agents, and the living DNA productivity platform. Transform your ideas into working applications using nothing but plain English."
   
 navigation:
   links:
-    - title: "Main App"
+    - title: "🧬 Try Genesis"
+      url: "https://www.taskade.com/generate/app"
+    - title: "🚀 Launch Taskade"
       url: "https://www.taskade.com/"
-    - title: "Developers"
+    - title: "💻 Developers"
       url: "/developers"
-    - title: "Changelog" 
+    - title: "📰 Changelog"
       url: "/changelog"
-    - title: "Help Center"
+    - title: "🆘 Support"
       url: "https://help.taskade.com/"
+    - title: "💬 Community"
+      url: "https://www.taskade.com/community"
   
 pdf:
   cover: true

@@ -87,16 +87,54 @@ Hierarchical Thinking:
   Level 1 - Major Categories:
     - Use emojis for visual categorization
     - Keep to 3-7 main categories for cognitive ease
-  
+
   Level 2 - Sub-processes:
     - Break down each category into logical steps
     - Maintain parallel structure across categories
-  
+
   Level 3 - Action Items:
     - Specific, actionable tasks
     - Include deadlines and assignees
     - Add custom fields for priority and status
 ```
+
+#### **Focus Management: Hide Completed Tasks**
+
+{% hint style="info" %}
+Keep your projects clutter-free by hiding completed tasks. Focus on what's still pending while maintaining a visual progress indicator.
+{% endhint %}
+
+**How to Hide Completed Tasks:**
+{% stepper %}
+{% step %}
+### Access Project Options
+**Click the three dots (···)** in the top-right corner of your project
+{% endstep %}
+
+{% step %}
+### Toggle Visibility
+**Select "Hide completed"** from the dropdown menu
+{% endstep %}
+
+{% step %}
+### Monitor Progress
+**Watch the progress bar** at the top fill up as tasks are completed
+{% endstep %}
+{% endstepper %}
+
+**Workspace-Level Settings:**
+- Set default behavior for all projects in a workspace
+- Individual projects can override workspace settings
+- Maintains project progress tracking even when tasks are hidden
+
+**Keyboard Shortcuts:**
+- **Mac**: `⌘ + Enter` to complete tasks
+- **Windows/Linux**: `Ctrl + Enter` to complete tasks
+
+**Best Practices:**
+- Use for ongoing projects with many completed tasks
+- Combine with filters for advanced task management
+- Perfect for maintaining focus during long-term projects
 
 #### **Real-World List View Example: Content Creation Workflow**
 ```
@@ -122,6 +160,127 @@ Hierarchical Thinking:
     ├── Email newsletter inclusion @marketing
     └── Performance tracking setup @analytics
 ```
+
+---
+
+## 📦 Adding Blocks: Content Structure and Organization
+
+{% hint style="info" %}
+Blocks are pre-defined sets of tasks or bullets that help you quickly populate your projects with structured content. Think of them as templates for common content patterns.
+{% endhint %}
+
+### **What Are Blocks?**
+
+Every project in Taskade is a collection of tasks and subtasks you can arrange in many different ways. **Blocks** let you quickly populate your projects with pre-defined sets of tasks or bullets you can fill with anything you want.
+
+### **Adding Blocks to Your Project**
+
+#### **Manual Block Addition**
+
+{% stepper %}
+{% step %}
+### Navigate to Block Location
+Scroll to the bottom or top of your project where you want to add the block
+{% endstep %}
+
+{% step %}
+### Click Add Block
+Click the ➕ **Add Block** button to open the block selection menu
+{% endstep %}
+
+{% step %}
+### Choose Block Type
+Select from available options:
+- ✅ **Check** - Checkbox list for tasks
+- 🟡 **Bullet** - Standard bullet points
+- 1️⃣ **Number** - Numbered list
+- 🔠 **Letter** - Lettered list (A, B, C...)
+- ¶ **Paragraph** - Text paragraphs
+{% endstep %}
+
+{% step %}
+### Customize Content
+Fill in the tasks and subtasks with your specific content and details
+{% endstep %}
+{% endstepper %}
+
+#### **AI-Generated Blocks**
+
+You can quickly generate blocks with Taskade AI or your custom AI agents:
+
+{% stepper %}
+{% step %}
+### Open Block Menu
+Click ➕ **Add Block** in your project
+{% endstep %}
+
+{% step %}
+### Choose AI Option
+Select **AI Agent** or **AI Generator** from the block types
+{% endstep %}
+
+{% step %}
+### Describe Your Block
+Enter a description of the content you want to generate, or use a template
+{% endstep %}
+
+{% step %}
+### Generate Content
+Press **Enter** to create the AI-generated block
+{% endstep %}
+{% endstepper %}
+
+### **Block Types and Use Cases**
+
+#### **✅ Check Blocks**
+Perfect for:
+- To-do lists and checklists
+- Task management and tracking
+- Project milestones
+- Daily standups and status updates
+
+#### **🟡 Bullet Blocks**
+Ideal for:
+- Brain dumps and note-taking
+- Meeting notes and agendas
+- Feature lists and requirements
+- Unstructured information capture
+
+#### **1️⃣ Numbered Blocks**
+Best for:
+- Step-by-step processes
+- Instructions and guides
+- Prioritized lists
+- Sequential workflows
+
+#### **🔠 Lettered Blocks**
+Useful for:
+- Formal documentation
+- Legal or compliance checklists
+- Structured outlines
+- Hierarchical content organization
+
+#### **¶ Paragraph Blocks**
+Great for:
+- Detailed descriptions
+- Meeting summaries
+- Project documentation
+- Long-form content
+
+### **Block Best Practices**
+
+{% hint style="success" %}
+**Pro Tips for Block Usage:**
+- Start with simple blocks and add complexity as needed
+- Use AI blocks to accelerate content creation
+- Combine different block types in the same project
+- Customize tasks and subtasks within blocks for your specific needs
+{% endhint %}
+
+**Integration with Views:**
+- Blocks work seamlessly across all project views
+- Switch between List, Board, Table, and other views while maintaining block structure
+- Use blocks as building blocks for complex project hierarchies
 
 ---
 
