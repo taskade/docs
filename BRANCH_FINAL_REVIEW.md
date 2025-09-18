@@ -69,7 +69,7 @@ The `john-2025-docs-import` branch represents a **comprehensive Genesis-first do
 
 #### **Archive Structure**
 ```
-📦 archive/detailed-documentation/
+📦 archive/
 ├── actions/ (38 automation actions)
 ├── integrations/ (33+ integration guides)
 ├── mobile/ (25+ mobile features)

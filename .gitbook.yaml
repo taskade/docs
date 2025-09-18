@@ -31,6 +31,27 @@ redirects:
   tutorial-guide: Taskade-Tutorial
   comprehensive-api: api/comprehensive-api-guide
   industry-solutions: features/industry-solutions
+  
+  # Archive redirects for simplified structure
+  archive/detailed-documentation/advanced-patterns: archive/automation/advanced-patterns
+  archive/detailed-documentation/recipes: archive/automation/recipes
+  archive/detailed-documentation/triggers: archive/automation/triggers
+  archive/detailed-documentation/use-cases: archive/automation/use-cases
+  archive/detailed-documentation/industries: archive/business/industries
+  archive/detailed-documentation/industry-use-cases: archive/business/industry-use-cases
+  archive/detailed-documentation/templates: archive/business/templates
+  archive/detailed-documentation/browser-extensions: archive/platform/browser-extensions
+  archive/detailed-documentation/enterprise-features: archive/platform/enterprise-features
+  archive/detailed-documentation/export: archive/platform/export
+  archive/detailed-documentation/import-export: archive/platform/import-export
+  archive/detailed-documentation/community: archive/collaboration/community
+  archive/detailed-documentation/workspaces: archive/collaboration/workspaces
+  archive/detailed-documentation/project-management: archive/collaboration/project-management
+  archive/detailed-documentation/best-practices: archive/guides/best-practices
+  archive/detailed-documentation/quick-start: archive/guides/quick-start
+  archive/detailed-documentation/visual-tutorials: archive/guides/visual-tutorials
+  archive/detailed-documentation/integrations: archive/integrations
+  archive/detailed-documentation/help-center: archive/help-center
 
 integrations:
   googleAnalytics:
