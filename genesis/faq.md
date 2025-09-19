@@ -279,6 +279,8 @@ The Genesis AI agent can provide suggestions, troubleshoot issues, and help you 
 - **What problem** you're solving
 - **What should happen** when users complete actions
 
+**Genesis AI Tip:** Ask the AI agent itself for suggestions! Try prompts like "What features should I add to make this app better?" or "How can I improve the user experience?"
+
 See our [Best Practices guide](best-practices.md) for detailed examples.
 
 ### Should I build one big app or several smaller ones?
@@ -302,6 +304,15 @@ See our [Best Practices guide](best-practices.md) for detailed examples.
 - **Quarterly:** Consider new features or improvements
 - **As needed:** Fix bugs or address user complaints immediately
 
+### How do I get inspiration for app ideas?
+
+**Multiple sources of inspiration:**
+- **Community showcase:** Browse real apps built by other users
+- **Examples and templates:** Review our curated collection of app ideas
+- **Industry-specific guides:** See how Genesis is used in your field
+- **AI assistance:** Ask Genesis "What apps are popular in [your industry]?"
+- **Video tutorials:** Watch real examples being built on YouTube
+
 ---
 
 ## Quick Answers
@@ -323,7 +334,17 @@ A: Apps are hosted on Taskade's platform. For custom hosting needs, contact our 
 
 ---
 
-**Still have questions?** 
+## Getting Support
+
+**Multiple ways to get help:**
+
+1. **Start with our guides and video tutorials** - Comprehensive documentation and video walkthroughs
+2. **Email support@taskade.com with details** - Direct support from our technical team
+3. **Browse our community showcase for examples** - See real apps built by other users for inspiration
+
+**⚡️ Pro tip:** Ask Genesis itself for suggestions! Try prompts like "What features should I add to make this app better?" or "How can I improve the user experience?" Genesis can recommend enhancements tailored for your app.
+
+**Still have questions?**
 
 - **Browse our help center:** [help.taskade.com](https://help.taskade.com/en/collections/14476419-taskade-genesis)
 - **Email us:** [support@taskade.com](mailto:support@taskade.com)

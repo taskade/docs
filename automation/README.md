@@ -20,12 +20,137 @@ Automations are composed of three key components:
 - **Project Event**: Task completed, member added, content changed
 - **Agent Event**: Conversation started, command executed
 
+#### Complete Trigger Reference
+
+| Trigger | Description | Use Case |
+|---------|-------------|----------|
+| **Webhook** | External services send data via HTTP requests | API integrations, external tool connections |
+| **Agent Trigger** | AI Agents optionally run actions during conversations | Agent-powered workflows, automated responses |
+| **Task Added** | Fires when new tasks are created in projects | Project tracking, initial task setup |
+| **Form Trigger** | Activates when AI Forms are submitted | Lead capture, survey processing |
+| **Project Completed** | Triggers when entire projects are marked complete | Workflow completion, milestone tracking |
+| **Task Completed** | Fires when individual tasks are checked off | Progress tracking, follow-up actions |
+| **Task Assigned** | Activates when tasks are assigned to team members | Notification systems, workload management |
+| **Task Due** | Triggers when tasks reach their due date | Deadline reminders, escalation procedures |
+| **New Comment** | Fires when comments are added to tasks | Collaboration tracking, feedback loops |
+| **New Due Date** | Activates when due dates are added/modified | Schedule management, planning updates |
+| **Task Custom Field Updated** | Triggers on custom field changes | Dynamic workflow routing, status tracking |
+| **Agent Public Chat Ended** | Fires when public agent conversations conclude | Chat analytics, follow-up sequences |
+| **Schedule** | Time-based automation (hourly/daily/weekly/monthly) | Recurring tasks, maintenance routines |
+| **Delay** | Pause automation for specific time periods | Timing-dependent workflows, reminders |
+| **Mailhook Trigger** | Email-to-task conversion with unique addresses | Email automation, ticket systems |
+
+**Integration-Specific Triggers:**
+- **Calendly**: Meeting booked, cancelled, rescheduled
+- **Slack**: New messages, reactions, channel events
+- **Typeform**: Form responses, completion rates
+- **Gmail**: New emails, label changes, search results
+- **Google Sheets**: Row added, cell updated, sheet changes
+- **Google Forms**: Form submissions, response validation
+- **Google Drive**: File uploads, sharing changes
+- **Webflow**: Content published, form submissions
+- **HubSpot**: Contact updates, deal changes, email events
+- **YouTube**: Video uploaded, comments added, analytics updates
+- **RSS**: New feed items, content updates
+- **Discord**: Messages, user joins, reactions
+- **Google Calendar**: Event created, modified, deleted
+- **GitHub**: Issues created, PRs merged, releases published
+
 ### 2. **Actions** – Do Something
 - **Create Tasks**: Add structured data to your Knowledge Layer
 - **Run Agent Commands**: Process information with AI
 - **Send Notifications**: Slack, email, SMS, Discord
 - **Update External Systems**: CRM, spreadsheets, databases
 - **Call APIs**: Custom webhooks and HTTP requests
+
+#### Complete Action Reference
+
+| Action | Description | Key Features |
+|--------|-------------|--------------|
+| **Create Project** | Set up new projects in workspaces/folders | Template support, custom settings |
+| **Add Task** | Create new tasks in existing projects | Rich formatting, assignments, due dates |
+| **Create Project From Template** | Use predefined or custom templates | Consistent project structures |
+| **Move Task** | Relocate tasks between projects/spaces | Workflow management, reorganization |
+| **Assign Task** | Delegate tasks to team members | Workload distribution, responsibility tracking |
+| **Ask AI** | Generate AI responses for questions | Contextual answers, knowledge integration |
+| **Generate with AI** | Create content using AI models | Creative writing, code generation |
+| **Respond with AI** | Automated AI-generated responses | Consistent communication, scaling |
+| **Ask Agent** | Query custom AI agents | Specialized knowledge, tailored responses |
+| **Run Agent Command** | Execute predefined agent commands | Structured outputs, consistent actions |
+| **Add Knowledge to Agent** | Expand agent knowledge base | Continuous learning, updated context |
+| **Ask Agent With Structured Output** | Get formatted agent responses | Data processing, API-ready outputs |
+| **Scrape Webpage** | Extract content from websites | Research automation, content gathering |
+| **Convert File to Text** | Transform documents to text | Content processing, data extraction |
+| **Transcribe YouTube Video** | Convert video audio to text | Content creation, accessibility |
+| **Add URL to Media** | Save web content to media library | Content curation, reference management |
+| **Send HTTP Request** | Make API calls to external services | Integration building, data synchronization |
+| **Loop** | Iterate over data collections | Batch processing, scalable operations |
+| **Filter Data** | Apply conditional logic to data | Smart routing, quality control |
+| **Branch** | Create conditional workflow paths | Decision trees, complex logic |
+| **Update Custom Fields** | Modify task/project metadata | Dynamic updates, status tracking |
+| **Search Web** | Query internet for information | Research automation, current data |
+| **Find Task(s)** | Locate specific tasks in projects | Data retrieval, cross-referencing |
+| **Transform Array to String** | Convert data arrays to readable text | Report generation, summary creation |
+
+**Integration-Specific Actions:**
+
+**Google Drive:**
+- Trash files, duplicate files, create folders
+- Create new files from text content
+- Search folders and files
+
+**Google Sheets:**
+- Insert/update/delete rows
+- Get row data, find specific rows
+- Advanced spreadsheet operations
+
+**Google Calendar:**
+- Event management, scheduling
+- Calendar synchronization
+
+**Mailchimp:**
+- List management, campaign creation
+- Subscriber operations
+
+**WordPress:**
+- Post creation, content publishing
+- Media management
+
+**Twilio:**
+- SMS/MMS sending, call management
+- Communication automation
+
+**HubSpot:**
+- Contact/Deal management
+- Marketing automation
+
+**X/Twitter:**
+- Post creation, engagement tracking
+- Social media automation
+
+**LinkedIn:**
+- Post publishing, network management
+- Professional networking
+
+**Microsoft Teams:**
+- Message sending, channel management
+- Collaboration tools
+
+**Discord:**
+- Message posting, server management
+- Community engagement
+
+**Facebook:**
+- Post creation, page management
+- Social media marketing
+
+**WhatsApp:**
+- Message sending, template management
+- Customer communication
+
+**GitHub:**
+- Issue creation, comment management
+- Repository operations
 
 ### 3. **Intelligence** – AI-Powered Decision Making
 - **Content Analysis**: Sentiment, classification, extraction
@@ -172,6 +297,44 @@ Connect to external services:
 - Run through with sample data
 - Monitor performance and errors
 - Iterate based on results
+
+## Variables & Data Flow
+
+{% hint style="info" %}
+Variables allow data to flow seamlessly between automation components. They enable dynamic, context-aware workflows that adapt to your data.
+{% endhint %}
+
+### Variable Syntax
+
+Variables are referenced using the `@` symbol and allow you to access:
+- **Trigger data**: `@trigger.form.name`, `@trigger.webhook.data`
+- **Step results**: `@step.3.response`, `@step.1.output`
+- **System data**: `@current.date`, `@current.user`
+- **Custom fields**: `@task.priority`, `@project.status`
+
+**Example:**
+```
+Trigger: Form submitted (name, email, priority)
+Action: Create task titled "@trigger.form.name - Support Request"
+Condition: If "@trigger.form.priority" equals "urgent"
+  → Send immediate Slack notification
+  → Assign to escalation team
+```
+
+### Data Types & Transformations
+
+Variables support multiple data types:
+- **Text/Strings**: Names, descriptions, content
+- **Numbers**: Quantities, scores, percentages
+- **Dates**: Due dates, timestamps, schedules
+- **Arrays**: Lists of items, multiple selections
+- **Objects**: Complex data structures from APIs
+
+**Transformation Functions:**
+- `{{variable | uppercase}}` - Convert to uppercase
+- `{{variable | date:"YYYY-MM-DD"}}` - Format dates
+- `{{variable | length}}` - Get array/string length
+- `{{variable | split:","}}` - Split strings into arrays
 
 ## Advanced Features
 

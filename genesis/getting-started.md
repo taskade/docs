@@ -214,6 +214,48 @@ While you wait, Genesis is building all four components of your app:
 
 ---
 
+## Step 3.5: Add Context Files (Optional - 30 seconds)
+
+**Supercharge your app with reference materials.** Genesis can analyze uploaded files to better understand your brand, requirements, and design preferences.
+
+### **Why Add Context?**
+
+Genesis becomes significantly more powerful when you provide reference materials:
+
+- **🎨 Brand Consistency** - Upload logos, color palettes, and style guides
+- **📋 Form Examples** - Share existing forms or data structures
+- **🖼️ Visual Inspiration** - Include screenshots or mockups of desired layouts
+- **📊 Data Samples** - Provide examples of how you want information organized
+
+### **Adding Context Files**
+
+1. **After app creation**, click **"Edit with AI"** in the preview
+2. **Upload files** by dragging them into the chat or clicking the attachment button (📎)
+3. **Describe your changes** referencing the uploaded files
+
+**Example Prompt:**
+```
+"Update this contact form to match our brand guidelines. Use the colors and fonts specified in the uploaded PDF. Apply our logo to the header."
+```
+
+### **Types of Context Files**
+
+| File Type | Purpose | Examples |
+|-----------|---------|----------|
+| **Brand Assets** | Visual identity | Logos, color palettes, fonts |
+| **Reference Forms** | Data structure | Existing forms, surveys, applications |
+| **Screenshots** | UI inspiration | Website designs, competitor apps |
+| **Documents** | Requirements | Business rules, process flows, SOPs |
+
+### **File Upload Tips**
+
+- **PDF files** work great for brand guidelines and documentation
+- **Images** (PNG/JPG) perfect for logos and screenshots
+- **Text files** useful for code snippets and requirements
+- **All uploaded files** are stored in your project's Media tab for future reference
+
+---
+
 ## Step 4: Test Your App (1 minute)
 
 Your app is ready! Now test it thoroughly before sharing with others.
@@ -422,6 +464,78 @@ They should [SPECIFIC STEPS], and when they do,
 - ✅ All data being captured correctly
 - ✅ Automations sending notifications
 - ✅ File uploads working if needed
+
+---
+
+## 🎯 Writing Effective Genesis Prompts
+
+The difference between a great app and something that barely works often comes down to your first prompt. Master this skill and you'll create powerful applications consistently.
+
+### The First Prompt Formula
+
+Every successful first prompt answers three questions:
+
+**1. Audience** - Who will use this app?
+- "My photography clients..."
+- "Our dental patients..."
+- "My sales team..."
+
+**2. Problem/Solution** - What problem does it solve?
+- "...need to book sessions..."
+- "...want to schedule appointments..."
+- "...has to track leads..."
+
+**3. Action** - What should happen?
+- "...and receive confirmations"
+- "...with available time slots"
+- "...and see follow-up dates"
+
+**Example:** "My photography clients need to book sessions and receive confirmations"
+
+### Use Prompt Enhancement
+
+Not sure how to describe what you want? Genesis includes a **Prompt Enhancement** feature that takes your rough idea and turns it into a detailed, specific request.
+
+**How to use it:**
+1. Go to the main Genesis dashboard
+2. Type what you want (even if it's vague)
+3. Click "Enhance Prompt"
+4. Review the AI-generated suggestions
+5. Hit generate with the improved prompt
+
+### Starter Kit Templates
+
+Copy these proven templates and customize for your business:
+
+**Classic Contact Form:** "Build a contact form for [your business type] that emails me submissions"
+
+**Booking Tool:** "Create a booking system for [service] appointments with calendar integration"
+
+**Tracker for Anything:** "Build a tracker for [items] that shows status, due dates, and completion rates"
+
+**Industry Calculator:** "Create a calculator for [industry] estimates that factors in [variables]"
+
+### Power Words for Better Prompts
+
+**Action Verbs:**
+- Create, build, generate, track, manage, calculate, schedule, organize
+- Submit, collect, process, analyze, report, notify, update, sync
+
+**Clarity Phrases:**
+- "Show me...", "Let users...", "Automatically...", "When someone..."
+- "Email me when...", "Update the status...", "Calculate the total..."
+
+### The 2-Sentence Rule
+
+Keep your first prompt to just two sentences. Focus on the core functionality first - you can add features later through follow-up prompts.
+
+### Follow-Up Prompts
+
+After your first app is generated:
+1. Use the Taskade Assistant Agent (TAA) chat
+2. Describe additional features or changes
+3. Use "Enhance Prompt" for better results
+4. Iterate based on what you see working
 
 ---
 

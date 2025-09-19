@@ -1,144 +1,336 @@
 # Taskade Developer API
 
-Welcome to the Taskade Developer API documentation. This is your gateway to building powerful applications on top of Taskade's AI-powered platform.
+Build powerful integrations and automate workflows with the Taskade Developer API. Connect Taskade to your favorite tools, create custom applications, and extend Taskade's functionality.
 
-## Overview
+{% hint style="info" %}
+The Taskade API enables developers to programmatically interact with Taskade workspaces, projects, tasks, and users. Use it to build integrations, automate workflows, and create custom applications.
+{% endhint %}
 
-The Taskade API provides programmatic access to all core platform features:
+## API Overview
 
-- **🏢 [Workspaces](workspaces/README.md)** - Manage organizations and team spaces
-- **📁 [Apps (Subspaces)](folders/README.md)** - Create and manage application containers
-- **📊 [Knowledge (Projects)](projects/README.md)** - Structure and organize your data
-- **🤖 [Intelligence (Agents)](agents/README.md)** - Build AI-powered reasoning systems
-- **⚡ [Action (Automations)](automations/README.md)** - Connect and automate workflows
-- **📋 [Tasks](tasks/README.md)** - Manage individual work items
-- **📁 [Media](media/README.md)** - Handle files and attachments
-- **👤 [Me](me/README.md)** - Access user profile and preferences
+### What You Can Build
 
-## Getting Started
+The Taskade API enables you to:
 
-### 1. **Authentication**
-All API requests require authentication. Get started with:
-- **[Authentication Guide](../start/authentication.md)**
-- **[Personal Access Tokens](../start/personal-tokens.md)**
+- **🔄 Automate Workflows** - Create, update, and manage tasks programmatically
+- **📊 Data Integration** - Sync Taskade data with external systems
+- **🤖 Custom Applications** - Build apps that extend Taskade's functionality
+- **📱 Mobile Apps** - Create mobile experiences integrated with Taskade
+- **🔧 Tool Integrations** - Connect Taskade with CRMs, project management tools, and more
 
-### 2. **Base URL**
-All API requests are made to:
+### API Base URL
+
 ```
-https://www.taskade.com/api/v1/
+https://api.taskade.com/v1
 ```
 
-### 3. **Your First Request**
-Try fetching your workspaces:
+### Authentication
+
+All API requests require authentication using Bearer tokens. You can obtain an API key from your Taskade account settings.
+
+{% hint style="warning" %}
+Keep your API keys secure and never expose them in client-side code or public repositories.
+{% endhint %}
+
+#### Getting Your API Key
+
+1. Go to **Settings** → **Developer** → **API Keys**
+2. Click **Generate New Key**
+3. Copy the key and store it securely
+4. Use the key in the `Authorization` header
+
+#### Authentication Headers
 
 ```bash
-curl -X GET "https://www.taskade.com/api/v1/workspaces" \
-  -H "Authorization: Bearer YOUR_TOKEN"
+curl -X GET "https://api.taskade.com/v1/projects" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json"
 ```
 
-## API Architecture
+## Core Concepts
 
-### Three-Layer System
+### Workspaces
 
-The Taskade API follows our three-layer architecture:
+Workspaces are the top-level containers that hold projects and team members.
 
-```mermaid
-graph TB
-    subgraph "Knowledge Layer"
-        A[Projects]
-        B[Tasks]
-        C[Media]
-    end
-    
-    subgraph "Intelligence Layer"
-        D[Agents]
-        E[Conversations]
-        F[Commands]
-    end
-    
-    subgraph "Action Layer"
-        G[Automations]
-        H[Integrations]
-        I[Webhooks]
-    end
-    
-    A --> D
-    B --> D
-    C --> D
-    D --> G
-    E --> G
-    F --> G
+**Key Properties:**
+- `id` - Unique workspace identifier
+- `name` - Workspace name
+- `description` - Optional description
+- `members` - Array of member objects
+- `settings` - Workspace configuration
+
+### Projects
+
+Projects contain tasks and represent work items, features, or initiatives.
+
+**Key Properties:**
+- `id` - Unique project identifier
+- `name` - Project name
+- `description` - Project description
+- `workspace_id` - Parent workspace ID
+- `type` - Project type (list, board, mindmap, etc.)
+- `members` - Project member permissions
+
+### Tasks
+
+Tasks are the fundamental work units in Taskade.
+
+**Key Properties:**
+- `id` - Unique task identifier
+- `name` - Task title
+- `content` - Task description/content
+- `project_id` - Parent project ID
+- `assignee` - Assigned user ID
+- `due_date` - Due date (ISO 8601 format)
+- `status` - Completion status
+- `priority` - Task priority level
+- `labels` - Array of label strings
+
+## API Endpoints
+
+### Workspaces
+
+#### List Workspaces
+```http
+GET /workspaces
 ```
 
-### RESTful Design
-
-Our API follows REST principles:
-- **GET** - Retrieve data
-- **POST** - Create new resources
-- **PUT** - Update existing resources
-- **DELETE** - Remove resources
-
-### Response Format
-
-All responses are in JSON format:
-
+**Response:**
 ```json
 {
-  "success": true,
-  "data": {
-    // Response data here
-  },
-  "meta": {
-    "total": 100,
+  "data": [
+    {
+      "id": "workspace_123",
+      "name": "Product Development",
+      "description": "Main product development workspace",
+      "created_at": "2023-01-15T10:30:00Z",
+      "members": [
+        {
+          "user_id": "user_456",
+          "role": "admin",
+          "email": "admin@company.com"
+        }
+      ]
+    }
+  ],
+  "pagination": {
     "page": 1,
-    "limit": 20
+    "limit": 20,
+    "total": 5
   }
 }
 ```
 
-### Role-based Permissions
+#### Get Workspace
+```http
+GET /workspaces/{workspace_id}
+```
 
-Every request is authorized against Taskade’s two-layer RBAC system.  The primary workspace roles are **Owner**, **Collaborator**, **Participant**, and **Viewer**.  Additional document-level roles provide finer control without exposing implementation details.  If a user lacks sufficient role privileges the API returns **403 Forbidden**.
+#### Create Workspace
+```http
+POST /workspaces
+Content-Type: application/json
 
-## Common Patterns
+{
+  "name": "New Marketing Workspace",
+  "description": "Marketing campaigns and content"
+}
+```
 
-### Building an AI-Powered App
+#### Update Workspace
+```http
+PATCH /workspaces/{workspace_id}
+Content-Type: application/json
 
-1. **Create a Workspace** - Your app's container
-2. **Set up Projects** - Structure your data
-3. **Deploy Agents** - Add intelligence
-4. **Configure Automations** - Connect to external services
-5. **Test and Iterate** - Refine your application
+{
+  "name": "Updated Marketing Workspace",
+  "description": "Marketing campaigns, content, and social media"
+}
+```
 
-### Example: Customer Support System
+#### Delete Workspace
+```http
+DELETE /workspaces/{workspace_id}
+```
 
-```bash
-# 1. Create a project for tickets
-curl -X POST "https://www.taskade.com/api/v1/projects" \
-  -H "Authorization: Bearer YOUR_TOKEN" \
-  -d '{"name": "Support Tickets", "template": "support_template"}'
+### Projects
 
-# 2. Create an AI agent for categorization
-curl -X POST "https://www.taskade.com/api/v1/agents" \
-  -H "Authorization: Bearer YOUR_TOKEN" \
-  -d '{"name": "Support Agent", "role": "categorize_tickets"}'
+#### List Projects
+```http
+GET /projects?workspace_id={workspace_id}
+```
 
-# 3. Set up automation for new tickets
-curl -X POST "https://www.taskade.com/api/v1/automations" \
-  -H "Authorization: Bearer YOUR_TOKEN" \
-  -d '{"trigger": "form_submitted", "actions": [...]}'
+**Query Parameters:**
+- `workspace_id` - Filter by workspace
+- `archived` - Include archived projects (default: false)
+- `limit` - Number of results (default: 20, max: 100)
+- `offset` - Pagination offset
+
+#### Get Project
+```http
+GET /projects/{project_id}
+```
+
+#### Create Project
+```http
+POST /projects
+Content-Type: application/json
+
+{
+  "name": "Q4 Marketing Campaign",
+  "description": "Launch campaign for Q4 product release",
+  "workspace_id": "workspace_123",
+  "type": "list",
+  "members": [
+    {
+      "user_id": "user_789",
+      "role": "editor"
+    }
+  ]
+}
+```
+
+#### Update Project
+```http
+PATCH /projects/{project_id}
+Content-Type: application/json
+
+{
+  "name": "Q4 Product Launch Campaign",
+  "status": "active"
+}
+```
+
+#### Delete Project
+```http
+DELETE /projects/{project_id}
+```
+
+### Tasks
+
+#### List Tasks
+```http
+GET /tasks?project_id={project_id}
+```
+
+**Query Parameters:**
+- `project_id` - Filter by project
+- `assignee` - Filter by assigned user
+- `status` - Filter by status (pending, completed)
+- `due_before` - Tasks due before date
+- `due_after` - Tasks due after date
+- `limit` - Number of results (default: 20, max: 100)
+
+#### Get Task
+```http
+GET /tasks/{task_id}
+```
+
+#### Create Task
+```http
+POST /tasks
+Content-Type: application/json
+
+{
+  "name": "Design new landing page",
+  "content": "Create wireframes and mockups for the product landing page",
+  "project_id": "project_456",
+  "assignee": "user_789",
+  "due_date": "2024-02-15T17:00:00Z",
+  "priority": "high",
+  "labels": ["design", "frontend"]
+}
+```
+
+#### Update Task
+```http
+PATCH /tasks/{task_id}
+Content-Type: application/json
+
+{
+  "status": "completed",
+  "content": "Updated task description with additional requirements"
+}
+```
+
+#### Delete Task
+```http
+DELETE /tasks/{task_id}
+```
+
+### Comments
+
+#### List Comments
+```http
+GET /tasks/{task_id}/comments
+```
+
+#### Add Comment
+```http
+POST /tasks/{task_id}/comments
+Content-Type: application/json
+
+{
+  "content": "The design looks great! Just one small suggestion for the CTA button.",
+  "mentions": ["user_123"]
+}
+```
+
+## Webhooks
+
+Webhooks allow you to receive real-time notifications when events occur in Taskade.
+
+### Supported Events
+
+- `task.created` - New task created
+- `task.updated` - Task modified
+- `task.completed` - Task marked complete
+- `task.assigned` - Task assigned to user
+- `project.created` - New project created
+- `project.updated` - Project modified
+- `comment.created` - New comment added
+
+### Webhook Configuration
+
+```json
+{
+  "url": "https://your-app.com/webhooks/taskade",
+  "events": ["task.created", "task.completed"],
+  "secret": "your_webhook_secret",
+  "active": true
+}
+```
+
+### Webhook Payload
+
+```json
+{
+  "event": "task.created",
+  "data": {
+    "task": {
+      "id": "task_123",
+      "name": "New feature implementation",
+      "project_id": "project_456",
+      "assignee": "user_789"
+    }
+  },
+  "timestamp": "2024-01-15T10:30:00Z",
+  "signature": "sha256=..."
+}
 ```
 
 ## Rate Limits
 
-To ensure fair usage, we implement rate limits:
+The API has the following rate limits:
 
-- **Standard**: 1,000 requests per hour
-- **Premium**: 5,000 requests per hour
-- **Enterprise**: Custom limits available
+- **Authenticated Requests:** 1000 requests per hour
+- **Webhook Deliveries:** 1000 deliveries per hour
+- **File Uploads:** 100 MB per hour
 
 Rate limit headers are included in all responses:
-```
+
+```http
 X-RateLimit-Limit: 1000
 X-RateLimit-Remaining: 999
 X-RateLimit-Reset: 1640995200
@@ -148,347 +340,203 @@ X-RateLimit-Reset: 1640995200
 
 ### HTTP Status Codes
 
-- **200** - Success
-- **201** - Created
-- **400** - Bad Request
-- **401** - Unauthorized
-- **403** - Forbidden
-- **404** - Not Found
-- **429** - Rate Limited
-- **500** - Internal Server Error
+- `200 OK` - Request successful
+- `201 Created` - Resource created
+- `400 Bad Request` - Invalid request parameters
+- `401 Unauthorized` - Authentication required
+- `403 Forbidden` - Insufficient permissions
+- `404 Not Found` - Resource not found
+- `422 Unprocessable Entity` - Validation errors
+- `429 Too Many Requests` - Rate limit exceeded
+- `500 Internal Server Error` - Server error
 
 ### Error Response Format
 
 ```json
 {
-  "success": false,
   "error": {
-    "code": "INVALID_TOKEN",
-    "message": "The provided token is invalid or expired",
+    "code": "VALIDATION_ERROR",
+    "message": "The provided data is invalid",
     "details": {
-      "field": "authorization",
-      "reason": "token_expired"
+      "field": "email",
+      "reason": "Invalid email format"
     }
   }
-}
-```
-
-## Webhooks
-
-Receive real-time notifications about events in your applications:
-
-```json
-{
-  "event": "task.created",
-  "data": {
-    "task": {
-      "id": "task_123",
-      "title": "New support ticket",
-      "project_id": "proj_456"
-    }
-  },
-  "timestamp": "2024-01-15T10:30:00Z"
 }
 ```
 
 ## SDKs and Libraries
 
 ### Official SDKs
-- **JavaScript/TypeScript** - `npm install @taskade/sdk`
-- **Python** - `pip install taskade-sdk`
-- **Go** - `go get github.com/taskade/go-sdk`
+
+- **JavaScript/Node.js** - `npm install @taskade/api`
+- **Python** - `pip install taskade-api`
+- **PHP** - Composer package available
+- **Ruby** - Gem available
 
 ### Community Libraries
-- **PHP** - Community-maintained
-- **Ruby** - Community-maintained
-- **Java** - Community-maintained
 
-## Enterprise API Features
+- **Go** - `go get github.com/taskade/go-api`
+- **Java** - Maven package
+- **C#** - NuGet package
 
-### **SSO & Authentication Management**
+## Code Examples
 
-**SAML Configuration Endpoints**
-```bash
-# Configure SAML identity provider
-POST /api/v1/workspaces/{workspaceId}/auth/saml/configure
-{
-  "provider": "google|azure|okta|generic",
-  "metadata_url": "https://idp.example.com/metadata",
-  "certificate": "-----BEGIN CERTIFICATE-----...",
-  "attribute_mapping": {
-    "email": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress",
-    "name": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"
-  }
-}
+### JavaScript/Node.js
 
-# Test SSO configuration
-POST /api/v1/workspaces/{workspaceId}/auth/saml/test
-{
-  "test_user_email": "admin@company.com"
-}
+```javascript
+const { TaskadeAPI } = require('@taskade/api');
+
+const client = new TaskadeAPI({
+  apiKey: 'your_api_key'
+});
+
+// List projects
+const projects = await client.projects.list({
+  workspaceId: 'workspace_123'
+});
+
+// Create a task
+const task = await client.tasks.create({
+  name: 'Implement user authentication',
+  project_id: 'project_456',
+  assignee: 'user_789',
+  due_date: '2024-02-01'
+});
+
+// Update task status
+await client.tasks.update(task.id, {
+  status: 'completed'
+});
 ```
 
-**SCIM User Provisioning**
-```bash
-# Get SCIM configuration
-GET /api/v1/workspaces/{workspaceId}/scim/config
+### Python
 
-# Provision user via SCIM
-POST /api/v1/workspaces/{workspaceId}/scim/users
-{
-  "userName": "john.doe@company.com",
-  "name": {
-    "givenName": "John",
-    "familyName": "Doe"
-  },
-  "emails": [{"value": "john.doe@company.com", "primary": true}],
-  "active": true,
-  "groups": ["sales", "managers"]
-}
+```python
+from taskade_api import TaskadeAPI
+
+client = TaskadeAPI(api_key='your_api_key')
+
+# Get workspace projects
+projects = client.projects.list(workspace_id='workspace_123')
+
+# Create new project
+project = client.projects.create({
+    'name': 'API Integration Project',
+    'workspace_id': 'workspace_123',
+    'type': 'list'
+})
+
+# Add tasks to project
+tasks = [
+    {'name': 'Set up authentication', 'assignee': 'dev_1'},
+    {'name': 'Implement endpoints', 'assignee': 'dev_2'},
+    {'name': 'Add error handling', 'assignee': 'dev_3'}
+]
+
+for task_data in tasks:
+    task_data['project_id'] = project['id']
+    client.tasks.create(task_data)
 ```
 
-### **Advanced Workspace Management**
+### cURL Examples
 
-**Audit Logs API**
 ```bash
-# Get audit logs with filtering
-GET /api/v1/workspaces/{workspaceId}/audit-logs?
-  start_date=2024-01-01&
-  end_date=2024-01-31&
-  event_type=user_action&
-  user_id=user123&
-  limit=100
+# List workspaces
+curl -X GET "https://api.taskade.com/v1/workspaces" \
+  -H "Authorization: Bearer YOUR_API_KEY"
 
-Response:
-{
-  "logs": [
-    {
-      "id": "log_12345",
-      "timestamp": "2024-01-15T10:30:00Z",
-      "event_type": "project_created",
-      "user_id": "user_123",
-      "user_email": "john@company.com",
-      "resource_type": "project",
-      "resource_id": "proj_456",
-      "details": {
-        "project_name": "Q1 Planning",
-        "folder_id": "folder_789"
-      },
-      "ip_address": "192.168.1.100",
-      "user_agent": "Mozilla/5.0..."
-    }
-  ],
-  "total": 1250,
-  "has_more": true
-}
-```
+# Create a project
+curl -X POST "https://api.taskade.com/v1/projects" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "New Feature Development",
+    "workspace_id": "workspace_123"
+  }'
 
-**Compliance & Reporting**
-```bash
-# Generate compliance report
-POST /api/v1/workspaces/{workspaceId}/reports/compliance
-{
-  "report_type": "gdpr|sox|hipaa",
-  "date_range": {
-    "start": "2024-01-01",
-    "end": "2024-03-31"
-  },
-  "include_sections": ["data_access", "user_activity", "security_events"]
-}
-
-# Get data export for user (GDPR)
-GET /api/v1/workspaces/{workspaceId}/users/{userId}/data-export
-
-# Request data deletion (Right to be Forgotten)
-POST /api/v1/workspaces/{workspaceId}/users/{userId}/delete-request
-{
-  "confirmation": "I confirm deletion of all user data",
-  "retain_anonymous_analytics": false
-}
-```
-
-### **Advanced Security Controls**
-
-**IP Restrictions Management**
-```bash
-# Configure IP allowlist
-PUT /api/v1/workspaces/{workspaceId}/security/ip-restrictions
-{
-  "enabled": true,
-  "allowed_ranges": [
-    "192.168.1.0/24",
-    "10.0.0.0/8",
-    "203.0.113.0/24"
-  ],
-  "block_vpn": true,
-  "emergency_access_emails": ["admin@company.com"]
-}
-```
-
-**Session Management**
-```bash
-# Get active sessions for user
-GET /api/v1/users/{userId}/sessions
-
-# Revoke all sessions for user
-DELETE /api/v1/users/{userId}/sessions
-
-# Configure session policies
-PUT /api/v1/workspaces/{workspaceId}/security/session-policy
-{
-  "max_session_duration": 28800, // 8 hours in seconds
-  "idle_timeout": 3600, // 1 hour in seconds
-  "concurrent_sessions_limit": 3,
-  "require_reauth_for_sensitive": true
-}
-```
-
-### **Analytics & Business Intelligence**
-
-**Workspace Analytics**
-```bash
-# Get workspace usage metrics
-GET /api/v1/workspaces/{workspaceId}/analytics/usage?
-  period=30d&
-  metrics=active_users,projects_created,ai_usage,storage_used
-
-Response:
-{
-  "period": "30d",
-  "metrics": {
-    "active_users": {
-      "current": 145,
-      "previous": 132,
-      "change_percent": 9.8
-    },
-    "projects_created": {
-      "current": 89,
-      "previous": 76,
-      "change_percent": 17.1
-    },
-    "ai_usage": {
-      "total_requests": 15420,
-      "unique_users": 98,
-      "top_features": ["agents", "automation", "content_generation"]
-    },
-    "storage_used": {
-      "bytes": 5368709120,
-      "formatted": "5.0 GB",
-      "limit": 107374182400
-    }
-  }
-}
-```
-
-**Team Performance Metrics**
-```bash
-# Get team productivity insights
-GET /api/v1/workspaces/{workspaceId}/analytics/team-performance?
-  team_id=team_123&
-  period=30d
-
-Response:
-{
-  "team_metrics": {
-    "task_completion_rate": 0.87,
-    "average_project_duration": 12.5, // days
-    "collaboration_score": 8.2, // out of 10
-    "ai_adoption_rate": 0.76,
-    "top_performers": [
-      {"user_id": "user_123", "score": 9.1},
-      {"user_id": "user_456", "score": 8.8}
-    ],
-    "improvement_areas": [
-      "project_planning",
-      "deadline_management"
-    ]
-  }
-}
-```
-
-**Custom Dashboard API**
-```bash
-# Create custom dashboard
-POST /api/v1/workspaces/{workspaceId}/dashboards
-{
-  "name": "Executive Dashboard",
-  "widgets": [
-    {
-      "type": "metric",
-      "config": {
-        "metric": "active_users",
-        "period": "7d",
-        "comparison": true
-      }
-    },
-    {
-      "type": "chart",
-      "config": {
-        "chart_type": "line",
-        "metrics": ["projects_created", "tasks_completed"],
-        "period": "30d"
-      }
-    }
-  ],
-  "refresh_interval": 3600, // 1 hour
-  "access_control": {
-    "roles": ["admin", "manager"],
-    "users": ["exec@company.com"]
-  }
-}
+# Get project tasks
+curl -X GET "https://api.taskade.com/v1/tasks?project_id=project_456" \
+  -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
 ## Best Practices
 
 ### Security
-- Always use HTTPS
-- Store tokens securely
+- Store API keys securely (environment variables, secret management)
+- Use HTTPS for all API calls
 - Implement proper error handling
-- Use webhook signatures for validation
-- Enable audit logging for compliance
-- Implement IP restrictions for sensitive operations
+- Validate webhook signatures
 
 ### Performance
-- Implement caching where appropriate
-- Use pagination for large datasets
-- Batch requests when possible
-- Monitor rate limits
+- Use appropriate pagination for large datasets
+- Cache frequently accessed data
+- Implement exponential backoff for retries
+- Monitor rate limits and usage
 
-### Development
-- Use the sandbox environment for testing
-- Implement proper logging
-- Handle errors gracefully
-- Keep your SDK updated
+### Data Management
+- Validate data before sending to API
+- Handle partial failures gracefully
+- Implement proper logging and monitoring
+- Use webhooks for real-time updates
+
+### Integration Patterns
+- Implement idempotent operations where possible
+- Use webhooks for event-driven integrations
+- Batch operations when appropriate
+- Handle API versioning changes
 
 ## Support and Resources
 
 ### Documentation
-- **[OpenAPI Specification](https://www.taskade.com/api/documentation/static/index.html#/)**
-- **[Postman Collection](https://www.postman.com/taskade-api)**
-- **[Code Examples](https://github.com/taskade/api-examples)**
+- **API Reference:** Full endpoint documentation with examples
+- **Guides:** Step-by-step integration tutorials
+- **SDK Documentation:** Language-specific SDK guides
 
 ### Community
-- **[Developer Forum](https://taskade.com/community)**
-- **[Discord Server](https://discord.gg/taskade)**
-- **[GitHub Issues](https://github.com/taskade/api-issues)**
+- **Developer Forum:** Connect with other developers
+- **GitHub Issues:** Report bugs and request features
+- **Stack Overflow:** Get help from the community
 
-### Direct Support
-- **Email**: api@taskade.com
-- **Enterprise Support**: Available for business customers
-- **Status Page**: [status.taskade.com](https://status.taskade.com)
+### Support
+- **Email:** developers@taskade.com
+- **Priority Support:** Available for enterprise customers
+- **Status Page:** Real-time API status and incident updates
 
 ---
 
-## Quick Links
+## Quick Start Guide
 
-- **[🚀 Getting Started](../start/authentication.md)**
-- **[🏢 Workspaces API](workspaces/README.md)**
-- **[📊 Projects API](projects/README.md)**
-- **[🤖 Agents API](agents/README.md)**
-- **[⚡ Automations API](automations/README.md)**
+{% stepper %}
+{% step %}
+### Get Your API Key
+Navigate to Settings → Developer → API Keys and generate a new key.
+{% endstep %}
 
-> **Need help getting started?**  
-> → [Join our developer community](https://taskade.com/community)
+{% step %}
+### Make Your First API Call
+Use cURL or your preferred language to test the API connection.
+{% endstep %}
 
-> **Want to see examples?**  
-> → [Browse our code samples](https://github.com/taskade/api-examples) 
+{% step %}
+### Explore the API
+Review the available endpoints and plan your integration.
+{% endstep %}
+
+{% step %}
+### Build Your Integration
+Start with basic operations, then add complexity as needed.
+{% endstep %}
+
+{% step %}
+### Test Thoroughly
+Implement proper error handling and test edge cases.
+{% endstep %}
+
+{% step %}
+### Go Live
+Deploy your integration and monitor its performance.
+{% endstep %}
+{% endstepper %}
+
+> **💡 Pro Tip**: Start small with basic CRUD operations, then gradually add more complex features. Use webhooks for real-time integrations and implement proper error handling from the beginning. The Taskade API is designed to be developer-friendly while providing powerful automation capabilities.

@@ -8,6 +8,71 @@
 
 ---
 
+## 📤 **Publish and Share Your Apps**
+
+Share your Genesis creations with the world through publishing and cloning capabilities.
+
+### **Publishing Apps**
+
+Make your apps available to anyone with a link, creating public or private access points for your solutions.
+
+**Publishing Benefits:**
+- **Direct Access**: Users can interact with your app through a dedicated URL
+- **No Installation Required**: Works immediately in any browser
+- **Version Control**: Update your published app while maintaining the same link
+- **Monetization Ready**: Foundation for future paywall and premium features
+
+**Publishing Options:**
+- **Public Apps**: Discoverable and accessible to anyone with the link
+- **Private Apps**: Require specific permissions or passwords for access
+
+### **App Visibility Settings**
+
+Choose how people access your published app:
+
+**Public Apps:**
+- Anyone with the link can access and use your app
+- No authentication required
+- Ideal for marketing, demonstrations, or free tools
+
+**Private Apps:**
+- Require user authentication to access
+- Control who can use your app
+- Suitable for client portals or internal tools
+
+### **Unpublishing Apps**
+
+You can always unpublish your app if needed:
+
+1. **Open your Genesis app** in your workspace
+2. **Click the Publish dropdown** in the top toolbar
+3. **Select "Unpublish"**
+4. **Confirm the action**
+
+**Note:** Unpublishing immediately removes public access, but the URL becomes inactive. Users who bookmarked the link will lose access.
+
+### **Enabling Cloning**
+
+Allow others to create complete copies of your app in their own workspaces.
+
+**Cloning Features:**
+- **One-Click Duplication**: Users can clone your entire app with a single click
+- **Complete Fidelity**: All projects, agents, automations, and media files are copied
+- **Independent Operation**: Cloned apps function completely independently
+- **Customization Freedom**: Users can modify cloned apps without affecting the original
+
+### **When to Use Templates vs. Cloning**
+
+**Use Templates When:**
+- You want to provide starting points for customization
+- Users need to adapt the app significantly for their use case
+- You're sharing incomplete or example workflows
+
+**Use Cloning When:**
+- Your app is a complete, working solution
+- Users should have immediate functionality without setup
+- You want to share proven, production-ready workflows
+
 ## 🍴 **Revolutionary App Forking**
 
 The most powerful way to learn and build is by starting with working solutions. Genesis now lets you fork (copy) any community app with complete fidelity.

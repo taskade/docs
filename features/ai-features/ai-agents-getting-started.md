@@ -34,6 +34,70 @@ Create an agent if you:
 ✅ **Need help** with research, writing, or analysis  
 ✅ **Want to streamline** team processes
 
+## Industry-Specific AI Agent Examples
+
+### Legal Teams
+
+**Custom AI Agents for Legal Practice:**
+
+{% hint style="success" %}
+Legal AI agents can automate document review, conduct legal research, and manage cases efficiently, saving lawyers significant time on routine tasks while maintaining accuracy and compliance.
+{% endhint %}
+
+**Legal Agent Capabilities:**
+- **Document Review**: Analyze contracts, briefs, and legal documents for key clauses and potential issues
+- **Legal Research**: Search through case law, statutes, and legal precedents
+- **Case Management**: Track deadlines, court dates, and document filing requirements
+- **Client Communication**: Draft responses to common legal inquiries
+- **Compliance Monitoring**: Stay updated on regulatory changes and requirements
+
+**Training Your Legal Agent:**
+
+**Document Types to Include:**
+- Legal case documents and court filings
+- Legal research materials and annotations
+- Statutes, regulations, and legislative history
+- Citation guidelines and legal journal articles
+- Argumentation and negotiation materials
+- Precedent-setting case laws and historical documents
+- Legal textbooks, treatises, and specialized databases
+
+**Legal Agent Templates:**
+- **👩‍⚖️ Legal Advisor**: General legal guidance and document analysis
+- **📋 Contract Reviewer**: Specialized in contract analysis and risk assessment
+- **🔍 Research Assistant**: Legal research and case law analysis
+- **⚖️ Compliance Monitor**: Regulatory compliance and updates
+
+### Healthcare Teams
+
+**Medical AI Agents for Healthcare Professionals:**
+
+**Healthcare Agent Capabilities:**
+- **Patient Documentation**: Assist with medical record organization and analysis
+- **Research Support**: Find latest medical research and treatment protocols
+- **Compliance Assistance**: Help maintain HIPAA and regulatory compliance
+- **Scheduling Optimization**: Coordinate appointments and resource allocation
+
+### Marketing Teams
+
+**Marketing AI Agents for Campaign Management:**
+
+**Marketing Agent Capabilities:**
+- **Content Creation**: Generate blog posts, social media content, and marketing copy
+- **Campaign Analysis**: Analyze performance metrics and suggest optimizations
+- **Audience Research**: Identify target demographics and market trends
+- **Competitive Intelligence**: Monitor competitor activities and strategies
+
+### Customer Service Teams
+
+**Support AI Agents for Customer Experience:**
+
+**Customer Service Agent Capabilities:**
+- **Ticket Routing**: Automatically categorize and prioritize support requests
+- **Knowledge Base**: Provide instant answers to common customer questions
+- **Escalation Management**: Identify when to escalate issues to human agents
+- **Customer Feedback**: Analyze feedback patterns and suggest improvements
+
 ## Create Your First AI Agent in 5 Steps
 
 ### Step 1: Go to the Agents Tab
@@ -114,6 +178,24 @@ Make your agent smart by giving it information:
 - Training videos and tutorials
 - Product demos and presentations
 - Industry webinars and conferences
+
+### Step 4.5: Choose Your AI Model
+
+Select the right AI model based on your needs:
+
+| Model | Speed | Complexity Handling | Best For |
+|-------|-------|-------------------|----------|
+| **Pro (GPT-4o)** | Medium | ⭐⭐⭐⭐⭐ | Deep reasoning, accurate data analysis |
+| **Standard (GPT-4o mini)** | Fast | ⭐⭐⭐⭐☆ | Balanced performance, good context handling |
+| **Pro (GPT-4.1)** | Medium | ⭐⭐⭐⭐⭐ | High-end reasoning, coding, and task planning |
+| **Standard (GPT-4.1 mini)** | Fast | ⭐⭐⭐⭐⭐ | Complex workflows with fast responses |
+| **Basic (GPT-4.1 nano)** | Very Fast | ⭐⭐⭐☆☆ | Lightweight LLM usage, quick queries |
+| **Advanced (o4-mini)** | Fast | ⭐⭐⭐⭐☆ | Fast processing for moderately complex tasks |
+| **Standard (o4-mini)** | Very Fast | ⭐⭐⭐☆☆ | Speed-priority tasks with decent reasoning |
+| **Basic (o4-mini)** | Fastest | ⭐⭐☆☆☆ | Ultra-fast, low-load tasks |
+| **Advanced (o3-mini)** | Fast | ⭐⭐⭐⭐☆ | Data-heavy tasks |
+| **Standard (o3-mini)** | Very Fast | ⭐⭐⭐☆☆ | Quick responses, simple tasks |
+| **Basic (o3-mini)** | Fastest | ⭐⭐☆☆☆ | Minimal processing, fast for easy tasks |
 
 ## 🧠 Understanding Agent Knowledge & Memory
 
@@ -315,22 +397,129 @@ Give your agents superpowers by enabling tools:
 **📊 Data Tools** - Work with Google Sheets, databases  
 **🔄 Automation** - Trigger workflows and processes
 
-### Agent Teams
+### Multi-Agent Teams (Advanced)
 
-Combine multiple agents for complex projects:
+{% hint style="success" %}
+Multi-Agent Teams deploy personalized AI assistants that work concurrently on multiple tasks in the background, allowing you to focus on strategic work while your AI team handles the details.
+{% endhint %}
 
-1. Go to **AI Teams** in your workspace
-2. Click **➕ Create Team**
-3. Add multiple agents with different specialties
-4. Ask the team questions - they'll collaborate on answers
+#### What Are Multi-Agent Teams?
 
-### Human in the Loop
+Multi-agents are an evolution of Taskade's agentic workflow designed to:
+- **Work concurrently** on multiple tasks simultaneously
+- **Execute in the background** while you focus on other priorities
+- **Collaborate intelligently** with each agent bringing specialized expertise
+- **Learn your preferences** and adapt to your communication style
+- **Maintain context** across complex, multi-step workflows
 
-For sensitive actions, agents will ask permission:
+#### Setting Up Your Multi-Agent Team
 
-- "Should I send this email?" (Yes/No buttons)
-- "Approve this task creation?" (Review and approve)
-- Critical operations always require human approval
+**Method 1: Build from Existing Agents**
+1. Navigate to the **🤖 Agents** tab in your workspace
+2. Select multiple existing agents with complementary skills
+3. Use the **Team Builder** to combine them into a cohesive unit
+4. Configure team communication and collaboration rules
+
+**Method 2: Create New Team from Templates**
+1. Go to **AI Teams** section
+2. Click **➕ Create Team** → **From Template**
+3. Choose from pre-built team configurations:
+   - **Marketing Team**: Content + Social Media + Analytics agents
+   - **Customer Success Team**: Support + Documentation + Training agents
+   - **Product Development Team**: Research + Design + Testing agents
+   - **Operations Team**: Logistics + Communication + Reporting agents
+
+**Method 3: Custom Team Creation**
+1. Start with the **AI Team Generator** (see below)
+2. Describe your ideal team composition and goals
+3. Let AI automatically configure specialized roles and behaviors
+4. Fine-tune the team based on your specific requirements
+
+#### Using Multi-Agent Teams in Projects
+
+**Option 1: Agent Sidebar Integration**
+- Access your multi-agent team through the persistent agent sidebar
+- Agents work in the background with real-time updates
+- Pre-trained on your knowledge base and third-party integrations
+- Quick access without leaving your current project context
+
+**Option 2: Bulk Task Assignment**
+- Assign multiple tasks to your agent team simultaneously
+- Each agent handles tasks within their area of expertise
+- Automatic task distribution and progress tracking
+- Consolidated reporting on team performance
+
+**Option 3: Conversational Collaboration**
+- Chat with your entire agent team as a unified group
+- Agents collaborate on complex problems and provide comprehensive solutions
+- Shared conversation history for context and continuity
+- Team members can participate alongside AI agents
+
+#### Advanced Multi-Agent Features
+
+**Memory and Context Management**
+- **Short-term memory** for immediate conversation context
+- **Long-term memory** for persistent knowledge and preferences
+- **Cross-agent knowledge sharing** for improved collaboration
+- **Conversation history** for iteration and refinement
+
+**Iterative Output Development**
+- Browse complete conversation histories
+- Refine and improve outputs through multiple iterations
+- Learn from previous interactions and feedback
+- Build upon successful approaches and templates
+
+**Team Communication and Sharing**
+- Shared agent chats for team-wide collaboration
+- Real-time collaboration on problem-solving
+- Collective brainstorming and idea generation
+- Distributed AI insights accessible to all team members
+
+#### Managing Multi-Agent Teams
+
+**Copy and Duplicate Teams**
+- Save successful team configurations as templates
+- Duplicate teams for similar projects or client work
+- Share team setups across workspaces and organizations
+- Version control for team configuration changes
+
+**Sharing and Collaboration**
+- Share agent teams with team members and stakeholders
+- Granular permission controls for team access
+- Public sharing options for community contributions
+- Template marketplace for proven team configurations
+
+#### Popular Multi-Agent Team Examples
+
+| **Team Type** | **Agent Composition** | **Use Cases** |
+|---------------|----------------------|---------------|
+| **Content Marketing Team** | Content Strategist + SEO Specialist + Social Media Manager | Blog posts, social campaigns, content calendars |
+| **Customer Success Team** | Support Agent + Documentation Specialist + Training Coordinator | Onboarding, support tickets, knowledge base |
+| **Product Launch Team** | Market Researcher + Copywriter + Analytics Expert | Product announcements, launch campaigns, performance tracking |
+| **Research & Development Team** | Data Analyst + Technical Writer + Innovation Specialist | Competitive analysis, technical documentation, trend reports |
+| **Operations Team** | Logistics Coordinator + Communication Manager + Reporting Analyst | Process optimization, team communication, performance dashboards |
+
+### Human in the Loop Controls
+
+For sensitive operations, multi-agent teams incorporate human oversight:
+
+- **Action Approval**: Agents request permission before critical actions
+- **Escalation Protocols**: Automatic human involvement for high-impact decisions
+- **Audit Trails**: Complete logging of all agent actions and approvals
+- **Override Capabilities**: Human ability to modify or stop agent processes
+
+## Agent Tools & Integrations
+
+### Enable Agent Tools
+
+Agent Tools extend your multi-agent teams' capabilities by connecting to external services:
+
+**Taskade Tools** - Create projects, update tasks, manage data
+**Web Search** - Find real-time information online
+**Email Integration** - Send emails through Gmail
+**Communication** - Post to Slack, Teams, Discord
+**Data Tools** - Work with Google Sheets, databases
+**Automation** - Trigger workflows and processes
 
 ## Best Practices
 
@@ -416,6 +605,37 @@ Make your agents work automatically:
 
 - **[Automation Getting Started →](automation-getting-started.md)** - Put agents on autopilot
 - **[Integration Guide →](../../automation/integrations.md)** - Connect to 100+ services
+
+#### **Build Agent-Centric Automations**
+
+Create automation workflows with your AI agents at the center:
+
+**Access Agent Automation:**
+1. Navigate to the **Agents** tab in your workspace/folder
+2. Select an existing agent or create a new one
+3. Click **Edit Agent** in the top-right corner
+4. Go to the **Automation** tab on the left sidebar
+
+**Create Agent Automation Flow:**
+1. **Choose a connector** from available automation triggers
+2. **Configure the trigger** to initiate your workflow
+3. **Set up your agent** as the central processing component
+4. **Add additional actions** before or after agent processing
+5. **Test and deploy** your agent automation
+
+**Supported Triggers for Agent Automations:**
+- Task creation, updates, and completion events
+- Project and folder activity triggers
+- External service integrations (Gmail, Slack, etc.)
+- Time-based and scheduled triggers
+- Custom webhook and API triggers
+
+**Agent Automation Benefits:**
+- **Centralized Intelligence**: AI agents process and respond to complex scenarios
+- **Seamless Integration**: Connect AI capabilities directly to business workflows
+- **Autonomous Operation**: Agents handle sequences of tasks without manual intervention
+- **Contextual Processing**: Maintain conversation context and memory across interactions
+- **Scalable Automation**: Deploy intelligent workflows across multiple use cases
 
 ### **Advanced Knowledge Management**
 
@@ -642,13 +862,144 @@ The AI Team Generator lets you create complete multi-agent teams instantly. Just
 3. **Generates Specialized Agents** - Each with custom instructions and tools
 4. **Ready to Deploy** - Start using your team immediately
 
-### **Pro Tips for AI Team Generator**
+### **How to Use AI Team Generator**
 
-- **Be Specific** - Include industry, company size, and key challenges
-- **Mention Tools** - Reference systems you want integrated (Slack, Sheets, etc.)
-- **Define Outcomes** - What success looks like for your team
-- **Iterate** - Refine the prompt if the first generation isn't perfect
+{% hint style="success" %}
+**Step-by-Step Guide to Creating AI Teams**
+{% endhint %}
+
+#### **Access the Generator**
+
+1. Navigate to the **Agents** tab in your workspace
+2. Look for the **AI Team Generator** option
+3. Click to open the team creation interface
+
+#### **Craft Your Prompt**
+
+{% hint style="info" %}
+The quality of your prompt determines the quality of your generated team. Be specific about your use case, industry, and requirements.
+{% endhint %}
+
+**Effective Prompt Examples:**
+
+- `"Create a customer success team for a SaaS company handling onboarding, support tickets, and retention"`
+- `"Build a content marketing team for a B2B tech blog including research, writing, and promotion"`
+- `"Generate a project management team for software development with sprint planning and QA"`
+
+### **Editing and Customizing Generated Teams**
+
+{% hint style="warning" %}
+All generated teams can be fine-tuned after creation to better fit your specific needs.
+{% endhint %}
+
+#### **Available Customizations**
+
+| **Customization Type** | **What You Can Modify** | **Impact** |
+|------------------------|-------------------------|------------|
+| **Agent Roles** | Change titles, responsibilities, and specialties | Better alignment with your workflow |
+| **Instructions** | Adjust behavior, tone, and response guidelines | More accurate and helpful responses |
+| **Tools & Integrations** | Add/remove connected services and APIs | Enhanced capabilities and automation |
+| **Knowledge Base** | Upload additional training materials | More informed and knowledgeable agents |
+| **Communication Style** | Modify how agents interact and collaborate | Better team dynamics and user experience |
+
+#### **Advanced Editing Features**
+
+{% stepper %}
+{% step %}
+### Access Team Settings
+Click the **settings icon** on your generated team
+{% endstep %}
+
+{% step %}
+### Modify Agent Configuration
+Select individual agents to adjust their parameters
+{% endstep %}
+
+{% step %}
+### Test Changes
+Use the **preview chat** to test modified behavior
+{% endstep %}
+
+{% step %}
+### Save and Deploy
+Apply changes and make the team available for use
+{% endstep %}
+{% endstepper %}
+
+### **Using Your AI Team**
+
+{% hint style="success" %}
+**Multiple Ways to Collaborate with AI Teams**
+{% endhint %}
+
+#### **Method 1: Direct Team Chat**
+
+- Access through the **Agents** tab
+- Chat with the entire team as a unified group
+- All agents contribute to comprehensive responses
+- Perfect for brainstorming and complex problem-solving
+
+#### **Method 2: Project Integration**
+
+- Assign teams to specific projects
+- Agents work within project context
+- Automatic task generation and updates
+- Seamless integration with existing workflows
+
+#### **Method 3: Task Assignment**
+
+- Assign specific tasks to team members
+- Each agent handles their area of expertise
+- Parallel processing for faster completion
+- Comprehensive reporting on progress
+
+#### **Method 4: Automation Integration**
+
+- Connect teams to automation workflows
+- Trigger team actions based on events
+- Automated responses and follow-ups
+- Continuous background processing
+
+### **AI Team Use Cases and Examples**
+
+| **Industry** | **Team Type** | **Key Agents** | **Benefits** |
+|-------------|---------------|----------------|--------------|
+| **Marketing** | Content Creation | Research, Writing, Design, SEO | Complete content pipeline |
+| **Sales** | Lead Management | Qualification, Follow-up, Analytics | Streamlined sales process |
+| **Support** | Customer Service | Triage, Resolution, Feedback | 24/7 customer support |
+| **Development** | Project Management | Planning, Coding, Testing, Deployment | Accelerated development cycles |
+| **HR** | Recruitment | Sourcing, Screening, Interviewing | Efficient hiring process |
+
+### **Best Practices for AI Teams**
+
+{% hint style="info" %}
+**Optimization Strategies for Maximum Impact**
+{% endhint %}
+
+#### **Team Composition**
+- **Start Small**: Begin with 3-5 agents for focused teams
+- **Role Clarity**: Ensure each agent has distinct, non-overlapping responsibilities
+- **Skill Balance**: Include a mix of specialized and general-purpose agents
+
+#### **Performance Tuning**
+- **Prompt Refinement**: Iterate on team prompts for better results
+- **Tool Integration**: Connect relevant external services and APIs
+- **Knowledge Updates**: Regularly refresh agent knowledge bases
+
+#### **Workflow Integration**
+- **Clear Triggers**: Define when and how teams should be activated
+- **Output Standards**: Establish consistent formatting and quality expectations
+- **Feedback Loops**: Implement review processes for continuous improvement
+
+### **Troubleshooting AI Teams**
+
+| **Issue** | **Common Causes** | **Solutions** |
+|-----------|-------------------|--------------|
+| **Uncoordinated Responses** | Overlapping agent roles | Clarify responsibilities in team configuration |
+| **Slow Response Times** | Too many agents active | Reduce team size or optimize prompts |
+| **Inconsistent Quality** | Unclear instructions | Refine agent prompts and guidelines |
+| **Integration Problems** | API/authentication issues | Verify tool connections and permissions |
 
 ---
 
-**💡 Pro Tip:** Your best agent is one that solves a real problem you face daily. Start there, and expand as you discover new possibilities!
+**💡 Pro Tip:** Your best agent team is one that solves a real problem you face daily. Start with a specific use case, measure results, and expand as you discover new possibilities!

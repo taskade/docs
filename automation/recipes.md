@@ -2,6 +2,279 @@
 
 Real-world automation workflows that you can implement immediately. Each recipe includes the complete configuration, setup instructions, and customization options.
 
+## 📝 Content Creation & Marketing
+
+### Recipe 1: Daily Blog Article Generator
+
+{% hint style="success" %}
+Automatically generate and publish blog articles from titles using AI agents and WordPress integration. Perfect for content marketers and bloggers who need consistent publishing.
+{% endhint %}
+
+**Use Case**: Turn article titles into full blog posts automatically, then publish them to WordPress on a daily schedule.
+
+**Workflow**: Daily Schedule → Find Unprocessed Titles → Generate Articles → Publish to WordPress → Update Status
+
+**Setup Requirements**:
+- AI Blog Writing Agent (created via Agent Generator)
+- WordPress integration configured
+- Taskade project with custom fields for tracking post status
+- Article titles stored as tasks in the project
+
+```json
+{
+  "name": "Daily Blog Article Generator",
+  "trigger": {
+    "type": "schedule.daily",
+    "time": "09:00",
+    "timezone": "America/New_York"
+  },
+  "actions": [
+    {
+      "type": "findTasks",
+      "projectId": "blog_content_tracker",
+      "filters": {
+        "customField": {
+          "post_status": {
+            "not_equals": "posted"
+          }
+        }
+      },
+      "returnType": "array",
+      "limit": 5
+    },
+    {
+      "type": "loop.forEach",
+      "array": "{{steps.0.tasks}}",
+      "actions": [
+        {
+          "type": "agent.runCommand",
+          "agentId": "blog_writer_agent",
+          "command": "write_full_article",
+          "input": {
+            "title": "{{loop.item.name}}",
+            "word_count": "1500",
+            "tone": "professional",
+            "include_images": true
+          }
+        },
+        {
+          "type": "createProject",
+          "name": "{{loop.item.name}}",
+          "content": "{{steps.1.output}}",
+          "tags": ["blog", "auto-generated"]
+        },
+        {
+          "type": "wordpress.createPost",
+          "title": "{{loop.item.name}}",
+          "content": "{{steps.1.output}}",
+          "status": "publish",
+          "categories": ["blog"],
+          "tags": ["automated", "ai-generated"]
+        },
+        {
+          "type": "updateCustomField",
+          "taskId": "{{loop.item.id}}",
+          "fieldName": "post_status",
+          "value": "posted"
+        },
+        {
+          "type": "updateCustomField",
+          "taskId": "{{loop.item.id}}",
+          "fieldName": "wordpress_url",
+          "value": "{{steps.3.postUrl}}"
+        }
+      ]
+    }
+  ]
+}
+```
+
+**Setup Instructions**:
+
+{% stepper %}
+{% step %}
+### Create Blog Writing Agent
+Use the AI Agent Generator to create a "Blog Writer" agent. Train it with examples of your blog style and content guidelines.
+{% endstep %}
+
+{% step %}
+### Set Up Content Tracking Project
+Create a Taskade project called "Blog Content Tracker" with custom fields:
+- `post_status` (dropdown: draft, generated, posted)
+- `wordpress_url` (text field for published URL)
+- `target_word_count` (number)
+- `target_publish_date` (date)
+{% endstep %}
+
+{% step %}
+### Configure WordPress Integration
+Connect your WordPress site to Taskade and ensure proper permissions for post creation.
+{% endstep %}
+
+{% step %}
+### Create the Automation
+Build the automation with daily scheduling, task finding, looping, and WordPress publishing actions.
+{% endstep %}
+
+{% step %}
+### Test and Refine
+Start with one article, review the output, and adjust the agent prompts or automation logic as needed.
+{% endstep %}
+{% endstepper %}
+
+**Customization Options**:
+- **Scheduling**: Change frequency from daily to weekly or custom intervals
+- **Content Types**: Modify for social media posts, newsletters, or other content formats
+- **Quality Control**: Add human review steps before publishing
+- **Multi-platform**: Extend to publish to Medium, LinkedIn, or other platforms
+- **SEO Optimization**: Include keyword research and meta description generation
+```
+
+### Recipe 2: Automated Social Media Posting
+
+{% hint style="success" %}
+Schedule and automate social media posts using due dates and custom fields. Perfect for social media managers and digital marketers who need consistent posting schedules.
+{% endhint %}
+
+**Use Case**: Automatically post content to social media platforms (like X/Twitter) when tasks reach their due date, maintaining consistent online presence.
+
+**Workflow**: Task Due → Post to Social Media → Update Status → Track Performance
+
+**Setup Requirements**:
+- Taskade project with social media content
+- Custom fields for tracking post status
+- Social media integration (Twitter/X, LinkedIn, Facebook)
+- Due dates set on tasks for scheduling
+
+**Example Project Structure:**
+```
+📱 Social Media Content Calendar
+├── 📝 Post Content (task description)
+├── 📅 Due Date (posting schedule)
+├── 🔖 Status (Draft → Scheduled → Posted)
+├── 📊 Platform (Twitter, LinkedIn, Facebook)
+└── 🎯 Target Audience
+```
+
+```json
+{
+  "name": "Social Media Auto-Poster",
+  "trigger": {
+    "type": "task.due",
+    "projectId": "social_media_calendar",
+    "filters": {
+      "customField": {
+        "status": {
+          "equals": "scheduled"
+        }
+      }
+    }
+  },
+  "actions": [
+    {
+      "type": "conditional",
+      "condition": "@trigger.task.customFields.platform == 'twitter'",
+      "actions": [
+        {
+          "type": "twitter.createPost",
+          "content": "@trigger.task.content",
+          "account": "main_account"
+        }
+      ]
+    },
+    {
+      "type": "conditional",
+      "condition": "@trigger.task.customFields.platform == 'linkedin'",
+      "actions": [
+        {
+          "type": "linkedin.createPost",
+          "content": "@trigger.task.content",
+          "account": "company_page"
+        }
+      ]
+    },
+    {
+      "type": "updateCustomField",
+      "taskId": "@trigger.task.id",
+      "fieldName": "status",
+      "value": "posted"
+    },
+    {
+      "type": "updateCustomField",
+      "taskId": "@trigger.task.id",
+      "fieldName": "posted_at",
+      "value": "@current.timestamp"
+    }
+  ]
+}
+```
+
+**Setup Instructions:**
+
+{% stepper %}
+{% step %}
+### Create Content Calendar Project
+Set up a Taskade project using Table view to organize your social media content
+{% endstep %}
+
+{% step %}
+### Add Custom Fields
+Create fields for Status (dropdown: draft, scheduled, posted), Platform, and Posted_At (date)
+{% endstep %}
+
+{% step %}
+### Set Up Automation Trigger
+Create a "Task Due" trigger that fires when content is scheduled to post
+{% endstep %}
+
+{% step %}
+### Configure Social Media Actions
+Add conditional actions for each platform (Twitter, LinkedIn, Facebook) based on custom field values
+{% endstep %}
+
+{% step %}
+### Add Status Updates
+Include actions to update the task status and posting timestamp after successful publication
+{% endstep %}
+{% endstepper %}
+
+**Platform-Specific Configuration:**
+
+| **Platform** | **Integration Required** | **Content Limits** | **Best Practices** |
+|-------------|-------------------------|-------------------|-------------------|
+| **Twitter/X** | Twitter API connection | 280 characters | Use hashtags, engage with trends |
+| **LinkedIn** | LinkedIn Business API | 3000 characters | Professional tone, industry insights |
+| **Facebook** | Facebook Graph API | 63206 characters | Visual content, community engagement |
+| **Instagram** | Meta Business API | 2200 characters | High-quality images, Stories integration |
+
+**Advanced Features:**
+
+{% hint style="info" %}
+**Multi-Platform Posting**: Set up conditional logic to post the same content across multiple platforms simultaneously.
+{% endhint %}
+
+**Content Personalization:**
+- Use variables to customize posts for different audiences
+- Include platform-specific hashtags and formatting
+- Adapt tone and style based on target platform
+
+**Analytics Integration:**
+- Track engagement metrics automatically
+- Update performance data in Taskade
+- Generate posting reports and insights
+
+**Bulk Scheduling:**
+- Import content calendars from spreadsheets
+- Schedule multiple posts at once
+- Use recurring tasks for consistent posting
+
+**Customization Options:**
+- **Content Variations**: Create platform-specific versions of posts
+- **Timing Optimization**: Use analytics to determine best posting times
+- **A/B Testing**: Test different content approaches
+- **Approval Workflows**: Add review steps before posting
+- **Performance Tracking**: Monitor engagement and adjust strategies
+
 ## 🎯 Lead Generation & Sales
 
 ### Recipe 1: Lead Capture & Qualification

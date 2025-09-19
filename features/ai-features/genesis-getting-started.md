@@ -5,6 +5,107 @@ Build complete AI-powered applications from a single prompt - no coding required
 
 ## What is Genesis?
 
+{% hint style="success" %}
+Genesis is an AI app builder that creates complete business applications from a single prompt. You describe what you need, and Genesis builds a working app in minutes. Not a mockup or prototype, but fully functional software.
+{% endhint %}
+
+**Unlike other app builders, Genesis gives you:**
+- ✅ **Complete Business Applications** - Not just prototypes, but fully functional software
+- ✅ **No Coding Required** - Describe your needs in plain English
+- ✅ **AI-Powered Intelligence** - Smart agents that understand your business
+- ✅ **Automated Workflows** - Actions that happen automatically based on triggers
+- ✅ **Professional Web Interfaces** - Shareable apps your users can access instantly
+
+### What You Can Build
+
+By the end of this guide, you'll have built and published a fully functional app. It can be a client portal, tracker, or dashboard. The only limitation is your imagination. Genesis handles the technical complexity, you focus on business value.
+
+### Why This Approach Works
+
+**Traditional development 🥱** | **With Taskade Genesis ❤️**
+---|---
+❌ Write technical specifications, wireframes, and database schemas | ✅ Describe your business needs like talking to a trusted colleague
+❌ Hire developers, configure servers, and manage development environments | ✅ Your idea becomes a working app in just a few minutes. It's that simple!
+❌ Debug API endpoints, handle authentication, coordinate teams | ✅ Changes happen through simple conversations with Taskade AI
+❌ Implement SSL certificates, security audits, and vulnerability management | ✅ Security and compliance are handled automatically within Taskade
+❌ Maintain servers, apply patches, monitor performance, handle scaling | ✅ Focus on your business while we handle technical details
+❌ Months of development cycles, testing phases, and deployment | ✅ Start getting real user feedback today and iterate quickly
+
+## 4 Steps to a Live App
+
+Getting your app off the ground is really simple. Follow these four steps to transform any challenge into working solution that works out of the box.
+
+### Step 1: Start with Your Idea
+
+The best apps solve real problems in your business. Before you even open Genesis, think about what's slowing you down or what could work better.
+
+Ask yourself:
+- What business problem am I trying to solve?
+- Who will use this app (customers, employees, partners)?
+- What information do they need to input?
+- What actions should happen automatically?
+- How will this improve my business processes?
+
+Do you already have your answers? Great! Let's move to the next step.
+
+### Step 2: Let Genesis Build It
+
+When you first open Genesis, you'll see a text area where you can describe what you want to create. Simply describe it as you would to a colleague. The more specific you are, the better the result.
+
+### Step 3: Test and Iterate
+
+Once Genesis builds your initial app, you'll see it come to life with all the professional features you need. But this is just the beginning. Now you can refine it.
+
+Switch to the **Preview** tab to interact with your live application.
+
+**Test the core functionality:**
+- Fill out forms as if you're a real user
+- Check automated notifications and workflows
+- Verify data is being stored correctly
+- Try different user scenarios
+
+Now make it uniquely yours. Making changes is simple. Just describe what you want to adjust. Genesis understands business language and implements changes immediately.
+
+### Step 4: Share It!
+
+Your app is ready for the real world! You've built something that solves a real business problem, and now it's time to put it in front of actual users.
+
+Getting it live is simple:
+1. Click **"Publish"** to make your app public
+2. Copy the shareable link
+3. Set access permissions if needed
+4. Share with your intended users
+
+Your app is instantly available and ready for users!
+
+**Share your success story and get featured:**
+- Post about your app in Taskade community forums
+- Share screenshots and results
+- Tag @taskade on social media
+- Help others learn from your experience
+
+## Enhanced Prompts for Better Results
+
+Not sure how to describe what you want? Use these techniques to create better prompts:
+
+### Use Prompt Enhancement
+
+The Enhance Prompt feature takes your rough idea and turns it into a detailed, specific request that Genesis can act on. Start with a basic description, and let Genesis help you refine it.
+
+### Your First Prompt
+
+Begin with something simple but specific. Focus on one clear business need rather than trying to build everything at once.
+
+### Follow-Up Prompts
+
+Once your app is working, use follow-up prompts to add features:
+- "Add email notifications when new submissions arrive"
+- "Include a dashboard showing response trends"
+- "Add user authentication for secure access"
+- "Create automated follow-up sequences"
+
+## What is Genesis? (Technical Overview)
+
 Genesis is Taskade's **App Builder** that creates complete business applications just by describing what you need. Think of it as having a team of expert developers, designers, and business analysts who can build exactly what you want in minutes - no technical skills required!
 
 **What Genesis Creates:**
