@@ -28,32 +28,44 @@ To import your Notion pages to Taskade, you first need to export them in a compa
 
 {% stepper %}
 {% step %}
+
 ### Open Your Notion Page
+
 Navigate to the Notion page you want to export and open it
 {% endstep %}
 
 {% step %}
+
 ### Access Export Menu
+
 Click the **···** (ellipsis) button in the top-right corner of the page
 {% endstep %}
 
 {% step %}
+
 ### Select Export Option
+
 Choose **"Export"** from the dropdown menu
 {% endstep %}
 
 {% step %}
+
 ### Choose Export Format
+
 Select **"Markdown & CSV"** as the export format
 {% endstep %}
 
 {% step %}
+
 ### Configure Export Options
+
 Choose **"Include subpages"** if you want to export nested pages as separate files (optional)
 {% endstep %}
 
 {% step %}
+
 ### Complete Export
+
 Click **"Export"** to download a ZIP archive containing your exported files
 {% endstep %}
 {% endstepper %}
@@ -67,6 +79,7 @@ Click **"Export"** to download a ZIP archive containing your exported files
 3. **Table data** will be included in the export as structured data
 
 **Important Notes:**
+
 - Databases are exported as `.csv` files
 - Subpages are exported as separate `.md` files
 - Images and attachments are included in the export archive
@@ -82,32 +95,43 @@ Once you have your Notion export, you can easily import it into Taskade.
 
 {% stepper %}
 {% step %}
+
 ### Navigate to Workspace
+
 Go to your desired workspace or folder in Taskade
 {% endstep %}
 
 {% step %}
+
 ### Access Import Options
+
 Click the arrow next to the **➕ New Project** button and select **"Import"**
 {% endstep %}
 
 {% step %}
+
 ### Choose Import Format
+
 Select **"Markdown & Text"** from the import options
 {% endstep %}
 
 {% step %}
+
 ### Upload Files
+
 Upload your exported Notion `.md` files (and `.csv` files for databases)
 {% endstep %}
 
 {% step %}
+
 ### Complete Import
+
 Click **"Import"** to create your new project
 {% endstep %}
 {% endstepper %}
 
 **Pro Tips:**
+
 - You can select or drag-and-drop multiple `.md` files at once
 - CSV files from databases will be imported as structured data
 - Large exports may take longer to process
@@ -308,9 +332,8 @@ After importing your Notion content, you can enhance it with Taskade's powerful 
 
 ## Related Import Guides
 
-- [Import Markdown](import-markdown.md) - Direct markdown import options
-- [Import from Obsidian](import-obsidian.md) - Knowledge graph import
 - [Import from Logseq](import-logseq.md) - Note-taking app import
 - [Import from Roam](import-roam.md) - Bi-directional linking import
 - [Import from Evernote](import-evernote.md) - Note organization import
-
+- [Import from Obsidian](../../help-center/_imported/general/import-from-obsidian.md) - Knowledge graph import
+- [Import Markdown Files](../../help-center/_imported/general/import-markdown.md) - Direct markdown import options

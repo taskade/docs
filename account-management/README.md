@@ -3,18 +3,22 @@
 Comprehensive guides for managing your Taskade account, billing, security, and settings.
 
 ## 💳 **Billing & Subscription**
-- [**Billing & Subscription Management**](billing-subscription-management.md) - *Manage your Taskade subscription, payment methods, and billing history*
+
+- [**Account Management Help**](../help-center/account-management/README.md) - _General account and billing guidance_
 
 ## 📱 **Account Settings**
-- [**Desktop Settings**](desktop-settings.md) - *Configure your desktop app preferences and settings*
-- [**Push Notifications**](push-notifications.md) - *Manage notification preferences across all devices*
+
+- [**Getting Started Guide**](../getting-started/README.md) - _Basic setup and configuration_
+- [**Authentication Setup**](../start/authentication.md) - _Secure login and access management_
 
 ## 🤝 **Programs & Partnerships**
-- [**Partnership Program**](partnership-program.md) - *Join the Taskade partner ecosystem*
-- [**Taskade Unlimited App Store**](taskade-unlimited-app-store.md) - *Access premium features and integrations*
+
+- [**API Development**](../developers/README.md) - _Build integrations and partnerships_
+- [**Personal Access Tokens**](../start/personal-tokens.md) - _API access and integration setup_
 
 ## 🔒 **Account Security**
-- [**Close Account**](close-account.md) - *Account deletion and data management*
+
+- [**Authentication Guide**](../start/authentication.md) - _Secure access and account protection_
 
 ---
 
