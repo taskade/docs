@@ -97,7 +97,7 @@ After Genesis creates your app, you can upload context files in follow-up prompt
 - Upload context files:
 ​
 
-- (method 1) Drag &amp; drop files into the TAA chat window.
+- (method 1) Drag & drop files into the TAA chat window.
 ​
 
 - (method 2) Use the Attachment button (📎)
