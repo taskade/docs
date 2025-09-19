@@ -87,7 +87,7 @@ Department
 
 Organizes tasks by team/department.
 
-Edit Columns &amp; Fields
+Edit Columns & Fields
 
 - Click the ··· three dots next to a field name.​
 ​
