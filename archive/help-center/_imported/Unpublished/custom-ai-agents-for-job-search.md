@@ -36,7 +36,7 @@ With that out of the way, we can now move to the next step.
 
 There are two ways to build AI agents in Taskade — you can start from scratch (advanced method), or choose from [dozens of AI agent templates](https://help.taskade.com/en/articles/8958457-custom-ai-agents#h_ec4d78035b).
 
-For the purpose of this guide, we're going to use the 📄 **Resume** agent templatae.
+For the purpose of this guide, we're going to use the 📄 **Resume** agent template.
 
 [![Image 2](../../.gitbook/assets/imported/custom-ai-agents-for-job-search-2.png)](https://downloads.intercomcdn.com/i/o/1024172798/951e1e224c0622ba97d8e6e2/resume-agent-1.png?expires=1757741400&signature=e6fa967836be992550d4f5e4376974c0156368527ebd768f7029d727212ad032&req=dSAlEsh5n4ZWUfMW1HO4zX5rMFhLDTxuvA989gLJpaeJgw2kkLDleQ%2FgVvQ3%0AnvdA3bHOX8VuqMnTzBc%3D%0A)
 

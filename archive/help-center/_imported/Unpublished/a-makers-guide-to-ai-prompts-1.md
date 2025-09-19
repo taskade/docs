@@ -60,7 +60,7 @@ Your app should sound like your business. Tell Genesis how to communicate.
 - `"Use an encouraging, supportive tone like a personal fitness coach. Celebrate user achievements and make setbacks feel manageable."`
 - `"Sound like a trusted financial advisor—authoritative but not intimidating. Use simple language to explain complex topics and always emphasize security."`
 
-7. Choose Look &amp; Feel
+7. Choose Look & Feel
 
 Tell Genesis how you want your app to look — colors, images, and overall vibe.
 

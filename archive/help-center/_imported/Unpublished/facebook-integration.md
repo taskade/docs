@@ -16,7 +16,7 @@ This integration connects your Facebook account with Taskade. Once set up, you c
 **Facebook Automation**
 -----------------------
 
-Configure Taskade to **automatically create posts or photo posts** on your Facebook account when specific triggers occur. For example, you can create a post whenever a project milestone is completed or send a photo post for na important update.
+Configure Taskade to **automatically create posts or photo posts** on your Facebook account when specific triggers occur. For example, you can create a post whenever a project milestone is completed or send a photo post for an important update.
 
 **Facebook Actions**
 --------------------

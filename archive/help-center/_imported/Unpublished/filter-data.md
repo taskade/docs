@@ -27,7 +27,7 @@ Connector options give you full control over the Filter Data action:
 **Filter Custom Fields**
 ------------------------
 
-The **Filter** action automatically populates the **Data**filter with [custom fields](https://intercom.help/taskade/en/articles/9767679-custom-fields) if any are present in a connected project. Here's how to set it up:
+The **Filter** action automatically populates the **Data** filter with [custom fields](https://intercom.help/taskade/en/articles/9767679-custom-fields) if any are present in a connected project. Here's how to set it up:
 
 [![Image 2](../../.gitbook/assets/imported/filter-data-2.jpg)](https://downloads.intercomcdn.com/i/o/plyqw4hf/1373840083/840e1de4ceb496e574c0343bb595/filter-custom-fields.jpg?expires=1757741400&signature=8a9293e84e09ebf0b5d5f09abf35dd1d9cd1997b9c8da4587d848953573a1956&req=dSMgFcF6nYFXWvMW1HO4zc%2BRUdVYITRvk0s5Nc6Pp%2B5WSSdvwhr21%2BDmwl2A%0AuQk9%2F6%2FLhQtqEZ15k%2FU%3D%0A)
 
