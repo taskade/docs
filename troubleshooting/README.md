@@ -3,10 +3,12 @@
 Quick solutions and comprehensive guides to resolve any issues you might encounter with Taskade.
 
 ## 🔧 **Quick Solutions**
-- [**Common Issues**](common-issues.md) - *Fast fixes for the most frequent problems*
+
+- [**Common Issues Guide**](../help-center/troubleshooting/common-issues.md) - _Fast fixes for the most frequent problems_
 
 ## 📚 **Comprehensive Support**
-- [**Comprehensive Troubleshooting Guide**](comprehensive-troubleshooting-guide.md) - *Resolve any issue quickly with detailed solutions*
+
+- [**Comprehensive Troubleshooting Guide**](comprehensive-troubleshooting-guide.md) - _Resolve any issue quickly with detailed solutions_
 
 ---
 

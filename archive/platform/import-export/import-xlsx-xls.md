@@ -17,12 +17,14 @@ Excel spreadsheets often contain critical project data, task lists, timelines, a
 Comprehensive support for Microsoft Excel file formats.
 
 **File Types:**
+
 - **.xlsx**: Modern Excel format (Office 2007 and later)
 - **.xls**: Legacy Excel format (Office 2003 and earlier)
 - **.xlsm**: Excel with macros (macros are preserved but not executable)
 - **.xltx/.xlt**: Excel templates (converted to standard projects)
 
 **Version Compatibility:**
+
 - **Excel 2003-2021**: Full support for all modern Excel versions
 - **Google Sheets Exports**: Excel files exported from Google Sheets
 - **Apple Numbers Exports**: Excel files exported from Numbers
@@ -33,12 +35,14 @@ Comprehensive support for Microsoft Excel file formats.
 Intelligent mapping of Excel elements to Taskade components.
 
 **Worksheet Conversion:**
+
 - **Multiple Sheets**: Each worksheet becomes a separate Taskade project section
 - **Sheet Names**: Preserved as section headers or project titles
 - **Sheet Order**: Maintains original worksheet sequence
 - **Hidden Sheets**: Option to include or exclude hidden worksheets
 
 **Data Structure Mapping:**
+
 - **Rows to Tasks**: Each data row becomes a Taskade task
 - **Columns to Fields**: Column headers become task properties or custom fields
 - **Cell Values**: Preserved with original data types and formatting
@@ -50,18 +54,21 @@ Intelligent mapping of Excel elements to Taskade components.
 Maintain visual consistency and data presentation.
 
 **Text Formatting:**
+
 - **Bold/Italic/Underline**: Preserved in task descriptions and comments
 - **Font Colors**: Converted to Taskade's color system
 - **Font Sizes**: Mapped to Taskade's text size options
 - **Text Alignment**: Maintained in table views and descriptions
 
 **Cell Formatting:**
+
 - **Background Colors**: Converted to task highlighting or custom styling
 - **Border Styles**: Preserved in table representations
 - **Number Formats**: Currency, percentages, dates maintained
 - **Conditional Formatting**: Converted to visual indicators where possible
 
 **Layout Elements:**
+
 - **Merged Cells**: Handled as combined content blocks
 - **Column Widths**: Used to determine optimal display layouts
 - **Row Heights**: Preserved in structured layouts
@@ -74,6 +81,7 @@ Maintain visual consistency and data presentation.
 Convert Excel files directly into new Taskade projects.
 
 **Standard Import Process:**
+
 1. **Access Import**: Click the "+" button and select "Import" from the dropdown
 2. **File Selection**: Choose "Convert to Taskade" option
 3. **Upload Files**: Drag and drop or browse for .xlsx/.xls files
@@ -81,6 +89,7 @@ Convert Excel files directly into new Taskade projects.
 5. **Project Creation**: New project created with converted data
 
 **Import Options:**
+
 - **Single File**: Import one Excel file at a time
 - **Batch Import**: Import multiple Excel files simultaneously
 - **Folder Import**: Import all Excel files from a selected folder
@@ -92,6 +101,7 @@ Convert Excel files directly into new Taskade projects.
 Intelligent transformation using advanced AI analysis.
 
 **Smart Structure Detection:**
+
 - **Header Recognition**: Automatically identifies column headers
 - **Data Type Detection**: Recognizes dates, numbers, text, and formulas
 - **Relationship Mapping**: Identifies parent-child relationships
@@ -99,6 +109,7 @@ Intelligent transformation using advanced AI analysis.
 - **Due Date Extraction**: Finds and converts date columns to due dates
 
 **Content Enhancement:**
+
 - **Task Description Generation**: Creates detailed task descriptions from row data
 - **Assignee Suggestions**: Recommends task assignments based on content
 - **Tag Creation**: Generates relevant tags from spreadsheet content
@@ -110,6 +121,7 @@ Intelligent transformation using advanced AI analysis.
 Generate comprehensive project summaries from Excel data.
 
 **Summary Generation:**
+
 - **Content Analysis**: AI reads and understands spreadsheet content
 - **Key Insights**: Extracts important data points and trends
 - **Executive Summary**: Creates high-level project overviews
@@ -117,6 +129,7 @@ Generate comprehensive project summaries from Excel data.
 - **Recommendations**: Provides suggestions based on data analysis
 
 **Summary Formats:**
+
 - **Project Overview**: High-level summary of entire spreadsheet
 - **Section Summaries**: Individual summaries for each worksheet
 - **Data Insights**: Key findings and patterns in the data
@@ -130,6 +143,7 @@ Generate comprehensive project summaries from Excel data.
 Fine-tune how Excel data is converted to Taskade format.
 
 **Column Mapping:**
+
 - **Field Assignment**: Choose which columns become task names, descriptions, assignees
 - **Custom Field Creation**: Map columns to Taskade custom fields
 - **Data Type Selection**: Specify how data should be interpreted
@@ -137,6 +151,7 @@ Fine-tune how Excel data is converted to Taskade format.
 - **Priority Mapping**: Assign priorities based on column values
 
 **Import Rules:**
+
 - **Filter Conditions**: Import only rows meeting specific criteria
 - **Data Transformation**: Apply formulas or transformations during import
 - **Duplicate Handling**: Choose how to handle duplicate entries
@@ -148,6 +163,7 @@ Fine-tune how Excel data is converted to Taskade format.
 Efficient handling of multiple Excel files and large datasets.
 
 **Bulk Operations:**
+
 - **Multiple Files**: Import several Excel files simultaneously
 - **Folder Processing**: Import all spreadsheets in a folder structure
 - **Recursive Import**: Include subfolders in batch operations
@@ -155,6 +171,7 @@ Efficient handling of multiple Excel files and large datasets.
 - **Progress Tracking**: Monitor import status and completion
 
 **Large File Handling:**
+
 - **File Size Limits**: Support for large Excel files (up to 50MB)
 - **Memory Optimization**: Efficient processing of big datasets
 - **Partial Import**: Import specific sheets or ranges from large files
@@ -166,6 +183,7 @@ Efficient handling of multiple Excel files and large datasets.
 Merge Excel data with current Taskade projects.
 
 **Project Updates:**
+
 - **Append Mode**: Add Excel data to existing projects
 - **Merge Mode**: Combine Excel data with existing tasks
 - **Update Mode**: Update existing tasks with Excel data
@@ -173,6 +191,7 @@ Merge Excel data with current Taskade projects.
 - **Selective Import**: Import only specific sheets or data ranges
 
 **Conflict Resolution:**
+
 - **Duplicate Detection**: Identify and handle duplicate tasks
 - **Field Conflicts**: Resolve conflicts between existing and imported data
 - **Version Control**: Maintain history of changes during updates
@@ -186,6 +205,7 @@ Merge Excel data with current Taskade projects.
 Preserve and convert Excel's computational capabilities.
 
 **Formula Conversion:**
+
 - **Static Values**: Convert formulas to their calculated results
 - **Formula Preservation**: Keep original formulas as comments or metadata
 - **Dependency Tracking**: Maintain relationships between calculated cells
@@ -193,6 +213,7 @@ Preserve and convert Excel's computational capabilities.
 - **Array Formulas**: Convert complex array calculations appropriately
 
 **Data Validation:**
+
 - **Dropdown Lists**: Convert to Taskade custom field options
 - **Range Validation**: Apply as field constraints in Taskade
 - **Custom Rules**: Preserve complex validation logic where possible
@@ -204,6 +225,7 @@ Preserve and convert Excel's computational capabilities.
 Convert Excel visualizations to Taskade-compatible formats.
 
 **Chart Conversion:**
+
 - **Data Preservation**: Maintain underlying chart data
 - **Visualization Migration**: Convert charts to Taskade's visualization options
 - **Table Representation**: Present chart data in structured tables
@@ -211,6 +233,7 @@ Convert Excel visualizations to Taskade-compatible formats.
 - **Interactive Elements**: Convert to Taskade's interactive components
 
 **Pivot Table Handling:**
+
 - **Data Structure**: Preserve pivot table source data
 - **Summary Information**: Convert pivot results to Taskade tables
 - **Grouping Logic**: Maintain pivot table grouping and categorization
@@ -224,6 +247,7 @@ Convert Excel visualizations to Taskade-compatible formats.
 Use Excel spreadsheets to enhance AI agent capabilities.
 
 **Knowledge Base Enhancement:**
+
 - **Content Upload**: Add Excel files to agent knowledge bases
 - **Data Understanding**: AI learns from spreadsheet content and structure
 - **Context Provision**: Excel data becomes part of agent responses
@@ -231,6 +255,7 @@ Use Excel spreadsheets to enhance AI agent capabilities.
 - **Pattern Recognition**: AI identifies patterns in Excel data for better responses
 
 **Agent Training Process:**
+
 1. **Agent Selection**: Choose the AI agent to enhance
 2. **Knowledge Tab**: Navigate to the agent's knowledge section
 3. **File Upload**: Upload Excel files to the knowledge base
@@ -242,6 +267,7 @@ Use Excel spreadsheets to enhance AI agent capabilities.
 Use Excel files as context for AI project generation.
 
 **Context-Enhanced Generation:**
+
 - **File Upload**: Attach Excel files during AI project creation
 - **Content Analysis**: AI reads and understands spreadsheet data
 - **Contextual Projects**: Generate projects informed by Excel content
@@ -249,6 +275,7 @@ Use Excel files as context for AI project generation.
 - **Intelligent Mapping**: Map Excel data to appropriate project structures
 
 **Context Application:**
+
 - **Template Enhancement**: Use Excel data to customize project templates
 - **Workflow Generation**: Create workflows based on spreadsheet processes
 - **Task Prioritization**: Set priorities based on Excel data analysis
@@ -262,6 +289,7 @@ Use Excel files as context for AI project generation.
 Convert business spreadsheets to collaborative projects.
 
 **Project Management Migration:**
+
 ```
 Excel Project Tracking → Taskade Project:
 ├── Task Name (from Column A)
@@ -273,12 +301,14 @@ Excel Project Tracking → Taskade Project:
 ```
 
 **Financial Planning:**
+
 - **Budget Spreadsheets**: Convert to financial planning projects
 - **Expense Tracking**: Transform expense reports into tracking projects
 - **Revenue Forecasting**: Convert forecasts to planning projects
 - **Cost Analysis**: Turn analysis spreadsheets into review projects
 
 **Inventory Management:**
+
 - **Stock Levels**: Convert to inventory tracking projects
 - **Supplier Data**: Transform supplier spreadsheets to vendor management
 - **Product Catalogs**: Convert catalogs to product management projects
@@ -289,12 +319,14 @@ Excel Project Tracking → Taskade Project:
 Convert analytical spreadsheets to interactive reports.
 
 **Research Data:**
+
 - **Survey Results**: Convert survey data to analysis projects
 - **Experiment Data**: Transform research spreadsheets to documentation
 - **Statistical Analysis**: Convert analysis results to reporting projects
 - **Data Visualization**: Turn chart data into interactive dashboards
 
 **Performance Tracking:**
+
 - **KPI Dashboards**: Convert KPI spreadsheets to monitoring projects
 - **Metrics Reports**: Transform metrics data to tracking projects
 - **Trend Analysis**: Convert trend data to analysis projects
@@ -305,12 +337,14 @@ Convert analytical spreadsheets to interactive reports.
 Transform educational spreadsheets into learning projects.
 
 **Curriculum Planning:**
+
 - **Syllabus Data**: Convert syllabus spreadsheets to course planning
 - **Grade Books**: Transform grading spreadsheets to assessment projects
 - **Attendance Records**: Convert attendance data to tracking projects
 - **Lesson Plans**: Turn planning spreadsheets into teaching projects
 
 **Student Data Management:**
+
 - **Assignment Tracking**: Convert assignment spreadsheets to management projects
 - **Progress Reports**: Transform progress data to monitoring projects
 - **Resource Lists**: Convert resource spreadsheets to organization projects
@@ -323,6 +357,7 @@ Transform educational spreadsheets into learning projects.
 Optimize Excel files for successful import.
 
 **File Optimization:**
+
 - **Clean Data**: Remove unnecessary formatting and empty rows/columns
 - **Consistent Headers**: Use clear, consistent column headers
 - **Data Validation**: Ensure data integrity before import
@@ -330,6 +365,7 @@ Optimize Excel files for successful import.
 - **Sheet Organization**: Organize worksheets logically
 
 **Structure Guidelines:**
+
 - **Task Identification**: Ensure each row represents a distinct task
 - **Relationship Clarity**: Make parent-child relationships clear
 - **Date Formats**: Use consistent date formatting
@@ -341,6 +377,7 @@ Optimize Excel files for successful import.
 Plan and execute successful Excel imports.
 
 **Pre-Import Planning:**
+
 - **Data Assessment**: Review Excel file structure and content
 - **Mapping Strategy**: Plan how columns will map to Taskade fields
 - **Project Structure**: Design target project structure
@@ -348,6 +385,7 @@ Plan and execute successful Excel imports.
 - **Backup Strategy**: Ensure original files are backed up
 
 **Post-Import Validation:**
+
 - **Data Verification**: Check that all data imported correctly
 - **Structure Validation**: Verify project structure matches expectations
 - **Link Verification**: Ensure all links and references work
@@ -359,6 +397,7 @@ Plan and execute successful Excel imports.
 Ensure efficient import of large or complex Excel files.
 
 **File Size Management:**
+
 - **Split Large Files**: Divide very large spreadsheets into smaller chunks
 - **Selective Import**: Import only necessary sheets or data ranges
 - **Batch Processing**: Use batch import for multiple files
@@ -366,6 +405,7 @@ Ensure efficient import of large or complex Excel files.
 - **Progress Monitoring**: Track import progress and address issues promptly
 
 **Data Quality Assurance:**
+
 - **Error Checking**: Review import logs for errors or warnings
 - **Data Validation**: Verify data accuracy after import
 - **Formatting Checks**: Ensure formatting preserved correctly
@@ -379,6 +419,7 @@ Ensure efficient import of large or complex Excel files.
 Solutions for frequently encountered problems.
 
 **File Format Issues:**
+
 - **Unsupported Format**: Convert .xls files to .xlsx for better compatibility
 - **Corrupted Files**: Repair corrupted Excel files before import
 - **Password Protection**: Remove password protection from files
@@ -386,6 +427,7 @@ Solutions for frequently encountered problems.
 - **Compatibility Mode**: Save files in current Excel format
 
 **Data Conversion Problems:**
+
 - **Formula Errors**: Review and correct formula errors before import
 - **Date Format Issues**: Standardize date formats across the spreadsheet
 - **Encoding Problems**: Ensure consistent text encoding
@@ -393,6 +435,7 @@ Solutions for frequently encountered problems.
 - **Large Numbers**: Verify large numbers imported correctly
 
 **Structure Issues:**
+
 - **Missing Headers**: Add clear headers to all data columns
 - **Merged Cells**: Unmerge cells or handle appropriately
 - **Empty Rows/Columns**: Remove unnecessary empty areas
@@ -404,6 +447,7 @@ Solutions for frequently encountered problems.
 Address import speed and resource problems.
 
 **Slow Import Times:**
+
 - **File Size Reduction**: Compress images and remove unnecessary data
 - **Sheet Selection**: Import only required worksheets
 - **Background Processing**: Use background import for large files
@@ -411,6 +455,7 @@ Address import speed and resource problems.
 - **Network Optimization**: Check internet connection stability
 
 **Memory Problems:**
+
 - **Large File Handling**: Split very large files into smaller parts
 - **Memory Optimization**: Close other applications during import
 - **System Requirements**: Ensure system meets minimum requirements
@@ -424,6 +469,7 @@ Address import speed and resource problems.
 Excel data works seamlessly with Taskade's project views.
 
 **List View Integration:**
+
 - **Task Hierarchy**: Excel rows become nested task structures
 - **Progress Tracking**: Status columns map to completion indicators
 - **Due Date Integration**: Date columns become task deadlines
@@ -431,6 +477,7 @@ Excel data works seamlessly with Taskade's project views.
 - **Tag Application**: Category columns become task tags
 
 **Table View Enhancement:**
+
 - **Data Preservation**: Maintain spreadsheet-like table structure
 - **Column Filtering**: Enable filtering on imported data columns
 - **Sorting Options**: Sort tasks by any imported column
@@ -438,6 +485,7 @@ Excel data works seamlessly with Taskade's project views.
 - **Export Capability**: Export back to Excel format if needed
 
 **Board View Conversion:**
+
 - **Status Columns**: Map to board columns (To Do, In Progress, Done)
 - **Workflow Creation**: Convert process spreadsheets to Kanban boards
 - **Visual Organization**: Use board view for status-based organization
@@ -449,6 +497,7 @@ Excel data works seamlessly with Taskade's project views.
 Connect imported Excel data with Taskade automation.
 
 **Trigger Setup:**
+
 - **Status Changes**: Automate actions based on task status updates
 - **Due Date Alerts**: Set up notifications for approaching deadlines
 - **Assignment Rules**: Automatically assign tasks based on rules
@@ -456,6 +505,7 @@ Connect imported Excel data with Taskade automation.
 - **Progress Tracking**: Monitor project progress and send updates
 
 **Workflow Automation:**
+
 - **Data Processing**: Automate data updates from external sources
 - **Report Generation**: Create automated reports from imported data
 - **Notification Systems**: Set up alerts for important changes
@@ -470,27 +520,37 @@ Begin importing Excel files into Taskade projects.
 
 {% stepper %}
 {% step %}
+
 ### Prepare Your Excel File
+
 Clean and organize your spreadsheet data.
 {% endstep %}
 
 {% step %}
+
 ### Access Taskade Import
+
 Click the "+" button and select "Import" option.
 {% endstep %}
 
 {% step %}
+
 ### Choose Import Method
+
 Select "Convert to Taskade" for full project conversion.
 {% endstep %}
 
 {% step %}
+
 ### Upload and Process
+
 Upload your Excel file and wait for processing.
 {% endstep %}
 
 {% step %}
+
 ### Review and Customize
+
 Review the imported project and make adjustments.
 {% endstep %}
 {% endstepper %}
@@ -500,6 +560,7 @@ Review the imported project and make adjustments.
 Comprehensive preparation for complex Excel imports.
 
 **Pre-Import Preparation:**
+
 - [ ] Review Excel file structure and data organization
 - [ ] Clean unnecessary formatting and empty cells
 - [ ] Ensure consistent data types and formats
@@ -507,6 +568,7 @@ Comprehensive preparation for complex Excel imports.
 - [ ] Remove or repair any corrupted data
 
 **Import Configuration:**
+
 - [ ] Choose appropriate import method (Convert vs. Summarize)
 - [ ] Configure column mapping for optimal data conversion
 - [ ] Set up custom fields for specialized data columns
@@ -514,6 +576,7 @@ Comprehensive preparation for complex Excel imports.
 - [ ] Configure automation triggers and rules
 
 **Post-Import Validation:**
+
 - [ ] Verify all data imported correctly and completely
 - [ ] Check task assignments and due dates are accurate
 - [ ] Test any links, references, or formulas
@@ -522,11 +585,11 @@ Comprehensive preparation for complex Excel imports.
 
 ## Related Features
 
-- **[Import CSV](features/import-export/import-csv.md)** - Import comma-separated value files
-- **[AI Project Studio](features/ai-project-studio.md)** - Generate projects with AI assistance
-- **[Custom Fields](features/custom-fields.md)** - Extend project data with custom properties
-- **[Automation](automation/overview.md)** - Automate workflows based on imported data
-- **[Export Options](features/export-options.md)** - Export Taskade projects to various formats
+- [**Import CSV**](../../help-center/_imported/general/import-csv-spreadsheets.md) - Import comma-separated value files
+- [**AI Forms**](../../../features/ai-forms.md) - Generate projects with AI assistance
+- [**Project Views**](../../../features/project-views-mastery.md) - Extend project data with custom properties
+- [**Automation Workflows**](../../../automation/README.md) - Automate workflows based on imported data
+- [**Export Options**](../export/export-as-text.md) - Export Taskade projects to various formats
 
 ---
 
@@ -535,6 +598,7 @@ Comprehensive preparation for complex Excel imports.
 Taskade's XLSX and XLS import functionality transforms static Excel spreadsheets into dynamic, collaborative projects, preserving data integrity while adding powerful project management capabilities. Whether migrating existing workflows, converting analytical data, or enhancing team collaboration, Excel import bridges traditional spreadsheet management with modern project collaboration.
 
 **Key Benefits:**
+
 - **Data Preservation**: Maintains all Excel data, formatting, and structure during conversion
 - **Intelligent Conversion**: AI-powered analysis creates optimal project structures from spreadsheet data
 - **Collaborative Enhancement**: Transforms individual spreadsheets into team-accessible projects
