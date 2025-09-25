@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Chapter 1: Workspaces - The Living Fountain"
+title: "Chapter 1: Workspaces - The Living Foundation"
 parent: "Taskade: The Living DNA Productivity Platform"
 nav_order: 1
 ---
 
-# Chapter 1: Workspaces - The Living Fountain
+# Chapter 1: Workspaces - The Living Foundation
 
 Welcome to your first step in understanding Taskade's living architecture! Imagine you're building a house, but instead of static bricks and mortar, your foundation is alive and growing. That's what a Taskade workspace does—it becomes the living DNA that powers everything you build.
 

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Chapter 2: Projects - Your Data Boxers"
+title: "Chapter 2: Projects - Your Data Containers"
 parent: "Taskade: The Living DNA Productivity Platform"
 nav_order: 2
 ---
 
-# Chapter 2: Projects - Your Data Boxers
+# Chapter 2: Projects - Your Data Containers
 
 Fantastic! You've got your living workspace foundation set up. Now let's talk about **projects**—the flexible containers where your ideas become reality. Think of projects as smart folders that can transform into any shape your work needs.
 
