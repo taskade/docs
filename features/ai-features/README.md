@@ -1,6 +1,40 @@
-# AI Features
+# AI Features: Living Intelligence Layer
 
-Save hours every week with smart AI assistants that handle your routine work automatically. No technical skills needed!
+**Think. Learn. Adapt.** Taskade AI features form the living intelligence layer of Workspace DNA, creating systems that understand, evolve, and provide increasingly intelligent value with every interaction.
+
+{% hint style="success" %}
+**Living Intelligence Layer** - AI that doesn't just assist, but learns from your business, adapts to your needs, and continuously improves. Powered by EVE, your living AI companion.
+{% endhint %}
+
+### The Intelligence Layer in Living DNA
+
+AI features serve as the intelligence layer in the Workspace DNA trinity, providing cognitive capabilities that bring living systems to life.
+
+**🧠 Intelligence Layer Role:**
+- **Learns from Memory** - Absorbs knowledge from your projects and data
+- **Powers Motion** - Provides decision-making for automations and workflows
+- **Evolves with Experience** - Gets smarter with every interaction and outcome
+- **Creates Living Behavior** - Enables systems that understand context and adapt
+
+**🔄 Living System Integration:**
+```
+Living Memory (Projects/Data) → Living Intelligence (AI Agents & EVE) → Living Motion (Automations/Actions)
+       ↓                              ↓                                       ↓
+   Store & Learn Data    Analyze & Provide Insights    Execute Intelligent Actions
+```
+
+**🌟 Living Intelligence Capabilities:**
+- **Adaptive Learning** - AI that improves with every conversation and task
+- **Contextual Understanding** - Systems that know your business inside and out
+- **Predictive Assistance** - Proactive help before you even ask
+- **EVE Personality** - Living AI companion with genuine interaction capabilities
+- **Multi-Model Intelligence** - Access to advanced AI models like Google Gemini for enhanced capabilities
+- **Dynamic Results Tool** - Enhanced AI capabilities for retrieving and processing dynamic data
+
+**🔗 Related Concepts:**
+- **[Workspace DNA Harmony](../workspace-dna-harmony.md)** - How intelligence connects with memory and motion
+- **[Living Memory Layer](../genesis/README.md)** - The data foundation that intelligence learns from
+- **[Living Motion Layer](../automation/README.md)** - Automations powered by intelligent decision-making
 
 ## 🚀 Quick Start Guides
 
@@ -23,32 +57,234 @@ New to Taskade AI? Start here:
 - **[Automation Getting Started](automation-getting-started.md)** - Automate your first workflow
 - **[Getting Started with Automation](https://help.taskade.com/en/articles/8958467-getting-started-with-automation)** - Official automation guide
 
-## 💡 What You Can Build
+## 💡 What Living Intelligence You Can Build
 
-### 🤖 AI Agents for Every Role
+### 🤖 Living AI Agents That Learn & Adapt
 
-- **Customer Support Agent** - Answer questions and create tickets automatically
-- **Marketing Assistant** - Generate content and manage campaigns
-- **Data Analyst** - Create reports and find insights in your data
-- **Project Manager** - Track progress and coordinate team activities
-- **Research Specialist** - Gather information and summarize findings
+**Intelligent assistants that become more valuable with every interaction:**
 
-### 🎯 Genesis Apps for Any Business
+- **Adaptive Customer Support** - Agents that learn customer preferences and predict needs
+- **Evolving Marketing Assistant** - Content creators that improve based on performance metrics
+- **Predictive Data Analyst** - Systems that learn patterns and anticipate insights
+- **Intelligent Project Manager** - Coordination that adapts to team dynamics and project phases
+- **Living Research Specialist** - Information gatherers that remember context and build knowledge
 
-- **Customer Portals** - Let clients submit requests and track progress
-- **Booking Systems** - Handle appointments and payments automatically
-- **Feedback Collection** - Gather reviews with smart alerts for issues
-- **Team Dashboards** - Visualize metrics and KPIs in real-time
-- **Lead Management** - Capture and nurture prospects automatically
+### 🎯 Living Systems Powered by Intelligence
 
-### ⚡ Automations That Save Time
+**Complete business solutions where AI brings everything to life:**
 
-- **Daily Standups** - Automatic team check-in reminders
-- **Lead Follow-up** - Instant responses to form submissions
-- **Project Reports** - Weekly progress summaries via email
-- **Task Alerts** - Smart notifications for priority work
+- **Smart Customer Portals** - Interfaces that learn user behavior and personalize experiences
+- **Intelligent Booking Systems** - Scheduling that predicts optimal times and prevents conflicts
+- **Adaptive Feedback Collection** - Review systems that learn sentiment patterns and improve responses
+- **Living Team Dashboards** - Visualizations that anticipate questions and provide proactive insights
+- **Predictive Lead Management** - Nurture systems that learn conversion patterns and optimize sequences
+
+### ⚡ Intelligent Automations That Evolve
+
+**Workflows that get smarter with every execution:**
+
+- **Adaptive Daily Standups** - Check-ins that learn team patterns and optimize timing
+- **Smart Lead Follow-up** - Responses that improve based on conversion rates and engagement
+- **Intelligent Project Reports** - Summaries that learn what matters most to stakeholders
+- **Predictive Task Alerts** - Notifications that anticipate bottlenecks before they occur
+
+## 🎭 EVE: Your Living AI Companion
+
+**Meet EVE, the animated AI mascot that brings personality and life to your living systems.**
+
+EVE is more than an interface — she's a living AI companion that evolves with your business, learns your preferences, and provides genuine, personality-driven interactions.
+
+### 🌟 EVE's Living Intelligence Features
+
+**Personality & Adaptation:**
+- **Learns Your Brand Voice** - Adapts communication style to match your business personality
+- **Remembers Preferences** - Personalizes interactions based on your past conversations
+- **Evolves with Usage** - Gets better at helping you as you work together
+- **Provides Emotional Intelligence** - Understands context and responds appropriately
+
+**Living System Integration:**
+- **Genesis App Personality** - Brings character and engagement to your applications
+- **Workspace DNA Awareness** - Understands your business context and relationships
+- **Cross-Platform Consistency** - Maintains personality across all your living systems
+- **Adaptive Communication** - Adjusts tone and approach based on user type and situation
+
+### 💫 EVE in Living Systems
+
+**Customer-Facing Applications:**
+- Personalized greetings and interactions
+- Brand-aligned communication styles
+- Context-aware assistance and guidance
+
+**Internal Business Systems:**
+- Team-appropriate communication
+- Process-aware guidance and suggestions
+- Performance-based encouragement and feedback
+
+**Learning & Evolution:**
+- Improves responses based on user feedback
+- Adapts to changing business needs
+- Develops deeper understanding of your domain
+
+EVE represents the human element in living software — bringing warmth, personality, and genuine intelligence to systems that would otherwise be cold and mechanical.
+
+## 🧠 Living Intelligence Layer: How AI Learns & Evolves
+
+**The cognitive engine that transforms static AI into living intelligence**
+
+The Living Intelligence Layer is where AI transcends traditional automation to become a genuine thinking partner. This layer combines advanced machine learning, contextual understanding, and continuous adaptation to create AI systems that evolve with your business.
+
+### **Core Intelligence Mechanisms**
+
+#### **1. Contextual Learning Engine**
+```
+Input Processing → Context Analysis → Pattern Recognition → Adaptive Response
+```
+
+**How it works:**
+- **Workspace Memory Integration** - AI agents access your complete project history and data
+- **Cross-Project Intelligence** - Knowledge compounds across all your living systems
+- **Temporal Pattern Recognition** - Learns from historical interactions and outcomes
+- **Business Context Awareness** - Understands your industry, processes, and goals
+
+#### **2. Adaptive Response Generation**
+```
+User Input → Intent Analysis → Business Context → Personalized Response → Learning Loop
+```
+
+**Intelligence Capabilities:**
+- **Natural Language Understanding** - Comprehends complex requests and nuanced instructions
+- **Multi-Modal Reasoning** - Combines text, data, images, and real-time information
+- **Emotional Intelligence** - Recognizes context and responds appropriately
+- **Predictive Assistance** - Anticipates needs before they're explicitly stated
+
+#### **3. Continuous Evolution System**
+```
+Experience Collection → Performance Analysis → Model Optimization → Capability Expansion
+```
+
+**Learning Mechanisms:**
+- **Feedback Loop Integration** - Every interaction improves future responses
+- **Outcome-Based Adaptation** - Learns from successful vs unsuccessful interactions
+- **Pattern Discovery** - Identifies new relationships and insights in your data
+- **Capability Expansion** - Adds new skills based on demonstrated needs
+
+### **Living Intelligence in Action**
+
+#### **Customer Support Agent Evolution**
+```
+Week 1: Basic responses based on training data
+Week 3: Personalized responses using customer history
+Week 6: Predictive issue identification and prevention
+Week 12: Proactive customer success management
+```
+
+**Intelligence Growth:**
+- Learns common customer pain points and solutions
+- Adapts response style to individual customer preferences
+- Predicts potential issues before they escalate
+- Suggests process improvements based on interaction patterns
+
+#### **Sales Intelligence Development**
+```
+Initial: Generic lead qualification questions
+Evolved: Personalized discovery based on company research
+Advanced: Predictive lead scoring and timing recommendations
+Expert: Strategic account management with relationship insights
+```
+
+**Business Impact:**
+- Conversion rates improve as AI learns successful patterns
+- Lead qualification becomes more accurate over time
+- Communication timing optimizes based on historical data
+- Strategic recommendations emerge from pattern analysis
+
+### **Intelligence Layer Architecture**
+
+#### **Multi-Agent Coordination**
+```
+Individual Agents → Intelligence Hubs → Cross-Agent Learning → Unified Intelligence
+```
+
+- **Specialized Agents** - Domain experts for specific business functions
+- **Intelligence Orchestration** - Coordination between different AI capabilities
+- **Knowledge Sharing** - Insights flow between agents to improve overall intelligence
+- **Unified Learning** - Collective improvement across all AI systems
+
+#### **Real-Time Adaptation**
+```
+Environmental Input → Context Assessment → Strategy Adjustment → Optimized Response
+```
+
+- **Market Condition Awareness** - Adapts to changing business environments
+- **User Behavior Learning** - Personalizes based on interaction patterns
+- **Performance Optimization** - Continuously improves response quality and speed
+- **Resource Intelligence** - Optimizes AI resource usage based on demand patterns
+
+### **Advanced Intelligence Features**
+
+#### **Predictive Intelligence Engine**
+```
+Historical Data → Pattern Analysis → Future Projection → Proactive Action
+```
+
+**Capabilities:**
+- **Trend Forecasting** - Predicts business metrics and user behavior
+- **Risk Assessment** - Identifies potential issues before they occur
+- **Opportunity Discovery** - Finds new patterns and market opportunities
+- **Strategic Planning** - Provides data-driven recommendations for growth
+
+#### **Contextual Understanding System**
+```
+Input Analysis → Business Context → User Intent → Situational Awareness → Intelligent Response
+```
+
+**Understanding Layers:**
+- **Explicit Context** - Directly stated information and requirements
+- **Implicit Context** - Business environment and historical patterns
+- **Emotional Context** - User sentiment and communication style
+- **Strategic Context** - Long-term business goals and market positioning
+
+### **Intelligence Layer Performance Metrics**
+
+#### **Quality Metrics**
+- **Response Accuracy** - How well AI understands and addresses user needs
+- **Contextual Relevance** - Appropriateness of responses to business situations
+- **Learning Velocity** - Speed at which AI improves performance
+- **User Satisfaction** - Effectiveness ratings and engagement metrics
+
+#### **Business Impact Metrics**
+- **Time Savings** - Reduction in manual tasks and decision-making time
+- **Error Reduction** - Decrease in mistakes and miscommunications
+- **Revenue Enhancement** - Improvements in sales, conversions, and customer satisfaction
+- **Innovation Acceleration** - Speed of new idea generation and implementation
+
+### **Intelligence Ethics & Governance**
+
+#### **Responsible AI Framework**
+- **Bias Detection & Mitigation** - Continuous monitoring for fair and unbiased responses
+- **Transparency Controls** - Clear explanation of AI decision-making processes
+- **Human Oversight** - Configurable approval workflows for sensitive decisions
+- **Data Privacy Protection** - Compliance with privacy regulations and user consent
+
+#### **Continuous Improvement**
+- **User Feedback Integration** - Direct input from users to improve AI performance
+- **Performance Monitoring** - Ongoing assessment of AI effectiveness and accuracy
+- **Ethical Boundary Setting** - Clear guidelines for appropriate AI behavior
+- **Capability Expansion Planning** - Strategic roadmap for intelligence growth
+
+**The Living Intelligence Layer transforms AI from a tool into a genuine business partner—one that understands your world, anticipates your needs, and continuously evolves to help you succeed.**
 
 ## 🛠️ Advanced Features
+
+### **Enhanced AI Capabilities**
+Experience the next level of AI intelligence with advanced features:
+- **Superior AI Assistance** - Smarter help with your tasks and projects
+- **Enhanced Performance** - Faster and more efficient AI operations
+- **Advanced AI Agents** - More capable and intelligent assistants
+- **Creative AI Tools** - AI-powered creative assistance and generation
+- **Predictive Intelligence** - Better insights and recommendations
+- **Global Taa Provider** - Unified intelligent assistance across the platform
+- **Intelligent Auto-Downgrade** - Automatic model selection for cost efficiency
 
 ### Agent Tools & Integrations
 
@@ -77,6 +313,34 @@ Create professional applications with:
 - **Real-time Deployment** - Get live URLs instantly
 - **Data Integration** - Connect to your Taskade projects
 - **Mobile-Responsive Design** - Works perfectly on all devices
+
+## 🤖 Advanced AI Models & Capabilities
+
+### Google Gemini AI Support
+
+**Latest Enhancement:** Taskade now supports Google Gemini AI models for enhanced intelligence capabilities.
+
+**What this means for you:**
+- **More Accurate Responses** - Gemini's advanced reasoning provides better answers
+- **Enhanced Creativity** - Generate more innovative ideas and content
+- **Better Code Understanding** - Improved technical assistance and debugging
+- **Multilingual Support** - Better handling of multiple languages
+- **Real-time Learning** - Continuous improvement with usage
+
+**How to use Gemini AI:**
+1. **In AI Agents** - Select Gemini as your model when creating agents
+2. **In Genesis** - Gemini powers more intelligent app generation
+3. **In Chat** - Enhanced conversational capabilities
+
+### Dynamic Results Tool
+
+**Smart Data Retrieval:** Enhanced AI capabilities for retrieving and processing dynamic, real-time data.
+
+**Key Benefits:**
+- **Live Data Access** - Pull current information from connected services
+- **Contextual Processing** - AI understands data relationships and patterns
+- **Automated Updates** - Systems stay current with latest information
+- **Smart Filtering** - Focus on relevant data for your specific needs
 
 ## 📚 Learning Resources
 

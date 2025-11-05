@@ -1,88 +1,115 @@
-# Table of contents
+# Living Software Revolution
 
-- [👋 Welcome to Taskade](README.md)
+- [👋 Your Second Brain, Alive](README.md)
 
-## 🧬 **Taskade AI (Genesis)**
+## 🧬 **Living Memory Layer (Projects & Knowledge)**
 
-*The future of work: One prompt, one app*
+*Your digital brain that remembers, learns, and grows*
 
-### **🚀 Genesis Essentials**
-- [**What is Genesis?**](genesis/README.md) - *Revolutionary AI app builder*
-- [**Your First App in 5 Minutes**](genesis/getting-started.md) - *From idea to working app*
-- [**Examples & Templates**](genesis/examples-and-templates.md) - *Real business applications*
+### **📚 Genesis: Living System Builder**
+- [**Living Systems That Transform Business**](genesis/README.md) - *Complete business solutions that think, learn, and evolve*
+- [**Your First Living System in 5 Minutes**](genesis/getting-started.md) - *From idea to intelligent business system*
+- [**Living System Examples & Templates**](genesis/examples-and-templates.md) - *Complete dashboards, portals, tools, and websites*
 
-### **⚡ Advanced Genesis**
-- [**Space Apps: Professional Web Applications**](genesis/space-apps-guide.md) - *Deploy live web apps instantly*
-- [**Advanced Features**](genesis/advanced-features.md) - *Power user techniques*
-- [**Custom Domains & Branding**](genesis/custom-domains.md) - *Professional deployment*
+### **🏗️ Space Apps: Professional Living Systems**
+- [**Deploy Live Web Applications**](genesis/space-apps-guide.md) - *Living systems with instant deployment*
+- [**Advanced Living Features**](genesis/advanced-features.md) - *Power techniques for complex systems*
+- [**Custom Domains & Branding**](genesis/custom-domains.md) - *Professional living system deployment*
 
-### **🤝 Genesis Community**
-- [**Community Sharing & Forking**](genesis/community-and-sharing.md) - *Learn from others*
-- [**Best Practices**](genesis/best-practices.md) - *Proven strategies*
-- [**FAQ**](genesis/faq.md) - *Common questions answered*
-- [**Troubleshooting**](genesis/troubleshooting.md) - *Problem solving guide*
+### **🤝 Living Systems Community**
+- [**Community Sharing & Evolution**](genesis/community-and-sharing.md) - *Learn from and contribute to living systems*
+- [**Living System Best Practices**](genesis/best-practices.md) - *Proven strategies for evolving systems*
+- [**Living Systems FAQ**](genesis/faq.md) - *Common questions about living software*
+- [**Living System Troubleshooting**](genesis/troubleshooting.md) - *Debugging evolving applications*
 
-### **🎯 Genesis Resources**
-- [**Prompt Library**](features/ai-features/genesis-prompt-library.md) - *Copy-paste magic prompts*
-- [**Build Without Permission Manifesto**](https://www.taskade.com/blog/build-without-permission) - *Why we exist*
+### **🎯 Living System Resources**
+- [**Intelligent Prompt Library**](features/ai-features/genesis-prompt-library.md) - *Prompts for living, evolving systems*
+- [**Build Without Permission Manifesto**](https://www.taskade.com/blog/build-without-permission) - *The living software revolution*
 
-## 📂 **Workspace Foundations**
+## 🧠 **Living Intelligence Layer (AI Agents & EVE)**
 
-*The living DNA that powers your Genesis apps*
+*Your thinking partner that understands and responds*
 
-### **🏢 Core Workspace**
-- [**Workspaces: Enterprise Control**](features/workspaces.md) - *Security, compliance & management*
-- [**Collaboration: Team Productivity**](features/collaboration.md) - *Real-time teamwork made simple*
-- [**Advanced Search & Navigation**](features/advanced-search-navigation.md) - *Master finding and organizing content*
-- [**Knowledge Management**](features/knowledge-management.md) - *Organize everything*
+### **🤖 AI Agents: Living Intelligence**
+- [**Living Intelligence Overview**](features/ai-features/README.md) - *AI that learns, adapts, and evolves with your business*
+- [**EVE: Your Living AI Companion**](features/ai-features/README.md#eve-your-living-ai-companion) - *Animated AI with personality and learning*
+- [**AI Agents Getting Started**](features/ai-features/ai-agents-getting-started.md) - *Create intelligent assistants that evolve*
+- [**AI Tools & Capabilities**](https://help.taskade.com/en/articles/10383275-tools-for-ai-agents) - *Superpowers for your living intelligence*
 
-### **📊 Project Management**
-- [**Project Views Mastery**](features/project-views-mastery.md) - *Lists, boards, calendars & more*
-- [**Mobile & Tablet Optimization**](features/mobile-optimization.md) - *Productivity on the go*
+### **🎯 Intelligent Applications**
+- [**Genesis Prompt Library**](features/ai-features/genesis-prompt-library.md) - *Prompts for building living systems*
+- [**AI-Powered Integrations**](features/ai-features/README.md#what-living-intelligence-you-can-build) - *Intelligent connections that learn*
 
-### **🏭 Industry Solutions**
-- [**Healthcare Solutions**](features/industry-solutions/healthcare-guide.md) - *HIPAA-compliant workflows for medical professionals*
-- [**Legal Practice Management**](features/industry-solutions/legal-guide.md) - *Case management and document analysis*
-- [**Educational Institutions**](features/industry-solutions/education-guide.md) - *K-12, higher education, and corporate training*
-- [**Financial Services**](features/industry-solutions/finance-guide.md) - *Banking, investment, and financial advisory*
-- [**Industry Use Cases: Complete Applications**](features/industry-use-cases.md) - *Healthcare, Finance, Legal & More*
+### **📚 Knowledge & Training**
+- [**Agent Knowledge & Memory**](https://help.taskade.com/en/collections/14491816-agent-knowledge-memory) - *Train AI with your business intelligence*
+- [**Intelligent Onboarding**](https://help.taskade.com/en/articles/8958467-getting-started-with-automation) - *Master living intelligence*
 
-## ⚡ **Automation & AI Agents**
+## ⚡ **Living Motion Layer (Automations & Actions)**
 
-*Put your business processes on autopilot with smart automation*
+*Your execution engine that acts instantly and precisely*
 
-### **🤖 AI-Powered Intelligence**
-- [**AI Features Mega-Guide**](features/ai-features/README.md) - *Complete AI capabilities in one place*
-  - [AI Agents: Your Digital Team](features/ai-features/ai-agents-getting-started.md)
-  - [Automation: Workflows on Autopilot](features/ai-features/automation-getting-started.md)
-  - [Prompt Library: Copy-Paste Magic](features/ai-features/genesis-prompt-library.md)
-- [**AI Forms: Smart Data Collection**](features/ai-forms.md)
+### **🔄 Living Automations**
+- [**Living Motion Overview**](automation/README.md) - *Automations that learn, adapt, and evolve*
+- [**Automation Getting Started**](automation/README.md) - *Build systems that act intelligently*
+- [**Integration Options**](automation/integrations.md) - *Connect living systems to your tools*
+- [**Action & Trigger Reference**](automation/actions.md) - *Complete automation capabilities*
 
-### **🎯 Complete Automation Guide**
-- [**Automation Overview**](automation/README.md) - *Transform your workflows*
-- [**Advanced Patterns**](automation/advanced-patterns.md) - *AI workflow generation and agentic workflows*
-- [**Comprehensive Integration Guide**](integrations/comprehensive-integration-guide.md) - *Connect to 100+ tools with advanced patterns*
-- [**Advanced Actions**](automation/advanced-actions.md) - *Power user workflows*
+### **🎯 Advanced Workflows**
+- [**Automation Recipes**](automation/recipes.md) - *Proven living automation patterns*
+- [**Advanced Actions**](automation/advanced-actions.md) - *Sophisticated automation capabilities*
+- [**Comprehensive Integrations**](automation/comprehensive-integrations.md) - *100+ tools working together*
 
-### **📚 Extended Resources**
-- [**Complete Integration Reference**](automation/comprehensive-integrations.md) - *Deep integration guides*
+## 🏗️ **Core Workspace Architecture**
 
-### **🧰 AI Kits: Ready-to-Use**
-- [**TaskOS: The AI Engine**](taskos/introduction.md)
-- [**Project Views**](taskos/project-views.md)
+*Enterprise-grade foundation for living systems*
 
-## 🛠 **Developer & API Reference**
+### **🏢 Workspace DNA Management**
+- [**Workspaces: Living DNA Control**](features/workspaces.md) - *Security, compliance & enterprise management*
+- [**Collaboration: Team Intelligence**](features/collaboration.md) - *Real-time teamwork within living systems*
+- [**Advanced Search & Discovery**](features/advanced-search-navigation.md) - *Intelligent content navigation*
+- [**Knowledge Organization**](features/knowledge-management.md) - *Structure your living memory*
 
-*Build custom integrations and applications*
+### **📊 Living Data Management**
+- [**Project Views Mastery**](taskos/project-views.md) - *8 dynamic views for living data*
+- [**Mobile Living Experience**](features/mobile-optimization.md) - *Living systems everywhere*
 
-### **💻 Developer Hub**
-- [**Developer Overview**](developers/README.md)
-- [**Authentication**](start/authentication.md)
-- [**Personal Tokens**](start/personal-tokens.md)
+### **🏭 Industry Living Systems**
+- [**Healthcare Intelligence**](features/industry-solutions/healthcare-guide.md) - *Living systems for medical workflows*
+- [**Legal Intelligence**](features/industry-solutions/legal-guide.md) - *Evolving case management systems*
+- [**Education Intelligence**](features/industry-solutions/education-guide.md) - *Adaptive learning platforms*
+- [**Financial Intelligence**](features/industry-solutions/finance-guide.md) - *Living financial systems*
+- [**Industry Solutions Hub**](features/industry-use-cases.md) - *Complete living applications by industry*
 
-### **🔧 Complete API Documentation**
-- [**Comprehensive API Guide**](api/comprehensive-api-guide.md) - *Complete REST API with examples and SDKs*
-- [**API Overview**](api/README.md)
+## 🧰 **Living System Components**
+
+*Advanced tools for building sophisticated living systems*
+
+### **📊 TaskOS: Living Data Engine**
+- [**TaskOS Introduction**](taskos/introduction.md) - *The intelligence behind living memory*
+- [**Project Views Mastery**](taskos/project-views.md) - *8 dynamic views for living data*
+
+### **🎨 Advanced Living Features**
+- [**AI Forms: Intelligent Data Collection**](features/ai-forms.md) - *Smart forms that learn and adapt*
+- [**Advanced Search & Navigation**](features/advanced-search-navigation.md) - *Intelligent content discovery*
+- [**Knowledge Management**](features/knowledge-management.md) - *Living knowledge organization*
+
+### **🔗 Integration Ecosystem**
+- [**Integration Overview**](integrations/comprehensive-integration-guide.md) - *Connect living systems to 100+ tools*
+- [**Advanced Integration Patterns**](automation/comprehensive-integrations.md) - *Sophisticated living system connections*
+
+## 🛠 **Living Intelligence APIs & Development**
+
+*Build custom living systems and intelligent integrations*
+
+### **💻 Living System Development**
+- [**Developer Overview**](developers/README.md) - *Build living systems with intelligence*
+- [**Authentication**](start/authentication.md) - *Secure access to living APIs*
+- [**Personal Tokens**](start/personal-tokens.md) - *API access for living system development*
+
+### **🔧 Living Intelligence APIs**
+- [**Living Intelligence API Overview**](api/README.md) - *The intelligence layer of Workspace DNA*
+- [**Comprehensive API Guide**](api/comprehensive-api-guide.md) - *Complete REST API for living systems*
+- [**API Examples: Living Intelligence**](api/README.md#living-intelligence-examples) - *Real living system integration patterns*
 
 #### **Core Resources**
 - [**Workspaces**](api/workspaces/README.md)
@@ -168,7 +195,7 @@
   - [Chapter 6: Integrations - Connecting Your Tools](Taskade-Tutorial/06_integrations.md)
   - [Chapter 7: API - Developer Interfaces](Taskade-Tutorial/07_api.md)
   - [Chapter 8: Mobile & Desktop - Cross-Platform Productivity](Taskade-Tutorial/08_mobile_desktop.md)
-- [**Advanced Power User Series**](tutorials/advanced-power-user-series.md) - *6-level comprehensive mastery program*
+- [**Advanced Power User Series**](Taskade-Tutorial/index.md) - *6-level comprehensive mastery program*
 
 ### **🔧 Technical Resources**
 - [**Comprehensive Troubleshooting Guide**](troubleshooting/comprehensive-troubleshooting-guide.md) - *Resolve any issue quickly*

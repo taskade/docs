@@ -196,7 +196,7 @@ The combination of backgrounds, themes, icons, and view preferences enables you 
 
 ## Related Features
 
-- [Workspace Management](../workspaces/workspace-management.md) - Organize projects at the workspace level
+- [Workspace Management](../../features/workspaces.md) - Organize projects at the workspace level
 - [Project Templates](../templates/project-templates.md) - Create reusable project structures
 - [Project Views](../features/project-views/project-views-overview.md) - Different ways to visualize your projects
 

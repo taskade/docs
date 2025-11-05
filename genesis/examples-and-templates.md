@@ -22,32 +22,33 @@ Taskade features hundreds of project frameworks you can use to kickstart all kin
 - 🎨 **Creative** - Content planning, design workflows
 - 🔬 **Research** - Data collection, analysis frameworks
 
-**Genesis Integration**: Every template can be enhanced with Genesis AI to add:
-- **Smart Automation** - Automatic task creation and updates
-- **AI Agents** - Specialized assistants for each template type
-- **Dynamic Forms** - Data collection that adapts to your needs
-- **Real-Time Analytics** - Progress tracking and insights
+**Living System Integration**: Every template becomes a living system with Workspace DNA to add:
+- **Living Intelligence** - AI agents that learn from your business and evolve over time
+- **Adaptive Automation** - Workflows that optimize themselves with every execution
+- **Evolving Data Structures** - Projects that learn your patterns and adapt automatically
+- **Predictive Analytics** - Systems that anticipate needs and prevent problems
+- **Cross-System Learning** - Intelligence that compounds across all your living systems
 
 ### **📊 App Categories & Business Impact**
 
-| Category | Most Popular App | Business Problem Solved | Success Metrics | Build Time |
-|----------|------------------|-------------------------|-----------------|------------|
-| **Customer Experience** | Restaurant Feedback System | "Never know when customers are unhappy" | 95% faster issue response, 25% rating improvement | 3 min |
-| **Sales & Marketing** | Lead Qualification Engine | "Sales team wastes time on unqualified leads" | 60% faster response, 40% higher conversion | 5 min |
-| **Operations** | Inventory Tracker | "Always running out of popular items" | Zero stockouts, 20% cost reduction | 4 min |
-| **Team Productivity** | Project Dashboard | "No visibility into team progress" | 70% fewer status meetings, 50% faster delivery | 6 min |
-| **Customer Service** | Support Ticket Portal | "Customer issues get lost in email" | 80% faster resolution, 95% customer satisfaction | 4 min |
-| **Content & Creative** | Content Calendar | "Social media posting is inconsistent" | 300% more consistent posting, 45% better engagement | 7 min |
+| Category | Most Popular Living System | Business Problem Solved | Success Metrics | Build Time |
+|----------|---------------------------|-------------------------|-----------------|------------|
+| **Customer Experience** | Adaptive Feedback Portal | "Never know when customers are unhappy" | 95% faster issue response, 25% rating improvement, learns sentiment patterns | 3 min |
+| **Sales & Marketing** | Intelligent Lead Engine | "Sales team wastes time on unqualified leads" | 60% faster response, 40% higher conversion, predicts lead quality | 5 min |
+| **Operations** | Predictive Inventory System | "Always running out of popular items" | Zero stockouts, 20% cost reduction, forecasts demand patterns | 4 min |
+| **Team Productivity** | Living Project Intelligence | "No visibility into team progress" | 70% fewer status meetings, 50% faster delivery, optimizes workflows | 6 min |
+| **Customer Service** | Evolving Support Ecosystem | "Customer issues get lost in email" | 80% faster resolution, 95% satisfaction, learns from every interaction | 4 min |
+| **Content & Creative** | Adaptive Content Engine | "Social media posting is inconsistent" | 300% more consistent posting, 45% better engagement, optimizes content strategy | 7 min |
 
 ### **🏆 Most Forked Templates (Community Favorites)**
 
-| Template | Industry | Success Rate | User Rating | Fork Count | Why It Works |
-|----------|----------|--------------|-------------|------------|--------------|
-| **Customer Feedback Hub** | Restaurants, Retail | 95% implementation success | ⭐⭐⭐⭐⭐ (4.9/5) | 2,847 | Immediate alerts for problems, easy for customers |
-| **Appointment Booking** | Healthcare, Services | 92% no-show reduction | ⭐⭐⭐⭐⭐ (4.8/5) | 1,923 | Automated reminders, calendar integration |
-| **Lead Management** | Sales, Consulting | 60% faster response | ⭐⭐⭐⭐⭐ (4.7/5) | 1,654 | Smart scoring, automatic routing |
-| **Inventory Tracker** | E-commerce, Retail | Zero stockout rate | ⭐⭐⭐⭐⭐ (4.8/5) | 1,432 | Predictive alerts, supplier integration |
-| **Event Registration** | Events, Education | 90% admin time savings | ⭐⭐⭐⭐⭐ (4.6/5) | 1,287 | Payment integration, automated communications |
+| Living System Template | Industry | Success Rate | User Rating | Fork Count | Living Intelligence Factor |
+|--------------------------|----------|--------------|-------------|------------|--------------------------|
+| **Adaptive Customer Portal** | Restaurants, Retail | 95% implementation success | ⭐⭐⭐⭐⭐ (4.9/5) | 2,847 | Learns sentiment patterns, predicts issues, evolves responses |
+| **Intelligent Booking System** | Healthcare, Services | 92% no-show reduction | ⭐⭐⭐⭐⭐ (4.8/5) | 1,923 | Adapts scheduling based on patterns, predicts no-shows |
+| **Evolving Lead Intelligence** | Sales, Consulting | 60% faster response | ⭐⭐⭐⭐⭐ (4.7/5) | 1,654 | Learns qualification patterns, optimizes scoring over time |
+| **Predictive Inventory Network** | E-commerce, Retail | Zero stockout rate | ⭐⭐⭐⭐⭐ (4.8/5) | 1,432 | Forecasts demand, learns seasonal patterns, prevents shortages |
+| **Living Event Ecosystem** | Events, Education | 90% admin time savings | ⭐⭐⭐⭐⭐ (4.6/5) | 1,287 | Adapts communications, learns attendee preferences, optimizes engagement |
 
 ### **How to Use These Examples**
 1. **Try the live demo** - Click "Preview" to interact with the actual app

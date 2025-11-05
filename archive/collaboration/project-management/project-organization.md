@@ -362,7 +362,7 @@ The ability to efficiently copy project structures while preserving all content 
 ## Related Features
 
 - [Project Lifecycle Management](project-lifecycle-management.md)
-- [Workspace Management](workspaces/workspace-management.md)
+- [Workspace Management](../../features/workspaces.md)
 - [Template Creation](templates/create-and-use-templates.md)
 - [Bulk Operations](features/bulk-operations.md)
 

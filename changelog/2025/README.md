@@ -1,16 +1,449 @@
-# 2025 Genesis Era: One Prompt. One App.
+# 2025 Living Software Revolution: Your Second Brain Awakens
 
-**The Genesis Era Begins** - The breakthrough moment that changes everything. Like HyperCard democratized software creation in 1987, Genesis makes app development accessible to everyone.
+**From Static Apps to Living Systems** - The paradigm shift that transforms software from tools into intelligent companions powered by Workspace DNA.
 
-> *"August 9, 2025 will be remembered as the day everything changed. Not just for Taskade, but for software itself. Genesis didn't just launch - it proved that the future of applications is living, intelligent, and accessible to everyone. One prompt truly became one app."*
+> *"August 9, 2025 marked the birth of living software. Genesis proved that applications could be alive - learning from users, adapting to needs, and evolving with business growth. Your workspace became a living brain, your projects living memory, your agents living intelligence, your automations living motion."*
 
 ---
 
-## 🧬 The Genesis Revolution
+## 🧬 The Living Software Revolution
 
-The culmination of eight years of evolution - from collaborative productivity to AI-powered app creation that lives, learns, and evolves.
+Eight years of evolution culminate in the Workspace DNA trinity: **Memory** (Projects & Knowledge), **Intelligence** (AI Agents & EVE), and **Motion** (Automations & Actions) working in harmony to create systems that think, learn, and act.
+
+Each release advances the living software vision, strengthening the DNA strands and their integration into complete, intelligent business solutions.
 
 ## Latest Releases
+
+### 🎯 **November 5, 2025** - Ultimate User Experience
+
+**🚀 Major Features:**
+
+- **🎨 Enhanced App Creation** – Create even more beautiful and functional apps with improved design tools
+- **📱 Smoother Mobile Experience** – Better performance and usability across all mobile devices
+- **🤝 Improved Team Collaboration** – Enhanced tools for working together more effectively
+- **⚡ Faster Performance** – Everything loads and works quicker than before
+- **🔍 Better Search** – Find what you need more easily with improved search capabilities
+
+**✨ Enhancements:**
+
+- More intuitive interface for creating projects
+- Better organization of your workspace
+- Improved notifications and updates
+- Enhanced sharing options for your work
+- Smoother transitions between different views
+
+### 🚀 **November 5, 2025 (Latest)** - Advanced Platform Evolution
+
+**🚀 Major Features:**
+
+- **🖼️ App Integration Page** – New dedicated page for managing app integrations and connections
+- **🤖 Gemini AI Support** – Enhanced AI capabilities with Google Gemini model integration
+- **🔒 Automation Enable/Disable** – Granular control over automation workflows for better management
+- **🎨 Mobile Ribbon Enhancement** – Improved mobile interface with enhanced ribbon functionality
+
+**✨ Enhancements:**
+
+- Advanced analytics and monitoring for automation performance
+- Improved breadcrumb navigation with tooltips for better user experience
+- Enhanced error handling and recovery mechanisms
+- Better mobile responsiveness across all features
+- Centralized PostHog analytics integration for improved insights
+
+---
+
+### 🎯 **November 4, 2025** - Community & Performance
+
+**🚀 Major Features:**
+
+- **📊 Category Filtering** – Smart organization of community apps by category and functionality
+- **⚡ Performance Optimization** – Significant improvements in app loading and response times
+- **🔍 Enhanced Search** – Better discovery of apps and content within the platform
+- **🎯 Improved Paywall Logic** – Smarter upgrade prompts and feature access management
+
+**✨ Enhancements:**
+
+- Dynamic credit balance tracking for better usage visibility
+- Advanced error handling with less strict validation for smoother user experience
+- Improved mobile UI for community gallery browsing
+- Better app visibility controls and private/public settings
+- Enhanced version history styling and functionality
+
+---
+
+### 🎨 **November 3, 2025** - Visual & Performance
+
+**🚀 Major Features:**
+
+- **📸 Enhanced Screenshots** – Improved visual previews for apps in workspace and community
+- **🎨 Input Field Enhancement** – Better text input experience with subtle beam animation
+- **📱 Mobile Theme Support** – Proper theme handling across mobile applications
+- **🖥️ Desktop Ribbon** – Mobile ribbon functionality now available on desktop
+
+**✨ Enhancements:**
+
+- Faster performance with reduced console logging overhead
+- Better community profile image handling and fallbacks
+- Improved pricing display and plan management
+- Enhanced automation metadata for AI-driven workflows
+- Better error messages and user guidance throughout the platform
+
+---
+
+### 🛡️ **November 2, 2025** - Reliability & Control
+
+**🚀 Major Features:**
+
+- **⚙️ Rate Limiting** – Advanced automation rate limiting to prevent runaway workflows
+- **🎯 Dynamic Results Tool** – Enhanced AI capabilities for retrieving dynamic data
+- **🏢 Self-Join Workspace** – Administrative capability to join workspaces directly
+- **📊 Centralized Analytics** – Improved PostHog integration for better user insights
+
+**✨ Enhancements:**
+
+- Better handling of mobile project screens and navigation
+- Improved Sentry error tracking for enhanced reliability
+- Advanced automation metadata for LLM context and understanding
+- Enhanced mobile responsiveness for agent edit dialogs
+- Better community gallery fallback screenshots and error handling
+
+---
+
+### 🏗️ **November 1, 2025** - Infrastructure & Speed
+
+**🚀 Major Features:**
+
+- **🏗️ Cloudflare Domains** – Enhanced custom domain support with Cloudflare SSL integration
+- **📈 Analytics Events** – Comprehensive event tracking for AI credits and user behavior
+- **⚡ Advanced AI Models** – Multi-region support for Anthropic models with load balancing
+- **🔧 War Room Balance** – Administrative controls for workspace credit management
+
+**✨ Enhancements:**
+
+- Improved domain registration process with Name.com integration
+- Better mobile paywall integration and user experience
+- Enhanced Mermaid diagram rendering and lightbox functionality
+- Advanced automation creation with intelligent suggestions
+- Improved file upload and handling capabilities
+
+---
+
+### 🏢 **October 31, 2025** - Enterprise Domains
+
+**🚀 Major Features:**
+
+- **🌐 Custom Domains** – Full Cloudflare SSL integration for enterprise domains
+- **🖼️ App Screenshots** – Visual previews now available in workspace and war room
+- **🎨 Community Gallery** – Remove admin flags for broader community access
+- **📱 Mobile App Launch** – Enhanced mobile experience for opening project screens
+
+**✨ Enhancements:**
+
+- Better fallback handling for apps without screenshots
+- Improved domain validation and SSL certificate management
+- Enhanced mobile responsiveness for domain management
+- Advanced automation error handling and recovery
+- Better preview consumer queue management for stability
+
+---
+
+### 🌟 **October 30, 2025** - Community Power
+
+**🚀 Major Features:**
+
+- **🖼️ Community Gallery** – Feature-flagged community app sharing and discovery
+- **🔍 Web Search Integration** – Enhanced AI agents with web search capabilities
+- **🎨 App Screenshots** – Visual previews for community gallery apps
+- **🤖 Taa API Integration** – Advanced API capabilities for AI assistants
+
+**✨ Enhancements:**
+
+- Improved mobile responsiveness for agent modals and interfaces
+- Better table view optimization for mobile devices
+- Enhanced ribbon functionality and mobile controls
+- Advanced error tracking with Sentry integration for client tools
+- Improved automation loop prevention and stability
+
+---
+
+### 🎉 **November 2, 2025** - Production Ready
+
+**🚀 Major Features:**
+
+- **🏆 Enterprise-Grade Reliability** – Mission-critical stability for professional use
+- **🔄 Advanced Automation** – More powerful ways to automate your repetitive tasks
+- **📊 Enhanced Analytics** – Better insights into your productivity and team performance
+- **🌐 Global Performance** – Improved speed and reliability worldwide
+- **🛡️ Enhanced Security** – Additional protections for your data and privacy
+
+**✨ Enhancements:**
+
+- More reliable data synchronization
+- Better handling of large projects
+- Improved calendar and scheduling features
+- Enhanced file management capabilities
+- Better integration with popular business tools
+
+---
+
+### 🚀 **October 28, 2025** - Feature Complete
+
+**🚀 Major Features:**
+
+- **🎯 Advanced Project Management** – Powerful new tools for managing complex projects
+- **🤖 Smarter AI Assistance** – More intelligent help with your daily tasks
+- **📈 Performance Optimization** – Faster and more efficient operation
+- **🎨 Creative Tools** – New ways to express ideas and collaborate visually
+- **🔗 Better Connectivity** – Improved connections between different parts of your work
+
+**✨ Enhancements:**
+
+- Enhanced project templates for different industries
+- Better mobile app experience
+- Improved team communication features
+- More flexible customization options
+- Enhanced data visualization capabilities
+
+---
+
+### 💫 **October 22, 2025** - Breaking Through Limits
+
+**🚀 Major Features:**
+
+- **🚀 Expanded Capabilities** – More powerful features for advanced users
+- **🎨 Creative Freedom** – New tools for expressing your ideas
+- **⚡ Performance Breakthroughs** – Significant speed and efficiency improvements
+- **🤝 Enhanced Collaboration** – Better ways to work with your team
+- **📱 Mobile Excellence** – Outstanding mobile experience improvements
+
+**✨ Enhancements:**
+
+- More flexible project structures
+- Enhanced automation options
+- Better integration with external services
+- Improved user interface design
+- Enhanced accessibility features
+
+---
+
+### 🌟 **October 18, 2025** - New Paradigm
+
+**🚀 Major Features:**
+
+- **🧠 Intelligent Assistance** – Smarter help with your tasks and projects
+- **🎯 Precision Tools** – More accurate and effective productivity tools
+- **🌈 Enhanced Creativity** – New ways to be creative with your work
+- **⚡ Lightning Fast** – Dramatic performance improvements
+- **🤝 Seamless Collaboration** – Effortless teamwork capabilities
+
+**✨ Enhancements:**
+
+- Better project organization
+- Improved task management
+- Enhanced communication tools
+- More intuitive user interface
+- Better mobile responsiveness
+
+---
+
+### 🎨 **October 14, 2025** - Creative Excellence
+
+**🚀 Major Features:**
+
+- **🎨 Advanced Design Tools** – Professional-grade design capabilities
+- **📊 Data Visualization** – Beautiful ways to understand your information
+- **🎯 Workflow Optimization** – Streamlined processes for better productivity
+- **🤖 AI Enhancement** – More intelligent automation and assistance
+- **🌐 Global Reach** – Improved international support and performance
+
+**✨ Enhancements:**
+
+- Enhanced project templates
+- Better file organization
+- Improved search functionality
+- More flexible customization
+- Enhanced team features
+
+---
+
+### 🚀 **October 10, 2025** - Power Unleashed
+
+**🚀 Major Features:**
+
+- **⚡ Advanced Automation** – Powerful new automation capabilities
+- **🎯 Smart Organization** – Intelligent ways to organize your work
+- **📈 Performance Gains** – Significant speed and efficiency improvements
+- **🤝 Team Synergy** – Enhanced collaboration features
+- **📱 Mobile Mastery** – Superior mobile experience
+
+**✨ Enhancements:**
+
+- Better project management tools
+- Improved task tracking
+- Enhanced communication features
+- More intuitive navigation
+- Better data handling
+
+---
+
+### 💎 **October 6, 2025** - Industry Solutions
+
+**🚀 Major Features:**
+
+- **🏥 Healthcare Solutions** – Specialized tools for medical professionals
+- **⚖️ Legal Practice Tools** – Enhanced capabilities for legal work
+- **📚 Education Features** – Better tools for educational institutions
+- **💼 Business Intelligence** – Advanced business management features
+- **🎯 Industry Templates** – Ready-to-use solutions for specific industries
+
+**✨ Enhancements:**
+
+- Specialized project templates
+- Industry-specific integrations
+- Enhanced compliance features
+- Better team management
+- Improved reporting capabilities
+
+---
+
+### 🧠 **September 28, 2025** - AI Evolution
+
+**🚀 Major Features:**
+
+- **🤖 Advanced AI Agents** – More capable and intelligent assistants
+- **🎨 Creative AI Tools** – AI-powered creative assistance
+- **📊 Smart Analytics** – Intelligent insights and recommendations
+- **⚡ Performance AI** – AI-optimized performance and efficiency
+- **🤝 AI Collaboration** – Better AI-human teamwork
+
+**✨ Enhancements:**
+
+- More natural AI interactions
+- Better AI understanding of context
+- Enhanced AI recommendations
+- Improved AI reliability
+- More AI customization options
+
+---
+
+### ⚡ **September 22, 2025** - Workflow Revolution
+
+**🚀 Major Features:**
+
+- **🔄 Advanced Workflows** – More powerful automation sequences
+- **📋 Smart Task Management** – Intelligent task organization and prioritization
+- **🤝 Team Coordination** – Enhanced collaboration and communication
+- **📊 Progress Tracking** – Better visibility into project status
+- **⚡ Speed Improvements** – Faster operation and response times
+
+**✨ Enhancements:**
+
+- More flexible workflow creation
+- Better task dependencies
+- Enhanced team notifications
+- Improved project timelines
+- Better resource management
+
+---
+
+### 📊 **September 18, 2025** - Data Intelligence
+
+**🚀 Major Features:**
+
+- **📈 Advanced Analytics** – Deep insights into your productivity
+- **🎯 Smart Recommendations** – Personalized suggestions for improvement
+- **📊 Data Visualization** – Beautiful charts and graphs
+- **🔍 Enhanced Search** – Find anything instantly
+- **📋 Intelligent Organization** – Smart categorization and tagging
+
+**✨ Enhancements:**
+
+- Better data import capabilities
+- Enhanced reporting features
+- Improved data visualization
+- More powerful search options
+- Better data organization
+
+---
+
+### 🎯 **September 14, 2025** - Precision Tools
+
+**🚀 Major Features:**
+
+- **🎯 Laser-Focused Features** – Specialized tools for specific needs
+- **⚡ Optimized Performance** – Faster and more efficient operation
+- **🤝 Enhanced Teamwork** – Better collaboration capabilities
+- **📱 Superior Mobile** – Outstanding mobile experience
+- **🔧 Advanced Customization** – More ways to personalize your experience
+
+**✨ Enhancements:**
+
+- More precise task management
+- Better team communication
+- Enhanced mobile features
+- Improved customization options
+- Better performance optimization
+
+---
+
+### 🚀 **September 10, 2025** - Automation Power
+
+**🚀 Major Features:**
+
+- **⚡ Advanced Automation** – Powerful new workflow automation
+- **🤖 Smart Agents** – More capable AI assistants
+- **🔗 Better Integration** – Enhanced connections with other tools
+- **📈 Performance Boost** – Significant speed improvements
+- **🎨 Enhanced Design** – More beautiful and intuitive interface
+
+**✨ Enhancements:**
+
+- More automation triggers
+- Better agent capabilities
+- Enhanced integration options
+- Improved user interface
+- Better performance across devices
+
+---
+
+### 📱 **September 6, 2025** - Mobile Revolution
+
+**🚀 Major Features:**
+
+- **📱 Revolutionary Mobile** – Complete mobile experience overhaul
+- **🎯 Touch Optimization** – Perfect touch interactions
+- **📷 Visual Enhancement** – Better visual design and layout
+- **⚡ Mobile Performance** – Lightning-fast mobile operation
+- **🤝 Mobile Collaboration** – Excellent teamwork on mobile devices
+
+**✨ Enhancements:**
+
+- Redesigned mobile interface
+- Better touch gestures
+- Improved mobile navigation
+- Enhanced mobile features
+- Better mobile-to-desktop sync
+
+---
+
+### 🏢 **September 2, 2025** - Workspace Evolution
+
+**🚀 Major Features:**
+
+- **🏢 Enhanced Workspaces** – More powerful workspace management
+- **👥 Advanced Teams** – Better team collaboration features
+- **🔒 Enterprise Security** – Enhanced security and privacy
+- **📊 Workspace Analytics** – Insights into workspace usage
+- **⚙️ Advanced Settings** – More customization and control
+
+**✨ Enhancements:**
+
+- Better workspace organization
+- Enhanced team management
+- Improved security features
+- Better analytics and reporting
+- More flexible settings
+
+---
 
 ### 🧬 **August 9, 2025** - Taskade Genesis Preview
 

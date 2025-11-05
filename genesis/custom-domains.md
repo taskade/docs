@@ -128,6 +128,46 @@ TTL: 3600 (or your registrar's default)
 
 ---
 
+## 🛡️ Enhanced Cloudflare SSL Integration
+
+**Latest Enhancement:** Advanced custom domain support with seamless Cloudflare SSL integration for maximum security and performance.
+
+### Cloudflare SSL Benefits:
+
+**Automatic SSL Certificate Management:**
+- **One-Click SSL Setup** - SSL certificates provisioned automatically through Cloudflare
+- **Always-On Encryption** - HTTPS enabled by default for all custom domains
+- **Certificate Renewal** - Automatic renewal prevents expired certificate issues
+- **Security Headers** - Enhanced security headers applied automatically
+
+**Performance Optimizations:**
+- **Global CDN** - Content delivered through Cloudflare's worldwide network
+- **Edge Computing** - Faster response times with edge-based processing
+- **DDoS Protection** - Built-in protection against malicious traffic
+- **Caching Optimization** - Intelligent caching for improved load times
+
+**Advanced Features:**
+- **Custom SSL Certificates** - Support for your own SSL certificates if needed
+- **Flexible DNS Configuration** - Full control over DNS settings
+- **Analytics Integration** - Cloudflare analytics integrated with Taskade insights
+- **Rate Limiting** - Advanced protection against abuse
+
+### How Cloudflare SSL Works:
+
+1. **Domain Connection** - Connect your Cloudflare-managed domain to Taskade
+2. **Automatic SSL** - Cloudflare provisions and manages SSL certificates
+3. **DNS Propagation** - Cloudflare handles DNS routing and optimization
+4. **Live Deployment** - Your Genesis app is live with enterprise-grade security
+
+### Setup with Cloudflare:
+
+1. **Ensure Domain is on Cloudflare** - Your domain must be managed by Cloudflare
+2. **Add CNAME Record** - Point your subdomain to `custom-domains.taskade.com`
+3. **Enable SSL/TLS** - Cloudflare handles SSL certificate provisioning
+4. **Taskade Integration** - Connect domain in Taskade Custom Domains settings
+
+**Result:** Enterprise-grade security, global performance, and seamless SSL management for your Genesis apps!
+
 ## 🛠 Advanced Domain Configuration
 
 ### Multiple Subdomains
