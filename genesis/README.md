@@ -403,6 +403,111 @@ Generate complete React web applications deployed to live URLs with real-time da
 
 ---
 
+## 🚀 Publishing Your Living Apps
+
+**From Private Workspace to Global Community - Share Your Living Systems**
+
+Genesis apps aren't just for your workspace anymore. Publish them instantly and share your creations with the world, powered by your workspace's living DNA.
+
+### 📤 **Instant Publishing System**
+
+Every app you create gets a **Publish** button that takes it live immediately:
+
+- **🔒 Private (Workspace Only)** - Internal dashboards and team tools, visible only to workspace members
+- **🔐 Secret (Unlisted)** - Share securely by link for client projects and confidential work
+- **🌐 Public** - Make apps visible to everyone for customer portals, business tools, and community showcases
+
+### ⚙️ **Auto Publishing vs Manual Control**
+
+**Auto Publishing** (Default):
+- Changes sync instantly to your live app
+- Perfect for evolving applications that learn and adapt
+- Real-time updates as your workspace DNA evolves
+
+**Manual Mode**:
+- Full control over when updates go live
+- Perfect for production apps and client deliverables
+- Publish only when you're ready
+
+### 🔒 **Password Protection & Security**
+
+Add enterprise-grade security to your published apps:
+
+- **Password-Protected Apps** - Secure client projects and confidential dashboards
+- **Site-Wide Access Control** - Single password protects entire applications
+- **Perfect for:** Client portals, internal tools, sensitive business applications
+
+### 🧠 **Workspace DNA Integration**
+
+Every published app stays connected to your workspace:
+
+- **Living Memory** - Projects store data and evolve with usage
+- **Intelligent Agents** - Chat assistants trained on your business knowledge
+- **Motion Automations** - Workflows that respond to app interactions
+- **Real-Time Sync** - Changes in your workspace reflect instantly in published apps
+
+### 🌐 **Custom Domains & Branding**
+
+**Professional Deployment:**
+- Connect custom domains for branded URLs
+- SSL certificates included with Cloudflare integration
+- White-label your applications for enterprise use
+
+### 🔗 **Community Sharing & Cloning**
+
+**Publish to Community Gallery:**
+- Share your apps globally for others to discover and clone
+- Each clone inherits your workspace DNA structure
+- Build reputation as a Genesis creator
+
+**One-Click Cloning:**
+- Explore community apps and clone complete systems
+- Inherit full Workspace DNA (Projects + Agents + Automations)
+- Customize and make cloned apps your own
+
+### 📱 **Cross-Platform Publishing**
+
+Your apps work everywhere:
+- **Desktop Browsers** - Full-featured experience
+- **Mobile Browsers** - Touch-optimized interfaces
+- **Embedded Anywhere** - iframe support for websites
+- **API Integration** - Connect to external systems
+
+### 📊 **Publishing Best Practices**
+
+**For Internal Use:**
+- Use Private mode for team dashboards and workflows
+- Enable Auto Publishing for constantly evolving tools
+- Password protect sensitive internal applications
+
+**For Client Delivery:**
+- Use Secret mode for secure client access
+- Manual publishing for controlled deployments
+- Custom domains for professional presentation
+
+**For Public Apps:**
+- Public mode for customer portals and business tools
+- Community publishing for template sharing
+- Performance monitoring and optimization
+
+**For Prototyping:**
+- Private mode during development
+- Auto publishing for rapid iteration
+- Secret mode for stakeholder previews
+
+### 🎯 **Publishing Workflow**
+
+1. **Build Your App** - Use Genesis to create from a prompt
+2. **Test Internally** - Preview in your workspace
+3. **Configure Publishing** - Choose privacy level and settings
+4. **Add Security** - Password protect if needed
+5. **Publish Live** - Share URL instantly
+6. **Monitor & Iterate** - Track usage, gather feedback, evolve
+
+**Your workspace becomes the ultimate app factory - build once, publish everywhere, evolve continuously.**
+
+---
+
 ## 🌟 Community Gallery: The Social App Ecosystem
 
 **Discover. Share. Fork. Build Together.**
@@ -420,6 +525,9 @@ A vibrant marketplace of living applications where:
 
 ### **🚀 Community Gallery Features**
 
+- **📤 Publish to Community** - Share your apps globally for others to discover and clone
+- **🔄 One-Click Cloning** - Copy complete apps with full Workspace DNA intact
+- **🧠 Workspace DNA Inheritance** - Cloned apps include Projects, Agents, and Automations
 - **📱 Mobile-Optimized Browsing** - Smooth gallery experience across all devices
 - **🏷️ Smart Categorization** - Apps organized by industry, features, and complexity
 - **⭐ Quality Assurance** - Community-curated apps with verified functionality
@@ -443,7 +551,45 @@ Every app in the Community Gallery comes with visual previews:
 
 *"The Community Gallery turned Genesis from 'build your own app' to 'discover amazing apps and make them better'. It's like GitHub for business applications."*
 
+### **🔗 Community Publishing Workflow**
+
+**Share Your Creations with the World:**
+
+1. **Build & Test** - Create your app using Genesis prompts
+2. **Configure Privacy** - Choose Private, Secret, or Public visibility
+3. **Add Security** - Password protect if needed for client work
+4. **Publish to Community** - Share globally for others to discover
+5. **Monitor & Engage** - Watch clones, gather feedback, iterate
+
+**Benefits of Community Publishing:**
+- **📈 Build Reputation** - Establish yourself as a skilled Genesis creator
+- **🤝 Help Others** - Your apps become templates for similar businesses
+- **💡 Get Feedback** - Community insights improve your applications
+- **🔄 Drive Innovation** - See how others adapt and extend your work
+
+### **🧬 Workspace DNA in Community Apps**
+
+When you publish or clone apps, you're sharing more than code:
+
+- **🧠 Living Memory** - Complete project structures with evolving data models
+- **🤖 Intelligent Agents** - Trained assistants with business context and personality
+- **⚡ Motion Automations** - Complete workflows that respond to real-world events
+- **🔄 Evolutionary DNA** - Systems that learn and improve with every interaction
+
+**Each cloned app inherits this complete living system, ready to adapt to new contexts and evolve with new usage patterns.**
+
+### **🌍 The Social App Revolution**
+
+Community Gallery transforms app development from solitary coding to collaborative creation:
+
+**Before:** Build alone, reinvent solutions, limited by your knowledge
+**After:** Build together, stand on proven foundations, benefit from collective intelligence
+
+*"Genesis isn't just an app builder—it's a living ecosystem where every creation contributes to the evolution of business software."*
+
 ---
+
+
 
 ## Getting Started: Your First App in 5 Minutes
 

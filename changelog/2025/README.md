@@ -14,6 +14,60 @@ Each release advances the living software vision, strengthening the DNA strands 
 
 ## Latest Releases
 
+### 🧬 **November 4, 2025** - Living Apps Revolution
+
+**🚀 Major Features:**
+
+- **📤 App Publishing System** – Publish apps instantly with Private/Secret/Public visibility controls
+- **🔒 Password Protection** – Secure client projects and confidential dashboards
+- **🌐 Community Gallery** – Explore and clone apps built by the Taskade community
+- **🧠 Workspace DNA Integration** – Every app connects Projects, Agents, and Automations
+- **🎨 Enhanced App Creation** – Faster editing tools and performance improvements
+- **🔌 External API Integration** – Connect third-party APIs directly into Genesis apps
+
+**🤖 AI Agent Enhancements:**
+- **🧠 Improved Memory & Context** – Better agent recall and contextual understanding
+- **🌐 Public Agent Embedding** – Embed agents on any website
+- **🤖 Latest AI Models** – Access OpenAI, Gemini, and Anthropic models
+
+**⚡ Automation Improvements:**
+- **🔄 Context Memory Between Runs** – Automations remember context across executions
+- **🎯 Smarter Forms & Buttons** – Enhanced user interface for automation setup
+- **⚡ Fixed Workflow Delays** – Improved execution speed and reliability
+
+**📊 Project Enhancements:**
+- **🧠 Agent Learning Integration** – Agents learn directly from project data
+- **📋 Enhanced Table Management** – Better menu options and quick actions
+- **⏰ Version Tracking** – View and restore project edits anytime
+
+**🏢 Workspace Upgrades:**
+- **🖼️ Media Tab** – Drag-and-drop uploads for images, videos, and documents
+- **🎨 Improved Navigation** – Better headers, layouts, and project organization
+- **🌐 Custom Domain Setup** – Branded app URLs and professional hosting
+
+**🔗 New Integrations:**
+- **☁️ Cloud Storage Sync** – Google Drive, Dropbox, OneDrive, and Box integration
+- **🌐 HTTP/Webhook Enhancements** – Better data flow and API connections
+
+**🛡️ Security & Performance:**
+- **🔐 Enhanced Security** – Password protection and improved SSO
+- **⚡ Performance Boosts** – Faster app generation across all devices
+- **🐛 Bug Fixes** – Various stability and optimization improvements
+
+**✨ Featured App Examples:**
+- **🏨 Hospitality Dashboard** – Monitor bookings, reviews, and revenue
+- **📦 Small Business Inventory** – Track stock with automated alerts
+- **📅 Booking Portal** – Schedule clients with auto-confirmations
+- **💰 Expense Splitter** – Calculate costs and generate summaries
+- **⏱️ Time Tracker** – Log hours and generate timesheets
+- **💻 SaaS Landing Page** – Showcase products with lead capture
+- **🏠 Real Estate Website** – Display properties with inquiry forms
+
+**🧬 Living Software Philosophy:**
+*"Every other AI builder gives you a shell. Taskade gives you a living system that thinks, learns, and acts. Your workspace is the brain and backend, your apps are fully connected."*
+
+---
+
 ### 🎯 **November 5, 2025** - Ultimate User Experience
 
 **🚀 Major Features:**
