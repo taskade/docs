@@ -387,7 +387,7 @@ Track usage and refine folder structure based on team feedback.
 
 ## Related Features
 
-- **[Workspace Management](workspace-management.md)** - Complete workspace organization guide
+- **[Workspace Management](../../features/workspaces.md)** - Complete workspace organization guide
 - **[Team Folder Permissions](team-folder-permissions.md)** - Detailed permission management
 - **[Create Team Folder](create-team-folder.md)** - Folder creation and setup
 - **[Project Organization](project-organization.md)** - Project-level organization strategies

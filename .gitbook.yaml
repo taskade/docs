@@ -22,16 +22,26 @@ redirects:
   ai-agents-guide: features/ai-features/ai-agents-getting-started
   project-views-guide: features/project-views-mastery
   workspace-guide: features/workspaces
+  # Living Software redirects
+  living-software: features
+  workspace-dna: features/workspaces
+  living-dna: features/workspaces
+  living-memory: taskos/introduction
+  living-intelligence: features/ai-features
+  living-motion: automation
+  second-brain: genesis
+  eve-ai: features/ai-features
+
   # Genesis-first redirects
   genesis-ai: genesis
   ai-app-builder: genesis
   no-code-platform: genesis
-  workspace-dna: features/workspaces
-  living-dna: features/workspaces
   tutorial-guide: Taskade-Tutorial
   comprehensive-api: api/comprehensive-api-guide
   industry-solutions: features/industry-solutions
-  
+  account-management: account-management
+  vision: vision
+
   # Archive redirects for simplified structure
   archive/detailed-documentation/advanced-patterns: archive/automation/advanced-patterns
   archive/detailed-documentation/recipes: archive/automation/recipes
@@ -67,17 +77,19 @@ customization:
   logo: .gitbook/assets/ss-api3.png
   
 site:
-  title: "Taskade Documentation - AI-Powered Productivity Platform"
-  description: "Complete guide to Taskade Genesis - build AI apps with one prompt. Master workspaces, automation, AI agents, and the living DNA productivity platform. Transform your ideas into working applications using nothing but plain English."
+  title: "Taskade Documentation"
+  description: "The productivity platform with living DNA. Your workspace becomes a digital organism where every project, agent, automation, and piece of knowledge connects to form the genetic code of everything you build."
   
 navigation:
   links:
-    - title: "🧬 Try Genesis"
-      url: "https://www.taskade.com/generate/app"
-    - title: "🚀 Launch Taskade"
+    - title: "🚀 Get Started"
       url: "https://www.taskade.com/"
-    - title: "💻 Developers"
-      url: "/developers"
+    - title: "📚 API Documentation"
+      url: "/api"
+    - title: "🎯 Features"
+      url: "/features"
+    - title: "⚡ Automations"
+      url: "/automation"
     - title: "📰 Changelog"
       url: "/changelog"
     - title: "🆘 Support"

@@ -308,7 +308,7 @@ Start with a simple tagging system and expand as your needs evolve. The key to s
 
 ## Related Topics
 
-- [Workspace Management](workspace-management.md)
+- [Workspace Management](../../features/workspaces.md)
 - [Team Folder Management](folder-management.md)
 - [Project Organization](project-management/project-organization.md)
 - [Automation Rules](automation/comprehensive-automation-reference.md)

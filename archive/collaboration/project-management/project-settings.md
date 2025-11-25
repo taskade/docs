@@ -439,7 +439,7 @@ The ability to fine-tune project behavior through comprehensive settings makes T
 
 ## Related Features
 
-- [Workspace Management](workspaces/workspace-management.md)
+- [Workspace Management](../../features/workspaces.md)
 - [Project Organization](project-organization.md)
 - [Collaboration Settings](collaboration-settings.md)
 - [Project Templates](templates/create-and-use-templates.md)

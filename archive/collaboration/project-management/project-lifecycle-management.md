@@ -375,7 +375,7 @@ The key is finding the right balance between preserving valuable completed work 
 ## Related Features
 
 - [Project Organization](project-organization.md)
-- [Workspace Management](workspaces/workspace-management.md)
+- [Workspace Management](../../features/workspaces.md)
 - [Automation Triggers](automation/triggers/project-completed-trigger.md)
 - [Export Options](features/export/export-as-markdown.md)
 
