@@ -1,106 +1,75 @@
 # Comprehensive API Guide
 
-Build powerful integrations and custom applications with Taskade's complete REST API. Access projects, tasks, users, and automation features programmatically with full CRUD operations and real-time webhooks.
+Build powerful integrations with Taskade's REST API. Access projects, tasks, agents, and more programmatically with full CRUD operations.
 
 {% hint style="success" %}
-Taskade's API provides complete programmatic access to all platform features. Whether you're building custom integrations, mobile applications, or enterprise workflows, our RESTful API offers the flexibility and power you need to extend Taskade's capabilities.
+Taskade's API provides programmatic access to core platform features. Whether you're building custom integrations or automating workflows, our RESTful API offers the flexibility you need.
 {% endhint %}
 
 ## API Overview
 
-The Taskade API is a RESTful web service that provides programmatic access to all Taskade features. Built on industry standards with comprehensive documentation, robust error handling, and extensive example code, our API enables developers to create sophisticated integrations and applications.
+The Taskade API is a RESTful web service that provides programmatic access to Taskade features.
 
 ### Key Features
 
 - **🔗 RESTful Design**: Standard HTTP methods and status codes
-- **🔐 Secure Authentication**: OAuth 2.0 and API key authentication
+- **🔐 Secure Authentication**: OAuth 2.0 and Personal Access Token authentication
 - **📊 Complete CRUD Operations**: Full create, read, update, delete functionality
-- **⚡ Real-time Webhooks**: Instant notifications for data changes
-- **📱 Cross-platform SDKs**: Official libraries for popular programming languages
-- **🎯 Rate Limiting**: Fair usage policies with generous limits
-- **📚 Comprehensive Documentation**: Interactive API explorer and detailed guides
+- **📚 Comprehensive Documentation**: Detailed endpoint documentation
 
-### API Endpoints Structure
+### API Base URL
 
 ```
-Base URL: https://api.taskade.com/v1/
-Authentication: Bearer token or API key
+Base URL: https://www.taskade.com/api/v1
+Authentication: Bearer token
 Content-Type: application/json
 ```
 
 ## Authentication
 
-### API Key Authentication
+### Personal Access Token Authentication
 
 **Simple authentication for server-to-server applications:**
 
 ```bash
-# Using API key in header
-curl -H "Authorization: Bearer YOUR_API_KEY" \
-     https://api.taskade.com/v1/projects
+# Using Personal Access Token in header
+curl -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+     https://www.taskade.com/api/v1/workspaces
 ```
 
-#### Obtaining an API Key
-1. Go to **Settings** → **Developer** → **API Keys**
-2. Click **Generate New API Key**
-3. Copy and securely store your API key
-4. Use the key in the `Authorization` header
+#### Obtaining a Personal Access Token
+1. Go to **Settings** → **Developer** → **Personal Access Tokens**
+2. Click **Generate New Token**
+3. Copy and securely store your token
+4. Use the token in the `Authorization` header
 
 ### OAuth 2.0 Authentication
 
 **Secure authentication for user-facing applications:**
 
-#### Authorization Code Flow
 ```bash
-# Step 1: Redirect user to authorization URL
-https://auth.taskade.com/oauth/authorize?
-  response_type=code&
-  client_id=YOUR_CLIENT_ID&
-  redirect_uri=YOUR_REDIRECT_URI&
-  scope=read:projects write:tasks&
-  state=RANDOM_STATE_STRING
+# Authorization URL
+https://www.taskade.com/oauth2/authorize
+
+# Token URL  
+https://www.taskade.com/oauth2/token
 ```
-
-```javascript
-// Step 2: Exchange authorization code for access token
-const tokenResponse = await fetch('https://auth.taskade.com/oauth/token', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({
-    grant_type: 'authorization_code',
-    client_id: 'YOUR_CLIENT_ID',
-    client_secret: 'YOUR_CLIENT_SECRET',
-    code: 'AUTHORIZATION_CODE',
-    redirect_uri: 'YOUR_REDIRECT_URI'
-  })
-});
-
-const { access_token, refresh_token } = await tokenResponse.json();
-```
-
-#### Scopes and Permissions
-- **`read:projects`**: Read access to projects and tasks
-- **`write:projects`**: Create and modify projects
-- **`read:users`**: Access user profile information
-- **`write:tasks`**: Create and modify tasks
-- **`admin:workspace`**: Workspace administration access
-- **`webhooks:manage`**: Create and manage webhooks
 
 ## Core API Resources
 
-### Projects API
+### Workspaces API
 
-**Complete project management functionality:**
+**Manage workspaces and their contents:**
 
-#### Get All Projects
+#### Get All Workspaces
 ```bash
-GET /v1/projects
+GET /workspaces
 ```
 
 ```javascript
 // JavaScript example
-const getProjects = async (token) => {
-  const response = await fetch('https://api.taskade.com/v1/projects', {
+const getWorkspaces = async (token) => {
+  const response = await fetch('https://www.taskade.com/api/v1/workspaces', {
     headers: {
       'Authorization': `Bearer ${token}`,
       'Content-Type': 'application/json'
@@ -114,158 +83,194 @@ const getProjects = async (token) => {
 # Python example
 import requests
 
-def get_projects(token):
+def get_workspaces(token):
     headers = {
         'Authorization': f'Bearer {token}',
         'Content-Type': 'application/json'
     }
-    response = requests.get('https://api.taskade.com/v1/projects', headers=headers)
+    response = requests.get('https://www.taskade.com/api/v1/workspaces', headers=headers)
     return response.json()
 ```
 
-#### Create New Project
+#### Get Workspace Folders
 ```bash
-POST /v1/projects
+GET /workspaces/{workspaceId}/folders
+```
+
+#### Create Project in Workspace
+```bash
+POST /workspaces/{workspaceId}/projects
 Content-Type: application/json
 
 {
-  "name": "New Project",
-  "description": "Project description",
-  "workspace_id": "workspace_123",
-  "template_id": "template_456",
-  "is_public": false,
-  "tags": ["marketing", "campaign"]
+  "contentType": "text/markdown",
+  "content": "# My New Project\n\n- Task 1\n- Task 2"
 }
 ```
 
-#### Get Project Details
+### Folders API
+
+**Manage folders (subspaces) and their contents:**
+
+#### Get Folder Projects
 ```bash
-GET /v1/projects/{project_id}
+GET /folders/{folderId}/projects
 ```
 
-#### Update Project
+#### Get Folder Agents
 ```bash
-PUT /v1/projects/{project_id}
+GET /folders/{folderId}/agents
+```
+
+#### Create Agent in Folder
+```bash
+POST /folders/{folderId}/agents
 Content-Type: application/json
 
 {
-  "name": "Updated Project Name",
-  "description": "Updated description",
-  "status": "active"
+  "name": "Customer Support Agent",
+  "data": {
+    "type": "template",
+    "template": {
+      "type": "CustomerSupport"
+    }
+  }
 }
 ```
 
-#### Delete Project
+#### Generate Agent with AI
 ```bash
-DELETE /v1/projects/{project_id}
+POST /folders/{folderId}/agent-generate
+Content-Type: application/json
+
+{
+  "text": "Create an agent that helps with customer support questions"
+}
+```
+
+#### Get Folder Media Files
+```bash
+GET /folders/{folderId}/medias
+```
+
+#### Get Folder Project Templates
+```bash
+GET /folders/{folderId}/project-templates
+```
+
+### Projects API
+
+**Comprehensive project management:**
+
+#### Get Project
+```bash
+GET /projects/{projectId}
+```
+
+#### Create Project
+```bash
+POST /projects
+Content-Type: application/json
+
+{
+  "folderId": "folder_123",
+  "contentType": "text/markdown",
+  "content": "# Project Title\n\n- First task\n- Second task"
+}
+```
+
+#### Complete Project
+```bash
+POST /projects/{projectId}/complete
+```
+
+#### Restore Project
+```bash
+POST /projects/{projectId}/restore
+```
+
+#### Copy Project
+```bash
+POST /projects/{projectId}/copy
+Content-Type: application/json
+
+{
+  "folderId": "destination_folder_id",
+  "projectTitle": "Copied Project Name"
+}
+```
+
+#### Create Project from Template
+```bash
+POST /projects/from-template
+Content-Type: application/json
+
+{
+  "folderId": "folder_123",
+  "templateId": "template_456"
+}
+```
+
+#### Get Project Members
+```bash
+GET /projects/{projectId}/members?limit=20&page=1
+```
+
+#### Get Project Fields
+```bash
+GET /projects/{projectId}/fields
+```
+
+#### Get Project Share Link
+```bash
+GET /projects/{projectId}/shareLink
+```
+
+#### Enable Share Link
+```bash
+PUT /projects/{projectId}/shareLink
+```
+
+#### Get Project Blocks
+```bash
+GET /projects/{projectId}/blocks?limit=100
+```
+
+#### Get Project Tasks
+```bash
+GET /projects/{projectId}/tasks?limit=100
 ```
 
 ### Tasks API
 
 **Comprehensive task management:**
 
-#### Get Project Tasks
+#### Get Task
 ```bash
-GET /v1/projects/{project_id}/tasks
+GET /projects/{projectId}/tasks/{taskId}
 ```
 
-```javascript
-// Get tasks with filtering and pagination
-const getTasks = async (projectId, options = {}) => {
-  const params = new URLSearchParams({
-    page: options.page || 1,
-    limit: options.limit || 50,
-    status: options.status || 'all',
-    assignee: options.assignee || '',
-    sort: options.sort || 'created_at',
-    order: options.order || 'desc'
-  });
-  
-  const response = await fetch(
-    `https://api.taskade.com/v1/projects/${projectId}/tasks?${params}`,
+#### Create Tasks
+```bash
+POST /projects/{projectId}/tasks/
+Content-Type: application/json
+
+{
+  "tasks": [
     {
-      headers: {
-        'Authorization': `Bearer ${token}`,
-        'Content-Type': 'application/json'
-      }
+      "contentType": "text/markdown",
+      "content": "New task content",
+      "placement": "beforeend"
     }
-  );
-  
-  return response.json();
-};
-```
-
-#### Create Task
-```bash
-POST /v1/projects/{project_id}/tasks
-Content-Type: application/json
-
-{
-  "content": "New task content",
-  "parent_id": "parent_task_id",
-  "assignees": ["user_123", "user_456"],
-  "due_date": "2024-12-31T23:59:59Z",
-  "priority": "high",
-  "tags": ["urgent", "review"],
-  "custom_fields": {
-    "estimation": "4 hours",
-    "category": "development"
-  }
+  ]
 }
-```
-
-#### Update Task
-```bash
-PUT /v1/tasks/{task_id}
-Content-Type: application/json
-
-{
-  "content": "Updated task content",
-  "completed": true,
-  "assignees": ["user_789"],
-  "due_date": "2024-11-30T17:00:00Z"
-}
-```
-
-#### Bulk Operations
-```bash
-POST /v1/tasks/bulk
-Content-Type: application/json
-
-{
-  "operation": "update",
-  "task_ids": ["task_1", "task_2", "task_3"],
-  "updates": {
-    "assignees": ["user_123"],
-    "tags": ["batch-updated"]
-  }
-}
-```
-
-### Users and Teams API
-
-**User and team management:**
-
-#### Get Current User
-```bash
-GET /v1/me
-```
-
-#### Get User Profile
-```bash
-GET /v1/users/{user_id}
-```
-
-#### Get Workspace Members
-```bash
-GET /v1/workspaces/{workspace_id}/members
 ```
 
 ```javascript
-// Invite user to workspace
-const inviteUser = async (workspaceId, email, role = 'member') => {
+// Create multiple tasks
+const createTasks = async (projectId, tasks) => {
   const response = await fetch(
-    `https://api.taskade.com/v1/workspaces/${workspaceId}/invites`,
+    `https://www.taskade.com/api/v1/projects/${projectId}/tasks/`,
     {
       method: 'POST',
       headers: {
@@ -273,801 +278,526 @@ const inviteUser = async (workspaceId, email, role = 'member') => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        email: email,
-        role: role,
-        message: 'Welcome to our workspace!'
+        tasks: tasks.map(content => ({
+          contentType: 'text/markdown',
+          content: content,
+          placement: 'beforeend'
+        }))
       })
     }
   );
-  
   return response.json();
 };
 ```
 
-### Workspaces API
-
-**Workspace management and organization:**
-
-#### Get All Workspaces
+#### Update Task
 ```bash
-GET /v1/workspaces
-```
-
-#### Create Workspace
-```bash
-POST /v1/workspaces
+PUT /projects/{projectId}/tasks/{taskId}
 Content-Type: application/json
 
 {
-  "name": "New Workspace",
-  "description": "Workspace for team collaboration",
-  "is_public": false,
-  "settings": {
-    "default_project_visibility": "private",
-    "member_permissions": {
-      "can_create_projects": true,
-      "can_invite_users": false
-    }
+  "contentType": "text/markdown",
+  "content": "Updated task content"
+}
+```
+
+#### Delete Task
+```bash
+DELETE /projects/{projectId}/tasks/{taskId}
+```
+
+#### Complete Task
+```bash
+POST /projects/{projectId}/tasks/{taskId}/complete
+```
+
+#### Mark Task Incomplete
+```bash
+POST /projects/{projectId}/tasks/{taskId}/uncomplete
+```
+
+#### Move Task
+```bash
+PUT /projects/{projectId}/tasks/{taskId}/move
+Content-Type: application/json
+
+{
+  "target": {
+    "taskId": "target_task_id",
+    "position": "afterend"
   }
 }
 ```
 
-## Advanced API Features
+Position options: `beforebegin`, `afterbegin`, `beforeend`, `afterend`
 
-### Search API
-
-**Powerful search across all content:**
-
+#### Get Task Assignees
 ```bash
-GET /v1/search?q=query&type=projects,tasks&limit=20
+GET /projects/{projectId}/tasks/{taskId}/assignees
 ```
 
-```javascript
-// Advanced search with filters
-const searchContent = async (query, filters = {}) => {
-  const params = new URLSearchParams({
-    q: query,
-    type: filters.type || 'all',
-    workspace_id: filters.workspace_id || '',
-    assignee: filters.assignee || '',
-    date_from: filters.date_from || '',
-    date_to: filters.date_to || '',
-    status: filters.status || 'all',
-    limit: filters.limit || 20,
-    offset: filters.offset || 0
-  });
-  
-  const response = await fetch(
-    `https://api.taskade.com/v1/search?${params}`,
-    {
-      headers: {
-        'Authorization': `Bearer ${token}`,
-        'Content-Type': 'application/json'
-      }
-    }
-  );
-  
-  return response.json();
-};
-```
-
-### File Upload API
-
-**Upload and manage files:**
-
+#### Update Task Assignees
 ```bash
-POST /v1/files/upload
-Content-Type: multipart/form-data
-
-{
-  "file": [binary file data],
-  "project_id": "project_123",
-  "task_id": "task_456"
-}
-```
-
-```javascript
-// Upload file with progress tracking
-const uploadFile = async (file, projectId, taskId = null) => {
-  const formData = new FormData();
-  formData.append('file', file);
-  formData.append('project_id', projectId);
-  if (taskId) formData.append('task_id', taskId);
-  
-  const response = await fetch('https://api.taskade.com/v1/files/upload', {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${token}`
-    },
-    body: formData
-  });
-  
-  return response.json();
-};
-```
-
-### Templates API
-
-**Project template management:**
-
-```bash
-# Get available templates
-GET /v1/templates
-
-# Create project from template
-POST /v1/projects/from-template
+PUT /projects/{projectId}/tasks/{taskId}/assignees
 Content-Type: application/json
 
 {
-  "template_id": "template_123",
-  "name": "New Project from Template",
-  "workspace_id": "workspace_456"
+  "handles": ["user_handle_1", "user_handle_2"]
 }
 ```
 
-## Webhooks and Real-time Events
-
-### Webhook Configuration
-
-**Set up real-time notifications:**
-
+#### Remove Task Assignee
 ```bash
-POST /v1/webhooks
+DELETE /projects/{projectId}/tasks/{taskId}/assignees/{assigneeHandle}
+```
+
+#### Get Task Date
+```bash
+GET /projects/{projectId}/tasks/{taskId}/date
+```
+
+#### Set Task Date
+```bash
+PUT /projects/{projectId}/tasks/{taskId}/date
 Content-Type: application/json
 
 {
-  "url": "https://your-app.com/webhooks/taskade",
-  "events": [
-    "project.created",
-    "project.updated",
-    "task.created",
-    "task.completed",
-    "user.joined"
-  ],
-  "secret": "your-webhook-secret",
-  "active": true
-}
-```
-
-### Webhook Event Types
-
-**Available webhook events:**
-
-#### Project Events
-- **`project.created`**: New project created
-- **`project.updated`**: Project details modified
-- **`project.deleted`**: Project deleted or archived
-- **`project.shared`**: Project shared with new users
-- **`project.completed`**: Project marked as complete
-
-#### Task Events
-- **`task.created`**: New task added
-- **`task.updated`**: Task content or properties modified
-- **`task.completed`**: Task marked as complete
-- **`task.assigned`**: Task assigned to user
-- **`task.due_soon`**: Task due date approaching
-
-#### User Events
-- **`user.joined`**: New user joined workspace
-- **`user.left`**: User left workspace
-- **`user.role_changed`**: User role or permissions changed
-
-### Webhook Payload Example
-
-```json
-{
-  "event": "task.completed",
-  "timestamp": "2024-01-15T10:30:00Z",
-  "data": {
-    "task": {
-      "id": "task_123",
-      "content": "Complete API documentation",
-      "completed": true,
-      "completed_at": "2024-01-15T10:30:00Z",
-      "project_id": "project_456",
-      "assignees": ["user_789"]
-    },
-    "user": {
-      "id": "user_789",
-      "name": "John Doe",
-      "email": "john@example.com"
-    },
-    "project": {
-      "id": "project_456",
-      "name": "API Development",
-      "workspace_id": "workspace_123"
-    }
-  }
-}
-```
-
-### Webhook Verification
-
-```javascript
-// Verify webhook signature
-const crypto = require('crypto');
-
-const verifyWebhook = (payload, signature, secret) => {
-  const expectedSignature = crypto
-    .createHmac('sha256', secret)
-    .update(payload)
-    .digest('hex');
-    
-  return crypto.timingSafeEqual(
-    Buffer.from(signature, 'hex'),
-    Buffer.from(expectedSignature, 'hex')
-  );
-};
-```
-
-## AI and Automation API
-
-### AI Agents API
-
-**Manage AI agents programmatically:**
-
-```bash
-# Get all AI agents
-GET /v1/agents
-
-# Create new AI agent
-POST /v1/agents
-Content-Type: application/json
-
-{
-  "name": "Customer Support Agent",
-  "description": "AI agent for customer support queries",
-  "instructions": "You are a helpful customer support agent...",
-  "knowledge_base": ["file_1", "file_2"],
-  "tools": ["web_search", "email_send"],
-  "model": "gpt-4",
-  "temperature": 0.7
-}
-```
-
-```javascript
-// Chat with AI agent
-const chatWithAgent = async (agentId, message, context = {}) => {
-  const response = await fetch(`https://api.taskade.com/v1/agents/${agentId}/chat`, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${token}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      message: message,
-      context: context,
-      stream: false
-    })
-  });
-  
-  return response.json();
-};
-```
-
-### Automation API
-
-**Create and manage automations:**
-
-```bash
-# Get all automations
-GET /v1/automations
-
-# Create new automation
-POST /v1/automations
-Content-Type: application/json
-
-{
-  "name": "Task Assignment Notification",
-  "description": "Send Slack message when task is assigned",
-  "trigger": {
-    "type": "task.assigned",
-    "conditions": {
-      "project_id": "project_123"
-    }
+  "start": {
+    "date": "2024-12-31",
+    "time": "17:00:00",
+    "timezone": "America/New_York"
   },
-  "actions": [
-    {
-      "type": "slack.send_message",
-      "config": {
-        "channel": "#general",
-        "message": "Task '{{task.content}}' assigned to {{assignee.name}}"
-      }
-    }
-  ],
-  "active": true
+  "end": {
+    "date": "2025-01-15",
+    "time": "17:00:00",
+    "timezone": "America/New_York"
+  }
 }
 ```
 
-## Error Handling and Best Practices
+#### Delete Task Date
+```bash
+DELETE /projects/{projectId}/tasks/{taskId}/date
+```
+
+#### Get Task Note
+```bash
+GET /projects/{projectId}/tasks/{taskId}/note
+```
+
+#### Update Task Note
+```bash
+PUT /projects/{projectId}/tasks/{taskId}/note
+Content-Type: application/json
+
+{
+  "type": "text/markdown",
+  "value": "This is a note for the task"
+}
+```
+
+#### Delete Task Note
+```bash
+DELETE /projects/{projectId}/tasks/{taskId}/note
+```
+
+#### Get Task Field Values
+```bash
+GET /projects/{projectId}/tasks/{taskId}/fields
+```
+
+#### Get Specific Field Value
+```bash
+GET /projects/{projectId}/tasks/{taskId}/fields/{fieldId}
+```
+
+#### Update Field Value
+```bash
+PUT /projects/{projectId}/tasks/{taskId}/fields/{fieldId}
+Content-Type: application/json
+
+{
+  "value": "field_value"
+}
+```
+
+#### Delete Field Value
+```bash
+DELETE /projects/{projectId}/tasks/{taskId}/fields/{fieldId}
+```
+
+### Agents API
+
+**Manage AI agents:**
+
+#### Get Agent
+```bash
+GET /agents/{agentId}
+```
+
+#### Update Agent
+```bash
+PATCH /agents/{agentId}
+Content-Type: application/json
+
+{
+  "name": "Updated Agent Name",
+  "data": {
+    "description": "Updated agent description"
+  }
+}
+```
+
+#### Delete Agent
+```bash
+DELETE /agents/{agentId}
+```
+
+#### Enable Public Access
+```bash
+PUT /agents/{agentId}/publicAccess
+```
+
+#### Get Public Agent Settings
+```bash
+GET /agents/{agentId}/public-agent
+```
+
+#### Update Public Agent Settings
+```bash
+PATCH /agents/{agentId}/public-agent
+Content-Type: application/json
+
+{
+  "preferences": {
+    "mode": "chatbot",
+    "theme": "light",
+    "hideBranding": false
+  }
+}
+```
+
+#### Get Public Agent by Public ID
+```bash
+GET /public-agents/{publicAgentId}
+```
+
+#### Add Project to Agent Knowledge
+```bash
+POST /agents/{agentId}/knowledge/project
+Content-Type: application/json
+
+{
+  "projectId": "project_123"
+}
+```
+
+#### Add Media to Agent Knowledge
+```bash
+POST /agents/{agentId}/knowledge/media
+Content-Type: application/json
+
+{
+  "mediaId": "media_456"
+}
+```
+
+#### Remove Project from Agent Knowledge
+```bash
+DELETE /agents/{agentId}/knowledge/project/{projectId}
+```
+
+#### Remove Media from Agent Knowledge
+```bash
+DELETE /agents/{agentId}/knowledge/media/{mediaId}
+```
+
+#### Get Agent Conversations
+```bash
+GET /agents/{agentId}/convos/?limit=20&page=1
+```
+
+#### Get Specific Conversation
+```bash
+GET /agents/{agentId}/convos/{convoId}
+```
+
+### Media API
+
+**Manage uploaded files:**
+
+#### Get Media
+```bash
+GET /medias/{mediaId}
+```
+
+#### Delete Media
+```bash
+DELETE /medias/{mediaId}
+```
+
+### User Projects API
+
+**Access the authenticated user's projects:**
+
+#### Get My Projects
+```bash
+GET /me/projects?limit=100&page=1&sort=viewed-desc
+```
+
+Sort options: `viewed-asc`, `viewed-desc`
+
+## Error Handling
 
 ### HTTP Status Codes
 
-**Standard HTTP status codes used by the API:**
-
 - **200 OK**: Request successful
-- **201 Created**: Resource created successfully
 - **400 Bad Request**: Invalid request parameters
 - **401 Unauthorized**: Authentication required or invalid
 - **403 Forbidden**: Insufficient permissions
 - **404 Not Found**: Resource not found
-- **429 Too Many Requests**: Rate limit exceeded
-- **500 Internal Server Error**: Server error
+- **4XX**: Client error (see response for details)
 
 ### Error Response Format
 
 ```json
 {
-  "error": {
-    "code": "VALIDATION_ERROR",
-    "message": "Invalid request parameters",
-    "details": {
-      "field": "email",
-      "issue": "Invalid email format"
-    }
-  }
+  "ok": false,
+  "message": "Error description",
+  "code": "ERROR_CODE",
+  "statusMessage": "HTTP status message"
 }
 ```
 
-### Rate Limiting
-
-**API rate limits and best practices:**
-
-#### Rate Limits
-- **Free Plan**: 1,000 requests per hour
-- **Pro Plan**: 10,000 requests per hour
-- **Business Plan**: 50,000 requests per hour
-- **Enterprise**: Custom limits
-
-#### Rate Limit Headers
-```
-X-RateLimit-Limit: 1000
-X-RateLimit-Remaining: 999
-X-RateLimit-Reset: 1609459200
-```
-
-#### Best Practices
-- **Respect Rate Limits**: Monitor rate limit headers
-- **Implement Backoff**: Use exponential backoff for retries
-- **Cache Responses**: Cache API responses when appropriate
-- **Batch Operations**: Use bulk endpoints when available
-
-### Error Handling Examples
+### Error Handling Example
 
 ```javascript
 // Robust error handling
 const apiRequest = async (url, options = {}) => {
-  try {
-    const response = await fetch(url, {
-      headers: {
-        'Authorization': `Bearer ${token}`,
-        'Content-Type': 'application/json',
-        ...options.headers
-      },
-      ...options
-    });
-    
-    if (!response.ok) {
-      const error = await response.json();
-      throw new APIError(error.error.message, response.status, error.error.code);
-    }
-    
-    return response.json();
-  } catch (error) {
-    if (error instanceof APIError) {
-      throw error;
-    }
-    throw new APIError('Network error', 0, 'NETWORK_ERROR');
+  const response = await fetch(url, {
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json',
+      ...options.headers
+    },
+    ...options
+  });
+  
+  const data = await response.json();
+  
+  if (!data.ok) {
+    throw new Error(`API Error: ${data.message} (${data.code})`);
   }
+  
+  return data;
 };
-
-class APIError extends Error {
-  constructor(message, status, code) {
-    super(message);
-    this.status = status;
-    this.code = code;
-  }
-}
 ```
 
-## SDKs and Libraries
+## Pagination
 
-### Official SDKs
+Many endpoints support pagination using cursor-based or page-based approaches:
 
-**Pre-built libraries for popular languages:**
-
-#### JavaScript/Node.js SDK
+### Page-based Pagination
 ```bash
-npm install @taskade/api-client
+GET /me/projects?limit=20&page=2
 ```
+
+### Cursor-based Pagination (Tasks/Blocks)
+```bash
+# Get tasks after a specific task
+GET /projects/{projectId}/tasks?limit=100&after={taskId}
+
+# Get tasks before a specific task
+GET /projects/{projectId}/tasks?limit=100&before={taskId}
+```
+
+## Code Examples
+
+### Complete Workflow Example
 
 ```javascript
-import { TaskadeClient } from '@taskade/api-client';
+// Complete example: Create a project and add tasks
+const createProjectWithTasks = async (folderId, projectName, tasks) => {
+  const headers = {
+    'Authorization': `Bearer ${token}`,
+    'Content-Type': 'application/json'
+  };
+  
+  // Step 1: Create the project
+  const projectContent = `# ${projectName}\n\n` + 
+    tasks.map(t => `- ${t}`).join('\n');
+  
+  const projectResponse = await fetch(
+    'https://www.taskade.com/api/v1/projects',
+    {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({
+        folderId: folderId,
+        contentType: 'text/markdown',
+        content: projectContent
+      })
+    }
+  );
+  
+  const projectData = await projectResponse.json();
+  
+  if (!projectData.ok) {
+    throw new Error(`Failed to create project: ${projectData.message}`);
+  }
+  
+  return projectData.item;
+};
 
-const client = new TaskadeClient({
-  apiKey: 'your-api-key',
-  // or use OAuth
-  accessToken: 'your-access-token'
-});
-
-// Get projects
-const projects = await client.projects.list();
-
-// Create task
-const task = await client.tasks.create('project-id', {
-  content: 'New task',
-  assignees: ['user-id']
-});
+// Usage
+const project = await createProjectWithTasks(
+  'folder_123',
+  'My New Project',
+  ['Task 1', 'Task 2', 'Task 3']
+);
+console.log('Created project:', project.id);
 ```
 
-#### Python SDK
-```bash
-pip install taskade-api
+### Agent Integration Example
+
+```javascript
+// Create an agent and add knowledge
+const setupAgent = async (folderId, agentName, projectIds) => {
+  const headers = {
+    'Authorization': `Bearer ${token}`,
+    'Content-Type': 'application/json'
+  };
+  
+  // Step 1: Create the agent
+  const agentResponse = await fetch(
+    `https://www.taskade.com/api/v1/folders/${folderId}/agents`,
+    {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({
+        name: agentName,
+        data: {
+          type: 'template',
+          template: {
+            type: 'Researcher'
+          }
+        }
+      })
+    }
+  );
+  
+  const agentData = await agentResponse.json();
+  const agentId = agentData.item.id;
+  
+  // Step 2: Add projects to knowledge base
+  for (const projectId of projectIds) {
+    await fetch(
+      `https://www.taskade.com/api/v1/agents/${agentId}/knowledge/project`,
+      {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({ projectId })
+      }
+    );
+  }
+  
+  return agentData.item;
+};
 ```
+
+### Python Example
 
 ```python
-from taskade import TaskadeClient
+import requests
 
-client = TaskadeClient(api_key='your-api-key')
+API_BASE = 'https://www.taskade.com/api/v1'
 
-# Get projects
-projects = client.projects.list()
-
-# Create task
-task = client.tasks.create('project-id', {
-    'content': 'New task',
-    'assignees': ['user-id']
-})
-```
-
-#### PHP SDK
-```bash
-composer require taskade/api-client
-```
-
-```php
-use Taskade\ApiClient;
-
-$client = new ApiClient('your-api-key');
-
-// Get projects
-$projects = $client->projects()->list();
-
-// Create task
-$task = $client->tasks()->create('project-id', [
-    'content' => 'New task',
-    'assignees' => ['user-id']
-]);
-```
-
-### Community Libraries
-
-**Third-party libraries and integrations:**
-
-- **Ruby**: `taskade-ruby` gem
-- **Go**: `go-taskade` package
-- **Java**: `taskade-java-client` library
-- **C#**: `Taskade.NET` NuGet package
-
-## Example Applications
-
-### Task Synchronization Service
-
-```javascript
-// Sync tasks between Taskade and external system
-class TaskSyncService {
-  constructor(taskadeToken, externalApiKey) {
-    this.taskade = new TaskadeClient({ accessToken: taskadeToken });
-    this.external = new ExternalApiClient(externalApiKey);
-  }
-  
-  async syncTasks(projectId) {
-    try {
-      // Get tasks from both systems
-      const taskadeTasks = await this.taskade.tasks.list(projectId);
-      const externalTasks = await this.external.getTasks();
-      
-      // Sync new tasks from external system to Taskade
-      for (const externalTask of externalTasks) {
-        const exists = taskadeTasks.find(t => t.external_id === externalTask.id);
-        if (!exists) {
-          await this.taskade.tasks.create(projectId, {
-            content: externalTask.title,
-            description: externalTask.description,
-            external_id: externalTask.id
-          });
+class TaskadeClient:
+    def __init__(self, token):
+        self.token = token
+        self.headers = {
+            'Authorization': f'Bearer {token}',
+            'Content-Type': 'application/json'
         }
-      }
-      
-      // Sync completed tasks back to external system
-      for (const task of taskadeTasks) {
-        if (task.completed && task.external_id) {
-          await this.external.markComplete(task.external_id);
-        }
-      }
-      
-    } catch (error) {
-      console.error('Sync failed:', error);
-    }
-  }
-}
-```
-
-### Webhook Event Processor
-
-```javascript
-// Express.js webhook handler
-const express = require('express');
-const crypto = require('crypto');
-
-const app = express();
-app.use(express.raw({ type: 'application/json' }));
-
-app.post('/webhook', (req, res) => {
-  const signature = req.headers['x-taskade-signature'];
-  const payload = req.body;
-  
-  // Verify webhook signature
-  if (!verifySignature(payload, signature)) {
-    return res.status(401).send('Invalid signature');
-  }
-  
-  const event = JSON.parse(payload);
-  
-  // Process different event types
-  switch (event.event) {
-    case 'task.completed':
-      handleTaskCompleted(event.data);
-      break;
-    case 'project.created':
-      handleProjectCreated(event.data);
-      break;
-    default:
-      console.log('Unhandled event:', event.event);
-  }
-  
-  res.status(200).send('OK');
-});
-
-const handleTaskCompleted = async (data) => {
-  // Send notification to team
-  await sendSlackNotification(
-    `Task "${data.task.content}" completed by ${data.user.name}`
-  );
-  
-  // Update external tracking system
-  await updateExternalSystem(data.task.id, 'completed');
-};
-```
-
-### Custom Dashboard Application
-
-```javascript
-// React component for custom dashboard
-import React, { useState, useEffect } from 'react';
-import { TaskadeClient } from '@taskade/api-client';
-
-const Dashboard = () => {
-  const [projects, setProjects] = useState([]);
-  const [tasks, setTasks] = useState([]);
-  const [loading, setLoading] = useState(true);
-  
-  const client = new TaskadeClient({
-    accessToken: process.env.REACT_APP_TASKADE_TOKEN
-  });
-  
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const [projectsData, tasksData] = await Promise.all([
-          client.projects.list(),
-          client.tasks.list({ status: 'incomplete', limit: 10 })
-        ]);
-        
-        setProjects(projectsData.data);
-        setTasks(tasksData.data);
-      } catch (error) {
-        console.error('Failed to fetch data:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
     
-    fetchData();
-  }, []);
-  
-  if (loading) return <div>Loading...</div>;
-  
-  return (
-    <div className="dashboard">
-      <div className="projects-section">
-        <h2>Active Projects ({projects.length})</h2>
-        {projects.map(project => (
-          <div key={project.id} className="project-card">
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <span className="status">{project.status}</span>
-          </div>
-        ))}
-      </div>
-      
-      <div className="tasks-section">
-        <h2>Recent Tasks</h2>
-        {tasks.map(task => (
-          <div key={task.id} className="task-item">
-            <span className="content">{task.content}</span>
-            <span className="assignee">{task.assignees[0]?.name}</span>
-            <span className="due-date">{task.due_date}</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default Dashboard;
-```
-
-## Testing and Development
-
-### API Testing Tools
-
-**Recommended tools for API development:**
-
-#### Postman Collection
-```json
-{
-  "info": {
-    "name": "Taskade API",
-    "description": "Complete Taskade API collection"
-  },
-  "auth": {
-    "type": "bearer",
-    "bearer": [
-      {
-        "key": "token",
-        "value": "{{access_token}}",
-        "type": "string"
-      }
-    ]
-  },
-  "item": [
-    {
-      "name": "Get Projects",
-      "request": {
-        "method": "GET",
-        "url": "{{base_url}}/v1/projects"
-      }
-    }
-  ]
-}
-```
-
-#### cURL Examples
-```bash
-# Test authentication
-curl -H "Authorization: Bearer YOUR_TOKEN" \
-     https://api.taskade.com/v1/me
-
-# Create a project
-curl -X POST \
-     -H "Authorization: Bearer YOUR_TOKEN" \
-     -H "Content-Type: application/json" \
-     -d '{"name": "Test Project", "description": "API test"}' \
-     https://api.taskade.com/v1/projects
-```
-
-### Development Environment Setup
-
-**Set up local development environment:**
-
-```bash
-# Environment variables
-export TASKADE_API_KEY="your-api-key"
-export TASKADE_BASE_URL="https://api.taskade.com/v1"
-export WEBHOOK_SECRET="your-webhook-secret"
-
-# Test API connection
-curl -H "Authorization: Bearer $TASKADE_API_KEY" \
-     $TASKADE_BASE_URL/me
-```
-
-### Unit Testing Examples
-
-```javascript
-// Jest test example
-describe('Taskade API Client', () => {
-  let client;
-  
-  beforeEach(() => {
-    client = new TaskadeClient({
-      apiKey: process.env.TEST_API_KEY,
-      baseURL: 'https://api-staging.taskade.com/v1'
-    });
-  });
-  
-  test('should create a project', async () => {
-    const project = await client.projects.create({
-      name: 'Test Project',
-      description: 'Test description'
-    });
+    def get_workspaces(self):
+        """Get all workspaces"""
+        response = requests.get(f'{API_BASE}/workspaces', headers=self.headers)
+        return response.json()
     
-    expect(project.id).toBeDefined();
-    expect(project.name).toBe('Test Project');
-  });
-  
-  test('should handle API errors', async () => {
-    await expect(
-      client.projects.get('invalid-id')
-    ).rejects.toThrow('Project not found');
-  });
-});
+    def get_folder_projects(self, folder_id):
+        """Get all projects in a folder"""
+        response = requests.get(
+            f'{API_BASE}/folders/{folder_id}/projects',
+            headers=self.headers
+        )
+        return response.json()
+    
+    def create_project(self, folder_id, content):
+        """Create a new project"""
+        response = requests.post(
+            f'{API_BASE}/projects',
+            headers=self.headers,
+            json={
+                'folderId': folder_id,
+                'contentType': 'text/markdown',
+                'content': content
+            }
+        )
+        return response.json()
+    
+    def complete_task(self, project_id, task_id):
+        """Mark a task as complete"""
+        response = requests.post(
+            f'{API_BASE}/projects/{project_id}/tasks/{task_id}/complete',
+            headers=self.headers
+        )
+        return response.json()
+    
+    def get_agent(self, agent_id):
+        """Get an agent"""
+        response = requests.get(
+            f'{API_BASE}/agents/{agent_id}',
+            headers=self.headers
+        )
+        return response.json()
+
+# Usage
+client = TaskadeClient('your_token')
+workspaces = client.get_workspaces()
+print(f"Found {len(workspaces['items'])} workspaces")
 ```
 
-## API Versioning and Migration
+## Best Practices
 
-### Version Management
+### Security
+- Store API tokens securely (environment variables, secret management)
+- Use HTTPS for all API calls
+- Implement proper error handling
+- Never expose tokens in client-side code
 
-**API versioning strategy:**
+### Performance
+- Use pagination for large result sets
+- Cache responses when appropriate
+- Implement exponential backoff for retries
+- Batch operations when possible
 
-- **Current Version**: v1
-- **Version Header**: `X-API-Version: v1`
-- **URL Versioning**: `/v1/` in URL path
-- **Backward Compatibility**: 12 months minimum support
-
-### Migration Guide
-
-**Upgrading between API versions:**
-
-```javascript
-// v1 to v2 migration example
-// Old v1 format
-const oldTask = {
-  name: 'Task name',
-  description: 'Task description'
-};
-
-// New v2 format
-const newTask = {
-  content: 'Task name',
-  notes: 'Task description',
-  metadata: {
-    version: 2
-  }
-};
-```
+### Data Management
+- Validate data before sending to API
+- Handle partial failures gracefully
+- Implement proper logging and monitoring
 
 ## Support and Resources
 
-### Developer Resources
-
-**Additional resources for API developers:**
-
-- **📚 Interactive API Explorer**: Test endpoints in your browser
-- **🎥 Video Tutorials**: Step-by-step API integration guides
-- **💬 Developer Community**: Join our Discord server for API discussions
-- **🐛 Bug Reports**: GitHub repository for API issues and feature requests
-- **📖 Changelog**: Stay updated on API changes and new features
+### Documentation
+- **API Reference**: Full endpoint documentation in each resource section
+- **Authentication Guide**: [Personal Access Tokens](../start/personal-tokens.md)
+- **OAuth Setup**: [OAuth Authentication](../start/authentication.md)
 
 ### Getting Help
-
-**Support channels for API developers:**
-
-- **📧 API Support**: api-support@taskade.com
-- **💬 Live Chat**: Available in the developer console
-- **📞 Enterprise Support**: Dedicated support for Enterprise API users
-- **🎫 Ticket System**: Submit detailed API support requests
-
-### Rate Limit Increases
-
-**Request higher rate limits:**
-
-For applications requiring higher rate limits:
-1. **Document Use Case**: Explain your application and expected usage
-2. **Provide Metrics**: Share current usage patterns and projections
-3. **Contact Enterprise Sales**: Discuss custom rate limits and SLA requirements
-4. **Technical Review**: Our team will review your integration architecture
+- **📧 Support**: support@taskade.com
+- **📚 Help Center**: [help.taskade.com](https://help.taskade.com)
 
 {% hint style="info" %}
-**Enterprise API Features**: Enterprise customers get access to dedicated API infrastructure, custom rate limits, priority support, and advanced webhook features. Contact our sales team to learn more about enterprise API capabilities.
+**Need more help?** Contact our support team for assistance with API integration or enterprise API requirements.
 {% endhint %}
