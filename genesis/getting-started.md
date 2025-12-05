@@ -6,15 +6,30 @@
 
 ## What Is Taskade Genesis?
 
-**Genesis is the HyperCard moment for the AI era.** 
+**Taskade Genesis is the HyperCard moment for the AI era.** 
 
-In 1987, Apple launched HyperCard - a tool that let anyone build software by stacking cards. It was simple, playful, powerful. For a brief moment, the tools to build were in the hands of everyone. Then they disappeared.
+In 1987, Apple launched HyperCard—a tool that let anyone build software by stacking cards. For a brief moment, the tools to build were in the hands of everyone. Then they disappeared.
 
 For decades, software creation was locked behind IDEs, APIs, gatekeepers, and teams. Until now.
 
 **Taskade Genesis is the HyperCard of the AI era.** One prompt. One app. A new system for a new generation.
 
-Genesis is an AI app builder that creates complete business applications from a single prompt. You describe what you need, and Genesis builds a working app in minutes. Not a mockup or prototype, but fully functional software.
+Taskade Genesis creates complete business applications from a single prompt. You describe what you need, and Taskade builds a working app in minutes. Not a mockup or prototype, but fully functional software.
+
+```
+Describe Your App → AI Generates Code → Automatic Deployment → Live URL
+```
+
+**What You Get:**
+- **Responsive frontend** that works on all devices
+- **Automatic deployment** with SSL and unique URL
+- **Real-time data** connection to Taskade projects
+- **Custom domains** support for branded URLs
+- **Version history** with rollback capabilities
+
+**[Learn How Workspace DNA Powers Your Apps →](https://help.taskade.com/en/articles/12578949-how-genesis-works-workspace-dna)**
+
+**Read more:** [Build Without Permission: The Taskade Genesis Manifesto](https://www.taskade.com/blog/build-without-permission/)
 
 **We build for people like us:**
 - The ones spinning 15 plates
@@ -577,6 +592,29 @@ After your first app is generated:
 
 ---
 
-**Ready for your next app? [Build with Genesis →](https://taskade.com)**
+## Next Steps
 
-_From idea to working application in 5 minutes - every time._
+| Resource | Description |
+|----------|-------------|
+| **[Examples & Templates](examples-and-templates.md)** | Copy-paste prompts for any use case |
+| **[Advanced Features](advanced-features.md)** | Custom domains, integrations, API access |
+| **[Community Gallery](https://www.taskade.com/community)** | Browse and fork apps built by others |
+| **[Troubleshooting](troubleshooting.md)** | Common issues and solutions |
+
+### Related Help Center Guides
+
+| Guide | Description |
+|-------|-------------|
+| **[Create Your First App](https://help.taskade.com/en/articles/11957643-create-your-first-app)** | Official tutorial with screenshots |
+| **[Workspace DNA](https://help.taskade.com/en/articles/12578949-how-genesis-works-workspace-dna)** | How Taskade Genesis works under the hood |
+| **[Custom AI Agents](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar)** | Add AI assistants to your apps |
+| **[Projects & Databases](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar)** | Data storage for your apps |
+| **[Automations](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar)** | Connect your apps to 100+ services |
+
+---
+
+**Ready for your next app? [Build with Taskade →](https://www.taskade.com)**
+
+**[Browse Community Apps →](https://www.taskade.com/community)** | **[API Documentation →](https://www.taskade.com/api/documentation/)**
+
+_From idea to working application in 5 minutes._

@@ -60,7 +60,7 @@ The app should [VISUAL/UX REQUIREMENTS] and work well on [DEVICES].
 
 ### Step 3: Deployment and Sharing
 
-Space Apps deploy automatically to Fly.io's global infrastructure:
+Space Apps deploy automatically with global distribution:
 
 - **Instant URLs**: Your app gets a live URL immediately
 - **Global CDN**: Fast loading worldwide with edge caching
@@ -216,15 +216,15 @@ src/
 
 ## 🚀 Deployment & Performance
 
-### Fly.io Infrastructure
+### Automatic Deployment
 
-Space Apps deploy to Fly.io's global infrastructure:
+Space Apps deploy automatically with global infrastructure:
 
 **Key Benefits:**
-- **Global Distribution**: Servers in 30+ regions worldwide
+- **Global Distribution**: Fast loading worldwide
 - **Edge Caching**: Static assets served from CDN
 - **Auto Scaling**: Handles traffic spikes automatically  
-- **99.9% Uptime**: Enterprise-grade reliability
+- **High Availability**: Enterprise-grade reliability
 - **SSL/TLS**: HTTPS enabled by default
 
 ### Performance Optimization
@@ -428,9 +428,9 @@ Ensure your apps are accessible to all users:
 **Issue**: App not updating after changes
 **Solutions**:
 - Clear browser cache and hard refresh
-- Check deployment status in Genesis dashboard  
+- Check deployment status in Taskade Genesis dashboard  
 - Verify changes were committed to the codebase
-- Review Fly.io deployment logs for errors
+- Review deployment logs for errors
 
 ### Data Integration Problems
 
@@ -457,7 +457,7 @@ Ensure your apps are accessible to all users:
 - **[Tailwind CSS Documentation](https://tailwindcss.com/docs)** - Styling reference
 - **[React Documentation](https://react.dev)** - Component development guide
 - **[TypeScript Handbook](https://www.typescriptlang.org/docs/)** - Type system reference
-- **[Fly.io Documentation](https://fly.io/docs/)** - Deployment platform guide
+- **[Taskade API Documentation](https://www.taskade.com/api/documentation/)** - API reference
 
 ### Community & Support
 

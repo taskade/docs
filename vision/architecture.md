@@ -1,11 +1,26 @@
-# Core Architecture: From Subspaces to Genesis
+# Core Architecture: Taskade Platform
 
-Taskade offers two powerful approaches to building intelligent applications:
+Taskade provides a unified platform for building intelligent applications, agents, and automated workflows.
+
+## Platform Components
+
+| Component | Description | Learn More |
+|-----------|-------------|------------|
+| **AI App Builder (Taskade Genesis)** | Generate full-stack applications from prompts | [Create Your First App →](https://help.taskade.com/en/articles/11957643-create-your-first-app) |
+| **AI Agents Platform** | Custom assistants with knowledge retrieval | [AI Agents Guide →](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar) |
+| **Workflow Automation** | Event-driven processing with 100+ integrations | [Automations Guide →](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar) |
+| **Data Layer (Projects)** | Real-time projects with structured data | [Projects Guide →](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar) |
+
+**[Learn About Workspace DNA →](https://help.taskade.com/en/articles/12578949-how-genesis-works-workspace-dna)**
+
+**Read more:** [Product Updates](https://www.taskade.com/blog/updates/)
+
+## Two Application Approaches
 
 1. **🏗️ Subspaces (Project-Based Apps)**: Structured workspaces with Projects, Agents, and Automations
-2. **⚡ Genesis Space Apps (New!)**: Complete React web applications generated from natural language
+2. **⚡ Taskade Genesis Space Apps**: Complete web applications generated from natural language
 
-Both approaches share the same foundational intelligence but offer different levels of customization and deployment options.
+Both approaches share the same foundational intelligence and are powered by your workspace's living DNA.
 
 ## 🧬 Workspace DNA Visualization: The Living Trinity Architecture
 
@@ -170,7 +185,7 @@ graph TD
     H --> J
     I --> J
     
-    J --> K[Fly.io Deployment]
+    J --> K[Automatic Deployment]
     K --> L[Live Preview URL]
     
     M[Taskade Projects] --> N[Real-time Data]
@@ -212,7 +227,7 @@ Space Apps represent a fundamental shift in how applications are created and dep
 Unlike project-based apps that create structured workspaces, Space Apps generate:
 - **Full React Codebases**: Complete component hierarchies with modern patterns
 - **Responsive Design**: Mobile-first layouts using Tailwind CSS
-- **Live Deployment**: Automatic hosting on Fly.io global infrastructure
+- **Live Deployment**: Automatic hosting with global distribution
 - **Preview URLs**: Instantly shareable links for testing and distribution
 
 #### **Deep Workspace Integration**
@@ -264,7 +279,7 @@ Genesis bridges the gap between no-code simplicity and full-stack power:
 | **Creation Method** | Template-based setup | Natural language generation |
 | **Output Type** | Structured workspace | React web application |
 | **Customization** | Project views & agents | Full UI/UX control |
-| **Hosting** | Taskade platform | Fly.io deployment |
+| **Hosting** | Taskade platform | Automatic deployment |
 | **Audience** | Internal teams | Public & customers |
 | **URL Type** | Taskade workspace | Custom preview domain |
 | **Data Layer** | Native projects | Project integration |

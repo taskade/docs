@@ -3,18 +3,31 @@
 **Think. Learn. Adapt.** Taskade AI features form the living intelligence layer of Workspace DNA, creating systems that understand, evolve, and provide increasingly intelligent value with every interaction.
 
 {% hint style="success" %}
-**Living Intelligence Layer** - AI that doesn't just assist, but learns from your business, adapts to your needs, and continuously improves. Powered by EVE, your living AI companion.
+**Living Intelligence Layer** — AI that doesn't just assist, but learns from your business, adapts to your needs, and continuously improves. Powered by EVE, your living AI companion.
 {% endhint %}
+
+## AI Platform Overview
+
+Taskade provides a comprehensive AI platform for building intelligent assistants, automating workflows, and creating AI-powered applications. Deploy custom AI agents trained on your business knowledge.
+
+**Key Capabilities:**
+- Custom AI agents with specialized roles
+- Multi-agent teams for complex workflows
+- Knowledge retrieval from documents and projects
+- Tool execution and external integrations
+- Public agent hosting and embedding
+
+**[Custom AI Agents Guide →](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar)**
 
 ### The Intelligence Layer in Living DNA
 
 AI features serve as the intelligence layer in the Workspace DNA trinity, providing cognitive capabilities that bring living systems to life.
 
 **🧠 Intelligence Layer Role:**
-- **Learns from Memory** - Absorbs knowledge from your projects and data
-- **Powers Motion** - Provides decision-making for automations and workflows
-- **Evolves with Experience** - Gets smarter with every interaction and outcome
-- **Creates Living Behavior** - Enables systems that understand context and adapt
+- **Learns from Memory** — Absorbs knowledge from your projects and data
+- **Powers Motion** — Provides decision-making for automations and workflows
+- **Evolves with Experience** — Gets smarter with every interaction and outcome
+- **Creates Living Behavior** — Enables systems that understand context and adapt
 
 **🔄 Living System Integration:**
 ```
@@ -23,13 +36,18 @@ Living Memory (Projects/Data) → Living Intelligence (AI Agents & EVE) → Livi
    Store & Learn Data    Analyze & Provide Insights    Execute Intelligent Actions
 ```
 
-**🌟 Living Intelligence Capabilities:**
-- **Adaptive Learning** - AI that improves with every conversation and task
-- **Contextual Understanding** - Systems that know your business inside and out
-- **Predictive Assistance** - Proactive help before you even ask
-- **EVE Personality** - Living AI companion with genuine interaction capabilities
-- **Multi-Model Intelligence** - Access to advanced AI models like Google Gemini for enhanced capabilities
-- **Dynamic Results Tool** - Enhanced AI capabilities for retrieving and processing dynamic data
+## Features Overview
+
+| Feature | Description | Learn More |
+|---------|-------------|------------|
+| **Custom AI Agents** | Create specialized assistants with custom prompts and behaviors | [Getting Started →](ai-agents-getting-started.md) |
+| **Multi-Agent Teams** | Orchestrate multiple agents for complex workflows | [Agent Teams →](ai-agents-getting-started.md#multi-agent-teams) |
+| **Knowledge Training** | Train agents on documents, websites, and project data | [Knowledge Guide →](https://help.taskade.com/en/collections/14491816-agent-knowledge-memory) |
+| **Agent Tools** | Connect agents to external services and APIs | [Tools Reference →](https://help.taskade.com/en/articles/10383275-tools-for-ai-agents) |
+| **Agent Hosting** | Deploy agents publicly with widgets and custom branding | [Public Agents →](ai-agents-getting-started.md#using-your-ai-agent) |
+| **Taskade Genesis Integration** | Use agents within generated applications | [Taskade Genesis Docs →](../../genesis/README.md) |
+
+**[Complete AI Agents Guide →](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar)**
 
 **🔗 Related Concepts:**
 - **[Workspace DNA Harmony](../workspace-dna-harmony.md)** - How intelligence connects with memory and motion
@@ -342,25 +360,24 @@ Create professional applications with:
 - **Automated Updates** - Systems stay current with latest information
 - **Smart Filtering** - Focus on relevant data for your specific needs
 
-## 📚 Learning Resources
+## 📚 Resources
 
-### Video Tutorials
+| Resource | Description |
+|----------|-------------|
+| **[YouTube Channel](https://youtube.com/taskade)** | Step-by-step video guides |
+| **[AI Agent Gallery](https://www.taskade.com/agents)** | Browse ready-made agent templates |
+| **[Community Apps](https://www.taskade.com/community)** | Discover AI-powered applications |
+| **[Help Center](https://help.taskade.com)** | Official guides and tutorials |
+| **[API Documentation](../../api/README.md)** | Technical reference for developers |
 
-- [YouTube Channel](https://youtube.com/taskade) - Step-by-step video guides
-- [Genesis Demos](https://taskade.com/genesis) - See apps being built live
+### Templates & Examples
 
-### Need Help Getting Started?
-
-- **[Community Forum](https://taskade.com/community)** - Get help from other users
-- **[Official Help Center](https://help.taskade.com)** - Step-by-step guides and tutorials
-- **[Technical Documentation](../../api/README.md)** - For advanced users and developers
-
-### Templates & Ready-to-Use Examples
-
-- **[AI Assistant Gallery](https://taskade.com/agents)** - Browse ready-made assistants for any role
-- **[Real Business Examples](genesis-examples.md)** - See how 50+ companies use Genesis
-- **[Copy-Paste Prompts](genesis-prompt-library.md)** - Templates organized by industry
-- **[Popular Automation Ideas](automation-getting-started.md#popular-automation-templates)** - Common time-saving workflows
+| Template Type | Description | Link |
+|---------------|-------------|------|
+| **Agent Templates** | Pre-built assistants for marketing, support, research | [Browse Gallery →](https://www.taskade.com/agents) |
+| **Prompt Library** | Copy-paste prompts organized by industry | [View Prompts →](genesis-prompt-library.md) |
+| **Business Examples** | Real implementations from 50+ companies | [See Examples →](genesis-examples.md) |
+| **Automation Recipes** | Common workflow templates | [Browse Recipes →](automation-getting-started.md) |
 
 ## 🎯 Success Stories
 

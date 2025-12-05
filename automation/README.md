@@ -3,16 +3,35 @@
 **Act. Execute. Evolve.** Taskade Automations are the living motion layer of Workspace DNA, transforming static workflows into intelligent, adaptive systems that act with precision and learn from every execution.
 
 {% hint style="success" %}
-**Living Motion Layer** - Automations that don't just execute tasks, but learn from patterns, adapt to changing conditions, and continuously improve business outcomes.
+**Living Motion Layer** — Automations that don't just execute tasks, but learn from patterns, adapt to changing conditions, and continuously improve business outcomes.
 {% endhint %}
 
-Think of automations as the beating heart of living software. They are the motion layer that connects your living memory (projects and data) with living intelligence (AI agents and API), creating systems that:
+## AI-Powered Workflow Automation
 
-**🔄 Execute with Intelligence:**
-- **Learn from Success**: Automations that adapt based on outcomes
-- **Predict and Prevent**: Systems that anticipate issues before they occur
-- **Scale Effortlessly**: Workflows that grow more efficient over time
-- **Connect Seamlessly**: Intelligent integration between all business systems
+Taskade Automations provide an event-driven workflow engine that connects your AI agents, projects, and external tools. Build intelligent automation pipelines that respond to triggers, process data with AI, and execute actions across your entire business stack.
+
+**Key Capabilities:**
+- Event-driven triggers
+- AI-powered processing
+- 100+ service integrations
+- Conditional branching
+- Error handling with retry logic
+
+**[Automations Guide →](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar)**
+
+**Latest:** [Taskade Genesis: Connect Your Apps. Automate Your Business. (100+ Integrations)](https://www.taskade.com/blog/updates/)
+
+## Quick Overview
+
+| Feature | Description | Documentation |
+|---------|-------------|---------------|
+| **Triggers** | Events that start workflows (webhooks, schedules, form submissions) | [Trigger Reference →](triggers.md) |
+| **Actions** | Operations to perform (create tasks, send messages, call APIs) | [Action Reference →](actions.md) |
+| **Integrations** | 100+ pre-built connectors (Slack, Gmail, HubSpot, GitHub, etc.) | [Integration Guide →](integrations.md) |
+| **AI Processing** | Use AI agents within workflows for intelligent processing | [Advanced Actions →](advanced-actions.md) |
+| **Recipes** | Pre-built workflow templates for common use cases | [Recipe Library →](recipes.md) |
+
+Automations connect your projects (data layer) with AI agents (intelligence layer) and external services, creating systems that:
 
 - **React to Events**: Form submissions, webhooks, schedules, project changes
 - **Process with AI**: Analyze, categorize, summarize, and make decisions
@@ -904,14 +923,15 @@ These living automation patterns transform static workflows into intelligent, ad
 
 ## Next Steps
 
-- **[Explore Integration Options](./integrations.md)**
-- **[Browse Action & Trigger Reference](./actions.md)**
-- **[View Automation Recipes](./recipes.md)**
+| Resource | Description |
+|----------|-------------|
+| **[Integration Options](./integrations.md)** | Complete list of 100+ supported services |
+| **[Action & Trigger Reference](./actions.md)** | Detailed documentation for all operations |
+| **[Automation Recipes](./recipes.md)** | Pre-built templates for common workflows |
+| **[Comprehensive Integration Guide](./comprehensive-integrations.md)** | Advanced integration patterns |
 
 ---
 
-> **Want to browse all integrations?**  
-> → [Full Integration List](./integrations.md)
+**Browse Community Automations:** [taskade.com/community](https://www.taskade.com/community)
 
-> **Want to submit your own automation pattern?**  
-> → [Request via Taskade Community](https://taskade.com/community) 
+**Submit Your Own Patterns:** [Taskade Community Forum](https://www.taskade.com/feedback)
