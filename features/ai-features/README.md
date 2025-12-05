@@ -49,10 +49,40 @@ Living Memory (Projects/Data) → Living Intelligence (AI Agents & EVE) → Livi
 
 **[Complete AI Agents Guide →](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar)**
 
+## AI Model Selection Guide
+
+Taskade supports multiple AI models—choose based on your use case:
+
+| Model | Provider | Best For | Speed | Context |
+|-------|----------|----------|-------|---------|
+| **GPT-4o** | OpenAI | Complex reasoning, code generation | Fast | 128K |
+| **GPT-4.1** | OpenAI | Nuanced analysis, long conversations | Medium | 128K |
+| **o3-mini** | OpenAI | Quick tasks, cost-efficient | Very Fast | 16K |
+| **Claude 3.5 Sonnet** | Anthropic | Creative writing, detailed analysis | Fast | 200K |
+| **Claude 3 Opus** | Anthropic | Complex research, deep reasoning | Slow | 200K |
+| **Gemini Pro** | Google | Multimodal tasks, real-time data | Fast | 32K |
+
+> 💡 **Tip:** Start with GPT-4o for general tasks, use Claude for creative content, and Gemini for tasks requiring current information.
+
+## Agent Tools Reference
+
+Agents can use tools to perform actions beyond text generation:
+
+| Tool Category | Capabilities | Use Cases |
+|---------------|--------------|-----------|
+| **Web Search** | Search the internet for current information | Research, fact-checking, news |
+| **Web Scraping** | Extract content from websites | Data collection, monitoring |
+| **Image Generation** | Create images from descriptions | Marketing, content creation |
+| **Code Execution** | Run code snippets | Calculations, data processing |
+| **File Operations** | Read and process documents | Document analysis, extraction |
+| **API Calls** | Connect to external services | Integrations, data sync |
+| **Taskade Actions** | Create tasks, projects, send messages | Workflow automation |
+
+**[Tools for AI Agents →](https://help.taskade.com/en/articles/10383275-tools-for-ai-agents)**
+
 **🔗 Related Concepts:**
-- **[Workspace DNA Harmony](../workspace-dna-harmony.md)** - How intelligence connects with memory and motion
-- **[Living Memory Layer](../genesis/README.md)** - The data foundation that intelligence learns from
-- **[Living Motion Layer](../automation/README.md)** - Automations powered by intelligent decision-making
+- **[Living Memory Layer](../../taskos/introduction.md)** — The data foundation that intelligence learns from
+- **[Living Motion Layer](../../automation/README.md)** — Automations powered by intelligent decision-making
 
 ## 🚀 Quick Start Guides
 

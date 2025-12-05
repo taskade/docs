@@ -59,13 +59,19 @@ Software should be alive. And now, it is.
 
 **The breakthrough:** Your workspace becomes a living organism powered by Workspace DNA—the intelligent architecture that connects memory, intelligence, and motion into cohesive, evolving business systems.
 
-### **Workspace DNA: The Three Living Layers**
+### **Workspace DNA: The Three Pillars**
 
-**🧠 Living Memory** - Your projects and data structures that adapt and learn from usage patterns
-**🤖 Living Intelligence** - AI agents and EVE that understand context and provide proactive assistance
-**⚡ Living Motion** - Automations that execute with precision and learn from every action
+Your workspace is built on three interconnected pillars that form your digital DNA:
 
-**These layers don't just coexist—they work in continuous harmony, creating systems that are greater than the sum of their parts.**
+| Pillar | What It Does | Key Features | Documentation |
+|--------|--------------|--------------|---------------|
+| 🧠 **Memory** | Stores & organizes your data | Projects, custom fields, 8 views, relationships | [Projects Guide →](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar) |
+| 🤖 **Intelligence** | Thinks & responds to needs | AI agents, knowledge training, multi-agent teams | [AI Agents Guide →](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar) |
+| ⚡ **Execution** | Acts & automates workflows | Triggers, actions, 100+ integrations | [Automations Guide →](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar) |
+
+These pillars work together as **Living Software**—systems that learn, adapt, and evolve with your business.
+
+**[Learn About Workspace DNA →](https://help.taskade.com/en/articles/12578949-how-genesis-works-workspace-dna)**
 
 ### **The Paradigm Shift**
 
