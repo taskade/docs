@@ -29,7 +29,7 @@ Try these live apps built with Taskade Genesis:
 | **Team Capacity Planner** | Management | [Try It →](https://www.taskade.com/share/apps/qttq6maivthotsm4) |
 | **Neon CRM Dashboard** | Sales | [Try It →](https://www.taskade.com/share/apps/nsrm12wns3e1cgni) |
 | **Class Booking Portal** | Education | [Try It →](https://www.taskade.com/share/apps/cpl9dz85yx75foxo) |
-| **Hospitality Insight Dashboard** | Analytics | [Try It →](https://www.taskade.com/share/apps/5ajqdljgdm5jmxjl) |
+| **Hospitality Dashboard** | Analytics | [Try It →](https://www.taskade.com/share/apps/5ajqdljgdm5jmxjl) |
 | **Expense Splitter** | Finance | [Try It →](https://www.taskade.com/share/apps/8cm6rlh17r3yg5mt) |
 | **Cover Letter Generator** | Career | [Try It →](https://www.taskade.com/share/apps/pluhvxout7fgroo7) |
 | **Real Estate Landing Page** | Marketing | [Try It →](https://www.taskade.com/share/apps/otjktqoxppg4xcs1) |
