@@ -1,10 +1,24 @@
 # Triggers Reference
 
-Triggers are the "if" part of automation workflows - they define the events that initiate automated actions. Taskade provides a comprehensive set of triggers that monitor for task changes, project events, external integrations, and scheduled conditions. Each trigger provides contextual data that can be used in subsequent automation actions.
+Triggers are the "if" part of automation workflows—they define the events that initiate automated actions. Taskade provides a comprehensive set of triggers that monitor for task changes, project events, external integrations, and scheduled conditions.
+
+**[Automations Guide →](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar)**
 
 {% hint style="success" %}
-Triggers act as the intelligent sensors of your automation system, detecting events across Taskade and external services to initiate workflows that keep your processes running smoothly.
+Triggers act as the intelligent sensors of your automation system, detecting events across Taskade and external services to initiate workflows.
 {% endhint %}
+
+## Quick Reference: Trigger Types
+
+| Category | Trigger Types | Use Cases |
+|----------|---------------|-----------|
+| **Task Events** | Task Added, Completed, Assigned, Due | Project management, notifications |
+| **Project Events** | Project Completed, Custom Field Updated | Milestones, status tracking |
+| **Time Events** | Schedule, Delay, Task Due | Recurring tasks, reminders |
+| **Collaboration** | New Comment, New Due Date | Team notifications, feedback |
+| **AI Events** | Agent Trigger, Chat Ended, Command Executed | Agent workflows, automation |
+| **External** | Webhook, Mailhook, Form Submission | API integrations, data import |
+| **Integrations** | Slack, Gmail, HubSpot, GitHub, 100+ more | Cross-platform automation |
 
 ## Complete Trigger Reference
 

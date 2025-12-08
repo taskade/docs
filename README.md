@@ -24,6 +24,10 @@ layout:
 
 # Welcome to Taskade
 
+**The AI-Native Platform for Building Intelligent Applications**
+
+Build complete business applications, websites, and tools using natural language. Taskade combines an **AI app builder**, **workflow automation engine**, **AI agents platform**, and **automatic deployment** into a unified workspace.
+
 **Build Without Permission. Start with Genesis. Your workspace is the foundation.**
 
 We believe the future of work isn't just humans using AI. It's humans and AI working as one.
@@ -35,6 +39,18 @@ We believe the future of work isn't just humans using AI. It's humans and AI wor
 
 Software should be alive. And now, it is.
 
+## 🏗️ Platform Capabilities
+
+| Capability | Description | Learn More |
+|------------|-------------|------------|
+| **AI App Builder** | Generate full-stack applications from natural language prompts | [Create Your First App →](https://help.taskade.com/en/articles/11957643-create-your-first-app) |
+| **Website Generator** | Create responsive websites with built-in AI intelligence | [Workspace DNA →](https://help.taskade.com/en/articles/12578949-how-genesis-works-workspace-dna) |
+| **Workflow Automation** | Connect 100+ integrations with AI-powered decision making | [Automations Guide →](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar) |
+| **AI Agents Platform** | Deploy custom AI assistants with persistent memory | [Custom AI Agents →](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar) |
+| **Projects & Databases** | Structured data with real-time sync and custom fields | [Memory Pillar →](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar) |
+
+**[Start Building →](https://www.taskade.com)** | **[Browse Community Apps →](https://www.taskade.com/community)**
+
 ## 🌟 The Living Software Revolution
 
 ### **From Static Tools to Living Systems**
@@ -43,13 +59,19 @@ Software should be alive. And now, it is.
 
 **The breakthrough:** Your workspace becomes a living organism powered by Workspace DNA—the intelligent architecture that connects memory, intelligence, and motion into cohesive, evolving business systems.
 
-### **Workspace DNA: The Three Living Layers**
+### **Workspace DNA: The Three Pillars**
 
-**🧠 Living Memory** - Your projects and data structures that adapt and learn from usage patterns
-**🤖 Living Intelligence** - AI agents and EVE that understand context and provide proactive assistance
-**⚡ Living Motion** - Automations that execute with precision and learn from every action
+Your workspace is built on three interconnected pillars that form your digital DNA:
 
-**These layers don't just coexist—they work in continuous harmony, creating systems that are greater than the sum of their parts.**
+| Pillar | What It Does | Key Features | Documentation |
+|--------|--------------|--------------|---------------|
+| 🧠 **Memory** | Stores & organizes your data | Projects, custom fields, 8 views, relationships | [Projects Guide →](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar) |
+| 🤖 **Intelligence** | Thinks & responds to needs | AI agents, knowledge training, multi-agent teams | [AI Agents Guide →](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar) |
+| ⚡ **Execution** | Acts & automates workflows | Triggers, actions, 100+ integrations | [Automations Guide →](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar) |
+
+These pillars work together as **Living Software**—systems that learn, adapt, and evolve with your business.
+
+**[Learn About Workspace DNA →](https://help.taskade.com/en/articles/12578949-how-genesis-works-workspace-dna)**
 
 ### **The Paradigm Shift**
 
@@ -99,6 +121,30 @@ Sites that evolve with your audience. They learn which content resonates, optimi
 
 **How it works:** Describe your vision → Workspace DNA awakens → Living system learns and evolves → Intelligence compounds over time
 
+## 🛠️ Workspace DNA Architecture
+
+Taskade is built on three interconnected layers that work together as your workspace's "living DNA":
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    WORKSPACE DNA                                │
+├─────────────────────────────────────────────────────────────────┤
+│  🧠 Living Memory        │  🤖 Living Intelligence  │  ⚡ Living Motion    │
+│  ─────────────────────   │  ──────────────────────  │  ─────────────────   │
+│  • Projects & Databases  │  • Custom AI Agents      │  • 100+ Integrations │
+│  • Real-time Sync        │  • Multi-Agent Teams     │  • Event-Driven      │
+│  • Custom Fields/Views   │  • Knowledge Retrieval   │  • Webhook/API       │
+│  • 8 Project Views       │  • Tool Execution        │  • Scheduled Tasks   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**[Learn About Workspace DNA →](https://help.taskade.com/en/articles/12578949-how-genesis-works-workspace-dna)** | **[API Documentation →](https://www.taskade.com/api/documentation/)**
+
+### Latest Updates
+- [Build Without Permission: The Taskade Genesis Manifesto](https://www.taskade.com/blog/build-without-permission/)
+- [Introducing Taskade Genesis](https://www.taskade.com/blog/introducing-taskade-genesis/)
+- [All Product Updates →](https://www.taskade.com/blog/updates/)
+
 ## 🎯 What is Taskade?
 
 **Where every workspace becomes a foundation for unlimited apps.**
@@ -138,6 +184,7 @@ Your Taskade workspace is your **Home Subspace** — the living foundation that 
 ### 💻 **For Developers**
 - **[API Documentation](api/README.md)** - Complete technical reference  
 - **[Authentication Setup](start/authentication.md)** - Get your API keys
+- **[Developer Guide](developers/README.md)** - Build on Taskade's infrastructure
 
 ## ✨ Core Features
 
@@ -197,6 +244,8 @@ Your Taskade workspace is your **Home Subspace** — the living foundation that 
 - **Project Progress Trackers** - Timeline management with team notifications
 
 **Every app is built using the generator input field at the top of your workspace and appears as a clickable tile below. Each tile contains a complete application with its own Preview tab, powered by your workspace's living DNA.**
+
+**[Explore Community Templates →](https://www.taskade.com/community)** - Browse 1000+ apps, dashboards, and tools built by the community.
 
 ## 🌟 Living Systems That Think: Complete Business Solutions
 

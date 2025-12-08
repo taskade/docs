@@ -17,12 +17,26 @@ layout:
 **TaskOS** is the living memory engine of Workspace DNA—the intelligence that transforms static data into adaptive, evolving knowledge systems. It powers the living memory layer that learns from every interaction, connects insights across contexts, and enables living systems to remember, reason, and grow.
 
 **🧠 Living Memory Layer Role:**
-- **Adaptive Data Structures** - Projects that evolve with your business needs
-- **Contextual Intelligence** - Knowledge that connects across all living systems
-- **Evolutionary Learning** - Memory that improves with every use and insight
-- **Harmonious Integration** - Memory that feeds living intelligence and enables living motion
+- **Adaptive Data Structures** — Projects that evolve with your business needs
+- **Contextual Intelligence** — Knowledge that connects across all living systems
+- **Evolutionary Learning** — Memory that improves with every use and insight
+- **Harmonious Integration** — Memory that feeds living intelligence and enables living motion
 
-_If you prefer a fully no-code experience, check out [Taskade Genesis](../genesis/README.md), which provides a Genesis prompt builder powered by TaskOS under the hood._
+**Core Capabilities:**
+
+| Feature | Description |
+|---------|-------------|
+| **Adaptive Schemas** | Project structures that evolve with custom fields and views |
+| **Real-time Sync** | Conflict-free collaborative editing across all clients |
+| **Semantic Search** | Find content by meaning across project data |
+| **Knowledge Integration** | Direct connection to AI agent training |
+| **8 Project Views** | List, Board, Calendar, Table, Mind Map, Org Chart, Gantt, Action |
+
+_For a no-code interface to TaskOS capabilities, use [Taskade Genesis](../genesis/README.md) to build applications from natural language prompts._
+
+**[Projects & Databases Guide →](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar)**
+
+**Read more:** [Product Updates](https://www.taskade.com/blog/updates/)
 
 ## How TaskOS Works
 
@@ -253,11 +267,24 @@ TaskOS leverages Taskade's full platform capabilities:
 
 ## Getting Started
 
-1. **[Explore AI Kits](https://taskade.com/kits)** - See TaskOS in action with pre-built workflows
-2. **[Install a Kit](https://help.taskade.com/en/articles/10378721-taskade-ai-kits)** - Experience the one-click deployment process
-3. **[Learn the Architecture](../vision/architecture.md)** - Understand how the pieces fit together
-4. **[Try the API](../api/workspaces/README.md)** - Start building with our building blocks
-5. **[Join the Community](https://www.taskade.com/feedback/public-api)** - Connect with other developers
+| Step | Resource | Description |
+|------|----------|-------------|
+| 1 | **[Explore AI Kits](https://www.taskade.com/kits)** | Pre-built workflows powered by TaskOS |
+| 2 | **[Install a Kit](https://help.taskade.com/en/articles/10378721-taskade-ai-kits)** | One-click deployment process |
+| 3 | **[Architecture Guide](../vision/architecture.md)** | Technical architecture overview |
+| 4 | **[API Documentation](https://www.taskade.com/api/documentation/)** | Explore the API |
+| 5 | **[Developer Community](https://www.taskade.com/feedback/public-api)** | Connect with other developers |
+
+### Related Help Center Guides
+
+| Guide | Description |
+|-------|-------------|
+| **[Projects & Databases](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar)** | Complete projects guide |
+| **[Workspace DNA](https://help.taskade.com/en/articles/12578949-how-genesis-works-workspace-dna)** | How the three layers work together |
+| **[Custom AI Agents](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar)** | Train agents on project data |
+| **[Automations](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar)** | Connect projects to workflows |
+
+**Browse Community Apps:** [taskade.com/community](https://www.taskade.com/community)
 
 ## Workspace DNA Integration
 

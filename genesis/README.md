@@ -9,13 +9,39 @@ One Prompt. One App.
 Imagine it. Run it live.  
 Powered by your Workspace — the living DNA behind your app.**
 
+---
+
+## AI-Powered Full-Stack Application Builder
+
+Taskade Genesis transforms natural language into complete, deployable applications. Build websites, dashboards, portals, and tools without writing code.
+
+**Core Capabilities:**
+- **AI App Builder** — Generate applications from natural language prompts
+- **Website Generator** — Create responsive sites with built-in AI intelligence
+- **Automatic Deployment** — Apps go live instantly with SSL and custom domains
+- **Living Intelligence** — Apps powered by your workspace's AI agents and data
+- **Community Gallery** — Share, fork, and discover apps at [taskade.com/community](https://www.taskade.com/community)
+
 {% hint style="success" %}
 **New to Genesis?** Follow our [5-minute getting started guide](getting-started.md) to build your first business app from a simple description!
 {% endhint %}
 
-**We build for the outsiders, the underestimated, the ones who were never given a seat at the table but showed up anyway.**
+## What You Can Build
 
-Transform your business ideas into working applications using nothing but plain English - no coding required. Genesis is the breakthrough moment - the HyperCard moment for the AI era.
+| App Type | Generation Time | Examples |
+|----------|-----------------|----------|
+| **Web Applications** | 2-5 minutes | Customer portals, dashboards, CRM tools |
+| **Landing Pages** | 1-3 minutes | SaaS sites, portfolios, product pages |
+| **Internal Tools** | 3-7 minutes | Admin panels, inventory trackers, team dashboards |
+| **Data Collection** | 2-4 minutes | Lead capture, surveys, booking systems |
+
+**[Browse Community Examples →](https://www.taskade.com/community)** | **[View Live Demos →](examples-and-templates.md)** | **[Create Your First App →](https://help.taskade.com/en/articles/11957643-create-your-first-app)**
+
+---
+
+Transform your business ideas into working applications using nothing but plain English—no coding required. Taskade Genesis is the breakthrough moment for AI-native development.
+
+**We build for the outsiders, the underestimated, the ones who were never given a seat at the table but showed up anyway.**
 
 ---
 
@@ -31,6 +57,28 @@ We believe the future of work isn't just humans using AI. It's humans and AI wor
 Software should be alive. And now, it is.
 
 **Read the full manifesto**: [Build Without Permission: The Taskade Genesis Manifesto](https://www.taskade.com/blog/build-without-permission)
+
+## How Taskade Genesis Works
+
+Taskade Genesis handles the entire app creation and deployment pipeline automatically:
+
+```
+Describe Your App → AI Generates Code → Automatic Deployment → Live URL
+```
+
+**What's Included:**
+- **Instant Deployment** — Apps go live immediately with unique URLs
+- **SSL Certificates** — Secure HTTPS automatically configured
+- **Custom Domains** — Connect your own domain for branded URLs
+- **Version History** — Track changes and rollback when needed
+- **Real-time Sync** — Live connection to your Taskade workspace data
+
+**[Learn How Workspace DNA Powers Your Apps →](https://help.taskade.com/en/articles/12578949-how-genesis-works-workspace-dna)**
+
+### Blog Posts
+- [Build Without Permission: The Taskade Genesis Manifesto](https://www.taskade.com/blog/build-without-permission/)
+- [Introducing Taskade Genesis](https://www.taskade.com/blog/introducing-taskade-genesis/)
+- [All Product Updates](https://www.taskade.com/blog/updates/)
 
 ---
 
@@ -364,34 +412,32 @@ Each system combines the Memory, Intelligence, and Motion layers into a unified 
 
 ---
 
-## Two Powerful Creation Modes
+## Two Creation Modes
 
-Genesis offers two ways to build applications based on your needs:
+Taskade Genesis offers two approaches based on your needs:
 
-### 🏗️ **Project-Based Apps** (Traditional Genesis)
-Create structured workspaces with intelligent data management, AI assistants, and automated workflows.
+### 🏗️ **Project-Based Apps** (Workspace Integration)
+Structured workspaces with intelligent data management, AI assistants, and automated workflows.
 
-- **📊 Smart Data Storage** - Flexible database that grows with your needs
-- **🤖 AI Assistant Built-In** - Learns your business and helps users automatically  
-- **⚡ Connects to Everything** - Integrates with 100+ business tools
-- **📁 File & Document Support** - Upload and organize business documents
-- **🔒 Enterprise Security** - Role-based permissions and data protection
+| Feature | Description | Learn More |
+|---------|-------------|------------|
+| **Smart Database** | Flexible data storage with custom fields and 8 view types | [Projects Guide →](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar) |
+| **AI Assistant** | Built-in agent trained on your business knowledge | [AI Agents →](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar) |
+| **100+ Integrations** | Connect to Slack, Gmail, HubSpot, Stripe, and more | [Automations →](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar) |
+| **File Management** | Upload, organize, and process documents | |
+| **Role-Based Access** | Enterprise-grade permissions and security | |
 
-### ⚡ **Space Apps** (React Web Applications)
-Generate complete React web applications deployed to live URLs with real-time data integration.
+### ⚡ **Space Apps** (Full-Stack Deployment)
+Complete web applications deployed to production URLs.
 
-- **🌐 Complete Web Applications** - Full-stack React apps with modern UI
-- **🚀 Live Deployment** - Automatic hosting on Fly.io with global CDN
-- **🔗 Data Integration** - Connects seamlessly to your Taskade projects
-- **🎨 Modern Styling** - Responsive design with Tailwind CSS and enhanced design tools
-- **⚡ Real-time Updates** - Changes sync instantly across your workspace
-- **📁 File Upload Support** - Handle files, images, and documents seamlessly
-- **🌍 Custom Domains** - Publish under your own branded domain
-- **🍴 Community Gallery** - Discover, share, and fork apps from the global community
-- **📸 App Screenshots** - Visual previews of apps in workspace and community
-- **📱 Superior Mobile Experience** - Optimized performance and usability across all devices
-- **🔍 Enhanced Search** - Better navigation and content discovery
-- **👥 Improved Collaboration** - Enhanced team features and sharing capabilities
+| Feature | Description |
+|---------|-------------|
+| **Modern Frontend** | Responsive design that works on all devices |
+| **Automatic Deployment** | Apps go live instantly with unique URLs |
+| **SSL + Custom Domains** | Secure HTTPS with your own branded domain |
+| **Real-time Data** | Live connection to your Taskade project data |
+| **Version History** | Track changes and rollback when needed |
+| **Community Gallery** | Share and fork apps at [taskade.com/community](https://www.taskade.com/community) |
 
 | Feature | Space Apps | Project Apps |
 |---------|------------|--------------|
@@ -923,6 +969,36 @@ Stop wasting time on manual processes and start building solutions that work for
 
 ---
 
-**Ready to build your first app? [Start with Genesis →](https://taskade.com)**
+## Featured App Examples
 
-*Transform your business ideas into working applications today - no coding required.*
+Explore live apps built with Taskade Genesis:
+
+| App | Category | Try It |
+|-----|----------|--------|
+| **SaaS Landing Page** | Marketing | [View →](https://www.taskade.com/share/apps/mce6bquyb3gp57a9) |
+| **Appointment Booking System** | Scheduling | [View →](https://www.taskade.com/share/apps/te01cx15e4tv558x) |
+| **Finance Tracker Dashboard** | Analytics | [View →](https://www.taskade.com/share/apps/tmnju1vsp3ggajo7) |
+| **Investor Dashboard** | Business | [View →](https://www.taskade.com/share/apps/5q9h9ufuofnx1agv) |
+| **Event Management Portal** | Events | [View →](https://www.taskade.com/share/apps/scv62ou1yocu3sno) |
+| **Invoice Generator** | Tools | [View →](https://www.taskade.com/share/apps/v71ywf2zs5bu9a5m) |
+| **Time Tracker** | Productivity | [View →](https://www.taskade.com/share/apps/6yw3w52epymtua6p) |
+| **Room Booking Dashboard** | Scheduling | [View →](https://www.taskade.com/share/apps/iqb5y1zw24q67lt3) |
+
+**[Browse All Community Apps →](https://www.taskade.com/community)**
+
+## Resources
+
+| Resource | Description |
+|----------|-------------|
+| **[Create Your First App](https://help.taskade.com/en/articles/11957643-create-your-first-app)** | Step-by-step tutorial |
+| **[Workspace DNA Guide](https://help.taskade.com/en/articles/12578949-how-genesis-works-workspace-dna)** | How Taskade Genesis works under the hood |
+| **[API Documentation](https://www.taskade.com/api/documentation/)** | Programmatic access to Taskade |
+| **[Automation Integration](../automation/README.md)** | Connect apps to workflow triggers |
+| **[Custom Domains Guide](custom-domains.md)** | Configure branded URLs |
+| **[Community Gallery](https://www.taskade.com/community)** | Browse, fork, and share apps |
+
+---
+
+**Ready to build your first app? [Start with Taskade Genesis →](https://www.taskade.com)**
+
+*Transform your business ideas into working applications today—no coding required.*

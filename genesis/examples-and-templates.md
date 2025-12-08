@@ -4,9 +4,38 @@
 
 Each example includes the exact prompt, expected results, and real success metrics from businesses using Genesis.
 
-## 🎨 Genesis App Gallery
+{% hint style="success" %}
+**Looking for more examples?** Browse 1000+ community-built apps, dashboards, and tools at **[taskade.com/community](https://www.taskade.com/community)**
+{% endhint %}
 
-Want to see what's actually possible with Genesis? Explore these interactive demos built by real users with their exact prompts.
+## 🎨 Taskade Genesis App Gallery
+
+Explore interactive demos built by real users with their exact prompts. Fork any app to use as a starting point for your own project.
+
+### Featured App Templates
+
+Try these live apps built with Taskade Genesis:
+
+| App | Category | Live Demo |
+|-----|----------|-----------|
+| **SaaS Landing Page** | Marketing | [Try It →](https://www.taskade.com/share/apps/mce6bquyb3gp57a9) |
+| **Appointment Booking System** | Scheduling | [Try It →](https://www.taskade.com/share/apps/te01cx15e4tv558x) |
+| **Finance Tracker Dashboard** | Analytics | [Try It →](https://www.taskade.com/share/apps/tmnju1vsp3ggajo7) |
+| **Investor Dashboard** | Business | [Try It →](https://www.taskade.com/share/apps/5q9h9ufuofnx1agv) |
+| **Event Management Portal** | Events | [Try It →](https://www.taskade.com/share/apps/scv62ou1yocu3sno) |
+| **Invoice Generator** | Tools | [Try It →](https://www.taskade.com/share/apps/v71ywf2zs5bu9a5m) |
+| **Time Tracker** | Productivity | [Try It →](https://www.taskade.com/share/apps/6yw3w52epymtua6p) |
+| **Room Booking Dashboard** | Scheduling | [Try It →](https://www.taskade.com/share/apps/iqb5y1zw24q67lt3) |
+| **Team Capacity Planner** | Management | [Try It →](https://www.taskade.com/share/apps/qttq6maivthotsm4) |
+| **Neon CRM Dashboard** | Sales | [Try It →](https://www.taskade.com/share/apps/nsrm12wns3e1cgni) |
+| **Class Booking Portal** | Education | [Try It →](https://www.taskade.com/share/apps/cpl9dz85yx75foxo) |
+| **Hospitality Dashboard** | Analytics | [Try It →](https://www.taskade.com/share/apps/5ajqdljgdm5jmxjl) |
+| **Expense Splitter** | Finance | [Try It →](https://www.taskade.com/share/apps/8cm6rlh17r3yg5mt) |
+| **Cover Letter Generator** | Career | [Try It →](https://www.taskade.com/share/apps/pluhvxout7fgroo7) |
+| **Real Estate Landing Page** | Marketing | [Try It →](https://www.taskade.com/share/apps/otjktqoxppg4xcs1) |
+| **QR Code Studio** | Tools | [Try It →](https://www.taskade.com/share/apps/8wydzah8zexhv5ub) |
+
+**[Browse All Community Apps →](https://www.taskade.com/community)**
 
 ### **📚 Template Gallery**
 
@@ -236,6 +265,19 @@ I want to [HOW YOU'LL USE THE DATA] so I can [BUSINESS OUTCOME].
 
 ---
 
-**Ready to build your own app? [Start with Genesis →](https://taskade.com)**
+## 🌐 Community Resources
+
+| Resource | Description |
+|----------|-------------|
+| **[Community Gallery](https://www.taskade.com/community)** | Browse 1000+ apps built by the community |
+| **[Template Library](https://www.taskade.com/templates)** | Project templates for any use case |
+| **[AI Agent Gallery](https://www.taskade.com/agents)** | Pre-built AI assistants ready to deploy |
+| **[AI Kits](https://www.taskade.com/kits)** | One-click deployable workflows and agents |
+
+---
+
+**Ready to build your own app? [Start with Genesis →](https://www.taskade.com)**
+
+**[Browse Community Apps →](https://www.taskade.com/community)** | **[Fork a Template →](https://www.taskade.com/templates)**
 
 *Copy any prompt above, customize it for your business, and have a working app in minutes.*

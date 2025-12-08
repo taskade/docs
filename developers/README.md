@@ -1,12 +1,23 @@
 # Developer Documentation
 
-**Build on a platform designed for technical depth and architectural elegance.**
+**Build on Taskade's platform for applications, agents, and automation.**
 
 {% hint style="info" %}
-**New to Taskade's API?** Start with our [authentication guide](../start/authentication.md) and make your first API request in minutes.
+**New to Taskade's API?** Start with our [authentication guide](../start/authentication.md) and explore the [API documentation](https://www.taskade.com/api/documentation/).
 {% endhint %}
 
-Taskade's API is built around real-time data synchronization and a unified intelligence layer that powers everything from simple CRUD operations to complex AI-driven workflows. Whether you're building integrations, automating processes, or creating entirely new applications, the platform provides both high-level abstractions and low-level control.
+## Platform Overview
+
+Taskade provides a complete platform for building intelligent applications:
+
+| Capability | Description | Learn More |
+|------------|-------------|------------|
+| **AI App Builder** | Generate full-stack applications from natural language | [Taskade Genesis →](../genesis/README.md) |
+| **AI Agents Platform** | Custom assistants with knowledge retrieval | [AI Agents Guide →](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar) |
+| **Workflow Automation** | Event-driven processing with 100+ integrations | [Automations →](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar) |
+| **Projects & Data** | Structured data with real-time sync and custom fields | [Projects Guide →](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar) |
+
+The API is built around real-time data synchronization and a unified intelligence layer that powers everything from simple CRUD operations to complex AI-driven workflows.
 
 ## 🚀 Quick Start
 
@@ -86,13 +97,11 @@ Official and community-maintained libraries:
 
 ## 🎯 Genesis API
 
-### **[Genesis API](../api/genesis/README.md)**
+### **[Taskade Genesis](../genesis/README.md)**
 
-**Multi-modal AI system with code generation and deployment pipeline**. Genesis combines GPT-5 and Claude-4 in a unified TAA (Taskade AI Assistant) architecture. The system performs AST-level code analysis, dependency resolution, and automated testing before deployment to Fly.io infrastructure.
+Build complete web applications from natural language prompts. Taskade Genesis handles code generation and automatic deployment.
 
-### **[Space Apps & Deployment](../api/genesis/README.md#space-apps)**
-
-**Full-stack React applications with real-time data binding**. Generated apps include TypeScript, Tailwind CSS, and automatic API client generation. Apps are deployed as serverless functions with edge caching and automatic scaling. Supports hot reloading and incremental builds.
+**[Create Your First App →](https://help.taskade.com/en/articles/11957643-create-your-first-app)**
 
 ## 📚 Resources
 
@@ -110,44 +119,70 @@ Official and community-maintained libraries for popular languages.
 
 ## 💡 What You Can Build
 
-### **Distributed Systems & Data Processing**
+### **Full-Stack Applications (Taskade Genesis)**
 
-- **Real-time analytics pipelines** with instant updates using WebSocket streams
-- **Multi-tenant SaaS platforms** with isolated data partitioning and row-level security
-- **Event-sourced architectures** with automatic snapshots and replay capabilities
-- **Microservice orchestration** with automated dependency injection and health monitoring
+Build complete web applications from natural language prompts:
 
-### **AI-Native Applications**
+| Capability | Description |
+|------------|-------------|
+| **App Generation** | Describe your app and Taskade generates the code |
+| **Automatic Deployment** | Apps go live instantly with unique URLs |
+| **Custom Domains** | Connect your own branded domain |
+| **Version History** | Track changes and rollback when needed |
 
-- **Multi-agent systems** with planning, execution, and feedback loops
-- **Knowledge graphs** that evolve with user interactions and document ingestion
-- **Semantic search engines** using vector embeddings and hybrid retrieval
-- **Context-aware automation** that adapts behavior based on historical patterns
+**[Create Your First App →](https://help.taskade.com/en/articles/11957643-create-your-first-app)**
 
-### **Infrastructure & DevOps**
+### **AI Agents**
 
-- **GitOps workflows** with automatic deployment and rollback capabilities
-- **Monitoring systems** with custom metrics, alerting, and anomaly detection
-- **API gateways** with rate limiting, authentication, and request/response transformation
-- **Data synchronization** between heterogeneous systems with conflict resolution
+Deploy custom AI assistants trained on your business knowledge:
+
+| Capability | Description |
+|------------|-------------|
+| **Agent Creation** | Custom prompts, behaviors, and personalities |
+| **Knowledge Training** | Train on documents, websites, and project data |
+| **Multi-Agent Teams** | Coordinate multiple agents for complex tasks |
+| **Public Embedding** | Deploy agents as widgets on external sites |
+
+**[AI Agents Guide →](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar)**
+
+### **Workflow Automation**
+
+Connect your apps to 100+ services with event-driven workflows:
+
+| Capability | Description |
+|------------|-------------|
+| **Triggers** | Webhooks, schedules, form submissions, project events |
+| **Actions** | Send messages, update data, call external APIs |
+| **AI Processing** | Use AI agents within automation workflows |
+| **Integrations** | Slack, Gmail, HubSpot, GitHub, and 100+ more |
+
+**[Automations Guide →](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar)**
+
+### **Projects & Data**
+
+Structured data with real-time collaboration:
+
+- **Real-time sync** across all connected clients
+- **Custom fields** for structured data storage
+- **8 project views** (List, Board, Calendar, Table, Mind Map, etc.)
+- **AI knowledge** integration for agent training
+
+**[Projects Guide →](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar)**
 
 ## 🤝 Community & Support
 
-### **[Community Forum](https://www.taskade.com/feedback/public-api)**
-
-Connect with other developers, share integrations, and get help.
-
-### **[GitHub Repository](https://github.com/taskade/docs)**
-
-Contribute to our documentation and submit feature requests.
-
-### **[Status Page](https://status.taskade.com)**
-
-Monitor API uptime and service announcements.
+| Resource | Description |
+|----------|-------------|
+| **[API Documentation](https://www.taskade.com/api/documentation/)** | Interactive API documentation (Swagger) |
+| **[Community Forum](https://www.taskade.com/feedback/public-api)** | Developer discussions, integration sharing |
+| **[GitHub Repository](https://github.com/taskade/docs)** | Documentation contributions, feature requests |
+| **[Status Page](https://status.taskade.com)** | API uptime, service announcements |
+| **[Community Apps](https://www.taskade.com/community)** | Browse apps built with Taskade |
 
 ---
 
 **Ready to start building?**
 
 🚀 **[Get Your API Key →](../start/authentication.md)**  
-💬 **[Join Our Community →](https://www.taskade.com/feedback/public-api)**
+📚 **[API Documentation →](https://www.taskade.com/api/documentation/)**  
+💬 **[Join Developer Community →](https://www.taskade.com/feedback/public-api)**
