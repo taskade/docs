@@ -76,7 +76,7 @@ Having issues? Check our troubleshooting guides for quick solutions.
 
 ## 💬 Still Need Help?
 
-- [Contact Support](https://help.taskade.com/contact)
+- [Contact Support](https://www.taskade.com/contact)
 - [Community Forum](https://www.taskade.com/feedback)
 - [Feature Requests](https://www.taskade.com/feedback)
 
