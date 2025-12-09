@@ -42,8 +42,8 @@ Living Memory (Projects/Data) → Living Intelligence (AI Agents & EVE) → Livi
 |---------|-------------|------------|
 | **Custom AI Agents** | Create specialized assistants with custom prompts and behaviors | [Getting Started →](ai-agents-getting-started.md) |
 | **Multi-Agent Teams** | Orchestrate multiple agents for complex workflows | [Agent Teams →](ai-agents-getting-started.md#multi-agent-teams) |
-| **Knowledge Training** | Train agents on documents, websites, and project data | [Knowledge Guide →](https://help.taskade.com/en/collections/14491816-agent-knowledge-memory) |
-| **Agent Tools** | Connect agents to external services and APIs | [Tools Reference →](https://help.taskade.com/en/articles/10383275-tools-for-ai-agents) |
+| **Knowledge Training** | Train agents on documents, websites, and project data | [Knowledge Guide →](https://help.taskade.com/en/articles/9495190-agent-knowledge-memory) |
+| **Agent Tools** | Connect agents to external services and APIs | [Tools Reference →](https://help.taskade.com/en/articles/9314171-tools-for-ai-agents) |
 | **Agent Hosting** | Deploy agents publicly with widgets and custom branding | [Public Agents →](ai-agents-getting-started.md#using-your-ai-agent) |
 | **Taskade Genesis Integration** | Use agents within generated applications | [Taskade Genesis Docs →](../../genesis/README.md) |
 
@@ -78,7 +78,7 @@ Agents can use tools to perform actions beyond text generation:
 | **API Calls** | Connect to external services | Integrations, data sync |
 | **Taskade Actions** | Create tasks, projects, send messages | Workflow automation |
 
-**[Tools for AI Agents →](https://help.taskade.com/en/articles/10383275-tools-for-ai-agents)**
+**[Tools for AI Agents →](https://help.taskade.com/en/articles/9314171-tools-for-ai-agents)**
 
 **🔗 Related Concepts:**
 - **[Living Memory Layer](../../taskos/introduction.md)** — The data foundation that intelligence learns from
@@ -97,8 +97,8 @@ New to Taskade AI? Start here:
 ### AI Agents: Smart Assistants
 
 - **[AI Agents Getting Started](ai-agents-getting-started.md)** - Create your first AI team member
-- **[Tools for AI Agents](https://help.taskade.com/en/articles/10383275-tools-for-ai-agents)** - Add superpowers to your agents
-- **[Agent Knowledge & Memory](https://help.taskade.com/en/collections/14491816-agent-knowledge-memory)** - Train agents with your data
+- **[Tools for AI Agents](https://help.taskade.com/en/articles/9314171-tools-for-ai-agents)** - Add superpowers to your agents
+- **[Agent Knowledge & Memory](https://help.taskade.com/en/articles/9495190-agent-knowledge-memory)** - Train agents with your data
 
 ### Automation: Put Work on Autopilot
 

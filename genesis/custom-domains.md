@@ -552,10 +552,10 @@ Ready to elevate your Genesis apps with professional custom domains?
 
 ### Support Resources
 
-- **[Custom Domain Setup Guide](https://help.taskade.com/custom-domains)** - Step-by-step instructions
-- **[DNS Configuration Examples](https://help.taskade.com/dns-setup)** - Registrar-specific guides
-- **[Branding Best Practices](https://help.taskade.com/app-branding)** - Professional presentation tips
-- **[Troubleshooting Guide](https://help.taskade.com/domain-troubleshooting)** - Common issues and solutions
+- **[Custom Domain Setup Guide](https://help.taskade.com/en/articles/10443706-cname-custom-domain)** - Step-by-step instructions
+- **[DNS Configuration Examples](https://help.taskade.com/en/articles/10443706-cname-custom-domain)** - Registrar-specific guides
+- **[Branding Best Practices](https://help.taskade.com/en/articles/12165353-publish-and-clone-your-apps)** - Professional presentation tips
+- **[Troubleshooting Guide](https://help.taskade.com/en/articles/10443706-cname-custom-domain)** - Common issues and solutions
 
 ---
 

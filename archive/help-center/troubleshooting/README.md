@@ -99,4 +99,4 @@ Available for paid plans:
 
 ---
 
-*Still can't find a solution? Don't hesitate to [contact our support team](https://help.taskade.com/contact) - we're here to help!*
+*Still can't find a solution? Don't hesitate to [contact our support team](https://www.taskade.com/contact) - we're here to help!*

@@ -218,7 +218,7 @@ Be part of the next chapter in software evolution:
 - [Try Genesis](https://www.taskade.com/genesis) - Create living applications
 - [Community Feedback](https://www.taskade.com/feedback) - Shape the future
 - [Feature Requests](https://www.taskade.com/feedback) - Suggest new capabilities
-- [Developer Community](https://help.taskade.com/contact) - Build with Genesis
+- [Developer Community](https://www.taskade.com/contact) - Build with Genesis
 
 ---
 

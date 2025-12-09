@@ -15,8 +15,8 @@ New to Taskade AI? Start here:
 ### AI Agents: Smart Assistants
 
 - **[AI Agents Getting Started](ai-agents-getting-started.md)** - Create your first AI team member
-- **[Tools for AI Agents](https://help.taskade.com/en/articles/10383275-tools-for-ai-agents)** - Add superpowers to your agents
-- **[Agent Knowledge & Memory](https://help.taskade.com/en/collections/14491816-agent-knowledge-memory)** - Train agents with your data
+- **[Tools for AI Agents](https://help.taskade.com/en/articles/9314171-tools-for-ai-agents)** - Add superpowers to your agents
+- **[Agent Knowledge & Memory](https://help.taskade.com/en/articles/9495190-agent-knowledge-memory)** - Train agents with your data
 
 ### Automation: Put Work on Autopilot
 

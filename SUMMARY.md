@@ -34,14 +34,14 @@
 - [**Living Intelligence Overview**](features/ai-features/README.md) - *AI that learns, adapts, and evolves with your business*
 - [**EVE: Your Living AI Companion**](features/ai-features/README.md#eve-your-living-ai-companion) - *Animated AI with personality and learning*
 - [**AI Agents Getting Started**](features/ai-features/ai-agents-getting-started.md) - *Create intelligent assistants that evolve*
-- [**AI Tools & Capabilities**](https://help.taskade.com/en/articles/10383275-tools-for-ai-agents) - *Superpowers for your living intelligence*
+- [**AI Tools & Capabilities**](https://help.taskade.com/en/articles/9314171-tools-for-ai-agents) - *Superpowers for your living intelligence*
 
 ### **🎯 Intelligent Applications**
 - [**Genesis Prompt Library**](features/ai-features/genesis-prompt-library.md) - *Prompts for building living systems*
 - [**AI-Powered Integrations**](features/ai-features/README.md#what-living-intelligence-you-can-build) - *Intelligent connections that learn*
 
 ### **📚 Knowledge & Training**
-- [**Agent Knowledge & Memory**](https://help.taskade.com/en/collections/14491816-agent-knowledge-memory) - *Train AI with your business intelligence*
+- [**Agent Knowledge & Memory**](https://help.taskade.com/en/articles/9495190-agent-knowledge-memory) - *Train AI with your business intelligence*
 - [**Intelligent Onboarding**](https://help.taskade.com/en/articles/8958467-getting-started-with-automation) - *Master living intelligence*
 
 ## ⚡ **Living Motion Layer (Automations & Actions)**
