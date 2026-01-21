@@ -39,7 +39,7 @@ We believe the future of work isn't just humans using AI. It's humans and AI wor
 
 Software should be alive. And now, it is.
 
-## :building_construction: Platform Capabilities
+## 🏗️ Platform Capabilities
 
 | Capability | Description | Learn More |
 |------------|-------------|------------|
@@ -51,7 +51,7 @@ Software should be alive. And now, it is.
 
 **[Start Building →](https://www.taskade.com)** | **[Browse Community Apps →](https://www.taskade.com/community)**
 
-## :star: The Living Software Revolution
+## 🌟 The Living Software Revolution
 
 ### **From Static Tools to Living Systems**
 
@@ -65,9 +65,9 @@ Your workspace is built on three interconnected pillars that form your digital D
 
 | Pillar | What It Does | Key Features | Documentation |
 |--------|--------------|--------------|---------------|
-| :brain: **Memory** | Stores & organizes your data | Projects, custom fields, 8 views, relationships | [Projects Guide →](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar) |
-| :robot: **Intelligence** | Thinks & responds to needs | AI agents, knowledge training, multi-agent teams | [AI Agents Guide →](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar) |
-| :zap: **Execution** | Acts & automates workflows | Triggers, actions, 100+ integrations | [Automations Guide →](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar) |
+| 🧠 **Memory** | Stores & organizes your data | Projects, custom fields, 8 views, relationships | [Projects Guide →](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar) |
+| 🤖 **Intelligence** | Thinks & responds to needs | AI agents, knowledge training, multi-agent teams | [AI Agents Guide →](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar) |
+| ⚡ **Execution** | Acts & automates workflows | Triggers, actions, 100+ integrations | [Automations Guide →](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar) |
 
 These pillars work together as **Living Software**—systems that learn, adapt, and evolve with your business.
 
@@ -121,7 +121,7 @@ Sites that evolve with your audience. They learn which content resonates, optimi
 
 **How it works:** Describe your vision → Workspace DNA awakens → Living system learns and evolves → Intelligence compounds over time
 
-## :hammer_and_wrench: Workspace DNA Architecture
+## 🛠️ Workspace DNA Architecture
 
 Taskade is built on three interconnected layers that work together as your workspace's "living DNA":
 
@@ -129,7 +129,7 @@ Taskade is built on three interconnected layers that work together as your works
 ┌─────────────────────────────────────────────────────────────────┐
 │                    WORKSPACE DNA                                │
 ├─────────────────────────────────────────────────────────────────┤
-│  :brain: Living Memory        │  :robot: Living Intelligence  │  :zap: Living Motion    │
+│  🧠 Living Memory        │  🤖 Living Intelligence  │  ⚡ Living Motion    │
 │  ─────────────────────   │  ──────────────────────  │  ─────────────────   │
 │  • Projects & Databases  │  • Custom AI Agents      │  • 100+ Integrations │
 │  • Real-time Sync        │  • Multi-Agent Teams     │  • Event-Driven      │
@@ -145,48 +145,48 @@ Taskade is built on three interconnected layers that work together as your works
 - [Introducing Taskade Genesis](https://www.taskade.com/blog/introducing-taskade-genesis/)
 - [All Product Updates →](https://www.taskade.com/blog/updates/)
 
-## :dart: What is Taskade?
+## 🎯 What is Taskade?
 
 **Where every workspace becomes a foundation for unlimited apps.**
 
 Your Taskade workspace is your **Home Subspace** — the living foundation that powers everything you build. Each new subspace you create becomes a complete application, whether it's a customer portal, project tracker, or business dashboard. Genesis connects the dots between your workspace's intelligence and the apps you need.
 
 **Here's how it works:**
-- **:house: Home Workspace** - Your default workspace with a generator input field at the top
-- **:iphone: App = Complete Application** - Each app you create becomes a full business solution
-- **:dna: Living DNA** - Your workspace's agents, automations, and projects power every app
-- **:link: Connected Intelligence** - Apps share intelligence and learn from each other
+- **🏠 Home Workspace** - Your default workspace with a generator input field at the top
+- **📱 App = Complete Application** - Each app you create becomes a full business solution
+- **🧬 Living DNA** - Your workspace's agents, automations, and projects power every app
+- **🔗 Connected Intelligence** - Apps share intelligence and learn from each other
 
 **The Genesis Interface:** Open any workspace and you'll see a prominent input field at the top. Just describe what you need in plain English, and Genesis builds a complete app in minutes. Your existing projects and folders appear as app tiles below the generator.
 
 ### **Every Workspace Contains:**
 - **Generator Input** - The AI-powered field where you describe apps to build
-- **:robot: AI Agents** - Persistent left panel assistant trained on your business
-- **:zap: Smart Automations** - Connect to 100+ services automatically  
-- **:bar_chart: App Tiles** - Your existing projects/folders, now enhanced as complete apps
-- **:dna: Preview Mode** - Every app gets a live preview tab for instant testing
+- **🤖 AI Agents** - Persistent left panel assistant trained on your business
+- **⚡ Smart Automations** - Connect to 100+ services automatically  
+- **📊 App Tiles** - Your existing projects/folders, now enhanced as complete apps
+- **🧬 Preview Mode** - Every app gets a live preview tab for instant testing
 
-## :rocket: Quick Start
+## 🚀 Quick Start
 
-### :rocket: **Build Your First App** (5 minutes)
+### 🚀 **Build Your First App** (5 minutes)
 1. **[Follow the Tutorial](genesis/getting-started.md)** - Step-by-step app building
 2. **[Copy Working Prompts](genesis/examples-and-templates.md)** - Proven templates  
 3. **[Industry Examples](features/industry-use-cases.md)** - Healthcare, finance, retail guides
 
-### :robot: **Create AI Agents** (10 minutes)  
+### 🤖 **Create AI Agents** (10 minutes)  
 1. **[AI Agent Tutorial](features/ai-features/ai-agents-getting-started.md)** - Your first AI assistant
 2. **[Agent Prompt Library](features/ai-features/genesis-prompt-library.md)** - Ready-to-use configurations
 
-### :zap: **Set Up Automations** (15 minutes)
+### ⚡ **Set Up Automations** (15 minutes)
 1. **[Automation Basics](features/ai-features/automation-getting-started.md)** - Connect your tools
 2. **[Integration Guide](automation/integrations.md)** - 100+ supported services
 
-### :computer: **For Developers**
+### 💻 **For Developers**
 - **[API Documentation](api/README.md)** - Complete technical reference  
 - **[Authentication Setup](start/authentication.md)** - Get your API keys
 - **[Developer Guide](developers/README.md)** - Build on Taskade's infrastructure
 
-## :sparkles: Core Features
+## ✨ Core Features
 
 ### **Smart Project Management**
 - **Flexible Data Structures**: Projects that adapt to any workflow
@@ -206,7 +206,7 @@ Your Taskade workspace is your **Home Subspace** — the living foundation that 
 - **Integration Ecosystem**: 100+ native integrations with popular tools
 - **Scalable Infrastructure**: Built to handle teams of any size
 
-## :star: What People Build with Genesis Apps
+## 🌟 What People Build with Genesis Apps
 
 ### **Customer-Facing Applications**
 *"Built a complete booking system for my yoga studio in 3 minutes."*
@@ -247,67 +247,67 @@ Your Taskade workspace is your **Home Subspace** — the living foundation that 
 
 **[Explore Community Templates →](https://www.taskade.com/community)** - Browse 1000+ apps, dashboards, and tools built by the community.
 
-## :star: Living Systems That Think: Complete Business Solutions
+## 🌟 Living Systems That Think: Complete Business Solutions
 
 **Unlike traditional apps that perform static functions, living systems learn, adapt, and evolve to serve your business better over time. Here's what real businesses are building:**
 
-### **:hospital: Healthcare Intelligence Systems**
+### **🏥 Healthcare Intelligence Systems**
 *"Our patient onboarding system now anticipates patient needs and reduces no-shows by 40%."*
 - **Smart Appointment Systems** - Learn patient preferences and optimize scheduling
 - **Clinical Workflow Automation** - Adapt to treatment protocols and staff availability
 - **Patient Communication Platforms** - Personalize messaging based on medical history and engagement
 - **Care Coordination Networks** - Connect providers with real-time patient status updates
 
-### **:convenience_store: Retail Operations Intelligence**
+### **🏪 Retail Operations Intelligence**
 *"Our inventory system predicts demand patterns and prevents stockouts automatically."*
 - **Adaptive Inventory Management** - Learn seasonal trends and customer buying patterns
 - **Dynamic Pricing Engines** - Optimize prices based on demand, competition, and margins
 - **Customer Behavior Analytics** - Understand shopping patterns and personalize experiences
 - **Supply Chain Optimization** - Predict supplier performance and adjust ordering strategies
 
-### **:office: Real Estate Intelligence Networks**
+### **🏢 Real Estate Intelligence Networks**
 *"Our property management system now handles tenant requests proactively and predicts maintenance issues."*
 - **Tenant Experience Platforms** - Learn preferences and provide personalized services
 - **Property Performance Analytics** - Track occupancy, revenue, and maintenance costs
 - **Maintenance Prediction Systems** - Identify potential issues before they become problems
 - **Market Intelligence Dashboards** - Analyze local market trends and competitor activity
 
-### **:chart_with_upwards_trend: Marketing Intelligence Engines**
+### **📈 Marketing Intelligence Engines**
 *"Our campaign management system learns what content performs best and optimizes future strategies."*
 - **Campaign Performance Learning** - Analyze engagement patterns and improve targeting
 - **Content Optimization Systems** - Test messaging and learn audience preferences
 - **Lead Nurture Automation** - Adapt follow-up sequences based on prospect behavior
 - **Conversion Prediction Models** - Identify high-value prospects and optimize conversion paths
 
-### **:factory: Manufacturing Intelligence Platforms**
+### **🏭 Manufacturing Intelligence Platforms**
 *"Our production monitoring system now predicts equipment failures and optimizes maintenance schedules."*
 - **Predictive Maintenance Systems** - Learn equipment patterns and prevent downtime
 - **Quality Control Intelligence** - Adapt inspection criteria based on defect patterns
 - **Production Optimization Engines** - Learn workflow efficiencies and resource allocation
 - **Supply Chain Intelligence** - Predict demand fluctuations and optimize inventory
 
-### **:school: Education Intelligence Ecosystems**
+### **🏫 Education Intelligence Ecosystems**
 *"Our learning management system adapts to student progress and personalizes educational experiences."*
 - **Adaptive Learning Platforms** - Personalize curriculum based on student performance
 - **Student Success Prediction** - Identify at-risk students and provide early intervention
 - **Curriculum Optimization** - Learn which teaching methods work best for different subjects
 - **Administrative Intelligence** - Automate scheduling, grading, and communication workflows
 
-### **:briefcase: Professional Services Intelligence**
+### **💼 Professional Services Intelligence**
 *"Our client management system anticipates project needs and improves delivery quality."*
 - **Client Relationship Intelligence** - Learn communication preferences and relationship dynamics
 - **Project Success Prediction** - Identify risk factors and optimize resource allocation
 - **Service Delivery Optimization** - Learn best practices and improve quality standards
 - **Business Development Automation** - Identify opportunities and optimize pursuit strategies
 
-### **:hotel: Hospitality Intelligence Networks**
+### **🏨 Hospitality Intelligence Networks**
 *"Our guest experience system personalizes stays and predicts guest preferences before arrival."*
 - **Guest Experience Personalization** - Learn preferences from past visits and external data
 - **Revenue Optimization Engines** - Dynamic pricing based on demand and competitor analysis
 - **Operations Intelligence** - Predict staffing needs and optimize resource allocation
 - **Guest Service Automation** - Proactive service delivery based on guest behavior patterns
 
-### **:rocket: Startup Intelligence Accelerators**
+### **🚀 Startup Intelligence Accelerators**
 *"Our product development system learns from user feedback and accelerates feature delivery."*
 - **User Behavior Intelligence** - Understand how customers use products and identify pain points
 - **Product-Market Fit Analysis** - Learn which features drive engagement and retention
@@ -316,27 +316,27 @@ Your Taskade workspace is your **Home Subspace** — the living foundation that 
 
 **These living systems don't just solve immediate business problems—they evolve with your business, becoming more valuable and intelligent over time. Each system learns from its interactions, adapts to changing conditions, and continuously improves business outcomes.**
 
-## :dna: Your Workspace's Living DNA
+## 🧬 Your Workspace's Living DNA
 
 Taskade isn't built on static layers — it's built on **living DNA strands** that interweave to create intelligent, adaptive experiences:
 
-### **:brain: Intelligence DNA**
+### **🧠 Intelligence DNA**
 AI agents that learn from your workspace and become specialized digital team members with unique knowledge and capabilities.
 
-### **:zap: Action DNA**
+### **⚡ Action DNA**
 Automations that act as your business's nervous system, detecting events and coordinating responses across 100+ integrated tools.
 
-### **:books: Knowledge DNA**
+### **📚 Knowledge DNA**
 Projects and data that form your organizational memory, storing and surfacing information in flexible, interconnected structures.
 
-### **:arrows_counterclockwise: Evolution DNA**
+### **🔄 Evolution DNA**
 The living connections that make everything learn from everything else — your workspace gets smarter with every interaction.
 
-### **:arrows_counterclockwise: The DNA Trinity Flow**
+### **🔄 The DNA Trinity Flow**
 
 ```
 Living Memory ←→ Living Intelligence ←→ Living Motion
-     :brain:               :robot:                     :zap:
+     🧠               🤖                     ⚡
    Adaptive Data   Contextual Learning   Intelligent Execution
    Structures      & Decision Making    & Process Optimization
 ```
@@ -352,7 +352,7 @@ Intelligence transforms static rules into dynamic, context-aware execution with 
 #### **Motion → Memory: Action Enriches Knowledge**
 Every execution generates new data that improves memory structures, creating feedback loops where successful executions strengthen data relationships and learning.
 
-### **:star: Harmony in Action: Complete Living Systems**
+### **🌟 Harmony in Action: Complete Living Systems**
 
 **Customer Support Living System:**
 ```
@@ -378,27 +378,27 @@ Motion: Assignments optimize based on capacity and expertise
 Result: Project delivery improves through continuous learning
 ```
 
-**:link: Essential Resources:**
+**🔗 Essential Resources:**
 - **[Living Software Glossary](#living-software-glossary)** - Essential terminology for the living software paradigm
 - **[Explore the living architecture →](vision/architecture.md)**
 
-## :tada: What's New
+## 🎉 What's New
 
-### **:dna: Genesis: One Workspace, Unlimited Apps**
+### **🧬 Genesis: One Workspace, Unlimited Apps**
 Revolutionary AI that transforms each subspace into a complete application. Your Home Subspace becomes the foundation for unlimited business applications — each powered by your workspace's living DNA.
 
-### **:house: Home Subspace Intelligence**
+### **🏠 Home Subspace Intelligence**
 Every workspace starts with a Home Subspace containing AI agents, automations, and knowledge that power all your Genesis apps. Each new subspace inherits and extends this intelligence.
 
-### **:iphone: Instant Live Applications**
+### **📱 Instant Live Applications**
 Every app you create gets an individual URL immediately — no deployment needed. Share links directly via email, social media, or embed on your website. Apps work in any browser on desktop, tablet, or mobile.
 
-### **:link: Connected App Ecosystem**
+### **🔗 Connected App Ecosystem**
 Apps built from the same workspace share intelligence and learn from each other. Your customer feedback app can inform your inventory app, which can trigger your marketing automations — all powered by the same living DNA foundation.
 
 [See all updates →](changelog/README.md)
 
-## :star: Success Stories: Living Software in Action
+## 🌟 Success Stories: Living Software in Action
 
 ### **From Static Spreadsheets to Living Intelligence**
 
@@ -446,7 +446,7 @@ Apps built from the same workspace share intelligence and learn from each other.
 
 ---
 
-## :bulb: Ready to Transform Your Workflow?
+## 💡 Ready to Transform Your Workflow?
 
 {% hint style="success" %}
 **Ready to get started?** [Create your free account](https://taskade.com/signup) and build your first Genesis app in minutes!
@@ -458,7 +458,7 @@ Apps built from the same workspace share intelligence and learn from each other.
 
 </div>
 
-### **:rocket: Start Building Today**
+### **🚀 Start Building Today**
 
 {% tabs %}
 {% tab title="Free Account" %}
@@ -492,7 +492,7 @@ Ready-to-use AI solutions:
 {% endtab %}
 {% endtabs %}
 
-## :book: Living Software Glossary
+## 📖 Living Software Glossary
 
 **Essential terminology for understanding the Workspace DNA paradigm and living software concepts.**
 
@@ -504,25 +504,25 @@ Ready-to-use AI solutions:
 
 **Second Brain**: A metaphor for living software that extends human cognition, providing intelligent assistance, memory enhancement, and automated execution of complex tasks.
 
-### :brain: Living Memory Layer
+### 🧠 Living Memory Layer
 
 **Living Memory**: The adaptive data foundation that learns from usage patterns and evolves to better serve system needs. Living memory goes beyond static databases to create knowledge structures that grow more valuable over time.
 
 **TaskOS**: The living memory engine that powers Workspace DNA, transforming static data into adaptive knowledge systems that learn from every interaction.
 
-### :robot: Living Intelligence Layer
+### 🤖 Living Intelligence Layer
 
 **Living Intelligence**: The cognitive layer that provides understanding, reasoning, and decision-making capabilities. Living intelligence learns from context, adapts to user needs, and continuously improves its assistance.
 
 **EVE (AI Companion)**: The living AI mascot that brings personality and genuine interaction to living systems. EVE learns user preferences, adapts communication styles, and provides emotional intelligence to enhance user experiences.
 
-### :zap: Living Motion Layer
+### ⚡ Living Motion Layer
 
 **Living Motion**: The execution layer that brings living systems to life through intelligent automation. Living motion adapts workflows based on outcomes, learns optimal timing, and continuously optimizes performance.
 
 **Living Automations**: Workflows that go beyond simple triggers and actions to create systems that learn, adapt, and continuously improve their execution based on real-world outcomes.
 
-### :star: Living System Components
+### 🌟 Living System Components
 
 **Living Systems**: Complete business solutions that combine living memory, intelligence, and motion into cohesive, evolving ecosystems. Unlike static applications, living systems grow more valuable with use.
 
@@ -530,7 +530,7 @@ Ready-to-use AI solutions:
 
 **AI Kits**: Pre-built living systems that bundle memory, intelligence, and motion into one-click deployments. AI Kits demonstrate the power of complete Workspace DNA implementations.
 
-### :arrows_counterclockwise: Living System Dynamics
+### 🔄 Living System Dynamics
 
 **Evolutionary Optimization**: The process by which living systems continuously improve their performance through learning from usage patterns, user feedback, and environmental changes.
 
@@ -542,7 +542,7 @@ Ready-to-use AI solutions:
 
 ---
 
-### **:books: Learn & Connect**
+### **📚 Learn & Connect**
 
 | Resource | Description |
 | --- | --- |
