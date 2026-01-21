@@ -4,23 +4,23 @@ Comprehensive guides for managing your Taskade account, billing, security, and s
 
 ## 💳 **Billing & Subscription**
 
-- [**Account Management Help**](../help-center/account-management/README.md) - _General account and billing guidance_
+* [**Account Management Help**](../help-center/account-management/) - _General account and billing guidance_
 
 ## 📱 **Account Settings**
 
-- [**Getting Started Guide**](../getting-started/README.md) - _Basic setup and configuration_
-- [**Authentication Setup**](../start/authentication.md) - _Secure login and access management_
+* [**Getting Started Guide**](../getting-started/) - _Basic setup and configuration_
+* [**Authentication Setup**](../apis-living-system-development/developers/authentication.md) - _Secure login and access management_
 
 ## 🤝 **Programs & Partnerships**
 
-- [**API Development**](../developers/README.md) - _Build integrations and partnerships_
-- [**Personal Access Tokens**](../start/personal-tokens.md) - _API access and integration setup_
+* [**API Development**](../apis-living-system-development/developers/) - _Build integrations and partnerships_
+* [**Personal Access Tokens**](../apis-living-system-development/developers/personal-tokens.md) - _API access and integration setup_
 
 ## 🔒 **Account Security**
 
-- [**Authentication Guide**](../start/authentication.md) - _Secure access and account protection_
+* [**Authentication Guide**](../apis-living-system-development/developers/authentication.md) - _Secure access and account protection_
 
----
+***
 
 {% hint style="info" %}
 **Need help with your account?** Contact our support team at [help.taskade.com](https://help.taskade.com) for personalized assistance.
