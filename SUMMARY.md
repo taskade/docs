@@ -1,12 +1,12 @@
 # Table of contents
 
-* [👋 Your Second Brain, Alive](README.md)
+* [Your Second Brain, Alive](README.md)
 
-## ⚡ Quick Start
+## Quick Start
 
 * [Quick Start Guide](getting-started/README.md)
 
-## 🌟 Updates & Timeline
+## Updates & Timeline
 
 * [Changelog (2017 - 2025)](changelog/README.md)
   * [2025](changelog/2025/README.md)
@@ -17,45 +17,73 @@
   * [2020](changelog/2020/README.md)
   * [2017-2019](changelog/2017-2019/README.md)
 
-## 📚 Genesis: Living System Builder
+## Taskade Genesis
 
-* [Living Systems That Transform Business](genesis-living-system-builder/genesis/README.md)
-  * [Your First Living System in 5 Minutes](genesis-living-system-builder/genesis/getting-started.md)
-  * [Living System Examples & Templates](genesis-living-system-builder/genesis/examples-and-templates.md)
-* [Space Apps: Living Systems](genesis-living-system-builder/space-apps-guide/README.md)
-  * [Intelligent Prompt Library](genesis-living-system-builder/space-apps-guide/genesis-prompt-library.md)
+* [Taskade Genesis Overview](genesis-living-system-builder/genesis/README.md)
+  * [Getting Started](genesis-living-system-builder/genesis/getting-started.md)
+  * [Examples & Templates](genesis-living-system-builder/genesis/examples-and-templates.md)
+  * [How Taskade Genesis Works](genesis-living-system-builder/genesis/how-genesis-works.md)
+  * [Prompt Guide](genesis-living-system-builder/genesis/prompt-guide.md)
+  * [Adding Context](genesis-living-system-builder/genesis/adding-context.md)
+  * [Version History](genesis-living-system-builder/genesis/version-history.md)
+  * [App Analytics](genesis-living-system-builder/genesis/app-analytics.md)
+* [Space Apps Guide](genesis-living-system-builder/space-apps-guide/README.md)
+  * [Prompt Library](genesis-living-system-builder/space-apps-guide/genesis-prompt-library.md)
   * [Advanced Features](genesis-living-system-builder/space-apps-guide/advanced-features.md)
   * [Custom Domains & Branding](genesis-living-system-builder/space-apps-guide/custom-domains.md)
-* [Sharing: Living Systems](genesis-living-system-builder/community-and-sharing/README.md)
-  * [Living System Best Practices](genesis-living-system-builder/community-and-sharing/best-practices.md)
-  * [Living Systems FAQ](genesis-living-system-builder/community-and-sharing/faq.md)
-  * [Living System Troubleshooting](genesis-living-system-builder/community-and-sharing/troubleshooting.md)
-* [AI Agents: Living Intelligence](genesis-living-system-builder/ai-features/README.md)
-  * [EVE: Your Living AI Companion](genesis-living-system-builder/ai-features/README.md#eve-your-living-ai-companion)
+
+## AI Features
+
+* [AI Features Overview](genesis-living-system-builder/ai-features/README.md)
   * [AI Agents Getting Started](genesis-living-system-builder/ai-features/ai-agents-getting-started.md)
-  * [AI Tools & Capabilities](https://help.taskade.com/en/articles/9314171-tools-for-ai-agents)
-  * [Agent Knowledge & Memory](https://help.taskade.com/en/articles/9495190-agent-knowledge-memory)
-* [Automations: Living Motion](genesis-living-system-builder/automation/README.md)
-  * [AI Forms: Intelligent Data Collection](genesis-living-system-builder/automation/ai-forms.md)
+  * [Agent Knowledge & Memory](genesis-living-system-builder/ai-features/agent-knowledge.md)
+  * [Tools for AI Agents](genesis-living-system-builder/ai-features/agent-tools.md)
+  * [Multi-Agent Collaboration](genesis-living-system-builder/ai-features/multi-agents.md)
+  * [Image Generation](genesis-living-system-builder/ai-features/image-generation.md)
+  * [Media AI Chat](genesis-living-system-builder/ai-features/media-ai-chat.md)
+  * [Autopilot](genesis-living-system-builder/ai-features/autopilot.md)
+
+## Automations
+
+* [Automations Overview](genesis-living-system-builder/automation/README.md)
+  * [AI Forms](genesis-living-system-builder/automation/ai-forms.md)
   * [Action & Trigger Reference](genesis-living-system-builder/automation/actions.md)
+  * [Workflow Generator](genesis-living-system-builder/automation/workflow-generator.md)
   * [Integration Overview](genesis-living-system-builder/automation/comprehensive-integration-guide.md)
   * [Integration Options](genesis-living-system-builder/automation/integrations.md)
   * [Automation Recipes](genesis-living-system-builder/automation/recipes.md)
   * [Advanced Actions](genesis-living-system-builder/automation/advanced-actions.md)
   * [Comprehensive Integrations](genesis-living-system-builder/automation/comprehensive-integrations.md)
-* [Workspaces: Living DNA Control](genesis-living-system-builder/workspaces/README.md)
-  * [Collaboration: Team Intelligence](genesis-living-system-builder/workspaces/collaboration.md)
-  * [Advanced Search & Discovery](genesis-living-system-builder/workspaces/advanced-search-navigation.md)
-  * [Knowledge Organization](genesis-living-system-builder/workspaces/knowledge-management.md)
-  * [Project Views Mastery](genesis-living-system-builder/workspaces/project-views.md)
-  * [Mobile Living Experience](genesis-living-system-builder/workspaces/mobile-optimization.md)
 
-## 💻 APIs: Living System Development
+## Workspaces
+
+* [Workspaces Overview](genesis-living-system-builder/workspaces/README.md)
+  * [Projects & Databases](genesis-living-system-builder/workspaces/projects-databases.md)
+  * [Teams](genesis-living-system-builder/workspaces/teams.md)
+  * [Collaboration](genesis-living-system-builder/workspaces/collaboration.md)
+  * [Editing & Formatting](genesis-living-system-builder/workspaces/editing-formatting.md)
+  * [Markdown Support](genesis-living-system-builder/workspaces/markdown.md)
+  * [Import](genesis-living-system-builder/workspaces/import.md)
+  * [Embed](genesis-living-system-builder/workspaces/embed.md)
+  * [Project Views](genesis-living-system-builder/workspaces/project-views.md)
+  * [Advanced Search & Navigation](genesis-living-system-builder/workspaces/advanced-search-navigation.md)
+  * [Knowledge Management](genesis-living-system-builder/workspaces/knowledge-management.md)
+  * [Mobile](genesis-living-system-builder/workspaces/mobile-optimization.md)
+
+## Community & Sharing
+
+* [Community & Sharing](genesis-living-system-builder/community-and-sharing/README.md)
+  * [Publish & Clone](genesis-living-system-builder/community-and-sharing/publish-and-clone.md)
+  * [Best Practices](genesis-living-system-builder/community-and-sharing/best-practices.md)
+  * [FAQ](genesis-living-system-builder/community-and-sharing/faq.md)
+  * [Troubleshooting](genesis-living-system-builder/community-and-sharing/troubleshooting.md)
+
+## APIs & Developer
 
 * [Developer Overview](apis-living-system-development/developers/README.md)
   * [Authentication](apis-living-system-development/developers/authentication.md)
   * [Personal Tokens](apis-living-system-development/developers/personal-tokens.md)
-  * [Living Intelligence API Overview](apis-living-system-development/developers/api.md)
+  * [API Overview](apis-living-system-development/developers/api.md)
 * [Comprehensive API Guide](apis-living-system-development/comprehensive-api-guide/README.md)
   * [Workspaces](apis-living-system-development/comprehensive-api-guide/workspaces/README.md)
     * [Get Workspaces](apis-living-system-development/comprehensive-api-guide/workspaces/get-workspaces.md)
@@ -121,22 +149,22 @@
   * [Me](apis-living-system-development/comprehensive-api-guide/me/README.md)
     * [Projects](apis-living-system-development/comprehensive-api-guide/me/projects.md)
 
-## 📖 Help & Support
+## Help & Support
 
 * [Help Center](help-center/README.md)
 * [Account Management](account-management/README.md)
 * [Troubleshooting Guide](help-and-support/comprehensive-troubleshooting-guide.md)
-* [Taskade Tutorial: Living DNA Platform](help-and-support/index/README.md)
-  * [Chapter 1: Workspaces - The Foundation](help-and-support/index/01_workspaces.md)
-  * [Chapter 2: Projects - Your Data Containers](help-and-support/index/02_projects.md)
-  * [Chapter 3: AI Agents - Your Digital Team](help-and-support/index/03_ai_agents.md)
-  * [Chapter 4: Automation - Workflows on Autopilot](help-and-support/index/04_automation.md)
-  * [Chapter 5: Genesis - Building Apps with AI](help-and-support/index/05_genesis.md)
-  * [Chapter 6: Integrations - Connecting Your Tools](help-and-support/index/06_integrations.md)
-  * [Chapter 7: API - Developer Interfaces](help-and-support/index/07_api.md)
-  * [Chapter 8: Mobile & Desktop - Cross-Platform Productivity](help-and-support/index/08_mobile_desktop.md)
+* [Taskade Tutorial](help-and-support/index/README.md)
+  * [Chapter 1: Workspaces](help-and-support/index/01_workspaces.md)
+  * [Chapter 2: Projects](help-and-support/index/02_projects.md)
+  * [Chapter 3: AI Agents](help-and-support/index/03_ai_agents.md)
+  * [Chapter 4: Automation](help-and-support/index/04_automation.md)
+  * [Chapter 5: Taskade Genesis](help-and-support/index/05_genesis.md)
+  * [Chapter 6: Integrations](help-and-support/index/06_integrations.md)
+  * [Chapter 7: API](help-and-support/index/07_api.md)
+  * [Chapter 8: Mobile & Desktop](help-and-support/index/08_mobile_desktop.md)
 
-## 🤝 Contributing
+## Contributing
 
 * [Vision](contributing/vision/README.md)
   * [Build Without Permission Manifesto](https://www.taskade.com/blog/build-without-permission)
