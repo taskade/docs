@@ -8,6 +8,10 @@
 
 ## 🌟 Updates & Timeline
 
+* [February 2026](updates-and-timeline/february-2026/README.md)
+  * [February 4, 2026](updates-and-timeline/february-2026/february-4-2026.md)
+* [January 2026](updates-and-timeline/january-2026/README.md)
+  * [January 30, 2026](updates-and-timeline/january-2026/january-30-2026.md)
 * [Changelog (2017 - 2025)](changelog/README.md)
   * [2025](changelog/2025/README.md)
   * [2024](changelog/2024/README.md)
