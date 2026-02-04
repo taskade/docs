@@ -23,13 +23,15 @@ layout:
 
 Try out a prompt like:&#x20;
 
+{% code fullWidth="false" %}
 ```
 Make an app that shows on a map some good restaurants in the San Francisco Bay area.
 ```
+{% endcode %}
 
-<figure><img src="../../.gitbook/assets/CleanShot 2026-02-04 at 15.48.14@2x.png" alt=""><figcaption></figcaption></figure>
+<div data-full-width="false"><figure><img src="../../.gitbook/assets/CleanShot 2026-02-04 at 15.48.14@2x.png" alt=""><figcaption></figcaption></figure></div>
 
-{% embed url="https://www.taskade.com/share/apps/0im9ebe4qert6ci2" %}
+{% embed url="https://www.taskade.com/share/apps/w0rzzr6ovy8wiz4i" %}
 
 ***
 
@@ -37,7 +39,7 @@ Make an app that shows on a map some good restaurants in the San Francisco Bay a
 
 Share Taskade with your friends and leave reviews to earn free credits!
 
-\[screenshot of page]
+<div align="center"><figure><img src="../../.gitbook/assets/CleanShot 2026-02-04 at 16.31.49@2x (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ***
 
@@ -45,7 +47,7 @@ Share Taskade with your friends and leave reviews to earn free credits!
 
 Struggling to improve your prompt phrasing? Click the new "Enhance with AI" button today.
 
-\[Insert screenshot/gif]
+<figure><img src="../../.gitbook/assets/Clipboard-20260204-091132-327.gif" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 

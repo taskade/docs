@@ -6,9 +6,13 @@
 
 App favicons are now based on your space avatars. Upload an image as your space avatar and watch it show up as your app's favicon.&#x20;
 
-\[insert screenshot]
+<figure><img src="../../.gitbook/assets/CleanShot 2026-02-04 at 16.15.06@2x (1).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+Do remember to republish your app after changing your space avatar to see your new favicon apply.
+{% endhint %}
 
+***
 
 ## Improvements & Fixes:
 
