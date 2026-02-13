@@ -1,18 +1,4 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
-# OAuth 2.0 Authentication
+# Authentication
 
 Authentication is a crucial aspect of ensuring the security and integrity of your interactions with our API. We provide two distinct methods for authentication: Personal Access Tokens and OAuth 2.0. This guide is designed to assist you in understanding and implementing OAuth 2.0.
 

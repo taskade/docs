@@ -5,23 +5,6 @@ description: >-
   connects to form the genetic code of everything you
 cover: .gitbook/assets/ss-api3.png
 coverY: 0
-layout:
-  width: default
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 ---
 
 # 👋 Your Second Brain, Alive

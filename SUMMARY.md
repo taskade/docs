@@ -9,6 +9,7 @@
 ## 🌟 Updates & Timeline
 
 * [February 2026](updates-and-timeline/february-2026/README.md)
+  * [February 12, 2026](updates-and-timeline/february-2026/february-12-2026.md)
   * [February 6, 2026](updates-and-timeline/february-2026/february-6-2026.md)
 * [January 2026](updates-and-timeline/january-2026/README.md)
   * [January 30, 2026](updates-and-timeline/january-2026/january-30-2026.md)
