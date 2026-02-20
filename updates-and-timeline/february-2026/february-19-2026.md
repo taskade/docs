@@ -10,14 +10,6 @@ Check out our new page showcasing the top creators in Taskade! Visit [this link]
 
 {% embed url="https://www.taskade.com/community/creators" %}
 
-### Shopify Actions
-
-We've added several Shopify actions in our automations, available for Pro plan users and above.
-
-\[These actions can be used with new non-legacy shopify accounts]
-
-\[Screenshot of shopify actions]
-
 ***
 
 ## Improvements & Fixes:
