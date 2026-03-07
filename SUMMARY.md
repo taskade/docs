@@ -70,6 +70,8 @@
   * [Authentication](apis-living-system-development/developers/authentication.md)
   * [Personal Tokens](apis-living-system-development/developers/personal-tokens.md)
   * [Living Intelligence API Overview](apis-living-system-development/developers/api.md)
+* [SDK Quickstart](apis-living-system-development/sdk-quickstart.md)
+* [MCP Server Setup](apis-living-system-development/mcp-setup.md)
 * [Comprehensive API Guide](apis-living-system-development/comprehensive-api-guide/README.md)
   * [Workspaces](apis-living-system-development/comprehensive-api-guide/workspaces/README.md)
     * [Get Workspaces](apis-living-system-development/comprehensive-api-guide/workspaces/get-workspaces.md)
