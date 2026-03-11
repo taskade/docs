@@ -10,7 +10,7 @@
 
 Living Intelligence is the agent layer in Taskade. It’s how your workspace can **reason**, **draft**, **classify**, and **take action** using context from your projects.
 
-Canonical foundation: [Workspace DNA](/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/P4wpImYZWqgmWWCnK5z6).
+Canonical foundation: [Workspace DNA](../genesis/workspace-dna.md).
 
 ### What you use it for
 
@@ -33,7 +33,7 @@ Most “smartness” comes from the knowledge you give agents. That includes pro
 
 Start here:
 
-* [TaskOS Introduction](/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/TmKoZBQzTxbre77tJW1p)
+* [Workspace DNA](../genesis/workspace-dna.md)
 * [Agent Knowledge & Memory](https://help.taskade.com/en/articles/9495190-agent-knowledge-memory)
 
 #### Tools (what agents can do)

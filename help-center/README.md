@@ -1,85 +1,74 @@
 # Help Center
 
-Welcome to the Taskade Help Center! Here you'll find comprehensive guides, tutorials, and troubleshooting resources to help you get the most out of Taskade.
+Find answers fast. Pick the topic that matches what you need.
 
-## Quick Navigation
+## I want to...
 
-* [**Getting Started**](getting-started/) - Essential setup and first steps
-* [**Features Overview**](features/) - Explore all of Taskade's capabilities
-* [**AI Features**](ai-features/) - Learn about AI agents, automation, and Genesis
-* [**Integrations**](integrations/) - Connect with your favorite tools
-* [**Account Management**](account-management/) - Manage your account and team
-* [**Troubleshooting**](troubleshooting/) - Common issues and solutions
+| Goal | Go here |
+|------|---------|
+| **Get started with Taskade** | [Quick Start Guide](../getting-started/README.md) |
+| **Build an app with Genesis** | [Your First App in 5 Minutes](../genesis-living-system-builder/genesis/getting-started.md) |
+| **Create an AI agent** | [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md) |
+| **Set up automations** | [Automations Overview](../genesis-living-system-builder/automation/README.md) |
+| **Import data from another tool** | [Import & Export](import-and-export.md) |
+| **Use Taskade on mobile** | [Mobile App Guide](mobile-app.md) |
+| **Connect to other tools** | [Integration Options](../genesis-living-system-builder/automation/integrations.md) |
+| **Use the API or MCP** | [Build on Taskade](../apis-living-system-development/developer-home.md) |
+| **Manage my account** | [Account Management](../account-management/README.md) |
+| **Fix a problem** | [Troubleshooting Guide](../help-and-support/comprehensive-troubleshooting-guide.md) |
 
-## Advanced Users
+## Platform Guides
 
-Ready to build custom solutions? These advanced guides help you create exactly what your business needs:
+### Getting Started
 
-* [**Genesis App Builder**](../genesis-living-system-builder/genesis/) - Build custom apps without coding
-* [**Developer API**](../apis-living-system-development/developers/api.md) - For technical teams who want full control
-* [**Advanced Automations**](../genesis-living-system-builder/automation/) - Complex workflow automation
+- [Quick Start Guide](../getting-started/README.md) — sign up, create your first app, share it
+- [Workspace DNA](../genesis-living-system-builder/genesis/workspace-dna.md) — understand how Memory, Intelligence, and Execution work together
 
-## 🎯 Popular Topics
+### Genesis (App Builder)
 
-### 🚀 Getting Started
+- [What Genesis Can Build](../genesis-living-system-builder/genesis/README.md) — dashboards, portals, tools, websites
+- [Your First App](../genesis-living-system-builder/genesis/getting-started.md) — step-by-step in 5 minutes
+- [Examples & Templates](../genesis-living-system-builder/genesis/examples-and-templates.md) — copy proven prompts
+- [MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md) — connect to external services
+- [Custom Domains](../genesis-living-system-builder/space-apps-guide/custom-domains.md) — brand your published apps
+- [Best Practices](../genesis-living-system-builder/community-and-sharing/best-practices.md) — build better apps
 
-New to Taskade? These guides will get you up and running quickly.
+### AI Agents
 
-### ✨ Features
+- [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md) — create your first agent
+- [Agent Tools Reference](../genesis-living-system-builder/ai-features/agent-tools.md) — Slack, Gmail, Sheets, and 20+ more
+- [Agent Knowledge & Memory](../genesis-living-system-builder/ai-features/agent-knowledge.md) — train agents with your data
+- [AI Agent Teams](../genesis-living-system-builder/ai-features/agent-teams.md) — multi-agent collaboration
 
-Explore Taskade's powerful features and learn how to use them effectively.
+### Automations
 
-### 🤖 AI Features
+- [Automations Overview](../genesis-living-system-builder/automation/README.md) — triggers, actions, and branching
+- [Actions & Triggers](../genesis-living-system-builder/automation/actions.md) — complete reference
+- [Integration Options](../genesis-living-system-builder/automation/integrations.md) — 100+ supported services
+- [Automation Recipes](../genesis-living-system-builder/automation/recipes.md) — ready-to-use workflows
 
-Transform your workflow with intelligent AI that learns and automates your work:
+### Workspaces & Projects
 
-**Quick Start Guides:**
+- [Workspaces Overview](../genesis-living-system-builder/workspaces/README.md) — organize your work
+- [Project Views](../genesis-living-system-builder/workspaces/project-views.md) — List, Board, Calendar, Gantt, Mind Map, and more
+- [Collaboration](../genesis-living-system-builder/workspaces/collaboration.md) — real-time teamwork
+- [Search & Discovery](../genesis-living-system-builder/workspaces/advanced-search-navigation.md) — find anything fast
 
-* [**AI Agents Getting Started**](ai-features/ai-agents-getting-started.md) - Create your first AI team member
-* [**Automation Getting Started**](ai-features/automation-getting-started.md) - Put routine tasks on autopilot
-* [**Genesis Quick Start**](ai-features/genesis-getting-started.md) - Build apps without coding in 5 minutes
+### Import, Export & Mobile
 
-**Comprehensive Resources:**
+- [Import & Export](import-and-export.md) — migrate from Notion, Trello, Asana, and more
+- [Mobile App](mobile-app.md) — full Taskade experience on iOS and Android
 
-* [**Genesis Examples**](ai-features/genesis-examples.md) - 50+ real business applications with exact prompts
-* [**Genesis Prompt Library**](ai-features/genesis-prompt-library.md) - Copy-paste prompts for any industry
+### For Developers
 
-**What You Can Build:** Customer portals, booking systems, feedback apps, team dashboards, and automated workflows that save hours daily.
+- [Build on Taskade](../apis-living-system-development/developer-home.md) — developer starting point
+- [MCP Server Setup](../apis-living-system-development/mcp-setup.md) — connect Claude, Cursor, or VS Code
+- [REST API Reference](../apis-living-system-development/developers/api.md) — 57+ endpoints
+- [Webhooks](../apis-living-system-development/webhooks.md) — inbound and outbound
+- [Bundles & App Kits](../apis-living-system-development/bundles.md) — export and share complete apps
 
-## 🔧 Integrations
+## Still Need Help?
 
-Learn how to connect Taskade with your favorite tools and services.
-
-* [Getting Started with Automation](https://help.taskade.com/en/articles/8958467-getting-started-with-automation)
-* [AI Automation Collection](https://help.taskade.com/en/collections/8400803-ai-automation)
-* [Available Integrations](integrations/)
-* **Calendar Sync** - Google Calendar, Outlook, and more
-* **API & Webhooks** - Build custom integrations
-
-## 👤 Account Management
-
-Manage your account settings, billing, and team administration.
-
-* **Profile Settings** - Update your personal information
-* **Billing & Subscriptions** - Manage payments and plans
-* **Team Management** - Invite and manage team members
-* **Security Settings** - Two-factor authentication and security
-
-## 🛠️ Troubleshooting
-
-Having issues? Check our troubleshooting guides for quick solutions.
-
-* **Common Issues** - Frequently reported problems and solutions
-* **Login Problems** - Can't access your account?
-* **Sync Issues** - Data not syncing across devices
-* **Performance Tips** - Speed up Taskade performance
-
-## 💬 Still Need Help?
-
-* [Contact Support](https://www.taskade.com/contact)
-* [Community Forum](https://www.taskade.com/feedback)
-* [Feature Requests](https://www.taskade.com/feedback)
-
-***
-
-_For advanced features and custom development, visit our_ [_Technical Documentation_](../)_._
+- [Contact Support](https://www.taskade.com/contact) — reach the team directly
+- [Community Forum](https://www.taskade.com/feedback) — ask questions, share ideas
+- [Troubleshooting Guide](../help-and-support/comprehensive-troubleshooting-guide.md) — step-by-step fixes
