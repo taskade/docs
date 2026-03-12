@@ -1,8 +1,6 @@
 # Help Center
 
-{% hint style="info" %}
-**Find answers fast.** Pick the topic that matches what you need, or browse the platform guides below.
-{% endhint %}
+Find answers fast. Pick the topic that matches what you need.
 
 ## I want to...
 

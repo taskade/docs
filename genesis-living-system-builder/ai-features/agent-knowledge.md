@@ -14,30 +14,14 @@ Knowledge is what makes your agent **yours**. Without it, an agent is a general-
 
 ## How to Train an Agent
 
-{% stepper %}
-{% step %}
-### Open your agent
+1. Open the **Agents** tab and select your agent.
+2. Click **Edit Agent** in the top-right corner.
+3. Switch to the **Knowledge** tab in the sidebar.
+4. Toggle **Enable Knowledge** on.
+5. Add your sources (see options below).
+6. Click **Update** to save.
 
-Go to the **Agents** tab and select the agent you want to train.
-{% endstep %}
-{% step %}
-### Enter edit mode
-
-Click **Edit Agent** in the top-right corner, then switch to the **Knowledge** tab in the sidebar.
-{% endstep %}
-{% step %}
-### Enable knowledge and add sources
-
-Toggle **Enable Knowledge** on, then add your sources (files, URLs, projects — see options below).
-{% endstep %}
-{% step %}
-### Save and verify
-
-Click **Update** to save. Your agent immediately starts learning from the uploaded content. Ask it a question to verify.
-{% endstep %}
-{% endstepper %}
-
-You can add, remove, or replace sources at any time.
+Your agent immediately starts learning from the uploaded content. You can add, remove, or replace sources at any time.
 
 ## Supported Knowledge Sources
 
@@ -99,17 +83,25 @@ Open any project and check the **Backlinks** section to see a list of agents tha
 
 ## Best Practices
 
-| Practice | Why It Matters |
-|----------|---------------|
-| **Start with your best content** | Quality in = quality out. Upload accurate, well-written docs first. |
-| **Keep sources current** | Review and refresh regularly. Outdated knowledge → outdated answers. |
-| **Use projects for fast-changing data** | Dynamic project knowledge auto-updates. Use it for task lists, pricing, inventory. |
-| **Organize before you upload** | Clear headings and sections help agents retrieve information more accurately. |
-| **Test after training** | Ask direct questions ("What is our return policy?") and indirect ones ("A customer wants to return a product — what do I tell them?"). |
+### Start with your best content
 
-{% hint style="success" %}
-**Pro tip:** Combine static files (product docs, policies) with dynamic projects (lead lists, inventory) for agents that are both knowledgeable and current.
-{% endhint %}
+Upload your most accurate, well-written documents first. The quality of your knowledge directly determines the quality of your agent's answers.
+
+### Keep sources current
+
+Set a regular cadence to review and refresh knowledge sources. Outdated information leads to outdated answers.
+
+### Use projects for fast-changing data
+
+For information that changes frequently (task lists, team rosters, pricing, inventory), use dynamic project knowledge instead of static file uploads.
+
+### Organize before you upload
+
+Structure your documents with clear headings and sections. Agents retrieve information more accurately from well-organized content.
+
+### Test after training
+
+After adding new knowledge, ask your agent several questions to verify it can find and use the new information correctly. Try both direct questions ("What is our return policy?") and indirect ones ("A customer wants to send back a product — what do I tell them?").
 
 ## Next Steps
 

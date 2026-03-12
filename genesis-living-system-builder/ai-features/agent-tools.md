@@ -156,25 +156,6 @@ Public agents can be embedded on any website, letting visitors interact with you
 | **JavaScript Widget** (recommended) | Add the Taskade embed script and widget tag to your site. Appears as a floating chat bubble in the corner. | Customer support, lead capture, onboarding |
 | **iFrame Embed** | Embed the full agent chat interface in an `<iframe>` element. | Dedicated help pages, knowledge base portals |
 
-**JavaScript Widget example:**
-
-```html
-<script src="https://www.taskade.com/embed/widget.js"></script>
-<taskade-widget agent="YOUR_AGENT_ID"></taskade-widget>
-```
-
-**iFrame example:**
-
-```html
-<iframe
-  src="https://www.taskade.com/share/agents/YOUR_AGENT_ID?embed=1"
-  width="100%"
-  height="600"
-  frameborder="0"
-  allow="clipboard-write"
-></iframe>
-```
-
 **How to set it up:**
 
 1. Open your agent and go to the **Publish** tab.

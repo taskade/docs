@@ -30,6 +30,16 @@ Learn more: [Workspace DNA](../genesis-living-system-builder/genesis/workspace-d
 
 ## Build Your First App with Genesis (5 minutes)
 
+---
+
+## Create Your Account (1 minute)
+
+1. [**Sign up for free →**](https://taskade.com/signup)
+2. **Name your workspace** — this becomes the home for all your apps
+3. **Verify your email** — check your inbox and click the confirmation link
+
+## Build Your First App with Genesis (5 minutes)
+
 **This is where the magic happens.** Instead of managing tasks manually, let's build an app that solves a real business problem.
 
 {% stepper %}
@@ -91,14 +101,12 @@ When [TRIGGER EVENT], automatically [AUTOMATED ACTION].
 
 ## What to Do Next
 
-| I want to... | Go here |
-|--------------|---------|
-| Understand how it all connects | [Workspace DNA](../genesis-living-system-builder/genesis/workspace-dna.md) |
-| Copy proven app templates | [Examples & Templates](../genesis-living-system-builder/genesis/examples-and-templates.md) |
-| Write better prompts | [Best Practices](../genesis-living-system-builder/community-and-sharing/best-practices.md) |
-| Add AI agents to my apps | [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md) |
-| Automate workflows | [Automations Overview](../genesis-living-system-builder/automation/README.md) |
-| Publish with a custom domain | [Custom Domains & Branding](../genesis-living-system-builder/space-apps-guide/custom-domains.md) |
+* Understand the model: [Workspace DNA](../genesis-living-system-builder/genesis/workspace-dna.md)
+* Copy templates: [Living System Examples & Templates](../genesis-living-system-builder/genesis/examples-and-templates.md)
+* Build better prompts: [Living System Best Practices](../genesis-living-system-builder/community-and-sharing/best-practices.md)
+* Add agents: [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md)
+* Add automations: [Automation Getting Started](../genesis-living-system-builder/automation/README.md)
+* Publish professionally: [Custom Domains & Branding](../genesis-living-system-builder/space-apps-guide/custom-domains.md)
 
 ## ✅ Quick Start Checklist
 

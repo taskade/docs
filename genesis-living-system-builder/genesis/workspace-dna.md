@@ -51,27 +51,11 @@ Automations execute event-driven workflows. They connect your workspace to 100+ 
 
 The three pillars form a continuous loop:
 
-{% stepper %}
-{% step %}
-### Memory stores data
+1. **Memory** stores data → agents and automations read it.
+2. **Intelligence** reasons over data → creates insights, drafts, and decisions.
+3. **Execution** acts on decisions → updates Memory with results.
 
-Projects and databases hold your structured knowledge. Agents and automations read from it.
-{% endstep %}
-{% step %}
-### Intelligence reasons over data
-
-AI agents analyze what's in Memory — creating insights, drafts, and decisions.
-{% endstep %}
-{% step %}
-### Execution acts on decisions
-
-Automations carry out the work — then write the results back to Memory, completing the cycle.
-{% endstep %}
-{% endstepper %}
-
-{% hint style="info" %}
-**Every action reinforces the cycle.** A form submission (Execution) creates a new record (Memory) that an agent (Intelligence) can analyze and act on.
-{% endhint %}
+Every action reinforces the cycle. A form submission (Execution) creates a new record (Memory) that an agent (Intelligence) can analyze and act on.
 
 ## Why This Matters for Genesis
 

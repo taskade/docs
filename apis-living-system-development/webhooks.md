@@ -21,28 +21,10 @@ Receive data from any external service to kick off a Taskade automation.
 
 ### How It Works
 
-{% stepper %}
-{% step %}
-### Create a webhook trigger
-
-Add a **Webhook** trigger to any automation flow.
-{% endstep %}
-{% step %}
-### Copy your unique URL
-
-Taskade generates a unique webhook URL. Find it in the trigger configuration panel.
-{% endstep %}
-{% step %}
-### Configure the sender
-
-Point your external service to **POST JSON data** to the URL.
-{% endstep %}
-{% step %}
-### Use the payload
-
-Every field in the incoming JSON becomes a **dynamic variable** available in downstream actions.
-{% endstep %}
-{% endstepper %}
+1. **Create a webhook trigger** in any automation flow.
+2. Taskade **generates a unique webhook URL** for that trigger.
+3. Configure your external service to **POST JSON data** to the URL.
+4. The webhook payload becomes available as **dynamic data** in every subsequent action.
 
 {% hint style="info" %}
 The webhook URL is generated per automation. You'll find it in the **trigger configuration** panel after selecting the Webhook trigger type.

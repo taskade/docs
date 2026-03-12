@@ -46,7 +46,7 @@ Software should be alive. And now, it is.
 
 Taskade works best when three parts stay connected. **Memory** stores knowledge. **Intelligence** reasons with that knowledge. **Execution** runs workflows from it.
 
-Learn more: [Workspace DNA](genesis-living-system-builder/genesis/workspace-dna.md)
+Use this as the canonical overview:\n[Workspace DNA](genesis-living-system-builder/genesis/workspace-dna.md).
 
 ### 🚀 Quick Start
 
