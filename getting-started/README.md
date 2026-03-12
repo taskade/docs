@@ -30,57 +30,76 @@ Learn more: [Workspace DNA](../genesis-living-system-builder/genesis/workspace-d
 
 ## Build Your First App with Genesis (5 minutes)
 
+---
+
+## Create Your Account (1 minute)
+
+1. [**Sign up for free →**](https://taskade.com/signup)
+2. **Name your workspace** — this becomes the home for all your apps
+3. **Verify your email** — check your inbox and click the confirmation link
+
+## Build Your First App with Genesis (5 minutes)
+
 **This is where the magic happens.** Instead of managing tasks manually, let's build an app that solves a real business problem.
 
-### **Step 1: Choose Your App Idea**
+{% stepper %}
+{% step %}
+### Choose Your App Idea
 
-Pick something you actually need (examples):
+Pick something you actually need:
 
-* 📝 **Customer Feedback App** - Collect reviews with automatic manager alerts
-* 📅 **Booking System** - Let customers schedule appointments online
-* 📊 **Inventory Tracker** - Monitor stock levels with reorder alerts
-* 🎯 **Lead Manager** - Capture and qualify sales leads automatically
+| App Idea | What It Does |
+|----------|-------------|
+| **Customer Feedback App** | Collect reviews with automatic manager alerts |
+| **Booking System** | Let customers schedule appointments online |
+| **Inventory Tracker** | Monitor stock levels with reorder alerts |
+| **Lead Manager** | Capture and qualify sales leads automatically |
 
-### **Step 2: Open the Generator Interface**
+{% endstep %}
+{% step %}
+### Open the Generator Interface
 
-1. Your workspace **IS** the Genesis interface - no separate tab needed
-2. Look for the **prominent input field at the top** of your workspace
-3. You'll see your existing projects/folders as **app tiles** below the input field
+Your workspace **IS** the Genesis interface — no separate tab needed. Look for the **prominent input field at the top** of your workspace. You'll see your existing projects/folders as **app tiles** below the input field.
+{% endstep %}
+{% step %}
+### Describe Your App
 
-### **Step 3: Describe Your App**
-
-Use this template - be specific:
+Use this template — be specific:
 
 ```
-I run a [BUSINESS TYPE] and need [USERS] to [ACTION]. 
+I run a [BUSINESS TYPE] and need [USERS] to [ACTION].
 They should be able to [SPECIFIC FEATURES].
 When [TRIGGER EVENT], automatically [AUTOMATED ACTION].
 ```
 
-**Example:**
-
-```
-I run a restaurant and need customers to submit feedback about their dining experience. They should be able to rate food quality, service speed, and overall satisfaction on a 1-5 scale, plus leave optional comments and upload photos. When someone gives us 3 stars or lower, automatically send a Slack message to our manager channel so we can follow up personally.
-```
-
-### **Step 4: Watch Genesis Build Your App**
+{% hint style="success" %}
+**Example prompt:** "I run a restaurant and need customers to submit feedback about their dining experience. They should be able to rate food quality, service speed, and overall satisfaction on a 1-5 scale, plus leave optional comments and upload photos. When someone gives us 3 stars or lower, automatically send a Slack message to our manager channel so we can follow up personally."
+{% endhint %}
+{% endstep %}
+{% step %}
+### Watch Genesis Build Your App
 
 1. **Type or paste your prompt** in the input field at the top of your workspace
-2. **Press Enter or click Generate** - Genesis analyzes your request
+2. **Press Enter or click Generate** — Genesis analyzes your request
 3. **Your new app appears as a tile** below the generator in 30-60 seconds
 4. Genesis creates: database structure, user interface, automations, and AI functionality
-
-### **Step 5: Test Your Live App**
+{% endstep %}
+{% step %}
+### Test Your Live App
 
 1. **Click on your new app tile** to enter the app workspace
 2. **Click the "Preview" tab** in the top-right panel to see your live application
-3. **Test as a real user** - submit data, navigate the interface, check mobile view
-4. **Verify automations work** - check your connected services (Slack, email, etc.)
+3. **Test as a real user** — submit data, navigate the interface, check mobile view
+4. **Verify automations work** — check your connected services (Slack, email, etc.)
 5. **Use the persistent AI Agent** in the left panel to make adjustments
+{% endstep %}
+{% endstepper %}
 
-**🎉 Congratulations!** You just created a complete business application in minutes.
+{% hint style="success" %}
+**Congratulations!** You just created a complete business application in minutes.
+{% endhint %}
 
-## What to do next (pick one)
+## What to Do Next
 
 * Understand the model: [Workspace DNA](../genesis-living-system-builder/genesis/workspace-dna.md)
 * Copy templates: [Living System Examples & Templates](../genesis-living-system-builder/genesis/examples-and-templates.md)

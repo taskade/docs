@@ -44,7 +44,7 @@ Software should be alive. And now, it is.
 
 ### How Taskade fits together
 
-Taskade works best when three parts stay connected.\nMemory stores knowledge.\nIntelligence reasons with that knowledge.\nMotion executes workflows from it.
+Taskade works best when three parts stay connected. **Memory** stores knowledge. **Intelligence** reasons with that knowledge. **Execution** runs workflows from it.
 
 Use this as the canonical overview:\n[Workspace DNA](genesis-living-system-builder/genesis/workspace-dna.md).
 
