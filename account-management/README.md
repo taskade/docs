@@ -6,11 +6,13 @@ Manage your Taskade account, team, billing, and security settings.
 
 ### Profile & Settings
 
-- **Update your profile**: Click your avatar (bottom-left) > Settings > Profile. Change your name, avatar, and display preferences.
-- **Change your email**: Settings > Account > Email. Verify the new address via the confirmation link.
-- **Change your password**: Settings > Account > Password. Enter your current password, then set a new one.
-- **Language & region**: Settings > Preferences. Choose your display language, date format, and time zone.
-- **Dark mode**: Settings > Preferences > Theme. Choose Light, Dark, or System.
+| Setting | Where to Find It |
+|---------|-----------------|
+| **Update profile** (name, avatar) | Click avatar (bottom-left) → Settings → Profile |
+| **Change email** | Settings → Account → Email → verify via confirmation link |
+| **Change password** | Settings → Account → Password |
+| **Language & region** | Settings → Preferences → display language, date format, time zone |
+| **Dark mode** | Settings → Preferences → Theme → Light, Dark, or System |
 
 ### Workspaces
 
@@ -68,6 +70,10 @@ AI credits are consumed when you use AI features (agents, chat, automations with
 
 ## Security
 
+{% hint style="info" %}
+**Keep your account secure.** Enable 2FA for all team members. Enterprise teams should use SSO/SAML to centralize access control.
+{% endhint %}
+
 ### Two-Factor Authentication (2FA)
 
 1. Settings > Account > Security.
@@ -78,10 +84,13 @@ AI credits are consumed when you use AI features (agents, chat, automations with
 ### SSO / SAML (Enterprise)
 
 Enterprise plans support Single Sign-On via:
-- Azure Active Directory
-- Google Workspace
-- Okta
-- Custom SAML 2.0 providers
+
+| Provider | Protocol |
+|----------|----------|
+| **Azure Active Directory** | SAML 2.0 |
+| **Google Workspace** | SAML 2.0 |
+| **Okta** | SAML 2.0 |
+| **Custom providers** | Any SAML 2.0 IdP |
 
 Contact your account manager or [support@taskade.com](mailto:support@taskade.com) for SSO setup.
 
