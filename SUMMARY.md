@@ -36,8 +36,10 @@
 ## 📚 Genesis: Living System Builder
 
 * [Living Systems That Transform Business](genesis-living-system-builder/genesis/README.md)
+  * [Workspace DNA](genesis-living-system-builder/genesis/workspace-dna.md)
   * [Your First Living System in 5 Minutes](genesis-living-system-builder/genesis/getting-started.md)
   * [Living System Examples & Templates](genesis-living-system-builder/genesis/examples-and-templates.md)
+  * [MCP Connectors](genesis-living-system-builder/genesis/mcp-connectors.md)
 * [Space Apps: Living Systems](genesis-living-system-builder/space-apps-guide/README.md)
   * [Intelligent Prompt Library](genesis-living-system-builder/space-apps-guide/genesis-prompt-library.md)
   * [Advanced Features](genesis-living-system-builder/space-apps-guide/advanced-features.md)
@@ -49,8 +51,9 @@
 * [AI Agents: Living Intelligence](genesis-living-system-builder/ai-features/README.md)
   * [EVE: Your Living AI Companion](genesis-living-system-builder/ai-features/README.md#eve-your-living-ai-companion)
   * [AI Agents Getting Started](genesis-living-system-builder/ai-features/ai-agents-getting-started.md)
-  * [AI Tools & Capabilities](https://help.taskade.com/en/articles/9314171-tools-for-ai-agents)
-  * [Agent Knowledge & Memory](https://help.taskade.com/en/articles/9495190-agent-knowledge-memory)
+  * [AI Agent Tools](genesis-living-system-builder/ai-features/agent-tools.md)
+  * [Agent Knowledge & Memory](genesis-living-system-builder/ai-features/agent-knowledge.md)
+  * [AI Agent Teams](genesis-living-system-builder/ai-features/agent-teams.md)
 * [Automations: Living Motion](genesis-living-system-builder/automation/README.md)
   * [AI Forms: Intelligent Data Collection](genesis-living-system-builder/automation/ai-forms.md)
   * [Action & Trigger Reference](genesis-living-system-builder/automation/actions.md)
@@ -66,13 +69,18 @@
   * [Project Views Mastery](genesis-living-system-builder/workspaces/project-views.md)
   * [Mobile Living Experience](genesis-living-system-builder/workspaces/mobile-optimization.md)
 
-## 💻 APIs: Living System Development
+## 💻 Developers
 
-* [Developer Overview](apis-living-system-development/developers/README.md)
+* [Build on Taskade](apis-living-system-development/developer-home.md)
+  * [MCP Server Setup](apis-living-system-development/mcp-setup.md)
+  * [TypeScript SDK (Coming Soon)](apis-living-system-development/sdk-quickstart.md)
+  * [Webhooks](apis-living-system-development/webhooks.md)
+  * [Bundles & App Kits](apis-living-system-development/bundles.md)
+* [REST API Reference](apis-living-system-development/developers/README.md)
   * [Authentication](apis-living-system-development/developers/authentication.md)
   * [Personal Tokens](apis-living-system-development/developers/personal-tokens.md)
-  * [Living Intelligence API Overview](apis-living-system-development/developers/api.md)
-* [Comprehensive API Guide](apis-living-system-development/comprehensive-api-guide/README.md)
+  * [API Overview](apis-living-system-development/developers/api.md)
+* [API Endpoints](apis-living-system-development/comprehensive-api-guide/README.md)
   * [Workspaces](apis-living-system-development/comprehensive-api-guide/workspaces/README.md)
     * [Get Workspaces](apis-living-system-development/comprehensive-api-guide/workspaces/get-workspaces.md)
     * [Get Projects](apis-living-system-development/comprehensive-api-guide/workspaces/get-projects.md)
@@ -140,6 +148,8 @@
 ## 📖 Help & Support
 
 * [Help Center](help-center/README.md)
+  * [Import & Export](help-center/import-and-export.md)
+  * [Mobile App](help-center/mobile-app.md)
 * [Account Management](account-management/README.md)
 * [Troubleshooting Guide](help-and-support/comprehensive-troubleshooting-guide.md)
 * [Taskade Tutorial: Living DNA Platform](help-and-support/index/README.md)
