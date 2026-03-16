@@ -6,21 +6,22 @@ Taskade is an AI-native platform where you can build apps, deploy AI agents, and
 
 **How it's organized:**
 
-| Level | What it is | Example |
-|-------|-----------|---------|
-| **Workspace** | Your top-level container. Separate billing and members. | "My Company" |
-| **Apps** (Folders) | Collections of projects inside a workspace. Each can become a published app. | "Customer Portal", "Internal CRM" |
-| **Projects** | Your data — tasks, notes, documents, databases. | "Feedback Responses", "Lead Pipeline" |
-| **Tasks** | Individual items inside a project. Can have subtasks, due dates, assignees, notes. | "Follow up with client" |
+| Level              | What it is                                                                         | Example                               |
+| ------------------ | ---------------------------------------------------------------------------------- | ------------------------------------- |
+| **Workspace**      | Your top-level container. Separate billing and members.                            | "My Company"                          |
+| **Apps** (Folders) | Collections of projects inside a workspace. Each can become a published app.       | "Customer Portal", "Internal CRM"     |
+| **Projects**       | Your data — tasks, notes, documents, databases.                                    | "Feedback Responses", "Lead Pipeline" |
+| **Tasks**          | Individual items inside a project. Can have subtasks, due dates, assignees, notes. | "Follow up with client"               |
 
 Three things power everything:
-- **Memory** = your projects and data
-- **Intelligence** = AI agents that reason over your data
-- **Execution** = automations that run workflows 24/7
+
+* **Memory** = your projects and data
+* **Intelligence** = AI agents that reason over your data
+* **Execution** = automations that run workflows 24/7
 
 Learn more: [Workspace DNA](../genesis-living-system-builder/genesis/workspace-dna.md)
 
----
+***
 
 ## Create Your Account (1 minute)
 
@@ -30,7 +31,7 @@ Learn more: [Workspace DNA](../genesis-living-system-builder/genesis/workspace-d
 
 ## Build Your First App with Genesis (5 minutes)
 
----
+***
 
 ## Create Your Account (1 minute)
 
@@ -44,25 +45,26 @@ Learn more: [Workspace DNA](../genesis-living-system-builder/genesis/workspace-d
 
 {% stepper %}
 {% step %}
-### Choose Your App Idea
+#### Choose Your App Idea
 
 Pick something you actually need:
 
-| App Idea | What It Does |
-|----------|-------------|
+| App Idea                  | What It Does                                  |
+| ------------------------- | --------------------------------------------- |
 | **Customer Feedback App** | Collect reviews with automatic manager alerts |
-| **Booking System** | Let customers schedule appointments online |
-| **Inventory Tracker** | Monitor stock levels with reorder alerts |
-| **Lead Manager** | Capture and qualify sales leads automatically |
-
+| **Booking System**        | Let customers schedule appointments online    |
+| **Inventory Tracker**     | Monitor stock levels with reorder alerts      |
+| **Lead Manager**          | Capture and qualify sales leads automatically |
 {% endstep %}
+
 {% step %}
-### Open the Generator Interface
+#### Open the Generator Interface
 
 Your workspace **IS** the Genesis interface — no separate tab needed. Look for the **prominent input field at the top** of your workspace. You'll see your existing projects/folders as **app tiles** below the input field.
 {% endstep %}
+
 {% step %}
-### Describe Your App
+#### Describe Your App
 
 Use this template — be specific:
 
@@ -76,16 +78,18 @@ When [TRIGGER EVENT], automatically [AUTOMATED ACTION].
 **Example prompt:** "I run a restaurant and need customers to submit feedback about their dining experience. They should be able to rate food quality, service speed, and overall satisfaction on a 1-5 scale, plus leave optional comments and upload photos. When someone gives us 3 stars or lower, automatically send a Slack message to our manager channel so we can follow up personally."
 {% endhint %}
 {% endstep %}
+
 {% step %}
-### Watch Genesis Build Your App
+#### Watch Genesis Build Your App
 
 1. **Type or paste your prompt** in the input field at the top of your workspace
 2. **Press Enter or click Generate** — Genesis analyzes your request
 3. **Your new app appears as a tile** below the generator in 30-60 seconds
 4. Genesis creates: database structure, user interface, automations, and AI functionality
 {% endstep %}
+
 {% step %}
-### Test Your Live App
+#### Test Your Live App
 
 1. **Click on your new app tile** to enter the app workspace
 2. **Click the "Preview" tab** in the top-right panel to see your live application
@@ -105,7 +109,7 @@ When [TRIGGER EVENT], automatically [AUTOMATED ACTION].
 * Copy templates: [Living System Examples & Templates](../genesis-living-system-builder/genesis/examples-and-templates.md)
 * Build better prompts: [Living System Best Practices](../genesis-living-system-builder/community-and-sharing/best-practices.md)
 * Add agents: [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md)
-* Add automations: [Automation Getting Started](../genesis-living-system-builder/automation/README.md)
+* Add automations: [Automation Getting Started](../genesis-living-system-builder/automation/)
 * Publish professionally: [Custom Domains & Branding](../genesis-living-system-builder/space-apps-guide/custom-domains.md)
 
 ## ✅ Quick Start Checklist
@@ -123,7 +127,7 @@ Use this checklist to make sure you've mastered the Genesis interface:
 * [ ] 📚 **Understood the concept** - Teams/Folders/Projects are now "Apps"
 * [ ] 🎉 **Celebrated your first complete business application!**
 
----
+***
 
 ## Just want to manage projects? (No app building needed)
 
@@ -142,7 +146,7 @@ You don't have to build apps with Genesis. Taskade also works as a powerful proj
 
 ## Need Help?
 
-- [Help Center](../help-center/README.md) — find answers by topic
-- [Troubleshooting](../genesis-living-system-builder/community-and-sharing/troubleshooting.md) — fix common issues
-- [Contact Support](https://www.taskade.com/contact) — reach the team directly
-- [Community](https://www.taskade.com/community) — browse apps, templates, and workflows
+* [Help Center](../help-center/) — find answers by topic
+* [Troubleshooting](../genesis-living-system-builder/community-and-sharing/troubleshooting.md) — fix common issues
+* [Contact Support](https://www.taskade.com/contact) — reach the team directly
+* [Community](https://www.taskade.com/community) — browse apps, templates, and workflows
