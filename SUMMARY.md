@@ -8,10 +8,11 @@
 
 ## 🌟 Updates & Timeline
 
-* [March 13, 2026](updates-and-timeline/march-13-2026.md)
-* [March 10, 2026](updates-and-timeline/march-10-2026.md)
-* [March 5, 2026](updates-and-timeline/march-5-2026.md)
-* [March 2, 2026](updates-and-timeline/march-2-2026.md)
+* [March 2026](updates-and-timeline/march-2026/README.md)
+  * [March 13, 2026](updates-and-timeline/march-2026/march-13-2026.md)
+  * [March 10, 2026](updates-and-timeline/march-2026/march-10-2026.md)
+  * [March 5, 2026](updates-and-timeline/march-2026/march-5-2026.md)
+  * [March 2, 2026](updates-and-timeline/march-2026/march-2-2026.md)
 * [February 2026](updates-and-timeline/february-2026/README.md)
   * [February 23, 2026](updates-and-timeline/february-2026/february-23-2026.md)
   * [February 19, 2026](updates-and-timeline/february-2026/february-19-2026.md)
