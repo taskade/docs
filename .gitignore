@@ -35,6 +35,12 @@ PENDING_CHANGES_REVIEW.md
 config/local.json
 config/production.json
 
+# Claude Code
+CLAUDE.md
+
+# HonKit / GitBook build output
+_book/
+
 # Node modules (if any)
 node_modules/
 

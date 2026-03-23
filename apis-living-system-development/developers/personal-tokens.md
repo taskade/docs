@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Personal Tokens
 
 Authentication is a crucial aspect of ensuring the security and integrity of your interactions with our API. We provide two distinct methods for authentication.
@@ -32,4 +18,3 @@ Personal Access Tokens are unique strings that represent your authorization to a
        Authorization: Bearer YOUR_PERSONAL_ACCESS_TOKEN
        ```
 3. **Note:** Treat your personal access tokens with care. They are like passwords – anyone who has the token can access the API on your behalf. If you believe a token has been compromised, regenerate a new one immediately.
-

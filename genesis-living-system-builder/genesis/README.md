@@ -45,7 +45,7 @@ This is what agents read and automations update.
 
 Start here:
 
-* [TaskOS Introduction](/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/TmKoZBQzTxbre77tJW1p)
+* [Workspace DNA](workspace-dna.md)
 * [Project Views Mastery](../workspaces/project-views.md)
 
 #### 2) Living Intelligence (agents)

@@ -49,19 +49,20 @@ Use OAuth when you need user-based auth and scoped access.
 {% tab title="SDKs & Tools" %}
 #### **SDKs & Libraries**
 
-Official and community-maintained libraries:
+Official libraries and tools:
 
 **Official:**
 
+* [@taskade/sdk](https://github.com/taskade/sdk) -- TypeScript SDK ([Quickstart](../sdk-quickstart.md))
+* [@taskade/mcp](https://github.com/taskade/mcp) -- MCP Server for Claude, Cursor ([Setup Guide](../mcp-setup.md))
 * REST API with OpenAPI spec
 * Webhook integrations
-* Real-time WebSocket API
 
-**Community:**
+**Resources:**
 
-* Python SDK (coming soon)
-* Node.js SDK (coming soon)
-* Postman collection
+* [Agent Cookbook](https://github.com/taskade/agent-cookbook) -- Use cases and architecture patterns
+* [Community Apps](https://github.com/taskade/awesome-app-kits) -- 120+ Genesis app examples
+* [Sample App](https://github.com/taskade/taskade-sample-app) -- Genesis app example
 {% endtab %}
 {% endtabs %}
 

@@ -8,6 +8,23 @@
 
 ## Updates & Timeline
 
+* [March 2026](updates-and-timeline/march-2026/README.md)
+  * [March 13, 2026](updates-and-timeline/march-2026/march-13-2026.md)
+  * [March 10, 2026](updates-and-timeline/march-2026/march-10-2026.md)
+  * [March 5, 2026](updates-and-timeline/march-2026/march-5-2026.md)
+  * [March 2, 2026](updates-and-timeline/march-2026/march-2-2026.md)
+* [February 2026](updates-and-timeline/february-2026/README.md)
+  * [February 23, 2026](updates-and-timeline/february-2026/february-23-2026.md)
+  * [February 19, 2026](updates-and-timeline/february-2026/february-19-2026.md)
+  * [February 12, 2026](updates-and-timeline/february-2026/february-12-2026.md)
+  * [February 6, 2026](updates-and-timeline/february-2026/february-6-2026.md)
+* [January 2026](updates-and-timeline/january-2026/README.md)
+  * [January 30, 2026](updates-and-timeline/january-2026/january-30-2026.md)
+  * [January 28, 2026](updates-and-timeline/january-2026/january-28-2026.md)
+  * [January 22, 2026](updates-and-timeline/january-2026/january-22-2026.md)
+  * [January 19, 2026](updates-and-timeline/january-2026/january-19-2026.md)
+  * [January 13, 2026](updates-and-timeline/january-2026/january-13-2026.md)
+  * [January 6, 2026](updates-and-timeline/january-2026/january-6-2026.md)
 * [Changelog (2017 - 2025)](changelog/README.md)
   * [2025](changelog/2025/README.md)
   * [2024](changelog/2024/README.md)
@@ -80,7 +97,12 @@
 
 ## APIs & Developer
 
-* [Developer Overview](apis-living-system-development/developers/README.md)
+* [Build on Taskade](apis-living-system-development/developer-home.md)
+  * [MCP Server Setup](apis-living-system-development/mcp-setup.md)
+  * [TypeScript SDK (Coming Soon)](apis-living-system-development/sdk-quickstart.md)
+  * [Webhooks](apis-living-system-development/webhooks.md)
+  * [Bundles & App Kits](apis-living-system-development/bundles.md)
+* [REST API Reference](apis-living-system-development/developers/README.md)
   * [Authentication](apis-living-system-development/developers/authentication.md)
   * [Personal Tokens](apis-living-system-development/developers/personal-tokens.md)
   * [API Overview](apis-living-system-development/developers/api.md)
@@ -152,6 +174,8 @@
 ## Help & Support
 
 * [Help Center](help-center/README.md)
+  * [Import & Export](help-center/import-and-export.md)
+  * [Mobile App](help-center/mobile-app.md)
 * [Account Management](account-management/README.md)
 * [Troubleshooting Guide](help-and-support/comprehensive-troubleshooting-guide.md)
 * [Taskade Tutorial](help-and-support/index/README.md)
