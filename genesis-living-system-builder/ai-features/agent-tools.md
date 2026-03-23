@@ -1,201 +1,210 @@
----
-description: >-
-  Complete reference for AI Agent Tools — connect your agents to 50+ services
-  so they can take real action on your behalf.
+# Tools for AI Agents
+
 ---
 
-# AI Agent Tools
+## Table of Contents
 
-Your AI agents can do more than talk. With **Tools**, they can create tasks, send emails, post to Slack, update spreadsheets, and interact with dozens of external services — all from a single conversation.
+- [Overview](#overview)
+- [Add Tools to Agents](#add-tools-to-agents)
+- [Use Agent Tools](#use-agent-tools)
+- [Taskade Native Tools](#taskade-native-tools)
+  - [Agent Actions (Full Reference)](#agent-actions-full-reference)
+  - [Taskade AI (Cross-Agent)](#taskade-ai-cross-agent)
+  - [Media Tools](#media-tools)
+- [App Tools (Third-Party Integrations)](#app-tools-third-party-integrations)
+- [Build Custom Agent Tools](#build-custom-agent-tools)
+- [Human in the Loop](#human-in-the-loop)
+- [Enable / Disable Tools](#enable--disable-tools)
+- [What's Next](#whats-next)
 
-{% hint style="info" %}
-**Tools turn conversations into actions.** Without tools, an agent can only draft text. With tools, it can execute work across your entire stack.
-{% endhint %}
+---
 
-## How to Add Tools to an Agent
+## Overview
 
-1. Open the **Agents** tab and select your agent.
-2. Click **Edit Agent** in the top-right corner.
-3. Switch to the **Tools** tab in the sidebar.
-4. Click **Add Tool**, choose the tool you need, and configure it.
-5. Click **Update** to save.
+Agent Tools are integrated add-ons that **augment your AI agents' capabilities** — allowing them to interact with Taskade projects, third-party platforms, and custom workflows. Tools transform agents from text-only assistants into autonomous actors that can take real actions on your behalf.
 
-Each tool has an **Enable / Disable toggle** so you can turn capabilities on or off without removing them.
+> **Workspace DNA connection:** Tools are how agents execute the [Automation pillar](../automation/README.md). An agent with tools can send Slack messages, create HubSpot deals, update Google Sheets, and more — all within the conversation.
 
-## Three Ways to Use Agent Tools
+---
 
-| Method | How to access | Best for |
+## Add Tools to Agents
+
+| Step | Action |
+|---|---|
+| 1 | Go to the **Agents** tab |
+| 2 | Click the three dots (⋯) next to your agent → **Edit agent** |
+| 3 | Open the **Tools** tab |
+| 4 | Click **Add tools** |
+| 5 | Select from Taskade tools and/or third-party integrations |
+| 6 | Save |
+
+<!-- Screenshot: Tools tab with available integrations -->
+
+---
+
+## Use Agent Tools
+
+Agents can use tools through three interfaces:
+
+| Method | How | Best For |
 |---|---|---|
-| **Project Chat** | Open a project > click the chat icon > select your agent | Taking action inside a specific project context |
-| **Agent Sidebar** | Click the agent panel on the right side of your workspace | Quick actions while you work on something else |
-| **Agent Chat** | Go to Agents tab > select agent > New Chat | Dedicated conversations with full tool access |
+| **Project Chat** | Chat with an agent in a project context — agent uses tools automatically | Project-specific actions |
+| **Agent Sidebar** | Access agent in the sidebar — tools available in conversation | Quick actions while working |
+| **Agent Chat** | Dedicated agent chat session — full tool access | Complex multi-step tasks |
 
-## Complete Tool Reference
+> **Agents decide when to use tools.** You don't need to explicitly request a tool — describe what you want, and the agent determines which tool to use.
 
-Below is every tool category available to your agents. Each category contains one or more integrations, and each integration exposes specific actions your agent can perform.
+---
 
-### Taskade
+## Taskade Native Tools
 
-| Tool | Example Actions |
-|---|---|
-| Project & Task Management | Create task, update task, complete task, assign task, move task, set due dates, create project |
+### Agent Actions (Full Reference)
 
-### Communication
+These are built-in Taskade actions every agent can perform in your workspace:
 
-| Tool | Example Actions |
-|---|---|
-| Slack | Send message, create channel, add reaction, list channels |
-| Discord | Send message, create channel |
-| Microsoft Teams | Send message, create channel |
-| WhatsApp | Send message |
-| Telegram | Send message |
+| Category | Actions | Example Prompts |
+|---|---|---|
+| **Bulk AI Prompts** | Run AI commands across multiple items | "Summarize all tasks in this project", "Translate all items to Spanish" |
+| **Project & Task Editing** | Create, update, delete projects and tasks | "Create a new task called 'Review proposal'", "Rename this project to Q2 Plan" |
+| **Content Updates** | Modify task descriptions, notes, content | "Add detailed instructions to the 'Setup server' task" |
+| **Task Completion** | Mark tasks complete or reopen them | "Mark all tasks under 'Phase 1' as complete" |
+| **Due Date Management** | Set, update, remove due dates | "Set the deadline for 'Launch campaign' to next Friday" |
+| **Assignments** | Assign or unassign team members | "Assign @Sarah to all tasks in the Marketing section" |
+| **Labels & Tags** | Add, remove, manage labels | "Add the 'urgent' label to all overdue tasks" |
+| **Task Movement** | Reorder, move tasks between sections | "Move all completed tasks to the 'Done' section" |
+| **Smart Editing** | Restructure, reorganize, reformat content | "Convert this brainstorm list into an organized project plan" |
+| **Notes & Comments** | Add notes, comments, annotations | "Add a note to this task explaining the delay" |
+| **Insights & Reporting** | Analyze project data, generate reports | "Give me a status summary of all projects due this week" |
+| **Governance & Safety** | Permission checks, access validation | "Who has access to this project?" |
+| **Custom Fields** | Create, update, manage custom fields | "Add a 'Priority' custom field with options: High, Medium, Low" |
+| **Search & Intelligence** | Search across workspace, find patterns | "Find all tasks assigned to @John that are overdue" |
+| **Content Generation** | Generate text, documents, summaries | "Write a project brief for the new product launch" |
+| **Compare & Review** | Diff content, review changes | "Compare this week's metrics to last week's" |
 
-### Email
+### Taskade AI (Cross-Agent)
 
-| Tool | Example Actions |
-|---|---|
-| Gmail | Send email, create draft, find emails, reply to thread |
-| Mailchimp | Create campaign, add subscriber, send email |
+| Capability | What It Does | Example |
+|---|---|---|
+| **Ask other agents** | Query another agent from within a conversation | "Ask the Sales Agent about our latest lead metrics" |
+| **Run agent commands** | Execute another agent's custom commands | "Run the Report Agent's `/weekly-summary` command" |
 
-### Google Workspace
+### Media Tools
 
-| Tool | Example Actions |
-|---|---|
-| Google Sheets | Insert row, update cell, read data, create spreadsheet |
-| Google Drive | Create file, search files, upload document |
-| Google Calendar | Add event, check availability, update event |
-| Google Docs | Create document, append text |
-| Google Forms | Create form, add question |
+| Tool | What It Does | Example |
+|---|---|---|
+| **Search Web** | Search the internet for current information | "Search for the latest pricing trends in SaaS" |
+| **Scrape Webpage** | Extract content from any web page | "Scrape the competitor's pricing page and summarize" |
+| **Transcribe YouTube** | Get full transcript from any YouTube video | "Transcribe this product demo video and create action items" |
 
-### CRM
+---
 
-| Tool | Example Actions |
-|---|---|
-| HubSpot | Create contact, update deal, find company, send email, log activity |
-| Apollo | Find contact, enrich lead, send email sequence |
+## App Tools (Third-Party Integrations)
 
-### E-Commerce
+Connect your agents to external platforms for real-world actions:
 
-| Tool | Example Actions |
-|---|---|
-| Shopify | Get product, update inventory, manage orders, look up customer |
-| Stripe | Create payment link, look up charge, manage subscriptions |
+| Category | Platform | Capabilities | Example Use |
+|---|---|---|---|
+| **Communication** | **Slack** | Send channel messages, send DMs, create channels, find users | Agent posts daily standup to #team |
+| | **Discord** | Send messages to channels and users | Agent posts community updates |
+| | **Microsoft Teams** | Create channels, send channel/chat messages | Agent notifies team of events |
+| | **WhatsApp Business** | Send messages to contacts | Agent handles customer comms |
+| | **Telegram** | Send messages, manage groups | Agent broadcasts announcements |
+| | **Twilio** | Send SMS messages | Agent sends appointment reminders |
+| | **Zoom** | Schedule meetings | Agent books video calls |
+| **Email** | **Gmail** | Send emails, find emails, create drafts | Agent sends follow-up emails |
+| | **Outlook** | Send emails, manage calendar | Agent handles enterprise email |
+| **CRM & Sales** | **HubSpot** | Create contacts, create deals, update records | Agent creates CRM records |
+| | **Salesforce** | Manage contacts, opportunities, cases | Agent updates enterprise CRM |
+| | **Apollo** | Enrich contacts, find leads | Agent enriches lead data |
+| **Productivity** | **Google Sheets** | Insert rows, find rows, update cells | Agent logs data to sheets |
+| | **Google Docs** | Create documents, append text, find documents | Agent generates documents |
+| | **Google Calendar** | Create events, create quick events | Agent schedules meetings |
+| | **Google Drive** | Create folders/files, search, duplicate, manage permissions | Agent organizes files |
+| | **Google Forms** | Process form responses | Agent handles form data |
+| | **Calendly** | Manage scheduling | Agent books appointments |
+| | **Typeform** | Process form submissions | Agent handles surveys |
+| **Social Media** | **Twitter/X** | Create posts, manage content | Agent posts social updates |
+| | **LinkedIn** | Create company updates, publish articles | Agent publishes company news |
+| | **Facebook** | Create page posts, manage content | Agent manages page posts |
+| | **Instagram** | Create posts, manage content | Agent publishes visual content |
+| | **Reddit** | Create posts, monitor threads | Agent engages communities |
+| | **TikTok** | Manage content | Agent publishes video content |
+| | **YouTube** | Transcribe videos, manage content | Agent processes video content |
+| **Content** | **WordPress** | Create blog posts, manage content | Agent publishes content |
+| | **Webflow** | Manage CMS content | Agent updates web content |
+| | **RSS** | Monitor feeds | Agent tracks content sources |
+| **Development** | **GitHub** | Manage issues, PRs, repositories | Agent tracks development |
+| | **HTTP/Webhooks** | Custom API requests with analyzer | Agent connects to any API |
+| | **Bitbucket** | Manage issues, repositories | Agent tracks code changes |
+| **Business** | **Stripe** | Process payments, manage subscriptions | Agent handles billing |
+| | **Mailchimp** | Add contacts, manage campaigns | Agent manages email marketing |
 
-### Social Media
+> **104 automation actions** and **40+ external service integrations** are available. Agents can use any automation flow as a custom tool. See [Automations](../automation/README.md) for the full integration list.
 
-| Tool | Example Actions |
-|---|---|
-| LinkedIn | Post content, send message |
-| X / Twitter | Post tweet, send direct message |
-| Reddit | Create post, add comment |
-| Facebook | Publish post, manage page content |
-
-### Developer
-
-| Tool | Example Actions |
-|---|---|
-| GitHub | Create issue, open pull request, add comment, list repos |
-| HTTP Request | Make GET/POST/PUT/DELETE requests to any API endpoint |
-
-### Content & Publishing
-
-| Tool | Example Actions |
-|---|---|
-| WordPress | Create post, update page, publish content |
-| Webflow | Create CMS item, update collection, publish site |
-| RSS | Fetch and parse feed content |
+---
 
 ## Build Custom Agent Tools
 
-You can turn any **automation flow** into a reusable agent tool. This lets your agent trigger multi-step workflows mid-conversation.
+Turn any automation flow into a reusable agent tool:
 
-### How it works
+| Step | Action |
+|---|---|
+| 1 | Open your agent's **Tools** tab |
+| 2 | Click **New tool** |
+| 3 | Design the automation flow (trigger → actions) |
+| 4 | Save as a custom tool |
+| 5 | The agent can now execute this flow on command |
 
-1. Go to the **Automations** tab and create a new automation.
-2. Choose **Agent Tool** as the trigger type.
-3. Build your automation flow (add actions, conditions, delays).
-4. Save the automation.
-5. Open your agent > **Tools** tab > your custom tool now appears in the list.
-6. Enable it and click **Update**.
+**Example custom tools:**
 
-When you chat with the agent, it can invoke that entire automation flow as a single tool call.
+| Custom Tool | Automation Flow | Trigger |
+|---|---|---|
+| "Generate weekly report" | Gather project data → Summarize → Email to team → Post to Slack | Agent decides or `/weekly-report` command |
+| "Onboard new client" | Create project → Add template tasks → Send welcome email → Notify team | Agent processes new client request |
+| "Escalate issue" | Create urgent ticket → Notify manager via Slack → Schedule follow-up | Agent detects high-severity issue |
 
-{% hint style="success" %}
-**Power-user pattern:** Build a "Send proposal" automation that generates a PDF, attaches it to an email, and logs the activity in your CRM — then expose it as a single agent tool. One prompt does it all.
-{% endhint %}
+> **Deep dive:** [Automations: The Execution Pillar](../automation/README.md) for full automation flow building.
+
+---
 
 ## Human in the Loop
 
-Some tools perform external actions (sending emails, posting messages, making payments). For those, you can enable **Human in the Loop** approval.
+For sensitive external actions, enable approval before execution:
 
-When enabled:
+| Feature | Detail |
+|---|---|
+| **What it is** | An approve/reject gate before agents interact with external platforms |
+| **When to use** | Sending emails, posting to social media, creating CRM records, any external action |
+| **How it works** | Agent proposes the action → You review → Approve or Reject → Agent proceeds or stops |
 
-1. The agent proposes an action and pauses.
-2. You see the action details and can **Approve** or **Reject**.
-3. The agent only executes the action after your approval.
+| Step | Action |
+|---|---|
+| 1 | Enable "Human in the Loop" in the Tools tab |
+| 2 | Select which tools require approval |
+| 3 | When the agent wants to use an approved tool, you'll see a confirmation prompt |
+| 4 | Click **Approve** to proceed or **Reject** to stop |
 
-{% hint style="warning" %}
-**Recommended for high-stakes actions** like sending emails to customers, making payments, or posting to social media. Start with approval enabled and turn it off once you trust the agent's judgment.
-{% endhint %}
+> **Tip:** Use Human in the Loop during the first few weeks of agent deployment. Once you trust the agent's judgment, disable it for routine actions.
 
-## Tips for Better Tool Usage
+---
 
-* **Mention the tool name in your prompt.** Instead of "send a message to the team," say "send a Slack message to #marketing with this update." Explicit tool names help the agent pick the right integration.
-* **Enable only the tools your agent needs.** Fewer tools means less ambiguity and faster responses.
-* **Combine tools with knowledge.** An agent with your product docs as knowledge AND Gmail as a tool can draft accurate customer replies and send them — all in one step.
-* **Test with Human in the Loop first.** Verify the agent picks the right tool and formats actions correctly before giving it full autonomy.
+## Enable / Disable Tools
 
-## Embed Agents in Websites
+| Action | How |
+|---|---|
+| Enable a tool | Toggle ON in the Tools tab |
+| Disable a tool | Toggle OFF in the Tools tab |
+| Remove a tool | Click the remove button next to the tool |
 
-Public agents can be embedded on any website, letting visitors interact with your agent without leaving the page.
+> **Disabled tools** remain configured but are not available to the agent. Re-enable anytime without reconfiguration.
 
-**Two embed methods:**
+---
 
-| Method | How it works | Best for |
-|--------|-------------|----------|
-| **JavaScript Widget** (recommended) | Add the Taskade embed script and widget tag to your site. Appears as a floating chat bubble in the corner. | Customer support, lead capture, onboarding |
-| **iFrame Embed** | Embed the full agent chat interface in an `<iframe>` element. | Dedicated help pages, knowledge base portals |
+## What's Next
 
-**How to set it up:**
-
-1. Open your agent and go to the **Publish** tab.
-2. Customize the agent's appearance (name, avatar, welcome message).
-3. Switch to the **Share** tab and enable **Public Access**.
-4. Copy the embed code (JavaScript widget or iFrame).
-5. Paste it into your website's HTML.
-
-{% hint style="warning" %}
-**Tool calling is not supported for public embedded agents.** Embedded agents can answer questions and use their knowledge, but cannot execute tool actions (e.g., sending emails or updating spreadsheets). Keep this in mind when designing public-facing agents.
-{% endhint %}
-
-## Agent Automation Integration
-
-Agents and automations work together in both directions — agents can trigger automations, and automations can use agents as steps.
-
-**Agent as an automation step:**
-
-Add an **Ask Agent** or **Run Agent Command** action inside any automation workflow. The automation sends a prompt to your agent mid-flow and uses the response in subsequent steps.
-
-*Example:* A form submission triggers an automation that asks an agent to classify the inquiry, then routes it to the right Slack channel based on the agent's response.
-
-**Automation as an agent tool:**
-
-1. Create an automation with **Agent Tool** as the trigger type.
-2. Build the workflow (actions, conditions, delays).
-3. Open your agent > **Tools** tab > enable the custom tool.
-4. The agent can now invoke the entire automation from a conversation.
-
-**Human in the Loop for integration steps:**
-
-When an agent triggers an automation that performs external actions (sending emails, making API calls, posting messages), you can require approval before each action executes. The workflow pauses, shows you the proposed action, and waits for you to **Approve** or **Reject**.
-
-{% hint style="info" %}
-**Start with approval enabled.** Once you're confident the agent-automation combination produces correct results, disable approval for faster execution.
-{% endhint %}
-
-## Next Steps
-
-* [Agent Knowledge & Memory](agent-knowledge.md) — teach your agent about your business
-* [AI Agent Teams](agent-teams.md) — combine multiple agents into collaborative teams
-* [Automation Action & Trigger Reference](../automation/actions.md) — full list of automation triggers and actions
-* [AI Agents Getting Started](ai-agents-getting-started.md) — create your first agent
+| Guide | What You'll Learn |
+|---|---|
+| [Multi-Agents](./multi-agents.md) | Build teams of agents with complementary tools |
+| [Agent Knowledge & Memory](./agent-knowledge.md) | Train agents on your data |
+| [Automations](../automation/README.md) | Build the automation flows agents can trigger |
+| [Custom AI Agents](./ai-agents-getting-started.md) | Complete agent setup guide |

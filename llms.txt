@@ -1,0 +1,61 @@
+# Taskade
+
+> Taskade is a real-time collaborative productivity platform with AI-powered agents, automated workflows, and a no-code app builder called Taskade Genesis.
+
+Taskade lets teams collaborate on projects, create AI agents, automate workflows, and build complete business applications from natural language descriptions.
+
+## Core Features
+
+- **Taskade Genesis**: No-code app builder that creates complete business applications from natural language prompts. Generates databases, AI agents, automations, and public web interfaces.
+- **Space Apps**: Complete React web applications with live URLs, custom domains, and mobile-responsive design. Built through Taskade Genesis.
+- **AI Agents**: Customizable AI assistants with configurable knowledge bases, tools, and multi-agent collaboration capabilities.
+- **Automations**: 100+ service integrations (Slack, Gmail, HubSpot, Stripe, etc.) with trigger-action workflows, AI forms, and workflow generator.
+- **Projects & Workspaces**: Real-time collaborative workspaces with multiple views (list, board, table, mind map, org chart), markdown support, and knowledge management.
+
+## Documentation
+
+- [Taskade Genesis Overview](genesis-living-system-builder/genesis/README.md)
+- [Getting Started with Taskade Genesis](genesis-living-system-builder/genesis/getting-started.md)
+- [How Taskade Genesis Works](genesis-living-system-builder/genesis/how-genesis-works.md)
+- [Taskade Genesis Prompt Guide](genesis-living-system-builder/genesis/prompt-guide.md)
+- [Taskade Genesis Examples & Templates](genesis-living-system-builder/genesis/examples-and-templates.md)
+- [Adding Context to Taskade Genesis](genesis-living-system-builder/genesis/adding-context.md)
+- [App Analytics](genesis-living-system-builder/genesis/app-analytics.md)
+- [Version History](genesis-living-system-builder/genesis/version-history.md)
+- [Space Apps Guide](genesis-living-system-builder/space-apps-guide/README.md)
+- [AI Agents Getting Started](genesis-living-system-builder/ai-features/ai-agents-getting-started.md)
+- [Agent Knowledge & Memory](genesis-living-system-builder/ai-features/agent-knowledge.md)
+- [Tools for AI Agents](genesis-living-system-builder/ai-features/agent-tools.md)
+- [Multi-Agent Collaboration](genesis-living-system-builder/ai-features/multi-agents.md)
+- [Image Generation](genesis-living-system-builder/ai-features/image-generation.md)
+- [Media AI Chat](genesis-living-system-builder/ai-features/media-ai-chat.md)
+- [Autopilot](genesis-living-system-builder/ai-features/autopilot.md)
+- [Automations Overview](genesis-living-system-builder/automation/README.md)
+- [Workflow Generator](genesis-living-system-builder/automation/workflow-generator.md)
+- [Action & Trigger Reference](genesis-living-system-builder/automation/actions.md)
+- [Integration Guide](genesis-living-system-builder/automation/comprehensive-integration-guide.md)
+- [AI Forms](genesis-living-system-builder/automation/ai-forms.md)
+- [Workspaces Overview](genesis-living-system-builder/workspaces/README.md)
+- [Projects & Databases](genesis-living-system-builder/workspaces/projects-databases.md)
+- [Teams](genesis-living-system-builder/workspaces/teams.md)
+- [Editing & Formatting](genesis-living-system-builder/workspaces/editing-formatting.md)
+- [Markdown Support](genesis-living-system-builder/workspaces/markdown.md)
+- [Import](genesis-living-system-builder/workspaces/import.md)
+- [Embed](genesis-living-system-builder/workspaces/embed.md)
+- [Publish & Clone](genesis-living-system-builder/community-and-sharing/publish-and-clone.md)
+- [Best Practices](genesis-living-system-builder/community-and-sharing/best-practices.md)
+- [Troubleshooting](genesis-living-system-builder/community-and-sharing/troubleshooting.md)
+- [FAQ](genesis-living-system-builder/community-and-sharing/faq.md)
+
+## API
+
+- [Developer Overview](apis-living-system-development/developers/README.md)
+- [Authentication](apis-living-system-development/developers/authentication.md)
+- [API Overview](apis-living-system-development/developers/api.md)
+- [Comprehensive API Guide](apis-living-system-development/comprehensive-api-guide/README.md)
+
+## Links
+
+- [Taskade Website](https://taskade.com)
+- [Taskade Blog](https://www.taskade.com/blog)
+- [Taskade API](https://www.taskade.com/api/v1)

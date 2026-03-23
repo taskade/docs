@@ -1,111 +1,211 @@
----
-description: >-
-  Train your AI agents with documents, websites, videos, and live project data
-  so they can answer questions and take action using your business context.
----
-
 # Agent Knowledge & Memory
 
-Knowledge is what makes your agent **yours**. Without it, an agent is a general-purpose assistant. With it, the agent understands your products, processes, customers, and data — and gives answers grounded in your reality.
+---
 
-{% hint style="info" %}
-**The smarter you train, the smarter it gets.** An agent with well-organized, up-to-date knowledge will outperform one with more tools but no context.
-{% endhint %}
+## Table of Contents
 
-## How to Train an Agent
+- [Overview](#overview)
+- [Explore the Knowledge Tab](#explore-the-knowledge-tab)
+- [Train Your Agent](#train-your-agent)
+- [Supported Knowledge Sources](#supported-knowledge-sources)
+- [Training Methods](#training-methods)
+  - [Upload Documents](#upload-documents)
+  - [Use Web Resources](#use-web-resources)
+  - [Create Sources Manually](#create-sources-manually)
+  - [Dynamic Knowledge (Projects)](#dynamic-knowledge-projects)
+- [Bulk Training](#bulk-training)
+- [Look Up References](#look-up-references)
+- [Knowledge Backlinks](#knowledge-backlinks)
+- [What Projects Expose to Agents](#what-projects-expose-to-agents)
+- [Knowledge Best Practices](#knowledge-best-practices)
+- [What's Next](#whats-next)
 
-1. Open the **Agents** tab and select your agent.
-2. Click **Edit Agent** in the top-right corner.
-3. Switch to the **Knowledge** tab in the sidebar.
-4. Toggle **Enable Knowledge** on.
-5. Add your sources (see options below).
-6. Click **Update** to save.
+---
 
-Your agent immediately starts learning from the uploaded content. You can add, remove, or replace sources at any time.
+## Overview
 
-## Supported Knowledge Sources
+Agent knowledge is the information your custom AI agents use to provide **contextual, accurate responses**. It combines pre-trained AI capabilities with **your own data** — documents, URLs, projects, and media — to create agents that truly understand your business.
 
-| Source Type | Supported Formats |
+> **Workspace DNA connection:** Knowledge is what transforms a generic AI into a specialist. The more knowledge you add, the richer your [Workspace DNA](../genesis/how-genesis-works.md) becomes, and the smarter all your Genesis apps get.
+
+---
+
+## Explore the Knowledge Tab
+
+| Step | Action |
 |---|---|
-| **Files** | `.pdf`, `.csv`, `.txt`, `.docx`, `.md`, `.pptx`, `.xlsx`, `.epub` |
-| **Web** | YouTube transcripts, blog posts, tweets, Reddit threads, news articles |
-| **Cloud Storage** | Google Drive, Dropbox, Box, OneDrive |
-| **Live Data** | Taskade Projects (auto-updates), Web Links |
+| 1 | Go to the **Agents** tab |
+| 2 | Click the three dots (⋯) next to your agent |
+| 3 | Select **Edit agent** |
+| 4 | Open the **Knowledge** tab |
 
-### How to add each source
+<!-- Screenshot: Knowledge tab with sources listed -->
 
-| Source | Steps |
+The Knowledge tab shows all sources your agent has been trained on, with options to add, remove, and manage sources.
+
+---
+
+## Train Your Agent
+
+### Supported Knowledge Sources
+
+| Source Type | Formats / Types | How It's Used |
+|---|---|---|
+| **Documents** | PDF, CSV, TXT, DOCX, MD, PPTX, XLSX, EPUB | Full text extraction and indexing |
+| **Web URLs** | Any web page, blog post, documentation page | Content scraped and indexed |
+| **YouTube videos** | Video URLs | Transcript extracted and indexed |
+| **Social content** | Tweets, Reddit posts, news articles | Content extracted and indexed |
+| **Cloud files** | Google Drive, Dropbox, Box, OneDrive | File content pulled and indexed |
+| **Taskade projects** | Any project in your workspace | Live, dynamic knowledge (updates automatically) |
+| **Manual sources** | Markdown or plain text created in the Knowledge tab | Direct knowledge injection |
+
+---
+
+## Training Methods
+
+### Upload Documents
+
+| Step | Action |
 |---|---|
-| **Upload Files** | Knowledge tab > **Upload** > drag and drop or browse files |
-| **Add from Media** | Knowledge tab > **Add from Media** > select files already in your workspace |
-| **Add a Web Link** | Knowledge tab > **Add Link** > paste URL > the agent fetches and indexes the content |
-| **Add YouTube** | Knowledge tab > **Add YouTube** > paste video URL > the agent reads the transcript |
-| **Connect a Project** | Knowledge tab > **Add Project** > select a Taskade project from your workspace |
+| 1 | Open the Knowledge tab |
+| 2 | Drag & drop files directly, or click **Add Media** |
+| 3 | Select files from your device |
+| 4 | Files are processed and indexed automatically |
 
-## Dynamic Knowledge (Live Project Data)
+**Supported document formats:**
 
-When you add a **Taskade Project** as a knowledge source, it becomes **dynamic knowledge** — a living data connection that updates automatically whenever the project changes.
-
-{% hint style="success" %}
-**This is the secret to agents that stay current.** Instead of re-uploading documents every time something changes, point your agent at the project and let it learn continuously.
-{% endhint %}
-
-### What the agent can read from projects
-
-| Included | Not included |
+| Format | Best For |
 |---|---|
-| Text content and blocks | Uploaded file attachments |
-| Due dates and deadlines | Comments on tasks |
-| Assignee information | Embedded links within tasks |
-| Task structure and hierarchy | Timers and time tracking data |
-| | Reactions |
-| | Custom field values |
+| **PDF** | Brand guidelines, reports, manuals, legal docs |
+| **CSV / XLSX** | Customer data, product catalogs, pricing tables |
+| **DOCX** | Procedures, policies, templates |
+| **TXT / MD** | Plain text knowledge, FAQ answers, notes |
+| **PPTX** | Presentations, training materials |
+| **EPUB** | Books, long-form content |
 
-{% hint style="warning" %}
-If your agent needs information from uploaded files or comments, copy the relevant content into the project's text blocks or upload those files directly to the agent's knowledge.
-{% endhint %}
+### Use Web Resources
+
+| Step | Action |
+|---|---|
+| 1 | Click **Add Media** in the Knowledge tab |
+| 2 | Paste a URL (web page, YouTube video, cloud file link) |
+| 3 | Content is scraped/transcribed and indexed |
+
+| Resource Type | What Gets Indexed |
+|---|---|
+| **Web pages** | Full page text content |
+| **YouTube videos** | Full video transcript |
+| **Google Drive files** | Document text content |
+| **Dropbox / Box / OneDrive files** | Document text content |
+| **Blog posts** | Article text and metadata |
+| **Tweets** | Tweet text and thread |
+| **Reddit posts** | Post and top comments |
+| **News articles** | Full article text |
+
+### Create Sources Manually
+
+| Step | Action |
+|---|---|
+| 1 | Open the Knowledge tab |
+| 2 | Click **"Create Source"** |
+| 3 | Write or paste Markdown/plain text directly |
+| 4 | Save — the source is immediately available to your agent |
+
+> **Tip:** Use manual sources for FAQ answers, custom instructions, edge case handling, or information not available in any file.
+
+### Dynamic Knowledge (Projects)
+
+Connect Taskade projects as **living knowledge sources** that update automatically:
+
+| Step | Action |
+|---|---|
+| 1 | Open the Knowledge tab |
+| 2 | Click **Add Media** → **Add from Workspace** |
+| 3 | Select one or more projects |
+| 4 | Projects become live knowledge — agent always has the latest data |
+
+> **Dynamic = real-time.** When you update a project, the agent's knowledge updates automatically. No re-upload needed.
+
+---
+
+## Bulk Training
+
+Upload multiple sources simultaneously:
+
+| Method | How |
+|---|---|
+| **Multi-file upload** | Select multiple files in the file picker |
+| **Multi-project connect** | Select multiple projects from your workspace |
+| **Multi-URL paste** | Add multiple links at once |
+| **Drag & drop batch** | Drag a folder or multiple files into the Knowledge tab |
+
+---
 
 ## Look Up References
 
-When your agent answers a question, it can show you **which knowledge sources it referenced**. This gives you transparency into where the answer came from.
+When your agent responds, it shows which sources it referenced:
 
-In an agent chat, look for the **source references** section below the response. Each reference links back to the original document, web page, or project so you can verify the information.
+| Feature | Detail |
+|---|---|
+| **Source citations** | Chat displays which knowledge sources were used |
+| **Preview capability** | Click a citation to preview the source content |
+| **Transparency** | Users can verify agent responses against source material |
+
+<!-- Screenshot: Agent chat showing source reference citations -->
+
+---
 
 ## Knowledge Backlinks
 
-Taskade also tracks the reverse direction: which agents use a given project as knowledge.
+Projects used as agent knowledge show **backlinks** indicating which agents reference them:
 
-Open any project and check the **Backlinks** section to see a list of agents that reference it. This helps you understand the impact of editing or deleting a project — you will know exactly which agents depend on it.
+| Feature | Detail |
+|---|---|
+| **Backlink indicator** | Projects display a badge showing connected agents |
+| **Bi-directional awareness** | See which agents use a project, and which projects an agent uses |
+| **Impact visibility** | Know which agents are affected when you edit a project |
 
-{% hint style="info" %}
-**Before deleting a project**, check its backlinks. Removing a project that agents rely on will reduce their ability to answer questions accurately.
-{% endhint %}
+> **Tip:** Backlinks help you maintain knowledge integrity. Before editing a project, check its backlinks to understand which agents depend on it.
 
-## Best Practices
+---
 
-### Start with your best content
+## What Projects Expose to Agents
 
-Upload your most accurate, well-written documents first. The quality of your knowledge directly determines the quality of your agent's answers.
+When a project is connected as knowledge, agents can access:
 
-### Keep sources current
+| Accessible | Not Accessible |
+|---|---|
+| Text content (tasks, notes, descriptions) | Uploaded file attachments within the project |
+| Block structure (headings, lists, checklists) | Comments on tasks |
+| Due dates | Embedded links within task descriptions |
+| Assignee information | Reactions (emojis) |
+| Timer data | Chat messages in the project |
+| Custom field values | |
+| Labels and tags | |
 
-Set a regular cadence to review and refresh knowledge sources. Outdated information leads to outdated answers.
+---
 
-### Use projects for fast-changing data
+## Knowledge Best Practices
 
-For information that changes frequently (task lists, team rosters, pricing, inventory), use dynamic project knowledge instead of static file uploads.
+| Practice | Why | Example |
+|---|---|---|
+| **Start with your most-used docs** | Highest ROI knowledge sources | FAQ doc, product guide, pricing sheet |
+| **Use projects for dynamic data** | Always up-to-date, no re-uploading | Customer list project, inventory project |
+| **Create manual sources for gaps** | Fill knowledge holes quickly | Edge case handling, tone guidelines |
+| **Organize by topic** | Helps agent find relevant info faster | Separate "Product" and "Pricing" sources |
+| **Update regularly** | Stale knowledge = wrong answers | Quarterly review of all knowledge sources |
+| **Test with real questions** | Verify agent uses knowledge correctly | Ask questions you know the answers to |
+| **Use backlinks to audit** | Understand cross-dependencies | Check before editing shared projects |
+| **Upload diverse formats** | Different formats capture different knowledge | PDFs for detail, CSVs for data, URLs for current info |
 
-### Organize before you upload
+---
 
-Structure your documents with clear headings and sections. Agents retrieve information more accurately from well-organized content.
+## What's Next
 
-### Test after training
-
-After adding new knowledge, ask your agent several questions to verify it can find and use the new information correctly. Try both direct questions ("What is our return policy?") and indirect ones ("A customer wants to send back a product — what do I tell them?").
-
-## Next Steps
-
-* [AI Agent Tools](agent-tools.md) — give your agent the ability to take action
-* [AI Agent Teams](agent-teams.md) — combine agents into collaborative teams
-* [AI Agents Getting Started](ai-agents-getting-started.md) — create your first agent
-* [Knowledge Organization](../workspaces/knowledge-management.md) — structure your workspace for better AI understanding
+| Guide | What You'll Learn |
+|---|---|
+| [Tools for AI Agents](./agent-tools.md) | Add action capabilities to your agents |
+| [Custom AI Agents](./ai-agents-getting-started.md) | Build and configure agents from scratch |
+| [Multi-Agents](./multi-agents.md) | Create teams of agents with shared knowledge |
+| [Projects & Databases](../workspaces/projects-databases.md) | Structure data for optimal agent training |
+| [Adding Genesis Context](../genesis/adding-context.md) | Upload context for Genesis app creation |
