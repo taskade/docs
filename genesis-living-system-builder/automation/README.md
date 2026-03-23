@@ -10,7 +10,7 @@
 
 Living Motion is Taskade’s automation layer. It’s how your workspace can **react**, **decide**, and **execute** when something happens.
 
-Canonical foundation: [Workspace DNA](/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/P4wpImYZWqgmWWCnK5z6).
+Canonical foundation: [Workspace DNA](../genesis/workspace-dna.md).
 
 ### What you use it for
 
@@ -52,9 +52,50 @@ Use an agent to classify, extract, or draft. Then route or act on the structured
 * Webhook → normalize data → update CRM → log result
 * Schedule → build weekly summary → send digest
 
+### Available Triggers
+
+**Project Events:**
+
+* **Task Added** — when a new task is created
+* **Task Completed** — when a task is marked done
+* **Task Assigned** — when a task is assigned to someone
+* **Task Due** — when a task reaches its due date
+* **New Comment** — when a comment is added
+* **New Due Date** — when a due date is set
+* **Custom Field Updated** — when a custom field value changes
+* **Project Completed** — when all tasks are done
+* **Public Agent Chat Ended** — when a public agent conversation finishes
+
+**External Triggers:**
+
+* **Webhook** — receive data from any external service via HTTP POST
+* **Form** — custom input forms with text, email, date, and time fields
+* **Schedule** — run hourly, daily, weekly, or monthly
+* **Mailhook** — trigger from incoming emails
+
+**Integration Triggers** (from connected services):
+
+Calendly, Slack, Typeform, Gmail, Google Sheets, Google Forms, Google Drive, Webflow, HubSpot, Discord, GitHub, YouTube, RSS, Google Calendar
+
+### 36 Integration Pieces
+
+| Category | Services |
+|----------|----------|
+| Communication | Slack, Discord, Microsoft Teams, WhatsApp Business, Telegram Bot |
+| Email | Gmail, Mailchimp |
+| Google Workspace | Sheets, Drive, Calendar, Docs, Forms |
+| CRM & Sales | HubSpot, Apollo |
+| E-Commerce | Shopify, Stripe |
+| Social Media | X/Twitter, LinkedIn, Facebook Pages, Reddit, YouTube |
+| Developer | GitHub, HTTP |
+| Forms & CMS | Typeform, Webflow, WordPress |
+| Scheduling | Calendly, Zoom |
+| AI & Media | Web Search, Web Scraping, YouTube Transcription, Document Extraction |
+| Utilities | Schedule, Delay, Loop, Branch, Filter |
+
 ### Where to go next
 
-* Build your first workflow: [Automation Getting Started](/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/k0HrlXM5i18zLfug45Rq)
+* Build your first workflow: [Actions & Triggers](actions.md)
 * Step catalog: [Actions & Triggers](actions.md)
 * Pick tools to connect: [Integration Overview](comprehensive-integration-guide.md)
 * Full list of connectors: [Integration Options](integrations.md)

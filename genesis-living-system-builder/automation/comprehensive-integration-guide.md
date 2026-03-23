@@ -10,7 +10,7 @@
 
 Integrations connect Taskade to the tools you already use. They run through Automations using **triggers** (events) and **actions** (what happens next).
 
-If you want the bigger model, start with [Workspace DNA](/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/P4wpImYZWqgmWWCnK5z6).
+If you want the bigger model, start with [Workspace DNA](../genesis/workspace-dna.md).
 
 ### What you can do
 
@@ -33,7 +33,7 @@ If you want the bigger model, start with [Workspace DNA](/broken/spaces/EOkDZjCl
 
 Start here:
 
-* [Automation Getting Started](/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/k0HrlXM5i18zLfug45Rq)
+* [Automation Getting Started](README.md)
 * [Actions & Triggers](actions.md)
 * [Integration Options](integrations.md)
 
@@ -61,7 +61,7 @@ Common patterns:
 
 See the full building blocks:
 
-* [Automation Getting Started](/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/k0HrlXM5i18zLfug45Rq)
+* [Automation Getting Started](README.md)
 * [Actions & Triggers](actions.md)
 
 ## Integration Best Practices
@@ -104,7 +104,7 @@ Keep it simple:
 Use these when you get stuck:
 
 * Full integration list: [Integration Options](integrations.md)
-* Workflow basics: [Automation Getting Started](/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/k0HrlXM5i18zLfug45Rq)
+* Workflow basics: [Automation Getting Started](README.md)
 * Troubleshooting: [Living System Troubleshooting](../community-and-sharing/troubleshooting.md)
 
 {% hint style="info" %}

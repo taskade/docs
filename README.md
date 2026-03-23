@@ -44,9 +44,9 @@ Software should be alive. And now, it is.
 
 ### How Taskade fits together
 
-Taskade works best when three parts stay connected.\nMemory stores knowledge.\nIntelligence reasons with that knowledge.\nMotion executes workflows from it.
+Taskade works best when three parts stay connected. **Memory** stores knowledge. **Intelligence** reasons with that knowledge. **Execution** runs workflows from it.
 
-Use this as the canonical overview:\n[Workspace DNA](/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/P4wpImYZWqgmWWCnK5z6).
+Use this as the canonical overview:\n[Workspace DNA](genesis-living-system-builder/genesis/workspace-dna.md).
 
 ### 🚀 Quick Start
 
@@ -54,7 +54,7 @@ Use this as the canonical overview:\n[Workspace DNA](/broken/spaces/EOkDZjClZ0y8
 
 1. [**Follow the Tutorial**](genesis-living-system-builder/genesis/getting-started.md) - Step-by-step app building
 2. [**Copy Working Prompts**](genesis-living-system-builder/genesis/examples-and-templates.md) - Proven templates
-3. [**Industry Examples**](/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/5acOTQj2cB1hOy8l8rTr) - Healthcare, finance, retail guides
+3. [**Browse Community Apps**](https://www.taskade.com/community) - Apps, templates, and workflows for every industry
 
 #### 🤖 **Create AI Agents** (10 minutes)
 
@@ -63,7 +63,7 @@ Use this as the canonical overview:\n[Workspace DNA](/broken/spaces/EOkDZjClZ0y8
 
 #### ⚡ **Set Up Automations** (15 minutes)
 
-1. [**Automation Getting Started**](/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/k0HrlXM5i18zLfug45Rq) - Build your first workflow
+1. [**Automation Getting Started**](genesis-living-system-builder/automation/README.md) - Build your first workflow
 2. [**Integration Guide**](genesis-living-system-builder/automation/integrations.md) - 100+ supported services
 
 #### 💻 **For Developers**
@@ -74,4 +74,4 @@ Use this as the canonical overview:\n[Workspace DNA](/broken/spaces/EOkDZjClZ0y8
 
 ### Explore docs
 
-<table data-view="cards"><thead><tr><th>Topic</th><th data-card-target data-type="content-ref">Link</th></tr></thead><tbody><tr><td>Workspace DNA (canonical)</td><td><a href="/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/P4wpImYZWqgmWWCnK5z6">Broken link</a></td></tr><tr><td>Genesis (build apps)</td><td><a href="genesis-living-system-builder/genesis/">genesis</a></td></tr><tr><td>AI Agents</td><td><a href="genesis-living-system-builder/ai-features/ai-agents-getting-started.md">ai-agents-getting-started.md</a></td></tr><tr><td>Automations</td><td><a href="genesis-living-system-builder/automation/">automation</a></td></tr><tr><td>Developers</td><td><a href="apis-living-system-development/developers/">developers</a></td></tr><tr><td>Help &#x26; Support</td><td><a href="/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/f7RL8zgqqwIe0z24Avk9">Broken link</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th>Topic</th><th data-card-target data-type="content-ref">Link</th></tr></thead><tbody><tr><td>Workspace DNA (canonical)</td><td><a href="genesis-living-system-builder/genesis/workspace-dna.md">Workspace DNA</a></td></tr><tr><td>Genesis (build apps)</td><td><a href="genesis-living-system-builder/genesis/">genesis</a></td></tr><tr><td>AI Agents</td><td><a href="genesis-living-system-builder/ai-features/ai-agents-getting-started.md">ai-agents-getting-started.md</a></td></tr><tr><td>Automations</td><td><a href="genesis-living-system-builder/automation/">automation</a></td></tr><tr><td>Developers</td><td><a href="apis-living-system-development/developers/">developers</a></td></tr><tr><td>Help &#x26; Support</td><td><a href="help-center/">Help Center</a></td></tr></tbody></table>

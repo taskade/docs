@@ -14,28 +14,88 @@ Explore interactive demos built by real users with their exact prompts. Fork any
 
 ### Featured App Templates
 
-Try these live apps built with Taskade Genesis:
+Try these live apps — all built with Taskade Genesis, all verified and working:
 
-| App                            | Category     | Live Demo                                                       |
-| ------------------------------ | ------------ | --------------------------------------------------------------- |
-| **SaaS Landing Page**          | Marketing    | [Try It →](https://www.taskade.com/share/apps/mce6bquyb3gp57a9) |
-| **Appointment Booking System** | Scheduling   | [Try It →](https://www.taskade.com/share/apps/te01cx15e4tv558x) |
-| **Finance Tracker Dashboard**  | Analytics    | [Try It →](https://www.taskade.com/share/apps/tmnju1vsp3ggajo7) |
-| **Investor Dashboard**         | Business     | [Try It →](https://www.taskade.com/share/apps/5q9h9ufuofnx1agv) |
-| **Event Management Portal**    | Events       | [Try It →](https://www.taskade.com/share/apps/scv62ou1yocu3sno) |
-| **Invoice Generator**          | Tools        | [Try It →](https://www.taskade.com/share/apps/v71ywf2zs5bu9a5m) |
-| **Time Tracker**               | Productivity | [Try It →](https://www.taskade.com/share/apps/6yw3w52epymtua6p) |
-| **Room Booking Dashboard**     | Scheduling   | [Try It →](https://www.taskade.com/share/apps/iqb5y1zw24q67lt3) |
-| **Team Capacity Planner**      | Management   | [Try It →](https://www.taskade.com/share/apps/qttq6maivthotsm4) |
-| **Neon CRM Dashboard**         | Sales        | [Try It →](https://www.taskade.com/share/apps/nsrm12wns3e1cgni) |
-| **Class Booking Portal**       | Education    | [Try It →](https://www.taskade.com/share/apps/cpl9dz85yx75foxo) |
-| **Hospitality Dashboard**      | Analytics    | [Try It →](https://www.taskade.com/share/apps/5ajqdljgdm5jmxjl) |
-| **Expense Splitter**           | Finance      | [Try It →](https://www.taskade.com/share/apps/8cm6rlh17r3yg5mt) |
-| **Cover Letter Generator**     | Career       | [Try It →](https://www.taskade.com/share/apps/pluhvxout7fgroo7) |
-| **Real Estate Landing Page**   | Marketing    | [Try It →](https://www.taskade.com/share/apps/otjktqoxppg4xcs1) |
-| **QR Code Studio**             | Tools        | [Try It →](https://www.taskade.com/share/apps/8wydzah8zexhv5ub) |
+**Business & Operations**
 
-[**Browse All Community Apps →**](https://www.taskade.com/community)
+| App | What It Does | Live Demo |
+|-----|-------------|-----------|
+| **Neon CRM Dashboard** | Track leads, manage deals, monitor team performance | [Try It →](https://www.taskade.com/share/apps/nsrm12wns3e1cgni) |
+| **Invoice Generator** | Generate professional invoices with automated calculations | [Try It →](https://www.taskade.com/share/apps/v71ywf2zs5bu9a5m) |
+| **Client Portal Dashboard** | Project tracking, communication, document sharing | [Try It →](https://www.taskade.com/share/apps/7nj4gtlug6gjqtm6) |
+| **Simple Store Manager** | Track orders and manage inventory for small businesses | [Try It →](https://www.taskade.com/share/apps/ujtqojrsimcct6io) |
+| **Smart Feedback Form** | AI-powered feedback collection with sentiment detection | [Try It →](https://www.taskade.com/share/apps/roq58dgczybbc08l) |
+| **Support Rating Dashboard** | Track customer service quality and identify improvements | [Try It →](https://www.taskade.com/share/apps/f05weamthnc7akpx) |
+
+**Booking & Scheduling**
+
+| App | What It Does | Live Demo |
+|-----|-------------|-----------|
+| **Appointment Booking System** | Automated booking with calendar integration | [Try It →](https://www.taskade.com/share/apps/te01cx15e4tv558x) |
+| **Class Booking Portal** | Fitness studio scheduling and member management | [Try It →](https://www.taskade.com/share/apps/cpl9dz85yx75foxo) |
+| **Room Booking Dashboard** | Meeting room scheduling and availability tracking | [Try It →](https://www.taskade.com/share/apps/iqb5y1zw24q67lt3) |
+| **Seating Chart Planner** | Event seating with guest preferences and logistics | [Try It →](https://www.taskade.com/share/apps/k33pyw340erl19or) |
+
+**Finance & Analytics**
+
+| App | What It Does | Live Demo |
+|-----|-------------|-----------|
+| **Finance Tracker Dashboard** | Visual expense tracking with pie charts and analysis | [Try It →](https://www.taskade.com/share/apps/tmnju1vsp3ggajo7) |
+| **Investor Dashboard** | Portfolio performance monitoring and market insights | [Try It →](https://www.taskade.com/share/apps/5q9h9ufuofnx1agv) |
+| **Expense Splitter** | Split shared costs with automatic calculations | [Try It →](https://www.taskade.com/share/apps/8cm6rlh17r3yg5mt) |
+
+**Productivity**
+
+| App | What It Does | Live Demo |
+|-----|-------------|-----------|
+| **Time Tracker** | Time logging, project tracking, automated timesheets | [Try It →](https://www.taskade.com/share/apps/6yw3w52epymtua6p) |
+| **Team Capacity Planner** | Workload balancing and availability forecasting | [Try It →](https://www.taskade.com/share/apps/qttq6maivthotsm4) |
+| **Meeting Cost Calculator** | Calculate meeting cost based on participant salaries | [Try It →](https://www.taskade.com/share/apps/6s451jp9szhnf496) |
+
+**Marketing & Websites**
+
+| App | What It Does | Live Demo |
+|-----|-------------|-----------|
+| **SaaS Landing Page** | Feature highlights, pricing tables, lead capture | [Try It →](https://www.taskade.com/share/apps/mce6bquyb3gp57a9) |
+| **Real Estate Landing Page** | Property showcase with image galleries and lead capture | [Try It →](https://www.taskade.com/share/apps/otjktqoxppg4xcs1) |
+| **Nonprofit Org Website** | Donation integration, volunteer coordination | [Try It →](https://www.taskade.com/share/apps/z1jldiq4ockv6edu) |
+| **Cover Letter Generator** | AI-powered cover letters with professional formatting | [Try It →](https://www.taskade.com/share/apps/pluhvxout7fgroo7) |
+
+**Events & Hospitality**
+
+| App | What It Does | Live Demo |
+|-----|-------------|-----------|
+| **Event Management Portal** | Registration tracking, prep workflows, confirmations | [Try It →](https://www.taskade.com/share/apps/scv62ou1yocu3sno) |
+| **Hospitality Insight Dashboard** | Occupancy, revenue, and guest satisfaction analytics | [Try It →](https://www.taskade.com/share/apps/5ajqdljgdm5jmxjl) |
+| **Routes Tourism App** | Route optimization and itinerary management | [Try It →](https://www.taskade.com/share/apps/8cbksxirjlt3h5kp) |
+
+**Education & Health**
+
+| App | What It Does | Live Demo |
+|-----|-------------|-----------|
+| **Flash Deck Maker** | Flashcards with spaced repetition and progress analytics | [Try It →](https://www.taskade.com/share/apps/luyemdxzpu8lbftd) |
+| **Smart Meal Planner** | Personalized meal plans based on dietary preferences | [Try It →](https://www.taskade.com/share/apps/4doegcveur9de5xc) |
+| **Mood Tracker** | Daily mood logging with pattern recognition | [Try It →](https://www.taskade.com/share/apps/wzdnuv9vsxvyfinj) |
+
+**Tools & Utilities**
+
+| App | What It Does | Live Demo |
+|-----|-------------|-----------|
+| **QR Code Studio** | Custom QR codes with branding and analytics | [Try It →](https://www.taskade.com/share/apps/8wydzah8zexhv5ub) |
+| **AI Prompt Evaluator** | Score and optimize AI prompts with suggestions | [Try It →](https://www.taskade.com/share/apps/svnocpc6jk90oa6g) |
+| **RSS-Feed Inbox** | Aggregate and filter content from multiple RSS feeds | [Try It →](https://www.taskade.com/share/apps/9wtiiu6m11617l8l) |
+
+**Fun & Games** (yes, Genesis can build games too)
+
+| App | What It Does | Live Demo |
+|-----|-------------|-----------|
+| **Sudoku** | Zen-styled puzzle game with multiple difficulty levels | [Try It →](https://www.taskade.com/share/apps/xw6u7xch8vw4sjc3) |
+| **Tetris Builder Studio** | Playable Tetris with score tracking and levels | [Try It →](https://www.taskade.com/share/apps/08w5s7gk2hzf9n9a) |
+| **Etch-a-Sketch** | Digital drawing canvas inspired by the classic toy | [Try It →](https://www.taskade.com/share/apps/qi09802b4qqvd31e) |
+
+{% hint style="success" %}
+**That's 70+ app templates across 11 categories** — from CRM dashboards to playable games. Every one of these was built by typing a prompt into Genesis. [**Browse all 1000+ community apps →**](https://www.taskade.com/community)
+{% endhint %}
 
 ### **📚 Template Gallery**
 
@@ -54,7 +114,7 @@ Taskade features hundreds of project frameworks you can use to kickstart all kin
 
 Want the deeper “why templates become apps” explanation?
 
-Start with [Workspace DNA](/broken/spaces/EOkDZjClZ0y8qSYnc7hO/pages/P4wpImYZWqgmWWCnK5z6).
+Start with [Workspace DNA](workspace-dna.md).
 
 ### **📊 App Categories & Business Impact**
 
@@ -287,6 +347,16 @@ I want to [HOW YOU'LL USE THE DATA] so I can [BUSINESS OUTCOME].
 | [**Template Library**](https://www.taskade.com/templates)  | Project templates for any use case        |
 | [**AI Agent Gallery**](https://www.taskade.com/agents)     | Pre-built AI assistants ready to deploy   |
 | [**AI Kits**](https://www.taskade.com/kits)                | One-click deployable workflows and agents |
+
+### Taskade Featured Apps
+
+See what Taskade itself built with Genesis:
+
+| App | Description |
+|-----|-------------|
+| [**Status Portal**](https://www.taskade.com/community/featured/taskade-status-portal) | Real-time system status and incident updates |
+| [**Social Feed**](https://www.taskade.com/community/featured/taskade-social-feed) | Community activity and content discovery |
+| [**Feedback Portal**](https://www.taskade.com/community/featured/taskade-feedback-portal) | Public feature requests and user feedback |
 
 ***
 
