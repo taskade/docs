@@ -1,142 +1,122 @@
----
-description: Connect Claude Desktop, Cursor, Windsurf, and other AI tools to Taskade using the MCP Server.
----
-
 # MCP Server Setup
 
-The **Model Context Protocol (MCP)** is an open standard that lets AI assistants interact with external tools and data sources. The Taskade MCP Server gives your AI tools direct access to your workspaces, projects, tasks, agents, and more — no custom code required.
+Connect Taskade to [Claude Desktop](https://claude.ai), [Cursor](https://cursor.sh), or any MCP-compatible AI tool using the Taskade MCP server.
 
-**Package:** [`@taskade/mcp-server`](https://www.npmjs.com/package/@taskade/mcp-server) on npm
+## What is MCP?
 
-## Prerequisites
-
-- **Node.js 18+** installed on your machine
-- A **Taskade Personal Access Token** — get one at [taskade.com/settings/api](https://www.taskade.com/settings/api)
-
-{% hint style="info" %}
-Don't have a token yet? Follow the steps in the [Developer Home](developer-home.md#get-your-api-key) guide.
-{% endhint %}
+The [Model Context Protocol](https://modelcontextprotocol.io/) lets AI assistants interact with external tools and data sources. The Taskade MCP server gives AI tools access to your workspaces, projects, tasks, agents, and more.
 
 ## Install
 
-No global install needed. Use `npx` to always run the latest version:
-
 ```bash
-npx -y @taskade/mcp-server
+npm install -g @taskade/mcp
 ```
 
 ## Configure Claude Desktop
 
-Add the following to your Claude Desktop config file:
+Add to your Claude Desktop configuration file:
 
-- **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
-- **Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
+**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+**Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
 
 ```json
 {
   "mcpServers": {
     "taskade": {
-      "command": "npx",
-      "args": ["-y", "@taskade/mcp-server"],
+      "command": "taskade-mcp",
       "env": {
-        "TASKADE_API_KEY": "your_api_key_placeholder"
+        "TASKADE_API_KEY": "your-api-key"
       }
     }
   }
 }
 ```
 
-Restart Claude Desktop after saving. You should see Taskade appear in the tools list.
-
-{% hint style="warning" %}
-Replace `your_api_key_placeholder` with your actual Personal Access Token. Never share your config file publicly.
-{% endhint %}
+Get your API key from [Settings > API](https://www.taskade.com/settings/api).
 
 ## Configure Cursor
 
-Add the same configuration to your Cursor MCP settings:
-
-**File:** `.cursor/mcp.json` in your project root (or global Cursor settings)
+Add to your Cursor MCP configuration:
 
 ```json
 {
   "mcpServers": {
     "taskade": {
-      "command": "npx",
-      "args": ["-y", "@taskade/mcp-server"],
+      "command": "taskade-mcp",
       "env": {
-        "TASKADE_API_KEY": "your_api_key_placeholder"
+        "TASKADE_API_KEY": "your-api-key"
       }
     }
   }
 }
 ```
 
-## Configure Windsurf, VS Code & Others
-
-Most MCP-compatible clients use the same JSON format above. Add the `taskade` server entry to whichever config file your client reads. Check your client's documentation for the exact location.
-
-## HTTP / SSE Mode
-
-If your client connects over HTTP instead of stdio, start the server in HTTP mode:
-
-```bash
-TASKADE_API_KEY=your_api_key_placeholder npx -y @taskade/mcp-server --http
-```
-
-The server starts on **port 3000** by default. Your client can then connect to `http://localhost:3000` using Server-Sent Events (SSE).
-
-{% hint style="info" %}
-HTTP mode is useful for tools like **n8n** and other workflow automation platforms that connect to MCP servers over the network.
-{% endhint %}
-
 ## Available Tools
 
-The Taskade MCP Server exposes **50+ tools** across these resource categories:
+### Navigation
 
-| Category       | Example Actions                                                |
-| -------------- | -------------------------------------------------------------- |
-| **Workspaces** | List workspaces, get workspace projects and folders            |
-| **Projects**   | Create, copy, complete, restore projects; get members and tasks |
-| **Tasks**      | Create, update, move, complete, delete tasks; manage dates, notes, fields, assignees |
-| **Agents**     | Get, update, delete agents; manage knowledge base; view conversations |
-| **Folders**    | List folder contents, create agents in folders                 |
-| **Media**      | Get and delete media files; add media to agent knowledge       |
-| **Templates**  | Browse and create projects from templates                      |
-| **Me**         | Get current user info and personal projects                    |
+| Tool | Description |
+|------|-------------|
+| `list_workspaces` | List all your workspaces |
+| `list_workspace_folders` | List folders in a workspace |
+| `list_folder_projects` | List projects in a folder |
+| `list_folder_agents` | List agents in a folder |
 
-Your AI assistant discovers these tools automatically once the server is connected — no extra setup needed.
+### Projects & Tasks
 
-## Compatible Clients
+| Tool | Description |
+|------|-------------|
+| `get_project` | Get project details |
+| `create_project` | Create a new project |
+| `list_project_tasks` | List tasks in a project |
+| `create_task` | Create a new task |
+| `update_task` | Update task text |
+| `complete_task` | Mark task as complete |
+| `uncomplete_task` | Mark task as incomplete |
+| `delete_task` | Delete a task |
 
-| Client             | Transport | Status      |
-| ------------------ | --------- | ----------- |
-| Claude Desktop     | stdio     | Supported   |
-| Cursor             | stdio     | Supported   |
-| Windsurf           | stdio     | Supported   |
-| VS Code (Copilot)  | stdio     | Supported   |
-| n8n                | HTTP/SSE  | Supported   |
+### Task Metadata
 
-## Troubleshooting
+| Tool | Description |
+|------|-------------|
+| `get_task_date` | Get task due date |
+| `set_task_date` | Set task due date |
+| `get_task_assignees` | Get task assignees |
+| `set_task_assignees` | Assign users to task |
+| `get_task_note` | Get task note |
+| `set_task_note` | Add/update task note |
 
-**Server not appearing in your client?**
+### Agents
 
-- Make sure Node.js 18+ is installed: `node --version`
-- Verify your API key is valid at [taskade.com/settings/api](https://www.taskade.com/settings/api)
-- Check that the JSON config is valid (no trailing commas, correct quotes)
-- Restart your client after updating the config
+| Tool | Description |
+|------|-------------|
+| `list_agents` | List agents in a space |
+| `get_agent` | Get agent details |
+| `prompt_agent` | Chat with an agent |
 
-**Permission errors?**
+### Media & Bundles
 
-- Your token must belong to a workspace where you have edit access
-- Some actions require workspace admin permissions
+| Tool | Description |
+|------|-------------|
+| `upload_media` | Upload a file |
+| `get_media` | Get media metadata |
+| `export_bundle` | Export Genesis app as bundle |
+| `import_bundle` | Import Genesis app bundle |
 
-{% hint style="success" %}
-For the latest tools list, configuration options, and troubleshooting tips, visit the GitHub repo: [github.com/taskade/mcp](https://github.com/taskade/mcp)
-{% endhint %}
+## Example Usage in Claude
 
-## Next Steps
+Once configured, you can ask Claude to:
 
-- [REST API Reference](developers/api.md) — use the API directly in your own code
-- [TypeScript SDK (Preview)](sdk-quickstart.md) — coming soon, zero-dependency SDK
-- [Developer Home](developer-home.md) — back to the developer overview
+- "List all my Taskade workspaces"
+- "Create a task in my project to follow up with the client"
+- "Show me the tasks in my Sales Pipeline project"
+- "Mark task X as complete"
+- "Ask my Sales Coach agent about pipeline health"
+
+## Resources
+
+| Resource | Description |
+|----------|-------------|
+| [GitHub: @taskade/mcp](https://github.com/taskade/mcp) | MCP server source code |
+| [SDK Quickstart](sdk-quickstart.md) | TypeScript SDK for programmatic access |
+| [Full API Reference](comprehensive-api-guide/) | Complete endpoint documentation |
