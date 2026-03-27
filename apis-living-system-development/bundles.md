@@ -4,7 +4,7 @@ description: >-
   using the Bundles API.
 ---
 
-# Bundles (App Kits)
+# Bundles & App Kits
 
 ## What Are Bundles?
 
@@ -20,14 +20,14 @@ Bundles require a **Pro plan or higher**.
 
 A bundle captures everything that makes up your Genesis app:
 
-| Component | Details |
-| --- | --- |
-| **Projects** | Tasks, custom fields, views, and structure |
-| **AI Agents** | System prompts and knowledge configuration |
-| **Automation workflows** | Triggers, actions, and full flow logic |
-| **Templates** | Reusable project and task templates |
-| **Media** | Uploaded files and assets |
-| **App files** | Genesis frontend code |
+| Component                | Details                                    |
+| ------------------------ | ------------------------------------------ |
+| **Projects**             | Tasks, custom fields, views, and structure |
+| **AI Agents**            | System prompts and knowledge configuration |
+| **Automation workflows** | Triggers, actions, and full flow logic     |
+| **Templates**            | Reusable project and task templates        |
+| **Media**                | Uploaded files and assets                  |
+| **App files**            | Genesis frontend code                      |
 
 ***
 
@@ -127,4 +127,4 @@ Bundle operations are rate-limited to **5 requests per 60 seconds** to ensure re
 
 * [Authentication](developers/authentication.md) — get your API token for bundle operations
 * [Webhooks](webhooks.md) — automate actions when bundles are imported
-* [MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md) — connect your imported apps to external services
+* [MCP Connectors](/broken/pages/edGXixHEoPgFP9ulVcLu) — connect your imported apps to external services

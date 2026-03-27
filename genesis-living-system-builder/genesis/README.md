@@ -1,4 +1,4 @@
-# Living Systems That Transform Business
+# Taskade Genesis Overview
 
 **Living Software. Living DNA. Living Intelligence.**
 
@@ -45,7 +45,7 @@ This is what agents read and automations update.
 
 Start here:
 
-* [Workspace DNA](workspace-dna.md)
+* [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo)
 * [Project Views Mastery](../workspaces/project-views.md)
 
 #### 2) Living Intelligence (agents)
@@ -68,4 +68,3 @@ Start here:
 * [Living Motion Overview](../automation/)
 * [Integration Options](../automation/integrations.md)
 * [Action & Trigger Reference](../automation/actions.md)
-

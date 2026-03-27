@@ -7,7 +7,7 @@ cover: .gitbook/assets/ss-api3.png
 coverY: 0
 ---
 
-# 👋 Your Second Brain, Alive
+# Your Second Brain, Alive
 
 {% hint style="success" %}
 **New to Taskade?** Your workspace comes with a default **Home Subspace** where you can instantly build apps with [Genesis](genesis-living-system-builder/genesis/) or start with our [Quick Start Guide](getting-started/). Each subspace becomes a complete app powered by your workspace's living DNA!
@@ -46,7 +46,7 @@ Software should be alive. And now, it is.
 
 Taskade works best when three parts stay connected. **Memory** stores knowledge. **Intelligence** reasons with that knowledge. **Execution** runs workflows from it.
 
-Use this as the canonical overview:\n[Workspace DNA](genesis-living-system-builder/genesis/workspace-dna.md).
+Use this as the canonical overview:\n[Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo).
 
 ### 🚀 Quick Start
 
@@ -63,7 +63,7 @@ Use this as the canonical overview:\n[Workspace DNA](genesis-living-system-build
 
 #### ⚡ **Set Up Automations** (15 minutes)
 
-1. [**Automation Getting Started**](genesis-living-system-builder/automation/README.md) - Build your first workflow
+1. [**Automation Getting Started**](genesis-living-system-builder/automation/) - Build your first workflow
 2. [**Integration Guide**](genesis-living-system-builder/automation/integrations.md) - 100+ supported services
 
 #### 💻 **For Developers**
@@ -74,4 +74,4 @@ Use this as the canonical overview:\n[Workspace DNA](genesis-living-system-build
 
 ### Explore docs
 
-<table data-view="cards"><thead><tr><th>Topic</th><th data-card-target data-type="content-ref">Link</th></tr></thead><tbody><tr><td>Workspace DNA (canonical)</td><td><a href="genesis-living-system-builder/genesis/workspace-dna.md">Workspace DNA</a></td></tr><tr><td>Genesis (build apps)</td><td><a href="genesis-living-system-builder/genesis/">genesis</a></td></tr><tr><td>AI Agents</td><td><a href="genesis-living-system-builder/ai-features/ai-agents-getting-started.md">ai-agents-getting-started.md</a></td></tr><tr><td>Automations</td><td><a href="genesis-living-system-builder/automation/">automation</a></td></tr><tr><td>Developers</td><td><a href="apis-living-system-development/developers/">developers</a></td></tr><tr><td>Help &#x26; Support</td><td><a href="help-center/">Help Center</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th>Topic</th><th data-card-target data-type="content-ref">Link</th></tr></thead><tbody><tr><td>Workspace DNA (canonical)</td><td><a href="/broken/pages/hwPV9h9VoROuoCBavjVo">Broken link</a></td></tr><tr><td>Genesis (build apps)</td><td><a href="genesis-living-system-builder/genesis/">genesis</a></td></tr><tr><td>AI Agents</td><td><a href="genesis-living-system-builder/ai-features/ai-agents-getting-started.md">ai-agents-getting-started.md</a></td></tr><tr><td>Automations</td><td><a href="genesis-living-system-builder/automation/">automation</a></td></tr><tr><td>Developers</td><td><a href="apis-living-system-development/developers/">developers</a></td></tr><tr><td>Help &#x26; Support</td><td><a href="help-center/">help-center</a></td></tr></tbody></table>

@@ -1,4 +1,4 @@
-# Your First Living System in 5 Minutes
+# Getting Started
 
 **Ready to build your first business app? This guide will take you from idea to working application in just 5 minutes.**
 
@@ -8,7 +8,7 @@
 
 Genesis turns a single prompt into a working app.\nIt creates the UI and connects it to your workspace.\nYou iterate by describing changes in plain English.
 
-Want the deeper “why it works” model?\nStart with [Workspace DNA](workspace-dna.md).
+Want the deeper “why it works” model?\nStart with [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo).
 
 ## Before You Start
 
@@ -58,7 +58,7 @@ Start by thinking about something in your business that could work better. Commo
 ***
 
 {% hint style="info" %}
-Skip the theory.\nFollow the steps below.\nIf you want the underlying model, read [Workspace DNA](workspace-dna.md).
+Skip the theory.\nFollow the steps below.\nIf you want the underlying model, read [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo).
 {% endhint %}
 
 ## Step 2: Craft Your App Description (2 minutes)

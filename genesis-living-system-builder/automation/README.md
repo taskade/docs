@@ -1,4 +1,4 @@
-# Automations: Living Motion
+# Automations Overview
 
 **Act. Execute. Evolve.** Taskade Automations are the living motion layer of Workspace DNA, transforming static workflows into intelligent, adaptive systems that act with precision and learn from every execution.
 
@@ -10,7 +10,7 @@
 
 Living Motion is Taskade’s automation layer. It’s how your workspace can **react**, **decide**, and **execute** when something happens.
 
-Canonical foundation: [Workspace DNA](../genesis/workspace-dna.md).
+Canonical foundation: [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo).
 
 ### What you use it for
 
@@ -79,19 +79,19 @@ Calendly, Slack, Typeform, Gmail, Google Sheets, Google Forms, Google Drive, Web
 
 ### 36 Integration Pieces
 
-| Category | Services |
-|----------|----------|
-| Communication | Slack, Discord, Microsoft Teams, WhatsApp Business, Telegram Bot |
-| Email | Gmail, Mailchimp |
-| Google Workspace | Sheets, Drive, Calendar, Docs, Forms |
-| CRM & Sales | HubSpot, Apollo |
-| E-Commerce | Shopify, Stripe |
-| Social Media | X/Twitter, LinkedIn, Facebook Pages, Reddit, YouTube |
-| Developer | GitHub, HTTP |
-| Forms & CMS | Typeform, Webflow, WordPress |
-| Scheduling | Calendly, Zoom |
-| AI & Media | Web Search, Web Scraping, YouTube Transcription, Document Extraction |
-| Utilities | Schedule, Delay, Loop, Branch, Filter |
+| Category         | Services                                                             |
+| ---------------- | -------------------------------------------------------------------- |
+| Communication    | Slack, Discord, Microsoft Teams, WhatsApp Business, Telegram Bot     |
+| Email            | Gmail, Mailchimp                                                     |
+| Google Workspace | Sheets, Drive, Calendar, Docs, Forms                                 |
+| CRM & Sales      | HubSpot, Apollo                                                      |
+| E-Commerce       | Shopify, Stripe                                                      |
+| Social Media     | X/Twitter, LinkedIn, Facebook Pages, Reddit, YouTube                 |
+| Developer        | GitHub, HTTP                                                         |
+| Forms & CMS      | Typeform, Webflow, WordPress                                         |
+| Scheduling       | Calendly, Zoom                                                       |
+| AI & Media       | Web Search, Web Scraping, YouTube Transcription, Document Extraction |
+| Utilities        | Schedule, Delay, Loop, Branch, Filter                                |
 
 ### Where to go next
 

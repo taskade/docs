@@ -60,12 +60,12 @@ Treat your webhook URLs like passwords. Do not share them publicly or commit the
 
 ### Common Patterns
 
-| Source | What Happens in Taskade |
-| --- | --- |
-| **External form submission** | Create a task + notify the team |
-| **Stripe payment webhook** | Update project status + send confirmation |
-| **GitHub CI/CD webhook** | Update deployment status in a project |
-| **CRM event (HubSpot, etc.)** | Sync contact data to a Taskade project |
+| Source                        | What Happens in Taskade                   |
+| ----------------------------- | ----------------------------------------- |
+| **External form submission**  | Create a task + notify the team           |
+| **Stripe payment webhook**    | Update project status + send confirmation |
+| **GitHub CI/CD webhook**      | Update deployment status in a project     |
+| **CRM event (HubSpot, etc.)** | Sync contact data to a Taskade project    |
 
 ***
 
@@ -75,12 +75,12 @@ For outbound communication, use the **HTTP Request** action in any automation to
 
 ### Configuration
 
-| Setting | Details |
-| --- | --- |
-| **Method** | `GET`, `POST`, `PUT`, `DELETE` |
-| **URL** | Any valid endpoint |
+| Setting     | Details                                                          |
+| ----------- | ---------------------------------------------------------------- |
+| **Method**  | `GET`, `POST`, `PUT`, `DELETE`                                   |
+| **URL**     | Any valid endpoint                                               |
 | **Headers** | Custom headers supported (e.g., `Authorization`, `Content-Type`) |
-| **Body** | JSON or form data |
+| **Body**    | JSON or form data                                                |
 
 {% hint style="info" %}
 Response data from the HTTP request is available as dynamic variables in subsequent automation steps — so you can chain API calls together.
@@ -111,4 +111,4 @@ Excessive inbound webhook calls may be throttled to protect system stability. If
 ## Next Steps
 
 * [Authentication](developers/authentication.md) — set up API tokens for outbound requests
-* [MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md) — use native integrations instead of raw webhooks for supported services
+* [MCP Connectors](/broken/pages/edGXixHEoPgFP9ulVcLu) — use native integrations instead of raw webhooks for supported services

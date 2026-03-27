@@ -19,7 +19,7 @@ Three things power everything:
 * **Intelligence** = AI agents that reason over your data
 * **Execution** = automations that run workflows 24/7
 
-Learn more: [Workspace DNA](../genesis-living-system-builder/genesis/workspace-dna.md)
+Learn more: [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo)
 
 ***
 
@@ -105,7 +105,7 @@ When [TRIGGER EVENT], automatically [AUTOMATED ACTION].
 
 ## What to Do Next
 
-* Understand the model: [Workspace DNA](../genesis-living-system-builder/genesis/workspace-dna.md)
+* Understand the model: [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo)
 * Copy templates: [Living System Examples & Templates](../genesis-living-system-builder/genesis/examples-and-templates.md)
 * Build better prompts: [Living System Best Practices](../genesis-living-system-builder/community-and-sharing/best-practices.md)
 * Add agents: [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md)

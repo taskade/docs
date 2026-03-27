@@ -1,4 +1,4 @@
-# AI Agents: Living Intelligence
+# AI Features Overview
 
 **Think. Learn. Adapt.** Taskade AI features form the living intelligence layer of Workspace DNA, creating systems that understand, evolve, and provide increasingly intelligent value with every interaction.
 
@@ -10,7 +10,7 @@
 
 Living Intelligence is the agent layer in Taskade. It’s how your workspace can **reason**, **draft**, **classify**, and **take action** using context from your projects.
 
-Canonical foundation: [Workspace DNA](../genesis/workspace-dna.md).
+Canonical foundation: [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo).
 
 ### What you use it for
 
@@ -33,7 +33,7 @@ Most “smartness” comes from the knowledge you give agents. That includes pro
 
 Start here:
 
-* [Workspace DNA](../genesis/workspace-dna.md)
+* [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo)
 * [Agent Knowledge & Memory](https://help.taskade.com/en/articles/9495190-agent-knowledge-memory)
 
 #### Tools (what agents can do)
