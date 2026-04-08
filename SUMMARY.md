@@ -46,6 +46,7 @@
   * [Adding Context](genesis-living-system-builder/genesis/adding-context.md)
   * [Version History](genesis-living-system-builder/genesis/version-history.md)
   * [App Analytics](genesis-living-system-builder/genesis/app-analytics.md)
+  * [Debugging Genesis Apps](genesis-living-system-builder/genesis/debugging-genesis-apps.md)
 * [Space Apps Guide](genesis-living-system-builder/space-apps-guide/README.md)
   * [Prompt Library](genesis-living-system-builder/space-apps-guide/genesis-prompt-library.md)
   * [Advanced Features](genesis-living-system-builder/space-apps-guide/advanced-features.md)
