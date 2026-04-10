@@ -1,6 +1,8 @@
-# MCP Server Setup
+# Workspace MCP
 
-Connect Taskade to [Claude Desktop](https://claude.ai), [Cursor](https://cursor.sh), or any MCP-compatible AI tool using the Taskade MCP server.
+> **Editing Genesis app source code instead?** See [Genesis App MCP (Beta)](genesis-app-mcp.md) for the IDE-focused server that writes to your app's `src/` files.
+
+Workspace MCP connects [Claude Desktop](https://claude.ai), [Cursor](https://cursor.sh), or any MCP-compatible AI tool to your Taskade **workspace content** — projects, tasks, agents, and media — via the Taskade REST API. Use it to read and write the *content* of your workspace (not your Genesis app's source code).
 
 ## What is MCP?
 

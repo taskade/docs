@@ -101,7 +101,8 @@
 ## APIs & Developer
 
 * [Build on Taskade](apis-living-system-development/developer-home.md)
-  * [MCP Server Setup](apis-living-system-development/mcp-setup.md)
+  * [Workspace MCP](apis-living-system-development/workspace-mcp.md)
+  * [Genesis App MCP (Beta)](apis-living-system-development/genesis-app-mcp.md)
   * [TypeScript SDK (Coming Soon)](apis-living-system-development/sdk-quickstart.md)
   * [Webhooks](apis-living-system-development/webhooks.md)
   * [Bundles & App Kits](apis-living-system-development/bundles.md)

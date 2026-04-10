@@ -11,7 +11,8 @@ You want to integrate Taskade into your app, automate your workflows, or connect
 | I want to...                          | Use                                                                                              |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | Build an app that talks to Taskade    | [REST API](developers/api.md) or [TypeScript SDK](sdk-quickstart.md) (coming soon)              |
-| Connect Claude / Cursor to Taskade   | [MCP Server](mcp-setup.md) (`@taskade/mcp-server`)                                              |
+| Manage projects, tasks, and agents from Claude / Cursor | [Workspace MCP](workspace-mcp.md) (`@taskade/mcp-server`) |
+| Edit Genesis app source code from your IDE | [Genesis App MCP (Beta)](genesis-app-mcp.md) |
 | Automate workflows without code       | [Automations Engine](../genesis-living-system-builder/automation/README.md)                      |
 | Browse community apps and templates   | [taskade.com/community](https://www.taskade.com/community)                                       |
 
@@ -33,7 +34,8 @@ Treat your API token like a password. Never commit it to version control or shar
 | ------------------------------------------------------ | ------------------------------------------------ |
 | [REST API Reference](developers/api.md)               | Full endpoint reference for workspaces, projects, tasks, agents, folders, and media |
 | [Authentication Guide](developers/authentication.md)  | How authentication and token scopes work          |
-| [MCP Server Setup](mcp-setup.md)                      | Connect Claude Desktop, Cursor, and other AI tools to Taskade |
+| [Workspace MCP](workspace-mcp.md)                      | Connect Claude Desktop, Cursor, and other AI tools to your workspace content (projects, tasks, agents) |
+| [Genesis App MCP (Beta)](genesis-app-mcp.md)           | Edit your Genesis app's source code from your IDE via OAuth |
 | [TypeScript SDK (Preview)](sdk-quickstart.md)          | Zero-dependency SDK for Node.js — coming soon     |
 | [API Endpoint Guide](comprehensive-api-guide/README.md) | Detailed per-endpoint documentation with examples |
 
