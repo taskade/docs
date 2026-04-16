@@ -57,6 +57,7 @@
   * [Version History](genesis-living-system-builder/genesis/version-history.md)
   * [App Analytics](genesis-living-system-builder/genesis/app-analytics.md)
   * [Debugging Genesis Apps](genesis-living-system-builder/genesis/debugging-genesis-apps.md)
+  * [GitHub Import & Export](genesis-living-system-builder/genesis/github-import-export.md)
 * [Space Apps Guide](genesis-living-system-builder/space-apps-guide/README.md)
   * [Prompt Library](genesis-living-system-builder/space-apps-guide/genesis-prompt-library.md)
   * [Advanced Features](genesis-living-system-builder/space-apps-guide/advanced-features.md)
@@ -104,6 +105,7 @@
 
 * [Community & Sharing](genesis-living-system-builder/community-and-sharing/README.md)
   * [Publish & Clone](genesis-living-system-builder/community-and-sharing/publish-and-clone.md)
+  * [GenesisAuth](genesis-living-system-builder/community-and-sharing/genesis-auth.md)
   * [Best Practices](genesis-living-system-builder/community-and-sharing/best-practices.md)
   * [FAQ](genesis-living-system-builder/community-and-sharing/faq.md)
   * [Troubleshooting](genesis-living-system-builder/community-and-sharing/troubleshooting.md)
@@ -191,6 +193,7 @@
   * [Import & Export](help-center/import-and-export.md)
   * [Mobile App](help-center/mobile-app.md)
 * [Account Management](account-management/README.md)
+  * [Credits & Billing](account-management/credits-and-billing.md)
 * [Troubleshooting Guide](help-and-support/comprehensive-troubleshooting-guide.md)
 * [Taskade Tutorial](help-and-support/index/README.md)
   * [Chapter 1: Workspaces](help-and-support/index/01_workspaces.md)
