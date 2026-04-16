@@ -111,9 +111,14 @@
 ## APIs & Developer
 
 * [Build on Taskade](apis-living-system-development/developer-home.md)
+  * [Public API v2 Reference](apis-living-system-development/api-v2-reference.md)
+  * [TypeScript SDK Quickstart](apis-living-system-development/sdk-quickstart.md)
+  * [SDK Cookbook](apis-living-system-development/sdk-cookbook.md)
   * [Workspace MCP](apis-living-system-development/workspace-mcp.md)
+  * [Workspace MCP: Advanced](apis-living-system-development/workspace-mcp-advanced.md)
   * [Genesis App MCP (Beta)](apis-living-system-development/genesis-app-mcp.md)
-  * [TypeScript SDK (Coming Soon)](apis-living-system-development/sdk-quickstart.md)
+  * [Long-Term Memory](apis-living-system-development/long-term-memory.md)
+  * [Autonomous Agents](apis-living-system-development/autonomous-agents.md)
   * [Webhooks](apis-living-system-development/webhooks.md)
   * [Bundles & App Kits](apis-living-system-development/bundles.md)
 * [REST API Reference](apis-living-system-development/developers/README.md)

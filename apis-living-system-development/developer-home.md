@@ -6,15 +6,61 @@ description: Everything you need to build on Taskade — REST API, MCP Server, S
 
 You want to integrate Taskade into your app, automate your workflows, or connect your AI tools. This page gets you started fast.
 
+## Integration Surface at a Glance
+
+```mermaid
+graph TB
+    subgraph "Your Application"
+        APP[Your App / Script / Agent]
+    end
+
+    subgraph "Integration Surface"
+        SDK["@taskade/sdk<br/>TypeScript, npm"]
+        API[Public API v2<br/>REST + OAuth 2.0]
+        MCP_IN["@taskade/mcp<br/>Inbound MCP Server"]
+        MCP_OUT[Hosted MCP v2<br/>Outbound Connectors]
+        WEBHOOK[Webhooks<br/>Event delivery]
+    end
+
+    subgraph "Taskade Workspace"
+        PROJECTS[Projects & Tasks]
+        AGENTS[AI Agents<br/>with LTM]
+        AUTOMATIONS[Automations]
+        MEDIA[Media & Bundles]
+    end
+
+    APP --> SDK
+    APP --> API
+    APP --> MCP_IN
+    WEBHOOK --> APP
+
+    SDK --> API
+    MCP_IN --> API
+    MCP_OUT --> AGENTS
+
+    API --> PROJECTS
+    API --> AGENTS
+    API --> AUTOMATIONS
+    API --> MEDIA
+
+    AGENTS -.writes LTM.-> PROJECTS
+```
+
 ## I Want To...
 
-| I want to...                          | Use                                                                                              |
-| ------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Build an app that talks to Taskade    | [REST API](developers/api.md) or [TypeScript SDK](sdk-quickstart.md) (coming soon)              |
-| Manage projects, tasks, and agents from Claude / Cursor | [Workspace MCP](workspace-mcp.md) (`@taskade/mcp-server`) |
+| I want to... | Use |
+| --- | --- |
+| Ship a production integration in Node or TypeScript | [TypeScript SDK](sdk-quickstart.md) + [SDK Cookbook](sdk-cookbook.md) |
+| Hit endpoints from any language | [Public API v2 Reference](api-v2-reference.md) |
+| Expose Taskade data to Claude Desktop, Cursor, or other MCP clients | [Workspace MCP](workspace-mcp.md) + [Advanced](workspace-mcp-advanced.md) |
+| Give a Taskade agent third-party capabilities | [Hosted MCP v2 Connectors](workspace-mcp-advanced.md#mcp-connectors) |
 | Edit Genesis app source code from your IDE | [Genesis App MCP (Beta)](genesis-app-mcp.md) |
-| Automate workflows without code       | [Automations Engine](../genesis-living-system-builder/automation/README.md)                      |
-| Browse community apps and templates   | [taskade.com/community](https://www.taskade.com/community)                                       |
+| Receive real-time events in your app | [Webhooks](webhooks.md) |
+| Build an app with end-user sign-in | [GenesisAuth](../genesis-living-system-builder/community-and-sharing/genesis-auth.md) in Genesis |
+| Understand long-term memory | [Long-Term Memory](long-term-memory.md) |
+| Build agents that run without prompting | [Autonomous Agents](autonomous-agents.md) |
+| Automate workflows without code | [Automations Engine](../genesis-living-system-builder/automation/README.md) |
+| Browse community apps and templates | [taskade.com/community](https://www.taskade.com/community) |
 
 ## Get Your API Key
 
@@ -30,13 +76,19 @@ Treat your API token like a password. Never commit it to version control or shar
 
 ## Developer Resources
 
-| Resource                                               | Description                                      |
-| ------------------------------------------------------ | ------------------------------------------------ |
-| [REST API Reference](developers/api.md)               | Full endpoint reference for workspaces, projects, tasks, agents, folders, and media |
-| [Authentication Guide](developers/authentication.md)  | How authentication and token scopes work          |
-| [Workspace MCP](workspace-mcp.md)                      | Connect Claude Desktop, Cursor, and other AI tools to your workspace content (projects, tasks, agents) |
-| [Genesis App MCP (Beta)](genesis-app-mcp.md)           | Edit your Genesis app's source code from your IDE via OAuth |
-| [TypeScript SDK (Preview)](sdk-quickstart.md)          | Zero-dependency SDK for Node.js — coming soon     |
+| Resource | Description |
+| --- | --- |
+| [Public API v2 Reference](api-v2-reference.md) | Top-10 most-used endpoints with cURL, TypeScript, and Python examples |
+| [TypeScript SDK Quickstart](sdk-quickstart.md) | Install `@taskade/sdk` and ship your first call in 5 minutes |
+| [SDK Cookbook](sdk-cookbook.md) | Patterns for agents, automations, webhooks, error handling, pagination, testing |
+| [Workspace MCP](workspace-mcp.md) | Connect Claude Desktop, Cursor, and other AI tools to your workspace |
+| [Workspace MCP — Advanced](workspace-mcp-advanced.md) | Rate limits, multi-client setup, troubleshooting, security |
+| [Genesis App MCP (Beta)](genesis-app-mcp.md) | Edit your Genesis app's source code from your IDE via OAuth |
+| [Webhooks](webhooks.md) | Subscribe to workspace events and verify signatures |
+| [Bundles & App Kits](bundles.md) | Import/export full Genesis apps as portable bundles |
+| [Long-Term Memory](long-term-memory.md) | Memory-as-Projects architecture — editable, queryable, API-addressable |
+| [Autonomous Agents](autonomous-agents.md) | Automations, orchestration, cross-agent invocation patterns |
+| [Authentication Guide](developers/authentication.md) | Personal tokens and OAuth 2.0 flows |
 | [API Endpoint Guide](comprehensive-api-guide/README.md) | Detailed per-endpoint documentation with examples |
 
 {% hint style="info" %}
