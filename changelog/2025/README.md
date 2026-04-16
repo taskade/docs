@@ -697,15 +697,32 @@ Each release advances the living software vision, strengthening the DNA strands 
 
 ***
 
-## 🗺️ Q4 2025 Roadmap
+### 🎄 **December 2025** - Genesis Matures
 
-**Coming Next:**
+**🚀 Major Features:**
 
-* **🎨 Advanced Templates** - Industry-specific app templates (CRM, E-commerce, etc.)
-* **🔌 API Generation** - Automatic REST API creation for Genesis applications
-* **📊 Visual Database Designer** - Drag-and-drop database schema creation
-* **🌍 Custom Domains** - Branded hosting options with custom domain support
-* **📈 Analytics Dashboard** - Usage analytics and performance insights for apps
+* **🖼️ AI Image Generation** (v6.80.0, Dec 31) – Generate images directly in AI chat with support for multiple styles and formats
+* **📦 195+ App Templates & Bundle Export/Import** (v6.69.0, Dec 5) – Massive template library expansion with the ability to export and import complete app bundles
+* **📊 App Analytics Dashboard** (v6.67.0, Dec 3) – Usage analytics and performance insights for Genesis apps with a redesigned top header
+* **🌐 Custom Domain Routing** (v6.71.0, Dec 10) – Advanced domain routing and space integrations for professional hosting
+* **📱 Dedicated Media Page** (v6.72.0, Dec 11) – Centralized media management with file downloads and organization
+* **🎨 Custom Favicon Selection** (v6.79.0, Dec 26) – Choose custom favicons for apps and workspaces, with Space Avatar Favicons
+* **💳 Updated Pricing Plans** (v6.68.0, Dec 4) – New Global Panel and refreshed pricing tiers
+
+**🤖 AI & Agent Enhancements:**
+
+* **🧠 AI Media Library Support** (v6.73.0, Dec 12) – Agents can access and work with media files
+* **💬 Chat Modes & App Sign-In** (v6.74.0, Dec 16) – Multiple chat modes for different interaction styles
+* **🎯 Agent Customizer** (v6.77.0, Dec 24) – Enhanced agent customization with App Analytics and AI Credit increases
+
+**🏢 Workspace & Platform:**
+
+* **🌐 Domain Management** (v6.75.0, Dec 20) – Improved domain management, onboarding emails, and mobile pricing
+* **📱 Subspace Header & Touch Screen Sidebar** (v6.70.0, Dec 9) – Better mobile navigation
+* **🔢 Unique Field Values & Optimized AI** (v6.66.0, Dec 1) – Unique constraints for database fields with faster AI responses
+* **⏹️ Abort Chat & Password Fields** (v6.65.0, Nov 27) – Stop AI responses mid-stream and secure password input fields
+
+***
 
 ## 🔗 Related Resources
 
