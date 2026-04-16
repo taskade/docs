@@ -14,6 +14,26 @@ Each release advances the living software vision, strengthening the DNA strands 
 
 ## Latest Releases
 
+### 🎄 **December 2025** - Genesis Matures
+
+**🚀 Major Features:**
+
+* **AI Image Generation** (v6.80.0, Dec 31) – Generate images directly in AI chat with support for multiple styles and formats
+* **Custom Favicon Selection** (v6.79.0, Dec 26) – Choose custom favicons for apps and workspaces; Space Avatar Favicons
+* **Agent Customizer & Credit Increase** (v6.77.0, Dec 24) – Enhanced agent customization with App Analytics and AI Credit increases
+* **Domain Management** (v6.75.0, Dec 20) – Improved domain management, onboarding emails, and mobile pricing
+* **Chat Modes & App Sign-In** (v6.74.0, Dec 16) – Multiple chat modes for different interaction styles
+* **AI Media Library Support** (v6.73.0, Dec 12) – Agents can access and work with media files
+* **Dedicated Media Page** (v6.72.0, Dec 11) – Centralized media management with file downloads and organization
+* **Custom Domain Routing** (v6.71.0, Dec 10) – Advanced domain routing and space integrations for professional hosting
+* **Subspace Header & Touch Sidebar** (v6.70.0, Dec 9) – Better mobile navigation
+* **195+ App Templates & Bundle Export/Import** (v6.69.0, Dec 5) – Massive template library expansion
+* **Updated Pricing Plans** (v6.68.0, Dec 4) – New Global Panel and refreshed pricing tiers
+* **App Analytics Dashboard** (v6.67.0, Dec 3) – Usage analytics and performance insights for Genesis apps
+* **Unique Field Values & Optimized AI** (v6.66.0, Dec 1) – Unique constraints for database fields with faster AI responses
+
+***
+
 ### 🧬 **November 4, 2025** - Living Apps Revolution
 
 **🚀 Major Features:**
@@ -74,343 +94,106 @@ Each release advances the living software vision, strengthening the DNA strands 
 
 ***
 
-### 🎯 **November 5, 2025** - Ultimate User Experience
+### 🌟 **November 2025** - Apps Go Live
 
 **🚀 Major Features:**
 
-* **🎨 Enhanced App Creation** – Create even more beautiful and functional apps with improved design tools
-* **📱 Smoother Mobile Experience** – Better performance and usability across all mobile devices
-* **🤝 Improved Team Collaboration** – Enhanced tools for working together more effectively
-* **⚡ Faster Performance** – Everything loads and works quicker than before
-* **🔍 Better Search** – Find what you need more easily with improved search capabilities
+* **App Publishing System** (v6.50.0, Nov 3) – Private/Secret/Public visibility controls with apps defaulting to private
+* **Public Creator Profiles** (v6.54.0, Nov 9) – Individual creator pages at `/user/:handle` with 1,000 free AI credits for all users
+* **If/Else Automation Logic** (v6.55.0, Nov 10) – Branching, loops, and variables in automations + new Integration Hub
+* **Smart AI Navigation** (v6.56.0, Nov 11) – Taskade AI auto-navigates to relevant screens for any action
+* **Auto App Recovery** (v6.57.0, Nov 12) – Genesis apps automatically detect and recover from runtime issues
+* **App Web Analytics** (v6.60.0, Nov 18) – Built-in web analytics for published Genesis apps with navigation tracking
+* **Author Names in Public Apps** (v6.62.0, Nov 20) – Public Genesis apps display author name in header
+* **App Kit Preview** (v6.63.0, Nov 21) – Preview complete app kits before going live with smoother loading
+* **Automation Actions as AI Tools** (v6.64.0, Nov 25) – Taskade AI can trigger automation actions as tools; handles for community profiles
+* **Abort Chat & Password Fields** (v6.65.0, Nov 27) – Stop AI responses mid-stream and add secure password field type
 
-**✨ Enhancements:**
+**🤖 AI & Agent Enhancements:**
 
-* More intuitive interface for creating projects
-* Better organization of your workspace
-* Improved notifications and updates
-* Enhanced sharing options for your work
-* Smoother transitions between different views
+* More AI Models & Desktop Ribbon (v6.52.0, Nov 5)
+* Integration Tab & Reorganized Settings (v6.53.0, Nov 6)
+* Space Agent Screen & Faster AI (v6.58.0, Nov 15)
+* Upgraded AI Models & Presentable Tables (v6.61.0, Nov 19)
 
-### 🚀 **November 5, 2025 (Latest)** - Advanced Platform Evolution
+**⚡ Automation & Platform:**
 
-**🚀 Major Features:**
-
-* **🖼️ App Integration Page** – New dedicated page for managing app integrations and connections
-* **🤖 Gemini AI Support** – Enhanced AI capabilities with Google Gemini model integration
-* **🔒 Automation Enable/Disable** – Granular control over automation workflows for better management
-* **🎨 Mobile Ribbon Enhancement** – Improved mobile interface with enhanced ribbon functionality
-
-**✨ Enhancements:**
-
-* Advanced analytics and monitoring for automation performance
-* Improved breadcrumb navigation with tooltips for better user experience
-* Enhanced error handling and recovery mechanisms
-* Better mobile responsiveness across all features
-* Centralized PostHog analytics integration for improved insights
+* Dynamic Results from Automations (v6.48.0, Nov 1)
+* Automation Run Safeguards (v6.49.0, Nov 1) – Smart limits prevent excessive runs
+* Category Filtering & Smoother AI Chat (v6.51.0, Nov 4)
+* Payment Automations & Toast Redesign (v6.59.0, Nov 17)
 
 ***
 
-### 🎯 **November 4, 2025** - Community & Performance
+### 🎯 **October 2025** - Community Launch & Living Software Era
 
 **🚀 Major Features:**
 
-* **📊 Category Filtering** – Smart organization of community apps by category and functionality
-* **⚡ Performance Optimization** – Significant improvements in app loading and response times
-* **🔍 Enhanced Search** – Better discovery of apps and content within the platform
-* **🎯 Improved Paywall Logic** – Smarter upgrade prompts and feature access management
+* **Agent Knowledge Upload** (v6.25.0, Oct 1) – Upload knowledge documents directly to AI agents
+* **Password-Protected Apps & Living Memory** (v6.26.0, Oct 2) – Site-wide password protection + AI context across sessions
+* **Media Tab & Context Summarization** (v6.27.0, Oct 3) – New Media tab in Recents + smart context summarization
+* **Intelligent Text Editor & AI Failover** (v6.28.0, Oct 3) – Regional failover routes to fastest AI endpoint
+* **Cross-Agent Invocation & Self-Healing Apps** (v6.30.0, Oct 6) – AI invokes other agents; apps auto-recover from errors
+* **Global AI Assistant** (v6.31.0, Oct 7) – AI accessible from anywhere; can modify project settings/views via natural language
+* **Taskade EVE Avatar** (v6.32.0, Oct 9) – Animated mascot in chat and Genesis; Mermaid diagram downloads
+* **Agent App Integration & Monthly Credits** (v6.33.0, Oct 11) – Connect Genesis apps to workspace agents; monthly credit tracking
+* **Device Frame Previews** (v6.34.0, Oct 13) – Preview apps in phone/tablet/desktop frames; toggle watermark
+* **Template Link Previews & Apex Domains** (v6.35.0, Oct 15) – Demo chat on template pages; `yourdomain.com` support
+* **Intelligent Model Selection** (v6.41.0, Oct 23) – AI auto-selects best model based on available credits
+* **Living Software Branding** (v6.40.0, Oct 21) – Genesis rebranded as "Living Software"; nested tasks via integrations
+* **AI Reasoning View** (v6.43.0, Oct 25) – Step-by-step logic chain display for AI decisions
+* **AI Web Browsing & Community Gallery** (v6.44.0, Oct 28) – Taskade AI browses web pages; Community Gallery launches
+* **Rebuilt Mobile App** (v6.46.0, Oct 30) – Complete rebuild for iOS and Android
+* **Community Gallery Public Launch** (v6.47.0, Oct 31) – Publicly available to all users
 
-**✨ Enhancements:**
+**🌐 Custom Domains & Infrastructure:**
 
-* Dynamic credit balance tracking for better usage visibility
-* Advanced error handling with less strict validation for smoother user experience
-* Improved mobile UI for community gallery browsing
-* Better app visibility controls and private/public settings
-* Enhanced version history styling and functionality
+* One-Click Domains & Mermaid Diagrams (v6.17.0, late Sept → Oct)
+* Custom Domain Security (v6.39.0, Oct 20)
+* Faster Custom Domain Setup (v6.37.0, Oct 18)
+* Domain Search & New Default AI Model (v6.36.0, Oct 17)
+* Domain Purchase for All Plans (v6.42.0, Oct 24)
 
 ***
 
-### 🎨 **November 3, 2025** - Visual & Performance
+### 🧬 **September 2025** - Genesis Ecosystem Takes Shape
 
 **🚀 Major Features:**
 
-* **📸 Enhanced Screenshots** – Improved visual previews for apps in workspace and community
-* **🎨 Input Field Enhancement** – Better text input experience with subtle beam animation
-* **📱 Mobile Theme Support** – Proper theme handling across mobile applications
-* **🖥️ Desktop Ribbon** – Mobile ribbon functionality now available on desktop
+* **New Publishing Experience & Usage Page** (v6.18.0, Sept 24) – Redesigned publishing flow made default; AI usage dashboard
+* **New App Preview Experience** (v6.19.0, Sept 25) – Redesigned app preview with smoother navigation
+* **Duplicate Apps & Pro Model Indicators** (v6.20.0, Sept 26) – One-click app duplication; Pro badges on AI models
+* **Command Palette Redesign** (v6.21.0, Sept 27) – Redesigned Cmd+K with app recency ordering; real-time sync foundation
+* **Real-Time Updates & Desktop App Rebuild** (v6.22.0, Sept 28) – Enhanced real-time events; rebuilt Mac/Windows/Linux desktop apps
+* **Rich Text AI Chat** (v6.23.0, Sept 29) – File/media references in chat; complete server event lifecycle
+* **Intelligent Text Editor** (v6.24.0, Sept 30) – AI-driven rewriting and restructuring; unified project header
 
-**✨ Enhancements:**
+**🧬 Genesis Foundation (Early Sept):**
 
-* Faster performance with reduced console logging overhead
-* Better community profile image handling and fallbacks
-* Improved pricing display and plan management
-* Enhanced automation metadata for AI-driven workflows
-* Better error messages and user guidance throughout the platform
+* **Public Agents & Fork Apps** (v6.11.0, Sept 1) – AI assistant creates public agents; fork existing Genesis apps
+* **Community Sharing & Embeddable Agents** (v6.12.0, Sept 3) – Share apps to community; embed agents on any website
+* **Private Apps & Credential Import** (v6.13.0, Sept 5) – Privacy settings for published apps; bulk credential import
+* **Version History** (v6.14.0, Sept 8) – Full version history with browse/compare/restore for Genesis apps
+* **AI Chat Attachments** (v6.15.0, Sept 9) – Upload attachments alongside AI chat messages
+* **Context Lightbox & Multi-File Uploads** (v6.16.0, Sept 11) – Lightbox preview; drag-and-drop multi-file uploads
 
 ***
 
-### 🛡️ **November 2, 2025** - Reliability & Control
+### 🚀 **August 2025** - Taskade 6.0 Platform Launch
 
 **🚀 Major Features:**
 
-* **⚙️ Rate Limiting** – Advanced automation rate limiting to prevent runaway workflows
-* **🎯 Dynamic Results Tool** – Enhanced AI capabilities for retrieving dynamic data
-* **🏢 Self-Join Workspace** – Administrative capability to join workspaces directly
-* **📊 Centralized Analytics** – Improved PostHog integration for better user insights
-
-**✨ Enhancements:**
-
-* Better handling of mobile project screens and navigation
-* Improved Sentry error tracking for enhanced reliability
-* Advanced automation metadata for LLM context and understanding
-* Enhanced mobile responsiveness for agent edit dialogs
-* Better community gallery fallback screenshots and error handling
-
-***
-
-### 🏗️ **November 1, 2025** - Infrastructure & Speed
-
-**🚀 Major Features:**
-
-* **🏗️ Cloudflare Domains** – Enhanced custom domain support with Cloudflare SSL integration
-* **📈 Analytics Events** – Comprehensive event tracking for AI credits and user behavior
-* **⚡ Advanced AI Models** – Multi-region support for Anthropic models with load balancing
-* **🔧 War Room Balance** – Administrative controls for workspace credit management
-
-**✨ Enhancements:**
-
-* Improved domain registration process with Name.com integration
-* Better mobile paywall integration and user experience
-* Enhanced Mermaid diagram rendering and lightbox functionality
-* Advanced automation creation with intelligent suggestions
-* Improved file upload and handling capabilities
-
-***
-
-### 🏢 **October 31, 2025** - Enterprise Domains
-
-**🚀 Major Features:**
-
-* **🌐 Custom Domains** – Full Cloudflare SSL integration for enterprise domains
-* **🖼️ App Screenshots** – Visual previews now available in workspace and war room
-* **🎨 Community Gallery** – Remove admin flags for broader community access
-* **📱 Mobile App Launch** – Enhanced mobile experience for opening project screens
-
-**✨ Enhancements:**
-
-* Better fallback handling for apps without screenshots
-* Improved domain validation and SSL certificate management
-* Enhanced mobile responsiveness for domain management
-* Advanced automation error handling and recovery
-* Better preview consumer queue management for stability
-
-***
-
-### 🌟 **October 30, 2025** - Community Power
-
-**🚀 Major Features:**
-
-* **🖼️ Community Gallery** – Feature-flagged community app sharing and discovery
-* **🔍 Web Search Integration** – Enhanced AI agents with web search capabilities
-* **🎨 App Screenshots** – Visual previews for community gallery apps
-* **🤖 Taa API Integration** – Advanced API capabilities for AI assistants
-
-**✨ Enhancements:**
-
-* Improved mobile responsiveness for agent modals and interfaces
-* Better table view optimization for mobile devices
-* Enhanced ribbon functionality and mobile controls
-* Advanced error tracking with Sentry integration for client tools
-* Improved automation loop prevention and stability
-
-***
-
-### 🎉 **November 2, 2025** - Production Ready
-
-**🚀 Major Features:**
-
-* **🏆 Enterprise-Grade Reliability** – Mission-critical stability for professional use
-* **🔄 Advanced Automation** – More powerful ways to automate your repetitive tasks
-* **📊 Enhanced Analytics** – Better insights into your productivity and team performance
-* **🌐 Global Performance** – Improved speed and reliability worldwide
-* **🛡️ Enhanced Security** – Additional protections for your data and privacy
-
-**✨ Enhancements:**
-
-* More reliable data synchronization
-* Better handling of large projects
-* Improved calendar and scheduling features
-* Enhanced file management capabilities
-* Better integration with popular business tools
-
-***
-
-### 🚀 **October 28, 2025** - Feature Complete
-
-**🚀 Major Features:**
-
-* **🎯 Advanced Project Management** – Powerful new tools for managing complex projects
-* **🤖 Smarter AI Assistance** – More intelligent help with your daily tasks
-* **📈 Performance Optimization** – Faster and more efficient operation
-* **🎨 Creative Tools** – New ways to express ideas and collaborate visually
-* **🔗 Better Connectivity** – Improved connections between different parts of your work
-
-**✨ Enhancements:**
-
-* Enhanced project templates for different industries
-* Better mobile app experience
-* Improved team communication features
-* More flexible customization options
-* Enhanced data visualization capabilities
-
-***
-
-### 💫 **October 22, 2025** - Breaking Through Limits
-
-**🚀 Major Features:**
-
-* **🚀 Expanded Capabilities** – More powerful features for advanced users
-* **🎨 Creative Freedom** – New tools for expressing your ideas
-* **⚡ Performance Breakthroughs** – Significant speed and efficiency improvements
-* **🤝 Enhanced Collaboration** – Better ways to work with your team
-* **📱 Mobile Excellence** – Outstanding mobile experience improvements
-
-**✨ Enhancements:**
-
-* More flexible project structures
-* Enhanced automation options
-* Better integration with external services
-* Improved user interface design
-* Enhanced accessibility features
-
-***
-
-### 🌟 **October 18, 2025** - New Paradigm
-
-**🚀 Major Features:**
-
-* **🧠 Intelligent Assistance** – Smarter help with your tasks and projects
-* **🎯 Precision Tools** – More accurate and effective productivity tools
-* **🌈 Enhanced Creativity** – New ways to be creative with your work
-* **⚡ Lightning Fast** – Dramatic performance improvements
-* **🤝 Seamless Collaboration** – Effortless teamwork capabilities
-
-**✨ Enhancements:**
-
-* Better project organization
-* Improved task management
-* Enhanced communication tools
-* More intuitive user interface
-* Better mobile responsiveness
-
-***
-
-### 🎨 **October 14, 2025** - Creative Excellence
-
-**🚀 Major Features:**
-
-* **🎨 Advanced Design Tools** – Professional-grade design capabilities
-* **📊 Data Visualization** – Beautiful ways to understand your information
-* **🎯 Workflow Optimization** – Streamlined processes for better productivity
-* **🤖 AI Enhancement** – More intelligent automation and assistance
-* **🌐 Global Reach** – Improved international support and performance
-
-**✨ Enhancements:**
-
-* Enhanced project templates
-* Better file organization
-* Improved search functionality
-* More flexible customization
-* Enhanced team features
-
-***
-
-### 🚀 **October 10, 2025** - Power Unleashed
-
-**🚀 Major Features:**
-
-* **⚡ Advanced Automation** – Powerful new automation capabilities
-* **🎯 Smart Organization** – Intelligent ways to organize your work
-* **📈 Performance Gains** – Significant speed and efficiency improvements
-* **🤝 Team Synergy** – Enhanced collaboration features
-* **📱 Mobile Mastery** – Superior mobile experience
-
-**✨ Enhancements:**
-
-* Better project management tools
-* Improved task tracking
-* Enhanced communication features
-* More intuitive navigation
-* Better data handling
-
-***
-
-### 💎 **October 6, 2025** - Industry Solutions
-
-**🚀 Major Features:**
-
-* **🏥 Healthcare Solutions** – Specialized tools for medical professionals
-* **⚖️ Legal Practice Tools** – Enhanced capabilities for legal work
-* **📚 Education Features** – Better tools for educational institutions
-* **💼 Business Intelligence** – Advanced business management features
-* **🎯 Industry Templates** – Ready-to-use solutions for specific industries
-
-**✨ Enhancements:**
-
-* Specialized project templates
-* Industry-specific integrations
-* Enhanced compliance features
-* Better team management
-* Improved reporting capabilities
-
-***
-
-### 🧠 **September 28, 2025** - AI Evolution
-
-**🚀 Major Features:**
-
-* **🤖 Advanced AI Agents** – More capable and intelligent assistants
-* **🎨 Creative AI Tools** – AI-powered creative assistance
-* **📊 Smart Analytics** – Intelligent insights and recommendations
-* **⚡ Performance AI** – AI-optimized performance and efficiency
-* **🤝 AI Collaboration** – Better AI-human teamwork
-
-**✨ Enhancements:**
-
-* More natural AI interactions
-* Better AI understanding of context
-* Enhanced AI recommendations
-* Improved AI reliability
-* More AI customization options
-
-***
-
-### ⚡ **September 22, 2025** - Workflow Revolution
-
-**🚀 Major Features:**
-
-* **🔄 Advanced Workflows** – More powerful automation sequences
-* **📋 Smart Task Management** – Intelligent task organization and prioritization
-* **🤝 Team Coordination** – Enhanced collaboration and communication
-* **📊 Progress Tracking** – Better visibility into project status
-* **⚡ Speed Improvements** – Faster operation and response times
-
-**✨ Enhancements:**
-
-* More flexible workflow creation
-* Better task dependencies
-* Enhanced team notifications
-* Improved project timelines
-* Better resource management
-
-***
-
-### 📊 **September 18, 2025** - Data Intelligence
-
-**🚀 Major Features:**
-
-* **📈 Advanced Analytics** – Deep insights into your productivity
-* **🎯 Smart Recommendations** – Personalized suggestions for improvement
+* **Taskade 6.0 Platform Redesign** (v6.0.0, Aug 7) – Ground-up redesign with rebuilt interface, deeper AI integration, and new architecture
+* **Table View Default & Custom Fields** (v6.1.0, Aug 8) – AI-created projects default to Table View with improved number fields
+* **New Integrations: Zoom, Reddit & Google Drive** (v6.2.0, Aug 11) – Three major integration additions plus AI workspace creation
+* **Project Search & WordPress Integration** (v6.3.0, Aug 13) – Powerful project search with custom queries; workspace-level AI model selection
+* **DateTime Filtering** (v6.4.0, Aug 14) – Advanced date/time range filters in Genesis apps
+* **AI Custom Fields & Table Aggregations** (v6.5.0, Aug 15) – AI generates custom fields; min/max aggregations for numbers
+* **Video Calls & Prompt Library** (v6.6.0, Aug 19) – Mobile video calls with picture-in-picture; curated AI prompt library
+* **App Marketplace Publishing** (v6.7.0, Aug 20) – Foundation of the Taskade app marketplace with automatic prompt enhancement
+* **App Publishing for All** (v6.8.0, Aug 22) – Publishing enabled for all plans including Free, with plan-based branding controls
+* **AI-Created Agents & Auto Publish Domains** (v6.9.0, Aug 25) – AI creates and edits agents; auto-generated publish domains
+* **Custom Domains & App Bundles** (v6.10.0, Aug 29) – Custom domain support for Genesis apps; app bundles for packaging
 * **📊 Data Visualization** – Beautiful charts and graphs
 * **🔍 Enhanced Search** – Find anything instantly
 * **📋 Intelligent Organization** – Smart categorization and tagging
@@ -422,86 +205,6 @@ Each release advances the living software vision, strengthening the DNA strands 
 * Improved data visualization
 * More powerful search options
 * Better data organization
-
-***
-
-### 🎯 **September 14, 2025** - Precision Tools
-
-**🚀 Major Features:**
-
-* **🎯 Laser-Focused Features** – Specialized tools for specific needs
-* **⚡ Optimized Performance** – Faster and more efficient operation
-* **🤝 Enhanced Teamwork** – Better collaboration capabilities
-* **📱 Superior Mobile** – Outstanding mobile experience
-* **🔧 Advanced Customization** – More ways to personalize your experience
-
-**✨ Enhancements:**
-
-* More precise task management
-* Better team communication
-* Enhanced mobile features
-* Improved customization options
-* Better performance optimization
-
-***
-
-### 🚀 **September 10, 2025** - Automation Power
-
-**🚀 Major Features:**
-
-* **⚡ Advanced Automation** – Powerful new workflow automation
-* **🤖 Smart Agents** – More capable AI assistants
-* **🔗 Better Integration** – Enhanced connections with other tools
-* **📈 Performance Boost** – Significant speed improvements
-* **🎨 Enhanced Design** – More beautiful and intuitive interface
-
-**✨ Enhancements:**
-
-* More automation triggers
-* Better agent capabilities
-* Enhanced integration options
-* Improved user interface
-* Better performance across devices
-
-***
-
-### 📱 **September 6, 2025** - Mobile Revolution
-
-**🚀 Major Features:**
-
-* **📱 Revolutionary Mobile** – Complete mobile experience overhaul
-* **🎯 Touch Optimization** – Perfect touch interactions
-* **📷 Visual Enhancement** – Better visual design and layout
-* **⚡ Mobile Performance** – Lightning-fast mobile operation
-* **🤝 Mobile Collaboration** – Excellent teamwork on mobile devices
-
-**✨ Enhancements:**
-
-* Redesigned mobile interface
-* Better touch gestures
-* Improved mobile navigation
-* Enhanced mobile features
-* Better mobile-to-desktop sync
-
-***
-
-### 🏢 **September 2, 2025** - Workspace Evolution
-
-**🚀 Major Features:**
-
-* **🏢 Enhanced Workspaces** – More powerful workspace management
-* **👥 Advanced Teams** – Better team collaboration features
-* **🔒 Enterprise Security** – Enhanced security and privacy
-* **📊 Workspace Analytics** – Insights into workspace usage
-* **⚙️ Advanced Settings** – More customization and control
-
-**✨ Enhancements:**
-
-* Better workspace organization
-* Enhanced team management
-* Improved security features
-* Better analytics and reporting
-* More flexible settings
 
 ***
 
@@ -694,35 +397,6 @@ Each release advances the living software vision, strengthening the DNA strands 
 * Automation generator; custom field triggers; RSS/YouTube; Google Workspace; Slack/Teams/Discord; social automations
 * Unified human‑AI collaboration space with shared chats and agent teams
 * 2025 vision: TaskOS & autonomy, next‑level automation, human‑AI collaboration, SOC2, custom domains, bundles, marketplace
-
-***
-
-### 🎄 **December 2025** - Genesis Matures
-
-**🚀 Major Features:**
-
-* **🖼️ AI Image Generation** (v6.80.0, Dec 31) – Generate images directly in AI chat with support for multiple styles and formats
-* **📦 195+ App Templates & Bundle Export/Import** (v6.69.0, Dec 5) – Massive template library expansion with the ability to export and import complete app bundles
-* **📊 App Analytics Dashboard** (v6.67.0, Dec 3) – Usage analytics and performance insights for Genesis apps with a redesigned top header
-* **🌐 Custom Domain Routing** (v6.71.0, Dec 10) – Advanced domain routing and space integrations for professional hosting
-* **📱 Dedicated Media Page** (v6.72.0, Dec 11) – Centralized media management with file downloads and organization
-* **🎨 Custom Favicon Selection** (v6.79.0, Dec 26) – Choose custom favicons for apps and workspaces, with Space Avatar Favicons
-* **💳 Updated Pricing Plans** (v6.68.0, Dec 4) – New Global Panel and refreshed pricing tiers
-
-**🤖 AI & Agent Enhancements:**
-
-* **🧠 AI Media Library Support** (v6.73.0, Dec 12) – Agents can access and work with media files
-* **💬 Chat Modes & App Sign-In** (v6.74.0, Dec 16) – Multiple chat modes for different interaction styles
-* **🎯 Agent Customizer** (v6.77.0, Dec 24) – Enhanced agent customization with App Analytics and AI Credit increases
-
-**🏢 Workspace & Platform:**
-
-* **🌐 Domain Management** (v6.75.0, Dec 20) – Improved domain management, onboarding emails, and mobile pricing
-* **📱 Subspace Header & Touch Screen Sidebar** (v6.70.0, Dec 9) – Better mobile navigation
-* **🔢 Unique Field Values & Optimized AI** (v6.66.0, Dec 1) – Unique constraints for database fields with faster AI responses
-* **⏹️ Abort Chat & Password Fields** (v6.65.0, Nov 27) – Stop AI responses mid-stream and secure password input fields
-
-***
 
 ## 🔗 Related Resources
 
