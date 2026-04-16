@@ -18,14 +18,6 @@ Fully hosted MCP server — no self-hosting required. Deeper agent-to-external-t
 
 ***
 
-### Telegram Bot Automations
-
-New Telegram bot actions in the automation builder — send messages, manage chats, and trigger bot commands. Combine with AI agents for intelligent Telegram workflows.
-
-<figure><img src="../../.gitbook/assets/telegram-bot-no-code.gif" alt="" width="563"><figcaption></figcaption></figure>
-
-***
-
 ### Global Language Support
 
 Full internationalization for Genesis app creation, AI chat, credit management, authentication, and error screens. Tens of thousands of new translated strings across the platform.
