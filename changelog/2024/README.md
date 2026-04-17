@@ -10,6 +10,10 @@
 
 The breakthrough year when AI agents evolved from individual assistants into autonomous teams, establishing the four pillars that would enable Genesis: **Intelligence**, **Action**, **Knowledge**, and **Evolution**.
 
+{% hint style="info" %}
+The entries below are narrative rollups. Each month corresponds to roughly 10–15 individual v5.x releases — see the full per-version ledger at [taskade.com/changelog](https://www.taskade.com/changelog). 2024 spans **v5.1 through v5.128** (127 releases total).
+{% endhint %}
+
 ## December 2024
 
 ### 🤖 December 18, 2024 — Chat with AI Teams, Instant Projects, New Tables, Microsoft Teams & Discord
