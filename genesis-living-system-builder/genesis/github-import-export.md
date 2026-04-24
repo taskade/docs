@@ -1,21 +1,21 @@
-# GitHub Import & Export for Genesis Apps
+# GitHub Import & Export
 
 Bring Genesis apps in from GitHub repositories and push your apps back to GitHub with branch-and-PR workflows. Two-way sync turns every Genesis app into a portable, version-controlled kit.
 
----
+***
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Importing a Genesis App](#importing-a-genesis-app)
-- [Exporting a Genesis App](#exporting-a-genesis-app)
-- [What's in an Export Bundle](#whats-in-an-export-bundle)
-- [Working with the Pull Request Flow](#working-with-the-pull-request-flow)
-- [Permissions & Errors](#permissions--errors)
-- [Troubleshooting](#troubleshooting)
-- [Related](#related)
+* [Overview](github-import-export.md#overview)
+* [Importing a Genesis App](github-import-export.md#importing-a-genesis-app)
+* [Exporting a Genesis App](github-import-export.md#exporting-a-genesis-app)
+* [What's in an Export Bundle](github-import-export.md#whats-in-an-export-bundle)
+* [Working with the Pull Request Flow](github-import-export.md#working-with-the-pull-request-flow)
+* [Permissions & Errors](github-import-export.md#permissions--errors)
+* [Troubleshooting](github-import-export.md#troubleshooting)
+* [Related](github-import-export.md#related)
 
----
+***
 
 ## Overview
 
@@ -25,9 +25,9 @@ GitHub Import & Export lets you treat any Genesis app like code — back it up, 
 * **Export** an app to a brand-new repo or push updates to an existing repo as a pull request.
 * **Two-way sync** keeps your Taskade workspace and your repo in step.
 
-<figure><img src="../../.gitbook/assets/github-app-kits-share-publish.gif" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/app-kits-share-publish.gif" alt="" width="563"><figcaption></figcaption></figure>
 
----
+***
 
 ## Importing a Genesis App
 
@@ -51,7 +51,7 @@ Private repositories require authenticated access.
 The GitHub token needs `repo` scope to read private repositories. You can revoke access anytime from your GitHub account settings.
 {% endhint %}
 
----
+***
 
 ## Exporting a Genesis App
 
@@ -77,21 +77,21 @@ Existing files in the target repo are preserved. Only the Genesis app bundle is 
 
 Old export bundles clean up automatically, so your repo doesn't accumulate stale artifacts.
 
----
+***
 
 ## What's in an Export Bundle
 
 An export captures everything needed to reconstruct the app in another workspace.
 
-| Included | Not Included |
-| --- | --- |
-| Projects (structure, tasks, notes) | Runtime state (live users, sessions) |
-| AI agents (definitions, tools, knowledge attachments) | API tokens or connected account credentials |
-| Automations (triggers, actions, flow logic) | Workspace-level settings |
-| Media assets | End-user account data (handled by GenesisAuth) |
-| App configuration (branding, theming) | Billing / plan state |
+| Included                                              | Not Included                                   |
+| ----------------------------------------------------- | ---------------------------------------------- |
+| Projects (structure, tasks, notes)                    | Runtime state (live users, sessions)           |
+| AI agents (definitions, tools, knowledge attachments) | API tokens or connected account credentials    |
+| Automations (triggers, actions, flow logic)           | Workspace-level settings                       |
+| Media assets                                          | End-user account data (handled by GenesisAuth) |
+| App configuration (branding, theming)                 | Billing / plan state                           |
 
----
+***
 
 ## Working with the Pull Request Flow
 
@@ -104,18 +104,18 @@ When you push to an existing repo, Taskade does not commit directly to the base 
 
 Re-exporting the same app either updates the open PR or opens a new one, depending on whether the previous PR is still open.
 
----
+***
 
 ## Permissions & Errors
 
-| Scenario | What You See | How to Fix |
-| --- | --- | --- |
-| Collaborator lacks export permission | Clear error message in the Export modal | Workspace owner must grant export rights |
-| GitHub token expired | "Unable to access repository" | Reconnect GitHub from workspace settings |
-| Private repo not visible in picker | Repo doesn't appear after connecting | Check token scopes (`repo`) and re-auth |
-| Merge conflict on re-export | GitHub shows conflict markers | Resolve in GitHub as you would any PR conflict |
+| Scenario                             | What You See                            | How to Fix                                     |
+| ------------------------------------ | --------------------------------------- | ---------------------------------------------- |
+| Collaborator lacks export permission | Clear error message in the Export modal | Workspace owner must grant export rights       |
+| GitHub token expired                 | "Unable to access repository"           | Reconnect GitHub from workspace settings       |
+| Private repo not visible in picker   | Repo doesn't appear after connecting    | Check token scopes (`repo`) and re-auth        |
+| Merge conflict on re-export          | GitHub shows conflict markers           | Resolve in GitHub as you would any PR conflict |
 
----
+***
 
 ## Troubleshooting
 
@@ -131,7 +131,7 @@ Re-exporting the same app either updates the open PR or opens a new one, dependi
 **PR didn't open automatically**: Check your GitHub account's pending authorizations and confirm the Taskade app has write access to the target repository.
 {% endhint %}
 
----
+***
 
 ## Related
 

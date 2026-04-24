@@ -2,22 +2,22 @@
 
 Understand how AI credits work in Taskade, how credit packs are priced, and how Auto Top-Up keeps your workflows running.
 
----
+***
 
 ## Table of Contents
 
-- [How AI Credits Work](#how-ai-credits-work)
-- [Free Credits](#free-credits)
-- [Paid Plan Credits](#paid-plan-credits)
-- [Credit Packs](#credit-packs)
-- [Auto Top-Up](#auto-top-up)
-- [Model-Specific Pricing](#model-specific-pricing)
-- [Viewing Your Usage](#viewing-your-usage)
-- [What Happens When You Run Out](#what-happens-when-you-run-out)
-- [FAQ](#faq)
-- [Related](#related)
+* [How AI Credits Work](credits-and-billing.md#how-ai-credits-work)
+* [Free Credits](credits-and-billing.md#free-credits)
+* [Paid Plan Credits](credits-and-billing.md#paid-plan-credits)
+* [Credit Packs](credits-and-billing.md#credit-packs)
+* [Auto Top-Up](credits-and-billing.md#auto-top-up)
+* [Model-Specific Pricing](credits-and-billing.md#model-specific-pricing)
+* [Viewing Your Usage](credits-and-billing.md#viewing-your-usage)
+* [What Happens When You Run Out](credits-and-billing.md#what-happens-when-you-run-out)
+* [FAQ](credits-and-billing.md#faq)
+* [Related](credits-and-billing.md#related)
 
----
+***
 
 ## How AI Credits Work
 
@@ -29,7 +29,7 @@ Every AI request in Taskade — prompting an agent, running an automation with A
 
 Business-plan users and above get auto-routing to top-tier frontier models, so you don't need to manually pick the right model for each task.
 
----
+***
 
 ## Free Credits
 
@@ -42,18 +42,18 @@ Every user — including free-tier — gets a baseline allocation of AI credits 
 Exact free-tier allocation may change. Check the [pricing page](https://www.taskade.com/pricing) for current numbers.
 {% endhint %}
 
----
+***
 
 ## Paid Plan Credits
 
 Paid plans include monthly premium credits that reset on your billing cycle.
 
-| Plan tier | Monthly credits | Key benefit |
-| --- | --- | --- |
-| Pro | Premium monthly allowance | Personal productivity |
-| Business | Higher monthly allowance + auto-routing to frontier models | Team use, complex AI tasks |
-| Max | Higher allowance with headroom for bursty AI workloads | Heavy generation, large teams |
-| Enterprise | Custom allowance + admin controls | Organization-wide deployments |
+| Plan tier  | Monthly credits                                            | Key benefit                   |
+| ---------- | ---------------------------------------------------------- | ----------------------------- |
+| Pro        | Premium monthly allowance                                  | Personal productivity         |
+| Business   | Higher monthly allowance + auto-routing to frontier models | Team use, complex AI tasks    |
+| Max        | Higher allowance with headroom for bursty AI workloads     | Heavy generation, large teams |
+| Enterprise | Custom allowance + admin controls                          | Organization-wide deployments |
 
 {% hint style="info" %}
 Exact credit amounts per tier may change. See the [pricing page](https://www.taskade.com/pricing) for current allocations.
@@ -61,7 +61,7 @@ Exact credit amounts per tier may change. See the [pricing page](https://www.tas
 
 Max and Enterprise plans get refined credit limits designed for bursty workloads — you won't get throttled mid-task during a heavy generation run.
 
----
+***
 
 ## Credit Packs
 
@@ -75,7 +75,7 @@ Credit packs are one-time purchases on top of your monthly allocation.
 
 Use packs when you expect a heavy AI month — during a product launch, a big content sprint, or a large Genesis app build.
 
----
+***
 
 ## Auto Top-Up
 
@@ -102,7 +102,7 @@ Auto Top-Up charges your payment method automatically when triggered. Set a reas
 
 Auto Top-Up is available on all plans that support AI credits.
 
----
+***
 
 ## Model-Specific Pricing
 
@@ -112,7 +112,7 @@ Each AI model has its own credit cost per request. Pricing is adjusted periodica
 * Auto mode uses plan-aware routing to pick a cost-appropriate model for each request.
 * For the authoritative current list, check the in-app model picker.
 
----
+***
 
 ## Viewing Your Usage
 
@@ -123,9 +123,9 @@ Taskade surfaces credit usage in several places.
 * **Per-agent usage analytics** show which agents consume the most credits.
 * **Automation run reports** show credits used per run.
 
-<figure><img src="../.gitbook/assets/credit-usage-analytics.gif" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/app-analytics-landing.gif" alt="" width="563"><figcaption></figcaption></figure>
 
----
+***
 
 ## What Happens When You Run Out
 
@@ -139,7 +139,7 @@ Taskade never silently fails an AI request due to insufficient credits.
 Public agent visitors never see internal billing errors. If your app's agent runs out of credits, external users see a neutral error message, not billing details.
 {% endhint %}
 
----
+***
 
 ## FAQ
 
@@ -183,14 +183,14 @@ Cloning a Genesis app does not consume credits on its own. AI usage inside the c
 
 </details>
 
----
+***
 
 ## Related
 
-{% content-ref url="README.md" %}
-[README.md](README.md)
+{% content-ref url="./" %}
+[.](./)
 {% endcontent-ref %}
 
-{% content-ref url="../genesis-living-system-builder/ai-features/README.md" %}
-[README.md](../genesis-living-system-builder/ai-features/README.md)
+{% content-ref url="../genesis-living-system-builder/ai-features/" %}
+[ai-features](../genesis-living-system-builder/ai-features/)
 {% endcontent-ref %}

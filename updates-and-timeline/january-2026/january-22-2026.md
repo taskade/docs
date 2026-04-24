@@ -6,7 +6,7 @@
 
 We've added a new loading screen during appgen. You can learn more about the different pillars of Taskade Genesis while you wait for your app to generate in the background.
 
-<figure><img src="../../.gitbook/assets/Clipboard-20260225-071715-783 (1).gif" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Clipboard-20260225-071715-783.gif" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 

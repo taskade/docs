@@ -6,7 +6,7 @@
 
 You can now have maps that integrate with your apps!
 
-Try out a prompt like:&#x20;
+Try out a prompt like:
 
 {% code overflow="wrap" fullWidth="false" %}
 ```
@@ -26,7 +26,7 @@ Share Taskade with your friends and leave reviews to earn free credits!
 
 You can find it here: [https://www.taskade.com/settings/credits](https://www.taskade.com/settings/credits)
 
-<div align="center"><figure><img src="../../.gitbook/assets/CleanShot 2026-02-04 at 16.31.49@2x (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/CleanShot 2026-02-04 at 16.31.49@2x.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ***
 
@@ -39,8 +39,3 @@ You can find it here: [https://www.taskade.com/settings/credits](https://www.tas
 * You can now choose to hide your community profile.
 * Enhanced the descriptions of automation actions and triggers, making them easier to locate via the search bar.
 * Fixed an issue where the Agent Teams' Orchestrate mode encountered errors.
-
-
-
-
-

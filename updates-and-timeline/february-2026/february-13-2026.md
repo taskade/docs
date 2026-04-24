@@ -6,7 +6,7 @@
 
 Prompt any workspace agent from external apps and scripts via the new public API. Build custom integrations that connect your agents to any workflow outside of Taskade.
 
-<figure><img src="../../.gitbook/assets/ai-agent-integration-v2.gif" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/api-agent-integration.gif" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 
@@ -42,4 +42,3 @@ Full internationalization for Genesis app creation, AI chat, credit management, 
 * \[Hotfix] Fixed agent visibility settings not applying in shared workspaces.
 * \[Hotfix] Fixed missing suggestions in AI chat conversations.
 * \[Hotfix] Improved handling of all output types in automation workflow summaries.
-
