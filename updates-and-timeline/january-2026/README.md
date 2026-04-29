@@ -1,6 +1,11 @@
 ---
+cover: ../../.gitbook/assets/Announcements_Banner_Jan.png
+coverY: 0
 layout:
   width: default
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
