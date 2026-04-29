@@ -1,5 +1,5 @@
 ---
-cover: ../../.gitbook/assets/Announcements_Banner_Jan.png
+cover: ../../.gitbook/assets/Changlog_Banner_Jan.png
 coverY: 0
 layout:
   width: default
