@@ -9,8 +9,8 @@
 ## Updates & Timeline
 
 * [April 2026](updates-and-timeline/april-2026/README.md)
-  * [April 22, 2026](updates-and-timeline/april-2026/april-15-2026.md)
-  * [April 15, 2026](updates-and-timeline/april-2026/april-15-2026-1.md)
+  * [April 22, 2026](updates-and-timeline/april-2026/april-22-2026.md)
+  * [April 15, 2026](updates-and-timeline/april-2026/april-15-2026.md)
   * [April 13, 2026](updates-and-timeline/april-2026/april-13-2026.md)
   * [April 10, 2026](updates-and-timeline/april-2026/april-10-2026.md)
   * [April 8, 2026](updates-and-timeline/april-2026/april-8-2026.md)
