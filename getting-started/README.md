@@ -19,7 +19,7 @@ Three things power everything:
 * **Intelligence** = AI agents that reason over your data
 * **Execution** = automations that run workflows 24/7
 
-Learn more: [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo)
+Learn more: [Workspace DNA](https://help.taskade.com/en/articles/12578949-how-genesis-works-workspace-dna)
 
 ***
 
@@ -45,7 +45,7 @@ Learn more: [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo)
 
 {% stepper %}
 {% step %}
-#### Choose Your App Idea
+**Choose Your App Idea**
 
 Pick something you actually need:
 
@@ -58,13 +58,13 @@ Pick something you actually need:
 {% endstep %}
 
 {% step %}
-#### Open the Generator Interface
+**Open the Generator Interface**
 
 Your workspace **IS** the Genesis interface — no separate tab needed. Look for the **prominent input field at the top** of your workspace. You'll see your existing projects/folders as **app tiles** below the input field.
 {% endstep %}
 
 {% step %}
-#### Describe Your App
+**Describe Your App**
 
 Use this template — be specific:
 
@@ -80,7 +80,7 @@ When [TRIGGER EVENT], automatically [AUTOMATED ACTION].
 {% endstep %}
 
 {% step %}
-#### Watch Genesis Build Your App
+**Watch Genesis Build Your App**
 
 1. **Type or paste your prompt** in the input field at the top of your workspace
 2. **Press Enter or click Generate** — Genesis analyzes your request
@@ -89,7 +89,7 @@ When [TRIGGER EVENT], automatically [AUTOMATED ACTION].
 {% endstep %}
 
 {% step %}
-#### Test Your Live App
+**Test Your Live App**
 
 1. **Click on your new app tile** to enter the app workspace
 2. **Click the "Preview" tab** in the top-right panel to see your live application
