@@ -57,6 +57,10 @@ Genesis works with a wide range of file types to understand your requirements:
 | **Requirements docs** | Feature specs, acceptance criteria, use cases | Implements exact feature requirements |
 | **API/Tech docs** | API specs, integration guides, config files | Connects to your existing systems |
 
+{% hint style="info" %}
+Connecting Genesis to Taskade programmatically? See the [Public API reference](../../apis-living-system-development/comprehensive-api-guide/README.md).
+{% endhint %}
+
 ### Supported Upload Formats
 
 | Category | Formats |
@@ -147,6 +151,6 @@ Every file you upload becomes part of your workspace's living memory:
 | Guide | What You'll Learn |
 |---|---|
 | [Image Generation](../ai-features/image-generation.md) | Generate custom images for your apps |
-| [Guide to App Styles](../space-apps-guide/app-styles.md) | Use your brand context to apply specific visual styles |
+| [Guide to App Styles](../space-apps-guide/advanced-features.md) | Use your brand context to apply specific visual styles |
 | [Agent Knowledge & Memory](../ai-features/agent-knowledge.md) | Train AI agents on your uploaded files |
 | [Projects & Databases](../workspaces/projects-databases.md) | How uploaded data becomes structured databases |

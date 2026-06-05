@@ -37,7 +37,7 @@ Database projects are structured data containers that serve as your app's persis
 | **Views** | List, board, table, calendar, and more |
 | **Filters & sorts** | Find and organize data dynamically |
 | **Permissions** | Control who can view and edit data |
-| **API access** | Programmatic access for integrations (Business+) |
+| **API access** | Programmatic access for integrations (Business+) — see the [REST API reference](../../apis-living-system-development/comprehensive-api-guide/README.md) |
 | **Real-time sync** | Changes reflect instantly across all connected apps and agents |
 | **Revision tracking** | Every change tracked via operational transform (OT) |
 

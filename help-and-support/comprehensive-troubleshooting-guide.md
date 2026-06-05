@@ -388,7 +388,7 @@ Verify your credentials for the third-party service are still valid.
 
 #### Data Transfer Issues
 
-* **API Limits**: Check if you've exceeded API rate limits for the integrated service
+* **API Limits**: Check if you've exceeded API rate limits for the integrated service — see the [REST API guide](../apis-living-system-development/comprehensive-api-guide/README.md) for rate limits and error handling
 * **Data Format**: Ensure data formats are compatible between services
 * **Field Mapping**: Verify field mapping is correctly configured
 * **Sync Frequency**: Adjust sync frequency if experiencing timeout issues

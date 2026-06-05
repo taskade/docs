@@ -616,7 +616,7 @@ Transform your AI agents into complete business applications. One prompt = one a
 
 Make your agents work automatically:
 
-* [**Automation Getting Started →**](../../features/ai-features/automation-getting-started.md) - Put agents on autopilot
+* [**Automation Getting Started →**](../automation/README.md) - Put agents on autopilot
 * [**Integration Guide →**](../automation/integrations.md) - Connect to 100+ services
 
 #### **Build Agent-Centric Automations**
@@ -659,7 +659,7 @@ Create automation workflows with your AI agents at the center:
 Supercharge your agents with better knowledge:
 
 * [**Knowledge Management Guide →**](../workspaces/knowledge-management.md) - Organize information effectively
-* [**Project Views →**](../../features/project-views-mastery.md) - Structure data for AI understanding
+* [**Project Views →**](../workspaces/project-views.md) - Structure data for AI understanding
 
 ## 🎯 Advanced Agent Features
 

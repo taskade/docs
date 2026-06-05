@@ -602,7 +602,7 @@ Results:
 
 ### **Getting Help**
 
-* **Documentation**: [Complete AI Forms API Reference](../../api/forms/)
+* **Documentation**: [Taskade Developer API](../../apis-living-system-development/developer-home.md)
 * **Community**: [AI Forms Discussion Forum](https://community.taskade.com/ai-forms)
 * **Support**: Contact support for advanced AI configuration assistance
 * **Templates**: Browse pre-built AI form templates in your workspace

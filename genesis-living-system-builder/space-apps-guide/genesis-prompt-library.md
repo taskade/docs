@@ -454,4 +454,4 @@ Copy these complete prompts for instant apps:
 * **Include Branding:** Add your colors, logo, and company voice
 * **Test First:** Start simple, then add complexity based on results
 
-**Need help customizing these prompts?** Visit our [Genesis Getting Started Guide](../../features/ai-features/genesis-getting-started.md) for detailed instructions!
+**Need help customizing these prompts?** Visit our [Genesis Getting Started Guide](../genesis/getting-started.md) for detailed instructions!

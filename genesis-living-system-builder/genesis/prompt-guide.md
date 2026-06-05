@@ -143,7 +143,7 @@ Genesis supports 100+ integrations. Mention your tools and Genesis creates the a
 | **Bold & energetic** | "Bold orange and black colors. Strong typography and high-contrast buttons that motivate action." |
 | **Dark & premium** | "Dark theme with neon accents, like a high-tech dashboard. Charcoal backgrounds with electric blue highlights." |
 
-> **Deep dive:** [Guide to App Styles](../space-apps-guide/app-styles.md) covers minimalist, glassmorphism, neumorphism, material design, and more.
+> **Deep dive:** [Guide to App Styles](../space-apps-guide/advanced-features.md) covers minimalist, glassmorphism, neumorphism, material design, and more.
 
 ---
 
@@ -245,6 +245,6 @@ Use this cheat sheet when building:
 | Guide | What You'll Learn |
 |---|---|
 | [App Starter Prompts](../space-apps-guide/genesis-prompt-library.md) | Copy-ready prompts for common app types |
-| [Guide to App Styles](../space-apps-guide/app-styles.md) | Visual style families with practical prompts |
+| [Guide to App Styles](../space-apps-guide/advanced-features.md) | Visual style families with practical prompts |
 | [Adding Genesis Context](./adding-context.md) | Upload reference files for richer apps |
-| [Prompt Templates Library](./templates.md) | Browse the full prompt template collection |
+| [Prompt Templates Library](./examples-and-templates.md) | Browse the full prompt template collection |

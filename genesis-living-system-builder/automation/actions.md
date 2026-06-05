@@ -1331,5 +1331,5 @@ Automations now handle a wide range of file types:
 
 ***
 
-→ **Next:** [**Browse Triggers Reference**](../../automation/triggers.md)\
+→ **Next:** [**Browse Triggers Reference**](./advanced-actions.md)\
 → **See Also:** [**Automation Recipes**](recipes.md)

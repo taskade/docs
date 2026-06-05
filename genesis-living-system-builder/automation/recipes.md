@@ -217,35 +217,44 @@ Schedule and automate social media posts using due dates and custom fields. Perf
 
 **Setup Instructions:**
 
-\{% stepper %\} \{% step %\}
+{% stepper %}
+
+{% step %}
 
 ### Create Content Calendar Project
 
-Set up a Taskade project using Table view to organize your social media content \{% endstep %\}
+Set up a Taskade project using Table view to organize your social media content
+{% endstep %}
 
-\{% step %\}
+{% step %}
 
 ### Add Custom Fields
 
-Create fields for Status (dropdown: draft, scheduled, posted), Platform, and Posted\_At (date) \{% endstep %\}
+Create fields for Status (dropdown: draft, scheduled, posted), Platform, and Posted_At (date)
+{% endstep %}
 
-\{% step %\}
+{% step %}
 
 ### Set Up Automation Trigger
 
-Create a "Task Due" trigger that fires when content is scheduled to post \{% endstep %\}
+Create a "Task Due" trigger that fires when content is scheduled to post
+{% endstep %}
 
-\{% step %\}
+{% step %}
 
 ### Configure Social Media Actions
 
-Add conditional actions for each platform (Twitter, LinkedIn, Facebook) based on custom field values \{% endstep %\}
+Add conditional actions for each platform (Twitter, LinkedIn, Facebook) based on custom field values
+{% endstep %}
 
-\{% step %\}
+{% step %}
 
 ### Add Status Updates
 
-Include actions to update the task status and posting timestamp after successful publication \{% endstep %\} \{% endstepper %\}
+Include actions to update the task status and posting timestamp after successful publication
+{% endstep %}
+
+{% endstepper %}
 
 **Platform-Specific Configuration:**
 
@@ -258,7 +267,9 @@ Include actions to update the task status and posting timestamp after successful
 
 **Advanced Features:**
 
-\{% hint style="info" %\} **Multi-Platform Posting**: Set up conditional logic to post the same content across multiple platforms simultaneously. \{% endhint %\}
+{% hint style="info" %}
+**Multi-Platform Posting**: Set up conditional logic to post the same content across multiple platforms simultaneously.
+{% endhint %}
 
 **Content Personalization:**
 

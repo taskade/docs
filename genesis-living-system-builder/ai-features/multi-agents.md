@@ -183,3 +183,4 @@ Multi-agent chats support both AI agents and human team members in the same conv
 | [Agent Knowledge & Memory](./agent-knowledge.md) | Train agents with domain knowledge |
 | [Tools for AI Agents](./agent-tools.md) | Add capabilities to each agent |
 | [Automations](../automation/README.md) | Connect agents to automated workflows |
+| [Autonomous Agents (API)](../../apis-living-system-development/autonomous-agents.md) | Orchestrate multi-agent systems programmatically |

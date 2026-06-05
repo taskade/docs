@@ -920,5 +920,5 @@ Automate user lifecycle management with SCIM 2.0 support:
 
 * [Collaboration](collaboration.md) - Team communication and coordination
 * [AI Agents](../ai-features/ai-agents-getting-started.md) - Workspace-wide AI assistance
-* [Project Views](../../features/project-views-mastery.md) - Organizing and visualizing work
+* [Project Views](./project-views.md) - Organizing and visualizing work
 * [Mobile Optimization](mobile-optimization.md) - Mobile workspace management

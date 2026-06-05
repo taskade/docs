@@ -218,4 +218,4 @@ But you don't need to understand the technical details—the magic happens autom
 
 _What questions do you have about workspaces? This living foundation concept can seem magical at first, but once you start using it, you'll wonder how you ever worked without it!_
 
-[← Back to Tutorial Overview](../../index.md) | [Next: Projects →](02_projects.md)
+[← Back to Tutorial Overview](README.md) | [Next: Projects →](02_projects.md)

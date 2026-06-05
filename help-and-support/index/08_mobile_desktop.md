@@ -493,4 +493,4 @@ This concludes our comprehensive tutorial! You've transformed from a productivit
 
 _Where will your living workspace take you next? The possibilities are endless—start building, stay curious, and keep your workspace alive and evolving!_
 
-[← Back to Chapter 7: API](07_api.md) | [← Back to Tutorial Overview](../../index.md)
+[← Back to Chapter 7: API](07_api.md) | [← Back to Tutorial Overview](README.md)

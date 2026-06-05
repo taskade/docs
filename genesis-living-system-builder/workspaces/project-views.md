@@ -58,4 +58,6 @@ The REST and GraphQL APIs expose **data only**; view choice is a client-side con
 
 **[API Documentation →](https://www.taskade.com/api/documentation/)**
 
+**[REST API v1 Guide →](../../apis-living-system-development/comprehensive-api-guide/README.md)**
+
 ---

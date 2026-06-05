@@ -130,6 +130,6 @@ Copy these prompts directly — swap in your specific details.
 | Guide | What You'll Learn |
 |---|---|
 | [Adding Genesis Context](../genesis/adding-context.md) | Upload brand assets and design references |
-| [Guide to App Styles](../space-apps-guide/app-styles.md) | Visual style families to pair with your images |
+| [Guide to App Styles](../space-apps-guide/advanced-features.md) | Visual style families to pair with your images |
 | [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md) | Deploy your app with custom images |
 | [Media AI Chat](./media-ai-chat.md) | Chat with media files and images using AI |

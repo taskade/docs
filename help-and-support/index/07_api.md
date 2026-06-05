@@ -8,6 +8,10 @@ nav_order: 7
 
 Brilliant! You've connected your tools and built integrated workflows. Now let's **unlock unlimited possibilities** with Taskade's API—giving you programmatic access to build custom applications, advanced integrations, and automated systems that extend Taskade infinitely.
 
+{% hint style="info" %}
+For the full developer reference—authentication, endpoints, SDKs, and more—see the [Developer Home](../../apis-living-system-development/developer-home.md).
+{% endhint %}
+
 ## What Problem Does the API Solve?
 
 **Pre-built integrations have limitations:**
@@ -241,6 +245,8 @@ await api.put(`/tasks/${taskId}`, {
 ## Advanced API Techniques
 
 ### Webhooks for Real-Time Integration
+
+For full setup, event types, and signature verification, see the [Webhooks reference](../../apis-living-system-development/webhooks.md).
 
 **Get instant notifications of changes:**
 
