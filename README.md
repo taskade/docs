@@ -1,8 +1,5 @@
 ---
-description: >-
-  The productivity platform with living DNA. Your workspace becomes a digital
-  organism where every project, agent, automation, and piece of knowledge
-  connects to form the genetic code of everything you build.
+description: Build apps, deploy AI agents, and automate workflows on Taskade — the AI-native platform with living DNA where projects, agents, and automations connect as one.
 cover: .gitbook/assets/ss-api3.png
 coverY: 0
 ---
