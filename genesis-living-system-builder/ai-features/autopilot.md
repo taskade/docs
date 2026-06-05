@@ -166,6 +166,6 @@ After Autopilot generates your initial workspace, expand it with these tools:
 
 | Guide | What You'll Learn |
 |---|---|
-| [How Genesis Works](https://help.taskade.com/en/collections/14476419-taskade-genesis) | Build deployable apps from your workspace |
+| [How Genesis Works](https://www.taskade.com/learn/genesis) | Build deployable apps from your workspace |
 | [Workflow Generator](../automation/workflow-generator.md) | Build automations with natural language |
 | [Taskade for Teams](../workspaces/teams.md) | Organize teams within your workspace |

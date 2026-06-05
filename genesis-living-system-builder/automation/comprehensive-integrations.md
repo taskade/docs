@@ -1,6 +1,6 @@
 # Comprehensive Integrations
 
-This document provides a complete reference of all available integrations, triggers, and actions in Taskade's automation system. For getting started guides, visit the [Taskade Help Center](https://help.taskade.com/en/articles/8958467-getting-started-with-automation) and [AI Automation Collection](https://help.taskade.com/en/collections/8400803-ai-automation).
+This document provides a complete reference of all available integrations, triggers, and actions in Taskade's automation system. For getting started guides, visit the [Taskade Help Center](https://www.taskade.com/learn/automation) and [AI Automation Collection](https://www.taskade.com/learn/automation).
 
 ## Core Taskade Tools
 
@@ -496,23 +496,23 @@ This document provides a complete reference of all available integrations, trigg
 
 ### App Triggers
 
-* **Forms**: [AI Forms Documentation](https://help.taskade.com/en/articles/9711589-ai-forms-automation-trigger)
-* **Webhooks**: [Webhooks Documentation](https://help.taskade.com/en/articles/9494976-webhooks-automation-trigger)
+* **Forms**: [AI Forms Documentation](https://www.taskade.com/learn/automation/forms-trigger)
+* **Webhooks**: [Webhooks Documentation](https://www.taskade.com/learn/automation/webhook-trigger)
 * **Agent Triggers**: Built-in agent conversation triggers
 
 ### Control Actions
 
 * **Delay**: Wait/Sleep actions for timing control
-* **Branch**: [Conditional logic documentation](https://help.taskade.com/en/articles/9805047-branch-automation-action)
-* **Loop**: [Iteration control documentation](https://help.taskade.com/en/articles/10351362-loop-automation-action)
-* **Filter Data**: [Data filtering documentation](https://help.taskade.com/en/articles/9615031-filter-data-automation-action)
+* **Branch**: [Conditional logic documentation](https://www.taskade.com/learn/automation/branch-action)
+* **Loop**: [Iteration control documentation](https://www.taskade.com/learn/automation/loop-action)
+* **Filter Data**: [Data filtering documentation](https://www.taskade.com/learn/automation/filter-data)
 
 ## Getting Started
 
 To learn more about setting up and using these integrations:
 
-1. [**Getting Started with Automation**](https://help.taskade.com/en/articles/8958467-getting-started-with-automation) - Complete beginner's guide
-2. [**AI Automation Collection**](https://help.taskade.com/en/collections/8400803-ai-automation) - All automation resources
+1. [**Getting Started with Automation**](https://www.taskade.com/learn/automation) - Complete beginner's guide
+2. [**AI Automation Collection**](https://www.taskade.com/learn/automation) - All automation resources
 3. [**Community Forum**](https://www.taskade.com/community) - Get help from the community
 4. [**Developer API**](../../apis-living-system-development/developers/api.md) - Build custom integrations
 

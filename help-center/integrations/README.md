@@ -5,8 +5,8 @@ Connect Taskade with the apps you already use every day! Our integrations help y
 
 ## Available Integrations
 
-- [Getting Started with Automation](https://help.taskade.com/en/articles/8958467-getting-started-with-automation) - Complete automation guide
-- [AI Automation Collection](https://help.taskade.com/en/collections/8400803-ai-automation) - All automation resources
+- [Getting Started with Automation](https://www.taskade.com/learn/automation) - Complete automation guide
+- [AI Automation Collection](https://www.taskade.com/learn/automation) - All automation resources
 - [Complete Integration Reference](../../automation/integrations.md) - All available triggers and actions
 - **Calendar Sync** - Sync with Google Calendar, Outlook, and more
 - # **API & Webhooks** - Build custom integrations

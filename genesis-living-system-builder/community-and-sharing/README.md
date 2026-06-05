@@ -605,9 +605,9 @@ const communityData = await response.json();
 
 ### Community Documentation
 
-* [**Community Guidelines**](https://help.taskade.com/en/articles/12123045-genesis-community-apps) - Rules and best practices
-* [**Publishing Checklist**](https://help.taskade.com/en/articles/12165353-publish-and-clone-your-apps) - Pre-publication review steps
-* [**Community Success Tips**](https://help.taskade.com/en/articles/10577446-contribute-share-and-grow-with-taskade) - Growing your presence
+* [**Community Guidelines**](https://www.taskade.com/learn/genesis/community-gallery) - Rules and best practices
+* [**Publishing Checklist**](https://www.taskade.com/learn/genesis/publishing) - Pre-publication review steps
+* [**Community Success Tips**](https://www.taskade.com/learn/genesis/community-kits) - Growing your presence
 
 ### Getting Help
 

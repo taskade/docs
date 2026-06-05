@@ -13,9 +13,9 @@ Taskade provides a complete platform for building intelligent applications:
 | Capability              | Description                                            | Learn More                                                                                                 |
 | ----------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | **AI App Builder**      | Generate full-stack applications from natural language | [Taskade Genesis →](../../genesis-living-system-builder/genesis/)                                          |
-| **AI Agents Platform**  | Custom assistants with knowledge retrieval             | [AI Agents Guide →](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar) |
-| **Workflow Automation** | Event-driven processing with 100+ integrations         | [Automations →](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar)             |
-| **Projects & Data**     | Structured data with real-time sync and custom fields  | [Projects Guide →](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar)     |
+| **AI Agents Platform**  | Custom assistants with knowledge retrieval             | [AI Agents Guide →](https://www.taskade.com/learn/agents/custom-agents) |
+| **Workflow Automation** | Event-driven processing with 100+ integrations         | [Automations →](https://www.taskade.com/learn/automation/automations-execution)             |
+| **Projects & Data**     | Structured data with real-time sync and custom fields  | [Projects Guide →](https://www.taskade.com/learn/projects/databases)     |
 
 The API is built around real-time data synchronization and a unified intelligence layer that powers everything from simple CRUD operations to complex AI-driven workflows.
 
@@ -101,7 +101,7 @@ Official libraries and tools:
 
 Build complete web applications from natural language prompts. Taskade Genesis handles code generation and automatic deployment.
 
-[**Create Your First App →**](https://help.taskade.com/en/articles/11957643-create-your-first-app)
+[**Create Your First App →**](https://www.taskade.com/learn/genesis/first-app)
 
 ## 📚 Resources
 

@@ -31,11 +31,11 @@ Software should be alive. And now, it is.
 
 | Capability               | Description                                                    | Learn More                                                                                                  |
 | ------------------------ | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **AI App Builder**       | Generate full-stack applications from natural language prompts | [Create Your First App →](https://help.taskade.com/en/articles/11957643-create-your-first-app)              |
-| **Website Generator**    | Create responsive websites with built-in AI intelligence       | [Workspace DNA →](https://help.taskade.com/en/articles/12578949-how-genesis-works-workspace-dna)            |
-| **Workflow Automation**  | Connect 100+ integrations with AI-powered decision making      | [Automations Guide →](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar)        |
-| **AI Agents Platform**   | Deploy custom AI assistants with persistent memory             | [Custom AI Agents →](https://help.taskade.com/en/articles/8958457-custom-ai-agents-the-intelligence-pillar) |
-| **Projects & Databases** | Structured data with real-time sync and custom fields          | [Memory Pillar →](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar)       |
+| **AI App Builder**       | Generate full-stack applications from natural language prompts | [Create Your First App →](https://www.taskade.com/learn/genesis/first-app)              |
+| **Website Generator**    | Create responsive websites with built-in AI intelligence       | [Workspace DNA →](https://www.taskade.com/learn/genesis/workspace-dna)            |
+| **Workflow Automation**  | Connect 100+ integrations with AI-powered decision making      | [Automations Guide →](https://www.taskade.com/learn/automation/automations-execution)        |
+| **AI Agents Platform**   | Deploy custom AI assistants with persistent memory             | [Custom AI Agents →](https://www.taskade.com/learn/agents/custom-agents) |
+| **Projects & Databases** | Structured data with real-time sync and custom fields          | [Memory Pillar →](https://www.taskade.com/learn/projects/databases)       |
 
 [**Start Building →**](https://www.taskade.com) | [**Browse Community Apps →**](https://www.taskade.com/community)
 

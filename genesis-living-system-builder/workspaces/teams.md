@@ -152,11 +152,11 @@ Taskade uses a **5-role, 7-tier RBAC** permission system:
 | Feature | How It Helps Teams | Learn More |
 |---|---|---|
 | **Taskade Autopilot** | Generate entire team workspaces from a single prompt | [Taskade Autopilot](../ai-features/autopilot.md) |
-| **AI Agents** | Create specialist agents for each department | [Custom AI Agents](https://help.taskade.com/en/collections/14476419-taskade-genesis) |
-| **Multi-Agent Teams** | Teams of agents that collaborate (Business+) | [Multi-Agents](https://help.taskade.com/en/collections/14476419-taskade-genesis) |
+| **AI Agents** | Create specialist agents for each department | [Custom AI Agents](https://www.taskade.com/learn/genesis) |
+| **Multi-Agent Teams** | Teams of agents that collaborate (Business+) | [Multi-Agents](https://www.taskade.com/learn/genesis) |
 | **Automation Workflows** | Automate cross-department processes | [Automation Triggers](../automation/README.md) |
-| **Genesis Apps** | Build internal tools and dashboards for teams | [Taskade Genesis](https://help.taskade.com/en/collections/14476419-taskade-genesis) |
-| **Shared Agent Chats** | AI + human conversations together | [Custom AI Agents](https://help.taskade.com/en/collections/14476419-taskade-genesis) |
+| **Genesis Apps** | Build internal tools and dashboards for teams | [Taskade Genesis](https://www.taskade.com/learn/genesis) |
+| **Shared Agent Chats** | AI + human conversations together | [Custom AI Agents](https://www.taskade.com/learn/genesis) |
 | **Version History** | Track all changes across team projects | [Version History](../genesis/version-history.md) |
 | **Real-time Collaboration** | Multiple users editing simultaneously (OT-based) | Built-in |
 

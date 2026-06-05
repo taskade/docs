@@ -145,4 +145,4 @@ Every media interaction enriches your workspace:
 | [Adding Genesis Context](../genesis/adding-context.md) | Use media files as context for app building |
 | [Agent Knowledge & Memory](./agent-knowledge.md) | Train agents on your media files |
 | [Image Generation](./image-generation.md) | Generate new images to add to your media library |
-| [Taskade AI Credits](https://help.taskade.com/en/articles/8958455-taskade-ai-credits) | Understand credit usage for media AI interactions |
+| [Taskade AI Credits](https://www.taskade.com/learn/agents/ai-usage) | Understand credit usage for media AI interactions |

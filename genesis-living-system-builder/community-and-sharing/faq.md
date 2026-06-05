@@ -244,7 +244,7 @@ Yes! Most plans include a **free trial period** where you can test advanced feat
 
 **Self-service resources:**
 
-* **Help documentation:** [help.taskade.com](https://help.taskade.com/en/collections/14476419-taskade-genesis)
+* **Help documentation:** [help.taskade.com](https://www.taskade.com/learn/genesis)
 * **Video tutorials:** [youtube.com/taskade](https://youtube.com/taskade)
 * **Community forums:** Connect with other users
 * **This documentation:** Comprehensive guides and examples
@@ -372,7 +372,7 @@ See our [Best Practices guide](best-practices.md) for detailed examples.
 
 **Still have questions?**
 
-* **Browse our help center:** [help.taskade.com](https://help.taskade.com/en/collections/14476419-taskade-genesis)
+* **Browse our help center:** [help.taskade.com](https://www.taskade.com/learn/genesis)
 * **Email us:** [support@taskade.com](mailto:support@taskade.com)
 * **Join the community:** [taskade.com/community](https://taskade.com/community)
 

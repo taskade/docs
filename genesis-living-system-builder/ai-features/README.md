@@ -39,7 +39,7 @@ Most “smartness” comes from the knowledge you give agents. That includes pro
 Start here:
 
 * [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md)
-* [Agent Knowledge & Memory](https://help.taskade.com/en/articles/9495190-agent-knowledge-memory)
+* [Agent Knowledge & Memory](https://www.taskade.com/learn/agents/knowledge)
 
 #### Tools (what agents can do)
 

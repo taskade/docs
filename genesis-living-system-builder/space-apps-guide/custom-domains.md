@@ -564,10 +564,10 @@ _"Custom domain client assessments at assessment.myconsulting.com helped us clos
 
 ### Support Resources
 
-* [**Custom Domain Setup Guide**](https://help.taskade.com/en/articles/10443706-cname-custom-domain) - Step-by-step instructions
-* [**DNS Configuration Examples**](https://help.taskade.com/en/articles/10443706-cname-custom-domain) - Registrar-specific guides
-* [**Branding Best Practices**](https://help.taskade.com/en/articles/12165353-publish-and-clone-your-apps) - Professional presentation tips
-* [**Troubleshooting Guide**](https://help.taskade.com/en/articles/10443706-cname-custom-domain) - Common issues and solutions
+* [**Custom Domain Setup Guide**](https://www.taskade.com/learn/genesis/custom-domains) - Step-by-step instructions
+* [**DNS Configuration Examples**](https://www.taskade.com/learn/genesis/custom-domains) - Registrar-specific guides
+* [**Branding Best Practices**](https://www.taskade.com/learn/genesis/publishing) - Professional presentation tips
+* [**Troubleshooting Guide**](https://www.taskade.com/learn/genesis/custom-domains) - Common issues and solutions
 
 ***
 
