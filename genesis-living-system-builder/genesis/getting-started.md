@@ -358,7 +358,7 @@ Congratulations! You've built your first Genesis app. Here's how to take it furt
 
 ### **Get Help**
 
-* **Help Center:** [help.taskade.com](https://help.taskade.com/en/collections/14476419-taskade-genesis)
+* **Help Center:** [help.taskade.com](https://www.taskade.com/learn/genesis)
 * **Video Tutorials:** [youtube.com/taskade](https://youtube.com/taskade)
 * **Community:** [taskade.com/community](https://taskade.com/community)
 * **Email Support:** [support@taskade.com](mailto:support@taskade.com)

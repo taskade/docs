@@ -12,8 +12,8 @@ These endpoints allow you to create, manage, and interact with the AI Agents tha
 
 ### Learn More
 
-* [**Custom AI Agents ›**](https://help.taskade.com/en/articles/8958457-custom-ai-agents)
-* [**Tools for AI Agents ›**](https://help.taskade.com/en/articles/9314171-tools-for-ai-agents)
+* [**Custom AI Agents ›**](https://www.taskade.com/learn/agents/custom-agents)
+* [**Tools for AI Agents ›**](https://www.taskade.com/learn/agents/agent-tools)
 
 ## Summary of Endpoints
 

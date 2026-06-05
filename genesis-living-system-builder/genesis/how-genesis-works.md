@@ -53,7 +53,7 @@ A single prompt gives you:
 | **Version Control** | Full commit history with one-click restore to any previous version |
 | **Publishing** | Instant deployment with shareable links, custom domains, and community gallery |
 
-> **Genesis hint:** Your AI credits power app creation. Different models have different credit costs — see [Taskade AI Credits](https://help.taskade.com/en/articles/8958455-taskade-ai-credits) for details.
+> **Genesis hint:** Your AI credits power app creation. Different models have different credit costs — see [Taskade AI Credits](https://www.taskade.com/learn/agents/ai-usage) for details.
 
 ---
 

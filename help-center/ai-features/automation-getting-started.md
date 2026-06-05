@@ -177,7 +177,7 @@ Ready to automate your workflow?
 
 **Need more help?**
 - [Complete Integration Reference](../../automation/comprehensive-integrations.md) - All available triggers and actions
-- [AI Automation Collection](https://help.taskade.com/en/collections/8400803-ai-automation) - Advanced tutorials
+- [AI Automation Collection](https://www.taskade.com/learn/automation) - Advanced tutorials
 - [Community Forum](https://www.taskade.com/community) - Get help from other users
 
 ---

@@ -12,7 +12,7 @@ The image preview for your Taskade apps, when shared, has been updated to displa
 
 ### Space Icon -> Favicons
 
-App favicons are now based on your space icons. Choose an emoji or upload an image as your [space icon](https://help.taskade.com/en/articles/8958485-edit-a-workspace-app) and watch it show up as your app's favicon.
+App favicons are now based on your space icons. Choose an emoji or upload an image as your [space icon](https://www.taskade.com/learn/genesis/visual-editor) and watch it show up as your app's favicon.
 
 <figure><img src="../../../.gitbook/assets/CleanShot 2026-02-04 at 16.15.06@2x (1).png" alt=""><figcaption></figcaption></figure>
 

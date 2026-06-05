@@ -15,7 +15,7 @@ These endpoints allow you to create, read, update, and delete the Projects that 
 
 ### Learn More
 
-* [**Agent Knowledge & Memory ›**](https://help.taskade.com/en/articles/9495190-agent-knowledge-memory)
+* [**Agent Knowledge & Memory ›**](https://www.taskade.com/learn/agents/knowledge)
 
 ## Summary of Endpoints
 

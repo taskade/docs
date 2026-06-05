@@ -24,7 +24,7 @@ Three things power everything:
 * **Intelligence** = AI agents that reason over your data
 * **Execution** = automations that run workflows 24/7
 
-Learn more: [Workspace DNA](https://help.taskade.com/en/articles/12578949-how-genesis-works-workspace-dna)
+Learn more: [Workspace DNA](https://www.taskade.com/learn/genesis/workspace-dna)
 
 ***
 

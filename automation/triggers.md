@@ -2,7 +2,7 @@
 
 Triggers are the "if" part of automation workflows—they define the events that initiate automated actions. Taskade provides a comprehensive set of triggers that monitor for task changes, project events, external integrations, and scheduled conditions.
 
-**[Automations Guide →](https://help.taskade.com/en/articles/8958467-automations-the-execution-pillar)**
+**[Automations Guide →](https://www.taskade.com/learn/automation/automations-execution)**
 
 {% hint style="success" %}
 Triggers act as the intelligent sensors of your automation system, detecting events across Taskade and external services to initiate workflows.

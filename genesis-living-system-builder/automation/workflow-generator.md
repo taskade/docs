@@ -20,7 +20,7 @@
 
 The Workflow Generator builds complex automation flows from **natural language**. Describe what you want in plain English, and the AI creates complete workflows with triggers, conditions, branches, loops, and integrations across 100+ services — no drag-and-drop, no manual configuration.
 
-> **Genesis connection:** Genesis apps automatically generate workflow automations as part of the Execution pillar. The Workflow Generator lets you create additional automations or modify existing ones. Each automation adds **+5 points** to your [Intelligence Score](https://help.taskade.com/en/collections/14476419-taskade-genesis).
+> **Genesis connection:** Genesis apps automatically generate workflow automations as part of the Execution pillar. The Workflow Generator lets you create additional automations or modify existing ones. Each automation adds **+5 points** to your [Intelligence Score](https://www.taskade.com/learn/genesis).
 
 ---
 

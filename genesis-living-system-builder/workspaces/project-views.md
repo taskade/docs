@@ -2,7 +2,7 @@
 
 Taskade stores information in a flexible tree-structured database. The **same data** can be visualized in multiple ways to suit different workflows. These presentation modes are called **Project Views**.
 
-**[Projects & Databases Guide →](https://help.taskade.com/en/articles/12166149-projects-databases-the-memory-pillar)**
+**[Projects & Databases Guide →](https://www.taskade.com/learn/projects/databases)**
 
 ## Views Reference
 
