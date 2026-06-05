@@ -159,14 +159,6 @@ Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace
 | **Event Registration** | `"Create an event registration form with attendee details, meal preferences, and payment integration via Stripe"`               | [Try it →](https://event-registration-68n46o73.taskade.app/) |
 | **Product Order Form** | `"Build a custom product order form for my handmade jewelry business with image gallery, size options, and quantity selection"` | [Try it →](https://product-order-form-xpi6oe6j.taskade.app/) |
 
-### **Business Dashboards**
-
-| Genesis App              | Prompt Used                                                                                                                              | Preview Link                                              |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| **Sales Dashboard**      | `"Create a sales performance dashboard showing monthly revenue, top products, team performance, and goal tracking with charts and KPIs"` | [Try it →](https://sales-dashboard-k8m2n4p7.taskade.app/) |
-| **Project Tracker**      | `"Build a project management dashboard with task progress, team workload, deadline alerts, and client communication tools"`              | [Try it →](https://project-tracker-q9r5t3w8.taskade.app/) |
-| **Customer Support Hub** | `"Design a support ticket dashboard showing open issues, response times, customer satisfaction scores, and team performance metrics"`    | [Try it →](https://support-hub-x7z1v6b9.taskade.app/)     |
-
 💡 **Pro Tip:** These are real, working apps. Click the preview links to see exactly what Genesis can build for your business!
 
 ***
