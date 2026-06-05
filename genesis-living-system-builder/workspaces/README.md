@@ -1,6 +1,6 @@
 # Workspaces: Living DNA Control
 
-Workspaces are the enhanced foundational containers that organize your teams, projects, and resources in Taskade. Each workspace creates an isolated collaborative environment with dedicated members, customizable settings, granular permission controls, and advanced enterprise capabilities.
+Workspaces are the enhanced foundational containers that organize your teams, projects, and resources in Taskade. Each workspace creates an isolated collaborative environment with dedicated members, customizable settings, granular permission controls, and advanced enterprise capabilities. To see how workspaces fit alongside the full set of [Taskade features](https://www.taskade.com/features), explore the complete product overview.
 
 ## 🏢 What is a Workspace?
 

@@ -79,6 +79,8 @@ Calendly, Slack, Typeform, Gmail, Google Sheets, Google Forms, Google Drive, Web
 
 ### 36 Integration Pieces
 
+Connect your workflows to popular tools across the [Taskade integrations](https://www.taskade.com/integrations) directory.
+
 | Category         | Services                                                             |
 | ---------------- | -------------------------------------------------------------------- |
 | Communication    | Slack, Discord, Microsoft Teams, WhatsApp Business, Telegram Bot     |

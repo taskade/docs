@@ -41,7 +41,7 @@ Learn more: [Workspace DNA](https://help.taskade.com/en/articles/12578949-how-ge
 
 ## Build Your First App with Genesis (5 minutes)
 
-**This is where the magic happens.** Instead of managing tasks manually, let's build an app that solves a real business problem.
+**This is where the magic happens.** Instead of managing tasks manually, let's build an app that solves a real business problem. You can [start building your first app with Taskade Genesis](https://www.taskade.com/create) directly from your workspace.
 
 {% stepper %}
 {% step %}

@@ -23,7 +23,7 @@ Canonical foundation: [Workspace DNA](../../genesis-living-system-builder/genesi
 
 #### AI agents
 
-Agents are persistent assistants. You can scope them to a workspace, project, or use case.
+Agents are persistent assistants. You can scope them to a workspace, project, or use case. Learn more about [Taskade AI Agents](https://www.taskade.com/agents).
 
 Start here: [AI Agents Getting Started](ai-agents-getting-started.md).
 

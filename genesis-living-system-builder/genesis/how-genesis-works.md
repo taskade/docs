@@ -31,7 +31,7 @@ This guide explains the core architecture behind **Taskade Genesis** — the AI 
 - **EVE:** How Taskade's unified AI system connects everything together.
 - **Intelligence Score:** How your workspace earns a 0–100 score across 5 maturity tiers.
 
-> **New to Genesis?** Start with [Create Your First App](./getting-started.md) for a hands-on walkthrough.
+> **New to Genesis?** Start with [Create Your First App](./getting-started.md) for a hands-on walkthrough, or jump straight in and build your first app with [Taskade Genesis](https://www.taskade.com/create).
 
 ---
 

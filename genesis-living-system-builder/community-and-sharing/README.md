@@ -132,7 +132,7 @@ When you fork a Genesis app, you get:
 
 ### What Happens When You Share?
 
-When you share your Genesis app with the community, it goes into a public library where other business owners can find it, try it out, and copy it for their own use. Think of it like sharing a great recipe—you help others while showing off your skills!
+When you share your Genesis app with the community, it goes into a public library where other business owners can find it, try it out, and copy it for their own use. You can explore the [Taskade community](https://www.taskade.com/community) to see the shared apps, agents, and templates other builders have published. Think of it like sharing a great recipe—you help others while showing off your skills!
 
 ### When to Share with Community
 
