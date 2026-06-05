@@ -88,7 +88,7 @@ Create professional applications with:
 ### Need Help Getting Started?
 
 - **[Community Forum](https://taskade.com/community)** - Get help from other users
-- **[Official Help Center](https://help.taskade.com)** - Step-by-step guides and tutorials
+- **[Official Help Center](https://www.taskade.com/learn)** - Step-by-step guides and tutorials
 - **[Technical Documentation](../../api/README.md)** - For advanced users and developers
 
 ### Templates & Ready-to-Use Examples

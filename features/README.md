@@ -499,7 +499,7 @@ This is what we mean by **"living DNA"** — your workspace isn't just a collect
 - **[Browse AI Kits →](https://taskade.com/kits)**
 
 ### **Need Help?**
-- **[Help Center →](https://help.taskade.com)** - Comprehensive guides and tutorials
+- **[Help Center →](https://www.taskade.com/learn)** - Comprehensive guides and tutorials
 - **[Community Forum →](https://www.taskade.com/feedback)** - Connect with other users
 - **[Video Tutorials →](https://youtube.com/taskade)** - Learn with step-by-step guides
 

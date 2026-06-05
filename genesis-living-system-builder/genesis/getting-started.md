@@ -119,7 +119,7 @@ Now the magic happens - Genesis turns your description into a working app.
 
 ### **Access Genesis**
 
-1. **Log into Taskade** at [taskade.com](https://taskade.com)
+1. **Log into Taskade** at [taskade.com/create](https://www.taskade.com/create)
 2. **Navigate to your workspace** (create one if you don't have it)
 3. **Look for the AI prompt box** at the top of your workspace
 4. **Click "Create with AI"** or the Genesis icon
@@ -358,7 +358,7 @@ Congratulations! You've built your first Genesis app. Here's how to take it furt
 
 ### **Get Help**
 
-* **Help Center:** [help.taskade.com](https://www.taskade.com/learn/genesis)
+* **Help Center:** [taskade.com/learn/genesis](https://www.taskade.com/learn/genesis)
 * **Video Tutorials:** [youtube.com/taskade](https://youtube.com/taskade)
 * **Community:** [taskade.com/community](https://taskade.com/community)
 * **Email Support:** [support@taskade.com](mailto:support@taskade.com)

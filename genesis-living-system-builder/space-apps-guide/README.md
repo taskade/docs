@@ -469,7 +469,7 @@ Ensure your apps are accessible to all users:
 ### Community & Support
 
 * [**Community Forum**](https://www.taskade.com/feedback) - Connect with other developers
-* [**Help Center**](https://help.taskade.com) - Comprehensive guides and tutorials
+* [**Help Center**](https://www.taskade.com/learn) - Comprehensive guides and tutorials
 * **Email Support**: [support@taskade.com](mailto:support@taskade.com)
 * **Live Chat**: Available in your Taskade dashboard
 

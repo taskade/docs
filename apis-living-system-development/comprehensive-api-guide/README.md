@@ -866,7 +866,7 @@ print(f"Found {len(workspaces['items'])} workspaces")
 ### Getting Help
 
 * **📧 Support**: support@taskade.com
-* **📚 Help Center**: [help.taskade.com](https://help.taskade.com)
+* **📚 Help Center**: [taskade.com/learn](https://www.taskade.com/learn)
 
 {% hint style="info" %}
 **Need more help?** Contact our support team for assistance with API integration or enterprise API requirements.

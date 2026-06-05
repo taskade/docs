@@ -535,7 +535,7 @@ Refresh the page and see if errors persist.
 
 **Additional help resources:**
 
-* **📚 Help Center**: Comprehensive articles at [help.taskade.com](https://help.taskade.com)
+* **📚 Help Center**: Comprehensive articles at [taskade.com/learn](https://www.taskade.com/learn)
 * **🎥 Video Tutorials**: Step-by-step video guides for common tasks
 * **💬 Community Forum**: Connect with other users and share solutions
 * **📖 Documentation**: Complete feature documentation and guides
