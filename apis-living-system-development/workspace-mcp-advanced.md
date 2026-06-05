@@ -43,7 +43,7 @@ graph LR
     subgraph "Outbound (Taskade agents as MCP client)"
         direction TB
         AGENT[Taskade Agent]
-        HOSTED[Hosted MCP v2<br/>Connectors]
+        HOSTED[MCP Connectors]
         EXTERNAL[Third-party<br/>Services]
         AGENT --> HOSTED
         HOSTED --> EXTERNAL
@@ -147,7 +147,7 @@ Avoid committing these config files to public repos with real tokens. Many teams
 | Feature | Free | Pro | Business | Max / Enterprise |
 | --- | --- | --- | --- | --- |
 | Inbound MCP (`@taskade/mcp-server`) | Limited | Limited | Full | Full |
-| Hosted MCP v2 (outbound) | — | — | ✓ | ✓ |
+| MCP Connectors (outbound) | — | — | ✓ | ✓ |
 | Taskade-as-MCP-server (external clients read workspace) | — | — | ✓ | ✓ |
 | Custom domain for MCP | — | — | — | ✓ |
 
@@ -187,7 +187,7 @@ For the full tool list, see the [Workspace MCP](workspace-mcp.md) reference.
 
 ## MCP Connectors
 
-Hosted MCP v2 lets your Taskade agents connect **outbound** to third-party services. You browse and enable connectors from the Integrations screen in your workspace — no code, no hosting.
+MCP Connectors let your Taskade agents connect **outbound** to third-party services. You browse and enable connectors from the Integrations screen in your workspace — no code, no hosting.
 
 <figure><img src="../.gitbook/assets/api-integrations-ecosystem.gif" alt="" width="563"><figcaption></figcaption></figure>
 

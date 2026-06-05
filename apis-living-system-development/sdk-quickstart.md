@@ -80,6 +80,7 @@ const http = new HttpClient({
 const taskade = new TaskadePublicApi(http);
 
 const { data } = await taskade.promptAgent({ spaceId, agentId, prompt: "Hi" });
+// data is the response body: { ok: true, summary: "..." }
 ```
 
 {% hint style="info" %}
