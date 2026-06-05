@@ -4,7 +4,7 @@ Transform your workspace with smart AI assistants that understand your business 
 
 ## What are AI Agents?
 
-AI Agents are specialized assistants designed to automate activities like research, data analysis, and content creation. Think of them as smart team members who:
+AI Agents are specialized assistants designed to automate activities like research, data analysis, and content creation. Learn more about [Taskade AI Agents](https://www.taskade.com/agents) and what they can do for your team. Think of them as smart team members who:
 
 * 🧠 **Learn your business** by reading your documents and projects
 * 🤖 **Answer questions** about your work and processes

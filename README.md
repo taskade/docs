@@ -17,7 +17,7 @@ coverY: 0
 
 **The AI-Native Platform for Building Intelligent Applications**
 
-Build complete business applications, websites, and tools using natural language. Taskade combines an **AI app builder**, **workflow automation engine**, **AI agents platform**, and **automatic deployment** into a unified workspace.
+Build complete business applications, websites, and tools using natural language. Taskade combines an **AI app builder** ([Taskade Genesis](https://www.taskade.com/create)), **workflow automation engine**, **AI agents platform**, and **automatic deployment** into a unified workspace.
 
 **Build Without Permission. Start with Genesis. Your workspace is the foundation.**
 

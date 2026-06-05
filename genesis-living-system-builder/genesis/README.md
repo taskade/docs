@@ -7,7 +7,7 @@
 **Imagine it. Run it live.**\
 **Powered by your workspace.**
 
-Genesis turns plain English into a live application.\
+[Taskade Genesis](https://www.taskade.com/create) turns plain English into a live application.\
 It builds on the same data, agents, and automations you already use.
 
 {% hint style="success" %}
