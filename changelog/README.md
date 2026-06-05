@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade changelog archive (2017-2025) — historical release notes, feature launches, and platform updates.
+---
+
 # Changelog (2017 - 2025)
 
 Welcome to Taskade's changelog! This chronicles our extraordinary journey from a simple task management tool to **Genesis** - the world's first AI-powered platform that turns a single prompt into a living, intelligent application.

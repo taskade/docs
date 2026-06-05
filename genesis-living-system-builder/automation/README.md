@@ -1,3 +1,8 @@
+---
+description: >-
+  Automate work 24/7 with Taskade's trigger-and-action engine — connect 100+ integrations and let AI agents run your workflows from start to finish.
+---
+
 # Automations Overview
 
 **Act. Execute. Evolve.** Taskade Automations are the living motion layer of Workspace DNA, transforming static workflows into intelligent, adaptive systems that act with precision and learn from every execution.
