@@ -97,7 +97,9 @@ This document provides a complete reference of all available integrations, trigg
 
 ## Communication & Collaboration
 
-### [Slack](https://www.taskade.com/integrations/slack)
+### Slack
+
+[View the Slack integration →](https://www.taskade.com/integrations/slack)
 
 **Package**: `@taskade/automade-piece-slack`
 
@@ -123,7 +125,9 @@ This document provides a complete reference of all available integrations, trigg
 | `new_mention`        | New Mention (Instant)  | `channel`  |
 | `new_reaction_added` | New Reaction (Instant) | `channel`  |
 
-### [Microsoft Teams](https://www.taskade.com/integrations/microsoft-teams)
+### Microsoft Teams
+
+[View the Microsoft Teams integration →](https://www.taskade.com/integrations/microsoft-teams)
 
 **Package**: `@taskade/automade-piece-microsoft-teams`
 
@@ -135,7 +139,9 @@ This document provides a complete reference of all available integrations, trigg
 | `sendChannelMessage` | Send Channel Message | `teamId`, `channelId`, `contentType`, `content` |
 | `sendChatMessage`    | Send Chat Message    | `chatId`, `contentType`, `content`              |
 
-### [Discord](https://www.taskade.com/integrations/discord)
+### Discord
+
+[View the Discord integration →](https://www.taskade.com/integrations/discord)
 
 **Package**: `@taskade/automade-piece-discord`
 
@@ -155,7 +161,9 @@ This document provides a complete reference of all available integrations, trigg
 | ------------- | ----------------------- | ---------- |
 | `new_message` | New Message (Scheduled) | `channel`  |
 
-### [WhatsApp Business](https://www.taskade.com/integrations/whatsapp)
+### WhatsApp Business
+
+[View the WhatsApp Business integration →](https://www.taskade.com/integrations/whatsapp)
 
 **Package**: `@taskade/automade-piece-whatsapp-business`
 
@@ -169,7 +177,9 @@ This document provides a complete reference of all available integrations, trigg
 
 ## Email & Communication
 
-### [Gmail](https://www.taskade.com/integrations/gmail)
+### Gmail
+
+[View the Gmail integration →](https://www.taskade.com/integrations/gmail)
 
 **Package**: `@taskade/automade-piece-gmail`
 
@@ -189,7 +199,9 @@ This document provides a complete reference of all available integrations, trigg
 
 ## Productivity & Data
 
-### [Google Sheets](https://www.taskade.com/integrations/google-sheets)
+### Google Sheets
+
+[View the Google Sheets integration →](https://www.taskade.com/integrations/google-sheets)
 
 **Package**: `@taskade/automade-piece-googlesheets`
 
@@ -211,7 +223,9 @@ This document provides a complete reference of all available integrations, trigg
 | --------------- | ------------------- | -------------------------- |
 | `new_row_found` | New Row (Scheduled) | `spreadsheetId`, `sheetId` |
 
-### [Google Docs](https://www.taskade.com/integrations/google-docs)
+### Google Docs
+
+[View the Google Docs integration →](https://www.taskade.com/integrations/google-docs)
 
 **Package**: `@taskade/automade-piece-google-docs`
 
@@ -224,7 +238,9 @@ This document provides a complete reference of all available integrations, trigg
 | `googledocs.findDocument`   | Find Document   | `name`                                                |
 | `googledocs.findDocuments`  | Find Documents  | `docsToReturn`, `noDocumentsFoundBehavior`, `ruleset` |
 
-### [Google Drive](https://www.taskade.com/integrations/google-drive)
+### Google Drive
+
+[View the Google Drive integration →](https://www.taskade.com/integrations/google-drive)
 
 **Package**: `@taskade/automade-piece-google-drive`
 
@@ -256,7 +272,9 @@ This document provides a complete reference of all available integrations, trigg
 | `new_file`     | New File (Scheduled)       | `parentFolderId`          |
 | `new_fileV2`   | New File (v2, Scheduled)   | `drive`, `parentFolderId` |
 
-### [Google Calendar](https://www.taskade.com/integrations/google-calendar)
+### Google Calendar
+
+[View the Google Calendar integration →](https://www.taskade.com/integrations/google-calendar)
 
 **Package**: `@taskade/automade-piece-google-calendar`
 
@@ -276,7 +294,9 @@ This document provides a complete reference of all available integrations, trigg
 
 ## CRM & Sales
 
-### [HubSpot](https://www.taskade.com/integrations/hubspot)
+### HubSpot
+
+[View the HubSpot integration →](https://www.taskade.com/integrations/hubspot)
 
 **Package**: `@taskade/automade-piece-hubspot`
 
@@ -297,7 +317,9 @@ This document provides a complete reference of all available integrations, trigg
 
 ## Development & Project Management
 
-### [GitHub](https://www.taskade.com/integrations/github)
+### GitHub
+
+[View the GitHub integration →](https://www.taskade.com/integrations/github)
 
 **Package**: `@taskade/automade-piece-github`
 
@@ -324,7 +346,9 @@ This document provides a complete reference of all available integrations, trigg
 
 ## Forms & Lead Generation
 
-### [Typeform](https://www.taskade.com/integrations/typeform)
+### Typeform
+
+[View the Typeform integration →](https://www.taskade.com/integrations/typeform)
 
 **Package**: `@taskade/automade-piece-typeform`
 
@@ -334,7 +358,9 @@ This document provides a complete reference of all available integrations, trigg
 | ---------------- | ------------------------ | ---------- |
 | `new_submission` | New Submission (Instant) | `form`     |
 
-### [Google Forms](https://www.taskade.com/integrations/google-forms)
+### Google Forms
+
+[View the Google Forms integration →](https://www.taskade.com/integrations/google-forms)
 
 **Package**: `@taskade/automade-piece-google-forms`
 
@@ -344,7 +370,9 @@ This document provides a complete reference of all available integrations, trigg
 | -------------- | ------------------------ | ---------- |
 | `new_response` | New Response (Scheduled) | `form_id`  |
 
-### [Webflow](https://www.taskade.com/integrations/webflow)
+### Webflow
+
+[View the Webflow integration →](https://www.taskade.com/integrations/webflow)
 
 **Package**: `@taskade/automade-piece-webflow`
 
@@ -354,7 +382,9 @@ This document provides a complete reference of all available integrations, trigg
 | --------------------- | ----------------------------- | ------------------ |
 | `new_form_submission` | New Form Submission (Instant) | `siteId`, `formId` |
 
-### [Calendly](https://www.taskade.com/integrations/calendly)
+### Calendly
+
+[View the Calendly integration →](https://www.taskade.com/integrations/calendly)
 
 **Package**: `@taskade/automade-piece-calendly`
 
@@ -368,7 +398,9 @@ This document provides a complete reference of all available integrations, trigg
 
 ## Marketing & Email
 
-### [MailChimp](https://www.taskade.com/integrations/mailchimp)
+### MailChimp
+
+[View the MailChimp integration →](https://www.taskade.com/integrations/mailchimp)
 
 **Package**: `@taskade/automade-piece-mailchimp`
 
@@ -380,7 +412,9 @@ This document provides a complete reference of all available integrations, trigg
 
 ## Social Media & Publishing
 
-### [Facebook Pages](https://www.taskade.com/integrations/facebook)
+### Facebook Pages
+
+[View the Facebook Pages integration →](https://www.taskade.com/integrations/facebook)
 
 **Package**: `@taskade/automade-piece-facebook-pages`
 
@@ -391,7 +425,9 @@ This document provides a complete reference of all available integrations, trigg
 | `create_post`       | Create Post            | `page`, `message`, `link`  |
 | `create_photo_post` | Create Post with Image | `page`, `photo`, `caption` |
 
-### [X (Twitter)](https://www.taskade.com/integrations/twitter)
+### X (Twitter)
+
+[View the X (Twitter) integration →](https://www.taskade.com/integrations/twitter)
 
 **Package**: `@taskade/automade-piece-twitter`
 
@@ -402,7 +438,9 @@ This document provides a complete reference of all available integrations, trigg
 | `create_reply` | Create Reply | `postId`, `text` |
 | `create_post`  | Create Post  | `text`           |
 
-### [LinkedIn](https://www.taskade.com/integrations/linkedin)
+### LinkedIn
+
+[View the LinkedIn integration →](https://www.taskade.com/integrations/linkedin)
 
 **Package**: `@taskade/automade-piece-linkedin`
 
@@ -413,7 +451,9 @@ This document provides a complete reference of all available integrations, trigg
 | `create_share_update`   | Create Share Update   | `text`, `visibility`, `link`, `linkTitle`, `linkDescription` |
 | `create_company_update` | Create Company Update | `company`, `text`, `link`, `linkTitle`, `linkDescription`    |
 
-### [WordPress](https://www.taskade.com/integrations/wordpress)
+### WordPress
+
+[View the WordPress integration →](https://www.taskade.com/integrations/wordpress)
 
 **Package**: `@taskade/automade-piece-wordpress`
 
@@ -423,7 +463,9 @@ This document provides a complete reference of all available integrations, trigg
 | ------------- | ----------- | -------------------------------------------- |
 | `create_post` | Create Post | `type`, `title`, `content`, `slug`, `status` |
 
-### [YouTube](https://www.taskade.com/integrations/youtube)
+### YouTube
+
+[View the YouTube integration →](https://www.taskade.com/integrations/youtube)
 
 **Package**: `@taskade/automade-piece-youtube`
 
@@ -434,7 +476,9 @@ This document provides a complete reference of all available integrations, trigg
 | `new_video`                 | New Video (Scheduled) | `channel_identifier` |
 | `multiple_channels_trigger` | New Video (Scheduled) | `channelIdentifiers` |
 
-### [Reddit](https://www.taskade.com/integrations/reddit)
+### Reddit
+
+[View the Reddit integration →](https://www.taskade.com/integrations/reddit)
 
 **Package**: `@taskade/automade-piece-reddit`
 
@@ -458,7 +502,9 @@ This document provides a complete reference of all available integrations, trigg
 
 ## SMS & Messaging
 
-### [Twilio](https://www.taskade.com/integrations/twilio)
+### Twilio
+
+[View the Twilio integration →](https://www.taskade.com/integrations/twilio)
 
 **Package**: `@taskade/automade-piece-twilio`
 
@@ -470,7 +516,9 @@ This document provides a complete reference of all available integrations, trigg
 
 ## Data Enrichment
 
-### [Apollo](https://www.taskade.com/integrations/apollo)
+### Apollo
+
+[View the Apollo integration →](https://www.taskade.com/integrations/apollo)
 
 **Package**: `@taskade/automade-piece-apollo`
 
