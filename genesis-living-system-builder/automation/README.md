@@ -10,7 +10,7 @@
 
 Living Motion is Taskade’s automation layer. It’s how your workspace can **react**, **decide**, and **execute** when something happens.
 
-Canonical foundation: [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo).
+Canonical foundation: [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
 ### What you use it for
 

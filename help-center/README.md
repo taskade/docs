@@ -22,14 +22,14 @@ Find answers fast. Pick the topic that matches what you need.
 ### Getting Started
 
 * [Quick Start Guide](../getting-started/) — sign up, create your first app, share it
-* [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo) — understand how Memory, Intelligence, and Execution work together
+* [Workspace DNA](../genesis-living-system-builder/genesis/workspace-dna.md) — understand how Memory, Intelligence, and Execution work together
 
 ### Genesis (App Builder)
 
 * [What Genesis Can Build](../genesis-living-system-builder/genesis/) — dashboards, portals, tools, websites
 * [Your First App](../genesis-living-system-builder/genesis/getting-started.md) — step-by-step in 5 minutes
 * [Examples & Templates](../genesis-living-system-builder/genesis/examples-and-templates.md) — copy proven prompts
-* [MCP Connectors](/broken/pages/edGXixHEoPgFP9ulVcLu) — connect to external services
+* [MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md) — connect to external services
 * [Custom Domains](../genesis-living-system-builder/space-apps-guide/custom-domains.md) — brand your published apps
 * [Best Practices](../genesis-living-system-builder/community-and-sharing/best-practices.md) — build better apps
 
@@ -38,7 +38,7 @@ Find answers fast. Pick the topic that matches what you need.
 * [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md) — create your first agent
 * [Agent Tools Reference](../genesis-living-system-builder/ai-features/agent-tools.md) — Slack, Gmail, Sheets, and 20+ more
 * [Agent Knowledge & Memory](../genesis-living-system-builder/ai-features/agent-knowledge.md) — train agents with your data
-* [AI Agent Teams](/broken/pages/QqDbWvprLGUIBefBFe6C) — multi-agent collaboration
+* [AI Agent Teams](../genesis-living-system-builder/ai-features/agent-teams.md) — multi-agent collaboration
 
 ### Automations
 

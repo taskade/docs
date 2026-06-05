@@ -105,7 +105,7 @@ When [TRIGGER EVENT], automatically [AUTOMATED ACTION].
 
 ## What to Do Next
 
-* Understand the model: [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo)
+* Understand the model: [Workspace DNA](../genesis-living-system-builder/genesis/workspace-dna.md)
 * Copy templates: [Living System Examples & Templates](../genesis-living-system-builder/genesis/examples-and-templates.md)
 * Build better prompts: [Living System Best Practices](../genesis-living-system-builder/community-and-sharing/best-practices.md)
 * Add agents: [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md)

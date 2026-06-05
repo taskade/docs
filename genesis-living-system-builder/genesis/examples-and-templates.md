@@ -114,7 +114,7 @@ Taskade features hundreds of project frameworks you can use to kickstart all kin
 
 Want the deeper “why templates become apps” explanation?
 
-Start with [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo).
+Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
 ### **📊 App Categories & Business Impact**
 
