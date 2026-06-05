@@ -1,3 +1,8 @@
+---
+description: >-
+  Share, publish, and clone Taskade apps and templates — collaborate with your team or ship to the community with public links and custom domains.
+---
+
 # Sharing: Living Systems
 
 **Turn your brilliant Genesis app into something that helps business owners everywhere. Share what you've built, discover amazing solutions from others, and copy complete apps with just one click.**

@@ -1,3 +1,8 @@
+---
+description: >-
+  Deploy custom AI agents with persistent memory, knowledge, and tool access across your Taskade workspace — the intelligence layer behind every app and automation.
+---
+
 # AI Features Overview
 
 **Think. Learn. Adapt.** Taskade AI features form the living intelligence layer of Workspace DNA, creating systems that understand, evolve, and provide increasingly intelligent value with every interaction.

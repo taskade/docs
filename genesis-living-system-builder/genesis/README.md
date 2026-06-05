@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade Genesis turns natural-language prompts into full applications — databases, interfaces, automations, and AI agents — deployed instantly from your workspace.
+---
+
 # Taskade Genesis Overview
 
 **Living Software. Living DNA. Living Intelligence.**

@@ -1,3 +1,8 @@
+---
+description: >-
+  Find answers about Taskade — Genesis app building, AI agents, automations, workspaces, billing, and troubleshooting, organized by topic.
+---
+
 # Help Center
 
 Find answers fast. Pick the topic that matches what you need.

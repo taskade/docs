@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade REST API v1 reference — authenticate, then manage workspaces, projects, tasks, agents, folders, and media with full CRUD and an interactive explorer.
+---
+
 # Comprehensive API Guide
 
 Build powerful integrations with Taskade's REST API. Access projects, tasks, agents, and more programmatically with full CRUD operations.

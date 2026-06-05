@@ -1,3 +1,8 @@
+---
+description: >-
+  Publish Genesis apps as real products — add custom domains, branding, advanced features, and styling to turn your workspace into a live application.
+---
+
 # Space Apps: Living Systems
 
 **Create professional websites and web applications just by describing what you want. No coding, no hosting headaches—just your idea turned into a live website that works everywhere.**
