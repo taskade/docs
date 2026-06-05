@@ -129,23 +129,36 @@ EVE reads from the memory project at each interaction, so your edits take effect
 
 Because memory is a Project, it's addressable via the Public API.
 
+All calls use the [Action API v2](api-v2-reference.md) with a `Bearer` token.
+
 ### Find the memory project
 
 ```typescript
-import { Taskade } from "@taskade/sdk";
+const headers = {
+  Authorization: `Bearer ${process.env.TASKADE_TOKEN}`,
+  "Content-Type": "application/json",
+};
 
-const taskade = new Taskade({ token: process.env.TASKADE_TOKEN! });
-
-const projects = await taskade.projects.list({ workspaceId: WORKSPACE_ID });
-const memory = projects.items.find(p => p.name.startsWith("EVE Memory"));
+const res = await fetch("https://www.taskade.com/api/v2/listProjects", {
+  method: "POST",
+  headers,
+  body: JSON.stringify({ spaceId: SPACE_ID }),
+});
+const { items } = await res.json();
+const memory = items.find(p => p.name?.startsWith("EVE Memory"));
 ```
 
 ### Read memory contents
 
 ```typescript
 if (memory) {
-  const content = await taskade.projects.get(memory.id);
-  console.log("EVE remembers:", content.blocks);
+  const res = await fetch("https://www.taskade.com/api/v2/listBlocks", {
+    method: "POST",
+    headers,
+    body: JSON.stringify({ projectId: memory.id }),
+  });
+  const { items: blocks } = await res.json();
+  console.log("EVE remembers:", blocks);
 }
 ```
 
@@ -153,8 +166,10 @@ if (memory) {
 
 ```typescript
 // Give a specialist agent access to workspace context
-await taskade.agents.addProjectKnowledge(AGENT_ID, {
-  projectId: memory.id,
+await fetch("https://www.taskade.com/api/v2/addKnowledgeProject", {
+  method: "POST",
+  headers,
+  body: JSON.stringify({ agentId: AGENT_ID, projectId: memory.id }),
 });
 ```
 
@@ -167,9 +182,12 @@ Memory projects follow the same schema as any other project: blocks, tasks, meta
 ## Privacy and Scoping
 
 - **Workspace-scoped.** EVE memory does not leak across workspaces.
-- **Never in exported bundles.** When you export an app via GitHub or Bundles, memory is not included.
 - **Controlled by workspace members.** Anyone with edit access to the workspace can view and modify memory.
 - **No external service.** Memory lives in Taskade's infrastructure, not a third-party vector store.
+
+{% hint style="warning" %}
+**Memory is never included in exported bundles.** When you export an app via [Bundles](bundles.md) or GitHub, its memory project is left behind — so a scripted `exportBundle` will not carry the agent's accumulated context to the target workspace.
+{% endhint %}
 
 ---
 

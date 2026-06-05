@@ -1,18 +1,28 @@
+---
+description: >-
+  Connect Claude Desktop, Cursor, and Claude Code to your Taskade workspace
+  content with the @taskade/mcp-server inbound MCP server.
+---
+
 # Workspace MCP
 
-> **Editing Genesis app source code instead?** See [Genesis App MCP (Beta)](genesis-app-mcp.md) for the IDE-focused server that writes to your app's `src/` files.
+> **Editing Genesis app source code instead?** See [Hosted MCP — Genesis App (Beta)](genesis-app-mcp.md) for the remote server that writes to your app's source files.
 
-Workspace MCP connects [Claude Desktop](https://claude.ai), [Cursor](https://cursor.sh), or any MCP-compatible AI tool to your Taskade **workspace content** — projects, tasks, agents, and media — via the Taskade REST API. Use it to read and write the *content* of your workspace (not your Genesis app's source code).
+Workspace MCP connects [Claude Desktop](https://claude.ai), [Cursor](https://cursor.sh), [Claude Code](https://claude.com/claude-code), or any MCP-compatible AI tool to your Taskade **workspace content** — workspaces, projects, tasks, agents, and media. It's a small server you run locally that wraps the [REST API v1](comprehensive-api-guide/README.md), so it has full task read/write access.
 
 ## What is MCP?
 
-The [Model Context Protocol](https://modelcontextprotocol.io/) lets AI assistants interact with external tools and data sources. The Taskade MCP server gives AI tools access to your workspaces, projects, tasks, agents, and more.
+The [Model Context Protocol](https://modelcontextprotocol.io/) lets AI assistants interact with external tools and data sources. The `@taskade/mcp-server` package exposes Taskade's API as MCP tools your AI client can call.
 
-## Install
+## Install & run
+
+The server is published as **`@taskade/mcp-server`** on npm. The simplest setup runs it on demand with `npx` — no global install needed:
 
 ```bash
-npm install -g @taskade/mcp
+npx -y @taskade/mcp-server
 ```
+
+It authenticates with a [Personal Access Token](developers/authentication.md) supplied via the `TASKADE_API_KEY` environment variable. Get yours from [Settings > API](https://www.taskade.com/settings/api).
 
 ## Configure Claude Desktop
 
@@ -25,100 +35,78 @@ Add to your Claude Desktop configuration file:
 {
   "mcpServers": {
     "taskade": {
-      "command": "taskade-mcp",
+      "command": "npx",
+      "args": ["-y", "@taskade/mcp-server"],
       "env": {
-        "TASKADE_API_KEY": "your-api-key"
+        "TASKADE_API_KEY": "your_api_token_placeholder"
       }
     }
   }
 }
 ```
 
-Get your API key from [Settings > API](https://www.taskade.com/settings/api).
-
 ## Configure Cursor
 
-Add to your Cursor MCP configuration:
+Cursor uses the same configuration shape (in `~/.cursor/mcp.json` or the project's `.cursor/mcp.json`):
 
 ```json
 {
   "mcpServers": {
     "taskade": {
-      "command": "taskade-mcp",
+      "command": "npx",
+      "args": ["-y", "@taskade/mcp-server"],
       "env": {
-        "TASKADE_API_KEY": "your-api-key"
+        "TASKADE_API_KEY": "your_api_token_placeholder"
       }
     }
   }
 }
 ```
 
+## HTTP / SSE mode
+
+For clients that connect over HTTP instead of stdio, run the server in HTTP mode:
+
+```bash
+TASKADE_API_KEY=your_api_token_placeholder npx @taskade/mcp-server --http
+```
+
+The server listens on `http://localhost:3000` (set `PORT` to change it); connect via SSE at `http://localhost:3000/sse`.
+
+{% hint style="warning" %}
+HTTP mode accepts the token as a query parameter (`?access_token=…`). Only use this on a trusted local network or behind TLS — never expose it publicly.
+{% endhint %}
+
 ## Available Tools
 
-### Navigation
+Tool names mirror the [REST API v1](comprehensive-api-guide/README.md) operations the server wraps. Highlights:
 
-| Tool | Description |
-|------|-------------|
-| `list_workspaces` | List all your workspaces |
-| `list_workspace_folders` | List folders in a workspace |
-| `list_folder_projects` | List projects in a folder |
-| `list_folder_agents` | List agents in a folder |
+| Area | Tools |
+| --- | --- |
+| **Workspaces** | `workspacesGet`, `workspaceFoldersGet`, `workspaceCreateProject` |
+| **Projects** | `projectGet`, `projectCreate`, `projectCopy`, `projectComplete`, `projectRestore`, `projectFromTemplate`, `projectMembersGet`, `projectFieldsGet`, `projectShareLinkGet`, `projectShareLinkEnable`, `projectBlocksGet`, `projectTasksGet` |
+| **Tasks** | `taskGet`, `taskCreate`, `taskPut`, `taskDelete`, `taskComplete`, `taskUncomplete`, `taskMove`, `taskAssigneesGet`, `taskPutAssignees`, `taskDeleteAssignees`, `taskGetDate`, `taskPutDate`, `taskDeleteDate`, `taskNoteGet`, `taskNotePut`, `taskNoteDelete`, `taskFieldValueGet`, `taskFieldValuePut`, `taskFieldValueDelete` |
+| **Agents** | `folderAgentGenerate`, `folderCreateAgent`, `agentGet`, `agentUpdate`, `deleteAgent`, `agentKnowledgeProjectCreate`, `agentKnowledgeMediaCreate`, `agentPublicAccessEnable`, `agentConvosGet`, `agentConvoGet` |
+| **Media** | `mediasGet`, `mediaGet`, `mediaDelete` |
+| **Personal** | `meProjectsGet` |
 
-### Projects & Tasks
-
-| Tool | Description |
-|------|-------------|
-| `get_project` | Get project details |
-| `create_project` | Create a new project |
-| `list_project_tasks` | List tasks in a project |
-| `create_task` | Create a new task |
-| `update_task` | Update task text |
-| `complete_task` | Mark task as complete |
-| `uncomplete_task` | Mark task as incomplete |
-| `delete_task` | Delete a task |
-
-### Task Metadata
-
-| Tool | Description |
-|------|-------------|
-| `get_task_date` | Get task due date |
-| `set_task_date` | Set task due date |
-| `get_task_assignees` | Get task assignees |
-| `set_task_assignees` | Assign users to task |
-| `get_task_note` | Get task note |
-| `set_task_note` | Add/update task note |
-
-### Agents
-
-| Tool | Description |
-|------|-------------|
-| `list_agents` | List agents in a space |
-| `get_agent` | Get agent details |
-| `prompt_agent` | Chat with an agent |
-
-### Media & Bundles
-
-| Tool | Description |
-|------|-------------|
-| `upload_media` | Upload a file |
-| `get_media` | Get media metadata |
-| `export_bundle` | Export Genesis app as bundle |
-| `import_bundle` | Import Genesis app bundle |
+{% hint style="info" %}
+This local server wraps **v1**, so it does **not** include a prompt-an-agent tool. To prompt agents programmatically, use [`POST /api/v2/promptAgent`](api-v2-reference.md#prompt-an-agent), or chat with the agent inside Taskade.
+{% endhint %}
 
 ## Example Usage in Claude
 
 Once configured, you can ask Claude to:
 
 - "List all my Taskade workspaces"
-- "Create a task in my project to follow up with the client"
-- "Show me the tasks in my Sales Pipeline project"
-- "Mark task X as complete"
-- "Ask my Sales Coach agent about pipeline health"
+- "Create a task in my Sales Pipeline project to follow up with the client"
+- "Show me the tasks in my Sales Pipeline project and mark the first one complete"
+- "Add a due date of next Friday to task X"
 
 ## Resources
 
 | Resource | Description |
-|----------|-------------|
-| [GitHub: @taskade/mcp](https://github.com/taskade/mcp) | MCP server source code |
-| [SDK Quickstart](sdk-quickstart.md) | TypeScript SDK for programmatic access |
-| [Full API Reference](comprehensive-api-guide/) | Complete endpoint documentation |
+| --- | --- |
+| [github.com/taskade/mcp](https://github.com/taskade/mcp) | MCP server source code and docs |
+| [Workspace MCP — Advanced](workspace-mcp-advanced.md) | Multi-client setup, troubleshooting, security |
+| [REST API v1 Reference](comprehensive-api-guide/README.md) | The endpoints these tools map to |
