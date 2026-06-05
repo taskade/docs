@@ -2,7 +2,7 @@
 description: Everything you need to build on Taskade — REST API, MCP Server, SDK, and more.
 ---
 
-# Build on Taskade
+# Developer Platform
 
 You want to integrate Taskade into your app, automate your workflows, or connect your AI tools. This page gets you started fast. Many teams build their app visually with [Taskade Genesis](https://www.taskade.com/create) first, then extend it with the API.
 

@@ -12,7 +12,7 @@
 
 ## APIs & Developer
 
-* [Build on Taskade](apis-living-system-development/developer-home.md)
+* [Developer Platform](apis-living-system-development/developer-home.md)
   * [Developer Overview](apis-living-system-development/developers/README.md)
 * [Authentication](apis-living-system-development/developers/authentication.md)
   * [Personal Tokens](apis-living-system-development/developers/personal-tokens.md)
