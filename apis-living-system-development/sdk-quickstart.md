@@ -64,12 +64,12 @@ async function taskade(operation: string, body: unknown) {
 const { items } = await taskade("listSpaces", {});
 ```
 
-## curl & Python
+## cURL & Python
 
 {% tabs %}
-{% tab title="curl" %}
+{% tab title="cURL" %}
 ```bash
-export TASKADE_TOKEN=your_api_token_placeholder
+export TASKADE_TOKEN=YOUR_TOKEN
 
 # List your projects (REST API v1)
 curl -s \
@@ -80,7 +80,7 @@ curl -s \
 curl -s -X POST \
   -H "Authorization: Bearer $TASKADE_TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{"spaceId":"your_space_id","agentId":"your_agent_id","prompt":"Summarize standup notes"}' \
+  -d '{"spaceId":"SPACE_ID","agentId":"AGENT_ID","prompt":"Summarize standup notes"}' \
   "https://www.taskade.com/api/v2/promptAgent"
 ```
 {% endtab %}
@@ -104,8 +104,8 @@ result = requests.post(
     "https://www.taskade.com/api/v2/promptAgent",
     headers=headers,
     json={
-        "spaceId": "your_space_id",
-        "agentId": "your_agent_id",
+        "spaceId": "SPACE_ID",
+        "agentId": "AGENT_ID",
         "prompt": "Summarize standup notes",
     },
 ).json()
