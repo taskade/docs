@@ -221,3 +221,4 @@ PDFs can be processed automatically within automation flows:
 |---|---|
 | [Markdown Support](./markdown.md) | Full syntax reference and usage guide |
 | [Editing & Formatting](./editing-formatting.md) | Format tasks and projects |
+| [REST API Guide](../../apis-living-system-development/comprehensive-api-guide/README.md) | Import and create projects programmatically via the API |

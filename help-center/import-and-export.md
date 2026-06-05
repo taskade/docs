@@ -178,6 +178,7 @@ Need a hard copy? You can also print directly:
 
 ## Related Guides
 
-* [Getting Started with Taskade](getting-started/)
-* [AI Agents Getting Started](ai-features/ai-agents-getting-started.md)
-* [Features Overview](features/)
+* [Getting Started with Taskade](../getting-started/)
+* [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md)
+* [Features Overview](../genesis-living-system-builder/genesis/README.md)
+* [Developer Hub](../apis-living-system-development/developer-home.md) — for programmatic and bulk migration via the API

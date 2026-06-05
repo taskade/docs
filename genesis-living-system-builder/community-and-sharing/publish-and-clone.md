@@ -23,7 +23,7 @@
 
 Once you've built an app with Genesis, you can share it with the world in multiple ways — from private team tools to public community templates. This guide covers every publishing, sharing, and distribution option available.
 
-> **Haven't built an app yet?** Start with [Create Your First App](../genesis/create-your-first-app.md).
+> **Haven't built an app yet?** Start with [Create Your First App](../genesis/getting-started.md).
 
 ---
 
@@ -205,5 +205,8 @@ Connect your own domain to any published Genesis app:
 |---|---|
 | [Genesis Version History](../genesis/version-history.md) | Track changes and restore previous versions |
 | [App Analytics](../genesis/app-analytics.md) | Monitor visitor data and optimize your app |
-| [Create Your First App](../genesis/create-your-first-app.md) | Build something to publish |
+| [Create Your First App](../genesis/getting-started.md) | Build something to publish |
 | [Taskade AI Credits](https://help.taskade.com/en/articles/taskade-ai-credits) | Understand credit costs for app operations |
+| [Sharing Best Practices](best-practices.md) | Tips for collaborating and distributing apps |
+| [Sharing FAQ](faq.md) | Common questions about publishing and access |
+| [Developer Platform](../../apis-living-system-development/developer-home.md) | Publish and manage apps programmatically via the API |

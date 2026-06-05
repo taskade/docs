@@ -157,7 +157,7 @@ Taskade uses a **5-role, 7-tier RBAC** permission system:
 | **Automation Workflows** | Automate cross-department processes | [Automation Triggers](../automation/README.md) |
 | **Genesis Apps** | Build internal tools and dashboards for teams | [Taskade Genesis](https://help.taskade.com/en/collections/14476419-taskade-genesis) |
 | **Shared Agent Chats** | AI + human conversations together | [Custom AI Agents](https://help.taskade.com/en/collections/14476419-taskade-genesis) |
-| **Version History** | Track all changes across team projects | [Version History](./version-history.md) |
+| **Version History** | Track all changes across team projects | [Version History](../genesis/version-history.md) |
 | **Real-time Collaboration** | Multiple users editing simultaneously (OT-based) | Built-in |
 
 ---
@@ -169,4 +169,4 @@ Taskade uses a **5-role, 7-tier RBAC** permission system:
 | [Taskade Autopilot](../ai-features/autopilot.md) | Auto-generate team workspaces |
 | [Editing & Formatting](./editing-formatting.md) | Format and style team projects |
 | [Embed Taskade](./embed.md) | Share projects on your website |
-| [Version History](./version-history.md) | Track team changes |
+| [Version History](../genesis/version-history.md) | Track team changes |

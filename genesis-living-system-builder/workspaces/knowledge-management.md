@@ -672,3 +672,5 @@ Sales Team Results:
 **🧠 Ready to transform your scattered information into AI-powered intelligence?** Start with organizing your most frequently needed documents, then expand to comprehensive knowledge coverage.
 
 _For advanced AI agent training techniques, see our_ [_AI Agents Guide_](../ai-features/ai-agents-getting-started.md)_. For automation of knowledge processes, check out_ [_Advanced Automation Actions_](../automation/advanced-actions.md)_._
+
+_To build programmatic knowledge workflows like the bulk upload and search examples above, see the_ [_Developer Hub_](../../apis-living-system-development/developer-home.md) _and the_ [_REST API Guide_](../../apis-living-system-development/comprehensive-api-guide/README.md)_._

@@ -449,8 +449,8 @@ Ensure your apps are accessible to all users:
 
 ### Documentation Links
 
-* [**Genesis API Reference**](../../api/genesis/) - Complete API documentation
-* [**Space Apps API**](../../api/genesis/#space-apps) - Specific Space Apps endpoints
+* [**Genesis API Reference**](../../apis-living-system-development/developer-home.md) - Complete API documentation
+* [**Space Apps API**](../../apis-living-system-development/developer-home.md) - Specific Space Apps endpoints
 * [**Best Practices**](../community-and-sharing/best-practices.md) - General Genesis optimization tips
 * [**Examples Gallery**](../genesis/examples-and-templates.md) - Ready-to-use prompts
 
@@ -485,7 +485,7 @@ Space Apps represent the future of no-code application development - combining t
 ### Next Steps
 
 1. [**Create your first Space App**](https://taskade.com/genesis) in your workspace
-2. **Explore the** [**API documentation**](../../api/genesis/) for advanced integrations
+2. **Explore the** [**API documentation**](../../apis-living-system-development/developer-home.md) for advanced integrations
 3. **Join our** [**community**](https://www.taskade.com/feedback) to share your creation and get inspiration
 4. **Check out** [**advanced features**](advanced-features.md) as your app grows in complexity
 

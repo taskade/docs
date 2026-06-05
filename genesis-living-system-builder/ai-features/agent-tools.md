@@ -141,6 +141,8 @@ Connect your agents to external platforms for real-world actions:
 
 > **104 automation actions** and **40+ external service integrations** are available. Agents can use any automation flow as a custom tool. See [Automations](../automation/README.md) for the full integration list.
 
+> **For developers:** The **HTTP/Webhooks** custom tool lets agents call any external API. See [Webhooks](../../apis-living-system-development/webhooks.md) for programmatic event delivery and payload details.
+
 ---
 
 ## Build Custom Agent Tools

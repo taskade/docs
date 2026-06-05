@@ -217,7 +217,11 @@ Transform your private AI agents into public resources accessible to anyone:
 
 **Agents Anywhere on the Web:**
 
-Embed your public agent using the in-product “Embed” option.\nUse it for support chat, onboarding, or interactive docs.\nIf you need setup help, start with [AI Agents Getting Started](../ai-features/ai-agents-getting-started.md).
+Embed your public agent using the in-product “Embed” option.
+
+Use it for support chat, onboarding, or interactive docs.
+
+If you need setup help, start with [AI Agents Getting Started](../ai-features/ai-agents-getting-started.md).
 
 **Embedding Use Cases:**
 
@@ -807,7 +811,11 @@ Brand your Genesis apps with professional custom domains:
 
 What you get with a custom domain:
 
-* Branded URL (e.g., `app.yourcompany.com`)\n\* Automatic SSL\n\* Fast global delivery\n\* A cleaner, professional sharing experience
+* Branded URL (e.g., `app.yourcompany.com`)
+
+* Automatic SSL
+* Fast global delivery
+* A cleaner, professional sharing experience
 
 See [Custom Domains & Branding](custom-domains.md).
 

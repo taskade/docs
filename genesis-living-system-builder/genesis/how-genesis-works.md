@@ -345,4 +345,5 @@ You now understand the DNA of your workspace. Choose your path:
 |---|---|
 | [Adding Genesis Context](./adding-context.md) | Upload files and data to enrich app intelligence |
 | [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md) | Deploy, share, and distribute your apps |
-| [Taskade AI Credits](../../ai-credits.md) | Understand credits, models, and usage |
+| [Taskade AI Credits](../../account-management/credits-and-billing.md) | Understand credits, models, and usage |
+| [Build on Taskade (Developer Hub)](../../apis-living-system-development/developer-home.md) | APIs, SDKs, and MCP for programmatic access |

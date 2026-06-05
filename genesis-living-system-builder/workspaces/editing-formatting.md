@@ -172,5 +172,5 @@ Enhance tasks with additional features:
 |---|---|
 | [Markdown Support](./markdown.md) | Full Markdown syntax reference |
 | [Import](./import.md) | Import .md and PDF files as projects |
-| [Version History](./version-history.md) | Track and restore editing changes |
+| [Version History](../genesis/version-history.md) | Track and restore editing changes |
 | [Embed Taskade](./embed.md) | Embed projects on your website |

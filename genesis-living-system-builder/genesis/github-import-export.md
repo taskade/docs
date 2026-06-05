@@ -143,6 +143,10 @@ Re-exporting the same app either updates the open PR or opens a new one, dependi
 [bundles.md](../../apis-living-system-development/bundles.md)
 {% endcontent-ref %}
 
+{% content-ref url="../../apis-living-system-development/developer-home.md" %}
+[developer-home.md](../../apis-living-system-development/developer-home.md)
+{% endcontent-ref %}
+
 {% content-ref url="../community-and-sharing/genesis-auth.md" %}
 [genesis-auth.md](../community-and-sharing/genesis-auth.md)
 {% endcontent-ref %}

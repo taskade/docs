@@ -867,6 +867,6 @@ Receive intelligent responses based on the file's actual content
 **Related Features:**
 
 * [AI Agents](../ai-features/ai-agents-getting-started.md) - Collaborative AI assistants
-* [Project Views](../../features/project-views-mastery.md) - Visual collaboration tools
+* [Project Views](./project-views.md) - Visual collaboration tools
 * [Mobile Optimization](mobile-optimization.md) - Mobile collaboration features
 * [Workspaces](./) - Team organization and management

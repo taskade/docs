@@ -170,6 +170,10 @@ Automatically retry failed operations with exponential backoff:
 }
 ```
 
+{% hint style="info" %}
+**Building your own webhook receiver?** See the developer [Webhooks reference](../../apis-living-system-development/webhooks.md) for payload formats and event types.
+{% endhint %}
+
 ### **Message Types & Templates**
 
 #### **Text Messages**

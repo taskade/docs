@@ -139,6 +139,10 @@ Taskade never silently fails an AI request due to insufficient credits.
 Public agent visitors never see internal billing errors. If your app's agent runs out of credits, external users see a neutral error message, not billing details.
 {% endhint %}
 
+{% hint style="info" %}
+Building against the API? See the [REST API guide](../apis-living-system-development/comprehensive-api-guide/README.md) for rate limits and error-handling conventions when requests fail.
+{% endhint %}
+
 ***
 
 ## FAQ

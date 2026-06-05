@@ -91,6 +91,8 @@ Taskade connects to **100+ tools and services** across communication, productivi
 | **Database** | Record created, updated | Insert record, update data, run query | Connection String |
 | **FTP/SFTP** | File uploaded, modified | Upload file, download, sync directory | Credentials |
 
+> **Related developer docs:** Build custom integrations programmatically with the [Developer Hub](../../apis-living-system-development/developer-home.md) and [Webhooks](../../apis-living-system-development/webhooks.md).
+
 ## Integration Setup
 
 ### 1. **Authentication**

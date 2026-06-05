@@ -181,7 +181,7 @@ Need to work without an internet connection? Taskade has you covered.
 
 ## Related Guides
 
-* [Getting Started with Taskade](getting-started/)
-* [AI Agents Getting Started](ai-features/ai-agents-getting-started.md)
+* [Getting Started with Taskade](../getting-started/)
+* [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md)
 * [Import & Export](import-and-export.md)
-* [Features Overview](features/)
+* [Features Overview](../genesis-living-system-builder/genesis/README.md)
