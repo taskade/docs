@@ -1,3 +1,8 @@
+---
+description: >-
+  Get started with Taskade in minutes — build your first AI-powered app with Genesis, then add AI agents, automations, and explore the developer API.
+---
+
 # Quick Start Guide
 
 ## What is Taskade?
