@@ -137,8 +137,6 @@ Start with one article, review the output, and adjust the agent prompts or autom
 * **Multi-platform**: Extend to publish to Medium, LinkedIn, or other platforms
 * **SEO Optimization**: Include keyword research and meta description generation
 
-```
-
 ### Recipe 2: Automated Social Media Posting
 
 {% hint style="success" %}
@@ -160,7 +158,7 @@ Schedule and automate social media posts using due dates and custom fields. Perf
 
 📱 Social Media Content Calendar ├── 📝 Post Content (task description) ├── 📅 Due Date (posting schedule) ├── 🔖 Status (Draft → Scheduled → Posted) ├── 📊 Platform (Twitter, LinkedIn, Facebook) └── 🎯 Target Audience
 
-````
+```
 
 ```json
 {
@@ -213,7 +211,7 @@ Schedule and automate social media posts using due dates and custom fields. Perf
     }
   ]
 }
-````
+```
 
 **Setup Instructions:**
 

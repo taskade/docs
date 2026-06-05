@@ -6,9 +6,15 @@
 
 ## What is Taskade Genesis?
 
-Genesis turns a single prompt into a working app.\nIt creates the UI and connects it to your workspace.\nYou iterate by describing changes in plain English.
+Genesis turns a single prompt into a working app.
 
-Want the deeper “why it works” model?\nStart with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
+It creates the UI and connects it to your workspace.
+
+You iterate by describing changes in plain English.
+
+Want the deeper “why it works” model?
+
+Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
 ## Before You Start
 
@@ -58,7 +64,11 @@ Start by thinking about something in your business that could work better. Commo
 ***
 
 {% hint style="info" %}
-Skip the theory.\nFollow the steps below.\nIf you want the underlying model, read [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
+Skip the theory.
+
+Follow the steps below.
+
+If you want the underlying model, read [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 {% endhint %}
 
 ## Step 2: Craft Your App Description (2 minutes)
@@ -387,4 +397,7 @@ They should [SPECIFIC STEPS], and when they do,
 
 ### Next steps
 
-* Copy a working prompt: [Living System Examples & Templates](examples-and-templates.md)\n- Improve prompts: [Living System Best Practices](../community-and-sharing/best-practices.md)\n- Publish professionally: [Custom Domains & Branding](../space-apps-guide/custom-domains.md)\n- Fix common issues: [Living System Troubleshooting](../community-and-sharing/troubleshooting.md)
+* Copy a working prompt: [Living System Examples & Templates](examples-and-templates.md)
+- Improve prompts: [Living System Best Practices](../community-and-sharing/best-practices.md)
+- Publish professionally: [Custom Domains & Branding](../space-apps-guide/custom-domains.md)
+- Fix common issues: [Living System Troubleshooting](../community-and-sharing/troubleshooting.md)
