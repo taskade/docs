@@ -125,9 +125,19 @@ graph TB
 
 ```typescript
 // Your app prompts the coordinator; the team resolves internally
-const result = await taskade.agents.prompt(COORDINATOR_ID, {
-  message: "Produce a blog post on our Q2 launch, ready to publish.",
+const res = await fetch("https://www.taskade.com/api/v2/promptAgent", {
+  method: "POST",
+  headers: {
+    Authorization: `Bearer ${process.env.TASKADE_TOKEN}`,
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    spaceId: SPACE_ID,
+    agentId: COORDINATOR_ID,
+    prompt: "Produce a blog post on our Q2 launch, ready to publish.",
+  }),
 });
+const { summary } = await res.json();
 ```
 
 ---
@@ -140,9 +150,19 @@ An agent can call **another agent as a tool.** This lets specialist pipelines ru
 // Agent A is configured with Agent B as a tool.
 // Your app only talks to Agent A.
 
-const result = await taskade.agents.prompt(AGENT_A_ID, {
-  message: "Research the latest on X and draft a blog outline",
+const res = await fetch("https://www.taskade.com/api/v2/promptAgent", {
+  method: "POST",
+  headers: {
+    Authorization: `Bearer ${process.env.TASKADE_TOKEN}`,
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    spaceId: SPACE_ID,
+    agentId: AGENT_A_ID,
+    prompt: "Research the latest on X and draft a blog outline",
+  }),
 });
+const { summary } = await res.json();
 
 // Under the hood:
 //   Agent A (coordinator) → calls Agent B (researcher) as a tool

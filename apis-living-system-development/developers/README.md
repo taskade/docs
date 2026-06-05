@@ -53,8 +53,8 @@ Official libraries and tools:
 
 **Official:**
 
-* [@taskade/sdk](https://github.com/taskade/sdk) -- TypeScript SDK ([Quickstart](../sdk-quickstart.md))
-* [@taskade/mcp](https://github.com/taskade/mcp) -- Workspace MCP Server for Claude, Cursor ([Setup Guide](../workspace-mcp.md))
+* `@taskade/sdk` -- TypeScript SDK (Preview — not yet on public npm) ([Quickstart](../sdk-quickstart.md))
+* [@taskade/mcp-server](https://github.com/taskade/mcp) -- Workspace MCP Server for Claude, Cursor, Claude Code ([Setup Guide](../workspace-mcp.md))
 * Genesis App MCP (Beta) -- edit Genesis app source from your IDE ([Setup Guide](../genesis-app-mcp.md))
 * REST API with OpenAPI spec
 * Webhook integrations

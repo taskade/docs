@@ -15,11 +15,12 @@ graph TB
     end
 
     subgraph "Integration Surface"
-        SDK["@taskade/sdk<br/>TypeScript, npm"]
-        API[Public API v2<br/>REST + OAuth 2.0]
-        MCP_IN["@taskade/mcp<br/>Inbound MCP Server"]
-        MCP_OUT[Hosted MCP v2<br/>Outbound Connectors]
-        WEBHOOK[Webhooks<br/>Event delivery]
+        API1[REST API v1<br/>RESTful + OAuth 2.0]
+        API2[Action API v2<br/>RPC + OAuth 2.0]
+        MCP_IN["@taskade/mcp-server<br/>Inbound MCP, npm"]
+        MCP_HOST[Hosted MCP<br/>taskade.com/mcp]
+        MCP_OUT[MCP Connectors<br/>Outbound to 31+ services]
+        WEBHOOK[Webhooks<br/>Automation triggers]
     end
 
     subgraph "Taskade Workspace"
@@ -27,21 +28,24 @@ graph TB
         AGENTS[AI Agents<br/>with LTM]
         AUTOMATIONS[Automations]
         MEDIA[Media & Bundles]
+        APP_SRC[Genesis App Source]
     end
 
-    APP --> SDK
-    APP --> API
+    APP --> API1
+    APP --> API2
     APP --> MCP_IN
+    APP --> MCP_HOST
     WEBHOOK --> APP
 
-    SDK --> API
-    MCP_IN --> API
+    MCP_IN --> API1
+    MCP_HOST --> APP_SRC
     MCP_OUT --> AGENTS
 
-    API --> PROJECTS
-    API --> AGENTS
-    API --> AUTOMATIONS
-    API --> MEDIA
+    API1 --> PROJECTS
+    API1 --> AGENTS
+    API2 --> AGENTS
+    API2 --> MEDIA
+    API1 --> AUTOMATIONS
 
     AGENTS -.writes LTM.-> PROJECTS
 ```
@@ -50,13 +54,13 @@ graph TB
 
 | I want to... | Use |
 | --- | --- |
-| Ship a production integration in Node or TypeScript | [TypeScript SDK](sdk-quickstart.md) + [SDK Cookbook](sdk-cookbook.md) |
-| Hit endpoints from any language | [Public API v2 Reference](api-v2-reference.md) |
+| Write tasks, manage assignees/dates/fields (full CRUD) | [REST API v1](comprehensive-api-guide/README.md) |
+| Prompt agents, manage agents, export/import bundles | [Action API v2](api-v2-reference.md) |
+| Hit endpoints from any language | [REST API v1](comprehensive-api-guide/README.md) + [Action API v2](api-v2-reference.md) |
 | Expose Taskade data to Claude Desktop, Cursor, or other MCP clients | [Workspace MCP](workspace-mcp.md) + [Advanced](workspace-mcp-advanced.md) |
-| Give a Taskade agent third-party capabilities | [Hosted MCP v2 Connectors](workspace-mcp-advanced.md#mcp-connectors) |
-| Edit Genesis app source code from your IDE | [Genesis App MCP (Beta)](genesis-app-mcp.md) |
+| Give a Taskade agent third-party capabilities | [MCP Connectors](workspace-mcp-advanced.md#mcp-connectors) |
+| Edit Genesis app source code from your IDE | [Hosted MCP (Genesis App)](genesis-app-mcp.md) |
 | Receive real-time events in your app | [Webhooks](webhooks.md) |
-| Build an app with end-user sign-in | [GenesisAuth](../genesis-living-system-builder/community-and-sharing/genesis-auth.md) in Genesis |
 | Understand long-term memory | [Long-Term Memory](long-term-memory.md) |
 | Build agents that run without prompting | [Autonomous Agents](autonomous-agents.md) |
 | Automate workflows without code | [Automations Engine](../genesis-living-system-builder/automation/README.md) |
@@ -78,36 +82,43 @@ Treat your API token like a password. Never commit it to version control or shar
 
 | Resource | Description |
 | --- | --- |
-| [Public API v2 Reference](api-v2-reference.md) | Top-10 most-used endpoints with cURL, TypeScript, and Python examples |
-| [TypeScript SDK Quickstart](sdk-quickstart.md) | Install `@taskade/sdk` and ship your first call in 5 minutes |
-| [SDK Cookbook](sdk-cookbook.md) | Patterns for agents, automations, webhooks, error handling, pagination, testing |
-| [Workspace MCP](workspace-mcp.md) | Connect Claude Desktop, Cursor, and other AI tools to your workspace |
-| [Workspace MCP — Advanced](workspace-mcp-advanced.md) | Rate limits, multi-client setup, troubleshooting, security |
-| [Genesis App MCP (Beta)](genesis-app-mcp.md) | Edit your Genesis app's source code from your IDE via OAuth |
-| [Webhooks](webhooks.md) | Subscribe to workspace events and verify signatures |
-| [Bundles & App Kits](bundles.md) | Import/export full Genesis apps as portable bundles |
+| [REST API v1 Reference](comprehensive-api-guide/README.md) | The complete, stable RESTful API — full task CRUD, per-endpoint docs |
+| [Action API v2 Reference](api-v2-reference.md) | The newer action-based (RPC) API — agent prompting, bundles, lifecycle |
+| [Authentication Guide](developers/authentication.md) | Personal access tokens and OAuth 2.0 (PKCE) flows |
+| [Workspace MCP](workspace-mcp.md) | Run `@taskade/mcp-server` to connect Claude Desktop, Cursor, and Claude Code |
+| [Workspace MCP — Advanced](workspace-mcp-advanced.md) | Multi-client setup, troubleshooting, security |
+| [Hosted MCP — Genesis App (Beta)](genesis-app-mcp.md) | Edit your Genesis app's source from your IDE via the remote `taskade.com/mcp` server |
+| [MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md) | Give Taskade agents 31+ third-party tools (outbound MCP) |
+| [Webhooks](webhooks.md) | Trigger automations from external events; call out to any API |
+| [Bundles & App Kits](bundles.md) | Import/export full Genesis apps as portable `.tsk` bundles |
 | [Long-Term Memory](long-term-memory.md) | Memory-as-Projects architecture — editable, queryable, API-addressable |
 | [Autonomous Agents](autonomous-agents.md) | Automations, orchestration, cross-agent invocation patterns |
-| [Authentication Guide](developers/authentication.md) | Personal tokens and OAuth 2.0 flows |
-| [API Endpoint Guide](comprehensive-api-guide/README.md) | Detailed per-endpoint documentation with examples |
+| [TypeScript SDK (Preview)](sdk-quickstart.md) | Generated client for v2 — not yet on public npm; use the REST API meanwhile |
 
 {% hint style="info" %}
 **New to Taskade?** Start with the [Quick Start Guide](../getting-started/README.md) to understand workspaces, projects, and tasks before diving into the API.
 {% endhint %}
 
-## Base URL
+## Base URLs
 
-All REST API requests go to:
+Taskade ships **two** public HTTP APIs, both authenticated with the same token:
 
-```
-https://www.taskade.com/api/v1
-```
+| API | Base URL | Style | Use it for |
+| --- | --- | --- | --- |
+| [REST API v1](comprehensive-api-guide/README.md) | `https://www.taskade.com/api/v1` | RESTful (`GET`/`POST`/`PUT`/`DELETE`) | Full task CRUD, assignees, dates, notes, fields |
+| [Action API v2](api-v2-reference.md) | `https://www.taskade.com/api/v2` | Action / RPC (`POST /{operation}`) | Prompting agents, agent lifecycle, bundles |
 
 Include your token in the `Authorization` header:
 
 ```bash
+# v1 (RESTful)
 curl -H "Authorization: Bearer your_api_key_placeholder" \
      https://www.taskade.com/api/v1/me/projects
+
+# v2 (action-based — every call is a POST)
+curl -X POST https://www.taskade.com/api/v2/listMyProjects \
+     -H "Authorization: Bearer your_api_key_placeholder" \
+     -H "Content-Type: application/json" -d '{}'
 ```
 
 ## What You Can Build

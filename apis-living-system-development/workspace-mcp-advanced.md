@@ -33,7 +33,7 @@ graph LR
         CLIENT1[Claude Desktop]
         CLIENT2[Cursor]
         CLIENT3[Claude Code]
-        MCP_LOCAL["@taskade/mcp<br/>local stdio server"]
+        MCP_LOCAL["@taskade/mcp-server<br/>local stdio server"]
         CLIENT1 --> MCP_LOCAL
         CLIENT2 --> MCP_LOCAL
         CLIENT3 --> MCP_LOCAL
@@ -43,7 +43,7 @@ graph LR
     subgraph "Outbound (Taskade agents as MCP client)"
         direction TB
         AGENT[Taskade Agent]
-        HOSTED[Hosted MCP v2<br/>Connectors]
+        HOSTED[MCP Connectors]
         EXTERNAL[Third-party<br/>Services]
         AGENT --> HOSTED
         HOSTED --> EXTERNAL
@@ -60,7 +60,7 @@ graph LR
 
 ## Authentication & Token Scoping
 
-The inbound MCP server (`@taskade/mcp`) authenticates with a Personal Access Token via the `TASKADE_API_KEY` environment variable.
+The inbound MCP server (`@taskade/mcp-server`) authenticates with a Personal Access Token via the `TASKADE_API_KEY` environment variable.
 
 ### Token best practices
 
@@ -71,7 +71,7 @@ The inbound MCP server (`@taskade/mcp`) authenticates with a Personal Access Tok
 
 ### OAuth availability
 
-OAuth 2.0 is available for the Genesis App MCP (which runs hosted at a URL). The local `@taskade/mcp` inbound server currently uses personal tokens only.
+OAuth 2.0 is available for the Genesis App MCP (which runs hosted at a URL). The local `@taskade/mcp-server` inbound server currently uses personal tokens only.
 
 ---
 
@@ -91,7 +91,7 @@ If you hit limits regularly, split your integration across multiple scoped token
 
 ## Multi-Client Setup
 
-You can safely run `@taskade/mcp` on Claude Desktop, Cursor, and Claude Code at the same time. Each client spawns its own stdio process — state is isolated server-side per token.
+You can safely run `@taskade/mcp-server` on Claude Desktop, Cursor, and Claude Code at the same time. Each client spawns its own stdio process — state is isolated server-side per token.
 
 ### Claude Desktop
 
@@ -102,7 +102,7 @@ File: `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
   "mcpServers": {
     "taskade": {
       "command": "npx",
-      "args": ["-y", "@taskade/mcp"],
+      "args": ["-y", "@taskade/mcp-server"],
       "env": {
         "TASKADE_API_KEY": "your_api_token_placeholder"
       }
@@ -120,7 +120,7 @@ File: `.cursor/mcp.json` in your project root.
   "mcpServers": {
     "taskade": {
       "command": "npx",
-      "args": ["-y", "@taskade/mcp"],
+      "args": ["-y", "@taskade/mcp-server"],
       "env": {
         "TASKADE_API_KEY": "your_api_token_placeholder"
       }
@@ -132,7 +132,7 @@ File: `.cursor/mcp.json` in your project root.
 ### Claude Code
 
 ```bash
-claude mcp add taskade npx -- -y @taskade/mcp
+claude mcp add taskade npx -- -y @taskade/mcp-server
 # Then set TASKADE_API_KEY in your shell environment
 ```
 
@@ -146,8 +146,8 @@ Avoid committing these config files to public repos with real tokens. Many teams
 
 | Feature | Free | Pro | Business | Max / Enterprise |
 | --- | --- | --- | --- | --- |
-| Inbound MCP (`@taskade/mcp`) | Limited | Limited | Full | Full |
-| Hosted MCP v2 (outbound) | — | — | ✓ | ✓ |
+| Inbound MCP (`@taskade/mcp-server`) | Limited | Limited | Full | Full |
+| MCP Connectors (outbound) | — | — | ✓ | ✓ |
 | Taskade-as-MCP-server (external clients read workspace) | — | — | ✓ | ✓ |
 | Custom domain for MCP | — | — | — | ✓ |
 
@@ -159,38 +159,35 @@ Plan features may evolve. Check the [pricing page](https://www.taskade.com/prici
 
 ## Tool Catalog Details
 
-The inbound MCP server exposes ~25 tools. Below are the ones integrators most often need to configure precisely.
+The inbound server exposes 50+ tools whose names mirror the [REST API v1](comprehensive-api-guide/README.md) operations it wraps. Below are the ones integrators most often need to configure precisely.
 
-### `list_project_tasks`
+### `projectTasksGet`
 
 - **Required args:** `projectId`
-- **Optional args:** `limit` (default 50), `cursor`
-- **Pagination:** Cursor-based. Call again with returned cursor until no cursor returned.
+- **Optional args:** `limit` (default 100), `after`, `before`
+- **Pagination:** Cursor-based — pass the last task id as `after` to page forward.
 
-### `prompt_agent`
+### `taskCreate`
 
-- **Required args:** `agentId`, `message`
-- **Optional args:** `conversationId`
-- **Returns:** `{ conversationId, message, usage }`
-- **Conversation persistence:** Passing `conversationId` continues the conversation across calls.
+- **Required args:** `projectId`, `tasks` (array of `{ contentType, content }`)
+- **Optional args:** `placement` (`afterbegin` | `beforeend`)
 
-### `upload_media`
+### `agentConvosGet` / `agentConvoGet`
 
-- **Required args:** `fileData` (base64), `fileName`, `mimeType`
-- **Size limit:** Honors workspace upload limits. Large files may be rejected.
+- **`agentConvosGet`** lists an agent's conversations (`agentId`, optional `limit`, `page`).
+- **`agentConvoGet`** returns one conversation (`agentId`, `convoId`).
 
-### `export_bundle`
+{% hint style="info" %}
+This local server wraps **v1** and therefore has **no prompt-an-agent tool**. To prompt agents programmatically, call [`POST /api/v2/promptAgent`](api-v2-reference.md#prompt-an-agent) directly, or use the agent inside Taskade. Likewise, bundle export/import lives in the [Action API v2](bundles.md), not in this server.
+{% endhint %}
 
-- **Required args:** `appId`
-- **Returns:** Full bundle JSON. Can be large — buffer accordingly.
-
-For the complete tool list, see the [Workspace MCP](workspace-mcp.md) reference.
+For the full tool list, see the [Workspace MCP](workspace-mcp.md) reference.
 
 ---
 
 ## MCP Connectors
 
-Hosted MCP v2 lets your Taskade agents connect **outbound** to third-party services. You browse and enable connectors from the Integrations screen in your workspace — no code, no hosting.
+MCP Connectors let your Taskade agents connect **outbound** to third-party services. You browse and enable connectors from the Integrations screen in your workspace — no code, no hosting.
 
 <figure><img src="../.gitbook/assets/api-integrations-ecosystem.gif" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -206,7 +203,7 @@ Agents see enabled connectors as tools. You can opt specific tools out per agent
 | "Unauthorized" on every tool | Token invalid or rotated | Regenerate token; update all client configs |
 | "Workspace not found" | Token scoped to wrong workspace | Create a token in the right workspace |
 | Tools appear but return 429 | Rate limited | Back off; consider splitting tokens |
-| Agent invisible in shared workspace | Permission issue (fixed v6.114.1) | Update to latest `@taskade/mcp` |
+| Agent invisible in shared workspace | Permission issue (fixed v6.114.1) | Update to latest `@taskade/mcp-server` |
 | OAuth loop (Genesis App MCP) | Expired refresh token | Re-authenticate in the client |
 | Tool timeout | Large response or slow upstream | Check upstream; reduce query scope |
 

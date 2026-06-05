@@ -1,6 +1,22 @@
+---
+description: >-
+  Connect Claude, Cursor, or any MCP client to your Taskade Genesis app's source
+  code via the hosted taskade.com/mcp server (OAuth 2.0, Business plan).
+---
+
 # Genesis App MCP (Beta)
 
 > **Managing projects, tasks, or agents instead?** See [Workspace MCP](workspace-mcp.md) for the API-based server that reads and writes workspace content.
+
+## Which MCP do I want?
+
+Taskade has three MCP surfaces. This page covers the **hosted Genesis App MCP**.
+
+| Surface | Transport | Auth | Touches | Plan |
+| --- | --- | --- | --- | --- |
+| [Workspace MCP](workspace-mcp.md) (`@taskade/mcp-server`) | Local stdio (you run it) | Personal token | Workspace **content** (projects, tasks, agents) | Most plans |
+| **Hosted Genesis App MCP** (this page) | Hosted HTTP (`taskade.com/mcp`) | OAuth 2.0 | Genesis app **source code** | Business+ |
+| [MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md) | Hosted (outbound) | Per-connector | **Third-party** services from your agents | Varies |
 
 Genesis App MCP lets you connect your favorite AI tools — Claude Desktop, Claude Code, Cursor, or any MCP-compatible client — directly to your Taskade Genesis app's **source code**. Browse your workspace from your IDE, and edit your app's React components, styles, and configuration using the model and workflow you already love.
 
@@ -38,7 +54,7 @@ Those resources appear in the MCP filesystem but are **read-only**. To modify th
 
 ## Connecting your client
 
-Add the Taskade MCP server to your client's configuration. The exact format depends on your client, but the endpoint is the same:
+This is a **hosted, remote MCP server** — there's nothing to install. Add its URL to your client's configuration and it handles authentication over OAuth 2.0 (with PKCE) automatically:
 
 **Production endpoint:**
 ```
@@ -53,7 +69,7 @@ Add this to your MCP configuration file:
 {
   "mcpServers": {
     "taskade": {
-      "type": "url",
+      "type": "http",
       "url": "https://www.taskade.com/mcp"
     }
   }

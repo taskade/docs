@@ -7,10 +7,10 @@ cover: .gitbook/assets/ss-api3.png
 coverY: 0
 ---
 
-# Your Second Brain, Alive
+# Build on Taskade
 
 {% hint style="success" %}
-**New to Taskade?** Your workspace comes with a default **Home Subspace** where you can instantly build apps with [Genesis](genesis-living-system-builder/genesis/) or start with our [Quick Start Guide](getting-started/). Each subspace becomes a complete app powered by your workspace's living DNA!
+**New here?** Start with the [Quick Start Guide](getting-started/), learn the platform architecture via [Workspace DNA](genesis-living-system-builder/genesis/workspace-dna.md), or go straight to the [Developer Portal](apis-living-system-development/developer-home.md) to build on the API.
 {% endhint %}
 
 ## Welcome to Taskade
@@ -46,7 +46,7 @@ Software should be alive. And now, it is.
 
 Taskade works best when three parts stay connected. **Memory** stores knowledge. **Intelligence** reasons with that knowledge. **Execution** runs workflows from it.
 
-Use this as the canonical overview: [Workspace DNA](https://help.taskade.com/en/articles/12578949-how-genesis-works-workspace-dna).
+Use this as the canonical overview: [Workspace DNA](genesis-living-system-builder/genesis/workspace-dna.md).
 
 ### 🚀 Quick Start
 
@@ -68,10 +68,11 @@ Use this as the canonical overview: [Workspace DNA](https://help.taskade.com/en/
 
 #### 💻 **For Developers**
 
-* [**API Documentation**](apis-living-system-development/developers/api.md) - Complete technical reference
-* [**Authentication Setup**](apis-living-system-development/developers/authentication.md) - Get your API keys
-* [**Developer Guide**](apis-living-system-development/developers/) - Build on Taskade's infrastructure
+* [**Build on Taskade**](apis-living-system-development/developer-home.md) - The developer portal: APIs, SDK, and MCP
+* [**REST API v1**](apis-living-system-development/comprehensive-api-guide/README.md) - Complete RESTful reference (full task CRUD)
+* [**Action API v2**](apis-living-system-development/api-v2-reference.md) - The newer action-based API (agent prompting, bundles)
+* [**Authentication**](apis-living-system-development/developers/authentication.md) - Personal tokens & OAuth 2.0
 
 ### Explore docs
 
-<table data-view="cards"><thead><tr><th>Topic</th><th data-card-target data-type="content-ref">Link</th></tr></thead><tbody><tr><td>Workspace DNA (canonical)</td><td><a href="/broken/pages/hwPV9h9VoROuoCBavjVo">Broken link</a></td></tr><tr><td>Genesis (build apps)</td><td><a href="genesis-living-system-builder/genesis/">genesis</a></td></tr><tr><td>AI Agents</td><td><a href="genesis-living-system-builder/ai-features/ai-agents-getting-started.md">ai-agents-getting-started.md</a></td></tr><tr><td>Automations</td><td><a href="genesis-living-system-builder/automation/">automation</a></td></tr><tr><td>Developers</td><td><a href="apis-living-system-development/developers/">developers</a></td></tr><tr><td>Help &#x26; Support</td><td><a href="help-center/">help-center</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th>Topic</th><th data-card-target data-type="content-ref">Link</th></tr></thead><tbody><tr><td>Workspace DNA (canonical)</td><td><a href="genesis-living-system-builder/genesis/workspace-dna.md">workspace-dna.md</a></td></tr><tr><td>Genesis (build apps)</td><td><a href="genesis-living-system-builder/genesis/">genesis</a></td></tr><tr><td>AI Agents</td><td><a href="genesis-living-system-builder/ai-features/ai-agents-getting-started.md">ai-agents-getting-started.md</a></td></tr><tr><td>Automations</td><td><a href="genesis-living-system-builder/automation/">automation</a></td></tr><tr><td>Developers</td><td><a href="apis-living-system-development/developer-home.md">developer-home.md</a></td></tr><tr><td>Help &#x26; Support</td><td><a href="help-center/">help-center</a></td></tr></tbody></table>

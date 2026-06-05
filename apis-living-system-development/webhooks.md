@@ -12,6 +12,11 @@ Webhooks let your Taskade automations communicate with the outside world in both
 
 * **Inbound webhooks** — external services send data _into_ Taskade to trigger automations.
 * **Outbound HTTP requests** — automations call _out_ to external APIs as action steps.
+* **Receiving Taskade events** — combine a Taskade **trigger** (e.g. _task completed_) with an outbound HTTP action to push events to your app.
+
+{% hint style="warning" %}
+There is **no** `POST /api/v2/webhooks` subscription endpoint and no event-subscription REST API. You receive Taskade events by **building an automation** with a Taskade trigger plus an HTTP action — see [Receiving Taskade Events](#receiving-taskade-events) below.
+{% endhint %}
 
 ***
 
@@ -88,17 +93,62 @@ Response data from the HTTP request is available as dynamic variables in subsequ
 
 ### Example: Post to an External API
 
-```
-Method:  POST
-URL:     https://api.example.com/notifications
-Headers: Content-Type: application/json
-         Authorization: Bearer your_api_token_placeholder
-Body:
+| Setting | Value |
+| --- | --- |
+| **Method** | `POST` |
+| **URL** | `https://api.example.com/notifications` |
+| **Headers** | `Content-Type: application/json`<br>`Authorization: Bearer your_api_token_placeholder` |
+
+**Body:**
+
+```json
 {
   "channel": "#alerts",
   "text": "New task created: {{task.name}}"
 }
 ```
+
+***
+
+## Receiving Taskade Events
+
+To notify your app when something happens **in** Taskade (a task is added, a task is completed), build an automation that starts with a Taskade **trigger** and ends with an [Outbound HTTP Request](#outbound-http-requests) to your endpoint. The trigger's fields are available as dynamic variables in the HTTP body.
+
+### Common triggers and their payloads
+
+**Task added** — fires when a new task is added to a project:
+
+```json
+{
+  "projectId": "abc123",
+  "nodeId": "node_456",
+  "nodeText": "Follow up with client",
+  "projectTitle": "Sales Pipeline",
+  "nodeNote": "Optional note text",
+  "projectLink": "https://www.taskade.com/d/abc123",
+  "assignees": [ { "handle": "jane" } ],
+  "startDate": "2026-06-10",
+  "endDate": "2026-06-12"
+}
+```
+
+**Task completed** — fires when a task is marked complete:
+
+```json
+{
+  "projectId": "abc123",
+  "nodeId": "node_456",
+  "nodeText": "Follow up with client",
+  "projectTitle": "Sales Pipeline",
+  "projectLink": "https://www.taskade.com/d/abc123",
+  "completedBy": "jane",
+  "completedAt": "2026-06-11T14:30:00Z",
+  "triggerTime": "2026-06-11T14:30:01Z",
+  "assignees": [ { "handle": "jane" } ]
+}
+```
+
+Custom field values on the task are included as additional keys. Other triggers (new comment, due date, project completed, schedule) follow the same pattern — see the [Action & Trigger Reference](../genesis-living-system-builder/automation/actions.md).
 
 ***
 
@@ -111,4 +161,4 @@ Excessive inbound webhook calls may be throttled to protect system stability. If
 ## Next Steps
 
 * [Authentication](developers/authentication.md) — set up API tokens for outbound requests
-* [MCP Connectors](/broken/pages/edGXixHEoPgFP9ulVcLu) — use native integrations instead of raw webhooks for supported services
+* [MCP Connectors](workspace-mcp-advanced.md#mcp-connectors) — use native integrations instead of raw webhooks for supported services
