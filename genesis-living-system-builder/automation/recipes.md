@@ -219,35 +219,35 @@ Schedule and automate social media posts using due dates and custom fields. Perf
 
 {% step %}
 
-### Create Content Calendar Project
+#### Create Content Calendar Project
 
 Set up a Taskade project using Table view to organize your social media content
 {% endstep %}
 
 {% step %}
 
-### Add Custom Fields
+#### Add Custom Fields
 
 Create fields for Status (dropdown: draft, scheduled, posted), Platform, and Posted_At (date)
 {% endstep %}
 
 {% step %}
 
-### Set Up Automation Trigger
+#### Set Up Automation Trigger
 
 Create a "Task Due" trigger that fires when content is scheduled to post
 {% endstep %}
 
 {% step %}
 
-### Configure Social Media Actions
+#### Configure Social Media Actions
 
 Add conditional actions for each platform (Twitter, LinkedIn, Facebook) based on custom field values
 {% endstep %}
 
 {% step %}
 
-### Add Status Updates
+#### Add Status Updates
 
 Include actions to update the task status and posting timestamp after successful publication
 {% endstep %}
@@ -297,7 +297,7 @@ Include actions to update the task status and posting timestamp after successful
 
 ## 🎯 Lead Generation & Sales
 
-### Recipe 1: Lead Capture & Qualification
+### Recipe 3: Lead Capture & Qualification
 
 **Use Case**: Automatically capture leads from your website form, qualify them with AI, and route to the appropriate sales team.
 
@@ -371,7 +371,7 @@ Include actions to update the task status and posting timestamp after successful
 3. Create an email template in your email service with the ID `nurture_sequence_start`.
 4. Create a public Taskade form titled "Contact Form" with `name`, `email`, `company`, and `message` fields.
 
-### Recipe 2: Deal Stage Automation
+### Recipe 4: Deal Stage Automation
 
 **Use Case**: Automatically update deal stages based on customer actions and notify relevant team members.
 
@@ -418,7 +418,7 @@ Include actions to update the task status and posting timestamp after successful
 
 ## 🎧 Customer Support
 
-### Recipe 3: Intelligent Ticket Routing
+### Recipe 5: Intelligent Ticket Routing
 
 **Use Case**: Automatically categorize support tickets and route them to the right team with appropriate priority.
 
@@ -480,9 +480,9 @@ Include actions to update the task status and posting timestamp after successful
 2. Connect your email and Slack integrations.
 3. Set up Taskade projects corresponding to the `project_id` your agent will return.
 
-## 📝 Content & Marketing
+## 📝 Content Operations
 
-### Recipe 4: Content Creation Pipeline
+### Recipe 6: Content Creation Pipeline
 
 **Use Case**: Generate blog content ideas, create drafts, and manage the approval process.
 
@@ -524,7 +524,7 @@ Include actions to update the task status and posting timestamp after successful
 
 ## 🔧 Development & Project Management
 
-### Recipe 5: GitHub Issue to Project Task
+### Recipe 7: GitHub Issue to Project Task
 
 **Use Case**: Automatically create project tasks from GitHub issues and sync status updates.
 
@@ -559,7 +559,7 @@ Include actions to update the task status and posting timestamp after successful
 
 ## 📊 Data Processing & Analytics
 
-### Recipe 6: Weekly Analytics Report
+### Recipe 8: Weekly Analytics Report
 
 **Use Case**: Generate and distribute weekly analytics reports to stakeholders.
 
@@ -594,7 +594,7 @@ Include actions to update the task status and posting timestamp after successful
 
 ## 🏢 HR & Operations
 
-### Recipe 7: Employee Onboarding Automation
+### Recipe 9: Employee Onboarding Automation
 
 **Use Case**: Automate the employee onboarding process with task creation and notifications.
 
@@ -626,7 +626,7 @@ Include actions to update the task status and posting timestamp after successful
 
 ## 🎯 E-commerce & Sales
 
-### Recipe 8: Abandoned Cart Recovery
+### Recipe 10: Abandoned Cart Recovery
 
 **Use Case**: Automatically follow up with customers who abandon their shopping carts.
 

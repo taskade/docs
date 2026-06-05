@@ -226,3 +226,4 @@
   * [Build Without Permission Manifesto](https://www.taskade.com/blog/build-without-permission)
   * [Specs & Interoperability](contributing/vision/specs-and-interoperability.md)
 * [Contributing Guide](contributing.md)
+* [Security Guidelines](SECURITY.md)

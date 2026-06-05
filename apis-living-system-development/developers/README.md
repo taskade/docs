@@ -61,8 +61,8 @@ Official libraries and tools:
 
 **Resources:**
 
-* [Agent Cookbook](https://github.com/taskade/agent-cookbook) -- Use cases and architecture patterns
-* [Community Apps](https://github.com/taskade/awesome-app-kits) -- 120+ Genesis app examples
+* [Autonomous Agents Guide](../autonomous-agents.md) -- Agent use cases and architecture patterns
+* [Community Apps](https://www.taskade.com/community) -- Browse Genesis apps built by the community
 * [Sample App](https://github.com/taskade/taskade-sample-app) -- Genesis app example
 {% endtab %}
 {% endtabs %}
@@ -105,7 +105,7 @@ Build complete web applications from natural language prompts. Taskade Genesis h
 
 ## 📚 Resources
 
-### [**OpenAPI Specification**](https://www.taskade.com/api/documentation/static/index.html#/)
+### [**OpenAPI Specification**](https://www.taskade.com/api/documentation/v1)
 
 Interactive API documentation with live testing capabilities.
 
@@ -122,9 +122,9 @@ Official and community-maintained libraries for popular languages.
 | Resource                                                            | Description                                   |
 | ------------------------------------------------------------------- | --------------------------------------------- |
 | [**API Documentation**](https://www.taskade.com/api/documentation/) | Interactive API documentation (Swagger)       |
-| [**Community Forum**](https://www.taskade.com/feedback/public-api)  | Developer discussions, integration sharing    |
+| [**Community Forum**](https://www.taskade.com/community)  | Developer discussions, integration sharing    |
 | [**GitHub Repository**](https://github.com/taskade/docs)            | Documentation contributions, feature requests |
-| [**Status Page**](https://status.taskade.com)                       | API uptime, service announcements             |
+| [**Status Page**](https://taskade.statuspage.io)                       | API uptime, service announcements             |
 | [**Community Apps**](https://www.taskade.com/community)             | Browse apps built with Taskade                |
 
 ***
@@ -133,4 +133,4 @@ Official and community-maintained libraries for popular languages.
 
 🚀 [**Get a Personal Token →**](personal-tokens.md)\
 📚 [**API Documentation →**](https://www.taskade.com/api/documentation/)\
-💬 [**Join Developer Community →**](https://www.taskade.com/feedback/public-api)
+💬 [**Join Developer Community →**](https://www.taskade.com/community)

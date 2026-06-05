@@ -45,7 +45,7 @@ You can generate images for your Taskade Genesis apps **natively** — no extra 
 | 4 | Send the message and wait for generation |
 | 5 | Use immediately in your app, or access anytime from the **Media** tab |
 
-> **Note:** Images generated in chat automatically appear in Media and count toward your AI credit usage. See [Taskade AI Credits](https://help.taskade.com/en/articles/taskade-ai-credits).
+> **Note:** Images generated in chat automatically appear in Media and count toward your AI credit usage. See [Taskade AI Credits](https://help.taskade.com/en/articles/8958455-taskade-ai-credits).
 
 <!-- Screenshot: EVE chat with generated image result -->
 

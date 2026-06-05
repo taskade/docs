@@ -261,7 +261,7 @@ Use our official contact page for structured feedback:
 
 #### **Method 3: Feedback Channel**
 Join our active community feedback platform:
-- **Visit**: [taskade.com/feedback/feature-requests](https://www.taskade.com/feedback/feature-requests)
+- **Visit**: [taskade.com/feedback](https://www.taskade.com/feedback)
 - **Best for**: Submitting bugs, voting on feature requests, and tracking community suggestions
 
 ### What Makes a Great Suggestion?
@@ -418,7 +418,7 @@ We support standard Markdown plus:
 ### **Community Support**
 - [Taskade Community Forum](https://taskade.com/community)
 - [Discord Server](https://discord.gg/taskade)
-- [GitHub Discussions](https://github.com/taskade/docs/discussions)
+- [GitHub Issues](https://github.com/taskade/docs/issues)
 
 ### **Direct Contact**
 - Email: docs@taskade.com
