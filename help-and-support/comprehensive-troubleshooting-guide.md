@@ -16,7 +16,7 @@ This guide provides step-by-step solutions for the most common Taskade issues. I
 {% step %}
 #### Check Taskade Status
 
-Visit [status.taskade.com](https://status.taskade.com) to see if there are any known service issues.
+Visit [Taskade status page](https://taskade.statuspage.io) to see if there are any known service issues.
 {% endstep %}
 
 {% step %}

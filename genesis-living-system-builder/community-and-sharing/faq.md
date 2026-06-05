@@ -191,7 +191,7 @@ Yes! Genesis can integrate with:
 * **99.9% uptime SLA** for paid plans
 * **Multiple data centers** for redundancy
 * **Automatic failover** systems
-* **Real-time status monitoring** at status.taskade.com
+* **Real-time status monitoring** at taskade.statuspage.io
 * **Data backups** stored in multiple locations
 
 ### Can I get help with complex integrations?

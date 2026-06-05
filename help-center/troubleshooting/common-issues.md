@@ -342,7 +342,7 @@ Integration Debugging:
 1. **Try basic troubleshooting** from this guide
 2. **Note error messages** exactly as they appear
 3. **Document steps** to reproduce the issue
-4. **Check service status** at [status.taskade.com](https://status.taskade.com)
+4. **Check service status** at [Taskade status page](https://taskade.statuspage.io)
 5. **Gather system info**: Browser version, OS, device type
 
 ### **How to Contact**:
