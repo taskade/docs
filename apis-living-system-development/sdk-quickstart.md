@@ -64,6 +64,55 @@ async function taskade(operation: string, body: unknown) {
 const { items } = await taskade("listSpaces", {});
 ```
 
+## cURL & Python
+
+{% tabs %}
+{% tab title="cURL" %}
+```bash
+export TASKADE_TOKEN=YOUR_TOKEN
+
+# List your projects (REST API v1)
+curl -s \
+  -H "Authorization: Bearer $TASKADE_TOKEN" \
+  "https://www.taskade.com/api/v1/me/projects"
+
+# Prompt an agent (Action API v2)
+curl -s -X POST \
+  -H "Authorization: Bearer $TASKADE_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"spaceId":"SPACE_ID","agentId":"AGENT_ID","prompt":"Summarize standup notes"}' \
+  "https://www.taskade.com/api/v2/promptAgent"
+```
+{% endtab %}
+
+{% tab title="Python" %}
+```python
+import os
+import requests
+
+token = os.environ["TASKADE_TOKEN"]
+headers = {"Authorization": f"Bearer {token}"}
+
+# List your projects (REST API v1)
+items = requests.get(
+    "https://www.taskade.com/api/v1/me/projects",
+    headers=headers,
+).json()["items"]
+
+# Prompt an agent (Action API v2)
+result = requests.post(
+    "https://www.taskade.com/api/v2/promptAgent",
+    headers=headers,
+    json={
+        "spaceId": "SPACE_ID",
+        "agentId": "AGENT_ID",
+        "prompt": "Summarize standup notes",
+    },
+).json()
+```
+{% endtab %}
+{% endtabs %}
+
 ## What the SDK will look like
 
 `@taskade/sdk` is a **generated client** for the [Action API v2](api-v2-reference.md). When it's published you'll construct an `HttpClient` (which carries your token) and a `TaskadePublicApi` instance whose methods map 1:1 to the v2 operations:

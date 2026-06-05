@@ -217,7 +217,7 @@ Every Genesis workspace earns an **Intelligence Score** from 0–100, calculated
 | Projects (Memory) | 2 pts | 10 | 20 |
 | AI Agents (Intelligence) | 10 pts | 3 | 30 |
 | Automation Flows (Execution) | 5 pts | 6 | 30 |
-| Integrations (Connections) | _Reserved_ | _TBD_ | 20 |
+| Integrations (Connections) | _Reserved_ | — | 20 |
 | **Total** | | | **100** |
 
 ### Intelligence Tiers
