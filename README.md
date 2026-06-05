@@ -68,7 +68,7 @@ Use this as the canonical overview: [Workspace DNA](genesis-living-system-builde
 
 #### 💻 **For Developers**
 
-* [**Build on Taskade**](apis-living-system-development/developer-home.md) - The developer portal: APIs, SDK, and MCP
+* [**Developer Platform**](apis-living-system-development/developer-home.md) - The developer portal: APIs, SDK, and MCP
 * [**REST API v1**](apis-living-system-development/comprehensive-api-guide/README.md) - Complete RESTful reference (full task CRUD)
 * [**Action API v2**](apis-living-system-development/api-v2-reference.md) - The newer action-based API (agent prompting, bundles)
 * [**Authentication**](apis-living-system-development/developers/authentication.md) - Personal tokens & OAuth 2.0
