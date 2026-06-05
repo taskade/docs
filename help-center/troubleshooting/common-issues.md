@@ -346,7 +346,7 @@ Integration Debugging:
 5. **Gather system info**: Browser version, OS, device type
 
 ### **How to Contact**:
-- **Help Center**: [help.taskade.com](https://help.taskade.com)
+- **Help Center**: [taskade.com/learn](https://www.taskade.com/learn)
 - **Community Forum**: [community.taskade.com](https://community.taskade.com)
 - **Email Support**: support@taskade.com
 - **Live Chat**: Available in app during business hours

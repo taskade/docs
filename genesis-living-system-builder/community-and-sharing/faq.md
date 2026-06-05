@@ -75,7 +75,7 @@ Yes! Check out:
 * [**Examples and templates**](../genesis/examples-and-templates.md) in this documentation
 * **Community showcase** in the Taskade forums
 * **Video tutorials** on [YouTube](https://youtube.com/taskade)
-* **Help center** case studies at [help.taskade.com](https://help.taskade.com)
+* **Help center** case studies at [taskade.com/learn](https://www.taskade.com/learn)
 
 ## Sharing and Access
 
@@ -244,7 +244,7 @@ Yes! Most plans include a **free trial period** where you can test advanced feat
 
 **Self-service resources:**
 
-* **Help documentation:** [help.taskade.com](https://www.taskade.com/learn/genesis)
+* **Help documentation:** [taskade.com/learn/genesis](https://www.taskade.com/learn/genesis)
 * **Video tutorials:** [youtube.com/taskade](https://youtube.com/taskade)
 * **Community forums:** Connect with other users
 * **This documentation:** Comprehensive guides and examples
@@ -372,7 +372,7 @@ See our [Best Practices guide](best-practices.md) for detailed examples.
 
 **Still have questions?**
 
-* **Browse our help center:** [help.taskade.com](https://www.taskade.com/learn/genesis)
+* **Browse our help center:** [taskade.com/learn/genesis](https://www.taskade.com/learn/genesis)
 * **Email us:** [support@taskade.com](mailto:support@taskade.com)
 * **Join the community:** [taskade.com/community](https://taskade.com/community)
 

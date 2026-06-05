@@ -37,7 +37,7 @@ Software should be alive. And now, it is.
 | **AI Agents Platform**   | Deploy custom AI assistants with persistent memory             | [Custom AI Agents →](https://www.taskade.com/learn/agents/custom-agents) |
 | **Projects & Databases** | Structured data with real-time sync and custom fields          | [Memory Pillar →](https://www.taskade.com/learn/projects/databases)       |
 
-[**Start Building →**](https://www.taskade.com) | [**Browse Community Apps →**](https://www.taskade.com/community)
+[**Start Building →**](https://www.taskade.com/create) | [**Browse Community Apps →**](https://www.taskade.com/community)
 
 ### How Taskade fits together
 

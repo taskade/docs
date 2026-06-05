@@ -374,7 +374,7 @@ Start with basic operations, then add complexity as needed.
 ### Support
 
 * **Email:** support@taskade.com
-* **Help Center:** [help.taskade.com](https://help.taskade.com)
+* **Help Center:** [taskade.com/learn](https://www.taskade.com/learn)
 
 ***
 
