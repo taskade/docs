@@ -45,7 +45,7 @@ This is what agents read and automations update.
 
 Start here:
 
-* [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo)
+* [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md)
 * [Project Views Mastery](../workspaces/project-views.md)
 
 #### 2) Living Intelligence (agents)

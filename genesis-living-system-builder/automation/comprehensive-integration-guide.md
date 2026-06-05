@@ -10,7 +10,7 @@
 
 Integrations connect Taskade to the tools you already use. They run through Automations using **triggers** (events) and **actions** (what happens next).
 
-If you want the bigger model, start with [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo).
+If you want the bigger model, start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
 ### What you can do
 

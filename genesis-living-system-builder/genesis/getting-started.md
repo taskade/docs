@@ -8,7 +8,7 @@
 
 Genesis turns a single prompt into a working app.\nIt creates the UI and connects it to your workspace.\nYou iterate by describing changes in plain English.
 
-Want the deeper “why it works” model?\nStart with [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo).
+Want the deeper “why it works” model?\nStart with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
 ## Before You Start
 
@@ -58,7 +58,7 @@ Start by thinking about something in your business that could work better. Commo
 ***
 
 {% hint style="info" %}
-Skip the theory.\nFollow the steps below.\nIf you want the underlying model, read [Workspace DNA](/broken/pages/hwPV9h9VoROuoCBavjVo).
+Skip the theory.\nFollow the steps below.\nIf you want the underlying model, read [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 {% endhint %}
 
 ## Step 2: Craft Your App Description (2 minutes)
