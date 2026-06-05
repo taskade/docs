@@ -151,6 +151,6 @@ Every file you upload becomes part of your workspace's living memory:
 | Guide | What You'll Learn |
 |---|---|
 | [Image Generation](../ai-features/image-generation.md) | Generate custom images for your apps |
-| [Guide to App Styles](../space-apps-guide/advanced-features.md) | Use your brand context to apply specific visual styles |
+| [Advanced Features](../space-apps-guide/advanced-features.md) | Use your brand context to customize app appearance |
 | [Agent Knowledge & Memory](../ai-features/agent-knowledge.md) | Train AI agents on your uploaded files |
 | [Projects & Databases](../workspaces/projects-databases.md) | How uploaded data becomes structured databases |

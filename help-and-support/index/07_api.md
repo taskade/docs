@@ -246,7 +246,7 @@ await api.put(`/tasks/${taskId}`, {
 
 ### Webhooks for Real-Time Integration
 
-For full setup, event types, and signature verification, see the [Webhooks reference](../../apis-living-system-development/webhooks.md).
+For full setup and event types, see the [Webhooks reference](../../apis-living-system-development/webhooks.md).
 
 **Get instant notifications of changes:**
 
