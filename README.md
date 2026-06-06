@@ -27,6 +27,8 @@ We believe the future of work isn't just humans using AI. It's humans and AI wor
 
 Software should be alive. And now, it is.
 
+<figure><img src=".gitbook/assets/genesis-overview.gif" alt="Build a full app from one prompt with Taskade Genesis"><figcaption>One prompt → a working app — agents, integrations, and automations built in.</figcaption></figure>
+
 ### 🏗️ Platform Capabilities
 
 | Capability               | Description                                                    | Learn More                                                                                                  |
@@ -42,6 +44,12 @@ Software should be alive. And now, it is.
 ### How Taskade fits together
 
 Taskade works best when three parts stay connected. **Memory** stores knowledge. **Intelligence** reasons with that knowledge. **Execution** runs workflows from it.
+
+<figure><img src=".gitbook/assets/workspace-memory.gif" alt="A connected knowledge graph across every Taskade project"><figcaption>Memory — every project, doc, and conversation connects into one workspace knowledge graph.</figcaption></figure>
+
+<figure><img src=".gitbook/assets/ai-agents-teams.gif" alt="AI agent teams with persistent memory and custom tools"><figcaption>Intelligence — AI agents with persistent memory, custom tools, and slash commands.</figcaption></figure>
+
+<figure><img src=".gitbook/assets/workflows-integrations.gif" alt="Automations connecting 100+ integrations"><figcaption>Execution — automations connect 100+ tools to run work end to end.</figcaption></figure>
 
 Use this as the canonical overview: [Workspace DNA](genesis-living-system-builder/genesis/workspace-dna.md).
 
