@@ -1,0 +1,22 @@
+name: 💡 Content request
+description: Request new documentation or expanded coverage
+title: "[Request]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: topic
+    attributes:
+      label: What should we document?
+      description: The feature, endpoint, or workflow you'd like covered.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this useful?
+      description: What are you trying to build, and what's missing today?
+  - type: input
+    id: refs
+    attributes:
+      label: Related links
+      description: Existing pages, API endpoints, or product features (optional).
