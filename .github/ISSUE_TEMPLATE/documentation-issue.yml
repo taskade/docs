@@ -1,0 +1,42 @@
+name: 📝 Documentation issue
+description: Report something incorrect, outdated, or confusing in the docs
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the Taskade docs! For a typo or small fix, you can also edit the page directly on GitHub and open a pull request.
+  - type: input
+    id: page
+    attributes:
+      label: Page URL or file path
+      description: The docs.taskade.com page (or repo file) with the issue.
+      placeholder: https://docs.taskade.com/apis-and-developer/sdk-quickstart
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of issue
+      options:
+        - Incorrect / inaccurate
+        - Outdated
+        - Confusing / unclear
+        - Broken link or image
+        - Typo / formatting
+        - Missing information
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong?
+      description: What is incorrect, outdated, or unclear?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should it say?
+      description: The correct or clearer version, if you know it.

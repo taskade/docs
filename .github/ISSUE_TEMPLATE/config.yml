@@ -1,0 +1,14 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📚 Browse the docs
+    url: https://docs.taskade.com
+    about: Search the live documentation first — your answer may already be there.
+  - name: 💬 Ask a question (Discussions)
+    url: https://github.com/taskade/docs/discussions
+    about: Questions, ideas, and general help for building on Taskade.
+  - name: 🌐 Taskade Community
+    url: https://www.taskade.com/community
+    about: Share apps, templates, and workflows with other builders.
+  - name: 🔑 Developer Portal
+    url: https://docs.taskade.com/apis-and-developer/developer-home
+    about: API, SDK, and MCP reference for building on Taskade.
