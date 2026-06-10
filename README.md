@@ -77,6 +77,7 @@ Use this as the canonical overview: [Workspace DNA](genesis-living-system-builde
 * [**REST API v1**](apis-living-system-development/comprehensive-api-guide/README.md) - Complete RESTful reference (full task CRUD)
 * [**Action API v2**](apis-living-system-development/api-v2-reference.md) - The newer action-based API (agent prompting, bundles)
 * [**Authentication**](apis-living-system-development/developers/authentication.md) - Personal tokens & OAuth 2.0
+* [**Open Source**](https://github.com/taskade) - MCP server, Integration Kit (Zapier/n8n), and sample apps on GitHub
 
 ### Explore docs
 

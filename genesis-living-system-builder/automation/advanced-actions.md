@@ -756,21 +756,13 @@ The HTTP Schema Generator automatically creates data schemas from API responses,
 
 ---
 
-## 🔮 Future Automation Features
+## 🤖 Build Automations with AI — Available Today
 
-### **Coming Soon**
+You don't have to assemble flows by hand — Taskade already builds automations from natural language:
 
-#### **AI-Powered Automation Builder**
-- Natural language automation creation
-- Smart workflow suggestions based on usage patterns  
-- Automatic optimization recommendations
-- Predictive failure detection
-
-#### **Advanced Integration Hub**
-- One-click setup for popular service combinations
-- Custom connector builder
-- Real-time integration health monitoring
-- Marketplace for community-built integrations
+* **EVE (Taskade Autonomous Agent)** — describe the outcome you want and EVE drafts the automation: trigger, actions, and connected integrations.
+* **Workflow Automation Mode** at [taskade.com/create](https://www.taskade.com/create) — a focused chat mode that generates just the workflow from a single prompt.
+* Generated flows are normal automations — open them in the flow editor to adjust triggers, actions, and conditions like any hand-built workflow.
 
 ---
 

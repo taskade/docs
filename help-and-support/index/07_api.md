@@ -134,8 +134,8 @@ Go to Settings → Developer → API Keys → Generate New Key
 Use curl to retrieve your projects:
 
 ```
-curl -H "Authorization: Bearer YOUR_API_KEY" \
-     https://api.taskade.com/v1/projects
+curl -H "Authorization: Bearer your_api_token_placeholder" \
+     https://www.taskade.com/api/v1/projects
 ```
 {% endstep %}
 
@@ -151,10 +151,10 @@ You'll get a JSON array of your projects with full details
 Try creating a task:
 
 ```
-curl -X POST https://api.taskade.com/v1/tasks \
-  -H "Authorization: Bearer YOUR_API_KEY" \
+curl -X POST https://www.taskade.com/api/v1/projects/your_project_id/tasks/ \
+  -H "Authorization: Bearer your_api_token_placeholder" \
   -H "Content-Type: application/json" \
-  -d '{"name": "API Test Task", "project_id": "your_project_id"}'
+  -d '{"tasks": [{"content": "API Test Task", "contentType": "text/markdown", "placement": "beforeend"}]}'
 ```
 {% endstep %}
 {% endstepper %}
@@ -518,29 +518,38 @@ class ResilientAPI {
 
 ## SDKs and Development Tools
 
-### Official SDKs
+### Call the API from any language
 
-**Pre-built libraries for popular languages:**
+The API is standard HTTP + JSON — no SDK required. Authenticate with a personal access token from [taskade.com/settings/api](https://www.taskade.com/settings/api):
 
 ```javascript
-// JavaScript/TypeScript SDK
-import { TaskadeAPI } from '@taskade/sdk';
-
-const api = new TaskadeAPI({
-  apiKey: 'your_api_key',
-  baseURL: 'https://api.taskade.com/v1'
+// JavaScript/TypeScript — Node.js 18+, Deno, Bun, or the browser
+const res = await fetch('https://www.taskade.com/api/v1/workspaces', {
+  headers: { Authorization: 'Bearer your_api_token_placeholder' },
 });
-
-// Python SDK
-from taskade import TaskadeAPI
-
-api = TaskadeAPI(api_key='your_api_key')
-
-# Go SDK
-import "github.com/taskade/go-sdk/taskade"
-
-api := taskade.NewAPI("your_api_key")
+const data = await res.json();
 ```
+
+```python
+# Python — any HTTP client works
+import requests
+
+res = requests.get(
+    "https://www.taskade.com/api/v1/workspaces",
+    headers={"Authorization": "Bearer your_api_token_placeholder"},
+)
+data = res.json()
+```
+
+### Official SDKs and tools
+
+{% hint style="warning" %}
+The official TypeScript SDK (`@taskade/sdk`) is in preview and **not yet published to the public npm registry**. Until it ships, use the REST API directly as shown above.
+{% endhint %}
+
+* [**TypeScript SDK (Preview)**](../../apis-living-system-development/sdk-quickstart.md) — generated client for API v2; the quickstart shows the HTTP-first path you can use today
+* [**Workspace MCP Server**](https://github.com/taskade/mcp) — `@taskade/mcp-server` on npm; connect Claude Desktop, Cursor, and any MCP client to your workspace
+* [**Integration Kit**](https://github.com/taskade/integrations) — open-source Zapier and n8n actions & triggers built on this public API
 
 ### Development Tools
 

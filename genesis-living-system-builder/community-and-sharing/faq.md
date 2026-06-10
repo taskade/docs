@@ -100,7 +100,7 @@ Every app gets an **individual URL immediately**:
 
 ### Can I use my own domain name?
 
-**Coming soon!** You'll be able to use your own branded URL (like `app.yourcompany.com`) instead of the default Genesis link, giving your apps a more professional appearance that matches your brand.
+**Yes — custom domains are live.** You can connect your own branded URL (like `app.yourcompany.com`) to a published Genesis app instead of the default Genesis link, giving your apps a professional appearance that matches your brand.
 
 ### How do users access my app?
 
