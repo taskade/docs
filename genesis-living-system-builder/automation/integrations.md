@@ -91,7 +91,7 @@ Taskade connects to **100+ tools and services** across communication, productivi
 | **Database** | Record created, updated | Insert record, update data, run query | Connection String |
 | **FTP/SFTP** | File uploaded, modified | Upload file, download, sync directory | Credentials |
 
-> **Related developer docs:** Build custom integrations programmatically with the [Developer Hub](../../apis-living-system-development/developer-home.md) and [Webhooks](../../apis-living-system-development/webhooks.md).
+> **Related developer docs:** Build custom integrations programmatically with the [Developer Hub](../../apis-living-system-development/developer-home.md) and [Webhooks](../../apis-living-system-development/webhooks.md), or contribute to the open-source [Integration Kit](https://github.com/taskade/integrations) (Zapier & n8n actions and triggers).
 
 ## Integration Setup
 
@@ -529,7 +529,7 @@ Enterprise customers get priority support for custom integrations.
 > → [Contact our team](https://taskade.com/contact) for enterprise solutions
 
 > **Want to contribute an integration?**  
-> → [Submit a request](https://taskade.com/community) to our community
+> → Open a PR on the open-source [Integration Kit](https://github.com/taskade/integrations) (Zapier & n8n actions and triggers), or [share ideas](https://taskade.com/community) with the community
 
 → **Next: [Browse Actions & Triggers](./actions.md)**  
 → **Complete Reference: [Comprehensive Automation Integrations](./comprehensive-integrations.md)** 

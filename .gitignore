@@ -81,3 +81,4 @@ coverage/
 # Temporary folders
 tmp/
 temp/
+SUBMISSIONS_TRACKER_*.md

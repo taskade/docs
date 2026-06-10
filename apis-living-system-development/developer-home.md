@@ -85,10 +85,11 @@ Treat your API token like a password. Never commit it to version control or shar
 | [REST API v1 Reference](comprehensive-api-guide/README.md) | The complete, stable RESTful API — full task CRUD, per-endpoint docs |
 | [Action API v2 Reference](api-v2-reference.md) | The newer action-based (RPC) API — agent prompting, bundles, lifecycle |
 | [Authentication Guide](developers/authentication.md) | Personal access tokens and OAuth 2.0 (PKCE) flows |
-| [Workspace MCP](workspace-mcp.md) | Run `@taskade/mcp-server` to connect Claude Desktop, Cursor, and Claude Code |
+| [Workspace MCP](workspace-mcp.md) | Run `@taskade/mcp-server` to connect Claude Desktop, Cursor, and Claude Code ([source](https://github.com/taskade/mcp)) |
 | [Workspace MCP — Advanced](workspace-mcp-advanced.md) | Multi-client setup, troubleshooting, security |
 | [Hosted MCP — Genesis App (Beta)](genesis-app-mcp.md) | Edit your Genesis app's source from your IDE via the remote `taskade.com/mcp` server |
 | [MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md) | Give Taskade agents 31+ third-party tools (outbound MCP) |
+| [Integration Kit (GitHub)](https://github.com/taskade/integrations) | Open-source Zapier and n8n actions & triggers built on the public API — contribute or self-host |
 | [Webhooks](webhooks.md) | Trigger automations from external events; call out to any API |
 | [Bundles & App Kits](bundles.md) | Import/export full Genesis apps as portable `.tsk` bundles |
 | [Long-Term Memory](long-term-memory.md) | Memory-as-Projects architecture — editable, queryable, API-addressable |

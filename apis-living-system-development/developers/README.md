@@ -64,6 +64,7 @@ Official libraries and tools:
 * [Autonomous Agents Guide](../autonomous-agents.md) -- Agent use cases and architecture patterns
 * [Community Apps](https://www.taskade.com/community) -- Browse Genesis apps built by the community
 * [Sample App](https://github.com/taskade/taskade-sample-app) -- Genesis app example
+* [Integration Kit](https://github.com/taskade/integrations) -- Open-source Zapier & n8n actions and triggers built on the public API
 {% endtab %}
 {% endtabs %}
 
