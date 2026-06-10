@@ -135,7 +135,7 @@ Use curl to retrieve your projects:
 
 ```
 curl -H "Authorization: Bearer your_api_token_placeholder" \
-     https://www.taskade.com/api/v1/projects
+     https://www.taskade.com/api/v1/me/projects
 ```
 {% endstep %}
 
