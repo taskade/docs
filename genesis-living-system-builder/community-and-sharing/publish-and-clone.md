@@ -11,8 +11,13 @@
 - [Password Protection](#password-protection)
 - [Publish to Community Gallery](#publish-to-community-gallery)
 - [Clone and Remix Apps](#clone-and-remix-apps)
+- [Paid Apps](#paid-apps)
 - [Custom Domains](#custom-domains)
 - [Advanced Sharing Options](#advanced-sharing-options)
+- [Embedding Your App](#embedding-your-app)
+- [SEO Customization](#seo-customization)
+- [White-Label Branding](#white-label-branding)
+- [Enterprise SSO (OIDC)](#enterprise-sso-oidc)
 - [Security Considerations](#security-considerations)
 - [Sharing Methods at a Glance](#sharing-methods-at-a-glance)
 - [What's Next](#whats-next)
@@ -139,6 +144,34 @@ Any public or shared app can be cloned:
 
 ---
 
+## Paid Apps
+
+Genesis lets creators monetize their apps directly. When you enable monetization for an app, buyers pay via Stripe before receiving their own private copy.
+
+### How It Works
+
+| Step | What Happens |
+|---|---|
+| **Creator sets a price** | In the app's **Publish** settings, open the **Monetization** panel and set a price for the app. |
+| **Buyer discovers the app** | The app appears in the Community Gallery (or via a direct link) with a price tag. |
+| **Buyer pays via Stripe** | Checkout is handled by Stripe. No payment details are stored by Taskade. |
+| **Buyer receives a private copy** | After successful payment, Taskade clones the app directly into the buyer's workspace. |
+
+### Key Rules for Paid App Copies
+
+| Rule | Detail |
+|---|---|
+| **Scope** | Cloned paid apps are scoped to the buyer's workspace only. |
+| **Re-sharing** | Buyers cannot re-publish or redistribute paid app copies to other users. |
+| **Clone ancestry** | Taskade tracks clone lineage — each paid copy is linked to the original app and its creator. |
+| **No revenue figures here** | Payout terms and percentages are shown in your Monetization dashboard, not documented here — they may change. |
+
+{% hint style="info" %}
+Paid apps do not affect the buyer's ability to customize or extend the app within their own workspace. Re-sharing and re-selling the cloned copy is blocked to protect creator rights.
+{% endhint %}
+
+---
+
 ## Custom Domains
 
 Connect your own domain to any published Genesis app:
@@ -174,6 +207,94 @@ Connect your own domain to any published Genesis app:
 
 ---
 
+## Embedding Your App
+
+You can embed any published Genesis app into an external website, blog, or documentation page using an iframe.
+
+### Getting the Embed Code
+
+1. Open your published app.
+2. Click the **Share** menu (top-right of the app toolbar).
+3. Select **Embed** to reveal the embed code snippet.
+4. Copy the `<iframe>` tag and paste it into your page's HTML.
+
+### Recommended iframe Attributes
+
+```html
+<iframe
+  src="https://your-app-url.taskade.com"
+  width="100%"
+  style="min-height: 600px; border: none;"
+  allowfullscreen
+></iframe>
+```
+
+| Attribute | Recommended Value | Why |
+|---|---|---|
+| `width` | `100%` | Fills the container responsively |
+| `min-height` | `600px` (adjust to content) | Prevents the frame from collapsing |
+| `border` | `none` | Removes the default iframe border |
+| `allowfullscreen` | present | Allows modal/fullscreen views inside the app |
+
+{% hint style="info" %}
+If your embedding site enforces a `Content-Security-Policy` with `frame-ancestors`, you must add `taskade.com` (or your custom domain) to the allowed-origin list. Frames blocked by CSP will show a blank panel with no error visible to the end user.
+{% endhint %}
+
+---
+
+## SEO Customization
+
+Genesis apps support custom search-engine and social metadata so your published app is discoverable and looks polished when shared.
+
+### How to Set SEO Fields
+
+1. Open your app's **Publish** settings.
+2. Locate the **SEO** panel.
+3. Fill in the fields described below.
+4. Save and republish (or let Auto-publish apply the change).
+
+| Field | What It Controls | Tips |
+|---|---|---|
+| **Meta title** | The `<title>` tag and browser tab label | Keep under ~60 characters to avoid truncation in search results |
+| **Meta description** | The snippet shown in search results | Aim for ~150 characters; describe what the app does and who it's for |
+| **Open Graph image** | The preview image on social shares (LinkedIn, X/Twitter, Slack, etc.) | Recommended size 1200 × 630 px; upload via the OG Image field |
+
+{% hint style="info" %}
+The Open Graph image you upload is stored in your workspace assets. If you later delete the asset, the social preview will fall back to the Taskade default image.
+{% endhint %}
+
+---
+
+## White-Label Branding
+
+Business+ workspaces can strip or replace Taskade's default branding on published apps.
+
+### How to Configure White-Label Options
+
+1. Open your app's **Publish** settings.
+2. Navigate to the **Branding** panel.
+3. Apply the options below and save.
+
+| Option | What It Does |
+|---|---|
+| **Watermark toggle** | Hides the "Powered by Taskade" badge from the published app footer |
+| **Favicon upload** | Replaces the default Taskade favicon with your own `.ico` or `.png` file |
+| **Color theme** | Sets primary and accent colors for the app chrome to match your brand palette |
+
+{% hint style="info" %}
+White-label settings apply to the published view only. The Taskade editor interface retains standard Taskade branding for workspace members.
+{% endhint %}
+
+---
+
+## Enterprise SSO (OIDC)
+
+Enterprise workspaces can gate app access behind your organization's Identity Provider (IdP) using OpenID Connect (OIDC). This means visitors must sign in through your corporate SSO before they can view or interact with the app.
+
+Contact sales to enable OIDC for your workspace — setup guidance is provided during Enterprise onboarding.
+
+---
+
 ## Security Considerations
 
 | Practice | Recommendation |
@@ -196,6 +317,7 @@ Connect your own domain to any published Genesis app:
 | **Secret link** | Link holders | Yes | Business+ | Optional | Yes | Client portals, partners |
 | **Private** | Workspace only | N/A | Business+ | Optional | Yes | Internal tools |
 | **Embed** | Website visitors | No | N/A | Optional | Yes | Blog, documentation |
+| **Paid** | Anyone (after purchase) | Yes (paid copy) | Business+ | Optional | Yes | Monetized templates, premium apps — buyer receives a private copy in their own workspace |
 
 ---
 

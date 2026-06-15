@@ -30,6 +30,10 @@ Actions can be chained together to create complex multi-step workflows, with con
 | **Add Knowledge to Agent**           | Transcribes knowledge and adds it as knowledge to an agent | Agent training, content integration              | `agentId`, `content`, `source`                         |
 | **Add Project to Agent Knowledge**   | Automatically trains your AI agents with project content   | Agent enhancement, knowledge management          | `agentId`, `projectId`, `scope`                        |
 | **Ask Agent With Structured Output** | Structures the output of agent replies                     | Standardized AI responses                        | `agentId`, `query`, `outputFormat`                     |
+| **task.addComment**                  | Appends a comment to an existing task node                 | Audit trails, team communication on tasks        | `taskId`, `comment`                                    |
+| **task.update**                      | Updates a task node's content or note field                | Inline edits, AI-driven content rewrites         | `taskId`, `content`, `note`                            |
+| **task.get**                         | Reads a task node and returns its current data             | Conditional logic, data-driven downstream steps  | `taskId`                                               |
+| **project.getInfo**                  | Reads project metadata (name, dates, member list, etc.)    | Dynamic references to project context in flows   | `projectId`                                            |
 
 ### Data Processing & Integration Actions
 
@@ -50,6 +54,7 @@ Actions can be chained together to create complex multi-step workflows, with con
 | **Filter Data**               | Performs actions only when the data meets a certain condition                 | Conditional processing, data validation | `condition`, `dataSource`, `filterCriteria`     |
 | **Branch**                    | Creates different paths within your workflow, depending on certain conditions | Decision trees, conditional logic       | `condition`, `truePath`, `falsePath`            |
 | **Transform Array to String** | Converts the output of Find Task(s) and Find Row(s) actions into text         | Data formatting, reporting              | `arrayInput`, `template`, `separator`           |
+| **flow.run**                  | Runs a saved flow as a depth-guarded subflow (prevents infinite recursion)    | Reusable sub-flows, modular automation  | `flowId`, `input`, `maxDepth`                   |
 
 ### Advanced Actions
 
@@ -195,8 +200,6 @@ Find Tasks → Transform Array → Export to CSV
 
 ***
 
-\| **Transform Array to String** | Converts task arrays into readable text | `array`, `separator`, `format` | Convert task list to comma-separated string |
-
 ### Custom Fields Automation Settings
 
 {% hint style="info" %}
@@ -242,10 +245,16 @@ The Update Custom Fields action allows you to automatically update custom fields
 | **Ask Agent With Structured Output** | Structures the output of agent replies              | `agentId`, `query`, `outputSchema` | Get JSON response with specific fields              |
 | **Add Project to Agent Knowledge**   | Automatically trains AI agents with project content | `agentId`, `projectId`             | Keep agents updated with latest project information |
 
+{% hint style="info" %}
+**Genesis self-assembly capability:** Flows can programmatically assemble and configure agents at runtime — this is the mechanism that powers Genesis self-assembly features. If you are building advanced Genesis flows, check the in-app action picker for current availability of agent-assembly steps; the exact surface exposed to automation builders may vary by plan.
+{% endhint %}
+
 ### Ask Agent With Structured Output Settings
 
 {% hint style="info" %}
 The Ask Agent With Structured Output action extracts specific information from AI agent responses and formats it as structured data that can be used as variables in subsequent automation steps.
+
+**BYOK support:** When a Bring Your Own Key (BYOK) model is configured on the target agent, the one-shot structured-output path honors that key, so inference runs against your own API account rather than Taskade's shared quota.
 {% endhint %}
 
 #### When to Use Structured Output
@@ -309,7 +318,9 @@ The Ask Agent With Structured Output action extracts specific information from A
 
 ***
 
-\| **Prompt AI** | Give the model detailed instructions | `prompt`, `systemMessage`, `temperature` | Custom AI processing with specific instructions | | **Add Knowledge to Agent** | Transcribes knowledge and adds it to an agent | `agentId`, `content`, `source` | Train agent with new documentation | | **Add Project to Agent Knowledge** | Automatically trains AI agents with project content | `agentId`, `projectId`, `includeCompleted` | Add project data to agent's knowledge base |
+| Action          | Description                          | Parameters                               | Example                                              |
+| --------------- | ------------------------------------ | ---------------------------------------- | ---------------------------------------------------- |
+| **Prompt AI**   | Give the model detailed instructions | `prompt`, `systemMessage`, `temperature` | Custom AI processing with specific instructions      |
 
 ### Add Project to Agent Knowledge Automation Settings
 
@@ -692,7 +703,9 @@ YouTube Video → Transcribe → Generate Quiz → Create Study Guide → Add to
 
 ***
 
-\| **Convert File to Text** | Convert a source file into text | `fileUrl`, `fileType`, `extractImages` | Convert PDF manual to searchable text | | **Generate Image with DALL·E 3** | Create images from text prompts using OpenAI | `prompt`, `size`, `style`, `quality` | Generate illustrations and visual content | | **Upload File to Media** | Upload file through URL to workspace media | `fileUrl`, `fileName`, `folderId` | Save document to project media library | | **Send HTTP Request** | Makes an API request to an endpoint with multipart file support | `method`, `url`, `headers`, `body`, `files` | Call external API with file attachments |
+| Action                            | Description                                  | Parameters                        | Example                                   |
+| --------------------------------- | -------------------------------------------- | --------------------------------- | ----------------------------------------- |
+| **Generate Image with DALL·E 3**  | Create images from text prompts using OpenAI | `prompt`, `size`, `style`, `quality` | Generate illustrations and visual content |
 
 ### HTTP Request Automation Settings
 
@@ -762,6 +775,18 @@ The Generate Image with DALL·E 3 action creates beautiful images from text prom
 * Include artistic references (e.g., "in the style of Picasso")
 * Specify image format and intended use
 * Use descriptive adjectives for better results
+
+### Genesis — Image Format Conversion
+
+{% hint style="info" %}
+The **Image Format Conversion** action (available in Genesis flows) converts an image from one format to another entirely within Taskade — no external service required. Useful for normalizing images before uploading them to downstream steps.
+{% endhint %}
+
+| Action                       | Description                                              | Parameters                          | Example                                     |
+| ---------------------------- | -------------------------------------------------------- | ----------------------------------- | ------------------------------------------- |
+| **Image Format Conversion**  | Converts an image file to a target format (e.g., PNG → JPEG, WebP, etc.) | `imageUrl`, `targetFormat`, `quality` | Convert an uploaded PNG to WebP before storing |
+
+Supported target formats include common raster types (JPEG, PNG, WebP, and more). Output is returned as a file reference that can be passed to subsequent actions such as **Upload File to Media**.
 
 ### Categorize with AI Automation Settings
 
@@ -902,8 +927,6 @@ Branch: If "Safe" → Publish Immediately
 
 ***
 
-\| **Search Web** | Searches the web for information | `query`, `maxResults`, `safeSearch` | Research topic for content creation |
-
 ### Search Web Automation Settings
 
 {% hint style="info" %}
@@ -1012,8 +1035,6 @@ Result: Proactive competitive intelligence
 
 ***
 
-\| **Filter Data** | Performs actions only when data meets conditions | `data`, `condition`, `operator` | Process only high-priority tickets | | **Loop** | Iterates through data for batch processing | `array`, `actions`, `maxIterations` | Process multiple form submissions | | **Branch** | Creates different workflow paths based on conditions | `condition`, `trueActions`, `falseActions` | Route tickets based on urgency level |
-
 ## Communication Actions
 
 ### Slack
@@ -1045,6 +1066,18 @@ Result: Proactive competitive intelligence
 | `discord.createRole`   | Creates new role         | `guildId`, `name`, `permissions`  | Create "Beta Tester" role       |
 | `discord.assignRole`   | Assigns role to user     | `guildId`, `userId`, `roleId`     | Grant access to private channel |
 | `discord.createInvite` | Creates invite link      | `channelId`, `maxUses`, `expires` | Generate one-time invite        |
+
+### Notify by Email (Native)
+
+{% hint style="success" %}
+Taskade includes a built-in **Notify by Email** action that sends transactional notifications through Taskade's own mail infrastructure. No OAuth connection or third-party email provider is required.
+{% endhint %}
+
+| Action                    | Description                                                       | Parameters                                  | Example                                     |
+| ------------------------- | ----------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------- |
+| **Notify by Email**       | Sends a notification email via Taskade (no OAuth required)        | `to`, `subject`, `body`                     | Alert a stakeholder when a task is created  |
+
+This action is distinct from the `email.send` integration rows above, which require an external mail provider connection.
 
 ## Data & CRM Actions
 
@@ -1146,13 +1179,16 @@ Result: Proactive competitive intelligence
 
 ### Data Processing
 
-| Action           | Description              | Parameters                         | Example                  |
-| ---------------- | ------------------------ | ---------------------------------- | ------------------------ |
-| `data.transform` | Transforms data format   | `input`, `mapping`, `outputFormat` | Convert CSV to JSON      |
-| `data.validate`  | Validates data schema    | `input`, `schema`                  | Check required fields    |
-| `data.merge`     | Merges data objects      | `objects`, `mergeStrategy`         | Combine multiple sources |
-| `data.filter`    | Filters data by criteria | `input`, `conditions`              | Remove invalid entries   |
-| `data.aggregate` | Aggregates data          | `input`, `groupBy`, `functions`    | Calculate totals         |
+| Action              | Description                                                      | Parameters                         | Example                             |
+| ------------------- | ---------------------------------------------------------------- | ---------------------------------- | ----------------------------------- |
+| `data.transform`    | Transforms data format                                           | `input`, `mapping`, `outputFormat` | Convert CSV to JSON                 |
+| `data.validate`     | Validates data schema                                            | `input`, `schema`                  | Check required fields               |
+| `data.merge`        | Merges data objects                                              | `objects`, `mergeStrategy`         | Combine multiple sources            |
+| `data.filter`       | Filters data by criteria                                         | `input`, `conditions`              | Remove invalid entries              |
+| `data.aggregate`    | Aggregates data                                                  | `input`, `groupBy`, `functions`    | Calculate totals                    |
+| **split**           | Splits a text string into an array on a delimiter               | `text`, `delimiter`                | Split CSV line into fields          |
+| **trim**            | Removes leading and trailing whitespace from a text string      | `text`                             | Clean user-submitted input          |
+| **convertCase**     | Converts text case (uppercase, lowercase, titleCase, camelCase) | `text`, `targetCase`               | Normalize status labels to lowercase |
 
 ### File Operations
 

@@ -258,12 +258,17 @@ Need adjustments? Genesis makes changes instantly through conversation.
 
 Your app is ready for the real world! You've built something that solves a real business problem, and now it's time to put it in front of actual users.
 
+{% hint style="warning" %}
+**Secure your API keys before publishing.** If your app calls external APIs, store credentials in the Secrets vault (space **Settings → Secrets**) and route calls through the outbound proxy so keys never ship in client code. Genesis blocks publish if hardcoded secrets are detected. See [App Secrets](../space-apps-guide/app-secrets.md) for setup steps.
+{% endhint %}
+
 ### **Publishing Options**
 
 1. **Private Use**: Keep it within your workspace for team use
 2. **Custom Domain**: Publish under your branded domain (e.g., `app.yourcompany.com`)
 3. **Share with Community**: Publish to the global Taskade marketplace for others to discover and fork
 4. **Public Link**: Get a shareable URL for external users
+5. **Genesis App MCP (Beta)**: Expose your app as an MCP server so AI agents and external tools can call it programmatically — see [Genesis App MCP (Beta)](../../apis-living-system-development/genesis-app-mcp.md)
 
 ### **Getting It Live**
 

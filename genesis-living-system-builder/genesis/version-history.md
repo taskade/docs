@@ -7,6 +7,7 @@
 - [Overview](#overview)
 - [What Is Tracked](#what-is-tracked)
 - [View App Versions](#view-app-versions)
+- [Inspect and Configure Your App](#inspect-and-configure-your-app)
 - [Restore a Previous Version](#restore-a-previous-version)
 - [Version History & Publishing](#version-history--publishing)
 - [Best Practices](#best-practices)
@@ -65,6 +66,26 @@ Each version entry shows:
 
 ---
 
+## Inspect and Configure Your App
+
+### Code View (Read-Only)
+
+Genesis includes a **Code View** tab inside the app editor. This tab gives you a read-only look at the source code Genesis has generated for your app — useful for understanding what was built, debugging unexpected behavior, or sharing context with a developer. The Code View is inspectable only; edits are made through the Genesis prompt interface, not by modifying the source directly.
+
+### Custom `<head>` HTML Injection
+
+Published Genesis apps support injecting custom HTML into the `<head>` of every page. Access this in your app's **Settings → Advanced**. Common uses include:
+
+- Adding analytics snippets (e.g., a tracking pixel or tag manager)
+- Loading custom fonts via a `<link>` tag
+- Including third-party scripts that must load early
+
+{% hint style="warning" %}
+Only add trusted, well-understood code here. Injected `<head>` markup runs on every page of your published app and affects all visitors.
+{% endhint %}
+
+---
+
 ## Restore a Previous Version
 
 | Step | Action |
@@ -92,6 +113,18 @@ How version history interacts with your publishing strategy:
 |---|---|
 | **Auto publish** | Every version is immediately live. Restoring a version instantly updates the published app. |
 | **Manual publish** | Versions accumulate in draft. Restoring a version updates the draft. You choose when to publish. |
+
+### Auto vs. Manual Publish
+
+Genesis lets you choose how versions reach your live app. The setting lives in your app's **Settings → Publish Strategy**.
+
+**Auto publish** (the default) pushes every save and every restored version directly to your published URL. This is convenient during early development but means any mistake — including a misfire restore — is immediately visible to users.
+
+**Manual publish** decouples iteration from release. Changes (including restored versions) stay in draft until you explicitly click **Publish**. For an app that already has live users, manual mode is the safer choice: you can restore, preview, and validate a version internally before anyone else sees it. A restore under manual publish updates the draft state only — the published app continues running whatever version was last deliberately published.
+
+{% hint style="info" %}
+Prefer **Manual** publish for any Genesis app in active use. It gives you a review gate between your Version History and your users, so a restore or experimental prompt never reaches production unintentionally.
+{% endhint %}
 
 ### Publish Status Indicators
 

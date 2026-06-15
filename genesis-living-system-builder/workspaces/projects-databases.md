@@ -101,6 +101,7 @@ You can also create databases manually:
 |---|---|---|---|
 | **Text (String)** | Names, descriptions, notes | Customer name, product description | Plain text |
 | **Number** | Quantities, prices, scores | Stock level, deal value, rating | Decimal, currency ($, EUR), percent (%) |
+| **Currency** | Pricing, invoices, budgets | Product price, invoice total, budget cap | Pre-formatted as USD; numeric field with currency symbol and decimal precision |
 | **DateTime** | Deadlines, timestamps, schedules | Due date, appointment time | Date only, date + time |
 | **Select** | Single-choice categories | Status, priority, category | Color-coded options |
 | **Multi-select** | Multiple tags/categories | Skills, interests, tags | Color-coded options |
