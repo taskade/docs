@@ -7,12 +7,12 @@
 - [Overview](#overview)
 - [Chat Methods](#chat-methods)
   - [Method 1: Chat with Projects](#method-1-chat-with-projects)
-  - [Method 2: Chat with Projects & Team](#method-2-chat-with-projects--team)
+  - [Method 2: Chat with Projects & Team](#method-2-chat-with-projects-and-team)
   - [Method 3: Chat with Attachments](#method-3-chat-with-attachments)
   - [Method 4: Chat in Media Manager](#method-4-chat-in-media-manager)
 - [Supported Media Types](#supported-media-types)
 - [Use Cases](#use-cases)
-- [Media & Workspace DNA](#media--workspace-dna)
+- [Media & Workspace DNA](#media-and-workspace-dna)
 - [What's Next](#whats-next)
 
 ---

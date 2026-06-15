@@ -14,7 +14,7 @@ This architectural choice is what makes Taskade memory transparent, controllable
 
 ## Table of Contents
 
-- [Mental Model — Memory as Projects](#mental-model--memory-as-projects)
+- [Mental Model — Memory as Projects](#mental-model-memory-as-projects)
 - [How EVE Uses Memory](#how-eve-uses-memory)
 - [Agent Memory vs EVE Memory](#agent-memory-vs-eve-memory)
 - [Model Agnosticism](#model-agnosticism)

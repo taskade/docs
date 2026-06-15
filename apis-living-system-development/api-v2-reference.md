@@ -17,7 +17,7 @@ The live OpenAPI spec is published at [taskade.com/api/documentation/v2](https:/
 ## Table of Contents
 
 - [Which API should I use?](#which-api-should-i-use)
-- [Base URL & Authentication](#base-url--authentication)
+- [Base URL & Authentication](#base-url-and-authentication)
 - [Calling convention](#calling-convention)
 - [Endpoints](#endpoints)
 - [Pagination](#pagination)

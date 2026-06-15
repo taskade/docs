@@ -9,7 +9,7 @@
 - [View App Versions](#view-app-versions)
 - [Inspect and Configure Your App](#inspect-and-configure-your-app)
 - [Restore a Previous Version](#restore-a-previous-version)
-- [Version History & Publishing](#version-history--publishing)
+- [Version History & Publishing](#version-history-and-publishing)
 - [Best Practices](#best-practices)
 - [What's Next](#whats-next)
 

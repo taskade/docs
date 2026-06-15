@@ -6,8 +6,6 @@ This document provides a complete reference of all available integrations, trigg
 
 ### Taskade
 
-**Package**: `@taskade/automade-internalpiece-taskade`
-
 #### Actions
 
 | Action                       | Description                  | Properties                                                         |
@@ -39,8 +37,6 @@ This document provides a complete reference of all available integrations, trigg
 
 ### Taskade AI
 
-**Package**: `@taskade/automade-internalpiece-openai`
-
 #### Actions
 
 | Action                           | Description                    | Properties                                        |
@@ -59,8 +55,6 @@ This document provides a complete reference of all available integrations, trigg
 
 ### Schedule
 
-**Package**: `@taskade/automade-internalpiece-schedule`
-
 #### Triggers
 
 | Trigger            | Description             | Properties                            |
@@ -71,8 +65,6 @@ This document provides a complete reference of all available integrations, trigg
 | `schedule.monthly` | Every Month (Scheduled) | `dayOfMonth`, `timeOfDay`, `timezone` |
 
 ### Media
-
-**Package**: `@taskade/automade-internalpiece-media`
 
 #### Actions
 
@@ -87,8 +79,6 @@ This document provides a complete reference of all available integrations, trigg
 
 ### Utilities
 
-**Package**: `@taskade/automade-internalpiece-utils`
-
 #### Actions
 
 | Action                      | Description                 | Properties                                     |
@@ -100,8 +90,6 @@ This document provides a complete reference of all available integrations, trigg
 ### Slack
 
 [View the Slack integration →](https://www.taskade.com/integrations/slack)
-
-**Package**: `@taskade/automade-piece-slack`
 
 #### Actions
 
@@ -129,8 +117,6 @@ This document provides a complete reference of all available integrations, trigg
 
 [View the Microsoft Teams integration →](https://www.taskade.com/integrations/microsoft-teams)
 
-**Package**: `@taskade/automade-piece-microsoft-teams`
-
 #### Actions
 
 | Action               | Description          | Properties                                      |
@@ -142,8 +128,6 @@ This document provides a complete reference of all available integrations, trigg
 ### Discord
 
 [View the Discord integration →](https://www.taskade.com/integrations/discord)
-
-**Package**: `@taskade/automade-piece-discord`
 
 #### Actions
 
@@ -165,8 +149,6 @@ This document provides a complete reference of all available integrations, trigg
 
 [View the WhatsApp Business integration →](https://www.taskade.com/integrations/whatsapp)
 
-**Package**: `@taskade/automade-piece-whatsapp-business`
-
 #### Actions
 
 | Action                | Description           | Properties                                                          |
@@ -180,8 +162,6 @@ This document provides a complete reference of all available integrations, trigg
 ### Gmail
 
 [View the Gmail integration →](https://www.taskade.com/integrations/gmail)
-
-**Package**: `@taskade/automade-piece-gmail`
 
 #### Actions
 
@@ -202,8 +182,6 @@ This document provides a complete reference of all available integrations, trigg
 ### Google Sheets
 
 [View the Google Sheets integration →](https://www.taskade.com/integrations/google-sheets)
-
-**Package**: `@taskade/automade-piece-googlesheets`
 
 #### Actions
 
@@ -227,8 +205,6 @@ This document provides a complete reference of all available integrations, trigg
 
 [View the Google Docs integration →](https://www.taskade.com/integrations/google-docs)
 
-**Package**: `@taskade/automade-piece-google-docs`
-
 #### Actions
 
 | Action                      | Description     | Properties                                            |
@@ -241,8 +217,6 @@ This document provides a complete reference of all available integrations, trigg
 ### Google Drive
 
 [View the Google Drive integration →](https://www.taskade.com/integrations/google-drive)
-
-**Package**: `@taskade/automade-piece-google-drive`
 
 #### Actions
 
@@ -276,8 +250,6 @@ This document provides a complete reference of all available integrations, trigg
 
 [View the Google Calendar integration →](https://www.taskade.com/integrations/google-calendar)
 
-**Package**: `@taskade/automade-piece-google-calendar`
-
 #### Actions
 
 | Action                            | Description        | Properties                                                                                      |
@@ -297,8 +269,6 @@ This document provides a complete reference of all available integrations, trigg
 ### HubSpot
 
 [View the HubSpot integration →](https://www.taskade.com/integrations/hubspot)
-
-**Package**: `@taskade/automade-piece-hubspot`
 
 #### Actions
 
@@ -320,8 +290,6 @@ This document provides a complete reference of all available integrations, trigg
 ### GitHub
 
 [View the GitHub integration →](https://www.taskade.com/integrations/github)
-
-**Package**: `@taskade/automade-piece-github`
 
 #### Actions
 
@@ -350,8 +318,6 @@ This document provides a complete reference of all available integrations, trigg
 
 [View the Typeform integration →](https://www.taskade.com/integrations/typeform)
 
-**Package**: `@taskade/automade-piece-typeform`
-
 #### Triggers
 
 | Trigger          | Description              | Properties |
@@ -361,8 +327,6 @@ This document provides a complete reference of all available integrations, trigg
 ### Google Forms
 
 [View the Google Forms integration →](https://www.taskade.com/integrations/google-forms)
-
-**Package**: `@taskade/automade-piece-google-forms`
 
 #### Triggers
 
@@ -374,8 +338,6 @@ This document provides a complete reference of all available integrations, trigg
 
 [View the Webflow integration →](https://www.taskade.com/integrations/webflow)
 
-**Package**: `@taskade/automade-piece-webflow`
-
 #### Triggers
 
 | Trigger               | Description                   | Properties         |
@@ -385,8 +347,6 @@ This document provides a complete reference of all available integrations, trigg
 ### Calendly
 
 [View the Calendly integration →](https://www.taskade.com/integrations/calendly)
-
-**Package**: `@taskade/automade-piece-calendly`
 
 #### Triggers
 
@@ -402,8 +362,6 @@ This document provides a complete reference of all available integrations, trigg
 
 [View the MailChimp integration →](https://www.taskade.com/integrations/mailchimp)
 
-**Package**: `@taskade/automade-piece-mailchimp`
-
 #### Actions
 
 | Action            | Description | Properties                                           |
@@ -416,8 +374,6 @@ This document provides a complete reference of all available integrations, trigg
 
 [View the Facebook Pages integration →](https://www.taskade.com/integrations/facebook)
 
-**Package**: `@taskade/automade-piece-facebook-pages`
-
 #### Actions
 
 | Action              | Description            | Properties                 |
@@ -428,8 +384,6 @@ This document provides a complete reference of all available integrations, trigg
 ### X (Twitter)
 
 [View the X (Twitter) integration →](https://www.taskade.com/integrations/twitter)
-
-**Package**: `@taskade/automade-piece-twitter`
 
 #### Actions
 
@@ -442,8 +396,6 @@ This document provides a complete reference of all available integrations, trigg
 
 [View the LinkedIn integration →](https://www.taskade.com/integrations/linkedin)
 
-**Package**: `@taskade/automade-piece-linkedin`
-
 #### Actions
 
 | Action                  | Description           | Properties                                                   |
@@ -455,8 +407,6 @@ This document provides a complete reference of all available integrations, trigg
 
 [View the WordPress integration →](https://www.taskade.com/integrations/wordpress)
 
-**Package**: `@taskade/automade-piece-wordpress`
-
 #### Actions
 
 | Action        | Description | Properties                                   |
@@ -466,8 +416,6 @@ This document provides a complete reference of all available integrations, trigg
 ### YouTube
 
 [View the YouTube integration →](https://www.taskade.com/integrations/youtube)
-
-**Package**: `@taskade/automade-piece-youtube`
 
 #### Triggers
 
@@ -480,8 +428,6 @@ This document provides a complete reference of all available integrations, trigg
 
 [View the Reddit integration →](https://www.taskade.com/integrations/reddit)
 
-**Package**: `@taskade/automade-piece-reddit`
-
 #### Actions
 
 | Action        | Description | Properties                                                                     |
@@ -490,8 +436,6 @@ This document provides a complete reference of all available integrations, trigg
 | `post-get`    | Get Post    | `postId`, `subreddit`                                                          |
 
 ### RSS
-
-**Package**: `@taskade/automade-piece-rss`
 
 #### Triggers
 
@@ -506,8 +450,6 @@ This document provides a complete reference of all available integrations, trigg
 
 [View the Twilio integration →](https://www.taskade.com/integrations/twilio)
 
-**Package**: `@taskade/automade-piece-twilio`
-
 #### Actions
 
 | Action     | Description | Properties           |
@@ -520,8 +462,6 @@ This document provides a complete reference of all available integrations, trigg
 
 [View the Apollo integration →](https://www.taskade.com/integrations/apollo)
 
-**Package**: `@taskade/automade-piece-apollo`
-
 #### Actions
 
 | Action                  | Description             | Properties             |
@@ -531,8 +471,6 @@ This document provides a complete reference of all available integrations, trigg
 ## Technical Integrations
 
 ### HTTP
-
-**Package**: `@taskade/automade-piece-http`
 
 #### Actions
 

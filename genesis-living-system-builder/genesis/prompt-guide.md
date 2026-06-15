@@ -12,7 +12,7 @@
   - [4. Break Down Ideas](#4-break-down-ideas)
   - [5. Connect Tools](#5-connect-tools)
   - [6. Set the Tone](#6-set-the-tone)
-  - [7. Choose Look & Feel](#7-choose-look--feel)
+  - [7. Choose Look & Feel](#7-choose-look-and-feel)
   - [8. Define Access](#8-define-access)
   - [9. Iterate Easily](#9-iterate-easily)
   - [10. Reference](#10-reference)

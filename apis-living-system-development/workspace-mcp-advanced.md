@@ -11,7 +11,7 @@ This page covers what comes after the basic setup in [Workspace MCP](workspace-m
 ## Table of Contents
 
 - [Inbound vs Outbound MCP](#inbound-vs-outbound-mcp)
-- [Authentication & Token Scoping](#authentication--token-scoping)
+- [Authentication & Token Scoping](#authentication-and-token-scoping)
 - [Rate Limits](#rate-limits)
 - [Multi-Client Setup](#multi-client-setup)
 - [Plan Gating](#plan-gating)

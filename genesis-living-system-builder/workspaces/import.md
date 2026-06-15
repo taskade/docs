@@ -7,7 +7,7 @@
 - [Import Markdown](#import-markdown)
   - [Overview](#overview)
   - [Import Markdown Files](#import-markdown-files)
-  - [Paste Text & Markdown](#paste-text--markdown)
+  - [Paste Text & Markdown](#paste-text-and-markdown)
   - [Create Markdown Sources](#create-markdown-sources)
   - [How AI Processing Works](#how-ai-processing-works)
   - [Where Markdown Is Used in Taskade](#where-markdown-is-used-in-taskade)
