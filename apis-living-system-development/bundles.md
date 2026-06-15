@@ -38,7 +38,33 @@ Bundle endpoints are part of the [Action API v2](api-v2-reference.md). Authentic
 
 ## API Reference
 
-### Export a bundle (JSON)
+### Export a Bundle (JSON) — v1
+
+{% openapi src="../.gitbook/assets/api-0.1.0.json" path="/bundles/{spaceId}/export" method="get" expanded="true" %}
+[api-0.1.0.json](../.gitbook/assets/api-0.1.0.json)
+{% endopenapi %}
+
+### Export a Bundle (ZIP / `.tsk`) — v1
+
+{% openapi src="../.gitbook/assets/api-0.1.0.json" path="/bundles/{spaceId}/export/zip" method="get" expanded="true" %}
+[api-0.1.0.json](../.gitbook/assets/api-0.1.0.json)
+{% endopenapi %}
+
+### Import a Bundle (JSON) — v1
+
+{% openapi src="../.gitbook/assets/api-0.1.0.json" path="/bundles/{workspaceId}/import" method="post" expanded="true" %}
+[api-0.1.0.json](../.gitbook/assets/api-0.1.0.json)
+{% endopenapi %}
+
+### Import a Bundle (ZIP / `.tsk`) — v1
+
+{% openapi src="../.gitbook/assets/api-0.1.0.json" path="/bundles/{workspaceId}/import/zip" method="post" expanded="true" %}
+[api-0.1.0.json](../.gitbook/assets/api-0.1.0.json)
+{% endopenapi %}
+
+***
+
+### Export a bundle (JSON) — Action API v2
 
 **`POST /api/v2/exportBundle`** — returns the full `SpaceBundleData` object (no binary media).
 

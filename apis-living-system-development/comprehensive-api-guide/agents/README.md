@@ -17,6 +17,12 @@ These endpoints allow you to create, manage, and interact with the AI Agents tha
 
 ## Summary of Endpoints
 
+### Look Up Public Agent by Public Agent ID
+
+{% openapi src="../../../.gitbook/assets/api-0.1.0.json" path="/public-agents/{publicAgentId}" method="get" expanded="true" %}
+[api-0.1.0.json](../../../.gitbook/assets/api-0.1.0.json)
+{% endopenapi %}
+
 ### Update Agent Public Access
 
 {% openapi src="../../../.gitbook/assets/api-0.1.0.json" path="/agents/{agentId}/publicAccess" method="put" expanded="true" %}

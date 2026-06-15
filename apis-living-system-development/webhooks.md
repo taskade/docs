@@ -63,6 +63,37 @@ Webhook URLs are **unique and unguessable** — each contains a cryptographicall
 Treat your webhook URLs like passwords. Do not share them publicly or commit them to source control.
 {% endhint %}
 
+#### Bearer Token Authentication
+
+For stronger protection on inbound webhook triggers, you can require callers to supply a secret bearer token. When enabled, Taskade rejects any request that does not present a valid token before the automation runs.
+
+**Setup:**
+
+1. Open the webhook trigger configuration panel in your automation.
+2. Enable **Bearer Token** authentication and set a secret token value.
+3. Taskade generates (or lets you enter) a secret — store it securely; it will not be shown again.
+
+**Calling the webhook:**
+
+Every inbound request must include the token in the `Authorization` header:
+
+```http
+POST https://www.taskade.com/webhooks/<your-webhook-id>
+Authorization: Bearer your_api_token_placeholder
+Content-Type: application/json
+
+{
+  "event": "form_submitted",
+  "name": "Jane Doe"
+}
+```
+
+Requests that omit or supply an incorrect token receive a `401 Unauthorized` response and are not processed.
+
+{% hint style="info" %}
+Check your plan's feature list at [taskade.com/pricing](https://www.taskade.com/pricing) for current availability of inbound webhook bearer token authentication.
+{% endhint %}
+
 ### Common Patterns
 
 | Source                        | What Happens in Taskade                   |
