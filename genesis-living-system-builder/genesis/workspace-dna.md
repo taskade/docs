@@ -31,7 +31,7 @@ AI agents reason over your workspace context. They draft, classify, summarize, a
 - Multi-agent teams with automatic delegation
 - 22+ built-in tools (Slack, Gmail, Sheets, and more)
 - Persistent memory across conversations
-- Multiple frontier AI models (Claude Opus 4.8 / Fable-5, GPT-5.5, Gemini 3.5 Flash, Qwen 3.7, and more)
+- Multiple frontier AI models (Claude Opus 4.8, GPT-5.5, Gemini 3.5 Flash, Qwen 3.7, and more)
 
 **Learn more:** [AI Agents Getting Started](../ai-features/ai-agents-getting-started.md)
 

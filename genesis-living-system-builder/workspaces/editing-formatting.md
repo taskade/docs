@@ -5,10 +5,10 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Format Tasks & Sub-Tasks](#format-tasks--sub-tasks)
+- [Format Tasks & Sub-Tasks](#format-tasks-and-sub-tasks)
 - [Available Block Types](#available-block-types)
 - [Project Views](#project-views)
-- [Highlight & Style](#highlight--style)
+- [Highlight & Style](#highlight-and-style)
 - [Drag to Reorder](#drag-to-reorder)
 - [Multi-Select Formatting](#multi-select-formatting)
 - [Add-Ons Menu](#add-ons-menu)

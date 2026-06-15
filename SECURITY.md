@@ -157,7 +157,7 @@ If you accidentally commit sensitive information:
 ## 📚 Additional Resources
 
 - [GitHub: Removing sensitive data](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
-- [GitBook Security Best Practices](https://docs.gitbook.com/getting-started/git-sync/security)
+- [GitBook Git Sync](https://docs.gitbook.com/getting-started/git-sync)
 - [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)
 
 ---

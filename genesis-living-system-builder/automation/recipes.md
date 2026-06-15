@@ -693,6 +693,6 @@ Include actions to update the task status and posting timestamp after successful
 > → [Join our community](https://taskade.com/community) for support and examples
 
 > **Want to share your recipe?**\
-> → [Submit to our recipe gallery](https://taskade.com/automations/recipes)
+> → [Browse the Taskade template gallery](https://www.taskade.com/templates)
 
 → **Next:** [**Set up your first automation**](../../#getting-started)

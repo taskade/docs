@@ -31,11 +31,11 @@ Relevant docs: [Autonomous Agents](../../../apis-living-system-development/auton
 
 ### Public Agent v2 — Rebuilt Embed & Public Screen (shipped January 31)
 
-The public/embedded agent experience is rebuilt as a **v2 screen** with a new `ActiveConversation` component, `ChatSidebar`, and `PublicSpaceAgentCustomizer`. Key developer-facing capabilities:
+The public/embedded agent experience is rebuilt as a **v2 screen** with a redesigned active-conversation view, a chat sidebar, and an embeddable customizer. Key developer-facing capabilities:
 
 - **Parent-frame communication** — the embed exposes a customizer API to the parent window for same-origin iframes, allowing the host page to override agent preferences (background, timeout, branding) programmatically.
 - **Conversation creation** — the embed automatically provisions a fresh conversation on load, compatible with the AI SDK persistent message store.
-- The public agent route now resolves via `/a/:publicSpaceAgentIdWithSlug` (full URL: `https://www.taskade.com/a/<id>`) using the v2 screen.
+- The public agent route now resolves via `https://www.taskade.com/a/<id>` using the v2 screen.
 
 Relevant docs: [API Guide](../../../apis-living-system-development/comprehensive-api-guide/README.md)
 

@@ -9,7 +9,7 @@
 - [View App Versions](#view-app-versions)
 - [Inspect and Configure Your App](#inspect-and-configure-your-app)
 - [Restore a Previous Version](#restore-a-previous-version)
-- [Version History & Publishing](#version-history--publishing)
+- [Version History & Publishing](#version-history-and-publishing)
 - [Best Practices](#best-practices)
 - [What's Next](#whats-next)
 
@@ -19,7 +19,7 @@
 
 Genesis **automatically tracks every change** to your apps. Every modification — from content edits to styling updates — creates a new version (commit) you can view, compare, and restore at any time. This gives you a complete safety net for experimentation and iteration.
 
-> **Experiment freely:** Try bold changes knowing you can always roll back. See [A Maker's Guide to AI Prompts — Experiment](./prompt-guide.md#12-experiment).
+> **Experiment freely:** Try bold changes knowing you can always roll back. See [A Maker's Guide to AI Prompts — Experiment](./prompt-guide.md#id-12.-experiment).
 
 ---
 

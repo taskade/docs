@@ -7,7 +7,7 @@
 - [Overview](#overview)
 - [What Are Database Projects?](#what-are-database-projects)
 - [Genesis-Generated Databases](#genesis-generated-databases)
-- [8 Project Views](#8-project-views)
+- [8 Project Views](#id-8-project-views)
 - [Manual Database Creation](#manual-database-creation)
 - [Importing Data](#importing-data)
 - [Automated App Workflows](#automated-app-workflows)

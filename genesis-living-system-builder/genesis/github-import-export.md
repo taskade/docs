@@ -11,7 +11,7 @@ Bring Genesis apps in from GitHub repositories and push your apps back to GitHub
 * [Exporting a Genesis App](github-import-export.md#exporting-a-genesis-app)
 * [What's in an Export Bundle](github-import-export.md#whats-in-an-export-bundle)
 * [Working with the Pull Request Flow](github-import-export.md#working-with-the-pull-request-flow)
-* [Permissions & Errors](github-import-export.md#permissions--errors)
+* [Permissions & Errors](github-import-export.md#permissions-and-errors)
 * [Troubleshooting](github-import-export.md#troubleshooting)
 * [Related](github-import-export.md#related)
 

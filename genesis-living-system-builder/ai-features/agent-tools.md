@@ -14,7 +14,7 @@
 - [App Tools (Third-Party Integrations)](#app-tools-third-party-integrations)
 - [Build Custom Agent Tools](#build-custom-agent-tools)
 - [Human in the Loop](#human-in-the-loop)
-- [Enable / Disable Tools](#enable--disable-tools)
+- [Enable / Disable Tools](#enable-disable-tools)
 - [What's Next](#whats-next)
 
 ---

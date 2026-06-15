@@ -8,7 +8,7 @@
 - [What You Can Build](#what-you-can-build)
 - [How to Get Started](#how-to-get-started)
 - [Generator Modes](#generator-modes)
-- [Smart Edits & Chat Commands](#smart-edits--chat-commands)
+- [Smart Edits & Chat Commands](#smart-edits-and-chat-commands)
 - [Key Features](#key-features)
 - [Workflow Building Blocks](#workflow-building-blocks)
 - [Example Prompts](#example-prompts)

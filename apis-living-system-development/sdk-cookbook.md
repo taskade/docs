@@ -16,16 +16,16 @@ Production patterns for integrating with Taskade.
 
 ## Table of Contents
 
-- [Setup & Authentication](#setup--authentication)
+- [Setup & Authentication](#setup-and-authentication)
 - [TypeScript Types](#typescript-types)
 - [Agents](#agents)
 - [Automations](#automations)
-- [Projects & Tasks](#projects--tasks)
+- [Projects & Tasks](#projects-and-tasks)
 - [Webhooks](#webhooks)
 - [Bundles (Import/Export)](#bundles-importexport)
 - [Error Handling Taxonomy](#error-handling-taxonomy)
 - [Pagination](#pagination)
-- [Testing & Mocking](#testing--mocking)
+- [Testing & Mocking](#testing-and-mocking)
 - [Related](#related)
 
 ---
