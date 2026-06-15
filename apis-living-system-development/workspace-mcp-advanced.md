@@ -33,10 +33,12 @@ graph LR
         CLIENT1[Claude Desktop]
         CLIENT2[Cursor]
         CLIENT3[Claude Code]
+        CLIENT4[Windsurf / VS Code / other]
         MCP_LOCAL["@taskade/mcp-server<br/>local stdio server"]
         CLIENT1 --> MCP_LOCAL
         CLIENT2 --> MCP_LOCAL
         CLIENT3 --> MCP_LOCAL
+        CLIENT4 --> MCP_LOCAL
         MCP_LOCAL --> TASKADE_API[Taskade API]
     end
 
@@ -91,7 +93,7 @@ If you hit limits regularly, split your integration across multiple scoped token
 
 ## Multi-Client Setup
 
-You can safely run `@taskade/mcp-server` on Claude Desktop, Cursor, and Claude Code at the same time. Each client spawns its own stdio process — state is isolated server-side per token.
+You can safely run `@taskade/mcp-server` on Claude Desktop, Cursor, Claude Code, Windsurf, VS Code, and other clients at the same time. Each client spawns its own stdio process — state is isolated server-side per token.
 
 ### Claude Desktop
 
@@ -136,6 +138,42 @@ claude mcp add taskade npx -- -y @taskade/mcp-server
 # Then set TASKADE_API_KEY in your shell environment
 ```
 
+### Windsurf
+
+File: `~/.codeium/windsurf/mcp_config.json` (or **Settings → Cascade → MCP → Add Server**):
+
+```json
+{
+  "mcpServers": {
+    "taskade": {
+      "command": "npx",
+      "args": ["-y", "@taskade/mcp-server"],
+      "env": {
+        "TASKADE_API_KEY": "your_api_token_placeholder"
+      }
+    }
+  }
+}
+```
+
+### VS Code
+
+Add a `.vscode/mcp.json` to your workspace (VS Code uses the `servers` key; `${input:…}` prompts for your key on first run):
+
+```json
+{
+  "servers": {
+    "taskade": {
+      "command": "npx",
+      "args": ["-y", "@taskade/mcp-server"],
+      "env": {
+        "TASKADE_API_KEY": "${input:taskade_api_key}"
+      }
+    }
+  }
+}
+```
+
 {% hint style="warning" %}
 Avoid committing these config files to public repos with real tokens. Many teams use environment variable substitution (shell-level) or a secret manager to inject the token at runtime.
 {% endhint %}
@@ -159,7 +197,7 @@ Plan features may evolve. Check the [pricing page](https://www.taskade.com/prici
 
 ## Tool Catalog Details
 
-The inbound server exposes 50+ tools whose names mirror the [REST API v1](comprehensive-api-guide/README.md) operations it wraps. Below are the ones integrators most often need to configure precisely.
+The inbound server exposes **57 tools** across 7 categories whose names mirror the [REST API v1](comprehensive-api-guide/README.md) operations it wraps. Below are the ones integrators most often need to configure precisely.
 
 ### `projectTasksGet`
 
