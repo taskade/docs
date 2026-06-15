@@ -19,7 +19,7 @@
 
 Genesis **automatically tracks every change** to your apps. Every modification — from content edits to styling updates — creates a new version (commit) you can view, compare, and restore at any time. This gives you a complete safety net for experimentation and iteration.
 
-> **Experiment freely:** Try bold changes knowing you can always roll back. See [A Maker's Guide to AI Prompts — Experiment](./prompt-guide.md#12-experiment).
+> **Experiment freely:** Try bold changes knowing you can always roll back. See [A Maker's Guide to AI Prompts — Experiment](./prompt-guide.md#id-12.-experiment).
 
 ---
 
