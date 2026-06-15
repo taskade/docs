@@ -73,3 +73,7 @@ Start here:
 * [Living Motion Overview](../automation/)
 * [Integration Options](../automation/integrations.md)
 * [Action & Trigger Reference](../automation/actions.md)
+
+### What's next
+
+Edit your app's source from Claude, Cursor, or any IDE via [Genesis App MCP (Beta)](../../apis-living-system-development/genesis-app-mcp.md).

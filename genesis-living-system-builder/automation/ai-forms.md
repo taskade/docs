@@ -436,36 +436,9 @@ function ContactPage() {
 
 ### **API Access**
 
-#### **Form Data API**
+#### **Form Data**
 
-```bash
-# Get form submissions with AI analysis
-curl -X GET "https://api.taskade.com/v1/forms/your-form-id/submissions" \
-  -H "Authorization: Bearer YOUR_TOKEN" \
-  -H "Content-Type: application/json"
-```
-
-```json
-{
-  "submissions": [
-    {
-      "id": "submission_123",
-      "timestamp": "2024-01-15T10:30:00Z",
-      "data": {
-        "name": "John Smith",
-        "email": "john@example.com",
-        "feedback": "Great service, very satisfied!"
-      },
-      "aiAnalysis": {
-        "sentiment": 0.85,
-        "categories": ["compliment", "satisfaction"],
-        "priority": "low",
-        "suggestedActions": ["send_thank_you", "add_to_testimonials"]
-      }
-    }
-  ]
-}
-```
+AI Forms does not currently expose a public REST API for reading submissions in API v1 (there is no `/forms` endpoint). To work with submission data programmatically, capture it with an **automation** when a form is submitted — route responses into a project, forward them to an external service via the HTTP/Webhook action, or hand them to an agent. See [Webhooks](../../apis-living-system-development/webhooks.md) and the [Action & Trigger Reference](./actions.md).
 
 ### **Webhook Integration**
 

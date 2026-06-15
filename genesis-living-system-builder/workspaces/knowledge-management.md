@@ -103,16 +103,22 @@ Processing Features:
 }
 ```
 
-#### **Method 3: API-Based Bulk Import**
+#### **Method 3: API — Add Knowledge to an Agent**
+
+The public REST API adds knowledge to an agent by attaching an existing **project** or **media** file. There is no bulk endpoint in v1 — loop over items to add several.
 
 ```bash
-# Bulk upload via API
-curl -X POST "https://api.taskade.com/v1/agents/agent_id/knowledge/bulk" \
-  -H "Authorization: Bearer YOUR_TOKEN" \
-  -F "files[]=@document1.pdf" \
-  -F "files[]=@document2.docx" \
-  -F "files[]=@spreadsheet.xlsx" \
-  -F "metadata={\"category\":\"product_docs\",\"tags\":[\"manual\",\"v2\"]}"
+# Attach a project to an agent's knowledge base
+curl -X POST "https://www.taskade.com/api/v1/agents/{agentId}/knowledge/project" \
+  -H "Authorization: Bearer your_api_token_placeholder" \
+  -H "Content-Type: application/json" \
+  -d '{"projectId": "your_project_id"}'
+
+# Attach an uploaded media file to an agent's knowledge base
+curl -X POST "https://www.taskade.com/api/v1/agents/{agentId}/knowledge/media" \
+  -H "Authorization: Bearer your_api_token_placeholder" \
+  -H "Content-Type: application/json" \
+  -d '{"mediaId": "your_media_id"}'
 ```
 
 ### **Smart Organization Systems**
@@ -434,48 +440,29 @@ AI-Powered Suggestions:
 
 ### **Knowledge API Management**
 
-#### **Bulk Operations API**
+#### **Agent Knowledge API**
+
+The public REST API manages agent knowledge by attaching or removing **projects** and **media** per agent. v1 has no bulk-upload, bulk-update, or knowledge-search endpoint — iterate to add items, and query knowledge by prompting the agent.
 
 ```bash
-# Bulk upload with metadata
-curl -X POST "https://api.taskade.com/v1/knowledge/bulk-upload" \
-  -H "Authorization: Bearer TOKEN" \
-  -H "Content-Type: multipart/form-data" \
-  -F "files[]=@file1.pdf" \
-  -F "files[]=@file2.docx" \
-  -F "config={
-    \"auto_categorize\": true,
-    \"extract_entities\": true,
-    \"generate_summaries\": true,
-    \"create_embeddings\": true
-  }"
+# Add a project to an agent's knowledge base
+curl -X POST "https://www.taskade.com/api/v1/agents/{agentId}/knowledge/project" \
+  -H "Authorization: Bearer your_api_token_placeholder" \
+  -H "Content-Type: application/json" \
+  -d '{"projectId": "your_project_id"}'
 
-# Bulk update knowledge metadata
-curl -X PUT "https://api.taskade.com/v1/knowledge/bulk-update" \
-  -H "Authorization: Bearer TOKEN" \
-  -d '{
-    "updates": [
-      {
-        "id": "doc_123",
-        "tags": ["updated", "v2"],
-        "category": "product_docs"
-      }
-    ]
-  }'
+# Add a media file (upload it via the Media API first)
+curl -X POST "https://www.taskade.com/api/v1/agents/{agentId}/knowledge/media" \
+  -H "Authorization: Bearer your_api_token_placeholder" \
+  -H "Content-Type: application/json" \
+  -d '{"mediaId": "your_media_id"}'
+
+# Remove a project from an agent's knowledge base
+curl -X DELETE "https://www.taskade.com/api/v1/agents/{agentId}/knowledge/project/{projectId}" \
+  -H "Authorization: Bearer your_api_token_placeholder"
 ```
 
-#### **Knowledge Search & Retrieval**
-
-```bash
-# Advanced knowledge search
-curl -X GET "https://api.taskade.com/v1/knowledge/search" \
-  -H "Authorization: Bearer TOKEN" \
-  -G \
-  -d "query=API authentication methods" \
-  -d "categories=technical,security" \
-  -d "limit=10" \
-  -d "include_context=true"
-```
+See the full [Agents API reference](../../apis-living-system-development/comprehensive-api-guide/agents/README.md).
 
 ### **Integration Patterns**
 
@@ -483,17 +470,18 @@ curl -X GET "https://api.taskade.com/v1/knowledge/search" \
 
 ```javascript
 // Sync with content management systems
-const syncCMS = async () => {
+const syncCMS = async (agentId, token) => {
   const cmsContent = await fetchFromCMS();
   
-  const processedContent = await taskadeAPI.knowledge.bulkProcess({
-    sources: cmsContent,
-    processing: {
-      extractEntities: true,
-      generateSummaries: true,
-      categorizeContent: true
-    }
-  });
+  // No bulk endpoint exists in v1 — attach each imported project to the agent:
+  for (const projectId of cmsContent.projectIds) {
+    await fetch(`https://www.taskade.com/api/v1/agents/${agentId}/knowledge/project`, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+      body: JSON.stringify({ projectId }),
+    });
+  }
+  const processedContent = cmsContent.projectIds;
   
   return processedContent;
 };
@@ -501,15 +489,7 @@ const syncCMS = async () => {
 
 #### **Real-Time Updates**
 
-```javascript
-// WebSocket connection for live knowledge updates
-const knowledgeSocket = new WebSocket('wss://api.taskade.com/knowledge/live');
-
-knowledgeSocket.on('knowledge_updated', (event) => {
-  console.log(`Knowledge updated: ${event.document_id}`);
-  refreshAgentKnowledge(event.agent_id);
-});
-```
+Taskade does not expose a public WebSocket API. Knowledge changes take effect immediately when you add or remove items via the REST endpoints above. To react to changes programmatically, use an automation trigger (for example, **File Added to Media**) rather than a live socket.
 
 ***
 

@@ -25,12 +25,13 @@ Taskade connects to **100+ tools and services** across communication, productivi
 | Service | Triggers | Actions | Authentication |
 |---------|----------|---------|----------------|
 | **Slack** | New message, mention, reaction | Send message, create channel, update status, invite user | OAuth 2.0 |
-| **Microsoft Teams** | New message, meeting scheduled | Post message, create meeting, manage channels | OAuth 2.0 |
+| **Microsoft Teams** | New message, new channel message, meeting scheduled | Post message, create meeting, manage channels | OAuth 2.0 |
+| **Microsoft Outlook** | New email received | Send email, reply to email, forward email, move email, get email, find email, mark as read | OAuth 2.0 |
 | **Discord** | New message, member joined | Send message, manage roles, create invite | Bot Token |
 | **WhatsApp Business** | New message received | Send message, send template | API Key |
 | **Telegram** | New message, command | Send message, create poll, manage chat | Bot Token |
 | **Email (SMTP)** | New email received | Send email, create campaign | SMTP Credentials |
-| **Gmail** | New email, label added | Send email, create draft, add label | OAuth 2.0 |
+| **Gmail** | New email, label added (including label-filtered), new email matching filter | Send email, reply to email, get email, create draft, add label | OAuth 2.0 |
 
 ### 🛠️ Development & Project Management
 
@@ -41,17 +42,23 @@ Taskade connects to **100+ tools and services** across communication, productivi
 | **Jira** | Issue created, status changed | Create ticket, update status, assign user | OAuth 2.0 / API Key |
 | **Linear** | Issue created, updated | Create issue, update priority, assign | OAuth 2.0 / API Key |
 | **Asana** | Task created, completed | Create task, update project, assign | OAuth 2.0 / PAT |
-| **Trello** | Card created, moved | Create card, move card, add member | OAuth 2.0 / API Key |
+| **ClickUp** | Task created, task status changed | Create task, update task, delete task, add comment, get task, list tasks, find task by name, get task comments | OAuth 2.0 / API Key |
+| **Google Tasks** | Task created, task completed | Create task, update task, delete task, complete task, list tasks, clear completed, get task, find task | OAuth 2.0 |
 | **Monday.com** | Item created, updated | Create item, update status, notify | OAuth 2.0 / API Key |
+| **Todoist** | Task completed | Create task, update task, complete task, delete task, find task | OAuth 2.0 / API Key |
+| **Trello** | Card created, moved | Create card, move card, add member | OAuth 2.0 / API Key |
 
 ### 📊 Data & Analytics
 
 | Service | Triggers | Actions | Authentication |
 |---------|----------|---------|----------------|
-| **Google Sheets** | New row, cell updated | Add row, update cell, create chart | OAuth 2.0 |
+| **Google Sheets** | New row, row updated, cell updated | Add row, update cell, create chart, create spreadsheet | OAuth 2.0 |
 | **Airtable** | New record, updated | Create record, update field, link records | OAuth 2.0 / API Key |
+| **Google Docs** | New document created | Read document, edit template file | OAuth 2.0 |
+| **Google Drive** | New file, file updated | Upload file, create folder, move file, share file, delete file (Shared Drive supported) | OAuth 2.0 |
+| **Google Calendar** | Event created, event started | Create event, update event, list events (with search), delete event, add attendee | OAuth 2.0 |
 | **Notion** | Page created, updated | Create page, update database, add content | OAuth 2.0 |
-| **HubSpot** | Contact created, deal updated | Create contact, update deal, send email | OAuth 2.0 / API Key |
+| **HubSpot** | Contact created, deal updated | Create contact, upsert contact, search contacts, get contact, update contact, create deal, update deal, search deals, get deal, send email | OAuth 2.0 / API Key |
 | **Salesforce** | Lead created, opportunity updated | Create lead, update opportunity, assign | OAuth 2.0 |
 | **Pipedrive** | Deal created, activity added | Create deal, add activity, update stage | OAuth 2.0 / API Key |
 | **Custom Webhooks** | Webhook received | Send HTTP request, trigger workflow | API Key / Bearer Token |
@@ -72,7 +79,8 @@ Taskade connects to **100+ tools and services** across communication, productivi
 
 | Service | Triggers | Actions | Authentication |
 |---------|----------|---------|----------------|
-| **WordPress** | Post published, comment added | Create post, update content, moderate comment | OAuth 2.0 / API Key |
+| **Twitter/X** | Mention detected | Post tweet, reply to tweet, delete post, retweet, post tweet with image attachment | OAuth 2.0 |
+| **WordPress** | New post published, comment added | Create post with featured image, update content, moderate comment | OAuth 2.0 / API Key |
 | **Webflow** | Form submitted, item published | Create CMS item, update content, publish | OAuth 2.0 / API Key |
 | **Typeform** | Form submitted, response updated | Create form, update response, send email | OAuth 2.0 / PAT |
 | **Google Forms** | Form submitted | Create form, add response, send notification | OAuth 2.0 |

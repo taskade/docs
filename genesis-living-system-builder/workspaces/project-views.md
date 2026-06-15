@@ -10,12 +10,13 @@ Taskade stores information in a flexible tree-structured database. The **same da
 |------|----------|------------------|-----------|
 | **List** | Linear task lists, meeting agendas | Drag-to-indent / reorder, checkboxes | To-do lists, meeting notes, SOPs |
 | **Board** | Kanban workflows, pipelines | Drag cards between columns | Sales pipelines, project stages, sprint boards |
-| **Table** | Spreadsheet-style databases | Inline edit custom fields, sort & filter | CRM, inventory, contact lists |
+| **Table** | Spreadsheet-style databases | Inline edit custom fields, sort & filter, multi-select rows (Shift/Cmd-click) + bulk delete with undo | CRM, inventory, contact lists |
 | **Calendar** | Scheduling & deadlines | Drag tasks on calendar, date pickers | Content calendars, event planning, deadlines |
 | **Mind Map** | Brain-storming & hierarchical planning | Radial drag to create branches | Strategy planning, idea mapping, research |
 | **Org Chart** | Organizational hierarchies | Expand / collapse levels | Team structures, reporting lines, decision trees |
 | **Action** | Mobile-friendly task capture | Quick-add, swipe to complete | Daily tasks, quick capture, on-the-go |
 | **Gantt** | Timeline & dependency tracking | Resize bars to adjust durations | Project timelines, resource planning, dependencies |
+| **Docs (Beta)** | Long-form documents & wikis | Continuous rich-text editing, headings, embeds | Specs, knowledge bases, proposals, SOPs |
 
 All views are backed by the **same underlying data**—update a task in one view and it instantly updates everywhere, thanks to Taskade's real-time engine.
 

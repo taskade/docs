@@ -31,7 +31,7 @@ AI agents reason over your workspace context. They draft, classify, summarize, a
 - Multi-agent teams with automatic delegation
 - 22+ built-in tools (Slack, Gmail, Sheets, and more)
 - Persistent memory across conversations
-- Multiple AI models (GPT, Claude, Gemini)
+- Multiple frontier AI models (Claude Opus 4.8 / Fable-5, GPT-5.5, Gemini 3.5 Flash, Qwen 3.7, and more)
 
 **Learn more:** [AI Agents Getting Started](../ai-features/ai-agents-getting-started.md)
 
@@ -84,6 +84,23 @@ Your workspace has an Intelligence Score (0–100) that reflects its richness:
 | 81–100 | Genius | Full ecosystem — agents, automations, and data working as one |
 
 Higher scores mean Genesis can build better apps because it has more context to work with.
+
+## Workspace DNA Flow Canvas
+
+The Workspace DNA flow canvas is a visual, real-time relationship graph that surfaces from the workspace overview. It renders every project, agent, and automation as a node and draws live edges between them — showing at a glance how knowledge flows through your workspace.
+
+**What you see on the canvas:**
+
+- **Project nodes** — each database or project in Memory, with their current record count and connected agents
+- **Agent nodes** — every AI agent, the projects it reads, and the automations it triggers
+- **Automation nodes** — active workflows, their trigger sources, and the projects or agents they write back to
+- **Live edges** — directed connections that update in real time as events fire, records change, or agents respond
+
+**Phase 0 rollout:** The canvas is being introduced progressively starting from the workspace overview panel. Early access surfaces a read-only graph; later phases will add drag-to-rearrange layout, click-through to edit any node inline, and canvas-level filtering by node type or tag.
+
+{% hint style="info" %}
+**No setup required.** The canvas is generated automatically from your existing Workspace DNA — projects, agents, and automations you have already built appear as nodes the moment you open the view.
+{% endhint %}
 
 ## EVE: Your AI Companion
 

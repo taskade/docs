@@ -1,6 +1,6 @@
 ---
 description: >-
-  Connect your Genesis apps and AI agents to 30+ external services using MCP
+  Connect your Genesis apps and AI agents to 31+ external services using MCP
   (Model Context Protocol) — the universal standard for AI tool integration.
 ---
 

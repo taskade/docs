@@ -546,13 +546,7 @@ Some community apps include embeddable components:
 
 ### API Integration with Community Apps
 
-Community apps can include API endpoints for integration:
-
-```javascript
-// Connect to a community app's API
-const response = await fetch('https://api.taskade.com/community/app/xyz/data');
-const communityData = await response.json();
-```
+Apps you clone from the community are standard Genesis apps. Build integrations with the [public API](../../apis-living-system-development/developer-home.md), and have an app call external services securely through the [App Secrets](../space-apps-guide/app-secrets.md) outbound proxy — there is no separate `community` API surface.
 
 ### Collaborative Development
 

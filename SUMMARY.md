@@ -109,6 +109,7 @@
   * [Prompt Library](genesis-living-system-builder/space-apps-guide/genesis-prompt-library.md)
   * [Advanced Features](genesis-living-system-builder/space-apps-guide/advanced-features.md)
   * [Custom Domains & Branding](genesis-living-system-builder/space-apps-guide/custom-domains.md)
+  * [App Secrets & External API Calls](genesis-living-system-builder/space-apps-guide/app-secrets.md)
 
 ## AI Features
 

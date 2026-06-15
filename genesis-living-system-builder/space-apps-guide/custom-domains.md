@@ -1,3 +1,7 @@
+---
+description: Connect your own branded domain to a published Genesis app.
+---
+
 # Custom Domains & Branding
 
 **Turn your Genesis apps from "homemade" looking tools into professional business software that looks like you spent a fortune to build it. Your customers will see your brand, not Taskade's.**
@@ -127,6 +131,8 @@ TTL: 3600 (or your registrar's default)
 2. **Click "Verify Domain"** next to your added domain
 3. **Wait for verification** (usually 5-15 minutes)
 4. **SSL certificate generates automatically**
+
+Domain validation and HTTPS now activate faster via Delegated DCV — Cloudflare handles certificate validation automatically on your behalf, so no extra DNS record is required.
 
 #### 5. Assign to Genesis Apps
 

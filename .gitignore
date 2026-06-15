@@ -32,6 +32,8 @@ PENDING_CHANGES_REVIEW.md
 *.pem
 *credentials*
 *secrets*
+# Exception: a public docs PAGE about the App Secrets feature (no real secrets in it)
+!genesis-living-system-builder/space-apps-guide/app-secrets.md
 config/local.json
 config/production.json
 

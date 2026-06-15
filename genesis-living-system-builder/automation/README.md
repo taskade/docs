@@ -70,12 +70,16 @@ Use an agent to classify, extract, or draft. Then route or act on the structured
 * **Custom Field Updated** — when a custom field value changes
 * **Project Completed** — when all tasks are done
 * **Public Agent Chat Ended** — when a public agent conversation finishes
+* **Task Moved** — when a task moves from one project to another
+* **Project Created** — when a new project is created in a space
+* **Due Date Removed** — when a due date is cleared from a task
+* **File Added to Media** — when a file is uploaded to the media library
 
 **External Triggers:**
 
 * **Webhook** — receive data from any external service via HTTP POST
 * **Form** — custom input forms with text, email, date, and time fields
-* **Schedule** — run hourly, daily, weekly, or monthly
+* **Schedule** — run every X minutes (sub-hourly intervals), hourly, daily, weekly, or monthly
 * **Mailhook** — trigger from incoming emails
 
 **Integration Triggers** (from connected services):
