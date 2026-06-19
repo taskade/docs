@@ -14,8 +14,11 @@ Webhooks let your Taskade automations communicate with the outside world in both
 * **Outbound HTTP requests** — automations call _out_ to external APIs as action steps.
 * **Receiving Taskade events** — combine a Taskade **trigger** (e.g. _task completed_) with an outbound HTTP action to push events to your app.
 
-{% hint style="warning" %}
-There is **no** `POST /api/v2/webhooks` subscription endpoint and no event-subscription REST API. You receive Taskade events by **building an automation** with a Taskade trigger plus an HTTP action — see [Receiving Taskade Events](#receiving-taskade-events) below.
+{% hint style="info" %}
+Two ways to receive Taskade events:
+
+* **No-code:** build an automation with a Taskade trigger plus an HTTP action — see [Receiving Taskade Events](#receiving-taskade-events) below.
+* **Programmatic (Beta):** subscribe over the public API with `POST /api/v2/subscribeWebhook` — see [Programmatic Webhook Subscriptions](#programmatic-webhook-subscriptions-beta). Available on **Pro and above**.
 {% endhint %}
 
 ***
@@ -91,7 +94,7 @@ Content-Type: application/json
 Requests that omit or supply an incorrect token receive a `401 Unauthorized` response and are not processed.
 
 {% hint style="info" %}
-Check your plan's feature list at [taskade.com/pricing](https://www.taskade.com/pricing) for current availability of inbound webhook bearer token authentication.
+Webhook automations are available on **Pro and above**. Free and Starter plans cannot create webhook triggers or subscriptions. See [taskade.com/pricing](https://www.taskade.com/pricing).
 {% endhint %}
 
 ### Common Patterns
@@ -138,6 +141,48 @@ Response data from the HTTP request is available as dynamic variables in subsequ
   "text": "New task created: {{task.name}}"
 }
 ```
+
+***
+
+## Programmatic Webhook Subscriptions (Beta)
+
+{% hint style="info" %}
+Beta. Subscribing requires **Pro or above**. Subscriptions are account-level, and `task.due` is the only event wired end-to-end today — more events are rolling out. The authoritative schema is the live [Action API v2 spec](https://www.taskade.com/api/documentation/v2).
+{% endhint %}
+
+Subscribe to Taskade events over the public API without building an automation in the UI. This is the surface the official [Taskade integrations](https://github.com/taskade/integrations) (Zapier, n8n, Activepieces) build on.
+
+**Subscribe** — register a target URL for an event:
+
+```http
+POST https://www.taskade.com/api/v2/subscribeWebhook
+Authorization: Bearer YOUR_PERSONAL_ACCESS_TOKEN
+Content-Type: application/json
+
+{
+  "targetUrl": "https://your-app.example.com/hooks/taskade",
+  "triggerType": "task.due"
+}
+```
+
+Returns `{ "ok": true, "hookId": "..." }`. Taskade then POSTs the event payload to `targetUrl` whenever a matching event fires. Delivery uses an SSRF-guarded fetch, so `targetUrl` **must be `https`**.
+
+**Unsubscribe** — remove a subscription by its `hookId`:
+
+```http
+POST https://www.taskade.com/api/v2/unsubscribeWebhook
+Authorization: Bearer YOUR_PERSONAL_ACCESS_TOKEN
+Content-Type: application/json
+
+{ "hookId": "..." }
+```
+
+| Note | Detail |
+| --- | --- |
+| Plan | Subscribing requires **Pro or above** (otherwise `402 PAYMENT_REQUIRED`). Unsubscribing is always allowed, so a downgraded account can still clean up. |
+| Scope | Account-level — fires for matching events across your account. Per-project scope is planned. |
+| Events | `task.due` today. `task.assigned`, `task.completed`, `project.created` and more are rolling out. |
+| Limit | Up to 100 active subscriptions per account. |
 
 ***
 

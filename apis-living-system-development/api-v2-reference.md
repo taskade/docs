@@ -9,7 +9,7 @@ description: >-
 The Public API **v2** is an **action-based** API: every operation is a `POST` to a named endpoint (`/listSpaces`, `/promptAgent`, `/createProject`), with a JSON body. It is not RESTful — there are no `GET /workspaces` or `PUT /tasks/{id}` style routes.
 
 {% hint style="info" %}
-**v2 is in beta and runs alongside v1.** v2 (`openapi 0.1.0`) is simpler and adds capabilities v1 lacks — most notably **`promptAgent`**. But v2 does **not** cover everything: tasks are **read-only** in v2, and there is no project-update endpoint. For full task CRUD (create/update/delete, assignees, dates, notes, fields) use the [REST API v1](comprehensive-api-guide/). See [Which API should I use?](#which-api-should-i-use) below.
+**v2 is in beta and runs alongside v1.** v2 is simpler and adds capabilities v1 lacks — most notably **`promptAgent`**. But v2 does **not** cover everything: tasks are **read-only** in v2, and there is no project-update endpoint. For full task CRUD (create/update/delete, assignees, dates, notes, fields) use the [REST API v1](comprehensive-api-guide/). See [Which API should I use?](#which-api-should-i-use) below.
 {% endhint %}
 
 The live OpenAPI spec is published at [taskade.com/api/documentation/v2](https://www.taskade.com/api/documentation/v2).
