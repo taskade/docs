@@ -52,10 +52,15 @@ Taskade lets teams collaborate on projects, create AI agents, automate workflows
 - [Developer Overview](apis-living-system-development/developers/README.md)
 - [Authentication](apis-living-system-development/developers/authentication.md)
 - [API Overview](apis-living-system-development/developers/api.md)
-- [Comprehensive API Guide](apis-living-system-development/comprehensive-api-guide/README.md)
+- [Comprehensive API Guide (REST v1)](apis-living-system-development/comprehensive-api-guide/README.md)
+- [Action API v2 Reference (Beta)](apis-living-system-development/api-v2-reference.md)
+- [TypeScript SDK Quickstart](apis-living-system-development/sdk-quickstart.md)
+- [Webhooks](apis-living-system-development/webhooks.md)
+- REST API v1 — live OpenAPI spec: https://www.taskade.com/api/documentation/v1 (JSON: https://www.taskade.com/api/documentation/v1/json)
+- Action API v2 (Beta) — live OpenAPI spec: https://www.taskade.com/api/documentation/v2 (JSON: https://www.taskade.com/api/documentation/v2/json)
 
 ## Links
 
 - [Taskade Website](https://taskade.com)
 - [Taskade Blog](https://www.taskade.com/blog)
-- [Taskade API](https://www.taskade.com/api/v1)
+- [Taskade API docs](https://www.taskade.com/api/documentation/v2)

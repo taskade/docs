@@ -109,6 +109,15 @@ Taskade ships **two** public HTTP APIs, both authenticated with the same token:
 | [REST API v1](comprehensive-api-guide/README.md) | `https://www.taskade.com/api/v1` | RESTful (`GET`/`POST`/`PUT`/`DELETE`) | Full task CRUD, assignees, dates, notes, fields |
 | [Action API v2](api-v2-reference.md) | `https://www.taskade.com/api/v2` | Action / RPC (`POST /{operation}`) | Prompting agents, agent lifecycle, bundles |
 
+{% hint style="info" %}
+**Live OpenAPI specs (source of truth)** — auto-generated from the running API, always current:
+
+* REST API v1 — [interactive docs](https://www.taskade.com/api/documentation/v1) · [openapi.json](https://www.taskade.com/api/documentation/v1/json)
+* Action API v2 — [interactive docs](https://www.taskade.com/api/documentation/v2) · [openapi.json](https://www.taskade.com/api/documentation/v2/json)
+
+The reference pages in this guide are hand-written companions (examples, patterns, best practices). When in doubt about an exact field or status code, the live spec wins.
+{% endhint %}
+
 Include your token in the `Authorization` header:
 
 ```bash
@@ -121,6 +130,16 @@ curl -X POST https://www.taskade.com/api/v2/listMyProjects \
      -H "Authorization: Bearer your_api_key_placeholder" \
      -H "Content-Type: application/json" -d '{}'
 ```
+
+## Errors
+
+Both APIs return a consistent JSON error envelope — expected failures come back as typed errors, not bare `500`s:
+
+```json
+{ "ok": false, "code": "PAYMENT_REQUIRED", "message": "Webhooks require a Pro plan or higher." }
+```
+
+The HTTP status matches the `code` (e.g. `401` `UNAUTHORIZED`, `402` `PAYMENT_REQUIRED`, `403` `FORBIDDEN`, `404` `NOT_FOUND`, `429` `TOO_MANY_REQUESTS`). Branch on `ok` and `code` rather than parsing `message`.
 
 ## What You Can Build
 
