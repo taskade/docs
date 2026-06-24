@@ -5,6 +5,19 @@ description: >-
 
 # Taskade Genesis Overview
 
+Genesis lets you turn a plain-English prompt into a live application — UI, data, agents, and automations — running on your own workspace.
+
+## I want to…
+
+| I want to… | Go to |
+| --- | --- |
+| Build my first app fast | [Getting Started](getting-started.md) |
+| Understand how Genesis works | [How Taskade Genesis Works](how-genesis-works.md) |
+| Write better prompts | [Prompt Guide](prompt-guide.md) |
+| Give my app the right context | [Adding Context](adding-context.md) |
+| See real apps and starting points | [Examples & Templates](examples-and-templates.md) |
+| Run a real business on a Genesis app | [Run Your Business on Genesis](../run-your-business/README.md) |
+
 **Living Software. Living DNA. Living Intelligence.**
 
 **Build Without Permission.**\
@@ -79,3 +92,10 @@ Start here:
 Edit your app's source from Claude, Cursor, or any IDE via [Genesis App MCP (Beta)](../../apis-living-system-development/genesis-app-mcp.md).
 
 Running a real business on a Genesis app? Follow [Run Your Business on Genesis](../run-your-business/README.md).
+
+## Next steps
+
+* [Getting Started](getting-started.md) — build your first living system in 5 minutes
+* [Prompt Guide](prompt-guide.md) — get sharper results from your prompts
+* [Run Your Business on Genesis](../run-your-business/README.md) — take an app to production
+* [taskade.com/community](https://www.taskade.com/community) — browse community apps and get help

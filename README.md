@@ -31,7 +31,7 @@ Software should be alive. And now, it is.
 
 <figure><img src=".gitbook/assets/genesis-overview.gif" alt="Build a full app from one prompt with Taskade Genesis"><figcaption>One prompt → a working app — agents, integrations, and automations built in.</figcaption></figure>
 
-### 🏗️ Platform Capabilities
+### Platform capabilities
 
 | Capability               | Description                                                    | Learn More                                                                                                  |
 | ------------------------ | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
@@ -55,25 +55,25 @@ Taskade works best when three parts stay connected. **Memory** stores knowledge.
 
 Use this as the canonical overview: [Workspace DNA](genesis-living-system-builder/genesis/workspace-dna.md).
 
-### 🚀 Quick Start
+### Quick start
 
-#### 🚀 **Build Your First App** (5 minutes)
+#### Build your first app (5 minutes)
 
 1. [**Follow the Tutorial**](genesis-living-system-builder/genesis/getting-started.md) - Step-by-step app building
 2. [**Copy Working Prompts**](genesis-living-system-builder/genesis/examples-and-templates.md) - Proven templates
 3. [**Browse Community Apps**](https://www.taskade.com/community) - Apps, templates, and workflows for every industry
 
-#### 🤖 **Create AI Agents** (10 minutes)
+#### Create AI agents (10 minutes)
 
 1. [**AI Agent Tutorial**](genesis-living-system-builder/ai-features/ai-agents-getting-started.md) - Your first AI assistant
 2. [**Agent Prompt Library**](genesis-living-system-builder/space-apps-guide/genesis-prompt-library.md) - Ready-to-use configurations
 
-#### ⚡ **Set Up Automations** (15 minutes)
+#### Set up automations (15 minutes)
 
 1. [**Automation Getting Started**](genesis-living-system-builder/automation/) - Build your first workflow
 2. [**Integration Guide**](genesis-living-system-builder/automation/integrations.md) - 100+ supported services
 
-#### 💻 **For Developers**
+#### For developers
 
 * [**Developer Platform**](apis-living-system-development/developer-home.md) - The developer portal: APIs, SDK, and MCP
 * [**REST API v1**](apis-living-system-development/comprehensive-api-guide/README.md) - Complete RESTful reference (full task CRUD)
