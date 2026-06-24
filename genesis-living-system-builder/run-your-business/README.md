@@ -18,6 +18,8 @@ Thousands of operators — consultants, clinics, realtors, agencies, constructio
 New to Taskade Genesis? Start with [Your first app in 5 minutes](../genesis/getting-started.md), then come back here to turn it into a business you run.
 {% endhint %}
 
+**Build your own, or start from a kit.** Describe your business and [build from scratch](https://www.taskade.com/create), or clone a ready-made app for free from the [community gallery](https://www.taskade.com/community) or [Taskade's official kits](https://www.taskade.com/user/taskade) and make it yours. Both paths lead to the same steps below.
+
 | You want to… | Start here |
 | --- | --- |
 | See the whole journey end to end | [From idea to live business — the 5 steps](from-idea-to-live-business.md) |
