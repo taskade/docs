@@ -28,6 +28,22 @@ Automations let you build trigger-and-action workflows that run on their own —
 
 Living Motion is Taskade’s automation layer. It’s how your workspace can **react**, **decide**, and **execute** when something happens.
 
+Every automation follows the same shape: a trigger starts it, an optional condition routes it, and actions do the work.
+
+```mermaid
+flowchart TD
+  A["Trigger<br/>schedule, form, webhook, or project event"] --> B{"Condition / Filter"}
+  B -->|matches| C["Actions"]
+  B -->|no match| E["Stop"]
+  C --> D["AI step<br/>Taskade EVE classifies or drafts"]
+  C --> F["Integration<br/>notify or sync a connected tool"]
+  C --> G["Update tasks in Taskade Genesis"]
+  D --> H["Result"]
+  F --> H
+  G --> H
+```
+
+
 Canonical foundation: [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
 ### What you use it for

@@ -26,6 +26,20 @@
 
 This guide explains the core architecture behind **Taskade Genesis** — the AI platform that transforms natural language into complete, living business applications. You'll learn:
 
+At a high level, here is how a plain-English prompt becomes a working app you can preview and refine.
+
+```mermaid
+flowchart TD
+  A["Plain-English prompt"] --> B["Taskade Genesis"]
+  B --> C["App UI (React)"]
+  B --> D["Workspace backend<br/>Projects & Databases"]
+  B --> E["AI Agents"]
+  B --> F["Automations"]
+  C --> G["Preview and refine"]
+  G -->|describe changes| B
+```
+
+
 - **The Tree of Life:** How Memory (Projects), Intelligence (Agents), and Action (Automations) form a continuous cycle that powers living software.
 - **Workspace DNA:** What your workspace's genetic code is and why every app you build is unique.
 - **EVE:** How Taskade's unified AI system connects everything together.

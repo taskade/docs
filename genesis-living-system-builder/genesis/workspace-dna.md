@@ -10,6 +10,25 @@ Every Taskade workspace runs on three pillars that work together as a continuous
 
 ## The Three Pillars
 
+The three pillars form one workspace, each feeding the next in a continuous cycle.
+
+```mermaid
+graph TD
+  WS["Unified Taskade Workspace"]
+  MEM["Memory<br/>Projects & Databases"]
+  INT["Intelligence<br/>AI Agents"]
+  EXE["Execution<br/>Automations"]
+  EVE["Taskade EVE<br/>reads the whole Workspace DNA"]
+  WS --> MEM
+  WS --> INT
+  WS --> EXE
+  MEM -->|agents read data| INT
+  INT -->|decisions and drafts| EXE
+  EXE -->|updates results| MEM
+  EVE --> WS
+```
+
+
 ### 1. Memory — Projects & Databases
 
 Projects store structured knowledge: tasks, notes, custom fields, documents, and media. This is what agents read and automations update.

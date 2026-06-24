@@ -71,6 +71,23 @@ See the [Authentication guide](developers/authentication.md) for personal tokens
 
 Every v2 call is a `POST` to an operation name, with a JSON body and a JSON response. Successful responses are wrapped in `{ "ok": true, ... }`.
 
+Here is a single Action API v2 call, from authentication to JSON response.
+
+```mermaid
+sequenceDiagram
+  participant C as Client
+  participant T as Taskade Action API v2
+  Note over C: Authenticate with PAT or OAuth 2.0 token
+  C->>T: POST /operation with Bearer token and JSON body
+  T->>T: Process operation
+  alt Success
+    T-->>C: JSON response, ok true
+  else Error
+    T-->>C: JSON error, ok false, message and code
+  end
+```
+
+
 ```bash
 curl -X POST https://www.taskade.com/api/v2/OPERATION \
   -H "Authorization: Bearer YOUR_TOKEN" \
