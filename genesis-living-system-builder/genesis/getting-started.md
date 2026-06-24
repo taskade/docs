@@ -16,6 +16,10 @@ Want the deeper “why it works” model?
 
 Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
+{% hint style="info" %}
+**Two ways to start.** Build from a blank prompt (this guide), or **clone a ready-made app** — browse the [community gallery](https://www.taskade.com/community) and [Taskade's official kits](https://www.taskade.com/user/taskade), clone one for free, and customize it. Either way, you land in the same Taskade Genesis editor.
+{% endhint %}
+
 ## Before You Start
 
 ### What You Need

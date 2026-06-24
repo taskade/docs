@@ -120,6 +120,8 @@ Published community apps track engagement automatically:
 
 ## Clone and Remix Apps
 
+Cloning is the fastest way to start — pick a working app, copy it to your workspace, and customize it instead of building from a blank prompt. Browse apps to clone in the [community gallery](https://www.taskade.com/community) and [Taskade's official kits](https://www.taskade.com/user/taskade).
+
 Any public or shared app can be cloned:
 
 | Step | Action |
