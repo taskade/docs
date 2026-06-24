@@ -9,6 +9,7 @@ Understand how AI credits work in Taskade, how credit packs are priced, and how 
 * [How AI Credits Work](credits-and-billing.md#how-ai-credits-work)
 * [Free Credits](credits-and-billing.md#free-credits)
 * [Paid Plan Credits](credits-and-billing.md#paid-plan-credits)
+* [What Your App Will Cost](credits-and-billing.md#what-your-app-will-cost)
 * [Credit Packs](credits-and-billing.md#credit-packs)
 * [Auto Top-Up](credits-and-billing.md#auto-top-up)
 * [Model-Specific Pricing](credits-and-billing.md#model-specific-pricing)
@@ -60,6 +61,35 @@ Exact credit amounts per tier may change. See the [pricing page](https://www.tas
 {% endhint %}
 
 Max and Enterprise plans get refined credit limits designed for bursty workloads — you won't get throttled mid-task during a heavy generation run.
+
+***
+
+## What Your App Will Cost
+
+If you're building and running a real app on Genesis, the question isn't "how many credits does one request cost" — it's "what in my app burns credits, and how much will it burn as I grow." Use this as a decision guide. For exact, current per-request numbers, always check the in-app model picker; published figures drift as models and pricing change.
+
+### What drives your credit use
+
+| What consumes credits                | What drives the cost (relative)                                                                                       |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| **Genesis app generation & iteration** | Heaviest up front, while you build. Each generate and each "edit with AI" pass costs credits; settles down once the app is stable. |
+| **AI automation steps**              | Scales with how often your automations run and how many AI steps each run includes. A trigger that fires all day costs more than one that fires occasionally. |
+| **An agent answering end-users**     | Scales with the number of people using your published app and how chatty each session is. This is the line item that grows as your app gets traffic. |
+| **Agent / EVE chat**                 | Scales with how much you and your team use AI assistance day to day — drafting, summarizing, asking questions in your workspace. |
+
+Steps that don't call AI — plain forms, stored data, non-AI automation actions — don't draw from your credit balance.
+
+### Right-size it
+
+* **Low usage** — You're building for yourself or a small team, with light traffic and occasional automations. A personal paid tier (Pro direction) is usually enough; top up with a credit pack during a build sprint.
+* **Medium usage** — A team relies on the app, automations run regularly, and a handful of end-users hit your agent daily. Lean toward the Business tier, which also auto-routes to frontier models so you don't manage model choice per task.
+* **High usage** — A public-facing app with steady traffic, an agent answering many end-users, and automations firing throughout the day. Lean toward Max or Enterprise, which are tuned for bursty, high-volume AI workloads without mid-task throttling.
+
+Don't over-buy on day one. Watch your [usage page](credits-and-billing.md#viewing-your-usage) for the first month, then size to what your app actually draws.
+
+### Keep your app from running dry
+
+If real customers use your published app, an agent that runs out of credits mid-session is the worst time to find out. Turn on [**Auto Top-Up**](credits-and-billing.md#auto-top-up) so your balance refills automatically before it hits zero — your customer-facing agent keeps answering instead of stalling on an out-of-credits screen.
 
 ***
 

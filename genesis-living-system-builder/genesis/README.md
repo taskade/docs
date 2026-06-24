@@ -77,3 +77,5 @@ Start here:
 ### What's next
 
 Edit your app's source from Claude, Cursor, or any IDE via [Genesis App MCP (Beta)](../../apis-living-system-development/genesis-app-mcp.md).
+
+Running a real business on a Genesis app? Follow [Run Your Business on Genesis](../run-your-business/README.md).
