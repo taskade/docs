@@ -146,6 +146,24 @@ Any public or shared app can be cloned:
 
 ---
 
+## Prefilled Taskade Genesis Links
+
+You can share a link that opens Taskade Genesis with an app description already filled in, so the recipient generates it in one click instead of retyping the idea.
+
+**Link format:**
+
+```
+https://www.taskade.com/create?input=YOUR_APP_DESCRIPTION
+```
+
+When opened, Taskade Genesis loads with the description pre-populated and ready to generate — the recipient can still edit it first. The `input` value is URL-encoded (a space becomes `%20`); most browsers encode it automatically when you copy the link back out of the address bar.
+
+{% hint style="info" %}
+Specific descriptions produce better results: "Create a restaurant reservation system with table availability, guest preferences, and confirmation emails" works far better than "Build a booking app." Very long descriptions may hit browser URL-length limits.
+{% endhint %}
+
+---
+
 ## Paid Apps
 
 Genesis lets creators monetize their apps directly. When you enable monetization for an app, buyers pay via Stripe before receiving their own private copy.
