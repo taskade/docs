@@ -31,7 +31,7 @@ AI agents reason over your workspace context. They draft, classify, summarize, a
 - Multi-agent teams with automatic delegation
 - 22+ built-in tools (Slack, Gmail, Sheets, and more)
 - Persistent memory across conversations
-- Multiple frontier AI models (Claude Opus 4.8, GPT-5.5, Gemini 3.5 Flash, Qwen 3.7, and more)
+- Multiple frontier AI models, including the latest from Anthropic (Claude), OpenAI (GPT), and Google (Gemini)
 
 **Learn more:** [AI Agents Getting Started](../ai-features/ai-agents-getting-started.md)
 
@@ -94,12 +94,32 @@ The Workspace DNA flow canvas is a visual, real-time relationship graph that sur
 - **Project nodes** — each database or project in Memory, with their current record count and connected agents
 - **Agent nodes** — every AI agent, the projects it reads, and the automations it triggers
 - **Automation nodes** — active workflows, their trigger sources, and the projects or agents they write back to
-- **Live edges** — directed connections that update in real time as events fire, records change, or agents respond
+- **Edges** — directed connections that show how knowledge flows between projects, agents, and automations
 
 **Phase 0 rollout:** The canvas is being introduced progressively starting from the workspace overview panel. Early access surfaces a read-only graph; later phases will add drag-to-rearrange layout, click-through to edit any node inline, and canvas-level filtering by node type or tag.
 
 {% hint style="info" %}
 **No setup required.** The canvas is generated automatically from your existing Workspace DNA — projects, agents, and automations you have already built appear as nodes the moment you open the view.
+{% endhint %}
+
+### Exploring the DNA graph
+
+Open **Memory** from the sidebar to see your whole account rendered as an interactive graph. Your account sits at the center, with every workspace orbiting it and each workspace's projects, AI agents, media, and team spaces branching out from there.
+
+**Two ways to view it:**
+
+- **Galaxy** — a force-directed view that arranges everything in 3D (the default) or flat 2D. The 3D galaxy gently rotates against a starfield so you can take in the whole picture at once.
+- **Flow** — a cleaner, structured layout if you prefer straight connectors over an organic constellation.
+
+**What you can do:**
+
+- **Inspect any node.** Click a workspace, project, agent, or any other node to open a panel showing what it is, what it contains, and its child items. From there you can open it in Taskade or copy a direct link. On desktop, right-click a node for the same quick actions.
+- **Zoom and navigate.** Use the on-screen zoom in / out / fit controls, or the keyboard shortcuts `+`, `-`, and `0` (fit to screen). In the 2D galaxy a minimap in the corner shows where you are in the larger map.
+- **Filter and recolor.** Toggle node types (workspaces, projects, AI agents, media, and more) on or off, and switch between several color palettes to suit your eye.
+- **Check status at a glance.** A health indicator in the corner confirms when everything in your account is connected.
+
+{% hint style="info" %}
+**No setup required.** The graph is generated automatically from what you have already built — every workspace, project, agent, and piece of media appears the moment you open Memory.
 {% endhint %}
 
 ## EVE: Your AI Companion

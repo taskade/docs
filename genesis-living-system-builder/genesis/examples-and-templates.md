@@ -118,24 +118,24 @@ Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace
 
 ### **📊 App Categories & Business Impact**
 
-| Category                | Most Popular Living System  | Business Problem Solved                       | Success Metrics                                                                 | Build Time |
-| ----------------------- | --------------------------- | --------------------------------------------- | ------------------------------------------------------------------------------- | ---------- |
-| **Customer Experience** | Adaptive Feedback Portal    | "Never know when customers are unhappy"       | 95% faster issue response, 25% rating improvement, learns sentiment patterns    | 3 min      |
-| **Sales & Marketing**   | Intelligent Lead Engine     | "Sales team wastes time on unqualified leads" | 60% faster response, 40% higher conversion, predicts lead quality               | 5 min      |
-| **Operations**          | Predictive Inventory System | "Always running out of popular items"         | Zero stockouts, 20% cost reduction, forecasts demand patterns                   | 4 min      |
-| **Team Productivity**   | Living Project Intelligence | "No visibility into team progress"            | 70% fewer status meetings, 50% faster delivery, optimizes workflows             | 6 min      |
-| **Customer Service**    | Evolving Support Ecosystem  | "Customer issues get lost in email"           | 80% faster resolution, 95% satisfaction, learns from every interaction          | 4 min      |
-| **Content & Creative**  | Adaptive Content Engine     | "Social media posting is inconsistent"        | 300% more consistent posting, 45% better engagement, optimizes content strategy | 7 min      |
+| Category                | Most Popular Living System  | Business Problem Solved                       | What It Does                                       | Build Time |
+| ----------------------- | --------------------------- | --------------------------------------------- | ------------------------------------------------- | ---------- |
+| **Customer Experience** | Adaptive Feedback Portal    | "Never know when customers are unhappy"       | Learns sentiment patterns                         | 3 min      |
+| **Sales & Marketing**   | Intelligent Lead Engine     | "Sales team wastes time on unqualified leads" | Predicts lead quality                             | 5 min      |
+| **Operations**          | Predictive Inventory System | "Always running out of popular items"         | Forecasts demand patterns                         | 4 min      |
+| **Team Productivity**   | Living Project Intelligence | "No visibility into team progress"            | Optimizes workflows                               | 6 min      |
+| **Customer Service**    | Evolving Support Ecosystem  | "Customer issues get lost in email"           | Learns from every interaction                     | 4 min      |
+| **Content & Creative**  | Adaptive Content Engine     | "Social media posting is inconsistent"        | Optimizes content strategy                        | 7 min      |
 
-### **🏆 Most Forked Templates (Community Favorites)**
+### **🏆 Popular Template Patterns**
 
-| Living System Template           | Industry             | Success Rate               | User Rating   | Fork Count | Living Intelligence Factor                                               |
-| -------------------------------- | -------------------- | -------------------------- | ------------- | ---------- | ------------------------------------------------------------------------ |
-| **Adaptive Customer Portal**     | Restaurants, Retail  | 95% implementation success | ⭐⭐⭐⭐⭐ (4.9/5) | 2,847      | Learns sentiment patterns, predicts issues, evolves responses            |
-| **Intelligent Booking System**   | Healthcare, Services | 92% no-show reduction      | ⭐⭐⭐⭐⭐ (4.8/5) | 1,923      | Adapts scheduling based on patterns, predicts no-shows                   |
-| **Evolving Lead Intelligence**   | Sales, Consulting    | 60% faster response        | ⭐⭐⭐⭐⭐ (4.7/5) | 1,654      | Learns qualification patterns, optimizes scoring over time               |
-| **Predictive Inventory Network** | E-commerce, Retail   | Zero stockout rate         | ⭐⭐⭐⭐⭐ (4.8/5) | 1,432      | Forecasts demand, learns seasonal patterns, prevents shortages           |
-| **Living Event Ecosystem**       | Events, Education    | 90% admin time savings     | ⭐⭐⭐⭐⭐ (4.6/5) | 1,287      | Adapts communications, learns attendee preferences, optimizes engagement |
+| Living System Template           | Industry             | What It Does                                                             |
+| -------------------------------- | -------------------- | ------------------------------------------------------------------------ |
+| **Adaptive Customer Portal**     | Restaurants, Retail  | Learns sentiment patterns, predicts issues, evolves responses            |
+| **Intelligent Booking System**   | Healthcare, Services | Adapts scheduling based on patterns, predicts no-shows                   |
+| **Evolving Lead Intelligence**   | Sales, Consulting    | Learns qualification patterns, optimizes scoring over time               |
+| **Predictive Inventory Network** | E-commerce, Retail   | Forecasts demand, learns seasonal patterns, prevents shortages           |
+| **Living Event Ecosystem**       | Events, Education    | Adapts communications, learns attendee preferences, optimizes engagement |
 
 ### **How to Use These Examples**
 
@@ -183,12 +183,11 @@ I run a restaurant and need customers to submit feedback about their dining expe
 * **Performance Dashboard** - Weekly analytics and trend tracking
 * **Response Management** - Track follow-up actions taken
 
-**Real Results:**
+**What this app gives you:**
 
-* **40% increase** in customer satisfaction scores
-* **Response time to complaints:** 30 minutes (down from 3-5 days)
-* **Google Reviews improvement:** 3.8 to 4.6 stars in 8 weeks
-* **Time saved:** 5 hours/week on feedback management
+* Instant Slack alerts to your manager whenever a customer rates 3 stars or lower
+* Automated thank-you emails to every customer who submits feedback
+* Weekly summary reports of all ratings and comments for team meetings
 
 ### Online Reservation System
 
@@ -198,12 +197,11 @@ I run a restaurant and need customers to submit feedback about their dining expe
 I own a fine dining restaurant and need customers to make reservations online for dinner service. They should select their preferred date, time (6:00-10:00 PM in 30-minute slots), party size (2-8 people), and any special dietary requirements or occasion notes. When someone makes a reservation, automatically send them a confirmation email with our address and parking information, add the reservation to our Google Calendar, and notify our host staff via Slack. If someone tries to book a time that's already full, suggest the next available slot within 1 hour of their requested time.
 ```
 
-**Results:**
+**What this app gives you:**
 
-* **60% reduction** in phone reservation calls
-* **Zero double-bookings** since implementation
-* **15% increase** in advance reservations
-* **Customer satisfaction:** 4.9/5 for booking experience
+* Online reservation booking by date, time slot, party size, and special notes
+* Automatic confirmation emails with address and parking info, plus a Google Calendar entry
+* Slack notifications to host staff and next-slot suggestions when a time is full
 
 ***
 
@@ -217,12 +215,11 @@ I own a fine dining restaurant and need customers to make reservations online fo
 I run a yoga studio with 4 instructors and need clients to book classes online and pay deposits in advance. Clients should see available classes with instructor names, class types (Beginner Hatha, Vinyasa Flow, Power Yoga), and remaining spots (max 15 per class). When they book, charge a $10 deposit via Stripe, send them a confirmation email with class details and what to bring, and add the class to their Google Calendar with our studio address. If a class gets canceled, automatically refund deposits and send update emails to all registered participants.
 ```
 
-**Results:**
+**What this app gives you:**
 
-* **2 hours daily** saved on booking management
-* **95% advance payment rate** (up from 60%)
-* **25% increase** in class attendance
-* **Cancellation management:** Fully automated
+* Online class booking with instructor names, class types, and live remaining-spot counts
+* Stripe deposit collection plus confirmation emails and Google Calendar entries
+* Automatic deposit refunds and update emails to all participants when a class is canceled
 
 ### Personal Training Client Portal
 
@@ -232,12 +229,11 @@ I run a yoga studio with 4 instructors and need clients to book classes online a
 I'm a personal trainer and need clients to schedule sessions, track their progress, and submit weekly check-ins. Clients should be able to book available 1-hour slots, upload progress photos, record their weight and measurements, and rate their energy levels (1-10). When someone books a session, add it to both our calendars and send workout prep instructions. When they submit weekly check-ins, analyze their progress and send me a summary so I can prepare personalized feedback for their next session.
 ```
 
-**Results:**
+**What this app gives you:**
 
-* **Client retention:** 85% (up from 65%)
-* **Session no-shows:** Reduced by 70%
-* **Progress tracking:** 100% client participation
-* **Revenue per client:** 30% increase through better engagement
+* Client session booking with progress photos, weight, measurements, and energy-level tracking
+* Automatic calendar entries and workout prep instructions when a session is booked
+* Weekly check-in summaries sent to you so you can prepare personalized feedback
 
 ***
 
@@ -251,12 +247,11 @@ I'm a personal trainer and need clients to schedule sessions, track their progre
 I run a boutique clothing store and need to track inventory levels and automate reordering. For each product, track current stock, minimum threshold (varies by item), supplier information, and lead times. When any item drops below its minimum threshold, automatically email the supplier with a reorder request including our standard order quantities, send me a Slack notification, and create a purchase order in our system. Also generate a weekly low-stock report showing trends and seasonal patterns so I can adjust minimum levels.
 ```
 
-**Results:**
+**What this app gives you:**
 
-* **Zero stockouts** in 6 months
-* **Inventory carrying costs:** Reduced 25%
-* **Supplier relationships:** Improved with consistent ordering
-* **Time saved:** 10 hours/week on inventory management
+* Per-product tracking of current stock, minimum thresholds, suppliers, and lead times
+* Automatic supplier reorder emails, Slack notifications, and purchase orders when stock runs low
+* Weekly low-stock reports highlighting trends and seasonal patterns
 
 ### Customer Loyalty Program
 
@@ -266,12 +261,11 @@ I run a boutique clothing store and need to track inventory levels and automate 
 I need a customer loyalty system for my coffee shop where customers earn points for purchases and can redeem rewards. Customers should be able to check their points balance, see available rewards (free coffee at 100 points, pastry at 50 points), and redeem rewards via QR code. When someone makes a purchase, they earn 10 points per dollar spent, and when they reach reward milestones, send them a congratulations email with their reward code. Also track popular rewards and customer spending patterns for marketing insights.
 ```
 
-**Results:**
+**What this app gives you:**
 
-* **Customer visit frequency:** 40% increase
-* **Average transaction:** 25% higher
-* **Customer retention:** 60% improvement
-* **Data insights:** Drive targeted promotions
+* Points balances, available rewards, and QR-code redemption for customers
+* Automatic points accrual on purchases plus congratulations emails at reward milestones
+* Tracking of popular rewards and spending patterns for marketing insights
 
 ***
 
@@ -285,12 +279,11 @@ I need a customer loyalty system for my coffee shop where customers earn points 
 I'm a marketing consultant and need potential clients to request proposals through my website. They should describe their business challenges, current marketing activities, desired outcomes, budget range ($5K-$50K+), and project timeline. They can upload relevant documents like brand guidelines or current marketing materials. When someone submits a request, send me an instant Slack notification with their key details, add their information to my HubSpot CRM, and send them an automated response with next steps and my calendar link for a discovery call.
 ```
 
-**Results:**
+**What this app gives you:**
 
-* **Lead quality:** 60% improvement (better-qualified prospects)
-* **Response time:** From hours to minutes
-* **Conversion rate:** 35% increase
-* **Proposal accuracy:** Better scoping from detailed requests
+* Proposal request intake covering challenges, current activities, outcomes, budget, and timeline, with document uploads
+* Instant Slack notifications with each prospect's key details when a request is submitted
+* Automatic HubSpot CRM entry plus a response with next steps and your calendar link
 
 ***
 

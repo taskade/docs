@@ -273,6 +273,8 @@ Genesis creates a cognitive partnership where:
 | **Edit Existing Work** | "Update the Customer Support agent to be more empathetic" | Modifies agent training and behavior |
 | **Generate Images** | "Create a hero banner for my booking app" | Generates image, saves to Media library |
 | **Connect Integrations** | "Send new leads to our HubSpot CRM" | Creates automation flow with HubSpot integration |
+| **Run an Automation** | "Run my daily digest now" | Runs a saved automation in your workspace by name or id, waits for it to finish, and returns a plain-language summary (disabled automations are refused until you enable them) |
+| **Build an Automation** | "Build a flow that posts new form submissions to Slack" | Creates a new automation from your description, materialized from a validated template — created switched off so it never fires until you review and enable it |
 
 ---
 

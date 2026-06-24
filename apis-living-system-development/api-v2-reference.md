@@ -85,7 +85,7 @@ A typical response:
 ```
 
 {% hint style="warning" %}
-There is **no** `POST /api/v2/webhooks` subscription endpoint. To react to events, use [automation webhook triggers](webhooks.md) instead.
+There is no `POST /api/v2/webhooks` endpoint, but you can subscribe to events programmatically (Beta, Pro and above) via `POST /api/v2/subscribeWebhook` — see [Webhooks](webhooks.md). You can also use [automation webhook triggers](webhooks.md).
 {% endhint %}
 
 ---

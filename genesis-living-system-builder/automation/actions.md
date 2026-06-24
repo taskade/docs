@@ -34,6 +34,7 @@ Actions can be chained together to create complex multi-step workflows, with con
 | **task.update**                      | Updates a task node's content or note field                | Inline edits, AI-driven content rewrites         | `taskId`, `content`, `note`                            |
 | **task.get**                         | Reads a task node and returns its current data             | Conditional logic, data-driven downstream steps  | `taskId`                                               |
 | **project.getInfo**                  | Reads project metadata (name, dates, member list, etc.)    | Dynamic references to project context in flows   | `projectId`                                            |
+| **task.attachFile**                  | Attaches a file to a task node (returns `attachmentId`, `fileId`, `projectId`, `nodeId`, `filename`, `mimetype`) | Save uploads or generated files onto a task      | `projectId` (Project), `nodeId` (Task ID, UUID), `fileUrl` (File) |
 
 ### Data Processing & Integration Actions
 
@@ -1189,6 +1190,26 @@ This action is distinct from the `email.send` integration rows above, which requ
 | **split**           | Splits a text string into an array on a delimiter               | `text`, `delimiter`                | Split CSV line into fields          |
 | **trim**            | Removes leading and trailing whitespace from a text string      | `text`                             | Clean user-submitted input          |
 | **convertCase**     | Converts text case (uppercase, lowercase, titleCase, camelCase) | `text`, `targetCase`               | Normalize status labels to lowercase |
+
+### Utilities
+
+Pure, no-credit transform actions for reshaping data inline in a flow — no AI call required.
+
+| Action                  | Description                                                                  | Parameters                                           | Example                                |
+| ----------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------- |
+| `utils.generateQrCode`  | Renders text or a URL into a QR image saved to your workspace Media library  | `text` (required), `size` (150/300/600 px), `errorCorrection` (L/M/Q/H) | Encode a check-in URL as a QR code      |
+| `utils.convertCsvToJson`| Parses a CSV string into structured rows                                     | `csv` (required), `hasHeader` (header/noHeader), `delimiter` (optional, auto-detect) | Turn an upload into JSON rows           |
+| `utils.convertJsonToCsv`| Serializes a JSON array into CSV                                             | `json` (required), `includeHeader` (yes/no), `delimiter` (optional, default `,`) | Export records to a spreadsheet         |
+| `utils.calculateAverage`| Mean of a list of numbers                                                   | `values` (required)                                  | Average response time                  |
+| `utils.calculateSum`    | Total of a list of numbers                                                  | `values` (required)                                  | Sum order amounts                      |
+| `utils.countUniques`    | Counts the distinct values in a list                                        | `values` (required)                                  | Count unique customers                 |
+| `utils.getMinMax`       | Highest or lowest value in a list                                           | `values` (required), `mode` (max/min)                | Find the largest invoice               |
+| `utils.concat`          | Joins multiple parts into one string                                        | `parts` (required), `separator` (optional)           | Build a full name from fields          |
+| `utils.find`            | Locates a search value in a string (first match or all)                     | `text` (required), `searchValue` (required), `mode` (first/all), `caseSensitivity` (optional) | Find a keyword in a message            |
+| `utils.slugify`         | Turns text into a URL-safe slug                                             | `text` (required), `casing` (optional), `separator` (default `-`) | Slugify an article title               |
+| `utils.stripHtml`       | Removes markup and returns plain text                                        | `html` (required)                                    | Clean HTML email body                  |
+| `utils.htmlToMarkdown`  | Converts an HTML fragment to Markdown                                        | `html` (required)                                    | Store content as Markdown              |
+| `utils.markdownToHtml`  | Renders Markdown to sanitized HTML                                          | `markdown` (required)                                | Publish formatted content              |
 
 ### File Operations
 

@@ -7,7 +7,7 @@ description: Connect your own branded domain to a published Genesis app.
 **Turn your Genesis apps from "homemade" looking tools into professional business software that looks like you spent a fortune to build it. Your customers will see your brand, not Taskade's.**
 
 {% hint style="success" %}
-**Professional Feature!** Custom domains come with Pro plans and higher. Perfect for impressing clients and looking legitimate in your industry.
+**Business plan feature.** Custom domains are available on the **Business plan and above**. Connect your own branded web address to a published Genesis app.
 {% endhint %}
 
 ***
@@ -337,8 +337,8 @@ Result: Professional MVP for investor demos
 
 Taskade handles SSL certificate generation and renewal automatically:
 
-* **Let's Encrypt certificates** issued within minutes
-* **Automatic renewal** every 90 days
+* **SSL certificates provisioned automatically** via Cloudflare (Delegated DCV) — no manual DNS record required
+* **Automatic renewal** — certificates are managed and renewed for you
 * **HTTPS redirect** enforced for all traffic
 * **Modern security standards** (TLS 1.2+)
 
@@ -423,7 +423,7 @@ fbq('track', 'Lead', {
 
 * Confirm domain verification completed successfully
 * Wait up to 1 hour for certificate generation
-* Check for CAA records blocking Let's Encrypt
+* Check for CAA records blocking certificate issuance
 * Contact Taskade support if issue persists
 
 ### App Configuration Issues
@@ -546,25 +546,14 @@ asia.company.com  → Asian operations
 
 ***
 
-## 🎯 Success Stories
+## 🎯 Common Patterns
 
-### Digital Agency Growth
+Custom domains are commonly used to:
 
-_"Custom domains transformed how we deliver client solutions. Clients see professional apps under their own branding, which justifies higher project fees and leads to more referrals. We've increased our project values by 40% since implementing custom domains."_
-
-**— Sarah Chen, Digital Marketing Agency Owner**
-
-### Restaurant Chain Efficiency
-
-_"Our multi-location feedback system on feedback.ourrestaurants.com processes 500+ customer submissions daily. The professional appearance increased response rates by 60%, and managers love getting instant alerts about service issues."_
-
-**— Miguel Rodriguez, Operations Director**
-
-### Consulting Practice Expansion
-
-_"Custom domain client assessments at assessment.myconsulting.com helped us close 3x more enterprise deals. Prospects take us more seriously when they interact with professional, branded tools instead of generic forms."_
-
-**— Dr. Jennifer Park, Business Consultant**
+* **Agencies** — deliver client portals under the client's own brand (`portal.clientname.com`)
+* **Multi-location businesses** — run a single branded feedback or operations app across sites
+* **Consultants & service providers** — present assessments and dashboards on a professional domain
+* **Founders** — put an MVP on `app.startupname.com` for demos and early users
 
 ***
 
