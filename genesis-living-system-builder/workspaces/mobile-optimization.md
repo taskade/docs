@@ -1,6 +1,6 @@
 # Mobile Living Experience
 
-**Master Taskade's mobile-first features and create apps that work beautifully across all devices. From responsive Genesis apps to native mobile workflows, ensure your users have a seamless experience whether they're on desktop, tablet, or phone.**
+**Master Taskade's mobile-first features and create apps that work beautifully across all devices. From responsive Taskade Genesis apps to native mobile workflows, ensure your users have a seamless experience whether they're on desktop, tablet, or phone.**
 
 {% hint style="success" %}
 **Mobile-First Approach:** Over 60% of users access Taskade applications on mobile devices. With our latest enhancements, mobile users now enjoy superior performance, smoother interactions, and enhanced collaboration features that make mobile work as powerful as desktop.

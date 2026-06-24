@@ -8,7 +8,7 @@
 - [Embed a Project](#embed-a-project)
 - [Embed Settings](#embed-settings)
 - [Supported Embed Sources (In Taskade)](#supported-embed-sources-in-taskade)
-- [Embed Genesis Apps](#embed-genesis-apps)
+- [Embed Taskade Genesis Apps](#embed-genesis-apps)
 - [What's Next](#whats-next)
 
 ---

@@ -6,7 +6,7 @@
 
 ## What is Taskade Genesis?
 
-Genesis turns a single prompt into a working app.
+Taskade Genesis turns a single prompt into a working app.
 
 It creates the UI and connects it to your workspace.
 
@@ -26,12 +26,12 @@ Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace
 
 ### What You Can Build
 
-By the end of this guide, you'll have built and published a fully functional app. It can be a client portal, tracker, or dashboard. The only limitation is your imagination. Genesis handles the technical complexity, you focus on business value.
+By the end of this guide, you'll have built and published a fully functional app. It can be a client portal, tracker, or dashboard. The only limitation is your imagination. Taskade Genesis handles the technical complexity, you focus on business value.
 
 ### What You'll Learn
 
 * How to turn business problems into app descriptions
-* How to use Genesis to build complete applications
+* How to use Taskade Genesis to build complete applications
 * How to test and refine your app
 * How to share and use your app with customers or team members
 
@@ -39,7 +39,7 @@ By the end of this guide, you'll have built and published a fully functional app
 
 ## Step 1: Identify Your Business Problem (1 minute)
 
-Start by thinking about something in your business that could work better. Common problems Genesis solves:
+Start by thinking about something in your business that could work better. Common problems Taskade Genesis solves:
 
 ### **Customer Frustrations**
 
@@ -115,25 +115,25 @@ I'm a business consultant and need potential clients to request proposals throug
 
 ## Step 3: Build Your App with Genesis (1 minute)
 
-Now the magic happens - Genesis turns your description into a working app.
+Now the magic happens - Taskade Genesis turns your description into a working app.
 
 ### **Access Genesis**
 
 1. **Log into Taskade** at [taskade.com/create](https://www.taskade.com/create)
 2. **Navigate to your workspace** (create one if you don't have it)
 3. **Look for the AI prompt box** at the top of your workspace
-4. **Click "Create with AI"** or the Genesis icon
+4. **Click "Create with AI"** or the Taskade Genesis icon
 
 ### **Generate Your App**
 
 1. **Paste your description** into the prompt box
 2. **Click "Generate"** or press Enter
-3. **Watch Genesis work** - it will show you progress as it builds
+3. **Watch Taskade Genesis work** - it will show you progress as it builds
 4. **Wait 30-90 seconds** for your complete app to appear
 
 ### **What Genesis Creates**
 
-While you wait, Genesis is building all four components of your app:
+While you wait, Taskade Genesis is building all four components of your app:
 
 * **📊 Database** - Smart storage for all your business data
 * **🤖 AI Assistant** - Learns your business and helps users
@@ -144,11 +144,11 @@ While you wait, Genesis is building all four components of your app:
 
 ## Step 3.5: Add Context Files (Optional - 30 seconds)
 
-**Supercharge your app with reference materials.** Genesis can analyze uploaded files to better understand your brand, requirements, and design preferences.
+**Supercharge your app with reference materials.** Taskade Genesis can analyze uploaded files to better understand your brand, requirements, and design preferences.
 
 ### **Why Add Context?**
 
-Genesis becomes significantly more powerful when you provide reference materials:
+Taskade Genesis becomes significantly more powerful when you provide reference materials:
 
 * **🎨 Brand Consistency** - Upload logos, color palettes, and style guides
 * **📋 Form Examples** - Share existing forms or data structures
@@ -210,14 +210,14 @@ Your app is ready! Now test it thoroughly before sharing with others.
 
 * **No notifications received?** Check your email/Slack integration settings
 * **Form looks wrong?** Describe the visual changes you want
-* **Missing fields?** Tell Genesis what additional information you need
+* **Missing fields?** Tell Taskade Genesis what additional information you need
 * **Wrong automation timing?** Specify exactly when actions should happen
 
 ***
 
 ## Step 5: Perfect Your App (30 seconds)
 
-Need adjustments? Genesis makes changes instantly through conversation.
+Need adjustments? Taskade Genesis makes changes instantly through conversation.
 
 ### **Common Refinements**
 
@@ -249,7 +249,7 @@ Need adjustments? Genesis makes changes instantly through conversation.
 
 1. **Describe what you want to change** in plain English
 2. **Click "Update App"** or similar button
-3. **Wait for Genesis to implement** your changes (usually 10-30 seconds)
+3. **Wait for Taskade Genesis to implement** your changes (usually 10-30 seconds)
 4. **Test the changes** to make sure they work as expected
 
 ***
@@ -259,7 +259,7 @@ Need adjustments? Genesis makes changes instantly through conversation.
 Your app is ready for the real world! You've built something that solves a real business problem, and now it's time to put it in front of actual users.
 
 {% hint style="warning" %}
-**Secure your API keys before publishing.** If your app calls external APIs, store credentials in the Secrets vault (space **Settings → Secrets**) and route calls through the outbound proxy so keys never ship in client code. Genesis blocks publish if hardcoded secrets are detected. See [App Secrets](../space-apps-guide/app-secrets.md) for setup steps.
+**Secure your API keys before publishing.** If your app calls external APIs, store credentials in the Secrets vault (space **Settings → Secrets**) and route calls through the outbound proxy so keys never ship in client code. Taskade Genesis blocks publish if hardcoded secrets are detected. See [App Secrets](../space-apps-guide/app-secrets.md) for setup steps.
 {% endhint %}
 
 ### **Publishing Options**
@@ -268,7 +268,7 @@ Your app is ready for the real world! You've built something that solves a real 
 2. **Custom Domain**: Publish under your branded domain (e.g., `app.yourcompany.com`)
 3. **Share with Community**: Publish to the global Taskade marketplace for others to discover and fork
 4. **Public Link**: Get a shareable URL for external users
-5. **Genesis App MCP (Beta)**: Expose your app as an MCP server so AI agents and external tools can call it programmatically — see [Genesis App MCP (Beta)](../../apis-living-system-development/genesis-app-mcp.md)
+5. **Taskade Genesis App MCP (Beta)**: Expose your app as an MCP server so AI agents and external tools can call it programmatically — see [Taskade Genesis App MCP (Beta)](../../apis-living-system-development/genesis-app-mcp.md)
 
 ### **Getting It Live**
 
@@ -306,39 +306,39 @@ Share your success story and get featured:
 
 ***
 
-## Real Success Stories
+## What people build in their first 5 minutes
 
-Here are what other users built in their first 5 minutes:
+A few common starting points — each began as a single plain-English prompt:
 
-### **Maria - Restaurant Feedback System**
+### Restaurant feedback system
 
-**Problem:** "Customers left reviews on Google but we saw them too late to respond to problems."
+**Problem:** Reviews landed on Google too late to act on.
 
-**Genesis Prompt:** "I need customers to rate their dining experience and leave comments, with instant Slack alerts for any rating below 4 stars."
+**Prompt:** "I need customers to rate their dining experience and leave comments, with instant Slack alerts for any rating below 4 stars."
 
-**Result:** "I get immediate notifications about unhappy customers and can follow up personally. Our Google reviews improved from 3.8 to 4.6 stars in two months!"
+**What you get:** A live feedback form, a place to triage responses, and real-time alerts so low ratings surface immediately instead of days later.
 
-### **David - Yoga Studio Booking**
+### Yoga studio booking
 
-**Problem:** "Appointment booking was all phone calls and double-bookings were common."
+**Problem:** Booking was all phone calls, and double-bookings were common.
 
-**Genesis Prompt:** "I need clients to book yoga classes online, pay deposits, and get calendar invites, with automatic confirmations."
+**Prompt:** "I need clients to book yoga classes online, pay deposits, and get calendar invites, with automatic confirmations."
 
-**Result:** "Saves me 2 hours every day. No more double-bookings, and I get paid in advance. Clients love the convenience!"
+**What you get:** An online booking flow with deposits, calendar invites, and automatic confirmations — no more phone-tag or double-bookings.
 
-### **Sarah - Inventory Alerts**
+### Inventory alerts
 
-**Problem:** "I never knew when products were running low until customers complained they were out of stock."
+**Problem:** Stock ran low before anyone noticed.
 
-**Genesis Prompt:** "I need to track inventory levels and get email alerts when items drop below 10 units, with automatic reorder suggestions."
+**Prompt:** "I need to track inventory levels and get email alerts when items drop below 10 units, with automatic reorder suggestions."
 
-**Result:** "Haven't had a stockout in 6 months! My supplier gets orders automatically and I can focus on sales instead of counting inventory."
+**What you get:** A stock tracker that emails you before items run out and suggests reorders automatically.
 
 ***
 
 ## What's Next?
 
-Congratulations! You've built your first Genesis app. Here's how to take it further, in two phases.
+Congratulations! You've built your first Taskade Genesis app. Here's how to take it further, in two phases.
 
 ### **Phase 1 — Build**
 
@@ -389,7 +389,7 @@ Keep this handy for your next app:
 
 1. **Identify problem** - What frustrates you or your customers?
 2. **Write description** - WHO + WHAT + AUTOMATIC ACTIONS
-3. **Build with Genesis** - Paste prompt and click Generate
+3. **Build with Taskade Genesis** - Paste prompt and click Generate
 4. **Test thoroughly** - Try all features as real user would
 5. **Perfect & share** - Make adjustments and go live
 

@@ -309,37 +309,37 @@ Result: 80% reduction in compliance violations, 50% faster audit preparation
 
 ### **Measuring Enterprise ROI**
 
-#### **Financial Metrics**
-- **Cost Reduction**: 40-70% decrease in operational expenses through automation
-- **Productivity Gains**: 60-85% improvement in team productivity and efficiency
-- **Revenue Impact**: 25-50% increase in sales and customer satisfaction metrics
-- **Time-to-Market**: 75% faster delivery of new products and services
+#### **Financial Outcomes**
+- **Cost Reduction**: Lower operational expenses by automating manual work
+- **Productivity Gains**: Free teams from repetitive tasks to focus on higher-value work
+- **Revenue Impact**: Respond to customers faster and follow up more consistently
+- **Time-to-Market**: Ship new products and services sooner
 
-#### **Operational Metrics**
-- **Error Reduction**: 80-95% decrease in operational errors and exceptions
-- **Process Efficiency**: 50-75% reduction in manual process steps and handoffs
-- **Decision Speed**: 3-5x faster strategic and operational decision-making
-- **Scalability Gains**: Ability to handle 10x growth without proportional headcount increases
+#### **Operational Outcomes**
+- **Error Reduction**: Fewer manual errors through automated, repeatable workflows
+- **Process Efficiency**: Remove manual steps and handoffs between systems
+- **Decision Speed**: Make decisions on real-time data instead of stale reports
+- **Scalability**: Handle growth without proportional headcount increases
 
-#### **Strategic Metrics**
-- **Innovation Velocity**: 4x faster development and deployment of new capabilities
-- **Market Responsiveness**: Real-time adaptation to market changes and customer needs
+#### **Strategic Outcomes**
+- **Innovation Velocity**: Build and deploy new capabilities faster
+- **Market Responsiveness**: Adapt to market changes and customer needs in real time
 - **Competitive Advantage**: Sustained differentiation through intelligent operations
 - **Future-Proofing**: Systems that evolve with changing business requirements
 
-### **Enterprise Success Stories**
+### **Example Scenarios**
 
-#### **Global Manufacturing Company**
-*"Living systems transformed our quality control from reactive to predictive. We now prevent 85% of defects before they reach customers, saving $2.3M annually."*
+#### **Manufacturing**
+Move quality control from reactive to predictive — surface likely defects earlier in the line so teams can act before products ship.
 
-#### **Healthcare Network**
-*"Our patient care coordination system learns from every interaction. Wait times dropped 60%, patient satisfaction increased 40%, and we reduced administrative overhead by 50%."*
+#### **Healthcare**
+Coordinate patient care across teams, with a shared system of record that reduces administrative back-and-forth.
 
-#### **Financial Services Firm**
-*"Living compliance systems maintain 99.9% accuracy while reducing audit preparation time from 3 months to 2 weeks. Risk detection improved by 300%."*
+#### **Financial Services**
+Keep compliance steps consistent and auditable, so audit preparation is continuous rather than a last-minute scramble.
 
-#### **Retail Corporation**
-*"Our inventory intelligence system maintains perfect stock levels across 500 stores. Out-of-stock incidents dropped 90%, while overstock costs decreased 65%."*
+#### **Retail**
+Track inventory across locations with automated reorder alerts to reduce both stockouts and overstock.
 
 ### **Getting Started with Enterprise Living Systems**
 

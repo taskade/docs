@@ -2,13 +2,13 @@
 
 **From Static Apps to Living Systems** - The paradigm shift that transforms software from tools into intelligent companions powered by Workspace DNA.
 
-> _"August 9, 2025 marked the birth of living software. Genesis proved that applications could be alive - learning from users, adapting to needs, and evolving with business growth. Your workspace became a living brain, your projects living memory, your agents living intelligence, your automations living motion."_
+> _"August 9, 2025 marked the birth of living software. Taskade Genesis proved that applications could be alive - learning from users, adapting to needs, and evolving with business growth. Your workspace became a living brain, your projects living memory, your agents living intelligence, your automations living motion."_
 
 ***
 
 ## 🧬 The Living Software Revolution
 
-Eight years of evolution culminate in the Workspace DNA trinity: **Memory** (Projects & Knowledge), **Intelligence** (AI Agents & EVE), and **Motion** (Automations & Actions) working in harmony to create systems that think, learn, and act.
+Eight years of evolution culminate in the Workspace DNA trinity: **Memory** (Projects & Knowledge), **Intelligence** (AI Agents & Taskade EVE), and **Motion** (Automations & Actions) working in harmony to create systems that think, learn, and act.
 
 Each release advances the living software vision, strengthening the DNA strands and their integration into complete, intelligent business solutions.
 

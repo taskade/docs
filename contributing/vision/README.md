@@ -45,4 +45,4 @@ Just as HyperCard unleashed a wave of creativity by making software development 
 
 * Start building: [Quick Start Guide](../../getting-started/)
 * Understand the foundation: [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md)
-* Go deeper: [Genesis Overview](../../genesis-living-system-builder/genesis/)
+* Go deeper: [Taskade Genesis Overview](../../genesis-living-system-builder/genesis/)

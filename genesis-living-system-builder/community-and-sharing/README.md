@@ -5,7 +5,7 @@ description: >-
 
 # Sharing: Living Systems
 
-**Turn your brilliant Genesis app into something that helps business owners everywhere. Share what you've built, discover amazing solutions from others, and copy complete apps with just one click.**
+**Turn your brilliant Taskade Genesis app into something that helps business owners everywhere. Share what you've built, discover amazing solutions from others, and copy complete apps with just one click.**
 
 {% hint style="success" %}
 **Latest Features!** Revolutionary app forking, embeddable public agents, and professional publishing with paywalls are now live! Share your Genesis apps globally, monetize premium solutions, and fork complete applications with one click.

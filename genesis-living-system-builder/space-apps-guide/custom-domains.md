@@ -1,5 +1,5 @@
 ---
-description: Connect your own branded domain to a published Genesis app.
+description: Connect your own branded domain to a published Taskade Genesis app.
 ---
 
 # Custom Domains & Branding

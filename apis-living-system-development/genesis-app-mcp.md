@@ -10,7 +10,7 @@ description: >-
 
 ## Which MCP do I want?
 
-Taskade has three MCP surfaces. This page covers the **hosted Genesis App MCP**.
+Taskade has three MCP surfaces. This page covers the **hosted Taskade Genesis App MCP**.
 
 | Surface | Transport | Auth | Touches | Plan |
 | --- | --- | --- | --- | --- |
@@ -40,7 +40,7 @@ MCP currently **cannot** create, modify, or delete:
 - Automations or flows
 - Uploaded media
 
-Those resources appear in the MCP filesystem but are **read-only**. To modify them, keep using Taskade directly or EVE (Taskade's built-in AI assistant). We're actively working on expanding MCP's write scope — stay tuned.
+Those resources appear in the MCP filesystem but are **read-only**. To modify them, keep using Taskade directly or Taskade EVE (the built-in AI assistant). We're actively working on expanding MCP's write scope — stay tuned.
 
 ## Requirements
 

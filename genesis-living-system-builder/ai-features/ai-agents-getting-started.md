@@ -205,7 +205,7 @@ Select the right AI model based on your needs:
 
 ## 🧠 Understanding Agent Knowledge & Memory
 
-Your agent's knowledge is what makes it truly powerful for your business. This is the foundation that powers Genesis apps - your workspace's living DNA.
+Your agent's knowledge is what makes it truly powerful for your business. This is the foundation that powers Taskade Genesis apps - your workspace's living DNA.
 
 ### Types of Agent Memory
 

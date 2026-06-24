@@ -42,7 +42,7 @@ Taskade ships **two** public HTTP APIs. They share the same authentication.
 | Project update | ✅ | ❌ (create / complete / restore / copy only) |
 | Prompt an agent | ❌ | ✅ `promptAgent` |
 | Agent lifecycle (create/update/delete) | Partial | ✅ |
-| Bundles (export/import Genesis apps) | ❌ | ✅ |
+| Bundles (export/import Taskade Genesis apps) | ❌ | ✅ |
 | Reference | [Comprehensive API Guide](comprehensive-api-guide/) | This page |
 
 **Rule of thumb:** reach for **v1** when you need to write tasks or manage task metadata; reach for **v2** for agent prompting, agent lifecycle, bundles, and simpler list/read flows.

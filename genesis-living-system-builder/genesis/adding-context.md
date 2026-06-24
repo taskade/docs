@@ -25,7 +25,7 @@ When you build apps with Taskade Genesis, you can **upload reference files** to 
 
 ## What You Can Use as Context
 
-Genesis works with a wide range of file types to understand your requirements:
+Taskade Genesis works with a wide range of file types to understand your requirements:
 
 ### Brand & Design Files
 

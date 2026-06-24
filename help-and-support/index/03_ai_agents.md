@@ -300,19 +300,19 @@ Sales Opportunity → Sales Agent → Proposal Agent → Contract Agent
 
 **But the magic happens automatically—you just train them and they work!**
 
-## Real-World Agent Success Stories
+## Common agent patterns
 
-### E-commerce Company
+### Customer support
 
-**Challenge:** Customer service team overwhelmed with repetitive questions **Solution:** Deployed Support Agent trained on product catalog and policies **Result:** 60% reduction in basic support tickets, faster response times
+**Challenge:** The support team is overwhelmed with repetitive questions. **What you build:** A support agent trained on your product catalog and policies, so common questions get answered automatically.
 
-### Marketing Agency
+### Marketing content
 
-**Challenge:** Content creation bottleneck for social media and blogs **Solution:** Created Marketing Agent trained on brand guidelines and past content **Result:** 3x faster content production, consistent brand voice
+**Challenge:** Content creation for social media and blogs is a bottleneck. **What you build:** A marketing agent trained on your brand guidelines and past content, so drafts stay on-voice.
 
-### Legal Firm
+### Research & review
 
-**Challenge:** Research and document review taking excessive time **Solution:** Built Legal Agent trained on case law and firm procedures **Result:** 40% faster research, improved accuracy on routine tasks
+**Challenge:** Document review and research take excessive time. **What you build:** A research agent trained on your reference material to summarize and surface what matters.
 
 ## Your AI Agents Are Learning and Growing
 

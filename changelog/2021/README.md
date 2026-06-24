@@ -1,6 +1,6 @@
 # 2021 Major Redesigns: The Modern Foundation
 
-**Complete Platform Transformation** - Taskade V4 launches with modern interface and powerful features, preparing the foundation for AI integration and eventual Genesis.
+**Complete Platform Transformation** - Taskade V4 launches with modern interface and powerful features, preparing the foundation for AI integration and eventual Taskade Genesis.
 
 > *"2021 was the year we rebuilt everything from the ground up. Taskade V4 wasn't just a redesign - it was preparation for what we knew was coming: the age of AI. Every pixel, every interaction, every feature was designed to be a foundation for intelligence to flourish."*
 

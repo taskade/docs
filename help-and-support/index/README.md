@@ -18,7 +18,7 @@ Imagine your workspace isn't just a collection of projects—it's a living found
 **Taskade transforms productivity from static tools to living systems:**
 
 - **🏠 Living Workspace Foundation** - Your workspace becomes the DNA that powers everything you build
-- **🧬 Genesis AI Builder** - Describe apps in plain English, get working applications in minutes
+- **🧬 Taskade Genesis AI Builder** - Describe apps in plain English, get working applications in minutes
 - **🤖 AI Agent Team** - Deploy specialized digital assistants trained on your business
 - **⚡ Smart Automation** - Connect 100+ tools with intelligent workflow orchestration
 - **📱 Cross-Platform Magic** - Seamless experience across web, desktop, and mobile

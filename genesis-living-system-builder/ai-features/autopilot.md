@@ -7,7 +7,7 @@
 - [Overview](#overview)
 - [What Autopilot Creates](#what-autopilot-creates)
 - [When to Use Autopilot](#when-to-use-autopilot)
-- [Autopilot vs. Genesis](#autopilot-vs-genesis)
+- [Autopilot vs. Taskade Genesis](#autopilot-vs-genesis)
 - [Tutorial: Use Autopilot](#tutorial-use-autopilot)
 - [Expand Your Workspace](#expand-your-workspace)
   - [Generate New Automations](#generate-new-automations)

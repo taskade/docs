@@ -64,7 +64,7 @@ Full details: [taskade.com/pricing](https://www.taskade.com/pricing)
 
 ### AI Credits
 
-AI credits are consumed when you use AI features (agents, chat, automations with AI steps, Genesis app generation). Credits reset monthly. Check your usage at Settings > Billing > Usage.
+AI credits are consumed when you use AI features (agents, chat, automations with AI steps, Taskade Genesis app generation). Credits reset monthly. Check your usage at Settings > Billing > Usage.
 
 ## Security
 

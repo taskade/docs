@@ -1,6 +1,6 @@
 # Troubleshooting Your Genesis App
 
-Building with AI is like explaining your business to a really smart assistant who wants to help but sometimes needs more details. Don't worry if your first app isn't perfect - that's completely normal! Think of it as refining your idea until Genesis understands exactly what you need.
+Building with AI is like explaining your business to a really smart assistant who wants to help but sometimes needs more details. Don't worry if your first app isn't perfect - that's completely normal! Think of it as refining your idea until Taskade Genesis understands exactly what you need.
 
 ## Why Things Go Sideways
 

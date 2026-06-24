@@ -5,7 +5,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Genesis Debugging Framework (GDF)](#genesis-debugging-framework-gdf)
+- [Taskade Genesis Debugging Framework (GDF)](#genesis-debugging-framework-gdf)
   - [Layer 1: Failure Classification](#layer-1-failure-classification)
   - [Layer 2: Diagnostic Checklist](#layer-2-diagnostic-checklist)
   - [Layer 3: Root Cause Documentation](#layer-3-root-cause-documentation)

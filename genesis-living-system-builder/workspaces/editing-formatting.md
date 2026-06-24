@@ -21,7 +21,7 @@
 
 Every Taskade project is a collection of **tasks** — structured like bullet points that can be nested into sub-tasks. You can format, style, reorder, and enhance tasks with add-ons like due dates, assignees, comments, timers, and custom fields.
 
-> **Genesis hint:** Genesis apps use these same formatting and structuring capabilities in their project databases. Understanding formatting helps you build better apps.
+> **Taskade Genesis hint:** Genesis apps use these same formatting and structuring capabilities in their project databases. Understanding formatting helps you build better apps.
 
 ---
 

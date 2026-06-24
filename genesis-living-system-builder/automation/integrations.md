@@ -5,7 +5,7 @@ Taskade connects to **100+ tools and services** across communication, productivi
 ## Enhanced Integration Features
 
 ### **Enterprise-Grade Reliability**
-- **99.99% uptime** across all integrations
+- **High availability** across all integrations
 - **Advanced error handling** with automatic retries and recovery
 - **Real-time monitoring** and alerting for integration health
 - **Enhanced security** with additional data protection layers

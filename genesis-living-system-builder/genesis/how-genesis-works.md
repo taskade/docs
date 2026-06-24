@@ -5,9 +5,9 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [What Is Genesis?](#what-is-genesis)
+- [What Is Taskade Genesis?](#what-is-genesis)
 - [What You Can Build](#what-you-can-build)
-- [What Makes Genesis Different](#what-makes-genesis-different)
+- [What Makes Taskade Genesis Different](#what-makes-genesis-different)
 - [The Tree of Life Architecture](#the-tree-of-life-architecture)
   - [Memory: Projects & Databases](#memory-projects-and-databases)
   - [Intelligence: Custom AI Agents](#intelligence-custom-ai-agents)
@@ -31,13 +31,13 @@ This guide explains the core architecture behind **Taskade Genesis** — the AI 
 - **EVE:** How Taskade's unified AI system connects everything together.
 - **Intelligence Score:** How your workspace earns a 0–100 score across 5 maturity tiers.
 
-> **New to Genesis?** Start with [Create Your First App](./getting-started.md) for a hands-on walkthrough, or jump straight in and build your first app with [Taskade Genesis](https://www.taskade.com/create).
+> **New to Taskade Genesis?** Start with [Create Your First App](./getting-started.md) for a hands-on walkthrough, or jump straight in and build your first app with [Taskade Genesis](https://www.taskade.com/create).
 
 ---
 
 ## What Is Genesis?
 
-Genesis is Taskade's breakthrough AI platform that transforms natural language descriptions into **complete, working business applications** in minutes — not mockups, not prototypes, but fully functional software.
+Taskade Genesis is Taskade's breakthrough AI platform that transforms natural language descriptions into **complete, working business applications** in minutes — not mockups, not prototypes, but fully functional software.
 
 A single prompt gives you:
 
@@ -53,15 +53,15 @@ A single prompt gives you:
 | **Version Control** | Full commit history with one-click restore to any previous version |
 | **Publishing** | Instant deployment with shareable links, custom domains, and community gallery |
 
-> **Genesis hint:** Your AI credits power app creation. Different models have different credit costs — see [Taskade AI Credits](https://www.taskade.com/learn/agents/ai-usage) for details.
+> **Taskade Genesis hint:** Your AI credits power app creation. Different models have different credit costs — see [Taskade AI Credits](https://www.taskade.com/learn/agents/ai-usage) for details.
 
 ---
 
 ## What You Can Build
 
-Genesis doesn't care what industry you're in. You describe the problem; it builds the solution.
+Taskade Genesis doesn't care what industry you're in. You describe the problem; it builds the solution.
 
-| What You Ask For | What Genesis Builds | Powered By Your DNA |
+| What You Ask For | What Taskade Genesis Builds | Powered By Your DNA |
 |---|---|---|
 | "Build a customer feedback app" | Ratings system, sentiment analysis, photo uploads, manager alerts, follow-up workflows | Your service standards, past feedback patterns, resolution strategies |
 | "Create a booking system" | Real-time scheduling, payment processing, automated confirmations, customer history, staff optimization | Your services, pricing, availability rules, customer preferences |
@@ -75,7 +75,7 @@ Genesis doesn't care what industry you're in. You describe the problem; it build
 
 ## What Makes Genesis Different
 
-Unlike every other app builder, Genesis doesn't start with empty templates or generic forms. It reaches into your **existing Workspace DNA**:
+Unlike every other app builder, Taskade Genesis doesn't start with empty templates or generic forms. It reaches into your **existing Workspace DNA**:
 
 | Traditional App Builders | Taskade Genesis |
 |---|---|
@@ -98,7 +98,7 @@ Unlike every other app builder, Genesis doesn't start with empty templates or ge
 
 ## The Tree of Life Architecture
 
-At the core of every Genesis app lies the **Tree of Life** — a continuous cycle of three interconnected systems that never stop learning.
+At the core of every Taskade Genesis app lies the **Tree of Life** — a continuous cycle of three interconnected systems that never stop learning.
 
 ```
         +------------------+
@@ -127,9 +127,9 @@ At the core of every Genesis app lies the **Tree of Life** — a continuous cycl
 
 ### Memory: Projects & Databases
 
-In Genesis, "Memory" means **living context** — information that maintains relationships, accumulates meaning over time, and actively participates in intelligence.
+In Taskade Genesis, "Memory" means **living context** — information that maintains relationships, accumulates meaning over time, and actively participates in intelligence.
 
-| App Type | Memory Structure Genesis Creates |
+| App Type | Memory Structure Taskade Genesis Creates |
 |---|---|
 | **Customer Feedback** | Feedback database with rating fields, contact storage, photo attachments, follow-up tracking, resolution history |
 | **Booking System** | Appointment database, client profiles, service catalog, staff schedules, payment records |
@@ -187,7 +187,7 @@ Execution means **intelligent automation workflows** — the nervous system that
 
 ## The Self-Reinforcing Feedback Loop
 
-Every action in your Genesis app generates results that flow back into your workspace memory, creating a **self-reinforcing intelligence loop**.
+Every action in your Taskade Genesis app generates results that flow back into your workspace memory, creating a **self-reinforcing intelligence loop**.
 
 | Action Type | Memory Created | Your Workspace Learns |
 |---|---|---|
@@ -210,7 +210,7 @@ Every action in your Genesis app generates results that flow back into your work
 
 ## Workspace Intelligence Score
 
-Every Genesis workspace earns an **Intelligence Score** from 0–100, calculated from your three DNA pillars:
+Every Taskade Genesis workspace earns an **Intelligence Score** from 0–100, calculated from your three DNA pillars:
 
 | Component | Points Each | Max Items Scored | Max Points |
 |---|---|---|---|
@@ -254,7 +254,7 @@ When you interact with Taskade, EVE:
 
 ### The Bicameral Partnership
 
-Genesis creates a cognitive partnership where:
+Taskade Genesis creates a cognitive partnership where:
 - **Your mind** contributes intent, goals, domain knowledge, and creative vision
 - **EVE's intelligence** handles technical implementation, pattern recognition, and optimization
 - **Together**, you create something neither could build alone
@@ -265,7 +265,7 @@ Genesis creates a cognitive partnership where:
 
 | Action | Example | What Happens |
 |---|---|---|
-| **Build Genesis Apps** | "Build a customer feedback app with sentiment analysis" | Generates complete app with projects, agents, and automations |
+| **Build Taskade Genesis Apps** | "Build a customer feedback app with sentiment analysis" | Generates complete app with projects, agents, and automations |
 | **Create AI Agents** | "Create an agent trained on our product documentation" | Creates agent, indexes docs, configures knowledge base |
 | **Configure Automations** | "When a task is complete, send a Slack notification" | Creates automation with trigger, action, and conditions |
 | **Manage Projects** | "Create a project for Q1 marketing campaigns" | Creates structured project with relevant sections |
@@ -280,11 +280,11 @@ Genesis creates a cognitive partnership where:
 
 ## Kits & Bundles: Package Your Entire Workspace
 
-Genesis workspaces can be packaged as **Bundles (Kits)** — installable packages that include everything:
+Taskade Genesis workspaces can be packaged as **Bundles (Kits)** — installable packages that include everything:
 
 | Bundle Component | Included | Description |
 |---|---|---|
-| **Genesis Apps** | Yes | Full app with UI, code, and configuration |
+| **Taskade Genesis Apps** | Yes | Full app with UI, code, and configuration |
 | **Projects & Databases** | Yes | Data structures and sample records |
 | **AI Agents** | Yes | Agent configs, personas, knowledge references |
 | **Automation Flows** | Yes | Workflow definitions and triggers |
@@ -317,7 +317,7 @@ Your workspace DNA organizes memory into 5 psychological layers:
 | **Navigation Memory** | Structural organization | Workspace hierarchy, project categories |
 | **Learning Memory** | Insights and patterns accumulated over time | Performance trends, customer behavior patterns |
 
-> AI agents and Genesis apps access all 5 memory layers to provide contextual, accurate responses.
+> AI agents and Taskade Genesis apps access all 5 memory layers to provide contextual, accurate responses.
 
 ---
 
@@ -345,7 +345,7 @@ You now understand the DNA of your workspace. Choose your path:
 
 | Guide | What You'll Learn |
 |---|---|
-| [Adding Genesis Context](./adding-context.md) | Upload files and data to enrich app intelligence |
+| [Adding Taskade Genesis Context](./adding-context.md) | Upload files and data to enrich app intelligence |
 | [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md) | Deploy, share, and distribute your apps |
 | [Taskade AI Credits](../../account-management/credits-and-billing.md) | Understand credits, models, and usage |
 | [Build on Taskade (Developer Hub)](../../apis-living-system-development/developer-home.md) | APIs, SDKs, and MCP for programmatic access |

@@ -21,7 +21,7 @@
 
 Media AI Chat lets you **have conversations with your files, projects, and media** using Taskade's AI. Upload documents, images, videos, or connect projects — then ask questions, extract insights, and generate content directly from your media.
 
-> **Genesis connection:** Every file you upload to a Genesis app or discuss in Media AI Chat is stored in your workspace's Media library, enriching your [Workspace DNA](../genesis/how-genesis-works.md) and making all future apps and agents smarter.
+> **Taskade Genesis connection:** Every file you upload to a Genesis app or discuss in Media AI Chat is stored in your workspace's Media library, enriching your [Workspace DNA](../genesis/how-genesis-works.md) and making all future apps and agents smarter.
 
 ---
 

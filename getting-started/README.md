@@ -1,6 +1,6 @@
 ---
 description: >-
-  Get started with Taskade in minutes — build your first AI-powered app with Genesis, then add AI agents, automations, and explore the developer API.
+  Get started with Taskade in minutes — build your first AI-powered app with Taskade Genesis, then add AI agents, automations, and explore the developer API.
 ---
 
 # Quick Start Guide
@@ -55,7 +55,7 @@ Pick something you actually need:
 {% step %}
 **Open the Generator Interface**
 
-Your workspace **IS** the Genesis interface — no separate tab needed. Look for the **prominent input field at the top** of your workspace. You'll see your existing projects/folders as **app tiles** below the input field.
+Your workspace **IS** the Taskade Genesis interface — no separate tab needed. Look for the **prominent input field at the top** of your workspace. You'll see your existing projects/folders as **app tiles** below the input field.
 {% endstep %}
 
 {% step %}
@@ -75,12 +75,12 @@ When [TRIGGER EVENT], automatically [AUTOMATED ACTION].
 {% endstep %}
 
 {% step %}
-**Watch Genesis Build Your App**
+**Watch Taskade Genesis Build Your App**
 
 1. **Type or paste your prompt** in the input field at the top of your workspace
-2. **Press Enter or click Generate** — Genesis analyzes your request
+2. **Press Enter or click Generate** — Taskade Genesis analyzes your request
 3. **Your new app appears as a tile** below the generator in 30-60 seconds
-4. Genesis creates: database structure, user interface, automations, and AI functionality
+4. Taskade Genesis creates: database structure, user interface, automations, and AI functionality
 {% endstep %}
 
 {% step %}
@@ -109,7 +109,7 @@ When [TRIGGER EVENT], automatically [AUTOMATED ACTION].
 
 ## ✅ Quick Start Checklist
 
-Use this checklist to make sure you've mastered the Genesis interface:
+Use this checklist to make sure you've mastered the Taskade Genesis interface:
 
 * [ ] 🏠 **Created your workspace** and verified email
 * [ ] 🧬 **Used the generator input field** at the top to describe your first app
@@ -126,7 +126,7 @@ Use this checklist to make sure you've mastered the Genesis interface:
 
 ## Just want to manage projects? (No app building needed)
 
-You don't have to build apps with Genesis. Taskade also works as a powerful project management tool:
+You don't have to build apps with Taskade Genesis. Taskade also works as a powerful project management tool:
 
 1. **Create a project**: Click (+) in your workspace > New Project, or just start typing.
 2. **Add tasks**: Each line becomes a task. Use TAB to indent subtasks.

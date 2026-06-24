@@ -1,6 +1,6 @@
 # 2017-2019 Foundation Years: Platform Genesis
 
-**From Humble Beginnings to Growth** - The collaborative productivity platform takes shape, establishing the foundational DNA that would eventually evolve into Genesis.
+**From Humble Beginnings to Growth** - The collaborative productivity platform takes shape, establishing the foundational DNA that would eventually evolve into Taskade Genesis.
 
 > *"Every great journey begins with a single step. On December 5, 2017, we announced 'Taskade is coming!' We had no idea we were starting the path to Genesis - to a future where one prompt would become one app. But every great platform begins with great collaboration."*
 
@@ -29,7 +29,7 @@ The foundational years that established collaborative productivity as the bedroc
 **🚀 Highlights:**
 - **💰 Funding Round** - Series Seed investment secured
 - **🎯 Accelerator Program** - Completed prestigious accelerator program
-- **👥 2,000+ Active Teams** - Growing user base across industries
+- **👥 Growing Team Base** - Expanding user base across industries
 - **🚀 Future Vision** - Accelerated product development for remote collaboration
 
 **✨ Other Improvements:** Expanded team, enhanced product roadmap, better customer support, enterprise features development.
@@ -134,8 +134,8 @@ The foundational years that established collaborative productivity as the bedroc
 - 2019: Multiple project views, advanced features, major funding round
 
 **📈 Growth Metrics:**
-- From beta to 2,000+ active teams
-- $5M Series Seed funding from top-tier investors
+- From beta to a growing base of active teams
+- Series Seed funding from institutional investors
 - International expansion with 12 language support
 - Cross-platform apps (Web, iOS, Android, Mac, Windows, Linux)
 

@@ -1,6 +1,6 @@
 # 2020 Remote Collaboration: Essential Infrastructure for Distributed Teams
 
-**The Remote Work Revolution** - 20+ major releases make Taskade essential infrastructure for distributed teams worldwide, preparing the collaborative foundation for Genesis.
+**The Remote Work Revolution** - 20+ major releases make Taskade essential infrastructure for distributed teams worldwide, preparing the collaborative foundation for Taskade Genesis.
 
 > *"2020 was our trial by fire. As the world went remote, we became the nervous system of distributed teams everywhere. Every feature we built, every problem we solved, was shaping us into something bigger - the foundation for intelligent collaboration that would one day become Genesis."*
 

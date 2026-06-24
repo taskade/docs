@@ -23,7 +23,7 @@ Every published Taskade Genesis app includes a **built-in analytics dashboard** 
 
 ## Analytics Dashboard
 
-Access analytics from your Genesis app's dashboard view. Data updates in real-time.
+Access analytics from your Taskade Genesis app's dashboard view. Data updates in real-time.
 
 <!-- Screenshot: Full analytics dashboard overview -->
 

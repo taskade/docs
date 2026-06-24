@@ -56,7 +56,7 @@ graph LR
 | --- | --- | --- | --- |
 | **Inbound** | AI tools like Claude Desktop | "Claude, list my Taskade projects" | [Workspace MCP](workspace-mcp.md) (this page adds advanced config) |
 | **Outbound** | Taskade agents | Agent calls a third-party service via MCP | [MCP Connectors](#mcp-connectors) section below |
-| **Genesis App MCP** | Genesis app builders | Edit app source from an IDE | [Genesis App MCP (Beta)](genesis-app-mcp.md) |
+| **Taskade Genesis App MCP** | Genesis app builders | Edit app source from an IDE | [Genesis App MCP (Beta)](genesis-app-mcp.md) |
 
 ---
 

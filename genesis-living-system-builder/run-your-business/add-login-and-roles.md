@@ -1,13 +1,13 @@
 ---
 description: >-
-  Add secure sign-in and access control to your Genesis app so the right people
+  Add secure sign-in and access control to your Taskade Genesis app so the right people
   see the right things — no code, no third-party auth provider.
 keywords: add login, access control, RBAC, app users, SSO, no-code
 ---
 
 # Add login and roles to your app
 
-Genesis apps can ship with real user accounts and secure sign-in built in, powered by [GenesisAuth](../community-and-sharing/genesis-auth.md). To add login, you don't configure anything — you describe the need when you build the app (for example, *"users can sign in to see their own dashboard"*), and Genesis wires up the sign-in component, session handling, and per-user data access automatically.
+Taskade Genesis apps can ship with real user accounts and secure sign-in built in, powered by [GenesisAuth](../community-and-sharing/genesis-auth.md). To add login, you don't configure anything — you describe the need when you build the app (for example, *"users can sign in to see their own dashboard"*), and Taskade Genesis wires up the sign-in component, session handling, and per-user data access automatically.
 
 {% hint style="success" %}
 **The short version:** Describe an app that needs accounts, and your app gets a working login screen. Then manage who gets in from the **App Users** tab in your app's settings.
@@ -39,11 +39,11 @@ The **App Users** tab is currently in Beta and rolling out across paid plans.
 
 You won't find a switch to flip — you ask for it in plain language.
 
-1. In Genesis, describe an app that needs accounts. Include phrases like *"a client portal where each client has their own dashboard"* or *"a members-only knowledge base."*
-2. Genesis generates the app **with the sign-in component already in place**.
+1. In Taskade Genesis, describe an app that needs accounts. Include phrases like *"a client portal where each client has their own dashboard"* or *"a members-only knowledge base."*
+2. Taskade Genesis generates the app **with the sign-in component already in place**.
 3. Open your app's settings and go to the **App Users** tab to invite people, suspend access, or remove accounts.
 
-If your first prompt didn't add login, you can ask Genesis to *"add sign-in for users"* later while editing the app.
+If your first prompt didn't add login, you can ask Taskade Genesis to *"add sign-in for users"* later while editing the app.
 
 For the full walkthrough — the App Users tab, Workspace SSO, custom-domain sign-in, and the security model — see the source page:
 

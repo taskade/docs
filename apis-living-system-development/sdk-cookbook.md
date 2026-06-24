@@ -277,7 +277,7 @@ To send data **into** Taskade instead, use an inbound webhook trigger — see [I
 
 ## Bundles (Import/Export)
 
-Export a Genesis app as a portable bundle, then import elsewhere. See [Bundles & App Kits](bundles.md) for the full schema.
+Export a Taskade Genesis app as a portable bundle, then import elsewhere. See [Bundles & App Kits](bundles.md) for the full schema.
 
 ```typescript
 // Export a space's bundle (exportBundle returns the bundle under `item`)

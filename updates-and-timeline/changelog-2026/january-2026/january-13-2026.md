@@ -4,7 +4,7 @@
 
 ### Updated Main Genesis Page
 
-We've updated the main Genesis page with a new look and added fresh default prompts.
+We've updated the main Taskade Genesis page with a new look and added fresh default prompts.
 
 <figure><img src="../../../.gitbook/assets/CleanShot 2026-02-25 at 16.25.39@2x.png" alt="" width="563"><figcaption></figcaption></figure>
 

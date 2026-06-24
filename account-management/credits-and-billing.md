@@ -22,7 +22,7 @@ Understand how AI credits work in Taskade, how credit packs are priced, and how 
 
 ## How AI Credits Work
 
-Every AI request in Taskade — prompting an agent, running an automation with AI, generating a Genesis app — consumes credits. The credit cost depends on the model:
+Every AI request in Taskade — prompting an agent, running an automation with AI, generating a Taskade Genesis app — consumes credits. The credit cost depends on the model:
 
 * **Lightweight models** cost fewer credits per request.
 * **Frontier models** (top-tier reasoning models) cost more.
@@ -75,7 +75,7 @@ If you're building and running a real app on Genesis, the question isn't "how ma
 | **Genesis app generation & iteration** | Heaviest up front, while you build. Each generate and each "edit with AI" pass costs credits; settles down once the app is stable. |
 | **AI automation steps**              | Scales with how often your automations run and how many AI steps each run includes. A trigger that fires all day costs more than one that fires occasionally. |
 | **An agent answering end-users**     | Scales with the number of people using your published app and how chatty each session is. This is the line item that grows as your app gets traffic. |
-| **Agent / EVE chat**                 | Scales with how much you and your team use AI assistance day to day — drafting, summarizing, asking questions in your workspace. |
+| **Agent / Taskade EVE chat**         | Scales with how much you and your team use AI assistance day to day — drafting, summarizing, asking questions in your workspace. |
 
 Steps that don't call AI — plain forms, stored data, non-AI automation actions — don't draw from your credit balance.
 

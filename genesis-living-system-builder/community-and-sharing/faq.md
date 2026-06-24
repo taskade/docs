@@ -4,7 +4,7 @@
 
 ### What is Taskade Genesis?
 
-Genesis is like having a personal app developer who works instantly. You describe a business problem in plain English (like "I need customers to book appointments online"), and Genesis builds a complete working app for you - no coding, no setup, no technical knowledge required.
+Taskade Genesis is like having a personal app developer who works instantly. You describe a business problem in plain English (like "I need customers to book appointments online"), and Genesis builds a complete working app for you - no coding, no setup, no technical knowledge required.
 
 ### How is this different from other app builders?
 
@@ -188,8 +188,7 @@ Yes! Genesis can integrate with:
 
 **Reliability measures:**
 
-* **99.9% uptime SLA** for paid plans
-* **Multiple data centers** for redundancy
+* **High-availability infrastructure** with redundancy
 * **Automatic failover** systems
 * **Real-time status monitoring** at taskade.statuspage.io
 * **Data backups** stored in multiple locations

@@ -26,7 +26,7 @@ You can generate images for your Taskade Genesis apps **natively** — no extra 
 |---|---|
 | **Chat-native creation** | Describe what you need, generate instantly in EVE chat |
 | **Auto-save to Media** | Every generated image is stored in your workspace Media tab |
-| **Built for Genesis apps** | Use images in websites, tools, dashboards, and more |
+| **Built for Taskade Genesis apps** | Use images in websites, tools, dashboards, and more |
 | **Multiple aspect ratios** | 1:1 (square), 16:9 (landscape), 9:16 (portrait) |
 | **Batch generation** | Generate sets of consistent images in a single prompt |
 | **Reusable everywhere** | Use in any Genesis app, project, or agent knowledge base |

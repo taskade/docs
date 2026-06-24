@@ -1,6 +1,6 @@
 # 2024 Living DNA: Intelligence + Action + Knowledge + Evolution
 
-**The Breakthrough Year** - AI agents become autonomous teams. The four pillars of intelligent systems emerge to lay the foundation for Genesis.
+**The Breakthrough Year** - AI agents become autonomous teams. The four pillars of intelligent systems emerge to lay the foundation for Taskade Genesis.
 
 > *"This was the year everything came together. Intelligence inherited from projects, actions coordinated through agents, knowledge shared across systems, and evolution became continuous. The Living DNA framework wasn't just built - it came alive."*
 

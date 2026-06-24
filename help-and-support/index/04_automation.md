@@ -381,7 +381,7 @@ Lead enters system → Score lead quality → Assign to sales rep → Send perso
 
 **Fantastic work!** You now have intelligent workflows that coordinate your entire ecosystem automatically. Automation transforms reactive work into proactive systems that anticipate needs and handle routine tasks without human intervention.
 
-**Ready to build complete applications?** In [Chapter 5: Genesis](05_genesis.md), we'll use AI to create entire business applications from simple descriptions—no coding required!
+**Ready to build complete applications?** In [Chapter 5: Taskade Genesis](05_genesis.md), we'll use AI to create entire business applications from simple descriptions—no coding required!
 
 ***
 
