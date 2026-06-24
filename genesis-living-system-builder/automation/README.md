@@ -5,6 +5,19 @@ description: >-
 
 # Automations Overview
 
+Automations let you build trigger-and-action workflows that run on their own — connecting Taskade to your tools and letting agents act 24/7.
+
+## I want to…
+
+| I want to… | Go to |
+| --- | --- |
+| Build my first workflow | [Action & Trigger Reference](actions.md) |
+| Find available triggers and actions | [Action & Trigger Reference](actions.md) |
+| Generate a workflow from a prompt | [Workflow Generator](workflow-generator.md) |
+| Connect an integration | [Integration Overview](comprehensive-integration-guide.md) |
+| See every available connector | [Integration Options](integrations.md) |
+| Start from a ready-made recipe | [Automation Recipes](recipes.md) |
+
 **Act. Execute. Evolve.** Taskade Automations are the living motion layer of Workspace DNA, transforming static workflows into intelligent, adaptive systems that act with precision and learn from every execution.
 
 {% hint style="success" %}
@@ -111,6 +124,13 @@ Connect your workflows to popular tools across the [Taskade integrations](https:
 * Pick tools to connect: [Integration Overview](comprehensive-integration-guide.md)
 * Full list of connectors: [Integration Options](integrations.md)
 * Troubleshoot: [Living System Troubleshooting](../community-and-sharing/troubleshooting.md)
+
+## Next steps
+
+* [Action & Trigger Reference](actions.md) — pick a trigger and add your first actions
+* [Automation Recipes](recipes.md) — start from a proven workflow
+* [Integration Overview](comprehensive-integration-guide.md) — connect the tools you already use
+* [Living System Troubleshooting](../community-and-sharing/troubleshooting.md) — fix issues and get help
 
 {% hint style="info" %}
 This page stays overview-level. Deep trigger/action lists, templates, and advanced patterns live in the reference pages above.
