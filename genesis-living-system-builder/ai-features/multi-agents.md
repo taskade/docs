@@ -21,6 +21,23 @@
 
 Multi-Agents lets you **assign multiple AI agents to work together** on projects, tasks, and conversations. Instead of relying on a single generalist AI, you create teams of specialized agents that collaborate — each bringing domain expertise, unique knowledge, and specific tools.
 
+Specialized agents, Taskade EVE, and people coordinate around one shared project.
+
+```mermaid
+graph TD
+  HUMAN["Human team members<br/>direction and decisions"] --> WS["Shared project / workspace"]
+  WS --> EVE["Taskade EVE<br/>orchestrates and invokes agents"]
+  EVE --> RES["Research Agent"]
+  EVE --> ANL["Analyst Agent"]
+  EVE --> WRT["Writer Agent"]
+  EVE --> COORD["Coordinator Agent"]
+  RES --> WS
+  ANL --> WS
+  WRT --> WS
+  COORD --> WS
+```
+
+
 > **Workspace DNA impact:** Multi-agent teams amplify the Intelligence pillar. Each agent contributes +10 points to your [Intelligence Score](../genesis/how-genesis-works.md#workspace-intelligence-score), and teams create compounding intelligence through specialization.
 >
 > **Plan note:** Multi-Agent Teams are available on Business+ plans.

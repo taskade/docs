@@ -14,6 +14,20 @@ Workspace MCP connects [Claude Desktop](https://claude.ai), [Cursor](https://cur
 
 The [Model Context Protocol](https://modelcontextprotocol.io/) lets AI assistants interact with external tools and data sources. The `@taskade/mcp-server` package exposes Taskade's API as MCP tools your AI client can call.
 
+The MCP client talks to a locally run server, which wraps REST API v1 to reach your workspace content.
+
+```mermaid
+graph LR
+  A["MCP client<br/>(Claude Desktop, Cursor, VS Code)"] -->|MCP tools| B["@taskade/mcp-server<br/>(runs locally)"]
+  B -->|PAT via TASKADE_API_KEY| C["REST API v1"]
+  C --> D["Workspaces"]
+  C --> E["Projects"]
+  C --> F["Tasks"]
+  C --> G["Agents"]
+  C --> H["Media"]
+```
+
+
 ## Install & run
 
 The server is published as **`@taskade/mcp-server`** on npm. The simplest setup runs it on demand with `npx` — no global install needed:

@@ -8,6 +8,17 @@ description: >-
 
 You have a business problem and an idea for an app that fixes it. This guide is the spine: five steps that take you from a plain-English idea to a real, branded app your customers can sign in to and use. Each step links to a full guide when you want the detail.
 
+The five steps form one path from idea to a live, branded app.
+
+```mermaid
+graph LR
+  A["Step 1<br/>Describe your app<br/>to Taskade Genesis"] --> B["Step 2<br/>Shape data into a<br/>system of record"]
+  B --> C["Step 3<br/>Add login and roles"]
+  C --> D["Step 4<br/>Put it on your<br/>own domain"]
+  D --> E["Step 5<br/>Right-size your plan<br/>and go live"]
+```
+
+
 ***
 
 ## Step 1 — Describe your app to Genesis
