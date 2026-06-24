@@ -1,3 +1,8 @@
+---
+description: >-
+  Copy-paste Taskade Genesis prompts by business function: CRM, ops, sales, scheduling, plus styling and anatomy tips for building better apps faster.
+---
+
 # Intelligent Prompt Library
 
 Master Taskade Genesis with proven prompts organized by business function. Copy, paste, and customize these prompts to build your perfect app in minutes.

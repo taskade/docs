@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade 2025 changelog — historical release notes, feature launches, and platform updates.
+---
+
 # 2025
 
 **From Static Apps to Living Systems** - The paradigm shift that transforms software from tools into intelligent companions powered by Workspace DNA.

@@ -1,4 +1,6 @@
 ---
+description: >-
+  Taskade developer changelog for April 2026 — API, MCP, automation, agents, and Taskade Genesis updates.
 cover: ../../../.gitbook/assets/Changlog_Banner_Apr.png
 coverY: 0
 ---

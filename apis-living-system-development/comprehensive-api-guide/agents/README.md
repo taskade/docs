@@ -1,3 +1,8 @@
+---
+description: >-
+  Agents — Taskade REST API v1 reference: GET /public-agents/{publicAgentId}. Parameters, authentication, and response schema.
+---
+
 # Agents
 
 The **Intelligence Layer** is the brain of your application. It's where reasoning, logic, and autonomous action take place. This layer is powered by **Taskade's AI Agents**.

@@ -1,3 +1,8 @@
+---
+description: >-
+  Train Taskade AI agents on your own knowledge: upload PDFs, CSVs, and docs, add URLs and YouTube, or connect projects as live, auto-updating sources.
+---
+
 # Agent Knowledge & Memory
 
 ---

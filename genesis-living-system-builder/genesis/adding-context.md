@@ -1,3 +1,8 @@
+---
+description: >-
+  Upload brand files, data, and reference docs as context so Taskade Genesis builds on-brand apps and enriches your Workspace DNA for future builds.
+---
+
 # Adding Genesis Context
 
 ---

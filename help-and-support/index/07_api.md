@@ -1,4 +1,6 @@
 ---
+description: >-
+  Get started with the Taskade REST API: authenticate with a token, call workspace, project, and task endpoints, and wire up webhooks and the MCP server.
 title: 'Chapter 7: API - Developer Interfaces'
 parent: 'Taskade: The Living DNA Productivity Platform'
 nav_order: 7

@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — January 6, 2026: Credits Purchase.
+---
+
 # January 6, 2026
 
 ## What's New:

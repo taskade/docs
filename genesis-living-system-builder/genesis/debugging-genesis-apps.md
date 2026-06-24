@@ -1,3 +1,8 @@
+---
+description: >-
+  Debug Taskade Genesis apps with the Genesis Debugging Framework: classify failures, diagnose imports, routing, schema, and namespace bugs, and prevent.
+---
+
 # Debugging Genesis Apps
 
 ---

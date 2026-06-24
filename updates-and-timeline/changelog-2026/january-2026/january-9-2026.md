@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — January 9, 2026: Email Trigger Reliability — Mailhook Schema Fix, Custom Domain — Health Check Middleware Fix.
+---
+
 # January 9, 2026
 
 {% hint style="info" %}

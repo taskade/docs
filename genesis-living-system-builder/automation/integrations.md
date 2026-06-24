@@ -1,3 +1,8 @@
+---
+description: >-
+  Connect Taskade automations to 100+ tools like Slack, Gmail, GitHub, HubSpot, and Stripe with triggers and actions, plus custom webhook integrations.
+---
+
 # Supported Integrations
 
 Taskade connects to **100+ tools and services** across communication, productivity, AI, and developer ecosystems with enterprise-grade reliability and global performance. Each integration supports both triggers (events that start automations) and actions (tasks that automations can perform) with enhanced error handling and worldwide data synchronization.

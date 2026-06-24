@@ -1,3 +1,8 @@
+---
+description: >-
+  Ready-to-use Taskade automation recipes with full JSON configs: AI blog publishing, social posting, lead capture, ticket routing, GitHub sync, and cart.
+---
+
 # Automation Recipes
 
 Real-world automation workflows that you can implement immediately. Each recipe includes the complete configuration, setup instructions, and customization options.

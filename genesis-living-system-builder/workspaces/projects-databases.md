@@ -1,3 +1,8 @@
+---
+description: >-
+  Build Taskade database projects: custom fields, relationships, and 8 views. See how Genesis auto-generates schemas that power apps, agents, and automations.
+---
+
 # Projects & Databases: The Memory Pillar
 
 ---

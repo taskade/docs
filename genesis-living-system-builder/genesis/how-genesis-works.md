@@ -1,3 +1,8 @@
+---
+description: >-
+  How Taskade Genesis turns plain-English prompts into live apps using Workspace DNA: projects, AI agents, automations, EVE, and Intelligence Score.
+---
+
 # How Genesis Works: Workspace DNA
 
 ---

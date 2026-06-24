@@ -1,3 +1,8 @@
+---
+description: >-
+  Publish, clone, and sell Taskade Genesis apps with live URLs, password protection, custom domains, SEO, white-label branding, and paid copies.
+---
+
 # Publish and Clone Your Apps
 
 ---

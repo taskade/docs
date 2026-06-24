@@ -1,3 +1,8 @@
+---
+description: >-
+  Format Taskade tasks with headings, lists, highlights, and 8 project views, plus add-ons like due dates, timers, and keyboard shortcuts.
+---
+
 # Editing & Formatting
 
 ---

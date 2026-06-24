@@ -1,8 +1,6 @@
 ---
 description: >-
-  Build an internal ops dashboard, CRM, or pipeline your whole team logs into —
-  describe it to Taskade Genesis, connect live workspace data, and let people in with the
-  Taskade identity they already have.
+  Build an internal ops dashboard, CRM, or pipeline your team logs into — describe it to Taskade Genesis, connect live workspace data, and add logins.
 keywords: ops dashboard, internal tool, CRM, pipeline, no-code
 ---
 

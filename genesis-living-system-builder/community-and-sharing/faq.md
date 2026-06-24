@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade Genesis FAQ: how the no-code app builder works, build times, publishing and custom domains, data ownership, security, integrations, and pricing.
+---
+
 # Living Systems FAQ
 
 ## Overview

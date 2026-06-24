@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — February 12, 2026: Upgrades to Agent Chat.
+---
+
 # February 12, 2026
 
 ## What's New:

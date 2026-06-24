@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — February 19, 2026: Top Creators.
+---
+
 # February 19, 2026
 
 ## What's New:

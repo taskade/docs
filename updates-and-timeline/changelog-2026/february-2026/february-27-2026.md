@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — February 27, 2026: Hosted MCP v2 — OAuth 2.0 PKCE + Dynamic Client Registration, New Automation Piece: Telegram Bot.
+---
+
 # February 27, 2026
 
 {% hint style="info" %}

@@ -1,3 +1,8 @@
+---
+description: >-
+  Write better Taskade Genesis prompts with 12 principles: set objectives, describe outcomes, connect tools, define access, and iterate to build the app you.
+---
+
 # A Maker's Guide to AI Prompts
 
 ---

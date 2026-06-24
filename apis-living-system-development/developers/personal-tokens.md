@@ -1,3 +1,8 @@
+---
+description: >-
+  Generate a Taskade Personal Access Token and authenticate API requests with the Authorization Bearer header. Simpler than full OAuth 2.0.
+---
+
 # Personal Tokens
 
 Authentication is a crucial aspect of ensuring the security and integrity of your interactions with our API. We provide two distinct methods for authentication.

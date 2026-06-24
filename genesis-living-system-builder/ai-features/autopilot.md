@@ -1,3 +1,8 @@
+---
+description: >-
+  Use Taskade Autopilot to turn one prompt into a full workspace of connected projects, AI agents, agent teams, and automations, then expand it or build apps.
+---
+
 # Taskade Autopilot
 
 ---

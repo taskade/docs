@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — February 13, 2026: Agent Public API, Hosted MCP v2.
+---
+
 # February 13, 2026
 
 ## What's New:

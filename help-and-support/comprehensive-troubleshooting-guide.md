@@ -1,3 +1,8 @@
+---
+description: >-
+  Fix common Taskade issues: login and 2FA, sync, slow performance, AI agents, automations, mobile, integrations, and network blocks, step by step.
+---
+
 # Troubleshooting Guide
 
 Resolve common Taskade issues quickly with our comprehensive troubleshooting guide covering everything from basic connectivity problems to advanced workflow debugging.

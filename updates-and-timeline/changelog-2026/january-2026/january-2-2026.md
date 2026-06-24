@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — January 2, 2026: Shopify — "Get Customer Order" Automation Action, Genesis App Authentication — Space Identities Foundation.
+---
+
 # January 2, 2026
 
 {% hint style="info" %}

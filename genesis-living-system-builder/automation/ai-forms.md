@@ -1,3 +1,8 @@
+---
+description: >-
+  Build Taskade AI Forms with smart validation, sentiment analysis, and conditional questions that auto-route responses into your workspace and CRM.
+---
+
 # AI Forms: Intelligent Data Collection
 
 **Create intelligent forms that think, adapt, and integrate seamlessly with your Taskade workspace. AI Forms go beyond traditional form builders by understanding context, validating responses intelligently, and automating follow-up actions.**

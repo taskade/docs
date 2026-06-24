@@ -1,3 +1,8 @@
+---
+description: >-
+  Folders — Taskade REST API v1 reference: GET /folders/{folderId}/projects. Parameters, authentication, and response schema.
+---
+
 # Folders
 
 A **Subspace** is the top-level container for every AI-powered application you build on Taskade. It's more than just a folder; it's the complete, self-contained ecosystem for your app, holding its unique Knowledge, Intelligence, and Action layers.

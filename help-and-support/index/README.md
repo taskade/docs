@@ -1,8 +1,6 @@
 ---
-layout: default
-title: "Taskade: The Living DNA Productivity Platform"
-nav_order: 1
-has_children: true
+description: >-
+  Beginner tutorial to Taskade: workspaces, projects, AI agents, automation, Taskade Genesis app building, integrations, the API, and cross-platform apps.
 ---
 
 # Tutorial: Taskade - The Living DNA Productivity Platform

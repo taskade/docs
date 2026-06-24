@@ -1,3 +1,8 @@
+---
+description: >-
+  Contribute to the Taskade documentation: fork the repo, edit Markdown, follow security and style guidelines, and submit a pull request to improve the docs.
+---
+
 # Contributing to Taskade Documentation
 
 This documentation is open source and we welcome contributions from the community. Whether you're fixing a typo, adding examples, or writing new sections, your help makes these docs better for everyone.

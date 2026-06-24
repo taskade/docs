@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — February 16, 2026: Public API v2 — Preview, Experimental MCP v2 — Auto-Generated Tool Layer.
+---
+
 # February 16, 2026
 
 {% hint style="info" %}

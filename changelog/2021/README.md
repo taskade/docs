@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade 2021 changelog — historical release notes, feature launches, and platform updates.
+---
+
 # 2021 Major Redesigns: The Modern Foundation
 
 **Complete Platform Transformation** - Taskade V4 launches with modern interface and powerful features, preparing the foundation for AI integration and eventual Taskade Genesis.

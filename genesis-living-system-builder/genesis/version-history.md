@@ -1,3 +1,8 @@
+---
+description: >-
+  View, compare, and restore Taskade Genesis app versions. Every change is a full snapshot, with auto vs manual publish controls and Code View.
+---
+
 # Genesis Version History
 
 ---

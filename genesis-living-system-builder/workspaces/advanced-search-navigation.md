@@ -1,3 +1,8 @@
+---
+description: >-
+  Find anything in Taskade fast with global search, smart filters, search operators, natural-language queries, the command palette, and keyboard navigation.
+---
+
 # Advanced Search & Discovery
 
 Master Taskade's powerful search capabilities and navigation features to quickly find information, projects, and content across your entire workspace ecosystem.

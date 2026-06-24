@@ -1,3 +1,8 @@
+---
+description: >-
+  Advanced Taskade Genesis features: smart data structures, AI agent training, multi-step automations, integrations, access control, version history, and.
+---
+
 # Advanced Features
 
 Ready to take your Taskade Genesis app to the next level? These powerful features help you build even smarter and more capable applications. No coding required—just plain English descriptions of what you want!

@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — February 2, 2026: Integrations Directory, Custom Agent Tools & Commands.
+---
+
 # February 2, 2026
 
 ## What's New:

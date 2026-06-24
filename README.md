@@ -1,5 +1,6 @@
 ---
-description: Describe your business in plain English and get a real, running app — CRM, client portal, or ops dashboard — with logins and your own domain. No code, plus a full developer API.
+description: >-
+  Describe your business in plain English and get a real, running app — CRM, client portal, or ops dashboard. No code, plus a full developer API.
 cover: .gitbook/assets/ss-api3.png
 coverY: 0
 ---

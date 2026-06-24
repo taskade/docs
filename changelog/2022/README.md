@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade 2022 changelog — historical release notes, feature launches, and platform updates.
+---
+
 # 2022 AI & Automation: Think in Tasks, Not Prompts
 
 **The Arrival of Intelligence** - December 12th changes everything. AI becomes contextually aware of projects and tasks, laying the groundwork for Taskade Genesis.

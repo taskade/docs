@@ -1,3 +1,8 @@
+---
+description: >-
+  Switch Taskade projects between List, Board, Table, Calendar, Mind Map, Gantt, and more views on the same data, plus custom field types and Fill with AI.
+---
+
 # Project Views Explained
 
 Taskade stores information in a flexible tree-structured database. The **same data** can be visualized in multiple ways to suit different workflows. These presentation modes are called **Project Views**.
