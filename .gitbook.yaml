@@ -5,63 +5,38 @@ structure:
   summary: SUMMARY.md
 
 redirects:
-  docs/updates: changelog
-  docs/help-and-guides: /
-  docs/developer-api: developers
-  docs/genesis-no-code-apps: genesis
-  help-center/ai-features: features/ai-features
-  api-docs: developers
-  automation-guide: automation
-  mobile-guide: mobile
-  integrations-guide: integrations
-  troubleshooting-guide: troubleshooting
-  best-practices-guide: best-practices
-  enterprise-guide: enterprise-features
-  templates-guide: templates
-  collaboration-guide: features/collaboration
-  ai-agents-guide: features/ai-features/ai-agents-getting-started
-  project-views-guide: features/project-views-mastery
-  workspace-guide: features/workspaces
-  # Living Software redirects
-  living-software: features
-  workspace-dna: features/workspaces
-  living-dna: features/workspaces
-  living-memory: taskos/introduction
-  living-intelligence: features/ai-features
-  living-motion: automation
-  second-brain: genesis
-  eve-ai: features/ai-features
-
-  # Genesis-first redirects
-  genesis-ai: genesis
-  ai-app-builder: genesis
-  no-code-platform: genesis
-  tutorial-guide: Taskade-Tutorial
-  comprehensive-api: api/comprehensive-api-guide
-  industry-solutions: features/industry-solutions
-  account-management: account-management
-  vision: vision
-
-  # Archive redirects for simplified structure
-  archive/detailed-documentation/advanced-patterns: archive/automation/advanced-patterns
-  archive/detailed-documentation/recipes: archive/automation/recipes
-  archive/detailed-documentation/triggers: archive/automation/triggers
-  archive/detailed-documentation/use-cases: archive/automation/use-cases
-  archive/detailed-documentation/industries: archive/business/industries
-  archive/detailed-documentation/industry-use-cases: archive/business/industry-use-cases
-  archive/detailed-documentation/templates: archive/business/templates
-  archive/detailed-documentation/browser-extensions: archive/platform/browser-extensions
-  archive/detailed-documentation/enterprise-features: archive/platform/enterprise-features
-  archive/detailed-documentation/export: archive/platform/export
-  archive/detailed-documentation/import-export: archive/platform/import-export
-  archive/detailed-documentation/community: archive/collaboration/community
-  archive/detailed-documentation/workspaces: archive/collaboration/workspaces
-  archive/detailed-documentation/project-management: archive/collaboration/project-management
-  archive/detailed-documentation/best-practices: archive/guides/best-practices
-  archive/detailed-documentation/quick-start: archive/guides/quick-start
-  archive/detailed-documentation/visual-tutorials: archive/guides/visual-tutorials
-  archive/detailed-documentation/integrations: archive/integrations
-  archive/detailed-documentation/help-center: archive/help-center
+  docs/updates: updates-and-timeline/changelog
+  docs/help-and-guides: help-and-support/index
+  docs/developer-api: apis-and-developer/developer-home
+  docs/genesis-no-code-apps: taskade-genesis/genesis
+  help-center/ai-features: ai-features/ai-features
+  api-docs: apis-and-developer/developer-home
+  automation-guide: automations/automation
+  mobile-guide: workspaces/workspaces/mobile-optimization
+  integrations-guide: automations/automation/integrations
+  troubleshooting-guide: help-and-support/comprehensive-troubleshooting-guide
+  best-practices-guide: community-and-sharing/community-and-sharing/best-practices
+  templates-guide: taskade-genesis/genesis/examples-and-templates
+  collaboration-guide: workspaces/workspaces/collaboration
+  ai-agents-guide: ai-features/ai-features/ai-agents-getting-started
+  project-views-guide: workspaces/workspaces/project-views
+  workspace-guide: workspaces/workspaces
+  living-software: taskade-genesis/genesis/how-genesis-works
+  workspace-dna: platform/workspace-dna
+  living-dna: platform/workspace-dna
+  living-memory: platform/workspace-dna
+  living-intelligence: ai-features/ai-features
+  living-motion: automations/automation
+  second-brain: taskade-genesis/genesis
+  eve-ai: ai-features/ai-features
+  genesis-ai: taskade-genesis/genesis
+  ai-app-builder: taskade-genesis/genesis
+  no-code-platform: taskade-genesis/genesis
+  tutorial-guide: help-and-support/index
+  comprehensive-api: apis-and-developer/comprehensive-api-guide
+  industry-solutions: taskade-genesis/genesis/examples-and-templates
+  account-management: help-and-support/account-management
+  vision: contributing/vision
 
 integrations:
   googleAnalytics:

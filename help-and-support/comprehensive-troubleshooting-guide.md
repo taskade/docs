@@ -529,6 +529,144 @@ Refresh the page and see if errors persist.
 * **CORS Errors**: Check for Cross-Origin Resource Sharing issues
 * **API Responses**: Examine API response data for debugging
 
+### Taskade Blocked by Your Network
+
+**Symptoms:** Taskade.com won't load on one network but works on another — for example, it loads on cellular data but not on office or home Wi-Fi, or colleagues can reach it while you can't.
+
+**Root cause:** Some internet service providers or network security tools mistakenly block Taskade domains. This is uncommon but happens with certain network or content-filtering configurations.
+
+{% stepper %}
+{% step %}
+#### Test on a different network
+
+Switch to mobile data, a hotspot, or another Wi-Fi network. If Taskade loads, the original network is blocking it.
+{% endstep %}
+
+{% step %}
+#### Ask your ISP or IT to allowlist Taskade
+
+This is the most reliable long-term fix. Request that `*.taskade.com` (all subdomains) be added to their allowlist.
+{% endstep %}
+
+{% step %}
+#### Use an encrypted DNS resolver as an interim workaround
+
+Install CloudFlare's free app from [1.1.1.1](https://1.1.1.1/), follow the setup for your operating system, then reopen Taskade and retest.
+{% endstep %}
+{% endstepper %}
+
+{% hint style="info" %}
+A general-purpose VPN can also bypass the block, but coordinating an allowlist with your ISP or IT department is the cleanest fix.
+{% endhint %}
+
+### Video or Audio Not Working in Calls
+
+Taskade includes built-in video calling you can start from any project. If your camera or microphone isn't working:
+
+{% stepper %}
+{% step %}
+#### Grant browser permissions
+
+Allow camera and microphone access for Taskade in your browser's site settings, then reload the page.
+{% endstep %}
+
+{% step %}
+#### Confirm you're on HTTPS
+
+Browsers only allow camera and microphone on a secure connection. Make sure the address bar shows `https://taskade.com`.
+{% endstep %}
+
+{% step %}
+#### Check the hardware and other apps
+
+Close other apps that may be holding the camera or microphone (other video tools, recording software), and verify the device works in your system settings.
+{% endstep %}
+
+{% step %}
+#### Use a supported browser and stable connection
+
+Video calls work best in Chrome, Edge, or Safari on a stable connection. A wired connection and closing other streaming apps help with quality.
+{% endstep %}
+{% endstepper %}
+
+On corporate networks, video may require your IT team to allow Taskade through the firewall. See [Collaboration](../genesis-living-system-builder/workspaces/collaboration.md) for video call features.
+
+These login scenarios go beyond standard email, password, and 2FA issues.
+
+#### Biometric Login (Face ID / Touch ID / Fingerprint)
+
+The mobile app supports biometric sign-in. If it stops working:
+
+* **Enable it first**: Turn on biometric login in the Taskade app settings and confirm your device's biometrics are set up.
+* **Re-register if changed**: If you added a new fingerprint or face, re-register it on the device.
+* **Sensor and permissions**: Clean the sensor or camera, and confirm the app has biometric permission in device settings.
+* **Fall back to password**: Sign in with your password if biometrics keep failing, then re-enable.
+
+#### Login Redirects or Loops
+
+If the login page keeps reloading or bounces you back after signing in:
+
+* Clear all cookies for taskade.com, then retry.
+* Confirm you're on the official `taskade.com` URL.
+* Ensure JavaScript and cookies are enabled, and temporarily disable privacy or security extensions.
+
+#### Enterprise SSO / SAML
+
+For organizations using Single Sign-On (available on Enterprise plans):
+
+* **Domain login flow**: Enter your work email, continue, complete your company's normal sign-in, and you'll be redirected back to Taskade.
+* **Not provisioned**: If access is denied, you may not yet be added to Taskade in your identity provider — contact your IT administrator.
+* **Provider downtime or conditional access**: SSO failures often originate with the identity provider; your admin can confirm configuration and status.
+
+See [Account Management](../account-management/README.md) for SSO/SAML setup details.
+
+### What Works Offline
+
+Taskade caches your projects locally so you can keep working without a connection. Knowing what does and doesn't work offline prevents confusion when changes seem to stall.
+
+| Works offline | Requires a connection |
+| --- | --- |
+| Viewing existing projects and tasks | Creating brand-new projects |
+| Editing task content and descriptions | Real-time collaboration |
+| Checking off completed tasks | File uploads and attachments |
+| Adding tasks to existing projects | Inviting team members |
+| Basic project navigation | AI features |
+
+{% hint style="info" %}
+Sync before going offline so all changes are uploaded, keep offline edits simple, and reconnect as soon as possible so queued changes can sync.
+{% endhint %}
+
+### If You Suspect Your Account Is Compromised
+
+Unlike a locked or suspended account, this is about regaining control if you see unexpected changes or sign-ins.
+
+{% stepper %}
+{% step %}
+#### Change your password immediately
+
+Use the password reset flow to set a new, unique password.
+{% endstep %}
+
+{% step %}
+#### Enable two-factor authentication
+
+Add 2FA for an extra layer of protection, and store the backup codes somewhere safe.
+{% endstep %}
+
+{% step %}
+#### Review recent activity
+
+Check for unfamiliar changes or sign-ins, and revert anything unexpected.
+{% endstep %}
+
+{% step %}
+#### Secure reused credentials and contact support
+
+Update any other accounts that shared the same password, then report the activity to support@taskade.com.
+{% endstep %}
+{% endstepper %}
+
+
 ## Getting Help
 
 ### Self-Service Resources
