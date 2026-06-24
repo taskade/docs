@@ -1,3 +1,8 @@
+---
+description: >-
+  Build integrations on the Taskade REST API: manage workspaces, projects, tasks, AI agents, and media via authenticated endpoints with Node, Python, and cURL.
+---
+
 # Living Intelligence API Overview
 
 **Connect. Build. Automate.** The Taskade API enables you to programmatically access and manage your Taskade workspace, projects, tasks, agents, and more.

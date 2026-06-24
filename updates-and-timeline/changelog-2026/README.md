@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade 2026 developer changelog — monthly API, MCP, automation, agents, and Taskade Genesis platform updates.
+---
+
 # Changelog (2026)
 
 Developer-focused highlights of API, MCP, SDK, automation, and Taskade Genesis platform changes shipped in 2026. For releases before 2026, see the [Changelog archive](../../changelog/README.md).

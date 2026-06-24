@@ -1,3 +1,8 @@
+---
+description: >-
+  Tasks — Taskade REST API v1 reference: GET /projects/{projectId}/tasks/{taskId}. Parameters, authentication, and response schema.
+---
+
 # Tasks
 
 ## Summary of Endpoints

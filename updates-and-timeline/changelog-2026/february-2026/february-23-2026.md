@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — February 23, 2026: Upgraded LLM Models, New Shopify Actions.
+---
+
 # February 23, 2026
 
 ## What's New:

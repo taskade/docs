@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade 2017-2019 changelog — historical release notes, feature launches, and platform updates.
+---
+
 # 2017-2019 Foundation Years: Platform Genesis
 
 **From Humble Beginnings to Growth** - The collaborative productivity platform takes shape, establishing the foundational DNA that would eventually evolve into Taskade Genesis.

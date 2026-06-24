@@ -1,7 +1,6 @@
 ---
-title: 'Chapter 1: Workspaces - The Living Foundation'
-parent: 'Taskade: The Living DNA Productivity Platform'
-nav_order: 1
+description: >-
+  Understand Taskade workspaces: the foundation that organizes projects, AI agents, and automations. Learn spaces, hierarchy, workspace types, settings, and.
 ---
 
 # Chapter 1: Workspaces - The Foundation

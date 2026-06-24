@@ -1,4 +1,6 @@
 ---
+description: >-
+  Use Taskade across iOS, Android, Mac, Windows, Linux, and web with real-time sync, offline mode, voice commands, widgets, and browser extensions.
 title: 'Chapter 8: Mobile & Desktop - Cross-Platform Productivity'
 parent: 'Taskade: The Living DNA Productivity Platform'
 nav_order: 8

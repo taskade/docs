@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade 2020 changelog — historical release notes, feature launches, and platform updates.
+---
+
 # 2020 Remote Collaboration: Essential Infrastructure for Distributed Teams
 
 **The Remote Work Revolution** - 20+ major releases make Taskade essential infrastructure for distributed teams worldwide, preparing the collaborative foundation for Taskade Genesis.

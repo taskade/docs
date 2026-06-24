@@ -1,3 +1,8 @@
+---
+description: >-
+  Full reference of Taskade automation triggers and actions across 30+ integrations: Slack, Gmail, Google Sheets, HubSpot, GitHub, AI agents, schedules.
+---
+
 # Comprehensive Integrations
 
 This document provides a complete reference of all available integrations, triggers, and actions in Taskade's automation system. For step-by-step guides, see the [Taskade Automation learn center](https://www.taskade.com/learn/automation). Every integration below also has a full setup page in the [Taskade Integrations directory](https://www.taskade.com/integrations).

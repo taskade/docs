@@ -1,3 +1,8 @@
+---
+description: >-
+  Add secure user accounts and sign-in to Taskade Genesis apps with GenesisAuth: no-code App Users, workspace SSO, and custom-domain login.
+---
+
 # GenesisAuth
 
 A dedicated security layer for Taskade Genesis apps. Every Taskade Genesis app can ship with real user accounts and secure sign-in — no code, no third-party provider setup, no DevOps.

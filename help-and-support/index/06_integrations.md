@@ -1,4 +1,6 @@
 ---
+description: >-
+  Connect Taskade to 100+ tools like Slack, Google Workspace, HubSpot, and GitHub for two-way data sync, event triggers, and AI-orchestrated workflows.
 title: 'Chapter 6: Integrations - Connecting Your Tools'
 parent: 'Taskade: The Living DNA Productivity Platform'
 nav_order: 6

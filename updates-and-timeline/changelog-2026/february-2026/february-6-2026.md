@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — February 6, 2026: Updated Open Graph Images, Space Icon -> Favicons.
+---
+
 # February 6, 2026
 
 ## What's New:

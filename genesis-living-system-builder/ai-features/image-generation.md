@@ -1,3 +1,8 @@
+---
+description: >-
+  Generate images for Taskade Genesis apps natively in EVE chat with ready-to-use prompt templates. Auto-saved to Media in 1:1, 16:9, or 9:16.
+---
+
 # Image Generation
 
 ---

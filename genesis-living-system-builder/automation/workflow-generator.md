@@ -1,3 +1,8 @@
+---
+description: >-
+  Build complex automations in Taskade from plain English: the Workflow Generator creates triggers, branches, loops, and 100+ integrations with no drag-and-drop.
+---
+
 # Workflow Generator
 
 ---

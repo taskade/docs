@@ -1,3 +1,8 @@
+---
+description: >-
+  The Taskade Genesis vision: the HyperCard of the AI era, letting anyone build powerful, AI-driven web apps with no code, no permission, no lock-in.
+---
+
 # Vision
 
 In 1987, Apple released HyperCard, a piece of software that fundamentally changed personal computing. For the first time, it gave non-programmers the power to create their own interactive software—from simple databases to complex adventure games—using a simple, card-based metaphor. It democratized creation.

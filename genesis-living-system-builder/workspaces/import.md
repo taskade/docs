@@ -1,3 +1,8 @@
+---
+description: >-
+  Import Markdown, PDF, Word, Excel, CSV, and more into Taskade projects, or add files as AI agent knowledge, project context, and Taskade Genesis app context.
+---
+
 # Import
 
 ---

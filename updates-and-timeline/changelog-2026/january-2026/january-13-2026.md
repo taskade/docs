@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — January 13, 2026: Updated Main Genesis Page, Quick Access Delete.
+---
+
 # January 13, 2026
 
 ## What's New:

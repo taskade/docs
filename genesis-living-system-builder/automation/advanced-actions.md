@@ -1,3 +1,8 @@
+---
+description: >-
+  Build advanced Taskade automations with loop and batch actions, WhatsApp Business messaging, HTTP schema generation, retries, and error handling.
+---
+
 # Advanced Automation Actions
 
 **Master the latest automation capabilities including loop processing, WhatsApp Business integration, AI-powered schema generation, and advanced error handling. These powerful features transform complex workflows into simple, reliable automations.**

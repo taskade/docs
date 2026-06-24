@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade 2024 changelog — historical release notes, feature launches, and platform updates.
+---
+
 # 2024 Living DNA: Intelligence + Action + Knowledge + Evolution
 
 **The Breakthrough Year** - AI agents become autonomous teams. The four pillars of intelligent systems emerge to lay the foundation for Taskade Genesis.

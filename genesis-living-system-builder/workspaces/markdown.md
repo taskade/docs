@@ -1,3 +1,8 @@
+---
+description: >-
+  Use Markdown in Taskade across the project editor, chat, comments, AI agent chat, import/export, and widgets. Full syntax reference for headings, lists, and.
+---
+
 # Markdown Support
 
 ---

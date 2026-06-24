@@ -1,3 +1,8 @@
+---
+description: >-
+  Give Taskade AI agents real actions: add native tools, Slack/Gmail/HubSpot integrations, custom automation tools, and human-in-the-loop approvals.
+---
+
 # Tools for AI Agents
 
 ---

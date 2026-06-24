@@ -1,3 +1,8 @@
+---
+description: >-
+  Projects — Taskade REST API v1 reference: GET /projects/{projectId}. Parameters, authentication, and response schema.
+---
+
 # Projects
 
 The **Knowledge Layer** is the foundation of every intelligent app you build in Taskade. This is the structured memory that your AI Agents use to understand context, make decisions, and provide insightful responses. This layer is powered by **Taskade Projects**.

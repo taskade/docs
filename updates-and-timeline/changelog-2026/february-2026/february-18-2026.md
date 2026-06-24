@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — February 18, 2026: Automation: Retry-After Header Support for 429 Responses, Automation: Flow-Enable Idempotency.
+---
+
 # February 18, 2026
 
 {% hint style="info" %}

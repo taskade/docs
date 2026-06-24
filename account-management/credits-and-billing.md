@@ -1,3 +1,8 @@
+---
+description: >-
+  Understand how Taskade AI credits work, what drives app costs, credit pack pricing, and Auto Top-Up that refills your balance before agents run dry.
+---
+
 # Credits & Billing
 
 Understand how AI credits work in Taskade, how credit packs are priced, and how Auto Top-Up keeps your workflows running.

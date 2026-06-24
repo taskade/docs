@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — January 19, 2026: UI Element Selector, Agents UI Refresh.
+---
+
 # January 19, 2026
 
 ## What's New:

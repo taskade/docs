@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog for May 2026 — API, MCP, automation, agents, and Taskade Genesis updates.
+---
+
 # May 2026
 
 {% hint style="info" %}

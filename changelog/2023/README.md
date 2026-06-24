@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade 2023 changelog — historical release notes, feature launches, and platform updates.
+---
+
 # 2023 AI Breakthrough: From Commands to Agents
 
 **The AI Transformation Year** - 18+ major AI releases. The evolution from AI assistant to intelligent teammates who think, learn, and collaborate.

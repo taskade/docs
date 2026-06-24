@@ -1,3 +1,8 @@
+---
+description: >-
+  Build teams of specialized AI agents in Taskade that collaborate on projects, with Taskade EVE orchestrating handoffs, multi-agent patterns, and shared chat.
+---
+
 # Multi-Agents
 
 ---

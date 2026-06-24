@@ -1,3 +1,8 @@
+---
+description: >-
+  Build mobile-first Taskade Genesis apps and workflows: iOS/Android apps, PWA, offline sync, Quick Add widget, voice, and responsive design across devices.
+---
+
 # Mobile Living Experience
 
 **Master Taskade's mobile-first features and create apps that work beautifully across all devices. From responsive Taskade Genesis apps to native mobile workflows, ensure your users have a seamless experience whether they're on desktop, tablet, or phone.**

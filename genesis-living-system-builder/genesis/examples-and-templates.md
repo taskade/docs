@@ -1,3 +1,8 @@
+---
+description: >-
+  Copy proven Taskade Genesis prompts to build CRM dashboards, booking systems, forms, and landing pages in minutes, with 70+ live app templates to fork.
+---
+
 # Examples & Templates
 
 **Copy these proven prompts and build working business apps in minutes.**

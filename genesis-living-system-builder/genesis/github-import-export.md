@@ -1,3 +1,8 @@
+---
+description: >-
+  Import Taskade Genesis apps from GitHub repos and export them back via branch-and-PR flows for version-controlled, two-way app sync.
+---
+
 # GitHub Import & Export
 
 Bring Taskade Genesis apps in from GitHub repositories and push your apps back to GitHub with branch-and-PR workflows. Two-way sync turns every Genesis app into a portable, version-controlled kit.

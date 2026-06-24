@@ -1,3 +1,8 @@
+---
+description: >-
+  Manage your Taskade account: update profile, invite members and set roles, handle billing and plans, AI credits, 2FA, SSO/SAML, and data export.
+---
+
 # Account Management
 
 Manage your Taskade account, team, billing, and security settings.

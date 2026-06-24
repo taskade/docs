@@ -1,4 +1,6 @@
 ---
+description: >-
+  Build Taskade automations with triggers, conditions, and actions: connect projects, AI agents, and 100+ tools to handle repetitive work and follow-ups.
 title: 'Chapter 4: Automation - Workflows on Autopilot'
 parent: 'Taskade: The Living DNA Productivity Platform'
 nav_order: 4

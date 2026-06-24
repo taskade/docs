@@ -1,3 +1,8 @@
+---
+description: >-
+  Create, train, and deploy Taskade AI agents that read your docs, answer questions, run tasks, and power multi-agent teams across your workspace.
+---
+
 # AI Agents Getting Started
 
 Transform your workspace with smart AI assistants that understand your business and can handle tasks automatically!

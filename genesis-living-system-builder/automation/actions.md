@@ -1,3 +1,8 @@
+---
+description: >-
+  Complete Taskade automation action reference: create tasks, run AI agents, scrape web, send HTTP requests, integrate Slack, HubSpot, GitHub, and chain.
+---
+
 # Action & Trigger Reference
 
 Actions are the tasks that automations can perform. Each action connects to a specific service or system to create, update, or retrieve data. Actions can be chained together to create complex workflows.

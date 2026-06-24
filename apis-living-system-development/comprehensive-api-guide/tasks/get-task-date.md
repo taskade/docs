@@ -1,3 +1,8 @@
+---
+description: >-
+  Get Task Date — Taskade REST API v1 reference: GET /projects/{projectId}/tasks/{taskId}/date. Parameters, authentication, and response schema.
+---
+
 # Get Task Date
 
 {% openapi src="../../../.gitbook/assets/api-0.1.0.json" path="/projects/{projectId}/tasks/{taskId}/date" method="get" expanded="true" %}

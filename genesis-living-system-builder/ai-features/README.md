@@ -1,6 +1,6 @@
 ---
 description: >-
-  Deploy custom AI agents with persistent memory, knowledge, and tool access across your Taskade workspace — the intelligence layer behind every app and automation.
+  Deploy custom AI agents with persistent memory, knowledge, and tool access across your Taskade workspace — the intelligence layer behind every app and.
 ---
 
 # AI Features Overview

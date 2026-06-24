@@ -1,3 +1,8 @@
+---
+description: >-
+  Connect Taskade to Slack, Gmail, HubSpot, Sheets and more with trigger-and-action automations, plus custom HTTP, webhook, and API integrations.
+---
+
 # Integration Overview
 
 **Transform isolated tools into intelligent, living ecosystems that learn, adapt, and evolve together.**

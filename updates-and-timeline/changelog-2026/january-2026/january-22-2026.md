@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — January 22, 2026: New Appgen Loading Screen.
+---
+
 # January 22, 2026
 
 ## What's New:

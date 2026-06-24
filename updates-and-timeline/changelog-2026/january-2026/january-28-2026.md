@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — January 28, 2026: New Publish Flow, New Community "New" Tab.
+---
+
 # January 28, 2026
 
 ## What's New:

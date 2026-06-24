@@ -1,3 +1,8 @@
+---
+description: >-
+  Collaborate in real time on Taskade with live co-editing, team chat, comments, video calls, presence, and async tools plus AI summaries and version history.
+---
+
 # Collaboration: Team Intelligence
 
 Taskade enables seamless real-time and asynchronous collaboration across teams. Use chat, video, presence, and comments to stay aligned while work happens in projects, agents, and automations.

@@ -1,3 +1,8 @@
+---
+description: >-
+  Embed Taskade projects and Genesis apps on any site via iframe, set theme and size, and embed Google Docs, Figma, Loom, YouTube inside projects.
+---
+
 # Embed Taskade
 
 ---

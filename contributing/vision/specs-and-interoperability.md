@@ -1,3 +1,8 @@
+---
+description: >-
+  Package projects, agents, automations, and templates into shareable Taskade AI Kits for one-click install, plus the planned .tsk standard and agent-friendly.
+---
+
 # Specs & Interoperability
 
 A core part of our vision is to create an open, interoperable ecosystem for AI-powered applications. We are moving toward a future where entire agentic systems can be version-controlled, shared, and remixed. Today, this vision is realized through **Taskade AI Kits**.

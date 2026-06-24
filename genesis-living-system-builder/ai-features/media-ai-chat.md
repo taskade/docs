@@ -1,3 +1,8 @@
+---
+description: >-
+  Chat with your files, projects, and media in Taskade. Upload PDFs, images, CSVs, and videos, then ask questions, extract insights, and generate content with AI.
+---
+
 # Media AI Chat
 
 ---

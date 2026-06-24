@@ -1,3 +1,8 @@
+---
+description: >-
+  Organize Taskade for teams with workspace, folder, and function structures, a 5-role RBAC permission system, and AI-powered team features.
+---
+
 # Taskade for Teams
 
 ---

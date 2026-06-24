@@ -1,3 +1,8 @@
+---
+description: >-
+  Workspaces — Taskade REST API v1 reference: GET /workspaces. Parameters, authentication, and response schema.
+---
+
 # Workspaces
 
 ## Summary of Endpoints

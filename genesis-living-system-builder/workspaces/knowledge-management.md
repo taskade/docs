@@ -1,3 +1,8 @@
+---
+description: >-
+  Upload, organize, and manage knowledge sources in Taskade to power smarter AI agents, with bulk import, auto-categorization, and the Agents API.
+---
+
 # Knowledge Organization
 
 **Transform your scattered information into organized, searchable intelligence that powers smarter AI agents and more effective workflows. Learn how to efficiently upload, organize, and manage knowledge sources for maximum AI performance.**

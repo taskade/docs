@@ -1,3 +1,8 @@
+---
+description: >-
+  Taskade developer changelog — January 30, 2026: Taskade EVE can now use Leaflet maps, Check out our Credits & Rewards system.
+---
+
 # January 30, 2026
 
 ## What's New:

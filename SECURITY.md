@@ -1,3 +1,8 @@
+---
+description: >-
+  Security guidelines for Taskade docs contributors: never commit .env files, API keys, or tokens, use placeholder values, and clean git history if secrets leak.
+---
+
 # Security Guidelines for Contributors
 
 **⚠️ CRITICAL: This is a PUBLIC repository that powers [docs.taskade.com](https://docs.taskade.com). Never commit sensitive information!**

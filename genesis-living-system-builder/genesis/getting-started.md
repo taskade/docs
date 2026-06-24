@@ -1,3 +1,8 @@
+---
+description: >-
+  Build your first app with Taskade Genesis in 5 minutes: turn a plain-English prompt into a working app, then test, refine, and publish it.
+---
+
 # Getting Started
 
 **Ready to build your first business app? This guide will take you from idea to working application in just 5 minutes.**

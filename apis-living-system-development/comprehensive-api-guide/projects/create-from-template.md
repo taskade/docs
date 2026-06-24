@@ -1,3 +1,8 @@
+---
+description: >-
+  Create From Template — Taskade REST API v1 reference: POST /projects/from-template. Parameters, authentication, and response schema.
+---
+
 # Create From Template
 
 {% openapi src="../../../.gitbook/assets/api-0.1.0.json" path="/projects/from-template" method="post" expanded="true" %}

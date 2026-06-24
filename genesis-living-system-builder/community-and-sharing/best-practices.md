@@ -1,3 +1,8 @@
+---
+description: >-
+  Best practices for building Taskade Genesis apps: write effective prompts, test on mobile, iterate one change at a time, and avoid common pitfalls.
+---
+
 # Best Practices for Genesis Success
 
 Learn from successful Taskade Genesis users to build better apps faster and avoid common pitfalls.

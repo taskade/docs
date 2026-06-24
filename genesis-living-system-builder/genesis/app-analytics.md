@@ -1,3 +1,8 @@
+---
+description: >-
+  Track visitors, pageviews, bounce rate, traffic sources, and devices for any published Taskade Genesis app with the built-in analytics dashboard, no extra.
+---
+
 # App Analytics
 
 ---
