@@ -115,7 +115,7 @@ Start with a task, note, or idea. Your project is now alive and ready to grow!
 
 Each view reveals different insights from your data. Here's when to use each one:
 
-### 📋 List View - The Foundation
+### List View - The Foundation
 
 **Perfect for:** Step-by-step processes, checklists, meeting agendas
 
@@ -132,7 +132,7 @@ Each view reveals different insights from your data. Here's when to use each one
     └── Go-live checklist
 ```
 
-### 📊 Board View - Visual Workflow
+### Board View - Visual Workflow
 
 **Perfect for:** Project management, sales pipelines, content workflows
 
@@ -143,7 +143,7 @@ Each view reveals different insights from your data. Here's when to use each one
 └── Task G
 ```
 
-### 📈 Table View - Data Analysis
+### Table View - Data Analysis
 
 **Perfect for:** Tracking metrics, managing inventory, analyzing data
 
@@ -155,7 +155,7 @@ Each view reveals different insights from your data. Here's when to use each one
 | Update database | Done | Low | 2024-01-30 | Alex |
 ```
 
-### 📅 Calendar View - Time Management
+### Calendar View - Time Management
 
 **Perfect for:** Deadlines, events, scheduling, time blocking
 
@@ -167,7 +167,7 @@ February 2024
 └── 20th: Product launch
 ```
 
-### 🧠 Mind Map View - Creative Thinking
+### Mind Map View - Creative Thinking
 
 **Perfect for:** Brainstorming, idea generation, visual planning
 
@@ -182,7 +182,7 @@ February 2024
 └── 💡 Idea C
 ```
 
-### 🏗️ Org Chart View - Hierarchical Structure
+### Org Chart View - Hierarchical Structure
 
 **Perfect for:** Team structures, decision trees, organizational charts
 
@@ -196,7 +196,7 @@ February 2024
     └── 📱 Social Media Specialist
 ```
 
-### 📊 Gantt View - Project Scheduling
+### Gantt View - Project Scheduling
 
 **Perfect for:** Complex projects, dependencies, resource planning
 
@@ -206,7 +206,7 @@ Task B: Jan 3-8    [░░█████░░░] (depends on Task A)
 Task C: Jan 6-10   [░░░░█████] (depends on Task B)
 ```
 
-### ⚡ Action View - Focused Execution
+### Action View - Focused Execution
 
 **Perfect for:** Daily tasks, personal productivity, getting things done
 

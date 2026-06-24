@@ -1,8 +1,8 @@
-# 🔒 Security Guidelines for Contributors
+# Security Guidelines for Contributors
 
 **⚠️ CRITICAL: This is a PUBLIC repository that powers [docs.taskade.com](https://docs.taskade.com). Never commit sensitive information!**
 
-## 🚨 What NEVER to Commit
+## What NEVER to Commit
 
 ### **Environment Variables & Secrets**
 ```bash
@@ -37,7 +37,7 @@ package.json               # Node dependencies for scripts
 help-center/_imported/     # Imported content (temporary)
 ```
 
-## ✅ Safe Practices
+## Safe Practices
 
 ### **1. Use Template Files**
 Instead of `.env`, create `.env.example.template`:
@@ -84,7 +84,7 @@ if git diff --cached | grep -i -E "(token|key|secret|password|credential)" | gre
 fi
 ```
 
-## 🛡️ If You Accidentally Commit Secrets
+## If You Accidentally Commit Secrets
 
 ### **Immediate Actions**
 1. **DO NOT PUSH** if you haven't already
@@ -111,7 +111,7 @@ java -jar bfg-1.14.0.jar --replace-text passwords.txt
 git push --force
 ```
 
-## 📋 Pre-Commit Checklist
+## Pre-Commit Checklist
 
 Before every commit, verify:
 
@@ -122,7 +122,7 @@ Before every commit, verify:
 - [ ] ✅ No sensitive URLs or endpoints
 - [ ] ✅ All secrets use placeholder values like `your_token_placeholder`
 
-## 🔍 Repository Structure
+## Repository Structure
 
 ### **Public Content** (✅ Safe to commit)
 ```
@@ -145,7 +145,7 @@ Local Development Only:
 └── *-urls.txt            # Temporary URL lists
 ```
 
-## 🚨 Emergency Contacts
+## Emergency Contacts
 
 If you accidentally commit sensitive information:
 
@@ -154,7 +154,7 @@ If you accidentally commit sensitive information:
 3. **Action**: Revoke/rotate exposed credentials immediately
 4. **Follow-up**: Clean git history if necessary
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [GitHub: Removing sensitive data](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
 - [GitBook Git Sync](https://docs.gitbook.com/getting-started/git-sync)

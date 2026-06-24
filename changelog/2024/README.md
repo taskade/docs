@@ -6,7 +6,7 @@
 
 ---
 
-## 🧬 Living DNA Framework Year
+## Living DNA Framework Year
 
 The breakthrough year when AI agents evolved from individual assistants into autonomous teams, establishing the four pillars that would enable Genesis: **Intelligence**, **Action**, **Knowledge**, and **Evolution**.
 
@@ -16,7 +16,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ## December 2024
 
-### 🤖 December 18, 2024 — Chat with AI Teams, Instant Projects, New Tables, Microsoft Teams & Discord
+### December 18, 2024 — Chat with AI Teams, Instant Projects, New Tables, Microsoft Teams & Discord
 
 **🚀 Highlights:**
 - Chat with AI Teams in project chats (roundtable collaboration)
@@ -31,7 +31,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ## November 2024
 
-### 🤖 November 27, 2024 — Public Agent Inbox, Fine‑Tuned Tools, Google Workspace Automations
+### November 27, 2024 — Public Agent Inbox, Fine‑Tuned Tools, Google Workspace Automations
 
 **🚀 Highlights:**
 - Public Agent Inbox for managing conversations with shared/embedded agents
@@ -44,7 +44,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ---
 
-### 🤖 November 15, 2024 — Autonomous Agent Actions, Import Anything, Automation Generator
+### November 15, 2024 — Autonomous Agent Actions, Import Anything, Automation Generator
 
 **🚀 Highlights:**
 - Autonomous Taskade Actions in chats and agent panels
@@ -57,7 +57,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ## October 2024
 
-### 🤖 October 30, 2024 — Agent Mode, Team AI Chat, Automation Generator
+### October 30, 2024 — Agent Mode, Team AI Chat, Automation Generator
 
 **🚀 Highlights:**
 - Agent Mode in Project Generator (auto‑creates an agent per new AI project)
@@ -69,7 +69,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ---
 
-### 🤖 October 3, 2024 — X Integration, Share AI Agents, Custom Tools
+### October 3, 2024 — X Integration, Share AI Agents, Custom Tools
 
 **🚀 Highlights:**
 - Automate Twitter/X posts with AI agents
@@ -81,7 +81,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ## September 2024
 
-### 🤖 September 19, 2024 — Public AI Agents, Video Calls, Table Automation, Web Search
+### September 19, 2024 — Public AI Agents, Video Calls, Table Automation, Web Search
 
 **🚀 Highlights:**
 - Public AI Agents (share, embed, template mode, branding)
@@ -94,7 +94,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ## August 2024
 
-### 🤖 August 29, 2024 — AI Teams Roundtable, Custom Fields Automation, RSS & YouTube
+### August 29, 2024 — AI Teams Roundtable, Custom Fields Automation, RSS & YouTube
 
 **🚀 Highlights:**
 - AI Teams with Automatic/Manual/Roundtable modes
@@ -106,7 +106,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ---
 
-### 🤖 August 12, 2024 — AI Forms, Knowledge Manager, OneDrive, AI Teams (Beta)
+### August 12, 2024 — AI Forms, Knowledge Manager, OneDrive, AI Teams (Beta)
 
 **🚀 Highlights:**
 - AI Forms (share/embed, dynamic fields)
@@ -118,7 +118,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ## July 2024
 
-### 🤖 July 18, 2024 — AI Teams, Source References, Mobile Widgets, Automation Filters
+### July 18, 2024 — AI Teams, Source References, Mobile Widgets, Automation Filters
 
 **🚀 Highlights:**
 - AI Teams for coordinated collaboration
@@ -130,7 +130,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ## June 2024
 
-### 🤖 June 24, 2024 — Multi‑Site Reader, Dynamic Web Knowledge, AI Tables, Quick Add
+### June 24, 2024 — Multi‑Site Reader, Dynamic Web Knowledge, AI Tables, Quick Add
 
 **🚀 Highlights:**
 - Site Reader tool (up to 5 links)
@@ -142,7 +142,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ---
 
-### 🤖 June 10, 2024 — Multi‑Chats, Web Search Tool, HTTP Action, Text Field
+### June 10, 2024 — Multi‑Chats, Web Search Tool, HTTP Action, Text Field
 
 **🚀 Highlights:**
 - Multiple chat threads per agent
@@ -154,7 +154,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ## May 2024
 
-### 🤖 May 27, 2024 — AI Agent Generator, HubSpot Automation, Agent Upgrades
+### May 27, 2024 — AI Agent Generator, HubSpot Automation, Agent Upgrades
 
 **🚀 Highlights:**
 - AI Agent Generator (describe → generate agents/teams)
@@ -165,7 +165,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ---
 
-### 🤖 May 23, 2024 — Multi‑Agents, Agent Tools, Knowledge Sharing, Number Fields
+### May 23, 2024 — Multi‑Agents, Agent Tools, Knowledge Sharing, Number Fields
 
 **🚀 Highlights:**
 - Multi‑Agents sidebar and concurrent /commands
@@ -177,7 +177,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ## April 2024
 
-### 🤖 April 29, 2024 — Multi‑AI Agents (Beta), Code Blocks, Custom Fields
+### April 29, 2024 — Multi‑AI Agents (Beta), Code Blocks, Custom Fields
 
 **🚀 Highlights:**
 - Multi‑AI agents working in background; agent history
@@ -188,7 +188,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ---
 
-### 🤖 April 15, 2024 — Gantt View, Shareable Agent Knowledge, New Automations
+### April 15, 2024 — Gantt View, Shareable Agent Knowledge, New Automations
 
 **🚀 Highlights:**
 - Gantt Chart view (persistent data across views)
@@ -199,7 +199,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ## March 2024
 
-### 🤖 March 31, 2024 — New Table View, Smarter Agents, Task Automations
+### March 31, 2024 — New Table View, Smarter Agents, Task Automations
 
 **🚀 Highlights:**
 - New Table View with custom columns/dropdowns
@@ -210,7 +210,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ---
 
-### 🤖 March 15, 2024 — Agent Commands, Knowledge Sources, Project Insights
+### March 15, 2024 — Agent Commands, Knowledge Sources, Project Insights
 
 **🚀 Highlights:**
 - /Slash commands for agents
@@ -222,7 +222,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ---
 
-### 🤖 March 2, 2024 — Gmail Automation, Workspace Chat, Screen Capture, Widgets
+### March 2, 2024 — Gmail Automation, Workspace Chat, Screen Capture, Widgets
 
 **🚀 Highlights:**
 - Gmail automation (draft/send/transform to tasks)
@@ -233,7 +233,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ## February 2024
 
-### 🤖 February 12, 2024 — Schedule Automations, Collaborate with Agents, AI Language
+### February 12, 2024 — Schedule Automations, Collaborate with Agents, AI Language
 
 **🚀 Highlights:**
 - Hourly/Daily/Weekly/Monthly automation triggers
@@ -244,7 +244,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ## January 2024
 
-### 🤖 January 29, 2024 — Taskade AI Automation & Agents Launch
+### January 29, 2024 — Taskade AI Automation & Agents Launch
 
 **🚀 Highlights:**
 - Launch of Taskade AI Automation and custom agents
@@ -255,7 +255,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ---
 
-### 🤖 January 16, 2024 — Bulk AI Agents, Custom Commands, Mobile Access
+### January 16, 2024 — Bulk AI Agents, Custom Commands, Mobile Access
 
 **🚀 Highlights:**
 - Run agent commands via multi‑select and add‑ons across views
@@ -265,7 +265,7 @@ The entries below are narrative rollups. Each month corresponds to roughly 10–
 
 ---
 
-## 🧬 The Living DNA Foundation
+## The Living DNA Foundation
 
 **2024's Essential Contributions to Genesis:**
 

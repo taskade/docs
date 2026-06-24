@@ -2,13 +2,13 @@
 
 Master Taskade Genesis with proven prompts organized by business function. Copy, paste, and customize these prompts to build your perfect app in minutes.
 
-## 📚 The Complete Guide to Writing Effective Genesis Prompts
+## The Complete Guide to Writing Effective Genesis Prompts
 
 {% hint style="success" %}
 AI prompts are the secret to building exactly what you envision. This comprehensive guide will help you communicate with Genesis more effectively to create better apps faster.
 {% endhint %}
 
-### 💬 What is a Prompt?
+### What is a Prompt?
 
 A prompt is simply the description of what you want to build. Think of it as explaining your app idea to a smart colleague who can build it for you. The clearer your explanation, the better your app turns out.
 
@@ -108,7 +108,7 @@ Genesis saves your work automatically. Try bold changes and see what happens:
 * **"What if we made this a single-page app instead of multiple screens?" or "Can we turn this form into a conversational chatbot experience?"**
 * **"Let's try a completely different approach—make this feel like a game with points and achievements instead of a boring business tool."**
 
-## 🎯 The Anatomy of a Great Prompt
+## The Anatomy of a Great Prompt
 
 Understanding what makes a Genesis prompt effective will help you build better apps faster.
 
@@ -155,7 +155,7 @@ bookings and send reminder texts 24 hours before appointments."
 
 _Clear, specific, includes user experience and automation_
 
-## 🌟 "Wow Moment" Prompts
+## "Wow Moment" Prompts
 
 _These create instant user delight and viral sharing - the kind of results that make people say "how did it do that?"_
 
@@ -229,7 +229,7 @@ routes them to the right team, drafts responses, and tracks resolution"
 
 **Why It Works**: Demonstrates AI understanding and intelligent automation.
 
-## 🚀 Starter App Prompts
+## Starter App Prompts
 
 Start small and focus on one clear idea. Here are quick wins to try first:
 
@@ -244,7 +244,7 @@ Start small and focus on one clear idea. Here are quick wins to try first:
 
 💡 **Pro Tip:** Keep your first prompts focused on your core idea/problem. Clear, easy-to-understand instructions help Genesis build exactly what you need.
 
-## 🔧 Adding Features to Existing Apps
+## Adding Features to Existing Apps
 
 Once your starter app works, add features to make it more powerful:
 
@@ -260,7 +260,7 @@ Once your starter app works, add features to make it more powerful:
 
 💡 **Pro Tip:** Genesis will suggest context-aware changes and improvements to your app in the chat window. Click the prompt pills to request changes.
 
-## 🎨 App Styling & Visual Design
+## App Styling & Visual Design
 
 Want your app to look cutting-edge? Here's how to request specific visual styles:
 
@@ -288,7 +288,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 
 ## Genesis App Creation Prompts
 
-### 📋 Customer Management Systems
+### Customer Management Systems
 
 | ⚙️ Action                     | 🔤 Genesis Prompt                                                                                                                                                                                                                                                                        |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -298,7 +298,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 | **Customer Support Hub**      | `"Build a support ticket system where customers report issues by category and priority. AI routes tickets to appropriate team members and tracks resolution times with satisfaction surveys."`                                                                                           |
 | **Customer Portal**           | `"Create a client portal where customers can view project status, submit new requests, access documents, and communicate with our team. Include file sharing and approval workflows."`                                                                                                   |
 
-### 🏢 Business Operations
+### Business Operations
 
 | ⚙️ Action                     | 🔤 Genesis Prompt                                                                                                                                                                                 |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -308,7 +308,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 | **Expense Tracking**          | `"Create expense reporting system where employees submit receipts with categories and descriptions. Include approval workflows, budget tracking, and automatic reimbursement calculations."`      |
 | **Meeting Room Booking**      | `"Build meeting room reservation system showing availability, collecting meeting details, sending confirmation emails, and managing equipment requests with setup reminders."`                    |
 
-### 📈 Sales & Marketing
+### Sales & Marketing
 
 | ⚙️ Action                          | 🔤 Genesis Prompt                                                                                                                                                                                      |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -318,7 +318,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 | **Influencer Partnership Manager** | `"Build system managing influencer partnerships tracking contact info, follower counts, engagement rates, campaign history, and payments with automated outreach templates."`                          |
 | **Product Launch Tracker**         | `"Create launch management system coordinating marketing, sales, and product teams with task assignments, milestone tracking, and go-to-market checklist automation."`                                 |
 
-### 🛠️ Project Management
+### Project Management
 
 | ⚙️ Action                     | 🔤 Genesis Prompt                                                                                                                                                                               |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -328,7 +328,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 | **Resource Planning System**  | `"Create resource allocation tracker managing team capacity, project assignments, skill requirements, and availability with conflict detection and utilization reports."`                       |
 | **Quality Assurance Tracker** | `"Build QA system tracking test cases, bug reports, feature approvals, and release readiness with automated testing reminders and quality metrics reporting."`                                  |
 
-### 🏥 Healthcare & Professional Services
+### Healthcare & Professional Services
 
 | ⚙️ Action                      | 🔤 Genesis Prompt                                                                                                                                                                                             |
 | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -338,7 +338,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 | **Consulting Project Tracker** | `"Build consulting dashboard tracking client engagements, deliverables, team assignments, and billing with progress reporting and automated invoice generation."`                                             |
 | **Service Request Portal**     | `"Create service request system where clients submit work requests with priorities, track status, approve quotes, and rate completion quality with automated follow-ups."`                                    |
 
-### 🛍️ Retail & E-commerce
+### Retail & E-commerce
 
 | ⚙️ Action                    | 🔤 Genesis Prompt                                                                                                                                                                              |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -348,7 +348,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 | **Product Review System**    | `"Create review collection system where customers rate purchases, write reviews, upload photos, and verify authenticity with moderation workflows and seller notifications."`                  |
 | **Return Processing**        | `"Build returns management system handling return requests, tracking item condition, processing refunds, and updating inventory with customer notifications and satisfaction surveys."`        |
 
-### 🏗️ Real Estate & Property
+### Real Estate & Property
 
 | ⚙️ Action                      | 🔤 Genesis Prompt                                                                                                                                                                                           |
 | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -358,7 +358,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 | **Property Showing Scheduler** | `"Build showing coordination system managing available times, client preferences, agent assignments, and confirmation emails with feedback collection and lead scoring."`                                   |
 | **Tenant Screening System**    | `"Create application system collecting tenant information, running background checks, verifying income, checking references, and scoring applications with approval workflows."`                            |
 
-### 📚 Education & Training
+### Education & Training
 
 | ⚙️ Action                       | 🔤 Genesis Prompt                                                                                                                                                                                       |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -368,7 +368,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 | **Workshop Booking System**     | `"Build workshop registration handling sign-ups, material preparation, venue coordination, and attendance tracking with feedback collection and follow-up course recommendations."`                     |
 | **Learning Resource Library**   | `"Create knowledge base system organizing training materials, tracking access, measuring engagement, and recommending content with search functionality and usage analytics."`                          |
 
-### 🚚 Logistics & Operations
+### Logistics & Operations
 
 | ⚙️ Action                     | 🔤 Genesis Prompt                                                                                                                                                                               |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -380,7 +380,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 
 ## Advanced Genesis Workflows
 
-### 🔄 Multi-Step Business Processes
+### Multi-Step Business Processes
 
 | ⚙️ Process Type                 | 🔤 Genesis Prompt                                                                                                                                                                                                                      |
 | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -390,7 +390,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 | **Compliance Audit Process**    | `"Build audit workflow managing preparation, document collection, inspector coordination, finding resolution, and certification renewal with deadline tracking and stakeholder notifications."`                                        |
 | **Contract Approval Workflow**  | `"Create contract system routing agreements through legal review, stakeholder approval, signature collection, and execution tracking with automated reminders and compliance monitoring."`                                             |
 
-### 🎯 Industry-Specific Solutions
+### Industry-Specific Solutions
 
 | ⚙️ Industry                         | 🔤 Genesis Prompt                                                                                                                                                                             |
 | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -402,7 +402,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 
 ## Genesis Customization Prompts
 
-### 🎨 Interface & Experience
+### Interface & Experience
 
 | ⚙️ Customization           | 🔤 Prompt Addition                                                                                                                                |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -412,7 +412,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 | **Custom Workflows**       | `"Add approval steps where managers must review and approve submissions before they're processed, with email notifications to all stakeholders."` |
 | **Advanced Reporting**     | `"Include executive dashboard with key performance indicators, trend analysis, and downloadable reports in PDF and Excel formats."`               |
 
-### 🔔 Notification & Integration
+### Notification & Integration
 
 | ⚙️ Integration Type      | 🔤 Prompt Addition                                                                                                                      |
 | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -422,7 +422,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 | **SMS Notifications**    | `"Send text message reminders 24 hours before appointments and immediate alerts for urgent issues requiring immediate attention."`      |
 | **Webhook Connections**  | `"Connect to our existing CRM system via webhook to sync customer data and ensure information consistency across platforms."`           |
 
-## 🎯 Quick Start Templates
+## Quick Start Templates
 
 Copy these complete prompts for instant apps:
 

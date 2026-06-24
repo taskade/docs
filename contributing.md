@@ -2,7 +2,7 @@
 
 This documentation is open source and we welcome contributions from the community. Whether you're fixing a typo, adding examples, or writing new sections, your help makes these docs better for everyone.
 
-## 🔒 **SECURITY FIRST**
+## **SECURITY FIRST**
 
 **⚠️ CRITICAL:** This is a **PUBLIC** repository. Never commit sensitive information!
 
@@ -14,7 +14,7 @@ This documentation is open source and we welcome contributions from the communit
 
 → **[Read Full Security Guidelines](SECURITY.md)**
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. **Fork the Repository**
 Visit [https://github.com/taskade/docs](https://github.com/taskade/docs) and click "Fork" to create your own copy.
@@ -34,7 +34,7 @@ Preview your changes locally if possible, or check that links work and formattin
 ### 5. **Submit a Pull Request**
 Push your changes and create a pull request with a clear description of what you've improved.
 
-## 📝 What You Can Contribute
+## What You Can Contribute
 
 ### **Documentation Improvements**
 - Fix typos and grammatical errors
@@ -60,7 +60,7 @@ Push your changes and create a pull request with a clear description of what you
 - Design infographics for complex concepts
 - Improve existing visual content
 
-## 📋 Contribution Guidelines
+## Contribution Guidelines
 
 ### **Writing Style**
 - Use clear, concise language
@@ -87,7 +87,7 @@ Push your changes and create a pull request with a clear description of what you
 - Include relevant help center articles
 - Add links to related API endpoints
 
-## 🗂️ Documentation Structure
+## Documentation Structure
 
 ### **Main Sections**
 - `vision/` - High-level vision and architecture
@@ -109,7 +109,7 @@ Push your changes and create a pull request with a clear description of what you
 - Add troubleshooting sections
 - End with related resources
 
-## 🔄 Review Process
+## Review Process
 
 ### **Automated Checks**
 All pull requests are automatically checked for:
@@ -131,7 +131,7 @@ Our team reviews contributions for:
 - We're here to help improve your contribution
 - Don't be discouraged by change requests
 
-## 🏆 Recognition
+## Recognition
 
 ### **Contributors**
 All contributors are recognized in our:
@@ -147,7 +147,7 @@ Outstanding contributors may be invited to:
 - Speak at Taskade events
 - Collaborate on special projects
 
-## 🎯 Priority Areas
+## Priority Areas
 
 We especially welcome contributions in these areas:
 
@@ -169,7 +169,7 @@ We especially welcome contributions in these areas:
 - Improving search functionality
 - Translation to other languages
 
-## 🐛 Reporting Issues
+## Reporting Issues
 
 ### **Found a Problem?**
 If you find issues but can't fix them yourself:
@@ -188,7 +188,7 @@ If you find issues but can't fix them yourself:
 - `good first issue` - Good for new contributors
 - `help wanted` - We need community help
 
-## 💡 Suggesting New Content
+## Suggesting New Content
 
 ### **Content Requests**
 To suggest new documentation:
@@ -207,7 +207,7 @@ Current community requests include:
 - Advanced API usage patterns
 - Performance optimization guides
 
-## 💬 Providing Feedback and Suggestions for Taskade
+## Providing Feedback and Suggestions for Taskade
 
 Your feedback helps us build a better Taskade! We welcome suggestions, bug reports, and feature requests from our community.
 
@@ -390,7 +390,7 @@ Connect with other Taskade users and share your ideas:
 
 Whether it's a small tweak or a game-changing feature, your feedback helps make Taskade better for everyone. We read every suggestion and use them to guide our development priorities.
 
-## 🛠️ Technical Setup
+## Technical Setup
 
 ### **Local Development**
 For advanced contributors who want to preview changes:
@@ -413,7 +413,7 @@ We support standard Markdown plus:
 - Table formatting
 - Emoji shortcodes
 
-## 📞 Getting Help
+## Getting Help
 
 ### **Community Support**
 - [Taskade Community Forum](https://taskade.com/community)
@@ -425,13 +425,13 @@ We support standard Markdown plus:
 - Twitter: [@taskade](https://twitter.com/taskade)
 - GitHub: [@taskade](https://github.com/taskade)
 
-## 📜 License
+## License
 
 By contributing to this documentation, you agree that your contributions will be licensed under the same license as the project.
 
 ---
 
-## 🙏 Thank You
+## Thank You
 
 Every contribution, no matter how small, helps make Taskade better for everyone. We're grateful for your time and effort in improving our documentation.
 

@@ -12,7 +12,7 @@ description: Connect your own branded domain to a published Taskade Genesis app.
 
 ***
 
-## 🌐 What Are Custom Domains?
+## What Are Custom Domains?
 
 Custom domains let your Genesis apps live at your own web address instead of a random Taskade link that screams "I used a free tool."
 
@@ -35,7 +35,7 @@ This simple change makes customers think you hired a team of developers when rea
 
 ***
 
-## ✨ Benefits of Custom Domains
+## Benefits of Custom Domains
 
 ### **Professional Appearance**
 
@@ -67,7 +67,7 @@ This simple change makes customers think you hired a team of developers when rea
 
 ***
 
-## 🚀 Setting Up Custom Domains
+## Setting Up Custom Domains
 
 ### Prerequisites
 
@@ -144,7 +144,7 @@ Domain validation and HTTPS now activate faster via Delegated DCV — Cloudflare
 
 ***
 
-## 🛡️ Enhanced Cloudflare SSL Integration
+## Enhanced Cloudflare SSL Integration
 
 **Latest Enhancement:** Advanced custom domain support with seamless Cloudflare SSL integration for maximum security and performance.
 
@@ -187,7 +187,7 @@ Domain validation and HTTPS now activate faster via Delegated DCV — Cloudflare
 
 **Result:** Enterprise-grade security, global performance, and seamless SSL management for your Genesis apps!
 
-## 🛠 Advanced Domain Configuration
+## Advanced Domain Configuration
 
 ### Multiple Subdomains
 
@@ -228,7 +228,7 @@ project-x.yourcompany.com
 
 ***
 
-## 🎨 Branding Your Custom Domain Apps
+## Branding Your Custom Domain Apps
 
 ### Visual Customization
 
@@ -283,7 +283,7 @@ Subject: Form Submission Notification
 
 ***
 
-## 💼 Use Cases & Examples
+## Use Cases & Examples
 
 ### Agency Client Deliverables
 
@@ -331,7 +331,7 @@ Result: Professional MVP for investor demos
 
 ***
 
-## 🔒 Security & SSL
+## Security & SSL
 
 ### Automatic SSL Certificates
 
@@ -362,7 +362,7 @@ Custom domain apps maintain full privacy protection:
 
 ***
 
-## 📊 Analytics & Monitoring
+## Analytics & Monitoring
 
 ### Domain Performance
 
@@ -408,7 +408,7 @@ fbq('track', 'Lead', {
 
 ***
 
-## 🛠 Troubleshooting
+## Troubleshooting
 
 ### Common DNS Issues
 
@@ -453,7 +453,7 @@ fbq('track', 'Lead', {
 
 ***
 
-## 💡 Best Practices
+## Best Practices
 
 ### Domain Selection
 
@@ -502,7 +502,7 @@ fbq('track', 'Lead', {
 
 ***
 
-## 📈 Scaling with Custom Domains
+## Scaling with Custom Domains
 
 ### Multi-Client Management
 
@@ -546,7 +546,7 @@ asia.company.com  → Asian operations
 
 ***
 
-## 🎯 Common Patterns
+## Common Patterns
 
 Custom domains are commonly used to:
 

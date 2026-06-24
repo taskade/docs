@@ -4,11 +4,11 @@ parent: 'Taskade: The Living DNA Productivity Platform'
 nav_order: 5
 ---
 
-# Chapter 5: Genesis - Building Apps with AI
+# Chapter 5: Taskade Genesis - Building Apps with AI
 
-Brilliant! You've mastered workspaces, projects, AI agents, and automation. Now let's unlock the **ultimate power**—Genesis, the revolutionary AI that builds complete business applications from simple descriptions. This is where your workspace becomes a app factory!
+You've covered workspaces, projects, AI agents, and automation. Now for **Taskade Genesis** — the AI that builds complete business applications from a plain-English description, turning your workspace into an app builder.
 
-## What Problem Does Genesis Solve?
+## What Problem Does Taskade Genesis Solve?
 
 **Building software has always been a barrier:**
 
@@ -19,9 +19,9 @@ Brilliant! You've mastered workspaces, projects, AI agents, and automation. Now 
 
 **Genesis solves this by making app creation as simple as conversation**—describe what you need, and get a working business application in minutes.
 
-## What is Genesis? (The App Factory Revolution)
+## What is Taskade Genesis?
 
-Genesis is Taskade's **AI-powered app builder** that transforms plain English descriptions into complete, working business applications. It's not just a form builder or interface designer—it's a full-stack application generator.
+Taskade Genesis is Taskade's **AI-powered app builder** that transforms plain English descriptions into complete, working business applications. It's not just a form builder or interface designer—it's a full-stack application generator.
 
 ```mermaid
 flowchart TD

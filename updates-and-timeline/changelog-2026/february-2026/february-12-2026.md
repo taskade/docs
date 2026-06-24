@@ -4,7 +4,7 @@
 
 ### Upgrades to Agent Chat
 
-We've upgraded our Agents to better match EVE's capabilities and interface. This update brings a cleaner UI, direct image uploads, and support for all LLM models already supported by EVE.
+We've upgraded our Agents to better match Taskade EVE's capabilities and interface. This update brings a cleaner UI, direct image uploads, and support for all LLM models already supported by EVE.
 
 <figure><img src="../../../.gitbook/assets/Clipboard-20260212-080259-627.gif" alt="" width="563"><figcaption></figcaption></figure>
 

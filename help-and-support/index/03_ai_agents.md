@@ -148,7 +148,7 @@ Give feedback on responses and deploy the agent to start working
 
 ## Industry-Specific Agent Examples (Real-World Applications)
 
-### 🏥 Healthcare Agent
+### Healthcare Agent
 
 **Trained on:** Medical protocols, patient data handling, HIPAA compliance
 
@@ -165,7 +165,7 @@ Give feedback on responses and deploy the agent to start working
 * "Find studies on diabetes management"
 * "Check if this procedure follows our protocols"
 
-### ⚖️ Legal Agent
+### Legal Agent
 
 **Trained on:** Case law, contracts, legal procedures, compliance
 
@@ -182,7 +182,7 @@ Give feedback on responses and deploy the agent to start working
 * "Find similar cases to our current dispute"
 * "Draft a response to this client inquiry"
 
-### 📈 Marketing Agent
+### Marketing Agent
 
 **Trained on:** Brand guidelines, audience data, campaign analytics
 
@@ -199,7 +199,7 @@ Give feedback on responses and deploy the agent to start working
 * "Analyze why last month's campaign got low engagement"
 * "Suggest content ideas for our target audience"
 
-### 🛠️ Customer Service Agent
+### Customer Service Agent
 
 **Trained on:** FAQs, support procedures, product knowledge
 

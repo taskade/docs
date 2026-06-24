@@ -107,7 +107,7 @@ When [TRIGGER EVENT], automatically [AUTOMATED ACTION].
 * Add automations: [Automation Getting Started](../genesis-living-system-builder/automation/)
 * Publish professionally: [Custom Domains & Branding](../genesis-living-system-builder/space-apps-guide/custom-domains.md)
 
-## ✅ Quick Start Checklist
+## Quick Start Checklist
 
 Use this checklist to make sure you've mastered the Taskade Genesis interface:
 

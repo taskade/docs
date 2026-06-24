@@ -20,7 +20,7 @@ Taskade connects to **100+ tools and services** across communication, productivi
 
 ## Categories
 
-### 🗣️ Communication & Collaboration
+### Communication & Collaboration
 
 | Service | Triggers | Actions | Authentication |
 |---------|----------|---------|----------------|
@@ -33,7 +33,7 @@ Taskade connects to **100+ tools and services** across communication, productivi
 | **Email (SMTP)** | New email received | Send email, create campaign | SMTP Credentials |
 | **Gmail** | New email, label added (including label-filtered), new email matching filter | Send email, reply to email, get email, create draft, add label | OAuth 2.0 |
 
-### 🛠️ Development & Project Management
+### Development & Project Management
 
 | Service | Triggers | Actions | Authentication |
 |---------|----------|---------|----------------|
@@ -48,7 +48,7 @@ Taskade connects to **100+ tools and services** across communication, productivi
 | **Todoist** | Task completed | Create task, update task, complete task, delete task, find task | OAuth 2.0 / API Key |
 | **Trello** | Card created, moved | Create card, move card, add member | OAuth 2.0 / API Key |
 
-### 📊 Data & Analytics
+### Data & Analytics
 
 | Service | Triggers | Actions | Authentication |
 |---------|----------|---------|----------------|
@@ -63,7 +63,7 @@ Taskade connects to **100+ tools and services** across communication, productivi
 | **Pipedrive** | Deal created, activity added | Create deal, add activity, update stage | OAuth 2.0 / API Key |
 | **Custom Webhooks** | Webhook received | Send HTTP request, trigger workflow | API Key / Bearer Token |
 
-### 📧 Marketing & Sales
+### Marketing & Sales
 
 | Service | Triggers | Actions | Authentication |
 |---------|----------|---------|----------------|
@@ -75,7 +75,7 @@ Taskade connects to **100+ tools and services** across communication, productivi
 | **Shopify** | Order created, product updated | Create order, update inventory, send notification | OAuth 2.0 / API Key |
 | **WooCommerce** | Order placed, customer registered | Update order, manage inventory, send email | REST API / API Key |
 
-### 🌐 Web & Content
+### Web & Content
 
 | Service | Triggers | Actions | Authentication |
 |---------|----------|---------|----------------|
@@ -88,7 +88,7 @@ Taskade connects to **100+ tools and services** across communication, productivi
 | **YouTube** | Video uploaded, comment added | Upload video, update metadata, respond | OAuth 2.0 / API Key |
 | **Medium** | Story published, clap received | Publish story, update profile, send response | OAuth 2.0 / API Key |
 
-### 🔧 Custom & Developer
+### Custom & Developer
 
 | Service | Triggers | Actions | Authentication |
 |---------|----------|---------|----------------|
@@ -289,7 +289,7 @@ WhatsApp Business integration enhances your communication strategy by automating
 
 ---
 
-## 🏢 **Enterprise Integration Patterns**
+## **Enterprise Integration Patterns**
 
 ### **Advanced CRM Workflows**
 

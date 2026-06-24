@@ -19,7 +19,7 @@ Taskade provides a complete platform for building intelligent applications:
 
 The API is built around real-time data synchronization and a unified intelligence layer that powers everything from simple CRUD operations to complex AI-driven workflows.
 
-## 🚀 Quick Start
+## Quick Start
 
 {% tabs %}
 {% tab title="First API Call" %}
@@ -68,7 +68,7 @@ Official libraries and tools:
 {% endtab %}
 {% endtabs %}
 
-## 🛠️ Core APIs
+## Core APIs
 
 ### [**Workspaces & Projects**](../comprehensive-api-guide/workspaces/)
 
@@ -82,7 +82,7 @@ Official libraries and tools:
 
 **Stateful AI agents with persistent memory and tool access**. Each agent maintains its own knowledge graph derived from project data, documents, and conversation history. Agents can be composed into multi-agent workflows with dependency resolution and error handling.
 
-## ⚡ Automations & Integrations
+## Automations & Integrations
 
 ### [**Automation System**](../../genesis-living-system-builder/automation/)
 
@@ -96,7 +96,7 @@ Official libraries and tools:
 
 **100+ pre-built connectors with OpenAPI 3.0 compliance**. Each integration includes rate limiting, authentication handling, and automatic schema validation. Custom integrations support GraphQL subscriptions and WebSocket streaming.
 
-## 🎯 Genesis API
+## Genesis API
 
 ### [**Taskade Genesis**](../../genesis-living-system-builder/genesis/)
 
@@ -104,7 +104,7 @@ Build complete web applications from natural language prompts. Taskade Genesis h
 
 [**Create Your First App →**](https://www.taskade.com/learn/genesis/first-app)
 
-## 📚 Resources
+## Resources
 
 ### [**OpenAPI Specification**](https://www.taskade.com/api/documentation/v1)
 
@@ -118,7 +118,7 @@ Official and community-maintained libraries for popular languages.
 
 **Performance characteristics and scaling guidelines**. The platform is built for high-throughput applications with enterprise-grade performance. Rate limits are implemented to ensure fair usage across all users. Includes guidance on connection pooling, request batching, and optimal retry strategies.
 
-## 🤝 Community & Support
+## Community & Support
 
 | Resource                                                            | Description                                   |
 | ------------------------------------------------------------------- | --------------------------------------------- |

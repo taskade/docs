@@ -2,7 +2,7 @@
 
 Real-world automation workflows that you can implement immediately. Each recipe includes the complete configuration, setup instructions, and customization options.
 
-## 📝 Content Creation & Marketing
+## Content Creation & Marketing
 
 ### Recipe 1: Daily Blog Article Generator
 
@@ -295,7 +295,7 @@ Include actions to update the task status and posting timestamp after successful
 * **Approval Workflows**: Add review steps before posting
 * **Performance Tracking**: Monitor engagement and adjust strategies
 
-## 🎯 Lead Generation & Sales
+## Lead Generation & Sales
 
 ### Recipe 3: Lead Capture & Qualification
 
@@ -416,7 +416,7 @@ Include actions to update the task status and posting timestamp after successful
 2. Ensure your HubSpot deal pipeline has a stage named "proposal\_sent".
 3. Create an email template named `proposal_followup`.
 
-## 🎧 Customer Support
+## Customer Support
 
 ### Recipe 5: Intelligent Ticket Routing
 
@@ -480,7 +480,7 @@ Include actions to update the task status and posting timestamp after successful
 2. Connect your email and Slack integrations.
 3. Set up Taskade projects corresponding to the `project_id` your agent will return.
 
-## 📝 Content Operations
+## Content Operations
 
 ### Recipe 6: Content Creation Pipeline
 
@@ -522,7 +522,7 @@ Include actions to update the task status and posting timestamp after successful
 }
 ```
 
-## 🔧 Development & Project Management
+## Development & Project Management
 
 ### Recipe 7: GitHub Issue to Project Task
 
@@ -557,7 +557,7 @@ Include actions to update the task status and posting timestamp after successful
 }
 ```
 
-## 📊 Data Processing & Analytics
+## Data Processing & Analytics
 
 ### Recipe 8: Weekly Analytics Report
 
@@ -592,7 +592,7 @@ Include actions to update the task status and posting timestamp after successful
 }
 ```
 
-## 🏢 HR & Operations
+## HR & Operations
 
 ### Recipe 9: Employee Onboarding Automation
 
@@ -624,7 +624,7 @@ Include actions to update the task status and posting timestamp after successful
 }
 ```
 
-## 🎯 E-commerce & Sales
+## E-commerce & Sales
 
 ### Recipe 10: Abandoned Cart Recovery
 
@@ -657,7 +657,7 @@ Include actions to update the task status and posting timestamp after successful
 }
 ```
 
-## 🔧 Custom Recipe Builder
+## Custom Recipe Builder
 
 ### Template Structure
 
