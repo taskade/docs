@@ -40,7 +40,7 @@ redirects:
 
 integrations:
   googleAnalytics:
-    trackingId: "GA-TRACKING-ID"
+    trackingId: "G-WWJTNN1SFE"
   intercom:
     appId: "INTERCOM_APP_ID"
   
