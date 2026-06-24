@@ -2,28 +2,6 @@
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [The 12 Prompt Principles](#the-12-prompt-principles)
-  - [1. Set Objectives](#id-1.-set-objectives)
-  - [2. Describe Outcomes](#id-2.-describe-outcomes)
-  - [3. Explain the Journey](#id-3.-explain-the-journey)
-  - [4. Break Down Ideas](#id-4.-break-down-ideas)
-  - [5. Connect Tools](#id-5.-connect-tools)
-  - [6. Set the Tone](#id-6.-set-the-tone)
-  - [7. Choose Look & Feel](#id-7.-choose-look-and-feel)
-  - [8. Define Access](#id-8.-define-access)
-  - [9. Iterate Easily](#id-9.-iterate-easily)
-  - [10. Reference](#id-10.-reference)
-  - [11. Provide Examples](#id-11.-provide-examples)
-  - [12. Experiment](#id-12.-experiment)
-- [Prompt Anatomy Quick Reference](#prompt-anatomy-quick-reference)
-- [Common Mistakes to Avoid](#common-mistakes-to-avoid)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 AI prompts are the key to building exactly what you envision. A prompt is simply the description of what you want to build — think of it as explaining your app idea to a colleague who can build it for you. The clearer your explanation, the better your app turns out.

@@ -59,6 +59,7 @@ This document provides a complete reference of all available integrations, trigg
 
 | Trigger            | Description             | Properties                            |
 | ------------------ | ----------------------- | ------------------------------------- |
+| `schedule.minutes` | Every X Minutes (Scheduled) — sub-hourly polling, paid-plan gated | `intervalMinutes` (5 / 10 / 15 / 30) |
 | `schedule.hourly`  | Every Hour (Scheduled)  | -                                     |
 | `schedule.daily`   | Every Day (Scheduled)   | `timeOfDay`, `timezone`               |
 | `schedule.weekly`  | Every Week (Scheduled)  | `dayOfWeek`, `timeOfDay`, `timezone`  |
