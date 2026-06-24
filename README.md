@@ -1,18 +1,20 @@
 ---
-description: Build apps, deploy AI agents, and automate workflows on Taskade — the AI-native platform with living DNA where projects, agents, and automations connect as one.
+description: Describe your business in plain English and get a real, running app — CRM, client portal, or ops dashboard — with logins and your own domain. No code, plus a full developer API.
 cover: .gitbook/assets/ss-api3.png
 coverY: 0
 ---
 
 # Build on Taskade
 
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>🛠️ Build a business app — no code</strong></td><td>Describe it in plain English. Get a CRM, client portal, or ops dashboard — with logins and your own domain.</td><td><a href="genesis-living-system-builder/genesis/getting-started.md">Start building →</a></td></tr><tr><td><strong>💻 Build on the API — developers</strong></td><td>REST API v1, Action API v2, MCP, SDK, and webhooks for programmatic access.</td><td><a href="apis-living-system-development/developer-home.md">Developer platform →</a></td></tr></tbody></table>
+
 {% hint style="success" %}
-**New here?** Start with the [Quick Start Guide](getting-started/), learn the platform architecture via [Workspace DNA](genesis-living-system-builder/genesis/workspace-dna.md), or go straight to the [Developer Portal](apis-living-system-development/developer-home.md) to build on the API.
+**Running a real business on a Genesis app?** Follow [Run Your Business on Genesis](genesis-living-system-builder/run-your-business/README.md) — build it, add logins, and put it on your own domain.
 {% endhint %}
 
 ## Welcome to Taskade
 
-**The AI-Native Platform for Building Intelligent Applications**
+**Describe your business in plain English — get a real, running app you can put on your own domain.**
 
 Build complete business applications, websites, and tools using natural language. Taskade combines an **AI app builder** ([Taskade Genesis](https://www.taskade.com/create)), **workflow automation engine**, **AI agents platform**, and **automatic deployment** into a unified workspace.
 
@@ -81,4 +83,4 @@ Use this as the canonical overview: [Workspace DNA](genesis-living-system-builde
 
 ### Explore docs
 
-<table data-view="cards"><thead><tr><th>Topic</th><th data-card-target data-type="content-ref">Link</th></tr></thead><tbody><tr><td>Workspace DNA (canonical)</td><td><a href="genesis-living-system-builder/genesis/workspace-dna.md">workspace-dna.md</a></td></tr><tr><td>Genesis (build apps)</td><td><a href="genesis-living-system-builder/genesis/">genesis</a></td></tr><tr><td>AI Agents</td><td><a href="genesis-living-system-builder/ai-features/ai-agents-getting-started.md">ai-agents-getting-started.md</a></td></tr><tr><td>Automations</td><td><a href="genesis-living-system-builder/automation/">automation</a></td></tr><tr><td>Developers</td><td><a href="apis-living-system-development/developer-home.md">developer-home.md</a></td></tr><tr><td>Help &#x26; Support</td><td><a href="help-center/">help-center</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th>Topic</th><th data-card-target data-type="content-ref">Link</th></tr></thead><tbody><tr><td>Run a business on Genesis</td><td><a href="genesis-living-system-builder/run-your-business/README.md">Run Your Business</a></td></tr><tr><td>Workspace DNA (canonical)</td><td><a href="genesis-living-system-builder/genesis/workspace-dna.md">Workspace DNA</a></td></tr><tr><td>Genesis (build apps)</td><td><a href="genesis-living-system-builder/genesis/">Taskade Genesis</a></td></tr><tr><td>AI Agents</td><td><a href="genesis-living-system-builder/ai-features/ai-agents-getting-started.md">AI Agents: Getting Started</a></td></tr><tr><td>Automations</td><td><a href="genesis-living-system-builder/automation/">Automations</a></td></tr><tr><td>Developers</td><td><a href="apis-living-system-development/developer-home.md">Developer Platform</a></td></tr><tr><td>Help &#x26; Support</td><td><a href="help-center/">Help &#x26; Support</a></td></tr></tbody></table>

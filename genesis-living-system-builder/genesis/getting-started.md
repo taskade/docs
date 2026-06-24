@@ -338,21 +338,32 @@ Here are what other users built in their first 5 minutes:
 
 ## What's Next?
 
-Congratulations! You've built your first Genesis app. Here's how to take it further:
+Congratulations! You've built your first Genesis app. Here's how to take it further, in two phases.
 
-### **Immediate Next Steps**
+### **Phase 1 — Build**
+
+#### **Immediate Next Steps**
 
 1. **Share your app** with real users and customers
 2. **Monitor the data** coming in and usage patterns
 3. **Collect feedback** on what works well and what could be improved
 4. **Make refinements** based on real-world usage
 
-### **Expanding Your App**
+#### **Expanding Your App**
 
 * **Add more automation** connections to other business tools
 * **Create related apps** for other business processes
 * **Train team members** to build their own solutions
 * **Scale up** with enterprise features as you grow
+
+### **Phase 2 — Run it as a business**
+
+Turn your 5-minute app into a business you run.
+
+* [**Run Your Business on Genesis →**](../run-your-business/README.md) - The full track, from a working app to a live business
+* [**Add login & roles →**](../run-your-business/add-login-and-roles.md) - Gate access and give each user the right view
+* [**Put it on your own domain →**](../space-apps-guide/custom-domains.md) - Publish under your branded domain
+* [**Go-live checklist →**](../run-your-business/go-live-checklist.md) - Final checks before you send real customers in
 
 ### **Learning Resources**
 
