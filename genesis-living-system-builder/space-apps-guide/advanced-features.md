@@ -1,6 +1,6 @@
 # Advanced Features
 
-Ready to take your Genesis app to the next level? These powerful features help you build even smarter and more capable applications. No coding required—just plain English descriptions of what you want!
+Ready to take your Taskade Genesis app to the next level? These powerful features help you build even smarter and more capable applications. No coding required—just plain English descriptions of what you want!
 
 ## How Genesis Gets So Smart
 

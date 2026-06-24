@@ -21,7 +21,7 @@
 
 Taskade is designed for teams of any size. This guide covers the different ways to organize your workspace — from small teams to large enterprises — and how AI-powered features amplify team productivity.
 
-> **Genesis hint:** Teams that use Genesis apps can give every department custom internal tools, dashboards, and client portals — all connected to the same Workspace DNA.
+> **Taskade Genesis hint:** Teams that use Genesis apps can give every department custom internal tools, dashboards, and client portals — all connected to the same Workspace DNA.
 
 ---
 

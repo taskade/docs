@@ -1,6 +1,6 @@
 ---
 description: >-
-  A go-live checklist for launching your Genesis business app to real users —
+  A go-live checklist for launching your Taskade Genesis business app to real users —
   secrets, logins, your domain, and credits, all in one place.
 ---
 
@@ -13,7 +13,7 @@ You described an app, shaped your data, and it works. Before you put it in front
 ### 🔐 Security
 
 * [ ] **Secrets are vaulted, not hardcoded.** Any API key, token, or password your app uses lives in the secret vault — never pasted into a prompt or page. → [App Secrets](../space-apps-guide/app-secrets.md)
-* [ ] **The publish guard passed.** Genesis blocks publishing if it spots a hardcoded credential; resolve any warning before launch. → [App Secrets](../space-apps-guide/app-secrets.md)
+* [ ] **The publish guard passed.** Taskade Genesis blocks publishing if it spots a hardcoded credential; resolve any warning before launch. → [App Secrets](../space-apps-guide/app-secrets.md)
 
 ### 👤 Access & data
 

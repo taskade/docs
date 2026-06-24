@@ -190,8 +190,8 @@ The Task Assigned trigger automatically runs workflows whenever a task is assign
 
 | Use Case | Automation Flow | Business Impact |
 |----------|-----------------|-----------------|
-| **Task Onboarding** | Task Assigned → Generate Checklist → Send Welcome Email | 40% faster task preparation |
-| **Content Creation** | Task Assigned → Create Draft → Set Up Review Process | 60% reduction in content creation time |
+| **Task Onboarding** | Task Assigned → Generate Checklist → Send Welcome Email | Faster, consistent task preparation |
+| **Content Creation** | Task Assigned → Create Draft → Set Up Review Process | Drafts and review steps created automatically |
 | **Project Communication** | Task Assigned → Notify Stakeholders → Set Up Status Updates | Improved team coordination |
 | **Resource Allocation** | Task Assigned → Update Capacity → Balance Workload | Optimized resource utilization |
 | **Quality Control** | Task Assigned → Validate Requirements → Flag Missing Info | Consistent task quality |
@@ -283,7 +283,7 @@ The Task Due trigger automatically runs workflows when a task's due date is reac
 
 | Use Case | Automation Flow | Business Impact |
 |----------|-----------------|-----------------|
-| **Content Publishing** | Task Due → Generate Content → Publish | 100% on-time content delivery |
+| **Content Publishing** | Task Due → Generate Content → Publish | On-time, scheduled content delivery |
 | **Email Automation** | Task Due → Send Reminder → Follow-up Sequence | Improved response rates |
 | **Project Milestones** | Task Due → Review Process → Next Phase | Accelerated project completion |
 | **Quality Control** | Task Due → Automated Review → Approval Gate | Consistent quality standards |
@@ -378,7 +378,7 @@ The New Comment trigger automatically runs workflows whenever a comment is added
 
 | Use Case | Automation Flow | Business Impact |
 |----------|-----------------|-----------------|
-| **Team Feedback Alerts** | New Comment → Slack Message → Add Follow-up Task | 50% faster feedback response |
+| **Team Feedback Alerts** | New Comment → Slack Message → Add Follow-up Task | Faster feedback response |
 | **Documentation Updates** | New Comment → Append to Google Doc | Real-time knowledge base updates |
 | **Bug Tracking** | New Comment → Create GitHub Issue → Assign Developer | Streamlined issue management |
 | **Meeting Scheduling** | New Comment → Create Calendar Event → Send Confirmation | Improved client communication |
@@ -505,9 +505,9 @@ The Task Added trigger automatically runs workflows whenever a new task is creat
 
 | Use Case | Automation Flow | Business Impact |
 |----------|-----------------|-----------------|
-| **Team Notifications** | Task Added → Slack Message | 50% faster response to new work |
+| **Team Notifications** | Task Added → Slack Message | Faster response to new work |
 | **Task Tracking** | Task Added → Google Sheets Row | Complete project visibility |
-| **Content Generation** | Task Added → AI Generation | 60% faster content creation |
+| **Content Generation** | Task Added → AI Generation | Drafts generated automatically |
 | **Lead Processing** | Task Added → CRM Update | Streamlined sales workflow |
 | **Quality Control** | Task Added → Validation Check | Consistent task standards |
 

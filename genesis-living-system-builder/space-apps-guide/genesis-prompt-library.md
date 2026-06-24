@@ -1,6 +1,6 @@
 # Intelligent Prompt Library
 
-Master Genesis with proven prompts organized by business function. Copy, paste, and customize these prompts to build your perfect app in minutes.
+Master Taskade Genesis with proven prompts organized by business function. Copy, paste, and customize these prompts to build your perfect app in minutes.
 
 ## 📚 The Complete Guide to Writing Effective Genesis Prompts
 

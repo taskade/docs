@@ -20,7 +20,7 @@ Fully hosted MCP server — no self-hosting required. Deeper agent-to-external-t
 
 ### Global Language Support
 
-Full internationalization for Genesis app creation, AI chat, credit management, authentication, and error screens. Tens of thousands of new translated strings across the platform.
+Full internationalization for Taskade Genesis app creation, AI chat, credit management, authentication, and error screens. Tens of thousands of new translated strings across the platform.
 
 ***
 

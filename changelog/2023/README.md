@@ -2,7 +2,7 @@
 
 **The AI Transformation Year** - 18+ major AI releases. The evolution from AI assistant to intelligent teammates who think, learn, and collaborate.
 
-> *"2023 was the year we taught AI to be more than a tool. Our agents became teammates, collaborators, and specialized experts. They didn't just respond to commands - they anticipated needs, worked together, and laid the foundation for what would become Genesis."*
+> *"2023 was the year we taught AI to be more than a tool. Our agents became teammates, collaborators, and specialized experts. They didn't just respond to commands - they anticipated needs, worked together, and laid the foundation for what would become Taskade Genesis."*
 
 ---
 

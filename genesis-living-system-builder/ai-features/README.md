@@ -72,7 +72,7 @@ Start here:
 ### Where it shows up
 
 * In your workspace as an assistant.
-* Inside Genesis apps as an AI layer.
+* Inside Taskade Genesis apps as an AI layer.
 * In automations as a decision-maker.
 
 Next:

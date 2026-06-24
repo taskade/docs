@@ -6,7 +6,7 @@
 
 AI prompts are the key to building exactly what you envision. A prompt is simply the description of what you want to build — think of it as explaining your app idea to a colleague who can build it for you. The clearer your explanation, the better your app turns out.
 
-This guide covers **12 proven principles** for writing effective Genesis prompts.
+This guide covers **12 proven principles** for writing effective Taskade Genesis prompts.
 
 > **Workspace DNA hint:** The better your prompts, the richer your workspace DNA becomes. Every app you build adds to your [Intelligence Score](./how-genesis-works.md#workspace-intelligence-score) and makes future apps smarter.
 

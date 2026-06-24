@@ -26,7 +26,7 @@
 
 Agent knowledge is the information your custom AI agents use to provide **contextual, accurate responses**. It combines pre-trained AI capabilities with **your own data** — documents, URLs, projects, and media — to create agents that truly understand your business.
 
-> **Workspace DNA connection:** Knowledge is what transforms a generic AI into a specialist. The more knowledge you add, the richer your [Workspace DNA](../genesis/how-genesis-works.md) becomes, and the smarter all your Genesis apps get.
+> **Workspace DNA connection:** Knowledge is what transforms a generic AI into a specialist. The more knowledge you add, the richer your [Workspace DNA](../genesis/how-genesis-works.md) becomes, and the smarter all your Taskade Genesis apps get.
 
 ---
 

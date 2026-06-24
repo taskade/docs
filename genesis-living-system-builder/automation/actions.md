@@ -133,7 +133,7 @@ The Find Task(s) action enables dynamic task retrieval within automation workflo
 
 | Use Case                    | Automation Flow                                               | Business Impact                   |
 | --------------------------- | ------------------------------------------------------------- | --------------------------------- |
-| **Overdue Task Alerts**     | Schedule → Find Tasks (overdue) → Send Email                  | 40% reduction in missed deadlines |
+| **Overdue Task Alerts**     | Schedule → Find Tasks (overdue) → Send Email                  | Fewer missed deadlines            |
 | **Weekly Progress Reports** | Schedule → Find Tasks (completed this week) → Generate Report | Better project visibility         |
 | **Workload Balancing**      | Schedule → Find Tasks (by assignee) → Reassign Tasks          | Optimized team productivity       |
 | **Quality Assurance**       | Schedule → Find Tasks (missing details) → Flag for Review     | Improved task quality             |
@@ -247,7 +247,7 @@ The Update Custom Fields action allows you to automatically update custom fields
 | **Add Project to Agent Knowledge**   | Automatically trains AI agents with project content | `agentId`, `projectId`             | Keep agents updated with latest project information |
 
 {% hint style="info" %}
-**Genesis self-assembly capability:** Flows can programmatically assemble and configure agents at runtime — this is the mechanism that powers Genesis self-assembly features. If you are building advanced Genesis flows, check the in-app action picker for current availability of agent-assembly steps; the exact surface exposed to automation builders may vary by plan.
+**Taskade Genesis self-assembly capability:** Flows can programmatically assemble and configure agents at runtime — this is the mechanism that powers Genesis self-assembly features. If you are building advanced Genesis flows, check the in-app action picker for current availability of agent-assembly steps; the exact surface exposed to automation builders may vary by plan.
 {% endhint %}
 
 ### Ask Agent With Structured Output Settings
@@ -837,9 +837,9 @@ The Categorize with AI action automatically analyzes, classifies, and organizes 
 
 | Use Case               | Automation Flow                                 | Business Impact                         |
 | ---------------------- | ----------------------------------------------- | --------------------------------------- |
-| **Sentiment Analysis** | Form Submission → Categorize → Route Response   | 60% faster customer response time       |
-| **Lead Qualification** | New Contact → Categorize → Assign Sales Rep     | 40% improvement in conversion rates     |
-| **Support Routing**    | Ticket Created → Categorize → Assign Agent      | 50% reduction in ticket resolution time |
+| **Sentiment Analysis** | Form Submission → Categorize → Route Response   | Faster, routed customer responses       |
+| **Lead Qualification** | New Contact → Categorize → Assign Sales Rep     | Leads routed to the right rep           |
+| **Support Routing**    | Ticket Created → Categorize → Assign Agent      | Tickets categorized and assigned        |
 | **Content Moderation** | User Post → Categorize → Approve/Reject         | Maintains community standards           |
 | **Feedback Analysis**  | Survey Response → Categorize → Update Dashboard | Data-driven product improvements        |
 

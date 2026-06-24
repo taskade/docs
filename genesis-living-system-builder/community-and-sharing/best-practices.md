@@ -1,6 +1,6 @@
 # Best Practices for Genesis Success
 
-Learn from successful Genesis users to build better apps faster and avoid common pitfalls.
+Learn from successful Taskade Genesis users to build better apps faster and avoid common pitfalls.
 
 ## Writing Effective Prompts
 

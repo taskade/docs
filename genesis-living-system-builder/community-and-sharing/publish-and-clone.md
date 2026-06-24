@@ -26,7 +26,7 @@
 
 ## Overview
 
-Once you've built an app with Genesis, you can share it with the world in multiple ways — from private team tools to public community templates. This guide covers every publishing, sharing, and distribution option available.
+Once you've built an app with Taskade Genesis, you can share it with the world in multiple ways — from private team tools to public community templates. This guide covers every publishing, sharing, and distribution option available.
 
 > **Haven't built an app yet?** Start with [Create Your First App](../genesis/getting-started.md).
 

@@ -159,7 +159,7 @@ Multi-agent chats support both AI agents and human team members in the same conv
 | **Within workspace** | Team members | Agents are available to all workspace members by default |
 | **Cross-workspace** | Other workspaces | Publish publicly → Clone |
 | **Public** | Anyone | Publish with public toggle |
-| **Embedded in Genesis app** | App users | Add agent chat widget to your Genesis app |
+| **Embedded in Taskade Genesis app** | App users | Add agent chat widget to your Genesis app |
 
 ---
 

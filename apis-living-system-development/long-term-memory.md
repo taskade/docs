@@ -53,7 +53,7 @@ graph TB
 
 **Why this matters:**
 
-- **Transparency** — you see exactly what EVE remembers.
+- **Transparency** — you see exactly what Taskade EVE remembers.
 - **Controllability** — edit or delete memory blocks like any project content.
 - **Composability** — use memory as an input to automations, agents, or other apps.
 - **Portability** — memory is part of your workspace, not locked in a separate system.

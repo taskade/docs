@@ -1,6 +1,6 @@
 # GenesisAuth
 
-A dedicated security layer for Taskade Genesis apps. Every Genesis app can ship with real user accounts and secure sign-in — no code, no third-party provider setup, no DevOps.
+A dedicated security layer for Taskade Genesis apps. Every Taskade Genesis app can ship with real user accounts and secure sign-in — no code, no third-party provider setup, no DevOps.
 
 ---
 

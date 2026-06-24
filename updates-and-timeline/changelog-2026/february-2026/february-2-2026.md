@@ -40,7 +40,7 @@ All major AI models are now available directly in the agent interface. A new mod
 * Community profiles are now public by default.
 * Integrated search filter and multi-select for bulk actions in List View.
 * Better retry handling for failed automation runs and improved toast alerts.
-* Custom favicon support for Genesis apps for better branding.
+* Custom favicon support for Taskade Genesis apps for better branding.
 * New "Popular" section in Actions Menu with Content & Media grouping.
 * Rename and delete agent conversations from the chat panel.
 * Mobile-optimized list view with better touch interactions.

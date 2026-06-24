@@ -1,7 +1,7 @@
 ---
 description: >-
   Understand the three-pillar architecture that powers every Taskade workspace
-  and Genesis app: Memory, Intelligence, and Execution.
+  and Taskade Genesis app: Memory, Intelligence, and Execution.
 ---
 
 # Workspace DNA

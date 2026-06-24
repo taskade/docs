@@ -8,14 +8,14 @@ description: >-
 
 **Describe your business in plain English and get a real, running app — then put it on your own domain with logins and run your operation on it.** No code. No sales call.
 
-Thousands of operators — consultants, clinics, realtors, agencies, construction and logistics teams — already run their day-to-day on a Genesis app. This track stitches the pieces into one path: **build → add your data → add logins → put it on your domain → go live.**
+Thousands of operators — consultants, clinics, realtors, agencies, construction and logistics teams — already run their day-to-day on a Taskade Genesis app. This track stitches the pieces into one path: **build → add your data → add logins → put it on your domain → go live.**
 
 ***
 
 ## Pick what you're building
 
 {% hint style="info" %}
-New to Genesis? Start with [Your first app in 5 minutes](../genesis/getting-started.md), then come back here to turn it into a business you run.
+New to Taskade Genesis? Start with [Your first app in 5 minutes](../genesis/getting-started.md), then come back here to turn it into a business you run.
 {% endhint %}
 
 | You want to… | Start here |
@@ -34,7 +34,7 @@ New to Genesis? Start with [Your first app in 5 minutes](../genesis/getting-star
 {% step %}
 #### Build it
 
-Describe the app you want to Genesis and iterate until it works. → [Getting started](../genesis/getting-started.md)
+Describe the app you want to Taskade Genesis and iterate until it works. → [Getting started](../genesis/getting-started.md)
 {% endstep %}
 
 {% step %}

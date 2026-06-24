@@ -6,7 +6,7 @@ nav_order: 6
 
 # Chapter 6: Integrations - Connecting Your Tools
 
-Perfect! You've mastered building apps with Genesis. Now let's **connect your entire ecosystem**—linking Taskade to 100+ business tools for seamless workflows. This is where your workspace becomes the central nervous system of your business!
+Perfect! You've mastered building apps with Taskade Genesis. Now let's **connect your entire ecosystem**—linking Taskade to 100+ business tools for seamless workflows. This is where your workspace becomes the central nervous system of your business!
 
 ## What Problem Do Integrations Solve?
 

@@ -96,7 +96,7 @@ Create `.md` files directly in Taskade and use them as project sources:
 | 4 | Paste Markdown-formatted text |
 | 5 | The `.md` file is created and added to the **Media Tab** |
 
-> Created Markdown documents can be used as agent knowledge, project context, or Genesis app context.
+> Created Markdown documents can be used as agent knowledge, project context, or Taskade Genesis app context.
 
 ---
 

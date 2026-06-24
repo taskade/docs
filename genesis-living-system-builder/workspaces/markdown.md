@@ -34,7 +34,7 @@ Markdown is a lightweight markup language that uses characters like `*`, `#`, an
 | **AI Agents** | Fine-tune agents using Markdown knowledge; structure prompts in agent chat |
 | **Chat & Comments** | Format team messages and task comments |
 | **Quick Add widget** | Add formatted notes and tasks from the desktop/browser widget |
-| **Genesis Context** | Upload `.md` files as app-building context |
+| **Taskade Genesis Context** | Upload `.md` files as app-building context |
 
 ---
 

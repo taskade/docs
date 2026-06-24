@@ -5,7 +5,7 @@ description: >-
 
 # Changelog (2017 - 2025)
 
-Welcome to Taskade's changelog! This chronicles our extraordinary journey from a simple task management tool to **Genesis** - the world's first AI-powered platform that turns a single prompt into a living, intelligent application.
+Welcome to Taskade's changelog! This chronicles our extraordinary journey from a simple task management tool to **Taskade Genesis** - the world's first AI-powered platform that turns a single prompt into a living, intelligent application.
 
 > _"From humble beginnings to the HyperCard moment for the AI era. This is the story of how teams learned to think in tasks, not prompts, and how one prompt became one app."_
 

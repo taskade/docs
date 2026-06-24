@@ -1,6 +1,6 @@
 ---
 description: >-
-  Store API keys and tokens in a per-space vault, then reference them safely in Genesis app code — real credentials never leave the server.
+  Store API keys and tokens in a per-space vault, then reference them safely in Taskade Genesis app code — real credentials never leave the server.
 ---
 
 # App Secrets & External API Calls

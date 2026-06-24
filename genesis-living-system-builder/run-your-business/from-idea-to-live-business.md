@@ -12,13 +12,13 @@ You have a business problem and an idea for an app that fixes it. This guide is 
 
 ## Step 1 — Describe your app to Genesis
 
-Start with the problem, not the software. Tell Genesis what you do, who will use the app, and what should happen when they use it. EVE turns that description into a working app — the screens, the data behind them, and the logic that connects them. This is where your idea becomes something you can click. You build by describing changes in plain English, so refining is just another sentence.
+Start with the problem, not the software. Tell Taskade Genesis what you do, who will use the app, and what should happen when they use it. EVE turns that description into a working app — the screens, the data behind them, and the logic that connects them. This is where your idea becomes something you can click. You build by describing changes in plain English, so refining is just another sentence.
 
-→ Full guide: [Getting Started with Genesis](../genesis/getting-started.md)
+→ Full guide: [Getting Started with Taskade Genesis](../genesis/getting-started.md)
 
 ## Step 2 — Shape your data into a system of record
 
-Every real business app remembers things — customers, bookings, orders, requests. Genesis creates the databases your app needs automatically, and this is where you shape them: name your fields clearly, link related records, and choose the view (table, board, calendar, and more) that matches how you actually work. Get this right and your app stops being a form and becomes a single source of truth your whole business runs on.
+Every real business app remembers things — customers, bookings, orders, requests. Taskade Genesis creates the databases your app needs automatically, and this is where you shape them: name your fields clearly, link related records, and choose the view (table, board, calendar, and more) that matches how you actually work. Get this right and your app stops being a form and becomes a single source of truth your whole business runs on.
 
 → Full guide: [Projects & Databases](../workspaces/projects-databases.md)
 
@@ -50,5 +50,5 @@ Your app runs on AI, and AI runs on credits. Before launch, match your plan and 
 
 * [Go-Live Checklist](./go-live-checklist.md) — final pre-launch pass before you share the link
 * [Add Login & Roles](./add-login-and-roles.md) — go deeper on accounts and access control
-* [Getting Started with Genesis](../genesis/getting-started.md) — revisit Step 1 to refine your app
+* [Getting Started with Taskade Genesis](../genesis/getting-started.md) — revisit Step 1 to refine your app
 * [Custom Domains & Branding](../space-apps-guide/custom-domains.md) — polish your branded launch

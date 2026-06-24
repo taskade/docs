@@ -1,6 +1,6 @@
 # 2022 AI & Automation: Think in Tasks, Not Prompts
 
-**The Arrival of Intelligence** - December 12th changes everything. AI becomes contextually aware of projects and tasks, laying the groundwork for Genesis.
+**The Arrival of Intelligence** - December 12th changes everything. AI becomes contextually aware of projects and tasks, laying the groundwork for Taskade Genesis.
 
 > *"December 12, 2022 was our moment of breakthrough. AI stopped being a separate tool and became part of the workspace itself. It understood context, anticipated needs, and began the journey toward true collaboration. This was the day we learned to think in tasks, not prompts."*
 

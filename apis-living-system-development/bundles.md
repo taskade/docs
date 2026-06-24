@@ -1,6 +1,6 @@
 ---
 description: >-
-  Export and import complete Genesis apps and workspaces as portable bundles
+  Export and import complete Taskade Genesis apps and workspaces as portable bundles
   using the Action API v2.
 ---
 

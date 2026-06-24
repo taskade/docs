@@ -1,5 +1,5 @@
 ---
-title: 'Chapter 5: Genesis - Building Apps with AI'
+title: 'Chapter 5: Taskade Genesis - Building Apps with AI'
 parent: 'Taskade: The Living DNA Productivity Platform'
 nav_order: 5
 ---
@@ -226,23 +226,23 @@ Genesis works for virtually any business process:
 * Lead capture connects to sales pipeline automation
 * Support tickets integrate with knowledge base updates
 
-## Real-World Genesis Success Stories
+## Common build patterns
 
-### Restaurant Owner's Feedback System
+### Restaurant feedback system
 
-**Challenge:** "Customers complained but I never knew about issues until too late" **Genesis Solution:** Built feedback app in 3 minutes with auto-alerts **Result:** 40% increase in positive reviews, immediate issue resolution
+**Challenge:** Customer complaints surfaced too late to act on. **What you build:** A feedback app with automatic alerts, so low ratings reach you immediately.
 
-### Consulting Firm's Booking System
+### Consulting booking system
 
-**Challenge:** "Appointment scheduling was chaotic with constant rescheduling" **Genesis Solution:** Created booking app with calendar integration **Result:** 60% reduction in no-shows, automated confirmations
+**Challenge:** Appointment scheduling meant constant rescheduling. **What you build:** A booking app with calendar integration and automated confirmations.
 
-### E-commerce Store's Inventory Tracker
+### E-commerce inventory tracker
 
-**Challenge:** "We kept running out of popular items" **Genesis Solution:** Built inventory app with automated reorder alerts **Result:** 25% reduction in stockouts, better cash flow management
+**Challenge:** Popular items kept running out unnoticed. **What you build:** An inventory app with automated reorder alerts before stock runs low.
 
-### Marketing Agency's Lead Pipeline
+### Marketing lead pipeline
 
-**Challenge:** "Lead information got lost in email threads" **Genesis Solution:** Created lead capture with CRM integration **Result:** 3x faster lead qualification, improved conversion rates
+**Challenge:** Lead information got lost in email threads. **What you build:** A lead-capture app that routes new contacts into a structured pipeline.
 
 ## Professional App Deployment
 
