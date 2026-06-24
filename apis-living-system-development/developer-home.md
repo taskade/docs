@@ -11,7 +11,7 @@ You want to integrate Taskade into your app, automate your workflows, or connect
 ```mermaid
 graph TB
     subgraph "Your Application"
-        APP[Your App / Script / Agent]
+        APP["Your App / Script / Agent"]
     end
 
     subgraph "Integration Surface"
@@ -24,11 +24,11 @@ graph TB
     end
 
     subgraph "Taskade Workspace"
-        PROJECTS[Projects & Tasks]
-        AGENTS[AI Agents<br/>with LTM]
+        PROJECTS["Projects & Tasks"]
+        AGENTS["AI Agents<br/>with LTM"]
         AUTOMATIONS[Automations]
-        MEDIA[Media & Bundles]
-        APP_SRC[Genesis App Source]
+        MEDIA["Media & Bundles"]
+        APP_SRC["Taskade Genesis App Source"]
     end
 
     APP --> API1

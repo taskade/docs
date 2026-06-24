@@ -2,7 +2,7 @@
 
 Taskade enables seamless real-time and asynchronous collaboration across teams. Use chat, video, presence, and comments to stay aligned while work happens in projects, agents, and automations.
 
-## 🔄 Real-Time Collaboration
+## Real-Time Collaboration
 
 **Live Co-Editing**
 
@@ -25,7 +25,7 @@ Taskade enables seamless real-time and asynchronous collaboration across teams. 
 * Offline changes sync when reconnected
 * Version consistency maintained automatically
 
-## 💬 Chat and Messaging
+## Chat and Messaging
 
 ### Asynchronous vs Real-Time Collaboration
 
@@ -238,7 +238,7 @@ For confidential or one-on-one communications:
 * **Notification Controls**: Customize chat notification preferences
 * **Chat Backup**: Automatic preservation of conversation history
 
-## 📹 Video Calls
+## Video Calls
 
 **Integrated Video Calling**
 
@@ -261,7 +261,7 @@ For confidential or one-on-one communications:
 * **Client Presentations**: Share progress with stakeholders
 * **Training Sessions**: Onboard new team members
 
-## 👥 Presence & Availability
+## Presence & Availability
 
 **Team Presence Indicators**
 
@@ -277,7 +277,7 @@ For confidential or one-on-one communications:
 
 * **Summary Digests**: Catch up on activity while you were away
 
-## ⏰ Asynchronous Collaboration
+## Asynchronous Collaboration
 
 **Async Communication Tools**
 
@@ -300,7 +300,7 @@ For confidential or one-on-one communications:
 * **Rollback Capability**: Restore previous versions if needed
 * **Audit Trail**: Complete history for compliance and review
 
-## 🎯 Collaboration Best Practices
+## Collaboration Best Practices
 
 ### Communication Guidelines
 
@@ -323,7 +323,7 @@ For confidential or one-on-one communications:
 * **Shared Standards**: Establish team conventions for naming and organization
 * **Feedback Loops**: Create mechanisms for continuous improvement
 
-## 📱 Mobile Collaboration
+## Mobile Collaboration
 
 **On-the-Go Features**
 
@@ -337,7 +337,7 @@ For confidential or one-on-one communications:
 * **Quick Actions**: Rapid task creation and updates
 * **Voice-to-Text**: Dictate messages and task updates
 
-## 🔒 Password Protection & Security
+## Password Protection & Security
 
 Add an extra layer of security to any shared content:
 
@@ -369,7 +369,7 @@ Add an extra layer of security to any shared content:
 * **Guest Access Management**: Control external user permissions and duration
 * **Session Timeouts**: Automatic logout for security compliance
 
-## 🔗 Integration with AI Features
+## Integration with AI Features
 
 **AI-Enhanced Collaboration**
 
@@ -380,7 +380,7 @@ Add an extra layer of security to any shared content:
 
 ***
 
-## 🏢 **Enterprise Collaboration**
+## **Enterprise Collaboration**
 
 ### **Advanced Team Communication**
 
@@ -496,7 +496,7 @@ Team Performance Metrics:
 
 ***
 
-## 📋 Project Updates & Changelog
+## Project Updates & Changelog
 
 ### Automatic Change Tracking
 
@@ -549,7 +549,7 @@ View detailed project history directly within Taskade for complete change tracki
 * **Quality Assurance**: Monitor changes for consistency and accuracy
 * **Documentation**: Use changelogs as project documentation and audit trails
 
-## ⚙️ Chat and Comments Settings
+## Chat and Comments Settings
 
 **Control communication features in your projects** to create focused work environments or enable collaborative discussions.
 
@@ -671,7 +671,7 @@ Click the button to clear all unread notifications.
 * **Export capabilities**: Generate communication reports for compliance
 * **Retention policies**: Set data retention periods for communication history
 
-## 📁 File Sharing and Cloud Integration
+## File Sharing and Cloud Integration
 
 ### Cloud Upload to Chat
 

@@ -569,7 +569,7 @@ The Transcribe YouTube Video action converts video audio into searchable, readab
 
 | Use Case                  | Automation Flow                                | Business Impact                         |
 | ------------------------- | ---------------------------------------------- | --------------------------------------- |
-| **Content Indexing**      | Schedule → Transcribe → Index in Search        | 300% faster content discovery           |
+| **Content Indexing**      | Schedule → Transcribe → Index in Search        | Searchable transcripts of your videos   |
 | **Educational Resources** | Task Added → Transcribe → Generate Study Guide | Accelerated learning materials creation |
 | **Content Repurposing**   | Video Upload → Transcribe → Generate Blog Post | Multi-platform content distribution     |
 | **Accessibility**         | Video Published → Transcribe → Add Captions    | Improved content accessibility          |
@@ -1313,7 +1313,7 @@ Pure, no-credit transform actions for reshaping data inline in a flow — no AI 
 
 ***
 
-## 📁 **Advanced File Handling**
+## **Advanced File Handling**
 
 Recent updates have significantly enhanced automation file processing capabilities.
 

@@ -379,7 +379,7 @@ See our [Best Practices guide](best-practices.md) for detailed examples.
 
 ***
 
-## 🧬 Living Software FAQ
+## Living Software FAQ
 
 **Understanding the paradigm shift from static apps to living systems.**
 

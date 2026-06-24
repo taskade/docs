@@ -6,13 +6,13 @@
 
 ---
 
-## 👥 The Collaboration Foundation
+## The Collaboration Foundation
 
 The year remote work became the norm and Taskade evolved into essential infrastructure for distributed teams.
 
 ## December 2020
 
-### 🧠 December 15, 2020 — Customize Sub-Tasks & Mobile Updates
+### December 15, 2020 — Customize Sub-Tasks & Mobile Updates
 
 **🚀 Highlights:**
 - **🧠 Customizable Sub-Tasks** - Format sub-tasks at any level across all views
@@ -24,7 +24,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### 🔗 November 27, 2020 — My Tasks & Project Links
+### November 27, 2020 — My Tasks & Project Links
 
 **🚀 Highlights:**
 - **✅ My Tasks** - See all assigned tasks across projects and workspaces
@@ -36,7 +36,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### 🏆 November 12, 2020 — Product Hunt #1 Winner
+### November 12, 2020 — Product Hunt #1 Winner
 
 **🚀 Highlights:**
 - **🥇 Product Hunt #1** - Awarded #1 Product of the Month
@@ -48,7 +48,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### ⚡ October 29, 2020 — Multiselect & Project Activity
+### October 29, 2020 — Multiselect & Project Activity
 
 **🚀 Highlights:**
 - **⚡ Multiselect Formatting** - Bold, italicize, underline multiple tasks
@@ -60,7 +60,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### ↔️ September 23, 2020 — Undo & Redo Launch
+### September 23, 2020 — Undo & Redo Launch
 
 **🚀 Highlights:**
 - **↔️ Undo/Redo Support** - Full undo/redo functionality (Ctrl/⌘ + Z)
@@ -72,7 +72,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### 🆓 August 25, 2020 — Free for Individuals & Teams
+### August 25, 2020 — Free for Individuals & Teams
 
 **🚀 Highlights:**
 - **🆓 Free Tier Launch** - Taskade now free indefinitely for all users
@@ -84,7 +84,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### 🔄 August 17, 2020 — Recurring Tasks & Desktop Widget
+### August 17, 2020 — Recurring Tasks & Desktop Widget
 
 **🚀 Highlights:**
 - **🔄 Recurring Tasks** - Automate daily, weekly, monthly task repetition
@@ -96,7 +96,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### 🧠 August 1, 2020 — Crosslink & Hyperlink
+### August 1, 2020 — Crosslink & Hyperlink
 
 **🚀 Highlights:**
 - **🧠 Crosslink Projects** - Link projects using @mention for connections
@@ -108,7 +108,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### ⚡ July 16, 2020 — Multi-Select Enhancements
+### July 16, 2020 — Multi-Select Enhancements
 
 **🚀 Highlights:**
 - **⚡ Drag Multiple Tasks** - Select and drag multiple tasks simultaneously
@@ -120,7 +120,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### 👥 June 30, 2020 — Real-Time Multiplayer Indicators
+### June 30, 2020 — Real-Time Multiplayer Indicators
 
 **🚀 Highlights:**
 - **✍️ Real-Time Typing Indicators** - See where teammates are editing
@@ -132,7 +132,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### 🔍 June 18, 2020 — Quick Search & Project Search
+### June 18, 2020 — Quick Search & Project Search
 
 **🚀 Highlights:**
 - **🔍 Quick Search** - ⌘K/Ctrl+K to instantly browse and jump between projects
@@ -144,7 +144,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### 📱 June 9, 2020 — Mobile Reordering & Trello Import
+### June 9, 2020 — Mobile Reordering & Trello Import
 
 **🚀 Highlights:**
 - **📱 Reorder Tasks on Mobile** - Drag and drop task reordering on iOS/Android
@@ -156,7 +156,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### 📋 June 2, 2020 — Add to Block & Default Views
+### June 2, 2020 — Add to Block & Default Views
 
 **🚀 Highlights:**
 - **📋 Add to Specific Block** - Save web content to specific project blocks
@@ -168,7 +168,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### 📱 May 11, 2020 — Multi-Tab Desktop Support
+### May 11, 2020 — Multi-Tab Desktop Support
 
 **🚀 Highlights:**
 - **📱 Multi-Tab Desktop** - Open multiple projects simultaneously on Mac/Windows
@@ -180,7 +180,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### ⌨️ May 5, 2020 — Keyboard Shortcuts & Custom Due Dates
+### May 5, 2020 — Keyboard Shortcuts & Custom Due Dates
 
 **🚀 Highlights:**
 - **⌨️ Comprehensive Keyboard Shortcuts** - Speed up workflows with hotkeys
@@ -192,7 +192,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### 📊 April 1, 2020 — Activity Feed & Recent Projects
+### April 1, 2020 — Activity Feed & Recent Projects
 
 **🚀 Highlights:**
 - **📊 Activity Feed** - Centralized notifications for personal and team updates
@@ -204,7 +204,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### 🎥 March 24, 2020 — Video Conferencing Enhancement
+### March 24, 2020 — Video Conferencing Enhancement
 
 **🚀 Highlights:**
 - **🎥 Enhanced Video Conferencing** - Free video conferencing in all projects
@@ -216,7 +216,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### 🔧 February 26, 2020 — Taskade Web Clipper
+### February 26, 2020 — Taskade Web Clipper
 
 **🚀 Highlights:**
 - **✂️ Web Clipper Launch** - Chrome and Firefox extensions
@@ -228,7 +228,7 @@ The year remote work became the norm and Taskade evolved into essential infrastr
 
 ---
 
-### 👥 February 17, 2020 — Subspaces & Team Permissions
+### February 17, 2020 — Subspaces & Team Permissions
 
 **🚀 Highlights:**
 - **👥 Subspaces Introduction** - Organize projects and teams under unified workspace
@@ -246,7 +246,7 @@ For additional 2020 foundation features and detailed release notes, visit our [b
 
 ---
 
-## 👥 The Collaboration Foundation
+## The Collaboration Foundation
 
 **2020's Essential Contributions to Genesis:**
 

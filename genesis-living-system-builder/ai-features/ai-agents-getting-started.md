@@ -203,7 +203,7 @@ Select the right AI model based on your needs:
 | **Standard (o3-mini)**      | Very Fast | ⭐⭐⭐☆☆               | Quick responses, simple tasks                 |
 | **Basic (o3-mini)**         | Fastest   | ⭐⭐☆☆☆               | Minimal processing, fast for easy tasks       |
 
-## 🧠 Understanding Agent Knowledge & Memory
+## Understanding Agent Knowledge & Memory
 
 Your agent's knowledge is what makes it truly powerful for your business. This is the foundation that powers Taskade Genesis apps - your workspace's living DNA.
 
@@ -273,31 +273,31 @@ Give your agent specific skills with custom commands:
 
 ## Popular Agent Types & Examples
 
-### 🎯 Marketing Agent
+### Marketing Agent
 
 **What it does:** Content creation, campaign ideas, market research\
 **Sample prompt:** "Create a social media post about our new product launch"\
 **Best for:** Content teams, social media managers, small businesses
 
-### 📞 Customer Support Agent
+### Customer Support Agent
 
 **What it does:** Answer questions, troubleshoot issues, route tickets\
 **Sample prompt:** "A customer can't log into their account. What should I tell them?"\
 **Best for:** Support teams, customer success, help desks
 
-### 📊 Data Analysis Agent
+### Data Analysis Agent
 
 **What it does:** Interpret data, create reports, find insights\
 **Sample prompt:** "Analyze this month's sales data and highlight key trends"\
 **Best for:** Analytics teams, managers, business owners
 
-### ✏️ Content Writing Agent
+### Content Writing Agent
 
 **What it does:** Blog posts, emails, documentation, copywriting\
 **Sample prompt:** "Write a blog post about the benefits of remote work"\
 **Best for:** Content creators, marketers, communications teams
 
-### 🔍 Research Agent
+### Research Agent
 
 **What it does:** Gather information, summarize findings, competitive analysis\
 **Sample prompt:** "Research the top 5 competitors in the project management space"\
@@ -331,7 +331,7 @@ Give your agent specific skills with custom commands:
 2. Star your favorite agents
 3. Access them quickly from the right sidebar
 
-## 📎 **Enhanced File Attachments**
+## **Enhanced File Attachments**
 
 TAA conversations now support rich file interactions with complete visibility and context.
 
@@ -595,7 +595,7 @@ Ready to build your AI team?
 * [Watch tutorial videos](https://youtube.com/taskade) for step-by-step guides
 * [Join our community](https://taskade.com/community) to share and learn
 
-## 🚀 Next Steps
+## Next Steps
 
 ### **Build Without Permission**
 
@@ -661,7 +661,7 @@ Supercharge your agents with better knowledge:
 * [**Knowledge Management Guide →**](../workspaces/knowledge-management.md) - Organize information effectively
 * [**Project Views →**](../workspaces/project-views.md) - Structure data for AI understanding
 
-## 🎯 Advanced Agent Features
+## Advanced Agent Features
 
 ### **Command Modes: How Your Agent Thinks**
 
@@ -795,7 +795,7 @@ You can also use your custom AI agent commands with multiple tasks:
 
 ***
 
-## 📱 **Mobile Agent Development**
+## **Mobile Agent Development**
 
 Build and train AI agents directly from your mobile device, making agent development truly accessible anywhere.
 
@@ -832,7 +832,7 @@ Build and train AI agents directly from your mobile device, making agent develop
 * Access pricing and availability instantly
 * Generate follow-up tasks automatically
 
-## 🤖 **AI Team Generator: Multi-Agent Teams**
+## **AI Team Generator: Multi-Agent Teams**
 
 Create entire teams of specialized AI agents with a single prompt using the revolutionary AI Team Generator.
 

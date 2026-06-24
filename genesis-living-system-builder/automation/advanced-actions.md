@@ -8,7 +8,7 @@
 
 ---
 
-## 🔁 Loop Actions & Batch Processing
+## Loop Actions & Batch Processing
 
 ### **What Are Loop Actions?**
 
@@ -148,7 +148,7 @@ Automatically retry failed operations with exponential backoff:
 
 ---
 
-## 💬 WhatsApp Business Integration
+## WhatsApp Business Integration
 
 ### **Setup & Authentication**
 
@@ -351,7 +351,7 @@ Automatically retry failed operations with exponential backoff:
 
 ---
 
-## 🔧 HTTP Schema Generator
+## HTTP Schema Generator
 
 ### **Auto-Generate API Schemas**
 
@@ -437,7 +437,7 @@ The HTTP Schema Generator automatically creates data schemas from API responses,
 
 ---
 
-## 📱 Enhanced Social Media Integrations
+## Enhanced Social Media Integrations
 
 ### **Advanced Twitter/X Integration**
 
@@ -554,7 +554,7 @@ The HTTP Schema Generator automatically creates data schemas from API responses,
 
 ---
 
-## 🚨 Advanced Error Handling
+## Advanced Error Handling
 
 ### **Smart Error Recovery**
 
@@ -639,7 +639,7 @@ The HTTP Schema Generator automatically creates data schemas from API responses,
 
 ---
 
-## 🤖 AI Agent Integration Enhancements
+## AI Agent Integration Enhancements
 
 ### **Agent Search & Discovery**
 
@@ -708,7 +708,7 @@ The HTTP Schema Generator automatically creates data schemas from API responses,
 
 ---
 
-## 📈 Performance Optimization
+## Performance Optimization
 
 ### **Batch Processing Optimization**
 
@@ -756,7 +756,7 @@ The HTTP Schema Generator automatically creates data schemas from API responses,
 
 ---
 
-## 🤖 Build Automations with AI — Available Today
+## Build Automations with AI — Available Today
 
 You don't have to assemble flows by hand — Taskade already builds automations from natural language:
 

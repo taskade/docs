@@ -2,13 +2,13 @@
 
 **Copy these proven prompts and build working business apps in minutes.**
 
-Each example includes the exact prompt, expected results, and real success metrics from businesses using Taskade Genesis.
+Each example includes the exact prompt and what the resulting app does.
 
 {% hint style="success" %}
 **Looking for more examples?** Browse 1000+ community-built apps, dashboards, and tools at [**taskade.com/community**](https://www.taskade.com/community)
 {% endhint %}
 
-## 🎨 Taskade Genesis App Gallery
+## Taskade Genesis App Gallery
 
 Explore interactive demos built by real users with their exact prompts. Fork any app to use as a starting point for your own project.
 
@@ -163,7 +163,7 @@ Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace
 
 ***
 
-## 🍽️ Restaurant & Food Service
+## Restaurant & Food Service
 
 ### Customer Feedback Collection System
 
@@ -205,7 +205,7 @@ I own a fine dining restaurant and need customers to make reservations online fo
 
 ***
 
-## 🧘 Health & Wellness
+## Health & Wellness
 
 ### Yoga Studio Class Booking
 
@@ -237,7 +237,7 @@ I'm a personal trainer and need clients to schedule sessions, track their progre
 
 ***
 
-## 🛍️ Retail & E-commerce
+## Retail & E-commerce
 
 ### Inventory Management & Reorder System
 
@@ -269,7 +269,7 @@ I need a customer loyalty system for my coffee shop where customers earn points 
 
 ***
 
-## 🏢 Professional Services
+## Professional Services
 
 ### Client Proposal Request System
 
@@ -287,7 +287,7 @@ I'm a marketing consultant and need potential clients to request proposals throu
 
 ***
 
-## 🎯 Writing Your Own Prompts
+## Writing Your Own Prompts
 
 ### The Proven Formula
 
@@ -324,7 +324,7 @@ I want to [HOW YOU'LL USE THE DATA] so I can [BUSINESS OUTCOME].
 
 ***
 
-## 🌐 Community Resources
+## Community Resources
 
 | Resource                                                   | Description                               |
 | ---------------------------------------------------------- | ----------------------------------------- |

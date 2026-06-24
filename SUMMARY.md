@@ -95,7 +95,7 @@
   * [Overview](apis-living-system-development/developers/api.md)
   * [Workspaces](apis-living-system-development/comprehensive-api-guide/workspaces/README.md)
     * [Get Workspaces](apis-living-system-development/comprehensive-api-guide/workspaces/get-workspaces.md)
-    * [Get Projects](apis-living-system-development/comprehensive-api-guide/workspaces/get-projects.md)
+    * [Create a Project](apis-living-system-development/comprehensive-api-guide/workspaces/get-projects.md)
     * [Get Folders](apis-living-system-development/comprehensive-api-guide/workspaces/get-folders.md)
   * [Projects](apis-living-system-development/comprehensive-api-guide/projects/README.md)
     * [Get Project](apis-living-system-development/comprehensive-api-guide/projects/get-project.md)

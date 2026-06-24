@@ -22,7 +22,7 @@ When building apps with Genesis, you may run into issues where components don't 
 This guide introduces the **Genesis Debugging Framework (GDF)** — a structured approach to classifying, diagnosing, and documenting bugs in Genesis apps. It also covers the **Genesis Prompting Protocol (GPP)**, a set of prompting strategies that prevent the most common issues before they occur.
 
 {% hint style="info" %}
-**Community contribution** — This framework was developed by Stephane J Metral based on real-world experience building Genesis apps. It addresses the four most common failure classes: import graph failures, routing registry drift, UI-to-API schema mismatch, and namespace collisions.
+**From real-world experience** — This framework was developed from real-world experience building Taskade Genesis apps. It addresses the four most common failure classes: import graph failures, routing registry drift, UI-to-API schema mismatch, and namespace collisions.
 {% endhint %}
 
 ---

@@ -2,7 +2,7 @@
 
 ## What's New:
 
-### EVE can now use Leaflet maps
+### Taskade EVE can now use Leaflet maps
 
 You can now have maps that integrate with your apps!
 

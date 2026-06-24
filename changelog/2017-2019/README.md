@@ -6,13 +6,13 @@
 
 ---
 
-## 🏗️ The Genesis Moment
+## The Genesis Moment
 
 The foundational years that established collaborative productivity as the bedrock for future AI-powered innovations.
 
 ## 2019 - Growth & Investment Year
 
-### 🌟 December 17, 2019 — Dark Mode & Calendar Sync
+### December 17, 2019 — Dark Mode & Calendar Sync
 
 **🚀 Highlights:**
 - **🌙 Dark Mode** - Experience Taskade in dark theme across all platforms
@@ -24,7 +24,7 @@ The foundational years that established collaborative productivity as the bedroc
 
 ---
 
-### 💰 October 24, 2019 — Series Seed Investment
+### October 24, 2019 — Series Seed Investment
 
 **🚀 Highlights:**
 - **💰 Funding Round** - Series Seed investment secured
@@ -36,7 +36,7 @@ The foundational years that established collaborative productivity as the bedroc
 
 ---
 
-### 📊 October 1, 2019 — Assign, Roadmap, iOS & Android
+### October 1, 2019 — Assign, Roadmap, iOS & Android
 
 **🚀 Highlights:**
 - **👤 Task Assignment** - Assign tasks and projects to team members
@@ -48,7 +48,7 @@ The foundational years that established collaborative productivity as the bedroc
 
 ---
 
-### 📅 July 31, 2019 — Calendar & Org Chart
+### July 31, 2019 — Calendar & Org Chart
 
 **🚀 Highlights:**
 - **📅 Calendar View** - Visualize upcoming tasks in unified overview
@@ -60,7 +60,7 @@ The foundational years that established collaborative productivity as the bedroc
 
 ---
 
-### 🧠 July 10, 2019 — Mindmap, Search, Native Apps
+### July 10, 2019 — Mindmap, Search, Native Apps
 
 **🚀 Highlights:**
 - **🧠 Mindmap View** - Brainstorm with your team and see the big picture
@@ -72,7 +72,7 @@ The foundational years that established collaborative productivity as the bedroc
 
 ---
 
-### 📋 April 1, 2019 — Tags and Templates
+### April 1, 2019 — Tags and Templates
 
 **🚀 Highlights:**
 - **🏷️ Tags System** - Organize and prioritize task lists with tags
@@ -84,7 +84,7 @@ The foundational years that established collaborative productivity as the bedroc
 
 ---
 
-### 📊 February 19, 2019 — Transform Your Task Lists
+### February 19, 2019 — Transform Your Task Lists
 
 **🚀 Highlights:**
 - **📊 Multiple Project Views** - Transform lists into different visual formats
@@ -99,7 +99,7 @@ The foundational years that established collaborative productivity as the bedroc
 
 ## 2018 - Core Features Year
 
-### ⚡ August 7, 2018 — 5 New Productivity Features
+### August 7, 2018 — 5 New Productivity Features
 
 **🚀 Highlights:**
 - **📁 File Uploads** - Attach photos, docs, gifs, and any files anywhere
@@ -114,7 +114,7 @@ The foundational years that established collaborative productivity as the bedroc
 
 ## 2017 - Launch Year
 
-### 🚀 December 5, 2017 — Taskade is Coming!
+### December 5, 2017 — Taskade is Coming!
 
 **🚀 Highlights:**
 - **🎉 Official Announcement** - Welcome to the Taskade blog
@@ -147,7 +147,7 @@ The foundational years that established collaborative productivity as the bedroc
 
 ---
 
-## 🏗️ The Genesis Foundation
+## The Genesis Foundation
 
 **2017-2019's Essential Contributions to Genesis:**
 
