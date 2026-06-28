@@ -69,4 +69,5 @@ Run the checklist, right-size your plan and credits, and launch. → [Go-live ch
 * [From idea to live business — the 5 steps](from-idea-to-live-business.md)
 * [Build a client or member portal](build-a-client-portal.md)
 * [Build an internal ops dashboard](build-an-ops-dashboard.md)
+* **Operate your live app by talking to Claude** — read and update your app's data in plain English. See [Run your live app by talking to Claude](../../apis-living-system-development/run-your-app-with-ai.md).
 * [What your app will cost](../../account-management/credits-and-billing.md)

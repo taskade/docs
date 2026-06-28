@@ -166,6 +166,7 @@
   * [SDK Cookbook](apis-living-system-development/sdk-cookbook.md)
 * [Which Taskade MCP do I want?](apis-living-system-development/mcp-overview.md)
 * [Workspace MCP](apis-living-system-development/workspace-mcp.md)
+  * [Run your live app by talking to Claude](apis-living-system-development/run-your-app-with-ai.md)
   * [Workspace MCP: Advanced](apis-living-system-development/workspace-mcp-advanced.md)
   * [Hosted MCP — Genesis App (Beta)](apis-living-system-development/genesis-app-mcp.md)
 * [MCP Connectors](genesis-living-system-builder/genesis/mcp-connectors.md)
