@@ -93,7 +93,7 @@ HTTP mode accepts the token as a query parameter (`?access_token=…`). Only use
 
 ## Available Tools
 
-The server exposes **57 tools** across 7 categories. Tool names mirror the [REST API v1](comprehensive-api-guide/README.md) operations the server wraps:
+The server exposes **62 tools** across 8 categories. Tool names mirror the [REST API v1](comprehensive-api-guide/README.md) operations the server wraps:
 
 | Area | Tools |
 | --- | --- |
@@ -104,9 +104,10 @@ The server exposes **57 tools** across 7 categories. Tool names mirror the [REST
 | **Agents** | `folderAgentGenerate`, `folderCreateAgent`, `folderAgentGet`, `agentGet`, `agentUpdate`, `deleteAgent`, `agentKnowledgeProjectCreate`, `agentKnowledgeMediaCreate`, `agentKnowledgeProjectRemove`, `agentKnowledgeMediaRemove`, `agentPublicAccessEnable`, `agentPublicGet`, `agentPublicUpdate`, `agentConvosGet`, `agentConvoGet`, `publicAgentGet` |
 | **Media** | `mediasGet`, `mediaGet`, `mediaDelete` |
 | **Personal** | `meProjectsGet` |
+| **Agent Chat & Webhooks (API v2, beta)** | `promptAgent`, `listConversations`, `getConversation`, `subscribeWebhook`, `unsubscribeWebhook` |
 
 {% hint style="info" %}
-This local server wraps **v1**, so it does **not** include a prompt-an-agent tool. To prompt agents programmatically, use [`POST /api/v2/promptAgent`](api-v2-reference.md#prompt-an-agent), or chat with the agent inside Taskade.
+As of v0.1.1 this server also bundles a small **API v2 (beta)** layer — including a **prompt-an-agent** tool (`promptAgent`), agent-chat (`listConversations`, `getConversation`), and webhook subscribe/unsubscribe (`subscribeWebhook`, `unsubscribeWebhook`). The rest of the surface mirrors [REST API v1](comprehensive-api-guide/README.md).
 {% endhint %}
 
 ## Example Usage in Claude

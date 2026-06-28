@@ -197,7 +197,7 @@ Plan features may evolve. Check the [pricing page](https://www.taskade.com/prici
 
 ## Tool Catalog Details
 
-The inbound server exposes **57 tools** across 7 categories whose names mirror the [REST API v1](comprehensive-api-guide/README.md) operations it wraps. Below are the ones integrators most often need to configure precisely.
+The inbound server exposes **62 tools** across 8 categories. Most mirror the [REST API v1](comprehensive-api-guide/README.md) operations it wraps; the newest category is a small **Agent Chat & Webhooks (API v2, beta)** group (`promptAgent`, `listConversations`, `getConversation`, `subscribeWebhook`, `unsubscribeWebhook`). Below are the ones integrators most often need to configure precisely.
 
 ### `projectTasksGet`
 
@@ -216,7 +216,7 @@ The inbound server exposes **57 tools** across 7 categories whose names mirror t
 - **`agentConvoGet`** returns one conversation (`agentId`, `convoId`).
 
 {% hint style="info" %}
-This local server wraps **v1** and therefore has **no prompt-an-agent tool**. To prompt agents programmatically, call [`POST /api/v2/promptAgent`](api-v2-reference.md#prompt-an-agent) directly, or use the agent inside Taskade. Likewise, bundle export/import lives in the [Action API v2](bundles.md), not in this server.
+This server now bundles a small **API v2 (beta)** layer (prompt-an-agent `promptAgent`, agent-chat, webhook subscribe/unsubscribe) on top of the v1 surface. Note: bundle export/import still lives in the [Action API v2](bundles.md), not in this server.
 {% endhint %}
 
 For the full tool list, see the [Workspace MCP](workspace-mcp.md) reference.
