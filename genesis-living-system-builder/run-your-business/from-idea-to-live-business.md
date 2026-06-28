@@ -63,3 +63,4 @@ Your app runs on AI, and AI runs on credits. Before launch, match your plan and 
 * [Add Login & Roles](./add-login-and-roles.md) — go deeper on accounts and access control
 * [Getting Started with Taskade Genesis](../genesis/getting-started.md) — revisit Step 1 to refine your app
 * [Custom Domains & Branding](../space-apps-guide/custom-domains.md) — polish your branded launch
+* [Run your live app by talking to Claude](../../apis-living-system-development/run-your-app-with-ai.md) — once you're live, read and update your app's data in plain English
