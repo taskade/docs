@@ -14,7 +14,7 @@ Personal Access Tokens are unique strings that represent your authorization to a
 ## Steps to Obtain and Use a Personal Access Token:
 
 1. **Generate a Token:**
-   * Navigate to [https://taskade.com/settings/password](https://taskade.com/settings/password) and scroll down to **Personal Access Tokens**.
+   * Navigate to [https://www.taskade.com/settings/api](https://www.taskade.com/settings/api) and scroll down to **Personal Access Tokens**.
    * Follow the on-screen instructions to create your personal access token.
 2. **Using the Token in API Requests:**
    *   Once you have your token, include it in the header of your API requests. Typically, this is done using the `Authorization` header. For example:
