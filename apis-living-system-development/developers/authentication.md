@@ -14,7 +14,7 @@ Every Taskade developer surface — the [REST API v1](../comprehensive-api-guide
 | --- | --- | --- |
 | Writing a script, or using the SDK / CLI / inbound `@taskade/mcp-server` | **Personal Access Token** | `Authorization: Bearer tskdp_…` |
 | Building a third-party app that acts on behalf of other users | **OAuth 2.0** (Authorization Code + PKCE) | Redirect flow |
-| Connecting Claude / Cursor to the **hosted** MCP at `taskade.com/mcp` | **OAuth 2.0** | Handled automatically by the MCP client |
+| Connecting Claude / Cursor to the **hosted** MCP at `https://www.taskade.com/mcp` | **OAuth 2.0** | Handled automatically by the MCP client |
 
 ---
 
@@ -135,7 +135,7 @@ Only `authorization_code` and `refresh_token` grants are supported. `password`, 
 
 ### Scopes & the hosted MCP
 
-The hosted MCP server at [taskade.com/mcp](../genesis-app-mcp.md) requires an OAuth token carrying the **`mcp`** scope. MCP clients (Claude Desktop, Cursor, Claude Code) perform this OAuth handshake — including dynamic client registration — automatically when you add the server URL, so you normally don't implement it yourself.
+The hosted MCP server at [https://www.taskade.com/mcp](../genesis-app-mcp.md) requires an OAuth token carrying the **`mcp`** scope. MCP clients (Claude Desktop, Cursor, Claude Code) perform this OAuth handshake — including dynamic client registration — automatically when you add the server URL, so you normally don't implement it yourself.
 
 ---
 
