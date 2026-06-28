@@ -58,7 +58,7 @@ graph TB
 | Prompt agents, manage agents, export/import bundles | [Action API v2](api-v2-reference.md) |
 | Hit endpoints from any language | [REST API v1](comprehensive-api-guide/README.md) + [Action API v2](api-v2-reference.md) |
 | Expose Taskade data to Claude Desktop, Cursor, or other MCP clients | [Workspace MCP](workspace-mcp.md) + [Advanced](workspace-mcp-advanced.md) |
-| Give a Taskade agent third-party capabilities | [MCP Connectors](workspace-mcp-advanced.md#mcp-connectors) |
+| Give a Taskade agent third-party capabilities | [MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md) |
 | Edit Taskade Genesis app source code from your IDE | [Hosted MCP (Genesis App)](genesis-app-mcp.md) |
 | Receive real-time events in your app | [Webhooks](webhooks.md) |
 | Understand long-term memory | [Long-Term Memory](long-term-memory.md) |
