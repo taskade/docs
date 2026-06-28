@@ -164,7 +164,7 @@
 * [Action API v2 Reference](apis-living-system-development/api-v2-reference.md)
 * [TypeScript SDK (Preview)](apis-living-system-development/sdk-quickstart.md)
   * [SDK Cookbook](apis-living-system-development/sdk-cookbook.md)
-* [Which MCP do I want?](apis-living-system-development/mcp-overview.md)
+* [Which Taskade MCP do I want?](apis-living-system-development/mcp-overview.md)
 * [Workspace MCP](apis-living-system-development/workspace-mcp.md)
   * [Workspace MCP: Advanced](apis-living-system-development/workspace-mcp-advanced.md)
   * [Hosted MCP — Genesis App (Beta)](apis-living-system-development/genesis-app-mcp.md)
