@@ -68,7 +68,7 @@ Use OAuth 2.0 when your application acts **on behalf of other users** (so each u
 
 ### Register an application
 
-Go to [taskade.com/settings/password](https://www.taskade.com/settings/password) → **OAuth 2.0 Apps** and register your app to obtain a **Client ID** and **Client Secret**, and to set your redirect URI(s).
+Go to [taskade.com/settings/api](https://www.taskade.com/settings/api) → **OAuth 2.0 Apps** and register your app to obtain a **Client ID** and **Client Secret**, and to set your redirect URI(s).
 
 ### Authorization Code flow (with PKCE)
 
