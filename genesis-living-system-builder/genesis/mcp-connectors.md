@@ -6,6 +6,8 @@ description: >-
 
 # MCP Connectors
 
+> **Not sure which Taskade MCP you need?** See [Which Taskade MCP do I want?](../../apis-living-system-development/mcp-overview.md).
+
 ## What is MCP?
 
 **Model Context Protocol (MCP)** is an open standard that lets AI agents connect to external tools and services. Think of it as **USB-C for AI** — one universal, standardized, vendor-agnostic protocol that works across platforms and providers.

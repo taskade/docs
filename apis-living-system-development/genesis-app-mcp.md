@@ -10,13 +10,7 @@ description: >-
 
 ## Which MCP do I want?
 
-Taskade has three MCP surfaces. This page covers the **hosted Taskade Genesis App MCP**.
-
-| Surface | Transport | Auth | Touches | Plan |
-| --- | --- | --- | --- | --- |
-| [Workspace MCP](workspace-mcp.md) (`@taskade/mcp-server`) | Local stdio (you run it) | Personal token | Workspace **content** (projects, tasks, agents) | Most plans |
-| **Hosted Genesis App MCP** (this page) | Hosted HTTP (`https://www.taskade.com/mcp`) | OAuth 2.0 | Genesis app **source code** | Business+ |
-| [MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md) | Hosted (outbound) | Per-connector | **Third-party** services from your agents | Varies |
+> See **[Which Taskade MCP do I want?](mcp-overview.md)** for the full three-surface comparison. This page covers the **hosted Genesis App MCP**.
 
 Genesis App MCP lets you connect your favorite AI tools — Claude Desktop, Claude Code, Cursor, or any MCP-compatible client — directly to your Taskade Genesis app's **source code**. Browse your workspace from your IDE, and edit your app's React components, styles, and configuration using the model and workflow you already love.
 
