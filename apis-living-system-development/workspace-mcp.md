@@ -93,7 +93,22 @@ The server listens on `http://localhost:3000` (set `PORT` to change it); connect
 HTTP mode accepts the token as a query parameter (`?access_token=…`). Only use this on a trusted local network or behind TLS — never expose it publicly.
 {% endhint %}
 
-## Available Tools
+## Example Usage in Claude
+
+Once configured, you can run your workspace by talking. Ask Claude to:
+
+- "Spin up next week's client-onboarding tasks and assign them."
+- "Mark every overdue invoice task complete and tell me what's left."
+- "Create a project for the Q3 launch with a task per milestone."
+- "Summarize what changed in my Marketing space this week."
+- "List all my Taskade workspaces"
+- "Create a task in my Sales Pipeline project to follow up with the client"
+- "Show me the tasks in my Sales Pipeline project and mark the first one complete"
+- "Add a due date of next Friday to task X"
+
+## Full tool reference
+
+Every tool the server exposes, grouped by category — reach for this when you want to wire something precisely.
 
 The server exposes **62 tools** across 8 categories. Tool names mirror the [REST API v1](comprehensive-api-guide/README.md) operations the server wraps:
 
@@ -111,15 +126,6 @@ The server exposes **62 tools** across 8 categories. Tool names mirror the [REST
 {% hint style="info" %}
 As of v0.1.1 this server also bundles a small **API v2 (beta)** layer — including a **prompt-an-agent** tool (`promptAgent`), agent-chat (`listConversations`, `getConversation`), and webhook subscribe/unsubscribe (`subscribeWebhook`, `unsubscribeWebhook`). The rest of the surface mirrors [REST API v1](comprehensive-api-guide/README.md).
 {% endhint %}
-
-## Example Usage in Claude
-
-Once configured, you can ask Claude to:
-
-- "List all my Taskade workspaces"
-- "Create a task in my Sales Pipeline project to follow up with the client"
-- "Show me the tasks in my Sales Pipeline project and mark the first one complete"
-- "Add a due date of next Friday to task X"
 
 ## Plan Availability
 
