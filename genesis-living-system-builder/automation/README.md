@@ -139,6 +139,7 @@ Connect your workflows to popular tools across the [Taskade integrations](https:
 * Step catalog: [Actions & Triggers](actions.md)
 * Pick tools to connect: [Integration Overview](comprehensive-integration-guide.md)
 * Full list of connectors: [Integration Options](integrations.md)
+* **Let your agents reach external tools** (Slack, Stripe, Shopify, Gmail) via [MCP Connectors](../genesis/mcp-connectors.md).
 * Troubleshoot: [Living System Troubleshooting](../community-and-sharing/troubleshooting.md)
 
 ## Next steps

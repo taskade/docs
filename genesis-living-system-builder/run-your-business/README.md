@@ -71,3 +71,4 @@ Run the checklist, right-size your plan and credits, and launch. → [Go-live ch
 * [Build an internal ops dashboard](build-an-ops-dashboard.md)
 * **Operate your live app by talking to Claude** — read and update your app's data in plain English. See [Run your live app by talking to Claude](../../apis-living-system-development/run-your-app-with-ai.md).
 * [What your app will cost](../../account-management/credits-and-billing.md)
+* **Extend your live system:** read & write your data with [Workspace MCP](../../apis-living-system-development/workspace-mcp.md), edit your app's code with [Genesis App MCP](../../apis-living-system-development/genesis-app-mcp.md), or connect external tools with [MCP Connectors](../genesis/mcp-connectors.md).
