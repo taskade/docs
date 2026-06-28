@@ -18,7 +18,7 @@ graph TB
         API1[REST API v1<br/>RESTful + OAuth 2.0]
         API2[Action API v2<br/>RPC + OAuth 2.0]
         MCP_IN["@taskade/mcp-server<br/>Inbound MCP, npm"]
-        MCP_HOST[Hosted MCP<br/>taskade.com/mcp]
+        MCP_HOST[Hosted MCP<br/>https://www.taskade.com/mcp]
         MCP_OUT[MCP Connectors<br/>Outbound to 31+ services]
         WEBHOOK[Webhooks<br/>Automation triggers]
     end
@@ -87,7 +87,7 @@ Treat your API token like a password. Never commit it to version control or shar
 | [Authentication Guide](developers/authentication.md) | Personal access tokens and OAuth 2.0 (PKCE) flows |
 | [Workspace MCP](workspace-mcp.md) | Run `@taskade/mcp-server` to connect Claude Desktop, Cursor, and Claude Code ([source](https://github.com/taskade/mcp)) |
 | [Workspace MCP — Advanced](workspace-mcp-advanced.md) | Multi-client setup, troubleshooting, security |
-| [Hosted MCP — Genesis App (Beta)](genesis-app-mcp.md) | Edit your Genesis app's source from your IDE via the remote `taskade.com/mcp` server |
+| [Hosted MCP — Genesis App (Beta)](genesis-app-mcp.md) | Edit your Genesis app's source from your IDE via the remote `https://www.taskade.com/mcp` server |
 | [MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md) | Give Taskade agents 31+ third-party tools (outbound MCP) |
 | [Integration Kit (GitHub)](https://github.com/taskade/integrations) | Open-source Zapier and n8n actions & triggers built on the public API — contribute or self-host |
 | [Webhooks](webhooks.md) | Trigger automations from external events; call out to any API |
