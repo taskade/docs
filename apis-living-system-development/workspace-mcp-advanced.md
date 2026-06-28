@@ -197,7 +197,7 @@ Plan features may evolve. Check the [pricing page](https://www.taskade.com/prici
 
 ## Tool Catalog Details
 
-The inbound server exposes **62 tools** across 8 categories whose names mirror the [REST API v1](comprehensive-api-guide/README.md) operations it wraps, plus a small **Agent Chat & Webhooks (API v2, beta)** group (`promptAgent`, `listConversations`, `getConversation`, `subscribeWebhook`, `unsubscribeWebhook`). Below are the ones integrators most often need to configure precisely.
+The inbound server exposes **62 tools** across 8 categories. Most mirror the [REST API v1](comprehensive-api-guide/README.md) operations it wraps; the newest category is a small **Agent Chat & Webhooks (API v2, beta)** group (`promptAgent`, `listConversations`, `getConversation`, `subscribeWebhook`, `unsubscribeWebhook`). Below are the ones integrators most often need to configure precisely.
 
 ### `projectTasksGet`
 
