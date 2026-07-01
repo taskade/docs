@@ -4,7 +4,7 @@ description: Connect your own branded domain to a published Taskade Genesis app.
 
 # Custom Domains & Branding
 
-**Turn your Genesis apps from "homemade" looking tools into professional business software that looks like you spent a fortune to build it. Your customers will see your brand, not Taskade's.**
+**Turn your Taskade Genesis apps from "homemade" looking tools into professional business software that looks like you spent a fortune to build it. Your customers will see your brand, not Taskade's.**
 
 {% hint style="success" %}
 **Business plan feature.** Custom domains are available on the **Business plan and above**. Connect your own branded web address to a published Genesis app.
@@ -132,9 +132,9 @@ TTL: 3600 (or your registrar's default)
 3. **Wait for verification** (usually 5-15 minutes)
 4. **SSL certificate generates automatically**
 
-Domain validation and HTTPS now activate faster via Delegated DCV — Cloudflare handles certificate validation automatically on your behalf, so no extra DNS record is required.
+Domain validation and HTTPS now activate faster via Delegated DCV (Domain Control Validation) — Cloudflare proves you control the domain and issues the HTTPS certificate on your behalf, so no extra DNS record is required.
 
-#### 5. Assign to Genesis Apps
+#### 5. Assign to Taskade Genesis Apps
 
 1. **Open your Genesis app**
 2. **Click "Publish" dropdown**
@@ -180,7 +180,7 @@ Domain validation and HTTPS now activate faster via Delegated DCV — Cloudflare
 
 ### Setup with Cloudflare:
 
-1. **Ensure Domain is on Cloudflare** - Your domain must be managed by Cloudflare
+1. **Any DNS provider works** - Taskade serves custom domains through Cloudflare's network on your behalf; you do **not** need a Cloudflare account — any DNS provider that can create a CNAME record works
 2. **Add CNAME Record** - Point your subdomain to `custom-domains.taskade.com`
 3. **Enable SSL/TLS** - Cloudflare handles SSL certificate provisioning
 4. **Taskade Integration** - Connect domain in Taskade Custom Domains settings

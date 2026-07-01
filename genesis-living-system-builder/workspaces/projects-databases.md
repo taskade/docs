@@ -1,6 +1,6 @@
 ---
 description: >-
-  Build Taskade database projects: custom fields, relationships, and 8 views. See how Genesis auto-generates schemas that power apps, agents, and automations.
+  Build Taskade database projects: custom fields, relationships, and 9 views. See how Taskade Genesis auto-generates schemas that power apps and agents.
 ---
 
 # Projects & Databases: The Memory Pillar
@@ -11,8 +11,8 @@ description: >-
 
 - [Overview](#overview)
 - [What Are Database Projects?](#what-are-database-projects)
-- [Taskade Genesis-Generated Databases](#genesis-generated-databases)
-- [8 Project Views](#id-8-project-views)
+- [Taskade Genesis-Generated Databases](#taskade-genesis-generated-databases)
+- [9 Project Views](#id-9-project-views)
 - [Manual Database Creation](#manual-database-creation)
 - [Importing Data](#importing-data)
 - [Automated App Workflows](#automated-app-workflows)
@@ -37,7 +37,7 @@ Database projects are structured data containers that serve as your app's persis
 
 | Feature | Description |
 |---|---|
-| **Custom fields** | Define field types: text, number, date, select, multi-select, checkbox, URL |
+| **Custom fields** | Define field types: text, number, currency, rating, date, select, multi-select, checkbox, URL, person |
 | **Relationships** | Link records across databases (e.g., customers ↔ orders) |
 | **Views** | List, board, table, calendar, and more |
 | **Filters & sorts** | Find and organize data dynamically |
@@ -48,7 +48,7 @@ Database projects are structured data containers that serve as your app's persis
 
 ---
 
-## Genesis-Generated Databases
+## Taskade Genesis-Generated Databases
 
 When Genesis builds an app, it **automatically creates the database structures** your app needs:
 
@@ -65,9 +65,9 @@ When Genesis builds an app, it **automatically creates the database structures**
 
 ---
 
-## 8 Project Views
+## 9 Project Views
 
-Every project database supports 8 different views — switch between them without changing your data:
+Every project database supports 9 different views — switch between them without changing your data:
 
 | View | Description | Best For |
 |---|---|---|
@@ -79,6 +79,7 @@ Every project database supports 8 different views — switch between them withou
 | **Mindmap** | Connected nodes radiating from center for visualization | Brainstorming, concept mapping, planning |
 | **Orgchart** | Hierarchical organizational structure | Team structure, process hierarchy |
 | **Action Sheet** | Compact action-oriented format | Quick task management |
+| **Docs (Beta)** | Continuous rich-text document editing | Specs, knowledge bases, long-form writing |
 
 > **Tip:** In Genesis apps, you can specify which view to use: "Display the customer database as a kanban board with columns for Lead, Qualified, Proposal, Won."
 
@@ -107,7 +108,8 @@ You can also create databases manually:
 | **Text (String)** | Names, descriptions, notes | Customer name, product description | Plain text |
 | **Number** | Quantities, prices, scores | Stock level, deal value, rating | Decimal, currency ($, EUR), percent (%) |
 | **Currency** | Pricing, invoices, budgets | Product price, invoice total, budget cap | Pre-formatted as USD; numeric field with currency symbol and decimal precision |
-| **DateTime** | Deadlines, timestamps, schedules | Due date, appointment time | Date only, date + time |
+| **DateTime** | Deadlines, timestamps, schedules | Due date, appointment time | Date only, date + time; Table view footers can aggregate Earliest / Latest / Range |
+| **Rating** | Feedback scores, priority ranking | Review stars, lead quality | Configurable star rating per row |
 | **Select** | Single-choice categories | Status, priority, category | Color-coded options |
 | **Multi-select** | Multiple tags/categories | Skills, interests, tags | Color-coded options |
 | **Checkbox** | Boolean yes/no states | Completed, approved, active | Toggle |

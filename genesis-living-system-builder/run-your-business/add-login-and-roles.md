@@ -53,6 +53,20 @@ For the full walkthrough — the App Users tab, Workspace SSO, custom-domain sig
 
 ***
 
+## Give each user only their own rows
+
+For a client portal or member app, signed-in users usually shouldn't see each other's records. Turn on **Private per-user data** (row scoping) when you publish:
+
+1. Open your app's **publish menu** and enable **Private per-user data**. (The option appears for apps built on the current app template with sign-in enabled; turning it on rebuilds and republishes the app.)
+2. Pick — or add — a dedicated field on your project that stores each row's owner. Rows created **through the app** are tagged to the signed-in user automatically.
+3. Publish. Each signed-in user now sees only their own rows. Rows with no value in the owner field are hidden from app users entirely — the safe default.
+
+{% hint style="info" %}
+Before you launch, sign in as a test user and confirm they see only their own records — this pairs with the [go-live checklist](go-live-checklist.md) item on per-user data isolation. Data you add inside Taskade (rather than through the app) won't have an owner tag, so it stays hidden from app users until you assign one.
+{% endhint %}
+
+***
+
 ## Pair it with a custom domain
 
 GenesisAuth works on apps hosted at your own web address with no extra setup. Combining sign-in with a [custom domain](../space-apps-guide/custom-domains.md) gives end users a fully branded, production-ready product.

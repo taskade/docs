@@ -192,21 +192,18 @@ Make your agent smart by giving it information:
 
 ### Step 4.5: Choose Your AI Model
 
-Select the right AI model based on your needs:
+Select the right AI model based on your needs. Taskade's model picker offers current frontier models from multiple providers — including the Claude, GPT, and Gemini families — and the lineup is refreshed as new models ship (see the [changelog](../../updates-and-timeline/changelog-2026/README.md) for additions):
 
-| Model                       | Speed     | Complexity Handling | Best For                                      |
-| --------------------------- | --------- | ------------------- | --------------------------------------------- |
-| **Pro (GPT-4o)**            | Medium    | ⭐⭐⭐⭐⭐               | Deep reasoning, accurate data analysis        |
-| **Standard (GPT-4o mini)**  | Fast      | ⭐⭐⭐⭐☆               | Balanced performance, good context handling   |
-| **Pro (GPT-4.1)**           | Medium    | ⭐⭐⭐⭐⭐               | High-end reasoning, coding, and task planning |
-| **Standard (GPT-4.1 mini)** | Fast      | ⭐⭐⭐⭐⭐               | Complex workflows with fast responses         |
-| **Basic (GPT-4.1 nano)**    | Very Fast | ⭐⭐⭐☆☆               | Lightweight LLM usage, quick queries          |
-| **Advanced (o4-mini)**      | Fast      | ⭐⭐⭐⭐☆               | Fast processing for moderately complex tasks  |
-| **Standard (o4-mini)**      | Very Fast | ⭐⭐⭐☆☆               | Speed-priority tasks with decent reasoning    |
-| **Basic (o4-mini)**         | Fastest   | ⭐⭐☆☆☆               | Ultra-fast, low-load tasks                    |
-| **Advanced (o3-mini)**      | Fast      | ⭐⭐⭐⭐☆               | Data-heavy tasks                              |
-| **Standard (o3-mini)**      | Very Fast | ⭐⭐⭐☆☆               | Quick responses, simple tasks                 |
-| **Basic (o3-mini)**         | Fastest   | ⭐⭐☆☆☆               | Minimal processing, fast for easy tasks       |
+| Choice | When to use it |
+| --- | --- |
+| **Auto** (recommended) | Taskade picks a strong current model for your plan — you get upgrades automatically as better models ship |
+| **A frontier model** (e.g. the latest Claude or GPT) | Deep reasoning, complex analysis, agents whose answers you'll ship to customers |
+| **A fast/light model** | High-volume, quick-turnaround tasks where speed matters more than depth |
+| **An extended-thinking variant** | Multi-step problems that benefit from the model working through its reasoning |
+
+{% hint style="info" %}
+Agents pinned to a specific model stay on that model until you change it; **Auto** follows Taskade's current default for your plan.
+{% endhint %}
 
 ## Understanding Agent Knowledge & Memory
 

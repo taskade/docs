@@ -26,7 +26,7 @@ Make your apps available to anyone with a link, creating public or private acces
 * **Direct Access**: Users can interact with your app through a dedicated URL
 * **No Installation Required**: Works immediately in any browser
 * **Version Control**: Update your published app while maintaining the same link
-* **Monetization Ready**: Foundation for future paywall and premium features
+* **Monetization Ready**: Sell paid apps with one-time Stripe checkout
 
 **Publishing Options:**
 
@@ -60,9 +60,9 @@ You can always unpublish your app if needed:
 
 **Note:** Unpublishing immediately removes public access, but the URL becomes inactive. Users who bookmarked the link will lose access.
 
-### **Enabling Cloning**
+### **Enabling Cloning (Forking)**
 
-Allow others to create complete copies of your app in their own workspaces.
+Allow others to create complete copies of your published app in their own workspaces. (When others copy your public app it's called **forking**; **cloning** also refers to duplicating your own app inside your workspace — the toggle below covers both.)
 
 **Cloning Features:**
 
@@ -164,12 +164,7 @@ Transform your Genesis apps into revenue-generating solutions with professional 
 
 ### **Monetize Your Expertise**
 
-Create premium Genesis apps that users pay to access:
-
-* **Subscription Models**: Monthly or yearly access to your app
-* **One-Time Purchases**: Pay once, use forever
-* **Tiered Access**: Different features for different price points
-* **Usage-Based Pricing**: Pay per transaction or interaction
+Create premium Taskade Genesis apps that users pay for: set a **one-time price** in your app's Publish settings, and buyers pay via **Stripe** to receive their own private copy of the app. See [Paid Apps](publish-and-clone.md#paid-apps) for the full flow.
 
 ### **Perfect for:**
 
@@ -195,11 +190,10 @@ Create premium Genesis apps that users pay to access:
 
 | Feature                   | Benefit                                           |
 | ------------------------- | ------------------------------------------------- |
-| **🔒 Access Control**     | Secure paywall integration with usage tracking    |
-| **📊 Analytics**          | Detailed metrics on user engagement and revenue   |
-| **💳 Payment Processing** | Seamless integration with Stripe and PayPal       |
+| **🔒 Access Control**     | Buyers receive their own private copy of the app  |
+| **📊 Analytics**          | Built-in metrics on views, likes, and installs    |
+| **💳 Payment Processing** | Payments handled by Stripe                        |
 | **🎨 Custom Branding**    | Your logo, colors, and domain                     |
-| **📈 A/B Testing**        | Optimize pricing and features for maximum revenue |
 
 ***
 
@@ -209,14 +203,18 @@ Share your AI expertise by embedding trained agents directly into websites, docu
 
 ### **Agents Anywhere**
 
-Your public AI agents can now be embedded with a simple code snippet:
+The agent **Share** panel includes an embed snippet builder — copy a ready-made snippet (inline iframe or floating chat widget) and customize the **launcher icon** and background to match your site. The generated iframe points at your agent's public URL:
 
 ```html
-<iframe src="https://agents.taskade.com/your-agent-id" 
-        width="400" height="600" 
-        frameborder="0">
+<iframe src="https://www.taskade.com/a/your-agent-id"
+        width="600" height="400"
+        frameborder="0"
+        allow="clipboard-read; clipboard-write"
+        allowfullscreen>
 </iframe>
 ```
+
+Copy the snippet from the Share panel rather than hand-writing it — the builder fills in the correct URL for your agent (including custom domains).
 
 ### **Use Cases**
 

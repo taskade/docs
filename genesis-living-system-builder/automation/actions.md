@@ -1,6 +1,6 @@
 ---
 description: >-
-  Complete Taskade automation action reference: create tasks, run AI agents, scrape web, send HTTP requests, integrate Slack, HubSpot, GitHub, and chain.
+  Complete Taskade automation action reference: create tasks, run AI agents, send HTTP requests, connect Slack and GitHub, and chain steps into workflows.
 ---
 
 # Action & Trigger Reference
@@ -49,7 +49,7 @@ Actions can be chained together to create complex multi-step workflows, with con
 | **Convert File to Text**     | Convert a source file into text                                               | Document processing, content extraction     | `fileId`, `outputFormat`, `encoding` |
 | **Transcribe YouTube Video** | Turn a YouTube video into text                                                | Content creation, accessibility             | `videoUrl`, `language`, `format`     |
 | **Upload File to Media**     | Upload file through a URL to save in your workspace or folder's media tab     | Media management, content storage           | `url`, `fileName`, `folderId`        |
-| **Send HTTP Request**        | Makes an API request to an endpoint                                           | External integrations, data synchronization | `method`, `url`, `headers`, `body`   |
+| **Send HTTP Request**        | Makes an API request to an endpoint; authentication is optional per call     | External integrations, data synchronization | `method`, `url`, `headers`, `body`, optional auth |
 | **Search Web**               | Searches the web for information to add to a project or for the AI to analyze | Research automation, content enrichment     | `query`, `sources`, `maxResults`     |
 
 ### Workflow Control Actions
@@ -541,7 +541,12 @@ Result: Current industry news awareness
 * **Rate Limiting**: Avoid overwhelming target servers
 * **Data Usage**: Ensure compliance with data protection regulations
 * **Attribution**: Properly credit sources when using scraped content
-* **Fair Use**: Use scraped data responsibly and ethically | **Convert File to Text** | Convert a source file into text | `fileUrl`, `fileType`, `extractImages` | Convert PDF manual to searchable text | | **Transcribe YouTube Video** | Turn a YouTube video into text | `videoUrl`, `language`, `includeTimestamps` | Create transcript of training video |
+* **Fair Use**: Use scraped data responsibly and ethically
+
+| Action | Description | Parameters | Example |
+|---|---|---|---|
+| **Convert File to Text** | Convert a source file into text | `fileUrl`, `fileType`, `extractImages` | Convert PDF manual to searchable text |
+| **Transcribe YouTube Video** | Turn a YouTube video into text | `videoUrl`, `language`, `includeTimestamps` | Create transcript of training video |
 
 ### Transcribe YouTube Video Automation Settings
 
@@ -782,7 +787,7 @@ The Generate Image with DALL·E 3 action creates beautiful images from text prom
 * Specify image format and intended use
 * Use descriptive adjectives for better results
 
-### Genesis — Image Format Conversion
+### Taskade Genesis — Image Format Conversion
 
 {% hint style="info" %}
 The **Image Format Conversion** action (available in Genesis flows) converts an image from one format to another entirely within Taskade — no external service required. Useful for normalizing images before uploading them to downstream steps.
