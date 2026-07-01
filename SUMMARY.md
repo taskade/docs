@@ -179,7 +179,12 @@
 
 * [Upcoming Changes](updates-and-timeline/upcoming-changes.md)
 * [Changelog (2026)](updates-and-timeline/changelog-2026/README.md)
+  * [July 2026](updates-and-timeline/changelog-2026/july-2026/README.md)
+    * [July 1, 2026](updates-and-timeline/changelog-2026/july-2026/july-1-2026.md)
   * [June 2026](updates-and-timeline/changelog-2026/june-2026/README.md)
+    * [June 30, 2026](updates-and-timeline/changelog-2026/june-2026/june-30-2026.md)
+    * [June 29, 2026](updates-and-timeline/changelog-2026/june-2026/june-29-2026.md)
+    * [June 28, 2026](updates-and-timeline/changelog-2026/june-2026/june-28-2026.md)
     * [June 23, 2026](updates-and-timeline/changelog-2026/june-2026/june-23-2026.md)
     * [June 22, 2026](updates-and-timeline/changelog-2026/june-2026/june-22-2026.md)
     * [June 19, 2026](updates-and-timeline/changelog-2026/june-2026/june-19-2026.md)

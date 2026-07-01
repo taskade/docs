@@ -1,6 +1,6 @@
 ---
 description: >-
-  Format Taskade tasks with headings, lists, highlights, and 8 project views, plus add-ons like due dates, timers, and keyboard shortcuts.
+  Format Taskade tasks with headings, lists, highlights, and 9 project views, plus add-ons like due dates, timers, and keyboard shortcuts.
 ---
 
 # Editing & Formatting
@@ -64,7 +64,7 @@ Taskade lets you turn tasks into checklists, headings, ordered lists, paragraphs
 
 ## Project Views
 
-The same content can be displayed in **8 different views** — switch anytime without changing your data:
+The same content can be displayed in **9 different views** — switch anytime without changing your data:
 
 | View | Description | Best For |
 |---|---|---|

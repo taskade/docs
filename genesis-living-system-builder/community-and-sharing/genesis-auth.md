@@ -134,6 +134,7 @@ You don't need to know these details to use GenesisAuth, but they matter if you'
 * **Review exposed tools.** For public agents, opt sensitive tools out so external users can't invoke them.
 * **Suspend instead of delete** when you want to retain a user's history but block access.
 * **Use a custom domain with TLS** for any app that handles user data in production.
+* **OIDC sign-in is hardened by default.** OIDC lets workspaces gate app access behind their own identity provider; PKCE is an OAuth security check that stops intercepted sign-in codes from being replayed. Taskade accepts only the S256 PKCE method and validates that `redirect_uri` matches your app's own origin. See [Enterprise SSO (OIDC)](publish-and-clone.md#enterprise-sso-oidc) and the [authentication guide](../../apis-living-system-development/developers/authentication.md).
 * **Monitor sign-in activity** via the App Users tab and your workspace activity log.
 * **Rotate workspace tokens** periodically if you also expose the app via the [Public API](../../apis-living-system-development/developers/authentication.md).
 

@@ -13,8 +13,11 @@ description: >-
 
 ## Releases this month
 
+* [June 30, 2026](june-30-2026.md) — Private Per-User Data for Taskade Genesis Apps
+* [June 29, 2026](june-29-2026.md) — Project Views, Redesigned
+* [June 28, 2026](june-28-2026.md) — Rating Field Type and MCP Sign-In from Cursor and VS Code
 * [June 23, 2026](june-23-2026.md) — Attach File to Task Action
-* [June 22, 2026](june-22-2026.md) — EVE Can Run a Saved Automation
+* [June 22, 2026](june-22-2026.md) — Taskade EVE Can Run a Saved Automation
 * [June 19, 2026](june-19-2026.md) — Utilities Piece: Data Transform Actions
 * [June 14, 2026](june-14-2026.md) — New Connectors: Microsoft Outlook, Todoist, ClickUp, Google Tasks, Google Docs
 * [June 9, 2026](june-9-2026.md) — Docs (Beta) and List View in Production

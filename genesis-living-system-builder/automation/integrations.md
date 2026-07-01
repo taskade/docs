@@ -48,9 +48,9 @@ Taskade connects to **100+ tools and services** across communication, productivi
 | **Linear** | Issue created, updated | Create issue, update priority, assign | OAuth 2.0 / API Key |
 | **Asana** | Task created, completed | Create task, update project, assign | OAuth 2.0 / PAT |
 | **ClickUp** | Task created, task status changed | Create task, update task, delete task, add comment, get task, list tasks, find task by name, get task comments | OAuth 2.0 / API Key |
-| **Google Tasks** | Task created, task completed | Create task, update task, delete task, complete task, list tasks, clear completed, get task, find task | OAuth 2.0 |
+| **Google Tasks** | Task created, task completed | Create task, update task, delete task, complete task, re-open task, list tasks, clear completed, get task, find task | OAuth 2.0 |
 | **Monday.com** | Item created, updated | Create item, update status, notify | OAuth 2.0 / API Key |
-| **Todoist** | Task completed | Create task, update task, complete task, delete task, find task | OAuth 2.0 / API Key |
+| **Todoist** | Task completed | Create task, update task, complete task, re-open task, delete task, find task | OAuth 2.0 / API Key |
 | **Trello** | Card created, moved | Create card, move card, add member | OAuth 2.0 / API Key |
 
 ### Data & Analytics
@@ -97,7 +97,8 @@ Taskade connects to **100+ tools and services** across communication, productivi
 
 | Service | Triggers | Actions | Authentication |
 |---------|----------|---------|----------------|
-| **HTTP Webhooks** | Webhook received | Send HTTP request, POST data, call API | API Key / Bearer Token |
+| **HTTP Webhooks** | Webhook received | Send HTTP request, POST data, call API | Optional (Bearer / API Key / Basic) |
+| **IFTTT / Apple Shortcuts / n8n** | Webhook received | Call any of them via the HTTP request action — they're discoverable when searching automation actions | Webhook URL |
 | **REST APIs** | Custom endpoint called | Make API call, send data, receive response | Various |
 | **GraphQL** | Query executed | Execute query, mutation, subscription | API Key / OAuth |
 | **Custom Forms** | Form submitted | Process data, validate, route to workflow | None |
@@ -320,7 +321,7 @@ Lead Qualification Pipeline:
     - Calendar link for qualified prospects
     - Task creation for sales rep with context
 
-Business Impact: 300% increase in qualified meetings, 60% reduction in response time
+Business Impact: More qualified meetings booked, faster first response
 ```
 
 **Salesforce Account Management**
@@ -336,7 +337,7 @@ Customer Success Automation:
     - Alerts if risk factors detected
     - Prepares expansion opportunity analysis
 
-ROI: 85% renewal rate improvement, 40% expansion revenue increase
+ROI: Better renewal rates and expansion revenue through timely outreach
 ```
 
 ### **Microsoft Teams Enterprise Communication**

@@ -26,7 +26,7 @@ A project in Taskade is a **flexible data container** that holds your informatio
 
 ```mermaid
 flowchart TD
-    DATA[Your Project Data<br/>Tree Structure] --> VIEWS[8 Different Views]
+    DATA[Your Project Data<br/>Tree Structure] --> VIEWS[9 Different Views]
 
     VIEWS --> LIST[📋 List View<br/>Hierarchical tasks]
     VIEWS --> BOARD[📊 Board View<br/>Kanban workflow]
@@ -113,7 +113,7 @@ Start with a task, note, or idea. Your project is now alive and ready to grow!
 
 **Boom!** You just created a living data container that can adapt to any workflow.
 
-## The 8 Project Views (Choose Your Perspective)
+## The 9 Project Views (Choose Your Perspective)
 
 Each view reveals different insights from your data. Here's when to use each one:
 
