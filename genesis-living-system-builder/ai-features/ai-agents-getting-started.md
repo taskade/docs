@@ -150,10 +150,10 @@ Pick the best option for you:
 Give your AI assistant a clear role and personality - just like hiring a new team member:
 
 **Name:** Make it memorable and relevant\
-&#xNAN;_&#x45;xamples: "Sarah - Customer Success", "Marketing Mike", "Data Dave"_
+_Examples: "Sarah - Customer Success", "Marketing Mike", "Data Dave"_
 
 **Description:** Explain what your agent does\
-&#xNAN;_&#x45;xample: "You are a customer success specialist who helps clients get the most value from our product. You're friendly, knowledgeable, and always focused on solving problems."_
+_Example: "You are a customer success specialist who helps clients get the most value from our product. You're friendly, knowledgeable, and always focused on solving problems."_
 
 **Tone:** Choose how your agent should communicate
 

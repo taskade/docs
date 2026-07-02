@@ -1,6 +1,6 @@
 ---
 description: >-
-  Taskade REST API v1 reference — authenticate, then manage workspaces, projects, tasks, agents, folders, and media with full CRUD and an interactive explorer.
+  Taskade REST API v1 reference — authenticate, then manage workspaces, projects, tasks, agents, folders, and media with full CRUD and copy-paste code examples.
 ---
 
 # Comprehensive API Guide
@@ -17,10 +17,10 @@ The Taskade API is a RESTful web service that provides programmatic access to Ta
 
 ### Key Features
 
-* **🔗 RESTful Design**: Standard HTTP methods and status codes
-* **🔐 Secure Authentication**: OAuth 2.0 and Personal Access Token authentication
-* **📊 Complete CRUD Operations**: Full create, read, update, delete functionality
-* **📚 Comprehensive Documentation**: Detailed endpoint documentation
+* **RESTful Design**: Standard HTTP methods and status codes
+* **Secure Authentication**: OAuth 2.0 and Personal Access Token authentication
+* **Complete CRUD Operations**: Full create, read, update, delete functionality
+* **Comprehensive Documentation**: Detailed endpoint documentation
 
 ### API Base URL
 
@@ -44,10 +44,12 @@ curl -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
 
 #### Obtaining a Personal Access Token
 
-1. Go to **Settings** → **Developer** → **Personal Access Tokens**
-2. Click **Generate New Token**
-3. Copy and securely store your token
-4. Use the token in the `Authorization` header
+1. Go to [taskade.com/settings/api](https://www.taskade.com/settings/api).
+2. Click **Create new token** and give it a descriptive name.
+3. Copy and securely store your token — it starts with the `tskdp_` prefix (you can hold up to 5 tokens per account).
+4. Use the token in the `Authorization` header.
+
+See the [Authentication](../developers/authentication.md) guide for OAuth 2.0 and full details.
 
 ### OAuth 2.0 Authentication
 
@@ -865,8 +867,8 @@ print(f"Found {len(workspaces['items'])} workspaces")
 
 ### Getting Help
 
-* **📧 Support**: support@taskade.com
-* **📚 Help Center**: [taskade.com/learn](https://www.taskade.com/learn)
+* **Support**: support@taskade.com
+* **Help Center**: [taskade.com/learn](https://www.taskade.com/learn)
 
 {% hint style="info" %}
 **Need more help?** Contact our support team for assistance with API integration or enterprise API requirements.

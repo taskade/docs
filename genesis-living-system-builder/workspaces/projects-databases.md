@@ -106,7 +106,7 @@ You can also create databases manually:
 | Field Type | Use Case | Example | Formatting Options |
 |---|---|---|---|
 | **Text (String)** | Names, descriptions, notes | Customer name, product description | Plain text |
-| **Number** | Quantities, prices, scores | Stock level, deal value, rating | Decimal, currency ($, EUR), percent (%) |
+| **Number** | Quantities, scores, counts | Stock level, quantity, score | Decimal, percent (%) |
 | **Currency** | Pricing, invoices, budgets | Product price, invoice total, budget cap | Pre-formatted as USD; numeric field with currency symbol and decimal precision |
 | **DateTime** | Deadlines, timestamps, schedules | Due date, appointment time | Date only, date + time; Table view footers can aggregate Earliest / Latest / Range |
 | **Rating** | Feedback scores, priority ranking | Review stars, lead quality | Configurable star rating per row |

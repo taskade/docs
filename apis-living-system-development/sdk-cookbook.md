@@ -22,7 +22,7 @@ Production patterns for integrating with Taskade.
 - [Automations](#automations)
 - [Projects & Tasks](#projects-and-tasks)
 - [Webhooks](#webhooks)
-- [Bundles (Import/Export)](#bundles-importexport)
+- [Bundles (Import/Export)](#bundles-import-export)
 - [Error Handling Taxonomy](#error-handling-taxonomy)
 - [Pagination](#pagination)
 - [Testing & Mocking](#testing-and-mocking)

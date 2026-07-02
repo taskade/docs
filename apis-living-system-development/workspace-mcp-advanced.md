@@ -229,7 +229,7 @@ MCP Connectors let your Taskade agents connect **outbound** to third-party servi
 
 <figure><img src="../.gitbook/assets/api-integrations-ecosystem.gif" alt="" width="563"><figcaption></figcaption></figure>
 
-Agents see enabled connectors as tools. You can opt specific tools out per agent (especially useful for public-facing agents).
+Agents see enabled connectors as tools. You can opt specific tools out per agent (especially useful for public-facing agents). See **[MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md)** for the full catalog and setup steps.
 
 ---
 

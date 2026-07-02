@@ -1,7 +1,7 @@
 ---
 description: >-
   Connect Claude, Cursor, or any MCP client to your Taskade Genesis app's source
-  code via the hosted https://www.taskade.com/mcp server (OAuth 2.0, Business plan).
+  code via https://www.taskade.com/mcp (OAuth 2.0, Business plan).
 ---
 
 # Genesis App MCP (Beta)
@@ -157,9 +157,9 @@ Use whichever model your IDE supports — Claude Opus, GPT-4, Gemini, a local Ol
 - **Publish your changes.** Writing files through MCP updates your Genesis app's source, but you still need to publish/deploy the app through Taskade for the changes to go live on your custom domain. (Check your Genesis app's publish settings in Taskade.)
 - **No partial plans.** MCP access is gated at the workspace level. If you're a member of a Business workspace from a Pro account, you can use MCP against the Business workspace but not against your own Pro workspace.
 
-## When to use MCP vs. EVE
+## When to use MCP vs. Taskade EVE
 
-Both MCP and EVE (Taskade's in-product AI assistant) can edit your Genesis app. Use whichever fits your workflow:
+Both MCP and Taskade EVE (Taskade's in-product AI assistant) can edit your Taskade Genesis app. Use whichever fits your workflow:
 
 | Use **EVE** when… | Use **MCP** when… |
 |---|---|

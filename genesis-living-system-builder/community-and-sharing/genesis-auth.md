@@ -30,7 +30,7 @@ GenesisAuth is the authentication layer for apps built with Taskade Genesis. Whe
 * **Built-in user accounts.** No Auth0 or Clerk to wire up, no schema to design.
 * **Pre-built sign-in component** added to the generated app automatically.
 * **Scales with your app.** Handles sessions, password hashing, and session tokens securely.
-* **Turns every Genesis app into a real multi-user product.**
+* **Turns every Taskade Genesis app into a real multi-user product.**
 
 <figure><img src="../../.gitbook/assets/genesisauth-login-signup.jpg" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -40,7 +40,7 @@ GenesisAuth is the authentication layer for apps built with Taskade Genesis. Whe
 
 You don't configure GenesisAuth manually — you describe the need.
 
-1. In Genesis, describe your app in plain language. Include phrases like:
+1. In Taskade Genesis, describe your app in plain language. Include phrases like:
    * *"a client portal where each client has their own dashboard"*
    * *"users can sign in to see their own habit streaks"*
    * *"a members-only knowledge base"*
@@ -50,14 +50,14 @@ You don't configure GenesisAuth manually — you describe the need.
 That's it. Your app now accepts user sign-ups, handles sign-in, and enforces per-user data access.
 
 {% hint style="info" %}
-If your first prompt doesn't trigger auth setup, you can add it later by asking EVE to *"add sign-in for users"* while editing the app.
+If your first prompt doesn't trigger auth setup, you can add it later by asking Taskade EVE to *"add sign-in for users"* while editing the app.
 {% endhint %}
 
 ---
 
 ## The App Users Tab
 
-The **App Users** tab lives in your Genesis app's settings. It's a first-class user management dashboard.
+The **App Users** tab lives in your Taskade Genesis app's settings. It's a first-class user management dashboard.
 
 ### What You Can Do
 

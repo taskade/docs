@@ -8,7 +8,7 @@ description: >-
 **Turn your brilliant Taskade Genesis app into something that helps business owners everywhere. Share what you've built, discover amazing solutions from others, and copy complete apps with just one click.**
 
 {% hint style="success" %}
-**Latest Features!** Revolutionary app forking, embeddable public agents, and professional publishing with paywalls are now live! Share your Genesis apps globally, monetize premium solutions, and fork complete applications with one click.
+**What you can do here.** Publish your Taskade Genesis apps to the community, let others fork them in one click, and monetize premium apps with Stripe checkout.
 {% endhint %}
 
 ***
@@ -85,7 +85,7 @@ Allow others to create complete copies of your published app in their own worksp
 * Users should have immediate functionality without setup
 * You want to share proven, production-ready workflows
 
-## **Revolutionary App Forking**
+## App Forking
 
 The most powerful way to learn and build is by starting with working solutions. Genesis now lets you fork (copy) any community app with complete fidelity.
 
@@ -531,16 +531,18 @@ Understanding the differences helps you choose the right approach:
 
 ### Embedding Community Apps
 
-Some community apps include embeddable components:
+A published community app is a standard Taskade Genesis app, so you can embed it in any web page with an `<iframe>` that points at its public URL:
 
 ```html
-<!-- Embed a community feedback widget -->
-<iframe src="https://community-app.taskade.com/feedback-widget" 
-        width="400" 
-        height="600" 
+<!-- Embed a published community app -->
+<iframe src="https://www.taskade.com/a/your-app-id"
+        width="400"
+        height="600"
         frameborder="0">
 </iframe>
 ```
+
+Copy the exact URL from the app's **Share** panel.
 
 ### API Integration with Community Apps
 
