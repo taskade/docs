@@ -180,6 +180,8 @@ Projects can function as databases with custom fields, turning simple task lists
 | **Date/Time** | Dates with optional time component |
 | **Select** | Dropdown with color-coded options |
 
+> This is a summary. See [Projects & Databases](../workspaces/projects-databases.md#available-field-types) for the full field-type reference — Rating, Currency, URL, Person, and more.
+
 **Why this matters:**
 
 - Store structured data alongside tasks and notes

@@ -321,7 +321,7 @@ Lead Qualification Pipeline:
     - Calendar link for qualified prospects
     - Task creation for sales rep with context
 
-Business Impact: More qualified meetings booked, faster first response
+Outcome: More qualified meetings booked, faster first response
 ```
 
 **Salesforce Account Management**
@@ -337,7 +337,7 @@ Customer Success Automation:
     - Alerts if risk factors detected
     - Prepares expansion opportunity analysis
 
-ROI: Better renewal rates and expansion revenue through timely outreach
+Outcome: Better renewal rates and expansion revenue through timely outreach
 ```
 
 ### **Microsoft Teams Enterprise Communication**
