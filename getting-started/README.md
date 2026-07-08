@@ -34,7 +34,7 @@ Learn more: [Workspace DNA](https://www.taskade.com/learn/genesis/workspace-dna)
 2. **Name your workspace** — this becomes the home for all your apps
 3. **Verify your email** — check your inbox and click the confirmation link
 
-## Build Your First App with Genesis (5 minutes)
+## Build Your First App with Taskade Genesis (5 minutes)
 
 **This is where the magic happens.** Instead of managing tasks manually, let's build an app that solves a real business problem. You can [start building your first app with Taskade Genesis](https://www.taskade.com/create) directly from your workspace.
 

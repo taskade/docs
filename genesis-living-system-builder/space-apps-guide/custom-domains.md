@@ -1,5 +1,5 @@
 ---
-description: Connect your own branded domain to a published Taskade Genesis app.
+description: Connect your own branded domain to a published Taskade Genesis app — set up DNS, enable SSL, and go live on your own URL in minutes.
 ---
 
 # Custom Domains & Branding

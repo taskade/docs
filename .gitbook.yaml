@@ -9,6 +9,7 @@ redirects:
   apis-and-developer: developers/developer-home
   updates-and-timeline: changelog/changelog-2026
   help-and-support: help/index
+  help-and-support/index: help/index
   # Key sub-pages under renamed sections
   apis-and-developer/developer-home: developers/developer-home
   apis-and-developer/authentication: developers/authentication

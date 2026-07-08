@@ -1,7 +1,7 @@
 ---
 description: >-
   Three Taskade MCP surfaces, one decision. Pick the right one by what you want
-  to do.
+  to do — hosted MCP, Workspace MCP for IDEs, or @taskade/mcp-server package.
 ---
 
 # Which Taskade MCP do I want?
