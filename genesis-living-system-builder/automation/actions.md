@@ -48,6 +48,7 @@ Actions can be chained together to create complex multi-step workflows, with con
 | **Scrape Webpage**           | Extract the contents of a web page                                            | Content aggregation, research               | `url`, `selectors`, `format`         |
 | **Convert File to Text**     | Convert a source file into text                                               | Document processing, content extraction     | `fileId`, `outputFormat`, `encoding` |
 | **Transcribe YouTube Video** | Turn a YouTube video into text                                                | Content creation, accessibility             | `videoUrl`, `language`, `format`     |
+| **Transcribe Audio to Project** | Convert uploaded audio into project text                                   | Meeting notes, voice memos, podcast indexing | `fileId`, `language`, `outputFormat`  |
 | **Upload File to Media**     | Upload file through a URL to save in your workspace or folder's media tab     | Media management, content storage           | `url`, `fileName`, `folderId`        |
 | **Send HTTP Request**        | Makes an API request to an endpoint; authentication is optional per call     | External integrations, data synchronization | `method`, `url`, `headers`, `body`, optional auth |
 | **Search Web**               | Searches the web for information to add to a project or for the AI to analyze | Research automation, content enrichment     | `query`, `sources`, `maxResults`     |
@@ -547,6 +548,7 @@ Result: Current industry news awareness
 |---|---|---|---|
 | **Convert File to Text** | Convert a source file into text | `fileUrl`, `fileType`, `extractImages` | Convert PDF manual to searchable text |
 | **Transcribe YouTube Video** | Turn a YouTube video into text | `videoUrl`, `language`, `includeTimestamps` | Create transcript of training video |
+| **Transcribe Audio to Project** | Convert uploaded audio into project text | `fileId`, `language`, `outputFormat` | Turn voice memo into project notes |
 
 ### Transcribe YouTube Video Automation Settings
 

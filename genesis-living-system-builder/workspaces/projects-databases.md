@@ -115,6 +115,7 @@ You can also create databases manually:
 | **Checkbox** | Boolean yes/no states | Completed, approved, active | Toggle |
 | **URL** | Web links | Website, profile link | Clickable link |
 | **Person** | Team member assignment | Assignee, reviewer, owner | Workspace member picker |
+| **Relationship** | Link records across projects | Customer → Orders, Lead → Deals | Cross-project record picker |
 
 ### Task Addons (Beyond Custom Fields)
 
