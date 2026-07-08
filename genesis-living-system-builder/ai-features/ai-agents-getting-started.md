@@ -192,17 +192,18 @@ Make your agent smart by giving it information:
 
 ### Step 4.5: Choose Your AI Model
 
-Select the right AI model based on your needs. Taskade's model picker offers current frontier models from multiple providers — including the Claude, GPT, and Gemini families — and the lineup is refreshed as new models ship (see the [changelog](../../updates-and-timeline/changelog-2026/README.md) for additions):
+Taskade's model picker is powered by **TSK-1**, the intelligence layer that auto-routes every request to the right capability tier. You pick what you need the agent to do; TSK-1 handles which model executes it:
 
-| Choice | When to use it |
-| --- | --- |
-| **Auto** (recommended) | Taskade picks a strong current model for your plan — you get upgrades automatically as better models ship |
-| **A frontier model** (e.g. the latest Claude or GPT) | Deep reasoning, complex analysis, agents whose answers you'll ship to customers |
-| **A fast/light model** | High-volume, quick-turnaround tasks where speed matters more than depth |
-| **An extended-thinking variant** | Multi-step problems that benefit from the model working through its reasoning |
+| Tier | When to use it |
+|------|---------------|
+| **Auto** (recommended) | TSK-1 picks the right tier per request — fast when you need speed, deep when you need reasoning. New agents default to Auto on most paid plans |
+| **Instant** | Fast edits, simple completions, quick lookups |
+| **Standard** | Everyday work — balanced speed and reasoning |
+| **Thinking** | Planning, creation, multi-step reasoning |
+| **Reasoning** | Complex systems, deep analysis, multi-agent coordination |
 
 {% hint style="info" %}
-Agents pinned to a specific model stay on that model until you change it; **Auto** follows Taskade's current default for your plan.
+**Vendor-agnostic.** TSK-1 runs on the latest frontier models. The tier describes what the system is good at, not which provider powers it — providers may change. Agents pinned to a custom model (Max and Enterprise plans) bypass TSK-1 routing. See [TSK-1 Model Tiers](tsk-1-model-tiers.md) for the full reference.
 {% endhint %}
 
 ## Understanding Agent Knowledge & Memory

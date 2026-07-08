@@ -41,6 +41,7 @@
 
 * [AI Features Overview](genesis-living-system-builder/ai-features/README.md)
   * [AI Agents Getting Started](genesis-living-system-builder/ai-features/ai-agents-getting-started.md)
+  * [TSK-1 Model Tiers](genesis-living-system-builder/ai-features/tsk-1-model-tiers.md)
   * [Agent Knowledge & Memory](genesis-living-system-builder/ai-features/agent-knowledge.md)
   * [Tools for AI Agents](genesis-living-system-builder/ai-features/agent-tools.md)
   * [AI Agent Teams](genesis-living-system-builder/ai-features/agent-teams.md)
@@ -85,7 +86,7 @@
   * [FAQ](genesis-living-system-builder/community-and-sharing/faq.md)
   * [Troubleshooting](genesis-living-system-builder/community-and-sharing/troubleshooting.md)
 
-## APIs & Developer
+## Developers
 
 * [Developer Platform](apis-living-system-development/developer-home.md)
   * [Developer Overview](apis-living-system-development/developers/README.md)
@@ -175,11 +176,15 @@
 * [Long-Term Memory](apis-living-system-development/long-term-memory.md)
 * [Autonomous Agents](apis-living-system-development/autonomous-agents.md)
 
-## Updates & Timeline
+## Changelog
 
 * [Upcoming Changes](updates-and-timeline/upcoming-changes.md)
 * [Changelog (2026)](updates-and-timeline/changelog-2026/README.md)
   * [July 2026](updates-and-timeline/changelog-2026/july-2026/README.md)
+    * [July 8, 2026](updates-and-timeline/changelog-2026/july-2026/july-8-2026.md)
+    * [July 6, 2026](updates-and-timeline/changelog-2026/july-2026/july-6-2026.md)
+    * [July 4, 2026](updates-and-timeline/changelog-2026/july-2026/july-4-2026.md)
+    * [July 2, 2026](updates-and-timeline/changelog-2026/july-2026/july-2-2026.md)
     * [July 1, 2026](updates-and-timeline/changelog-2026/july-2026/july-1-2026.md)
   * [June 2026](updates-and-timeline/changelog-2026/june-2026/README.md)
     * [June 30, 2026](updates-and-timeline/changelog-2026/june-2026/june-30-2026.md)
@@ -269,7 +274,7 @@
   * [2020](changelog/2020/README.md)
   * [2017-2019](changelog/2017-2019/README.md)
 
-## Help & Support
+## Help
 
 * [Help Center](help-center/README.md)
   * [Import & Export](help-center/import-and-export.md)

@@ -5,16 +5,35 @@ structure:
   summary: SUMMARY.md
 
 redirects:
-  docs/updates: updates-and-timeline/changelog
-  docs/help-and-guides: help-and-support/index
-  docs/developer-api: apis-and-developer/developer-home
+  # Section renames (July 2026 slug optimization)
+  apis-and-developer: developers/developer-home
+  updates-and-timeline: changelog/changelog-2026
+  help-and-support: help/index
+  # Key sub-pages under renamed sections
+  apis-and-developer/developer-home: developers/developer-home
+  apis-and-developer/authentication: developers/authentication
+  apis-and-developer/comprehensive-api-guide: developers/comprehensive-api-guide
+  apis-and-developer/mcp-overview: developers/mcp-overview
+  apis-and-developer/workspace-mcp: developers/workspace-mcp
+  apis-and-developer/api-v2-reference: developers/api-v2-reference
+  updates-and-timeline/changelog: changelog/changelog
+  updates-and-timeline/changelog-2026: changelog/changelog-2026
+  updates-and-timeline/changelog-2026/july-2026: changelog/changelog-2026/july-2026
+  updates-and-timeline/changelog-2026/june-2026: changelog/changelog-2026/june-2026
+  updates-and-timeline/upcoming-changes: changelog/upcoming-changes
+  help-and-support/index: help/index
+  help-and-support/comprehensive-troubleshooting-guide: help/comprehensive-troubleshooting-guide
+  # Legacy redirects (pre-2026)
+  docs/updates: changelog/changelog-2026
+  docs/help-and-guides: help/index
+  docs/developer-api: developers/developer-home
   docs/genesis-no-code-apps: taskade-genesis/genesis
   help-center/ai-features: ai-features/ai-features
-  api-docs: apis-and-developer/developer-home
+  api-docs: developers/developer-home
   automation-guide: automations/automation
   mobile-guide: workspaces/workspaces/mobile-optimization
   integrations-guide: automations/automation/integrations
-  troubleshooting-guide: help-and-support/comprehensive-troubleshooting-guide
+  troubleshooting-guide: help/comprehensive-troubleshooting-guide
   best-practices-guide: community-and-sharing/community-and-sharing/best-practices
   templates-guide: taskade-genesis/genesis/examples-and-templates
   collaboration-guide: workspaces/workspaces/collaboration
@@ -32,10 +51,10 @@ redirects:
   genesis-ai: taskade-genesis/genesis
   ai-app-builder: taskade-genesis/genesis
   no-code-platform: taskade-genesis/genesis
-  tutorial-guide: help-and-support/index
-  comprehensive-api: apis-and-developer/comprehensive-api-guide
+  tutorial-guide: help/index
+  comprehensive-api: developers/comprehensive-api-guide
   industry-solutions: taskade-genesis/genesis/examples-and-templates
-  account-management: help-and-support/account-management
+  account-management: help/account-management
   vision: contributing/vision
 
 integrations:
@@ -60,15 +79,15 @@ navigation:
     - title: "🚀 Get Started"
       url: "https://www.taskade.com/"
     - title: "📚 API Documentation"
-      url: "/apis-and-developer"
+      url: "/developers"
     - title: "🎯 Features"
       url: "/taskade-genesis"
     - title: "⚡ Automations"
       url: "/automations"
     - title: "📰 Changelog"
-      url: "/updates-and-timeline"
+      url: "/changelog"
     - title: "🆘 Support"
-      url: "/help-and-support"
+      url: "/help"
     - title: "💬 Community"
       url: "https://www.taskade.com/community"
   
