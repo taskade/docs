@@ -1,5 +1,5 @@
 ---
-description: Everything you need to build on Taskade — REST API, MCP Server, SDK, and more.
+description: Everything you need to build on Taskade — REST API v1, Action API v2, MCP Server, OAuth 2.0, webhooks, and hosted MCP for Taskade Genesis apps.
 ---
 
 # Developer Platform

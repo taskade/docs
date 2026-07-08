@@ -3,7 +3,7 @@ description: >-
   Taskade REST API v1 reference — authenticate, then manage workspaces, projects, tasks, agents, folders, and media with full CRUD and copy-paste code examples.
 ---
 
-# Comprehensive API Guide
+# REST API v1 Reference
 
 Build powerful integrations with Taskade's REST API. Access projects, tasks, agents, and more programmatically with full CRUD operations.
 
@@ -830,7 +830,7 @@ class TaskadeClient:
         return response.json()
 
 # Usage
-client = TaskadeClient('your_token')
+client = TaskadeClient('YOUR_ACCESS_TOKEN')
 workspaces = client.get_workspaces()
 print(f"Found {len(workspaces['items'])} workspaces")
 ```

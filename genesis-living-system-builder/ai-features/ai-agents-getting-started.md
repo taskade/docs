@@ -336,7 +336,7 @@ Give your agent specific skills with custom commands:
 
 ## **Enhanced File Attachments**
 
-TAA conversations now support rich file interactions with complete visibility and context.
+TAA (Taskade AI Assistant) conversations now support rich file interactions with complete visibility and context.
 
 ### **Drag & Drop File Magic**
 
@@ -598,7 +598,7 @@ Ready to build your AI team?
 * [Watch tutorial videos](https://youtube.com/taskade) for step-by-step guides
 * [Join our community](https://taskade.com/community) to share and learn
 
-## Next Steps
+## Taking It Further
 
 ### **Build Without Permission**
 
