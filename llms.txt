@@ -102,11 +102,11 @@ Developers can build on the REST API v1, the action-based Public API v2, a TypeS
 
 ## MCP
 
-- [Which Taskade MCP do I want?](https://docs.taskade.com/developers/mcp-overview): Three MCP surfaces, one decision — hosted MCP, Workspace MCP for IDEs, or the @taskade/mcp-server package.
+- [Which Taskade MCP do I want?](https://docs.taskade.com/developers/mcp-overview): Three MCP surfaces, one decision — Workspace MCP (@taskade/mcp-server) for task writes, the hosted Taskade MCP for orchestration, or MCP Connectors for agent tool access.
 - [Workspace MCP](https://docs.taskade.com/developers/workspace-mcp): Connect Claude Desktop, Cursor, Claude Code, Windsurf, VS Code, and more to your workspace via @taskade/mcp-server.
 - [Workspace MCP: Advanced](https://docs.taskade.com/developers/workspace-mcp/workspace-mcp-advanced): Rate limits, multi-client setup, troubleshooting, and security for production use.
 - [Run Your Live App by Talking to Claude](https://docs.taskade.com/developers/workspace-mcp/run-your-app-with-ai): Run your Genesis app's day-to-day data through conversation — no IDs, no API code.
-- [Hosted Taskade MCP (Beta)](https://docs.taskade.com/developers/workspace-mcp/genesis-app-mcp): Connect any MCP client to your Genesis app's source code via https://www.taskade.com/mcp (OAuth 2.0).
+- [Hosted Taskade MCP (Beta)](https://docs.taskade.com/developers/workspace-mcp/genesis-app-mcp): Orchestrate your workspace from any MCP client via https://www.taskade.com/mcp (OAuth 2.0) — create projects, manage and prompt agents, and edit your Genesis app's source.
 - [MCP Connectors](https://docs.taskade.com/developers/mcp-connectors): Connect Genesis apps and AI agents to 31+ external services using the Model Context Protocol.
 
 ## Changelog
