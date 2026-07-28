@@ -256,11 +256,11 @@ Reject any delivery whose signature doesn't match.
 | Target URL | Must be **`https`** (deliveries use an SSRF-guarded fetch). Max **2,048 characters** URL-encoded. |
 | Limit | Up to **100** event–workspace combinations per account across your registered webhooks (a webhook with 3 events scoped to 2 workspaces counts as 6). |
 | Scope | All workspaces by default; narrow with `spaceIds`. |
-| Dashboard | You can also create and manage outgoing webhooks in **[Settings → API](https://www.taskade.com/settings/api)**. |
+| Dashboard | You can also create and manage outgoing webhooks in **[Settings > API](https://www.taskade.com/settings/api)**. |
 
 ### Legacy: unsigned subscriptions (deprecated)
 
-`POST /api/v2/subscribeWebhook` (`{ targetUrl, triggerType }` → `{ ok, hookId }`) and `POST /api/v2/unsubscribeWebhook` (`{ hookId }`) still work, but they are **deprecated**: each subscription covers a single event, scoping is account-level only, and deliveries are **not signed**. New integrations should use `POST /api/v2/webhooks`; existing ones can migrate by registering the same target URL with the new endpoint and removing the old subscription.
+`POST /api/v2/subscribeWebhook` (`{ targetUrl, triggerType }` -> `{ ok, hookId }`) and `POST /api/v2/unsubscribeWebhook` (`{ hookId }`) still work, but they are **deprecated**: each subscription covers a single event, scoping is account-level only, and deliveries are **not signed**. New integrations should use `POST /api/v2/webhooks`; existing ones can migrate by registering the same target URL with the new endpoint and removing the old subscription.
 
 ***
 

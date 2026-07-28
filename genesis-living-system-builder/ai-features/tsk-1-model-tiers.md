@@ -27,7 +27,7 @@ TSK-1 sits between the **EVE** persona and **Workspace DNA** — it is the engin
 
 The model picker shows one TSK-1 header with a capability ladder. Each tier is defined by what it's good for, not by its underlying provider:
 
-| Tier | Best for | Example use | Selectable on |
+| Tier | Best for | Example use | Plans |
 |------|----------|------------|--------------|
 | **Instant** | Fast edits, simple completions, quick lookups | Rename a task, fix a typo, categorize an item | All plans |
 | **Standard** | Everyday work — balanced speed and reasoning | Draft an email, summarize a document, answer a question | Paid plans |

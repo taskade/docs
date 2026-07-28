@@ -17,6 +17,8 @@ redirects:
   apis-and-developer/mcp-overview: developers/mcp-overview
   apis-and-developer/workspace-mcp: developers/workspace-mcp
   apis-and-developer/api-v2-reference: developers/api-v2-reference
+  ai-features/tsk-1-model-tiers: ai-features/ai-features/tsk-1-model-tiers
+  developers/genesis-app-mcp: developers/workspace-mcp/genesis-app-mcp
   updates-and-timeline/changelog: changelog/changelog
   updates-and-timeline/changelog-2026: changelog/changelog-2026
   updates-and-timeline/changelog-2026/july-2026: changelog/changelog-2026/july-2026

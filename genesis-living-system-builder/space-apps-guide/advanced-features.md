@@ -180,19 +180,19 @@ Create specialized commands for specific business tasks:
 
 ### AI-Powered Agent Creation
 
-**TAA Creates Agents for You:**
+**EVE Creates Agents for You:**
 
-Your Taskade AI Assistant (TAA) can now build custom AI agents automatically based on your needs:
+Taskade EVE can now build custom AI agents automatically based on your needs:
 
 ```
-"TAA, create a marketing assistant agent that helps with content planning"
+"Create a marketing assistant agent that helps with content planning"
 "Set up a customer service bot for handling FAQ questions"  
 "Build a sales agent that qualifies leads from our contact form"
 ```
 
 **Automatic Configuration:**
 
-* TAA determines the optimal agent personality and tone
+* EVE determines the optimal agent personality and tone
 * Automatically selects appropriate AI models (GPT-4.1, Claude-4, etc.)
 * Configures relevant tools and integrations
 * Sets up proper knowledge sources and training
@@ -277,7 +277,7 @@ Connect your app to your existing business tools and create sophisticated workfl
 
 ### Enterprise-Grade Integrations
 
-Genesis apps can connect to **100+ business tools** through the TAA unified system:
+Genesis apps can connect to **100+ business tools** through Taskade's unified integration system:
 
 #### Communication & Collaboration
 
