@@ -336,16 +336,16 @@ Give your agent specific skills with custom commands:
 
 ## **Enhanced File Attachments**
 
-TAA (Taskade AI Assistant) conversations now support rich file interactions with complete visibility and context.
+Taskade EVE conversations now support rich file interactions with complete visibility and context.
 
 ### **Drag & Drop File Magic**
 
-Simply drag any file directly into your TAA chat:
+Simply drag any file directly into your EVE chat:
 
-* **Images**: JPG, PNG, GIF, WebP - TAA analyzes visual content
-* **Documents**: PDF, DOC, TXT - TAA reads and processes text
-* **Spreadsheets**: CSV, Excel - TAA analyzes data and creates insights
-* **Code Files**: Python, JavaScript, etc. - TAA reviews and suggests improvements
+* **Images**: JPG, PNG, GIF, WebP - EVE analyzes visual content
+* **Documents**: PDF, DOC, TXT - EVE reads and processes text
+* **Spreadsheets**: CSV, Excel - EVE analyzes data and creates insights
+* **Code Files**: Python, JavaScript, etc. - EVE reviews and suggests improvements
 
 ### **Visible File Context**
 
@@ -362,35 +362,35 @@ Files now appear directly alongside your messages instead of being hidden:
 
 ```
 You: [Attach quarterly_report.pdf] "Summarize the key findings and create action items"
-TAA: "I've analyzed your Q3 report. Here are the 5 key findings..."
+EVE: "I've analyzed your Q3 report. Here are the 5 key findings..."
 ```
 
 **Image Processing:**
 
 ```
 You: [Attach screenshot.png] "What's wrong with this UI design?"
-TAA: "Looking at your interface, I notice 3 usability issues..."
+EVE: "Looking at your interface, I notice 3 usability issues..."
 ```
 
 **Data Insights:**
 
 ```
 You: [Attach sales_data.csv] "What trends do you see in this data?"
-TAA: "Analyzing your sales data, I found these patterns..."
+EVE: "Analyzing your sales data, I found these patterns..."
 ```
 
 **Code Review:**
 
 ```
 You: [Attach app.py] "Review this code for security issues"
-TAA: "I've reviewed your Python code. Here are potential security concerns..."
+EVE: "I've reviewed your Python code. Here are potential security concerns..."
 ```
 
 ### **File Management Features**
 
-* **Rename Conversations**: Turn "Chat with TAA" into "Q3 Report Analysis"
+* **Rename Conversations**: Turn "Chat with EVE" into "Q3 Report Analysis"
 * **File History**: Access previously shared files from conversation history
-* **Cross-Reference**: TAA remembers files from earlier in the conversation
+* **Cross-Reference**: EVE remembers files from earlier in the conversation
 * **Batch Processing**: Upload multiple related files for comprehensive analysis
 
 ## Advanced Features

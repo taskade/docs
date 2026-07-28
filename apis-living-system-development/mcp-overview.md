@@ -10,7 +10,7 @@ Taskade speaks MCP (Model Context Protocol) through **three** surfaces. Pick by 
 
 | I want to… | Use | Where / auth |
 |---|---|---|
-| Have Claude **read & write my tasks** — create, complete, assign, set dates and fields | **[Workspace MCP](workspace-mcp.md)** (`@taskade/mcp-server`) | Local stdio · personal token (`https://www.taskade.com/settings/api`) · any paid plan |
+| Have Claude **read & write my tasks** — create, complete, assign, set dates and fields | **[Workspace MCP](workspace-mcp.md)** (`@taskade/mcp-server`) | Local stdio · personal token ([settings/api](https://www.taskade.com/settings/api)) · any paid plan |
 | **Orchestrate my workspace from my IDE** — create projects, manage & prompt agents, edit my app's code | **[Hosted Taskade MCP](genesis-app-mcp.md)** | Hosted · OAuth 2.0 (`https://www.taskade.com/mcp`) · any paid plan |
 | Let my agents **reach Slack, Shopify, Gmail** & other tools | **[MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md)** | Hosted, in-product |
 
