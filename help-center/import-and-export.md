@@ -1,6 +1,6 @@
 ---
 description: >-
-  Bring your existing work into Taskade and take it with you anywhere. Step-by-step guide for importing files, migrating from other tools, and exporting your.
+  Bring your existing work into Taskade and take it with you anywhere. Step-by-step guide for importing files, migrating from other tools, and exporting your data.
 ---
 
 # Import & Export

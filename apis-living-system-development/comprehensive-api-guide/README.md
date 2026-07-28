@@ -65,6 +65,10 @@ https://www.taskade.com/oauth2/token
 
 ## Core API Resources
 
+{% hint style="info" %}
+**Looking for bundle export/import?** The four `/bundles/*` endpoints (export or import a Genesis app as a portable bundle) are documented on the [Bundles & App Kits](../bundles.md) page.
+{% endhint %}
+
 ### Workspaces API
 
 **Manage workspaces and their contents:**

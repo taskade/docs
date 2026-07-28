@@ -84,6 +84,7 @@ AI Forms include customizable field types to collect different kinds of informat
 | **Rating**          | For giving ratings (stars/numbers)      | Satisfaction, quality scores   | Trend analysis, alert thresholds           |
 | **Single-Select**   | Allow one option from predefined list   | Multiple choice questions      | Response pattern analysis                  |
 | **Multi-Select**    | Allow multiple options                  | Interests, features, tags      | Correlation analysis, preference mapping   |
+| **Checkbox**        | A yes/no checkbox submitting true/false | Consent boxes, opt-ins, toggles | Branch or filter automations on the value |
 | **URL**             | Accept web addresses or links           | Website links, references      | Link validation, content preview           |
 
 ### **Step 4: Configure AI-Powered Processing**

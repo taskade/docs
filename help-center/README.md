@@ -68,7 +68,7 @@ Find answers fast. Pick the topic that matches what you need.
 
 * [Build on Taskade](../apis-living-system-development/developer-home.md) — developer starting point
 * [Workspace MCP](../apis-living-system-development/workspace-mcp.md) — manage projects, tasks, and agents from Claude, Cursor, or VS Code
-* [Genesis App MCP (Beta)](../apis-living-system-development/genesis-app-mcp.md) — edit your Genesis app's source code from your IDE
+* [Hosted Taskade MCP (Beta)](../apis-living-system-development/genesis-app-mcp.md) — orchestrate your workspace and edit your Genesis app's source from your IDE
 * [REST API Reference](../apis-living-system-development/developers/api.md) — 57+ endpoints
 * [Webhooks](../apis-living-system-development/webhooks.md) — inbound and outbound
 * [Bundles & App Kits](../apis-living-system-development/bundles.md) — export and share complete apps

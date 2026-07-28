@@ -6,7 +6,7 @@ description: >-
 
 # Workspace MCP
 
-> **Editing Taskade Genesis app source code instead?** See [Hosted MCP — Genesis App (Beta)](genesis-app-mcp.md) for the remote server that writes to your app's source files.
+> **Prefer a hosted server (no install)?** See [Hosted Taskade MCP (Beta)](genesis-app-mcp.md) — it creates projects, manages & prompts agents, and edits your Genesis app's source, but has no task-level write tools.
 
 > **Not sure which Taskade MCP you need?** See [Which Taskade MCP do I want?](mcp-overview.md).
 
@@ -81,13 +81,11 @@ Cursor uses the same configuration shape (in `~/.cursor/mcp.json` or the project
 
 ## HTTP / SSE mode
 
-For clients that connect over HTTP instead of stdio, run the server in HTTP mode:
+{% hint style="info" %}
+HTTP/SSE mode is available **from source only** — the npm-published release (`0.0.2`) and the packaged CLI are **stdio-only**. Clone [github.com/taskade/mcp](https://github.com/taskade/mcp) and run the server package's HTTP entry.
+{% endhint %}
 
-```bash
-TASKADE_API_KEY=your_api_token_placeholder npx @taskade/mcp-server --http
-```
-
-The server listens on `http://localhost:3000` (set `PORT` to change it); connect via SSE at `http://localhost:3000/sse?access_token=your_api_token_placeholder`.
+When running the HTTP entry from source, the server listens on `http://localhost:3000` (set `PORT` to change it); connect via SSE at `http://localhost:3000/sse?access_token=your_api_token_placeholder`.
 
 {% hint style="warning" %}
 HTTP mode accepts the token as a query parameter (`?access_token=…`). Only use this on a trusted local network or behind TLS — never expose it publicly.
@@ -110,7 +108,7 @@ Once configured, you can run your workspace by talking. Ask Claude to:
 
 Every tool the server exposes, grouped by category — reach for this when you want to wire something precisely.
 
-The server exposes **62 tools** across 8 categories. Tool names mirror the [REST API v1](comprehensive-api-guide/README.md) operations the server wraps:
+The npm-published release (`0.0.2`) exposes **57 tools** across 7 categories mirroring the [REST API v1](comprehensive-api-guide/README.md) operations the server wraps. The `0.1.0` source release (latest tag `0.1.1`, on [GitHub](https://github.com/taskade/mcp)) adds a five-tool **API v2 (beta)** category — 62 tools total:
 
 | Area | Tools |
 | --- | --- |
@@ -121,10 +119,10 @@ The server exposes **62 tools** across 8 categories. Tool names mirror the [REST
 | **Agents** | `folderAgentGenerate`, `folderCreateAgent`, `folderAgentGet`, `agentGet`, `agentUpdate`, `deleteAgent`, `agentKnowledgeProjectCreate`, `agentKnowledgeMediaCreate`, `agentKnowledgeProjectRemove`, `agentKnowledgeMediaRemove`, `agentPublicAccessEnable`, `agentPublicGet`, `agentPublicUpdate`, `agentConvosGet`, `agentConvoGet`, `publicAgentGet` |
 | **Media** | `mediasGet`, `mediaGet`, `mediaDelete` |
 | **Personal** | `meProjectsGet` |
-| **Agent Chat & Webhooks (API v2, beta)** | `promptAgent`, `listConversations`, `getConversation`, `subscribeWebhook`, `unsubscribeWebhook` |
+| **Agent Chat & Webhooks (API v2, beta — v0.1.0+)** | `promptAgent`, `listConversations`, `getConversation`, `subscribeWebhook`, `unsubscribeWebhook` |
 
 {% hint style="info" %}
-As of v0.1.1 this server also bundles a small **API v2 (beta)** layer — including a **prompt-an-agent** tool (`promptAgent`), agent-chat (`listConversations`, `getConversation`), and webhook subscribe/unsubscribe (`subscribeWebhook`, `unsubscribeWebhook`). The rest of the surface mirrors [REST API v1](comprehensive-api-guide/README.md).
+The **API v2 (beta)** layer — prompt-an-agent (`promptAgent`), agent-chat (`listConversations`, `getConversation`), and webhook subscribe/unsubscribe — ships in **v0.1.0** (latest source release `v0.1.1`), currently available from source at [github.com/taskade/mcp](https://github.com/taskade/mcp) while the npm release catches up. Everything else is in the npm-published `0.0.2`. Note the v2 webhook tools use the legacy subscribe operations; for signed webhooks use the [Webhook Registration API](webhooks.md#webhook-registration-api) directly.
 {% endhint %}
 
 ## Plan Availability

@@ -22,7 +22,6 @@ redirects:
   updates-and-timeline/changelog-2026/july-2026: changelog/changelog-2026/july-2026
   updates-and-timeline/changelog-2026/june-2026: changelog/changelog-2026/june-2026
   updates-and-timeline/upcoming-changes: changelog/upcoming-changes
-  help-and-support/index: help/index
   help-and-support/comprehensive-troubleshooting-guide: help/comprehensive-troubleshooting-guide
   # Legacy redirects (pre-2026)
   docs/updates: changelog/changelog-2026
@@ -73,7 +72,7 @@ customization:
   
 site:
   title: "Taskade Documentation"
-  description: "The productivity platform with living DNA. Your workspace becomes a digital organism where every project, agent, automation, and piece of knowledge connects to form the genetic code of everything you build."
+  description: "Build real business apps from plain English with Taskade Genesis — plus a full developer platform: REST API, Action API, MCP, SDK, and signed webhooks."
   
 navigation:
   links:

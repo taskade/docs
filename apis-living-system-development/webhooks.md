@@ -1,7 +1,7 @@
 ---
 description: >-
-  Use inbound webhooks to trigger Taskade automations from external services,
-  and outbound HTTP requests to call any API from your workflows.
+  Trigger Taskade automations with inbound webhooks, call any API from your
+  workflows, and register signed outbound webhooks over the Public API v2.
 ---
 
 # Webhooks
@@ -18,7 +18,7 @@ Webhooks let your Taskade automations communicate with the outside world in both
 Two ways to receive Taskade events:
 
 * **No-code:** build an automation with a Taskade trigger plus an HTTP action — see [Receiving Taskade Events](#receiving-taskade-events) below.
-* **Programmatic (Beta):** subscribe over the public API with `POST /api/v2/subscribeWebhook` — see [Programmatic Webhook Subscriptions](#programmatic-webhook-subscriptions-beta). Available on **Pro and above**.
+* **Programmatic:** register a **signed** outbound webhook with `POST /api/v2/webhooks` — see the [Webhook Registration API](#webhook-registration-api). Available on **Pro and above**.
 {% endhint %}
 
 ***
@@ -144,45 +144,123 @@ Response data from the HTTP request is available as dynamic variables in subsequ
 
 ***
 
-## Programmatic Webhook Subscriptions (Beta)
+## Webhook Registration API
 
 {% hint style="info" %}
-Beta. Subscribing requires **Pro or above**. Subscriptions are account-level, and `task.due` is the only event wired end-to-end today — more events are rolling out. The authoritative schema is the live [Action API v2 spec](https://www.taskade.com/api/documentation/v2).
+Requires **Pro or above**. Registration returns a **signing secret exactly once** — store it before anything else. The authoritative schema is the live [Action API v2 spec](https://www.taskade.com/api/documentation/v2).
 {% endhint %}
 
-Subscribe to Taskade events over the public API without building an automation in the UI. This is the surface the official [Taskade integrations](https://github.com/taskade/integrations) (Zapier, n8n, Activepieces) build on.
+Register **signed** outbound webhooks over the public API — no automation flow needed. Taskade `POST`s the event payload to your endpoint and signs every delivery with an HMAC secret so you can verify it really came from Taskade. This is the same event stream the official [Taskade integrations](https://github.com/taskade/integrations) (Zapier, n8n, Activepieces) consume, and it replaces the legacy unsigned `subscribeWebhook` / `unsubscribeWebhook` operations (still available, now deprecated — see [below](#legacy-unsigned-subscriptions-deprecated)).
 
-**Subscribe** — register a target URL for an event:
+### Register a webhook
+
+**`POST /api/v2/webhooks`** — one target URL, one or more events, optional workspace scoping:
 
 ```http
-POST https://www.taskade.com/api/v2/subscribeWebhook
+POST https://www.taskade.com/api/v2/webhooks
 Authorization: Bearer YOUR_PERSONAL_ACCESS_TOKEN
 Content-Type: application/json
 
 {
   "targetUrl": "https://your-app.example.com/hooks/taskade",
-  "triggerType": "task.due"
+  "events": ["task.due", "task.assigned"],
+  "spaceIds": []
 }
 ```
 
-Returns `{ "ok": true, "hookId": "..." }`. Taskade then POSTs the event payload to `targetUrl` whenever a matching event fires. Delivery uses an SSRF-guarded fetch, so `targetUrl` **must be `https`**.
+**Response** — `secret` is shown **once**:
 
-**Unsubscribe** — remove a subscription by its `hookId`:
-
-```http
-POST https://www.taskade.com/api/v2/unsubscribeWebhook
-Authorization: Bearer YOUR_PERSONAL_ACCESS_TOKEN
-Content-Type: application/json
-
-{ "hookId": "..." }
+```json
+{
+  "ok": true,
+  "webhook": {
+    "id": "https://your-app.example.com/hooks/taskade",
+    "url": "https://your-app.example.com/hooks/taskade",
+    "events": ["task.due", "task.assigned"],
+    "spaceIds": [],
+    "createdAt": "2026-07-21T09:00:00.000Z"
+  },
+  "secret": "your_signing_secret_placeholder"
+}
 ```
 
-| Note | Detail |
+A webhook's **`id` is its target URL** — URL-encode it whenever you use it as a path parameter.
+
+### Supported events
+
+| Event | Fires when |
 | --- | --- |
-| Plan | Subscribing requires **Pro or above** (otherwise `402 PAYMENT_REQUIRED`). Unsubscribing is always allowed, so a downgraded account can still clean up. |
-| Scope | Account-level — fires for matching events across your account. Per-project scope is planned. |
-| Events | `task.due` today. `task.assigned`, `task.completed`, `project.created` and more are rolling out. |
-| Limit | Up to 100 active subscriptions per account. |
+| `task.due` | A task's due date arrives |
+| `task.assigned` | A task is assigned to someone |
+| `comment.created` | A comment is added to a task |
+| `project.created` | A project is created |
+| `project.assigned` | A project is assigned to someone |
+| `project.joined` | Someone joins a project |
+
+### Scope to specific workspaces
+
+`"spaceIds": []` (the default) delivers matching events from **all** your workspaces. Pass workspace ids to receive events from only those workspaces:
+
+```json
+{
+  "targetUrl": "https://your-app.example.com/hooks/taskade",
+  "events": ["project.created"],
+  "spaceIds": ["SPACE_ID_1", "SPACE_ID_2"]
+}
+```
+
+### List, inspect, delete
+
+```bash
+# list all registered webhooks
+curl https://www.taskade.com/api/v2/webhooks \
+  -H "Authorization: Bearer YOUR_PERSONAL_ACCESS_TOKEN"
+
+# get or delete one — the :id is the URL-encoded target URL
+curl -X DELETE \
+  "https://www.taskade.com/api/v2/webhooks/https%3A%2F%2Fyour-app.example.com%2Fhooks%2Ftaskade" \
+  -H "Authorization: Bearer YOUR_PERSONAL_ACCESS_TOKEN"
+```
+
+`GET /api/v2/webhooks` returns `{ "ok": true, "items": [ ... ] }`; `DELETE /api/v2/webhooks/{id}` returns `{ "ok": true, "deleted": true }`.
+
+### Verify delivery signatures
+
+Every delivery carries an `X-Taskade-Signature` header — `sha256=` followed by the hex HMAC-SHA256 of the **raw request body**, keyed with your webhook's secret:
+
+```
+X-Taskade-Signature: sha256=5f4dcc3b5aa765d61d8327deb882cf99...
+```
+
+Recompute the HMAC over the raw body (before any JSON parsing) and compare in constant time:
+
+```typescript
+import crypto from "node:crypto";
+
+function verifyTaskadeWebhook(rawBody: Buffer, signatureHeader: string, secret: string): boolean {
+  const expected = `sha256=${crypto.createHmac("sha256", secret).update(rawBody).digest("hex")}`;
+  return (
+    expected.length === signatureHeader.length &&
+    crypto.timingSafeEqual(Buffer.from(expected), Buffer.from(signatureHeader))
+  );
+}
+```
+
+Reject any delivery whose signature doesn't match.
+
+### Limits & requirements
+
+| Rule | Detail |
+| --- | --- |
+| Plan | **Pro or above** (`402 PAYMENT_REQUIRED` otherwise) on a verified account. Deleting is always allowed, so a downgraded account can still clean up. |
+| Target URL | Must be **`https`** (deliveries use an SSRF-guarded fetch). Max **2,048 characters** URL-encoded. |
+| Limit | Up to **100** event–workspace combinations per account across your registered webhooks (a webhook with 3 events scoped to 2 workspaces counts as 6). |
+| Scope | All workspaces by default; narrow with `spaceIds`. |
+| Dashboard | You can also create and manage outgoing webhooks in **[Settings → API](https://www.taskade.com/settings/api)**. |
+
+### Legacy: unsigned subscriptions (deprecated)
+
+`POST /api/v2/subscribeWebhook` (`{ targetUrl, triggerType }` → `{ ok, hookId }`) and `POST /api/v2/unsubscribeWebhook` (`{ hookId }`) still work, but they are **deprecated**: each subscription covers a single event, scoping is account-level only, and deliveries are **not signed**. New integrations should use `POST /api/v2/webhooks`; existing ones can migrate by registering the same target URL with the new endpoint and removing the old subscription.
 
 ***
 

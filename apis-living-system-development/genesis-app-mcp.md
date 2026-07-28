@@ -1,50 +1,46 @@
 ---
 description: >-
-  Connect Claude, Cursor, or any MCP client to your Taskade Genesis app's source
-  code via https://www.taskade.com/mcp (OAuth 2.0, Business plan).
+  Connect Claude, Cursor, or any MCP client to the hosted Taskade MCP server at
+  taskade.com/mcp — orchestrate agents, create projects, and edit app code.
 ---
 
-# Genesis App MCP (Beta)
+# Hosted Taskade MCP (Beta)
 
-> **Managing projects, tasks, or agents instead?** See [Workspace MCP](workspace-mcp.md) for the API-based server that reads and writes workspace content.
+> **Need task-level writes (create, complete, dates, assignees)?** See [Workspace MCP](workspace-mcp.md) for the local server that wraps the full REST API v1. Not sure which surface you need? See [Which Taskade MCP do I want?](mcp-overview.md).
 
-## Which MCP do I want?
-
-> See **[Which Taskade MCP do I want?](mcp-overview.md)** for the full three-surface comparison. This page covers the **hosted Genesis App MCP**.
-
-Genesis App MCP lets you connect your favorite AI tools — Claude Desktop, Claude Code, Cursor, or any MCP-compatible client — directly to your Taskade Genesis app's **source code**. Browse your workspace from your IDE, and edit your app's React components, styles, and configuration using the model and workflow you already love.
+The hosted Taskade MCP server connects your favorite AI tools — Claude Desktop, Claude Code, Cursor, Windsurf, Zed, or any MCP-compatible client — directly to your Taskade workspace. From your IDE or AI client you can browse your workspace, **create projects, manage and prompt AI agents**, and **edit your Genesis app's source code**. The toolset mirrors much of the [Action API v2](api-v2-reference.md), and more tools land as that API grows.
 
 > **Beta notice**
-> Genesis App MCP is currently in beta. Tools, behavior, and available scopes may change as the feature evolves. We'd love your feedback.
+> The hosted Taskade MCP is in beta. Tools, behavior, and available scopes may change as the feature evolves. We'd love your feedback.
 
-## What you can do with MCP
+## What you can do
 
-In this beta, MCP is scoped to **configuring your Taskade Genesis app**. You can:
-
-- **Browse** your workspace as a virtual filesystem — see your projects, agents, automations, uploaded media, and app source code
-- **Edit** your Genesis app's source files (React components, styles, configuration) from your own IDE or AI tool
-- **Chain edits** with your model of choice — use Claude, GPT, or any MCP-compatible model to iterate on your app
+* **Browse** your workspace as a virtual filesystem — projects, agents, automations, uploaded media, and app source code
+* **Read structured data** — list projects, agents, automations, and tasks; read a project's full task tree
+* **Create & orchestrate** — create projects from Markdown, create/update/delete agents, attach knowledge, and prompt an agent and get its reply
+* **Edit your Genesis app's source files** (React components, styles, configuration) from your own IDE or AI tool
 
 ### What's not included (yet)
 
-MCP currently **cannot** create, modify, or delete:
+The hosted server currently **cannot**:
 
-- Projects or tasks
-- AI agents or their knowledge
-- Automations or flows
-- Uploaded media
+* Create, complete, or edit **tasks** (assignees, dates, notes, fields) — use [Workspace MCP](workspace-mcp.md) or the [REST API v1](comprehensive-api-guide/README.md)
+* Create, edit, or run **automations** (flows are listed read-only)
+* Upload or delete **media**
+* Register **webhooks** — use the [Webhook Registration API](webhooks.md#webhook-registration-api)
 
-Those resources appear in the MCP filesystem but are **read-only**. To modify them, keep using Taskade directly or Taskade EVE (the built-in AI assistant). We're actively working on expanding MCP's write scope — stay tuned.
+More tools land as the Action API v2 surface grows.
 
 ## Requirements
 
-- A Taskade workspace on the **Business plan or higher**
-- **Editor (collaborator) role or above** in the workspace you want to work with — viewers and participants can browse via MCP but cannot make edits
-- An MCP-compatible client such as:
-  - [Claude Desktop](https://claude.ai/download)
-  - [Claude Code](https://claude.com/claude-code)
-  - [Cursor](https://cursor.com)
-  - Any client that supports the [Model Context Protocol](https://modelcontextprotocol.io)
+* A Taskade workspace on **any paid plan** (the Free plan can connect, but workspace access is gated)
+* **Editor (collaborator) role or above** in the workspace for write tools — viewers and participants can browse but not modify
+* An MCP-compatible client such as:
+  * [Claude Desktop](https://claude.ai/download)
+  * [Claude Code](https://claude.com/claude-code)
+  * [Cursor](https://cursor.com)
+  * [Windsurf](https://codeium.com/windsurf) or [Zed](https://zed.dev)
+  * Any client that supports the [Model Context Protocol](https://modelcontextprotocol.io)
 
 ## Connecting your client
 
@@ -54,6 +50,8 @@ This is a **hosted, remote MCP server** — there's nothing to install. Add its 
 ```
 https://www.taskade.com/mcp
 ```
+
+OAuth discovery metadata is published at `https://www.taskade.com/.well-known/oauth-protected-resource/mcp` for clients that support automatic discovery.
 
 ### Example: Claude Desktop / Claude Code
 
@@ -76,7 +74,7 @@ In Cursor's MCP settings, add a new server with the URL `https://www.taskade.com
 
 ## First-time authentication
 
-The first time your client connects, Taskade MCP will walk you through a standard OAuth2 flow:
+The first time your client connects, Taskade MCP walks you through a standard OAuth2 flow:
 
 1. Your MCP client discovers the Taskade MCP server
 2. You're redirected to Taskade in your browser to sign in
@@ -87,58 +85,67 @@ You only need to do this once per client. Make sure you're signed in to the Task
 
 ## The MCP toolset
 
-Taskade MCP exposes three tools to your client:
+The server exposes **18 tools** plus a `taskade://getting-started` resource (a Markdown quickstart your AI client can read on its own). Most tools take a `spaceId` — clients typically call `list_spaces` first to find it.
 
-### `list_spaces`
+### Browse & app editing
 
-Returns the workspaces (spaces) you're a member of, along with your role in each. Use this to discover which workspace to work with.
+| Tool | What it does |
+| --- | --- |
+| `list_spaces` | List the workspaces you belong to (on plans with MCP access), with your role in each |
+| `inspect_space` | Read files and directories in a workspace's virtual filesystem — `app/`, `projects/`, `agents/`, `automations/`, `media/` |
+| `write_file` | Create or edit files in your Genesis app's `app/` directory — create, replace substrings, insert at a line, or apply a unified diff |
 
-Your AI client will typically call this first without you needing to prompt it.
+### Read workspace data
 
-### `inspect_space`
+| Tool | What it does |
+| --- | --- |
+| `list_projects` | Projects in a workspace as structured JSON (id, name) |
+| `read_project` | A project's full contents — task tree with assignees, dates, tags |
+| `list_tasks` | Tasks in a project (id, text, completed, parent) with cursor pagination |
+| `list_agents` | The AI agents in a workspace (id, name) |
+| `list_automations` | The automation flows in a workspace (id, name) |
 
-Reads files and directories inside a workspace. Each workspace is presented as a virtual filesystem:
+### Create & orchestrate
+
+| Tool | What it does |
+| --- | --- |
+| `create_project` | Create a project in a workspace from Markdown |
+| `create_agent` | Create an AI agent (name + role instructions) |
+| `get_agent` / `update_agent` / `delete_agent` | Read, update, or delete an agent |
+| `prompt_agent` | Send a one-shot prompt to an agent and get its text reply (runs on the agent's configured tier, consumes credits) |
+| `list_conversations` / `get_conversation` | Browse an agent's conversation history — `get_conversation` includes a Markdown transcript |
+| `add_knowledge_project` / `remove_knowledge_project` | Attach or detach a project as agent knowledge |
+
+Tool names track the [Action API v2](api-v2-reference.md) operations they mirror.
+
+### The virtual filesystem
+
+`inspect_space` presents each workspace as a directory tree:
 
 ```
 workspace/
-├── app/            # Your Genesis app source (writable)
-│   └── src/
-│       └── App.tsx
-├── projects/       # Tasks and documents (read-only)
-├── agents/         # AI agent definitions (read-only)
+├── app/            # Your Genesis app source (writable via write_file)
+├── projects/       # Tasks and documents (use read_project / list_tasks for structured reads)
+├── agents/         # AI agent definitions
 ├── automations/    # Flows (read-only)
 └── media/          # Uploaded files (read-only)
 ```
 
-You can ask your client to browse any of these directories. For example:
-
-> *"Show me the files in my Marketing workspace's Genesis app."*
-
-### `write_file`
-
-Creates or edits files in the `app/` directory of your Genesis app. Supports:
-
-- **Creating** new files
-- **Replacing** substrings in existing files
-- **Inserting** content at a specific line
-- **Applying** unified diff patches
-
-Writes are restricted to the `app/` directory. Attempts to write to `projects/`, `agents/`, `automations/`, or `media/` will be rejected.
-
-You also need **collaborator access or above** on the workspace to use `write_file`.
+Writes are restricted to the `app/` directory — `write_file` against `projects/`, `agents/`, `automations/`, or `media/` is rejected. Use the structured tools above to create projects and manage agents.
 
 ## Example workflows
-
-Here are a few ways to put MCP to work.
 
 ### Refactor a component with Claude
 
 > *"Open my 'Landing Page' workspace, look at `app/src/App.tsx`, and split the hero section into its own component. Keep the existing styling."*
 
-Claude will:
-1. Call `list_spaces` to find the workspace
-2. Call `inspect_space` to read `App.tsx`
-3. Call `write_file` (twice) to create the new component file and update `App.tsx`
+Claude will call `list_spaces` → `inspect_space` → `write_file` (twice) to create the new component file and update `App.tsx`.
+
+### Stand up a project and brief an agent
+
+> *"Create a project called 'Q3 Launch' with a task per milestone from this outline, attach it to my Research agent as knowledge, then ask the agent to summarize the risks."*
+
+The client calls `create_project`, `add_knowledge_project`, and `prompt_agent` — no browser tab needed.
 
 ### Audit your app for accessibility
 
@@ -146,25 +153,22 @@ Claude will:
 
 The client reads your files via `inspect_space` and shows you a report before you approve any edits.
 
-### Add a new page with your own model
-
-Use whichever model your IDE supports — Claude Opus, GPT-4, Gemini, a local Ollama model — to generate a new page, then let the client write it via MCP.
-
 ## Tips and gotchas
 
-- **Always read before you edit.** Ask your client to inspect a file before modifying it. Edits against a stale view may fail or produce unexpected results.
-- **One workspace at a time.** Tools take a `spaceId` — point your client at the right workspace before issuing commands.
-- **Publish your changes.** Writing files through MCP updates your Genesis app's source, but you still need to publish/deploy the app through Taskade for the changes to go live on your custom domain. (Check your Genesis app's publish settings in Taskade.)
-- **No partial plans.** MCP access is gated at the workspace level. If you're a member of a Business workspace from a Pro account, you can use MCP against the Business workspace but not against your own Pro workspace.
+* **Always read before you edit.** Ask your client to inspect a file before modifying it. Edits against a stale view may fail or produce unexpected results.
+* **One workspace at a time.** Tools take a `spaceId` — point your client at the right workspace before issuing commands.
+* **Publish your changes.** Writing files through MCP updates your Genesis app's source, but you still need to publish through Taskade for changes to go live on your custom domain.
+* **Plan gating is per-workspace.** If you're a member of a paid workspace from a free account, you can use MCP against the paid workspace but not against your own free workspace.
+* **`prompt_agent` spends credits.** It runs the agent for real, exactly like prompting it in the app.
 
 ## When to use MCP vs. Taskade EVE
 
-Both MCP and Taskade EVE (Taskade's in-product AI assistant) can edit your Taskade Genesis app. Use whichever fits your workflow:
+Both MCP and Taskade EVE (Taskade's in-product AI assistant) can build and orchestrate. Use whichever fits your workflow:
 
 | Use **EVE** when… | Use **MCP** when… |
 |---|---|
 | You're already inside Taskade | You live in your IDE |
-| You want full-scope edits (projects, agents, flows, app) | You're focused on the app's source code |
+| You want full-scope edits (tasks, flows, app) in one conversation | You're scripting a workflow across projects, agents, and app code |
 | You're building from a prompt end-to-end | You want to use a specific model or tool |
 | You prefer a conversational flow | You want precise, file-level control |
 
@@ -173,21 +177,21 @@ If EVE isn't clicking for your use case, MCP gives you an escape hatch — bring
 ## Troubleshooting
 
 **"MCP access is not available on this workspace's current plan."**
-Your workspace isn't on an MCP-enabled plan. Upgrade to Business or higher, or contact your workspace owner.
+Your workspace is on the Free plan. Upgrade to any paid plan, or ask your workspace owner.
 
 **"Access denied: you are not a member of this space."**
 You're trying to access a workspace you don't belong to. Double-check the workspace ID or ask to be invited.
 
 **"Access denied: your role does not have write access."**
-`write_file` requires collaborator or higher. Viewer and participant roles can still use `inspect_space`.
+Write tools require collaborator or higher. Viewer and participant roles can still browse.
 
 **OAuth flow keeps looping.**
 Make sure you're signed in to the correct Taskade account in your browser. Clearing your MCP client's stored credentials and reconnecting usually fixes this.
 
 ## Feedback
 
-MCP is in active development and your feedback directly shapes what we ship next. If something's missing, broken, or confusing, let us know — we're listening.
+The hosted MCP is in active development and your feedback directly shapes what we ship next. If something's missing, broken, or confusing, let us know — we're listening.
 
 ---
 
-**TL;DR:** Add `https://www.taskade.com/mcp` to your MCP client, sign in once, and start editing your Genesis app from Claude, Cursor, or any MCP-compatible tool. Workspace must be on Business plan or above. Beta — scope is currently limited to the app's source code.
+**TL;DR:** Add `https://www.taskade.com/mcp` to your MCP client, sign in once, and orchestrate your workspace from Claude, Cursor, or any MCP-compatible tool — create projects, manage and prompt agents, and edit your Genesis app's source. Any paid plan. Beta — task-level writes still live in [Workspace MCP](workspace-mcp.md).

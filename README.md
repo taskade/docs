@@ -7,6 +7,8 @@ coverY: 0
 
 # Build on Taskade
 
+Taskade turns a plain-English description of your business into a real, running app — CRM, client portal, or ops dashboard — with logins, your own domain, and a full developer platform: REST API, Action API, MCP, SDK, and signed webhooks.
+
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>🛠️ Build a business app — no code</strong></td><td>Describe it in plain English. Get a CRM, client portal, or ops dashboard — with logins and your own domain.</td><td><a href="genesis-living-system-builder/genesis/getting-started.md">Start building →</a></td></tr><tr><td><strong>💻 Build on the API — developers</strong></td><td>REST API v1, Action API v2, MCP, SDK, and webhooks for programmatic access.</td><td><a href="apis-living-system-development/developer-home.md">Developer platform →</a></td></tr></tbody></table>
 
 {% hint style="info" %}

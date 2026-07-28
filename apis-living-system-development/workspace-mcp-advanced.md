@@ -56,7 +56,7 @@ graph LR
 | --- | --- | --- | --- |
 | **Inbound** | AI tools like Claude Desktop | "Claude, list my Taskade projects" | [Workspace MCP](workspace-mcp.md) (this page adds advanced config) |
 | **Outbound** | Taskade agents | Agent calls a third-party service via MCP | [MCP Connectors](#mcp-connectors) section below |
-| **Taskade Genesis App MCP** | Genesis app builders | Edit app source from an IDE | [Genesis App MCP (Beta)](genesis-app-mcp.md) |
+| **Hosted Taskade MCP** | IDE & AI-client orchestration | Create projects, manage & prompt agents, edit app source | [Hosted Taskade MCP (Beta)](genesis-app-mcp.md) |
 
 ---
 
@@ -73,7 +73,7 @@ The inbound MCP server (`@taskade/mcp-server`) authenticates with a Personal Acc
 
 ### OAuth availability
 
-OAuth 2.0 is available for the Genesis App MCP (which runs hosted at a URL). The local `@taskade/mcp-server` inbound server currently uses personal tokens only.
+OAuth 2.0 is available for the hosted Taskade MCP (which runs at `https://www.taskade.com/mcp`). The local `@taskade/mcp-server` inbound server currently uses personal tokens only.
 
 ---
 
@@ -182,12 +182,7 @@ Avoid committing these config files to public repos with real tokens. Many teams
 
 ## Plan Gating
 
-| Feature | Free | Pro | Business | Max / Enterprise |
-| --- | --- | --- | --- | --- |
-| Inbound MCP (`@taskade/mcp-server`) | Limited | Limited | Full | Full |
-| MCP Connectors (outbound) | — | — | ✓ | ✓ |
-| Taskade-as-MCP-server (external clients read workspace) | — | — | ✓ | ✓ |
-| Custom domain for MCP | — | — | — | ✓ |
+MCP access is included on **all paid Taskade plans**. Free-plan users can install and connect either server, but workspace-scoped access (listing your workspaces, hosted-MCP tools) requires an active paid subscription.
 
 {% hint style="info" %}
 Plan features may evolve. Check the [pricing page](https://www.taskade.com/pricing) for current gating.
@@ -197,7 +192,7 @@ Plan features may evolve. Check the [pricing page](https://www.taskade.com/prici
 
 ## Tool Catalog Details
 
-The inbound server exposes **62 tools** across 8 categories. Most mirror the [REST API v1](comprehensive-api-guide/README.md) operations it wraps; the newest category is a small **Agent Chat & Webhooks (API v2, beta)** group (`promptAgent`, `listConversations`, `getConversation`, `subscribeWebhook`, `unsubscribeWebhook`). Below are the ones integrators most often need to configure precisely.
+The npm-published inbound server (`0.0.2`) exposes **57 tools** across 7 categories mirroring the [REST API v1](comprehensive-api-guide/README.md) operations it wraps; the `0.1.0` source release (latest tag `0.1.1`, on [GitHub](https://github.com/taskade/mcp)) adds a five-tool **Agent Chat & Webhooks (API v2, beta)** group (`promptAgent`, `listConversations`, `getConversation`, `subscribeWebhook`, `unsubscribeWebhook`). Below are the ones integrators most often need to configure precisely.
 
 ### `projectTasksGet`
 
@@ -216,7 +211,7 @@ The inbound server exposes **62 tools** across 8 categories. Most mirror the [RE
 - **`agentConvoGet`** returns one conversation (`agentId`, `convoId`).
 
 {% hint style="info" %}
-This server now bundles a small **API v2 (beta)** layer (prompt-an-agent `promptAgent`, agent-chat, webhook subscribe/unsubscribe) on top of the v1 surface. Note: bundle export/import still lives in the [Action API v2](bundles.md), not in this server.
+The **API v2 (beta)** layer (prompt-an-agent `promptAgent`, agent-chat, webhook subscribe/unsubscribe) ships in `v0.1.0` (latest source release `v0.1.1`) — currently from source on [GitHub](https://github.com/taskade/mcp) while the npm release catches up. Note: bundle export/import still lives in the [Action API v2](bundles.md), not in this server.
 {% endhint %}
 
 For the full tool list, see the [Workspace MCP](workspace-mcp.md) reference.
@@ -242,7 +237,7 @@ Agents see enabled connectors as tools. You can opt specific tools out per agent
 | "Workspace not found" | Token scoped to wrong workspace | Create a token in the right workspace |
 | Tools appear but return 429 | Rate limited | Back off; consider splitting tokens |
 | Agent invisible in shared workspace | Permission issue (fixed v6.114.1) | Update to latest `@taskade/mcp-server` |
-| OAuth loop (Genesis App MCP) | Expired refresh token | Re-authenticate in the client |
+| OAuth loop (Hosted Taskade MCP) | Expired refresh token | Re-authenticate in the client |
 | Tool timeout | Large response or slow upstream | Check upstream; reduce query scope |
 
 {% hint style="info" %}
@@ -257,7 +252,7 @@ Still stuck? File an issue at [github.com/taskade/taskade/issues](https://github
 - **Use per-workspace tokens.** A leaked personal token is bounded to one workspace if scoped correctly.
 - **Rotate on every personnel change.** When a teammate leaves, rotate any shared tokens.
 - **Monitor the workspace activity log** for unexpected MCP-initiated actions.
-- **Use TLS / custom domain** for Genesis App MCP in production.
+- The hosted Taskade MCP is always served over TLS at `https://www.taskade.com/mcp`.
 
 ---
 

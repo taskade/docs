@@ -1,6 +1,6 @@
 ---
 description: >-
-  Taskade Genesis turns natural-language prompts into full applications — databases, interfaces, automations, and AI agents — deployed instantly from your.
+  Taskade Genesis turns natural-language prompts into full applications — databases, interfaces, automations, and AI agents — deployed instantly from your workspace.
 ---
 
 # Taskade Genesis Overview
@@ -89,7 +89,7 @@ Start here:
 
 ### What's next
 
-Edit your app's source from Claude, Cursor, or any IDE via [Taskade Genesis App MCP (Beta)](../../apis-living-system-development/genesis-app-mcp.md).
+Edit your app's source from Claude, Cursor, or any IDE via the [Hosted Taskade MCP (Beta)](../../apis-living-system-development/genesis-app-mcp.md).
 
 Running a real business on a Taskade Genesis app? Follow [Run Your Business on Genesis](../run-your-business/README.md).
 

@@ -196,7 +196,7 @@ Taskade's model picker is powered by **TSK-1**, the intelligence layer that auto
 
 | Tier | When to use it |
 |------|---------------|
-| **Auto** (recommended) | TSK-1 picks the right tier per request — fast when you need speed, deep when you need reasoning. New agents default to Auto on most paid plans |
+| **Auto** (recommended) | TSK-1 picks the right tier per request — fast when you need speed, deep when you need reasoning. New agents default to Auto on every plan |
 | **Instant** | Fast edits, simple completions, quick lookups |
 | **Standard** | Everyday work — balanced speed and reasoning |
 | **Thinking** | Planning, creation, multi-step reasoning |

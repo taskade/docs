@@ -50,6 +50,8 @@ Bundle endpoints are part of the [Action API v2](api-v2-reference.md). Authentic
 [api-0.1.0.json](../.gitbook/assets/api-0.1.0.json)
 {% endopenapi %}
 
+A successful response streams the file's binary content; errors return the standard JSON error object.
+
 ### Import a Bundle (JSON) — v1
 
 {% openapi src="../.gitbook/assets/api-0.1.0.json" path="/bundles/{workspaceId}/import" method="post" expanded="true" %}

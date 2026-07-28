@@ -1,6 +1,6 @@
 ---
 description: >-
-  Advanced Taskade Genesis features: smart data structures, AI agent training, multi-step automations, integrations, access control, version history, and.
+  Advanced Taskade Genesis features: smart data structures, AI agent training, multi-step automations, integrations, access control, and version history.
 ---
 
 # Advanced Features
@@ -412,6 +412,10 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 "Accept and process various file types: PDFs for contracts, images for visual feedback, videos for training materials, and spreadsheets for bulk data imports."
 ```
+
+{% hint style="info" %}
+**File uploads flow end-to-end.** When your app's form includes a file upload, the file is delivered into the triggered automation, saved to your workspace's media library, and readable by downstream steps like [Convert File to Text](../automation/actions.md) — including scanned or image-only documents, which are transcribed with vision OCR automatically.
+{% endhint %}
 
 ### Media as Agent Knowledge
 

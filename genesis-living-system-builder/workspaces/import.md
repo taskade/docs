@@ -60,6 +60,10 @@ You can quickly create new Taskade projects from Markdown (.md) files. The impor
 | CSV | `.csv` | Data converted to table view |
 | EPUB | `.epub` | Chapters converted to sections |
 
+{% hint style="info" %}
+**Scanned and image-only files are supported.** When a PDF or document contains no machine-readable text (a scan, or a photo of a page), Taskade automatically transcribes it with vision OCR during extraction. OCR runs count toward your workspace's AI usage.
+{% endhint %}
+
 ---
 
 ### Paste Text & Markdown
