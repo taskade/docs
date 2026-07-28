@@ -2,8 +2,6 @@
 description: >-
   Build complete business apps from a plain-English description with Taskade Genesis: auto-generated databases, UIs, AI assistants, automations, and instant.
 title: 'Chapter 5: Taskade Genesis - Building Apps with AI'
-parent: 'Taskade: The Living DNA Productivity Platform'
-nav_order: 5
 ---
 
 # Chapter 5: Taskade Genesis - Building Apps with AI

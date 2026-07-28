@@ -277,7 +277,7 @@ Your app is ready for the real world! You've built something that solves a real 
 2. **Custom Domain**: Publish under your branded domain (e.g., `app.yourcompany.com`)
 3. **Share with Community**: Publish to the global Taskade marketplace for others to discover and fork
 4. **Public Link**: Get a shareable URL for external users
-5. **Taskade Genesis App MCP (Beta)**: Expose your app as an MCP server so AI agents and external tools can call it programmatically — see [Taskade Genesis App MCP (Beta)](../../apis-living-system-development/genesis-app-mcp.md)
+5. **Hosted Taskade MCP (Beta)**: Connect Claude, Cursor, or any MCP client to your workspace — create projects, manage agents, and edit your app's source from your IDE — see [Hosted Taskade MCP (Beta)](../../apis-living-system-development/genesis-app-mcp.md)
 
 ### **Getting It Live**
 

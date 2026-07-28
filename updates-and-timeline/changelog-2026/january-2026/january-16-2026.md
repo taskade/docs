@@ -11,7 +11,7 @@ description: >-
 
 ## What's New:
 
-- **Agents migrate to the Vercel AI SDK** — Space, Public, and Project chat agents move off the internal engine onto the Vercel AI SDK backend, with parity for model selection, system prompt, tone/language, and title generation.
+- **Agent chat backend upgraded** — Space, Public, and Project chat agents move to a new backend with full parity for model selection, system prompt, tone/language, and title generation.
 - **Persistent conversations** — agent chats are now persisted server-side; legacy conversations migrate to the new message format with backward compatibility.
 - **Tool calls (function calling) v2 + conversation starters** — supported on the new backend, including for published/embedded public agents.
 

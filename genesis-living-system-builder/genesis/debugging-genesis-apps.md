@@ -10,6 +10,7 @@ description: >-
 ## Table of Contents
 
 - [Overview](#overview)
+- [Visual Check: Let EVE Catch It First](#visual-check-let-eve-catch-it-first)
 - [Taskade Genesis Debugging Framework (GDF)](#genesis-debugging-framework-gdf)
   - [Layer 1: Failure Classification](#layer-1-failure-classification)
   - [Layer 2: Diagnostic Checklist](#layer-2-diagnostic-checklist)
@@ -29,6 +30,14 @@ This guide introduces the **Genesis Debugging Framework (GDF)** — a structured
 {% hint style="info" %}
 **From real-world experience** — This framework was developed from real-world experience building Taskade Genesis apps. It addresses the four most common failure classes: import graph failures, routing registry drift, UI-to-API schema mismatch, and namespace collisions.
 {% endhint %}
+
+---
+
+## Visual Check: Let EVE Catch It First
+
+Before debugging by hand, turn on **Visual check** — the eye toggle in the EVE composer. With it on, EVE visually reviews key pages of the live preview after a build or edit — catching blank screens, broken layout, overlapping elements, and unstyled content — repairs what it finds, and re-checks before handing back.
+
+Visual check is per-request and optional: leave it off for quick text or logic tweaks, switch it on for UI-heavy builds where "it compiles" isn't the same as "it looks right." If the preview can't be captured, EVE reports the check as unverified rather than assuming the app renders correctly.
 
 ---
 

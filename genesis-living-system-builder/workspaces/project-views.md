@@ -31,6 +31,8 @@ All views are backed by the **same underlying data** — update a task in one vi
 
 > 💡 **Tip:** Use the `/view` slash-command or the View switcher in the top-right corner of any project to toggle between visualizations.
 
+> 📤 **Export any view.** The project's **⋯ More menu → Export** works in every view — including Mind Map, Board, Calendar, and Org Chart — on all plans. CSV export flattens the task tree (depth, text, note, completed) for spreadsheets and BI tools; Markdown export preserves the outline.
+
 ## When to Use Each View
 
 A short guide to the situations each view is built for.

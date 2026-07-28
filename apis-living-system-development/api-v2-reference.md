@@ -6,7 +6,7 @@ description: >-
 
 # Public API v2 Reference
 
-The Public API **v2** is an **action-based** API: every operation is a `POST` to a named endpoint (`/listSpaces`, `/promptAgent`, `/createProject`), with a JSON body. It is not RESTful — there are no `GET /workspaces` or `PUT /tasks/{id}` style routes.
+The Public API **v2** is an **action-based** API: every operation is a `POST` to a named endpoint (`/listSpaces`, `/promptAgent`, `/createProject`), with a JSON body. It is not RESTful — there are no `GET /workspaces` or `PUT /tasks/{id}` style routes. (The only REST-style exceptions: media/bundle downloads and the [webhook registration](webhooks.md#webhook-registration-api) routes.)
 
 {% hint style="info" %}
 **v2 is in beta and runs alongside v1.** v2 is simpler and adds capabilities v1 lacks — most notably **`promptAgent`**. But v2 does **not** cover everything: tasks are **read-only** in v2, and there is no project-update endpoint. For full task CRUD (create/update/delete, assignees, dates, notes, fields) use the [REST API v1](comprehensive-api-guide/). See [Which API should I use?](#which-api-should-i-use) below.
@@ -35,7 +35,7 @@ Taskade ships **two** public HTTP APIs. They share the same authentication.
 | --- | --- | --- |
 | Base URL | `https://www.taskade.com/api/v1` | `https://www.taskade.com/api/v2` |
 | Style | RESTful (`GET`/`POST`/`PUT`/`DELETE`) | Action / RPC (`POST /{operation}`) |
-| Status | Stable (GA) | Beta (`0.1.0`) |
+| Status | Stable (GA) | Beta (`2.0.0-beta`) |
 | Live spec | [/api/documentation/v1](https://www.taskade.com/api/documentation/v1) | [/api/documentation/v2](https://www.taskade.com/api/documentation/v2) |
 | Task create / update / delete | ✅ Full CRUD | ❌ Read-only (`listTasks`, `listBlocks`) |
 | Task assignees / dates / notes / fields | ✅ | ❌ |
@@ -43,6 +43,7 @@ Taskade ships **two** public HTTP APIs. They share the same authentication.
 | Prompt an agent | ❌ | ✅ `promptAgent` |
 | Agent lifecycle (create/update/delete) | Partial | ✅ |
 | Bundles (export/import Taskade Genesis apps) | ❌ | ✅ |
+| Signed webhook registration | ❌ | ✅ `POST /webhooks` |
 | Reference | [Comprehensive API Guide](comprehensive-api-guide/) | This page |
 
 **Rule of thumb:** reach for **v1** when you need to write tasks or manage task metadata; reach for **v2** for agent prompting, agent lifecycle, bundles, and simpler list/read flows.
@@ -101,8 +102,8 @@ A typical response:
 { "ok": true, "items": [ /* ... */ ] }
 ```
 
-{% hint style="warning" %}
-There is no `POST /api/v2/webhooks` endpoint, but you can subscribe to events programmatically (Beta, Pro and above) via `POST /api/v2/subscribeWebhook` — see [Webhooks](webhooks.md). You can also use [automation webhook triggers](webhooks.md).
+{% hint style="info" %}
+**Receiving events:** register a **signed** outbound webhook with `POST /api/v2/webhooks` (Pro and above) — Taskade signs every delivery with an HMAC secret you can verify. See the [Webhook Registration API](webhooks.md#webhook-registration-api). The older `subscribeWebhook` / `unsubscribeWebhook` operations are deprecated.
 {% endhint %}
 
 ---
@@ -305,7 +306,7 @@ const { summary } = await res.json();
 { "ok": true, "summary": "Here's a summary of the standup..." }
 ```
 
-To review past conversations, use **`POST /listConversations`** (`{ agentId, limit?, page? }`) and **`POST /getConversation`** (`{ agentId, convoId }`).
+To review past conversations, use **`POST /listConversations`** (`{ agentId, limit?, page? }`) and **`POST /getConversation`** (`{ agentId, convoId, includeTranscript? }`). Pass `"includeTranscript": true` to get a Markdown `transcript` of the conversation in the response.
 
 ---
 
@@ -351,11 +352,12 @@ curl -X POST https://www.taskade.com/api/v2/exportBundle \
 
 ### Full operation list
 
-Workspaces & structure: `listSpaces`, `listFolders`, `listMyProjects`, `listTemplates`, `listMedia`.
-Projects: `listProjects`, `getProject`, `createProject`, `createProjectFromTemplate`, `copyProject`, `completeProject`, `restoreProject`, `listTasks`, `listBlocks`, `listFields`, `listProjectMembers`, `getShareLink`, `enableShareLink`.
-Agents: `listAgents`, `getAgent`, `createAgent`, `updateAgent`, `deleteAgent`, `promptAgent`, `generateAgent`, `listConversations`, `getConversation`, `addKnowledgeProject`, `removeKnowledgeProject`, `addKnowledgeMedia`, `removeKnowledgeMedia`, `enablePublicAgentAccess`, `getPublicAgent`, `updatePublicAgent`.
-Media: `uploadMedia`, `getMedia`, `deleteMedia`, plus `GET /media/{mediaId}/content` and `GET /media/spaces/{spaceId}/content` for downloads.
-Bundles: `exportBundle`, `importBundle`, `importBundleZip`, plus `GET /bundles/{spaceId}/export/zip`.
+* **Workspaces & structure:** `listSpaces`, `listFolders`, `listMyProjects`, `listTemplates`, `listMedia`.
+* **Projects:** `listProjects`, `getProject`, `createProject`, `createProjectFromTemplate`, `copyProject`, `completeProject`, `restoreProject`, `listTasks`, `listBlocks`, `listFields`, `listProjectMembers`, `getShareLink`, `enableShareLink`.
+* **Agents:** `listAgents`, `getAgent`, `createAgent`, `updateAgent`, `deleteAgent`, `promptAgent`, `generateAgent`, `listConversations`, `getConversation`, `addKnowledgeProject`, `removeKnowledgeProject`, `addKnowledgeMedia`, `removeKnowledgeMedia`, `enablePublicAgentAccess`, `getPublicAgent`, `updatePublicAgent`.
+* **Media:** `uploadMedia`, `getMedia`, `deleteMedia`, plus `GET /media/{mediaId}/content` and `GET /media/spaces/{spaceId}/content` for downloads.
+* **Bundles:** `exportBundle`, `importBundle`, `importBundleZip`, plus `GET /bundles/{spaceId}/export/zip`.
+* **Webhooks:** `POST /webhooks`, `GET /webhooks`, `GET /webhooks/{id}`, `DELETE /webhooks/{id}` (signed — see [Webhooks](webhooks.md#webhook-registration-api)); `subscribeWebhook` and `unsubscribeWebhook` are deprecated.
 
 The authoritative, always-current list is the [live v2 spec](https://www.taskade.com/api/documentation/v2).
 
@@ -363,7 +365,7 @@ The authoritative, always-current list is the [live v2 spec](https://www.taskade
 
 ## Pagination
 
-List operations that can return many rows use **cursor pagination** with `after` / `before` (tasks, blocks) or `page` / `limit` (members, conversations, projects).
+List operations that can return many rows use **cursor pagination** with `after` / `before` (tasks, blocks) or `page` / `limit` (members, conversations).
 
 ```bash
 # next page of tasks
@@ -419,7 +421,7 @@ All error responses share this shape:
 | --- | --- | --- | --- |
 | 400 | Bad request | No | Check the request body |
 | 401 | Invalid / missing token | No | Regenerate or refresh the token |
-| 402 | Out of credits | No | Top up or switch to a cheaper model |
+| 402 | Out of credits, or the operation needs a higher plan (e.g. webhook registration requires Pro) | No | Top up credits or upgrade your plan |
 | 403 | Insufficient permission | No | Use a token with access to the resource |
 | 404 | Not found | No | Verify the ID and your workspace access |
 | 429 | Rate limited | Yes | Exponential backoff |

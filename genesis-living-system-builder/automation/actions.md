@@ -53,6 +53,10 @@ Actions can be chained together to create complex multi-step workflows, with con
 | **Send HTTP Request**        | Makes an API request to an endpoint; authentication is optional per call     | External integrations, data synchronization | `method`, `url`, `headers`, `body`, optional auth |
 | **Search Web**               | Searches the web for information to add to a project or for the AI to analyze | Research automation, content enrichment     | `query`, `sources`, `maxResults`     |
 
+{% hint style="info" %}
+**Scanned documents work too.** Convert File to Text now falls back to **vision OCR** when a file has no machine-readable text — scanned PDFs, image-only documents, and photos of pages are transcribed automatically. OCR runs count toward your workspace's AI usage.
+{% endhint %}
+
 ### Workflow Control Actions
 
 | Action                        | Description                                                                   | Use Case                                | Parameters                                      |

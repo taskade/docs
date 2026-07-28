@@ -53,6 +53,10 @@ That's it. Your app now accepts user sign-ups, handles sign-in, and enforces per
 If your first prompt doesn't trigger auth setup, you can add it later by asking Taskade EVE to *"add sign-in for users"* while editing the app.
 {% endhint %}
 
+{% hint style="success" %}
+**Sign-in is always real.** If a build or edit ever produces a login screen that doesn't actually authenticate, Taskade EVE detects it and automatically replaces it with working, persistent authentication — GenesisAuth sign-in by default, or secure hashed-credential storage for apps that manage their own user directory. EVE tells you when it makes this repair.
+{% endhint %}
+
 ---
 
 ## The App Users Tab
@@ -123,7 +127,7 @@ GenesisAuth is part of a broader access-control story.
 You don't need to know these details to use GenesisAuth, but they matter if you're auditing the security model.
 
 * **Token-based session management.** Sign-in produces a secure session token stored in an HTTP-only cookie.
-* **Session cookie migration.** Recent updates moved sessions to more secure cookie configurations with smooth migration for existing users.
+* **Sessions persist across updates.** Signed-in users stay signed in through app updates — no forced re-login.
 * **No credentials in the app bundle.** Exported app bundles never contain end-user credentials or session tokens — only the app structure.
 * **Per-app user isolation.** Each Genesis app's App Users list is scoped to that app.
 

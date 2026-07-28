@@ -1,6 +1,6 @@
 ---
 description: >-
-  Understand Taskade workspaces: the foundation that organizes projects, AI agents, and automations. Learn spaces, hierarchy, workspace types, settings, and.
+  Understand Taskade workspaces: the foundation that organizes projects, AI agents, and automations. Learn spaces, hierarchy, workspace types, and settings.
 ---
 
 # Chapter 1: Workspaces - The Foundation

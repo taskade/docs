@@ -2,9 +2,9 @@
 description: Connect your own branded domain to a published Taskade Genesis app — set up DNS, enable SSL, and go live on your own URL in minutes.
 ---
 
-# Custom Domains & Branding
+# Put Your App on Your Own Domain
 
-**Turn your Taskade Genesis apps from "homemade" looking tools into professional business software that looks like you spent a fortune to build it. Your customers will see your brand, not Taskade's.**
+**Connect your own domain to a published Taskade Genesis app: add a CNAME record with your DNS provider, verify it in the app's publish settings, and SSL is provisioned automatically. Your customers see your brand, not Taskade's.**
 
 {% hint style="success" %}
 **Business plan feature.** Custom domains are available on the **Business plan and above**. Connect your own branded web address to a published Genesis app.
@@ -14,7 +14,7 @@ description: Connect your own branded domain to a published Taskade Genesis app 
 
 ## What Are Custom Domains?
 
-Custom domains let your Genesis apps live at your own web address instead of a random Taskade link that screams "I used a free tool."
+Custom domains let your Genesis apps live at your own web address instead of a shared `taskade.app` subdomain.
 
 ### Before Custom Domains (Looks Amateurish)
 
@@ -188,6 +188,14 @@ Domain validation and HTTPS now activate faster via Delegated DCV (Domain Contro
 **Result:** Enterprise-grade security, global performance, and seamless SSL management for your Genesis apps!
 
 ## Advanced Domain Configuration
+
+### Reassign a Domain to Another App
+
+Connected the domain to the wrong app, or launching a replacement? You can **reassign a custom domain to a different app or workspace yourself** — no need to delete the domain and redo DNS:
+
+1. Open the space's settings where the domain is currently connected.
+2. In the domain configuration, choose **Reassign** and pick the destination from the workspace picker (it lists every space where you have permission to manage custom domains).
+3. Confirm — DNS records and SSL carry over; only the app the domain points to changes.
 
 ### Multiple Subdomains
 

@@ -6,6 +6,10 @@ description: >-
 
 # Inbound Webhooks
 
+{% hint style="info" %}
+**Canonical guide:** [Webhooks](../../webhooks.md) covers inbound webhooks, outbound HTTP requests, and the signed Webhook Registration API. This page documents the automation webhook trigger's parameter format.
+{% endhint %}
+
 Taskade can receive data sent to the Webhook URL through parameters. The parameters all have a String type format. They can then be utilised in other actions within the flow. Note that the parameter does not support space characters, for example the following is invalid:
 
 ```

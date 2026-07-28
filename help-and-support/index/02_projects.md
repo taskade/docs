@@ -2,8 +2,6 @@
 description: >-
   Taskade projects are flexible data containers viewable 8 ways: List, Board, Table, Calendar, Mind Map, Org Chart, Gantt, and Action views.
 title: 'Chapter 2: Projects - Your Data Containers'
-parent: 'Taskade: The Living DNA Productivity Platform'
-nav_order: 2
 ---
 
 # Chapter 2: Projects - Your Data Containers

@@ -47,7 +47,7 @@ Your assistant resolves the project for you and lists its contents.
 This guide uses **Workspace MCP**, which reads and writes your app's **content** — the projects, tasks, fields, and records your business runs on.
 
 {% hint style="info" %}
-It does **not** edit your app's deployed design or layout. To change your app's pages, components, or styles, use the Genesis builder or **[Genesis App MCP](genesis-app-mcp.md)** — which edits your app's *code* and keeps content read-only.
+It does **not** edit your app's deployed design or layout. To change your app's pages, components, or styles, use the Genesis builder or the **[Hosted Taskade MCP](genesis-app-mcp.md)** — which edits your app's *code* and can also create projects and manage agents. Task-level writes like the ones in this guide (completing tasks, setting due dates) still require Workspace MCP.
 {% endhint %}
 
 ## Next steps

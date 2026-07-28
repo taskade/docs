@@ -60,7 +60,7 @@ Official libraries and tools:
 
 * `@taskade/sdk` -- TypeScript SDK (Preview — not yet on public npm) ([Quickstart](../sdk-quickstart.md))
 * [@taskade/mcp-server](https://github.com/taskade/mcp) -- Workspace MCP Server for Claude, Cursor, Claude Code ([Setup Guide](../workspace-mcp.md))
-* Taskade Genesis App MCP (Beta) -- edit Genesis app source from your IDE ([Setup Guide](../genesis-app-mcp.md))
+* Hosted Taskade MCP (Beta) -- orchestrate your workspace and edit Genesis app source from your IDE ([Setup Guide](../genesis-app-mcp.md))
 * REST API with OpenAPI spec
 * Webhook integrations
 

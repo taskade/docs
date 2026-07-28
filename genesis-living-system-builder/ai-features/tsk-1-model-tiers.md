@@ -27,23 +27,27 @@ TSK-1 sits between the **EVE** persona and **Workspace DNA** — it is the engin
 
 The model picker shows one TSK-1 header with a capability ladder. Each tier is defined by what it's good for, not by its underlying provider:
 
-| Tier | Best for | Example use |
-|------|----------|------------|
-| **Instant** | Fast edits, simple completions, quick lookups | Rename a task, fix a typo, categorize an item |
-| **Standard** | Everyday work — balanced speed and reasoning | Draft an email, summarize a document, answer a question |
-| **Thinking** | Planning, creation, multi-step reasoning | Design an automation flow, write a project proposal, generate a Genesis app |
-| **Reasoning** | Complex systems, deep analysis, multi-agent coordination | Audit a workspace, cross-reference databases, run a multi-agent team |
+| Tier | Best for | Example use | Selectable on |
+|------|----------|------------|--------------|
+| **Instant** | Fast edits, simple completions, quick lookups | Rename a task, fix a typo, categorize an item | All plans |
+| **Standard** | Everyday work — balanced speed and reasoning | Draft an email, summarize a document, answer a question | Paid plans |
+| **Thinking** | Planning, creation, multi-step reasoning | Design an automation flow, write a project proposal, generate a Genesis app | Business and up |
+| **Reasoning** | Complex systems, deep analysis, multi-agent coordination | Audit a workspace, cross-reference databases, run a multi-agent team | Max & Enterprise |
+
+Every tier is visible in the picker on every plan; manually pinning a tier requires the plan shown. **Auto** is available on every plan and can route a request to any tier based on the task — which is how Free-plan builds reach Reasoning depth (see below).
 
 ***
 
 ## Auto (recommended)
 
-Set your agent to **Auto** and TSK-1 dynamically routes each request to the appropriate tier — fast when you need speed, deep when you need reasoning. Auto is the default for new agents on most paid plans.
+Set your agent to **Auto** and TSK-1 dynamically routes each request to the appropriate tier — fast when you need speed, deep when you need reasoning. Auto is the default for new agents on every plan.
+
+**Free plan included.** On the Free plan, Auto runs your first Genesis app build at full **Reasoning** depth and follow-up edits at **Thinking** depth — welcome credits (1,000 when you verify your account, plus 5,000 when you start your first app build) are sized to cover one complete build.
 
 Agents or automations **pinned to a specific tier** stay on that tier until you change them. The tier definitions are stable; the underlying models that serve each tier may change as the frontier improves.
 
 {% hint style="info" %}
-**Model lineup may change.** TSK-1 runs on the latest frontier models. Because the tiers describe capability rather than provider, Taskade can upgrade the underlying models without you needing to reconfigure anything. The in-app model picker always shows the current tier-to-model mapping.
+**Model lineup may change.** TSK-1 runs on the latest frontier models. Because the tiers describe capability rather than provider, Taskade can upgrade the underlying models without you needing to reconfigure anything. The in-app model picker always reflects the current tier lineup.
 {% endhint %}
 
 ***
@@ -64,7 +68,7 @@ Agents pinned to a **custom model** (e.g. a specific Claude or GPT version) bypa
 
 ## Credits
 
-Each tier has its own per-token credit cost, shown in the in-app model picker. Auto routes to the tier it selects, billing at that tier's rate. Pinned custom models bill at the model's own rate.
+Each tier has its own credit rate, shown in the in-app model picker. Auto routes to the tier it selects, billing at that tier's rate. Pinned custom models bill at the model's own rate.
 
 See [Credits & Billing](../../account-management/credits-and-billing.md) for current rates.
 

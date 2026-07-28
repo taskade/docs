@@ -1,9 +1,7 @@
 ---
 description: >-
-  Build AI agents in Taskade as specialized digital team members. Define a role, train on your knowledge, test, and deploy agents for support, sales, and.
+  Build AI agents in Taskade as specialized digital team members. Define a role, train on your knowledge, test, and deploy agents for support, sales, and operations.
 title: 'Chapter 3: AI Agents - Your Digital Team'
-parent: 'Taskade: The Living DNA Productivity Platform'
-nav_order: 3
 ---
 
 # Chapter 3: AI Agents - Your Digital Team
