@@ -7,7 +7,7 @@ description: >-
 # TypeScript SDK (Preview)
 
 {% hint style="warning" %}
-**Prefer HTTP or MCP.** Every Taskade endpoint is a plain HTTPS request and works from any language or runtime. The hosted MCP server at `https://www.taskade.com/mcp` gives AI agents (Cursor, Claude, Codex) 32 tools including app-file editing (`inspect_space`, `write_file`). The `@taskade/sdk` package below is a generated client that is **not yet on public npm** — use HTTP or MCP until it ships.
+**Prefer HTTP or MCP.** Every Taskade endpoint is a plain HTTPS request and works from any language or runtime. The hosted MCP server at `https://www.taskade.com/mcp` gives AI agents (Cursor, Claude, Codex) 48 tools including app-file editing (`inspect_space`, `write_file`). The `@taskade/sdk` package below is a generated client that is **not yet on public npm** — use HTTP or MCP until it ships.
 {% endhint %}
 
 ## Call the API today (any language)
@@ -124,7 +124,7 @@ result = requests.post(
 
 ## Connect via MCP (AI agents)
 
-For Cursor, Claude, Windsurf, VS Code, or any MCP client, point at the hosted server with your personal token. This gives the agent 32 tools, including `inspect_space`, `write_file`, `read_project`, and `list_automations` that the v1 stdio wrapper does not expose.
+For Cursor, Claude, Windsurf, VS Code, or any MCP client, point at the hosted server with your personal token. This gives the agent 48 tools (44 Phase A Public API v2 ops + 4 MCP-native: `inspect_space`, `write_file`, `read_project`, and `list_automations`) that the v1 stdio wrapper does not expose.
 
 ```json
 {
@@ -171,7 +171,7 @@ Method names match the v2 operations exactly — `listSpaces`, `createProject`, 
 
 | Resource | Description |
 | --- | --- |
-| [Hosted Taskade MCP (Beta)](genesis-app-mcp.md) | Orchestrate your workspace from any MCP client via `https://www.taskade.com/mcp` — 32 tools incl. app-file editing |
+| [Hosted Taskade MCP (Beta)](genesis-app-mcp.md) | Orchestrate your workspace from any MCP client via `https://www.taskade.com/mcp` — 48 tools incl. app-file editing |
 | [Action API v2 Reference](api-v2-reference.md) | The action-based API the SDK wraps |
 | [REST API v1 Reference (Legacy)](comprehensive-api-guide/README.md) | Complete RESTful endpoint docs (full task CRUD) |
 | [Authentication](developers/authentication.md) | Personal access tokens and OAuth 2.0 |

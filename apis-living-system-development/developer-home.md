@@ -80,7 +80,7 @@ Treat your API token like a password. Never commit it to version control or shar
 
 ## Connect your AI agent (MCP)
 
-Point Cursor, Claude, Windsurf, or any MCP client at the hosted server with your token. This gives the agent 32 tools, including `inspect_space`, `write_file`, `read_project`, and `list_automations` that the v1 stdio wrapper does not expose. Gated on Starter+ plans (`mcp.access`).
+Point Cursor, Claude, Windsurf, or any MCP client at the hosted server with your token. This gives the agent 48 tools (44 Phase A Public API v2 ops + 4 MCP-native: `inspect_space`, `write_file`, `read_project`, `list_automations`) that the v1 stdio wrapper does not expose. Gated on Starter+ plans (`mcp.access`).
 
 {% tabs %}
 {% tab title="Cursor / Windsurf / VS Code" %}

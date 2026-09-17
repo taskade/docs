@@ -91,7 +91,7 @@ Build apps, deploy AI agents, and automate workflows from one prompt.
 
 1. Hosted MCP server: https://www.taskade.com/mcp
    - Auth: Bearer `<personal-access-token>` from https://www.taskade.com/settings/api
-   - 32 tools: workspace read/write, app file editing (`inspect_space`, `write_file`), agent chat
+   - 48 tools: 44 Phase A Public API v2 ops + 4 MCP-native (`inspect_space`, `write_file`, `read_project`, `list_automations`)
    - Gated on Starter+ plans (mcp.access feature switch)
    - Docs: https://docs.taskade.com/developers/workspace-mcp/genesis-app-mcp
 
