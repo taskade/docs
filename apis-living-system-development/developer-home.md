@@ -78,6 +78,59 @@ You need a **Personal Access Token** to authenticate with every Taskade develope
 Treat your API token like a password. Never commit it to version control or share it publicly.
 {% endhint %}
 
+## Connect your AI agent (MCP)
+
+Point Cursor, Claude, Windsurf, or any MCP client at the hosted server with your token. This gives the agent 48 tools (44 Phase A Public API v2 ops + 4 MCP-native: `inspect_space`, `write_file`, `read_project`, `list_automations`) that the v1 stdio wrapper does not expose. Gated on Starter+ plans (`mcp.access`).
+
+{% tabs %}
+{% tab title="Cursor / Windsurf / VS Code" %}
+```json
+{
+  "mcpServers": {
+    "taskade": {
+      "type": "http",
+      "url": "https://www.taskade.com/mcp",
+      "headers": {
+        "Authorization": "Bearer <paste-your-token-here>"
+      }
+    }
+  }
+}
+```
+{% endtab %}
+
+{% tab title="Claude Desktop / Claude Code" %}
+```json
+{
+  "mcpServers": {
+    "taskade": {
+      "type": "http",
+      "url": "https://www.taskade.com/mcp",
+      "headers": {
+        "Authorization": "Bearer <paste-your-token-here>"
+      }
+    }
+  }
+}
+```
+{% endtab %}
+
+{% tab title="Local stdio fallback" %}
+For a local stdio server that wraps the v1 API (no app-file editing), see [Workspace MCP](workspace-mcp.md) (`@taskade/mcp-server` on npm).
+{% endtab %}
+{% endtabs %}
+
+## Make your first call
+
+```bash
+# v2 (action-based — every call is a POST)
+curl -X POST https://www.taskade.com/api/v2/listSpaces \
+  -H "Authorization: Bearer your_api_key_placeholder" \
+  -H "Content-Type: application/json" -d '{}'
+```
+
+Explore the full surface in the [Action API v2 interactive docs](https://www.taskade.com/api/documentation/v2) or the [REST API v1 interactive docs (Legacy)](https://www.taskade.com/api/documentation/v1).
+
 ## Developer Resources
 
 | Resource | Description |
