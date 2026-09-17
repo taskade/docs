@@ -92,7 +92,7 @@
   * [Developer Overview](apis-living-system-development/developers/README.md)
 * [Authentication](apis-living-system-development/developers/authentication.md)
   * [Personal Tokens](apis-living-system-development/developers/personal-tokens.md)
-* [REST API v1 Reference](apis-living-system-development/comprehensive-api-guide/README.md)
+* [REST API v1 Reference (Legacy)](apis-living-system-development/comprehensive-api-guide/README.md)
   * [Overview](apis-living-system-development/developers/api.md)
   * [Workspaces](apis-living-system-development/comprehensive-api-guide/workspaces/README.md)
     * [Get Workspaces](apis-living-system-development/comprehensive-api-guide/workspaces/get-workspaces.md)

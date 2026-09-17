@@ -85,28 +85,68 @@ Developers can build on the REST API v1, the action-based Public API v2, a TypeS
 
 ## Developers
 
+Build apps, deploy AI agents, and automate workflows from one prompt.
+
+### Developer surface (in order of preference)
+
+1. Hosted MCP server: https://www.taskade.com/mcp
+   - Auth: Bearer `<personal-access-token>` from https://www.taskade.com/settings/api
+   - 32 tools: workspace read/write, app file editing (`inspect_space`, `write_file`), agent chat
+   - Gated on Starter+ plans (mcp.access feature switch)
+   - Docs: https://docs.taskade.com/developers/workspace-mcp/genesis-app-mcp
+
+2. OpenAPI v2 (interactive): https://www.taskade.com/api/documentation/v2
+   - Auth: same Bearer token
+   - Full REST surface: projects, tasks, agents, bundles, media, webhooks
+   - Reference: https://docs.taskade.com/developers/api-v2-reference
+
+3. OpenAPI v1 (legacy, full task CRUD): https://www.taskade.com/api/documentation/v1
+   - Reference: https://docs.taskade.com/developers/comprehensive-api-guide
+
+4. Stdio MCP fallback (local/offline): https://github.com/taskade/mcp
+   - npm: `@taskade/mcp-server`
+   - v1 surface only (no app file editing)
+   - Docs: https://docs.taskade.com/developers/workspace-mcp
+
+5. TypeScript SDK (preview, unmaintained): https://github.com/taskade/sdk
+   - Generated from v2 OpenAPI; not on public npm
+   - Docs: https://docs.taskade.com/developers/sdk-quickstart
+
+### Quick start
+
+```bash
+curl https://www.taskade.com/api/v2/listSpaces \
+  -H "Authorization: Bearer tskdp_YOUR_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{}'
+```
+
+Get a token: https://www.taskade.com/settings/api
+
+### Reference
+
 - [Developer Platform](https://docs.taskade.com/developers/developer-home): Everything you need to build on Taskade — REST API v1, Action API v2, MCP servers, OAuth 2.0, and webhooks.
 - [Developer Overview](https://docs.taskade.com/developers/developer-home/developers): The developer surface at a glance — APIs, tokens, MCP, webhooks, and Genesis app generation.
 - [Authentication](https://docs.taskade.com/developers/authentication): Personal Access Tokens for scripts and MCP; OAuth 2.0 with PKCE for third-party apps.
 - [Personal Tokens](https://docs.taskade.com/developers/authentication/personal-tokens): Generate a Personal Access Token and authenticate with the Authorization Bearer header.
-- [REST API v1 Reference](https://docs.taskade.com/developers/comprehensive-api-guide): Manage workspaces, projects, tasks, agents, folders, and media with full CRUD and code examples.
 - [Action API v2 Reference](https://docs.taskade.com/developers/api-v2-reference): The action-based (RPC-over-HTTP) Public API v2 — every call is a POST to a named operation.
+- [Action API v2 live OpenAPI spec](https://www.taskade.com/api/documentation/v2): Interactive reference (JSON: https://www.taskade.com/api/documentation/v2/json).
+- [REST API v1 Reference (Legacy)](https://docs.taskade.com/developers/comprehensive-api-guide): Manage workspaces, projects, tasks, agents, folders, and media with full CRUD and code examples.
+- [REST API v1 live OpenAPI spec](https://www.taskade.com/api/documentation/v1): Interactive reference (JSON: https://www.taskade.com/api/documentation/v1/json).
 - [TypeScript SDK (Preview)](https://docs.taskade.com/developers/sdk-quickstart): Call the API today with plain HTTP, and what the generated client will look like.
 - [SDK Cookbook](https://docs.taskade.com/developers/sdk-quickstart/sdk-cookbook): Integration patterns — agents, automations, projects, bundles, error handling, pagination, testing.
 - [Webhooks](https://docs.taskade.com/developers/webhooks): Inbound webhooks to trigger automations and signed outbound webhooks over the Public API v2.
 - [Bundles & App Kits](https://docs.taskade.com/developers/bundles): Export and import complete Genesis apps and workspaces as portable bundles via the Action API v2.
 - [Long-Term Memory](https://docs.taskade.com/developers/long-term-memory): Memory that lives as real Projects — editable, browsable, and API-addressable.
 - [Autonomous Agents](https://docs.taskade.com/developers/autonomous-agents): Agents that run without per-request prompting — automations, orchestration, and Autopilot patterns.
-- [REST API v1 live OpenAPI spec](https://www.taskade.com/api/documentation/v1): Interactive reference (JSON: https://www.taskade.com/api/documentation/v1/json).
-- [Action API v2 live OpenAPI spec](https://www.taskade.com/api/documentation/v2): Interactive reference (JSON: https://www.taskade.com/api/documentation/v2/json).
 
 ## MCP
 
 - [Which Taskade MCP do I want?](https://docs.taskade.com/developers/mcp-overview): Three MCP surfaces, one decision — Workspace MCP (@taskade/mcp-server) for task writes, the hosted Taskade MCP for orchestration, or MCP Connectors for agent tool access.
+- [Hosted Taskade MCP (Beta)](https://docs.taskade.com/developers/workspace-mcp/genesis-app-mcp): Orchestrate your workspace from any MCP client via https://www.taskade.com/mcp (OAuth 2.0) — create projects, manage and prompt agents, and edit your Genesis app's source.
 - [Workspace MCP](https://docs.taskade.com/developers/workspace-mcp): Connect Claude Desktop, Cursor, Claude Code, Windsurf, VS Code, and more to your workspace via @taskade/mcp-server.
 - [Workspace MCP: Advanced](https://docs.taskade.com/developers/workspace-mcp/workspace-mcp-advanced): Rate limits, multi-client setup, troubleshooting, and security for production use.
 - [Run Your Live App by Talking to Claude](https://docs.taskade.com/developers/workspace-mcp/run-your-app-with-ai): Run your Genesis app's day-to-day data through conversation — no IDs, no API code.
-- [Hosted Taskade MCP (Beta)](https://docs.taskade.com/developers/workspace-mcp/genesis-app-mcp): Orchestrate your workspace from any MCP client via https://www.taskade.com/mcp (OAuth 2.0) — create projects, manage and prompt agents, and edit your Genesis app's source.
 - [MCP Connectors](https://docs.taskade.com/developers/mcp-connectors): Connect Genesis apps and AI agents to 31+ external services using the Model Context Protocol.
 
 ## Changelog
