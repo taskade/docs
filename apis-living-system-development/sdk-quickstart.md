@@ -140,7 +140,7 @@ For Cursor, Claude, Windsurf, VS Code, or any MCP client, point at the hosted se
 }
 ```
 
-Get your token at [taskade.com/settings/api](https://www.taskade.com/settings/api). The hosted MCP is gated on Starter+ plans (`mcp.access` feature switch). For a local/offline fallback that wraps the v1 API, see [Workspace MCP](workspace-mcp.md) (`@taskade/mcp-server` on npm).
+Get your token at [taskade.com/settings/api](https://www.taskade.com/settings/api). The hosted MCP is gated on Starter+ plans (`mcp.access` feature switch). For a local stdio wrapper that wraps the v1 API, see [Workspace MCP](workspace-mcp.md) (`@taskade/mcp-server` on npm).
 
 ## Generated TypeScript client (preview, unmaintained)
 
@@ -175,4 +175,4 @@ Method names match the v2 operations exactly — `listSpaces`, `createProject`, 
 | [Action API v2 Reference](api-v2-reference.md) | The action-based API the SDK wraps |
 | [REST API v1 Reference (Legacy)](comprehensive-api-guide/README.md) | Complete RESTful endpoint docs (full task CRUD) |
 | [Authentication](developers/authentication.md) | Personal access tokens and OAuth 2.0 |
-| [Workspace MCP](workspace-mcp.md) | Local/offline stdio fallback (`@taskade/mcp-server`, v1 surface) |
+| [Workspace MCP](workspace-mcp.md) | Local stdio wrapper (`@taskade/mcp-server`, v1 surface) |

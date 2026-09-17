@@ -103,7 +103,7 @@ Build apps, deploy AI agents, and automate workflows from one prompt.
 3. OpenAPI v1 (legacy, full task CRUD): https://www.taskade.com/api/documentation/v1
    - Reference: https://docs.taskade.com/developers/comprehensive-api-guide
 
-4. Stdio MCP fallback (local/offline): https://github.com/taskade/mcp
+4. Stdio MCP fallback (local stdio): https://github.com/taskade/mcp
    - npm: `@taskade/mcp-server`
    - v1 surface only (no app file editing)
    - Docs: https://docs.taskade.com/developers/workspace-mcp

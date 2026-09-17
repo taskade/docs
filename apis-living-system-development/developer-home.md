@@ -115,7 +115,7 @@ Point Cursor, Claude, Windsurf, or any MCP client at the hosted server with your
 ```
 {% endtab %}
 
-{% tab title="Local / offline fallback" %}
+{% tab title="Local stdio fallback" %}
 For a local stdio server that wraps the v1 API (no app-file editing), see [Workspace MCP](workspace-mcp.md) (`@taskade/mcp-server` on npm).
 {% endtab %}
 {% endtabs %}
