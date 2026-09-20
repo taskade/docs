@@ -22,10 +22,10 @@ Report it privately instead:
   steps to reproduce it, and the impact you believe it has.
 
 We are a small team and do not guarantee a response time. We aim for 90-day coordinated
-disclosure where feasible, and on request we credit you by name once a fix ships. We do
-not run a bug bounty program. The full policy, including safe harbor terms, is published
-at [taskade.com/security](https://www.taskade.com/security), and it is the one that
-applies.
+disclosure when feasible, subject to investigation requirements, and on request we credit
+you by name once a fix ships. We do not run a bug bounty program. The full policy,
+including safe harbor terms, is published at
+[taskade.com/security](https://www.taskade.com/security), and it is the one that applies.
 
 The rest of this page is about **not leaking secrets while contributing to these docs**,
 which is a different problem from reporting a vulnerability in the product.
