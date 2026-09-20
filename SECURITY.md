@@ -5,7 +5,7 @@ description: >-
   use placeholder values, and clean git history if secrets leak.
 ---
 
-# Security Guidelines for Contributors
+# Security Policy and Contributor Guidelines
 
 **⚠️ CRITICAL: This is a PUBLIC repository that powers [docs.taskade.com](https://docs.taskade.com). Never commit sensitive information!**
 
