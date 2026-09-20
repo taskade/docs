@@ -1,11 +1,34 @@
 ---
 description: >-
-  Security guidelines for Taskade docs contributors: never commit .env files, API keys, or tokens, use placeholder values, and clean git history if secrets leak.
+  How to report a security vulnerability in Taskade privately, plus security
+  guidelines for docs contributors: never commit .env files, API keys, or tokens,
+  use placeholder values, and clean git history if secrets leak.
 ---
 
 # Security Guidelines for Contributors
 
 **⚠️ CRITICAL: This is a PUBLIC repository that powers [docs.taskade.com](https://docs.taskade.com). Never commit sensitive information!**
+
+## Reporting a Security Vulnerability
+
+**Found a vulnerability in Taskade itself? Do not open a public issue or pull request.**
+This repository is public, so anything filed here is visible to everyone, including
+anyone who would rather exploit the issue than see it fixed.
+
+Report it privately instead:
+
+- Preferred: the **Security** tab of the affected repository, then **Report a vulnerability**.
+- Or email [support@taskade.com](mailto:support@taskade.com) with what you found, the
+  steps to reproduce it, and the impact you believe it has.
+
+We are a small team and do not guarantee a response time. We aim for 90-day coordinated
+disclosure where feasible, and on request we credit you by name once a fix ships. We do
+not run a bug bounty program. The full policy, including safe harbor terms, is published
+at [taskade.com/security](https://www.taskade.com/security), and it is the one that
+applies.
+
+The rest of this page is about **not leaking secrets while contributing to these docs**,
+which is a different problem from reporting a vulnerability in the product.
 
 ## What NEVER to Commit
 
