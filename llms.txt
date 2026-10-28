@@ -8,6 +8,14 @@ Developers can build on the REST API v1, the action-based Public API v2, a TypeS
 
 - [Quick Start Guide](https://docs.taskade.com/quick-start/getting-started): Build your first AI-powered app with Taskade Genesis, then add AI agents, automations, and the developer API.
 
+## Clone a live app
+
+- [All app kit categories](https://www.taskade.com/apps/categories): Browse kits by type, team, or industry, then clone a workspace.
+- App kit URL: `https://www.taskade.com/app/{slug}-{id}` (legacy `/share/apps/{id}` redirects here).
+- [Client Connect Dashboard](https://www.taskade.com/app/client-connect-dashboard-avl35iqxc8t7wk3e): CRM kit.
+- [Invoice Generator](https://www.taskade.com/app/invoice-generator-v71ywf2zs5bu9a5m): invoices and payment follow-up.
+- [Research Chat Bot](https://www.taskade.com/app/research-chat-bot-ckhj4d7yyntrkyb8): chatbot kit.
+
 ## Platform
 
 - [Workspace DNA](https://docs.taskade.com/platform/workspace-dna): The three-pillar architecture behind every Taskade workspace and Genesis app — Memory, Intelligence, and Execution.
