@@ -7,9 +7,9 @@ coverY: 0
 
 # Build on Taskade
 
-Taskade turns a plain-English description of your business into a real, running app — CRM, client portal, or ops dashboard — with logins, your own domain, and a full developer platform: REST API, Action API, MCP, SDK, and signed webhooks.
+Taskade turns a plain-English description of your business into a real, running app — CRM, client portal, or ops dashboard — with logins, your own domain, and a full developer platform: REST API, Action API, MCP, a TypeScript SDK (preview), and signed webhooks.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>🛠️ Build a business app — no code</strong></td><td>Describe it in plain English. Get a CRM, client portal, or ops dashboard — with logins and your own domain.</td><td><a href="genesis-living-system-builder/genesis/getting-started.md">Start building →</a></td></tr><tr><td><strong>🤖 Connect your AI agent</strong></td><td>Let Claude, Codex, Cursor, or ChatGPT work in your workspace with one URL and one sign-in.</td><td><a href="getting-started/ai-agents.md">Connect an agent →</a></td></tr><tr><td><strong>💻 Build on the API — developers</strong></td><td>REST API v1, Action API v2, MCP, SDK, and webhooks for programmatic access.</td><td><a href="apis-living-system-development/developer-home.md">Developer platform →</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>🛠️ Build a business app — no code</strong></td><td>Describe it in plain English. Get a CRM, client portal, or ops dashboard — with logins and your own domain.</td><td><a href="genesis-living-system-builder/genesis/getting-started.md">Start building →</a></td></tr><tr><td><strong>🤖 Connect your AI agent</strong></td><td>Let Claude, Codex, Cursor, or ChatGPT work in your workspace with one URL and one sign-in.</td><td><a href="getting-started/ai-agents.md">Connect an agent →</a></td></tr><tr><td><strong>💻 Build on the API — developers</strong></td><td>REST API v1, Action API v2, MCP, and webhooks for programmatic access.</td><td><a href="apis-living-system-development/developer-home.md">Developer platform →</a></td></tr></tbody></table>
 
 {% hint style="info" %}
 **Don't want to start from a blank prompt?** Clone a ready-made app for free — browse the [app gallery](https://www.taskade.com/apps) and [Taskade's official kits](https://www.taskade.com/apps/official), then customize it in Taskade Genesis. Or [start from scratch](https://www.taskade.com/create).
@@ -88,7 +88,7 @@ Use this as the canonical overview: [Workspace DNA](genesis-living-system-builde
 
 #### For developers
 
-* [**Developer Platform**](apis-living-system-development/developer-home.md) - The developer portal: APIs, SDK, and MCP
+* [**Developer Platform**](apis-living-system-development/developer-home.md) - The developer portal: APIs, MCP, and webhooks
 * [**REST API v1**](apis-living-system-development/comprehensive-api-guide/README.md) - Complete RESTful reference (full task CRUD)
 * [**Action API v2**](apis-living-system-development/api-v2-reference.md) - The newer action-based API (agent prompting, bundles)
 * [**Authentication**](apis-living-system-development/developers/authentication.md) - Personal tokens & OAuth 2.0

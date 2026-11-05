@@ -79,8 +79,9 @@ export TASK_ID="your_task_id"
 ```
 
 
-> ℹ️
-> **Need bundle export or import?** The four `/bundles/*` endpoints (export or import a Taskade Genesis app as a portable bundle) are documented on the [Bundles & App Kits](../bundles.md) page.
+{% hint style="info" %}
+**Need bundle export or import?** The four `/bundles/*` endpoints (export or import a Taskade Genesis app as a portable bundle) are documented on the [Bundles & App Kits](../bundles.md) page.
+{% endhint %}
 
 
 ### Workspaces API
@@ -201,10 +202,11 @@ GET /folders/{folderId}/project-templates
 **Project management:**
 
 
-> ℹ️
-> `GET /projects/{projectId}` is **read-only**. v1 has no `PUT`, `PATCH`, or `DELETE` on a project.
->
-> Project writes are separate endpoints: `/complete`, `/restore`, `/copy`, and `/shareLink`. v1 does not rename, archive, export, or delete a project. For the project operations of v2, see the [Action API guide](../api-v2-reference.md).
+{% hint style="info" %}
+`GET /projects/{projectId}` is **read-only**. v1 has no `PUT`, `PATCH`, or `DELETE` on a project.
+
+Project writes are separate endpoints: `/complete`, `/restore`, `/copy`, and `/shareLink`. v1 does not rename, archive, export, or delete a project. For the project operations of v2, see the [Action API guide](../api-v2-reference.md).
+{% endhint %}
 
 
 
@@ -368,8 +370,9 @@ The response is `{ "ok": true, "item": { "id", "text", "parentId", "completed" }
 
 #### Delete a task
 
-> ⚠️
-> This call deletes the task from the project. Make sure that the task ID is correct before you run it.
+{% hint style="warning" %}
+This call deletes the task from the project. Make sure that the task ID is correct before you run it.
+{% endhint %}
 
 ```bash
 curl -s -X DELETE "https://www.taskade.com/api/v1/projects/$PROJECT_ID/tasks/$TASK_ID" \

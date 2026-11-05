@@ -11,18 +11,19 @@ It is not RESTful. It has no `GET /workspaces` or `PUT /tasks/{id}` endpoints.
 
 Media downloads, bundle downloads, and [webhook registration](webhooks.md#webhook-registration-api) are the REST-style exceptions.
 
-> ℹ️
-> **v2 is in beta (`2.0.0-beta`) and runs alongside v1.** It adds **`promptAgent`** and signed webhook registration.
->
-> **Tasks are fully writable in v2.**
->
-> Content: `createTask`, `updateTask`, `deleteTask`, `moveTask`, `completeTask`, `uncompleteTask`.
->
-> Metadata: `assignTask`, `unassignTask`, `setTaskDate`, `deleteTaskDate`, `setTaskNote`, `deleteTaskNote`, `setTaskFieldValue`, `deleteTaskFieldValue`.
->
-> v1 has the longest track record. It alone reads a single task, at `GET /projects/{projectId}/tasks/{taskId}`.
->
-> v2 renames, archives, and exports a project with `renameProject`, `archiveProject`, and `exportProject`. Neither version deletes a project. See [Choose an API](#choose-an-api).
+{% hint style="info" %}
+**v2 is in beta (`2.0.0-beta`) and runs alongside v1.** It adds **`promptAgent`** and signed webhook registration.
+
+**Tasks are fully writable in v2.**
+
+Content: `createTask`, `updateTask`, `deleteTask`, `moveTask`, `completeTask`, `uncompleteTask`.
+
+Metadata: `assignTask`, `unassignTask`, `setTaskDate`, `deleteTaskDate`, `setTaskNote`, `deleteTaskNote`, `setTaskFieldValue`, `deleteTaskFieldValue`.
+
+v1 has the longest track record. It alone reads a single task, at `GET /projects/{projectId}/tasks/{taskId}`.
+
+v2 renames, archives, and exports a project with `renameProject`, `archiveProject`, and `exportProject`. Neither version deletes a project. See [Choose an API](#choose-an-api).
+{% endhint %}
 
 The live OpenAPI spec is published at [taskade.com/api/documentation/v2](https://www.taskade.com/api/documentation/v2).
 
@@ -122,12 +123,13 @@ curl -s -X POST https://www.taskade.com/api/v2/listMyProjects \
 { "ok": true, "items": [{ "id": "Pj8sK2nV4wQx6ZbE", "name": "API quickstart" }] }
 ```
 
-> ℹ️
-> **Receiving events:** Register a **signed** outbound webhook with `POST /api/v2/webhooks`.
->
-> Taskade signs every delivery with an HMAC secret. Make sure that each signature is valid.
->
-> See the [Webhook Registration API](webhooks.md#webhook-registration-api). The older `subscribeWebhook` and `unsubscribeWebhook` operations are deprecated.
+{% hint style="info" %}
+**Receiving events:** Register a **signed** outbound webhook with `POST /api/v2/webhooks`.
+
+Taskade signs every delivery with an HMAC secret. Make sure that each signature is valid.
+
+See the [Webhook Registration API](webhooks.md#webhook-registration-api). The older `subscribeWebhook` and `unsubscribeWebhook` operations are deprecated.
+{% endhint %}
 
 ---
 
@@ -331,14 +333,15 @@ curl -s -X POST https://www.taskade.com/api/v2/listTasks \
 }
 ```
 
-> ℹ️
-> v2 reads and writes tasks.
->
-> To change a task, see [`createTask`](https://www.taskade.com/docs/actions/create-task), [`updateTask`](https://www.taskade.com/docs/actions/update-task), and [`moveTask`](https://www.taskade.com/docs/actions/move-task).
->
-> To set metadata, see [`assignTask`](https://www.taskade.com/docs/actions/assign-task), [`setTaskDate`](https://www.taskade.com/docs/actions/set-task-date), [`setTaskNote`](https://www.taskade.com/docs/actions/set-task-note), and [`setTaskFieldValue`](https://www.taskade.com/docs/actions/set-task-field-value).
->
-> To read **one** task, use the [REST API v1 Tasks endpoints](https://www.taskade.com/docs/rest).
+{% hint style="info" %}
+v2 reads and writes tasks.
+
+To change a task, see [`createTask`](https://www.taskade.com/docs/actions/create-task), [`updateTask`](https://www.taskade.com/docs/actions/update-task), and [`moveTask`](https://www.taskade.com/docs/actions/move-task).
+
+To set metadata, see [`assignTask`](https://www.taskade.com/docs/actions/assign-task), [`setTaskDate`](https://www.taskade.com/docs/actions/set-task-date), [`setTaskNote`](https://www.taskade.com/docs/actions/set-task-note), and [`setTaskFieldValue`](https://www.taskade.com/docs/actions/set-task-field-value).
+
+To read **one** task, use the [REST API v1 Tasks endpoints](https://www.taskade.com/docs/rest).
+{% endhint %}
 
 If Google Calendar is connected on an eligible workspace, dates set with `setTaskDate` can sync the same way as dates set in Taskade.
 
@@ -586,8 +589,9 @@ Branch on `ok` and `code`. Do not parse the human-readable `message`.
 | `"code": "TOO_MANY_REQUESTS"` | 429 | Yes | Wait for the number of seconds in the `Retry-After` header, then retry |
 | `5xx` status | 5xx | Yes | Retry up to 3 times with backoff |
 
-> ⚠️
-> Never retry on `400`, `401`, `403`, or `404`. Fix the request first.
+{% hint style="warning" %}
+Never retry on `400`, `401`, `403`, or `404`. Fix the request first.
+{% endhint %}
 
 ---
 

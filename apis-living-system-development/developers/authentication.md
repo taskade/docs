@@ -46,10 +46,11 @@ export TASKADE_TOKEN="tskdp_your_token_here"
 
 A personal access token starts with the prefix `tskdp_`. You can hold up to **5 tokens** per account, and your email must be verified to create one.
 
-> ⚠️
-> A personal access token grants **full access to your account**. Treat it like a password.
->
-> Never commit or share the token. Store it in an environment variable or secret manager.
+{% hint style="warning" %}
+A personal access token grants **full access to your account**. Treat it like a password.
+
+Never commit or share the token. Store it in an environment variable or secret manager.
+{% endhint %}
 
 ### Use a token
 
@@ -238,8 +239,9 @@ sequenceDiagram
     Taskade->>App: New access token and refresh token 3
 ```
 
-> ℹ️
-> Taskade supports the `authorization_code` and `refresh_token` grants only. Taskade rejects `password`, `implicit`, and `client_credentials`.
+{% hint style="info" %}
+Taskade supports the `authorization_code` and `refresh_token` grants only. Taskade rejects `password`, `implicit`, and `client_credentials`.
+{% endhint %}
 
 ### Scopes and the hosted MCP
 

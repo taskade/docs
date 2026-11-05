@@ -97,8 +97,9 @@ Use a **personal access token** for scripts, both APIs, the local MCP server, an
 export TASKADE_TOKEN="tskdp_your_token_here"
 ```
 
-> ⚠️
-> Treat your API token like a password. Never commit it to version control or share it publicly.
+{% hint style="warning" %}
+Treat your API token like a password. Never commit it to version control or share it publicly.
+{% endhint %}
 
 ## Base URLs
 
@@ -110,17 +111,18 @@ Taskade ships **two** public HTTP APIs. Both APIs use the same token:
 | [Action API v2](api-v2-reference.md) | `https://www.taskade.com/api/v2` | Action / RPC (`POST /{operation}`), with REST-style exceptions for media, bundle downloads, and webhook registration | Prompting agents, agent lifecycle, bundles, signed webhooks, task CRUD |
 
 
-> ℹ️
-> **Live OpenAPI specs (source of truth)** come from the running API:
->
-> * REST API v1 - [interactive docs](https://www.taskade.com/api/documentation/v1) · [openapi.json](https://www.taskade.com/api/documentation/v1/json)
-> * Action API v2 - [interactive docs](https://www.taskade.com/api/documentation/v2) · [openapi.json](https://www.taskade.com/api/documentation/v2/json)
->
-> The `/docs/rest/*` and `/docs/actions/*` catalogs come from committed OpenAPI snapshots.
->
-> The Getting Started, Guides, and MCP pages contain hand-written examples and patterns.
->
-> For an exact field or status code, use the generated catalog and its source spec.
+{% hint style="info" %}
+**Live OpenAPI specs (source of truth)** come from the running API:
+
+* REST API v1 - [interactive docs](https://www.taskade.com/api/documentation/v1) · [openapi.json](https://www.taskade.com/api/documentation/v1/json)
+* Action API v2 - [interactive docs](https://www.taskade.com/api/documentation/v2) · [openapi.json](https://www.taskade.com/api/documentation/v2/json)
+
+The `/docs/rest/*` and `/docs/actions/*` catalogs come from committed OpenAPI snapshots.
+
+The Getting Started, Guides, and MCP pages contain hand-written examples and patterns.
+
+For an exact field or status code, use the generated catalog and its source spec.
+{% endhint %}
 
 ## Make your first call
 

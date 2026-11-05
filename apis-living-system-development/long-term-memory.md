@@ -112,8 +112,9 @@ Open the memory project like any other project. Then use these controls:
 - **Version** the memory (Taskade's version history applies).
 
 
-> ℹ️
-> Taskade EVE reads the memory project at each interaction. Your edits take effect in the next conversation.
+{% hint style="info" %}
+Taskade EVE reads the memory project at each interaction. Your edits take effect in the next conversation.
+{% endhint %}
 
 
 ### Common cleanup patterns
@@ -207,8 +208,9 @@ The response returns the updated agent as `{ "ok": true, "item": { "id", "name",
 | `"code": "NOT_FOUND"` or `"code": "FORBIDDEN"` | The id is wrong, or your account cannot open that project or agent | Copy the id again from Taskade, and check your workspace access. |
 
 
-> ℹ️
-> Memory projects use the same blocks, tasks, and metadata schema as other projects. Treat them as frequently read projects.
+{% hint style="info" %}
+Memory projects use the same blocks, tasks, and metadata schema as other projects. Treat them as frequently read projects.
+{% endhint %}
 
 
 ---
@@ -221,10 +223,11 @@ The response returns the updated agent as `{ "ok": true, "item": { "id", "name",
 - **No external service.** Memory lives in Taskade's infrastructure, not a third-party vector store.
 
 
-> ⚠️
-> **A bundle export includes memory projects as ordinary projects.** A [bundle](bundles.md) export takes every project in the workspace that is not archived. It does not carry the **Memory** tag, so the imported copy is not Taskade EVE memory in the target workspace.
->
-> Review memory projects for sensitive content before you export a workspace. Your account preferences note is never part of a bundle.
+{% hint style="warning" %}
+**A bundle export includes memory projects as ordinary projects.** A [bundle](bundles.md) export takes every project in the workspace that is not archived. It does not carry the **Memory** tag, so the imported copy is not Taskade EVE memory in the target workspace.
+
+Review memory projects for sensitive content before you export a workspace. Your account preferences note is never part of a bundle.
+{% endhint %}
 
 
 ---

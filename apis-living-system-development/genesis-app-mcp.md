@@ -399,8 +399,9 @@ You can change this setting later with `update_agent`. This setting also enables
 | `run_flow` | Start one run of an automation now. The automation must be On and start **When asked** (a manual trigger, labeled **Agent Tool** in the automation editor). Pass `input` when the trigger asks for inputs. It returns `flowRunId` and `status` at once |
 | `get_flow_runs` | Read the recent runs of one automation, newest first: status, start and end time, and the failed step and a short error for a failed run |
 
-> ⚠️
-> `run_flow` starts a real run. The run counts toward the monthly automation runs of the plan, and AI steps use credits. A step can also send email or act in a connected app. Call it once for each run that you want.
+{% hint style="warning" %}
+`run_flow` starts a real run. The run counts toward the monthly automation runs of the plan, and AI steps use credits. A step can also send email or act in a connected app. Call it once for each run that you want.
+{% endhint %}
 
 `run_flow` returns before the run ends. Call `get_flow_runs` to read the result. A run status is `running`, `completed`, `failed`, or `filtered`. A `filtered` run stopped early on purpose and did not fail. If `run_flow` returns the status `unknown` or `running`, do not start the run again. Read it with `get_flow_runs`.
 
@@ -415,8 +416,9 @@ An app kit is a Taskade Genesis app that you published so other people can add a
 
 Only the workspace owner can call `publish_kit_version`. `list_my_kits` lists kits from workspaces that you own, and it hides a kit whose workspace has no MCP access. Archived and removed kits are not listed.
 
-> ⚠️
-> `publish_kit_version` releases the app as it is now. People who add the kit from then on get this version, and people who already added it keep their copy. From version 2 on, buyers get one email a day at most. Only the newest 20 versions keep a saved copy, so each call removes the saved copy of an older version past that limit.
+{% hint style="warning" %}
+`publish_kit_version` releases the app as it is now. People who add the kit from then on get this version, and people who already added it keep their copy. From version 2 on, buyers get one email a day at most. Only the newest 20 versions keep a saved copy, so each call removes the saved copy of an older version past that limit.
+{% endhint %}
 
 A paid kit keeps its price. You can publish 5 versions of one kit in an hour.
 

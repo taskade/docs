@@ -7,7 +7,7 @@ description: >-
 # Inbound Webhooks
 
 {% hint style="info" %}
-**Generated reference:** This reference is also at [taskade.com/docs/guides/webhooks](https://www.taskade.com/docs/guides/webhooks), generated from the live OpenAPI spec. AI agents can do most of this work through the [hosted Taskade MCP server](../../genesis-app-mcp.md).
+**Generated reference:** The maintained webhooks guide is at [taskade.com/docs/guides/webhooks](https://www.taskade.com/docs/guides/webhooks). An inbound webhook starts an automation, and you create the automation in Taskade. MCP cannot create or edit an automation.
 {% endhint %}
 
 {% hint style="info" %}

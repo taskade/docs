@@ -138,7 +138,7 @@ Yes. MCP does not depend on the model. Any AI tool that speaks MCP can connect t
 
 - [Taskade MCP Server](https://www.taskade.com/learn/connect/mcp-server). Connect Claude, ChatGPT, Cursor, or VS Code
 - [MCP Client Integration](https://www.taskade.com/learn/connect/mcp-client-integration). Call a remote MCP server from an automation
-- [Agents and External MCP Servers](https://www.taskade.com/learn/connect/mcp-client). How agents use outside MCP tools
+- [Agents and External MCP Servers](https://www.taskade.com/learn/connect/mcp-client). How an agent hands an outside MCP call to an automation
 - [Tools for AI Agents](https://www.taskade.com/learn/agents/agent-tools). The built-in agent tools
 - [MCP Developer Docs](https://www.taskade.com/docs/mcp). Client setup, [advanced usage](../../apis-living-system-development/workspace-mcp-advanced.md), and [connector details](../../apis-living-system-development/workspace-mcp-advanced.md#outbound-mcp-the-mcp-client-connector)
 

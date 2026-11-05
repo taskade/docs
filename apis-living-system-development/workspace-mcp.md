@@ -40,7 +40,7 @@ graph TD
 The server is published as **`@taskade/mcp-server`** on npm. Your client runs it with `npx`, so you do not install it globally.
 
 ```bash
-TASKADE_API_KEY="$TASKADE_TOKEN" npx -y @taskade/mcp-server
+TASKADE_API_KEY="your_api_token_placeholder" npx -y @taskade/mcp-server
 ```
 
 The server reads the personal access token from `TASKADE_API_KEY`. Settings → **API** also manages OAuth 2.0 clients and webhooks.

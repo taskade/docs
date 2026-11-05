@@ -65,10 +65,11 @@ Receive data from an external service to start a Taskade automation.
 6. Use the webhook payload as **dynamic data** in subsequent actions.
 
 
-> ℹ️
-> Taskade generates one webhook URL per automation. The URL has the form `https://www.taskade.com/webhooks/flow/<automation-id>/sync`. It identifies the automation, so it does not change.
->
-> Webhook triggers run on **Pro and above**. On Free and Starter, a call returns `402` with `code: "PAYMENT_REQUIRED"`, and the automation does not run.
+{% hint style="info" %}
+Taskade generates one webhook URL per automation. The URL has the form `https://www.taskade.com/webhooks/flow/<automation-id>/sync`. It identifies the automation, so it does not change.
+
+Webhook triggers run on **Pro and above**. On Free and Starter, a call returns `402` with `code: "PAYMENT_REQUIRED"`, and the automation does not run.
+{% endhint %}
 
 
 ### Payload structure
@@ -141,8 +142,9 @@ Taskade returns `401 Unauthorized` for a request with a missing or incorrect tok
 If you set **Verify requests** to **None**, validate each payload in your automation logic. For example, require an expected `event` value.
 
 
-> ⚠️
-> Treat the authorization token like a password. Do not share it publicly. Do not commit it to source control.
+{% hint style="warning" %}
+Treat the authorization token like a password. Do not share it publicly. Do not commit it to source control.
+{% endhint %}
 
 
 ### Verify Stripe and HMAC-signed webhook calls
@@ -155,8 +157,9 @@ A signature check lets a sender that cannot set an `Authorization` header start 
 4. For **HMAC-SHA256 signature** only, set **Signature header** and **Timestamp header** if your sender uses other names. Empty fields use `X-Taskade-Signature-V2` and `X-Taskade-Timestamp`.
 5. Enable the automation.
 
-> ⚠️
-> Add the signing secret before you send traffic. Until you do, the automation rejects every request.
+{% hint style="warning" %}
+Add the signing secret before you send traffic. Until you do, the automation rejects every request.
+{% endhint %}
 
 Taskade checks each signed call in this order:
 
@@ -253,8 +256,9 @@ For outbound communication, use the **Send HTTP Request** action in an automatio
 | **Return Status On Error** | Return the response and status instead of failing on a non-2xx response |
 
 
-> ℹ️
-> Response data from the HTTP request becomes dynamic variables in subsequent automation steps. Use these variables to chain API calls.
+{% hint style="info" %}
+Response data from the HTTP request becomes dynamic variables in subsequent automation steps. Use these variables to chain API calls.
+{% endhint %}
 
 ### Choose a body type
 
@@ -297,8 +301,9 @@ Insert dynamic values with the variable controls in the automation editor. The e
 ## Webhook Registration API
 
 
-> ℹ️
-> Registration returns a **signing secret exactly once**, so store it before anything else. The authoritative schema is the live [Action API v2 spec](https://www.taskade.com/api/documentation/v2).
+{% hint style="info" %}
+Registration returns a **signing secret exactly once**, so store it before anything else. The authoritative schema is the live [Action API v2 spec](https://www.taskade.com/api/documentation/v2).
+{% endhint %}
 
 
 Register **signed** outbound webhooks through the public API. You do not need an automation.
@@ -380,8 +385,9 @@ When your handler needs to know which event arrived, register one URL per event.
 
 ### List, inspect, delete
 
-> ⚠️
-> Delete a webhook only when you no longer need it. The `DELETE` call removes the registration, and Taskade stops its deliveries. To receive the events again, register the webhook again.
+{% hint style="warning" %}
+Delete a webhook only when you no longer need it. The `DELETE` call removes the registration, and Taskade stops its deliveries. To receive the events again, register the webhook again.
+{% endhint %}
 
 ```bash
 # List all registered webhooks
@@ -554,7 +560,7 @@ End it with an [Outbound HTTP Request](#outbound-http-requests) to your endpoint
 
 Task custom-field values appear as additional keys. Other triggers use the same pattern.
 
-See the [Action & Trigger Reference](https://www.taskade.com/automate) for new comments, dates, project completion, and schedules.
+See the [Action & Trigger Reference](../genesis-living-system-builder/automation/actions.md) for new comments, dates, project completion, and schedules.
 
 ***
 

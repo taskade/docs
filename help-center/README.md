@@ -34,7 +34,7 @@ Find answers fast. Pick the topic that matches what you need.
 * [What Genesis Can Build](../genesis-living-system-builder/genesis/) — dashboards, portals, tools, websites
 * [Your First App](../genesis-living-system-builder/genesis/getting-started.md) — step-by-step in 5 minutes
 * [Examples & Templates](../genesis-living-system-builder/genesis/examples-and-templates.md) — copy proven prompts
-* [MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md) — connect to external services
+* [MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md) — the hosted MCP server for AI clients, and the MCP Client step for automations
 * [Custom Domains](../genesis-living-system-builder/space-apps-guide/custom-domains.md) — brand your published apps
 * [Best Practices](../genesis-living-system-builder/community-and-sharing/best-practices.md) — build better apps
 
@@ -68,7 +68,7 @@ Find answers fast. Pick the topic that matches what you need.
 
 * [Build on Taskade](../apis-living-system-development/developer-home.md) — developer starting point
 * [Workspace MCP](../apis-living-system-development/workspace-mcp.md) — manage projects, tasks, and agents from Claude, Cursor, or VS Code
-* [Hosted Taskade MCP (Beta)](../apis-living-system-development/genesis-app-mcp.md) — orchestrate your workspace and edit your Genesis app's source from your IDE
+* [Hosted Taskade MCP](../apis-living-system-development/genesis-app-mcp.md) — orchestrate your workspace and edit your Genesis app's source from your IDE
 * [REST API Reference](../apis-living-system-development/developers/api.md) — 57+ endpoints
 * [Webhooks](../apis-living-system-development/webhooks.md) — inbound and outbound
 * [Bundles & App Kits](../apis-living-system-development/bundles.md) — export and share complete apps
