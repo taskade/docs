@@ -158,7 +158,7 @@ Taskade uses a **5-role, 7-tier RBAC** permission system:
 |---|---|---|
 | **Taskade Autopilot** | Generate entire team workspaces from a single prompt | [Taskade Autopilot](../ai-features/autopilot.md) |
 | **AI Agents** | Create specialist agents for each department | [Custom AI Agents](https://www.taskade.com/learn/genesis) |
-| **Multi-Agent Teams** | Teams of agents that collaborate (Business+) | [Multi-Agents](https://www.taskade.com/learn/genesis) |
+| **Multi-Agent Teams** | Teams of agents that collaborate (Pro+) | [Multi-Agents](https://www.taskade.com/learn/genesis) |
 | **Automation Workflows** | Automate cross-department processes | [Automation Triggers](../automation/README.md) |
 | **Genesis Apps** | Build internal tools and dashboards for teams | [Taskade Genesis](https://www.taskade.com/learn/genesis) |
 | **Shared Agent Chats** | AI + human conversations together | [Custom AI Agents](https://www.taskade.com/learn/genesis) |

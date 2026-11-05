@@ -27,7 +27,7 @@ Make an app that shows on a map some good restaurants in the San Francisco Bay a
 
 ### Check out our Credits & Rewards system
 
-Share Taskade with your friends and leave reviews to earn free credits!
+Share Taskade with your friends to earn free credits!
 
 You can find it here: [https://www.taskade.com/settings/credits](https://www.taskade.com/settings/credits)
 

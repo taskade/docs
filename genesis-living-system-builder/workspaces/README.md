@@ -741,7 +741,7 @@ Unlike the My Tasks dashboard which shows tasks assigned to you across all works
 
 ### **Single Sign-On (SSO) Integration**
 
-Taskade supports enterprise-grade authentication through multiple identity providers:
+SSO/SAML is available on the Business, Max, and Enterprise plans. SCIM provisioning is available on Enterprise. Taskade supports these identity providers:
 
 | **Provider**           | **Protocol** | **Features**                          | **Best For**               |
 | ---------------------- | ------------ | ------------------------------------- | -------------------------- |
@@ -755,16 +755,17 @@ Taskade supports enterprise-grade authentication through multiple identity provi
 **1. Identity Provider Configuration**
 
 * Configure SAML application in your IdP
-* Set ACS URL: `https://www.taskade.com/auth/saml/callback`
+* Set the ACS URL: `https://www.taskade.com/saml/sso/login/callback`
+* Set the SP entity ID (metadata URL): `https://www.taskade.com/saml/sso/metadata`
 * Configure attribute mapping for email and name
 * Download IdP certificate and metadata
 
 **2. Taskade Configuration**
 
-* Navigate to Workspace Settings → Security
-* Upload IdP certificate and configure metadata
-* Test SSO connection with test user
-* Enable for all workspace members
+* Send your IdP metadata (SSO URL and certificate) and your email domain to [support@taskade.com](mailto:support@taskade.com)
+* Taskade connects your domain to your identity provider
+* Test the SSO connection with a test user
+* Members on your domain then sign in with their work email
 
 **3. User Provisioning**
 

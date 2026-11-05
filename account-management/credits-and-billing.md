@@ -31,21 +31,19 @@ Every AI request in Taskade — prompting an agent, running an automation with A
 
 * **Lightweight models** cost fewer credits per request.
 * **Frontier models** (top-tier reasoning models) cost more.
-* **Auto mode** picks a model based on your plan tier and the complexity of the task.
-
-Business-plan users and above get auto-routing to top-tier frontier models, so you don't need to manually pick the right model for each task.
+* **Auto mode** picks a model for each request, so you don't need to pick the right model for each task by hand. Auto is the default.
 
 ***
 
 ## Free Credits
 
-Every user — including free-tier — gets a baseline allocation of AI credits to explore Taskade's AI features.
+A Free workspace starts with 0 AI credits. On Free, you earn free AI credits with referrals and invites, and you can upgrade any time.
 
-* Free-tier users can purchase additional credits directly without upgrading to a paid plan.
-* Advanced AI features are accessible to everyone, not just paid plans.
+* **Referrals:** you earn credits when someone you invite signs up for Taskade. Find your link in [Settings → Credits](https://www.taskade.com/settings/credits).
+* **Paid plans:** every paid plan includes a monthly AI credit allowance. See the [plan table](README.md#current-plans).
 
 {% hint style="info" %}
-Exact free-tier allocation may change. Check the [pricing page](https://www.taskade.com/pricing) for current numbers.
+Check the [pricing page](https://www.taskade.com/pricing) for the current plans.
 {% endhint %}
 
 ***
@@ -141,7 +139,7 @@ Auto Top-Up is available on all plans that support AI credits.
 
 ## Model-Specific Pricing
 
-Each AI model has its own credit cost per request. Pricing is adjusted periodically to track provider costs — Claude Sonnet 4.6 is priced at 110 credits per request, for example.
+Each AI model has its own credit cost per request. Pricing is adjusted periodically to track provider costs.
 
 * You can see the current per-model credit cost in the model picker before selecting a model.
 * Auto mode uses plan-aware routing to pick a cost-appropriate model for each request.
@@ -167,7 +165,7 @@ Taskade surfaces credit usage in several places.
 Taskade never silently fails an AI request due to insufficient credits.
 
 * **Paid users**: You're routed to the upgrade or credit-pack screen.
-* **Free users**: You're prompted to upgrade or buy a pack.
+* **Free users**: You're prompted to upgrade.
 * **Out-of-credits error** surfaces cleanly in the UI — no mysterious silent drops.
 
 {% hint style="info" %}
@@ -186,7 +184,7 @@ Building against the API? See the [REST API guide](../apis-living-system-develop
 
 <summary>Do credits expire?</summary>
 
-On paid plans, purchased credit packs don't expire. Monthly premium credits reset each billing cycle. Free-tier rules may differ — check the pricing page for current policy.
+On paid plans, purchased credit packs don't expire. Monthly premium credits reset each billing cycle. A Free workspace has no monthly allowance — check the pricing page for current policy.
 
 </details>
 

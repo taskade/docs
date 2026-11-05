@@ -1,6 +1,6 @@
 ---
 description: >-
-  Build Taskade database projects: custom fields, relationships, and 9 views. See how Taskade Genesis auto-generates schemas that power apps and agents.
+  Build Taskade database projects: custom fields, relationships, and multiple project views. See how Taskade Genesis auto-generates schemas that power apps and agents.
 ---
 
 # Projects & Databases: The Memory Pillar
@@ -12,7 +12,7 @@ description: >-
 - [Overview](#overview)
 - [What Are Database Projects?](#what-are-database-projects)
 - [Taskade Genesis-Generated Databases](#taskade-genesis-generated-databases)
-- [9 Project Views](#id-9-project-views)
+- [Project Views](#project-views)
 - [Manual Database Creation](#manual-database-creation)
 - [Importing Data](#importing-data)
 - [Automated App Workflows](#automated-app-workflows)
@@ -65,9 +65,9 @@ When Genesis builds an app, it **automatically creates the database structures**
 
 ---
 
-## 9 Project Views
+## Project Views
 
-Every project database supports 9 different views — switch between them without changing your data:
+Every project database supports multiple project views — switch between them without changing your data. List, Board, Table, and Mind Map sit in the view bar. The others are under **More Views**.
 
 | View | Description | Best For |
 |---|---|---|
@@ -75,11 +75,13 @@ Every project database supports 9 different views — switch between them withou
 | **List** | Vertical list/to-do format with checkboxes and hierarchy | Task management, checklists, notes |
 | **Board** | Kanban columns for workflow stages (drag-and-drop) | Pipeline management, sprints, status tracking |
 | **Calendar** | Events on calendar grid for deadline tracking | Scheduling, appointments, content calendars |
-| **Gantt** | Timeline with task duration, dependencies, and progress tracking | Project planning, timelines, milestones |
-| **Mindmap** | Connected nodes radiating from center for visualization | Brainstorming, concept mapping, planning |
-| **Orgchart** | Hierarchical organizational structure | Team structure, process hierarchy |
-| **Action Sheet** | Compact action-oriented format | Quick task management |
+| **Gantt Chart** | Timeline with task duration, dependencies, and progress tracking | Project planning, timelines, milestones |
+| **Mind Map** | Connected nodes radiating from center for visualization | Brainstorming, concept mapping, planning |
+| **Org Chart** | Hierarchical organizational structure | Team structure, process hierarchy |
+| **Actionsheet** | Compact action-oriented format | Quick task management |
 | **Docs (Beta)** | Continuous rich-text document editing | Specs, knowledge bases, long-form writing |
+
+Gantt Chart, Actionsheet, and Org Chart are on paid plans. The timeline is part of Gantt Chart, not a separate view.
 
 > **Tip:** In Genesis apps, you can specify which view to use: "Display the customer database as a kanban board with columns for Lead, Qualified, Proposal, Won."
 
