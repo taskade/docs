@@ -5,6 +5,10 @@ description: >-
 
 # Folders
 
+{% hint style="info" %}
+**Generated reference:** This reference is also at [taskade.com/docs/rest](https://www.taskade.com/docs/rest), generated from the live OpenAPI spec. AI agents can do most of this work through the [hosted Taskade MCP server](../../genesis-app-mcp.md).
+{% endhint %}
+
 A **Subspace** is the top-level container for every AI-powered application you build on Taskade. It's more than just a folder; it's the complete, self-contained ecosystem for your app, holding its unique Knowledge, Intelligence, and Action layers.
 
 When you generate an app or create one manually, you are creating a Subspace. Everything related to that app—its data (Projects), its logic (Agents), and its workflows (Automations)—is organized within it.

@@ -9,10 +9,10 @@ coverY: 0
 
 Taskade turns a plain-English description of your business into a real, running app — CRM, client portal, or ops dashboard — with logins, your own domain, and a full developer platform: REST API, Action API, MCP, SDK, and signed webhooks.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>🛠️ Build a business app — no code</strong></td><td>Describe it in plain English. Get a CRM, client portal, or ops dashboard — with logins and your own domain.</td><td><a href="genesis-living-system-builder/genesis/getting-started.md">Start building →</a></td></tr><tr><td><strong>💻 Build on the API — developers</strong></td><td>REST API v1, Action API v2, MCP, SDK, and webhooks for programmatic access.</td><td><a href="apis-living-system-development/developer-home.md">Developer platform →</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>🛠️ Build a business app — no code</strong></td><td>Describe it in plain English. Get a CRM, client portal, or ops dashboard — with logins and your own domain.</td><td><a href="genesis-living-system-builder/genesis/getting-started.md">Start building →</a></td></tr><tr><td><strong>🤖 Connect your AI agent</strong></td><td>Let Claude, Codex, Cursor, or ChatGPT work in your workspace with one URL and one sign-in.</td><td><a href="getting-started/ai-agents.md">Connect an agent →</a></td></tr><tr><td><strong>💻 Build on the API — developers</strong></td><td>REST API v1, Action API v2, MCP, SDK, and webhooks for programmatic access.</td><td><a href="apis-living-system-development/developer-home.md">Developer platform →</a></td></tr></tbody></table>
 
 {% hint style="info" %}
-**Don't want to start from a blank prompt?** Clone a ready-made app for free — browse the [community gallery](https://www.taskade.com/community) and [Taskade's official kits](https://www.taskade.com/user/taskade), then customize it in Taskade Genesis. Or [start from scratch](https://www.taskade.com/create).
+**Don't want to start from a blank prompt?** Clone a ready-made app for free — browse the [app gallery](https://www.taskade.com/apps) and [Taskade's official kits](https://www.taskade.com/apps/official), then customize it in Taskade Genesis. Or [start from scratch](https://www.taskade.com/create).
 {% endhint %}
 
 {% hint style="success" %}
@@ -48,7 +48,7 @@ Software should be alive. And now, it is.
 | **AI Agents Platform**   | Deploy custom AI assistants with persistent memory             | [Custom AI Agents →](https://www.taskade.com/learn/agents/custom-agents) |
 | **Projects & Databases** | Structured data with real-time sync and custom fields          | [Memory Pillar →](https://www.taskade.com/learn/projects/databases)       |
 
-[**Start Building →**](https://www.taskade.com/create) | [**Browse Community Apps →**](https://www.taskade.com/community)
+[**Start Building →**](https://www.taskade.com/create) | [**Browse Community Apps →**](https://www.taskade.com/apps)
 
 ### How Taskade fits together
 
@@ -68,7 +68,7 @@ Use this as the canonical overview: [Workspace DNA](genesis-living-system-builde
 
 1. [**Follow the Tutorial**](genesis-living-system-builder/genesis/getting-started.md) - Step-by-step app building
 2. [**Copy Working Prompts**](genesis-living-system-builder/genesis/examples-and-templates.md) - Proven templates
-3. [**Browse Community Apps**](https://www.taskade.com/community) - Apps, templates, and workflows for every industry
+3. [**Browse Community Apps**](https://www.taskade.com/apps) - Apps, templates, and workflows for every industry
 
 #### Create AI agents (10 minutes)
 
@@ -80,15 +80,21 @@ Use this as the canonical overview: [Workspace DNA](genesis-living-system-builde
 1. [**Automation Getting Started**](genesis-living-system-builder/automation/) - Build your first workflow
 2. [**Integration Guide**](genesis-living-system-builder/automation/integrations.md) - 100+ supported services
 
+#### Connect an AI agent (2 minutes)
+
+1. Add the hosted MCP server `https://www.taskade.com/mcp` to your AI client and sign in. In Claude Code: `claude mcp add --transport http taskade https://www.taskade.com/mcp`
+2. Give your agent [**taskade.com/SKILL.md**](https://www.taskade.com/SKILL.md) - the Taskade skill for AI agents
+3. [**Connect an AI Agent**](getting-started/ai-agents.md) - every client, every entry point, and what an agent can do
+
 #### For developers
 
 * [**Developer Platform**](apis-living-system-development/developer-home.md) - The developer portal: APIs, SDK, and MCP
 * [**REST API v1**](apis-living-system-development/comprehensive-api-guide/README.md) - Complete RESTful reference (full task CRUD)
 * [**Action API v2**](apis-living-system-development/api-v2-reference.md) - The newer action-based API (agent prompting, bundles)
 * [**Authentication**](apis-living-system-development/developers/authentication.md) - Personal tokens & OAuth 2.0
-* [**Open Source**](https://github.com/taskade) - MCP server, Integration Kit (Zapier/n8n), and sample apps on GitHub
+* [**Open Source**](https://github.com/taskade) - Public repos: [taskade/mcp](https://github.com/taskade/mcp) (MCP server and Claude Code plugin), [taskade/docs](https://github.com/taskade/docs) (this documentation), [taskade/awesome-vibe-coding](https://github.com/taskade/awesome-vibe-coding) (curated tools index), [taskade/tasks.md](https://github.com/taskade/tasks.md) (agent build ledger spec), [taskade/integrations](https://github.com/taskade/integrations) (Integration Kit)
 * [**Awesome Vibe Coding**](https://github.com/taskade/awesome-vibe-coding) - Curated vibe-coding tools, agents, and community Genesis app kits
 
 ### Explore docs
 
-<table data-view="cards"><thead><tr><th>Topic</th><th data-card-target data-type="content-ref">Link</th></tr></thead><tbody><tr><td>Run a business on Taskade Genesis</td><td><a href="genesis-living-system-builder/run-your-business/README.md">Run Your Business</a></td></tr><tr><td>Workspace DNA (canonical)</td><td><a href="genesis-living-system-builder/genesis/workspace-dna.md">Workspace DNA</a></td></tr><tr><td>Taskade Genesis (build apps)</td><td><a href="genesis-living-system-builder/genesis/">Taskade Genesis</a></td></tr><tr><td>AI Agents</td><td><a href="genesis-living-system-builder/ai-features/ai-agents-getting-started.md">AI Agents: Getting Started</a></td></tr><tr><td>Automations</td><td><a href="genesis-living-system-builder/automation/">Automations</a></td></tr><tr><td>Developers</td><td><a href="apis-living-system-development/developer-home.md">Developer Platform</a></td></tr><tr><td>Help &#x26; Support</td><td><a href="help-center/">Help &#x26; Support</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th>Topic</th><th data-card-target data-type="content-ref">Link</th></tr></thead><tbody><tr><td>Run a business on Taskade Genesis</td><td><a href="genesis-living-system-builder/run-your-business/README.md">Run Your Business</a></td></tr><tr><td>Workspace DNA (canonical)</td><td><a href="genesis-living-system-builder/genesis/workspace-dna.md">Workspace DNA</a></td></tr><tr><td>Taskade Genesis (build apps)</td><td><a href="genesis-living-system-builder/genesis/">Taskade Genesis</a></td></tr><tr><td>AI Agents</td><td><a href="genesis-living-system-builder/ai-features/ai-agents-getting-started.md">AI Agents: Getting Started</a></td></tr><tr><td>Automations</td><td><a href="genesis-living-system-builder/automation/">Automations</a></td></tr><tr><td>Connect an AI agent</td><td><a href="getting-started/ai-agents.md">Connect an AI Agent</a></td></tr><tr><td>Developers</td><td><a href="apis-living-system-development/developer-home.md">Developer Platform</a></td></tr><tr><td>Help &#x26; Support</td><td><a href="help-center/">Help &#x26; Support</a></td></tr></tbody></table>

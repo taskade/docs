@@ -5,6 +5,10 @@ description: >-
 
 # Media
 
+{% hint style="info" %}
+**Generated reference:** This reference is also at [taskade.com/docs/rest](https://www.taskade.com/docs/rest), generated from the live OpenAPI spec. AI agents can do most of this work through the [hosted Taskade MCP server](../../genesis-app-mcp.md).
+{% endhint %}
+
 ## Summary of Endpoints
 
 ### Get Media

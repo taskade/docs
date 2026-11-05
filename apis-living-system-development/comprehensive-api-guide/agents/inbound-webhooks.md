@@ -7,6 +7,10 @@ description: >-
 # Inbound Webhooks
 
 {% hint style="info" %}
+**Generated reference:** This reference is also at [taskade.com/docs/guides/webhooks](https://www.taskade.com/docs/guides/webhooks), generated from the live OpenAPI spec. AI agents can do most of this work through the [hosted Taskade MCP server](../../genesis-app-mcp.md).
+{% endhint %}
+
+{% hint style="info" %}
 **Canonical guide:** [Webhooks](../../webhooks.md) covers inbound webhooks, outbound HTTP requests, and the signed Webhook Registration API. This page documents the automation webhook trigger's parameter format.
 {% endhint %}
 

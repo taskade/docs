@@ -5,6 +5,7 @@
 ## Quick Start
 
 * [Quick Start Guide](getting-started/README.md)
+* [Connect an AI Agent](getting-started/ai-agents.md)
 
 ## Platform
 
@@ -169,15 +170,17 @@
 * [Workspace MCP](apis-living-system-development/workspace-mcp.md)
   * [Run your live app by talking to Claude](apis-living-system-development/run-your-app-with-ai.md)
   * [Workspace MCP: Advanced](apis-living-system-development/workspace-mcp-advanced.md)
-  * [Hosted Taskade MCP (Beta)](apis-living-system-development/genesis-app-mcp.md)
+  * [Hosted Taskade MCP](apis-living-system-development/genesis-app-mcp.md)
 * [MCP Connectors](genesis-living-system-builder/genesis/mcp-connectors.md)
 * [Webhooks](apis-living-system-development/webhooks.md)
 * [Bundles & App Kits](apis-living-system-development/bundles.md)
 * [Long-Term Memory](apis-living-system-development/long-term-memory.md)
 * [Autonomous Agents](apis-living-system-development/autonomous-agents.md)
+* [Agent Embeds](apis-living-system-development/agent-embeds.md)
 
 ## Changelog
 
+* [Latest Releases](updates-and-timeline/latest-releases.md)
 * [Upcoming Changes](updates-and-timeline/upcoming-changes.md)
 * [Changelog (2026)](updates-and-timeline/changelog-2026/README.md)
   * [July 2026](updates-and-timeline/changelog-2026/july-2026/README.md)

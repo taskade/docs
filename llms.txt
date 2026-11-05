@@ -2,7 +2,15 @@
 
 > Taskade is an AI-native productivity platform: real-time collaborative workspaces, custom AI agents, trigger-and-action automations, and Taskade Genesis — a no-code builder that turns natural-language prompts into live web apps with databases, logins, and custom domains.
 
-Developers can build on the REST API v1, the action-based Public API v2, a TypeScript SDK (preview), webhooks, and Model Context Protocol (MCP) servers. Full documentation lives at https://docs.taskade.com.
+Developers can build on the REST API v1, the action-based Public API v2, webhooks, and the hosted Model Context Protocol (MCP) server. Full documentation lives at https://docs.taskade.com.
+
+## For AI agents
+
+- [Agent skill](https://www.taskade.com/SKILL.md): Start here. How an AI agent connects to Taskade, which tools fit each job, app kits, and safety rules.
+- [Connect an AI Agent](https://docs.taskade.com/quick-start/ai-agents): Every MCP client, every machine-readable entry point, and what an agent can and cannot do.
+- Hosted MCP server: https://www.taskade.com/mcp (Streamable HTTP, OAuth 2.0 with PKCE, or a personal access token as a Bearer header). Every paid plan.
+- [API catalog (RFC 9727)](https://www.taskade.com/.well-known/api-catalog): The machine-readable list of Taskade APIs.
+- [Developer docs index](https://www.taskade.com/docs/llms.txt): taskade.com/docs pages, each with a Markdown copy at the same URL plus `.md`.
 
 ## Quick Start
 
@@ -73,7 +81,7 @@ Developers can build on the REST API v1, the action-based Public API v2, a TypeS
 ## Workspaces
 
 - [Workspaces Overview](https://docs.taskade.com/workspaces/workspaces): Projects, tasks, members, and billing — the structured-data foundation for apps, agents, and automations.
-- [Projects & Databases](https://docs.taskade.com/workspaces/workspaces/projects-databases): Database projects with custom fields, relationships, and 9 views; how Genesis auto-generates schemas.
+- [Projects & Databases](https://docs.taskade.com/workspaces/workspaces/projects-databases): Database projects with custom fields, relationships, and multiple project views; how Genesis auto-generates schemas.
 - [Project Views](https://docs.taskade.com/workspaces/workspaces/project-views): Switch the same data between List, Board, Table, Calendar, Mind Map, Gantt, and more.
 - [Teams](https://docs.taskade.com/workspaces/workspaces/teams): Workspace and folder structures with a 5-role RBAC permission system.
 - [Collaboration](https://docs.taskade.com/workspaces/workspaces/collaboration): Live co-editing, chat, comments, video calls, presence, and AI summaries.
@@ -114,8 +122,8 @@ Developers can build on the REST API v1, the action-based Public API v2, a TypeS
 - [Workspace MCP](https://docs.taskade.com/developers/workspace-mcp): Connect Claude Desktop, Cursor, Claude Code, Windsurf, VS Code, and more to your workspace via @taskade/mcp-server.
 - [Workspace MCP: Advanced](https://docs.taskade.com/developers/workspace-mcp/workspace-mcp-advanced): Rate limits, multi-client setup, troubleshooting, and security for production use.
 - [Run Your Live App by Talking to Claude](https://docs.taskade.com/developers/workspace-mcp/run-your-app-with-ai): Run your Genesis app's day-to-day data through conversation — no IDs, no API code.
-- [Hosted Taskade MCP (Beta)](https://docs.taskade.com/developers/workspace-mcp/genesis-app-mcp): Orchestrate your workspace from any MCP client via https://www.taskade.com/mcp (OAuth 2.0) — create projects, manage and prompt agents, and edit your Genesis app's source.
-- [MCP Connectors](https://docs.taskade.com/developers/mcp-connectors): Connect Genesis apps and AI agents to 31+ external services using the Model Context Protocol.
+- [Hosted Taskade MCP](https://docs.taskade.com/developers/workspace-mcp/genesis-app-mcp): Orchestrate your workspace from any MCP client via https://www.taskade.com/mcp (OAuth 2.0) — create projects, manage and prompt agents, and edit your Genesis app's source.
+- [MCP Connectors](https://docs.taskade.com/developers/mcp-connectors): Every MCP path in Taskade: the hosted server for AI clients, and the MCP Client step that lets an automation call any MCP server.
 
 ## Changelog
 

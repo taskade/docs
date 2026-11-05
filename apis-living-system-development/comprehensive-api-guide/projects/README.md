@@ -5,6 +5,10 @@ description: >-
 
 # Projects
 
+{% hint style="info" %}
+**Generated reference:** This reference is also at [taskade.com/docs/rest](https://www.taskade.com/docs/rest), generated from the live OpenAPI spec. AI agents can do most of this work through the [hosted Taskade MCP server](../../genesis-app-mcp.md).
+{% endhint %}
+
 The **Knowledge Layer** is the foundation of every intelligent app you build in Taskade. This is the structured memory that your AI Agents use to understand context, make decisions, and provide insightful responses. This layer is powered by **Taskade Projects**.
 
 A Project is a flexible, powerful resource that can be used as:
