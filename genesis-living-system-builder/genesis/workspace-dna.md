@@ -34,7 +34,7 @@ graph TD
 Projects store structured knowledge: tasks, notes, custom fields, documents, and media. This is what agents read and automations update.
 
 **What you get:**
-- Multiple project views: List, Board, Table, and Mind Map, plus Docs (Beta), Gantt Chart, Calendar, Actionsheet, and Org Chart under **More Views**
+- Multiple project views: List, Board, Table, and Mind Map, plus Docs (Beta), Gantt Chart, Calendar, Actionsheet, and Org Chart under **More Views** (Gantt Chart, Actionsheet, and Org Chart are on paid plans)
 - Custom fields for structured data
 - Real-time sync across all devices
 - File and media uploads as active knowledge

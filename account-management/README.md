@@ -52,7 +52,7 @@ Workspace Settings > Members > click the three dots next to a member > Remove.
 
 | Plan | Price | AI Credits/mo | Key Features |
 |------|-------|--------------|--------------|
-| **Free** | $0 | 0 (earn credits with referrals and invites) | 2 members, 3 Genesis apps, 1 AI agent, 10 automation runs a month |
+| **Free** | $0 | 0 (earn credits with referrals and invites) | 2 members, 3 Taskade Genesis apps, 1 AI agent, 10 automation runs a month |
 | **Starter** | $6/mo, billed annually | 10,000 | 3 members, unlimited apps, premium integrations, hosted MCP access |
 | **Pro** | $10/mo billed annually, or $20 monthly | 50,000 | 10 members, custom domains (up to 10), webhooks, your own AI key (BYOK), app bundle export |
 | **Business** | $25/mo billed annually, or $50 monthly | 150,000 | Unlimited members, unlimited custom domains, SSO/SAML, app analytics, custom branding |

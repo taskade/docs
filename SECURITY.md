@@ -59,7 +59,7 @@ OPENAI_API_KEY=your_openai_key_here
 ### **Import Scripts & Temporary Data**
 ```bash
 # ❌ These are also excluded:
-scripts/                    # Import/sync scripts
+scripts/                    # Import/sync scripts (.github/scripts/ holds the public CI checks and is committed)
 package.json               # Node dependencies for scripts
 *-urls.txt                 # Temporary URL lists
 help-center/_imported/     # Imported content (temporary)

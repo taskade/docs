@@ -5,7 +5,7 @@
 //   node .github/scripts/check-facts.mjs --base origin/main  # only pages changed since base
 //   node .github/scripts/check-facts.mjs --self-test     # prove every rule can fail
 //
-// Dated changelog pages are history and are not checked.
+// Dated changelog pages are history and are not checked. Their index pages are checked.
 // Add `facts-ok` to a line to allow a legitimate mention.
 import { execFileSync } from 'node:child_process';
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
@@ -18,6 +18,7 @@ const RULES = [
     patterns: [
       /\b(\d+|five|six|seven|eight|nine|ten)\+?\s+(different |unique |project |powerful |flexible )?views\b/i,
       /\b\d+\s+completely different ways\b/i,
+      /\bviewable\s+(\d+|five|six|seven|eight|nine|ten)\s+ways\b/i,
     ],
   },
   {
@@ -84,11 +85,15 @@ const RULES = [
   },
 ];
 
-const SKIP_DIRS = new Set(['.git', '.gitbook', 'node_modules', 'changelog', 'updates-and-timeline']);
+const SKIP_DIRS = new Set(['.git', '.gitbook', 'node_modules']);
+// Dated release notes: changelog/<year>/... and updates-and-timeline/changelog-<year>/<month>/<day>.md.
+// Index pages (README.md) and undated pages such as upcoming-changes.md are checked.
+const DATED_PAGE = /^(changelog|updates-and-timeline)\/.+\/(?!README\.md$)[^/]+\.md$/;
 
 function isChecked(path) {
   if (!(path.endsWith('.md') || path === 'llms.txt')) return false;
-  return !path.split('/').some((part) => SKIP_DIRS.has(part)) && !path.startsWith('.github/');
+  if (path.startsWith('.github/') || DATED_PAGE.test(path)) return false;
+  return !path.split('/').some((part) => SKIP_DIRS.has(part));
 }
 
 function walk(dir, out = []) {
@@ -128,6 +133,7 @@ function scan(text) {
 function selfTest() {
   const bad = [
     'Every project supports 9 different views.',
+    'Projects are viewable 8 ways.',
     'The server exposes **18 tools** today.',
     'Agents run on 15+ frontier models.',
     '### SSO / SAML (Enterprise)',

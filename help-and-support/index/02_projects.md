@@ -1,6 +1,6 @@
 ---
 description: >-
-  Taskade projects are flexible data containers viewable 8 ways: List, Board, Table, Calendar, Mind Map, Org Chart, Gantt, and Action views.
+  Taskade projects are flexible data containers with multiple project views: List, Board, Table, Mind Map, Calendar, Gantt Chart, Org Chart, Actionsheet, and Docs (Beta).
 title: 'Chapter 2: Projects - Your Data Containers'
 ---
 
@@ -370,6 +370,6 @@ Custom Fields:
 
 ***
 
-_Have you tried switching between different views yet? It's like having 8 different tools in one—each revealing different insights from your data!_
+_Have you tried switching between different views yet? It's like having many tools in one—each revealing different insights from your data!_
 
 [← Back to Chapter 1: Workspaces](01_workspaces.md) | [Next: AI Agents →](03_ai_agents.md)

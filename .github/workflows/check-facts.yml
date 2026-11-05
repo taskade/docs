@@ -24,6 +24,9 @@ jobs:
       - name: Check the changed pages
         if: github.event_name == 'pull_request'
         run: node .github/scripts/check-facts.mjs --base origin/${{ github.base_ref }}
+      - name: Check the pages changed by this push
+        if: github.event_name == 'push'
+        run: node .github/scripts/check-facts.mjs --base HEAD~1
       - name: Check every page
-        if: github.event_name != 'pull_request'
+        if: github.event_name == 'workflow_dispatch'
         run: node .github/scripts/check-facts.mjs
