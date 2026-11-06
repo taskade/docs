@@ -419,7 +419,7 @@ fbq('track', 'Lead', {
 
 ### Common DNS Issues
 
-**Problem**: Domain not resolving after 24 hours **Solutions:**
+**Problem**: Domain not resolving after 48 hours **Solutions:**
 
 * Verify CNAME record points to `external.taskade.com`
 * Check DNS propagation using online tools

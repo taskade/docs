@@ -67,7 +67,7 @@ Genesis supports two publishing strategies:
 | **Auto** | Every change is published immediately | Development/testing phase, rapid iteration, internal tools |
 | **Manual** | You choose when to publish | Production apps, client-facing tools, quality-controlled releases |
 
-> **Tip:** Start with Auto while building, switch to Manual when your app is live with real users. You can change this anytime in app settings.
+> **Tip:** Start with Auto while building, switch to Manual when your app is live with real users. You can change this anytime in app settings. Both strategies work on every plan, Free included.
 
 ---
 

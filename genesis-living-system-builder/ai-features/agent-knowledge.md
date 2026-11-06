@@ -21,6 +21,7 @@ Agent knowledge is the information your custom AI agents use to provide **contex
 2. Click the three dots (⋯) next to your agent.
 3. Select **Edit agent**.
 4. Open the **Knowledge** tab.
+5. Turn on the **Enable knowledge** switch. It is off by default, and you cannot add sources until it is on.
 
 <!-- Screenshot: Knowledge tab with sources listed -->
 
@@ -48,7 +49,7 @@ The Knowledge tab shows all sources your agent has been trained on, with options
 
 ### Upload Documents
 
-1. Open the Knowledge tab.
+1. Open the Knowledge tab and make sure that **Enable knowledge** is on.
 2. Click the **ADD SOURCES** box to choose files from your device, or drag & drop them in.
 3. Or click **Add Media** to pick a file already uploaded to your projects.
 4. Click **Update** to save. Files are processed and indexed automatically.
@@ -66,7 +67,7 @@ The Knowledge tab shows all sources your agent has been trained on, with options
 
 ### Use Web Resources
 
-1. In the Knowledge tab, click **Add link** (web page), **Add YouTube** (videos), or add from **Google Drive**, **Dropbox**, **Box**, or **OneDrive**.
+1. In the Knowledge tab, make sure that **Enable knowledge** is on, then click **Add link** (web page), **Add YouTube** (videos), or add from **Google Drive**, **Dropbox**, **Box**, or **OneDrive**.
 2. Paste the link or pick the file.
 3. Click **Update** to save. Content is scraped/transcribed and indexed.
 
@@ -83,7 +84,7 @@ The Knowledge tab shows all sources your agent has been trained on, with options
 
 ### Create Sources Manually
 
-1. Open the Knowledge tab.
+1. Open the Knowledge tab and make sure that **Enable knowledge** is on.
 2. Click **Add Markdown/Text**.
 3. Write or paste Markdown/plain text, then click **Add to Knowledge**.
 4. Click **Update** to save — the source is available to your agent on its next reply.
@@ -94,7 +95,7 @@ The Knowledge tab shows all sources your agent has been trained on, with options
 
 Connect Taskade projects as **living knowledge sources** that update automatically:
 
-1. Open the Knowledge tab.
+1. Open the Knowledge tab and make sure that **Enable knowledge** is on.
 2. Click **Add Project**.
 3. Select one or more projects.
 4. Projects become live knowledge — agent always has the latest data.

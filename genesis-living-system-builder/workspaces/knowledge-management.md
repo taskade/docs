@@ -68,16 +68,17 @@ Processing Features:
 **Bulk Upload Process:**
 
 1. **Prepare folders** with logical organization
-2. **Drag the files** into the **ADD SOURCES** box on the agent's **Knowledge** tab
-3. **Add a one-line description** to each file, so the agent finds the right file
-4. **Click Update** to save
-5. **Test knowledge** with sample questions
+2. **Turn on Enable knowledge** on the agent's **Knowledge** tab. It is off by default
+3. **Drag the files** into the **ADD SOURCES** box
+4. **Add a one-line description** to each file, so the agent finds the right file
+5. **Click Update** to save
+6. **Test knowledge** with sample questions
 
 If Taskade cannot read a file, it skips that file, names it in a notice, and uploads the rest. A Free workspace allows one knowledge source per agent. Paid plans allow 50 sources per agent.
 
 #### **Method 2: URL Batch Import**
 
-On the agent's **Knowledge** tab, use **Add link** for web pages and **Add YouTube** for videos. Click **Add another** to add several sources in one go, then click **Update**.
+On the agent's **Knowledge** tab, turn on **Enable knowledge**, then use **Add link** for web pages and **Add YouTube** for videos. Click **Add another** to add several sources in one go, then click **Update**.
 
 Taskade reads each link as one page. It does not crawl the internal links inside a page or a sitemap. To refresh a web page on a schedule, open **Knowledge → Automation** and pick the **Web scraping** or **Scheduled updates** recipe.
 

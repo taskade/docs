@@ -255,7 +255,7 @@ Transform your private AI agents into public resources accessible to anyone:
 * Unique public URL for each agent (e.g., `taskade.com/a/support-bot-01JK82XFM2`)
 * Customizable branding and appearance
 * Visitor conversations collected in the agent's **Visitor Inbox**
-* Optional password (paid plans) and per-tool permissions for visitors
+* Optional password (Pro and up) and per-tool permissions for visitors
 
 ### Embeddable AI Agents
 

@@ -34,7 +34,7 @@ Every version captures the design and code of your app:
 ## View App Versions
 
 1. Open your Genesis app
-2. Click the **Version history** button (clock icon) in the toolbar above the app preview
+2. Click the **Version history** button (clock icon) in the toolbar above the app preview. On a narrow screen, open the kebab menu (⋮) and choose **Version history**
 3. Wait for the list of saved versions to open
 4. Browse the chronological list of versions
 5. Click any version to preview what the app looked like
@@ -80,7 +80,7 @@ Only add trusted, well-understood code here. Injected `<head>` markup runs on ev
 1. Open the **Version history** panel
 2. Browse and select the version you want to restore
 3. Preview the version to confirm it's correct
-4. Click **"Restore Version"**
+4. Click the restore button. It shows the version number, for example **Restore Version 3**
 5. Follow the message shown after the restore
 
 | Important Notes | |

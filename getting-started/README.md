@@ -87,7 +87,7 @@ When [TRIGGER EVENT], automatically [AUTOMATED ACTION].
 **Test Your Live App**
 
 1. **Click on your new app tile** to enter the app workspace
-2. **Click the "Preview" tab** in the top-right panel to see your live application
+2. **Look at the preview pane** beside the chat to see your live application
 3. **Test as a real user** — submit data, navigate the interface, check mobile view
 4. **Verify automations work** — check your connected services (Slack, email, etc.)
 5. **Chat with Taskade EVE** in the left panel to make adjustments
@@ -114,7 +114,7 @@ Use this checklist to make sure you've mastered the Taskade Genesis interface:
 * [ ] 🏠 **Created your workspace** and verified email
 * [ ] 🧬 **Used the generator input field** at the top to describe your first app
 * [ ] 📱 **Found your new app tile** below the generator after creation
-* [ ] 🔄 **Clicked the Preview tab** to test your live application
+* [ ] 🔄 **Tested your app in the preview pane** beside the chat
 * [ ] 🤖 **Chatted with Taskade EVE** in the left panel
 * [ ] 👥 **Shared your app URL** with team members or external users
 * [ ] ⚡ **Asked Taskade EVE** to add automations or connect services
@@ -128,7 +128,7 @@ Use this checklist to make sure you've mastered the Taskade Genesis interface:
 
 You don't have to build apps with Taskade Genesis. Taskade also works as a powerful project management tool:
 
-1. **Create a project**: Click (+) in your workspace > New Project, or just start typing.
+1. **Create a project**: Click **+** next to **Projects** in the sidebar > **Start Blank**, or just start typing.
 2. **Add tasks**: Each line becomes a task. Use TAB to indent subtasks.
 3. **Switch views**: Try List, Board, Table, and Mind Map, plus Docs (Beta), Calendar, Gantt Chart, Actionsheet, and Org Chart under **More Views**. Gantt Chart, Actionsheet, and Org Chart need a paid plan. The timeline is part of Gantt Chart.
 4. **Assign and schedule**: Use the Add-Ons (+) button to set due dates, assign tasks, add comments, and upload files.

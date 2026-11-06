@@ -125,7 +125,7 @@ Taskade uses **role-based access from Owner to Viewer**:
 ### Create Projects
 
 1. Open a folder
-2. Click **+ Create new** (top-right corner)
+2. Click **+** next to **Projects** in the sidebar and choose **Start Blank**
 3. Type the project title
 4. _(Optional)_ Share the project to collaborate
 

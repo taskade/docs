@@ -20,8 +20,8 @@ You can quickly create new Taskade projects from Markdown (.md) files. The impor
 #### Step-by-Step Tutorial
 
 1. Navigate to your workspace or folder
-2. Click the **+ Create new** button
-3. Select **Import** from the dropdown
+2. Open the **Projects** tab and click **Import**. On a narrow screen, click **+ New** → **Import**
+3. Or click **+** next to **Projects** in the sidebar and choose **Import**
 4. **Option A:** Drag and drop `.md` files into the import box
 5. **Option B:** Click **Paste Text & Markdown** to paste content directly
 6. Click **Import** to finish
@@ -81,7 +81,7 @@ When you paste `.txt` or `.md` content directly, Taskade AI automatically cleans
 Create `.md` files directly in Taskade and use them as project sources:
 
 1. Go to your workspace or folder
-2. Click **+ Create new** → **AI Project**
+2. Click **+** next to **Projects** in the sidebar → **AI Project**
 3. Click **+ Add source** → **Paste text**
 4. Paste Markdown-formatted text
 5. The `.md` file is created and added to the **Media Tab**
@@ -131,14 +131,14 @@ Taskade supports PDF import in three powerful ways: convert PDFs to structured p
 
 Turn any PDF into a structured Taskade project:
 
-1. Click **+ Create new** in your workspace (top-right corner)
-2. Choose **Import** from the dropdown
+1. Open the **Projects** tab of your workspace
+2. Click **Import**
 3. Select an import mode:
-   - **Convert to Taskade**: Converts the PDF into a structured project with headings, tasks, and sections
+   - **Import with AI**: Converts the PDF into a structured project with headings, tasks, and sections
    - **Summarize with AI**: Creates a concise summary of the PDF in a new project
 4. Drag files into the box or click to upload
 5. Wait for the importer to process
-6. Click **+ Create Project** to create the new project
+6. Click **Create Project** to create the new project
 
 ---
 
@@ -149,9 +149,10 @@ Train your AI agents on PDF content:
 1. Go to your workspace → **AI Agents** tab
 2. Click the arrow next to the name of your agent → **Edit agent**
 3. Open the **Knowledge** tab
-4. Enable agent knowledge (toggle on)
+4. Turn on the **Enable knowledge** switch. It is off by default, and you cannot add sources until it is on
 5. **Option A:** Drag PDF files into the box, or click to upload
 6. **Option B:** Click **Add Media** to select files from your workspace
+7. Click **Update** to save
 
 Uploading a PDF to agent knowledge is available on paid plans.
 
@@ -163,7 +164,7 @@ Uploading a PDF to agent knowledge is available on paid plans.
 
 Use PDFs as seed data for AI-generated projects:
 
-1. Click **+ Create new** → **AI Project**
+1. Click **+** next to **Projects** in the sidebar → **AI Project**
 2. Describe the project you want to generate
 3. Click **Upload Files** and upload your `.pdf` files
 4. Click Enter to generate the project

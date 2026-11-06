@@ -128,7 +128,7 @@ Click submit or press Enter—Genesis analyzes your request and starts building
 {% step %}
 #### Review Your Live App
 
-When the build finishes, the **Preview** tab opens automatically with your working application
+When the build finishes, your working application shows in the preview pane beside the chat
 {% endstep %}
 
 {% step %}
