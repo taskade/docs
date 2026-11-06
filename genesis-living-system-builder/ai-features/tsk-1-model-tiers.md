@@ -42,7 +42,7 @@ Every tier is visible in the picker on every plan; manually pinning a tier requi
 
 Set your agent to **Auto** and TSK-1 dynamically routes each request to the appropriate tier — fast when you need speed, deep when you need reasoning. Auto is the default for new agents on every plan.
 
-**Free plan included.** On the Free plan, Auto runs your first Genesis app build at full **Reasoning** depth and follow-up edits at **Thinking** depth — welcome credits (1,000 when you verify your account, plus 5,000 when you start your first app build) are sized to cover one complete build.
+**Every plan, Free included.** Auto is the default on every plan. A Free workspace starts with 0 AI credits: you earn free AI credits with referrals and invites, and you can upgrade any time. See [Credits & Billing](../../account-management/credits-and-billing.md).
 
 Agents or automations **pinned to a specific tier** stay on that tier until you change them. The tier definitions are stable; the underlying models that serve each tier may change as the frontier improves.
 

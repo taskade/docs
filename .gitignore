@@ -4,6 +4,7 @@ help-center/_imported/
 
 # Import scripts and temporary files
 scripts/
+!/.github/scripts/
 package.json
 package-lock.json
 *-urls.txt

@@ -261,7 +261,7 @@ Genesis works for virtually any business process:
 
 * SOC 2 compliance and security audits
 * GDPR and privacy regulation compliance
-* Enterprise SSO integration
+* SSO/SAML on Business and up, SCIM provisioning on Enterprise
 * Advanced permission controls
 * Audit trails and data retention
 

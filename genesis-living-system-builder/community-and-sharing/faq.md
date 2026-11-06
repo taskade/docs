@@ -213,9 +213,10 @@ Yes! Several support options:
 
 Genesis is included with Taskade subscriptions:
 
-* **Free plan:** Limited apps and features
-* **Pro plan:** Unlimited apps with advanced features
-* **Business plan:** Team collaboration and enterprise features
+* **Free plan:** up to 3 Genesis apps, 1 AI agent, and 2 workspace members
+* **Starter and up:** unlimited apps
+* **Pro and up:** custom domains, webhooks, and app bundle export
+* **Business and up:** SSO/SAML, app analytics, and unlimited members
 
 Visit [taskade.com/pricing](https://taskade.com/pricing) for current pricing.
 
@@ -223,8 +224,9 @@ Visit [taskade.com/pricing](https://taskade.com/pricing) for current pricing.
 
 **Free plan includes:**
 
-* **Basic app creation** with Genesis
-* **Simple automations** and integrations
+* **App creation** with Taskade Genesis (up to 3 apps)
+* **Automations** with standard connectors (10 runs a month). Premium integrations need a paid plan.
+* **AI credits** you earn with referrals and invites (a Free workspace starts with 0)
 * **Standard support** via help center
 * **Community access** for questions and inspiration
 

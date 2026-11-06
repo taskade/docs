@@ -1,0 +1,32 @@
+name: Check product facts
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-facts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Self-test
+        run: node .github/scripts/check-facts.mjs --self-test
+      - name: Check the changed pages
+        if: github.event_name == 'pull_request'
+        run: node .github/scripts/check-facts.mjs --base origin/${{ github.base_ref }}
+      - name: Check the pages changed by this push
+        if: github.event_name == 'push'
+        run: node .github/scripts/check-facts.mjs --base HEAD~1
+      - name: Check every page
+        if: github.event_name == 'workflow_dispatch'
+        run: node .github/scripts/check-facts.mjs

@@ -108,7 +108,7 @@ Genesis apps can be embedded on any website:
 |---|---|---|
 | **iframe embed** | Copy the embed code from the Publish settings | All plans |
 | **Direct link** | Share the published app URL | All plans |
-| **Custom domain** | Point your domain to the app (CNAME) | Business+ |
+| **Custom domain** | Point your domain to the app (CNAME) | Pro+ |
 
 ---
 

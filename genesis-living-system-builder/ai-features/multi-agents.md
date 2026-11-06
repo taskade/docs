@@ -45,7 +45,7 @@ graph TD
 
 > **Workspace DNA impact:** Multi-agent teams amplify the Intelligence pillar. Each agent contributes +10 points to your [Intelligence Score](../genesis/how-genesis-works.md#workspace-intelligence-score), and teams create compounding intelligence through specialization.
 >
-> **Plan note:** Multi-Agent Teams are available on Business+ plans.
+> **Plan note:** Multi-Agent Teams are available on Pro plans and up.
 
 ---
 

@@ -22,7 +22,7 @@ description: >-
 - [Embedding Your App](#embedding-your-app)
 - [SEO Customization](#seo-customization)
 - [White-Label Branding](#white-label-branding)
-- [Enterprise SSO (OIDC)](#enterprise-sso-oidc)
+- [App Sign-In (OIDC)](#app-sign-in-oidc)
 - [Security Considerations](#security-considerations)
 - [Sharing Methods at a Glance](#sharing-methods-at-a-glance)
 - [What's Next](#whats-next)
@@ -203,7 +203,7 @@ Connect your own domain to any published Genesis app:
 
 | Feature | Detail |
 |---|---|
-| **Available on** | Business+ plans |
+| **Available on** | Pro (up to 10 per workspace), Business and up (unlimited) |
 | **Setup method** | CNAME record pointing to Taskade |
 | **SSL** | Automatic via Cloudflare |
 | **Configuration** | App Settings → Domains |
@@ -228,7 +228,7 @@ Connect your own domain to any published Genesis app:
 | **SEO customization** | Custom meta title, description, Open Graph image | Business+ |
 | **Custom colors** | Branded share previews and social cards | Business+ |
 | **White-label branding** | Custom favicon, remove Taskade branding | Business+ |
-| **OIDC authentication** | Enterprise SSO for app access | Enterprise |
+| **App sign-in** | App Users sign in to your app ([GenesisAuth](genesis-auth.md)) | All |
 
 ---
 
@@ -312,11 +312,13 @@ White-label settings apply to the published view only. The Taskade editor interf
 
 ---
 
-## Enterprise SSO (OIDC)
+## App Sign-In (OIDC)
 
-Enterprise workspaces can gate app access behind your organization's Identity Provider (IdP) using OpenID Connect (OIDC). This means visitors must sign in through your corporate SSO before they can view or interact with the app.
+App sign-in runs on OpenID Connect (OIDC), with Taskade as the identity provider. It is available on every plan. Turn it on to require an account before visitors can use the app — see [GenesisAuth](genesis-auth.md).
 
-Contact sales to enable OIDC for your workspace — setup guidance is provided during Enterprise onboarding.
+Sign-in confirms who a visitor is. It does not hide other people's records by itself: to give each user only their own rows, turn on **Private per-user data** — see [Add Login & Roles](../run-your-business/add-login-and-roles.md#give-each-user-only-their-own-rows).
+
+For your own team, workspace SSO/SAML is available on Business and up — see [Account Management](../../account-management/README.md).
 
 ---
 
@@ -337,12 +339,12 @@ Contact sales to enable OIDC for your workspace — setup guidance is provided d
 
 | Method | Visibility | Clonable | Custom Domain | Password | Analytics | Best For |
 |---|---|---|---|---|---|---|
-| **Public + Community** | Anyone | Yes | Business+ | Optional | Yes | Templates, showcases |
-| **Public (no community)** | Anyone with URL | Yes | Business+ | Optional | Yes | Marketing pages |
-| **Secret link** | Link holders | Yes | Business+ | Optional | Yes | Client portals, partners |
-| **Private** | Workspace only | N/A | Business+ | Optional | Yes | Internal tools |
-| **Embed** | Website visitors | No | N/A | Optional | Yes | Blog, documentation |
-| **Paid** | Anyone (after purchase) | Yes (paid copy) | Business+ | Optional | Yes | Monetized templates, premium apps — buyer receives a private copy in their own workspace |
+| **Public + Community** | Anyone | Yes | Pro+ | Optional | Business+ | Templates, showcases |
+| **Public (no community)** | Anyone with URL | Yes | Pro+ | Optional | Business+ | Marketing pages |
+| **Secret link** | Link holders | Yes | Pro+ | Optional | Business+ | Client portals, partners |
+| **Private** | Workspace only | N/A | Pro+ | Optional | Business+ | Internal tools |
+| **Embed** | Website visitors | No | N/A | Optional | Business+ | Blog, documentation |
+| **Paid** | Anyone (after purchase) | Yes (paid copy) | Pro+ | Optional | Business+ | Monetized templates, premium apps — buyer receives a private copy in their own workspace |
 
 ---
 

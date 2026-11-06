@@ -193,7 +193,7 @@ Taskade EVE can now build custom AI agents automatically based on your needs:
 **Automatic Configuration:**
 
 * EVE determines the optimal agent personality and tone
-* Automatically selects appropriate AI models (GPT-4.1, Claude-4, etc.)
+* Uses **Auto** to pick a frontier model for each task
 * Configures relevant tools and integrations
 * Sets up proper knowledge sources and training
 

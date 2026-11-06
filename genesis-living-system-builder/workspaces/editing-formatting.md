@@ -1,6 +1,6 @@
 ---
 description: >-
-  Format Taskade tasks with headings, lists, highlights, and 9 project views, plus add-ons like due dates, timers, and keyboard shortcuts.
+  Format Taskade tasks with headings, lists, highlights, and multiple project views, plus add-ons like due dates, timers, and keyboard shortcuts.
 ---
 
 # Editing & Formatting
@@ -64,7 +64,7 @@ Taskade lets you turn tasks into checklists, headings, ordered lists, paragraphs
 
 ## Project Views
 
-The same content can be displayed in **9 different views** — switch anytime without changing your data:
+The same content can be displayed in **multiple project views** — switch anytime without changing your data:
 
 | View | Description | Best For |
 |---|---|---|
@@ -72,10 +72,13 @@ The same content can be displayed in **9 different views** — switch anytime wi
 | **Board** | Kanban columns for workflow stages (drag-and-drop) | Pipeline management, sprints |
 | **Table** | Structured spreadsheet-like format with filtering, sorting, grouping | Data management, CRM |
 | **Calendar** | Events on calendar grid for deadline tracking | Scheduling, content calendars |
-| **Gantt** | Timeline with task duration, dependencies, and progress | Project planning, milestones |
+| **Gantt Chart** | Timeline with task duration, dependencies, and progress | Project planning, milestones |
 | **Mind Map** | Connected nodes radiating from center | Brainstorming, concept mapping |
 | **Org Chart** | Hierarchical organizational structure | Team structure, process flows |
-| **Action Sheet** | Compact action-oriented format | Quick task management |
+| **Actionsheet** | Compact action-oriented format | Quick task management |
+| **Docs (Beta)** | Continuous rich-text document editing | Specs, long-form writing |
+
+Gantt Chart, Actionsheet, and Org Chart are on paid plans.
 
 ---
 
