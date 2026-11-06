@@ -75,6 +75,10 @@ Connecting Genesis to Taskade programmatically? See the [Public API reference](.
 | **Web sources** | YouTube videos, blog URLs, tweets, Reddit posts, news articles |
 | **Cloud storage** | Google Drive, Dropbox, Box, OneDrive |
 
+{% hint style="info" %}
+On the Free plan you can upload images. Documents, spreadsheets, and other non-image files need a paid plan, and the largest file size you can upload also grows with your plan. See [taskade.com/pricing](https://www.taskade.com/pricing).
+{% endhint %}
+
 ---
 
 ## Provide App Context
@@ -141,13 +145,13 @@ Every file you upload becomes part of your workspace's living memory:
 
 | Context Added | DNA Impact | Future Benefit |
 |---|---|---|
-| Brand guidelines | All future apps use your brand automatically | Consistent brand across every app |
+| Brand guidelines | Future builds can reuse your brand files without a new upload | Consistent brand across every app |
 | Data samples | AI agents understand your data structures | Smarter agent responses and queries |
 | Process documents | Automations follow your business rules | More accurate workflow generation |
 | Competitor screenshots | Genesis understands your market position | Better feature recommendations |
 | Customer data | Databases pre-populated and properly structured | Faster app deployment |
 
-> **Workspace DNA hint:** Context uploads increase the richness of your workspace memory, which directly improves your [Intelligence Score](./how-genesis-works.md#workspace-intelligence-score) and makes every future app smarter.
+> **Workspace DNA hint:** Context uploads increase the richness of your workspace memory, and you can reuse them in every future build. An app's [Intelligence Score](./how-genesis-works.md#workspace-intelligence-score) counts its projects, agents, and automations, not its uploaded files.
 
 ---
 
@@ -159,3 +163,7 @@ Every file you upload becomes part of your workspace's living memory:
 | [Advanced Features](../space-apps-guide/advanced-features.md) | Use your brand context to customize app appearance |
 | [Agent Knowledge & Memory](../ai-features/agent-knowledge.md) | Train AI agents on your uploaded files |
 | [Projects & Databases](../workspaces/projects-databases.md) | How uploaded data becomes structured databases |
+
+---
+
+_Step-by-step guide on taskade.com/learn: [Adding Taskade Genesis Context](https://www.taskade.com/learn/genesis/app-context)._

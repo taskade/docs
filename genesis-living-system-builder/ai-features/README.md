@@ -20,7 +20,7 @@ AI features let you build agents that reason over your workspace, learn from you
 **Think. Learn. Adapt.** Taskade AI features form the living intelligence layer of Workspace DNA, creating systems that understand, evolve, and provide increasingly intelligent value with every interaction.
 
 {% hint style="success" %}
-**Living Intelligence Layer** — AI that doesn't just assist, but learns from your business, adapts to your needs, and continuously improves. Powered by EVE, your living AI companion.
+**Living Intelligence Layer** — AI that doesn't just assist, but learns from your business, adapts to your needs, and continuously improves. Powered by Taskade EVE, your living AI companion.
 {% endhint %}
 
 ## What is Living Intelligence?
@@ -85,8 +85,12 @@ Next:
 * [AI Agents Getting Started](ai-agents-getting-started.md) — create one agent for one job
 * [Tools for AI Agents](agent-tools.md) — let agents take action, not just write text
 * [Multi-Agent Collaboration](multi-agents.md) — coordinate agents on bigger work
-* [taskade.com/community](https://www.taskade.com/community) — browse agent templates and get help
+* [taskade.com/agents](https://www.taskade.com/agents) — browse agent templates
 
 {% hint style="info" %}
 This page stays overview-level. Model comparisons, tool catalogs, and deep agent training patterns live in the linked guides.
 {% endhint %}
+
+---
+
+_Step-by-step guide on taskade.com/learn: [Custom AI Agents: The Intelligence Pillar](https://www.taskade.com/learn/agents/custom-agents)._

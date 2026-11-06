@@ -12,12 +12,16 @@ A single agent is powerful. A **team** of agents is transformative. AI Agent Tea
 **Think of it like a real team.** You don't ask your accountant to write marketing copy. Agent Teams apply the same principle: the right specialist handles the right task, every time.
 {% endhint %}
 
+{% hint style="info" %}
+**Plan:** AI Teams need Pro or a higher plan (Pro, Business, Max, or Enterprise). Free and Starter workspaces can still use single custom agents. Each agent that replies uses AI credits, so an **Everyone** turn costs more than an **Auto** turn.
+{% endhint %}
+
 ## Create a Team
 
 1. Open the **AI Teams** tab in your workspace.
-2. Click **Create Team**.
-3. Give your team a name and description.
-4. Select the agents you want to include (minimum 2).
+2. Click **Create**.
+3. In the **Create Team** dialog, type a **Name**.
+4. Under **Add to team**, add the agents you want (at least one). All agents in a team must be in the same workspace.
 5. Click **Create**.
 
 Your team is ready to use immediately.
@@ -26,7 +30,7 @@ Your team is ready to use immediately.
 
 Don't know which agents to include? Let AI figure it out.
 
-1. In the **AI Teams** tab, click **Create with AI**.
+1. In the **AI Teams** tab, click **Generate**.
 2. Describe what you need the team to do (e.g., "A content marketing team that handles blog writing, SEO optimization, and social media scheduling").
 3. Press **Enter**.
 4. Taskade generates a fully configured team with specialized agents, roles, and tools.
@@ -45,9 +49,9 @@ Go to **AI Teams** > select your team > start a conversation. The team collectiv
 ### Chat Inside a Project
 
 1. Open any project.
-2. Click the **chat balloon** icon.
-3. Switch to the **AI Teams** tab in the chat panel.
-4. Select your team and start chatting.
+2. Click the **chat balloon** icon in the top bar.
+3. Open the menu at the top of the chat and pick your team under the teams list.
+4. Start chatting.
 
 The team responds using the project as context, so answers are grounded in your actual work.
 
@@ -61,9 +65,10 @@ Execution modes control **how** your team responds. Choose the mode that fits yo
 
 | Mode | What Happens | Best For |
 |---|---|---|
-| **Auto** | Taskade picks the best agent(s) based on your prompt | Most everyday requests — fast and hands-off |
-| **Everyone** | All agents respond independently, each with their own answer | Getting diverse perspectives or second opinions |
-| **Orchestrate** | All agents collaborate together on a single unified response | Complex tasks that need multiple areas of expertise combined |
+| **Auto** | Taskade picks the single best agent for your message | Most everyday requests — fast and hands-off |
+| **Everyone** | Every agent on the team replies, one after another | Getting diverse perspectives or second opinions |
+| **Manual** | Only the agents you select reply, one after another | A fixed pipeline, such as researcher then writer |
+| **Orchestrate** | A lead plans the steps, gives each step to an agent, and adds a review step | Complex tasks that need multiple areas of expertise combined |
 
 {% hint style="info" %}
 **Start with Auto mode.** It works well for most situations. Switch to other modes when you need more control or want to see how different agents approach the same problem.
@@ -74,6 +79,8 @@ Execution modes control **how** your team responds. Choose the mode that fits yo
 **Auto** — "Handle this customer inquiry" (let the system route it)
 
 **Everyone** — "What should our Q2 strategy be?" (get input from every perspective)
+
+**Manual** — "Turn these notes into a blog post" with the Researcher and the Writer selected (only the agents you pick)
 
 **Orchestrate** — "Write a product launch plan covering marketing, pricing, and support" (multiple specialists, one cohesive output)
 
@@ -108,3 +115,7 @@ Combine a lead research agent, a qualification agent, and an outreach agent. Fee
 * [Agent Knowledge & Memory](agent-knowledge.md) — train agents with your business data
 * [AI Agents Getting Started](ai-agents-getting-started.md) — create individual agents before building teams
 * [Automation Recipes](../automation/recipes.md) — connect teams to automated workflows
+
+---
+
+_Step-by-step guides on taskade.com/learn: [AI Teams](https://www.taskade.com/learn/agents/ai-teams), [AI Team Generator](https://www.taskade.com/learn/agents/team-generator)._

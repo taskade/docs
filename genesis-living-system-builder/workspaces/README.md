@@ -30,8 +30,8 @@ Workspaces are the enhanced foundational containers that organize your teams, pr
 ### Step-by-Step Setup
 
 1. **Access Creation Menu**
-   * Click the workspace dropdown in the left sidebar
-   * Select "Create New Workspace" from the options
+   * Click the **+** icon in the left sidebar, or go to your workspace list
+   * Enter a name, then click **Create**
 2. **Configure Workspace Details**
    * **Name**: Choose a clear, descriptive workspace name
    * **Description**: Add purpose and scope information
@@ -48,12 +48,16 @@ Workspaces are the enhanced foundational containers that organize your teams, pr
 
 ### Workspace Types
 
-| Type           | Use Case                 | Member Limit | Features                               |
-| -------------- | ------------------------ | ------------ | -------------------------------------- |
-| **Personal**   | Individual productivity  | 1            | Basic features, unlimited projects     |
-| **Team**       | Small team collaboration | 10           | Full collaboration, basic automations  |
-| **Business**   | Department/company use   | 100          | Advanced features, priority support    |
-| **Enterprise** | Large organization       | Unlimited    | Custom integrations, advanced security |
+The plan on a workspace sets how many members it includes:
+
+| Plan           | Use Case                 | Members Included | Features                                                   |
+| -------------- | ------------------------ | ---------------- | ---------------------------------------------------------- |
+| **Free**       | Individual productivity  | 2                | Core features, unlimited projects                          |
+| **Starter**    | Small team collaboration | 3                | Premium integrations in automations                        |
+| **Pro**        | Small team collaboration | 10               | Custom domains, AI Teams, automation webhooks              |
+| **Business**   | Department/company use   | Unlimited        | SSO/SAML, app analytics                                    |
+| **Max**        | Larger teams             | Unlimited        | SSO/SAML, more AI credits                                  |
+| **Enterprise** | Large organization       | Unlimited        | SCIM provisioning, SSO/SAML                                |
 
 ## Workspaces vs. Team Folders (Formerly Teams)
 
@@ -153,7 +157,8 @@ Organization Level
 * **Owner**: Full control over workspace, billing, and all folders
 * **Admin**: Manage workspace settings and all folder permissions
 * **Editor**: Edit content across workspace (subject to folder permissions)
-* **Viewer**: Read access to workspace content
+* **Checker**: Complete assigned tasks and comment, without editing content (paid plans)
+* **Viewer**: Read access to workspace content, plus comments
 
 #### Folder-Level Permissions
 
@@ -198,8 +203,8 @@ Organization Level
 
 **Creating Team Folders**
 
-* Right-click in workspace sidebar
-* Select "Create New Team/Folder"
+* Open a workspace
+* Click **➕ New Team** in the menu on the left
 * Name and configure folder settings
 * Set initial permissions and members
 
@@ -221,9 +226,9 @@ Team folder permissions provide granular control over who can access and modify 
 | Permission Level       | Description                                                        | Use Case                                     |
 | ---------------------- | ------------------------------------------------------------------ | -------------------------------------------- |
 | **Invite Only**        | Only explicitly invited members can access folder content          | Sensitive client work, confidential projects |
-| **Everyone Can Edit**  | All workspace members can view and edit folder projects            | Open collaboration within trusted teams      |
-| **Everyone Can Check** | All workspace members can view and check tasks (read-only editing) | Stakeholder reviews, progress tracking       |
-| **Everyone Can View**  | All workspace members can view folder content (read-only)          | Knowledge sharing, documentation access      |
+| **Full Edit**          | All workspace members can view and edit folder projects            | Open collaboration within trusted teams      |
+| **Check Tasks**        | All workspace members can view and check tasks (read-only editing) | Stakeholder reviews, progress tracking       |
+| **View Only**          | All workspace members can view folder content (read-only)          | Knowledge sharing, documentation access      |
 
 #### Setting Folder Permissions (Desktop)
 
@@ -278,9 +283,9 @@ Proper permission management balances collaboration with security and prevents a
 
 **Collaboration Optimization:**
 
-* Use "Everyone Can Edit" for active project teams
-* Implement "Everyone Can Check" for stakeholder transparency
-* Reserve "Everyone Can View" for knowledge repositories
+* Use "Full Edit" for active project teams
+* Implement "Check Tasks" for stakeholder transparency
+* Reserve "View Only" for knowledge repositories
 
 **Administrative Efficiency:**
 
@@ -323,15 +328,21 @@ Proper permission management balances collaboration with security and prevents a
 
 * Manage members and permissions
 * Create and configure folders/teams
-* Access workspace settings (except billing)
+* Access workspace settings, including billing
 * Moderate content and communications
 
-**Member**
+**Editor**
 
 * Create and edit projects within assigned folders
 * Participate in all collaboration features
 * Use AI agents and automations
-* Limited administrative capabilities
+* Invite members, but cannot change roles
+
+**Checker** (paid plans)
+
+* Complete assigned tasks and check off checklists
+* Comment on tasks
+* Cannot edit project content
 
 **Viewer**
 
@@ -344,10 +355,10 @@ Proper permission management balances collaboration with security and prevents a
 
 **Workspace Limits**
 
-* Free: Up to 5 members
+* Free: Up to 2 members
+* Starter: Up to 3 members
 * Pro: Up to 10 members
-* Business: Up to 100 members
-* Enterprise: Unlimited members
+* Business, Max, and Enterprise: Unlimited members
 
 **Guest Access**
 
@@ -762,8 +773,9 @@ SSO/SAML is available on the Business, Max, and Enterprise plans. SCIM provision
 
 **2. Taskade Configuration**
 
-* Send your IdP metadata (SSO URL and certificate) and your email domain to [support@taskade.com](mailto:support@taskade.com)
-* Taskade connects your domain to your identity provider
+* Open **Settings → Organization → SAML SSO** in Taskade
+* Enter your **Domain**, **SSO URL**, **IDP Issuer** (Entity ID), and **IDP Public Signing Cert**, pick a **Default Workspace** on Business or above, then click **Configure**
+* Add the TXT record that Taskade shows at your DNS provider, then click **Verify domain**
 * Test the SSO connection with a test user
 * Members on your domain then sign in with their work email
 
@@ -806,24 +818,25 @@ Automate user lifecycle management with SCIM 2.0 support:
 
 **Encryption Standards**
 
-* **In Transit**: TLS 1.3 for all communications
-* **At Rest**: AES-256 encryption for stored data
-* **Key Management**: Hardware security modules (HSMs)
+* **In Transit**: TLS on every connection
+* **At Rest**: AES-256 encryption for backups and stored credentials
 * **Certificate Management**: Automated renewal and rotation
 
 **Privacy Controls**
 
-* **Data Residency**: Choose data storage regions
+* **Data Residency**: Taskade runs in a single AWS region (US East)
 * **Data Retention**: Configurable retention policies
-* **Right to Deletion**: GDPR-compliant data removal
+* **Right to Deletion**: Data removal on request
 * **Data Portability**: Complete data export capabilities
 
 **Compliance Certifications**
 
-* **SOC 2 Type II**: Security and availability controls
-* **GDPR**: European data protection compliance
-* **CCPA**: California privacy rights compliance
-* **HIPAA**: Healthcare data protection (Enterprise)
+* **SOC 2 Type II**: Taskade works toward SOC 2 Type II. The independent audit is not complete, so no SOC 2 report is available yet
+* **GDPR**: Practices designed to align with GDPR principles (full compliance in progress)
+* **CCPA**: Practices aligned with CCPA requirements (compliance in progress)
+* **HIPAA**: Taskade does not offer a HIPAA Business Associate Agreement (BAA). Do not store protected health information in Taskade
+
+See the [Taskade Security page](https://www.taskade.com/security) for current details.
 
 ### **Enterprise Administration**
 
@@ -928,3 +941,7 @@ Automate user lifecycle management with SCIM 2.0 support:
 * [AI Agents](../ai-features/ai-agents-getting-started.md) - Workspace-wide AI assistance
 * [Project Views](./project-views.md) - Organizing and visualizing work
 * [Mobile Optimization](mobile-optimization.md) - Mobile workspace management
+
+---
+
+_Step-by-step guides on taskade.com/learn: [What is a Workspace?](https://www.taskade.com/learn/account/workspaces), [Roles and Permissions in Taskade](https://www.taskade.com/learn/account/roles-permissions), [Create a Team (Folder)](https://www.taskade.com/learn/projects/team-folders)._

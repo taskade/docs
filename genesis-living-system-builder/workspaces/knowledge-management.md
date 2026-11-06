@@ -20,9 +20,9 @@ description: >-
 | **Source Type**          | **Best For**                 | **Processing**            | **AI Benefits**             |
 | ------------------------ | ---------------------------- | ------------------------- | --------------------------- |
 | **📄 Documents**         | Policies, manuals, guides    | Text extraction + OCR     | Context-aware responses     |
-| **🌐 Websites**          | Latest info, product pages   | Live web scraping         | Real-time information       |
+| **🌐 Websites**          | Latest info, product pages   | Reads the linked page (one page, no crawl) | Up-to-date public information |
 | **📊 Spreadsheets**      | Data, lists, structured info | Data parsing + analysis   | Data-driven insights        |
-| **🎥 Videos**            | Training content, demos      | Speech-to-text conversion | Video content understanding |
+| **🎥 Videos**            | Training content, demos      | YouTube auto-generated transcript | Video content understanding |
 | **📋 Projects**          | Live workspace data          | Real-time sync            | Current project context     |
 | **🗂️ File Collections** | Document libraries           | Batch processing          | Comprehensive knowledge     |
 
@@ -71,42 +71,18 @@ Processing Features:
 **Bulk Upload Process:**
 
 1. **Prepare folders** with logical organization
-2. **Drag entire folder** into knowledge section
-3. **AI automatically categorizes** and processes files
-4. **Review and adjust** tags and categories
+2. **Drag the files** into the **ADD SOURCES** box on the agent's **Knowledge** tab
+3. **Add a one-line description** to each file, so the agent finds the right file
+4. **Click Update** to save
 5. **Test knowledge** with sample questions
+
+If Taskade cannot read a file, it skips that file, names it in a notice, and uploads the rest. A Free workspace allows one knowledge source per agent. Paid plans allow 50 sources per agent.
 
 #### **Method 2: URL Batch Import**
 
-```json
-{
-  "bulkWebImport": {
-    "sources": [
-      {
-        "url": "https://company.com/support/docs",
-        "crawlDepth": 3,
-        "includeSubdomains": false,
-        "excludePatterns": ["/admin/", "/private/"]
-      },
-      {
-        "url": "https://blog.company.com",
-        "crawlType": "recent_posts",
-        "timeRange": "last_6_months"
-      },
-      {
-        "url": "https://knowledge.company.com",
-        "crawlType": "full_site",
-        "updateFrequency": "weekly"
-      }
-    ],
-    "processing": {
-      "autoTagging": true,
-      "duplicateDetection": true,
-      "contentFiltering": "business_relevant"
-    }
-  }
-}
-```
+On the agent's **Knowledge** tab, use **Add link** for web pages and **Add YouTube** for videos. Click **Add another** to add several sources in one go, then click **Update**.
+
+Taskade reads each link as one page. It does not crawl the internal links inside a page or a sitemap. To refresh a web page on a schedule, open **Knowledge → Automation** and pick the **Web scraping** or **Scheduled updates** recipe.
 
 #### **Method 3: API — Add Knowledge to an Agent**
 
@@ -128,7 +104,9 @@ curl -X POST "https://www.taskade.com/api/v1/agents/{agentId}/knowledge/media" \
 
 ### **Smart Organization Systems**
 
-#### **Auto-Categorization Rules**
+#### **Categorization Rules**
+
+Taskade does not sort knowledge into categories for you. Apply rules like these when you name projects and files, and when you write each file's description:
 
 ```yaml
 Categorization Rules:
@@ -179,41 +157,12 @@ Categorization Rules:
 
 #### **Automated Content Enhancement**
 
-```json
-{
-  "processingPipeline": {
-    "stages": [
-      {
-        "name": "content_extraction",
-        "actions": [
-          "extract_text_from_pdfs",
-          "ocr_for_images", 
-          "speech_to_text_for_videos",
-          "data_parsing_for_spreadsheets"
-        ]
-      },
-      {
-        "name": "content_enhancement",
-        "actions": [
-          "auto_summarization",
-          "key_phrase_extraction",
-          "entity_recognition",
-          "sentiment_analysis"
-        ]
-      },
-      {
-        "name": "organization",
-        "actions": [
-          "auto_categorization",
-          "duplicate_detection",
-          "relationship_mapping",
-          "searchability_optimization"
-        ]
-      }
-    ]
-  }
-}
-```
+When you add a source, Taskade prepares it for the agent:
+
+* **Files** (PDF, DOCX, CSV, TXT, MD, PPTX, XLSX, EPUB): Taskade extracts the text
+* **Images**: Taskade reads the text inside the picture with built-in OCR
+* **YouTube videos**: Taskade uses the auto-generated transcript
+* **Connected projects**: the agent reads text, custom fields, due dates, and assignees, and it gets each change on its next reply
 
 #### **Real-Time Content Updates**
 
@@ -224,18 +173,20 @@ Live Sync Configuration:
     - Triggers: New tasks, completed items, status changes
     - Processing: Incremental knowledge updates
   
-  Website Monitoring:
-    - Frequency: Daily/weekly crawls for updated content
-    - Change Detection: Modified pages, new articles
-    - Alerts: Notify when important pages change
+  Website Monitoring (Knowledge → Automation tab):
+    - Web scraping: Watch a web page and update the agent when it changes
+    - Scheduled updates: Pull fresh content into the agent on a schedule
   
-  Document Versioning:
-    - Track: Version history for all documents
-    - Compare: Highlight changes between versions
-    - Rollback: Restore previous versions if needed
+  Project Versioning:
+    - Track: Connected projects keep their own version history
+    - Rollback: Restore a previous version of a project if needed
 ```
 
 ### **Quality Control & Optimization**
+
+{% hint style="info" %}
+Taskade does not generate the metrics and checks below. Use them as a review framework that you track yourself. For real signals on a public agent, open the **Inbox** sub-tab on the agent's **Knowledge** tab: it lists questions the agent could not answer and replies that visitors rated down.
+{% endhint %}
 
 #### **Knowledge Quality Metrics**
 
@@ -387,6 +338,10 @@ Optimal Knowledge Structure:
 ## Knowledge Analytics & Insights
 
 ### **Usage Analytics Dashboard**
+
+{% hint style="info" %}
+This dashboard is an example of a report that you build yourself. Taskade does not generate it. For a public agent, the **Inbox** sub-tab on the **Knowledge** tab shows the questions the agent could not answer.
+{% endhint %}
 
 #### **Knowledge Performance Metrics**
 
@@ -659,3 +614,7 @@ Sales Team Results:
 _For advanced AI agent training techniques, see our_ [_AI Agents Guide_](../ai-features/ai-agents-getting-started.md)_. For automation of knowledge processes, check out_ [_Advanced Automation Actions_](../automation/advanced-actions.md)_._
 
 _To build programmatic knowledge workflows like the bulk upload and search examples above, see the_ [_Developer Hub_](../../apis-living-system-development/developer-home.md) _and the_ [_REST API Guide_](../../apis-living-system-development/comprehensive-api-guide/README.md)_._
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Agent Knowledge & Memory](https://www.taskade.com/learn/agents/knowledge), [Keep Your Agent's Knowledge Up to Date](https://www.taskade.com/learn/agents/knowledge-updates)._

@@ -99,18 +99,17 @@ Create AI agents that know your business and can take action.
 
 {% tabs %}
 {% tab title="Create an Agent" %}
-1. Tap **(+)** > **AI Agent**
-2. Give your agent a name
-3. Choose **Create from Scratch** or pick a template
+1. Tap **(+)** > **AI Agent**, or open **AI Agents** in the workspace menu and tap **New agent**
+2. Choose **Generate with AI**, **Templates**, or **Blank agent**
+3. If you picked **Generate with AI**, describe the agent, review the result, and tap **Create & Launch Agent**
 4. Customize your agent (see next tab)
 {% endtab %}
 
 {% tab title="Customize an Agent" %}
-Configure your agent using three tabs:
+Open the agent and configure it with two tabs:
 
-* **Knowledge** — add files, projects, or URLs for the agent to learn from
-* **Tools** — enable capabilities like web search, image generation, or code execution
-* **Commands** — create custom slash commands (e.g., `/summarize`, `/draft-email`)
+* **Knowledge** — change the instructions and the AI model, and add files, projects, or URLs for the agent to learn from
+* **Actions** — enable **Tools** like web search, image generation, or code execution, create custom slash **Commands** (e.g., `/summarize`, `/draft-email`), and connect an **Automation**
 {% endtab %}
 
 {% tab title="Use an Agent" %}
@@ -124,20 +123,21 @@ Three ways to interact with your agents on mobile:
 
 ### AI Agent Teams
 
-Combine multiple agents into a team for more complex work:
+Combine multiple agents into a team for more complex work. AI Teams are available on **Pro and up**.
 
-1. Create an Agent Team from the **(+)** menu
-2. Add agents to the team
-3. Choose a coordination mode:
+1. Open **AI Teams** in the workspace menu
+2. Open a team to chat with it
+3. Pick a mode above the message box:
 
 | Mode            | How It Works                                                  |
 | --------------- | ------------------------------------------------------------- |
-| **Auto**        | Taskade routes tasks to the best agent automatically          |
-| **Everyone**    | All agents respond to every request                           |
-| **Orchestrate** | Agents collaborate and hand off work to each other            |
+| **Auto**        | The single best agent for the message replies                 |
+| **Everyone**    | Every agent on the team replies, one after another            |
+| **Manual**      | Only the agents you select reply, one after another           |
+| **Orchestrate** | A lead plans the steps and gives each step to an agent        |
 
 {% hint style="info" %}
-**Auto mode** is the best starting point. Taskade will learn which agent handles which type of request over time.
+**Auto mode** is the best starting point. A new team chat starts in Auto, and it uses one agent reply for each message.
 {% endhint %}
 
 ***
@@ -153,11 +153,11 @@ Combine multiple agents into a team for more complex work:
 
 ### Set Permissions
 
-When sharing, you can set access levels for each person:
+When sharing, you can set a role for each person. Taskade uses role-based access from Owner to Viewer:
 
-* **Can Edit** — full editing access
-* **Can Comment** — can view and comment but not edit
-* **Can View** — read-only access
+* **Editor** — full editing access
+* **Checker** — can view, comment, and check off tasks, but not edit content (paid plans)
+* **Viewer** — can view and comment, but not edit or check off tasks
 
 {% hint style="info" %}
 **Real-time collaboration works on mobile too.** You will see teammates' cursors and changes appear live as they happen.
@@ -167,14 +167,13 @@ When sharing, you can set access levels for each person:
 
 ## Offline Mode
 
-Need to work without an internet connection? Taskade has you covered.
+Taskade needs a live internet connection to open and sync your projects, so there is no offline editing mode on mobile.
 
-* **Edit projects offline** — make changes anytime, even without Wi-Fi
-* **Automatic sync** — your edits sync back to the cloud as soon as you reconnect
-* No extra setup required — offline mode works automatically
+* **Brief drops** — Taskade holds changes from the moments before a disconnection and tries to sync them when you reconnect
+* **Quick Add** — cannot send a task while your phone is offline
 
 {% hint style="warning" %}
-**Keep in mind:** AI features require an internet connection. Offline mode covers editing and viewing only.
+**Keep in mind:** After you reconnect, make sure that your latest changes appear in the project.
 {% endhint %}
 
 ***
@@ -185,3 +184,7 @@ Need to work without an internet connection? Taskade has you covered.
 * [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md)
 * [Import & Export](import-and-export.md)
 * [Features Overview](../genesis-living-system-builder/genesis/README.md)
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Guide to Taskade Mobile](https://www.taskade.com/learn/projects/mobile-guide), [Use Custom AI Agents on Mobile](https://www.taskade.com/learn/agents/agents-on-mobile)._

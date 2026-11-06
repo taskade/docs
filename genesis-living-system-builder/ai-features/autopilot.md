@@ -26,7 +26,7 @@ description: >-
 
 Taskade Autopilot is a **workspace generation system** that transforms a single prompt into an entire interconnected ecosystem of projects, agents, and automations. Unlike traditional project management that requires manual setup, Autopilot constructs complete operational workspaces instantly.
 
-> **Genesis connection:** Autopilot creates workspace ecosystems (projects + agents + automations). Genesis goes further — building full **deployable web applications** with UI, databases, and hosting. Together, they're the fastest way to build your complete Workspace DNA.
+> **Taskade Genesis connection:** Autopilot creates workspace ecosystems (projects + agents + automations). Taskade Genesis goes further — building full **deployable web applications** with UI, databases, and hosting. Together, they're the fastest way to build your complete Workspace DNA.
 
 ---
 
@@ -156,7 +156,7 @@ After Autopilot generates your initial workspace, expand it with these tools:
 |---|---|
 | **View** | Default project view (List, Board, Table, etc.) |
 | **Language** | Output language |
-| **Upload Files** | Seed documents (.pdf, .docx, .txt, .md, .pptx, .xlsx, .csv, .epub) |
+| **Upload Files** | Seed documents (.pdf, .docx, .txt, .md, .pptx, .xlsx, .xls, .csv, .epub) |
 | **Add Links** | Link to online resources |
 | **Agent Mode** | Generate a default agent for the project |
 
@@ -174,3 +174,7 @@ After Autopilot generates your initial workspace, expand it with these tools:
 | [How Genesis Works](https://www.taskade.com/learn/genesis) | Build deployable apps from your workspace |
 | [Workflow Generator](../automation/workflow-generator.md) | Build automations with natural language |
 | [Taskade for Teams](../workspaces/teams.md) | Organize teams within your workspace |
+
+---
+
+_Step-by-step guide on taskade.com/learn: [Taskade Autopilot](https://www.taskade.com/learn/projects/taskade-autopilot)._

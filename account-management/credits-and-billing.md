@@ -39,7 +39,7 @@ Every AI request in Taskade — prompting an agent, running an automation with A
 
 A Free workspace starts with 0 AI credits. On Free, you earn free AI credits with referrals and invites, and you can upgrade any time.
 
-* **Referrals:** you earn credits when someone you invite signs up for Taskade. Find your link in [Settings → Credits](https://www.taskade.com/settings/credits).
+* **Referrals:** you earn credits when someone signs up for Taskade through your referral link and verifies their email, up to a limit. Find your link in [Settings → Earn credits](https://www.taskade.com/settings/credits).
 * **Paid plans:** every paid plan includes a monthly AI credit allowance. See the [plan table](README.md#current-plans).
 
 {% hint style="info" %}
@@ -54,9 +54,10 @@ Paid plans include monthly premium credits that reset on your billing cycle.
 
 | Plan tier  | Monthly credits                                            | Key benefit                   |
 | ---------- | ---------------------------------------------------------- | ----------------------------- |
-| Pro        | Premium monthly allowance                                  | Personal productivity         |
-| Business   | Higher monthly allowance + auto-routing to frontier models | Team use, complex AI tasks    |
-| Max        | Higher allowance with headroom for bursty AI workloads     | Heavy generation, large teams |
+| Starter    | 10,000                                                     | Small teams (up to 3 members) |
+| Pro        | 50,000                                                     | Personal productivity         |
+| Business   | 150,000                                                    | Team use, complex AI tasks    |
+| Max        | 400,000                                                    | Heavy generation, large teams |
 | Enterprise | Custom allowance + admin controls                          | Organization-wide deployments |
 
 {% hint style="info" %}
@@ -85,7 +86,7 @@ Steps that don't call AI — plain forms, stored data, non-AI automation actions
 ### Right-size it
 
 * **Low usage** — You're building for yourself or a small team, with light traffic and occasional automations. A personal paid tier (Pro direction) is usually enough; top up with a credit pack during a build sprint.
-* **Medium usage** — A team relies on the app, automations run regularly, and a handful of end-users hit your agent daily. Lean toward the Business tier, which also auto-routes to frontier models so you don't manage model choice per task.
+* **Medium usage** — A team relies on the app, automations run regularly, and a handful of end-users hit your agent daily. Lean toward the Business tier.
 * **High usage** — A public-facing app with steady traffic, an agent answering many end-users, and automations firing throughout the day. Lean toward Max or Enterprise, which are tuned for bursty, high-volume AI workloads without mid-task throttling.
 
 Don't over-buy on day one. Watch your [usage page](credits-and-billing.md#viewing-your-usage) for the first month, then size to what your app actually draws.
@@ -101,7 +102,7 @@ If real customers use your published app, an agent that runs out of credits mid-
 Credit packs are one-time purchases on top of your monthly allocation.
 
 * **Volume-tiered pricing** — bigger packs come with bigger bonuses.
-* **Credits never expire on paid plans** — top up once, use over time.
+* **Purchased credits never expire** — top up once, use over time. Taskade uses your Monthly Credits first, then these Extra Credits.
 * Purchases appear in the workspace activity log for audit visibility.
 
 <figure><img src="../.gitbook/assets/earn-credits.gif" alt="" width="563"><figcaption></figcaption></figure>
@@ -116,16 +117,16 @@ Auto Top-Up prevents you from running out of credits in the middle of a workflow
 
 ### How It Works
 
-1. Set a **minimum balance threshold** (e.g., 500 credits).
-2. Set a **top-up amount** (e.g., 5,000 credits).
-3. When your balance drops below the threshold, Taskade automatically purchases the top-up amount using your stored payment method.
+1. Set a **balance threshold** (the default is 9,000 credits).
+2. Set a **top-up amount** in dollars (the default is $20).
+3. When your balance drops below the threshold, or gets too low for the next AI step, Taskade automatically buys a credit pack with your saved card.
 
 ### Setting It Up
 
-1. Go to **Settings** → **Billing** → **Credits**.
-2. Toggle **Auto Top-Up** on.
-3. Enter your minimum balance and top-up amount.
-4. Confirm your payment method.
+1. Open [Settings → Credits](https://www.taskade.com/settings/usage) in a web browser.
+2. Find the **Auto-reload** row on the **Credits** card and turn the switch on.
+3. To change the amounts, click **Manage**, then **Change settings**.
+4. Pick the **Top up amount** and the **When credit balance drops below** value, then click **Save changes**.
 
 <figure><img src="../.gitbook/assets/auto-credit-top-up.gif" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -133,7 +134,7 @@ Auto Top-Up prevents you from running out of credits in the middle of a workflow
 Auto Top-Up charges your payment method automatically when triggered. Set a reasonable threshold and top-up amount to match your expected usage.
 {% endhint %}
 
-Auto Top-Up is available on all plans that support AI credits.
+Auto Top-Up is available on every paid plan. The mobile apps and the app-store desktop apps hide this control.
 
 ***
 
@@ -142,7 +143,7 @@ Auto Top-Up is available on all plans that support AI credits.
 Each AI model has its own credit cost per request. Pricing is adjusted periodically to track provider costs.
 
 * You can see the current per-model credit cost in the model picker before selecting a model.
-* Auto mode uses plan-aware routing to pick a cost-appropriate model for each request.
+* Auto mode picks a model for each request.
 * For the authoritative current list, check the in-app model picker.
 
 ***
@@ -200,7 +201,7 @@ Refund policies vary. Contact support for case-by-case review.
 
 <summary>Does Auto Top-Up have a spending cap?</summary>
 
-Auto Top-Up only triggers when your balance drops below your chosen threshold. The cap is effectively controlled by how often you hit that threshold. Monitor your usage page during the first month to tune the settings.
+Yes. Auto Top-Up buys at most 5 times in 24 hours. If you set a monthly spend limit, it stops for the rest of the month at that limit. Monitor your usage page during the first month to tune the settings.
 
 </details>
 
@@ -231,3 +232,7 @@ Cloning a Genesis app does not consume credits on its own. AI usage inside the c
 {% content-ref url="../genesis-living-system-builder/ai-features/" %}
 [ai-features](../genesis-living-system-builder/ai-features/)
 {% endcontent-ref %}
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Taskade AI Usage](https://www.taskade.com/learn/agents/ai-usage), [Auto Top-Up: Stay Building With Automatic Credit Refills](https://www.taskade.com/learn/account/auto-topup), [Billing and Pricing FAQ](https://www.taskade.com/learn/account/billing-faq)._

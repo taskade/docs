@@ -39,7 +39,7 @@ It builds on the same data, agents, and automations you already use.
 * **Internal tools**: admin panels, trackers, ops consoles
 * **Data collection**: lead capture, intake forms, surveys
 
-Browse examples: [taskade.com/community](https://www.taskade.com/community).\
+Browse examples: [taskade.com/apps](https://www.taskade.com/apps).\
 See templates: [Living System Examples & Templates](examples-and-templates.md).
 
 ### How Genesis works (short version)
@@ -49,12 +49,12 @@ See templates: [Living System Examples & Templates](examples-and-templates.md).
 3. The app runs on your workspace, not a separate backend.
 
 The key idea is reuse.\
-Your apps reuse the same **memory**, **intelligence**, and **motion**.
+Your apps reuse the same **memory**, **intelligence**, and **execution**.
 
 ### Workspace DNA
 
 Workspace DNA is how Taskade stays one system.\
-It connects data (memory), agents (intelligence), and automations (motion).
+It connects data (memory), agents (intelligence), and automations (execution).
 
 #### 1) Living Memory (data)
 
@@ -76,20 +76,20 @@ Start here:
 * [Living Intelligence Overview](../ai-features/)
 * [AI Agents Getting Started](../ai-features/ai-agents-getting-started.md)
 
-#### 3) Living Motion (automations)
+#### 3) Living Execution (automations)
 
 Automations execute event-driven workflows.\
 They connect Taskade to external tools and services.
 
 Start here:
 
-* [Living Motion Overview](../automation/)
+* [Automations Overview](../automation/)
 * [Integration Options](../automation/integrations.md)
 * [Action & Trigger Reference](../automation/actions.md)
 
 ### What's next
 
-Edit your app's source from Claude, Cursor, or any IDE via the [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md).
+On a paid plan, edit your app's source from Claude, Cursor, or any IDE via the [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md).
 
 Running a real business on a Taskade Genesis app? Follow [Run Your Business on Genesis](../run-your-business/README.md).
 
@@ -98,4 +98,8 @@ Running a real business on a Taskade Genesis app? Follow [Run Your Business on G
 * [Getting Started](getting-started.md) — build your first living system in 5 minutes
 * [Prompt Guide](prompt-guide.md) — get sharper results from your prompts
 * [Run Your Business on Genesis](../run-your-business/README.md) — take an app to production
-* [taskade.com/community](https://www.taskade.com/community) — browse community apps and get help
+* [taskade.com/apps](https://www.taskade.com/apps) — browse community apps
+
+---
+
+_Step-by-step guide on taskade.com/learn: [What is Taskade Genesis?](https://www.taskade.com/learn/genesis/overview)._

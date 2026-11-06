@@ -25,7 +25,7 @@ description: >-
 
 The Workflow Generator builds complex automation flows from **natural language**. Describe what you want in plain English, and the AI creates complete workflows with triggers, conditions, branches, loops, and integrations across 100+ services — no drag-and-drop, no manual configuration.
 
-> **Taskade Genesis connection:** Genesis apps automatically generate workflow automations as part of the Execution pillar. The Workflow Generator lets you create additional automations or modify existing ones. Each automation adds **+5 points** to your [Intelligence Score](https://www.taskade.com/learn/genesis).
+> **Taskade Genesis connection:** Taskade Genesis apps can include workflow automations as part of the Execution pillar. The Workflow Generator lets you create additional automations or modify existing ones. Each automation adds **+5 points** to your [Intelligence Score](https://www.taskade.com/learn/genesis), up to 30 points.
 
 ---
 
@@ -47,8 +47,8 @@ The Workflow Generator builds complex automation flows from **natural language**
 
 | Step | Action |
 |---|---|
-| 1 | Navigate to **Automations** tab → **Create Flow** (or visit `taskade.com/create/flow`) |
-| 2 | Describe your desired workflow in the chat |
+| 1 | Navigate to **Automations** tab → **Add automation** → **Generate With AI** (or visit `taskade.com/create/flow`) |
+| 2 | Describe your desired workflow and pick a mode (Auto, Agent Tool, Workflow, or Form) |
 | 3 | Watch the Workflow Generator build, refine, and optimize it |
 | 4 | Review the generated flow |
 | 5 | Click **Create Automation** to save it |
@@ -92,7 +92,7 @@ After generating a workflow, modify it with natural language:
 | **Natural Language** | Describe any complexity — AI handles the implementation |
 | **Intelligent Editing** | Modify existing workflows with plain-English requests |
 | **Smart Recommendations** | AI-driven optimization tips and improvements |
-| **Built-in Integrations** | Connect with 100+ apps — AI guides setup |
+| **Built-in Integrations** | Connect with 100+ apps — you connect each account with **Connect**. Premium integrations need a paid plan |
 | **Branching** | Conditional paths based on data values |
 | **Looping** | Iterate over lists of items |
 | **Variables** | Dynamic data passing between steps (Liquid expressions) |
@@ -132,3 +132,7 @@ After generating a workflow, modify it with natural language:
 |---|---|
 | [Automation Triggers](./README.md) | All available triggers for your workflows |
 | [Taskade Autopilot](../ai-features/autopilot.md) | Generate entire workspace ecosystems |
+
+---
+
+_Step-by-step guide on taskade.com/learn: [AI Workflow Generator](https://www.taskade.com/learn/automation/workflow-generator)._

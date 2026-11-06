@@ -25,7 +25,7 @@ description: >-
 
 ## Overview
 
-Markdown is a lightweight markup language that uses characters like `*`, `#`, and `-` to format text. Taskade supports Markdown across **7 different surfaces** — from the project editor to AI agent chats, import/export, and browser widgets.
+Markdown is a lightweight markup language that uses characters like `*`, `#`, and `-` to format text. Taskade supports Markdown across **several surfaces** — from the project editor to AI agent chats, import/export, and browser widgets.
 
 ---
 
@@ -192,3 +192,7 @@ Create Markdown knowledge sources directly in your agent:
 |---|---|
 | [Import](./import.md) | Full import walkthrough |
 | [Editing & Formatting](./editing-formatting.md) | All formatting options |
+
+---
+
+_Step-by-step guide on taskade.com/learn: [Markdown Support](https://www.taskade.com/learn/projects/markdown-support)._

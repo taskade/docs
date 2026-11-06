@@ -11,12 +11,14 @@ Already have notes, docs, or spreadsheets in other tools? You can bring everythi
 
 ### Quick Start: Import in 3 Steps
 
-1. Go to [taskade.com/create](https://www.taskade.com/create)
-2. Choose your import method (see below)
-3. Pick how you want to use the content:
-   * **Upload as Knowledge** — your AI agents can learn from it
-   * **Import as Context** — use it as reference material
-   * **Convert to Projects** — turn it into actionable tasks and workflows
+1. In your workspace or folder, click **➕ Create new** and choose **Import**
+2. Pick a tab in the Import dialog:
+   * **Import with AI** — turn a file, webpage, YouTube video, or pasted text into a structured project
+   * **Summarize with AI** — turn the content into a summary or an outline
+   * **Import CSV** — turn spreadsheet rows into a table project
+3. Drop your file, or click **Webpage**, **YouTube**, or **Paste Text & Markdown**, then follow the prompts
+
+To let an AI agent learn from content, add it in the agent's **Knowledge** tab, or open a project's **···** menu and choose **Add to Agent Knowledge**.
 
 {% hint style="info" %}
 **Imported content becomes part of your Workspace DNA.** That means your AI agents can learn from everything you bring in — docs, spreadsheets, presentations, and more.
@@ -37,6 +39,8 @@ Already have notes, docs, or spreadsheets in other tools? You can bring everythi
 | eBook         | `.epub`                   |
 | Spreadsheet   | `.csv`                    |
 
+Uploading a PDF or another document needs a paid plan. CSV import works on every plan, including Free, for files up to 5 MB and 5,000 rows.
+
 ***
 
 ### Import Methods
@@ -45,17 +49,17 @@ Already have notes, docs, or spreadsheets in other tools? You can bring everythi
 {% tab title="Files & Docs" %}
 Upload files directly from your computer.
 
-1. Go to [taskade.com/create](https://www.taskade.com/create)
-2. Click **Files & Docs**
-3. Select your file(s) and upload
-4. Choose whether to use as knowledge, context, or convert to a project
+1. Click **➕ Create new** in your workspace and choose **Import**
+2. Open the **Import with AI** or **Summarize with AI** tab
+3. Drag your file into the dropzone, or click to upload it
+4. Taskade turns it into a project
 {% endtab %}
 
 {% tab title="Webpages" %}
 Import any public webpage by URL.
 
-1. Go to [taskade.com/create](https://www.taskade.com/create)
-2. Click **Webpages**
+1. Click **➕ Create new** in your workspace and choose **Import**
+2. In the **Import with AI** tab, click **Webpage**
 3. Paste the URL
 4. Taskade extracts the content automatically
 {% endtab %}
@@ -63,8 +67,8 @@ Import any public webpage by URL.
 {% tab title="YouTube" %}
 Pull in content from YouTube videos.
 
-1. Go to [taskade.com/create](https://www.taskade.com/create)
-2. Click **YouTube**
+1. Click **➕ Create new** in your workspace and choose **Import**
+2. In the **Import with AI** tab, click **YouTube**
 3. Paste the video URL
 4. Taskade extracts the transcript and key information
 {% endtab %}
@@ -72,18 +76,18 @@ Pull in content from YouTube videos.
 {% tab title="Text & Markdown" %}
 Paste text or Markdown directly.
 
-1. Go to [taskade.com/create](https://www.taskade.com/create)
-2. Click **Text & Markdown**
+1. Click **➕ Create new** in your workspace and choose **Import**
+2. In the **Import with AI** tab, click **Paste Text & Markdown**
 3. Paste your content
-4. Choose how to use it in your workspace
+4. Click **Create Project**
 {% endtab %}
 
 {% tab title="Other Tools" %}
 Use the general import flow for content from any tool.
 
 1. Export your content from the other tool (see migration guides below)
-2. Go to [taskade.com/create](https://www.taskade.com/create)
-3. Upload the exported file or paste the content
+2. Click **➕ Create new** in your workspace and choose **Import**
+3. Upload the exported file or paste the content. Under **Or import from**, the dialog also has direct options for Todoist, Dynalist, and Workflowy
 {% endtab %}
 {% endtabs %}
 
@@ -99,8 +103,8 @@ Switching to Taskade? Here is how to bring your work over from popular tools.
 2. Scroll to **Export all workspace content**
 3. Choose **Markdown & CSV** format and export
 4. Unzip the downloaded file
-5. In Taskade, go to [taskade.com/create](https://www.taskade.com/create) > **Files & Docs**
-6. Upload the `.md` files
+5. In Taskade, click **➕ Create new** > **Import** and open the **Import with AI** tab
+6. Upload the `.md` files. For databases exported as `.csv` files, use the **Import CSV** tab
 
 {% hint style="success" %}
 **Result:** Your Notion pages become Taskade projects, ready for AI agents to work with.
@@ -110,22 +114,22 @@ Switching to Taskade? Here is how to bring your work over from popular tools.
 
 1. In Trello, open your board
 2. Click **Menu** > **More** > **Print and Export** > **Export as CSV**
-3. In Taskade, go to [taskade.com/create](https://www.taskade.com/create) > **Files & Docs**
-4. Upload the CSV file and select **Convert Spreadsheet with AI**
+3. In Taskade, click **➕ Create new** > **Import** and open the **Import CSV** tab
+4. Upload the CSV file, set the column types, and import it
 
 ### From Asana
 
 1. In Asana, open your project
 2. Click the **drop-down arrow** next to the project name > **Export / Print** > **CSV**
-3. In Taskade, go to [taskade.com/create](https://www.taskade.com/create) > **Files & Docs**
-4. Upload the CSV file and select **Convert Spreadsheet with AI**
+3. In Taskade, click **➕ Create new** > **Import** and open the **Import CSV** tab
+4. Upload the CSV file, set the column types, and import it
 
 ### From Google Docs
 
 1. Install the free [Docs to Markdown](https://workspace.google.com/marketplace/app/docs_to_markdown/700168918607) add-on in Google Docs
 2. Open your document and run the add-on to convert to Markdown
 3. Copy the Markdown output
-4. In Taskade, go to [taskade.com/create](https://www.taskade.com/create) > **Text & Markdown**
+4. In Taskade, click **➕ Create new** > **Import**, then **Paste Text & Markdown**
 5. Paste and import
 
 ### From Any Other Tool
@@ -133,11 +137,11 @@ Switching to Taskade? Here is how to bring your work over from popular tools.
 Most tools let you export as CSV, Markdown, or plain text. The general pattern:
 
 1. **Export** from your current tool in the most structured format available (Markdown or CSV preferred)
-2. **Upload** the file at [taskade.com/create](https://www.taskade.com/create)
-3. **Choose** how to use the content — as knowledge, context, or a converted project
+2. **Upload** the file in the **Import** dialog (**➕ Create new** > **Import**)
+3. **Choose** the tab — **Import with AI**, **Summarize with AI**, or **Import CSV**
 
 {% hint style="info" %}
-**Tip:** For spreadsheets and CSVs, always try the **Convert Spreadsheet with AI** option. Taskade's AI will intelligently map columns to tasks, dates, and assignees.
+**Tip:** For spreadsheets and CSVs, use the **Import CSV** tab. Taskade reads the first row as column names, and you set each column to Text, Select, or Number before the import.
 {% endhint %}
 
 ***
@@ -157,11 +161,13 @@ You can export any project to share outside Taskade or keep a local backup.
 | ------------ | ----------------------------------------------------- |
 | **PDF**      | Sharing polished documents, printing                  |
 | **Markdown** | Moving to other tools, version control                |
+| **CSV**      | Spreadsheet rows, one row per task                    |
+| **Mind Map** | A FreeMind (`.mm`) file for other mind-map tools      |
 | **Text**     | Simple plain-text backup                              |
-| **Image**    | Sharing mind maps or org charts (premium feature)     |
+| **Image**    | Sharing mind maps or org charts                       |
 
 {% hint style="warning" %}
-**Image export** is available for mind map and org chart views and requires a premium plan.
+**Markdown, CSV, and Mind Map** export on every plan, including Free. **Image, Text, and PDF** export need a paid plan. Image export works best for mind map and org chart views.
 {% endhint %}
 
 ### Print a Project
@@ -180,3 +186,7 @@ Need a hard copy? You can also print directly:
 * [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md)
 * [Features Overview](../genesis-living-system-builder/genesis/README.md)
 * [Developer Hub](../apis-living-system-development/developer-home.md) — for programmatic and bulk migration via the API
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Convert to Taskade](https://www.taskade.com/learn/import/convert), [Import CSV Spreadsheets](https://www.taskade.com/learn/import/csv-import), [Export & Print Projects](https://www.taskade.com/learn/import/exporting)._

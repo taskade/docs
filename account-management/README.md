@@ -12,7 +12,7 @@ Manage your Taskade account, team, billing, and security settings.
 ### Profile & Settings
 
 - **Update your profile**: Click your avatar (bottom-left) > Settings > Profile. Change your name, avatar, and display preferences.
-- **Change your email**: Settings > Account > Email. Verify the new address via the confirmation link.
+- **Change your email**: Open Settings, enter the new address in the **Email** field, and click **Save**. The change is active after you click the confirmation link sent to the new address.
 - **Change your password**: Settings > Account > Password. Enter your current password, then set a new one.
 - **Language & region**: Settings > Preferences. Choose your display language, date format, and time zone.
 - **Dark mode**: Settings > Preferences > Theme. Choose Light, Dark, or System.
@@ -28,23 +28,28 @@ Manage your Taskade account, team, billing, and security settings.
 
 ### Invite Members
 
-1. Open Workspace Settings > Members.
+1. Open Settings > Members.
 2. Enter email addresses (comma-separated for multiple).
-3. Choose a role (Owner, Admin, Member, or Viewer).
-4. Click Send Invite.
+3. Choose a role (Editor, Checker, or Viewer).
+4. Click Invite.
+
+You can also click **Copy Invite Link** to share a link that people can use to join.
 
 ### Roles & Permissions
 
+Taskade uses role-based access from Owner to Viewer.
+
 | Role | What they can do |
 |------|------------------|
-| **Owner** | Full control: billing, settings, delete workspace |
-| **Admin** | Manage members, create/delete projects and agents |
-| **Member** | Create and edit projects, use agents, run automations |
-| **Viewer** | View-only access to projects |
+| **Owner** | Full control: billing, settings, delete or transfer the workspace |
+| **Admin** | Invite or remove members, change roles, manage billing, full editing access |
+| **Editor** | Create and edit projects, run agents and automations |
+| **Checker** | Complete assigned tasks, tick checklists, comment (paid plans) |
+| **Viewer** | Read projects and leave comments |
 
 ### Remove Members
 
-Workspace Settings > Members > click the three dots next to a member > Remove.
+Settings > Members > click the **✕** icon next to the member.
 
 ## Billing & Plans
 
@@ -66,18 +71,18 @@ Full details: [taskade.com/pricing](https://www.taskade.com/pricing)
 - **Upgrade**: Settings > Billing > Change Plan.
 - **Downgrade**: Settings > Billing > Change Plan. Changes take effect at the end of your current billing cycle.
 - **Cancel**: Settings > Billing > Cancel Subscription. You keep access until the end of your paid period.
-- **View invoices**: Settings > Billing > Invoices.
+- **View invoices**: Settings > Billing > **Manage billing and invoices**.
 
 ### AI Credits
 
-AI credits are consumed when you use AI features (agents, chat, automations with AI steps, Taskade Genesis app generation). Credits reset monthly. Check your usage at Settings > Billing > Usage.
+AI credits are consumed when you use AI features (agents, chat, automations with AI steps, Taskade Genesis app generation). The Monthly Credits of a paid plan reset each billing cycle. Extra Credits that you buy or earn do not expire. Check your usage on the [Credits page](https://www.taskade.com/settings/usage).
 
 ## Security
 
 ### Two-Factor Authentication (2FA)
 
-1. Settings > Account > Security.
-2. Click Enable 2FA.
+1. Settings > Password > Two-Factor Authentication.
+2. Click Configure, then Set up.
 3. Scan the QR code with an authenticator app (Google Authenticator, Authy, etc.).
 4. Enter the verification code to confirm.
 
@@ -89,7 +94,7 @@ Business, Max, and Enterprise plans support Single Sign-On via:
 - Okta
 - Custom SAML 2.0 providers
 
-Contact your account manager or [support@taskade.com](mailto:support@taskade.com) for SSO setup.
+To set it up, open Settings > Organization > SAML SSO. For help, contact [support@taskade.com](mailto:support@taskade.com).
 
 ### SCIM Provisioning (Enterprise)
 
@@ -97,8 +102,8 @@ Automate user provisioning and deprovisioning through your identity provider. SC
 
 ## Data & Privacy
 
-- **Export your data**: Click (...) on any project > Export > choose format (PDF, Markdown, Text).
-- **Delete your account**: Settings > Account > Delete Account. This permanently removes all your data.
+- **Export your data**: Click (...) on any project > Export > choose a format (Markdown or CSV).
+- **Delete your account**: Cancel any paid plan first. Then open Settings, type your email in **Confirm Email**, and click **Delete Account**. This permanently removes all your data.
 
 {% hint style="warning" %}
 Account deletion is irreversible. Export any data you need before deleting your account.
@@ -109,3 +114,7 @@ Account deletion is irreversible. Export any data you need before deleting your 
 - [Contact Support](https://www.taskade.com/contact)
 - [Community Forum](https://www.taskade.com/feedback)
 - [Troubleshooting Guide](../help-and-support/comprehensive-troubleshooting-guide.md)
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Compare Taskade Plans: Free to Enterprise (2026 Pricing)](https://www.taskade.com/learn/account/plan-matrix), [Roles and Permissions in Taskade](https://www.taskade.com/learn/account/roles-permissions), [Invite People to Your Workspace](https://www.taskade.com/learn/account/invite-members)._

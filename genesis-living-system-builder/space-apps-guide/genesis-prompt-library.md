@@ -172,7 +172,7 @@ include a client portal, project tracking, automated follow-ups,
 and a feedback collection system"
 ```
 
-**The Magic**: Taskade AI creates 4 interconnected systems in 30 seconds
+**The Magic**: Taskade AI creates interconnected systems from one request
 
 * 📋 Project template with phases and milestones
 * 💻 Client portal app with progress tracking via Genesis Preview
@@ -425,7 +425,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 | **Email Automation**     | `"Send professional email templates with our branding for confirmations, reminders, and follow-ups using our company email signature."` |
 | **Calendar Integration** | `"Automatically add appointments to Google Calendar with meeting details, location, and relevant participant information."`             |
 | **SMS Notifications**    | `"Send text message reminders 24 hours before appointments and immediate alerts for urgent issues requiring immediate attention."`      |
-| **Webhook Connections**  | `"Connect to our existing CRM system via webhook to sync customer data and ensure information consistency across platforms."`           |
+| **Webhook Connections** (Pro and up) | `"Connect to our existing CRM system via webhook to sync customer data and ensure information consistency across platforms."`           |
 
 ## Quick Start Templates
 
@@ -460,3 +460,7 @@ Copy these complete prompts for instant apps:
 * **Test First:** Start simple, then add complexity based on results
 
 **Need help customizing these prompts?** Visit our [Genesis Getting Started Guide](../genesis/getting-started.md) for detailed instructions!
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Prompt Library for Your Apps](https://www.taskade.com/learn/genesis/prompt-library), [App Starter Prompts](https://www.taskade.com/learn/genesis/starter-prompts)._

@@ -100,7 +100,7 @@ flowchart TD
 {% step %}
 #### Access Agent Creation
 
-In your workspace, click the AI Agents panel in the left sidebar, then click "Create New Agent"
+In your workspace sidebar, open **AI Agents**. Then pick **Generate** (describe the agent in plain English), **Templates**, or **Create** (a blank agent). The Free plan includes 1 agent, Starter includes 3, and Pro and up include unlimited agents
 {% endstep %}
 
 {% step %}
@@ -242,7 +242,7 @@ Give feedback on responses and deploy the agent to start working
 
 ### Multi-Agent Collaboration
 
-**Different agents can work together:**
+**Different agents can work together.** AI Teams (multi-agent teams) need Pro or a higher plan:
 
 ```
 Customer Inquiry → Support Agent → Escalation Agent → Manager Agent
@@ -292,7 +292,7 @@ Sales Opportunity → Sales Agent → Proposal Agent → Contract Agent
 
 **Technically, AI agents are:**
 
-* **Large Language Models** fine-tuned on your specific data
+* **Large Language Models** (frontier models from top AI labs) guided by your instructions, not fine-tuned on your data
 * **Retrieval-Augmented Generation** systems that access your knowledge
 * **Context-Aware Systems** that understand workspace and project relationships
 * **Action-Capable Interfaces** that can trigger workflows and updates
@@ -332,3 +332,7 @@ Sales Opportunity → Sales Agent → Proposal Agent → Contract Agent
 _Have you created your first AI agent yet? Start with something simple like a "Meeting Summarizer" or "Task Organizer"—the key is training them well from the beginning!_
 
 [← Back to Chapter 2: Projects](02_projects.md) | [Next: Automation →](04_automation.md)
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Custom AI Agents: The Intelligence Pillar](https://www.taskade.com/learn/agents/custom-agents), [Agent Knowledge & Memory](https://www.taskade.com/learn/agents/knowledge), [AI Teams](https://www.taskade.com/learn/agents/ai-teams)._

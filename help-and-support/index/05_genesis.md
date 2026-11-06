@@ -98,7 +98,6 @@ flowchart TD
 
 * Gets a shareable URL instantly
 * Works on any device (desktop, tablet, mobile)
-* Learns from user interactions
 * Can be modified through simple conversations
 
 ## Building Your First Genesis App (Step-by-Step)
@@ -109,7 +108,7 @@ flowchart TD
 {% step %}
 #### Open Your Workspace
 
-Navigate to your Taskade workspace—the generator input field at the top is where Genesis lives
+Open Taskade and click **Create**—the prompt field at the center of the screen is where Taskade Genesis lives. The Free plan includes 3 Taskade Genesis apps and starts with 0 AI credits, so earn credits with referrals and invites or upgrade before you build
 {% endstep %}
 
 {% step %}
@@ -131,7 +130,7 @@ Click submit or press Enter—Genesis analyzes your request and starts building
 {% step %}
 #### Review Your Live App
 
-Genesis creates an app tile—click it to see your working application in the Preview tab
+When the build finishes, the **Preview** tab opens automatically with your working application
 {% endstep %}
 
 {% step %}
@@ -189,9 +188,9 @@ Genesis works for virtually any business process:
 
 ### Learning and Adaptation
 
-* **User Behavior**: Apps learn from how customers interact
-* **Performance Data**: Gets better based on usage patterns
 * **Content Updates**: Stays current with your business knowledge
+* **App Analytics**: See how visitors use a published app (Business and up)
+* **Chat Edits**: Change the app by chatting with Taskade EVE
 
 ## Advanced Genesis Techniques
 
@@ -250,8 +249,8 @@ Genesis works for virtually any business process:
 
 **Make apps look professional:**
 
-* Custom domain names (yourapp.com)
-* Branded color schemes and logos
+* Custom domain names (yourapp.com) on Pro and up: up to 10 per workspace on Pro, unlimited on Business and up
+* Branded color schemes and logos (custom app colors need Business and up)
 * Professional email templates
 * Custom privacy policies and terms
 
@@ -259,8 +258,8 @@ Genesis works for virtually any business process:
 
 **Built-in enterprise features:**
 
-* SOC 2 compliance and security audits
-* GDPR and privacy regulation compliance
+* Work toward SOC 2 Type II (the independent audit is not complete yet)
+* Practices designed to align with GDPR principles (full compliance in progress)
 * SSO/SAML on Business and up, SCIM provisioning on Enterprise
 * Advanced permission controls
 * Audit trails and data retention
@@ -271,7 +270,6 @@ Genesis works for virtually any business process:
 
 * Automatic scaling based on usage
 * Global CDN for fast loading worldwide
-* Offline capability for mobile users
 * API access for custom integrations
 
 ## How it Works Under the Hood
@@ -282,7 +280,7 @@ Genesis works for virtually any business process:
 * **Full-Stack Generator**: Creates databases, APIs, interfaces, and logic
 * **Workspace Integration**: Deep connection to your Taskade ecosystem
 * **Real-Time Deployment**: Instant publishing with global distribution
-* **Continuous Learning**: Improves based on user feedback and usage patterns
+* **Conversational Editing**: Updates the app each time you describe a change
 
 **But you don't need to understand the tech—apps just work!**
 
@@ -313,9 +311,7 @@ Genesis works for virtually any business process:
 
 **Every app gets smarter over time:**
 
-* **Learns user preferences** for better interactions
 * **Adapts to business changes** through simple updates
-* **Improves performance** based on usage patterns
 * **Connects deeper** with your growing workspace ecosystem
 
 **Outstanding achievement!** You now have the power to build complete business applications from simple descriptions. Genesis transforms you from a productivity user into an app creator, democratizing software development for everyone.
@@ -327,3 +323,7 @@ Genesis works for virtually any business process:
 _What's the one business problem keeping you up at night? Write it down, describe it to Genesis, and watch as it becomes a working solution in minutes. The future of software is conversational!_
 
 [← Back to Chapter 4: Automation](04_automation.md) | [Next: Integrations →](06_integrations.md)
+
+---
+
+_Step-by-step guides on taskade.com/learn: [What is Taskade Genesis?](https://www.taskade.com/learn/genesis/overview), [Create Your First App](https://www.taskade.com/learn/genesis/first-app), [Publish and Clone Your Apps](https://www.taskade.com/learn/genesis/publishing)._

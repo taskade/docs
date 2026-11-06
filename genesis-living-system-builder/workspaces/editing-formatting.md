@@ -51,14 +51,14 @@ Taskade lets you turn tasks into checklists, headings, ordered lists, paragraphs
 | **Heading 1** | `/heading1` | `# ` + space | Large section title |
 | **Heading 2** | `/heading2` | `## ` + space | Sub-section title |
 | **Paragraph** | `/paragraph` | — | Plain text block |
-| **Checklist** (Check 1) | `/checklist` | `[] ` + space | Checkbox task item |
-| **Circle Check** | `/circle-check` | — | Circle checkbox variant |
-| **Bullet List** | `/bullet` | `- ` + space | Unordered list item |
-| **Numbered List** | `/numbered` | `1. ` + space | Ordered list item |
-| **Alphabetical List** | `/alpha` | — | Lettered list item (a, b, c...) |
-| **Heart** | `/heart` | — | Heart icon task |
-| **Triangle** | `/triangle` | — | Triangle icon task |
-| **Square** | `/square` | — | Square icon task |
+| **Check 1** | `/checklist` | `[] ` + space | Square checkbox task item |
+| **Check 2** | `/circle-check` | — | Circle checkbox variant |
+| **Bullet 1** | `/bullet` | `- ` + space | Unordered list item |
+| **Number** | `/numbered` | `1. ` + space | Ordered list item |
+| **Letter** | `/alpha` | — | Lettered list item (a, b, c...) |
+| **Check 3** | `/heart` | — | Heart checkbox variant |
+| **Bullet 2** | `/triangle` | — | Triangle bullet |
+| **Bullet 3** | `/square` | — | Square bullet |
 
 ---
 
@@ -136,7 +136,7 @@ Enhance tasks with additional features:
 
 | Add-On | Shortcut (after Cmd + /) | Slash Command | Description |
 |---|---|---|---|
-| **Due Date** | D | `/duedate` | Set start/end dates with optional times |
+| **Due Date** | D | `/due` | Set start/end dates with optional times |
 | **Assign** | A | `/assign` | Assign to team members |
 | **Comment** | C | `/comment` | Thread discussions on tasks |
 | **Embed** | E | `/embed` | Embed media, links, or files |
@@ -182,3 +182,7 @@ Enhance tasks with additional features:
 | [Import](./import.md) | Import .md and PDF files as projects |
 | [Version History](../genesis/version-history.md) | Track and restore editing changes |
 | [Embed Taskade](./embed.md) | Embed projects on your website |
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Editing & Formatting](https://www.taskade.com/learn/projects/editing-formatting), [Slash Commands](https://www.taskade.com/learn/projects/slash-commands)._

@@ -55,7 +55,6 @@ flowchart TD
 * **🤖 AI-Enhanced**: Uses intelligence to make decisions
 * **🔗 Cross-System**: Connects your tools and workflows
 * **📈 Scalable**: Handles growing workloads automatically
-* **🔄 Self-Learning**: Gets smarter as it processes more data
 
 ## How Automation Works (The "If This, Then That" Magic)
 
@@ -101,7 +100,7 @@ ACTIONS:
 {% step %}
 #### Access Automation Builder
 
-In your workspace, click "Automations" in the left sidebar, then "Create New Automation"
+In your workspace, open **Automations** in the sidebar. Start from scratch, click **Create with AI** and describe the flow, or pick a template. You can also click **Automate** at the top of any project
 {% endstep %}
 
 {% step %}
@@ -139,7 +138,7 @@ Then: Assign to next available support agent
 {% step %}
 #### Test and Activate
 
-Test with sample data, then turn it on to run automatically
+If the trigger shows a **Test** button in its **Test Run** section, test with a sample. Then turn the automation on and check each run in the **Runs** tab
 {% endstep %}
 {% endstepper %}
 
@@ -247,7 +246,7 @@ Every Monday at 9 AM:
 
 ## Integration Power (Connecting 100+ Tools)
 
-**Automation becomes exponentially powerful when connected to external tools:**
+**Automation becomes exponentially powerful when connected to external tools.** Automations run on every plan, Free included (10 runs per billing period on Free). Free runs the standard connectors, and premium integrations such as Slack and Gmail need a paid plan. Webhook triggers need Pro and up:
 
 ### Communication Integrations
 
@@ -263,13 +262,13 @@ Every Monday at 9 AM:
 
 ### Data and Analytics
 
-* **Spreadsheets**: Google Sheets, Excel automatic updates
+* **Spreadsheets**: Google Sheets automatic updates
 * **Databases**: Airtable, Notion data synchronization
 * **Analytics**: Custom dashboards and reporting
 
 ### Development Tools
 
-* **GitHub/GitLab**: Issue tracking and deployment notifications
+* **GitHub**: Issue tracking and release notifications
 * **CI/CD**: Build status updates and deployment tracking
 * **Monitoring**: System alerts and performance tracking
 
@@ -291,8 +290,8 @@ Every Monday at 9 AM:
 
 ### Learning and Adaptation
 
-* **Pattern recognition**: Automations learn optimal timing and conditions
-* **Performance optimization**: Routes improve based on success rates
+* **Run history**: The **Runs** tab logs every run with the data at each step
+* **Refinement**: You adjust triggers, conditions, and steps based on what the runs show
 * **Scalability**: Handles growing complexity without additional effort
 
 ## Best Practices for Automation
@@ -370,14 +369,14 @@ Daily at 6 PM → Check project status → Calculate completion percentage → S
 Lead enters system → Score lead quality → Assign to sales rep → Send personalized email → Schedule follow-up → Update CRM status
 ```
 
-## Your Automations Are Learning and Optimizing
+## Your Automations Improve as You Refine Them
 
-**Every automation gets smarter over time:**
+**Every automation gets better as you refine it:**
 
-* **Learns optimal timing** for notifications and actions
-* **Recognizes patterns** in successful vs. unsuccessful workflows
-* **Adapts to team preferences** for how work gets done
-* **Optimizes performance** by learning from past executions
+* **Run logs** show the data and the result of each step
+* **One-click retry** reruns a failed run after you fix the cause
+* **AI steps** let an agent make a decision inside the flow
+* **Your edits** to triggers and steps apply to every later run
 
 **Fantastic work!** You now have intelligent workflows that coordinate your entire ecosystem automatically. Automation transforms reactive work into proactive systems that anticipate needs and handle routine tasks without human intervention.
 
@@ -388,3 +387,7 @@ Lead enters system → Score lead quality → Assign to sales rep → Send perso
 _What's your most repetitive task that could be automated? Start there—every automation you create eliminates hours of manual work and ensures consistency across your team!_
 
 [← Back to Chapter 3: AI Agents](03_ai_agents.md) | [Next: Genesis →](05_genesis.md)
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Automations: The Execution Pillar](https://www.taskade.com/learn/automation/automations-execution), [Automation Triggers](https://www.taskade.com/learn/automation/triggers), [Automation Actions](https://www.taskade.com/learn/automation/actions)._

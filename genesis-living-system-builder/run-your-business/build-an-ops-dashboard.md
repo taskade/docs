@@ -6,7 +6,7 @@ keywords: ops dashboard, internal tool, CRM, pipeline, no-code
 
 # Build an internal ops dashboard your team runs on
 
-You don't need a developer to give your team one place to run the day. Describe the board, pipeline, or tracker you wish you had, and Taskade Genesis builds it on top of your live workspace data. Your team logs in with the Taskade identity they already use, sees the same up-to-date picture you do, and gets a daily summary in Slack or email — without anyone touching a spreadsheet on the side.
+You don't need a developer to give your team one place to run the day. Describe the board, pipeline, or tracker you wish you had, and Taskade Genesis builds it on top of your live workspace data. Your team signs in with their own app accounts, sees the same up-to-date picture you do, and gets a daily summary in Slack or email — without anyone touching a spreadsheet on the side.
 
 This is the **internal** counterpart to a client portal. Here the people logging in are your own crew, dispatchers, project managers, or coordinators — not your customers.
 
@@ -38,17 +38,17 @@ That means there's no separate spreadsheet to reconcile. When a manager moves a 
 {% endstep %}
 
 {% step %}
-### Let your team in with their existing Taskade identity
+### Let your team in with their own app accounts
 
-Because this is an internal tool, your team should sign in with the identity they already have. **Workspace members** use Workspace Single Sign-On — their existing Taskade credentials get them into the app with no second account to manage and no separate user directory to maintain.
+Because this is an internal tool, only your team should get in. Add sign-in to the app, set **Who can sign up** to **Invite only**, and add each teammate by email on the **App Users** tab. Taskade workspace credentials do not open an app account, so each teammate sets a password for the app.
 
-This is the key distinction for an internal dashboard: you invite people to the **workspace**, and they reach the app through the identity they already use every day. Set who can view versus edit, and you control access from one place. See [GenesisAuth](../community-and-sharing/genesis-auth.md) for Workspace SSO, the App Users tab, and access control.
+Workspace roles, from Owner down to Viewer, control who can edit the app and its projects inside Taskade. They do not apply to the people who sign in to the published app. In the app, give a teammate the **Admin** or **Member** role and ask Taskade Genesis to show each role the right screens. See [GenesisAuth](../community-and-sharing/genesis-auth.md) for the App Users tab and access control.
 {% endstep %}
 
 {% step %}
 ### Wire a daily digest
 
-Give your team a heads-up without anyone having to open the app first thing. Add a scheduled automation that builds a short summary — open jobs, overdue items, what moved yesterday — and sends it to a Slack channel or by email every morning.
+Give your team a heads-up without anyone having to open the app first thing. Add a scheduled automation that builds a short summary — open jobs, overdue items, what moved yesterday — and sends it to a Slack channel or by email every morning. Slack is a premium integration, so it needs a paid plan.
 
 Describe it the same way you described the board: tell Taskade Genesis what to include and when to send it. The automation reads straight from your live project data, so the digest is always current. See [Automations](../automation/README.md) to build the scheduled summary.
 {% endstep %}
@@ -57,11 +57,11 @@ Describe it the same way you described the board: tell Taskade Genesis what to i
 {% hint style="info" %}
 **Internal vs. external — pick the right access model.**
 
-**Internal (this guide):** your team logs in with their **workspace identity** (Workspace SSO). Use this for ops dashboards, CRMs, and pipelines your own crew runs on.
+**Internal (this guide):** your team works in the workspace, and signs in to the published app as **App Users** that you add yourself (**Invite only**). Use this for ops dashboards, CRMs, and pipelines your own crew runs on.
 
-**External:** clients and customers sign in as **App Users** — separate accounts scoped to the app, not members of your workspace. Use that model when you're building a client-facing portal. See [Build a client portal](./build-a-client-portal.md).
+**External:** clients and customers sign in as **App Users** — separate accounts scoped to the app, not members of your workspace. Turn on **Private entries** so each client sees only their own rows. Use that model when you're building a client-facing portal. See [Build a client portal](./build-a-client-portal.md).
 
-Same Taskade Genesis app, two different doors. Choose based on who's logging in.
+Same Taskade Genesis app, same sign-in. Choose who can sign up and what each person sees based on who's logging in.
 {% endhint %}
 
 ## Next steps
@@ -69,3 +69,7 @@ Same Taskade Genesis app, two different doors. Choose based on who's logging in.
 * [Add login and roles](./add-login-and-roles.md) — control who can view versus edit your dashboard.
 * [Go-live checklist](./go-live-checklist.md) — what to check before your team starts relying on it.
 * [Build a client portal](./build-a-client-portal.md) — the external counterpart, for customers instead of your team.
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Build an Internal Tool](https://www.taskade.com/learn/genesis/build-internal-tool), [Build an AI Dashboard](https://www.taskade.com/learn/genesis/build-ai-dashboard)._

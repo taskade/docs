@@ -47,7 +47,7 @@ AI agents reason over your workspace context. They draft, classify, summarize, a
 
 **What you get:**
 - Custom agents scoped to specific roles or tasks
-- Multi-agent teams with automatic delegation
+- Multi-agent teams (AI Teams, Pro and up)
 - Built-in tools for web search, code, and file analysis, plus custom slash commands
 - Persistent memory across conversations
 - Frontier models from top AI labs, with **Auto** as the default
@@ -59,8 +59,8 @@ AI agents reason over your workspace context. They draft, classify, summarize, a
 Automations execute event-driven workflows. They connect your workspace to 100+ external tools and run 24/7 in the background.
 
 **What you get:**
-- Native triggers (webhooks, forms, schedules, project events)
-- 100+ integration actions (Slack, Gmail, Google Sheets, HubSpot, Stripe, and more)
+- Native triggers (webhooks on Pro and up, forms, schedules, project events)
+- 100+ integration actions (Slack, Gmail, Google Sheets, HubSpot, Stripe, and more). Premium integrations need a paid plan, and Free runs the standard connectors
 - Branching, loops, and conditional logic
 - AI steps that classify, extract, or draft within a workflow
 
@@ -92,21 +92,21 @@ The app runs on your workspace — not a separate backend. This means every Gene
 
 ## Intelligence Score
 
-Your workspace has an Intelligence Score (0–100) that reflects its richness:
+Each Taskade Genesis app has an Intelligence Score (0–100, shown as **App IQ**) that reflects the richness of its workspace. Projects add 2 points each (up to 20), agents 10 points each (up to 30), and automations 5 points each (up to 30). Integrations are reserved, so 80 is the highest score today. See [How Genesis Works](how-genesis-works.md#workspace-intelligence-score).
 
 | Score | Level | What it means |
 |-------|-------|--------------|
-| 0–20 | Starter | Basic projects, no agents or automations |
-| 21–40 | Builder | Some agents and automations connected |
-| 41–60 | Expert | Multiple agents, active automations, rich data |
-| 61–80 | Advanced | Cross-project intelligence, agent teams |
-| 81–100 | Genius | Full ecosystem — agents, automations, and data working as one |
+| 0–19 | Empty | Initial state — start adding projects and agents |
+| 20–39 | Beginner | Basic setup — your workspace is taking shape |
+| 40–69 | Learning | Growing — apps are getting smarter with real data |
+| 70–89 | Intelligent | Strong AI coverage with active automations |
+| 90–100 | Genius | Full ecosystem — agents, automations, and data working as one |
 
 Higher scores mean Genesis can build better apps because it has more context to work with.
 
 ## Workspace DNA Flow Canvas
 
-The Workspace DNA flow canvas is a visual, real-time relationship graph that surfaces from the workspace overview. It renders every project, agent, and automation as a node and draws live edges between them — showing at a glance how knowledge flows through your workspace.
+The Workspace DNA flow canvas is the **DNA Map**: a visual, real-time relationship graph of one workspace. Open **DNA Map** in the workspace sidebar. It renders every project, agent, and automation as a node and draws live edges between them — showing at a glance how knowledge flows through your workspace.
 
 **What you see on the canvas:**
 
@@ -115,7 +115,7 @@ The Workspace DNA flow canvas is a visual, real-time relationship graph that sur
 - **Automation nodes** — active workflows, their trigger sources, and the projects or agents they write back to
 - **Edges** — directed connections that show how knowledge flows between projects, agents, and automations
 
-**Phase 0 rollout:** The canvas is being introduced progressively starting from the workspace overview panel. Early access surfaces a read-only graph; later phases will add drag-to-rearrange layout, click-through to edit any node inline, and canvas-level filtering by node type or tag.
+The top left shows the workspace name and a health line, such as **Everything's connected**. Click any item to see its links, then open it in Taskade.
 
 {% hint style="info" %}
 **No setup required.** The canvas is generated automatically from your existing Workspace DNA — projects, agents, and automations you have already built appear as nodes the moment you open the view.
@@ -143,7 +143,7 @@ Open **Memory** from the sidebar to see your whole account rendered as an intera
 
 ## EVE: Your AI Companion
 
-EVE is Taskade's central AI assistant. It reads your entire Workspace DNA — every project, agent, and automation — and uses that context to help you build and manage your workspace.
+Taskade EVE is Taskade's AI builder. It reads your entire Workspace DNA — every project, agent, and automation — and uses that context to help you build and manage your workspace.
 
 **What EVE can do:**
 
@@ -154,13 +154,14 @@ EVE is Taskade's central AI assistant. It reads your entire Workspace DNA — ev
 - Answer questions about your workspace
 - Edit existing work (rewrite, restructure, expand)
 
-**Four interaction modes:**
+**Interaction modes:**
 
 | Mode | Focus | Best for |
 |------|-------|----------|
-| **Genesis** | Full-spectrum | Building complete apps with all three pillars |
+| **Auto** | Full-spectrum | Building complete apps with all three pillars: the app, projects, agents, and automations |
+| **App** | Interface-focused | Editing pages, layouts, and UI |
 | **Projects** | Project-focused | Creating and managing projects, tasks, and data |
-| **Agents** | Agent-focused | Building and configuring AI agents |
+| **AI Agents** | Agent-focused | Building and configuring AI agents |
 | **Automations** | Workflow-focused | Setting up triggers, actions, and integrations |
 
 {% hint style="info" %}
@@ -199,3 +200,7 @@ Projects can function as databases with custom fields, turning simple task lists
 - **Add AI agents:** [AI Agents Getting Started](../ai-features/ai-agents-getting-started.md)
 - **Set up automations:** [Automations Overview](../automation/README.md)
 - **Browse examples:** [Living System Examples & Templates](examples-and-templates.md)
+
+---
+
+_Step-by-step guides on taskade.com/learn: [How Taskade Genesis Works: Workspace DNA](https://www.taskade.com/learn/genesis/workspace-dna), [View Your Workspace DNA Graph](https://www.taskade.com/learn/genesis/dna-graph)._

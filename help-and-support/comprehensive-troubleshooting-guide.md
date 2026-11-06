@@ -8,7 +8,7 @@ description: >-
 Resolve common Taskade issues quickly with our comprehensive troubleshooting guide covering everything from basic connectivity problems to advanced workflow debugging.
 
 {% hint style="success" %}
-This guide provides step-by-step solutions for the most common Taskade issues. If you can't find a solution here, our support team is available 24/7 to help you get back to productivity.
+This guide provides step-by-step solutions for the most common Taskade issues. If you can't find a solution here, our support team at support@taskade.com can help you get back to productivity.
 {% endhint %}
 
 ## Quick Diagnostic Tools
@@ -96,9 +96,9 @@ Clear your browser's stored passwords and try logging in again.
 * **App Issues**: Try generating a new code or reinstalling your authenticator app
 * **Recovery**: Contact support if you've lost access to both your device and backup codes
 
-#### Social Login Issues (Google/Microsoft)
+#### Social Login Issues (Google/Apple)
 
-* **Permission Denied**: Check that you're using the correct Google/Microsoft account
+* **Permission Denied**: Check that you're using the correct Google or Apple account
 * **Account Linking**: Ensure your social account is properly linked to your Taskade account
 * **Pop-up Blocked**: Allow pop-ups for Taskade.com in your browser settings
 * **Third-party Cookies**: Enable third-party cookies for authentication to work properly
@@ -278,7 +278,7 @@ Verify the agent's knowledge base is properly loaded and accessible.
 * **Training Data**: Ensure the agent has sufficient and relevant training data
 * **Prompt Clarity**: Use clear, specific prompts and questions
 * **Context Limits**: Break down complex requests into smaller parts
-* **Model Updates**: Check if the agent model needs updating or retraining
+* **Model Choice**: Try another AI model in the agent settings, or keep the default Auto
 
 ### Automation Failures
 
@@ -295,7 +295,7 @@ Verify the agent's knowledge base is properly loaded and accessible.
 
 * **Integration Status**: Verify all integrated services are connected and authorized
 * **Data Mapping**: Check if data is properly mapped between automation steps
-* **Error Logs**: Review automation error logs for specific failure reasons
+* **Run Logs**: Open the automation's **Runs** tab to see the data and the error for each step
 * **Dependency Issues**: Ensure all required data and resources are available
 
 ## Mobile App Issues
@@ -406,7 +406,7 @@ Verify your credentials for the third-party service are still valid.
 
 * **Permission Scope**: Ensure Taskade has calendar read/write permissions
 * **Calendar Selection**: Verify you're syncing with the correct calendar
-* **Two-way Sync**: Check if changes in both directions are syncing properly
+* **Two-way Sync**: Check if changes in both directions are syncing properly (two-way sync needs a paid workspace)
 * **Time Zone**: Ensure time zone settings match between Taskade and Google Calendar
 
 #### Outlook Integration
@@ -598,15 +598,6 @@ On corporate networks, video may require your IT team to allow Taskade through t
 
 These login scenarios go beyond standard email, password, and 2FA issues.
 
-#### Biometric Login (Face ID / Touch ID / Fingerprint)
-
-The mobile app supports biometric sign-in. If it stops working:
-
-* **Enable it first**: Turn on biometric login in the Taskade app settings and confirm your device's biometrics are set up.
-* **Re-register if changed**: If you added a new fingerprint or face, re-register it on the device.
-* **Sensor and permissions**: Clean the sensor or camera, and confirm the app has biometric permission in device settings.
-* **Fall back to password**: Sign in with your password if biometrics keep failing, then re-enable.
-
 #### Login Redirects or Loops
 
 If the login page keeps reloading or bounces you back after signing in:
@@ -627,18 +618,10 @@ See [Account Management](../account-management/README.md) for SSO/SAML setup det
 
 ### What Works Offline
 
-Taskade caches your projects locally so you can keep working without a connection. Knowing what does and doesn't work offline prevents confusion when changes seem to stall.
-
-| Works offline | Requires a connection |
-| --- | --- |
-| Viewing existing projects and tasks | Creating brand-new projects |
-| Editing task content and descriptions | Real-time collaboration |
-| Checking off completed tasks | File uploads and attachments |
-| Adding tasks to existing projects | Inviting team members |
-| Basic project navigation | AI features |
+Taskade is cloud-based and needs a live connection to open your workspaces, folders, and projects. There is no offline editing mode. If your connection drops, Taskade holds the changes from the moments before the drop in memory and tries to sync them when you reconnect.
 
 {% hint style="info" %}
-Sync before going offline so all changes are uploaded, keep offline edits simple, and reconnect as soon as possible so queued changes can sync.
+If you see "Looks like an error occurred processing your request, please try again later", check your connection and click **Retry**. If that does not help, restart the app and flush your DNS cache.
 {% endhint %}
 
 ### If You Suspect Your Account Is Compromised
@@ -741,3 +724,7 @@ Update any other accounts that shared the same password, then report the activit
 * **Media Management**: Optimize file sizes and remove unnecessary attachments
 * **Automation Efficiency**: Design efficient automation workflows to reduce resource usage
 * **Team Training**: Ensure team members follow best practices for collaboration
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Performance & Connectivity Guide](https://www.taskade.com/learn/account/stability-issues), [Offline Mode & Sync Behavior](https://www.taskade.com/learn/account/offline), [Access Taskade From Any Network](https://www.taskade.com/learn/account/isp-blocked)._

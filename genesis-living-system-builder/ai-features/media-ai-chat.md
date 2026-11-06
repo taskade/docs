@@ -39,9 +39,9 @@ Query your Taskade projects using natural language:
 | Step | Action |
 |---|---|
 | 1 | Open a project in Taskade |
-| 2 | Click the **AI Chat** or **EVE** panel |
-| 3 | Ask questions about the project content |
-| 4 | AI responds using the project's data as context |
+| 2 | Click the **chat button** 💬 in the top-right corner |
+| 3 | Choose **Ask Project** from the drop-down at the top of the chat box, then ask questions about the project |
+| 4 | AI responds using the project's data as context. Only you can see the chats in **Ask Project** |
 
 **Example queries:**
 
@@ -58,9 +58,9 @@ Collaborate with AI and team members in the same conversation:
 
 | Step | Action |
 |---|---|
-| 1 | Open a project's chat panel |
-| 2 | Invite team members to the conversation |
-| 3 | Ask AI questions — responses are visible to all participants |
+| 1 | Open a project and click the **chat button** 💬 in the top-right corner |
+| 2 | Choose **Taskade AI** from the drop-down at the top of the chat box |
+| 3 | Ask AI questions — shared chats are visible to all members of the project |
 | 4 | Team members can follow up, add context, or redirect the AI |
 
 > **Tip:** Use this for collaborative analysis sessions — the AI provides data, your team discusses and decides.
@@ -71,8 +71,8 @@ Upload files directly into a chat for instant AI analysis:
 
 | Step | Action |
 |---|---|
-| 1 | Open any AI chat (EVE, Agent, or Project chat) |
-| 2 | Drag & drop files or click the attachment button |
+| 1 | Open any AI chat (Taskade EVE, agent, or project chat) |
+| 2 | Drag & drop files or click the attachment button. The chat accepts images (JPG, PNG, GIF, WebP) and PDFs up to 20 MB each, and TXT, MD, CSV, and JSON files up to 200 KB each |
 | 3 | Ask questions about the uploaded file |
 | 4 | AI analyzes the file content and responds |
 
@@ -83,7 +83,7 @@ Upload files directly into a chat for instant AI analysis:
 | **PDF report** | "What are the key findings?" | Summary of main points and conclusions |
 | **CSV data** | "What trends do you see?" | Pattern analysis and insights |
 | **Image** | "Describe what you see" | Visual analysis and description |
-| **Spreadsheet** | "Which products have the highest margin?" | Data analysis with specific answers |
+| **Product CSV** | "Which products have the highest margin?" | Data analysis with specific answers |
 
 ### Method 4: Chat in Media Manager
 
@@ -93,8 +93,10 @@ Access all workspace media in one place:
 |---|---|
 | 1 | Open the **Media** tab in your workspace |
 | 2 | Browse all uploaded files, generated images, and media assets |
-| 3 | Click any media item to open it |
-| 4 | Use AI chat to ask questions about the selected media |
+| 3 | Hover over a file and click 🤖 **Ask AI** |
+| 4 | Type your questions in the pop-up to start a conversation |
+
+> **Note:** Upload files into a project to see them in Media. You can also hover over an attachment inside a project and click 🤖 **Ask AI**.
 
 ---
 
@@ -151,3 +153,7 @@ Every media interaction enriches your workspace:
 | [Agent Knowledge & Memory](./agent-knowledge.md) | Train agents on your media files |
 | [Image Generation](./image-generation.md) | Generate new images to add to your media library |
 | [Taskade AI Credits](https://www.taskade.com/learn/agents/ai-usage) | Understand credit usage for media AI interactions |
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Media AI Chat](https://www.taskade.com/learn/agents/media-chat), [Media Files](https://www.taskade.com/learn/agents/media-tab)._

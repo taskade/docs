@@ -1,0 +1,64 @@
+name: twin-drift
+
+# Pages that name a twin on taskade.com/docs or taskade.com/learn in their last line
+# are tracked in .github/twins.lock.json. See .github/scripts/check-twins.mjs.
+#
+# - Pull request: the footers and the lock must agree (no network).
+# - Every Monday, and on demand: fetch each twin. If one changed since the last
+#   review, open or update the "Twin page drift" issue.
+
+on:
+  pull_request:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  footers:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Twin footers match the lock
+        run: node .github/scripts/check-twins.mjs --offline
+
+  drift:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch each twin and compare
+        id: check
+        run: |
+          set +e
+          node .github/scripts/check-twins.mjs --report drift.md
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+      - name: Open or update the drift issue
+        if: steps.check.outputs.code == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Twin page drift"
+          number=$(gh issue list --state open --search "in:title \"$title\"" --json number,title --jq ".[] | select(.title == \"$title\") | .number" | head -n 1)
+          if [ -n "$number" ]; then
+            gh issue edit "$number" --body-file drift.md
+          else
+            gh issue create --title "$title" --body-file drift.md
+          fi
+      - name: Fail when a twin could not be fetched
+        if: steps.check.outputs.code == '2'
+        run: |
+          echo "::error::One or more twins could not be fetched. See the job summary."
+          exit 1

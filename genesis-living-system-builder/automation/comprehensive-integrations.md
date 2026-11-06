@@ -1,11 +1,15 @@
 ---
 description: >-
-  Full reference of Taskade automation triggers and actions across 30+ integrations: Slack, Gmail, Google Sheets, HubSpot, GitHub, AI agents, schedules.
+  Reference of Taskade automation triggers and actions for popular integrations: Slack, Gmail, Google Sheets, HubSpot, GitHub, AI agents, schedules.
 ---
 
 # Comprehensive Integrations
 
-This document provides a complete reference of all available integrations, triggers, and actions in Taskade's automation system. For step-by-step guides, see the [Taskade Automation learn center](https://www.taskade.com/learn/automation). Every integration below also has a full setup page in the [Taskade Integrations directory](https://www.taskade.com/integrations).
+This document provides a reference of popular integrations, triggers, and actions in Taskade's automation system. It does not list every connector or every action. For the full, current list, open the step picker in the automation editor. For step-by-step guides, see the [Taskade Automation learn center](https://www.taskade.com/learn/automation). Every integration below also has a full setup page in the [Taskade Integrations directory](https://www.taskade.com/integrations).
+
+{% hint style="info" %}
+Premium integrations (for example Slack, Gmail, Google Sheets, HubSpot, GitHub and Stripe) need a paid plan. The Free plan runs the built-in Taskade steps and the standard connectors (HTTP Request, RSS, Pushover and MCP Client). The Every X Minutes schedule also needs a paid plan.
+{% endhint %}
 
 ## Core Taskade Tools
 
@@ -31,13 +35,13 @@ This document provides a complete reference of all available integrations, trigg
 | `task.completed`                | Task Completed (Instant)            | `projectId`, `blockId`                       |
 | `task.due`                      | Task Due (Instant)                  | `projectId`, `blockId`                       |
 | `task.assigned`                 | Task Assigned (Instant)             | `projectId`, `blockId`                       |
-| `task.added`                    | Task Added (Instant)                | `projectId`                                  |
+| `task.added`                    | Task Added (about 5 minutes after the last edit) | `projectId`                     |
 | `task.custom_attribute_updated` | Task Custom Field Updated (Instant) | `projectId`, `fieldId`                       |
 | `task.flow_triggered`           | Task Manual Trigger (Instant)       | `projectId`                                  |
 | `comment.created`               | New Comment (Instant)               | `projectId`, `blockId`                       |
 | `duedate.created`               | New Due Date (Instant)              | `projectId`, `blockId`                       |
 | `project.completed`             | Project Completed (Instant)         | -                                            |
-| `spaceAgent.convo.public.ended` | Agent Public Chat Ended (Instant)   | `spaceAgentId`, `conversationExportTimezone` |
+| `spaceAgent.convo.public.ended` | Agent Public Chat Ended (after 5 minutes of inactivity) | `spaceAgentId`, `conversationExportTimezone` |
 | `mailhook`                      | Mailhook (Instant)                  | -                                            |
 
 ### Taskade AI
@@ -505,9 +509,12 @@ To learn more about setting up and using these integrations:
 
 1. [**Getting Started with Automation**](https://www.taskade.com/learn/automation) - Complete beginner's guide
 2. [**AI Automation Collection**](https://www.taskade.com/learn/automation) - All automation resources
-3. [**Community Forum**](https://www.taskade.com/community) - Get help from the community
-4. [**Developer API**](../../apis-living-system-development/developers/api.md) - Build custom integrations
+3. [**Developer API**](../../apis-living-system-development/developers/api.md) - Build custom integrations
 
 ***
 
 _This reference is updated regularly with new integrations and features. For the latest updates, visit our_ [_Changelog_](../../changelog/)_._
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Automation Actions](https://www.taskade.com/learn/automation/actions), [Automation Triggers](https://www.taskade.com/learn/automation/triggers)._

@@ -79,7 +79,7 @@ When [TRIGGER EVENT], automatically [AUTOMATED ACTION].
 
 1. **Type or paste your prompt** in the input field at the top of your workspace
 2. **Press Enter or click Generate** — Taskade Genesis analyzes your request
-3. **Your new app appears as a tile** below the generator in 30-60 seconds
+3. **Your new app appears as a tile** below the generator, usually in 1-2 minutes
 4. Taskade Genesis creates: database structure, user interface, automations, and AI functionality
 {% endstep %}
 
@@ -90,7 +90,7 @@ When [TRIGGER EVENT], automatically [AUTOMATED ACTION].
 2. **Click the "Preview" tab** in the top-right panel to see your live application
 3. **Test as a real user** — submit data, navigate the interface, check mobile view
 4. **Verify automations work** — check your connected services (Slack, email, etc.)
-5. **Use the persistent AI Agent** in the left panel to make adjustments
+5. **Chat with Taskade EVE** in the left panel to make adjustments
 {% endstep %}
 {% endstepper %}
 
@@ -115,11 +115,11 @@ Use this checklist to make sure you've mastered the Taskade Genesis interface:
 * [ ] 🧬 **Used the generator input field** at the top to describe your first app
 * [ ] 📱 **Found your new app tile** below the generator after creation
 * [ ] 🔄 **Clicked the Preview tab** to test your live application
-* [ ] 🤖 **Interacted with the persistent AI Agent** in the left panel
+* [ ] 🤖 **Chatted with Taskade EVE** in the left panel
 * [ ] 👥 **Shared your app URL** with team members or external users
-* [ ] ⚡ **Asked the AI Agent** to add automations or connect services
+* [ ] ⚡ **Asked Taskade EVE** to add automations or connect services
 * [ ] 🎛️ **Navigated the interface** - left panel (AI), right panel (apps), breadcrumbs
-* [ ] 📚 **Understood the concept** - Teams/Folders/Projects are now "Apps"
+* [ ] 📚 **Understood the concept** - Teams/Folders/Subspaces are now "Apps"
 * [ ] 🎉 **Celebrated your first complete business application!**
 
 ***
@@ -130,13 +130,13 @@ You don't have to build apps with Taskade Genesis. Taskade also works as a power
 
 1. **Create a project**: Click (+) in your workspace > New Project, or just start typing.
 2. **Add tasks**: Each line becomes a task. Use TAB to indent subtasks.
-3. **Switch views**: Try List, Board, Calendar, Table, Mind Map, Gantt, Org Chart, or Timeline.
+3. **Switch views**: Try List, Board, Table, and Mind Map, plus Docs (Beta), Calendar, Gantt Chart, Actionsheet, and Org Chart under **More Views**. Gantt Chart, Actionsheet, and Org Chart need a paid plan. The timeline is part of Gantt Chart.
 4. **Assign and schedule**: Use the Add-Ons (+) button to set due dates, assign tasks, add comments, and upload files.
 5. **Collaborate**: Share your workspace — invite teammates by email with role-based permissions.
 6. **Use AI**: Type `/` in any project to access AI commands, or create a custom [AI Agent](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md).
 
 {% hint style="info" %}
-**Import existing data?** Bring your projects from Notion, Trello, Asana, and 20+ other tools. See [Import & Export](../help-center/import-and-export.md).
+**Import existing data?** Bring your projects from Notion, Trello, Asana, and other tools. See [Import & Export](../help-center/import-and-export.md).
 {% endhint %}
 
 ## Need Help?
@@ -144,4 +144,8 @@ You don't have to build apps with Taskade Genesis. Taskade also works as a power
 * [Help Center](../help-center/) — find answers by topic
 * [Troubleshooting](../genesis-living-system-builder/community-and-sharing/troubleshooting.md) — fix common issues
 * [Contact Support](https://www.taskade.com/contact) — reach the team directly
-* [Community](https://www.taskade.com/community) — browse apps, templates, and workflows
+* [Community](https://www.taskade.com/apps) — browse apps, templates, and workflows
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Getting Started with Taskade](https://www.taskade.com/learn/genesis/quickstart), [Create Your First App](https://www.taskade.com/learn/genesis/first-app)._

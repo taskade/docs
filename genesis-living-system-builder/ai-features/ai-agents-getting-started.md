@@ -203,7 +203,7 @@ Taskade's model picker is powered by **TSK-1**, the intelligence layer that auto
 | **Reasoning** | Complex systems, deep analysis, multi-agent coordination |
 
 {% hint style="info" %}
-**Vendor-agnostic.** TSK-1 runs on the latest frontier models. The tier describes what the system is good at, not which provider powers it — providers may change. Agents pinned to a custom model (Max and Enterprise plans) bypass TSK-1 routing. See [TSK-1 Model Tiers](tsk-1-model-tiers.md) for the full reference.
+**Vendor-agnostic.** TSK-1 runs on the latest frontier models. The tier describes what the system is good at, not which provider powers it — providers may change. Auto and Instant work on every plan. Standard and Thinking need a paid plan, and Reasoning needs Business or a higher plan. Agents pinned to a specific model (each model shows its plan badge in the picker) bypass TSK-1 routing. See [TSK-1 Model Tiers](tsk-1-model-tiers.md) for the full reference.
 {% endhint %}
 
 ## Understanding Agent Knowledge & Memory
@@ -342,10 +342,12 @@ Taskade EVE conversations now support rich file interactions with complete visib
 
 Simply drag any file directly into your EVE chat:
 
-* **Images**: JPG, PNG, GIF, WebP - EVE analyzes visual content
-* **Documents**: PDF, DOC, TXT - EVE reads and processes text
-* **Spreadsheets**: CSV, Excel - EVE analyzes data and creates insights
-* **Code Files**: Python, JavaScript, etc. - EVE reviews and suggests improvements
+* **Images**: JPG, PNG, GIF, WebP (up to 20 MB each) - EVE analyzes visual content
+* **Documents**: PDF (up to 20 MB each), TXT, MD - EVE reads and processes text
+* **Data**: CSV, JSON (text files up to 200 KB each) - EVE analyzes data and creates insights
+* **Code**: paste a snippet into the message - EVE reviews and suggests improvements
+
+For larger files or material the agent needs on every reply, add them to the agent's knowledge instead.
 
 ### **Visible File Context**
 
@@ -382,7 +384,7 @@ EVE: "Analyzing your sales data, I found these patterns..."
 **Code Review:**
 
 ```
-You: [Attach app.py] "Review this code for security issues"
+You: [Paste code from app.py] "Review this code for security issues"
 EVE: "I've reviewed your Python code. Here are potential security concerns..."
 ```
 
@@ -409,14 +411,14 @@ Give your agents superpowers by enabling tools:
 ### Multi-Agent Teams (Advanced)
 
 {% hint style="success" %}
-Multi-Agent Teams deploy personalized AI assistants that work concurrently on multiple tasks in the background, allowing you to focus on strategic work while your AI team handles the details.
+Multi-Agent Teams put specialized AI agents in one chat, so each specialist handles its part of the work while you focus on strategic work. AI Teams need Pro or a higher plan.
 {% endhint %}
 
 #### What Are Multi-Agent Teams?
 
 Multi-agents are an evolution of Taskade's agentic workflow designed to:
 
-* **Work concurrently** on multiple tasks simultaneously
+* **Split the work** so each agent handles the part it knows best
 * **Execute in the background** while you focus on other priorities
 * **Collaborate intelligently** with each agent bringing specialized expertise
 * **Learn your preferences** and adapt to your communication style
@@ -426,15 +428,15 @@ Multi-agents are an evolution of Taskade's agentic workflow designed to:
 
 **Method 1: Build from Existing Agents**
 
-1. Navigate to the **🤖 Agents** tab in your workspace
-2. Select multiple existing agents with complementary skills
-3. Use the **Team Builder** to combine them into a cohesive unit
-4. Configure team communication and collaboration rules
+1. Open **AI Teams** in your workspace sidebar
+2. Click **Create** and type a team name
+3. Under **Add to team**, add existing agents with complementary skills
+4. Click **Create**, then use **Edit team** to give each agent a role
 
 **Method 2: Create New Team from Templates**
 
 1. Go to **AI Teams** section
-2. Click **➕ Create Team** → **From Template**
+2. Click **Templates**
 3. Choose from pre-built team configurations:
    * **Marketing Team**: Content + Social Media + Analytics agents
    * **Customer Success Team**: Support + Documentation + Training agents
@@ -674,9 +676,8 @@ Command modes dictate how your AI agents approach tasks - whether by following s
 
 | Mode                  | Description                                 | Best For                           | Example                                                     |
 | --------------------- | ------------------------------------------- | ---------------------------------- | ----------------------------------------------------------- |
-| **Default Mode**      | Follows specific instructions directly      | Simple, straightforward tasks      | "Write an email to customer about order delay"              |
-| **Plan & Execute V1** | Creates a plan, then executes step by step  | Complex multi-step tasks           | "Increase sales revenue" → Agent creates strategy plan      |
-| **Plan & Execute V2** | Advanced planning with iterative refinement | Complex goals requiring adaptation | "Improve team productivity" → Agent analyzes, plans, adapts |
+| **Default**           | Follows specific instructions directly      | Simple, straightforward tasks      | "Write an email to customer about order delay"              |
+| **Plan and execute**  | Sets goals, breaks the task into steps, and reasons through them | Complex multi-step goals | "Increase sales revenue" → Agent creates strategy plan      |
 
 #### **When to Use Plan & Execute Modes**
 
@@ -743,11 +744,11 @@ Apply AI commands to multiple tasks simultaneously for efficient batch processin
 
 #### **How Bulk Commands Work**
 
-1. **Select multiple tasks** in your project (hold Ctrl/Cmd while clicking)
-2. **Right-click** or use the AI assistant panel
+1. **Select multiple tasks** in your project (click one task, then hold Shift and click the last task)
+2. **Click AI Assistant** in the selection toolbar
 3. **Choose a bulk command** from the available options
-4. **AI processes all selected tasks** with the same command
-5. **Review and refine** results as needed
+4. **AI reads the whole selection** and gives one result
+5. **Insert** the result after the tasks, or **Replace** the selected tasks
 
 #### **Available Bulk AI Commands**
 
@@ -890,9 +891,9 @@ The AI Team Generator lets you create complete multi-agent teams instantly. Just
 
 #### **Access the Generator**
 
-1. Navigate to the **Agents** tab in your workspace
-2. Look for the **AI Team Generator** option
-3. Click to open the team creation interface
+1. Open **AI Teams** in your workspace sidebar
+2. Click **Generate**
+3. Describe the work in the **Generate Your AI Agent Team** dialog
 
 #### **Craft Your Prompt**
 
@@ -928,7 +929,7 @@ All generated teams can be fine-tuned after creation to better fit your specific
 {% step %}
 #### Access Team Settings
 
-Click the **settings icon** on your generated team
+Click **···** next to your team, then **Edit team**
 {% endstep %}
 
 {% step %}
@@ -958,9 +959,9 @@ Apply changes and make the team available for use
 
 #### **Method 1: Direct Team Chat**
 
-* Access through the **Agents** tab
+* Access through the **AI Teams** tab
 * Chat with the entire team as a unified group
-* All agents contribute to comprehensive responses
+* Pick **Auto**, **Everyone**, **Manual**, or **Orchestrate** to decide which agents reply
 * Perfect for brainstorming and complex problem-solving
 
 #### **Method 2: Project Integration**
@@ -972,9 +973,9 @@ Apply changes and make the team available for use
 
 #### **Method 3: Task Assignment**
 
-* Assign specific tasks to team members
-* Each agent handles their area of expertise
-* Parallel processing for faster completion
+* Type **/** and the team name in a task to assign it
+* Taskade picks the single best agent from the team for each task
+* Insert or replace the task with the result
 * Comprehensive reporting on progress
 
 #### **Method 4: Automation Integration**
@@ -1030,3 +1031,7 @@ Apply changes and make the team available for use
 ***
 
 **💡 Pro Tip:** Your best agent team is one that solves a real problem you face daily. Start with a specific use case, measure results, and expand as you discover new possibilities!
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Custom AI Agents: The Intelligence Pillar](https://www.taskade.com/learn/agents/custom-agents), [Build an AI Agent: The Complete Playbook](https://www.taskade.com/learn/agents/agent-playbook), [AI Teams](https://www.taskade.com/learn/agents/ai-teams)._

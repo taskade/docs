@@ -1,6 +1,6 @@
 ---
 description: >-
-  Use Taskade across iOS, Android, Mac, Windows, Linux, and web with real-time sync, offline mode, voice commands, widgets, and browser extensions.
+  Use Taskade across iOS, Android, Mac, Windows, Linux, and web with real-time sync, voice commands, widgets, and browser extensions.
 title: 'Chapter 8: Mobile & Desktop - Cross-Platform Productivity'
 ---
 
@@ -38,7 +38,7 @@ flowchart TD
     TABLET --> FEATURES
 
     FEATURES --> SYNC[🔄 Real-Time Sync<br/>Instant updates everywhere]
-    FEATURES --> OFFLINE[📴 Offline Mode<br/>Work without internet]
+    FEATURES --> OFFLINE[📴 Reconnect Sync<br/>Recent edits sync on reconnect]
     FEATURES --> VOICE[🎤 Voice Commands<br/>Hands-free interaction]
     FEATURES --> WIDGETS[⚡ Quick Widgets<br/>Instant access]
 
@@ -54,7 +54,7 @@ flowchart TD
 **Cross-platform enables:**
 
 * **🔄 Real-Time Sync**: Changes appear instantly across all devices
-* **📴 Offline Capability**: Full functionality without internet
+* **📴 Reconnect Sync**: Edits from the moments before a connection drop sync when you reconnect
 * **🎤 Voice Commands**: Hands-free productivity
 * **⚡ Quick Access**: Instant task creation from any device
 * **📱 Native Experiences**: Optimized interfaces for each platform
@@ -71,9 +71,7 @@ flowchart TD
 * **Full Workspace Access**: All projects, AI agents, automations
 * **Touch-Optimized Interface**: Gestures and touch interactions
 * **Camera Integration**: Photo uploads, document scanning
-* **Biometric Authentication**: Face ID, Touch ID, fingerprint
 * **Push Notifications**: Real-time alerts and updates
-* **Offline Mode**: View and edit without internet connection
 
 #### Mobile-Specific Tools
 
@@ -84,7 +82,6 @@ Home Screen Widget Features:
 ├── ⚡ One-tap task creation
 ├── 🎤 Voice input support
 ├── 📅 Smart date recognition
-├── 📍 Location tagging
 ├── 🔄 Auto-sync when online
 └── 🎯 Default project assignment
 ```
@@ -97,7 +94,6 @@ Universal Share Integration:
 ├── 📄 Documents and PDFs
 ├── 🌐 Web links and articles
 ├── 📝 Text snippets
-├── 📍 Location data
 └── 🎵 Audio recordings
 ```
 
@@ -131,7 +127,6 @@ Universal Share Integration:
 * **Progressive Web App**: Install like a native app
 * **Cross-Browser Compatibility**: Works on all modern browsers
 * **Responsive Design**: Adapts to any screen size
-* **Offline Capability**: Service worker caching
 
 #### Browser Extensions
 
@@ -166,7 +161,7 @@ Web Clipper Extensions:
 * **Instant Updates**: Changes appear immediately on all devices
 * **Conflict Resolution**: Smart merging of simultaneous edits
 * **Version History**: Track changes and revert if needed
-* **Offline Queue**: Actions taken offline sync when reconnected
+* **Reconnect Sync**: Edits from the moments before a connection drop sync when you reconnect
 * **Bandwidth Optimization**: Efficient data transfer and caching
 
 ### Cross-Device Workflows
@@ -230,7 +225,6 @@ Create a task on one device and watch it appear on others
 Perfect for mobile scenarios:
 ├── 🚗 Daily commute planning
 ├── 🏃‍♂️ Quick task capture during meetings
-├── 📍 Location-based reminders
 ├── 📸 Photo task creation
 ├── 🎤 Voice note taking
 └── 📱 Instant collaboration
@@ -261,25 +255,22 @@ Browser advantages:
 
 ### Offline Productivity
 
-**Full functionality without internet:**
+**Taskade needs a live connection.** There is no offline editing mode.
 
 #### Offline Capabilities
 
-* **View All Projects**: Access complete workspace offline
-* **Create and Edit Tasks**: Full task management capabilities
-* **Project Navigation**: Switch between all project views
-* **File Attachments**: View previously downloaded files
-* **Basic AI Features**: Core AI assistance works offline
+* **Recent Edits**: If your connection drops, Taskade holds the changes from the moments before the drop in memory
+* **Reconnect Sync**: When your connection returns, Taskade tries to sync those changes
+* **Mobile Fallback**: If your desktop connection drops, use the mobile app on mobile data
 
 #### Offline Synchronization
 
 ```
-Smart offline-to-online transition:
-├── 📋 Queue all changes locally
-├── 🔄 Auto-sync when connection restored
-├── ⚡ Conflict resolution for simultaneous edits
-├── 📊 Sync status indicators
-└── 🔋 Battery-efficient background sync
+When the connection drops:
+├── ⚠️ Taskade shows a "please try again later" error
+├── 🔄 Check your connection and click Retry
+├── 🔁 Restart the app if Retry does not help
+└── 🧹 Flush your DNS cache if Taskade still cannot connect
 ```
 
 ### Voice and Hands-Free Productivity
@@ -299,8 +290,7 @@ Smart offline-to-online transition:
 Multi-platform voice support:
 ├── 📱 Mobile: Siri, Google Assistant integration
 ├── 💻 Desktop: System voice recognition
-├── 🌐 Web: Browser voice APIs
-└── ⌚ Wearables: Voice notes and reminders
+└── 🌐 Web: Browser voice APIs
 ```
 
 ## Platform-Specific Optimizations
@@ -341,12 +331,12 @@ Mobile-First Design:
 
 ```
 Essential Shortcuts:
-├── ⌘N: New project
 ├── ⌘K: Global search
-├── ⌘/: AI assistant
+├── ⌘F: Search in the open project
+├── ⌘/: Add-On menu
 ├── ⌘↵: Complete task
-├── ⌘⌫: Delete item
-└── ⌘Z: Undo/redo
+├── ⌘⇧⌫: Delete task
+└── ⌘Z / ⌘⇧Z: Undo / redo
 ```
 
 #### Advanced Desktop Features
@@ -396,13 +386,13 @@ Seamless Transitions:
 
 * **Native Code**: Platform-specific optimizations for speed
 * **Efficient Sync**: Minimal bandwidth usage for synchronization
-* **Smart Caching**: Fast loading and offline capability
+* **Smart Caching**: Fast loading
 * **Battery Optimization**: Power-efficient background processes
 
 ### Reliability Features
 
-* **Offline Resilience**: Core features work without internet
-* **Data Persistence**: Never lose work due to connectivity issues
+* **Connection Recovery**: Recent edits sync when your connection returns
+* **Data Persistence**: Taskade auto-saves your work while you are connected
 * **Auto-Save**: Continuous saving prevents data loss
 * **Backup Systems**: Multiple redundancy layers for data safety
 
@@ -412,7 +402,6 @@ Seamless Transitions:
 
 * **Unified Backend**: Single source of truth for all data
 * **Real-Time Engine**: WebSocket connections for instant updates
-* **Offline-First Architecture**: Service workers and local storage
 * **Platform-Specific UIs**: Native interfaces optimized for each platform
 * **Adaptive Synchronization**: Smart conflict resolution and merging
 * **Progressive Enhancement**: Core features work everywhere, advanced features enhance
@@ -428,7 +417,6 @@ Seamless Transitions:
 #### Mobile Scenarios
 
 * Quick task capture and review
-* Location-based reminders
 * Voice notes during meetings
 * Photo documentation
 * Instant communication
@@ -494,3 +482,7 @@ This concludes our comprehensive tutorial! You've transformed from a productivit
 _Where will your living workspace take you next? The possibilities are endless—start building, stay curious, and keep your workspace alive and evolving!_
 
 [← Back to Chapter 7: API](07_api.md) | [← Back to Tutorial Overview](README.md)
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Guide to Taskade Mobile](https://www.taskade.com/learn/projects/mobile-guide), [Account Settings (Desktop)](https://www.taskade.com/learn/account/desktop-settings), [Mobile Widgets](https://www.taskade.com/learn/projects/mobile-widgets)._

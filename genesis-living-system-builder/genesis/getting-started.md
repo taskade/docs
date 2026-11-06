@@ -22,7 +22,7 @@ Want the deeper “why it works” model?
 Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
 {% hint style="info" %}
-**Two ways to start.** Build from a blank prompt (this guide), or **clone a ready-made app** — browse the [community gallery](https://www.taskade.com/community) and [Taskade's official kits](https://www.taskade.com/user/taskade), clone one for free, and customize it. Either way, you land in the same Taskade Genesis editor.
+**Two ways to start.** Build from a blank prompt (this guide), or **clone a ready-made app** — browse the [community gallery](https://www.taskade.com/apps) and [Taskade's official kits](https://www.taskade.com/@taskade), clone one, and customize it. Either way, you land in the same Taskade Genesis editor.
 {% endhint %}
 
 ## Before You Start
@@ -30,6 +30,7 @@ Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace
 ### What You Need
 
 * ✅ **A Taskade account** - [Sign up free](https://taskade.com/signup) if you don't have one
+* ✅ **AI credits** - Free starts with no AI credits. On Free, you earn free AI credits with referrals and invites, and you can upgrade any time
 * ✅ **A business problem to solve** - Something that wastes your time or frustrates customers
 * ✅ **5 minutes of focused time** - No distractions, just you and your business challenge
 
@@ -130,24 +131,24 @@ Now the magic happens - Taskade Genesis turns your description into a working ap
 
 1. **Log into Taskade** at [taskade.com/create](https://www.taskade.com/create)
 2. **Navigate to your workspace** (create one if you don't have it)
-3. **Look for the AI prompt box** at the top of your workspace
-4. **Click "Create with AI"** or the Taskade Genesis icon
+3. **Click Create** — a prompt field appears at the center of the screen
+4. **Leave the creation mode on Taskade Genesis** (the default)
 
 ### **Generate Your App**
 
 1. **Paste your description** into the prompt box
 2. **Click "Generate"** or press Enter
 3. **Watch Taskade Genesis work** - it will show you progress as it builds
-4. **Wait 30-90 seconds** for your complete app to appear
+4. **Wait about 60-120 seconds**, depending on app complexity, for your complete app to appear
 
 ### **What Genesis Creates**
 
-While you wait, Taskade Genesis is building all four components of your app:
+While you wait, Taskade Genesis is building all four layers of your app:
 
-* **📊 Database** - Smart storage for all your business data
-* **🤖 AI Assistant** - Learns your business and helps users
-* **⚡ Automations** - Connects to email, Slack, and other tools
-* **📁 File Management** - Handles uploads and document storage
+* **📊 Projects** - Databases that store all your business data
+* **🤖 AI Agents** - Learn your business and help users
+* **⚡ Automations** - Connect to email, Slack, and other tools
+* **🖥️ App UI** - The pages, forms, and dashboards your users see
 
 ***
 
@@ -166,7 +167,7 @@ Taskade Genesis becomes significantly more powerful when you provide reference m
 
 ### **Adding Context Files**
 
-1. **After app creation**, click **"Edit with AI"** in the preview
+1. **After app creation**, open the chat with Taskade EVE beside the preview
 2. **Upload files** by dragging them into the chat or clicking the attachment button (📎)
 3. **Describe your changes** referencing the uploaded files
 
@@ -190,7 +191,8 @@ Taskade Genesis becomes significantly more powerful when you provide reference m
 * **PDF files** work great for brand guidelines and documentation
 * **Images** (PNG/JPG) perfect for logos and screenshots
 * **Text files** useful for code snippets and requirements
-* **All uploaded files** are stored in your project's Media tab for future reference
+* **All uploaded files** are stored in your workspace's Media files for future reference
+* **On the Free plan**, you can upload images only. Other file types need a paid plan
 
 ***
 
@@ -217,7 +219,7 @@ Your app is ready! Now test it thoroughly before sharing with others.
 
 ### **Common First-Time Issues**
 
-* **No notifications received?** Check your email/Slack integration settings
+* **No notifications received?** Check your email/Slack integration settings. Slack and other premium integrations need a paid plan
 * **Form looks wrong?** Describe the visual changes you want
 * **Missing fields?** Tell Taskade Genesis what additional information you need
 * **Wrong automation timing?** Specify exactly when actions should happen
@@ -257,7 +259,7 @@ Need adjustments? Taskade Genesis makes changes instantly through conversation.
 ### **Making Changes**
 
 1. **Describe what you want to change** in plain English
-2. **Click "Update App"** or similar button
+2. **Send the message** in the chat
 3. **Wait for Taskade Genesis to implement** your changes (usually 10-30 seconds)
 4. **Test the changes** to make sure they work as expected
 
@@ -268,32 +270,33 @@ Need adjustments? Taskade Genesis makes changes instantly through conversation.
 Your app is ready for the real world! You've built something that solves a real business problem, and now it's time to put it in front of actual users.
 
 {% hint style="warning" %}
-**Secure your API keys before publishing.** If your app calls external APIs, store credentials in the Secrets vault (space **Settings → Secrets**) and route calls through the outbound proxy so keys never ship in client code. Taskade Genesis blocks publish if hardcoded secrets are detected. See [App Secrets](../space-apps-guide/app-secrets.md) for setup steps.
+**Secure your API keys before publishing.** If your app calls external APIs, store credentials in the Secrets vault (**App settings → Developer → Secrets**) and route calls through the outbound proxy so keys never ship in client code. Taskade Genesis blocks publish if hardcoded secrets are detected. See [App Secrets](../space-apps-guide/app-secrets.md) for setup steps.
 {% endhint %}
 
 ### **Publishing Options**
 
 1. **Private Use**: Keep it within your workspace for team use
-2. **Custom Domain**: Publish under your branded domain (e.g., `app.yourcompany.com`)
-3. **Share with Community**: Publish to the global Taskade marketplace for others to discover and fork
+2. **Custom Domain**: Publish under your branded domain (e.g., `app.yourcompany.com`) on Pro and up
+3. **Share with Community**: List your app in the Community Gallery. To let others clone it, set **Let others clone** to **Free** or **Paid**
 4. **Public Link**: Get a shareable URL for external users
-5. **Hosted Taskade MCP**: Connect Claude, Cursor, or any MCP client to your workspace — create projects, manage agents, and edit your app's source from your IDE — see [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md)
+5. **Hosted Taskade MCP** (paid plans): Connect Claude, Cursor, or any MCP client to your workspace — create projects, manage agents, and edit your app's source from your IDE — see [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md)
 
 ### **Getting It Live**
 
 1. **Click "Publish"** in the top-right corner
-2. **Choose your publishing option:**
+2. **Choose who can open it:** anyone with the link, anyone with the password (Pro and up), or each person signs in with their own account
+3. **Choose how people find it:**
    * **Public Link**: Instant shareable URL
-   * **Custom Domain**: Professional branded experience
-   * **Community Sharing**: Help others while showcasing your skills
-3. **Copy the link** and share with your intended audience
+   * **Custom Domain**: Professional branded experience (Pro and up)
+   * **Community Sharing**: Turn on **Show in public listings** under **More options**
+4. **Copy the link** and share with your intended audience
 
 ### **Community Sharing Benefits**
 
 If you've built something that could help other businesses:
 
-* **Share with Community**: Your app appears in the marketplace
-* **Help Others**: Teams worldwide can fork and use your solution
+* **Share with Community**: Your app appears in the Community Gallery
+* **Help Others**: With **Let others clone** on, teams worldwide can clone and use your solution
 * **Build Reputation**: Showcase your problem-solving skills
 * **Get Feedback**: Community reviews help improve your solutions
 
@@ -301,8 +304,8 @@ If you've built something that could help other businesses:
 
 For business use, consider these options:
 
-* **Custom Domain**: `portal.yourcompany.com` instead of random URLs
-* **Branded Experience**: Remove all Taskade references for white-label solutions
+* **Custom Domain**: `portal.yourcompany.com` instead of random URLs (Pro and up)
+* **Branded Experience**: Turn off the "Powered by Taskade" badge (paid plans)
 * **SSL Security**: Automatic HTTPS for professional trust
 * **Global CDN**: Fast loading worldwide
 
@@ -385,7 +388,7 @@ Turn your 5-minute app into a business you run.
 
 * **Help Center:** [taskade.com/learn/genesis](https://www.taskade.com/learn/genesis)
 * **Video Tutorials:** [youtube.com/taskade](https://youtube.com/taskade)
-* **Community:** [taskade.com/community](https://taskade.com/community)
+* **Community:** [taskade.com/apps](https://www.taskade.com/apps)
 * **Email Support:** [support@taskade.com](mailto:support@taskade.com)
 
 ***
@@ -426,3 +429,7 @@ They should [SPECIFIC STEPS], and when they do,
 - Improve prompts: [Living System Best Practices](../community-and-sharing/best-practices.md)
 - Publish professionally: [Custom Domains & Branding](../space-apps-guide/custom-domains.md)
 - Fix common issues: [Living System Troubleshooting](../community-and-sharing/troubleshooting.md)
+
+---
+
+_Step-by-step guide on taskade.com/learn: [Create Your First App](https://www.taskade.com/learn/genesis/first-app)._

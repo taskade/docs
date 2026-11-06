@@ -25,7 +25,7 @@ For the full developer reference—authentication, endpoints, SDKs, and more—s
 
 ## What is the Taskade API? (Programmatic Superpowers)
 
-The Taskade API is a **complete RESTful interface** that exposes all Taskade functionality programmatically. It transforms Taskade from a productivity tool into a development platform where you can build custom applications, integrations, and automated workflows.
+The Taskade API is a **RESTful interface** that exposes core Taskade resources programmatically: workspaces, folders, projects, tasks, AI agents, media, and bundles. It transforms Taskade from a productivity tool into a development platform where you can build custom applications, integrations, and automated workflows.
 
 ```mermaid
 flowchart TD
@@ -34,17 +34,17 @@ flowchart TD
     RESOURCES --> WORKSPACES[🏢 Workspaces<br/>Team containers]
     RESOURCES --> PROJECTS[📋 Projects<br/>Work containers]
     RESOURCES --> TASKS[✅ Tasks<br/>Work units]
-    RESOURCES --> USERS[👥 Users<br/>Team members]
+    RESOURCES --> AGENTS[🤖 AI Agents<br/>Knowledge and chats]
     RESOURCES --> WEBHOOKS[🔗 Webhooks<br/>Real-time events]
 
     WORKSPACES --> OPERATIONS[Operations]
     PROJECTS --> OPERATIONS
     TASKS --> OPERATIONS
-    USERS --> OPERATIONS
+    AGENTS --> OPERATIONS
     WEBHOOKS --> OPERATIONS
 
     OPERATIONS --> CRUD[Create, Read, Update, Delete]
-    OPERATIONS --> QUERY[Advanced Queries & Filters]
+    OPERATIONS --> QUERY[Paged Lists & Reads]
     OPERATIONS --> BATCH[Bulk Operations]
     OPERATIONS --> REALTIME[Real-time Updates]
 
@@ -73,22 +73,26 @@ flowchart TD
 ### HTTP Methods
 
 ```
-GET    /projects       # Retrieve projects
-POST   /projects       # Create new project
-PUT    /projects/123   # Update project 123
-DELETE /projects/123   # Delete project 123
+GET    /workspaces                           # List your workspaces
+POST   /workspaces/{workspaceId}/projects    # Create a project in a workspace
+GET    /projects/{projectId}/tasks           # List the tasks in a project
+PUT    /projects/{projectId}/tasks/{taskId}  # Update a task
+DELETE /projects/{projectId}/tasks/{taskId}  # Delete a task
 ```
 
 ### Resource Structure
 
 ```
-/workspaces     # Workspace management
-/projects       # Project operations
-/tasks          # Task manipulation
-/users          # User management
-/webhooks       # Real-time notifications
-/automations    # Workflow automation
+/workspaces                 # Workspaces and their folders
+/folders                    # Folders, their projects, agents, and templates
+/projects                   # Project operations
+/projects/{projectId}/tasks # Task manipulation
+/agents                     # AI agents, knowledge, and conversations
+/medias                     # Files
+/bundles                    # Workspace export and import
 ```
+
+Base URL: `https://www.taskade.com/api/v1`. Signed webhooks use API v2 (`/api/v2/webhooks`).
 
 ### Request/Response Format
 
@@ -102,18 +106,19 @@ DELETE /projects/123   # Delete project 123
     "Content-Type": "application/json"
   },
   "body": {
-    "name": "New Project",
-    "description": "API-created project"
+    "folderId": "folder_456",
+    "contentType": "text/markdown",
+    "content": "# New Project\n- First task"
   }
 }
 
 // Response
 {
-  "id": "project_123",
-  "name": "New Project",
-  "description": "API-created project",
-  "created_at": "2024-01-15T10:30:00Z",
-  "workspace_id": "workspace_456"
+  "ok": true,
+  "item": {
+    "id": "project_123",
+    "name": "New Project"
+  }
 }
 ```
 
@@ -125,7 +130,7 @@ DELETE /projects/123   # Delete project 123
 {% step %}
 #### Get Your API Key
 
-Go to Settings → Developer → API Keys → Generate New Key
+Go to [taskade.com/settings/api](https://www.taskade.com/settings/api), open **Personal access tokens**, and click **Create token**. The API works on every plan
 {% endstep %}
 
 {% step %}
@@ -142,7 +147,7 @@ curl -H "Authorization: Bearer your_api_token_placeholder" \
 {% step %}
 #### Parse the Response
 
-You'll get a JSON array of your projects with full details
+You'll get a JSON object with `"ok": true` and an `items` array of your projects
 {% endstep %}
 
 {% step %}
@@ -163,23 +168,23 @@ curl -X POST https://www.taskade.com/api/v1/projects/your_project_id/tasks/ \
 
 ## Core API Resources and Operations
 
+The examples below use a small `api` helper that wraps `fetch` with your token and the base URL `https://www.taskade.com/api/v1`. The webhook example uses an `apiV2` helper with the base URL `https://www.taskade.com/api/v2`. The official SDK is not yet published (see [SDKs and Development Tools](#sdks-and-development-tools)).
+
 ### Workspaces API
 
 **Manage your organizational structure:**
 
 ```javascript
 // Get all workspaces
-const workspaces = await api.get('/workspaces');
+const { items: workspaces } = await api.get('/workspaces');
 
-// Create a new workspace
-const newWorkspace = await api.post('/workspaces', {
-  name: 'API Development Workspace',
-  description: 'For custom API integrations'
-});
+// List the folders in a workspace
+const { items: folders } = await api.get(`/workspaces/${workspaceId}/folders`);
 
-// Update workspace settings
-await api.put(`/workspaces/${workspaceId}`, {
-  settings: { theme: 'dark', notifications: true }
+// Create a project in a workspace from Markdown
+const { item: project } = await api.post(`/workspaces/${workspaceId}/projects`, {
+  contentType: 'text/markdown',
+  content: '# API Development Project\n- First task'
 });
 ```
 
@@ -188,23 +193,23 @@ await api.put(`/workspaces/${workspaceId}`, {
 **Handle project lifecycle:**
 
 ```javascript
-// List projects with filtering
-const projects = await api.get('/projects', {
-  params: { workspace_id: 'ws_123', type: 'board' }
+// List your projects, most recently viewed first
+const { items: projects } = await api.get('/me/projects', {
+  params: { limit: 20, sort: 'viewed-desc' }
 });
 
 // Create project from template
-const project = await api.post('/projects', {
-  name: 'Customer Onboarding',
-  template_id: 'template_456',
-  workspace_id: 'ws_123'
+const { item: project } = await api.post('/projects/from-template', {
+  folderId: 'folder_123',
+  templateId: 'template_456'
 });
 
-// Update project metadata
-await api.patch(`/projects/${projectId}`, {
-  description: 'Updated project description',
-  due_date: '2024-02-01'
+// Copy a project into another folder, then mark the original complete
+await api.post(`/projects/${projectId}/copy`, {
+  folderId: 'folder_789',
+  projectTitle: 'Customer Onboarding (copy)'
 });
+await api.post(`/projects/${projectId}/complete`);
 ```
 
 ### Tasks API
@@ -212,34 +217,29 @@ await api.patch(`/projects/${projectId}`, {
 **Manipulate work items programmatically:**
 
 ```javascript
-// Get tasks with advanced filtering
-const tasks = await api.get('/tasks', {
-  params: {
-    project_id: 'proj_123',
-    assignee: 'user_456',
-    status: 'pending',
-    due_before: '2024-01-31'
-  }
+// Get the tasks in a project, one page at a time
+const page = await api.get(`/projects/${projectId}/tasks`, {
+  params: { limit: 100 }
 });
+// page.items, page.hasMore, page.nextCursor (pass it as `after` for the next page)
 
-// Bulk create tasks
-const newTasks = await api.post('/tasks/bulk', {
+// Create several tasks in one request
+const { item: newTasks } = await api.post(`/projects/${projectId}/tasks/`, {
   tasks: [
-    { name: 'Design mockups', assignee: 'user_123' },
-    { name: 'Write documentation', assignee: 'user_456' },
-    { name: 'Code review', assignee: 'user_789' }
+    { contentType: 'text/markdown', content: 'Design mockups', placement: 'beforeend' },
+    { contentType: 'text/markdown', content: 'Write documentation', placement: 'beforeend' },
+    { contentType: 'text/markdown', content: 'Code review', placement: 'beforeend' }
   ]
 });
 
-// Update task with custom fields
-await api.put(`/tasks/${taskId}`, {
-  name: 'Updated task name',
-  priority: 'high',
-  custom_fields: {
-    estimated_hours: 8,
-    difficulty: 'medium'
-  }
+// Rename a task, assign it, set its due date, and set a custom field
+await api.put(`/projects/${projectId}/tasks/${taskId}`, {
+  contentType: 'text/markdown',
+  content: 'Updated task name'
 });
+await api.put(`/projects/${projectId}/tasks/${taskId}/assignees`, { handles: ['teammate_handle'] });
+await api.put(`/projects/${projectId}/tasks/${taskId}/date`, { start: { date: '2026-12-01' } });
+await api.put(`/projects/${projectId}/tasks/${taskId}/fields/${fieldId}`, { value: 8 });
 ```
 
 ## Advanced API Techniques
@@ -248,23 +248,25 @@ await api.put(`/tasks/${taskId}`, {
 
 For full setup and event types, see the [Webhooks reference](../../apis-living-system-development/webhooks.md).
 
-**Get instant notifications of changes:**
+**Get instant notifications of changes.** Signed webhooks use API v2 and need the Pro plan or higher:
 
 ```javascript
-// Register webhook for task updates
-const webhook = await api.post('/webhooks', {
-  url: 'https://your-app.com/webhook/task-updated',
-  events: ['task.created', 'task.updated', 'task.completed'],
-  secret: 'your_webhook_secret'
+// Register a signed webhook (POST https://www.taskade.com/api/v2/webhooks)
+const { secret } = await apiV2.post('/webhooks', {
+  targetUrl: 'https://your-app.com/webhook/taskade',
+  events: ['task.due', 'task.assigned', 'comment.created'],
+  spaceIds: []
 });
+// Store `secret` now: the response shows it only once
 
 // Handle webhook in your application
-app.post('/webhook/task-updated', (req, res) => {
-  const signature = req.headers['x-taskade-signature'];
-  const payload = req.body;
+app.post('/webhook/taskade', (req, res) => {
+  const signature = req.headers['x-taskade-signature-v2'];
+  const timestamp = req.headers['x-taskade-timestamp'];
+  const payload = req.rawBody;
 
-  // Verify webhook signature
-  if (verifySignature(signature, payload, webhook.secret)) {
+  // Verify the HMAC-SHA256 signature of `${timestamp}.${rawBody}`
+  if (verifySignature(signature, timestamp, payload, secret)) {
     // Process the task update
     handleTaskUpdate(payload);
     res.status(200).send('OK');
@@ -276,48 +278,37 @@ app.post('/webhook/task-updated', (req, res) => {
 
 ### Batch Operations for Efficiency
 
-**Handle multiple operations atomically:**
+**Create many tasks in one request.** The API has no general batch endpoint, so send other changes as separate calls:
 
 ```javascript
-// Bulk update multiple tasks
-const batchUpdate = await api.post('/batch', {
-  operations: [
-    {
-      method: 'PUT',
-      path: '/tasks/task_123',
-      body: { status: 'completed' }
-    },
-    {
-      method: 'POST',
-      path: '/tasks',
-      body: { name: 'Follow-up task', project_id: 'proj_456' }
-    },
-    {
-      method: 'DELETE',
-      path: '/tasks/task_789'
-    }
+// Create several tasks with one call
+await api.post(`/projects/${projectId}/tasks/`, {
+  tasks: [
+    { contentType: 'text/markdown', content: 'Follow-up task', placement: 'beforeend' },
+    { contentType: 'text/markdown', content: 'Send summary', placement: 'beforeend' }
   ]
 });
+
+// Complete and delete tasks with separate calls
+await api.post(`/projects/${projectId}/tasks/task_123/complete`);
+await api.delete(`/projects/${projectId}/tasks/task_789`);
 ```
 
 ### Advanced Querying and Filtering
 
-**Extract exactly the data you need:**
+**Extract exactly the data you need.** List endpoints page through results. Filter the items in your own code:
 
 ```javascript
-// Complex filtering with multiple criteria
-const filteredTasks = await api.get('/tasks', {
-  params: {
-    project_id: 'proj_123',
-    assignee: ['user_456', 'user_789'],
-    due_date: { $gte: '2024-01-01', $lte: '2024-01-31' },
-    priority: 'high',
-    labels: { $in: ['urgent', 'client-work'] },
-    sort: '-due_date',
-    limit: 50,
-    include: ['assignee', 'project']
-  }
-});
+// Page through every task in a project, then keep the open ones
+let after;
+const openTasks = [];
+do {
+  const page = await api.get(`/projects/${projectId}/tasks`, {
+    params: { limit: 100, after }
+  });
+  openTasks.push(...page.items.filter((task) => !task.completed));
+  after = page.hasMore ? page.nextCursor : undefined;
+} while (after);
 ```
 
 ## Building Custom Applications
@@ -332,37 +323,24 @@ class CustomerDashboard {
     this.api = new TaskadeAPI(apiKey);
   }
 
-  async getCustomerProjects(customerId) {
-    return await this.api.get('/projects', {
-      params: {
-        'custom_fields.customer_id': customerId,
-        include: ['tasks', 'members']
-      }
+  async getCustomerTasks(projectId) {
+    const { items } = await this.api.get(`/projects/${projectId}/tasks`, {
+      params: { limit: 100 }
+    });
+    return items;
+  }
+
+  async updateCustomerStatus(projectId, taskId, statusFieldId, status) {
+    return await this.api.put(`/projects/${projectId}/tasks/${taskId}/fields/${statusFieldId}`, {
+      value: status
     });
   }
 
-  async updateCustomerStatus(projectId, status) {
-    return await this.api.put(`/projects/${projectId}`, {
-      custom_fields: { status },
-      updated_at: new Date().toISOString()
-    });
-  }
-
-  async createSupportTicket(customerId, issue) {
-    const project = await this.api.post('/projects', {
-      name: `Support: ${issue.title}`,
-      type: 'list',
-      custom_fields: {
-        customer_id: customerId,
-        priority: issue.priority,
-        category: issue.category
-      }
-    });
-
-    await this.api.post('/tasks', {
-      name: issue.description,
-      project_id: project.id,
-      assignee: 'support_team_lead'
+  async createSupportTicket(folderId, issue) {
+    const { item: project } = await this.api.post('/projects', {
+      folderId,
+      contentType: 'text/markdown',
+      content: `# Support: ${issue.title}\n- ${issue.description}`
     });
 
     return project;
@@ -381,50 +359,32 @@ class ReportingSystem {
     this.scheduleDailyReports();
   }
 
-  async generateDailyReport() {
-    const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+  async generateDailyReport(projectIds, reportFolderId) {
+    const date = new Date().toISOString().split('T')[0];
+    const rows = [];
 
-    const completedTasks = await this.api.get('/tasks', {
-      params: {
-        completed_at: { $gte: yesterday },
-        include: ['assignee', 'project']
-      }
-    });
-
-    const report = {
-      date: yesterday,
-      total_completed: completedTasks.length,
-      by_assignee: this.groupByAssignee(completedTasks),
-      by_project: this.groupByProject(completedTasks),
-      productivity_score: this.calculateProductivity(completedTasks)
-    };
-
-    await this.createReportProject(report);
-    await this.sendReportEmail(report);
-  }
-
-  groupByAssignee(tasks) {
-    return tasks.reduce((acc, task) => {
-      const assignee = task.assignee?.name || 'Unassigned';
-      acc[assignee] = (acc[assignee] || 0) + 1;
-      return acc;
-    }, {});
-  }
-
-  async createReportProject(report) {
-    const project = await this.api.post('/projects', {
-      name: `Daily Report - ${report.date}`,
-      type: 'table'
-    });
-
-    // Add report data as tasks/table rows
-    for (const [assignee, count] of Object.entries(report.by_assignee)) {
-      await this.api.post('/tasks', {
-        name: assignee,
-        project_id: project.id,
-        custom_fields: { tasks_completed: count }
+    for (const projectId of projectIds) {
+      const { items } = await this.api.get(`/projects/${projectId}/tasks`, {
+        params: { limit: 1000 }
+      });
+      rows.push({
+        projectId,
+        completed: items.filter((task) => task.completed).length,
+        open: items.filter((task) => !task.completed).length
       });
     }
+
+    await this.createReportProject(date, rows, reportFolderId);
+  }
+
+  async createReportProject(date, rows, folderId) {
+    // One task per project in the report
+    const lines = rows.map((row) => `- ${row.projectId}: ${row.completed} done, ${row.open} open`);
+    await this.api.post('/projects', {
+      folderId,
+      contentType: 'text/markdown',
+      content: `# Daily Report - ${date}\n${lines.join('\n')}`
+    });
   }
 }
 ```
@@ -445,10 +405,10 @@ try {
   // Process response
 } catch (error) {
   if (error.status === 401) {
-    // Handle authentication error
-    refreshToken();
+    // Handle authentication error: check or replace your personal access token
+    reportInvalidToken();
   } else if (error.status === 429) {
-    // Handle rate limiting
+    // Handle rate limiting: wait for the seconds in the Retry-After header
     await delay(error.retryAfter);
     retryRequest();
   }
@@ -464,7 +424,7 @@ class RateLimitedAPI {
   constructor(apiKey) {
     this.api = new TaskadeAPI(apiKey);
     this.requests = [];
-    this.rateLimit = 100; // requests per minute
+    this.rateLimit = 40; // requests per 60 seconds, the published budget per IP address
   }
 
   async request(method, path, options = {}) {
@@ -565,7 +525,7 @@ The official TypeScript SDK (`@taskade/sdk`) is in preview and **not yet publish
 **Technically, the API is:**
 
 * **RESTful Architecture**: Standard HTTP methods and status codes
-* **JSON API Specification**: Consistent data formats and error handling
+* **JSON Bodies**: Consistent responses with an `ok` field and clear error codes
 * **OAuth 2.0 Support**: Secure user authentication flows
 * **Webhook System**: Real-time event notifications
 * **Rate Limiting**: Fair usage policies with burst handling
@@ -631,3 +591,7 @@ The official TypeScript SDK (`@taskade/sdk`) is in preview and **not yet publish
 _What's the custom application your business has always needed? With the API, you can now build it. The possibilities are literally endless—start small, dream big!_
 
 [← Back to Chapter 6: Integrations](06_integrations.md) | [Next: Mobile & Desktop →](08_mobile_desktop.md)
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Taskade Public API](https://www.taskade.com/learn/connect/public-api), [Taskade Developer API](https://www.taskade.com/learn/connect/developer-api), [Build on Taskade: Developer Hub](https://www.taskade.com/learn/connect/developer-hub)._

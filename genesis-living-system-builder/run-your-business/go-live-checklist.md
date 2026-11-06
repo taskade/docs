@@ -17,13 +17,13 @@ You described an app, shaped your data, and it works. Before you put it in front
 
 ### Access & data
 
-* [ ] **Login and roles are configured.** The right people can sign in, and each role sees only what it should. → [Add login and roles](add-login-and-roles.md)
-* [ ] **Per-user data isolation is verified.** Sign in as a test client and confirm they can see only their own record — never anyone else's. → [Add login and roles](add-login-and-roles.md)
+* [ ] **Login and roles are configured.** The right people can sign in, and the app shows each role the right screens. → [Add login and roles](add-login-and-roles.md)
+* [ ] **Per-user data isolation is verified.** Sign-in alone does not hide other people's records. Turn on **Private entries**, then sign in as a test client and confirm they can see only their own record — never anyone else's. → [Add login and roles](add-login-and-roles.md)
 
 ### Domain & publishing
 
-* [ ] **Your custom domain is live with HTTPS.** Your app loads at your own address with the padlock showing. → [Put your app on your own domain](../space-apps-guide/custom-domains.md)
-* [ ] **Visibility and publish strategy are set correctly.** Public, unlisted, or private — match it to who should reach the app. → [Publishing & cloning](../community-and-sharing/publish-and-clone.md)
+* [ ] **Your custom domain is live with HTTPS (Pro and up).** Your app loads at your own address with the padlock showing. → [Put your app on your own domain](../space-apps-guide/custom-domains.md)
+* [ ] **Visibility and publish strategy are set correctly.** Under **Who can open it**, pick the link, a password, or each person signs in. Turn **Show in public listings** on or off — match it to who should reach the app. → [Publishing & cloning](../community-and-sharing/publish-and-clone.md)
 
 ### Cost & reliability
 
@@ -32,7 +32,7 @@ You described an app, shaped your data, and it works. Before you put it in front
 ### Final checks
 
 * [ ] **Test data is purged.** Remove the dummy records you created while building.
-* [ ] **A version snapshot is taken**, so you can roll back if a later change misbehaves. → [Publishing & cloning](../community-and-sharing/publish-and-clone.md)
+* [ ] **A known-good version is noted** in Version history, so you can roll back if a later change misbehaves. → [Version history](../genesis/version-history.md)
 
 ***
 
@@ -45,3 +45,7 @@ You described an app, shaped your data, and it works. Before you put it in front
 * [From idea to live business — the 5 steps](from-idea-to-live-business.md)
 * [Add login and roles to your app](add-login-and-roles.md)
 * [Put your app on your own domain](../space-apps-guide/custom-domains.md)
+
+---
+
+_Step-by-step guide on taskade.com/learn: [Publish and Clone Your Apps](https://www.taskade.com/learn/genesis/publishing)._

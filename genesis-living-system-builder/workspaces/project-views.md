@@ -20,16 +20,18 @@ Your data lives in one place, but you can view it through many lenses. Switch vi
 | **List** | Linear task lists, meeting agendas | Drag-to-indent / reorder, checkboxes | To-do lists, meeting notes, SOPs |
 | **Board** | Kanban workflows, pipelines | Drag cards between columns | Sales pipelines, project stages, sprint boards |
 | **Table** | Spreadsheet-style databases | Inline edit custom fields, sort & filter, multi-select rows (Shift/Cmd-click) + bulk delete with undo | CRM, inventory, contact lists |
-| **Calendar** | Scheduling & deadlines | Drag tasks on calendar, date pickers | Content calendars, event planning, deadlines |
 | **Mind Map** | Brain-storming & hierarchical planning | Radial drag to create branches | Strategy planning, idea mapping, research |
-| **Org Chart** | Organizational hierarchies | Expand / collapse levels | Team structures, reporting lines, decision trees |
-| **Action** | Mobile-friendly task capture | Quick-add, swipe to complete | Daily tasks, quick capture, on-the-go |
-| **Gantt** | Timeline & dependency tracking | Resize bars to adjust durations | Project timelines, resource planning, dependencies |
 | **Docs (Beta)** | Long-form documents & wikis | Continuous rich-text editing, headings, embeds | Specs, knowledge bases, proposals, SOPs |
+| **Calendar** | Scheduling & deadlines | Drag tasks on calendar, date pickers | Content calendars, event planning, deadlines |
+| **Gantt Chart** (paid plans) | Timeline & dependency tracking | Resize bars to adjust durations | Project timelines, resource planning, dependencies |
+| **Actionsheet** (paid plans) | Simple spreadsheet-style lists | Resize, reorder, and hide columns | Lightweight client lists, lead trackers, task queues |
+| **Org Chart** (paid plans) | Organizational hierarchies | Expand / collapse levels | Team structures, reporting lines, decision trees |
+
+List, Board, Table, and Mind Map are tabs in the project toolbar. Docs (Beta), Calendar, Gantt Chart, Actionsheet, and Org Chart are under **More Views**. Gantt Chart, Actionsheet, and Org Chart need a paid plan. The timeline is part of the Gantt Chart view, not a separate view.
 
 All views are backed by the **same underlying data** — update a task in one view and it instantly updates everywhere, thanks to Taskade's real-time engine.
 
-> 💡 **Tip:** Use the `/view` slash-command or the View switcher in the top-right corner of any project to toggle between visualizations.
+> 💡 **Tip:** Use the view tabs in the project toolbar or the **More Views** menu to toggle between visualizations. Press `⌘/Ctrl + Shift + .` to go to the next view and `⌘/Ctrl + Shift + ,` to go to the previous one.
 
 > 📤 **Export any view.** The project's **⋯ More menu > Export** works in every view — including Mind Map, Board, Calendar, and Org Chart — on all plans. CSV export flattens the task tree (depth, text, note, completed) for spreadsheets and BI tools; Markdown export preserves the outline.
 
@@ -68,7 +70,7 @@ Each column is a stage; drag a card to move work forward. Keep card titles short
 - Budget and financial tracking
 - Reporting and analysis
 
-Define custom fields (text, number, date, select, person, formula, relation, and more) to give each row structure, then sort and filter to surface what matters.
+Define custom fields (text, number, date, select, relationship, password, and more) to give each row structure, then sort and filter to surface what matters.
 {% endtab %}
 
 {% tab title="Calendar" %}
@@ -93,7 +95,7 @@ Put the core topic at the center, branch into a handful of main themes, then exp
 {% endtab %}
 
 {% tab title="Org Chart" %}
-**Reach for Org Chart to show hierarchy and flow.**
+**Reach for Org Chart to show hierarchy and flow.** (Paid plans)
 
 - Organizational and reporting structures
 - Decision trees and process flows
@@ -102,18 +104,18 @@ Put the core topic at the center, branch into a handful of main themes, then exp
 Expand and collapse levels to move between the big picture and the details.
 {% endtab %}
 
-{% tab title="Action" %}
-**Reach for Action when you're mobile or moving fast.**
+{% tab title="Actionsheet" %}
+**Reach for Actionsheet when you want a simple, fast spreadsheet.** (Paid plans)
 
-- On-the-go task management
-- Quick capture without complex formatting
-- Simple, focused daily workflows
+- Lightweight client lists and lead trackers
+- Personal task queues you can scan on one screen
+- Simple logs of costs, quantities, or hours
 
-A clean, single-column layout with large touch targets and swipe-to-complete gestures.
+A streamlined companion to Table view: fewer columns, quicker to scan, on the same project data.
 {% endtab %}
 
 {% tab title="Gantt" %}
-**Reach for Gantt when timelines and dependencies are central.**
+**Reach for Gantt Chart when timelines and dependencies are central.** (Paid plans)
 
 - Project scheduling with dependencies
 - Resource allocation and capacity planning
@@ -140,7 +142,7 @@ Use **Gantt** to lay out the timeline and **Table** to track resources and struc
 
 {% step %}
 ### Execution
-Use **Board** to manage workflow stages and **Action** for daily, on-the-go task completion.
+Use **Board** to manage workflow stages and **Actionsheet** for a fast, simple list of action items.
 {% endstep %}
 
 {% step %}
@@ -150,7 +152,7 @@ Use **Calendar** to look back across the timeline and **Table** to review record
 {% endstepper %}
 
 {% hint style="info" %}
-Match the view to the job. Gantt is overkill for a simple checklist; Action View is too lightweight for detailed planning; Table is restrictive for open-ended brainstorming. Keep custom fields and naming consistent so switching views stays seamless.
+Match the view to the job. Gantt is overkill for a simple checklist; Actionsheet is too lightweight for detailed planning; Table is restrictive for open-ended brainstorming. Keep custom fields and naming consistent so switching views stays seamless.
 {% endhint %}
 
 ## Focus Management: Hide Completed Tasks (List View)
@@ -179,14 +181,14 @@ The progress bar at the top continues to fill as tasks are completed, even when 
 
 ## Fill with AI (Table View)
 
-In Table View, **Taskade EVE** can populate columns automatically by analyzing the data already in each row — turning the table into an AI-assisted processing tool.
+In Table View, **Fill with AI** can populate text and Select columns automatically by analyzing the data already in each row — turning the table into an AI-assisted processing tool.
 
 | AI Action | What It Does | Example Use |
 |-----------|--------------|-------------|
 | **Translate** | Convert text into another language | Multi-language customer data |
 | **Summarize** | Condense long text into key points | Turning feedback into takeaways |
 | **Extract** | Pull specific values out of unstructured text | Automated data entry |
-| **Categorize** | Auto-assign tags or labels | Consistent record organization |
+| **Categorize** | Auto-assign an option in a Select column | Consistent record organization |
 | **Custom analysis** | Run a prompt you define against each row | Tailored, business-specific insights |
 
 {% hint style="info" %}
@@ -199,18 +201,14 @@ Projects support custom fields for structured data storage:
 
 | Field Type | Description | Use Cases |
 |------------|-------------|-----------|
-| **Text** | Single or multi-line text | Names, descriptions, notes |
-| **Number** | Numeric values | Prices, quantities, scores |
-| **Date** | Date and time values | Deadlines, schedules, milestones |
-| **Select** | Dropdown options (single/multi) | Status, categories, priorities |
-| **Person** | Team member assignment | Assignees, owners, reviewers |
-| **Checkbox** | True/false toggle | Completion flags, approvals |
-| **URL** | Web links | References, resources, documents |
-| **Email** | Email addresses | Contact information |
-| **Phone** | Phone numbers | Contact information |
-| **File** | Attachments | Documents, images, assets |
-| **Formula** | Calculated values | Totals, averages, derived data |
-| **Relation** | Links to other projects | Dependencies, parent/child relationships |
+| **Text** | One line of text | Names, descriptions, notes |
+| **Number** | Numeric values (decimal, currency, or unit format) | Prices, quantities, scores |
+| **Date** | Calendar date picker | Deadlines, schedules, milestones |
+| **Select** | Pick a single option | Status, categories, priorities |
+| **Relationship** | Link to another project | Dependencies, parent/child relationships |
+| **Password** | Hashed sensitive value | Sign-in passwords for app users |
+
+Every task also has built-in fields: **Assignee**, **Due Date**, **Attachments**, and the task's completed state. Presets such as **Status**, **Priority**, and **Progress** add ready-made Select fields.
 
 ## View Selection Guide
 
@@ -222,14 +220,16 @@ Projects support custom fields for structured data storage:
 | Plan by date | Calendar or Gantt |
 | Brainstorm ideas | Mind Map |
 | Show team hierarchy | Org Chart |
-| Quick mobile capture | Action |
+| Keep a simple spreadsheet-style list | Actionsheet |
 
 ### API Considerations
 
-The REST and GraphQL APIs expose **data only**; view choice is a client-side concern. Use the `view` query parameter in certain list endpoints (or the `X-Taskade-View` header) to request server-optimized payloads for large Gantt or Calendar renders.
+The REST and GraphQL APIs expose **data only**; view choice is a client-side concern.
 
 **[API Documentation →](https://www.taskade.com/api/documentation/)**
 
 **[REST API v1 Guide →](../../apis-living-system-development/comprehensive-api-guide/README.md)**
 
 ---
+
+_Step-by-step guides on taskade.com/learn: [What Are Project Views?](https://www.taskade.com/learn/projects/project-views), [Custom Fields](https://www.taskade.com/learn/projects/custom-fields)._

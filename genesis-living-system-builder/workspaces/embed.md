@@ -22,7 +22,7 @@ description: >-
 
 You can embed entire Taskade projects on your website or blog and keep everyone on the same page. Any changes you make will be **instantly visible** to your audience. You can also embed external content inside Taskade projects.
 
-> **Genesis connection:** Genesis apps can be embedded on any website using iframe. Published apps also support custom domains for white-label embedding. See [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md).
+> **Genesis connection:** Taskade Genesis apps can be embedded on any website using iframe. Published apps also support custom domains on Pro and up. See [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md).
 
 ---
 
@@ -34,22 +34,24 @@ You can embed entire Taskade projects on your website or blog and keep everyone 
 |---|---|
 | 1 | Open a project and switch to your desired project view |
 | 2 | Click the **Share** button in the top-right corner |
-| 3 | Select the **< > Embed** tab |
-| 4 | Click **Copy** to copy the embed code |
+| 3 | Select **Invite to project**, then the **< > Embed** tab |
+| 4 | Click **Copy embed code** |
 | 5 | Paste the embed code into your website or blog HTML |
-| 6 | _(Optional)_ Customize theme, dimensions, and footer visibility |
+| 6 | _(Optional)_ Customize the view, theme, dimensions, and footer visibility before you copy |
 
 ### Embed Code Example
 
 ```html
 <iframe
-  src="https://www.taskade.com/embed/YOUR_PROJECT_ID"
   width="100%"
-  height="600"
-  frameborder="0"
-  style="border: none;"
+  height="400px"
+  scrolling="yes"
+  frameborder="no"
+  src="https://www.taskade.com/embed/YOUR_PROJECT_ID?as=list&share=view&view=YOUR_SHARE_TOKEN&theme=light"
 ></iframe>
 ```
+
+Copy the real code from the **Embed** tab. It carries the share token of the project. If you regenerate or disable the invite link, copy the embed code again.
 
 ---
 
@@ -57,11 +59,16 @@ You can embed entire Taskade projects on your website or blog and keep everyone 
 
 | Setting | Options | Description |
 |---|---|---|
-| **Cover image style** | Banner, Background, None | Controls how the project cover displays |
-| **Dimensions** | Custom width/height | Set iframe size (default: 80% width/height) |
-| **Theme** | Light, Dark, Auto | Match your website's color scheme |
-| **Editing access** | View only, Edit allowed | Control whether embedded viewers can edit |
-| **Footer visibility** | Show, Hide | Toggle the Taskade footer bar |
+| **Embed view** | Any project view | The view that visitors see first |
+| **Cover Image** | Banner, Background, None | Controls how the project cover displays |
+| **Dimensions** | Width (%), Height (px) | Set iframe size (default: 100% width, 400 px height) |
+| **Theme** | Light, Dark | Match your website's color scheme |
+| **Allow edit** | On, Off | Off gives a View Only embed. On gives a View & Edit embed |
+| **Hide footer** | On, Off | Toggle the Taskade footer bar |
+| **Hide views** | On, Off | Hide the view switcher in the embed |
+| **Hide copy** | On, Off | Hide the copy option in the embed |
+
+Cover Image, Allow edit, Hide footer, Hide views, and Hide copy need a workspace on a paid plan.
 
 ---
 
@@ -119,3 +126,7 @@ Genesis apps can be embedded on any website:
 | [Editing & Formatting](./editing-formatting.md) | Format and style your project content |
 | [Markdown Support](./markdown.md) | Use Markdown in embedded projects |
 | [Taskade for Teams](./teams.md) | Share embedded projects with teams |
+
+---
+
+_Step-by-step guide on taskade.com/learn: [Embed Taskade](https://www.taskade.com/learn/projects/embed-taskade)._

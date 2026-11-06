@@ -326,3 +326,7 @@ I run a [INDUSTRY] and [USERS] need to [PROBLEM] because [CONTEXT]. They should 
 ---
 
 **Remember:** The best Genesis apps are built iteratively. Start with something simple that works, get it in front of real users, and improve based on their actual needs and feedback.
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Your First Taskade Genesis Prompt](https://www.taskade.com/learn/genesis/first-prompt), [A Maker's Guide to AI Prompts](https://www.taskade.com/learn/genesis/prompt-guide)._

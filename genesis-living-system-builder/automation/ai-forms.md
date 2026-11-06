@@ -1,14 +1,14 @@
 ---
 description: >-
-  Build Taskade AI Forms with smart validation, sentiment analysis, and conditional questions that auto-route responses into your workspace and CRM.
+  Build Taskade AI Forms that start an automation on every submission, then use AI steps to analyze, categorize, and route responses into your workspace and CRM.
 ---
 
 # AI Forms: Intelligent Data Collection
 
-**Create intelligent forms that think, adapt, and integrate seamlessly with your Taskade workspace. AI Forms go beyond traditional form builders by understanding context, validating responses intelligently, and automating follow-up actions.**
+**Create forms that start an automation the moment someone submits them. AI Forms collect the data, and the AI steps in your automation analyze each response, categorize it, and run the follow-up actions.**
 
 {% hint style="success" %}
-**New to AI Forms?** Start with a simple feedback form and watch how AI transforms basic data collection into intelligent user experiences that learn and improve over time.
+**New to AI Forms?** Start with a simple feedback form, then add one AI step after the trigger to see how a basic form turns into an automated workflow.
 {% endhint %}
 
 ***
@@ -17,21 +17,21 @@ description: >-
 
 ### **Traditional Forms vs. AI Forms**
 
-| Feature               | Traditional Forms             | AI Forms                      |
-| --------------------- | ----------------------------- | ----------------------------- |
-| **Field Validation**  | Basic rules (email, required) | Smart context validation      |
-| **User Experience**   | Static questions              | Dynamic, adaptive questions   |
-| **Data Processing**   | Store raw responses           | AI analysis + insights        |
-| **Follow-up Actions** | Manual review required        | Automated intelligent routing |
-| **Integration**       | Basic webhook/email           | Deep workspace integration    |
+| Feature               | Traditional Forms             | AI Forms                                          |
+| --------------------- | ----------------------------- | ------------------------------------------------- |
+| **Data Processing**   | Store raw responses           | AI steps analyze each response                    |
+| **Follow-up Actions** | Manual review required        | Automation routes each submission                 |
+| **Integration**       | Basic webhook/email           | Taskade projects, agents, and 100+ integrations   |
+| **Result Display**    | Static thank-you page         | Custom end page after submission                  |
 
 ### **Key AI Capabilities**
 
-* **Smart Validation**: AI understands context and validates responses intelligently
-* **Dynamic Questions**: Forms adapt based on previous answers
-* **Sentiment Analysis**: Automatically detect tone and emotion in text responses
-* **Auto-categorization**: Responses are automatically tagged and organized
-* **Intelligent Routing**: AI determines the best next action for each submission
+The form is the trigger. The AI work happens in the steps that follow it:
+
+* **Sentiment Analysis**: Add **Categorize with AI** with the Sentiment Analysis preset to detect the tone of text responses
+* **Auto-categorization**: Use **Categorize with AI** or **Ask Agent With Structured Output** to tag and organize responses
+* **Intelligent Routing**: Add a **Branch** step on the AI result to pick the next action
+* **File Reading**: Add **Convert File to Text** to read an uploaded file, including a scanned PDF or a phone photo
 
 ***
 
@@ -41,21 +41,23 @@ description: >-
 
 #### **Option A: AI Generation (Recommended)**
 
+In the Automations tab, click **Add automation → Generate With AI** and pick **Form** mode. Describe the form and what happens after a submission:
+
 ```
 "Create a customer satisfaction survey for my restaurant with:
-- Star ratings for food quality, service speed, and atmosphere
+- Ratings for food quality, service speed, and atmosphere
 - Optional text feedback section
 - Photo upload for meal pictures
-- Automatic thank you message
-- If rating is below 3 stars, immediately notify manager via Slack"
+- A thank-you end page
+- If rating is below 3, notify the manager in Slack"
 ```
 
 #### **Option B: Form Builder Interface**
 
 1. Go to your workspace **Automations** tab
-2. Click **"Create automation flow"**
-3. Add **"AI Forms"** as your trigger
-4. Configure form settings and fields
+2. Create an automation: **Create with AI**, **Browse templates**, or **Start from scratch**
+3. Click **➕ Add Trigger → Form**
+4. Configure form settings and fields in the sidebar
 5. Add automation actions for processing responses
 
 ### **Step 2: Configure Form Settings**
@@ -71,105 +73,63 @@ description: >-
 
 AI Forms include customizable field types to collect different kinds of information:
 
-| Field Type          | Description                             | Best For                       | AI Enhancement                             |
+| Field Type          | Description                             | Best For                       | Pair With                                  |
 | ------------------- | --------------------------------------- | ------------------------------ | ------------------------------------------ |
-| **Short Text**      | For short answers like a name or title  | Names, titles, keywords        | Auto-validation, spell check               |
-| **Long Text**       | For longer answers like comments        | Feedback, descriptions         | Sentiment analysis, categorization         |
-| **Option Dropdown** | A list of choices where one is selected | Categories, preferences        | Smart suggestions based on context         |
-| **Number**          | For numbers like age or quantity        | Ages, quantities, scores       | Range validation, statistical analysis     |
-| **File**            | Lets users upload files                 | Documents, images, attachments | Content analysis, OCR processing           |
-| **Phone**           | For phone numbers                       | Contact information            | Format validation, region detection        |
-| **Email**           | For email addresses                     | Contact information            | Domain validation, duplicate detection     |
-| **Date**            | A calendar to pick a date               | Appointments, deadlines        | Smart date suggestions, conflict detection |
-| **Rating**          | For giving ratings (stars/numbers)      | Satisfaction, quality scores   | Trend analysis, alert thresholds           |
-| **Single-Select**   | Allow one option from predefined list   | Multiple choice questions      | Response pattern analysis                  |
-| **Multi-Select**    | Allow multiple options                  | Interests, features, tags      | Correlation analysis, preference mapping   |
+| **Short Text**      | For short answers like a name or title  | Names, titles, keywords        | Add Task, Insert Row                       |
+| **Long Text**       | For longer answers like comments        | Feedback, descriptions         | Categorize with AI (sentiment, topic)      |
+| **Option Dropdown** | A list of choices where one is selected | Categories, preferences        | Branch on the selected option              |
+| **Number**          | For numbers like age or quantity        | Ages, quantities, scores       | Filter Data on a range                     |
+| **File**            | Lets users upload a file                | Documents, images, attachments | Convert File to Text, then Ask Agent       |
+| **Phone**           | For phone numbers                       | Contact information            | Twilio Send SMS, WhatsApp Business         |
+| **Email**           | For email addresses                     | Contact information            | Gmail Send Email, CRM contact              |
+| **Date**            | A calendar to pick a date               | Appointments, deadlines        | Google Calendar Create Event               |
+| **Rating**          | For giving a rating                     | Satisfaction, quality scores   | Branch on low ratings                      |
+| **Single-Select**   | Allow one option from predefined list   | Multiple choice questions      | Branch on the answer                       |
+| **Multi-Select**    | Allow multiple options                  | Interests, features, tags      | Loop over the selected options             |
 | **Checkbox**        | A yes/no checkbox submitting true/false | Consent boxes, opt-ins, toggles | Branch or filter automations on the value |
-| **URL**             | Accept web addresses or links           | Website links, references      | Link validation, content preview           |
+| **URL**             | Accept web addresses or links           | Website links, references      | Scrape Webpage                             |
+
+A **File** upload is saved with the submission and shows up in the Media tab.
 
 ### **Step 4: Configure AI-Powered Processing**
 
 #### **Smart Rating Fields**
 
-```yaml
-Field Type: AI Rating
-Configuration:
-  - Scale: 1-5 stars or 1-10 numeric
-  - AI Analysis: Sentiment correlation with text responses
-  - Auto-flagging: Ratings below threshold trigger alerts
-  - Visual: Star icons, thumbs up/down, or custom emojis
+```
+Trigger: Form (Rating field: "Overall rating")
+Branch: If "Overall rating" is less than 3
+          → Slack → Send Channel Message (#managers)
+        Otherwise
+          → Add Task (feedback log)
 ```
 
 #### **Intelligent Text Fields**
 
-```yaml
-Field Type: AI Text Analysis
-Configuration:
-  - Sentiment Detection: Positive, negative, neutral scoring
-  - Keyword Extraction: Automatic tag generation
-  - Language Detection: Multi-language form support
-  - Response Quality: AI flags incomplete or unclear responses
+```
+Trigger: Form (Long Text field: "Feedback")
+Action: Categorize with AI (Sentiment Analysis preset, input = "Feedback")
+Action: Update Custom Fields (Sentiment)
 ```
 
 #### **Dynamic Question Logic**
 
-```yaml
-Field Type: Conditional AI Questions
-Configuration:
-  - Trigger Conditions: Based on previous answers
-  - AI-Generated Follow-ups: Context-aware next questions
-  - Progressive Disclosure: Reveal questions as needed
-  - Smart Branching: AI determines optimal question path
-```
+Form questions are fixed. To act differently on different answers, add **Branch** steps after the trigger.
 
-### **Step 3: Set Up AI Processing Rules**
+### **Step 5: Set Up AI Processing Rules**
 
 #### **Automatic Response Analysis**
 
-```javascript
-// Example AI processing configuration
-{
-  "aiAnalysis": {
-    "sentiment": {
-      "enabled": true,
-      "thresholds": {
-        "negative": -0.5,
-        "positive": 0.5
-      }
-    },
-    "categorization": {
-      "enabled": true,
-      "categories": ["complaint", "compliment", "suggestion", "question"]
-    },
-    "urgency": {
-      "enabled": true,
-      "urgentKeywords": ["urgent", "asap", "emergency", "broken"]
-    }
-  }
-}
+```
+Trigger: Form
+Action: Ask Agent With Structured Output
+  Output: Category (Single Select: complaint, compliment, suggestion, question)
+          Urgent (Boolean)
+Branch: If Urgent is true → Slack → Send Direct Message (on-call)
 ```
 
 #### **Smart Validation Rules**
 
-```javascript
-// AI-powered validation examples
-{
-  "smartValidation": {
-    "emailField": {
-      "aiCheck": "Verify email domain exists and looks professional",
-      "suggestions": "Offer corrections for common typos"
-    },
-    "phoneField": {
-      "aiFormat": "Detect country and format appropriately",
-      "validation": "Check if number format is valid for detected country"
-    },
-    "textFields": {
-      "minQuality": "Ensure responses are complete and meaningful",
-      "languageDetect": "Auto-detect language and respond appropriately"
-    }
-  }
-}
-```
+Each field type checks its own format, for example Email, Phone, Number, Date, and URL. For checks after submission, add a **Filter Data** step, or an **Ask Agent With Structured Output** step that flags incomplete answers.
 
 ***
 
@@ -179,53 +139,18 @@ Configuration:
 
 #### **Smart Theme Adaptation**
 
-```css
-/* AI automatically adapts these elements based on your workspace branding */
-.ai-form-container {
-  --primary-color: var(--workspace-primary);
-  --accent-color: var(--workspace-accent);
-  --font-family: var(--workspace-font);
-}
-
-/* AI-generated responsive breakpoints */
-@media (max-width: 768px) {
-  .ai-form-field {
-    font-size: 1.1em; /* AI optimizes for mobile readability */
-  }
-}
-```
+Set the title, the description, the submit button text, and the end page text in the trigger sidebar.
 
 #### **Dynamic Visual Elements**
 
-* **Progress Indicators**: AI calculates optimal completion visualization
-* **Smart Field Ordering**: AI reorders fields based on completion patterns
-* **Contextual Help**: AI provides relevant hints based on user behavior
-* **Accessibility Auto-enhancements**: AI adds ARIA labels and screen reader support
+* **Hide Branding**: Remove the "Powered by Taskade" footer from your public form (paid plans)
+* **Form End Page**: Show a custom end screen after submission
 
 ### **Multi-Step Forms with AI Logic**
 
 #### **Smart Step Progression**
 
-```yaml
-Step Configuration:
-  Step 1: "Basic Information"
-    - AI determines required vs. optional fields
-    - Smart field pre-population from known data
-  
-  Step 2: "Detailed Feedback" 
-    - Only shown if Step 1 indicates detailed feedback needed
-    - AI generates contextual questions based on Step 1 responses
-  
-  Step 3: "Follow-up Preferences"
-    - AI predicts user preferences based on response patterns
-    - Smart default selections
-```
-
-#### **Intelligent Completion Optimization**
-
-* **Abandonment Prevention**: AI detects when users might leave and offers assistance
-* **Smart Save & Resume**: AI automatically saves progress at optimal points
-* **Completion Prediction**: AI estimates time remaining and adjusts accordingly
+A form is one page. To collect more information later, send a second form link from the automation, for example in a follow-up email.
 
 ***
 
@@ -233,7 +158,7 @@ Step Configuration:
 
 ### **Start with AI Form Templates**
 
-Don't want to build forms from scratch? Choose from pre-built templates:
+Don't want to build forms from scratch? Click **➕ Add Trigger**, go to the **Forms** category, and choose a template on the right. Then customize it. Common uses:
 
 | Template Type          | Use Case                         | Included Fields                         | Automation Actions                       |
 | ---------------------- | -------------------------------- | --------------------------------------- | ---------------------------------------- |
@@ -246,28 +171,25 @@ Don't want to build forms from scratch? Choose from pre-built templates:
 
 ### **Share and Use Forms**
 
-Once your form is ready, you have multiple sharing options:
+1. Go to the **Automations** tab and open your form automation.
+2. Go to the **Form** tab at the top.
+3. Use the run button to test the form.
+4. Click **Publish** in the top-right corner to share the form.
 
 #### **Public Link Sharing**
 
-* Get a direct URL to share via email, social media, or messaging
-* Customize the form URL for branding consistency
-* Track submission analytics and response rates in real-time
+* Share the form link by email, social media, or messaging
+* Publish forms on your own domain with a [custom domain](https://www.taskade.com/learn/genesis/custom-domains) (Pro and up)
+* See every submission in the automation **Runs** tab
 
 #### **Website Embedding**
 
-```html
-<iframe src="https://forms.taskade.com/your-form-id" 
-        width="100%" height="600px" frameborder="0">
-</iframe>
-```
+You can embed a published form on your website as well as share its link. Click **Publish**, then copy the **Embed Code**.
 
 #### **Configure Form Visibility**
 
-* **Public**: Anyone with the link can access
-* **Workspace Only**: Restricted to team members
-* **Password Protected**: Require password for access
-* **Time-Limited**: Set expiration date for form availability
+* **Public link**: Anyone with the link can open and submit the form
+* **Require Password**: Anyone who opens the link must enter the password before viewing or submitting (Pro and up)
 
 ***
 
@@ -277,84 +199,47 @@ Once your form is ready, you have multiple sharing options:
 
 #### **Automatic Project Creation**
 
-```javascript
-// Form submissions automatically create structured data
-{
-  "formSubmission": {
-    "source": "Customer Feedback Form",
-    "autoActions": [
-      {
-        "type": "createProject",
-        "template": "feedback-analysis",
-        "data": {
-          "customer": "{{form.name}}",
-          "rating": "{{form.overall_rating}}",
-          "sentiment": "{{ai.sentiment_score}}",
-          "category": "{{ai.auto_category}}",
-          "priority": "{{ai.calculated_priority}}"
-        }
-      }
-    ]
-  }
-}
+```
+Trigger: Form (Customer Feedback)
+Action: Categorize with AI (Customer Feedback Analysis preset)
+Action: Create Project From Template ("Feedback analysis")
+Action: Add Task (customer name, rating, and category)
 ```
 
 #### **AI Agent Collaboration**
 
-```yaml
-Agent Integration:
-  - Response Analysis: AI agent reviews all submissions
-  - Quality Scoring: Agent rates response completeness and clarity
-  - Follow-up Suggestions: Agent recommends next actions
-  - Pattern Recognition: Agent identifies trends across submissions
-```
+* **Response Analysis**: An **Ask Agent** step reviews each submission
+* **Quality Scoring**: **Ask Agent With Structured Output** returns a score field
+* **Follow-up Suggestions**: The agent drafts the next step, and a person reviews it
+* **Pattern Recognition**: A weekly **Schedule** automation with **Find Task(s)** and **Ask Agent** summarizes trends
 
 ### **External Service Integration**
 
 #### **CRM Synchronization**
 
-```javascript
-{
-  "crmSync": {
-    "service": "hubspot", // or "salesforce", "pipedrive", etc.
-    "mapping": {
-      "contact": {
-        "email": "{{form.email}}",
-        "name": "{{form.full_name}}",
-        "company": "{{form.company}}"
-      },
-      "deal": {
-        "value": "{{ai.estimated_deal_size}}",
-        "stage": "{{ai.qualification_stage}}",
-        "priority": "{{ai.lead_score}}"
-      }
-    },
-    "aiEnhancements": {
-      "leadScoring": "AI calculates lead quality score",
-      "nextBestAction": "AI suggests optimal follow-up timing and method"
-    }
-  }
-}
 ```
+Trigger: Form (Lead form: email, full name, company)
+Action: Categorize with AI (Lead Qualification preset)
+Action: HubSpot → Create New Contact
+Action: HubSpot → Create New Deal (stage from the qualification)
+```
+
+Premium integrations such as HubSpot and Salesforce need a paid plan. Pipedrive needs Pro and up.
 
 #### **Communication Automation**
 
-```yaml
-Smart Notifications:
-  High Priority (AI Score > 8):
-    - Immediate Slack notification to sales team
-    - SMS alert to designated manager
-    - Calendar event created for follow-up call
-  
-  Medium Priority (AI Score 5-8):
-    - Email summary to team lead
-    - Task created in project management system
-    - Follow-up scheduled for next business day
-  
-  Low Priority (AI Score < 5):
-    - Added to weekly digest
-    - Automated thank you email sent
-    - Data stored for trend analysis
+```
+Branch on the Lead Qualification result:
+  "Hot Lead":
+    - Slack → Send Channel Message (#sales)
+    - Twilio → Send SMS (manager)
+    - Google Calendar → Create Event (follow-up call)
+  "Warm Lead":
+    - Send an email (team lead)
+    - Add Task (sales pipeline)
+  "Cold Lead":
+    - Gmail → Send Email (thank you)
+    - Google Sheets → Insert Row (for trend analysis)
 ```
 
 ***
@@ -365,32 +250,18 @@ Smart Notifications:
 
 #### **Completion Intelligence**
 
-* **Drop-off Analysis**: AI identifies where users abandon forms and suggests improvements
-* **Time-to-Complete Optimization**: AI recommends form length adjustments
-* **Field Performance**: AI ranks which fields provide the most valuable data
-* **User Experience Scoring**: AI rates overall form usability
+The automation **Runs** tab lists each submission with the input and output of every step.
 
 #### **Response Quality Metrics**
 
-```javascript
-{
-  "qualityMetrics": {
-    "completeness": "Percentage of meaningful responses",
-    "sentiment": "Overall emotional tone of submissions", 
-    "actionability": "How many responses led to concrete actions",
-    "engagement": "Time spent and interaction depth per submission"
-  }
-}
-```
+To track quality, save the AI results of each submission (for example sentiment and category) to a project or a Google Sheet. Then review or chart that data.
 
 ### **Smart Reporting Dashboard**
 
 #### **Auto-Generated Insights**
 
-* **Weekly Intelligence Reports**: AI summarizes key trends and patterns
-* **Anomaly Detection**: AI flags unusual response patterns
-* **Predictive Analytics**: AI forecasts response volumes and trends
-* **Actionable Recommendations**: AI suggests form improvements and process optimizations
+* **Weekly Intelligence Reports**: A **Schedule** automation finds the week's submissions and asks an agent to summarize trends
+* **Actionable Recommendations**: Ask the agent to suggest form and process improvements in the same summary
 
 ***
 
@@ -400,45 +271,7 @@ Smart Notifications:
 
 #### **Direct Website Embed**
 
-```html
-<!-- Simple embed for any website -->
-<div id="taskade-ai-form" data-form-id="your-form-id"></div>
-<script src="https://cdn.taskade.com/ai-forms/embed.js"></script>
-<script>
-  TaskadeAIForms.render('taskade-ai-form', {
-    formId: 'your-form-id',
-    theme: 'auto', // 'light', 'dark', or 'auto'
-    aiFeatures: {
-      smartValidation: true,
-      autoComplete: true,
-      progressiveDisclosure: true
-    }
-  });
-</script>
-```
-
-#### **React Component Integration**
-
-```jsx
-import { TaskadeAIForm } from '@taskade/ai-forms-react';
-
-function ContactPage() {
-  return (
-    <TaskadeAIForm
-      formId="your-form-id"
-      onSubmit={(data, aiInsights) => {
-        console.log('Form data:', data);
-        console.log('AI insights:', aiInsights);
-      }}
-      aiConfig={{
-        realTimeValidation: true,
-        smartSuggestions: true,
-        sentimentAnalysis: true
-      }}
-    />
-  );
-}
-```
+Publish the form, then share its link or embed it on your website.
 
 ### **API Access**
 
@@ -448,25 +281,15 @@ AI Forms does not currently expose a public REST API for reading submissions in 
 
 ### **Webhook Integration**
 
-```javascript
-// Receive real-time form submissions with AI insights
-app.post('/taskade-form-webhook', (req, res) => {
-  const { submission, aiAnalysis } = req.body;
-  
-  // AI automatically provides:
-  // - Sentiment analysis
-  // - Category classification
-  // - Priority scoring
-  // - Suggested next actions
-  
-  if (aiAnalysis.priority === 'high') {
-    // Immediate action required
-    sendSlackAlert(submission);
-    createUrgentTask(submission);
-  }
-  
-  res.status(200).send('OK');
-});
+To send each submission to your own server, add a **Send HTTP Request** step after the form trigger:
+
+```
+Trigger: Form
+Action: Categorize with AI (Support Ticket Prioritization)
+Action: Send HTTP Request
+  Method: POST
+  URL: https://your-server.example.com/taskade-form
+  Body (JSON): the form fields and the AI result
 ```
 
 ***
@@ -477,35 +300,30 @@ app.post('/taskade-form-webhook', (req, res) => {
 
 #### **AI-Driven UX Principles**
 
-* **Progressive Disclosure**: Start with essential fields, let AI determine when to reveal more
-* **Smart Defaults**: Use AI to pre-populate fields based on user context
-* **Contextual Help**: AI provides assistance exactly when and where users need it
-* **Adaptive Layout**: AI adjusts form layout based on device and user behavior patterns
+* **Start small**: Ask only for the fields your automation uses
+* **Use the right field type**: Email, Phone, Date, and URL fields check their own format
+* **Use a Checkbox for consent**: Branch or filter on the true/false value
 
 #### **Response Quality Enhancement**
 
-* **Question Clarity**: AI analyzes question comprehension and suggests improvements
-* **Response Validation**: AI ensures responses are complete and meaningful
-* **Follow-up Optimization**: AI determines the best questions to ask next
-* **Abandonment Prevention**: AI detects frustration signals and offers help
+* **Question Clarity**: Write short, specific questions
+* **Response Validation**: Add a Filter Data step, or an AI step that flags incomplete answers
+* **Test first**: Submit a test entry and read the run before you publish
 
 ### **Data Privacy & Security**
 
 #### **AI-Enhanced Privacy Controls**
 
-* **Smart Data Classification**: AI automatically identifies and protects sensitive information
-* **Consent Management**: AI ensures proper consent collection for data processing
-* **Retention Optimization**: AI suggests optimal data retention periods
-* **Anonymization**: AI can automatically anonymize responses while preserving insights
+* **Require Password**: Protect a form that is not for the public (Pro and up)
+* **Collect less**: Do not ask for data the automation does not need
+* **Review the steps**: Check which connected tools receive each submission
 
 ### **Performance Optimization**
 
 #### **Loading Speed & Responsiveness**
 
-* **Lazy Loading**: AI determines optimal field loading sequence
-* **Caching Strategy**: AI-powered caching for faster form delivery
-* **Mobile Optimization**: AI ensures perfect mobile experience across devices
-* **Accessibility**: AI automatically adds accessibility enhancements
+* Put **Filter Data** early, so later steps run only for submissions that need them
+* Keep AI steps after the filter to save AI credits
 
 ***
 
@@ -513,50 +331,33 @@ app.post('/taskade-form-webhook', (req, res) => {
 
 ### **Customer Feedback Survey**
 
-```yaml
+```
 Use Case: Restaurant feedback collection
-AI Features:
-  - Photo analysis of meal images
-  - Sentiment analysis of written feedback
-  - Automatic routing of complaints to managers
-  - Trend analysis of service quality over time
-
-Results:
-  - 40% increase in response rates
-  - 60% faster issue resolution
-  - Automated insights reduce manual analysis time by 80%
+Steps:
+  - Convert File to Text or Ask Agent on uploaded meal photos
+  - Categorize with AI (Sentiment Analysis) on written feedback
+  - Branch: route complaints to managers
+  - Weekly Schedule automation: summarize service quality trends
 ```
 
 ### **Lead Generation Form**
 
-```yaml
+```
 Use Case: B2B lead qualification
-AI Features:
-  - Company information auto-completion
-  - Lead scoring based on responses
-  - Optimal follow-up timing prediction
-  - Integration with sales CRM
-
-Results:
-  - 35% improvement in lead quality
-  - 50% reduction in qualification time
-  - 25% increase in conversion rates
+Steps:
+  - Categorize with AI (Lead Qualification)
+  - HubSpot → Create New Contact
+  - Branch: Hot leads → Slack alert to sales
 ```
 
 ### **Event Registration System**
 
-```yaml
+```
 Use Case: Conference attendee registration
-AI Features:
-  - Smart session recommendations based on interests
-  - Dietary restriction and accessibility auto-detection
-  - Networking match suggestions
-  - Capacity management optimization
-
-Results:
-  - 45% higher attendee satisfaction scores
-  - 30% more meaningful networking connections
-  - 90% reduction in manual coordination tasks
+Steps:
+  - Ask Agent: recommend sessions from the attendee's interests
+  - Gmail → Send Email (confirmation with the recommendations)
+  - Google Sheets → Insert Row (attendee list)
 ```
 
 ***
@@ -567,27 +368,30 @@ Results:
 
 #### **AI Analysis Not Working**
 
-* **Check API Limits**: Ensure you haven't exceeded AI processing quotas
-* **Validate Form Configuration**: Confirm AI features are properly enabled
-* **Response Quality**: AI requires meaningful text responses for analysis
-* **Language Support**: Verify AI supports the language of responses
+* **Check AI credits**: AI steps use the workspace AI credits
+* **Check the runs**: Open the run in the **Runs** tab and read the input and output of each step
+* **Response Quality**: AI steps need meaningful text responses for analysis
+* **Check the input**: Make sure that the AI step points at the right form field with the `@` picker
 
 #### **Integration Problems**
 
-* **Webhook Validation**: Ensure webhook endpoints are properly configured
-* **Data Mapping**: Verify field mapping between form and destination system
-* **Authentication**: Check API tokens and permissions
-* **Rate Limits**: Monitor API usage and implement proper error handling
+* **Plan**: Premium integrations need a paid plan
+* **Data Mapping**: Verify the field mapping between the form and the destination step
+* **Authentication**: Reconnect the integration if its connection expired
+* **Rate Limits**: Add a Delay step for a service with rate limits
 
 ### **Getting Help**
 
 * **Documentation**: [Taskade Developer API](../../apis-living-system-development/developer-home.md)
-* **Community**: [AI Forms Discussion Forum](https://community.taskade.com/ai-forms)
-* **Support**: Contact support for advanced AI configuration assistance
+* **Support**: Contact support for advanced configuration assistance
 * **Templates**: Browse pre-built AI form templates in your workspace
 
 ***
 
-**🚀 Ready to transform your data collection with AI?** Start with a simple feedback form and discover how artificial intelligence can make every form submission more valuable and actionable.
+**🚀 Ready to transform your data collection with AI?** Start with a simple feedback form and discover how AI steps can make every form submission more valuable and actionable.
 
 _For more advanced AI integrations, explore our_ [_AI Agents documentation_](../ai-features/ai-agents-getting-started.md) _and_ [_Automation workflows_](./)_._
+
+---
+
+_Step-by-step guide on taskade.com/learn: [AI Forms](https://www.taskade.com/learn/automation/forms-trigger)._

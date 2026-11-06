@@ -166,6 +166,10 @@ Create specialized commands for specific business tasks:
 
 ### Agent Teams and Collaboration
 
+{% hint style="info" %}
+AI Teams (multi-agent teams) are available on **Pro and up**.
+{% endhint %}
+
 **Multi-Agent Workflows:**
 
 ```
@@ -213,10 +217,10 @@ Transform your private AI agents into public resources accessible to anyone:
 
 **Public Agent Features:**
 
-* Unique public URL for each agent (e.g., `agent.taskade.com/your-support-bot`)
+* Unique public URL for each agent (e.g., `taskade.com/a/support-bot-01JK82XFM2`)
 * Customizable branding and appearance
-* Usage analytics and conversation insights
-* Community discovery through the agent marketplace
+* Visitor conversations collected in the agent's **Visitor Inbox**
+* Optional password (paid plans) and per-tool permissions for visitors
 
 ### Embeddable AI Agents
 
@@ -277,7 +281,7 @@ Connect your app to your existing business tools and create sophisticated workfl
 
 ### Enterprise-Grade Integrations
 
-Genesis apps can connect to **100+ business tools** through Taskade's unified integration system:
+Genesis apps can connect to **100+ business tools** through Taskade's unified integration system. The Free plan includes the standard connectors only. Premium integrations need a paid plan.
 
 #### Communication & Collaboration
 
@@ -289,22 +293,19 @@ Genesis apps can connect to **100+ business tools** through Taskade's unified in
 #### Productivity & Storage
 
 * **Google Workspace** (Sheets, Docs, Drive, Calendar) - Document management and scheduling
-* **Microsoft 365** - Office integration and file synchronization
-* **Dropbox, Box, OneDrive** - File storage and sharing
+* **Microsoft Outlook, Microsoft To Do** - Email, calendar, and task synchronization
 * **Trello, Asana, Monday.com** - Project management integration
 
 #### Sales & Marketing
 
 * **HubSpot, Salesforce, Pipedrive** - CRM synchronization and lead management
-* **Mailchimp, Constant Contact** - Email marketing automation
-* **Stripe, PayPal** - Payment processing and subscription management
+* **Mailchimp, Brevo** - Email marketing automation
+* **Stripe** - Payment processing and subscription management
 * **LinkedIn, X/Twitter** - Social media management and posting
 
 #### Specialized Business Tools
 
-* **QuickBooks, Xero** - Accounting and financial management
-* **Shopify, WooCommerce** - E-commerce platform integration
-* **Zoom, Calendly** - Meeting scheduling and video conferencing
+* **Calendly** - Meeting scheduling
 * **WordPress** - Content management and publishing
 
 ### Advanced Integration Examples
@@ -332,6 +333,10 @@ Genesis apps can connect to **100+ business tools** through Taskade's unified in
 Create sophisticated permission systems for different types of users.
 
 ### Role-Based Access
+
+{% hint style="warning" %}
+App sign-in (App Users) works on every plan, Free included, and confirms who a visitor is. It does not hide other people's rows. To show each user only their own records, turn on the **Private per-user data** (row scoping) setting, which is off by default, and test it with a second account.
+{% endhint %}
 
 **Define user roles:**
 
@@ -528,6 +533,8 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 
 ### Webhook Automation
+
+Automation webhooks are available on **Pro and up**.
 
 **Real-time updates:**
 
@@ -732,34 +739,32 @@ Ready to unlock Genesis's full potential? Here are advanced prompts and real-wor
 
 ## **Genesis Version History**
 
-Genesis automatically tracks every change you make to your apps, creating a complete development timeline with one-click restoration.
+Taskade Genesis saves revisions of your app as you build. Open **Version history** to preview a saved revision and restore it.
 
 ### **What Gets Tracked**
 
-Every modification to your Genesis app is automatically recorded:
+Each saved revision captures the app itself:
 
 | **Change Type**            | **Details Captured**                          |
 | -------------------------- | --------------------------------------------- |
-| **Content Modifications**  | Text updates, layout changes, field additions |
-| **Configuration Changes**  | Settings updates, permission modifications    |
-| **Feature Additions**      | New functionality, tool integrations          |
-| **Data Structure Changes** | Field modifications, relationship updates     |
-| **Automation Updates**     | Workflow changes, trigger modifications       |
+| **Content Modifications**  | Text updates, layout changes                  |
+| **Feature Additions**      | New pages, components, and functionality      |
+
+A restore brings back the app's design and code. Your project data stays as it is.
 
 ### **Restoration Made Simple**
 
-**One-Click Rollback**: Instantly restore any previous version
+**Restore Version**: Bring back any saved revision
 
-* View side-by-side comparisons of changes
-* Restore specific sections without affecting other parts
-* Maintain user data while reverting functionality
+* Preview a revision before you restore it
+* See which revision is live: the **Live** badge marks the version visitors use
+* After a restore, a manually published app asks you to publish the restored version
 
 ### **Professional Development Benefits**
 
 * **Client Confidence**: Show complete development history
 * **Safe Experimentation**: Try bold changes knowing you can always revert
-* **Compliance**: Maintain complete records for regulated industries
-* **Team Coordination**: See who made what changes when
+* **Milestone Backups**: Export important versions to GitHub for an external copy
 
 ***
 
@@ -804,15 +809,14 @@ Database projects are smart storage systems that:
 
 ## **Advanced App Publishing & Distribution**
 
-### **Multi-Environment Deployment**
+### **Preview and Live Versions**
 
-Deploy your Genesis apps across different environments for professional development workflows:
+Each Genesis app has a working version and a live version:
 
-| **Environment** | **Purpose**                 | **Features**                         |
-| --------------- | --------------------------- | ------------------------------------ |
-| **Development** | Testing and iteration       | Full editing access, debug mode      |
-| **Staging**     | Client preview and approval | Limited editing, feedback collection |
-| **Production**  | Live public access          | Optimized performance, analytics     |
+| **Version**         | **Purpose**                 | **Features**                                  |
+| ------------------- | --------------------------- | --------------------------------------------- |
+| **Current**         | Testing and iteration       | Full editing access in the builder and preview |
+| **Live**            | Live public access          | The revision visitors see after you publish   |
 
 ### **Custom Domain Integration**
 
@@ -832,9 +836,8 @@ See [Custom Domains & Branding](custom-domains.md).
 
 | **Security Feature**     | **Implementation**            | **Use Case**           |
 | ------------------------ | ----------------------------- | ---------------------- |
-| **Password Protection**  | App-level authentication      | Client-specific access |
-| **IP Restrictions**      | Whitelist specific networks   | Corporate security     |
-| **Time-Based Access**    | Schedule availability windows | Limited-time campaigns |
+| **Password Protection**  | App-level password (Pro and up) | Client-specific access |
+| **App Sign-In**          | Email sign-in for app users (every plan) | Client portals |
 | **User Role Management** | Granular permission control   | Team collaboration     |
 
 ### **Performance Optimization**
@@ -848,7 +851,7 @@ See [Custom Domains & Branding](custom-domains.md).
 
 **Performance Monitoring:**
 
-* **Real-Time Analytics** - User behavior and performance metrics
+* **Real-Time Analytics** - Visits, traffic sources, and device metrics (Business and up)
 * **Error Tracking** - Automatic bug detection and reporting
 * **Load Testing** - Simulate high-traffic scenarios
 * **Performance Alerts** - Notifications for performance issues
@@ -858,3 +861,7 @@ See [Custom Domains & Branding](custom-domains.md).
 **Ready to implement advanced features?** Start with one area that would have the biggest impact on your business, implement it thoroughly, and then gradually add more sophisticated capabilities.
 
 **Need help with complex implementations?** The Genesis AI agent can guide you through setting up advanced features and troubleshooting complex workflows.
+
+---
+
+_Step-by-step guides on taskade.com/learn: [App Revisions & Restore](https://www.taskade.com/learn/genesis/version-history), [Publish Agents Publicly](https://www.taskade.com/learn/agents/public-agents)._

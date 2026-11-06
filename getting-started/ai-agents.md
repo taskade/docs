@@ -64,9 +64,20 @@ Every URL below is public and works without a sign-in.
 | Developer docs index | [`taskade.com/docs/llms.txt`](https://www.taskade.com/docs/llms.txt). Each page also has a Markdown copy: add `.md` to its URL |
 | Help center index | [`taskade.com/learn/llms.txt`](https://www.taskade.com/learn/llms.txt) |
 | Site index | [`taskade.com/llms.txt`](https://www.taskade.com/llms.txt) |
+| Docs MCP server (search this site) | `https://docs.taskade.com/~gitbook/mcp`. Public, no sign-in. Tools: `searchDocumentation` and `getPage` |
 | This docs site | [`docs.taskade.com/llms.txt`](https://docs.taskade.com/llms.txt) and [`docs.taskade.com/llms-full.txt`](https://docs.taskade.com/llms-full.txt). Each page also has a Markdown copy: add `.md` to its URL |
 | Source of this docs site | [github.com/taskade/docs](https://github.com/taskade/docs) |
 | MCP server and plugin source | [github.com/taskade/mcp](https://github.com/taskade/mcp) |
+
+## Let your agent search these docs
+
+This documentation site has its own MCP server: `https://docs.taskade.com/~gitbook/mcp`. It is public and needs no sign-in. It has two read-only tools, `searchDocumentation` and `getPage`, so an agent can look up how a feature works before it acts.
+
+It is separate from the hosted Taskade MCP server. The docs server only reads these pages. The Taskade server at `https://www.taskade.com/mcp` works in your workspace. Add both to the same client:
+
+```bash
+claude mcp add --transport http taskade-docs https://docs.taskade.com/~gitbook/mcp
+```
 
 ## What your agent can do
 

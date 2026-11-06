@@ -85,6 +85,7 @@ Use this as the canonical overview: [Workspace DNA](genesis-living-system-builde
 1. Add the hosted MCP server `https://www.taskade.com/mcp` to your AI client and sign in. In Claude Code: `claude mcp add --transport http taskade https://www.taskade.com/mcp`
 2. Give your agent [**taskade.com/SKILL.md**](https://www.taskade.com/SKILL.md) - the Taskade skill for AI agents
 3. [**Connect an AI Agent**](getting-started/ai-agents.md) - every client, every entry point, and what an agent can do
+4. Let your agent search these docs: add the docs MCP server `https://docs.taskade.com/~gitbook/mcp` (public, no sign-in)
 
 #### For developers
 

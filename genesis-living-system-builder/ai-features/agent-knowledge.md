@@ -73,9 +73,9 @@ The Knowledge tab shows all sources your agent has been trained on, with options
 | Step | Action |
 |---|---|
 | 1 | Open the Knowledge tab |
-| 2 | Drag & drop files directly, or click **Add Media** |
-| 3 | Select files from your device |
-| 4 | Files are processed and indexed automatically |
+| 2 | Click the **ADD SOURCES** box to choose files from your device, or drag & drop them in |
+| 3 | Or click **Add Media** to pick a file already uploaded to your projects |
+| 4 | Click **Update** to save. Files are processed and indexed automatically |
 
 **Supported document formats:**
 
@@ -92,9 +92,9 @@ The Knowledge tab shows all sources your agent has been trained on, with options
 
 | Step | Action |
 |---|---|
-| 1 | Click **Add Media** in the Knowledge tab |
-| 2 | Paste a URL (web page, YouTube video, cloud file link) |
-| 3 | Content is scraped/transcribed and indexed |
+| 1 | In the Knowledge tab, click **Add link** (web page), **Add YouTube** (videos), or add from **Google Drive**, **Dropbox**, **Box**, or **OneDrive** |
+| 2 | Paste the link or pick the file |
+| 3 | Click **Update** to save. Content is scraped/transcribed and indexed |
 
 | Resource Type | What Gets Indexed |
 |---|---|
@@ -112,9 +112,9 @@ The Knowledge tab shows all sources your agent has been trained on, with options
 | Step | Action |
 |---|---|
 | 1 | Open the Knowledge tab |
-| 2 | Click **"Create Source"** |
-| 3 | Write or paste Markdown/plain text directly |
-| 4 | Save — the source is immediately available to your agent |
+| 2 | Click **Add Markdown/Text** |
+| 3 | Write or paste Markdown/plain text, then click **Add to Knowledge** |
+| 4 | Click **Update** to save — the source is available to your agent on its next reply |
 
 > **Tip:** Use manual sources for FAQ answers, custom instructions, edge case handling, or information not available in any file.
 
@@ -125,7 +125,7 @@ Connect Taskade projects as **living knowledge sources** that update automatical
 | Step | Action |
 |---|---|
 | 1 | Open the Knowledge tab |
-| 2 | Click **Add Media** → **Add from Workspace** |
+| 2 | Click **Add Project** |
 | 3 | Select one or more projects |
 | 4 | Projects become live knowledge — agent always has the latest data |
 
@@ -184,9 +184,8 @@ When a project is connected as knowledge, agents can access:
 | Block structure (headings, lists, checklists) | Comments on tasks |
 | Due dates | Embedded links within task descriptions |
 | Assignee information | Reactions (emojis) |
-| Timer data | Chat messages in the project |
-| Custom field values | |
-| Labels and tags | |
+| Custom field values | Chat messages in the project |
+| Labels and tags | Timer data |
 
 ---
 
@@ -214,3 +213,7 @@ When a project is connected as knowledge, agents can access:
 | [Multi-Agents](./multi-agents.md) | Create teams of agents with shared knowledge |
 | [Projects & Databases](../workspaces/projects-databases.md) | Structure data for optimal agent training |
 | [Adding Genesis Context](../genesis/adding-context.md) | Upload context for Genesis app creation |
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Agent Knowledge & Memory](https://www.taskade.com/learn/agents/knowledge), [Keep Your Agent's Knowledge Up to Date](https://www.taskade.com/learn/agents/knowledge-updates)._

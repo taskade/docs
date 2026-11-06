@@ -1,6 +1,6 @@
 ---
 description: >-
-  Track visitors, pageviews, bounce rate, traffic sources, and devices for any published Taskade Genesis app with the built-in analytics dashboard, no extra.
+  Track visitors, pageviews, bounce rate, traffic sources, and devices for a published Taskade Genesis app with the built-in analytics dashboard (Business and up).
 ---
 
 # App Analytics
@@ -20,15 +20,15 @@ description: >-
 
 ## Overview
 
-Every published Taskade Genesis app includes a **built-in analytics dashboard** powered by Tinybird. Track visitors, understand behavior, and optimize your apps — no third-party tools required.
+On Business plans and up, every published Taskade Genesis app includes a **built-in analytics dashboard**. Track visitors, understand behavior, and optimize your apps — no third-party tools required.
 
-> **Requirement:** Analytics only track **published** apps. Unpublished apps don't generate visitor data. See [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md) to get your app live.
+> **Requirements:** Analytics only track **published** apps, and the workspace must be on a **Business plan or higher**. Unpublished apps don't generate visitor data. On other plans the Analytics tab opens with sample data and an upgrade prompt instead of your own numbers. See [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md) to get your app live.
 
 ---
 
 ## Analytics Dashboard
 
-Access analytics from your Taskade Genesis app's dashboard view. Data updates in real-time.
+Open your published app, click **App settings** (gear icon), then click **Analytics**. Data updates in real-time.
 
 <!-- Screenshot: Full analytics dashboard overview -->
 
@@ -40,11 +40,10 @@ Access analytics from your Taskade Genesis app's dashboard view. Data updates in
 
 | Metric | What It Measures | Why It Matters |
 |---|---|---|
-| **Total Visits** | Number of unique sessions | Overall app reach |
-| **Pageviews** | Total pages viewed across all visits | Content engagement depth |
+| **Visitors** | Number of unique visitors | Overall app reach |
+| **Pageviews** | Total pages viewed, with the average per visit | Content engagement depth |
 | **Bounce Rate** | % of visitors who leave after one page | UX quality indicator |
-| **Session Duration** | Average time spent per visit | User engagement level |
-| **Most Popular Browser** | Top browser used by visitors | Testing priority |
+| **Avg. Visit** | Average time spent per visit | User engagement level |
 | **Visitors Online** | Real-time concurrent users | Live demand indicator |
 
 ### Time-Based Trends
@@ -53,8 +52,8 @@ Access analytics from your Taskade Genesis app's dashboard view. Data updates in
 |---|---|
 | **Daily visitor trends** | Line chart showing visitors per day |
 | **Pageview trends** | Line chart showing pageviews per day |
-| **Date range selection** | Filter by custom date ranges (7 days, 30 days, custom) |
-| **Comparison** | Compare current period to previous period |
+| **Period selection** | Switch between the last 7, 30, or 90 days |
+| **Comparison** | Each summary card compares the period with the days before it |
 
 <!-- Screenshot: Time-based trend charts -->
 
@@ -72,7 +71,7 @@ Access analytics from your Taskade Genesis app's dashboard view. Data updates in
 
 | Column | What It Shows |
 |---|---|
-| **Location** | Country / region of visitors |
+| **Location** | Country of visitors |
 | **Visitors** | Number of unique visitors from that location |
 
 > **Insight:** If most visitors come from a specific region, consider localizing content or adjusting timezone-sensitive features.
@@ -129,6 +128,7 @@ Access analytics from your Taskade Genesis app's dashboard view. Data updates in
 | Issue | Cause | Solution |
 |---|---|---|
 | No analytics data showing | App is not published | Publish your app first |
+| Dashboard shows sample data and an upgrade prompt | Workspace is below Business | App Analytics needs a Business plan or higher |
 | Data seems delayed | Real-time updates may have brief lag | Wait a few minutes, refresh the dashboard |
 | Visitor count seems low | App may be Private or Secret | Check visibility settings — Public apps get more traffic |
 | Bounce rate is 100% | Single-page app or landing page | This is normal for single-page apps; focus on session duration instead |
@@ -144,3 +144,7 @@ Access analytics from your Taskade Genesis app's dashboard view. Data updates in
 | [A Maker's Guide to AI Prompts](./prompt-guide.md) | Use analytics insights to write better iteration prompts |
 | [Custom AI Agents](../ai-features/ai-agents-getting-started.md) | Add AI agents to increase engagement |
 | [Automations](../automation/README.md) | Automate responses to visitor behavior |
+
+---
+
+_Step-by-step guide on taskade.com/learn: [App Analytics](https://www.taskade.com/learn/genesis/app-analytics)._

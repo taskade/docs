@@ -6,7 +6,7 @@ description: >-
 
 # Build a client or member portal in 10 minutes
 
-**You describe the portal you want. Taskade Genesis builds it. Each client logs in and sees only their own record — their projects, their files, their status — and nothing belonging to anyone else.**
+**You describe the portal you want. Taskade Genesis builds it. Each client logs in, and once you turn on Private entries, sees only their own record — their projects, their files, their status — and nothing belonging to anyone else.**
 
 No code. No separate login service to wire up. No spreadsheets to share by hand. By the end of this guide you'll have a working, branded portal at your own web address that you can hand to your first client.
 
@@ -47,7 +47,7 @@ The more specific you are about *what each client sees*, the better the first bu
 
 A portal needs real sign-in so the right person sees the right thing. When your prompt mentions per-client accounts, Taskade Genesis adds a secure login automatically — no auth provider to set up.
 
-You manage everyone from the **App Users** tab: invite clients by email, suspend access when an engagement ends, and remove accounts you no longer need. See [GenesisAuth — add login & roles](../community-and-sharing/genesis-auth.md) for the full picture.
+You manage everyone from the **App Users** tab: add clients by email, disable access when an engagement ends, and delete accounts you no longer need. See [GenesisAuth — add login & roles](../community-and-sharing/genesis-auth.md) for the full picture.
 
 {% hint style="success" %}
 If your first build didn't add sign-in, just tell Taskade Genesis *"add sign-in so each client has their own account"* while editing the app.
@@ -59,7 +59,7 @@ If your first build didn't add sign-in, just tell Taskade Genesis *"add sign-in 
 
 This is what makes it a *portal* instead of a shared page: every client sees only their own data. Conceptually, each record in your portal is tied to the client it belongs to, and the login decides which records that person can open. Client A signs in and sees Client A's projects; Client B never sees them.
 
-Sign-in confirms who each client is, but it does not hide other clients' records by itself. Per-user data is off by default: turn on **Private per-user data** in the publish menu and pick the field that stores each record's owner — see [Give each user only their own rows](add-login-and-roles.md#give-each-user-only-their-own-rows). Describe the goal in your prompt too (*"each client sees only their own projects and documents"*) so Taskade Genesis builds the app around it. To shape what's stored and shown, see how [Projects & Databases](../workspaces/projects-databases.md) hold your records, and how [GenesisAuth](../community-and-sharing/genesis-auth.md) ties each record to the signed-in client.
+Sign-in confirms who each client is, but it does not hide other clients' records by itself. Per-user data is off by default: open **Publish → More options → Private entries**, turn it on, and pick the field that stores each record's owner — see [Give each user only their own rows](add-login-and-roles.md#give-each-user-only-their-own-rows). Describe the goal in your prompt too (*"each client sees only their own projects and documents"*) so Taskade Genesis builds the app around it. To shape what's stored and shown, see how [Projects & Databases](../workspaces/projects-databases.md) hold your records, and how [GenesisAuth](../community-and-sharing/genesis-auth.md) confirms which client is signed in.
 
 {% hint style="warning" %}
 Always test isolation before going live: sign in as a test client and confirm you can't see anyone else's records.
@@ -71,13 +71,13 @@ Always test isolation before going live: sign in as a test client and confirm yo
 
 A portal at `portal.yourbrand.com` feels like software you built, not a generic link. Once your domain is connected, clients sign in and work entirely under your brand — they never see Taskade in the URL.
 
-Follow [Custom Domains & Branding](../space-apps-guide/custom-domains.md) to connect a subdomain like `portal.yourbrand.com`, add your logo and colors, and turn on automatic HTTPS.
+Follow [Custom Domains & Branding](../space-apps-guide/custom-domains.md) to connect a subdomain like `portal.yourbrand.com` (Pro and up), add your logo and colors (custom colors need Business and up), and turn on automatic HTTPS.
 {% endstep %}
 
 {% step %}
 ### Invite your first client
 
-You're ready to go live. Open the **App Users** tab and invite your first client by email — they'll get a link, set a password, and land directly on their own dashboard.
+You're ready to go live. Open the **App Users** tab, type your first client's email in **Add person**, and click **Add person** — they'll get a link, set a password, and land directly on their own dashboard.
 
 Before you send invites, run the [Go-live checklist](./go-live-checklist.md) so logins, per-client access, and your domain are all confirmed. Then start small: invite one trusted client, watch them use it, and refine the wording or layout by describing the change to Taskade Genesis.
 {% endstep %}
@@ -92,3 +92,7 @@ Before you send invites, run the [Go-live checklist](./go-live-checklist.md) so 
 * [GenesisAuth](../community-and-sharing/genesis-auth.md) — manage clients in the App Users tab.
 * [Custom Domains & Branding](../space-apps-guide/custom-domains.md) — host the portal at `portal.yourbrand.com`.
 * [Getting Started with Taskade Genesis](../genesis/getting-started.md) — how describing an app turns into a working one.
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Build a Customer Portal](https://www.taskade.com/learn/genesis/build-customer-portal), [App Users (Beta): End-User Management for Taskade Genesis Apps](https://www.taskade.com/learn/genesis/app-users)._

@@ -1,6 +1,6 @@
 ---
 description: >-
-  Organize Taskade for teams with workspace, folder, and function structures, a 5-role RBAC permission system, and AI-powered team features.
+  Organize Taskade for teams with workspace, folder, and function structures, role-based access from Owner to Viewer, and AI-powered team features.
 ---
 
 # Taskade for Teams
@@ -106,17 +106,17 @@ A single workspace with function-specific folders (not department-based).
 
 ## Permission System
 
-Taskade uses a **5-role, 7-tier RBAC** permission system:
+Taskade uses **role-based access from Owner to Viewer**:
 
 | Role | Capabilities |
 |---|---|
 | **Owner** | Full control — manage workspace, billing, members, all content |
-| **Admin** | Manage members, projects, folders, agents, automations |
-| **Collaborator** | Create and edit projects, use agents, run automations |
-| **Participant** | Edit assigned tasks, comment, chat |
-| **Viewer** | Read-only access to shared content |
+| **Admin** | Invite or remove members, change roles, manage billing, full editing access |
+| **Editor** | Create and edit projects, run agents and automations, invite members |
+| **Checker** | Complete assigned tasks, tick checklists, comment |
+| **Viewer** | Read projects and leave comments |
 
-> Permission inheritance flows: Organization → Workspace → Folder → Project. Members inherit permissions from higher levels unless overridden.
+> Permission inheritance flows: Workspace → Folder → Project. Members inherit permissions from higher levels unless overridden.
 
 ---
 
@@ -157,11 +157,11 @@ Taskade uses a **5-role, 7-tier RBAC** permission system:
 | Feature | How It Helps Teams | Learn More |
 |---|---|---|
 | **Taskade Autopilot** | Generate entire team workspaces from a single prompt | [Taskade Autopilot](../ai-features/autopilot.md) |
-| **AI Agents** | Create specialist agents for each department | [Custom AI Agents](https://www.taskade.com/learn/genesis) |
-| **Multi-Agent Teams** | Teams of agents that collaborate (Pro+) | [Multi-Agents](https://www.taskade.com/learn/genesis) |
+| **AI Agents** | Create specialist agents for each department | [Custom AI Agents](https://www.taskade.com/learn/agents/custom-agents) |
+| **Multi-Agent Teams** | Teams of agents that collaborate (Pro+) | [Multi-Agents](https://www.taskade.com/learn/agents/multi-agents) |
 | **Automation Workflows** | Automate cross-department processes | [Automation Triggers](../automation/README.md) |
 | **Genesis Apps** | Build internal tools and dashboards for teams | [Taskade Genesis](https://www.taskade.com/learn/genesis) |
-| **Shared Agent Chats** | AI + human conversations together | [Custom AI Agents](https://www.taskade.com/learn/genesis) |
+| **Shared Agent Chats** | AI + human conversations together | [AI Agent Chat for Teams](https://www.taskade.com/learn/agents/team-chat) |
 | **Version History** | Track all changes across team projects | [Version History](../genesis/version-history.md) |
 | **Real-time Collaboration** | Multiple users editing simultaneously (OT-based) | Built-in |
 
@@ -175,3 +175,7 @@ Taskade uses a **5-role, 7-tier RBAC** permission system:
 | [Editing & Formatting](./editing-formatting.md) | Format and style team projects |
 | [Embed Taskade](./embed.md) | Share projects on your website |
 | [Version History](../genesis/version-history.md) | Track team changes |
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Roles and Permissions in Taskade](https://www.taskade.com/learn/account/roles-permissions), [Hierarchy Structure](https://www.taskade.com/learn/projects/hierarchy-structure)._

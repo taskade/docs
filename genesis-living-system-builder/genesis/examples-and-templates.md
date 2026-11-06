@@ -1,6 +1,6 @@
 ---
 description: >-
-  Copy proven Taskade Genesis prompts to build CRM dashboards, booking systems, forms, and landing pages in minutes, with 70+ live app templates to fork.
+  Copy proven Taskade Genesis prompts to build CRM dashboards, booking systems, forms, and landing pages in minutes, with live app templates to clone.
 ---
 
 # Examples & Templates
@@ -15,7 +15,7 @@ Each example includes the exact prompt and what the resulting app does.
 
 ## Taskade Genesis App Gallery
 
-Explore interactive demos built by real users with their exact prompts. Fork any app to use as a starting point for your own project.
+Explore interactive demos built by real users with their exact prompts. Clone an app that its creator shares with **Let others clone** to use as a starting point for your own project.
 
 ### Featured App Templates
 
@@ -95,11 +95,10 @@ Try these live apps — all built with Taskade Genesis, all verified and working
 | App                       | What It Does                                           | Live Demo                                                       |
 | ------------------------- | ------------------------------------------------------ | --------------------------------------------------------------- |
 | **Sudoku**                | Zen-styled puzzle game with multiple difficulty levels | [Try It →](https://www.taskade.com/app/sudoku-xw6u7xch8vw4sjc3) |
-| **Tetris Builder Studio** | Playable Tetris with score tracking and levels         | [Try It →](https://www.taskade.com/apps/entertainment/tetris-builder-studio-08w5s7gk2hzf9n9a) |
 | **Etch-a-Sketch**         | Digital drawing canvas inspired by the classic toy     | [Try It →](https://www.taskade.com/app/etch-a-sketch-qi09802b4qqvd31e) |
 
 {% hint style="success" %}
-**That's 70+ app templates across 11 categories** — from CRM dashboards to playable games. Every one of these was built by typing a prompt into Taskade Genesis. [**Browse all categories →**](https://www.taskade.com/apps/categories)
+**These are only a sample** — from CRM dashboards to playable games. Every one of these was built by typing a prompt into Taskade Genesis. [**Browse all categories →**](https://www.taskade.com/apps/categories)
 {% endhint %}
 
 ### **📚 Template Gallery**
@@ -333,10 +332,10 @@ I want to [HOW YOU'LL USE THE DATA] so I can [BUSINESS OUTCOME].
 
 | Resource                                                   | Description                               |
 | ---------------------------------------------------------- | ----------------------------------------- |
-| [**Community Gallery**](https://www.taskade.com/community) | Browse 1000+ apps built by the community  |
+| [**Community Gallery**](https://www.taskade.com/apps) | Browse apps built by the community  |
 | [**Template Library**](https://www.taskade.com/templates)  | Project templates for any use case        |
 | [**AI Agent Gallery**](https://www.taskade.com/agents)     | Pre-built AI assistants ready to deploy   |
-| [**AI Kits**](https://www.taskade.com/kits)                | One-click deployable workflows and agents |
+| [**AI Kits**](https://www.taskade.com/apps)                | One-click deployable workflows and agents |
 
 ### Taskade Featured Apps
 
@@ -344,14 +343,17 @@ See what Taskade itself built with Taskade Genesis:
 
 | App                                                                                       | Description                                  |
 | ----------------------------------------------------------------------------------------- | -------------------------------------------- |
-| [**Status Portal**](https://www.taskade.com/community/featured/taskade-status-portal)     | Real-time system status and incident updates |
-| [**Social Feed**](https://www.taskade.com/community/featured/taskade-social-feed)         | Community activity and content discovery     |
-| [**Feedback Portal**](https://www.taskade.com/community/featured/taskade-feedback-portal) | Public feature requests and user feedback    |
+| [**Status Portal**](https://www.taskade.com/apps/featured/taskade-status-portal)     | Real-time system status and incident updates |
+| [**Feedback Portal**](https://www.taskade.com/apps/featured/taskade-feedback-portal) | Public feature requests and user feedback    |
 
 ***
 
 **Ready to build your own app?** [**Start with Taskade Genesis →**](https://www.taskade.com)
 
-[**Browse Community Apps →**](https://www.taskade.com/community) | [**Fork a Template →**](https://www.taskade.com/templates)
+[**Browse Community Apps →**](https://www.taskade.com/apps) | [**Fork a Template →**](https://www.taskade.com/templates)
 
 _Copy any prompt above, customize it for your business, and have a working app in minutes._
+
+---
+
+_Step-by-step guides on taskade.com/learn: [App Starter Prompts](https://www.taskade.com/learn/genesis/starter-prompts), [Browse & Clone Community Apps](https://www.taskade.com/learn/genesis/community-gallery)._

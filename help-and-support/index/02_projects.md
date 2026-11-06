@@ -33,7 +33,7 @@ flowchart TD
     VIEWS --> MIND[🧠 Mind Map View<br/>Visual brainstorming]
     VIEWS --> ORG[🏗️ Org Chart View<br/>Hierarchical structure]
     VIEWS --> GANTT[📊 Gantt View<br/>Project scheduling]
-    VIEWS --> ACTION[⚡ Action View<br/>Focused task management]
+    VIEWS --> ACTION[⚡ Actionsheet View<br/>Simple spreadsheet]
 
     LIST --> INSIGHT[Each view reveals<br/>different insights]
     BOARD --> INSIGHT
@@ -83,7 +83,7 @@ flowchart TD
 {% step %}
 #### Access Project Creation
 
-In your workspace, click the "+" button next to "Projects" in the sidebar, or use the keyboard shortcut `Ctrl/Cmd + N`
+Open your workspace or folder, then click the ➕ **New project** button in the top-right corner
 {% endstep %}
 
 {% step %}
@@ -93,6 +93,7 @@ Select from:
 
 * **Blank Project** - Start from scratch
 * **Template** - Use a pre-built structure
+* **AI Generator** - Describe the project and let AI build it
 * **Import** - Bring in data from other tools
 {% endstep %}
 
@@ -113,7 +114,7 @@ Start with a task, note, or idea. Your project is now alive and ready to grow!
 
 ## The Project Views (Choose Your Perspective)
 
-Each view reveals different insights from your data. Here's when to use each one:
+Each view reveals different insights from your data. Here's when to use each one. List, Board, Table, and Mind Map sit in the toolbar as tabs. Docs (Beta), Gantt Chart, Calendar, Actionsheet, and Org Chart sit under **More Views**. Gantt Chart, Actionsheet, and Org Chart need a paid plan.
 
 ### List View - The Foundation
 
@@ -206,16 +207,16 @@ Task B: Jan 3-8    [░░█████░░░] (depends on Task A)
 Task C: Jan 6-10   [░░░░█████] (depends on Task B)
 ```
 
-### Action View - Focused Execution
+### Actionsheet View - Focused Execution
 
-**Perfect for:** Daily tasks, personal productivity, getting things done
+**Perfect for:** Simple CRMs, task lists, and quick scanning. Actionsheet is the minimal spreadsheet companion to Table view.
 
 ```
-🎯 Today's Focus
-├── ☑️ Call client (done)
-├── 🔄 Write report (in progress)
-├── ⏳ Review budget (pending)
-└── 📝 Plan meeting (scheduled)
+| Task           | Status      | Due      |
+|----------------|-------------|----------|
+| Call client    | Done        | Today    |
+| Write report   | In progress | Today    |
+| Review budget  | Pending     | Tomorrow |
 ```
 
 ## Custom Fields (Adding Intelligence to Your Data)
@@ -338,7 +339,7 @@ Custom Fields:
 ```
 📁 My Life OS
 ├── 🎯 Goals & Objectives (Mind Map)
-├── 📝 Daily Tasks (Action View)
+├── 📝 Daily Tasks (Actionsheet)
 ├── 📚 Knowledge Base (List View)
 ├── 💰 Budget & Finance (Table View)
 └── 📅 Important Dates (Calendar View)
@@ -373,3 +374,7 @@ Custom Fields:
 _Have you tried switching between different views yet? It's like having many tools in one—each revealing different insights from your data!_
 
 [← Back to Chapter 1: Workspaces](01_workspaces.md) | [Next: AI Agents →](03_ai_agents.md)
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Create a Project](https://www.taskade.com/learn/projects/create-project), [What Are Project Views?](https://www.taskade.com/learn/projects/project-views), [Projects & Databases: The Memory Pillar](https://www.taskade.com/learn/projects/databases)._
