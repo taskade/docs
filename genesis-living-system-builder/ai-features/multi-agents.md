@@ -74,8 +74,8 @@ The fastest way to create a multi-agent team:
 
 | Step | Action |
 |---|---|
-| 1 | Open the **Agents** tab |
-| 2 | Click **Create Agent Team** |
+| 1 | Open the **AI Teams** tab |
+| 2 | Click **Generate** |
 | 3 | Describe your team in plain English (e.g., "I need a marketing team with a content writer, SEO specialist, social media manager, and analytics analyst") |
 | 4 | AI generates the complete team with specialized agents, knowledge sources, and tool configurations |
 | 5 | Review and customize each agent as needed |
@@ -144,7 +144,7 @@ Multi-agent output can be refined iteratively:
 | Technique | Example |
 |---|---|
 | **Sequential refinement** | Research Agent drafts → Writer Agent refines → Reviewer Agent checks |
-| **Parallel generation** | Multiple agents tackle different sections simultaneously |
+| **Split generation** | Multiple agents each take a different section, one after another |
 | **Feedback loop** | Ask one agent to critique another agent's output |
 | **Role switching** | "Now have the Analyst Agent review what the Writer Agent produced" |
 
@@ -191,7 +191,7 @@ Multi-agent chats support both AI agents and human team members in the same conv
 |---|---|---|---|
 | **Sequential Pipeline** | Agent A → Agent B → Agent C (output flows linearly) | Content creation, data processing | Research → Write → Review |
 | **Hub and Spoke** | Central coordinator routes to specialists | Customer support, complex queries | Coordinator → routes to Sales/Support/Billing |
-| **Parallel Fan-Out** | Multiple agents work simultaneously | Report generation, data analysis | Finance + Marketing + Operations agents each analyze their domain |
+| **Fan-Out** | Multiple agents each answer the same request (in an AI Team, they reply one after another) | Report generation, data analysis | Finance + Marketing + Operations agents each analyze their domain |
 | **Debate / Review** | Agents critique each other's work | Quality control, decision-making | Proposal Agent creates → Critic Agent reviews → Proposal Agent revises |
 | **Escalation Chain** | Start with generalist, escalate to specialist | Support tiers, triage | Tier 1 Agent → Tier 2 Specialist → Human escalation |
 
@@ -206,3 +206,7 @@ Multi-agent chats support both AI agents and human team members in the same conv
 | [Tools for AI Agents](./agent-tools.md) | Add capabilities to each agent |
 | [Automations](../automation/README.md) | Connect agents to automated workflows |
 | [Autonomous Agents (API)](../../apis-living-system-development/autonomous-agents.md) | Orchestrate multi-agent systems programmatically |
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Multi-Agents](https://www.taskade.com/learn/agents/multi-agents), [AI Teams](https://www.taskade.com/learn/agents/ai-teams)._

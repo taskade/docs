@@ -1,6 +1,6 @@
 ---
 description: >-
-  View, compare, and restore Taskade Genesis app versions. Every change is a full snapshot, with auto vs manual publish controls and Code View.
+  View, compare, and restore Taskade Genesis app versions, with auto vs manual publish controls and the Code tab.
 ---
 
 # Genesis Version History
@@ -22,7 +22,7 @@ description: >-
 
 ## Overview
 
-Taskade Genesis **automatically tracks every change** to your apps. Every modification — from content edits to styling updates — creates a new version (commit) you can view, compare, and restore at any time. This gives you a complete safety net for experimentation and iteration.
+Taskade Genesis **automatically saves versions** of your apps as you build. Content edits and styling updates create new versions (commits) you can view, compare, and restore. This gives you a safety net for experimentation and iteration. It is not a promise of unlimited retention, so export important milestones (see [GitHub Import & Export](./github-import-export.md)).
 
 > **Experiment freely:** Try bold changes knowing you can always roll back. See [A Maker's Guide to AI Prompts — Experiment](./prompt-guide.md#id-12.-experiment).
 
@@ -30,20 +30,17 @@ Taskade Genesis **automatically tracks every change** to your apps. Every modifi
 
 ## What Is Tracked
 
-Every version captures the full state of your app:
+Every version captures the design and code of your app:
 
 | Category | What's Tracked |
 |---|---|
 | **Content** | Text, copy, labels, placeholder content |
 | **UI / Layout** | Component arrangement, page structure, navigation |
 | **Styling** | Colors, fonts, spacing, visual themes |
-| **Features** | Functional additions, removals, and modifications |
-| **Configuration** | Settings, permissions, access rules |
-| **Integrations** | Automation connections and triggers |
+| **Features** | Functional additions, removals, and modifications in the app code |
 | **Design** | Images, icons, branding elements |
-| **Data schemas** | Database field structures and relationships |
 
-> Each version is a complete snapshot — not just a diff. Restoring a version brings back the **entire app state** at that point.
+> Restoring a version brings back its **design and code**. Your data stays as it is: the projects, agents, and automations of the workspace are not rolled back.
 
 ---
 
@@ -52,8 +49,8 @@ Every version captures the full state of your app:
 | Step | Action |
 |---|---|
 | 1 | Open your Genesis app |
-| 2 | Go to the **Preview App** tab |
-| 3 | Click the **History** button (clock icon) |
+| 2 | Click the **Version history** button (clock icon) in the toolbar above the app preview |
+| 3 | Wait for the list of saved versions to open |
 | 4 | Browse the chronological list of versions |
 | 5 | Click any version to preview what the app looked like |
 
@@ -65,21 +62,23 @@ Each version entry shows:
 
 | Field | Description |
 |---|---|
+| **Version number** | The version's place in the sequence, with its number of edits |
 | **Timestamp** | When the change was made |
-| **Version ID** | Unique commit identifier |
+| **Current** | Marks your newest working state |
+| **Live** | Marks the version that visitors see |
 | **Preview** | Visual preview of the app at that state |
 
 ---
 
 ## Inspect and Configure Your App
 
-### Code View (Read-Only)
+### Code Tab
 
-Genesis includes a **Code View** tab inside the app editor. This tab gives you a read-only look at the source code Genesis has generated for your app — useful for understanding what was built, debugging unexpected behavior, or sharing context with a developer. The Code View is inspectable only; edits are made through the Genesis prompt interface, not by modifying the source directly.
+Open **App settings → Developer → Code** to see the source code Genesis has generated for your app — useful for understanding what was built, debugging unexpected behavior, or sharing context with a developer. The full Code tab, with **Export to GitHub** and **Download .tsk**, needs **Pro or above**. On lower plans it shows a locked preview. Workspace members who can edit the app can also edit a file and save it. A save updates the preview, or publishes the app at once if it uses Auto Publishing.
 
 ### Custom `<head>` HTML Injection
 
-Published Genesis apps support injecting custom HTML into the `<head>` of every page. Access this in your app's **Settings → Advanced**. Common uses include:
+Published Genesis apps support injecting custom HTML into the `<head>` of every page. Access this in the **Custom code** section (**Head HTML** field) of your app's branding settings. It needs a **Business plan or higher**. Common uses include:
 
 - Adding analytics snippets (e.g., a tracking pixel or tag manager)
 - Loading custom fonts via a `<link>` tag
@@ -95,18 +94,19 @@ Only add trusted, well-understood code here. Injected `<head>` markup runs on ev
 
 | Step | Action |
 |---|---|
-| 1 | Open the **History** panel |
+| 1 | Open the **Version history** panel |
 | 2 | Browse and select the version you want to restore |
 | 3 | Preview the version to confirm it's correct |
 | 4 | Click **"Restore Version"** |
-| 5 | Your app is immediately reverted to that state |
+| 5 | Follow the message shown after the restore |
 
 | Important Notes | |
 |---|---|
 | **Restoring creates a new version** | The restore itself becomes a new commit in your history |
 | **Non-destructive** | The versions between current and restored are preserved — you can restore forward again |
-| **Instant** | The restore is applied immediately to your live app (if Auto-publish is on) |
-| **Full restore** | The entire app state is restored — UI, configuration, styling, everything |
+| **Live update** | With Auto Publishing, the restored version goes live when the update finishes |
+| **Design and code** | The app's design and code are restored. Your data stays as it is |
+| **Permission** | Restoring a version needs the same workspace permission as publishing the app |
 
 ---
 
@@ -116,12 +116,12 @@ How version history interacts with your publishing strategy:
 
 | Publishing Strategy | Behavior |
 |---|---|
-| **Auto publish** | Every version is immediately live. Restoring a version instantly updates the published app. |
-| **Manual publish** | Versions accumulate in draft. Restoring a version updates the draft. You choose when to publish. |
+| **Auto Publishing** | Every version is immediately live. Restoring a version updates the published app. |
+| **Manual Publishing** | Versions accumulate in draft. Restoring a version updates the draft. You choose when to publish with **Publish restored version**. |
 
 ### Auto vs. Manual Publish
 
-Genesis lets you choose how versions reach your live app. The setting lives in your app's **Settings → Publish Strategy**.
+Genesis lets you choose how versions reach your live app. Click **Publish**, then the **Advanced settings** icon, and pick **Auto Publishing** or **Manual Publishing** under **Publishing Mode**.
 
 **Auto publish** (the default) pushes every save and every restored version directly to your published URL. This is convenient during early development but means any mistake — including a misfire restore — is immediately visible to users.
 
@@ -163,3 +163,7 @@ Prefer **Manual** publish for any Genesis app in active use. It gives you a revi
 | [App Analytics](./app-analytics.md) | Track visitor data on your published app |
 | [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md) | Control how and when your app goes live |
 | [A Maker's Guide to AI Prompts](./prompt-guide.md) | Iterate confidently with proven prompt patterns |
+
+---
+
+_Step-by-step guide on taskade.com/learn: [App Revisions & Restore](https://www.taskade.com/learn/genesis/version-history)._

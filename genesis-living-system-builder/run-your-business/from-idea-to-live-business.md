@@ -23,7 +23,7 @@ graph LR
 
 ## Step 1 — Describe your app to Genesis
 
-Start with the problem, not the software. Tell Taskade Genesis what you do, who will use the app, and what should happen when they use it. EVE turns that description into a working app — the screens, the data behind them, and the logic that connects them. This is where your idea becomes something you can click. You build by describing changes in plain English, so refining is just another sentence.
+Start with the problem, not the software. Tell Taskade Genesis what you do, who will use the app, and what should happen when they use it. Taskade EVE turns that description into a working app — the screens, the data behind them, and the logic that connects them. This is where your idea becomes something you can click. You build by describing changes in plain English, so refining is just another sentence.
 
 → Full guide: [Getting Started with Taskade Genesis](../genesis/getting-started.md)
 
@@ -35,13 +35,13 @@ Every real business app remembers things — customers, bookings, orders, reques
 
 ## Step 3 — Add login and roles
 
-The moment real people use your app, you need accounts. GenesisAuth gives every app secure sign-in with no setup — you describe that users should log in, and the sign-in screen is built for you. From the App Users tab you invite people, suspend access, and decide who sees what. This is what turns a shared link into a real multi-user product.
+The moment real people use your app, you need accounts. GenesisAuth gives every app secure sign-in with no setup, on every plan — you describe that users should log in, and the sign-in screen is built for you. From the App Users tab you add people, disable access, and choose who can sign up. Sign-in confirms who each person is. To show each person only their own records, turn on **Private entries** and test with a second account. This is what turns a shared link into a real multi-user product.
 
 → Full guide: [GenesisAuth](../community-and-sharing/genesis-auth.md)
 
 ## Step 4 — Put it on your own domain
 
-A branded web address makes your app look like software you commissioned, not a tool you borrowed. Connect a domain like `app.yourcompany.com`, point one DNS record at Taskade, and your app goes live with automatic HTTPS — your customers see your brand, never a random link. This is the difference between a prototype and a product people trust with their data.
+A branded web address makes your app look like software you commissioned, not a tool you borrowed. Connect a domain like `app.yourcompany.com` (Pro and up), add a CNAME record that points at Taskade plus the short SSL record Taskade gives you, and your app goes live with automatic HTTPS — your customers see your brand, never a random link. This is the difference between a prototype and a product people trust with their data.
 
 → Full guide: [Custom Domains & Branding](../space-apps-guide/custom-domains.md)
 
@@ -64,3 +64,7 @@ Your app runs on AI, and AI runs on credits. Before launch, match your plan and 
 * [Getting Started with Taskade Genesis](../genesis/getting-started.md) — revisit Step 1 to refine your app
 * [Custom Domains & Branding](../space-apps-guide/custom-domains.md) — polish your branded launch
 * [Run your live app by talking to Claude](../../apis-living-system-development/run-your-app-with-ai.md) — once you're live, read and update your app's data in plain English
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Publish and Clone Your Apps](https://www.taskade.com/learn/genesis/publishing), [Custom Domains for Your Apps](https://www.taskade.com/learn/genesis/custom-domains)._

@@ -20,7 +20,7 @@ Custom domains let your Genesis apps live at your own web address instead of a s
 
 ```
 https://random-gibberish-a7b2.taskade.app
-https://purple-elephant-xyz.taskade.com
+https://purple-elephant-xyz.taskade.site
 ```
 
 ### With Custom Domains (Looks Professional)
@@ -101,11 +101,11 @@ client.yourcompany.com   - Client-specific tools
 
 #### 2. Add Domain in Taskade
 
-1. **Navigate to Workspace Settings**
-2. **Go to "Custom Domains" section**
-3. **Click "Add Custom Domain"**
+1. **Open your published Genesis app** and open **App settings**
+2. **Go to Launch → Domains**
+3. **Click "Connect a domain you own"**
 4. **Enter your chosen subdomain** (e.g., `app.yourcompany.com`)
-5. **Save the configuration**
+5. **Click "Connect"**. Taskade shows the exact DNS records to add
 
 #### 3. Update DNS Records
 
@@ -114,33 +114,32 @@ In your domain registrar's DNS settings:
 ```
 Type: CNAME
 Name: app (or your chosen subdomain)
-Value: custom-domains.taskade.com
+Value: external.taskade.com
 TTL: 3600 (or your registrar's default)
 ```
 
 **Popular Registrars:**
 
-* **Cloudflare**: Dashboard → DNS → Records → Add CNAME
+* **Cloudflare**: Dashboard → DNS → Records → Add CNAME (set Proxy status to **DNS only**)
 * **Namecheap**: Dashboard → Domain List → Manage → Advanced DNS
 * **GoDaddy**: DNS Management → Records → Add → CNAME
 * **Google Domains**: DNS → Custom records → Create new record
 
 #### 4. Verify Setup
 
-1. **Return to Taskade Custom Domains settings**
-2. **Click "Verify Domain"** next to your added domain
-3. **Wait for verification** (usually 5-15 minutes)
-4. **SSL certificate generates automatically**
+1. **Add the SSL Validation record** that the Domains panel shows under the routing record (copy its exact type, name, and value, or click **Copy all records**)
+2. **Return to the Domains panel**. Taskade keeps checking your records for you
+3. **Wait for verification** (usually a few minutes; DNS can take up to 48 hours)
+4. **SSL certificate generates automatically** once both records resolve, and Taskade emails the workspace when the domain is live
 
-Domain validation and HTTPS now activate faster via Delegated DCV (Domain Control Validation) — Cloudflare proves you control the domain and issues the HTTPS certificate on your behalf, so no extra DNS record is required.
+If HTTPS is still off after about 10 minutes, the panel offers an optional extra record. Add it and the certificate finishes on its own. Most domains never need it.
 
 #### 5. Assign to Taskade Genesis Apps
 
-1. **Open your Genesis app**
-2. **Click "Publish" dropdown**
-3. **Select "Custom Domain"**
-4. **Choose your configured domain**
-5. **Your app is now live at your custom URL!**
+1. **Connect the domain from the app's own settings** (Launch → Domains), as in step 2
+2. **Publish the app** if it is not live yet
+3. **Wait for the domain to show as Connected**
+4. **Your app is now live at your custom URL!**
 
 ***
 
@@ -152,7 +151,7 @@ Domain validation and HTTPS now activate faster via Delegated DCV (Domain Contro
 
 **Automatic SSL Certificate Management:**
 
-* **One-Click SSL Setup** - SSL certificates provisioned automatically through Cloudflare
+* **Automatic SSL** - Cloudflare issues the certificate once the SSL Validation record resolves (a domain you buy inside Taskade needs no manual record)
 * **Always-On Encryption** - HTTPS enabled by default for all custom domains
 * **Certificate Renewal** - Automatic renewal prevents expired certificate issues
 * **Security Headers** - Enhanced security headers applied automatically
@@ -166,14 +165,13 @@ Domain validation and HTTPS now activate faster via Delegated DCV (Domain Contro
 
 **Advanced Features:**
 
-* **Custom SSL Certificates** - Support for your own SSL certificates if needed
 * **Flexible DNS Configuration** - Full control over DNS settings
 * **Analytics Integration** - Cloudflare analytics integrated with Taskade insights
 * **Rate Limiting** - Advanced protection against abuse
 
 ### How Cloudflare SSL Works:
 
-1. **Domain Connection** - Connect your Cloudflare-managed domain to Taskade
+1. **Domain Connection** - Connect your domain to Taskade from any DNS provider
 2. **Automatic SSL** - Cloudflare provisions and manages SSL certificates
 3. **DNS Propagation** - Cloudflare handles DNS routing and optimization
 4. **Live Deployment** - Your Genesis app is live with enterprise-grade security
@@ -181,9 +179,9 @@ Domain validation and HTTPS now activate faster via Delegated DCV (Domain Contro
 ### Setup with Cloudflare:
 
 1. **Any DNS provider works** - Taskade serves custom domains through Cloudflare's network on your behalf; you do **not** need a Cloudflare account — any DNS provider that can create a CNAME record works
-2. **Add CNAME Record** - Point your subdomain to `custom-domains.taskade.com`
-3. **Enable SSL/TLS** - Cloudflare handles SSL certificate provisioning
-4. **Taskade Integration** - Connect domain in Taskade Custom Domains settings
+2. **Add CNAME Record** - Point your subdomain to `external.taskade.com`. If your DNS is on Cloudflare, set the record to **DNS only** (gray cloud), not Proxied
+3. **Enable SSL/TLS** - Add the SSL Validation record from the Domains panel, and Cloudflare handles SSL certificate provisioning
+4. **Taskade Integration** - Connect the domain in the app's **Launch → Domains** settings
 
 **Result:** Enterprise-grade security, global performance, and seamless SSL management for your Genesis apps!
 
@@ -193,9 +191,9 @@ Domain validation and HTTPS now activate faster via Delegated DCV (Domain Contro
 
 Connected the domain to the wrong app, or launching a replacement? You can **reassign a custom domain to a different app or workspace yourself** — no need to delete the domain and redo DNS:
 
-1. Open the space's settings where the domain is currently connected.
-2. In the domain configuration, choose **Reassign** and pick the destination from the workspace picker (it lists every space where you have permission to manage custom domains).
-3. Confirm — DNS records and SSL carry over; only the app the domain points to changes.
+1. Open **App settings → Launch → Domains** in the app where the domain is currently connected.
+2. In the domain configuration, choose **Move domain** and pick the destination from the workspace picker.
+3. Confirm with **Move domain** — all of the domain's settings move with it; only the app the domain points to changes.
 
 ### Multiple Subdomains
 
@@ -208,31 +206,34 @@ admin.yourcompany.com    → Administrative interface
 api.yourcompany.com      → API endpoints
 ```
 
-Each subdomain requires its own CNAME record and Taskade configuration.
+Each subdomain requires its own CNAME record and Taskade configuration, and each one counts toward your plan's limit (up to 10 per workspace on Pro, unlimited on Business and up).
 
 ### Domain Path Structure
 
-Custom domains support path-based app organization:
+A custom domain serves one app. Deep links to the pages inside that app resolve on your domain, with no error on refresh:
 
 ```
-app.yourcompany.com/feedback    → Feedback system
-app.yourcompany.com/booking     → Booking system  
-app.yourcompany.com/dashboard   → Analytics dashboard
+app.yourcompany.com/feedback    → Feedback page of the app
+app.yourcompany.com/booking     → Booking page of the app
+app.yourcompany.com/dashboard   → Dashboard page of the app
 ```
+
+To run separate apps, give each app its own subdomain.
 
 ### Wildcard Subdomains
 
-For advanced users, wildcard CNAME records enable dynamic subdomains:
+A wildcard CNAME record at your DNS provider can point many names at Taskade at once:
 
 ```
-DNS: *.yourcompany.com → custom-domains.taskade.com
+DNS: *.yourcompany.com → external.taskade.com
 
-Results in:
-anything.yourcompany.com works automatically
+Covers the DNS part for:
 client1.yourcompany.com
 client2.yourcompany.com
 project-x.yourcompany.com
 ```
+
+The wildcard does not connect the names in Taskade. Add each name in the app's **Domains** settings before it serves an app, and each name counts toward your plan's limit.
 
 ***
 
@@ -253,7 +254,7 @@ Once your app is on a custom domain, enhance the branding:
 
 **Advanced Customization:**
 
-* Upload favicon for browser tab branding
+* Set the tab icon, share image, and search settings in **Launch → Branding** (Business and up)
 * Custom CSS for advanced styling
 * Brand-specific error pages
 * Consistent typography with your website
@@ -345,7 +346,7 @@ Result: Professional MVP for investor demos
 
 Taskade handles SSL certificate generation and renewal automatically:
 
-* **SSL certificates provisioned automatically** via Cloudflare (Delegated DCV) — no manual DNS record required
+* **SSL certificates provisioned automatically** via Cloudflare once the SSL Validation record from the Domains panel resolves (a domain you buy inside Taskade needs no manual record)
 * **Automatic renewal** — certificates are managed and renewed for you
 * **HTTPS redirect** enforced for all traffic
 * **Modern security standards** (TLS 1.2+)
@@ -376,10 +377,10 @@ Custom domain apps maintain full privacy protection:
 
 Track your custom domain app performance:
 
-**Built-in Analytics:**
+**Built-in Analytics** (Business and up):
 
 * Page views and unique visitors
-* Conversion rates and form submissions
+* Traffic sources and bounce rate
 * Geographic user distribution
 * Device and browser statistics
 
@@ -422,14 +423,14 @@ fbq('track', 'Lead', {
 
 **Problem**: Domain not resolving after 24 hours **Solutions:**
 
-* Verify CNAME record points to `custom-domains.taskade.com`
+* Verify CNAME record points to `external.taskade.com`
 * Check DNS propagation using online tools
 * Contact your domain registrar for assistance
 * Ensure no conflicting A records exist
 
 **Problem**: SSL certificate not generating **Solutions:**
 
-* Confirm domain verification completed successfully
+* Compare the SSL Validation record at your registrar with the one the Domains panel shows
 * Wait up to 1 hour for certificate generation
 * Check for CAA records blocking certificate issuance
 * Contact Taskade support if issue persists
@@ -577,3 +578,7 @@ Custom domains are commonly used to:
 **🌟 Transform your Genesis apps into professional, branded solutions that command respect and drive results.**
 
 _Custom domains are more than just URLs—they're the foundation of professional digital presence and client trust._
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Custom Domains for Your Apps](https://www.taskade.com/learn/genesis/custom-domains), [Buy a Custom Domain Inside Taskade](https://www.taskade.com/learn/genesis/buy-domain)._

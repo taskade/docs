@@ -1,11 +1,15 @@
 ---
 description: >-
-  Ready-to-use Taskade automation recipes with full JSON configs: AI blog publishing, social posting, lead capture, ticket routing, GitHub sync, and cart.
+  Ready-to-use Taskade automation recipes with flow outlines: AI blog publishing, social posting, lead capture, ticket routing, GitHub sync, and cart.
 ---
 
 # Automation Recipes
 
-Real-world automation workflows that you can implement immediately. Each recipe includes the complete configuration, setup instructions, and customization options.
+Real-world automation workflows that you can implement immediately. Each recipe includes a flow outline, setup instructions, and customization options.
+
+{% hint style="info" %}
+The JSON blocks on this page are outlines of each flow, not an import format. Build each recipe in the automation editor: add the trigger, then add each step from the step picker. Premium integrations (for example WordPress, X/Twitter, LinkedIn, HubSpot, Slack and Gmail) need a paid plan.
+{% endhint %}
 
 ## Content Creation & Marketing
 
@@ -139,7 +143,7 @@ Start with one article, review the output, and adjust the agent prompts or autom
 * **Scheduling**: Change frequency from daily to weekly or custom intervals
 * **Content Types**: Modify for social media posts, newsletters, or other content formats
 * **Quality Control**: Add human review steps before publishing
-* **Multi-platform**: Extend to publish to Medium, LinkedIn, or other platforms
+* **Multi-platform**: Extend to publish to LinkedIn, Facebook Pages, or other platforms
 * **SEO Optimization**: Include keyword research and meta description generation
 
 ### Recipe 2: Automated Social Media Posting
@@ -150,7 +154,7 @@ Schedule and automate social media posts using due dates and custom fields. Perf
 
 **Use Case**: Automatically post content to social media platforms (like X/Twitter) when tasks reach their due date, maintaining consistent online presence.
 
-**Workflow**: Task Due → Post to Social Media → Update Status → Track Performance
+**Workflow**: Task Due → Post to Social Media → Update Status
 
 **Setup Requirements**:
 - Taskade project with social media content
@@ -266,7 +270,6 @@ Include actions to update the task status and posting timestamp after successful
 | **Twitter/X** | Twitter API connection   | 280 characters     | Use hashtags, engage with trends         |
 | **LinkedIn**  | LinkedIn Business API    | 3000 characters    | Professional tone, industry insights     |
 | **Facebook**  | Facebook Graph API       | 63206 characters   | Visual content, community engagement     |
-| **Instagram** | Meta Business API        | 2200 characters    | High-quality images, Stories integration |
 
 **Advanced Features:**
 
@@ -280,11 +283,10 @@ Include actions to update the task status and posting timestamp after successful
 * Include platform-specific hashtags and formatting
 * Adapt tone and style based on target platform
 
-**Analytics Integration:**
+**Reporting:**
 
-* Track engagement metrics automatically
-* Update performance data in Taskade
-* Generate posting reports and insights
+* Log each published post to a project or a Google Sheet
+* Generate a weekly posting report with an AI step
 
 **Bulk Scheduling:**
 
@@ -295,10 +297,9 @@ Include actions to update the task status and posting timestamp after successful
 **Customization Options:**
 
 * **Content Variations**: Create platform-specific versions of posts
-* **Timing Optimization**: Use analytics to determine best posting times
 * **A/B Testing**: Test different content approaches
 * **Approval Workflows**: Add review steps before posting
-* **Performance Tracking**: Monitor engagement and adjust strategies
+* **Performance Tracking**: Log each post and review it in a weekly AI summary
 
 ## Lead Generation & Sales
 
@@ -347,8 +348,8 @@ Include actions to update the task status and posting timestamp after successful
           "message": "🔥 Hot lead: {{form.name}} from {{form.company}} (Score: {{steps.0.score}})"
         },
         {
-          "type": "hubspot.createTask",
-          "contactId": "{{steps.1.id}}",
+          "type": "taskade.createTask",
+          "projectId": "sales_followups",
           "title": "Follow up with hot lead",
           "dueDate": "{{now + 1 hour}}"
         }
@@ -635,14 +636,14 @@ Include actions to update the task status and posting timestamp after successful
 
 **Use Case**: Automatically follow up with customers who abandon their shopping carts.
 
+Send the abandoned-checkout event from your store platform to the automation's webhook address. The webhook trigger needs Pro and up.
+
 ```json
 {
   "name": "Abandoned Cart Recovery",
   "trigger": {
-    "type": "shopify.cartAbandoned",
-    "filters": {
-      "cart_value": "> 50"
-    }
+    "type": "webhook.received",
+    "source": "your store platform (abandoned checkout event)"
   },
   "actions": [
     {
@@ -688,16 +689,20 @@ Include actions to update the task status and posting timestamp after successful
 
 1. **Start Simple**: Begin with basic trigger-action pairs
 2. **Add Conditions**: Use conditional logic for complex workflows
-3. **Handle Errors**: Always include error handling and retries
+3. **Handle Errors**: Decide what each step does when it fails (**Continue if this step fails**)
 4. **Test Thoroughly**: Test with sample data before deployment
 5. **Monitor Performance**: Track automation success rates and timing
 
 ***
 
 > **Need help with a custom recipe?**\
-> → [Join our community](https://taskade.com/community) for support and examples
+> → [Browse the automation guides](https://www.taskade.com/learn/automation) for support and examples
 
 > **Want to share your recipe?**\
 > → [Browse the Taskade template gallery](https://www.taskade.com/templates)
 
-→ **Next:** [**Set up your first automation**](../../#getting-started)
+→ **Next:** [**Set up your first automation**](README.md)
+
+---
+
+_Step-by-step guide on taskade.com/learn: [Prompt Library for Automations](https://www.taskade.com/learn/automation/prompts)._

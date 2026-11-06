@@ -12,7 +12,7 @@ Find answers fast. Pick the topic that matches what you need.
 | Goal                              | Go here                                                                                                |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | **Get started with Taskade**      | [Quick Start Guide](../getting-started/)                                                               |
-| **Build an app with Genesis**     | [Your First App in 5 Minutes](../genesis-living-system-builder/genesis/getting-started.md)             |
+| **Build an app with Taskade Genesis** | [Your First App in 5 Minutes](../genesis-living-system-builder/genesis/getting-started.md)             |
 | **Create an AI agent**            | [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md) |
 | **Set up automations**            | [Automations Overview](../genesis-living-system-builder/automation/)                                   |
 | **Import data from another tool** | [Import & Export](import-and-export.md)                                                                |
@@ -41,7 +41,7 @@ Find answers fast. Pick the topic that matches what you need.
 ### AI Agents
 
 * [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md) — create your first agent
-* [Agent Tools Reference](../genesis-living-system-builder/ai-features/agent-tools.md) — Slack, Gmail, Sheets, and 20+ more
+* [Agent Tools Reference](../genesis-living-system-builder/ai-features/agent-tools.md) — built-in tools, app tools, and custom tools
 * [Agent Knowledge & Memory](../genesis-living-system-builder/ai-features/agent-knowledge.md) — train agents with your data
 * [AI Agent Teams](../genesis-living-system-builder/ai-features/agent-teams.md) — multi-agent collaboration
 
@@ -62,14 +62,14 @@ Find answers fast. Pick the topic that matches what you need.
 ### Import, Export & Mobile
 
 * [Import & Export](import-and-export.md) — migrate from Notion, Trello, Asana, and more
-* [Mobile App](mobile-app.md) — full Taskade experience on iOS and Android
+* [Mobile App](mobile-app.md) — Taskade on iOS and Android
 
 ### For Developers
 
 * [Build on Taskade](../apis-living-system-development/developer-home.md) — developer starting point
 * [Workspace MCP](../apis-living-system-development/workspace-mcp.md) — manage projects, tasks, and agents from Claude, Cursor, or VS Code
 * [Hosted Taskade MCP](../apis-living-system-development/genesis-app-mcp.md) — orchestrate your workspace and edit your Genesis app's source from your IDE
-* [REST API Reference](../apis-living-system-development/developers/api.md) — 57+ endpoints
+* [REST API Reference](../apis-living-system-development/developers/api.md) — the full endpoint reference
 * [Webhooks](../apis-living-system-development/webhooks.md) — inbound and outbound
 * [Bundles & App Kits](../apis-living-system-development/bundles.md) — export and share complete apps
 

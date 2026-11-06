@@ -78,7 +78,7 @@ Genesis gets better results with clearer requirements, so don't hesitate to be m
 Yes! Check out:
 
 * [**Examples and templates**](../genesis/examples-and-templates.md) in this documentation
-* **Community showcase** in the Taskade forums
+* **Taskade App Factory** at [taskade.com/apps](https://www.taskade.com/apps)
 * **Video tutorials** on [YouTube](https://youtube.com/taskade)
 * **Help center** case studies at [taskade.com/learn](https://www.taskade.com/learn)
 
@@ -96,16 +96,16 @@ Use the **Preview feature** to interact with your app exactly as users will:
 
 ### How do I publish my app?
 
-Every app gets an **individual URL immediately**:
+Every app gets an **individual URL**. Your first build goes live once at its link, unlisted:
 
-1. Click "Open" to view your live app
-2. Copy the URL from your browser address bar
-3. Share this link anywhere: email, social media, your website
+1. Click **Publish** in the top-right of your app
+2. Under **Who can open it**, pick **Anyone with the link**, **Anyone with the password** (Pro and up), or **Each person signs in**
+3. Copy the app's address and share it anywhere: email, social media, your website
 4. No downloads or installations required for users
 
 ### Can I use my own domain name?
 
-**Yes — custom domains are live.** You can connect your own branded URL (like `app.yourcompany.com`) to a published Genesis app instead of the default Genesis link, giving your apps a professional appearance that matches your brand.
+**Yes — custom domains are live on Pro and up** (up to 10 per workspace on Pro, unlimited on Business and up). You can connect your own branded URL (like `app.yourcompany.com`) to a published Genesis app instead of the default Genesis link, giving your apps a professional appearance that matches your brand.
 
 ### How do users access my app?
 
@@ -123,7 +123,7 @@ Yes! Tell Genesis what access you want and it sets it up:
 * **"Only allow users with company email addresses"**
 * **"Require login for staff but allow public access for customers"**
 
-If you set a password, make sure to share it along with the app link.
+If you set a password (Pro and up), make sure to share it along with the app link. Sign-in works on every plan. Sign-in confirms who a visitor is, but it does not hide other people's records: turn on **Private entries** to show each person only their own rows, and test with a second account.
 
 ## Data and Security
 
@@ -145,8 +145,8 @@ Your app and all its data live in **Taskade's secure cloud infrastructure**. Thi
 Yes. Taskade uses enterprise-grade security:
 
 * **Encryption in transit and at rest**
-* **Regular security audits and monitoring**
-* **SOC 2 compliance** for data handling
+* **Security monitoring** and automated vulnerability scanning
+* **SOC 2 Type II readiness program** (the independent audit is not yet complete)
 * **Role-based access controls**
 * **Automatic backups** to prevent data loss
 
@@ -156,9 +156,8 @@ Yes. You can export your app data in standard formats (CSV, JSON) at any time. T
 
 ### What about GDPR and privacy compliance?
 
-Taskade is GDPR compliant and provides tools to help you meet privacy requirements:
+Taskade's practices are designed to align with GDPR (full compliance is in progress), and Taskade provides tools to help you meet privacy requirements:
 
-* **Data processing agreements** available for enterprise customers
 * **User consent management** built into apps
 * **Data deletion tools** for user requests
 * **Privacy policy templates** for your apps
@@ -171,8 +170,8 @@ Taskade is GDPR compliant and provides tools to help you meet privacy requiremen
 
 * **Communication:** Slack, Microsoft Teams, Discord
 * **Email:** Gmail, Outlook, Mailchimp
-* **File storage:** Google Drive, Dropbox, OneDrive
-* **Payments:** Stripe, PayPal
+* **File storage:** Google Drive
+* **Payments:** Stripe
 * **CRM:** HubSpot, Salesforce, Pipedrive
 * **Project management:** Trello, Asana, Monday.com
 * **And many more...**
@@ -185,7 +184,7 @@ Yes! Genesis can integrate with:
 
 * **Your current CRM or database**
 * **Existing email marketing tools**
-* **Accounting software** like QuickBooks
+* **Accounting software** through webhooks or HTTP requests
 * **Calendar systems** for scheduling
 * **Custom APIs** with webhook support
 
@@ -225,7 +224,7 @@ Visit [taskade.com/pricing](https://taskade.com/pricing) for current pricing.
 **Free plan includes:**
 
 * **App creation** with Taskade Genesis (up to 3 apps)
-* **Automations** with standard connectors (10 runs a month). Premium integrations need a paid plan.
+* **Automations** with standard connectors (10 runs per billing period). Premium integrations need a paid plan.
 * **AI credits** you earn with referrals and invites (a Free workspace starts with 0)
 * **Standard support** via help center
 * **Community access** for questions and inspiration
@@ -234,7 +233,7 @@ Visit [taskade.com/pricing](https://taskade.com/pricing) for current pricing.
 
 **Consider upgrading when you need:**
 
-* **Multiple apps** for different business functions
+* **More than 3 apps** for different business functions
 * **Advanced integrations** with business tools
 * **Team collaboration** features
 * **Priority support** for business-critical apps
@@ -354,15 +353,15 @@ See our [Best Practices guide](best-practices.md) for detailed examples.
 
 ## Quick Answers
 
-**Q: Can I duplicate an app I've built?** A: Not directly, but you can use the same prompt to build a similar app and then customize it for different needs.
+**Q: Can I duplicate an app I've built?** A: Yes. Open the app's menu and choose **Duplicate app**. On Free, each copy counts toward your 3 apps.
 
 **Q: What's the maximum number of users per app?** A: No hard limits, but performance may vary based on your plan and usage patterns.
 
-**Q: Can I white-label my apps?** A: Custom branding options are available on business plans.
+**Q: Can I white-label my apps?** A: Every paid plan can hide the "Powered by Taskade" badge. Custom app colors and SEO fields need Business and up.
 
 **Q: Do my apps work offline?** A: Basic functionality may work offline, but most features require an internet connection.
 
-**Q: Can I get my app code?** A: Apps are hosted on Taskade's platform. For custom hosting needs, contact our enterprise team.
+**Q: Can I get my app code?** A: Yes, on Pro and up. Read and edit the source in the Code tab, download the app bundle, or export it to GitHub. Apps stay hosted on Taskade's platform.
 
 ***
 
@@ -380,7 +379,7 @@ See our [Best Practices guide](best-practices.md) for detailed examples.
 
 * **Browse our help center:** [taskade.com/learn/genesis](https://www.taskade.com/learn/genesis)
 * **Email us:** [support@taskade.com](mailto:support@taskade.com)
-* **Join the community:** [taskade.com/community](https://taskade.com/community)
+* **Browse community apps:** [taskade.com/apps](https://www.taskade.com/apps)
 
 **Ready to start building?** [Open Genesis in your workspace →](https://taskade.com)
 
@@ -405,7 +404,7 @@ Traditional apps are static tools with fixed features and manual maintenance. Li
 
 ### What is Workspace DNA?
 
-Workspace DNA is the fundamental architecture of living software, consisting of three interconnected layers: Living Memory, Living Intelligence, and Living Motion. This trinity enables systems that think, learn, and act intelligently.
+Workspace DNA is the fundamental architecture of living software, consisting of three interconnected layers: Memory, Intelligence, and Execution. This trinity enables systems that think, learn, and act intelligently.
 
 ### How do AI agents become "living"?
 
@@ -421,7 +420,7 @@ Living Systems are complete business solutions that combine the three DNA layers
 
 ### How do I build a living system?
 
-Describe your needs in natural language using Genesis, and the system automatically creates a complete living solution with memory, intelligence, and motion layers working together.
+Describe your needs in natural language using Genesis, and the system automatically creates a complete living solution with memory, intelligence, and execution layers working together.
 
 ### Can living systems work together?
 
@@ -437,7 +436,7 @@ Living software provides better ROI through continuous improvement and reduced m
 
 ### How do I get started with living software?
 
-Start with Genesis to build your first living system, or explore AI Kits for ready-to-deploy solutions. The Workspace DNA foundation works with your existing tools.
+Start with Taskade Genesis to build your first living system, or explore App Kits for ready-to-deploy solutions. The Workspace DNA foundation works with your existing tools.
 
 ### What business benefits do living systems provide?
 
@@ -452,3 +451,7 @@ Yes! Living systems can be designed with enterprise-grade security, compliance f
 Future living systems will feature more sophisticated learning algorithms, deeper cross-system intelligence sharing, advanced predictive capabilities, and seamless human-AI collaboration.
 
 **Living software represents the next evolution of business systems - from tools that humans use to intelligent partners that work alongside us.**
+
+---
+
+_Step-by-step guide on taskade.com/learn: [Taskade Genesis FAQ](https://www.taskade.com/learn/genesis/faq)._

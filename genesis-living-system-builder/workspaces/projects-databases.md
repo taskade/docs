@@ -25,7 +25,7 @@ description: >-
 
 ## Overview
 
-Projects & Databases are the **Memory pillar** of your Workspace DNA — one of three pillars (Memory/Projects, Intelligence/Agents, Execution/Automations) forming the [Tree of Life architecture](../genesis/how-genesis-works.md#the-tree-of-life-architecture). They store, structure, and persist the information that powers every Genesis app, AI agent, and automation flow.
+Projects & Databases are the **Memory pillar** of your Workspace DNA — one of three pillars (Memory/Projects, Intelligence/Agents, Execution/Automations) forming the [Tree of Life architecture](../genesis/how-genesis-works.md#the-tree-of-life-architecture). They store, structure, and persist the information that powers every Taskade Genesis app, AI agent, and automation flow.
 
 > **DNA Impact:** Each project adds **+2 points** to your [Intelligence Score](../genesis/how-genesis-works.md#workspace-intelligence-score) (up to 10 projects = 20 points max from the Memory pillar).
 
@@ -37,12 +37,12 @@ Database projects are structured data containers that serve as your app's persis
 
 | Feature | Description |
 |---|---|
-| **Custom fields** | Define field types: text, number, currency, rating, date, select, multi-select, checkbox, URL, person |
-| **Relationships** | Link records across databases (e.g., customers ↔ orders) |
+| **Custom fields** | Define field types: text, number (decimal, currency, or unit), date, select, relationship, password |
+| **Relationships** | Link a record to another project with a Relationship field (e.g., an order to the Customers project) |
 | **Views** | List, board, table, calendar, and more |
 | **Filters & sorts** | Find and organize data dynamically |
 | **Permissions** | Control who can view and edit data |
-| **API access** | Programmatic access for integrations (Business+) — see the [REST API reference](../../apis-living-system-development/comprehensive-api-guide/README.md) |
+| **API access** | Programmatic access for integrations (every plan) — see the [REST API reference](../../apis-living-system-development/comprehensive-api-guide/README.md) |
 | **Real-time sync** | Changes reflect instantly across all connected apps and agents |
 | **Revision tracking** | Every change tracked via operational transform (OT) |
 
@@ -54,12 +54,12 @@ When Genesis builds an app, it **automatically creates the database structures**
 
 | App Type | Databases Created | Fields Generated |
 |---|---|---|
-| **Customer Feedback** | Feedback entries, Contacts | Rating (number), Comment (text), Category (select), Status (select), Photo (media), Contact info (text), Timestamp (date) |
+| **Customer Feedback** | Feedback entries, Contacts | Rating (number), Comment (text), Category (select), Status (select), Photo (attachment), Contact info (text), Timestamp (date) |
 | **Booking System** | Appointments, Clients, Services | Date/time (date), Client (relation), Service (select), Status (select), Price (number), Notes (text) |
 | **CRM** | Leads, Deals, Contacts | Name (text), Email (text), Stage (select), Value (number), Source (select), Last contact (date), Score (number) |
 | **Inventory** | Products, Suppliers, Orders | SKU (text), Name (text), Quantity (number), Reorder level (number), Supplier (relation), Price (number) |
-| **Help Desk** | Tickets, Agents, Categories | Title (text), Description (text), Priority (select), Status (select), Assignee (relation), SLA (date) |
-| **Course Platform** | Courses, Students, Enrollments | Title (text), Content (text), Progress (number), Grade (number), Status (select), Certificate (checkbox) |
+| **Help Desk** | Tickets, Agents, Categories | Title (text), Description (text), Priority (select), Status (select), Assignee (built-in), SLA (date) |
+| **Course Platform** | Courses, Students, Enrollments | Title (text), Content (text), Progress (number), Grade (number), Status (select), Certificate issued (select) |
 
 > **Fully automatic:** You don't need to define these structures. Genesis infers them from your prompt and creates optimized schemas.
 
@@ -108,16 +108,13 @@ You can also create databases manually:
 | Field Type | Use Case | Example | Formatting Options |
 |---|---|---|---|
 | **Text (String)** | Names, descriptions, notes | Customer name, product description | Plain text |
-| **Number** | Quantities, scores, counts | Stock level, quantity, score | Decimal, percent (%) |
-| **Currency** | Pricing, invoices, budgets | Product price, invoice total, budget cap | Pre-formatted as USD; numeric field with currency symbol and decimal precision |
+| **Number** | Quantities, scores, prices, budgets | Stock level, product price, completion rate | Formats: decimal, currency, unit (such as %) |
 | **DateTime** | Deadlines, timestamps, schedules | Due date, appointment time | Date only, date + time; Table view footers can aggregate Earliest / Latest / Range |
-| **Rating** | Feedback scores, priority ranking | Review stars, lead quality | Configurable star rating per row |
 | **Select** | Single-choice categories | Status, priority, category | Color-coded options |
-| **Multi-select** | Multiple tags/categories | Skills, interests, tags | Color-coded options |
-| **Checkbox** | Boolean yes/no states | Completed, approved, active | Toggle |
-| **URL** | Web links | Website, profile link | Clickable link |
-| **Person** | Team member assignment | Assignee, reviewer, owner | Workspace member picker |
-| **Relationship** | Link records across projects | Customer → Orders, Lead → Deals | Cross-project record picker |
+| **Relationship** | Link a record to another project | Order → Customers project, Lead → Deals project | Shows the linked project |
+| **Password** | Sensitive values, such as app user passwords | Sign-in password | Stored as a one-way hash; nobody can read the value back |
+
+For a team member, use the built-in **Assignee** field. For several labels on one record, use tags (`#tag`).
 
 ### Task Addons (Beyond Custom Fields)
 
@@ -151,9 +148,9 @@ Bring existing data into your projects:
 
 | Method | Format | Best For |
 |---|---|---|
-| **File upload** | CSV, XLSX | Bulk data import from spreadsheets |
+| **File upload** | CSV | Bulk data import from spreadsheets |
 | **Copy-paste** | Structured text | Quick data entry |
-| **API import** | JSON via API (Business+) | Programmatic data migration |
+| **API import** | JSON via API | Programmatic data migration |
 | **Automation** | From connected tools | Ongoing data sync from Google Sheets, CRM, etc. |
 | **Genesis prompt** | Natural language | "Import the customer data from the uploaded spreadsheet" |
 
@@ -246,3 +243,7 @@ AI agents interact with your databases as living knowledge:
 | [Agent Knowledge & Memory](../ai-features/agent-knowledge.md) | Connect databases as agent knowledge |
 | [Adding Genesis Context](../genesis/adding-context.md) | Import data files to kickstart your databases |
 | [How Genesis Works](../genesis/how-genesis-works.md) | Understand how Memory fits in the Tree of Life |
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Projects & Databases: The Memory Pillar](https://www.taskade.com/learn/projects/databases), [Custom Fields](https://www.taskade.com/learn/projects/custom-fields)._

@@ -99,25 +99,25 @@ Use an agent to classify, extract, or draft. Then route or act on the structured
 * **Custom Field Updated** — when a custom field value changes
 * **Project Completed** — when all tasks are done
 * **Public Agent Chat Ended** — when a public agent conversation finishes
-* **Task Moved** — when a task moves from one project to another
+* **Task Moved** — when a task moves to another block within a project
 * **Project Created** — when a new project is created in a space
 * **Due Date Removed** — when a due date is cleared from a task
 * **File Added to Media** — when a file is uploaded to the media library
 
 **External Triggers:**
 
-* **Webhook** — receive data from any external service via HTTP POST
+* **Webhook** — receive data from any external service via HTTP POST (Pro and up)
 * **Form** — custom input forms with text, email, date, and time fields
-* **Schedule** — run every X minutes (sub-hourly intervals), hourly, daily, weekly, or monthly
+* **Schedule** — run every X minutes (sub-hourly intervals, paid plans), hourly, daily, weekly, or monthly
 * **Mailhook** — trigger from incoming emails
 
 **Integration Triggers** (from connected services):
 
 Calendly, Slack, Typeform, Gmail, Google Sheets, Google Forms, Google Drive, Webflow, HubSpot, Discord, GitHub, YouTube, RSS, Google Calendar
 
-### 36 Integration Pieces
+### Integration Pieces
 
-Connect your workflows to popular tools across the [Taskade integrations](https://www.taskade.com/integrations) directory.
+Connect your workflows to popular tools across the [Taskade integrations](https://www.taskade.com/integrations) directory. Premium integrations (for example Gmail, Slack, Google Sheets, HubSpot and Stripe) need a paid plan. The Free plan runs the built-in steps and the standard connectors (HTTP Request, RSS, Pushover and MCP Client).
 
 | Category         | Services                                                             |
 | ---------------- | -------------------------------------------------------------------- |
@@ -125,11 +125,11 @@ Connect your workflows to popular tools across the [Taskade integrations](https:
 | Email            | Gmail, Mailchimp                                                     |
 | Google Workspace | Sheets, Drive, Calendar, Docs, Forms                                 |
 | CRM & Sales      | HubSpot, Apollo                                                      |
-| E-Commerce       | Shopify, Stripe                                                      |
+| Payments         | Stripe                                                               |
 | Social Media     | X/Twitter, LinkedIn, Facebook Pages, Reddit, YouTube                 |
 | Developer        | GitHub, HTTP                                                         |
 | Forms & CMS      | Typeform, Webflow, WordPress                                         |
-| Scheduling       | Calendly, Zoom                                                       |
+| Scheduling       | Calendly, Cal.com                                                    |
 | AI & Media       | Web Search, Web Scraping, YouTube Transcription, Document Extraction |
 | Utilities        | Schedule, Delay, Loop, Branch, Filter                                |
 
@@ -139,7 +139,7 @@ Connect your workflows to popular tools across the [Taskade integrations](https:
 * Step catalog: [Actions & Triggers](actions.md)
 * Pick tools to connect: [Integration Overview](comprehensive-integration-guide.md)
 * Full list of connectors: [Integration Options](integrations.md)
-* **Reach external tools** (Slack, Stripe, Shopify, Gmail) with [integrations](integrations.md), or call any MCP server from an automation with the MCP Client step — see [MCP Connectors](../genesis/mcp-connectors.md).
+* **Reach external tools** (Slack, Stripe, Gmail, HubSpot) with [integrations](integrations.md), or call any MCP server from an automation with the MCP Client step — see [MCP Connectors](../genesis/mcp-connectors.md).
 * Troubleshoot: [Living System Troubleshooting](../community-and-sharing/troubleshooting.md)
 
 ## Next steps
@@ -152,3 +152,7 @@ Connect your workflows to popular tools across the [Taskade integrations](https:
 {% hint style="info" %}
 This page stays overview-level. Deep trigger/action lists, templates, and advanced patterns live in the reference pages above.
 {% endhint %}
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Automations: The Execution Pillar](https://www.taskade.com/learn/automation/automations-execution), [Automation Triggers](https://www.taskade.com/learn/automation/triggers), [Automation Actions](https://www.taskade.com/learn/automation/actions)._

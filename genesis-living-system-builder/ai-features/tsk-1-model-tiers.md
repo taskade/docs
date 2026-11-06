@@ -19,22 +19,22 @@ TSK-1 is not a single model. It is an **orchestration layer** — the intelligen
 Taskade → Genesis → EVE → TSK-1 → Workspace DNA → Running workspace
 ```
 
-TSK-1 sits between the **EVE** persona and **Workspace DNA** — it is the engine that decides *how* to execute a given request across the Memory (projects), Intelligence (agents), Execution (automations), and Apps (Genesis) pillars.
+TSK-1 sits between the **Taskade EVE** persona and **Workspace DNA** — it is the engine that decides *how* to execute a given request across the Memory (projects), Intelligence (agents), and Execution (automations) pillars, and the Taskade Genesis apps built on them.
 
 ***
 
 ## The four tiers
 
-The model picker shows one TSK-1 header with a capability ladder. Each tier is defined by what it's good for, not by its underlying provider:
+The model picker shows one TSK-1 header with a capability ladder (**TSK-Instant**, **TSK-Standard**, **TSK-Thinking**, **TSK-Reasoning**). Each tier is defined by what it's good for, not by its underlying provider:
 
 | Tier | Best for | Example use | Plans |
 |------|----------|------------|--------------|
 | **Instant** | Fast edits, simple completions, quick lookups | Rename a task, fix a typo, categorize an item | All plans |
 | **Standard** | Everyday work — balanced speed and reasoning | Draft an email, summarize a document, answer a question | Paid plans |
-| **Thinking** | Planning, creation, multi-step reasoning | Design an automation flow, write a project proposal, generate a Genesis app | Business and up |
-| **Reasoning** | Complex systems, deep analysis, multi-agent coordination | Audit a workspace, cross-reference databases, run a multi-agent team | Max & Enterprise |
+| **Thinking** | Planning, creation, multi-step reasoning | Design an automation flow, write a project proposal, generate a Genesis app | Paid plans |
+| **Reasoning** | Complex systems, deep analysis, multi-agent coordination | Audit a workspace, cross-reference databases, run a multi-agent team | Business and up |
 
-Every tier is visible in the picker on every plan; manually pinning a tier requires the plan shown. **Auto** is available on every plan and can route a request to any tier based on the task — which is how Free-plan builds reach Reasoning depth (see below).
+Every tier is visible in the picker on every plan; manually pinning a tier requires the plan shown. **Auto** is available on every plan and picks the depth for each request based on the task.
 
 ***
 
@@ -60,9 +60,9 @@ Agents or automations **pinned to a specific tier** stay on that tier until you 
 | High-volume automation that needs low latency and low cost | **Instant** or **Standard** |
 | Agent that designs workflows, apps, or complex plans | **Thinking** |
 | Agent that audits, cross-references, or coordinates other agents | **Reasoning** |
-| You have a specific model preference from prior testing | Custom model (available on Max and Enterprise plans) |
+| You have a specific model preference from prior testing | A specific model from **All Models** (each row shows its credit cost and any plan badge) |
 
-Agents pinned to a **custom model** (e.g. a specific Claude or GPT version) bypass TSK-1 routing entirely — they always use that model. This is available on Max and Enterprise plans.
+Agents pinned to a **specific model** bypass TSK-1 routing entirely — they always use that model. Each model in the picker shows the plan it needs. Claude runs on your own API key (BYOK) in custom agents on Pro and up.
 
 ***
 
@@ -76,7 +76,7 @@ See [Credits & Billing](../../account-management/credits-and-billing.md) for cur
 
 ## Workspace DNA
 
-TSK-1 powers all four pillars of Workspace DNA:
+TSK-1 powers the three Workspace DNA pillars and the apps built on them:
 
 1. **Projects remember** — your data and context stay connected.
 2. **Agents reason** — multi-agent teams understand goals and take action.
@@ -95,3 +95,7 @@ For the full architecture, see [How Taskade Genesis Works](../genesis/how-genesi
 | [Agent Knowledge & Memory](agent-knowledge.md) | Give agents context from your projects |
 | [Multi-Agent Collaboration](multi-agents.md) | Coordinate multiple agents with TSK-1 Reasoning |
 | [Credits & Billing](../../account-management/credits-and-billing.md) | Understand credit costs per tier |
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Thinking Modes: Pick the Right Depth for the Task](https://www.taskade.com/learn/agents/thinking-modes), [TSK-1: The Taskade System Kernel](https://www.taskade.com/learn/genesis/tsk-1)._

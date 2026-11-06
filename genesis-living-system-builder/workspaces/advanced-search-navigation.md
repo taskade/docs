@@ -1,6 +1,6 @@
 ---
 description: >-
-  Find anything in Taskade fast with global search, smart filters, search operators, natural-language queries, the command palette, and keyboard navigation.
+  Find anything in Taskade fast with global search, result tabs and filters, the command palette, and keyboard navigation.
 ---
 
 # Advanced Search & Discovery
@@ -34,19 +34,19 @@ As your Taskade workspace grows with projects, documents, and team collaboration
 {% step %}
 #### Access Global Search
 
-Click the search icon (🔍) in the top navigation or use keyboard shortcut **Ctrl/Cmd + K**.
+Click the **🔍 Search** button at the top of the left navigation pane, or press **Ctrl/Cmd + K** to open quick search.
 {% endstep %}
 
 {% step %}
 #### Enter Search Query
 
-Type your search terms, keywords, or natural language questions.
+Type your search terms or keywords.
 {% endstep %}
 
 {% step %}
 #### Review Results
 
-Browse categorized results including projects, tasks, documents, and team members.
+Pick a tab to narrow the results: **Apps**, **All**, **Projects**, **Tasks**, or **Comments**. Click **Show filters** for more ways to narrow the list.
 {% endstep %}
 
 {% step %}
@@ -63,29 +63,10 @@ Click any result to navigate directly to the relevant content.
 #### Keyword Search
 
 * **Simple Keywords**: `meeting notes`, `budget planning`, `client feedback`
-* **Exact Phrases**: `"quarterly review"`, `"project deadline"`
-* **Partial Matches**: `proj*` (finds project, projects, projections)
-* **Boolean Operators**: `marketing AND campaign NOT social`
 
-#### Natural Language Queries
+#### Narrow the Results
 
-* **Questions**: "What are my overdue tasks?"
-* **Commands**: "Show me projects from last month"
-* **Contextual**: "Find documents related to the Johnson account"
-* **Temporal**: "Tasks due this week in the marketing workspace"
-
-#### Advanced Search Operators
-
-```
-# Search operators and examples
-title:budget          # Search in titles only
-assignee:john         # Find content assigned to John
-created:2024          # Content created in 2024
-modified:last-week    # Recently modified content
-type:project          # Search only projects
-workspace:marketing   # Search within specific workspace
-tag:urgent            # Find content with specific tags
-```
+Type plain keywords. To narrow the list, pick a result tab (**Apps**, **All**, **Projects**, **Tasks**, or **Comments**) or click **Show filters**. To ask a question about your work in plain language, ask an [AI agent](../ai-features/ai-agents-getting-started.md) instead.
 
 ## Search Filters and Categories
 
@@ -189,19 +170,21 @@ tag:urgent            # Find content with specific tags
 
 #### Global Navigation
 
-* **Ctrl/Cmd + K**: Open global search
-* **Ctrl/Cmd + /**: Open command palette
-* **Ctrl/Cmd + Shift + P**: Open project switcher
-* **Alt + H**: Navigate to home/dashboard
-* **Alt + W**: Switch between workspaces
+* **Ctrl/Cmd + K**: Open the command palette to search and jump to any project, agent, workspace, or automation
+* **Ctrl/Cmd + F**: Search within the current project
+* **Ctrl/Cmd + \\**: Show or hide the project chat
+* **Ctrl/Cmd + J**: Open or close Taskade EVE
+* **S**: Show or hide the sidebar inside an app or workspace
+* **W**: Go to the projects, agents, and automations of the current app
+* **Ctrl/Cmd + Shift + /**: Show all keyboard shortcuts
 
 #### Within Projects
 
-* **Tab**: Navigate between tasks
-* **Enter**: Edit selected task
-* **Esc**: Exit editing mode
-* **Ctrl/Cmd + Enter**: Create new task
+* **Enter**: Create a new task below the current one
+* **Tab** / **Shift + Tab**: Indent or outdent a task
+* **Ctrl/Cmd + Enter**: Complete or uncomplete a task
 * **Ctrl/Cmd + D**: Duplicate current task
+* **Ctrl/Cmd + /**: Open the add-ons menu
 
 #### Search Navigation
 
@@ -218,35 +201,37 @@ tag:urgent            # Find content with specific tags
 {% step %}
 #### Open Command Palette
 
-Press **Ctrl/Cmd + /** or click the command icon in the navigation.
+Press **Ctrl/Cmd + K** from anywhere in Taskade.
 {% endstep %}
 
 {% step %}
 #### Type Command
 
-Start typing the action you want to perform (e.g., "create project", "invite user").
+Start typing a few words of the project, agent, workspace, or automation you want, in any order.
 {% endstep %}
 
 {% step %}
 #### Select Action
 
-Use arrow keys to select the desired command and press Enter.
+Use arrow keys to select the result you want and press Enter.
 {% endstep %}
 
 {% step %}
 #### Execute Command
 
-The selected action will be performed immediately.
+Taskade opens the selected item.
 {% endstep %}
 {% endstepper %}
 
 #### Available Commands
 
-* **Project Management**: Create, duplicate, archive, share projects
-* **Task Operations**: Add, edit, complete, assign tasks
-* **Team Actions**: Invite users, manage permissions, create workspaces
-* **View Controls**: Switch views, filter content, sort items
-* **System Functions**: Export data, manage settings, access help
+* **Actions**: **Quick Add** to capture a task or note
+* **Recent**: Projects and apps you opened recently
+* **Projects**: Projects that match your words
+* **AI Agents**: Every AI agent that you can view
+* **Automations**: The automations of the app you are in
+* **Chats**: Your own Taskade EVE chats, with a **Running** list for chats where Taskade EVE still works
+* **Workspaces**: Your workspaces
 
 ### Quick Navigation Panels
 
@@ -338,7 +323,6 @@ The selected action will be performed immediately.
 #### Mobile-Specific Features
 
 * **Location-Based Search**: Find content related to your current location
-* **Offline Search**: Search recently accessed content without internet
 * **Push Notifications**: Get notified when searched content is updated
 * **Quick Actions**: Perform actions directly from search results
 
@@ -438,41 +422,11 @@ The selected action will be performed immediately.
 
 ## Integration with External Search
 
-### Third-Party Search Integration
+Taskade search covers what is in your workspace: apps, projects, tasks, and comments. It does not search Google Drive, Slack, email, or other outside tools directly. To make outside content findable in Taskade, bring it into the workspace first:
 
-**Connect Taskade search with external systems:**
-
-#### Cloud Storage Search
-
-* **Google Drive**: Search Google Drive files from within Taskade
-* **Dropbox**: Find Dropbox documents through Taskade search
-* **OneDrive**: Access OneDrive content via integrated search
-* **Box**: Search Box files and folders from Taskade interface
-
-#### Communication Platform Search
-
-* **Slack**: Find Slack messages and files through Taskade
-* **Microsoft Teams**: Search Teams conversations and documents
-* **Discord**: Access Discord messages and shared files
-* **Email**: Search email content and attachments
-
-### API-Based Search Extensions
-
-**Extend search capabilities through integrations:**
-
-#### Custom Search Connectors
-
-* **CRM Systems**: Search customer data and interactions
-* **Knowledge Bases**: Access company documentation and wikis
-* **Project Management**: Find content in other project management tools
-* **Document Management**: Search enterprise document repositories
-
-#### Search Workflow Automation
-
-* **Automated Content Discovery**: Automatically find and link related content
-* **Search-Triggered Actions**: Perform actions based on search queries
-* **Content Synchronization**: Keep search indexes updated across platforms
-* **Smart Notifications**: Get notified when relevant content is created
+* **Files from cloud storage**: add files from Google Drive and other cloud storage as [agent knowledge](../ai-features/agent-knowledge.md), so an agent can answer questions about them.
+* **Messages and records**: use an [automation](../automation/README.md) to copy new Slack messages, emails, form entries, or CRM records into a project. Once they are tasks, search finds them.
+* **Your own tools**: use the [REST API](../../apis-living-system-development/developer-home.md) or the [hosted Taskade MCP server](../../apis-living-system-development/genesis-app-mcp.md) to write content into projects from another system.
 
 ## Getting Started with Advanced Search
 
@@ -528,3 +482,7 @@ Regularly review search analytics and optimize content discoverability.
 {% hint style="info" %}
 **Pro Tip**: The most effective search strategies combine good content organization with smart search techniques. Invest time in organizing your workspace structure and training your team on search best practices for maximum productivity gains.
 {% endhint %}
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Search](https://www.taskade.com/learn/projects/search), [Keyboard Shortcuts](https://www.taskade.com/learn/projects/keyboard-shortcuts)._

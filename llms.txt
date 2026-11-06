@@ -11,6 +11,7 @@ Developers can build on the REST API v1, the action-based Public API v2, webhook
 - Hosted MCP server: https://www.taskade.com/mcp (Streamable HTTP, OAuth 2.0 with PKCE, or a personal access token as a Bearer header). Every paid plan.
 - [API catalog (RFC 9727)](https://www.taskade.com/.well-known/api-catalog): The machine-readable list of Taskade APIs.
 - [Developer docs index](https://www.taskade.com/docs/llms.txt): taskade.com/docs pages, each with a Markdown copy at the same URL plus `.md`.
+- Docs MCP server: https://docs.taskade.com/~gitbook/mcp (public, no sign-in). Three tools: `searchDocumentation` and `getPage` search and read this documentation site, and `sendFeedback` reports a docs problem. It is separate from the hosted Taskade MCP server, which works in your workspace.
 
 ## Quick Start
 
@@ -32,12 +33,12 @@ Developers can build on the REST API v1, the action-based Public API v2, webhook
 
 - [Taskade Genesis Overview](https://docs.taskade.com/taskade-genesis/genesis): Turn natural-language prompts into full applications — databases, interfaces, automations, and AI agents — deployed instantly.
 - [Getting Started](https://docs.taskade.com/taskade-genesis/genesis/getting-started): Build your first app in 5 minutes from a plain-English prompt, then test, refine, and publish.
-- [Examples & Templates](https://docs.taskade.com/taskade-genesis/genesis/examples-and-templates): Proven prompts for CRMs, booking systems, forms, and landing pages, plus 70+ live app templates to fork.
+- [Examples & Templates](https://docs.taskade.com/taskade-genesis/genesis/examples-and-templates): Proven prompts for CRMs, booking systems, forms, and landing pages, plus live app templates to clone.
 - [How Taskade Genesis Works](https://docs.taskade.com/taskade-genesis/genesis/how-genesis-works): How prompts become live apps using Workspace DNA, Taskade EVE, and the Intelligence Score.
 - [Prompt Guide](https://docs.taskade.com/taskade-genesis/genesis/prompt-guide): 12 principles for writing better Genesis prompts — objectives, outcomes, tools, access, iteration.
 - [Adding Context](https://docs.taskade.com/taskade-genesis/genesis/adding-context): Upload brand files, data, and reference docs so Genesis builds on-brand apps.
-- [Version History](https://docs.taskade.com/taskade-genesis/genesis/version-history): View, compare, and restore app versions with auto vs manual publish controls and Code View.
-- [App Analytics](https://docs.taskade.com/taskade-genesis/genesis/app-analytics): Track visitors, pageviews, bounce rate, traffic sources, and devices for any published app.
+- [Version History](https://docs.taskade.com/taskade-genesis/genesis/version-history): View, compare, and restore app versions with auto vs manual publish controls and the Code tab.
+- [App Analytics](https://docs.taskade.com/taskade-genesis/genesis/app-analytics): Track visitors, pageviews, bounce rate, traffic sources, and devices for a published app (Business and up).
 - [Debugging Genesis Apps](https://docs.taskade.com/taskade-genesis/genesis/debugging-genesis-apps): Classify failures and diagnose import, routing, schema, and namespace bugs.
 - [GitHub Import & Export](https://docs.taskade.com/taskade-genesis/genesis/github-import-export): Two-way, version-controlled app sync with GitHub via branch-and-PR flows.
 - [Space Apps Guide](https://docs.taskade.com/taskade-genesis/space-apps-guide): Publish Genesis apps as real products with custom domains, branding, and advanced features.
@@ -50,7 +51,7 @@ Developers can build on the REST API v1, the action-based Public API v2, webhook
 
 - [Run Your Business on Genesis](https://docs.taskade.com/run-your-business-on-genesis/run-your-business): Build and run a real business on Genesis — ops dashboard, CRM, or client portal — with logins and your own domain.
 - [From Idea to Live Business](https://docs.taskade.com/run-your-business-on-genesis/run-your-business/from-idea-to-live-business): Go live in five steps: describe it, shape your data, add login, brand your domain, launch.
-- [Build a Client or Member Portal](https://docs.taskade.com/run-your-business-on-genesis/run-your-business/build-a-client-portal): A portal where each client logs in and sees only their own info — no code.
+- [Build a Client or Member Portal](https://docs.taskade.com/run-your-business-on-genesis/run-your-business/build-a-client-portal): A portal where each client signs in and, with Private entries on, sees only their own records — no code.
 - [Build an Internal Ops Dashboard](https://docs.taskade.com/run-your-business-on-genesis/run-your-business/build-an-ops-dashboard): An internal dashboard, CRM, or pipeline connected to live workspace data.
 - [Add Login & Roles](https://docs.taskade.com/run-your-business-on-genesis/run-your-business/add-login-and-roles): Secure sign-in and access control without a third-party auth provider.
 - [Go-Live Checklist](https://docs.taskade.com/run-your-business-on-genesis/run-your-business/go-live-checklist): Secrets, logins, domain, and credits — everything to check before launching to real users.
@@ -64,26 +65,26 @@ Developers can build on the REST API v1, the action-based Public API v2, webhook
 - [Tools for AI Agents](https://docs.taskade.com/ai-features/ai-features/agent-tools): Native tools, Slack/Gmail/HubSpot integrations, custom automation tools, and human-in-the-loop approvals.
 - [AI Agent Teams](https://docs.taskade.com/ai-features/ai-features/agent-teams): Teams of agents where Taskade picks the best-qualified agent to respond.
 - [Multi-Agent Collaboration](https://docs.taskade.com/ai-features/ai-features/multi-agents): Specialized agents collaborating on projects, with Taskade EVE orchestrating handoffs.
-- [Image Generation](https://docs.taskade.com/ai-features/ai-features/image-generation): Generate images in EVE chat with prompt templates, auto-saved to Media.
+- [Image Generation](https://docs.taskade.com/ai-features/ai-features/image-generation): Generate images in Taskade EVE chat with prompt templates, auto-saved to Media.
 - [Media AI Chat](https://docs.taskade.com/ai-features/ai-features/media-ai-chat): Chat with files, projects, and media — extract insights and generate content.
 - [Autopilot](https://docs.taskade.com/ai-features/ai-features/autopilot): Turn one prompt into a full workspace of connected projects, agents, teams, and automations.
 
 ## Automations
 
 - [Automations Overview](https://docs.taskade.com/automations/automation): The trigger-and-action engine — 100+ integrations with AI agents running workflows end to end.
-- [AI Forms](https://docs.taskade.com/automations/automation/ai-forms): Forms with smart validation, sentiment analysis, and conditional questions that auto-route responses.
+- [AI Forms](https://docs.taskade.com/automations/automation/ai-forms): Forms that start an automation on every submission, then use AI steps to analyze, categorize, and route responses.
 - [Action & Trigger Reference](https://docs.taskade.com/automations/automation/actions): Complete action reference — create tasks, run agents, send HTTP requests, chain steps.
 - [Workflow Generator](https://docs.taskade.com/automations/automation/workflow-generator): Build complex automations from plain English — triggers, branches, loops, integrations.
 - [Integration Overview](https://docs.taskade.com/automations/automation/comprehensive-integration-guide): Connect Slack, Gmail, HubSpot, Sheets, and more, plus custom HTTP and webhook integrations.
 - [Integration Options](https://docs.taskade.com/automations/automation/integrations): Triggers and actions for 100+ tools, plus custom webhook integrations.
-- [Automation Recipes](https://docs.taskade.com/automations/automation/recipes): Ready-to-use recipes with full JSON configs — publishing, lead capture, ticket routing, GitHub sync.
+- [Automation Recipes](https://docs.taskade.com/automations/automation/recipes): Ready-to-use recipes with flow outlines — publishing, lead capture, ticket routing, GitHub sync.
 
 ## Workspaces
 
 - [Workspaces Overview](https://docs.taskade.com/workspaces/workspaces): Projects, tasks, members, and billing — the structured-data foundation for apps, agents, and automations.
 - [Projects & Databases](https://docs.taskade.com/workspaces/workspaces/projects-databases): Database projects with custom fields, relationships, and multiple project views; how Genesis auto-generates schemas.
 - [Project Views](https://docs.taskade.com/workspaces/workspaces/project-views): Switch the same data between List, Board, Table, Calendar, Mind Map, Gantt, and more.
-- [Teams](https://docs.taskade.com/workspaces/workspaces/teams): Workspace and folder structures with a 5-role RBAC permission system.
+- [Teams](https://docs.taskade.com/workspaces/workspaces/teams): Workspace and folder structures with role-based access from Owner to Viewer.
 - [Collaboration](https://docs.taskade.com/workspaces/workspaces/collaboration): Live co-editing, chat, comments, video calls, presence, and AI summaries.
 - [Markdown Support](https://docs.taskade.com/workspaces/workspaces/markdown): Full Markdown syntax reference across the editor, chat, comments, and import/export.
 - [Import](https://docs.taskade.com/workspaces/workspaces/import): Import Markdown, PDF, Word, Excel, CSV, and more as projects, agent knowledge, or app context.
@@ -94,7 +95,7 @@ Developers can build on the REST API v1, the action-based Public API v2, webhook
 
 - [Community & Sharing](https://docs.taskade.com/community-and-sharing/community-and-sharing): Share, publish, and clone apps and templates — for your team or the community.
 - [Publish & Clone](https://docs.taskade.com/community-and-sharing/community-and-sharing/publish-and-clone): Live URLs, password protection, custom domains, SEO, white-label branding, and paid copies.
-- [GenesisAuth](https://docs.taskade.com/community-and-sharing/community-and-sharing/genesis-auth): No-code user accounts and sign-in for Genesis apps — App Users, workspace SSO, custom-domain login.
+- [GenesisAuth](https://docs.taskade.com/community-and-sharing/community-and-sharing/genesis-auth): No-code user accounts and sign-in for Genesis apps — App Users on every plan, custom-domain login.
 - [Best Practices](https://docs.taskade.com/community-and-sharing/community-and-sharing/best-practices): Write effective prompts, test on mobile, iterate one change at a time.
 - [FAQ](https://docs.taskade.com/community-and-sharing/community-and-sharing/faq): How the no-code builder works — build times, publishing, data ownership, security, pricing.
 - [Troubleshooting](https://docs.taskade.com/community-and-sharing/community-and-sharing/troubleshooting): Fix an app that missed the mark — sharpen prompts, add features, resolve context-limit errors.
@@ -118,7 +119,7 @@ Developers can build on the REST API v1, the action-based Public API v2, webhook
 
 ## MCP
 
-- [Which Taskade MCP do I want?](https://docs.taskade.com/developers/mcp-overview): Three MCP surfaces, one decision — Workspace MCP (@taskade/mcp-server) for task writes, the hosted Taskade MCP for orchestration, or MCP Connectors for agent tool access.
+- [Which Taskade MCP do I want?](https://docs.taskade.com/developers/mcp-overview): Three MCP surfaces, one decision — Workspace MCP (@taskade/mcp-server) for task writes, the hosted Taskade MCP for orchestration, or the MCP Client step in an automation to call any outside MCP server.
 - [Workspace MCP](https://docs.taskade.com/developers/workspace-mcp): Connect Claude Desktop, Cursor, Claude Code, Windsurf, VS Code, and more to your workspace via @taskade/mcp-server.
 - [Workspace MCP: Advanced](https://docs.taskade.com/developers/workspace-mcp/workspace-mcp-advanced): Rate limits, multi-client setup, troubleshooting, and security for production use.
 - [Run Your Live App by Talking to Claude](https://docs.taskade.com/developers/workspace-mcp/run-your-app-with-ai): Run your Genesis app's day-to-day data through conversation — no IDs, no API code.
@@ -128,7 +129,8 @@ Developers can build on the REST API v1, the action-based Public API v2, webhook
 ## Changelog
 
 - [Changelog 2026](https://docs.taskade.com/changelog/changelog-2026): Monthly developer changelog — API, MCP, automation, agents, and Genesis platform updates.
-- [July 2026](https://docs.taskade.com/changelog/changelog-2026/july-2026): The latest month of developer updates.
+- [Latest Releases](https://docs.taskade.com/changelog/latest-releases): Release notes after July 2026 are at https://www.taskade.com/changelog, one page per release, with an RSS feed at https://www.taskade.com/changelog/feed.xml.
+- [July 2026](https://docs.taskade.com/changelog/changelog-2026/july-2026): The last month of developer updates published on this site.
 
 ## Help
 

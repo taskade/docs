@@ -68,7 +68,7 @@ flowchart TD
 * New contacts in your CRM appear as tasks in Taskade
 * Project updates in Taskade sync to your team calendar
 * Files uploaded to Taskade appear in your cloud storage
-* Social media mentions trigger Taskade notifications
+* New Slack or Discord messages trigger Taskade notifications
 
 ### Level 2: Event Triggers
 
@@ -76,7 +76,7 @@ flowchart TD
 
 * When a deal closes in your CRM → Create celebration task in Taskade
 * When code is pushed to GitHub → Update project status in Taskade
-* When a customer tweets → Create support ticket in Taskade
+* When a customer emails support → Create support ticket in Taskade
 * When inventory runs low → Generate reorder task in Taskade
 
 ### Level 3: Intelligent Orchestration
@@ -89,19 +89,19 @@ flowchart TD
 
 ## Setting Up Your First Integration (Step-by-Step)
 
-**Let's connect Slack for instant team notifications:**
+**Let's connect Slack for instant team notifications.** Slack is a premium integration, so it needs a paid plan. Free runs the standard connectors:
 
 {% stepper %}
 {% step %}
 #### Access Integration Settings
 
-In your workspace, go to Automations → Integrations tab
+In your workspace, open **Automations** and create an automation. Add a Slack trigger or action to it (you can also add Slack as an agent tool)
 {% endstep %}
 
 {% step %}
 #### Choose Your Tool
 
-Find Slack in the integration list and click "Connect"
+In the Slack step, click **Connect**
 {% endstep %}
 
 {% step %}
@@ -140,9 +140,9 @@ Create a test task and mark it complete—watch the Slack notification appear in
 
 #### Microsoft Teams
 
-* **Meeting Integration**: Create projects from Teams meetings
-* **File Sync**: Share documents between platforms
 * **Channel Notifications**: Send updates to relevant Teams channels
+* **Chat Messages**: Send a Teams chat message when work changes
+* **Channel Creation**: Create a channel for a new project
 
 #### Discord
 
@@ -189,15 +189,13 @@ Create a test task and mark it complete—watch the Slack notification appear in
 
 #### Google Drive
 
-* **File Attachments**: Sync Taskade files to Drive folders
-* **Version Control**: Maintain file history across platforms
-* **Sharing Permissions**: Control access from Taskade interface
+* **File Attachments**: Upload files to Drive folders from automations
+* **Sharing Permissions**: Add or remove sharing permissions from an automation
 
-#### OneDrive/SharePoint
+#### OneDrive
 
-* **Document Management**: Organize files by project automatically
-* **Collaboration**: Share files with external stakeholders
-* **Backup**: Automatic file backup and versioning
+* **Document Management**: Pull OneDrive files into projects, tasks, chat, and comments
+* **Agent Knowledge**: Add OneDrive files as knowledge sources for your AI agents
 
 ### Social Media & Marketing
 
@@ -205,15 +203,13 @@ Create a test task and mark it complete—watch the Slack notification appear in
 
 #### Twitter/X
 
-* **Mention Monitoring**: Track brand mentions and respond
-* **Content Scheduling**: Post updates from Taskade campaigns
-* **Analytics Integration**: Track engagement metrics
+* **Content Publishing**: Post updates from Taskade campaigns
+* **Replies**: Reply to posts from an automation or an AI agent
 
 #### LinkedIn
 
 * **Post Scheduling**: Automate professional content publishing
-* **Lead Generation**: Capture LinkedIn connections as leads
-* **Company Updates**: Share project milestones with network
+* **Company Updates**: Share project milestones on a company page
 
 ### Development Tools
 
@@ -280,8 +276,8 @@ Every Monday 9 AM → Pull analytics → Generate report → Email to team → U
 
 **Your data stays protected:**
 
-* End-to-end encryption for data in transit
-* SOC 2 compliance for enterprise customers
+* TLS encryption for data in transit, and AES-256 for backups and stored credentials
+* Work toward SOC 2 Type II (the independent audit is not complete yet)
 * Granular permission controls
 * Audit trails for all integration activities
 
@@ -395,3 +391,7 @@ Every Monday 9 AM → Pull analytics → Generate report → Email to team → U
 _What's the most frustrating manual process in your business? Find the integration that automates it, and watch hours of repetitive work disappear. Your connected ecosystem will thank you!_
 
 [← Back to Chapter 5: Genesis](05_genesis.md) | [Next: API →](07_api.md)
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Integrations Everywhere: Workspace DNA and the App on Top](https://www.taskade.com/learn/connect/everywhere), [Slack Integration](https://www.taskade.com/learn/connect/slack-integration), [Google Drive Integration](https://www.taskade.com/learn/connect/google-drive)._

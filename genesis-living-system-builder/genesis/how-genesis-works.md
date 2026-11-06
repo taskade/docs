@@ -1,6 +1,6 @@
 ---
 description: >-
-  How Taskade Genesis turns plain-English prompts into live apps using Workspace DNA: projects, AI agents, automations, EVE, and Intelligence Score.
+  How Taskade Genesis turns plain-English prompts into live apps using Workspace DNA: projects, AI agents, automations, Taskade EVE, and Intelligence Score.
 ---
 
 # How Genesis Works: Workspace DNA
@@ -45,10 +45,10 @@ flowchart TD
 ```
 
 
-- **The Tree of Life:** How Memory (Projects), Intelligence (Agents), and Action (Automations) form a continuous cycle that powers living software.
+- **The Tree of Life:** How Memory (Projects), Intelligence (Agents), and Execution (Automations) form a continuous cycle that powers living software.
 - **Workspace DNA:** What your workspace's genetic code is and why every app you build is unique.
-- **EVE:** How Taskade's unified AI system connects everything together.
-- **Intelligence Score:** How your workspace earns a 0–100 score across 5 maturity tiers.
+- **Taskade EVE:** How Taskade's unified AI builder connects everything together.
+- **Intelligence Score:** How each app earns a 0–100 score across 5 maturity tiers.
 
 > **New to Taskade Genesis?** Start with [Create Your First App](./getting-started.md) for a hands-on walkthrough, or jump straight in and build your first app with [Taskade Genesis](https://www.taskade.com/create).
 
@@ -62,14 +62,14 @@ A single prompt gives you:
 
 | Component | What You Get |
 |---|---|
-| **User Interface** | Professional React app with 50+ UI components (shadcn/ui), responsive design, and customizable styles |
+| **User Interface** | Professional React app with shadcn/ui components, responsive design, and customizable styles |
 | **Databases** | Structured project databases with custom fields, relationships, and persistent memory |
 | **AI Agents** | Custom agents trained on your business context, embeddable directly in your apps |
 | **Automations** | Intelligent workflows across 100+ integrated tools (Slack, Gmail, HubSpot, Google Sheets, and more) |
 | **File Handling** | Document and media management with upload, storage, and AI processing |
-| **Security** | Role-based access control, password protection, and custom domain support |
-| **Analytics** | Built-in visitor tracking, geographic data, traffic sources, and device metrics |
-| **Version Control** | Full commit history with one-click restore to any previous version |
+| **Security** | Role-based access control, app sign-in on every plan, password protection (Pro and up), and custom domain support (Pro and up) |
+| **Analytics** | Built-in visitor tracking, geographic data, traffic sources, and device metrics (Business and up) |
+| **Version Control** | Version history with one-click restore of an earlier version's design and code |
 | **Publishing** | Instant deployment with shareable links, custom domains, and community gallery |
 
 > **Taskade Genesis hint:** Your AI credits power app creation. Different models have different credit costs — see [Taskade AI Credits](https://www.taskade.com/learn/agents/ai-usage) for details.
@@ -192,17 +192,19 @@ Execution means **intelligent automation workflows** — the nervous system that
 
 | Category | Tools |
 |---|---|
-| **Communication** | Slack, Discord, Microsoft Teams, WhatsApp Business, Twilio SMS, Zoom |
+| **Communication** | Slack, Discord, Microsoft Teams, WhatsApp Business, Twilio SMS |
 | **Email** | Gmail, Outlook, Mailchimp |
 | **Productivity** | Google Sheets, Google Docs, Google Drive, Google Calendar, Google Forms, Calendly |
 | **CRM & Sales** | HubSpot, Apollo |
 | **Social & Marketing** | Twitter/X, LinkedIn, Facebook, YouTube, Reddit, WordPress, Webflow, RSS |
 | **Development** | GitHub, HTTP/Webhooks |
-| **Storage** | Google Drive, Dropbox, Box, OneDrive |
+| **Storage** | Google Drive |
+
+Premium integrations such as Slack, Gmail, and Stripe need a paid plan, and webhook triggers need Pro or above. Free runs the standard connectors.
 
 > **Deep dive:** [Automations: The Execution Pillar](../automation/README.md)
 
-Connect your automations to Slack, Stripe, Shopify, and more with [integrations](../automation/integrations.md), or call any MCP server from an automation — see [MCP Connectors](mcp-connectors.md).
+Connect your automations to Slack, Stripe, HubSpot, and more with [integrations](../automation/integrations.md), or call any MCP server from an automation — see [MCP Connectors](mcp-connectors.md).
 
 ---
 
@@ -231,7 +233,7 @@ Every action in your Taskade Genesis app generates results that flow back into y
 
 ## Workspace Intelligence Score
 
-Every Taskade Genesis workspace earns an **Intelligence Score** from 0–100, calculated from your three DNA pillars:
+Every Taskade Genesis app earns an **Intelligence Score** from 0–100 (shown as **App IQ**), calculated from the three DNA pillars of its workspace:
 
 | Component | Points Each | Max Items Scored | Max Points |
 |---|---|---|---|
@@ -251,13 +253,13 @@ Every Taskade Genesis workspace earns an **Intelligence Score** from 0–100, ca
 | **Intelligent** | 70–89 | 🔵 | Advanced — strong AI coverage with active automations |
 | **Genius** | 90–100 | 🟢 | Full-featured ecosystem — maximum AI-powered capability |
 
-> **Tip:** The fastest way to increase your Intelligence Score is to add AI agents (+10 pts each). Three agents plus six automation flows puts you in the Intelligent tier.
+> **Tip:** The fastest way to increase your Intelligence Score is to add AI agents (+10 pts each). Three agents plus six automation flows give 60 points (Learning). Add ten projects to reach 80 points, the Intelligent tier. Integrations are reserved, so 80 is the highest score today.
 
 ---
 
 ## EVE: The Unified Intelligence
 
-**EVE** is the central AI system that powers everything in Taskade. It's the living consciousness that connects Memory, Intelligence, and Action into a unified whole.
+**Taskade EVE** is the AI builder that works across all parts of Workspace DNA. Custom agents do one job. Taskade EVE builds and edits the whole workspace from a chat, and connects Memory, Intelligence, and Execution into a unified whole.
 
 When you interact with Taskade, EVE:
 1. **Reads** your entire workspace DNA (projects, agents, automations, files)
@@ -271,7 +273,7 @@ When you interact with Taskade, EVE:
 |---|---|
 | **Memory (Projects)** | Indexes and understands project data, extracts patterns, generates structured databases, maintains semantic connections |
 | **Intelligence (Agents)** | Trains custom agents on knowledge, routes queries to relevant models, provides context-aware responses, enables multi-agent collaboration |
-| **Action (Automations)** | Interprets triggers, makes conditional decisions, generates dynamic content, captures and structures results |
+| **Execution (Automations)** | Interprets triggers, makes conditional decisions, generates dynamic content, captures and structures results |
 
 ### The Bicameral Partnership
 
@@ -319,8 +321,9 @@ Taskade Genesis workspaces can be packaged as **Bundles (Kits)** — installable
 | **Create** | Package your workspace into a shareable bundle (empty or include all) |
 | **Dependencies** | Automatic dependency resolution — all linked resources included |
 | **Install** | Others clone the entire bundle to their workspace in one click |
-| **Public sharing** | Publish bundles to the community gallery |
-| **Password protection** | Secure bundles with a password |
+| **Public sharing** | Publish to the Community Gallery and set **Let others clone** to **Free** or **Paid** |
+| **Export** | Download a `.tsk` bundle or export to GitHub on Pro and above. Taskade checks the plan on the server |
+| **Import limits** | Each item counts against the importing workspace's plan. For example, Free cannot import automations |
 
 > **Think of Bundles as "Workspace DNA transplants."** A complete intelligence ecosystem — apps, agents, automations, data — that anyone can install and customize.
 
@@ -370,3 +373,7 @@ You now understand the DNA of your workspace. Choose your path:
 | [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md) | Deploy, share, and distribute your apps |
 | [Taskade AI Credits](../../account-management/credits-and-billing.md) | Understand credits, models, and usage |
 | [Build on Taskade (Developer Hub)](../../apis-living-system-development/developer-home.md) | APIs, SDKs, and MCP for programmatic access |
+
+---
+
+_Step-by-step guide on taskade.com/learn: [How Taskade Genesis Works: Workspace DNA](https://www.taskade.com/learn/genesis/workspace-dna)._

@@ -18,7 +18,7 @@ Thousands of operators — consultants, clinics, realtors, agencies, constructio
 New to Taskade Genesis? Start with [Your first app in 5 minutes](../genesis/getting-started.md), then come back here to turn it into a business you run.
 {% endhint %}
 
-**Build your own, or start from a kit.** Describe your business and [build from scratch](https://www.taskade.com/create), or clone a ready-made app for free from the [community gallery](https://www.taskade.com/community) or [Taskade's official kits](https://www.taskade.com/user/taskade) and make it yours. Both paths lead to the same steps below.
+**Build your own, or start from a kit.** Describe your business and [build from scratch](https://www.taskade.com/create), or clone a ready-made app from Taskade App Factory at [taskade.com/apps](https://www.taskade.com/apps) or [Taskade's official kits](https://www.taskade.com/apps/official) and make it yours. Free kits clone on every plan, except kits with a **PRO** badge, which need a paid plan. Both paths lead to the same steps below.
 
 | You want to… | Start here |
 | --- | --- |
@@ -48,13 +48,13 @@ Shape your data and views so the app holds the real records your business runs o
 {% step %}
 #### Add logins and roles
 
-Let the right people in — your team internally, or your clients externally — each seeing only what they should. → [Add login and roles](add-login-and-roles.md)
+Let the right people in — your team internally, or your clients externally. Sign-in confirms who each person is. Turn on **Private entries** so each person sees only their own rows. → [Add login and roles](add-login-and-roles.md)
 {% endstep %}
 
 {% step %}
 #### Put it on your domain
 
-Launch the app at your own web address with automatic HTTPS. → [Custom domains](../space-apps-guide/custom-domains.md)
+Launch the app at your own web address with automatic HTTPS (Pro and up). → [Custom domains](../space-apps-guide/custom-domains.md)
 {% endstep %}
 
 {% step %}
@@ -72,3 +72,7 @@ Run the checklist, right-size your plan and credits, and launch. → [Go-live ch
 * **Operate your live app by talking to Claude** — read and update your app's data in plain English. See [Run your live app by talking to Claude](../../apis-living-system-development/run-your-app-with-ai.md).
 * [What your app will cost](../../account-management/credits-and-billing.md)
 * **Extend your live system:** read & write your data with [Workspace MCP](../../apis-living-system-development/workspace-mcp.md), orchestrate agents and edit your app's code with the [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md), or connect external tools with [MCP Connectors](../genesis/mcp-connectors.md).
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Build a Customer Portal](https://www.taskade.com/learn/genesis/build-customer-portal), [Build an Internal Tool](https://www.taskade.com/learn/genesis/build-internal-tool)._

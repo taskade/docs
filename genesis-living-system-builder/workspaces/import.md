@@ -55,13 +55,17 @@ You can quickly create new Taskade projects from Markdown (.md) files. The impor
 | Plain text | `.txt` | Converted to task structure |
 | PDF | `.pdf` | See [Import PDF](#import-pdf) |
 | Word | `.docx` | Structure preserved |
-| PowerPoint | `.pptx` | Slides converted to sections |
+| PowerPoint | `.pptx`, `.ppt` | Slides converted to sections |
 | Excel | `.xlsx`, `.xls` | Tables preserved |
 | CSV | `.csv` | Data converted to table view |
 | EPUB | `.epub` | Chapters converted to sections |
 
 {% hint style="info" %}
-**Scanned and image-only files are supported.** When a PDF or document contains no machine-readable text (a scan, or a photo of a page), Taskade automatically transcribes it with vision OCR during extraction. OCR runs count toward your workspace's AI usage.
+**File uploads:** Uploading a PDF, DOCX, or other non-image document is available on paid plans.
+{% endhint %}
+
+{% hint style="info" %}
+**Scanned and image-only files are supported.** When a PDF or document contains no machine-readable text (a scan, or a photo of a page), Taskade automatically transcribes it with vision OCR during extraction. OCR runs use AI credits.
 {% endhint %}
 
 ---
@@ -175,12 +179,14 @@ Train your AI agents on PDF content:
 
 | Step | Action |
 |---|---|
-| 1 | Go to your workspace → **Agents** tab |
-| 2 | Click the three dots (⋯) next to your agent → **Edit agent** |
+| 1 | Go to your workspace → **AI Agents** tab |
+| 2 | Click the arrow next to the name of your agent → **Edit agent** |
 | 3 | Open the **Knowledge** tab |
 | 4 | Enable agent knowledge (toggle on) |
 | 5 | **Option A:** Drag PDF files into the box, or click to upload |
 | 6 | **Option B:** Click **Add Media** to select files from your workspace |
+
+Uploading a PDF to agent knowledge is available on paid plans.
 
 > **Result:** Your agent can now answer questions using information from the uploaded PDFs. References are cited in agent responses.
 
@@ -207,9 +213,9 @@ PDFs can be processed automatically within automation flows:
 
 | Action | What It Does | Use Case |
 |---|---|---|
-| **pdf.convertToText** | Converts PDF content to plain text | Extract text for AI analysis, data processing |
-| **Upload File to Media** | Saves PDF to workspace Media | Archive incoming attachments |
-| **Agent Knowledge Add** | Adds PDF content to agent knowledge | Auto-train agents on new documents |
+| **Convert File to Text** (`pdf.convertToText`) | Converts PDF content to plain text | Extract text for AI analysis, data processing |
+| **Upload File to Media** | Saves a file from a URL to workspace Media | Archive incoming attachments |
+| **Add Knowledge to Agent** | Adds PDF content to agent knowledge | Auto-train agents on new documents |
 
 #### Example Automation Flow
 
@@ -222,6 +228,8 @@ PDFs can be processed automatically within automation flows:
 | Action 4 | Create task with summary in project |
 | Action 5 | Notify team on Slack |
 
+Gmail and Slack are premium integrations, so this example flow needs a paid plan.
+
 ---
 
 ## What's Next
@@ -231,3 +239,7 @@ PDFs can be processed automatically within automation flows:
 | [Markdown Support](./markdown.md) | Full syntax reference and usage guide |
 | [Editing & Formatting](./editing-formatting.md) | Format tasks and projects |
 | [REST API Guide](../../apis-living-system-development/comprehensive-api-guide/README.md) | Import and create projects programmatically via the API |
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Import Markdown](https://www.taskade.com/learn/import/markdown), [Import PDF](https://www.taskade.com/learn/import/pdf)._

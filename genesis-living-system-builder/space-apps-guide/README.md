@@ -8,7 +8,7 @@ description: >-
 **Create professional websites and web applications just by describing what you want. No coding, no hosting headaches—just your idea turned into a live website that works everywhere.**
 
 {% hint style="success" %}
-**New to Space Apps?** Think of them as Genesis's superpower for building customer-facing websites. Perfect for businesses that need professional web presence quickly!
+**New to Space Apps?** Think of them as Taskade Genesis's superpower for building customer-facing websites. Perfect for businesses that need professional web presence quickly!
 {% endhint %}
 
 ***
@@ -52,8 +52,8 @@ Space Apps are Genesis's way of turning your ideas into real, professional websi
 
 ### Step 2: Create Your First Space App
 
-1. **Open Genesis** in your Taskade workspace
-2. **Select "Space App"** creation mode
+1. **Open Taskade Genesis** at [taskade.com/create](https://www.taskade.com/create)
+2. **Type into the prompt box**, or choose **New app → Generate with AI** in your workspace
 3. **Write your prompt** using the proven formula:
 
 ```
@@ -97,22 +97,22 @@ Space Apps are built mobile-first using Tailwind CSS:
 * Optimized form inputs for mobile keyboards
 * Swipe gestures where appropriate
 * Fast loading with code splitting
-* Progressive Web App (PWA) capabilities
 
 ### Real-Time Data Integration
 
 Connect your Space Apps to live Taskade projects:
 
 ```javascript
-// Automatic integration with Taskade projects
-const { data: submissions } = useTaskadeProject('feedback-responses');
-const { data: inventory } = useTaskadeProject('product-catalog');
+// Generated apps read project rows through built-in helpers
+import { useLiveNodes } from '@/hooks/use-live-nodes';
+import { createNode } from '@/lib/genesis-data';
 
-// Real-time updates
-useEffect(() => {
-  // App updates when project data changes
-  console.log('New submission:', submissions.latest);
-}, [submissions]);
+// A dashboard re-checks the project when the visitor returns and on a slow timer
+const { nodes: submissions, refresh } = useLiveNodes(FEEDBACK_PROJECT_ID);
+
+// Writes go back to the same Taskade project
+await createNode(FEEDBACK_PROJECT_ID, { Name: 'Maria', Status: 'New' });
+await refresh();
 ```
 
 ### Advanced UI Components
@@ -213,17 +213,17 @@ Generated apps use Tailwind CSS for styling:
 
 ### Code Access and Modification
 
-Access your app's complete codebase through the Genesis API:
+View your app's complete source in the **Code** tab of the app's settings, or export it to GitHub (both on Pro and up):
 
 ```javascript
 // App structure
 src/
 ├── App.tsx          // Main application component
+├── pages/           // One file per screen
 ├── components/      // Generated React components
 ├── hooks/           // Custom hooks for data fetching
-├── styles/          // Tailwind CSS configurations
-├── utils/           // Helper functions
-└── types/           // TypeScript type definitions
+├── lib/             // Data helpers for your Taskade projects
+└── styles/          // Tailwind CSS configurations
 ```
 
 ***
@@ -251,22 +251,18 @@ Space Apps are optimized for performance:
 - Code splitting for faster loading
 - Lazy loading for images and components  
 - Bundle optimization and minification
-- Service worker for offline functionality
 - Progressive loading strategies
 ```
 
 ### Custom Domains & SSL
 
-Connect your own domain name:
+Connect your own domain name (Pro and up, up to 10 per workspace on Pro and unlimited on Business and up):
 
-```bash
-# Via Genesis API
-POST /v1/genesis/space-apps/{app_id}/domain
-{
-  "domain": "app.yourdomain.com",
-  "ssl_certificate": "auto"
-}
-```
+1. Open the app's settings and go to **Launch → Domains**
+2. Click **Connect a domain you own**, or buy a new domain inside Taskade
+3. Add the CNAME record (`external.taskade.com`) and the SSL Validation record that the panel shows
+
+SSL is provisioned automatically. See [Custom Domains](custom-domains.md) for the full steps.
 
 ***
 
@@ -302,13 +298,13 @@ const PrivacyConsent = () => {
 
 ### Access Control & Authentication
 
-Integrate with authentication providers:
+Add sign-in and access controls to your app:
 
-* **OAuth integration** (Google, Microsoft, GitHub)
-* **Role-based access control**
-* **Session management**
-* **API key authentication**
-* **User permission systems**
+* **App sign-in** (App Users): visitors sign in with their email on your app's own URL, with Taskade as the identity provider. It works on every plan, Free included
+* **Optional emailed sign-in code** and invite-only sign-up
+* **App user roles** (Admin or Member): with private per-user data on, the workspace owner can turn on **Admins see every row** so that admins can read and change every row
+* **Private entries** (private per-user data, or row scoping), under **Publish → More options**: off by default. Sign-in confirms who a visitor is but does not hide other people's rows until you turn this on and test it with a second account
+* **Password protection** for the whole app (Pro and up)
 
 ***
 
@@ -316,15 +312,15 @@ Integrate with authentication providers:
 
 ### Built-in Analytics
 
-Track app performance and user behavior:
+Track app traffic with the built-in App Analytics dashboard (Business and up), with no tracking scripts to install:
 
 ```javascript
 // Automatic analytics tracking
-- Page views and user sessions
-- Form submissions and conversions
-- Performance metrics (loading times)
-- Error tracking and reporting
-- User journey mapping
+- Visits and pageviews
+- Bounce rate and average session duration
+- Traffic sources
+- Geography
+- Device and browser breakdown
 ```
 
 ***
@@ -335,11 +331,10 @@ Track app performance and user behavior:
 
 Space Apps maintain complete version history:
 
-* **Git-like commit system** for all changes
-* **Rollback capabilities** to previous versions
-* **Branch management** for testing features
-* **Deployment history** tracking
-* **Change attribution** for team collaboration
+* **Saved revisions** as you build, listed in **Version history**
+* **Preview** any saved revision before you restore it
+* **Restore Version** to roll back to a previous revision
+* **Live badge** that marks the revision visitors see
 
 ### Conversational Updates
 
@@ -445,7 +440,6 @@ Ensure your apps are accessible to all users:
 
 * Verify project permissions and access
 * Check API rate limits and quotas
-* Review WebSocket connection status
 * Confirm project ID is correct in integration
 
 ***
@@ -499,3 +493,7 @@ Space Apps represent the future of no-code application development - combining t
 **🎯 Transform your ideas into production-ready React applications today.**
 
 _With Space Apps, the only limit is your imagination - from simple landing pages to complex business applications, all accessible through natural language prompts._
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Publish and Clone Your Apps](https://www.taskade.com/learn/genesis/publishing), [What is Taskade Genesis?](https://www.taskade.com/learn/genesis/overview)._

@@ -1,6 +1,6 @@
 ---
 description: >-
-  Build mobile-first Taskade Genesis apps and workflows: iOS/Android apps, PWA, offline sync, Quick Add widget, voice, and responsive design across devices.
+  Build mobile-first Taskade Genesis apps and workflows: iOS/Android apps, home-screen widgets, Quick Add, voice, and responsive design across devices.
 ---
 
 # Mobile Living Experience
@@ -19,13 +19,12 @@ description: >-
 
 #### **iOS & Android Apps**
 
-* **Full feature parity** with desktop versions
-* **Offline capabilities** for viewing and editing projects
+* **Core features** of the web app: workspaces, multiple project views, AI, and real-time collaboration (some desktop features are not yet on mobile)
+* **Real-time sync** across devices (Taskade needs an internet connection, so there is no offline editing mode)
 * **Push notifications** for real-time updates and alerts
-* **Biometric authentication** for secure, fast access
 * **Camera integration** for document scanning and photo uploads
-* **Quick Add Widget** for instant task creation from home screen
-* **Natural language processing** for smart date and time recognition
+* **Home-screen widgets**: Quick Add, My Tasks, Recent, Starred, and Shortcuts for your AI agents
+* **Date suggestions** in Quick Add when you type a date or time, such as "tomorrow 3pm"
 * **Voice input support** for hands-free task creation
 * **Superior mobile experience** with enhanced performance and usability
 * **Enhanced collaboration** features for better team coordination
@@ -36,7 +35,6 @@ description: >-
 #### **Progressive Web App (PWA)**
 
 * **Install directly from browser** - no app store required
-* **Offline functionality** for critical workflows
 * **Native-like experience** on any device
 * **Automatic updates** without manual app store downloads
 
@@ -88,10 +86,11 @@ The Quick Add widget is a powerful companion tool that lives on your device's ho
 #### **Widget Features**
 
 * **Home screen access** - Add tasks instantly from your device's home screen
-* **Smart date recognition** - Natural language processing for dates and times
+* **Smart date suggestions** - Type a date or time in plain words, and Quick Add suggests a due date
 * **Project selection** - Quick access to your most-used projects
-* **Voice input** - Speak your tasks for hands-free creation
-* **Offline support** - Tasks sync automatically when connection is restored
+* **My Tasks, Recent, and Starred widgets** - See tasks assigned to you with a due date, recent items, and starred projects
+* **Shortcuts widget** - Start a chat with one of your custom AI agents in one tap
+* **Internet required** - Quick Add cannot send a task while your phone is offline
 
 #### **Setting Up Quick Add**
 
@@ -113,12 +112,12 @@ The Quick Add widget is a powerful companion tool that lives on your device's ho
 
 #### **Smart Date Suggestions**
 
-The widget uses natural language processing to automatically detect dates and times:
+When you type a date or time in Quick Add, Taskade shows a **Date Suggestion**. Tap it to set the due date:
 
-* **"Meeting tomorrow at 3pm"** → Sets due date for tomorrow 3:00 PM
-* **"Call client next Monday"** → Sets due date for next Monday
-* **"Review report by Friday"** → Sets due date for this Friday
-* **"Dentist appointment in 2 weeks"** → Sets due date 14 days from now
+* **"Meeting tomorrow at 3pm"** → Suggests tomorrow, 3:00 PM
+* **"Call client next Monday"** → Suggests next Monday
+* **"Review report Friday"** → Suggests the coming Friday
+* **"Launch May 1st 5 pm"** → Suggests May 1, 5:00 PM
 
 ### **Cross-Platform Synchronization**
 
@@ -126,7 +125,6 @@ The widget uses natural language processing to automatically detect dates and ti
 Real-time Sync Features:
   - Instant updates across all devices
   - Conflict-free collaborative editing
-  - Offline changes sync automatically when reconnected
   - Cross-device cursor tracking and live collaboration
   - Background sync maintains data consistency
 ```
@@ -246,12 +244,10 @@ Mobile Layout Best Practices:
     },
     "caching": {
       "appShell": "Instant loading for repeat visits",
-      "data": "Smart caching for offline functionality",
       "media": "Optimized image sizes for device resolution"
     },
     "networkAdaptation": {
       "slowConnections": "Reduce data usage and simplify interfaces",
-      "offlineMode": "Core functionality available without internet",
       "progressiveDegradation": "Features degrade gracefully on slower devices"
     }
   }
@@ -271,16 +267,14 @@ Mobile Layout Best Practices:
 
 ### **Mobile-Optimized View Types**
 
-#### **Action View - Mobile-First Design**
+#### **Actionsheet View**
 
 ```yaml
-Action View Features:
-  - Designed specifically for mobile workflow
-  - Quick task capture with voice-to-text
-  - Swipe gestures for task completion
-  - Large, thumb-friendly checkboxes
-  - Minimal interface clutter
-  - Perfect for on-the-go task management
+Actionsheet View Features:
+  - A simple spreadsheet-style list (paid plans)
+  - Fewer columns than Table view, quick to scan on a phone
+  - Same project data as every other view
+  - Good for lightweight client lists and task queues
 ```
 
 #### **Responsive Board View**
@@ -310,11 +304,11 @@ Mobile Calendar Features:
 #### **Smart View Recommendations**
 
 ```javascript
-// Automatic view recommendations based on device
+// Suggested views by device (a guide, not an automatic setting)
 {
   "deviceOptimization": {
     "phone": {
-      "recommended": ["Action", "List", "Calendar"],
+      "recommended": ["List", "Calendar", "Actionsheet"],
       "avoid": ["Org Chart", "Gantt"],
       "reason": "Better for single-column, sequential interaction"
     },
@@ -416,7 +410,7 @@ Mobile-First Checklist:
     },
     "enhancedFeatures": {
       "requiresCapabilities": ["faster processor", "good connection", "modern browser"],
-      "includes": ["real-time collaboration", "advanced animations", "offline sync"]
+      "includes": ["real-time collaboration", "advanced animations"]
     },
     "premiumFeatures": {
       "requiresOptimalConditions": ["latest devices", "high-speed connection"],
@@ -535,10 +529,10 @@ const deviceCapabilities = {
 };
 ```
 
-#### **Service Worker for Offline Support**
+#### **Service Worker for Faster Repeat Loads**
 
 ```javascript
-// Offline functionality for mobile apps
+// Serve cached API responses for faster repeat loads (not an offline mode)
 self.addEventListener("fetch", (event) => {
   if (event.request.url.includes("/api/")) {
     event.respondWith(
@@ -559,7 +553,7 @@ self.addEventListener("fetch", (event) => {
 <!-- Responsive embedding for mobile-optimized apps -->
 <div class="taskade-mobile-app">
   <iframe
-    src="https://your-app.taskade.com"
+    src="https://your-app.taskade.app"
     frameborder="0"
     style="width:100%;height:100vh;border:none;"
     allow="camera;microphone;geolocation"
@@ -648,13 +642,11 @@ Results:
 
 | **Widget Type**           | **Functionality**                   | **Business Use Case**           |
 | ------------------------- | ----------------------------------- | ------------------------------- |
-| **Quick Add Widget**      | Add tasks with NLP date recognition | Capture ideas instantly         |
-| **Agent Chat Widget**     | Direct agent communication          | Get answers without opening app |
-| **Project Status Widget** | Live project progress display       | Monitor KPIs at a glance        |
-| **Team Activity Widget**  | Real-time team updates              | Stay connected to team progress |
-| **AI Assistant Widget**   | Enhanced AI assistance on mobile    | Smart help anywhere             |
-| **Collaboration Widget**  | Improved team coordination          | Better mobile teamwork          |
-| **Mobile Paywall Widget** | Seamless upgrade flow on mobile     | Easy premium feature access     |
+| **Quick Add Widget**      | Add tasks with date suggestions     | Capture ideas instantly         |
+| **Shortcuts Widget**      | Start a chat with a custom AI agent | Get answers without opening app |
+| **My Tasks Widget**       | Tasks assigned to you with a due date | See today's work at a glance  |
+| **Recent Widget**         | Your recently opened items          | Jump back into work             |
+| **Starred Widget**        | Your starred projects               | One-tap access to key projects  |
 
 ### **Mobile Automation Triggers**
 
@@ -662,31 +654,20 @@ Results:
 | ----------------- | --------------------- | -------------------------------- |
 | **Time-Based**    | Background processing | Daily standup reminders          |
 | **Photo Upload**  | Camera integration    | Auto-categorize expense receipts |
-| **Voice Command** | Hands-free operation  | Create tasks while driving       |
 
-### **Offline-First Architecture**
+### **Connectivity and Sync**
 
-**Smart Sync Technology:**
+Taskade is cloud-based and needs a live internet connection. There is no offline editing mode on mobile, and Quick Add cannot send a task while your phone is offline.
 
-* **Conflict Resolution** - Intelligent merging of offline changes
-* **Priority Queuing** - Critical updates sync first
-* **Bandwidth Optimization** - Compress data for mobile networks
-* **Background Sync** - Updates happen seamlessly
-
-**Offline Capabilities:**
-
-* **Full Project Access** - Work on cached projects
-* **Agent Conversations** - Continue chats offline
-* **Task Management** - Create, edit, complete tasks
-* **Voice Notes** - Record ideas for later processing
+* **Real-time sync** - Changes appear on every device and for every collaborator as you make them
+* **After a dropped connection** - Reconnect, then make sure that your latest changes appear in the project. See [No Internet Connection](https://www.taskade.com/learn/account/offline)
 
 ### **Mobile Security & Privacy**
 
 | **Security Feature**     | **Protection Level**  | **Business Benefit** |
 | ------------------------ | --------------------- | -------------------- |
-| **App-Level Encryption** | End-to-end protection | Compliance ready     |
-| **Remote Wipe**          | Enterprise control    | Protect lost devices |
-| **VPN Integration**      | Network security      | Secure remote access |
+| **Encryption**           | TLS in transit, AES-256 at rest for backups and stored credentials | Protects data in transit and in storage |
+| **Session control**      | Sign out a lost device in **Settings → Sessions** (**Revoke Access**) | Protect lost devices |
 
 ### **Mobile Performance Optimization**
 
@@ -713,19 +694,17 @@ Results:
 * **Adaptive Data Structures** - Project layouts that optimize for mobile screens
 * **Intelligent Caching** - Smart data storage that learns your mobile usage patterns
 * **Contextual Sync** - Sync priorities based on your current mobile context
-* **Offline Intelligence** - AI agents continue learning even when offline
 
 **Living Intelligence on Mobile:**
 
-* **EVE Mobile Companion** - Your AI assistant optimized for mobile interactions
+* **Taskade EVE Mobile Companion** - Your AI assistant optimized for mobile interactions
 * **Voice-First AI** - Natural voice conversations with intelligent agents
 * **Contextual Suggestions** - AI that understands your mobile environment and needs
 * **Predictive Assistance** - Proactive help based on your mobile behavior patterns
 
-**Living Motion on Mobile:**
+**Living Execution on Mobile:**
 
 * **Mobile-Optimized Automations** - Workflows designed for mobile triggers and actions
-* **Location-Aware Actions** - Automations that respond to your physical location
 * **Camera-Triggered Workflows** - Automations activated by photo or video capture
 * **Touch-Optimized Controls** - Gestures and interactions designed for mobile use
 
@@ -738,7 +717,6 @@ Mobile Capabilities:
 ├── GPS location tracking with intelligent routing
 ├── Camera integration for photo documentation
 ├── Voice notes for hands-free updates
-├── Offline form completion with smart sync
 └── Predictive scheduling based on historical patterns
 ```
 
@@ -751,17 +729,6 @@ Mobile Features:
 ├── Location-based lead suggestions
 ├── Mobile-optimized dashboards with touch gestures
 └── Predictive follow-up reminders based on engagement patterns
-```
-
-#### **Healthcare Mobile Living System**
-
-```
-Mobile Intelligence:
-├── HIPAA-compliant voice transcription
-├── Medication scanning with interaction checking
-├── Patient vitals with trend analysis
-├── Emergency protocols with location awareness
-└── Care coordination with real-time updates
 ```
 
 ### **Mobile Living System Performance**
@@ -800,4 +767,8 @@ Mobile Intelligence:
 
 **📱 Ready to create mobile-optimized experiences?** Start with mobile-first Genesis prompts and progressive enhancement strategies to ensure your apps work beautifully on every device.
 
-_For more mobile development insights, explore our_ [_Genesis Space Apps Guide_](../space-apps-guide/) _and_ [_Advanced Automation_](../automation/advanced-actions.md) _for location-based workflows._
+_For more mobile development insights, explore our_ [_Genesis Space Apps Guide_](../space-apps-guide/) _and_ [_Advanced Automation_](../automation/advanced-actions.md) _for mobile-friendly workflows._
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Guide to Taskade Mobile](https://www.taskade.com/learn/projects/mobile-guide), [Mobile Widgets](https://www.taskade.com/learn/projects/mobile-widgets)._

@@ -13,7 +13,7 @@ AI prompts are the key to building exactly what you envision. A prompt is simply
 
 This guide covers **12 proven principles** for writing effective Taskade Genesis prompts.
 
-> **Workspace DNA hint:** The better your prompts, the richer your workspace DNA becomes. Every app you build adds to your [Intelligence Score](./how-genesis-works.md#workspace-intelligence-score) and makes future apps smarter.
+> **Workspace DNA hint:** The better your prompts, the richer your workspace DNA becomes. The projects, agents, and automations a prompt creates raise the app's [Intelligence Score](./how-genesis-works.md#workspace-intelligence-score) and make future apps smarter.
 
 ---
 
@@ -100,6 +100,8 @@ Genesis supports 100+ integrations. Mention your tools and Genesis creates the a
 | Dev | GitHub, HTTP/Webhooks |
 | Content | WordPress, Webflow |
 
+Premium integrations such as Slack, Gmail, and Google Sheets need a paid plan. Free runs the standard connectors.
+
 ---
 
 ### 6. Set the Tone
@@ -139,6 +141,10 @@ Genesis supports 100+ integrations. Mention your tools and Genesis creates the a
 | **Multi-tier** | "Staff view all projects and add updates. Clients only see their own projects and can't edit. Managers access everything plus analytics." |
 | **Educational** | "Students access courses and submit assignments. Instructors grade and message. Administrators manage all users and see reports." |
 | **Corporate** | "Employees log hours and submit requests. Department heads approve their team's requests. HR accesses all data and generates reports." |
+
+{% hint style="warning" %}
+**Sign-in confirms identity. It does not hide other people's records.** To show each user only their own records, turn on **Private entries** under **Publish → More options** (private per-user data, off by default), match the records to the login, and test with a second account.
+{% endhint %}
 
 ---
 
@@ -231,3 +237,7 @@ Use this cheat sheet when building:
 | [Advanced Features](../space-apps-guide/advanced-features.md) | Customize app branding, appearance, and behavior |
 | [Adding Genesis Context](./adding-context.md) | Upload reference files for richer apps |
 | [Prompt Templates Library](./examples-and-templates.md) | Browse the full prompt template collection |
+
+---
+
+_Step-by-step guide on taskade.com/learn: [A Maker's Guide to AI Prompts](https://www.taskade.com/learn/genesis/prompt-guide)._

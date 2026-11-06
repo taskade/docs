@@ -32,8 +32,8 @@ If you want the bigger model, start with [Workspace DNA](../../genesis-living-sy
 
 ### Quick start
 
-1. Connect a tool from the Integrations screen.
-2. Create an automation with a trigger + action.
+1. Create an automation with a trigger + action.
+2. Add the tool's step and click **Connect** to link your account.
 3. Test with real data.
 
 Start here:
@@ -47,10 +47,12 @@ Start here:
 Most teams start with:
 
 * Communication: Slack, Microsoft Teams, email
-* Productivity: Google Workspace, Microsoft 365
+* Productivity: Google Workspace, Microsoft Outlook, Microsoft To Do
 * Data: Google Sheets, Airtable
 * CRM: HubSpot, Salesforce
 * Dev: GitHub, Jira
+
+Premium integrations (for example Slack, Gmail, Google Sheets, HubSpot and Salesforce) need a paid plan. The Free plan runs the built-in steps and the standard connectors (HTTP Request, RSS, Pushover and MCP Client).
 
 Full list and setup details: [Integration Options](integrations.md)
 
@@ -113,5 +115,9 @@ Use these when you get stuck:
 * Troubleshooting: [Living System Troubleshooting](../community-and-sharing/troubleshooting.md)
 
 {% hint style="info" %}
-**Enterprise Integration Support**: Enterprise customers receive priority support for integrations, including dedicated integration specialists and custom development services.
+**Enterprise Integration Support**: For integration support on the Enterprise plan, contact sales.
 {% endhint %}
+
+---
+
+_Step-by-step guide on taskade.com/learn: [Integrations Everywhere: Workspace DNA and the App on Top](https://www.taskade.com/learn/connect/everywhere)._

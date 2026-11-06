@@ -7,7 +7,7 @@ keywords: add login, access control, RBAC, app users, SSO, no-code
 
 # Add login and roles to your app
 
-Taskade Genesis apps can ship with real user accounts and secure sign-in built in, powered by [GenesisAuth](../community-and-sharing/genesis-auth.md). To add login, you don't configure anything — you describe the need when you build the app (for example, *"users can sign in to see their own dashboard"*), and Taskade Genesis wires up the sign-in component, session handling, and per-user data access automatically.
+Taskade Genesis apps can ship with real user accounts and secure sign-in built in, powered by [GenesisAuth](../community-and-sharing/genesis-auth.md). To add login, you don't configure anything — you describe the need when you build the app (for example, *"users can sign in to see their own dashboard"*), and Taskade Genesis wires up the sign-in component and session handling. Sign-in confirms who a visitor is. It does not hide other people's records: per-user data is a separate setting, off by default (see [Give each user only their own rows](#give-each-user-only-their-own-rows)).
 
 {% hint style="success" %}
 **The short version:** Describe an app that needs accounts, and your app gets a working login screen. Then manage who gets in from the **App Users** tab in your app's settings.
@@ -21,16 +21,17 @@ GenesisAuth is part of a broader access-control story. Pick the control that mat
 
 | Control | What it does | When to use |
 | --- | --- | --- |
-| **GenesisAuth (App Users)** | Account-based sign-in for your app's end users | Any multi-user app — external clients, members, or customers |
-| **Workspace SSO** | Lets your Taskade workspace members sign in with their existing identity | Internal tools for your own team |
-| **Password-protected public links** | A single shared password on a link | A quick gated preview |
-| **Private / Unlisted visibility** | Controls whether the app can be discovered | Non-indexed, share-by-link only |
+| **GenesisAuth (App Users)** | Account-based sign-in for your app's end users, on every plan | Any multi-user app — external clients, members, customers, or your own team |
+| **Private entries (row scoping)** | Shows each signed-in person only the rows that match their login. Off by default | Client portals and member apps |
+| **Workspace SSO** | Company single sign-on for your team inside Taskade (Business and up). It does not sign people in to a published app | Your own team's Taskade accounts |
+| **Password-protected public links** | A single shared password on a link (Pro and up) | A quick gated preview |
+| **Listed / Unlisted** | Controls whether the app can be discovered (**Show in public listings**) | Non-indexed, share-by-link only |
 | **Public agent tool opt-out** | Keeps sensitive tools workspace-only | Apps that publish an AI agent |
 
-For external customers and members, reach for **App Users**. For your own staff, **Workspace SSO** means no second account to manage. For a fast, low-stakes gate, a **password-protected link** is enough.
+For external customers and members, reach for **App Users**. For your own staff using a published app, add each teammate on the **App Users** tab. Taskade workspace credentials do not open an app account. For a fast, low-stakes gate, a **password-protected link** is enough.
 
 {% hint style="info" %}
-The **App Users** tab is currently in Beta and rolling out across paid plans.
+The **App Users** tab is currently in Beta. App Users and app sign-in work on every plan, Free included.
 {% endhint %}
 
 ***
@@ -41,11 +42,11 @@ You won't find a switch to flip — you ask for it in plain language.
 
 1. In Taskade Genesis, describe an app that needs accounts. Include phrases like *"a client portal where each client has their own dashboard"* or *"a members-only knowledge base."*
 2. Taskade Genesis generates the app **with the sign-in component already in place**.
-3. Open your app's settings and go to the **App Users** tab to invite people, suspend access, or remove accounts.
+3. Open **App settings → People & access → App users** to add people by email, disable or re-enable access, or delete accounts. Under **Who can sign up**, pick **Anyone** or **Invite only**.
 
 If your first prompt didn't add login, you can ask Taskade Genesis to *"add sign-in for users"* later while editing the app.
 
-For the full walkthrough — the App Users tab, Workspace SSO, custom-domain sign-in, and the security model — see the source page:
+For the full walkthrough — the App Users tab, custom-domain sign-in, and the security model — see the source page:
 
 {% content-ref url="../community-and-sharing/genesis-auth.md" %}
 [genesis-auth.md](../community-and-sharing/genesis-auth.md)
@@ -55,9 +56,9 @@ For the full walkthrough — the App Users tab, Workspace SSO, custom-domain sig
 
 ## Give each user only their own rows
 
-For a client portal or member app, signed-in users usually shouldn't see each other's records. Turn on **Private per-user data** (row scoping) when you publish:
+For a client portal or member app, signed-in users usually shouldn't see each other's records. Turn on **Private entries** (private per-user data, or row scoping) when you publish:
 
-1. Open your app's **publish menu** and enable **Private per-user data**. (The option appears for apps built on the current app template with sign-in enabled; turning it on rebuilds and republishes the app.)
+1. Open **Publish**, expand **More options**, and click **Private entries**. Turn on **Each person signs in** too. (The option appears for apps built on the current app template with sign-in enabled; turning it on rebuilds and republishes the app.)
 2. Pick — or add — a dedicated field on your project that stores each row's owner. Rows created **through the app** are tagged to the signed-in user automatically.
 3. Publish. Each signed-in user now sees only their own rows. Rows with no value in the owner field are hidden from app users entirely — the safe default.
 
@@ -83,3 +84,7 @@ GenesisAuth works on apps hosted at your own web address with no extra setup. Co
 * Read the full [GenesisAuth](../community-and-sharing/genesis-auth.md) reference for access control and security best practices.
 * Connect a [custom domain](../space-apps-guide/custom-domains.md) for a branded, production sign-in.
 * See login and roles in action: [Build a client portal](build-a-client-portal.md) and [Build an ops dashboard](build-an-ops-dashboard.md).
+
+---
+
+_Step-by-step guides on taskade.com/learn: [GenesisAuth: Built-In Login for Your Apps](https://www.taskade.com/learn/genesis/genesis-auth), [App Users (Beta): End-User Management for Taskade Genesis Apps](https://www.taskade.com/learn/genesis/app-users)._

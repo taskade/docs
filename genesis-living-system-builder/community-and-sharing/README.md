@@ -8,7 +8,7 @@ description: >-
 **Turn your brilliant Taskade Genesis app into something that helps business owners everywhere. Share what you've built, discover amazing solutions from others, and copy complete apps with just one click.**
 
 {% hint style="success" %}
-**What you can do here.** Publish your Taskade Genesis apps to the community, let others fork them in one click, and monetize premium apps with Stripe checkout.
+**What you can do here.** Publish your Taskade Genesis apps to the community, let others fork them in one click with **Let others clone**, and sell original apps as paid App Kits.
 {% endhint %}
 
 ***
@@ -26,16 +26,16 @@ Make your apps available to anyone with a link, creating public or private acces
 * **Direct Access**: Users can interact with your app through a dedicated URL
 * **No Installation Required**: Works immediately in any browser
 * **Version Control**: Update your published app while maintaining the same link
-* **Monetization Ready**: Sell paid apps with one-time Stripe checkout
+* **Monetization Ready**: Sell original apps as paid App Kits with a one-time price
 
 **Publishing Options:**
 
-* **Public Apps**: Discoverable and accessible to anyone with the link
-* **Private Apps**: Require specific permissions or passwords for access
+* **Public Apps**: Accessible to anyone with the link. Discoverable in search only when **Show in public listings** is on
+* **Private Apps**: Require a shared password (Pro and up) or each person's own sign-in
 
 ### **App Visibility Settings**
 
-Choose how people access your published app:
+Choose how people access your published app under **Who can open it** in the **Publish** panel:
 
 **Public Apps:**
 
@@ -45,29 +45,30 @@ Choose how people access your published app:
 
 **Private Apps:**
 
-* Require user authentication to access
-* Control who can use your app
+* Require each person to sign in (**Each person signs in**, on every plan), or one shared password (**Anyone with the password**, Pro and up)
+* Control who can use your app from the **App Users** tab
 * Suitable for client portals or internal tools
+* Sign-in confirms who a visitor is. It does not hide other people's records: turn on **Private entries** to show each person only their own rows
 
 ### **Unpublishing Apps**
 
 You can always unpublish your app if needed:
 
 1. **Open your Genesis app** in your workspace
-2. **Click the Publish dropdown** in the top toolbar
-3. **Select "Unpublish"**
-4. **Confirm the action**
+2. **Click Publish** in the top toolbar
+3. **Click the arrow on the Live button** at the bottom of the menu
+4. **Select "Unpublish app"**
 
 **Note:** Unpublishing immediately removes public access, but the URL becomes inactive. Users who bookmarked the link will lose access.
 
 ### **Enabling Cloning (Forking)**
 
-Allow others to create complete copies of your published app in their own workspaces. (When others copy your public app it's called **forking**; **cloning** also refers to duplicating your own app inside your workspace — the toggle below covers both.)
+Allow others to create complete copies of your published app in their own workspaces. Open **Publish → Let others clone** and choose **Free** or **Paid** (**Off** stops new clones). A public listing alone does not make an app cloneable. (When others copy your public app it's called **forking**; **cloning** also refers to duplicating your own app inside your workspace with **Duplicate app**.)
 
 **Cloning Features:**
 
 * **One-Click Duplication**: Users can clone your entire app with a single click
-* **Complete Fidelity**: All projects, agents, automations, and media files are copied
+* **Complete Fidelity**: Projects, agents, automations, and media files are copied. Connected accounts and secrets are not
 * **Independent Operation**: Cloned apps function completely independently
 * **Customization Freedom**: Users can modify cloned apps without affecting the original
 
@@ -87,14 +88,14 @@ Allow others to create complete copies of your published app in their own worksp
 
 ## App Forking
 
-The most powerful way to learn and build is by starting with working solutions. Genesis now lets you fork (copy) any community app with complete fidelity.
+The most powerful way to learn and build is by starting with working solutions. Taskade Genesis lets you fork (copy) any community app whose creator turned on **Let others clone**.
 
 ### **What is App Forking?**
 
 Forking creates a complete, independent copy of a Genesis app in your workspace. Unlike simple templates, forking gives you:
 
-* **Complete Workspace Clone**: All projects, agents, automations, and media files
-* **Working Integrations**: Connections and workflows that function immediately
+* **Complete Workspace Clone**: Projects, agents, automations, and media files
+* **Ready Workflows**: Automations arrive set up. Connect your own accounts, because connected accounts and secrets are not copied
 * **Full Customization Rights**: Modify, rebrand, and extend however you want
 * **Independent Evolution**: Your forked app develops separately from the original
 
@@ -105,11 +106,11 @@ When you fork a Genesis app, you get:
 | What Gets Copied       | Details                                               |
 | ---------------------- | ----------------------------------------------------- |
 | **🎨 App Interface**   | Complete layout, styling, and user experience         |
-| **📊 Projects & Data** | All project structures with example data              |
+| **📊 Projects & Data** | Project structures and data (visitor submissions only if shipped as sample data) |
 | **🤖 AI Agents**       | Trained agents with their knowledge and personalities |
-| **⚡ Automations**      | Working workflows and integrations                    |
+| **⚡ Automations**      | Workflows (connect your own accounts)                 |
 | **📁 Media Files**     | Images, documents, and assets                         |
-| **🔧 Configuration**   | Settings, permissions, and customizations             |
+| **🔧 Configuration**   | Settings, data access choices, and customizations     |
 
 ### **Professional Use Cases**
 
@@ -137,7 +138,7 @@ When you fork a Genesis app, you get:
 
 ### What Happens When You Share?
 
-When you share your Genesis app with the community, it goes into a public library where other business owners can find it, try it out, and copy it for their own use. You can explore the [Taskade community](https://www.taskade.com/community) to see the shared apps, agents, and templates other builders have published. Think of it like sharing a great recipe—you help others while showing off your skills!
+When you share your Genesis app with the community, it goes into a public library where other business owners can find it, try it out, and copy it for their own use. You can explore Taskade App Factory at [taskade.com/apps](https://www.taskade.com/apps) to see the shared apps other builders have published. Think of it like sharing a great recipe—you help others while showing off your skills!
 
 ### When to Share with Community
 
@@ -164,7 +165,7 @@ Transform your Genesis apps into revenue-generating solutions with professional 
 
 ### **Monetize Your Expertise**
 
-Create premium Taskade Genesis apps that users pay for: set a **one-time price** in your app's Publish settings, and buyers pay via **Stripe** to receive their own private copy of the app. See [Paid Apps](publish-and-clone.md#paid-apps) for the full flow.
+Create premium Taskade Genesis apps that users pay for: open **Publish → Let others clone**, choose **Paid**, set a **one-time price**, and click **Put on sale**. Buyers pay to receive their own private copy of the app. Finish payout setup in **Earnings**. See [Paid Apps](publish-and-clone.md#paid-apps) for the full flow.
 
 ### **Perfect for:**
 
@@ -192,8 +193,8 @@ Create premium Taskade Genesis apps that users pay for: set a **one-time price**
 | ------------------------- | ------------------------------------------------- |
 | **🔒 Access Control**     | Buyers receive their own private copy of the app  |
 | **📊 Analytics**          | Built-in metrics on views, likes, and installs    |
-| **💳 Payment Processing** | Payments handled by Stripe                        |
-| **🎨 Custom Branding**    | Your logo, colors, and domain                     |
+| **💳 Payment Processing** | Checkout and payouts handled for you              |
+| **🎨 Custom Branding**    | Your logo, colors (Business+), and domain (Pro+)  |
 
 ***
 
@@ -267,24 +268,19 @@ Before sharing, ensure your app is ready for public use:
 
 ### Step 2: Publish to Community
 
-1. **Open your Genesis app** in your workspace
-2. **Click the Publish dropdown** in the top toolbar
-3. **Select "Share with Community"**
-4. **Fill out the community listing:**
-   * **App Title**: Clear, descriptive name
-   * **Category**: Choose appropriate business category
-   * **Description**: Explain what it does and who it helps
-   * **Tags**: Add searchable keywords
-   * **Screenshot**: Upload a preview image
-5. **Review and Publish**: Your app goes live immediately
+1. **Open your Genesis app** in your workspace and publish it (a draft cannot be shared)
+2. **Click Publish** in the top toolbar
+3. **Under More options, turn on "Show in public listings"**
+4. **To let people copy it, open "Let others clone"** and choose **Free** or **Paid** (this also turns on the public listing)
+5. **Give the app a clear name and description**: Taskade sorts the listing into a category for you
 
 ### Step 3: Manage Your Community App
 
 **Track Performance:**
 
-* View fork count and usage metrics
-* See user feedback and ratings
-* Monitor which features are most popular
+* View views, likes, and clone (install) counts
+* See your app's intelligence score
+* Monitor visitors with App Analytics (Business and up)
 
 **Keep It Updated:**
 
@@ -313,15 +309,15 @@ Forking creates a complete, independent copy of a Genesis app in your workspace.
 
 ```
 Search: "customer feedback restaurant"
-Filters: ⭐ 4+ stars, 🍴 50+ forks, 📅 Updated this month
+Browse: categories such as Dashboards, CRMs, Websites, and Forms
 ```
 
 ### How to Fork an App
 
-1. **Find the app** you want in the community marketplace
+1. **Find the app** you want at [taskade.com/apps](https://www.taskade.com/apps)
 2. **Click "Preview"** to test functionality and see what it does
-3. **Review the description** and setup requirements
-4. **Click "Fork to My Workspace"**
+3. **Open "Workspace"** to review the projects, agents, and automations it includes
+4. **Click "Clone"** (shown only when the creator offers the app as a kit)
 5. **Choose destination workspace** (if you have multiple)
 6. **Wait 30-60 seconds** for the complete copy process
 7. **Your forked app appears** in your workspace, fully functional
@@ -332,7 +328,7 @@ Filters: ⭐ 4+ stars, 🍴 50+ forks, 📅 Updated this month
 
 * **All Projects**: Data structures, custom fields, templates
 * **AI Agents**: Trained agents with their knowledge and personalities
-* **Automations**: Workflows, triggers, and third-party integrations
+* **Automations**: Workflows and triggers. Connect your own third-party accounts, because connected accounts and secrets are not copied
 * **Media Files**: Images, documents, logos, and assets
 * **Configurations**: Settings, permissions, and customizations
 
@@ -355,7 +351,7 @@ Understanding the differences helps you choose the right approach:
 | **Content**       | Complete workspace    | Structure only      | Exact copy            |
 | **Data**          | Example data included | Empty/placeholder   | Your actual data      |
 | **Agents**        | Fully trained         | Basic setup         | Identical training    |
-| **Automations**   | All connections       | Framework only      | All your integrations |
+| **Automations**   | Workflows (reconnect your accounts) | Framework only | All your integrations |
 | **Customization** | Fully editable        | Highly customizable | Identical copy        |
 
 ***
@@ -497,23 +493,22 @@ Understanding the differences helps you choose the right approach:
 
 **Core Statistics:**
 
-* **Fork Count**: How many users have copied your app
-* **View Count**: Total marketplace views and previews
-* **Rating Average**: User satisfaction scores
-* **Review Count**: Detailed feedback from community
+* **Install Count**: How many users have cloned your app
+* **View Count**: Total views of your listing
+* **Like Count**: How many people liked your app
+* **Intelligence Score**: How complete your app's Workspace DNA is
 
 **Performance Insights:**
 
-* **Popular Features**: Which parts get used most
+* **App Analytics** (Business and up): visitors, pageviews, top pages, referrers, devices, and locations
 * **User Feedback**: Common questions and requests
 * **Update Impact**: How changes affect usage metrics
-* **Category Ranking**: Position within your app category
 
 ### Growing Your Community Presence
 
 **Engagement Strategies:**
 
-* **Respond to Reviews**: Address questions and thank users
+* **Respond to Questions**: Help the people who clone your app
 * **Regular Updates**: Keep apps current with new features
 * **Cross-Promotion**: Reference your apps in forum discussions
 * **Documentation**: Create helpful guides and tutorials
@@ -531,18 +526,18 @@ Understanding the differences helps you choose the right approach:
 
 ### Embedding Community Apps
 
-A published community app is a standard Taskade Genesis app, so you can embed it in any web page with an `<iframe>` that points at its public URL:
+A published community app is a standard Taskade Genesis app, so you can embed it in any web page with an `<iframe>` that points at its published address:
 
 ```html
 <!-- Embed a published community app -->
-<iframe src="https://www.taskade.com/a/your-app-id"
-        width="400"
+<iframe src="https://your-app.taskade.app"
+        width="100%"
         height="600"
         frameborder="0">
 </iframe>
 ```
 
-Copy the exact URL from the app's **Share** panel.
+Copy the exact snippet with **Copy Embed Code** in the app's **Publish** panel.
 
 ### API Integration with Community Apps
 
@@ -566,8 +561,8 @@ Apps you clone from the community are standard Genesis apps. Build integrations 
 **Issue**: App won't publish to community **Solutions**:
 
 * Ensure all sensitive data is removed
-* Check for required fields in the listing form
 * Verify app is in a published state (not draft)
+* Only the workspace owner can share an app as a kit
 * Review content guidelines compliance
 
 **Issue**: Low discovery/fork rate **Solutions**:
@@ -646,3 +641,7 @@ The Taskade community is waiting to discover your innovative solutions. Whether 
 **🌟 Build something amazing. Share it with the world. Help teams everywhere work smarter.**
 
 _The future of work is collaborative, and your Genesis app could be exactly what someone needs to transform their business._
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Publish and Clone Your Apps](https://www.taskade.com/learn/genesis/publishing), [Builder Community & App Kits](https://www.taskade.com/learn/genesis/community-kits), [Browse & Clone Community Apps](https://www.taskade.com/learn/genesis/community-gallery)._

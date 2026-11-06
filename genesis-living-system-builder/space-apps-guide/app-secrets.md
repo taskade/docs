@@ -5,19 +5,19 @@ description: >-
 
 # App Secrets & External API Calls
 
-**Connect your Genesis app to third-party services — weather APIs, payment providers, CRMs, or any HTTP endpoint — without ever exposing credentials in your app's source code.**
+**Connect your Taskade Genesis app to third-party services — weather APIs, payment providers, CRMs, or any HTTP endpoint — without ever exposing credentials in your app's source code.**
 
 {% hint style="info" %}
-**App Secrets** are part of the Genesis app platform. Check your workspace plan for availability.
+**App Secrets** are part of every Taskade Genesis app. The **Secrets** tab is in the app's settings, and only workspace Owners and Admins can manage secrets.
 {% endhint %}
 
 ***
 
 ## What Are App Secrets?
 
-App Secrets is a per-space credential vault found under **Settings → Secrets**. Each secret has two parts:
+App Secrets is a per-space credential vault found in your app's settings under **Developer → Secrets**. Each secret has two parts:
 
-- **Alias** — a short name you choose (e.g., `MY_API_KEY`, `STRIPE_SECRET`, `WEATHER_TOKEN`)
+- **Key** (the alias) — a short name you choose (e.g., `MY_API_KEY`, `STRIPE_SECRET`, `WEATHER_TOKEN`)
 - **Value** — the actual API key, token, or password
 
 Once saved, the value is encrypted at rest and is never returned to the browser. Your Genesis app code references secrets only by their alias — the real value is substituted server-side at request time.
@@ -26,16 +26,16 @@ Once saved, the value is encrypted at rest and is never returned to the browser.
 
 ## Adding a Secret
 
-1. Open your Space and navigate to **Settings → Secrets**.
-2. Click **Add Secret**.
-3. Enter an **Alias** (letters, numbers, and underscores; no spaces).
+1. Open your app's settings and go to **Developer → Secrets**.
+2. Click **Add secret**.
+3. Enter a **Key**, the alias your code uses (letters, numbers, dashes, dots, or underscores; no spaces; start with a letter or number).
 4. Paste the **Value** (your API key or token).
-5. Click **Save**.
+5. Click **Save secret**.
 
 The alias is now available to any code running inside that Genesis app.
 
 {% hint style="warning" %}
-Secret values are write-only after saving. To rotate a credential, delete the existing secret and add a new one with the same alias so your code references remain unchanged.
+Secret values are write-only after saving: Taskade never shows a saved value again. To rotate a credential, click **Edit secret** and enter the **New value** (leave it blank to keep the current one). The key stays the same, so your code references remain unchanged.
 {% endhint %}
 
 ***
@@ -99,8 +99,8 @@ Before Genesis publishes or deploys your app, it scans the app source for patter
 
 If a potential hardcoded secret is detected, **publishing is blocked** and Genesis surfaces a warning identifying the suspicious line. To resolve it:
 
-1. Move the credential to **Settings → Secrets** with an appropriate alias.
-2. Replace the hardcoded value in your source with `{{YOUR_ALIAS}}`.
+1. Move the credential to **Developer → Secrets** with an appropriate key.
+2. Remove the hardcoded value from your source and call the upstream API through the proxy, with `secretAlias: 'YOUR_KEY'` and the `{{secret}}` placeholder where the credential goes.
 3. Re-publish.
 
 This guard runs on every publish attempt and cannot be bypassed — it is a safety rail, not an optional lint check.
@@ -114,3 +114,7 @@ This guard runs on every publish attempt and cannot be bypassed — it is a safe
 - **Rotate regularly** — update the secret value in the vault; your app code references the alias and picks up the new value immediately.
 - **Least privilege** — where the external API supports scoped tokens (read-only, single-resource, etc.), use the narrowest scope that your app requires.
 - **Never log secret aliases in output** — even the alias name can hint at what services your app connects to.
+
+---
+
+_Step-by-step guide on taskade.com/learn: [Connect Your App to Outside Services](https://www.taskade.com/learn/genesis/app-secrets)._

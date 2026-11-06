@@ -33,7 +33,7 @@ Customer Support Kit/
 
 ### Real Kit Examples
 
-Based on [Taskade's AI Kit Gallery](https://taskade.com/kits), here are some popular kits you can install today:
+Based on [Taskade's AI Kit Gallery](https://www.taskade.com/apps), here are some popular kits you can install today:
 
 **Automation Expert Kit**
 - Projects: Automation Help Center Resources
@@ -60,11 +60,11 @@ Based on [Taskade's AI Kit Gallery](https://taskade.com/kits), here are some pop
 
 ### Creating and Sharing Kits
 
-You can create kits from any folder in your workspace:
+You can create a kit from any app space in your workspace:
 
-1. **Package a Folder**: Right-click any folder and select "Create Kit"
+1. **Package an App Space**: Open the app space, go to **Kits** in the left sidebar, and click **Proceed**
 2. **Customize Contents**: Add/remove projects, agents, automations, and templates
-3. **Share Publicly**: Enable public access to generate a shareable link
+3. **Share Publicly**: In the **Kits** tab, open the kit's **···** menu, choose **Share**, and enable **Public access** to generate a shareable link
 4. **One-Click Install**: Others can install your kit with a single click
 
 ### Kit Installation Process
@@ -78,6 +78,8 @@ When someone installs your kit:
 ## The Future: `.tsk` Standard
 
 While AI Kits provide powerful bundling today, we're working toward an even more open standard: the **Taskade System Kit** (`.tsk`) format.
+
+The first step already ships: you can download a Taskade Genesis app as a `.tsk` file on Pro and above, and import a `.tsk` file on every plan (your plan must cover the agents, apps, automations, and AI Teams inside the file). See [Export Apps as .tsk Files](https://www.taskade.com/learn/genesis/tsk-export).
 
 ### Vision for `.tsk` Files
 
@@ -115,33 +117,25 @@ We are also designing our APIs to be increasingly agent-friendly, exploring Open
 
 Today, you can work with AI Kits through:
 
-- **Web Interface**: Create, customize, and share kits at [taskade.com/kits](https://taskade.com/kits)
-- **Kit Gallery**: Browse and install from hundreds of pre-built kits
+- **Web Interface**: Create, customize, and share kits from the **Kits** tab of an app space
+- **Kit Gallery**: Browse and install from hundreds of pre-built kits at [taskade.com/apps](https://www.taskade.com/apps)
 - **Public Sharing**: Generate shareable links for one-click installation
 - **Guided Setup**: Interactive onboarding for kit recipients
 
-### Coming Soon: Programmatic Access
+### Programmatic Access
 
-We're building API endpoints for programmatic kit management:
+The REST API can export an app space as a JSON bundle (agents, automations, projects, templates, and apps) and import a bundle into a workspace. Bundle export needs Pro or above. A dedicated kit API is not available yet.
 
 ```bash
-# Create a kit (planned)
-curl -X POST https://www.taskade.com/api/v1/kits \
-  -H "Authorization: Bearer YOUR_TOKEN" \
-  -d '{
-    "name": "Custom CRM Kit",
-    "description": "Complete customer relationship management system",
-    "components": {
-      "projects": ["project_id_1", "project_id_2"],
-      "agents": ["agent_id_1"],
-      "automations": ["automation_id_1", "automation_id_2"]
-    }
-  }'
+# Export an app space as a JSON bundle (Pro and above)
+curl https://www.taskade.com/api/v1/bundles/SPACE_ID/export \
+  -H "Authorization: Bearer YOUR_TOKEN"
 
-# Install a kit (planned)
-curl -X POST https://www.taskade.com/api/v1/kits/KIT_ID/install \
+# Import a JSON bundle into a workspace
+curl -X POST https://www.taskade.com/api/v1/bundles/WORKSPACE_ID/import \
   -H "Authorization: Bearer YOUR_TOKEN" \
-  -d '{"workspace_id": "target_workspace"}'
+  -H "Content-Type: application/json" \
+  -d '{"bundleData": { "version": "1", "items": { } }}'
 ```
 
 ## LLM Integration Guidelines
@@ -166,9 +160,13 @@ Based on [Taskade's LLM guidelines](https://www.taskade.com/llms.txt), when work
 
 ## Getting Started with Kits
 
-1. **Explore the Gallery**: Visit [taskade.com/kits](https://taskade.com/kits) to see what's possible
+1. **Explore the Gallery**: Visit [taskade.com/apps](https://www.taskade.com/apps) to see what's possible
 2. **Install a Kit**: Try a pre-built kit to understand the workflow
 3. **Create Your Own**: Package your best workflows into shareable kits
 4. **Share with Community**: Contribute to the growing ecosystem of AI workflows
 
-By building on the foundation of AI Kits today, we're creating the infrastructure for the open, interoperable `.tsk` standard of tomorrow. 
+By building on the foundation of AI Kits today, we're creating the infrastructure for the open, interoperable `.tsk` standard of tomorrow.
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Taskade AI Kits](https://www.taskade.com/learn/agents/ai-kits), [Export Apps as .tsk Files](https://www.taskade.com/learn/genesis/tsk-export)._

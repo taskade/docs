@@ -78,7 +78,7 @@ When you create new projects or apps, they automatically inherit capabilities fr
 {% step %}
 #### Access Workspace Creation
 
-Click the workspace dropdown in the top-left corner of Taskade, then select "Create New Workspace"
+On your Taskade dashboard, click the ➕ plus icon in the left sidebar to create a new workspace. The Free plan includes 1 workspace, and paid plans include unlimited workspaces
 {% endstep %}
 
 {% step %}
@@ -96,7 +96,7 @@ Invite the people who will help this workspace grow. Each person brings unique s
 {% step %}
 #### Set Your Workspace Personality
 
-Choose colors, icons, and settings that reflect your workspace's purpose and culture.
+Choose colors, icons, and settings that reflect your workspace's purpose and culture. A custom workspace logo needs an upgraded workspace.
 {% endstep %}
 {% endstepper %}
 
@@ -127,12 +127,18 @@ Your Company Workspace
 
 ## Workspace Types (Choose Your Growth Path)
 
-| Type           | Perfect For              | Member Limit | Key Features                           |
-| -------------- | ------------------------ | ------------ | -------------------------------------- |
-| **Personal**   | Individual productivity  | 1            | Basic features, unlimited projects     |
-| **Team**       | Small team collaboration | 10           | Full collaboration, basic automations  |
-| **Business**   | Growing company          | 100          | Advanced AI, priority support          |
-| **Enterprise** | Large organization       | Unlimited    | Custom security, advanced integrations |
+Each workspace runs on a plan. The plan sets how many members the workspace can have:
+
+| Plan           | For            | Members   | Key Features                                         |
+| -------------- | -------------- | --------- | ---------------------------------------------------- |
+| **Free**       | Trying it      | 2         | Unlimited projects, 3 Taskade Genesis apps, 1 agent  |
+| **Starter**    | Individuals    | 3         | 10,000 credits/mo, premium integrations              |
+| **Pro**        | Small teams    | 10        | 50,000 credits/mo, AI Teams, custom domains, webhooks |
+| **Business**   | Growing teams  | Unlimited | 150,000 credits/mo, SSO/SAML, app analytics          |
+| **Max**        | Heavy AI use   | Unlimited | 400,000 credits/mo                                   |
+| **Enterprise** | Large orgs     | Unlimited | SCIM. Contact sales                                  |
+
+See [pricing](https://www.taskade.com/pricing) for current prices.
 
 ## The Magic Happens When Everything Connects
 
@@ -148,7 +154,7 @@ Your Company Workspace
 
 * The more you use your workspace, the smarter it gets
 * AI agents remember your preferences and working style
-* Automations learn optimal timing and conditions
+* Run logs show how each automation performed, so you can refine it
 
 ### Scalable Evolution
 
@@ -218,3 +224,7 @@ But you don't need to understand the technical details—the magic happens autom
 _What questions do you have about workspaces? This living foundation concept can seem magical at first, but once you start using it, you'll wonder how you ever worked without it!_
 
 [← Back to Tutorial Overview](README.md) | [Next: Projects →](02_projects.md)
+
+---
+
+_Step-by-step guides on taskade.com/learn: [What is a Workspace?](https://www.taskade.com/learn/account/workspaces), [Create a Workspace](https://www.taskade.com/learn/projects/create-workspace), [Create a Team (Folder)](https://www.taskade.com/learn/projects/team-folders)._

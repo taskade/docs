@@ -5,105 +5,110 @@ description: >-
 
 # Supported Integrations
 
-Taskade connects to **100+ tools and services** across communication, productivity, AI, and developer ecosystems with enterprise-grade reliability and global performance. Each integration supports both triggers (events that start automations) and actions (tasks that automations can perform) with enhanced error handling and worldwide data synchronization.
+Taskade connects to **100+ tools and services** across communication, productivity, AI, and developer ecosystems. Integrations run inside automations: triggers (events that start automations) and actions (tasks that automations can perform). Some connectors offer only actions or only triggers.
+
+{% hint style="info" %}
+**Plans:** Premium integrations need a paid plan. Pro integrations need Pro and up. The Free plan runs the built-in Taskade steps and the standard connectors: HTTP Request, RSS, Pushover and MCP Client. The step picker shows the plan badge on each step.
+{% endhint %}
 
 ## Enhanced Integration Features
 
 ### **Enterprise-Grade Reliability**
-- **High availability** across all integrations
-- **Advanced error handling** with automatic retries and recovery
-- **Real-time monitoring** and alerting for integration health
-- **Enhanced security** with additional data protection layers
-- **Global performance** with worldwide data synchronization
+- **Run history** for every automation, with the input and output of each step in the **Runs** tab
+- **Error handling** per step: **Continue if this step fails**, with **Stop here** or **Go to the next step**
+- **Secure connections**: you connect each account once with **Connect**, and every step in the workspace can reuse the connection
 
 ### **Advanced Integration Capabilities**
-- **Intelligent data transformation** with enhanced validation
-- **Complex multi-step workflows** spanning multiple services
-- **Real-time analytics** and performance insights
-- **Enhanced file processing** and document management
-- **Improved calendar integration** and scheduling features
+- **Data transformation** with utility actions that use no AI credits
+- **Complex multi-step workflows** spanning multiple services, with Branch, Filter Data, and Loop
+- **File processing** with Media actions and Convert File to Text
+- **Calendar integration** with Google Calendar, Microsoft Outlook Calendar, Cal.com, Calendly, and iCal feeds
 
 ## Categories
 
 ### Communication & Collaboration
 
-| Service | Triggers | Actions | Authentication |
-|---------|----------|---------|----------------|
-| **Slack** | New message, mention, reaction | Send message, create channel, update status, invite user | OAuth 2.0 |
-| **Microsoft Teams** | New message, new channel message, meeting scheduled | Post message, create meeting, manage channels | OAuth 2.0 |
-| **Microsoft Outlook** | New email received | Send email, reply to email, forward email, move email, get email, find email, mark as read | OAuth 2.0 |
-| **Discord** | New message, member joined | Send message, manage roles, create invite | Bot Token |
-| **WhatsApp Business** | New message received | Send message, send template | API Key |
-| **Telegram** | New message, command | Send message, create poll, manage chat | Bot Token |
-| **Email (SMTP)** | New email received | Send email, create campaign | SMTP Credentials |
-| **Gmail** | New email, label added (including label-filtered), new email matching filter | Send email, reply to email, get email, create draft, add label | OAuth 2.0 |
+| Service | Triggers | Actions | Plan |
+|---------|----------|---------|------|
+| **Slack** | New message, new channel, new mention, new reaction | Send channel or direct message, schedule message, create channel, add user to channel, set status, find user, fetch messages, request approval | Paid |
+| **Microsoft Teams** | New channel message | Send channel message, send chat message, create channel, request approval | Paid |
+| **Microsoft Outlook** | New email | Send email, reply to email, forward email, move email to folder, get email, find email, mark as read, request approval | Paid |
+| **Discord** | New message, new member joined | Send message, create, rename, or delete channel, manage roles and members | Paid |
+| **WhatsApp Business** | New message received | Send message, send template message, send media, request approval | Paid |
+| **Telegram Bot** | New message, new member, callback query | Send message, photo, document, or video, edit, delete, or pin message, get chat, request approval | Paid |
+| **Email (SMTP)** | — | Send email through your own mail server | Paid |
+| **Gmail** | New email, new email with label, new email attachment | Send email, reply to email, forward email, get email or thread, find email, create draft or draft reply, send draft, request approval | Paid |
 
 ### Development & Project Management
 
-| Service | Triggers | Actions | Authentication |
-|---------|----------|---------|----------------|
-| **GitHub** | Issue created, PR opened, push | Create issue, comment, merge PR, trigger workflow | OAuth 2.0 / PAT |
-| **GitLab** | Issue created, MR opened | Create issue, update MR, trigger pipeline | OAuth 2.0 / PAT |
-| **Jira** | Issue created, status changed | Create ticket, update status, assign user | OAuth 2.0 / API Key |
-| **Linear** | Issue created, updated | Create issue, update priority, assign | OAuth 2.0 / API Key |
-| **Asana** | Task created, completed | Create task, update project, assign | OAuth 2.0 / PAT |
-| **ClickUp** | Task created, task status changed | Create task, update task, delete task, add comment, get task, list tasks, find task by name, get task comments | OAuth 2.0 / API Key |
-| **Google Tasks** | Task created, task completed | Create task, update task, delete task, complete task, re-open task, list tasks, clear completed, get task, find task | OAuth 2.0 |
-| **Monday.com** | Item created, updated | Create item, update status, notify | OAuth 2.0 / API Key |
-| **Todoist** | Task completed | Create task, update task, complete task, re-open task, delete task, find task | OAuth 2.0 / API Key |
-| **Trello** | Card created, moved | Create card, move card, add member | OAuth 2.0 / API Key |
+| Service | Triggers | Actions | Plan |
+|---------|----------|---------|------|
+| **GitHub** | New issue, issue comment, pull request, push, release, star | Create or update issue, create comment, get issue information, lock or unlock issue | Paid |
+| **Jira** | New issue, updated issue | Create, update, or get issue, search issues, move issue to status, add comment | Paid |
+| **Linear** | New issue, updated issue | Create, update, or get issue, search issues, add comment | Paid |
+| **Asana** | New task | Create, update, get, or delete task, search tasks, add comment to task | Paid |
+| **ClickUp** | New task, task status updated | Create task, update task, delete task, add comment, get task, list tasks, find task by name, get task comments | Paid |
+| **Google Tasks** | New task, task completed | Create task, update task, delete task, complete task, re-open task, list tasks, clear completed, get task, find task | Paid |
+| **Monday.com** | — | Create item, get item, update item | Paid |
+| **Todoist** | Task completed | Create task, update task, complete task, re-open task, delete task, find task | Paid |
+| **Trello** | New card | Create card, get card, update card | Paid |
+| **Microsoft To Do** | See the step picker | See the step picker | Pro and up |
+| **Confluence** | See the step picker | See the step picker | Pro and up |
 
 ### Data & Analytics
 
-| Service | Triggers | Actions | Authentication |
-|---------|----------|---------|----------------|
-| **Google Sheets** | New row, row updated, cell updated | Add row, update cell, create chart, create spreadsheet | OAuth 2.0 |
-| **Airtable** | New record, updated | Create record, update field, link records | OAuth 2.0 / API Key |
-| **Google Docs** | New document created | Read document, edit template file | OAuth 2.0 |
-| **Google Drive** | New file, file updated | Upload file, create folder, move file, share file, delete file (Shared Drive supported) | OAuth 2.0 |
-| **Google Calendar** | Event created, event started | Create event, update event, list events (with search), delete event, add attendee | OAuth 2.0 |
-| **Notion** | Page created, updated | Create page, update database, add content | OAuth 2.0 |
-| **HubSpot** | Contact created, deal updated | Create contact, upsert contact, search contacts, get contact, update contact, create deal, update deal, search deals, get deal, send email | OAuth 2.0 / API Key |
-| **Salesforce** | Lead created, opportunity updated | Create lead, update opportunity, assign | OAuth 2.0 |
-| **Pipedrive** | Deal created, activity added | Create deal, add activity, update stage | OAuth 2.0 / API Key |
-| **Custom Webhooks** | Webhook received | Send HTTP request, trigger workflow | API Key / Bearer Token |
+| Service | Triggers | Actions | Plan |
+|---------|----------|---------|------|
+| **Google Sheets** | New row, row updated | Insert row, add or update multiple rows, update row, delete row, find rows, get rows, read or clear range, create spreadsheet or worksheet | Paid |
+| **Airtable** | New record, new or updated record | Create record, list records, update record | Paid |
+| **Google Docs** | New document | Create document, append text, read document, find document, edit template file | Paid |
+| **Google Drive** | New file, new folder | Upload file, create file or folder, copy or duplicate file, get or read file, save file as PDF, search, trash or delete, manage permissions (Shared Drive supported) | Paid |
+| **Google Calendar** | New event, new or updated event, event cancelled | Create event, create quick event, update event, list events, delete event, get free/busy, list calendars | Paid |
+| **Notion** | New page created, updated database item | Create page, create page under a page, update page, get page, query database, append blocks, search | Paid |
+| **HubSpot** | New contact, new or updated contact, new deal, deal stage reached, deal property changed | Create contact, create or update contact, search contacts, get contact, update contact, create deal, update deal, search deals, get deal, get owner | Paid |
+| **Salesforce** | New record, new or updated record | Create record, update record, find records by query | Paid |
+| **Pipedrive** | New deal, new person, updated deal | Create, get, search, or update deals, persons, organizations, activities, and notes | Pro and up |
+| **Supabase** | See the step picker | See the step picker | Pro and up |
+| **Custom Webhooks** | Webhook received | Send HTTP request | Webhook trigger: Pro and up. HTTP request: every plan |
 
 ### Marketing & Sales
 
-| Service | Triggers | Actions | Authentication |
-|---------|----------|---------|----------------|
-| **Mailchimp** | Subscriber added, campaign sent | Add subscriber, send campaign, create list | OAuth 2.0 / API Key |
-| **ConvertKit** | Subscriber added, tag applied | Add subscriber, create sequence, send broadcast | OAuth 2.0 / API Key |
-| **Calendly** | Event scheduled, cancelled | Create event, update availability, send reminder | OAuth 2.0 / API Key |
-| **Stripe** | Payment succeeded, subscription created | Create customer, process payment, send receipt | OAuth 2.0 / API Key |
-| **PayPal** | Payment completed, dispute opened | Process payment, send invoice, refund | OAuth 2.0 / API Key |
-| **Shopify** | Order created, product updated | Create order, update inventory, send notification | OAuth 2.0 / API Key |
-| **WooCommerce** | Order placed, customer registered | Update order, manage inventory, send email | REST API / API Key |
+| Service | Triggers | Actions | Plan |
+|---------|----------|---------|------|
+| **Mailchimp** | — | Add contact, update contact status, manage tags | Paid |
+| **Calendly** | Any event scheduled, event canceled, event scheduled for an event type | Get event, list scheduled events, list invitees, cancel event | Paid |
+| **Stripe** | New payment, payment failed, new customer, new or updated subscription, canceled subscription, checkout completed, new invoice, invoice paid, invoice payment failed | Create customer, payment intent, payment link, checkout session, product, price, refund, subscription, or invoice, search customers, charges, or invoices, and more | Paid |
+| **Apollo** | — | Enrich user information | Paid |
+| **Twilio** | New incoming SMS | Send SMS, request approval by SMS | Paid |
+| **Brevo**, **Resend**, **SendGrid** | See the step picker | Send email and manage contacts | Pro and up |
+| **HighLevel**, **Attio** | See the step picker | See the step picker | Pro and up |
 
 ### Web & Content
 
-| Service | Triggers | Actions | Authentication |
-|---------|----------|---------|----------------|
-| **Twitter/X** | Mention detected | Post tweet, reply to tweet, delete post, retweet, post tweet with image attachment | OAuth 2.0 |
-| **WordPress** | New post published, comment added | Create post with featured image, update content, moderate comment | OAuth 2.0 / API Key |
-| **Webflow** | Form submitted, item published | Create CMS item, update content, publish | OAuth 2.0 / API Key |
-| **Typeform** | Form submitted, response updated | Create form, update response, send email | OAuth 2.0 / PAT |
-| **Google Forms** | Form submitted | Create form, add response, send notification | OAuth 2.0 |
-| **RSS Feeds** | New item published | Parse content, extract data, trigger workflow | URL |
-| **YouTube** | Video uploaded, comment added | Upload video, update metadata, respond | OAuth 2.0 / API Key |
-| **Medium** | Story published, clap received | Publish story, update profile, send response | OAuth 2.0 / API Key |
+| Service | Triggers | Actions | Plan |
+|---------|----------|---------|------|
+| **Twitter/X** | — | Create post, create reply, delete post | Paid |
+| **LinkedIn** | — | Create share update, create company update | Paid |
+| **Facebook Pages** | — | Create post, create post with image, create video post | Paid |
+| **Reddit** | New post in subreddit | Create post, get post | Paid |
+| **WordPress** | New post | Create post with featured image | Paid |
+| **Webflow** | New form submission | List sites and collections, create, get, update, or publish CMS item | Paid |
+| **Typeform** | New submission | — | Paid |
+| **Google Forms** | New response | Get form, get form response, list form responses | Paid |
+| **Tally**, **Jotform** | New submission | See the step picker | Pro and up |
+| **RSS Feeds** | New item in feed, new item in RSS feeds | — | Every plan |
+| **YouTube** | New video, new video in playlist | Get video details | Paid |
 
 ### Custom & Developer
 
-| Service | Triggers | Actions | Authentication |
-|---------|----------|---------|----------------|
-| **HTTP Webhooks** | Webhook received | Send HTTP request, POST data, call API | Optional (Bearer / API Key / Basic) |
-| **IFTTT / Apple Shortcuts / n8n** | Webhook received | Call any of them via the HTTP request action — they're discoverable when searching automation actions | Webhook URL |
-| **REST APIs** | Custom endpoint called | Make API call, send data, receive response | Various |
-| **GraphQL** | Query executed | Execute query, mutation, subscription | API Key / OAuth |
-| **Custom Forms** | Form submitted | Process data, validate, route to workflow | None |
-| **Database** | Record created, updated | Insert record, update data, run query | Connection String |
-| **FTP/SFTP** | File uploaded, modified | Upload file, download, sync directory | Credentials |
+| Service | Triggers | Actions | Plan |
+|---------|----------|---------|------|
+| **HTTP Request** | — | Send HTTP request (GET, POST, PUT, PATCH, DELETE, HEAD) with optional Bearer, API key, or Basic auth | Every plan |
+| **HTTP Webhook** | Webhook received | — | Pro and up |
+| **Zapier / Make / n8n / IFTTT** | Post to a Taskade webhook URL | Call any of them with the HTTP Request action | Webhook trigger: Pro and up |
+| **MCP Client** | — | List tools and call a tool on any MCP server | Every plan |
+| **Pushover** | — | Send a push notification | Every plan |
+| **Forms** | Form submitted | — | Every plan |
 
 > **Related developer docs:** Build custom integrations programmatically with the [Developer Hub](../../apis-living-system-development/developer-home.md) and [Webhooks](../../apis-living-system-development/webhooks.md), or contribute to the open-source [Integration Kit](https://github.com/taskade/integrations) (Zapier & n8n actions and triggers).
 
@@ -165,13 +170,13 @@ Route data to different services based on content, priority, or other criteria.
 Clean, format, and enrich data as it flows between systems.
 
 ### **Error Recovery**
-Automatically retry failed requests and handle service outages gracefully.
+Choose what happens when a step fails: stop the run, skip the item, or go to the next step. Read the reason in the **Runs** tab.
 
 ### **Rate Limiting**
-Respect API limits and queue requests when necessary.
+Add a **Delay** step to space out calls to a service with rate limits.
 
 ### **Batch Processing**
-Process multiple records efficiently to reduce API calls.
+Process multiple records with **Loop**, or write several rows at once with Google Sheets **Add or Update Multiple Rows**.
 
 ## Custom Integrations
 
@@ -179,21 +184,19 @@ Don't see your service listed? You can create custom integrations using:
 
 ### **HTTP Webhooks**
 - Send data to any REST API
-- Receive webhooks from external services
+- Receive webhooks from external services (Pro and up)
 - Custom authentication headers
-- JSON/XML data formatting
+- JSON, form data, raw, XML, and multipart file bodies
 
 ### **Database Connections**
-- Connect to PostgreSQL, MySQL, MongoDB
-- Execute custom queries
-- Sync data bidirectionally
-- Handle large datasets efficiently
+- Use the **Supabase** connector (Pro and up) for a Postgres database
+- Call any other database through its HTTP API with **Send HTTP Request**
 
 ### **File Processing**
-- Upload/download files via FTP/SFTP
-- Process CSV, JSON, XML files
-- Image and document processing
-- Cloud storage integration
+- Read uploaded files with **Convert File to Text**
+- Convert CSV to a list and a list to CSV with utility actions
+- Convert images and video with Media actions
+- Use Google Drive for cloud storage
 
 ## Detailed Integration Examples
 
@@ -205,13 +208,13 @@ Don't see your service listed? You can create custom integrations using:
 - **Use Case:** Never miss project deadlines
 
 **Meeting Follow-up:**
-- **Trigger:** Calendar event ends
+- **Trigger:** New event in Google Calendar
 - **Action:** Create follow-up tasks in Taskade
 - **Use Case:** Ensure meeting action items are tracked
 
 **Project Milestone Sync:**
-- **Trigger:** Project phase completed
-- **Action:** Update calendar with next milestone
+- **Trigger:** Project completed
+- **Action:** Create a calendar event for the next milestone
 - **Use Case:** Keep stakeholders informed of progress
 
 ### Google Sheets Integration
@@ -238,13 +241,13 @@ Don't see your service listed? You can create custom integrations using:
 - **Action:** Post to LinkedIn company page
 - **Use Case:** Automated content distribution
 
-**Twitter/X Engagement:**
-- **Trigger:** Mention detected
-- **Action:** Create task for social media manager
-- **Use Case:** Never miss customer interactions
+**Twitter/X Publishing:**
+- **Trigger:** Task completed in the content calendar project
+- **Action:** Create post on X/Twitter
+- **Use Case:** Publish approved posts on time
 
 **YouTube Content Workflow:**
-- **Trigger:** Video uploaded
+- **Trigger:** New video on your channel
 - **Action:** Create promotion tasks and schedule posts
 - **Use Case:** Comprehensive video marketing automation
 
@@ -264,8 +267,8 @@ WhatsApp Business integration enhances your communication strategy by automating
 |--------|-------------|------------|----------|
 | **Send Message** | Send text message to contact | `phoneNumber`, `message`, `messageType` | Customer notifications, support responses |
 | **Send Template Message** | Send pre-approved template | `templateId`, `phoneNumber`, `variables` | Order confirmations, appointment reminders |
-| **Send Media Message** | Send images, documents, audio | `phoneNumber`, `mediaUrl`, `mediaType`, `caption` | Product catalogs, instruction manuals |
-| **Get Message Status** | Check delivery status | `messageId` | Track message delivery and read receipts |
+| **Send Media** | Send images, documents, audio | `phoneNumber`, `mediaUrl`, `mediaType`, `caption` | Product catalogs, instruction manuals |
+| **Request Approval** | Ask a person to approve before the automation continues | `phoneNumber`, `message` | Approve an order or a refund |
 
 #### **Real-World Use Cases**
 
@@ -276,7 +279,7 @@ WhatsApp Business integration enhances your communication strategy by automating
 - **Follow-up:** Route to appropriate specialist based on message content
 
 **Order Management:**
-- **Trigger:** Order status changed in system
+- **Trigger:** Stripe payment or webhook from your order system
 - **Action:** Send WhatsApp notification with tracking info
 - **Personalization:** Include customer name, order details, estimated delivery
 - **Escalation:** Alert if delivery is delayed
@@ -288,10 +291,10 @@ WhatsApp Business integration enhances your communication strategy by automating
 - **Integration:** Sync with HubSpot, Salesforce, or other CRM
 
 **Appointment Reminders:**
-- **Trigger:** 24 hours before appointment
+- **Trigger:** Daily schedule that finds tomorrow's appointments
 - **Action:** Send WhatsApp reminder with appointment details
-- **Options:** Include reschedule link, location map
-- **Confirmation:** Request confirmation reply, update calendar
+- **Options:** Include reschedule link and location
+- **Confirmation:** Send a Request Approval message to confirm the time
 
 ---
 
@@ -302,7 +305,7 @@ WhatsApp Business integration enhances your communication strategy by automating
 **HubSpot Revenue Operations**
 ```yaml
 Lead Qualification Pipeline:
-  Trigger: Form submission or LinkedIn connection
+  Trigger: Form submission or HubSpot new contact
   
   Step 1 - Data Enrichment:
     - Agent analyzes lead profile and company
@@ -317,7 +320,6 @@ Lead Qualification Pipeline:
   
   Step 3 - Automated Follow-up:
     - Personalized email based on lead profile
-    - LinkedIn connection request with custom message
     - Calendar link for qualified prospects
     - Task creation for sales rep with context
 
@@ -351,9 +353,8 @@ Emergency Response Protocol:
     - Create dedicated Teams channel for incident
     - Send alert to on-call team with severity level
     - Generate incident response checklist
-    - Start video call with key stakeholders
     - Document timeline in shared project
-    - Update status page automatically
+    - Post an update to your status page through Send HTTP Request
 
 Recovery Actions:
     - Collect post-mortem feedback via forms
@@ -397,14 +398,11 @@ Content Distribution Engine:
     - Agent analyzes post for key themes
     - Generates LinkedIn post variations
     - Creates different versions for executives vs employees
-    - Schedules posts across team members
-    - Monitors engagement and adjusts timing
+    - Publishes to the LinkedIn profile and the company page
   
-  Engagement Management:
-    - Responds to comments with brand voice
-    - Identifies potential leads in comments
-    - Creates follow-up tasks for sales team
-    - Tracks content performance metrics
+  Follow-up:
+    - Creates follow-up tasks for the sales team
+    - Logs each post to a Google Sheet for reporting
 ```
 
 **Multi-Channel Campaign Orchestration**
@@ -414,9 +412,8 @@ Product Launch Campaign:
   
   Pre-Launch (30 days):
     - Create LinkedIn teaser content
-    - Set up Facebook ad campaigns
+    - Schedule Facebook Page posts
     - Generate press release and media kit
-    - Schedule influencer outreach
     - Prepare customer email sequences
   
   Launch Day:
@@ -424,7 +421,6 @@ Product Launch Campaign:
     - Send announcement emails to segments
     - Update website and product pages
     - Activate PR outreach sequence
-    - Monitor mentions and engagement
   
   Post-Launch (30 days):
     - Analyze campaign performance
@@ -445,7 +441,7 @@ Accounts Payable Workflow:
     - AI agent extracts invoice data
     - Validates against purchase orders
     - Routes for approval based on amount
-    - Sends to QuickBooks/Xero for payment
+    - Sends to your accounting system with Send HTTP Request
     - Updates project budgets automatically
     - Notifies stakeholders of status changes
   
@@ -479,8 +475,7 @@ Onboarding Automation:
   
   Pre-boarding (1 week before):
     - Send welcome package and handbook
-    - Create accounts in all systems
-    - Order equipment and prepare workspace
+    - Create onboarding tasks for IT and the workspace
     - Schedule first-day meetings
     - Add to team communication channels
   
@@ -531,11 +526,8 @@ Onboarding Automation:
 ### **Documentation**
 Each integration has detailed setup guides and examples in our help center.
 
-### **Community**
-Join our developer community to share integration patterns and get help.
-
 ### **Support**
-Enterprise customers get priority support for custom integrations.
+Contact support for help with an integration. For Enterprise plans, contact sales.
 
 ---
 
@@ -543,7 +535,11 @@ Enterprise customers get priority support for custom integrations.
 > → [Contact our team](https://taskade.com/contact) for enterprise solutions
 
 > **Want to contribute an integration?**  
-> → Open a PR on the open-source [Integration Kit](https://github.com/taskade/integrations) (Zapier & n8n actions and triggers), or [share ideas](https://taskade.com/community) with the community
+> → Open a PR on the open-source [Integration Kit](https://github.com/taskade/integrations) (Zapier & n8n actions and triggers)
 
 → **Next: [Browse Actions & Triggers](./actions.md)**  
 → **Complete Reference: [Comprehensive Automation Integrations](./comprehensive-integrations.md)** 
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Integrations Everywhere: Workspace DNA and the App on Top](https://www.taskade.com/learn/connect/everywhere), [Automation Actions](https://www.taskade.com/learn/automation/actions)._

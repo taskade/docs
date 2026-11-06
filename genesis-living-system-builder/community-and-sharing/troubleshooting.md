@@ -226,7 +226,7 @@ Sometimes it's faster to rebuild than keep patching. Consider starting over if:
 - The app has become very complex with lots of features
 
 **How to fix it:**
-1. **Click "Fix me"** to retry the prompt automatically
+1. **Click "Try again"** for a temporary failure, or **"Fix with AI"** when the preview reports an app error
 2. **Break your request into smaller pieces:**
    ```
    Instead of: "Change the colors, add file uploads, connect to Slack, update the layout, and add a payment system"
@@ -245,7 +245,7 @@ Sometimes it's faster to rebuild than keep patching. Consider starting over if:
 **What it means:** Something went wrong during the app creation process.
 
 **How to fix it:**
-1. **Check your internet connection**
+1. **Check your internet connection**, then click **Try again**
 2. **Try a simpler version** of your prompt first
 3. **Refresh the page** and try again
 4. **Contact support** if it keeps happening
@@ -286,6 +286,7 @@ Sometimes it's faster to rebuild than keep patching. Consider starting over if:
 - **What you expected** to happen
 - **What actually happened** (include screenshots if helpful)
 - **Your app URL** if you need help with a specific issue
+- **The Error ID** shown on the error card, if one appears
 
 ### Community Help
 
@@ -313,3 +314,7 @@ When your app isn't working as expected, try this checklist:
 ---
 
 **Still stuck?** The AI agent in Genesis is always available to help troubleshoot issues and suggest improvements. Just describe what's not working and ask for specific help!
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Troubleshooting Your App](https://www.taskade.com/learn/genesis/troubleshooting), [AI Error Recovery for Apps](https://www.taskade.com/learn/genesis/error-fixing)._

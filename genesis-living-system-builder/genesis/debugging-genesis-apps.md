@@ -10,7 +10,7 @@ description: >-
 ## Table of Contents
 
 - [Overview](#overview)
-- [Visual Check: Let EVE Catch It First](#visual-check-let-eve-catch-it-first)
+- [Let Taskade EVE Fix It First](#let-taskade-eve-fix-it-first)
 - [Taskade Genesis Debugging Framework (GDF)](#genesis-debugging-framework-gdf)
   - [Layer 1: Failure Classification](#layer-1-failure-classification)
   - [Layer 2: Diagnostic Checklist](#layer-2-diagnostic-checklist)
@@ -33,11 +33,11 @@ This guide introduces the **Genesis Debugging Framework (GDF)** — a structured
 
 ---
 
-## Visual Check: Let EVE Catch It First
+## Let Taskade EVE Fix It First
 
-Before debugging by hand, turn on **Visual check** — the eye toggle in the EVE composer. With it on, EVE visually reviews key pages of the live preview after a build or edit — catching blank screens, broken layout, overlapping elements, and unstyled content — repairs what it finds, and re-checks before handing back.
+Before debugging by hand, use the recovery controls on the error card. Open **Show error details** to see what failed. Click **Try again** for a connection, timeout, or other temporary failure. Click **Fix with AI** when the preview reports an app error, and Taskade EVE attempts a targeted repair. A repair can need another attempt.
 
-Visual check is per-request and optional: leave it off for quick text or logic tweaks, switch it on for UI-heavy builds where "it compiles" isn't the same as "it looks right." If the preview can't be captured, EVE reports the check as unverified rather than assuming the app renders correctly.
+If the error continues, copy its Error ID for support, or restore a working version from [Version History](./version-history.md). Use the framework below when you want to find the root cause yourself.
 
 ---
 
@@ -208,7 +208,7 @@ The GPP is a set of prompting strategies designed to prevent common issues befor
 
 ### The Core Problem
 
-When building complex apps with Genesis, you may need to iterate on individual sections. Each time you re-prompt to fix or extend a section, Eve may regenerate code that conflicts with what was already working — creating a loop of fixes that break other things.
+When building complex apps with Genesis, you may need to iterate on individual sections. Each time you re-prompt to fix or extend a section, EVE may regenerate code that conflicts with what was already working — creating a loop of fixes that break other things.
 
 ### Prevention Strategies
 
@@ -216,7 +216,7 @@ When building complex apps with Genesis, you may need to iterate on individual s
 |---|---|
 | **Build in logical order** | Start with data models and navigation, then add views one at a time. Don't jump between unrelated sections. |
 | **Prompt incrementally** | Make small, focused requests instead of large rewrites. "Add a search bar to the contacts view" is better than "rebuild the contacts page." |
-| **Reference existing code** | When prompting for changes, mention the components and patterns that already exist so Eve maintains consistency. |
+| **Reference existing code** | When prompting for changes, mention the components and patterns that already exist so EVE maintains consistency. |
 | **Validate after each change** | Test the app after every prompt. Catching issues immediately prevents them from compounding. |
 | **Use the diagnostic checklist** | After each generation cycle, run through the Layer 2 checklist above to catch the four most common failure classes. |
 
@@ -258,3 +258,7 @@ Over time, your documented bugs become a personal knowledge base that makes debu
 | [How Genesis Works](./how-genesis-works.md) | Understanding the architecture behind Genesis apps |
 | [Version History](./version-history.md) | How to restore previous versions if something breaks |
 | [Troubleshooting](../community-and-sharing/troubleshooting.md) | General troubleshooting guide for common issues |
+
+---
+
+_Step-by-step guides on taskade.com/learn: [AI Error Recovery for Apps](https://www.taskade.com/learn/genesis/error-fixing), [Troubleshooting Your App](https://www.taskade.com/learn/genesis/troubleshooting)._

@@ -115,7 +115,6 @@ Connect your agents to external platforms for real-world actions:
 | | **WhatsApp Business** | Send messages to contacts | Agent handles customer comms |
 | | **Telegram** | Send messages, manage groups | Agent broadcasts announcements |
 | | **Twilio** | Send SMS messages | Agent sends appointment reminders |
-| | **Zoom** | Schedule meetings | Agent books video calls |
 | **Email** | **Gmail** | Send emails, find emails, create drafts | Agent sends follow-up emails |
 | | **Outlook** | Send emails, manage calendar | Agent handles enterprise email |
 | **CRM & Sales** | **HubSpot** | Create contacts, create deals, update records | Agent creates CRM records |
@@ -131,20 +130,17 @@ Connect your agents to external platforms for real-world actions:
 | **Social Media** | **Twitter/X** | Create posts, manage content | Agent posts social updates |
 | | **LinkedIn** | Create company updates, publish articles | Agent publishes company news |
 | | **Facebook** | Create page posts, manage content | Agent manages page posts |
-| | **Instagram** | Create posts, manage content | Agent publishes visual content |
 | | **Reddit** | Create posts, monitor threads | Agent engages communities |
-| | **TikTok** | Manage content | Agent publishes video content |
 | | **YouTube** | Transcribe videos, manage content | Agent processes video content |
 | **Content** | **WordPress** | Create blog posts, manage content | Agent publishes content |
 | | **Webflow** | Manage CMS content | Agent updates web content |
 | | **RSS** | Monitor feeds | Agent tracks content sources |
 | **Development** | **GitHub** | Manage issues, PRs, repositories | Agent tracks development |
 | | **HTTP/Webhooks** | Custom API requests with analyzer | Agent connects to any API |
-| | **Bitbucket** | Manage issues, repositories | Agent tracks code changes |
 | **Business** | **Stripe** | Process payments, manage subscriptions | Agent handles billing |
 | | **Mailchimp** | Add contacts, manage campaigns | Agent manages email marketing |
 
-> **104 automation actions** and **40+ external service integrations** are available. Agents can use any automation flow as a custom tool. See [Automations](../automation/README.md) for the full integration list.
+> Agents can use any automation flow as a custom tool, and connect to 100+ integrations. On the Free plan, premium apps show an upgrade chip. Premium integrations need a paid plan, and Pro integrations need Pro and up. See [Automations](../automation/README.md) for the full integration list.
 
 > **For developers:** The **HTTP/Webhooks** custom tool lets agents call any external API. See [Webhooks](../../apis-living-system-development/webhooks.md) for programmatic event delivery and payload details.
 
@@ -186,12 +182,12 @@ For sensitive external actions, enable approval before execution:
 
 | Step | Action |
 |---|---|
-| 1 | Enable "Human in the Loop" in the Tools tab |
-| 2 | Select which tools require approval |
-| 3 | When the agent wants to use an approved tool, you'll see a confirmation prompt |
+| 1 | Open the agent's **Tools** tab |
+| 2 | Set the approval mode of each sensitive tool to **Manual Approval** (routine tools can use **Automatic Approval**) |
+| 3 | When the agent wants to use a tool set to Manual Approval, you'll see a confirmation prompt |
 | 4 | Click **Approve** to proceed or **Reject** to stop |
 
-> **Tip:** Use Human in the Loop during the first few weeks of agent deployment. Once you trust the agent's judgment, disable it for routine actions.
+> **Tip:** Use Human in the Loop during the first few weeks of agent deployment. Once you trust the agent's judgment, switch routine tools to **Automatic Approval**.
 
 ---
 
@@ -215,3 +211,7 @@ For sensitive external actions, enable approval before execution:
 | [Agent Knowledge & Memory](./agent-knowledge.md) | Train agents on your data |
 | [Automations](../automation/README.md) | Build the automation flows agents can trigger |
 | [Custom AI Agents](./ai-agents-getting-started.md) | Complete agent setup guide |
+
+---
+
+_Step-by-step guide on taskade.com/learn: [Tools for AI Agents](https://www.taskade.com/learn/agents/agent-tools)._

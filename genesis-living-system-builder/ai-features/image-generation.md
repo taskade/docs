@@ -1,6 +1,6 @@
 ---
 description: >-
-  Generate images for Taskade Genesis apps natively in EVE chat with ready-to-use prompt templates. Auto-saved to Media in 1:1, 16:9, or 9:16.
+  Generate images for Taskade Genesis apps natively in Taskade EVE chat with ready-to-use prompt templates. Auto-saved to Media in 1:1, 16:9, or 9:16.
 ---
 
 # Image Generation
@@ -29,14 +29,14 @@ You can generate images for your Taskade Genesis apps **natively** — no extra 
 
 | Feature | Detail |
 |---|---|
-| **Chat-native creation** | Describe what you need, generate instantly in EVE chat |
+| **Chat-native creation** | Describe what you need, generate instantly in Taskade EVE chat |
 | **Auto-save to Media** | Every generated image is stored in your workspace Media tab |
 | **Built for Taskade Genesis apps** | Use images in websites, tools, dashboards, and more |
 | **Multiple aspect ratios** | 1:1 (square), 16:9 (landscape), 9:16 (portrait) |
 | **Batch generation** | Generate sets of consistent images in a single prompt |
 | **Reusable everywhere** | Use in any Genesis app, project, or agent knowledge base |
 
-> **Powered by EVE:** Image generation is part of EVE, Taskade's unified AI. See [How Genesis Works](../genesis/how-genesis-works.md#eve-the-unified-intelligence) to understand how EVE connects everything.
+> **Powered by Taskade EVE:** Image generation is one of the built-in agent tools, so Taskade EVE and your agents can call it. See [How Genesis Works](../genesis/how-genesis-works.md#eve-the-unified-intelligence) to understand how EVE connects everything.
 
 ---
 
@@ -45,7 +45,7 @@ You can generate images for your Taskade Genesis apps **natively** — no extra 
 | Step | Action |
 |---|---|
 | 1 | Open your Genesis app in Taskade |
-| 2 | Open EVE / Taskade Assistant Agent chat |
+| 2 | Open Taskade EVE (Taskade Assistant Agent) chat |
 | 3 | Describe the image you want (use templates below) |
 | 4 | Send the message and wait for generation |
 | 5 | Use immediately in your app, or access anytime from the **Media** tab |
@@ -138,3 +138,7 @@ Copy these prompts directly — swap in your specific details.
 | [Advanced Features](../space-apps-guide/advanced-features.md) | Customize app branding and appearance |
 | [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md) | Deploy your app with custom images |
 | [Media AI Chat](./media-ai-chat.md) | Chat with media files and images using AI |
+
+---
+
+_Step-by-step guide on taskade.com/learn: [Image Generation](https://www.taskade.com/learn/agents/image-generation)._

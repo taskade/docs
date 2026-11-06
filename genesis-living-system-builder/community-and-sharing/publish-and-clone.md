@@ -46,8 +46,8 @@ When you publish a Genesis app, it becomes a **live, accessible application**:
 | **Live URL** | Your app gets a shareable URL anyone can access |
 | **Real-time functionality** | All features work — forms, databases, agents, automations |
 | **Powered by your workspace** | Backend databases, AI agents, and automations run live |
-| **Clone-ready** | Others can fork your app into their own workspace |
-| **Analytics active** | Visitor tracking begins immediately |
+| **Clone-ready** | Others can fork your app into their own workspace, if you turn on **Let others clone** |
+| **Analytics active** | Visitor tracking begins immediately (App Analytics dashboard on Business and up) |
 | **Version controlled** | Every published version is saved and restorable |
 
 <!-- Screenshot: Published app with live URL -->
@@ -56,11 +56,21 @@ When you publish a Genesis app, it becomes a **live, accessible application**:
 
 ## App Visibility Settings
 
+Open **Publish** and pick who can open the app under **Who can open it**:
+
+| Choice | What Visitors Do | Plan |
+|---|---|---|
+| **Anyone with the link** | Open the app. No password needed. | All plans |
+| **Anyone with the password** | Type one shared password first | Pro and up |
+| **Each person signs in** | Sign in with their own app account ([GenesisAuth](genesis-auth.md)) | All plans |
+
+Then set discoverability under **More options**:
+
 | Visibility | Who Can Access | Discoverable | Best For |
 |---|---|---|---|
-| **Public** | Anyone on the internet | Yes — listed in Community Gallery | Templates, showcases, community tools, marketing |
-| **Secret** | Anyone with the link | No — link-only access | Client portals, team tools, partner apps |
-| **Private** | Workspace members only | No | Internal dashboards, company tools |
+| **Listed** (**Show in public listings** on) | Anyone who can open it | Yes — public listings and search. The Community Gallery after approval ([see below](#publish-to-community-gallery)) | Templates, showcases, community tools, marketing |
+| **Unlisted** (called Secret in earlier versions) | Anyone with the link | No — link-only access | Client portals, team tools, partner apps |
+| **Draft / unpublished** | Your workspace team only, inside Taskade | No | Apps you are still building, internal testing |
 
 ---
 
@@ -83,17 +93,17 @@ Add an extra layer of security to any published app:
 
 | Step | Action |
 |---|---|
-| 1 | Open your app's **Publish** settings |
-| 2 | Toggle **"Require Password"** on |
-| 3 | Set your password |
+| 1 | Click **Publish** |
+| 2 | Under **Who can open it**, pick **Anyone with the password** |
+| 3 | Type your password and click **Update password** |
 | 4 | Share the password separately with authorized users |
 
 | Feature | Detail |
 |---|---|
-| Available on | All plans |
+| Available on | Pro and up |
 | Protection level | Site-wide — covers entire app |
 | Password sharing | Manual (share via secure channel) |
-| Can be changed | Yes, anytime in settings |
+| Can be changed | Yes, anytime with **Change password** or **Remove password** (also in **App settings → People & access → Security**) |
 
 ---
 
@@ -103,7 +113,7 @@ Share your app with the entire Taskade community:
 
 | Step | Action |
 |---|---|
-| 1 | Set your app visibility to **Public** |
+| 1 | Under **More options**, turn on **Show in public listings** |
 | 2 | Click **"Publish to Community"** |
 | 3 | Your app enters the community approval queue |
 | 4 | Once approved, it appears in the public Community Gallery |
@@ -125,25 +135,29 @@ Published community apps track engagement automatically:
 
 ## Clone and Remix Apps
 
-Cloning is the fastest way to start — pick a working app, copy it to your workspace, and customize it instead of building from a blank prompt. Browse apps to clone in the [community gallery](https://www.taskade.com/community) and [Taskade's official kits](https://www.taskade.com/user/taskade).
+Cloning is the fastest way to start — pick a working app, copy it to your workspace, and customize it instead of building from a blank prompt. Browse apps to clone in Taskade App Factory at [taskade.com/apps](https://www.taskade.com/apps) and [Taskade's official kits](https://www.taskade.com/apps/official).
 
-Any public or shared app can be cloned:
+A public app is not cloneable by default. An app can be cloned only when its creator turns on **Let others clone** (**Free** or **Paid**). A kit with a **PRO** badge needs a paid plan to clone.
 
 | Step | Action |
 |---|---|
-| 1 | Open a published app (yours or someone else's) |
-| 2 | Click **"Edit in Taskade"** |
-| 3 | Click **"Clone"** |
-| 4 | The app is copied to your workspace with all components |
+| 1 | Open the app's public listing |
+| 2 | Click **"Clone"** (shown only on a free or paid kit) |
+| 3 | Review the contents Taskade lists, then choose the destination workspace |
+| 4 | The app is copied to your workspace with its components |
+
+To let others clone your own app, open **Publish → Let others clone** and pick **Free** or **Paid** (**Off** stops new clones). This control was called "Share as Template" and then "Share as kit" in earlier versions.
 
 ### What Gets Cloned
 
 | Component | Cloned? | Notes |
 |---|---|---|
 | **UI / Frontend** | Yes | Full React app code |
-| **Project databases** | Yes | Structure + sample data |
+| **Project databases** | Yes | Structure + data. A project that holds what visitors sent (form answers, sign-ups) ships without those rows, unless the creator ships it as sample data |
 | **AI agents** | Yes | Agent config + knowledge references |
-| **Automations** | Yes | Flow definitions (may need re-authentication for integrations) |
+| **Automations** | Yes | Flow definitions. Connected accounts are not copied, so connect your own |
+| **Secrets** | No | Connected accounts and secrets stay with the creator |
+| **Taskade EVE memory** | No | The creator's Taskade EVE memory projects are not copied |
 | **Media files** | Yes | Images, uploads |
 | **Custom domain** | No | You'll need to configure your own |
 | **Analytics data** | No | Fresh start with new metrics |
@@ -171,13 +185,13 @@ Specific descriptions produce better results: "Create a restaurant reservation s
 
 ## Paid Apps
 
-Genesis lets creators monetize their apps directly. When you enable monetization for an app, buyers pay via Stripe before receiving their own private copy.
+Taskade Genesis lets creators sell original apps as paid App Kits. Buyers pay before receiving their own private copy.
 
 ### How It Works
 
 | Step | What Happens |
 |---|---|
-| **Creator sets a price** | In the app's **Publish** settings, open the **Monetization** panel and set a price for the app. |
+| **Creator sets a price** | In the app's **Publish** panel, open **Let others clone**, choose **Paid**, enter the price, and click **Put on sale**. Finish payout setup in **Earnings**. |
 | **Buyer discovers the app** | The app appears in the Community Gallery (or via a direct link) with a price tag. |
 | **Buyer pays via Stripe** | Checkout is handled by Stripe. No payment details are stored by Taskade. |
 | **Buyer receives a private copy** | After successful payment, Taskade clones the app directly into the buyer's workspace. |
@@ -187,12 +201,12 @@ Genesis lets creators monetize their apps directly. When you enable monetization
 | Rule | Detail |
 |---|---|
 | **Scope** | Cloned paid apps are scoped to the buyer's workspace only. |
-| **Re-sharing** | Buyers cannot re-publish or redistribute paid app copies to other users. |
+| **Re-selling** | Buyers can customize and publish their copy, but cannot sell it as their original work. |
 | **Clone ancestry** | Taskade tracks clone lineage — each paid copy is linked to the original app and its creator. |
-| **No revenue figures here** | Payout terms and percentages are shown in your Monetization dashboard, not documented here — they may change. |
+| **No revenue figures here** | Payout terms and percentages are shown in **Earnings**, not documented here — they may change. |
 
 {% hint style="info" %}
-Paid apps do not affect the buyer's ability to customize or extend the app within their own workspace. Re-sharing and re-selling the cloned copy is blocked to protect creator rights.
+Paid apps do not affect the buyer's ability to customize or extend the app within their own workspace. An app cloned from another creator cannot be sold as original work, which protects creator rights.
 {% endhint %}
 
 ---
@@ -204,16 +218,16 @@ Connect your own domain to any published Genesis app:
 | Feature | Detail |
 |---|---|
 | **Available on** | Pro (up to 10 per workspace), Business and up (unlimited) |
-| **Setup method** | CNAME record pointing to Taskade |
-| **SSL** | Automatic via Cloudflare |
-| **Configuration** | App Settings → Domains |
+| **Setup method** | CNAME record pointing to `external.taskade.com`, plus a short SSL record Taskade gives you (or buy a domain inside Taskade) |
+| **SSL** | Automatic |
+| **Configuration** | App settings → Launch → Domains |
 
 | Step | Action |
 |---|---|
-| 1 | Open app **Settings** → **Domains** |
+| 1 | Open **App settings** → **Launch** → **Domains** |
 | 2 | Enter your custom domain (e.g., `app.yourcompany.com`) |
-| 3 | Add the provided CNAME record to your DNS provider |
-| 4 | Wait for DNS propagation (up to 24 hours) |
+| 3 | Add the provided CNAME record (and the SSL record) to your DNS provider |
+| 4 | Wait for DNS propagation (up to 48 hours) |
 | 5 | SSL certificate is provisioned automatically |
 
 ---
@@ -226,8 +240,8 @@ Connect your own domain to any published Genesis app:
 | **Embed** | Embed app in your website or blog via iframe | All |
 | **Social sharing** | Share on LinkedIn, Twitter, Reddit, Facebook | All |
 | **SEO customization** | Custom meta title, description, Open Graph image | Business+ |
-| **Custom colors** | Branded share previews and social cards | Business+ |
-| **White-label branding** | Custom favicon, remove Taskade branding | Business+ |
+| **Custom colors** | Branded app color theme | Business+ |
+| **Remove Taskade badge** | Hide the "Powered by Taskade" badge | All paid plans |
 | **App sign-in** | App Users sign in to your app ([GenesisAuth](genesis-auth.md)) | All |
 
 ---
@@ -238,16 +252,16 @@ You can embed any published Genesis app into an external website, blog, or docum
 
 ### Getting the Embed Code
 
-1. Open your published app.
-2. Click the **Share** menu (top-right of the app toolbar).
-3. Select **Embed** to reveal the embed code snippet.
-4. Copy the `<iframe>` tag and paste it into your page's HTML.
+1. Open your published app in Taskade.
+2. Click **Publish**.
+3. Click the embed button (`</>`) next to the app address, or **Copy Embed Code**.
+4. Paste the `<iframe>` tag into your page's HTML.
 
 ### Recommended iframe Attributes
 
 ```html
 <iframe
-  src="https://your-app-url.taskade.com"
+  src="https://your-app.taskade.app"
   width="100%"
   style="min-height: 600px; border: none;"
   allowfullscreen
@@ -273,38 +287,37 @@ Genesis apps support custom search-engine and social metadata so your published 
 
 ### How to Set SEO Fields
 
-1. Open your app's **Publish** settings.
-2. Locate the **SEO** panel.
-3. Fill in the fields described below.
+1. Open **App settings → Launch → Branding**.
+2. Review the **SEO Health** checklist.
+3. Fill in the fields described below. Editing them needs Business and up.
 4. Save and republish (or let Auto-publish apply the change).
 
 | Field | What It Controls | Tips |
 |---|---|---|
 | **Meta title** | The `<title>` tag and browser tab label | Keep under ~60 characters to avoid truncation in search results |
 | **Meta description** | The snippet shown in search results | Aim for ~150 characters; describe what the app does and who it's for |
-| **Open Graph image** | The preview image on social shares (LinkedIn, X/Twitter, Slack, etc.) | Recommended size 1200 × 630 px; upload via the OG Image field |
+| **Social image** | The preview image on social shares (LinkedIn, X/Twitter, Slack, etc.) | Recommended size 1200 × 630 px; paste a full `https://` address. Leave it blank to use a live screenshot of your app |
 
 {% hint style="info" %}
-The Open Graph image you upload is stored in your workspace assets. If you later delete the asset, the social preview will fall back to the Taskade default image.
+The social image field takes a full `https://` address. If you leave it blank, or enter a relative path, Taskade uses a live screenshot of your app as the social preview.
 {% endhint %}
 
 ---
 
 ## White-Label Branding
 
-Business+ workspaces can strip or replace Taskade's default branding on published apps.
+Paid workspaces can hide Taskade's badge on published apps. Custom app colors need Business and up.
 
 ### How to Configure White-Label Options
 
-1. Open your app's **Publish** settings.
-2. Navigate to the **Branding** panel.
-3. Apply the options below and save.
+1. Click **Publish** to reach **Show Taskade badge**, or open **App settings → Launch → Branding**.
+2. Apply the options below and save.
 
 | Option | What It Does |
 |---|---|
-| **Watermark toggle** | Hides the "Powered by Taskade" badge from the published app footer |
+| **Show Taskade badge** | Turn it off to hide the "Powered by Taskade" badge from the published app (all paid plans) |
 | **Favicon upload** | Replaces the default Taskade favicon with your own `.ico` or `.png` file |
-| **Color theme** | Sets primary and accent colors for the app chrome to match your brand palette |
+| **Color theme** | Sets primary and accent colors for the app chrome to match your brand palette (Business and up) |
 
 {% hint style="info" %}
 White-label settings apply to the published view only. The Taskade editor interface retains standard Taskade branding for workspace members.
@@ -316,7 +329,7 @@ White-label settings apply to the published view only. The Taskade editor interf
 
 App sign-in runs on OpenID Connect (OIDC), with Taskade as the identity provider. It is available on every plan. Turn it on to require an account before visitors can use the app — see [GenesisAuth](genesis-auth.md).
 
-Sign-in confirms who a visitor is. It does not hide other people's records by itself: to give each user only their own rows, turn on **Private per-user data** — see [Add Login & Roles](../run-your-business/add-login-and-roles.md#give-each-user-only-their-own-rows).
+Sign-in confirms who a visitor is. It does not hide other people's records by itself: to give each user only their own rows, turn on **Private entries** (private per-user data, off by default) under **Publish → More options** — see [Add Login & Roles](../run-your-business/add-login-and-roles.md#give-each-user-only-their-own-rows).
 
 For your own team, workspace SSO/SAML is available on Business and up — see [Account Management](../../account-management/README.md).
 
@@ -327,8 +340,8 @@ For your own team, workspace SSO/SAML is available on Business and up — see [A
 | Practice | Recommendation |
 |---|---|
 | **Sensitive data** | Never publish apps containing passwords, API keys, or PII publicly |
-| **Private links** | Use Secret visibility for confidential applications |
-| **Password protection** | Add site-wide password for client portals |
+| **Private links** | Keep confidential apps unlisted, and pick **Each person signs in** |
+| **Password protection** | Add a site-wide password (Pro and up) for a quick shared lock |
 | **Access review** | Regularly review who has access to your published apps |
 | **Automation credentials** | Integration credentials are workspace-level, not exposed in published apps |
 | **Version awareness** | Old published versions may contain data you later removed — use [Version History](../genesis/version-history.md) to audit |
@@ -339,12 +352,12 @@ For your own team, workspace SSO/SAML is available on Business and up — see [A
 
 | Method | Visibility | Clonable | Custom Domain | Password | Analytics | Best For |
 |---|---|---|---|---|---|---|
-| **Public + Community** | Anyone | Yes | Pro+ | Optional | Business+ | Templates, showcases |
-| **Public (no community)** | Anyone with URL | Yes | Pro+ | Optional | Business+ | Marketing pages |
-| **Secret link** | Link holders | Yes | Pro+ | Optional | Business+ | Client portals, partners |
-| **Private** | Workspace only | N/A | Pro+ | Optional | Business+ | Internal tools |
-| **Embed** | Website visitors | No | N/A | Optional | Business+ | Blog, documentation |
-| **Paid** | Anyone (after purchase) | Yes (paid copy) | Pro+ | Optional | Business+ | Monetized templates, premium apps — buyer receives a private copy in their own workspace |
+| **Listed + Community** | Anyone | If **Let others clone** is on | Pro+ | Optional (Pro+) | Business+ | Templates, showcases |
+| **Listed (no community)** | Anyone with URL | If **Let others clone** is on | Pro+ | Optional (Pro+) | Business+ | Marketing pages |
+| **Unlisted link** | Link holders | If **Let others clone** is on | Pro+ | Optional (Pro+) | Business+ | Client portals, partners |
+| **Each person signs in** | Signed-in app users | If **Let others clone** is on | Pro+ | Optional (Pro+) | Business+ | Internal tools, portals |
+| **Embed** | Website visitors | No | N/A | Optional (Pro+) | Business+ | Blog, documentation |
+| **Paid** | Anyone (after purchase) | Yes (paid copy) | Pro+ | Optional (Pro+) | Business+ | Monetized templates, premium apps — buyer receives a private copy in their own workspace |
 
 ---
 
@@ -359,3 +372,7 @@ For your own team, workspace SSO/SAML is available on Business and up — see [A
 | [Sharing Best Practices](best-practices.md) | Tips for collaborating and distributing apps |
 | [Sharing FAQ](faq.md) | Common questions about publishing and access |
 | [Developer Platform](../../apis-living-system-development/developer-home.md) | Publish and manage apps programmatically via the API |
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Publish and Clone Your Apps](https://www.taskade.com/learn/genesis/publishing), [Builder Community & App Kits](https://www.taskade.com/learn/genesis/community-kits), [Sell Your Taskade Genesis App as an App Kit](https://www.taskade.com/learn/genesis/sell-app-kits)._

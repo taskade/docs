@@ -27,7 +27,7 @@ Taskade enables seamless real-time and asynchronous collaboration across teams. 
 
 * Changes appear instantly across all devices
 * Seamless handoff between desktop, web, and mobile
-* Offline changes sync when reconnected
+* If the connection drops, Taskade tries to sync your last changes when you reconnect
 * Version consistency maintained automatically
 
 ## Chat and Messaging
@@ -180,9 +180,11 @@ Before starting conversations, ensure your team is properly invited to collabora
 
 **Permission Levels:**
 
-* **Full Access**: Complete project editing capabilities
-* **Comment Only**: Can add comments but not edit content
-* **View Only**: Read-only access to project content
+Pick a role for each person, from Owner to Viewer:
+
+* **Editor**: Complete project editing capabilities
+* **Checker**: Can complete tasks and add comments, but not edit content (paid plans)
+* **Viewer**: Read-only access to project content, plus comments
 
 ### Project-Level Chat
 
@@ -239,7 +241,6 @@ For confidential or one-on-one communications:
 **Performance Features:**
 
 * **Message Synchronization**: Consistent chat history across devices
-* **Offline Message Queue**: Send messages when connection is restored
 * **Notification Controls**: Customize chat notification preferences
 * **Chat Backup**: Automatic preservation of conversation history
 
@@ -344,7 +345,7 @@ For confidential or one-on-one communications:
 
 ## Password Protection & Security
 
-Add an extra layer of security to any shared content:
+Add an extra layer of security to any shared content. Password protection needs a paid plan, and a password on a project share link needs Pro or a higher plan:
 
 | **Content Type** | **Protection Level**     | **Use Cases**                                 |
 | ---------------- | ------------------------ | --------------------------------------------- |
@@ -356,7 +357,7 @@ Add an extra layer of security to any shared content:
 **How to Enable:**
 
 1. **Share your content** (agent, form, automation, or project)
-2. **Click "Add Password"** in the respective sharing settings
+2. **Turn on "Require password"** in the respective sharing settings
 3. **Set a secure password** and share it separately
 4. **Users must enter password** to access the content
 
@@ -441,14 +442,12 @@ Global Team Features:
 * **Message Retention**: Configurable retention policies for all communications
 * **Legal Hold**: Preservation of communications for legal proceedings
 * **Audit Trails**: Complete history of all collaboration activities
-* **Content Filtering**: Automatic detection of sensitive information
 
 **Governance Controls**
 
 * **Communication Policies**: Automated enforcement of communication standards
 * **Escalation Protocols**: Automatic routing of critical communications
 * **Access Reviews**: Regular audits of collaboration permissions
-* **Data Classification**: Automatic tagging of sensitive collaboration content
 
 ### **Advanced Analytics**
 
@@ -488,15 +487,13 @@ Team Performance Metrics:
 
 **Enterprise-Grade Security**
 
-* **End-to-End Encryption**: All communications encrypted in transit and at rest
-* **Zero-Knowledge Architecture**: Taskade cannot access encrypted content
-* **Advanced Authentication**: SAML SSO with conditional access policies
-* **Device Management**: Mobile device compliance and remote wipe capabilities
+* **Encryption**: TLS on every connection, AES-256 for backups and stored credentials
+* **Advanced Authentication**: SAML SSO on Business, Max, and Enterprise, with the access policies of your identity provider
+* **Session Management**: Sign out a lost or old device from **Settings → Sessions** with **Revoke Access**
 
 **Privacy Controls**
 
-* **Personal Data Protection**: GDPR/CCPA compliant data handling
-* **Content Classification**: Automatic sensitivity labeling
+* **Personal Data Protection**: Data handling designed to align with GDPR and CCPA (compliance in progress)
 * **Right to Deletion**: Complete data removal on request
 
 ***
@@ -706,6 +703,8 @@ Taskade automatically processes and makes your files available for AI chat and t
 
 **Comprehensive file format support for all your content:**
 
+Images upload on every plan. Uploading other file types (documents, video, audio, archives) is available on paid plans.
+
 **🏞 Image/Design Formats:**
 
 * Standard: `jpg`, `jpeg`, `png`, `gif`, `svg`, `webp`, `heic`
@@ -875,3 +874,7 @@ Receive intelligent responses based on the file's actual content
 * [Project Views](./project-views.md) - Visual collaboration tools
 * [Mobile Optimization](mobile-optimization.md) - Mobile collaboration features
 * [Workspaces](./) - Team organization and management
+
+---
+
+_Step-by-step guides on taskade.com/learn: [Real-Time Collaboration](https://www.taskade.com/learn/projects/collaboration), [Chat and Messaging](https://www.taskade.com/learn/projects/chat), [Project Comments](https://www.taskade.com/learn/projects/project-comments)._
