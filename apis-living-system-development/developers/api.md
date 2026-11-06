@@ -60,17 +60,31 @@ graph TD
   T -->|"Public agent embed"| D["Your website"]
 ```
 
-| Surface | What it does | Endpoint or package | Access | Start here |
-| --- | --- | --- | --- | --- |
-| **REST API v1** | Resources and HTTP verbs for workspaces, folders, projects, tasks, agents, media, and bundles | `https://www.taskade.com/api/v1` | Every plan. Personal access token or OAuth 2.0, with the permissions of the token owner. | [REST API guide](../comprehensive-api-guide/README.md) · [Reference](https://www.taskade.com/docs/rest) |
-| **Action API v2** (beta, `2.0.0-beta`) | One verb for each operation, such as `/listSpaces`, `/createTask`, and `/promptAgent`. A good fit for AI tools. | `https://www.taskade.com/api/v2` | Every plan. Same credentials as REST API v1. | [Action API guide](../api-v2-reference.md) · [Reference](https://www.taskade.com/docs/actions) |
-| **Hosted MCP server** | Lets Claude, Cursor, VS Code, ChatGPT, and other MCP clients read and change a workspace and edit Taskade Genesis app source | `https://www.taskade.com/mcp` | OAuth 2.0 with PKCE or a personal access token. Every paid plan (Starter and above). | [Hosted Taskade MCP](../genesis-app-mcp.md) |
-| **Workspace MCP** (local) | Runs a local stdio server that wraps REST API v1 | `npx -y @taskade/mcp-server` | Personal access token in `TASKADE_API_KEY`. Each call keeps its API access rules. | [Workspace MCP](../workspace-mcp.md) |
-| **Webhooks** | Sends signed Taskade events to your endpoint, or starts an automation from an incoming HTTP call | `POST https://www.taskade.com/api/v2/webhooks` | Pro plan and above | [Webhooks](../webhooks.md) |
-| **Public agent embed** | Puts a public AI agent on your site as an iframe or a chat widget | The embed code from the agent's publish settings | Every plan. No token: the agent must be public. | [Agent embeds](../agent-embeds.md) |
-| **Bundles** | Exports and imports a whole app or workspace as JSON, `.zip`, or `.tsk` | `/api/v1/bundles/…` or `/api/v2/exportBundle` | Export: Pro plan and above. Import: per-item plan limits. | [Bundles & App Kits](../bundles.md) |
-| **MCP Client connector** | Lets a Taskade automation call the tools of another MCP server | An automation step | Every plan, Free included | [Which Taskade MCP do I want?](../mcp-overview.md) |
-| **TypeScript SDK** | A generated client for the Action API v2. It is in preview and not on npm yet. | `@taskade/sdk` (preview) | Not available yet. Call the API over HTTPS. | [TypeScript SDK](../sdk-quickstart.md) |
+| Surface | What it does | Start here |
+| --- | --- | --- |
+| **REST API v1** | Resources and HTTP verbs for workspaces, folders, projects, tasks, agents, media, and bundles | [REST API guide](../comprehensive-api-guide/README.md) · [Reference](https://www.taskade.com/docs/rest) |
+| **Action API v2** (beta, `2.0.0-beta`) | One verb for each operation, such as `/listSpaces`, `/createTask`, and `/promptAgent`. A good fit for AI tools. | [Action API guide](../api-v2-reference.md) · [Reference](https://www.taskade.com/docs/actions) |
+| **Hosted MCP server** | Lets Claude, Cursor, VS Code, ChatGPT, and other MCP clients read and change a workspace and edit Taskade Genesis app source | [Hosted Taskade MCP](../genesis-app-mcp.md) |
+| **Workspace MCP** (local) | Runs a local stdio server that wraps REST API v1 | [Workspace MCP](../workspace-mcp.md) |
+| **Webhooks** | Sends signed Taskade events to your endpoint, or starts an automation from an incoming HTTP call | [Webhooks](../webhooks.md) |
+| **Public agent embed** | Puts a public AI agent on your site as an iframe or a chat widget | [Agent embeds](../agent-embeds.md) |
+| **Bundles** | Exports and imports a whole app or workspace as JSON, `.zip`, or `.tsk` | [Bundles & App Kits](../bundles.md) |
+| **MCP Client connector** | Lets a Taskade automation call the tools of another MCP server | [Which Taskade MCP do I want?](../mcp-overview.md) |
+| **TypeScript SDK** | A generated client for the Action API v2. It is in preview and not on npm yet. | [TypeScript SDK](../sdk-quickstart.md) |
+
+Each surface has its own endpoint and access rule:
+
+| Surface | Endpoint or package | Access |
+| --- | --- | --- |
+| **REST API v1** | `https://www.taskade.com/api/v1` | Every plan. Personal access token or OAuth 2.0, with the permissions of the token owner. |
+| **Action API v2** | `https://www.taskade.com/api/v2` | Every plan. Same credentials as REST API v1. |
+| **Hosted MCP server** | `https://www.taskade.com/mcp` | OAuth 2.0 with PKCE or a personal access token. Every paid plan (Starter and above). |
+| **Workspace MCP** (local) | `npx -y @taskade/mcp-server` | Personal access token in `TASKADE_API_KEY`. Each call keeps its API access rules. |
+| **Webhooks** | `POST https://www.taskade.com/api/v2/webhooks` | Pro plan and above |
+| **Public agent embed** | The embed code from the agent's publish settings | Every plan. No token: the agent must be public. |
+| **Bundles** | `/api/v1/bundles/…` or `/api/v2/exportBundle` | Export: Pro plan and above. Import: per-item plan limits. |
+| **MCP Client connector** | An automation step | Every plan, Free included |
+| **TypeScript SDK** | `@taskade/sdk` (preview) | Not available yet. Call the API over HTTPS. |
 
 ## Choose your path
 

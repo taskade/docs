@@ -22,9 +22,11 @@ You need one MCP connection and the link to your app.
 
 Paste your app link, or give the workspace and project names. Your assistant calls `list_spaces` and `list_projects` to find the project, so you do not copy an ID out of the URL.
 
+{% code overflow="wrap" %}
 ```text
 Here is my app: <paste link>. Find this project and show me what is inside.
 ```
+{% endcode %}
 
 The assistant lists the contents of the project.
 
@@ -32,41 +34,55 @@ The assistant lists the contents of the project.
 
 Ask questions in plain words. The assistant reads the tasks and fields for you.
 
+{% code overflow="wrap" %}
 ```text
 Show me every overdue job.
 ```
+{% endcode %}
 
+{% code overflow="wrap" %}
 ```text
 What is the status of the Johnson project?
 ```
+{% endcode %}
 
+{% code overflow="wrap" %}
 ```text
 List this week's new client intakes.
 ```
+{% endcode %}
 
 ## 3. Update records and fields
 
 Ask for the change. The assistant updates tasks, dates, and field values.
 
+{% code overflow="wrap" %}
 ```text
 Mark the Johnson job complete and set the next service date to next Friday.
 ```
+{% endcode %}
 
+{% code overflow="wrap" %}
 ```text
 Log this invoice against the Acme account.
 ```
+{% endcode %}
 
+{% code overflow="wrap" %}
 ```text
 Set the priority field on every overdue task to High.
 ```
+{% endcode %}
 
 ## 4. Let it keep watch
 
 Ask for one summary of what needs you today.
 
+{% code overflow="wrap" %}
 ```text
 Flag anything overdue and tell me what needs my attention today.
 ```
+{% endcode %}
 
 You are done when the assistant reports the overdue items, and the changes from step 3 show in your Taskade Genesis app.
 
@@ -86,9 +102,11 @@ To change the design of the app, use Taskade Genesis or the [hosted Taskade MCP]
 
 Paste this block into your coding agent to connect it.
 
+{% code overflow="wrap" %}
 ```text
 Connect to the hosted Taskade MCP server at https://www.taskade.com/mcp over Streamable HTTP. Use OAuth 2.0 with PKCE if you support interactive sign-in, or send "Authorization: Bearer <token>" with a personal access token from https://www.taskade.com/settings/api. The workspace must be on a paid Taskade plan. Call list_spaces to find the workspace of my app, then list_projects to find its projects. Report the projects and their fields. Do not write anything until I confirm.
 ```
+{% endcode %}
 
 ## Next steps
 

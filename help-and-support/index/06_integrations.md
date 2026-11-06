@@ -26,28 +26,20 @@ Integrations in Taskade are **bridges between systems** that enable automatic da
 ```mermaid
 flowchart TD
     TASKADE[Taskade Workspace<br/>Central Hub] --> INT[100+ Integrations<br/>Connected Tools]
-
-    INT --> COMM[📧 Communication<br/>Slack, Teams, Discord]
-    INT --> PROD[📊 Productivity<br/>Google Workspace, Notion]
-    INT --> CRM[💼 Sales & CRM<br/>HubSpot, Salesforce]
-    INT --> CLOUD[☁️ Cloud Storage<br/>Google Drive, OneDrive]
-    INT --> SOCIAL[📱 Social Media<br/>Twitter, LinkedIn, Facebook]
-    INT --> DEV[🔧 Development<br/>GitHub, Jira, Figma]
-
-    COMM --> ACTIONS[Actions Flow Both Ways]
-    PROD --> ACTIONS
-    CRM --> ACTIONS
-    CLOUD --> ACTIONS
-    SOCIAL --> ACTIONS
-    DEV --> ACTIONS
-
+    INT --> ACTIONS[Actions Flow Both Ways]
     ACTIONS --> TRIGGER[Triggers Automations]
     TRIGGER --> WORKFLOW[Intelligent Workflows]
-    WORKFLOW --> RESULTS[Seamless Business Operations]
-
-    style TASKADE fill:#e1f5fe
-    style RESULTS fill:#e8f5e8
+    WORKFLOW --> RESULTS[Business Operations]
 ```
+
+**Integration categories:**
+
+* **Communication**: Slack, Teams, Discord
+* **Productivity**: Google Workspace, Notion
+* **Sales & CRM**: HubSpot, Salesforce
+* **Cloud Storage**: Google Drive, OneDrive
+* **Social Media**: Twitter, LinkedIn, Facebook
+* **Development**: GitHub, Jira, Figma
 
 **Integrations enable:**
 

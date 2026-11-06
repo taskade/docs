@@ -25,17 +25,6 @@ Turn on public access, then copy the code that Taskade generates for you.
 4. Pick **Add to your website** for an iframe, or **Add a chat widget** for a widget.
 5. Copy the generated code.
 
-```text
-┌────────────────────────────────────────────────────────────┐
-│  Publish Agent                                  [ switch ] │
-├────────────────────────────────────────────────────────────┤
-│   Share │ Embed │ Customize │ Tool Permissions             │
-│           ─────                                            │
-│   Add to your website        iframe, fixed size            │
-│   Add a chat widget          launcher or in-page panel     │
-└────────────────────────────────────────────────────────────┘
-```
-
 The generated code holds the current public agent ID and only the options that the selected mode supports. The **Customize** sub-tab sets the look. **Tool Permissions** shows only when the agent has tools.
 
 ```mermaid

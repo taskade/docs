@@ -8,7 +8,7 @@ description: >-
 **Transform your scattered information into organized, searchable intelligence that powers smarter AI agents and more effective workflows. Learn how to efficiently upload, organize, and manage knowledge sources for maximum AI performance.**
 
 {% hint style="success" %}
-**Smart Knowledge Strategy:** The quality and organization of your knowledge directly impacts AI agent performance. Well-structured knowledge bases can improve response accuracy by 60-80%.
+**Smart Knowledge Strategy:** The quality and organization of your knowledge directly impacts AI agent performance.
 {% endhint %}
 
 ***
@@ -17,14 +17,14 @@ description: >-
 
 ### **Supported Knowledge Sources**
 
-| **Source Type**          | **Best For**                 | **Processing**            | **AI Benefits**             |
-| ------------------------ | ---------------------------- | ------------------------- | --------------------------- |
-| **📄 Documents**         | Policies, manuals, guides    | Text extraction + OCR     | Context-aware responses     |
-| **🌐 Websites**          | Latest info, product pages   | Reads the linked page (one page, no crawl) | Up-to-date public information |
-| **📊 Spreadsheets**      | Data, lists, structured info | Data parsing + analysis   | Data-driven insights        |
-| **🎥 Videos**            | Training content, demos      | YouTube auto-generated transcript | Video content understanding |
-| **📋 Projects**          | Live workspace data          | Real-time sync            | Current project context     |
-| **🗂️ File Collections** | Document libraries           | Batch processing          | Comprehensive knowledge     |
+| **Source Type**      | **Best For**                 | **Processing**                             |
+| -------------------- | ---------------------------- | ------------------------------------------ |
+| **Documents**        | Policies, manuals, guides    | Text extraction + OCR                      |
+| **Websites**         | Latest info, product pages   | Reads the linked page (one page, no crawl) |
+| **Spreadsheets**     | Data, lists, structured info | Data parsing + analysis                    |
+| **Videos**           | Training content, demos      | YouTube auto-generated transcript          |
+| **Projects**         | Live workspace data          | Real-time sync                             |
+| **File Collections** | Document libraries           | Batch processing                           |
 
 ### **Knowledge Processing Capabilities**
 

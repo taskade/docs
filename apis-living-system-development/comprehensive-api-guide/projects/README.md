@@ -1,6 +1,6 @@
 ---
 description: >-
-  Projects — Taskade REST API v1 reference: GET /projects/{projectId}. Parameters, authentication, and response schema.
+  Projects — Taskade REST API v1 reference: get, create, copy, complete, and restore projects, with share links.
 ---
 
 # Projects
@@ -24,7 +24,7 @@ These endpoints allow you to create, read, update, and delete the Projects that 
 
 ### Learn More
 
-* [**Agent Knowledge & Memory ›**](https://www.taskade.com/learn/agents/knowledge)
+* [**Agent Knowledge & Memory**](https://www.taskade.com/learn/agents/knowledge)
 
 ## Summary of Endpoints
 

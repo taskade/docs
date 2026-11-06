@@ -16,7 +16,7 @@ Taskade turns a plain-English description of your business into a real, running 
 {% endhint %}
 
 {% hint style="success" %}
-**Running a real business on a Taskade Genesis app?** Follow [Run Your Business on Genesis](genesis-living-system-builder/run-your-business/README.md) — build it, add logins, and put it on your own domain.
+**Running a real business on a Taskade Genesis app?** Follow [Run Your Business on Taskade Genesis](genesis-living-system-builder/run-your-business/README.md) — build it, add logins, and put it on your own domain.
 {% endhint %}
 
 ## Welcome to Taskade
@@ -43,7 +43,7 @@ Software should be alive. And now, it is.
 | Capability               | Description                                                    | Learn More                                                                                                  |
 | ------------------------ | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | **AI App Builder**       | Generate full-stack applications from natural language prompts | [Create Your First App →](https://www.taskade.com/learn/genesis/first-app)              |
-| **Website Generator**    | Create responsive websites with built-in AI intelligence       | [Workspace DNA →](https://www.taskade.com/learn/genesis/workspace-dna)            |
+| **Website Generator**    | Create responsive websites with built-in AI intelligence       | [Publish Your Apps →](https://www.taskade.com/learn/genesis/publishing)            |
 | **Workflow Automation**  | Connect 100+ integrations with AI-powered decision making      | [Automations Guide →](https://www.taskade.com/learn/automation/automations-execution)        |
 | **AI Agents Platform**   | Deploy custom AI assistants with persistent memory             | [Custom AI Agents →](https://www.taskade.com/learn/agents/custom-agents) |
 | **Projects & Databases** | Structured data with real-time sync and custom fields          | [Memory Pillar →](https://www.taskade.com/learn/projects/databases)       |

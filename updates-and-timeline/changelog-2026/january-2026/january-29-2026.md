@@ -1,6 +1,6 @@
 ---
 description: >-
-  Taskade developer changelog — January 29, 2026: Space Agent Tool Calls v2 — Automation Actions as Agent Tools, Space Agents — Projects & Knowledge…
+  Taskade developer changelog — January 29, 2026: Automation actions as agent tools, and project and knowledge retrieval for space agents.
 ---
 
 # January 29, 2026

@@ -7,14 +7,10 @@ description: >-
 # Inbound Webhooks
 
 {% hint style="info" %}
-**Generated reference:** The maintained webhooks guide is at [taskade.com/docs/guides/webhooks](https://www.taskade.com/docs/guides/webhooks). An inbound webhook starts an automation, and you create the automation in Taskade. MCP cannot create or edit an automation.
+**Canonical guide:** [Webhooks](../../webhooks.md) covers inbound webhooks, outbound HTTP requests, and the signed Webhook Registration API. This page documents the automation webhook trigger's parameter format. An inbound webhook starts an automation, and you create the automation in Taskade. MCP cannot create or edit an automation. Also on taskade.com: [taskade.com/docs/guides/webhooks](https://www.taskade.com/docs/guides/webhooks).
 {% endhint %}
 
-{% hint style="info" %}
-**Canonical guide:** [Webhooks](../../webhooks.md) covers inbound webhooks, outbound HTTP requests, and the signed Webhook Registration API. This page documents the automation webhook trigger's parameter format.
-{% endhint %}
-
-Taskade can receive data sent to the Webhook URL through parameters. The parameters all have a String type format. They can then be utilised in other actions within the flow. Note that the parameter does not support space characters, for example the following is invalid:
+Taskade can receive data sent to the Webhook URL through parameters. The parameters all have a String type format. You can use them in other actions in the flow. Parameter names cannot contain spaces. For example, this is invalid:
 
 ```
 {
@@ -22,7 +18,7 @@ Taskade can receive data sent to the Webhook URL through parameters. The paramet
 }
 ```
 
-An example of the following WebHook Trigger and its associated data is shown here:
+This example shows a webhook trigger and its data:
 
 ```
 {
@@ -31,6 +27,6 @@ An example of the following WebHook Trigger and its associated data is shown her
 }
 ```
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="A webhook trigger with Name and Title parameters"><figcaption></figcaption></figure>
 
 Setting up an inbound webhook involves setting up an automation flow. Learn more in the [Taskade Automation guide](https://www.taskade.com/learn/automation).

@@ -28,7 +28,7 @@ description: >-
 
 Agent Tools are integrated add-ons that **augment your AI agents' capabilities** — allowing them to interact with Taskade projects, third-party platforms, and custom workflows. Tools transform agents from text-only assistants into autonomous actors that can take real actions on your behalf.
 
-> **Workspace DNA connection:** Tools are how agents execute the [Automation pillar](../automation/README.md). An agent with tools can send Slack messages, create HubSpot deals, update Google Sheets, and more — all within the conversation.
+> **Workspace DNA connection:** Tools are how agents execute the [Execution pillar](../automation/README.md) of Workspace DNA. An agent with tools can send Slack messages, create HubSpot deals, update Google Sheets, and more — all within the conversation.
 
 ---
 

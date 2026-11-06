@@ -6,7 +6,7 @@ title: 'Chapter 7: API - Developer Interfaces'
 
 # Chapter 7: API - Developer Interfaces
 
-Brilliant! You've connected your tools and built integrated workflows. Now let's **unlock unlimited possibilities** with Taskade's API—giving you programmatic access to build custom applications, advanced integrations, and automated systems that extend Taskade infinitely.
+You connected your tools and built integrated workflows. Next, use the Taskade API for programmatic access: build custom applications, advanced integrations, and automated systems that extend Taskade.
 
 {% hint style="info" %}
 For the full developer reference—authentication, endpoints, SDKs, and more—see the [Developer Home](../../apis-living-system-development/developer-home.md).
@@ -26,36 +26,6 @@ For the full developer reference—authentication, endpoints, SDKs, and more—s
 ## What is the Taskade API? (Programmatic Superpowers)
 
 The Taskade API is a **RESTful interface** that exposes core Taskade resources programmatically: workspaces, folders, projects, tasks, AI agents, media, and bundles. It transforms Taskade from a productivity tool into a development platform where you can build custom applications, integrations, and automated workflows.
-
-```mermaid
-flowchart TD
-    API[Taskade API<br/>RESTful Interface] --> RESOURCES[Core Resources]
-
-    RESOURCES --> WORKSPACES[🏢 Workspaces<br/>Team containers]
-    RESOURCES --> PROJECTS[📋 Projects<br/>Work containers]
-    RESOURCES --> TASKS[✅ Tasks<br/>Work units]
-    RESOURCES --> AGENTS[🤖 AI Agents<br/>Knowledge and chats]
-    RESOURCES --> WEBHOOKS[🔗 Webhooks<br/>Real-time events]
-
-    WORKSPACES --> OPERATIONS[Operations]
-    PROJECTS --> OPERATIONS
-    TASKS --> OPERATIONS
-    AGENTS --> OPERATIONS
-    WEBHOOKS --> OPERATIONS
-
-    OPERATIONS --> CRUD[Create, Read, Update, Delete]
-    OPERATIONS --> QUERY[Paged Lists & Reads]
-    OPERATIONS --> BATCH[Bulk Operations]
-    OPERATIONS --> REALTIME[Real-time Updates]
-
-    CRUD --> APPS[Custom Applications]
-    QUERY --> INTEGRATIONS[Advanced Integrations]
-    BATCH --> AUTOMATION[Enterprise Automation]
-    REALTIME --> MONITORING[Live Dashboards]
-
-    style API fill:#e1f5fe
-    style APPS fill:#e8f5e8
-```
 
 **The API enables:**
 

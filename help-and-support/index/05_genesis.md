@@ -1,6 +1,6 @@
 ---
 description: >-
-  Build complete business apps from a plain-English description with Taskade Genesis: auto-generated databases, UIs, AI assistants, automations, and instant.
+  Build complete business apps from a plain-English description with Taskade Genesis: auto-generated databases, UIs, AI assistants, automations, and instant sharing.
 title: 'Chapter 5: Taskade Genesis - Building Apps with AI'
 ---
 
@@ -25,7 +25,7 @@ Taskade Genesis is Taskade's **AI-powered app builder** that transforms plain En
 
 ```mermaid
 flowchart TD
-    IDEA[Your Idea<br/>Business Problem] --> PROMPT[Describe in Plain English<br/>"I need customers to book appointments"]
+    IDEA[Your Idea<br/>Business Problem] --> PROMPT["Describe in Plain English<br/>I need customers to book appointments"]
 
     PROMPT --> GENESIS[Genesis AI<br/>Analyzes & Builds] --> APP[Complete Application<br/>Database + Interface + Logic]
 
@@ -47,8 +47,6 @@ flowchart TD
     DNA --> PROJECTS[Projects & Data]
     DNA --> AUTOMATIONS[Workflows]
 
-    style IDEA fill:#e1f5fe
-    style LIVE fill:#e8f5e8
 ```
 
 **Genesis creates:**

@@ -1,6 +1,6 @@
 ---
 description: >-
-  Package projects, agents, automations, and templates into shareable Taskade AI Kits for one-click install, plus the planned .tsk standard and agent-friendly.
+  Package projects, agents, automations, and templates into shareable Taskade AI Kits, export apps as .tsk files, and see the plans for an open .tsk standard.
 ---
 
 # Specs & Interoperability
@@ -33,7 +33,7 @@ Customer Support Kit/
 
 ### Real Kit Examples
 
-Based on [Taskade's AI Kit Gallery](https://www.taskade.com/apps), here are some popular kits you can install today:
+Based on the [Taskade App Factory](https://www.taskade.com/apps), here are some popular kits you can install today:
 
 **Automation Expert Kit**
 - Projects: Automation Help Center Resources
@@ -118,7 +118,7 @@ We are also designing our APIs to be increasingly agent-friendly, exploring Open
 Today, you can work with AI Kits through:
 
 - **Web Interface**: Create, customize, and share kits from the **Kits** tab of an app space
-- **Kit Gallery**: Browse and install from hundreds of pre-built kits at [taskade.com/apps](https://www.taskade.com/apps)
+- **Taskade App Factory**: Browse and install pre-built kits at [taskade.com/apps](https://www.taskade.com/apps)
 - **Public Sharing**: Generate shareable links for one-click installation
 - **Guided Setup**: Interactive onboarding for kit recipients
 
@@ -160,7 +160,7 @@ Based on [Taskade's LLM guidelines](https://www.taskade.com/llms.txt), when work
 
 ## Getting Started with Kits
 
-1. **Explore the Gallery**: Visit [taskade.com/apps](https://www.taskade.com/apps) to see what's possible
+1. **Explore the Taskade App Factory**: Visit [taskade.com/apps](https://www.taskade.com/apps) to see what's possible
 2. **Install a Kit**: Try a pre-built kit to understand the workflow
 3. **Create Your Own**: Package your best workflows into shareable kits
 4. **Share with Community**: Contribute to the growing ecosystem of AI workflows

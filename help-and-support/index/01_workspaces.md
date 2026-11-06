@@ -26,20 +26,17 @@ A workspace in Taskade is your **digital headquarters**—but with a twist. Inst
 flowchart TD
     WS[Your Workspace<br/>Living Foundation] --> DNA[DNA Strands]
 
+    DNA --> KNOW[📚 Memory<br/>Projects & Data]
     DNA --> INT[🧠 Intelligence<br/>AI Agents]
-    DNA --> ACT[⚡ Action<br/>Automations]
-    DNA --> KNOW[📚 Knowledge<br/>Projects & Data]
+    DNA --> ACT[⚡ Execution<br/>Automations]
 
+    KNOW --> GROW[Grows with<br/>your business]
     INT --> LEARN[Learns from<br/>your work]
     ACT --> ADAPT[Adapts to<br/>your needs]
-    KNOW --> GROW[Grows with<br/>your business]
 
     LEARN --> EVOLVE[Everything gets<br/>smarter together]
     ADAPT --> EVOLVE
     GROW --> EVOLVE
-
-    style WS fill:#e1f5fe
-    style EVOLVE fill:#e8f5e8
 ```
 
 **Here's what makes workspaces special:**

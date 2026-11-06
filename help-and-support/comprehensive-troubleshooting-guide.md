@@ -45,15 +45,17 @@ Test Taskade in an incognito or private browsing window.
 
 ### Browser Compatibility
 
-**Supported browsers and versions:**
+**Supported browsers:**
 
-| Browser     | Minimum Version | Recommended Version |
-| ----------- | --------------- | ------------------- |
-| **Chrome**  | 90+             | Latest              |
-| **Firefox** | 88+             | Latest              |
-| **Safari**  | 14+             | Latest              |
-| **Edge**    | 90+             | Latest              |
-| **Brave**   | 1.20+           | Latest              |
+| Browser     | Recommended |
+| ----------- | ----------- |
+| **Chrome**  | Latest      |
+| **Firefox** | Latest      |
+| **Safari**  | Latest      |
+| **Edge**    | Latest      |
+| **Brave**   | Latest      |
+
+If Taskade does not load or work correctly, update your browser to the latest version first.
 
 ## Login and Authentication Issues
 

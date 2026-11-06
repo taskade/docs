@@ -50,14 +50,14 @@ Workspaces are the enhanced foundational containers that organize your teams, pr
 
 The plan on a workspace sets how many members it includes:
 
-| Plan           | Use Case                 | Members Included | Features                                                   |
-| -------------- | ------------------------ | ---------------- | ---------------------------------------------------------- |
-| **Free**       | Individual productivity  | 2                | Core features, unlimited projects                          |
-| **Starter**    | Individuals, tiny teams  | 3                | Premium integrations in automations                        |
-| **Pro**        | Small team collaboration | 10               | Custom domains, AI Teams, automation webhooks              |
-| **Business**   | Department/company use   | Unlimited        | SSO/SAML, app analytics                                    |
-| **Max**        | Larger teams             | Unlimited        | SSO/SAML, more AI credits                                  |
-| **Enterprise** | Large organization       | Unlimited        | SCIM provisioning, SSO/SAML                                |
+| Plan (use case) | Members | Features |
+| --- | --- | --- |
+| **Free** (individuals) | 2 | Core features, unlimited projects |
+| **Starter** (individuals, tiny teams) | 3 | Premium integrations in automations |
+| **Pro** (small teams) | 10 | Custom domains, AI Teams, automation webhooks |
+| **Business** (departments, companies) | Unlimited | SSO/SAML, app analytics |
+| **Max** (larger teams) | Unlimited | SSO/SAML, more AI credits |
+| **Enterprise** (large organizations) | Unlimited | SCIM provisioning, SSO/SAML |
 
 ## Workspaces vs. Team Folders (Formerly Teams)
 

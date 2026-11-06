@@ -32,14 +32,8 @@ Specialized agents, Taskade EVE, and people coordinate around one shared project
 graph TD
   HUMAN["Human team members<br/>direction and decisions"] --> WS["Shared project / workspace"]
   WS --> EVE["Taskade EVE<br/>orchestrates and invokes agents"]
-  EVE --> RES["Research Agent"]
-  EVE --> ANL["Analyst Agent"]
-  EVE --> WRT["Writer Agent"]
-  EVE --> COORD["Coordinator Agent"]
-  RES --> WS
-  ANL --> WS
-  WRT --> WS
-  COORD --> WS
+  EVE --> AGENTS["Specialist agents<br/>research, analysis, writing, coordination"]
+  AGENTS --> WS
 ```
 
 

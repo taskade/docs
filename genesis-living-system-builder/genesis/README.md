@@ -16,17 +16,7 @@ Taskade Genesis lets you turn a plain-English prompt into a live application —
 | Write better prompts | [Prompt Guide](prompt-guide.md) |
 | Give my app the right context | [Adding Context](adding-context.md) |
 | See real apps and starting points | [Examples & Templates](examples-and-templates.md) |
-| Run a real business on a Taskade Genesis app | [Run Your Business on Genesis](../run-your-business/README.md) |
-
-**Living Software. Living DNA. Living Intelligence.**
-
-**Build Without Permission.**\
-**One Prompt. One App.**\
-**Imagine it. Run it live.**\
-**Powered by your workspace.**
-
-[Taskade Genesis](https://www.taskade.com/create) turns plain English into a live application.\
-It builds on the same data, agents, and automations you already use.
+| Run a real business on a Taskade Genesis app | [Run Your Business on Taskade Genesis](../run-your-business/README.md) |
 
 {% hint style="success" %}
 **New to Taskade Genesis?** Follow [Your First Living System in 5 Minutes](getting-started.md).
@@ -91,13 +81,13 @@ Start here:
 
 On a paid plan, edit your app's source from Claude, Cursor, or any IDE via the [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md).
 
-Running a real business on a Taskade Genesis app? Follow [Run Your Business on Genesis](../run-your-business/README.md).
+Running a real business on a Taskade Genesis app? Follow [Run Your Business on Taskade Genesis](../run-your-business/README.md).
 
 ## Next steps
 
 * [Getting Started](getting-started.md) — build your first living system in 5 minutes
 * [Prompt Guide](prompt-guide.md) — get sharper results from your prompts
-* [Run Your Business on Genesis](../run-your-business/README.md) — take an app to production
+* [Run Your Business on Taskade Genesis](../run-your-business/README.md) — take an app to production
 * [taskade.com/apps](https://www.taskade.com/apps) — browse community apps
 
 ---

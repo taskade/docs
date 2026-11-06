@@ -1,7 +1,7 @@
 ---
 description: >-
   Build a client or member portal with no code. Each client signs in, and with
-  Private entries on, sees only their own records. Keywords: client portal, member portal, login, no-code.
+  Private entries on, sees only their own records.
 ---
 
 # Build a client or member portal in 10 minutes
@@ -31,13 +31,15 @@ Open Taskade Genesis and describe what you want in plain English — who logs in
 
 Start with a prompt like this and edit the bracketed parts for your business:
 
-```
+{% code overflow="wrap" %}
+```text
 Build a client portal for my consulting business. Each client signs in with
 their own account and sees only their own dashboard: their active projects,
 the documents I've shared with them, an invoice list, and a status update for
 each project. Clients can never see other clients' information. I sign in as
 the owner and can see and manage every client from one admin view.
 ```
+{% endcode %}
 
 The more specific you are about *what each client sees*, the better the first build. New to Taskade Genesis? Walk through [Getting Started](../genesis/getting-started.md) first.
 {% endstep %}

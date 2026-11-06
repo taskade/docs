@@ -61,16 +61,9 @@ Genesis automatically creates smart storage for your information, but you can ma
 
 Every Genesis app comes with its own AI assistant that learns about your business. Think of it as hiring a super-smart employee who never sleeps and always knows exactly what to do!
 
-### Your AI Gets the Best Brain Available
+### Choose an AI Model
 
-Genesis automatically picks the smartest AI for your needs, but you can ask for specific types:
-
-| **AI Type**            | **What It's Great At**            | **How Fast** | **Perfect For**                          |
-| ---------------------- | --------------------------------- | ------------ | ---------------------------------------- |
-| **Super Smart**        | Complex decisions, planning ahead | Medium speed | ⭐⭐⭐⭐⭐ Solving tricky business problems   |
-| **Great Communicator** | Writing, understanding people     | Fast         | ⭐⭐⭐⭐⭐ Talking with customers beautifully |
-| **Reliable Worker**    | Getting things done consistently  | Fast         | ⭐⭐⭐⭐☆ Handling everyday tasks perfectly  |
-| **Quick Responder**    | Fast answers, simple tasks        | Super fast   | ⭐⭐⭐☆☆ When speed matters most            |
+Taskade Genesis uses Auto by default, which picks a frontier model for each request. You can choose a specific model from the model picker.
 
 ### Comprehensive Agent Training
 

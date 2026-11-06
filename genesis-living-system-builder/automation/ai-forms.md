@@ -55,7 +55,7 @@ In the Automations tab, click **Add automation → Generate With AI** and pick *
 #### **Option B: Form Builder Interface**
 
 1. Go to your workspace **Automations** tab
-2. Create an automation: **Create with AI**, **Browse templates**, or **Start from scratch**
+2. Click **Add automation**, then pick a template, or click **Create** to start from scratch
 3. Click **➕ Add Trigger → Form**
 4. Configure form settings and fields in the sidebar
 5. Add automation actions for processing responses

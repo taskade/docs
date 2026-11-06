@@ -372,7 +372,7 @@ Congratulations! You've built your first Taskade Genesis app. Here's how to take
 
 Turn your 5-minute app into a business you run.
 
-* [**Run Your Business on Genesis →**](../run-your-business/README.md) - The full track, from a working app to a live business
+* [**Run Your Business on Taskade Genesis →**](../run-your-business/README.md) - The full track, from a working app to a live business
 * [**Add login & roles →**](../run-your-business/add-login-and-roles.md) - Gate access and give each user the right view
 * [**Put it on your own domain →**](../space-apps-guide/custom-domains.md) - Publish under your branded domain
 * [**Go-live checklist →**](../run-your-business/go-live-checklist.md) - Final checks before you send real customers in

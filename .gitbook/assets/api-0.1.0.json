@@ -2,7 +2,7 @@
   "openapi": "3.0.3",
   "info": {
     "title": "Taskade Public API (v1)",
-    "description": "Taskade REST API (v1, GA) \u2014 stable, resource-style endpoints with full task and project CRUD. The AI-native workspace platform: build apps, deploy agents, automate workflows.",
+    "description": "Taskade REST API (v1, GA) — stable, resource-style endpoints with full task and project CRUD. The AI-native workspace platform: build apps, deploy agents, automate workflows.",
     "version": "1.0.0"
   },
   "components": {
@@ -75,7 +75,7 @@
           },
           "name": {
             "type": "string",
-            "description": "The project\u2019s name or title."
+            "description": "The project’s name or title."
           }
         },
         "required": [
@@ -175,10 +175,16 @@
         "type": "object",
         "properties": {
           "type": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "text/plain",
+              "text/markdown"
+            ],
+            "example": "text/markdown"
           },
           "value": {
-            "type": "string"
+            "type": "string",
+            "example": "Call the client on Friday."
           }
         },
         "required": [
@@ -193,18 +199,21 @@
           "date": {
             "type": "string",
             "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
-            "description": "ISO date format (YYYY-MM-DD), e.g. \"2021-12-31\""
+            "description": "ISO date format (YYYY-MM-DD), e.g. \"2021-12-31\"",
+            "example": "2026-12-31"
           },
           "time": {
             "type": "string",
             "pattern": "^(?:[0-1][0-9]|[2][0-3]):[0-5][0-9](?::[0-5][0-9])?$",
             "nullable": true,
-            "description": "Optional time component in 24-hour format (HH:MM:SS), e.g. \"15:30:45\". Can be null or omitted for date-only representations"
+            "description": "Optional time component in 24-hour format (HH:MM:SS), e.g. \"15:30:45\". Can be null or omitted for date-only representations",
+            "example": "15:30"
           },
           "timezone": {
             "type": "string",
             "nullable": true,
-            "description": "Optional timezone identifier (IANA timezone name), e.g. \"America/New_York\", \"Asia/Singapore\". Can be null or omitted for timezone-naive representations"
+            "description": "Optional timezone identifier (IANA timezone name), e.g. \"America/New_York\", \"Asia/Singapore\". Can be null or omitted for timezone-naive representations",
+            "example": "America/New_York"
           }
         },
         "required": [
@@ -2365,7 +2374,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful Project creation from template",
+            "description": "Project created from template",
             "content": {
               "application/json": {
                 "schema": {
@@ -2388,7 +2397,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful Project creation from template"
+                  "description": "Project created from template"
                 },
                 "example": {
                   "ok": true,
@@ -2918,7 +2927,7 @@
         "tags": [
           "Task"
         ],
-        "description": "Get task with id",
+        "description": "Get a task by ID",
         "parameters": [
           {
             "schema": {
@@ -3183,7 +3192,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful complete a Task",
+            "description": "Task completed",
             "content": {
               "application/json": {
                 "schema": {
@@ -3209,7 +3218,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful complete a Task"
+                  "description": "Task completed"
                 },
                 "example": {
                   "ok": true,
@@ -5371,7 +5380,7 @@
         "tags": [
           "Folder"
         ],
-        "description": "Get projects templates in a folder.",
+        "description": "Get the project templates in a folder.",
         "parameters": [
           {
             "schema": {
@@ -5464,7 +5473,7 @@
         "tags": [
           "Me"
         ],
-        "description": "Get all projects of mine",
+        "description": "Get all my projects",
         "parameters": [
           {
             "schema": {
@@ -7099,7 +7108,7 @@
         "tags": [
           "Agent"
         ],
-        "description": "Remove a knowledge media",
+        "description": "Remove a media file from the agent's knowledge",
         "parameters": [
           {
             "schema": {
@@ -7232,7 +7241,7 @@
                       "data": {
                         "llm": {
                           "type": "openai",
-                          "name": "gpt-3.5-turbo"
+                          "name": "gpt-4.1"
                         },
                         "endedAt": 1
                       }
@@ -7315,7 +7324,7 @@
                     "data": {
                       "llm": {
                         "type": "openai",
-                        "name": "gpt-3.5-turbo"
+                        "name": "gpt-4.1"
                       },
                       "endedAt": 1
                     }
@@ -7412,7 +7421,7 @@
         "tags": [
           "Media"
         ],
-        "description": "Delete a media",
+        "description": "Delete a media file",
         "parameters": [
           {
             "schema": {
@@ -7626,6 +7635,18 @@
               }
             }
           }
+        },
+        "requestBody": {
+          "required": true,
+          "description": "The raw file bytes. Set Content-Type to the file type.",
+          "content": {
+            "application/octet-stream": {
+              "schema": {
+                "type": "string",
+                "format": "binary"
+              }
+            }
+          }
         }
       }
     },
@@ -7635,7 +7656,7 @@
         "tags": [
           "Bundle"
         ],
-        "description": "Export a space (subspace / app) as a JSON bundle (SpaceBundleData v1). Returns all agents, automations, projects, templates, and apps. Media items are excluded \u2014 use the ZIP export or download media separately via the media endpoints.",
+        "description": "Export a space (subspace / app) as a JSON bundle (SpaceBundleData v1). Returns all agents, automations, projects, templates, and apps. Media items are excluded — use the ZIP export or download media separately via the media endpoints.",
         "parameters": [
           {
             "schema": {
@@ -7693,7 +7714,7 @@
                         "items"
                       ],
                       "additionalProperties": false,
-                      "description": "SpaceBundleData v1 \u2014 Workspace DNA bundle."
+                      "description": "SpaceBundleData v1 — Workspace DNA bundle."
                     }
                   },
                   "required": [
@@ -7778,7 +7799,7 @@
         "tags": [
           "Bundle"
         ],
-        "description": "Import a JSON bundle (agents, automations, projects, templates, apps) into a workspace. The bundle is validated against the SpaceBundleData v1 schema and all items are installed into the target workspace. Media items are not supported \u2014 use the ZIP import or upload media separately via the media endpoints after import.",
+        "description": "Import a JSON bundle (agents, automations, projects, templates, apps) into a workspace. The bundle is validated against the SpaceBundleData v1 schema and all items are installed into the target workspace. Media items are not supported — use the ZIP import or upload media separately via the media endpoints after import.",
         "requestBody": {
           "required": true,
           "content": {

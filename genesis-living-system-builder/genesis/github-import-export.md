@@ -44,7 +44,7 @@ GitHub Import & Export lets you treat any Genesis app like code — back it up, 
 
 Import works with a repo that holds an exported Taskade app. It does not turn an ordinary code repo into an app.
 
-The entire app kit — projects, agents, and automations — comes in together. **Automations are enabled automatically** after import, so the app is ready to run without manual setup.
+If your plan allows automations, the entire app kit — projects, agents, and automations — comes in together. **Automations are enabled automatically** after import, so the app is ready to run without manual setup. On a plan without automations (Free), Taskade stops the import of an app that holds automations and asks you to upgrade.
 
 ### From a Private Repository
 

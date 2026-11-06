@@ -16,22 +16,20 @@ description: Connect your own branded domain to a published Taskade Genesis app 
 
 Custom domains let your Genesis apps live at your own web address instead of a shared `taskade.app` subdomain.
 
-### Before Custom Domains (Looks Amateurish)
+### Before: a shared Taskade subdomain
 
 ```
 https://random-gibberish-a7b2.taskade.app
 https://purple-elephant-xyz.taskade.site
 ```
 
-### With Custom Domains (Looks Professional)
+### After: your own domain
 
 ```
 https://app.yourcompany.com
 https://portal.clientname.com
 https://booking.restaurantname.com
 ```
-
-This simple change makes customers think you hired a team of developers when really you just described what you wanted in plain English!
 
 ***
 
@@ -40,7 +38,7 @@ This simple change makes customers think you hired a team of developers when rea
 ### **Professional Appearance**
 
 * Apps appear to be built specifically for your brand
-* Clients never see "Taskade" in the URL or interface
+* Clients see your domain in the URL, not a Taskade subdomain
 * Consistent branding throughout the user experience
 * Higher perceived value and professionalism
 
@@ -63,7 +61,7 @@ This simple change makes customers think you hired a team of developers when rea
 * Perfect for agencies delivering client solutions
 * White-label applications under client brands
 * No ongoing Taskade branding in client-facing tools
-* Complete solution ownership appearance
+* The tool looks like your own product
 
 ***
 

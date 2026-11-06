@@ -78,7 +78,7 @@ Start here:
 Next:
 
 * Build apps with agents: [Living Systems That Transform Business](../genesis/)
-* Put actions on autopilot: [Living Motion Overview](../automation/)
+* Put actions on autopilot: [Automations Overview](../automation/)
 
 ## Next steps
 

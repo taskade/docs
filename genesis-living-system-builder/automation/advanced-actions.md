@@ -7,10 +7,6 @@ description: >-
 
 **Master the latest automation capabilities including loop processing, WhatsApp Business integration, HTTP response schema generation, and error handling. These features turn complex workflows into simple, reliable automations.**
 
-{% hint style="success" %}
-Loop actions, WhatsApp Business messaging, HTTP response schema generation, and social media integrations make Taskade automations even more powerful.
-{% endhint %}
-
 {% hint style="info" %}
 The flows on this page use the automation editor. You add each step from the step picker, and you insert values from earlier steps with the `@` picker. Premium integrations (for example WhatsApp Business, Slack, X/Twitter, LinkedIn and Facebook Pages) need a paid plan.
 {% endhint %}
@@ -22,10 +18,6 @@ The flows on this page use the automation editor. You add each step from the ste
 ### **What Are Loop Actions?**
 
 A Loop repeats a set of steps once for each item in a list. One trigger fans out into many personalized actions, one per row, task, or item. Loops support filters, conditional branches, and nested loops.
-
-### **Loop Types**
-
-The loop has one type: for-each.
 
 #### **For Each Loop**
 A loop is a bounded for-each. It runs once for every item that already exists in the list, then stops. It does not repeat until a goal is reached, and it has no exit condition of its own.
@@ -57,7 +49,7 @@ Loop: For each task
     Action: Send an email (review reminder)
 ```
 
-#### **Loop Control & Break Conditions**
+#### **Skip Items in a Loop**
 A loop has no break condition. To skip items, add a **Filter Data** step inside the loop. An item that does not match stops there, and the loop continues with the next item.
 
 | What happens | Result |

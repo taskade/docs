@@ -29,7 +29,6 @@ Try these live apps — all built with Taskade Genesis, all verified and working
 | **Invoice Generator**        | Generate professional invoices with automated calculations | [Try It →](https://www.taskade.com/app/invoice-generator-v71ywf2zs5bu9a5m) |
 | **Client Portal Dashboard**  | Project tracking, communication, document sharing          | [Try It →](https://www.taskade.com/app/client-portal-dashboard-7nj4gtlug6gjqtm6) |
 | **Simple Store Manager**     | Track orders and manage inventory for small businesses     | [Try It →](https://www.taskade.com/app/simple-store-manager-ujtqojrsimcct6io) |
-| **Smart Feedback Form**      | AI-powered feedback collection with sentiment detection    | [Try It →](https://www.taskade.com/app/feedback-form-roq58dgczybbc08l) |
 | **Support Rating Dashboard** | Track customer service quality and identify improvements   | [Try It →](https://www.taskade.com/app/support-rating-dashboard-app-f05weamthnc7akpx) |
 
 **Booking & Scheduling**
@@ -79,7 +78,6 @@ Try these live apps — all built with Taskade Genesis, all verified and working
 | App                    | What It Does                                             | Live Demo                                                       |
 | ---------------------- | -------------------------------------------------------- | --------------------------------------------------------------- |
 | **Flash Deck Maker**   | Flashcards with spaced repetition and progress analytics | [Try It →](https://www.taskade.com/app/flash-deck-maker-luyemdxzpu8lbftd) |
-| **Smart Meal Planner** | Personalized meal plans based on dietary preferences     | [Try It →](https://www.taskade.com/app/ai-meal-planner-4doegcveur9de5xc) |
 | **Mood Tracker**       | Daily mood logging with pattern recognition              | [Try It →](https://www.taskade.com/app/mood-tracker-wzdnuv9vsxvyfinj) |
 
 **Tools & Utilities**
@@ -87,7 +85,6 @@ Try these live apps — all built with Taskade Genesis, all verified and working
 | App                     | What It Does                                         | Live Demo                                                       |
 | ----------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
 | **QR Code Studio**      | Custom QR codes with branding and analytics          | [Try It →](https://www.taskade.com/app/qr-code-studio-8wydzah8zexhv5ub) |
-| **AI Prompt Evaluator** | Score and optimize AI prompts with suggestions       | [Try It →](https://www.taskade.com/app/ai-prompt-evaluation-tool-svnocpc6jk90oa6g) |
 | **RSS-Feed Inbox**      | Aggregate and filter content from multiple RSS feeds | [Try It →](https://www.taskade.com/app/rss-feed-inbox-9wtiiu6m11617l8l) |
 
 **Fun & Games** (yes, Taskade Genesis can build games too)

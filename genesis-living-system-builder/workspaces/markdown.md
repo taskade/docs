@@ -51,10 +51,10 @@ Markdown is a lightweight markup language that uses characters like `*`, `#`, an
 |---|---|---|
 | **Bold** | `**bold text**` | **bold text** |
 | **Italic** | `_italic text_` | _italic text_ |
-| **Underline** | `__underlined__` | underlined |
+| **Underline** | `__underlined__` | Underlined text |
 | **Strikethrough** | `~~strikethrough~~` | ~~strikethrough~~ |
 | **Inline code** | `` `code` `` | `code` |
-| **Block quote** | `> quoted text` | > quoted text |
+| **Block quote** | `> quoted text` | A quoted, indented line |
 | **Code block** | ` ```code block``` ` | Formatted code block |
 
 ### Block Formatting (Project Editor)
@@ -73,8 +73,6 @@ Type these at the beginning of a line followed by a space:
 
 | Feature | Syntax | Description |
 |---|---|---|
-| **Workspace link** | `"workspace link"` | Links to a workspace |
-| **Project link** | `"project link"` | Links to a project |
 | **Web link** | `[text](url)` | Standard hyperlink |
 
 ---

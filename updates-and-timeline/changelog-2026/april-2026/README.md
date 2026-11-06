@@ -12,7 +12,7 @@ coverY: 0
 ## Releases this month
 
 * [April 30, 2026](april-30-2026.md) — Additional Automation Actions
-* [April 29, 2026](april-29-2026.md)
+* [April 29, 2026](april-29-2026.md) — Structured Output and Summarize Website Actions
 * [April 28, 2026](april-28-2026.md) — New "Manual" Liquid Expression for Webhooks
 * [April 23, 2026](april-23-2026.md) — Generic Webhook Trigger (HTTP Piece) — GA
 * [April 22, 2026](april-22-2026.md) — Improved Onboarding for New Users

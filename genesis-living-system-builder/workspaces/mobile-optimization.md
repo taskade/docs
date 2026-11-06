@@ -8,7 +8,7 @@ description: >-
 **Master Taskade's mobile-first features and create apps that work beautifully across all devices. From responsive Taskade Genesis apps to native mobile workflows, ensure your users have a seamless experience whether they're on desktop, tablet, or phone.**
 
 {% hint style="success" %}
-**Mobile-First Approach:** Taskade is built for mobile from the ground up. Mobile users get strong performance, smooth interactions, and collaboration features that make working on a phone or tablet feel as capable as desktop.
+**Mobile-First Approach:** The Taskade mobile apps bring the core features of the web app to your phone or tablet, with real-time collaboration and sync across devices. Some desktop features are not yet on mobile.
 {% endhint %}
 
 ***
@@ -26,11 +26,8 @@ description: >-
 * **Home-screen widgets**: Quick Add, My Tasks, Recent, Starred, and Shortcuts for your AI agents
 * **Date suggestions** in Quick Add when you type a date or time, such as "tomorrow 3pm"
 * **Voice input support** for hands-free task creation
-* **Superior mobile experience** with enhanced performance and usability
 * **Enhanced collaboration** features for better team coordination
 * **Improved search capabilities** for finding content quickly on mobile
-* **Mobile Ribbon Enhancement** for better navigation and interaction on mobile devices
-* **Desktop Ribbon functionality** now available on mobile platforms
 
 #### **Progressive Web App (PWA)**
 
@@ -38,39 +35,9 @@ description: >-
 * **Native-like experience** on any device
 * **Automatic updates** without manual app store downloads
 
-### **Mobile Paywall Integration**
-
-Seamless upgrade experiences designed specifically for mobile users:
-
-#### **Native Mobile Paywall**
-
-* **In-App Purchase Flow** - Direct integration with App Store and Google Play billing
-* **Contextual Upgrades** - Upgrade prompts triggered by feature usage
-* **Seamless Experience** - No app switching or browser redirects
-* **Restored Purchases** - Automatic restoration of previous purchases
-* **Subscription Management** - Easy plan changes and cancellations
-
-#### **Progressive Web App Paywall**
-
-* **Browser-Based Checkout** - Optimized mobile web payment experience
-* **Credit Card Integration** - Secure payment processing for all devices
-* **Plan Comparison** - Mobile-friendly pricing display
-* **Instant Activation** - Immediate feature access after purchase
-
-### **Improved Paywall Logic**
-
-**Latest Enhancement:** Smarter upgrade prompts and feature access management for mobile users.
-
-**Key Improvements:**
-
-* **Contextual Upgrade Prompts** - Intelligent suggestions based on user behavior and usage patterns
-* **Feature Access Management** - Seamless transitions between free and premium features
-* **Personalized Recommendations** - Upgrade suggestions tailored to individual user needs
-* **Reduced Friction** - Smoother upgrade experience with clear value propositions
-
 ### **Enhanced Breadcrumb Navigation**
 
-**Latest Enhancement:** Improved breadcrumb navigation with tooltips for better user experience across mobile devices.
+Breadcrumb navigation with tooltips shows where you are across mobile devices.
 
 **Navigation Improvements:**
 

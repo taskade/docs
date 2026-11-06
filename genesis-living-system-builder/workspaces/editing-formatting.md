@@ -46,19 +46,19 @@ Taskade lets you turn tasks into checklists, headings, ordered lists, paragraphs
 
 ## Available Block Types
 
-| Format | Syntax (Slash Command) | Markdown Shortcut | Description |
-|---|---|---|---|
-| **Heading 1** | `/heading1` | `# ` + space | Large section title |
-| **Heading 2** | `/heading2` | `## ` + space | Sub-section title |
-| **Paragraph** | `/paragraph` | — | Plain text block |
-| **Check 1** | `/checklist` | `[] ` + space | Square checkbox task item |
-| **Check 2** | `/circle-check` | — | Circle checkbox variant |
-| **Bullet 1** | `/bullet` | `- ` + space | Unordered list item |
-| **Number** | `/numbered` | `1. ` + space | Ordered list item |
-| **Letter** | `/alpha` | — | Lettered list item (a, b, c...) |
-| **Check 3** | `/heart` | — | Heart checkbox variant |
-| **Bullet 2** | `/triangle` | — | Triangle bullet |
-| **Bullet 3** | `/square` | — | Square bullet |
+| Format | Slash command | Markdown shortcut |
+|---|---|---|
+| **Heading 1** (large section title) | `/heading1` | `# ` + space |
+| **Heading 2** (sub-section title) | `/heading2` | `## ` + space |
+| **Paragraph** (plain text block) | `/paragraph` | — |
+| **Check 1** (square checkbox task item) | `/checklist` | `[] ` + space |
+| **Check 2** (circle checkbox variant) | `/circle-check` | — |
+| **Bullet 1** (unordered list item) | `/bullet` | `- ` + space |
+| **Number** (ordered list item) | `/numbered` | `1. ` + space |
+| **Letter** (lettered list item: a, b, c) | `/alpha` | — |
+| **Check 3** (heart checkbox variant) | `/heart` | — |
+| **Bullet 2** (triangle bullet) | `/triangle` | — |
+| **Bullet 3** (square bullet) | `/square` | — |
 
 ---
 

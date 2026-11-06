@@ -31,7 +31,7 @@
 
 ## Run Your Business on Genesis
 
-* [Run Your Business on Genesis](genesis-living-system-builder/run-your-business/README.md)
+* [Run Your Business on Taskade Genesis](genesis-living-system-builder/run-your-business/README.md)
   * [From Idea to Live Business](genesis-living-system-builder/run-your-business/from-idea-to-live-business.md)
   * [Build a Client or Member Portal](genesis-living-system-builder/run-your-business/build-a-client-portal.md)
   * [Build an Internal Ops Dashboard](genesis-living-system-builder/run-your-business/build-an-ops-dashboard.md)
@@ -132,7 +132,7 @@
     * [List Task Fields](apis-living-system-development/comprehensive-api-guide/tasks/list-task-fields.md)
     * [Get Task Field](apis-living-system-development/comprehensive-api-guide/tasks/get-task-field.md)
     * [Update Task Field](apis-living-system-development/comprehensive-api-guide/tasks/update-task-field.md)
-    * [Delete Task Field](apis-living-system-development/comprehensive-api-guide/tasks/delete-task-field.md)
+    * [Delete Task Field Value](apis-living-system-development/comprehensive-api-guide/tasks/delete-task-field.md)
   * [Agents](apis-living-system-development/comprehensive-api-guide/agents/README.md)
     * [Look Up Public Agent](apis-living-system-development/comprehensive-api-guide/agents/lookup-public-agent.md)
     * [Get Agent](apis-living-system-development/comprehensive-api-guide/agents/get-agent.md)
@@ -153,7 +153,7 @@
     * [Generate Agent in Folder](apis-living-system-development/comprehensive-api-guide/folders/generate-agent-in-folder.md)
     * [Create Agent in Folder](apis-living-system-development/comprehensive-api-guide/folders/create-agent-in-folder.md)
     * [Get Folder Agents](apis-living-system-development/comprehensive-api-guide/folders/get-folder-agents.md)
-    * [Get Folder Medias](apis-living-system-development/comprehensive-api-guide/folders/get-folder-medias.md)
+    * [Get Folder Media](apis-living-system-development/comprehensive-api-guide/folders/get-folder-medias.md)
     * [Get Folder Project Templates](apis-living-system-development/comprehensive-api-guide/folders/get-folder-project-templates.md)
   * [Media](apis-living-system-development/comprehensive-api-guide/media/README.md)
     * [Get Media](apis-living-system-development/comprehensive-api-guide/media/get-media.md)
@@ -181,7 +181,7 @@
 ## Changelog
 
 * [Latest Releases](updates-and-timeline/latest-releases.md)
-* [Upcoming Changes](updates-and-timeline/upcoming-changes.md)
+* [Where to Find New Releases](updates-and-timeline/upcoming-changes.md)
 * [Changelog (2026)](updates-and-timeline/changelog-2026/README.md)
   * [July 2026](updates-and-timeline/changelog-2026/july-2026/README.md)
     * [July 26, 2026](updates-and-timeline/changelog-2026/july-2026/july-26-2026.md)

@@ -5,19 +5,21 @@ description: >-
 
 # Changelog (2017 - 2025)
 
+For 2026 release notes, see the [2026 changelog](../updates-and-timeline/changelog-2026/README.md).
+
 Welcome to Taskade's changelog! This chronicles our journey from a simple task management tool to **Taskade Genesis** — an AI-powered platform that turns a single prompt into a living, intelligent application.
 
 > _"From humble beginnings to the HyperCard moment for the AI era. This is the story of how teams learned to think in tasks, not prompts, and how one prompt became one app."_
 
 ***
 
-## Current Era: Genesis (2025)
+## Taskade Genesis Launch (2025)
 
 ### [2025 Releases](2025/) - **"One Prompt. One App."**
 
 **The Genesis Era Begins** - The breakthrough moment that changes everything. Like HyperCard democratized software creation in 1987, Genesis makes app development accessible to everyone.
 
-**🧬 Living DNA Framework Complete**
+**Living DNA Framework Complete**
 
 * **Genesis Launch**: Transform any prompt into a working app in 2-15 minutes
 * **Living Software**: Apps that learn, evolve, and improve with use
@@ -29,11 +31,11 @@ Welcome to Taskade's changelog! This chronicles our journey from a simple task m
 
 ## The Journey to Genesis
 
-### [2024 Archive](2024/) - **"Living DNA: Intelligence + Action + Knowledge + Evolution"**
+### [2024 Archive](2024/) - **"AI Agent Teams"**
 
 **The Breakthrough Year** - AI agents become autonomous teams. The four pillars of intelligent systems emerge.
 
-**🧬 Living DNA Framework Emerges**
+**Living DNA Framework Emerges**
 
 * **AI Agent Teams**: Specialized roles with real-time coordination
 * **Knowledge Manager**: Intelligence inherits from projects

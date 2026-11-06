@@ -12,7 +12,7 @@ description: >-
 - [Overview](#overview)
 - [What Autopilot Creates](#what-autopilot-creates)
 - [When to Use Autopilot](#when-to-use-autopilot)
-- [Autopilot vs. Taskade Genesis](#autopilot-vs-genesis)
+- [Autopilot vs Taskade Genesis](#autopilot-vs-taskade-genesis)
 - [Tutorial: Use Autopilot](#tutorial-use-autopilot)
 - [Expand Your Workspace](#expand-your-workspace)
   - [Generate New Automations](#generate-new-automations)
@@ -39,7 +39,7 @@ From a single prompt, Autopilot generates:
 | **Projects** | Multiple connected projects with task structures and timelines | Sprint board, backlog, docs, meeting notes |
 | **AI Agents** | Specialized agents trained for workspace roles | Project Manager agent, QA agent, Copywriter agent |
 | **Agent Teams** | Groups of agents that collaborate | Marketing team, Engineering team |
-| **Automations** | Workflow flows connecting projects, agents, and tools | Daily standup → Slack, task completion → report |
+| **Automations** | Workflows that connect projects, agents, and tools | Daily standup → Slack, task completion → report |
 
 ---
 
@@ -55,18 +55,18 @@ From a single prompt, Autopilot generates:
 
 ---
 
-## Autopilot vs. Genesis
+## Autopilot vs Taskade Genesis
 
-| Feature | Autopilot | Genesis |
+| Feature | Autopilot | Taskade Genesis |
 |---|---|---|
 | **What it creates** | Workspace ecosystem (projects + agents + automations) | Full deployable web application |
 | **Output** | Interconnected Taskade workspace | Live app with UI, databases, hosting |
 | **Use case** | Internal team operations | Customer-facing apps, tools, portals |
 | **Deployment** | Instant workspace | Published URL + optional custom domain |
-| **Intelligence Score impact** | Creates all 3 pillars (+projects, +agents, +automations) | Creates all 3 pillars + deployable app |
+| **What you get** | Projects, agents, and automations | The same, plus a deployable app |
 | **Best for** | "Set up my team's workspace" | "Build me an app for my customers" |
 
-> **Use both:** Autopilot to create your operational workspace, Genesis to build customer-facing apps powered by that workspace.
+> **Use both:** Autopilot to create your operational workspace, Taskade Genesis to build customer-facing apps powered by that workspace.
 
 ---
 

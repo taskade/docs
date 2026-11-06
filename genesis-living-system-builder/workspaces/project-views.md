@@ -15,17 +15,17 @@ Your data lives in one place, but you can view it through many lenses. Switch vi
 
 ## Views Reference
 
-| View | Best For | Key Interactions | Use Cases |
-|------|----------|------------------|-----------|
-| **List** | Linear task lists, meeting agendas | Drag-to-indent / reorder, checkboxes | To-do lists, meeting notes, SOPs |
-| **Board** | Kanban workflows, pipelines | Drag cards between columns | Sales pipelines, project stages, sprint boards |
-| **Table** | Spreadsheet-style databases | Inline edit custom fields, sort & filter, multi-select rows (Shift/Cmd-click) + bulk delete with undo | CRM, inventory, contact lists |
-| **Mind Map** | Brain-storming & hierarchical planning | Radial drag to create branches | Strategy planning, idea mapping, research |
-| **Docs (Beta)** | Long-form documents & wikis | Continuous rich-text editing, headings, embeds | Specs, knowledge bases, proposals, SOPs |
-| **Calendar** | Scheduling & deadlines | Drag tasks on calendar, date pickers | Content calendars, event planning, deadlines |
-| **Gantt Chart** (paid plans) | Timeline & dependency tracking | Resize bars to adjust durations | Project timelines, resource planning, dependencies |
-| **Actionsheet** (paid plans) | Simple spreadsheet-style lists | Resize, reorder, and hide columns | Lightweight client lists, lead trackers, task queues |
-| **Org Chart** (paid plans) | Organizational hierarchies | Expand / collapse levels | Team structures, reporting lines, decision trees |
+| View | Best For | Key Interactions |
+|------|----------|------------------|
+| **List** | Linear task lists, meeting agendas. Examples: to-do lists, meeting notes, SOPs. | Drag-to-indent / reorder, checkboxes |
+| **Board** | Kanban workflows, pipelines. Examples: sales pipelines, project stages, sprint boards. | Drag cards between columns |
+| **Table** | Spreadsheet-style databases. Examples: CRM, inventory, contact lists. | Inline edit custom fields, sort & filter, multi-select rows (Shift/Cmd-click) + bulk delete with undo |
+| **Mind Map** | Brain-storming & hierarchical planning. Examples: strategy planning, idea mapping, research. | Radial drag to create branches |
+| **Docs (Beta)** | Long-form documents & wikis. Examples: specs, knowledge bases, proposals, SOPs. | Continuous rich-text editing, headings, embeds |
+| **Calendar** | Scheduling & deadlines. Examples: content calendars, event planning, deadlines. | Drag tasks on calendar, date pickers |
+| **Gantt Chart** (paid plans) | Timeline & dependency tracking. Examples: project timelines, resource planning, dependencies. | Resize bars to adjust durations |
+| **Actionsheet** (paid plans) | Simple spreadsheet-style lists. Examples: lightweight client lists, lead trackers, task queues. | Resize, reorder, and hide columns |
+| **Org Chart** (paid plans) | Organizational hierarchies. Examples: team structures, reporting lines, decision trees. | Expand / collapse levels |
 
 List, Board, Table, and Mind Map are tabs in the project toolbar. Docs (Beta), Calendar, Gantt Chart, Actionsheet, and Org Chart are under **More Views**. Gantt Chart, Actionsheet, and Org Chart need a paid plan. The timeline is part of the Gantt Chart view, not a separate view.
 

@@ -1,6 +1,6 @@
 ---
 description: >-
-  Update Task Field — Taskade REST API v1 reference: PUT /projects/{projectId}/tasks/{taskId}/fields/{fieldId}. Parameters, authentication, and response…
+  Update Task Field — Taskade REST API v1: set or create a custom field value on a task.
 ---
 
 # Update Task Field

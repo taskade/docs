@@ -10,9 +10,9 @@ description: >-
 ## Table of Contents
 
 - [Overview](#overview)
-- [What Is Taskade Genesis?](#what-is-genesis)
+- [What Is Taskade Genesis?](#what-is-taskade-genesis)
 - [What You Can Build](#what-you-can-build)
-- [What Makes Taskade Genesis Different](#what-makes-genesis-different)
+- [What Makes Taskade Genesis Different](#what-makes-taskade-genesis-different)
 - [The Tree of Life Architecture](#the-tree-of-life-architecture)
   - [Memory: Projects & Databases](#memory-projects-and-databases)
   - [Intelligence: Custom AI Agents](#intelligence-custom-ai-agents)
@@ -31,30 +31,23 @@ description: >-
 
 This guide explains the core architecture behind **Taskade Genesis** — the AI platform that transforms natural language into complete, living business applications. You'll learn:
 
-At a high level, here is how a plain-English prompt becomes a working app you can preview and refine.
-
-```mermaid
-flowchart TD
-  A["Plain-English prompt"] --> B["Taskade Genesis"]
-  B --> C["App UI (React)"]
-  B --> D["Workspace backend<br/>Projects & Databases"]
-  B --> E["AI Agents"]
-  B --> F["Automations"]
-  C --> G["Preview and refine"]
-  G -->|describe changes| B
-```
-
-
 - **The Tree of Life:** How Memory (Projects), Intelligence (Agents), and Execution (Automations) form a continuous cycle that powers living software.
 - **Workspace DNA:** What your workspace's genetic code is and why every app you build is unique.
 - **Taskade EVE:** How Taskade's unified AI builder connects everything together.
 - **Intelligence Score:** How each app earns a 0–100 score across 5 maturity tiers.
 
+At a high level, here is how a plain-English prompt becomes a working app you can preview and refine:
+
+1. You describe the app in a plain-English prompt.
+2. Taskade Genesis builds the app UI (React), the workspace backend (projects and databases), the AI agents, and the automations.
+3. You preview the app.
+4. You describe changes, and Taskade Genesis updates the app. Repeat until the app is ready.
+
 > **New to Taskade Genesis?** Start with [Create Your First App](./getting-started.md) for a hands-on walkthrough, or jump straight in and build your first app with [Taskade Genesis](https://www.taskade.com/create).
 
 ---
 
-## What Is Genesis?
+## What Is Taskade Genesis?
 
 Taskade Genesis is Taskade's breakthrough AI platform that transforms natural language descriptions into **complete, working business applications** in minutes — not mockups, not prototypes, but fully functional software.
 
@@ -92,7 +85,7 @@ Taskade Genesis doesn't care what industry you're in. You describe the problem; 
 
 ---
 
-## What Makes Genesis Different
+## What Makes Taskade Genesis Different
 
 Unlike every other app builder, Taskade Genesis doesn't start with empty templates or generic forms. It reaches into your **existing Workspace DNA**:
 

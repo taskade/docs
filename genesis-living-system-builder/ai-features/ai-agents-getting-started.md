@@ -11,11 +11,11 @@ Transform your workspace with smart AI assistants that understand your business 
 
 AI Agents are specialized assistants designed to automate activities like research, data analysis, and content creation. Learn more about [Taskade AI Agents](https://www.taskade.com/agents) and what they can do for your team. Think of them as smart team members who:
 
-* 🧠 **Learn your business** by reading your documents and projects
-* 🤖 **Answer questions** about your work and processes
-* ⚡ **Take actions** like creating tasks, sending emails, or updating spreadsheets
-* 🔄 **Work 24/7** without breaks, weekends, or vacations
-* 🎯 **Specialize in specific roles** like marketing, legal, customer service, or research
+* **Learn your business** by reading your documents and projects
+* **Answer questions** about your work and processes
+* **Take actions** like creating tasks, sending emails, or updating spreadsheets
+* **Work 24/7** without breaks, weekends, or vacations
+* **Specialize in specific roles** like marketing, legal, customer service, or research
 
 **Real example:** Your "Customer Service Agent" can instantly answer questions about your products, create support tickets, and even draft response emails - all based on your existing knowledge base.
 
@@ -33,11 +33,11 @@ AI Agents are specialized assistants designed to automate activities like resear
 
 Create an agent if you:
 
-✅ **Repeat the same tasks** multiple times per week\
-✅ **Spend 2+ hours weekly** on similar activities\
-✅ **Answer the same questions** over and over\
-✅ **Need help** with research, writing, or analysis\
-✅ **Want to streamline** team processes
+* **Repeat the same tasks** multiple times per week
+* **Spend 2+ hours weekly** on similar activities
+* **Answer the same questions** over and over
+* **Need help** with research, writing, or analysis
+* **Want to streamline** team processes
 
 ## Industry-Specific AI Agent Examples
 
@@ -542,24 +542,24 @@ Agent Tools extend your multi-agent teams' capabilities by connecting to externa
 
 ### Writing Good Prompts
 
-✅ **Be specific:** "Write a welcome email for new customers" vs "Write an email"\
-✅ **Give context:** Include relevant background information\
-✅ **Set expectations:** Explain the tone, length, and format you want\
-✅ **Provide examples:** Show the agent what good output looks like
+* **Be specific:** "Write a welcome email for new customers" vs "Write an email"
+* **Give context:** Include relevant background information
+* **Set expectations:** Explain the tone, length, and format you want
+* **Provide examples:** Show the agent what good output looks like
 
 ### Training Your Agent
 
-✅ **Start with quality content** - Upload your best documents first\
-✅ **Update regularly** - Keep knowledge current and relevant\
-✅ **Test thoroughly** - Try different questions to ensure good responses\
-✅ **Iterate and improve** - Refine based on real usage
+* **Start with quality content** - Upload your best documents first
+* **Update regularly** - Keep knowledge current and relevant
+* **Test thoroughly** - Try different questions to ensure good responses
+* **Iterate and improve** - Refine based on real usage
 
 ### Managing Multiple Agents
 
-✅ **Specialize agents** - Give each one a clear, focused role\
-✅ **Use descriptive names** - Make it easy to pick the right agent\
-✅ **Organize by function** - Group similar agents together\
-✅ **Share successful agents** - Let teammates copy your best configurations
+* **Specialize agents** - Give each one a clear, focused role
+* **Use descriptive names** - Make it easy to pick the right agent
+* **Organize by function** - Group similar agents together
+* **Share successful agents** - Let teammates copy your best configurations
 
 ## Troubleshooting
 

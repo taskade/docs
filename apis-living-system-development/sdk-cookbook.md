@@ -11,8 +11,6 @@ Copy working patterns for a Taskade integration: agents, automations, projects, 
 **Important:** `@taskade/sdk` is a preview and is not on the public npm registry. These recipes use plain HTTP, so they work today. The retry, pagination, idempotency, and testing patterns also apply to the future client.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/sdk-agent-builder.gif" alt="An agent built through the API" width="563"><figcaption></figcaption></figure>
-
 ## Before you start
 
 You need a token and a runtime that has `fetch`.

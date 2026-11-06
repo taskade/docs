@@ -20,6 +20,6 @@ coverY: 0
 * [March 13, 2026](march-13-2026.md) — Import & Export your Taskade Apps
 * [March 11, 2026](march-11-2026.md) — PKCE Enabled for All Flow OAuth2 Integrations
 * [March 10, 2026](march-10-2026.md) — OpenAI GPT-5.3 Codex
-* [March 9, 2026](march-9-2026.md)
+* [March 9, 2026](march-9-2026.md) — Bundle Import API, Per-Connection Webhooks, and Stateless Hosted MCP
 * [March 5, 2026](march-5-2026.md) — Media Browse Tab
 * [March 2, 2026](march-2-2026.md) — New Telegram Bot Actions

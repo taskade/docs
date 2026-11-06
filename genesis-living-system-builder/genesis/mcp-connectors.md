@@ -1,6 +1,6 @@
 ---
 description: >-
-  The Model Context Protocol (MCP) is an open standard that lets AI tools talk to each other's data and capabilities. Taskade runs a hosted MCP server, so external AI clients like Claude Desktop and Cursor can connect into your workspace.
+  Connect Claude, Cursor, and other AI tools to your Taskade workspace through the hosted MCP server, and call other MCP servers from automations.
 ---
 
 # MCP Connectors

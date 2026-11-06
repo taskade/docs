@@ -35,7 +35,7 @@ layout:
 * [January 28, 2026](january-28-2026.md) — New Publish Flow
 * [January 22, 2026](january-22-2026.md) — New Appgen Loading Screen
 * [January 19, 2026](january-19-2026.md) — UI Element Selector
-* [January 16, 2026](january-16-2026.md)
+* [January 16, 2026](january-16-2026.md) — Agent chat backend upgraded
 * [January 13, 2026](january-13-2026.md) — Updated Main Genesis Page
 * [January 9, 2026](january-9-2026.md) — Email Trigger Reliability — Mailhook Schema Fix
 * [January 6, 2026](january-6-2026.md) — Credits Purchase

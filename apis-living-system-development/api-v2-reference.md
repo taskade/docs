@@ -48,11 +48,11 @@ Taskade ships **two** public HTTP APIs. They share the same authentication.
 | | **REST API v1** | **Action API v2** |
 | --- | --- | --- |
 | Base URL | `https://www.taskade.com/api/v1` | `https://www.taskade.com/api/v2` |
-| Style | RESTful (`GET`/`POST`/`PUT`/`DELETE`) | Action / RPC (`POST /{operation}`) |
+| Style | RESTful: GET, POST, PUT, DELETE | Action / RPC: POST /{operation} |
 | Status | Stable (GA) | Beta (`2.0.0-beta`) |
 | Live spec | [/api/documentation/v1](https://www.taskade.com/api/documentation/v1) | [/api/documentation/v2](https://www.taskade.com/api/documentation/v2) |
-| Task create / update / delete | ✅ Full CRUD | ✅ Create, update, delete, move (`createTask`, `updateTask`, `deleteTask`, `moveTask`) |
-| Task assignees / dates / notes / fields | ✅ | ✅ (`assignTask`, `setTaskDate`, `setTaskNote`, `setTaskFieldValue`, …) |
+| Task create / update / delete | ✅ Full CRUD | ✅ Create, update, delete, move |
+| Task assignees / dates / notes / fields | ✅ | ✅ |
 | Read a **single** task, date, note or field | ✅ `GET /projects/{projectId}/tasks/{taskId}`, `…/date`, `…/note`, `…/fields/{fieldId}` | ❌ list-only (`listTasks`, `listBlocks`, `listFields`) |
 | Project rename, archive, or export | ❌ (`GET /projects/{projectId}` is read-only) | ✅ `renameProject`, `archiveProject`, `exportProject` |
 | Project delete | ❌ | ❌ |
@@ -61,6 +61,8 @@ Taskade ships **two** public HTTP APIs. They share the same authentication.
 | Bundles (export/import Taskade Genesis apps) | ✅ | ✅ |
 | Signed webhook registration | ❌ | ✅ `POST /webhooks` |
 | Reference | [API reference](https://www.taskade.com/docs/rest) | This page |
+
+The v2 task operations are `createTask`, `updateTask`, `deleteTask` and `moveTask`, plus `assignTask`, `setTaskDate`, `setTaskNote`, `setTaskFieldValue` and more.
 
 Use **v2** for LLM tools, agent prompts, or webhook registration. One verb per endpoint maps directly to a tool definition.
 

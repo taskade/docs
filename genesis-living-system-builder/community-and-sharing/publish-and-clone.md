@@ -14,7 +14,7 @@ description: >-
 - [App Visibility Settings](#app-visibility-settings)
 - [Publishing Strategies](#publishing-strategies)
 - [Password Protection](#password-protection)
-- [Publish to Community Gallery](#publish-to-community-gallery)
+- [Publish to the Taskade App Factory](#publish-to-the-taskade-app-factory)
 - [Clone and Remix Apps](#clone-and-remix-apps)
 - [Paid Apps](#paid-apps)
 - [Custom Domains](#custom-domains)
@@ -66,11 +66,17 @@ Open **Publish** and pick who can open the app under **Who can open it**:
 
 Then set discoverability under **More options**:
 
-| Visibility | Who Can Access | Discoverable | Best For |
-|---|---|---|---|
-| **Listed** (**Show in public listings** on) | Anyone who can open it | Yes — public listings and search. The Community Gallery after approval ([see below](#publish-to-community-gallery)) | Templates, showcases, community tools, marketing |
-| **Unlisted** (called Secret in earlier versions) | Anyone with the link | No — link-only access | Client portals, team tools, partner apps |
-| **Draft / unpublished** | Your workspace team only, inside Taskade | No | Apps you are still building, internal testing |
+| Visibility | Who Can Access | Discoverable |
+|---|---|---|
+| **Listed** (**Show in public listings** on) | Anyone who can open it | Yes — public listings and search. The Taskade App Factory after approval ([see below](#publish-to-the-taskade-app-factory)) |
+| **Unlisted** (called Secret in earlier versions) | Anyone with the link | No — link-only access |
+| **Draft / unpublished** | Your workspace team only, inside Taskade | No |
+
+Best for:
+
+- **Listed:** templates, showcases, community tools, and marketing.
+- **Unlisted:** client portals, team tools, and partner apps.
+- **Draft / unpublished:** apps you are still building, and internal testing.
 
 ---
 
@@ -107,7 +113,7 @@ Add an extra layer of security to any published app:
 
 ---
 
-## Publish to Community Gallery
+## Publish to the Taskade App Factory
 
 Share your app with the entire Taskade community:
 
@@ -116,7 +122,7 @@ Share your app with the entire Taskade community:
 | 1 | Under **More options**, turn on **Show in public listings** |
 | 2 | Click **"Publish to Community"** |
 | 3 | Your app enters the community approval queue |
-| 4 | Once approved, it appears in the public Community Gallery |
+| 4 | Once approved, it appears in the public Taskade App Factory |
 
 ### Community App Metrics
 
@@ -192,7 +198,7 @@ Taskade Genesis lets creators sell original apps as paid App Kits. Buyers pay be
 | Step | What Happens |
 |---|---|
 | **Creator sets a price** | In the app's **Publish** panel, open **Let others clone**, choose **Paid**, enter the price, and click **Put on sale**. Finish payout setup in **Earnings**. |
-| **Buyer discovers the app** | The app appears in the Community Gallery (or via a direct link) with a price tag. |
+| **Buyer discovers the app** | The app appears in the Taskade App Factory (or via a direct link) with a price tag. |
 | **Buyer pays via Stripe** | Checkout is handled by Stripe. No payment details are stored by Taskade. |
 | **Buyer receives a private copy** | After successful payment, Taskade clones the app directly into the buyer's workspace. |
 

@@ -36,12 +36,10 @@ Media AI Chat lets you **have conversations with your files, projects, and media
 
 Query your Taskade projects using natural language:
 
-| Step | Action |
-|---|---|
-| 1 | Open a project in Taskade |
-| 2 | Click the **chat button** 💬 in the top-right corner |
-| 3 | Choose **Ask Project** from the drop-down at the top of the chat box, then ask questions about the project |
-| 4 | AI responds using the project's data as context. Only you can see the chats in **Ask Project** |
+1. Open a project in Taskade
+2. Click the **chat button** 💬 in the top-right corner
+3. Choose **Ask Project** from the drop-down at the top of the chat box, then ask questions about the project
+4. AI responds using the project's data as context. Only you can see the chats in **Ask Project**
 
 **Example queries:**
 
@@ -56,12 +54,10 @@ Query your Taskade projects using natural language:
 
 Collaborate with AI and team members in the same conversation:
 
-| Step | Action |
-|---|---|
-| 1 | Open a project and click the **chat button** 💬 in the top-right corner |
-| 2 | Choose **Taskade AI** from the drop-down at the top of the chat box |
-| 3 | Ask AI questions — shared chats are visible to all members of the project |
-| 4 | Team members can follow up, add context, or redirect the AI |
+1. Open a project and click the **chat button** 💬 in the top-right corner
+2. Choose **Taskade AI** from the drop-down at the top of the chat box
+3. Ask AI questions — shared chats are visible to all members of the project
+4. Team members can follow up, add context, or redirect the AI
 
 > **Tip:** Use this for collaborative analysis sessions — the AI provides data, your team discusses and decides.
 
@@ -69,12 +65,10 @@ Collaborate with AI and team members in the same conversation:
 
 Upload files directly into a chat for instant AI analysis:
 
-| Step | Action |
-|---|---|
-| 1 | Open any AI chat (Taskade EVE, agent, or project chat) |
-| 2 | Drag & drop files or click the attachment button. The chat accepts images (JPG, PNG, GIF, WebP) and PDFs up to 20 MB each, and TXT, MD, CSV, and JSON files up to 200 KB each |
-| 3 | Ask questions about the uploaded file |
-| 4 | AI analyzes the file content and responds |
+1. Open any AI chat (Taskade EVE, agent, or project chat)
+2. Drag & drop files or click the attachment button. The chat accepts images (JPG, PNG, GIF, WebP) and PDFs up to 20 MB each, and TXT, MD, CSV, and JSON files up to 200 KB each
+3. Ask questions about the uploaded file
+4. AI analyzes the file content and responds
 
 **Example interactions:**
 
@@ -89,12 +83,10 @@ Upload files directly into a chat for instant AI analysis:
 
 Access all workspace media in one place:
 
-| Step | Action |
-|---|---|
-| 1 | Open the **Media** tab in your workspace |
-| 2 | Browse all uploaded files, generated images, and media assets |
-| 3 | Hover over a file and click 🤖 **Ask AI** |
-| 4 | Type your questions in the pop-up to start a conversation |
+1. Open the **Media** tab in your workspace
+2. Browse all uploaded files, generated images, and media assets
+3. Hover over a file and click 🤖 **Ask AI**
+4. Type your questions in the pop-up to start a conversation
 
 > **Note:** Upload files into a project to see them in Media. You can also hover over an attachment inside a project and click 🤖 **Ask AI**.
 

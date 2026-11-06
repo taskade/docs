@@ -25,28 +25,9 @@ Automation in Taskade is the **intelligent coordination layer** that connects yo
 
 ```mermaid
 flowchart TD
-    TRIGGER[Trigger<br/>Something Happens] --> CONDITION[Condition<br/>Check Rules] --> ACTION[Action<br/>Do Something]
-
-    TRIGGER --> TYPES[Types of Triggers]
-    TYPES --> TASK[📋 Task Events<br/>Created, completed, assigned]
-    TYPES --> TIME[⏰ Time Events<br/>Schedules, due dates]
-    TYPES --> EXTERNAL[🔗 External Events<br/>Webhooks, forms, emails]
-
-    ACTION --> TASK_ACTIONS[📝 Task Actions<br/>Create, assign, update]
-    ACTION --> COMM_ACTIONS[💬 Communication<br/>Email, Slack, notifications]
-    ACTION --> AI_ACTIONS[🧠 AI Actions<br/>Analyze, generate, decide]
-
-    CONDITION --> LOGIC[Smart Logic]
-    LOGIC --> FILTER[Filter Data<br/>Apply rules]
-    LOGIC --> BRANCH[Branch Paths<br/>Conditional flows]
-    LOGIC --> LOOP[Loop Actions<br/>Repeat for multiple items]
-
-    TASK_ACTIONS --> RESULT[Result<br/>Work gets done automatically]
-    COMM_ACTIONS --> RESULT
-    AI_ACTIONS --> RESULT
-
-    style TRIGGER fill:#e1f5fe
-    style RESULT fill:#e8f5e8
+    TRIGGER["Trigger<br/>Something happens"] --> CONDITION["Condition<br/>Check rules"]
+    CONDITION --> ACTION["Action<br/>Do something"]
+    ACTION --> RESULT["Result<br/>Work gets done"]
 ```
 
 **Automation is:**
@@ -62,35 +43,26 @@ flowchart TD
 
 ### Step 1: Define the Trigger (When to Start)
 
-```
-TRIGGERS:
-├── 📋 Task Events: Created, completed, assigned, due
-├── ⏰ Time Events: Schedules, delays, deadlines
-├── 📧 External Events: Webhooks, emails, form submissions
-├── 🔗 Integration Events: Slack messages, Google Sheets updates
-└── 🤖 Agent Events: AI conversations, commands executed
-```
+* **Task events:** created, completed, assigned, due
+* **Time events:** schedules, delays, deadlines
+* **External events:** webhooks, emails, form submissions
+* **Integration events:** Slack messages, Google Sheets updates
+* **Agent events:** AI conversations, commands executed
 
 ### Step 2: Add Conditions (Smart Filtering)
 
-```
-CONDITIONS:
-├── Filter by: Priority, assignee, project, custom fields
-├── Check values: Amount > $1000, status = "urgent"
-├── Time windows: Business hours, weekdays only
-└── Complex logic: AND/OR combinations
-```
+* **Filter by:** priority, assignee, project, custom fields
+* **Check values:** amount > $1000, status = "urgent"
+* **Time windows:** business hours, weekdays only
+* **Complex logic:** AND/OR combinations
 
 ### Step 3: Execute Actions (What to Do)
 
-```
-ACTIONS:
-├── 📝 Task Management: Create, assign, update, move tasks
-├── 💬 Communication: Send emails, Slack messages, notifications
-├── 🧠 AI Processing: Analyze data, generate content, make decisions
-├── 🔗 External Systems: Update CRMs, spreadsheets, APIs
-└── 🔄 Flow Control: Wait, loop, branch based on conditions
-```
+* **Task management:** create, assign, update, move tasks
+* **Communication:** send emails, Slack messages, notifications
+* **AI processing:** analyze data, generate content, make decisions
+* **External systems:** update CRMs, spreadsheets, APIs
+* **Flow control:** wait, loop, branch based on conditions
 
 ## Creating Your First Automation (Step-by-Step)
 
@@ -100,7 +72,7 @@ ACTIONS:
 {% step %}
 #### Access Automation Builder
 
-In your workspace, open **Automations** in the sidebar. Start from scratch, click **Create with AI** and describe the flow, or pick a template. You can also click **Automate** at the top of any project
+In your workspace, open **Automations** in the sidebar. Start from scratch, click **Create with AI** and describe the flow, or pick a template. You can also click **Automate** at the top of any project.
 {% endstep %}
 
 {% step %}
@@ -138,7 +110,7 @@ Then: Assign to next available support agent
 {% step %}
 #### Test and Activate
 
-If the trigger shows a **Test** button in its **Test Run** section, test with a sample. Then turn the automation on and check each run in the **Runs** tab
+If the trigger shows a **Test** button in its **Test Run** section, test with a sample. Then turn the automation on and check each run in the **Runs** tab.
 {% endstep %}
 {% endstepper %}
 
@@ -148,51 +120,55 @@ If the trigger shows a **Test** button in its **Test Run** section, test with a 
 
 ### Customer Support Workflow
 
-```
-TRIGGER: New support ticket submitted
-├── CONDITION: Priority = "High"
-├── ACTIONS:
-│   ├── Assign to senior support agent
-│   ├── Send urgent Slack notification
-│   ├── Create escalation task for 2 hours
-│   └── Update CRM with ticket details
-```
+**Trigger:** New support ticket submitted
+
+**Condition:** Priority = "High"
+
+**Actions:**
+
+* Assign to senior support agent
+* Send urgent Slack notification
+* Create escalation task for 2 hours
+* Update CRM with ticket details
 
 ### Content Publishing Pipeline
 
-```
-TRIGGER: Blog post marked as "Ready to Publish"
-├── CONDITION: All review tasks completed
-├── ACTIONS:
-│   ├── Generate social media posts with AI
-│   ├── Schedule posts across platforms
-│   ├── Send newsletter to subscribers
-│   └── Create engagement tracking tasks
-```
+**Trigger:** Blog post marked as "Ready to Publish"
+
+**Condition:** All review tasks completed
+
+**Actions:**
+
+* Generate social media posts with AI
+* Schedule posts across platforms
+* Send newsletter to subscribers
+* Create engagement tracking tasks
 
 ### Sales Lead Management
 
-```
-TRIGGER: New lead form submission
-├── CONDITION: Company size > 100 employees
-├── ACTIONS:
-│   ├── Create qualified lead task
-│   ├── Assign to appropriate sales rep
-│   ├── Send welcome email with AI personalization
-│   └── Add lead to CRM with scoring
-```
+**Trigger:** New lead form submission
+
+**Condition:** Company size > 100 employees
+
+**Actions:**
+
+* Create qualified lead task
+* Assign to appropriate sales rep
+* Send welcome email with AI personalization
+* Add lead to CRM with scoring
 
 ### Project Status Updates
 
-```
-TRIGGER: Project due date approaching (7 days)
-├── CONDITION: Project completion < 80%
-├── ACTIONS:
-│   ├── Send progress reminder to project owner
-│   ├── Escalate to manager if overdue
-│   ├── Generate status report with AI
-│   └── Schedule daily check-ins until complete
-```
+**Trigger:** Project due date approaching (7 days)
+
+**Condition:** Project completion < 80%
+
+**Actions:**
+
+* Send progress reminder to project owner
+* Escalate to manager if overdue
+* Generate status report with AI
+* Schedule daily check-ins until complete
 
 ## Advanced Automation Techniques
 
@@ -274,7 +250,7 @@ Every Monday at 9 AM:
 
 ## How Automation Connects to Your Workspace DNA
 
-**Remember the living DNA concept? Automation is the action layer:**
+**Remember the living DNA concept? Automation is the Execution layer:**
 
 ### Event-Driven Intelligence
 

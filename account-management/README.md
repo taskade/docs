@@ -55,14 +55,23 @@ Settings > Members > click the **✕** icon next to the member.
 
 ### Current Plans
 
-| Plan | Price | AI Credits/mo | Key Features |
-|------|-------|--------------|--------------|
-| **Free** | $0 | 0 (earn credits with referrals and invites) | 2 members, 3 Taskade Genesis apps, 1 AI agent, 10 automation runs a month |
-| **Starter** | $6/mo, billed annually | 10,000 | 3 members, unlimited apps, premium integrations, hosted MCP access |
-| **Pro** | $10/mo billed annually, or $20 monthly | 50,000 | 10 members, custom domains (up to 10), webhooks, your own AI key (BYOK), app bundle export |
-| **Business** | $25/mo billed annually, or $50 monthly | 150,000 | Unlimited members, unlimited custom domains, SSO/SAML, app analytics, custom branding |
-| **Max** | $100/mo billed annually, or $200 monthly | 400,000 | Everything in Business, with higher AI limits |
-| **Enterprise** | Custom (contact sales) | Custom | Everything in Max, plus SCIM provisioning and the highest AI limits |
+| Plan | Price | AI Credits/mo |
+|------|-------|--------------|
+| **Free** | $0 | 0 (earn credits with referrals and invites) |
+| **Starter** | $6/mo, billed annually | 10,000 |
+| **Pro** | $10/mo billed annually, or $20 monthly | 50,000 |
+| **Business** | $25/mo billed annually, or $50 monthly | 150,000 |
+| **Max** | $100/mo billed annually, or $200 monthly | 400,000 |
+| **Enterprise** | Custom (contact sales) | Custom |
+
+Key features of each plan:
+
+- **Free**: 2 members, 3 Taskade Genesis apps, 1 AI agent, 10 automation runs a month.
+- **Starter**: 3 members, unlimited apps, premium integrations, hosted MCP access.
+- **Pro**: 10 members, custom domains (up to 10), webhooks, your own AI key (BYOK), app bundle export.
+- **Business**: Unlimited members, unlimited custom domains, SSO/SAML, app analytics, custom branding.
+- **Max**: Everything in Business, with higher AI limits.
+- **Enterprise**: Everything in Max, plus SCIM provisioning and the highest AI limits.
 
 Full details: [taskade.com/pricing](https://www.taskade.com/pricing)
 

@@ -32,8 +32,6 @@ GenesisAuth is the authentication layer for apps built with Taskade Genesis. Whe
 * **Scales with your app.** Handles sessions, password hashing, and session tokens securely.
 * **Turns every Taskade Genesis app into a real multi-user product.**
 
-<figure><img src="../../.gitbook/assets/genesisauth-login-signup.jpg" alt="" width="563"><figcaption></figcaption></figure>
-
 ---
 
 ## Turning Any App Into a Multi-User Product

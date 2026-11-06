@@ -6,7 +6,7 @@ title: 'Chapter 3: AI Agents - Your Digital Team'
 
 # Chapter 3: AI Agents - Your Digital Team
 
-Incredible! You've built your workspace foundation and created flexible project containers. Now let's add the **intelligence layer**—AI agents that act like specialized team members, each trained for specific roles in your business.
+You've built your workspace foundation and created flexible project containers. Now let's add the **intelligence layer**—AI agents that act like specialized team members, each trained for specific roles in your business.
 
 ## What Problem Do AI Agents Solve?
 
@@ -22,27 +22,13 @@ Incredible! You've built your workspace foundation and created flexible project 
 
 An AI agent is a **specialized digital assistant** trained on your business knowledge, processes, and preferences. Unlike generic AI chatbots, agents become part of your team with specific roles and expertise.
 
-```mermaid
-flowchart TD
-    AGENT[Your AI Agent<br/>Digital Team Member] --> ROLES[Specialized Roles]
+Each agent has one role, and you train it on the knowledge that role needs:
 
-    ROLES --> MARKETING[🎯 Marketing Agent<br/>Content creation, campaign analysis]
-    ROLES --> SALES[💼 Sales Agent<br/>Lead qualification, proposal drafting]
-    ROLES --> SUPPORT[🛠️ Support Agent<br/>Ticket routing, knowledge base]
-    ROLES --> RESEARCH[🔍 Research Agent<br/>Data analysis, insights]
-    ROLES --> PROJECT[📋 Project Agent<br/>Task management, progress tracking]
-
-    MARKETING --> TRAINING[Trained on your<br/>brand guidelines & content]
-    SALES --> TRAINING[Trained on your<br/>products & pricing]
-    SUPPORT --> TRAINING[Trained on your<br/>FAQs & procedures]
-    RESEARCH --> TRAINING[Trained on your<br/>data & reports]
-    PROJECT --> TRAINING[Trained on your<br/>methodologies & templates]
-
-    TRAINING --> WORK[Works 24/7<br/>Learns continuously]
-
-    style AGENT fill:#e1f5fe
-    style WORK fill:#e8f5e8
-```
+* **🎯 Marketing Agent**: Content creation and campaign analysis. Trained on your brand guidelines and content.
+* **💼 Sales Agent**: Lead qualification and proposal drafting. Trained on your products and pricing.
+* **🛠️ Support Agent**: Ticket routing and knowledge base answers. Trained on your FAQs and procedures.
+* **🔍 Research Agent**: Data analysis and insights. Trained on your data and reports.
+* **📋 Project Agent**: Task management and progress tracking. Trained on your methodologies and templates.
 
 **AI agents are:**
 
@@ -100,7 +86,7 @@ flowchart TD
 {% step %}
 #### Access Agent Creation
 
-In your workspace sidebar, open **AI Agents**. Then pick **Generate** (describe the agent in plain English), **Templates**, or **Create** (a blank agent). The Free plan includes 1 agent, Starter includes 3, and Pro and up include unlimited agents
+In your workspace sidebar, open **AI Agents**. Then pick **Generate** (describe the agent in plain English), **Templates**, or **Create** (a blank agent). The Free plan includes 1 agent, Starter includes 3, and Pro and up include unlimited agents.
 {% endstep %}
 
 {% step %}
