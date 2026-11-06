@@ -52,11 +52,12 @@ Workspace Settings > Members > click the three dots next to a member > Remove.
 
 | Plan | Price | AI Credits/mo | Key Features |
 |------|-------|--------------|--------------|
-| **Free** | $0 | 1,000 | 1 workspace, 3 deployable apps, 500+ templates |
-| **Starter** | $6/mo (annual) | 10,000 | 3 users, frontier AI models, file uploads |
-| **Pro** | $16/mo (annual) | 50,000 | 10 users, 100+ integrations, background agents, 24/7 automations |
-| **Business** | $40/mo (annual) | 150,000 | Unlimited users, custom domains, API access, advanced analytics |
-| **Enterprise** | Custom | Custom | SSO/SAML, private cloud, dedicated support |
+| **Free** | $0 | 0 (earn credits with referrals and invites) | 2 members, 3 Taskade Genesis apps, 1 AI agent, 10 automation runs a month |
+| **Starter** | $6/mo, billed annually | 10,000 | 3 members, unlimited apps, premium integrations, hosted MCP access |
+| **Pro** | $10/mo billed annually, or $20 monthly | 50,000 | 10 members, custom domains (up to 10), webhooks, your own AI key (BYOK), app bundle export |
+| **Business** | $25/mo billed annually, or $50 monthly | 150,000 | Unlimited members, unlimited custom domains, SSO/SAML, app analytics, custom branding |
+| **Max** | $100/mo billed annually, or $200 monthly | 400,000 | Everything in Business, with higher AI limits |
+| **Enterprise** | Custom (contact sales) | Custom | Everything in Max, plus SCIM provisioning and the highest AI limits |
 
 Full details: [taskade.com/pricing](https://www.taskade.com/pricing)
 
@@ -80,9 +81,9 @@ AI credits are consumed when you use AI features (agents, chat, automations with
 3. Scan the QR code with an authenticator app (Google Authenticator, Authy, etc.).
 4. Enter the verification code to confirm.
 
-### SSO / SAML (Enterprise)
+### SSO / SAML (Business and up)
 
-Enterprise plans support Single Sign-On via:
+Business, Max, and Enterprise plans support Single Sign-On via:
 - Azure Active Directory
 - Google Workspace
 - Okta
@@ -92,7 +93,7 @@ Contact your account manager or [support@taskade.com](mailto:support@taskade.com
 
 ### SCIM Provisioning (Enterprise)
 
-Automate user provisioning and deprovisioning through your identity provider. Available on Enterprise plans.
+Automate user provisioning and deprovisioning through your identity provider. SCIM is available on the Enterprise plan only.
 
 ## Data & Privacy
 

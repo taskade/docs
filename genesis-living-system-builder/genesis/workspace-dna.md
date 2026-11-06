@@ -34,7 +34,7 @@ graph TD
 Projects store structured knowledge: tasks, notes, custom fields, documents, and media. This is what agents read and automations update.
 
 **What you get:**
-- 9 project views (List, Board, Calendar, Table, Mind Map, Gantt, Org Chart, Action, Docs)
+- Multiple project views: List, Board, Table, and Mind Map, plus Docs (Beta), Gantt Chart, Calendar, Actionsheet, and Org Chart under **More Views** (Gantt Chart, Actionsheet, and Org Chart are on paid plans)
 - Custom fields for structured data
 - Real-time sync across all devices
 - File and media uploads as active knowledge
@@ -48,9 +48,9 @@ AI agents reason over your workspace context. They draft, classify, summarize, a
 **What you get:**
 - Custom agents scoped to specific roles or tasks
 - Multi-agent teams with automatic delegation
-- 22+ built-in tools (Slack, Gmail, Sheets, and more)
+- Built-in tools for web search, code, and file analysis, plus custom slash commands
 - Persistent memory across conversations
-- Multiple frontier AI models, including the latest from Anthropic (Claude), OpenAI (GPT), and Google (Gemini)
+- Frontier models from top AI labs, with **Auto** as the default
 
 **Learn more:** [AI Agents Getting Started](../ai-features/ai-agents-getting-started.md)
 
@@ -59,7 +59,7 @@ AI agents reason over your workspace context. They draft, classify, summarize, a
 Automations execute event-driven workflows. They connect your workspace to 100+ external tools and run 24/7 in the background.
 
 **What you get:**
-- 15+ native triggers (webhooks, forms, schedules, project events)
+- Native triggers (webhooks, forms, schedules, project events)
 - 100+ integration actions (Slack, Gmail, Google Sheets, HubSpot, Stripe, and more)
 - Branching, loops, and conditional logic
 - AI steps that classify, extract, or draft within a workflow

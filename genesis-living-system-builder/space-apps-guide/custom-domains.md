@@ -7,7 +7,7 @@ description: Connect your own branded domain to a published Taskade Genesis app 
 **Connect your own domain to a published Taskade Genesis app: add a CNAME record with your DNS provider, verify it in the app's publish settings, and SSL is provisioned automatically. Your customers see your brand, not Taskade's.**
 
 {% hint style="success" %}
-**Business plan feature.** Custom domains are available on the **Business plan and above**. Connect your own branded web address to a published Genesis app.
+**Pro plan and up.** Custom domains are available on **Pro** (up to 10 per workspace) and on **Business and up** (unlimited). A domain you buy inside Taskade does not count toward the limit. Connect your own branded web address to a published Genesis app.
 {% endhint %}
 
 ***
@@ -73,7 +73,7 @@ This simple change makes customers think you hired a team of developers when rea
 
 **Plan Requirements:**
 
-* Taskade Business plan or equivalent
+* A Taskade Pro plan or higher
 * Admin access to your workspace
 * Domain ownership and DNS management access
 

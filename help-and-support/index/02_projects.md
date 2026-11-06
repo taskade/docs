@@ -1,6 +1,6 @@
 ---
 description: >-
-  Taskade projects are flexible data containers viewable 8 ways: List, Board, Table, Calendar, Mind Map, Org Chart, Gantt, and Action views.
+  Taskade projects are flexible data containers with multiple project views: List, Board, Table, Mind Map, Calendar, Gantt Chart, Org Chart, Actionsheet, and Docs (Beta).
 title: 'Chapter 2: Projects - Your Data Containers'
 ---
 
@@ -20,11 +20,11 @@ Fantastic! You've got your living workspace foundation set up. Now let's talk ab
 
 ## What is a Project? (The Smart Container Concept)
 
-A project in Taskade is a **flexible data container** that holds your information in a tree-like structure. But here's the magic: you can view that same data in **8 completely different ways**, instantly.
+A project in Taskade is a **flexible data container** that holds your information in a tree-like structure. But here's the magic: you can view that same data in **multiple project views**, instantly.
 
 ```mermaid
 flowchart TD
-    DATA[Your Project Data<br/>Tree Structure] --> VIEWS[9 Different Views]
+    DATA[Your Project Data<br/>Tree Structure] --> VIEWS[Multiple Project Views]
 
     VIEWS --> LIST[📋 List View<br/>Hierarchical tasks]
     VIEWS --> BOARD[📊 Board View<br/>Kanban workflow]
@@ -111,7 +111,7 @@ Start with a task, note, or idea. Your project is now alive and ready to grow!
 
 **Boom!** You just created a living data container that can adapt to any workflow.
 
-## The 9 Project Views (Choose Your Perspective)
+## The Project Views (Choose Your Perspective)
 
 Each view reveals different insights from your data. Here's when to use each one:
 
@@ -370,6 +370,6 @@ Custom Fields:
 
 ***
 
-_Have you tried switching between different views yet? It's like having 8 different tools in one—each revealing different insights from your data!_
+_Have you tried switching between different views yet? It's like having many tools in one—each revealing different insights from your data!_
 
 [← Back to Chapter 1: Workspaces](01_workspaces.md) | [Next: AI Agents →](03_ai_agents.md)

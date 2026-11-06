@@ -615,9 +615,9 @@ If the login page keeps reloading or bounces you back after signing in:
 * Confirm you're on the official `taskade.com` URL.
 * Ensure JavaScript and cookies are enabled, and temporarily disable privacy or security extensions.
 
-#### Enterprise SSO / SAML
+#### SSO / SAML
 
-For organizations using Single Sign-On (available on Enterprise plans):
+For organizations using Single Sign-On (available on the Business, Max, and Enterprise plans):
 
 * **Domain login flow**: Enter your work email, continue, complete your company's normal sign-in, and you'll be redirected back to Taskade.
 * **Not provisioned**: If access is denied, you may not yet be added to Taskade in your identity provider — contact your IT administrator.
