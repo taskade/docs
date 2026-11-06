@@ -25,7 +25,9 @@ A Loop repeats a set of steps once for each item in a list. One trigger fans out
 
 ### **Loop Types**
 
-#### **1. For Each Loop**
+The loop has one type: for-each.
+
+#### **For Each Loop**
 A loop is a bounded for-each. It runs once for every item that already exists in the list, then stops. It does not repeat until a goal is reached, and it has no exit condition of its own.
 
 Point the loop at a list in one of two ways:
@@ -97,7 +99,8 @@ A trigger from any source starts the automation, and the WhatsApp step sends the
 Trigger: Form submission (name, phone, service)
 Action: WhatsApp Business → Send Message
   To: @phone
-  Text: "Hi @name! Thanks for your inquiry about @service. We'll get back to you within 24 hours."
+  Text: "Hi @name! Thanks for your inquiry about @service.
+         We'll get back to you within 24 hours."
 ```
 
 #### **Template Messages**
@@ -116,18 +119,22 @@ Trigger: Form submission (support request with phone number)
 Action: Categorize with AI (Support Ticket Prioritization)
 Branch: If priority is "High"
           → Slack → Send Channel Message (#customer-support)
-          → WhatsApp Business → Send Message ("A manager will contact you shortly.")
+          → WhatsApp Business → Send Message
+              ("A manager will contact you shortly.")
         Otherwise
           → Add Task (support queue)
-          → WhatsApp Business → Send Message ("We received your request.")
+          → WhatsApp Business → Send Message
+              ("We received your request.")
 ```
 
 #### **E-commerce Integration**
 ```
 Trigger: Stripe → New Payment
-Action: WhatsApp Business → Send Template Message (order_confirmation)
+Action: WhatsApp Business → Send Template Message
+  Template: order_confirmation
 Action: Delay (1 day)
-Action: WhatsApp Business → Send Message ("Your order is being prepared!")
+Action: WhatsApp Business → Send Message
+  Text: "Your order is being prepared!"
 ```
 
 ---

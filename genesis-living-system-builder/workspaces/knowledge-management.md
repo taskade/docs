@@ -1,6 +1,6 @@
 ---
 description: >-
-  Upload, organize, and manage knowledge sources in Taskade to power smarter AI agents, with bulk import, auto-categorization, and the Agents API.
+  Upload, organize, and manage knowledge sources in Taskade to power smarter AI agents, with bulk upload, links and YouTube sources, and the Agents API.
 ---
 
 # Knowledge Organization
@@ -33,11 +33,8 @@ description: >-
 ```yaml
 Processing Features:
   Text Extraction: PDFs, Word docs, images with OCR
-  Language Detection: 100+ languages supported
-  Content Summarization: Key points and highlights
+  Video Transcripts: YouTube auto-generated transcripts
   Semantic Indexing: Meaning-based search optimization
-  Entity Recognition: Names, dates, locations, concepts
-  Relationship Mapping: Connections between knowledge pieces
 ```
 
 ***

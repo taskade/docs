@@ -379,7 +379,7 @@ See our [Best Practices guide](best-practices.md) for detailed examples.
 
 * **Browse our help center:** [taskade.com/learn/genesis](https://www.taskade.com/learn/genesis)
 * **Email us:** [support@taskade.com](mailto:support@taskade.com)
-* **Join the community:** [taskade.com/apps](https://www.taskade.com/apps)
+* **Browse community apps:** [taskade.com/apps](https://www.taskade.com/apps)
 
 **Ready to start building?** [Open Genesis in your workspace →](https://taskade.com)
 

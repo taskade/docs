@@ -419,7 +419,6 @@ Multi-Agent Teams put specialized AI agents in one chat, so each specialist hand
 Multi-agents are an evolution of Taskade's agentic workflow designed to:
 
 * **Split the work** so each agent handles the part it knows best
-* **Execute in the background** while you focus on other priorities
 * **Collaborate intelligently** with each agent bringing specialized expertise
 * **Learn your preferences** and adapt to your communication style
 * **Maintain context** across complex, multi-step workflows
@@ -976,7 +975,6 @@ Apply changes and make the team available for use
 * Type **/** and the team name in a task to assign it
 * Taskade picks the single best agent from the team for each task
 * Insert or replace the task with the result
-* Comprehensive reporting on progress
 
 #### **Method 4: Automation Integration**
 

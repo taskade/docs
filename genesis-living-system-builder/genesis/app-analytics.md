@@ -111,7 +111,7 @@ Open your published app, click **App settings** (gear icon), then click **Analyt
 | Signal | What It Means | Action to Take |
 |---|---|---|
 | **High bounce rate (>70%)** | Visitors leave quickly | Improve first impression — clearer headline, faster load, better CTA |
-| **Low session duration (<30s)** | Users aren't engaging | Add more interactive content, simplify navigation |
+| **Low Avg. Visit (<30s)** | Users aren't engaging | Add more interactive content, simplify navigation |
 | **Top page is NOT your main feature** | Users miss your core value | Reorganize navigation, add prominent links to key features |
 | **Mobile > desktop visitors** | Mobile is your primary audience | Optimize mobile layout, larger tap targets, simpler forms |
 | **One traffic source dominates** | Over-reliance on single channel | Diversify: share on multiple platforms, add SEO, use embed |
@@ -130,8 +130,8 @@ Open your published app, click **App settings** (gear icon), then click **Analyt
 | No analytics data showing | App is not published | Publish your app first |
 | Dashboard shows sample data and an upgrade prompt | Workspace is below Business | App Analytics needs a Business plan or higher |
 | Data seems delayed | Real-time updates may have brief lag | Wait a few minutes, refresh the dashboard |
-| Visitor count seems low | App may be Private or Secret | Check visibility settings — Public apps get more traffic |
-| Bounce rate is 100% | Single-page app or landing page | This is normal for single-page apps; focus on session duration instead |
+| Visitor count seems low | App may be unlisted, or still a draft | Publish it and turn on **Show in public listings** under **More options**. Listed apps get more traffic |
+| Bounce rate is 100% | Single-page app or landing page | This is normal for single-page apps; focus on Avg. Visit instead |
 | Geographic data missing | Privacy/VPN usage by visitors | Some visitor locations can't be determined — this is normal |
 
 ---

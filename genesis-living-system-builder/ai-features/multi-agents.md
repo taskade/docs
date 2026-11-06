@@ -191,7 +191,7 @@ Multi-agent chats support both AI agents and human team members in the same conv
 |---|---|---|---|
 | **Sequential Pipeline** | Agent A → Agent B → Agent C (output flows linearly) | Content creation, data processing | Research → Write → Review |
 | **Hub and Spoke** | Central coordinator routes to specialists | Customer support, complex queries | Coordinator → routes to Sales/Support/Billing |
-| **Parallel Fan-Out** | Multiple agents each answer the same request (in an AI Team, they reply one after another) | Report generation, data analysis | Finance + Marketing + Operations agents each analyze their domain |
+| **Fan-Out** | Multiple agents each answer the same request (in an AI Team, they reply one after another) | Report generation, data analysis | Finance + Marketing + Operations agents each analyze their domain |
 | **Debate / Review** | Agents critique each other's work | Quality control, decision-making | Proposal Agent creates → Critic Agent reviews → Proposal Agent revises |
 | **Escalation Chain** | Start with generalist, escalate to specialist | Support tiers, triage | Tier 1 Agent → Tier 2 Specialist → Human escalation |
 

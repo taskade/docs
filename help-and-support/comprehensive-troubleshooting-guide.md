@@ -154,11 +154,13 @@ Sometimes sync delays resolve within a few minutes.
 {% endstep %}
 {% endstepper %}
 
-#### Offline Changes Not Syncing
+#### Changes Not Syncing After a Connection Drop
 
-* **Network Restoration**: Ensure your internet connection is fully restored
-* **Conflict Resolution**: Manually resolve any sync conflicts that appear
-* **Data Recovery**: Check if offline changes are stored locally and can be manually copied
+Taskade has no offline editing mode. When the connection drops, Taskade holds your last edits in memory and syncs them when you reconnect.
+
+* **Network Restoration**: Make sure your internet connection is fully restored
+* **Keep the tab open**: Do not close or reload the page until your edits sync
+* **Copy unsaved text**: If an edit does not sync, copy it before you reload, then paste it back
 * **Version History**: Use project version history to recover lost changes
 
 ### Missing or Corrupted Data

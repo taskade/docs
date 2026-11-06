@@ -102,6 +102,8 @@ Access all workspace media in one place:
 
 ## Supported Media Types
 
+This table covers files in the Media tab, agent knowledge, and links you paste in. Chat attachments are limited to the types in [Method 3](#method-3-chat-with-attachments).
+
 | Media Type | Formats | AI Capabilities |
 |---|---|---|
 | **Documents** | PDF, DOCX, TXT, MD, PPTX, XLSX, CSV, EPUB | Full text analysis, summarization, Q&A, extraction |

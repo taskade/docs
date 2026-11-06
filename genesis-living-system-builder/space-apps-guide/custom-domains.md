@@ -151,7 +151,7 @@ If HTTPS is still off after about 10 minutes, the panel offers an optional extra
 
 **Automatic SSL Certificate Management:**
 
-* **One-Click SSL Setup** - SSL certificates provisioned automatically through Cloudflare
+* **Automatic SSL** - Cloudflare issues the certificate once the SSL Validation record resolves (a domain you buy inside Taskade needs no manual record)
 * **Always-On Encryption** - HTTPS enabled by default for all custom domains
 * **Certificate Renewal** - Automatic renewal prevents expired certificate issues
 * **Security Headers** - Enhanced security headers applied automatically
@@ -191,7 +191,7 @@ If HTTPS is still off after about 10 minutes, the panel offers an optional extra
 
 Connected the domain to the wrong app, or launching a replacement? You can **reassign a custom domain to a different app or workspace yourself** — no need to delete the domain and redo DNS:
 
-1. Open the space's settings where the domain is currently connected.
+1. Open **App settings → Launch → Domains** in the app where the domain is currently connected.
 2. In the domain configuration, choose **Move domain** and pick the destination from the workspace picker.
 3. Confirm with **Move domain** — all of the domain's settings move with it; only the app the domain points to changes.
 

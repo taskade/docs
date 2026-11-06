@@ -51,6 +51,8 @@ You can embed entire Taskade projects on your website or blog and keep everyone 
 ></iframe>
 ```
 
+The `src` URL ends with the query string `?as=list&share=view&view=YOUR_SHARE_TOKEN&theme=light`: `as` sets the view, `view` carries the share token, and `theme` sets light or dark.
+
 Copy the real code from the **Embed** tab. It carries the share token of the project. If you regenerate or disable the invite link, copy the embed code again.
 
 ---

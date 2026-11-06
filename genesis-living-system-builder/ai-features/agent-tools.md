@@ -140,7 +140,7 @@ Connect your agents to external platforms for real-world actions:
 | **Business** | **Stripe** | Process payments, manage subscriptions | Agent handles billing |
 | | **Mailchimp** | Add contacts, manage campaigns | Agent manages email marketing |
 
-> Agents can use any automation flow as a custom tool, and connect to 100+ integrations. On the Free plan, premium apps show an upgrade chip. Any paid plan unlocks them. See [Automations](../automation/README.md) for the full integration list.
+> Agents can use any automation flow as a custom tool, and connect to 100+ integrations. On the Free plan, premium apps show an upgrade chip. Premium integrations need a paid plan, and Pro integrations need Pro and up. See [Automations](../automation/README.md) for the full integration list.
 
 > **For developers:** The **HTTP/Webhooks** custom tool lets agents call any external API. See [Webhooks](../../apis-living-system-development/webhooks.md) for programmatic event delivery and payload details.
 

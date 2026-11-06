@@ -21,7 +21,7 @@ Already have notes, docs, or spreadsheets in other tools? You can bring everythi
 To let an AI agent learn from content, add it in the agent's **Knowledge** tab, or open a project's **···** menu and choose **Add to Agent Knowledge**.
 
 {% hint style="info" %}
-**Imported content becomes part of your Workspace DNA.** That means your AI agents can learn from everything you bring in — docs, spreadsheets, presentations, and more.
+**Imported content becomes a project in your workspace.** Add it to an agent's Knowledge so that the agent can learn from it — docs, spreadsheets, presentations, and more.
 {% endhint %}
 
 ***

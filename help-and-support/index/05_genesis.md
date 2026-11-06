@@ -309,7 +309,7 @@ Genesis works for virtually any business process:
 
 ## Your Genesis Apps Are Living and Evolving
 
-**Every app gets smarter over time:**
+**Every app grows with your business:**
 
 * **Adapts to business changes** through simple updates
 * **Connects deeper** with your growing workspace ecosystem

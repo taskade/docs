@@ -129,14 +129,14 @@ Your Company Workspace
 
 Each workspace runs on a plan. The plan sets how many members the workspace can have:
 
-| Plan           | Perfect For              | Member Limit | Key Features                                                        |
-| -------------- | ------------------------ | ------------ | ------------------------------------------------------------------- |
-| **Free**       | Trying Taskade           | 2            | Unlimited projects, 3 Taskade Genesis apps, 1 AI agent              |
-| **Starter**    | Individual productivity  | 3            | 10,000 AI credits per month, premium integrations                   |
-| **Pro**        | Small team collaboration | 10           | 50,000 AI credits per month, AI Teams, custom domains, webhooks     |
-| **Business**   | Growing company          | Unlimited    | 150,000 AI credits per month, SSO/SAML, app analytics               |
-| **Max**        | Heavy AI use             | Unlimited    | 400,000 AI credits per month                                        |
-| **Enterprise** | Large organization       | Unlimited    | SCIM provisioning. Contact sales                                    |
+| Plan           | For            | Members   | Key Features                                         |
+| -------------- | -------------- | --------- | ---------------------------------------------------- |
+| **Free**       | Trying it      | 2         | Unlimited projects, 3 Taskade Genesis apps, 1 agent  |
+| **Starter**    | Individuals    | 3         | 10,000 credits/mo, premium integrations              |
+| **Pro**        | Small teams    | 10        | 50,000 credits/mo, AI Teams, custom domains, webhooks |
+| **Business**   | Growing teams  | Unlimited | 150,000 credits/mo, SSO/SAML, app analytics          |
+| **Max**        | Heavy AI use   | Unlimited | 400,000 credits/mo                                   |
+| **Enterprise** | Large orgs     | Unlimited | SCIM. Contact sales                                  |
 
 See [pricing](https://www.taskade.com/pricing) for current prices.
 
@@ -154,7 +154,7 @@ See [pricing](https://www.taskade.com/pricing) for current prices.
 
 * The more you use your workspace, the smarter it gets
 * AI agents remember your preferences and working style
-* Automations learn optimal timing and conditions
+* Run logs show how each automation performed, so you can refine it
 
 ### Scalable Evolution
 

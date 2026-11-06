@@ -177,7 +177,7 @@ Create Markdown knowledge sources directly in your agent:
 
 | Step | Action |
 |---|---|
-| 1 | Go to **Agents** tab → Click three dots → **Edit agent** |
+| 1 | Go to your workspace → **AI Agents** tab → Click the arrow next to the name of your agent → **Edit agent** |
 | 2 | Open the **Knowledge** tab |
 | 3 | Click **Add Markdown/Text** |
 | 4 | Paste Markdown or plain text into the pop-up |

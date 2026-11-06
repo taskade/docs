@@ -44,7 +44,7 @@ Don't know which agents to include? Let AI figure it out.
 
 ### Chat in the AI Teams Tab
 
-Go to **AI Teams** > select your team > start a conversation. The team collectively handles your request, with each agent contributing their expertise.
+Go to **AI Teams** > select your team > start a conversation. In **Auto** mode, the best-suited agent replies. Switch modes to hear from more agents (see [Execution Modes](#execution-modes)).
 
 ### Chat Inside a Project
 

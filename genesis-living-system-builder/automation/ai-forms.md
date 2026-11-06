@@ -107,7 +107,9 @@ Branch: If "Overall rating" is less than 3
 
 ```
 Trigger: Form (Long Text field: "Feedback")
-Action: Categorize with AI (Sentiment Analysis preset, input = "Feedback")
+Action: Categorize with AI
+  Preset: Sentiment Analysis
+  Input: "Feedback"
 Action: Update Custom Fields (Sentiment)
 ```
 
@@ -122,7 +124,8 @@ Form questions are fixed. To act differently on different answers, add **Branch*
 ```
 Trigger: Form
 Action: Ask Agent With Structured Output
-  Output: Category (Single Select: complaint, compliment, suggestion, question)
+  Output: Category (Single Select:
+            complaint, compliment, suggestion, question)
           Urgent (Boolean)
 Branch: If Urgent is true → Slack → Send Direct Message (on-call)
 ```

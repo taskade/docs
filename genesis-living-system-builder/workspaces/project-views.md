@@ -33,7 +33,7 @@ All views are backed by the **same underlying data** — update a task in one vi
 
 > 💡 **Tip:** Use the view tabs in the project toolbar or the **More Views** menu to toggle between visualizations. Press `⌘/Ctrl + Shift + .` to go to the next view and `⌘/Ctrl + Shift + ,` to go to the previous one.
 
-> 📤 **Export any view.** The project's **⋯ More menu > Export** works in every view — including Mind Map, Board, Calendar, and Org Chart — on all plans. CSV export flattens the task tree (depth, text, note, completed) for spreadsheets and BI tools; Markdown export preserves the outline.
+> 📤 **Export any view.** The project's **⋯ More menu > Export** works in every view you can open — including Mind Map, Board, and Calendar on all plans. CSV export flattens the task tree (depth, text, note, completed) for spreadsheets and BI tools; Markdown export preserves the outline.
 
 ## When to Use Each View
 

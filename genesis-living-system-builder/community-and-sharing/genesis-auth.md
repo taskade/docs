@@ -73,8 +73,6 @@ The **App Users** tab lives in your Taskade Genesis app's settings (**App settin
 
 All without touching code.
 
-<figure><img src="../../.gitbook/assets/genesisauth-invite-users.jpg" alt="" width="563"><figcaption></figcaption></figure>
-
 {% hint style="info" %}
 The App Users tab is currently in Beta. App Users and app sign-in work on every plan, Free included — bug reports welcome at [github.com/taskade/taskade/issues](https://github.com/taskade/taskade/issues).
 {% endhint %}

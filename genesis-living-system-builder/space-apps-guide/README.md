@@ -303,7 +303,7 @@ Add sign-in and access controls to your app:
 * **App sign-in** (App Users): visitors sign in with their email on your app's own URL, with Taskade as the identity provider. It works on every plan, Free included
 * **Optional emailed sign-in code** and invite-only sign-up
 * **App user roles** (Admin or Member): with private per-user data on, the workspace owner can turn on **Admins see every row** so that admins can read and change every row
-* **Private per-user data** (row scoping): off by default. Sign-in confirms who a visitor is but does not hide other people's rows until you turn this on and test it with a second account
+* **Private entries** (private per-user data, or row scoping), under **Publish → More options**: off by default. Sign-in confirms who a visitor is but does not hide other people's rows until you turn this on and test it with a second account
 * **Password protection** for the whole app (Pro and up)
 
 ***

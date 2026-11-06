@@ -27,7 +27,7 @@ Taskade enables seamless real-time and asynchronous collaboration across teams. 
 
 * Changes appear instantly across all devices
 * Seamless handoff between desktop, web, and mobile
-* Offline changes sync when reconnected
+* If the connection drops, Taskade tries to sync your last changes when you reconnect
 * Version consistency maintained automatically
 
 ## Chat and Messaging
@@ -241,7 +241,6 @@ For confidential or one-on-one communications:
 **Performance Features:**
 
 * **Message Synchronization**: Consistent chat history across devices
-* **Offline Message Queue**: Send messages when connection is restored
 * **Notification Controls**: Customize chat notification preferences
 * **Chat Backup**: Automatic preservation of conversation history
 

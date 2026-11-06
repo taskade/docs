@@ -38,7 +38,7 @@ flowchart TD
     TABLET --> FEATURES
 
     FEATURES --> SYNC[🔄 Real-Time Sync<br/>Instant updates everywhere]
-    FEATURES --> OFFLINE[📴 Reconnect Sync<br/>Recent edits sync on reconnect]
+    FEATURES --> OFFLINE[🔁 Reconnect Sync<br/>Recent edits sync on reconnect]
     FEATURES --> VOICE[🎤 Voice Commands<br/>Hands-free interaction]
     FEATURES --> WIDGETS[⚡ Quick Widgets<br/>Instant access]
 
@@ -54,7 +54,7 @@ flowchart TD
 **Cross-platform enables:**
 
 * **🔄 Real-Time Sync**: Changes appear instantly across all devices
-* **📴 Reconnect Sync**: Edits from the moments before a connection drop sync when you reconnect
+* **🔁 Reconnect Sync**: Edits from the moments before a connection drop sync when you reconnect
 * **🎤 Voice Commands**: Hands-free productivity
 * **⚡ Quick Access**: Instant task creation from any device
 * **📱 Native Experiences**: Optimized interfaces for each platform
@@ -257,13 +257,13 @@ Browser advantages:
 
 **Taskade needs a live connection.** There is no offline editing mode.
 
-#### Offline Capabilities
+#### When the Connection Drops
 
 * **Recent Edits**: If your connection drops, Taskade holds the changes from the moments before the drop in memory
 * **Reconnect Sync**: When your connection returns, Taskade tries to sync those changes
 * **Mobile Fallback**: If your desktop connection drops, use the mobile app on mobile data
 
-#### Offline Synchronization
+#### Restore the Connection
 
 ```
 When the connection drops:
@@ -455,8 +455,7 @@ Task Lifecycle Across Devices:
 ```
 Synchronization Best Practices:
 ├── 🔄 Enable auto-sync on all devices
-├── 📴 Plan for offline work scenarios
-├── ⚡ Monitor sync status and resolve conflicts
+├── 📶 Keep a live connection, and use the mobile app if desktop drops
 ├── 🔋 Optimize for battery life on mobile
 └── 📊 Review sync logs for optimization
 ```

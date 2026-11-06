@@ -425,7 +425,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 | **Email Automation**     | `"Send professional email templates with our branding for confirmations, reminders, and follow-ups using our company email signature."` |
 | **Calendar Integration** | `"Automatically add appointments to Google Calendar with meeting details, location, and relevant participant information."`             |
 | **SMS Notifications**    | `"Send text message reminders 24 hours before appointments and immediate alerts for urgent issues requiring immediate attention."`      |
-| **Webhook Connections** (Pro and up) | `"Connect to our existing CRM system via webhook to sync customer data and ensure information consistency across platforms."`           |
+| **Webhook Connections** (incoming webhooks: Pro and up) | `"Connect to our existing CRM system via webhook to sync customer data and ensure information consistency across platforms."`           |
 
 ## Quick Start Templates
 

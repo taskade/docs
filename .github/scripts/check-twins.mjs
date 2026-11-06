@@ -16,16 +16,20 @@
 // Usage:
 //   node .github/scripts/check-twins.mjs --offline   footers and lock agree (no network)
 //   node .github/scripts/check-twins.mjs             fetch each twin, report the ones that changed
-//   node .github/scripts/check-twins.mjs --update    fetch each twin, rewrite the lock
+//   node .github/scripts/check-twins.mjs --update [<twin-url>...]
+//       add new twins to the lock and drop removed ones; re-hash only the named twins
+//       (--all re-hashes every twin). Run it after you bring a page up to date with its twin.
 //   add --report <file> to write the Markdown report to a file
 //
-// Exit codes: 0 no problem, 1 drift or a lock problem, 2 a twin could not be fetched.
+// Exit codes: 0 no problem, 1 a footer or lock problem (or a crash), 2 a twin could not be fetched,
+// 3 drift (a twin changed, returns 404, or is not in the lock).
 
 import { createHash } from 'node:crypto';
 import { readFileSync, readdirSync, writeFileSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const ROOT = new URL('../..', import.meta.url).pathname;
+const ROOT = fileURLToPath(new URL('../..', import.meta.url));
 const LOCK = join(ROOT, '.github/twins.lock.json');
 const SKIP_DIRS = new Set(['.git', '.gitbook', '.github', 'node_modules']);
 const DATED_PAGE = /^(changelog|updates-and-timeline)\/.+\/(?!README\.md$)[^/]+\.md$/;
@@ -41,6 +45,8 @@ const args = process.argv.slice(2);
 const mode = args.includes('--update') ? 'update' : args.includes('--offline') ? 'offline' : 'check';
 const reportIndex = args.indexOf('--report');
 const reportFile = reportIndex === -1 ? null : args[reportIndex + 1];
+const acceptAll = args.includes('--all');
+const accepted = new Set(args.filter((arg) => arg.startsWith('https://')));
 
 function listPages(dir = ROOT) {
   const pages = [];
@@ -98,10 +104,15 @@ async function fetchCopy(url) {
   let last = '';
   for (let attempt = 1; attempt <= 3; attempt += 1) {
     try {
-      const res = await fetch(`${url}.md`, { headers: { 'user-agent': USER_AGENT }, redirect: 'follow' });
+      const res = await fetch(`${url}.md`, {
+        headers: { 'user-agent': USER_AGENT },
+        redirect: 'follow',
+        signal: AbortSignal.timeout(20_000),
+      });
       if (res.status === 404) return { status: 404 };
-      if (res.ok) return { status: 200, sha256: digest(await res.text()) };
-      last = `HTTP ${res.status}`;
+      const type = res.headers.get('content-type') ?? '';
+      if (res.ok && type.startsWith('text/markdown')) return { status: 200, sha256: digest(await res.text()) };
+      last = res.ok ? `unexpected content-type ${type || '(none)'}` : `HTTP ${res.status}`;
     } catch (error) {
       last = String(error?.cause?.code ?? error?.message ?? error);
     }
@@ -168,7 +179,9 @@ if (mode === 'update') {
   const next = {};
   for (const url of urls) {
     const result = results.get(url);
-    next[url] = { sha256: result.status === 200 ? result.sha256 : 'missing', pages: twins.get(url) };
+    const fresh = result.status === 200 ? result.sha256 : 'missing';
+    const keep = lock[url] && !acceptAll && !accepted.has(url);
+    next[url] = { sha256: keep ? lock[url].sha256 : fresh, pages: twins.get(url) };
   }
   writeFileSync(LOCK, `${JSON.stringify(next, null, 2)}\n`);
   const missing = urls.filter((url) => results.get(url).status === 404);
@@ -215,7 +228,7 @@ if (sections.length === 0) {
 emit(
   `## Twin page drift\n\n` +
     `${urls.length} twins checked. For each changed twin: read the taskade.com page (add \`.md\` to its URL for the Markdown copy), ` +
-    `bring the GitBook page up to date, then run \`node .github/scripts/check-twins.mjs --update\` and commit \`.github/twins.lock.json\`.\n\n` +
+    `bring the GitBook page up to date, then run \`node .github/scripts/check-twins.mjs --update <twin-url>\` and commit \`.github/twins.lock.json\`.\n\n` +
     sections.join('\n\n'),
 );
-process.exit(changed.length + gone.length + unlocked.length > 0 ? 1 : 2);
+process.exit(changed.length + gone.length + unlocked.length > 0 ? 3 : 2);

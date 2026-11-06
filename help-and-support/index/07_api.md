@@ -74,8 +74,8 @@ flowchart TD
 
 ```
 GET    /workspaces                           # List your workspaces
-POST   /workspaces/{workspaceId}/projects    # Create a project in a workspace
-GET    /projects/{projectId}/tasks           # List the tasks in a project
+POST   /workspaces/{workspaceId}/projects    # Create project
+GET    /projects/{projectId}/tasks           # List tasks
 PUT    /projects/{projectId}/tasks/{taskId}  # Update a task
 DELETE /projects/{projectId}/tasks/{taskId}  # Delete a task
 ```
@@ -84,10 +84,10 @@ DELETE /projects/{projectId}/tasks/{taskId}  # Delete a task
 
 ```
 /workspaces                 # Workspaces and their folders
-/folders                    # Folders, their projects, agents, and templates
+/folders                    # Folders and their contents
 /projects                   # Project operations
 /projects/{projectId}/tasks # Task manipulation
-/agents                     # AI agents, knowledge, and conversations
+/agents                     # Agents, knowledge, chats
 /medias                     # Files
 /bundles                    # Workspace export and import
 ```

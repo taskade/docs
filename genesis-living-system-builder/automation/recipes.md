@@ -297,10 +297,9 @@ Include actions to update the task status and posting timestamp after successful
 **Customization Options:**
 
 * **Content Variations**: Create platform-specific versions of posts
-* **Timing Optimization**: Use analytics to determine best posting times
 * **A/B Testing**: Test different content approaches
 * **Approval Workflows**: Add review steps before posting
-* **Performance Tracking**: Monitor engagement and adjust strategies
+* **Performance Tracking**: Log each post and review it in a weekly AI summary
 
 ## Lead Generation & Sales
 

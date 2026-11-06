@@ -45,9 +45,9 @@ Actions can be chained together to create complex multi-step workflows, with con
 
 | Action                       | Description                                                                   | Use Case                                    | Parameters                           |
 | ---------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------ |
-| **Scrape Webpage**           | Extract the contents of a web page                                            | Content aggregation, research               | `url`, `selectors`, `format`         |
+| **Scrape Webpage**           | Extract the contents of a web page                                            | Content aggregation, research               | `url`, `errorBehavior`               |
 | **Convert File to Text**     | Convert a source file into text                                               | Document processing, content extraction     | `fileId`, `outputFormat`, `encoding` |
-| **Transcribe YouTube Video** | Turn a YouTube video into text                                                | Content creation, accessibility             | `videoUrl`, `language`, `format`     |
+| **Transcribe YouTube Video** | Turn a YouTube video into text                                                | Content creation, accessibility             | `youtubeUrl`                         |
 | **Turn a recording into a project** | Transcribes an audio recording into a new project                      | Meeting notes, voice memos, podcast indexing | `audioRecording`, `projectTitle`      |
 | **Upload File to Media**     | Upload file through a URL to save in your workspace or folder's media tab     | Media management, content storage           | `url`, `fileName`, `folderId`        |
 | **Send HTTP Request**        | Makes an API request to an endpoint; authentication is optional per call     | External integrations, data synchronization | `method`, `url`, `headers`, `body`, optional auth |
@@ -411,7 +411,7 @@ Result: Comprehensive launch support and documentation
 
 | Action             | Description                        | Parameters                  | Example                                   |
 | ------------------ | ---------------------------------- | --------------------------- | ----------------------------------------- |
-| **Scrape Webpage** | Extract the contents of a web page | `url`, `selector`, `format` | Extract product info from competitor site |
+| **Scrape Webpage** | Extract the contents of a web page | `url`, `errorBehavior`      | Extract product info from competitor site |
 
 ### Scrape Webpage Automation Settings
 
@@ -510,7 +510,7 @@ Result: Current industry news awareness
 | Action | Description | Parameters | Example |
 |---|---|---|---|
 | **Convert File to Text** | Convert a source file into text | `fileUrl`, `fileType`, `extractImages` | Convert PDF manual to searchable text |
-| **Transcribe YouTube Video** | Turn a YouTube video into text | `videoUrl`, `language`, `includeTimestamps` | Create transcript of training video |
+| **Transcribe YouTube Video** | Turn a YouTube video into text | `youtubeUrl`                                | Create transcript of training video |
 | **Turn a recording into a project** | Transcribes an audio recording into a new project | `audioRecording`, `projectTitle` | Turn voice memo into project notes |
 
 ### Transcribe YouTube Video Automation Settings

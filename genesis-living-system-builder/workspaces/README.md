@@ -53,7 +53,7 @@ The plan on a workspace sets how many members it includes:
 | Plan           | Use Case                 | Members Included | Features                                                   |
 | -------------- | ------------------------ | ---------------- | ---------------------------------------------------------- |
 | **Free**       | Individual productivity  | 2                | Core features, unlimited projects                          |
-| **Starter**    | Small team collaboration | 3                | Premium integrations in automations                        |
+| **Starter**    | Individuals, tiny teams  | 3                | Premium integrations in automations                        |
 | **Pro**        | Small team collaboration | 10               | Custom domains, AI Teams, automation webhooks              |
 | **Business**   | Department/company use   | Unlimited        | SSO/SAML, app analytics                                    |
 | **Max**        | Larger teams             | Unlimited        | SSO/SAML, more AI credits                                  |
@@ -615,7 +615,6 @@ Unlike the My Tasks dashboard which shows tasks assigned to you across all works
 * **Touch-Friendly Interface**: Large touch targets for mobile devices
 * **Swipe Actions**: Swipe to complete, assign, or navigate to tasks
 * **Responsive Filtering**: Mobile-optimized filter controls
-* **Offline Capability**: View and manage tasks without internet connection
 
 ### Best Practices for Tasks Tab Usage
 
@@ -882,7 +881,6 @@ See the [Taskade Security page](https://www.taskade.com/security) for current de
 ### Mobile Features
 
 * **Full Workspace Access**: Complete workspace functionality on mobile
-* **Offline Sync**: Work offline with automatic sync when connected
 * **Push Notifications**: Real-time alerts for important workspace activity
 * **Quick Actions**: Rapid project creation and task management
 

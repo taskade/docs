@@ -335,7 +335,7 @@ Create sophisticated permission systems for different types of users.
 ### Role-Based Access
 
 {% hint style="warning" %}
-App sign-in (App Users) works on every plan, Free included, and confirms who a visitor is. It does not hide other people's rows. To show each user only their own records, turn on the **Private per-user data** (row scoping) setting, which is off by default, and test it with a second account.
+App sign-in (App Users) works on every plan, Free included, and confirms who a visitor is. It does not hide other people's rows. To show each user only their own records, turn on **Private entries** (private per-user data, or row scoping) under **Publish → More options**. It is off by default. Test it with a second account.
 {% endhint %}
 
 **Define user roles:**

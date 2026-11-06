@@ -58,7 +58,7 @@ When Genesis builds an app, it **automatically creates the database structures**
 | **Booking System** | Appointments, Clients, Services | Date/time (date), Client (relation), Service (select), Status (select), Price (number), Notes (text) |
 | **CRM** | Leads, Deals, Contacts | Name (text), Email (text), Stage (select), Value (number), Source (select), Last contact (date), Score (number) |
 | **Inventory** | Products, Suppliers, Orders | SKU (text), Name (text), Quantity (number), Reorder level (number), Supplier (relation), Price (number) |
-| **Help Desk** | Tickets, Agents, Categories | Title (text), Description (text), Priority (select), Status (select), Assignee (relation), SLA (date) |
+| **Help Desk** | Tickets, Agents, Categories | Title (text), Description (text), Priority (select), Status (select), Assignee (built-in), SLA (date) |
 | **Course Platform** | Courses, Students, Enrollments | Title (text), Content (text), Progress (number), Grade (number), Status (select), Certificate issued (select) |
 
 > **Fully automatic:** You don't need to define these structures. Genesis infers them from your prompt and creates optimized schemas.
@@ -108,8 +108,7 @@ You can also create databases manually:
 | Field Type | Use Case | Example | Formatting Options |
 |---|---|---|---|
 | **Text (String)** | Names, descriptions, notes | Customer name, product description | Plain text |
-| **Number** | Quantities, scores, counts | Stock level, quantity, score | Decimal, percent (%) |
-| **Currency** | Pricing, invoices, budgets | Product price, invoice total, budget cap | Pre-formatted as USD; numeric field with currency symbol and decimal precision |
+| **Number** | Quantities, scores, prices, budgets | Stock level, product price, completion rate | Formats: decimal, currency, unit (such as %) |
 | **DateTime** | Deadlines, timestamps, schedules | Due date, appointment time | Date only, date + time; Table view footers can aggregate Earliest / Latest / Range |
 | **Select** | Single-choice categories | Status, priority, category | Color-coded options |
 | **Relationship** | Link a record to another project | Order → Customers project, Lead → Deals project | Shows the linked project |

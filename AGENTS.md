@@ -15,7 +15,7 @@ This repository is the source of [docs.taskade.com](https://docs.taskade.com). G
 
 Read [`https://www.taskade.com/SKILL.md`](https://www.taskade.com/SKILL.md), then connect to the hosted MCP server at `https://www.taskade.com/mcp`. The full guide is [getting-started/ai-agents.md](getting-started/ai-agents.md).
 
-To search these docs from an MCP client, add `https://docs.taskade.com/~gitbook/mcp` (public, read-only). Every page also has a Markdown copy: add `.md` to its URL.
+To search these docs from an MCP client, add `https://docs.taskade.com/~gitbook/mcp` (public, no sign-in). Every page also has a Markdown copy: add `.md` to its URL.
 
 ## Rules for a change
 
@@ -23,7 +23,7 @@ To search these docs from an MCP client, add `https://docs.taskade.com/~gitbook/
 * Use relative links between pages, for example `../automation/README.md`.
 * Use GitBook blocks for callouts: `{% hint style="info" %}` … `{% endhint %}`.
 * Many pages have a twin on [taskade.com/docs](https://www.taskade.com/docs) or [taskade.com/learn](https://www.taskade.com/learn). The last line of the page names it (`_This page is also published at …_` or `_Step-by-step guide on taskade.com/learn: …_`). A hint on each REST API v1 page links its generated reference. When you change a fact, change both, or open an issue.
-* After you add, remove, or bring a twin footer up to date, run `node .github/scripts/check-twins.mjs --update` and commit `.github/twins.lock.json`. A weekly job opens a "Twin page drift" issue when a twin changes on taskade.com.
+* After you add or remove a twin footer, run `node .github/scripts/check-twins.mjs --update`. After you bring a page up to date with its twin, run `node .github/scripts/check-twins.mjs --update <twin-url>`. Commit `.github/twins.lock.json`. A weekly job opens a "Twin page drift" issue when a twin changes on taskade.com.
 * Never commit a token, a password, an internal URL, or a customer name. Use placeholders such as `<paste-your-token-here>`.
 
 ## Product facts

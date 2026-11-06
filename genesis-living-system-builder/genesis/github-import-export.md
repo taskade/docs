@@ -26,7 +26,7 @@ Bring Taskade Genesis apps in from GitHub repositories and push your apps back t
 
 GitHub Import & Export lets you treat any Genesis app like code — back it up, collaborate on it through pull requests, and share it with others as a cloneable repository.
 
-* **Import** an app from a public or private GitHub repo with one click. Import works on every plan, with the per-item limits of your plan. For example, a Free workspace can hold 1 agent and 3 apps, and cannot import automations.
+* **Import** an app from a public or private GitHub repo. Import works on every plan, with the per-item limits of your plan. For example, a Free workspace can hold 1 agent and 3 apps, and cannot import automations.
 * **Export** an app to a brand-new repo or push updates to an existing repo as a pull request. Export to GitHub needs **Pro or above**, and Taskade checks the plan on the server.
 * **Round trip**: export to a repo, then import it back into any workspace.
 

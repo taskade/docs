@@ -1,7 +1,7 @@
 ---
 description: >-
-  Build a client portal or member portal where each client logs in and sees only
-  their own info — no code. Keywords: client portal, member portal, login, no-code.
+  Build a client or member portal with no code. Each client signs in, and with
+  Private entries on, sees only their own records. Keywords: client portal, member portal, login, no-code.
 ---
 
 # Build a client or member portal in 10 minutes

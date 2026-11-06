@@ -332,10 +332,9 @@ I want to [HOW YOU'LL USE THE DATA] so I can [BUSINESS OUTCOME].
 
 | Resource                                                   | Description                               |
 | ---------------------------------------------------------- | ----------------------------------------- |
-| [**Community Gallery**](https://www.taskade.com/apps) | Browse apps built by the community  |
+| [**Community Gallery**](https://www.taskade.com/apps) | Browse and clone apps and kits built by the community |
 | [**Template Library**](https://www.taskade.com/templates)  | Project templates for any use case        |
 | [**AI Agent Gallery**](https://www.taskade.com/agents)     | Pre-built AI assistants ready to deploy   |
-| [**AI Kits**](https://www.taskade.com/apps)                | One-click deployable workflows and agents |
 
 ### Taskade Featured Apps
 
@@ -350,7 +349,7 @@ See what Taskade itself built with Taskade Genesis:
 
 **Ready to build your own app?** [**Start with Taskade Genesis →**](https://www.taskade.com)
 
-[**Browse Community Apps →**](https://www.taskade.com/apps) | [**Fork a Template →**](https://www.taskade.com/templates)
+[**Browse Community Apps →**](https://www.taskade.com/apps) | [**Browse Templates →**](https://www.taskade.com/templates)
 
 _Copy any prompt above, customize it for your business, and have a working app in minutes._
 

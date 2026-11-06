@@ -13,7 +13,7 @@ Manage your Taskade account, team, billing, and security settings.
 
 - **Update your profile**: Click your avatar (bottom-left) > Settings > Profile. Change your name, avatar, and display preferences.
 - **Change your email**: Open Settings, enter the new address in the **Email** field, and click **Save**. The change is active after you click the confirmation link sent to the new address.
-- **Change your password**: Settings > Account > Password. Enter your current password, then set a new one.
+- **Change your password**: Settings > Password. Enter your current password, then set a new one.
 - **Language & region**: Settings > Preferences. Choose your display language, date format, and time zone.
 - **Dark mode**: Settings > Preferences > Theme. Choose Light, Dark, or System.
 

@@ -68,7 +68,7 @@ Then set discoverability under **More options**:
 
 | Visibility | Who Can Access | Discoverable | Best For |
 |---|---|---|---|
-| **Listed** (**Show in public listings** on) | Anyone who can open it | Yes — search and the Community Gallery | Templates, showcases, community tools, marketing |
+| **Listed** (**Show in public listings** on) | Anyone who can open it | Yes — public listings and search. The Community Gallery after approval ([see below](#publish-to-community-gallery)) | Templates, showcases, community tools, marketing |
 | **Unlisted** (called Secret in earlier versions) | Anyone with the link | No — link-only access | Client portals, team tools, partner apps |
 | **Draft / unpublished** | Your workspace team only, inside Taskade | No | Apps you are still building, internal testing |
 

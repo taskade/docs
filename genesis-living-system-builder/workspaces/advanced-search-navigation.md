@@ -1,6 +1,6 @@
 ---
 description: >-
-  Find anything in Taskade fast with global search, smart filters, search operators, natural-language queries, the command palette, and keyboard navigation.
+  Find anything in Taskade fast with global search, result tabs and filters, the command palette, and keyboard navigation.
 ---
 
 # Advanced Search & Discovery
@@ -40,7 +40,7 @@ Click the **🔍 Search** button at the top of the left navigation pane, or pres
 {% step %}
 #### Enter Search Query
 
-Type your search terms, keywords, or natural language questions.
+Type your search terms or keywords.
 {% endstep %}
 
 {% step %}
@@ -63,29 +63,10 @@ Click any result to navigate directly to the relevant content.
 #### Keyword Search
 
 * **Simple Keywords**: `meeting notes`, `budget planning`, `client feedback`
-* **Exact Phrases**: `"quarterly review"`, `"project deadline"`
-* **Partial Matches**: `proj*` (finds project, projects, projections)
-* **Boolean Operators**: `marketing AND campaign NOT social`
 
-#### Natural Language Queries
+#### Narrow the Results
 
-* **Questions**: "What are my overdue tasks?"
-* **Commands**: "Show me projects from last month"
-* **Contextual**: "Find documents related to the Johnson account"
-* **Temporal**: "Tasks due this week in the marketing workspace"
-
-#### Advanced Search Operators
-
-```
-# Search operators and examples
-title:budget          # Search in titles only
-assignee:john         # Find content assigned to John
-created:2024          # Content created in 2024
-modified:last-week    # Recently modified content
-type:project          # Search only projects
-workspace:marketing   # Search within specific workspace
-tag:urgent            # Find content with specific tags
-```
+Type plain keywords. To narrow the list, pick a result tab (**Apps**, **All**, **Projects**, **Tasks**, or **Comments**) or click **Show filters**. To ask a question about your work in plain language, ask an [AI agent](../ai-features/ai-agents-getting-started.md) instead.
 
 ## Search Filters and Categories
 
@@ -342,7 +323,6 @@ Taskade opens the selected item.
 #### Mobile-Specific Features
 
 * **Location-Based Search**: Find content related to your current location
-* **Offline Search**: Search recently accessed content without internet
 * **Push Notifications**: Get notified when searched content is updated
 * **Quick Actions**: Perform actions directly from search results
 

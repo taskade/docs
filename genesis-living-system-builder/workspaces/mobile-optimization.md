@@ -529,10 +529,10 @@ const deviceCapabilities = {
 };
 ```
 
-#### **Service Worker for Offline Support**
+#### **Service Worker for Faster Repeat Loads**
 
 ```javascript
-// Offline functionality for mobile apps
+// Serve cached API responses for faster repeat loads (not an offline mode)
 self.addEventListener("fetch", (event) => {
   if (event.request.url.includes("/api/")) {
     event.respondWith(
