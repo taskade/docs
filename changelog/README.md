@@ -252,4 +252,4 @@ _"From a simple task to living software. From one prompt to one app. This is Gen
 
 ***
 
-_This timeline chronicles eight years of relentless innovation, from collaborative productivity to AI-powered Genesis. Follow us on_ [_Twitter_](https://twitter.com/taskade) _or join our_ [_Community_](https://www.taskade.com/feedback) _for real-time updates on the future of living software._
+_This timeline chronicles eight years of relentless innovation, from collaborative productivity to AI-powered Genesis. Follow us on_ [_X_](https://x.com/taskade) _or join our_ [_Community_](https://www.taskade.com/feedback) _for real-time updates on the future of living software._

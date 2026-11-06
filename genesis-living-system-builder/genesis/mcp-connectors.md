@@ -13,8 +13,6 @@ The **Model Context Protocol (MCP)** is an open standard that lets AI tools use 
 **TL;DR:** The hosted Taskade MCP server lets Claude, ChatGPT, Cursor, or VS Code work in your workspace on **every paid plan**. Setup: [Taskade MCP Server](https://www.taskade.com/learn/connect/mcp-server). The other direction runs in an [automation](https://www.taskade.com/learn/automation/automations-execution), where the [MCP Client connector](https://www.taskade.com/learn/connect/mcp-client-integration) calls a remote MCP server on every plan.
 {% endhint %}
 
-![Taskade Genesis MCP integrations](https://www.taskade.com/static_images/learn/genesis/mcp-connectors-9bd0c183.gif)
-
 ## Keep the MCP Paths Apart
 
 Each MCP path has its own setup and its own plan rule. Pick the path by what starts the work:

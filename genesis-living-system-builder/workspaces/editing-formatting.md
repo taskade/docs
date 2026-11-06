@@ -7,21 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Format Tasks & Sub-Tasks](#format-tasks-and-sub-tasks)
-- [Available Block Types](#available-block-types)
-- [Project Views](#project-views)
-- [Highlight & Style](#highlight-and-style)
-- [Drag to Reorder](#drag-to-reorder)
-- [Multi-Select Formatting](#multi-select-formatting)
-- [Add-Ons Menu](#add-ons-menu)
-- [Keyboard Shortcuts](#keyboard-shortcuts)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 Every Taskade project is a collection of **tasks** — structured like bullet points that can be nested into sub-tasks. You can format, style, reorder, and enhance tasks with add-ons like due dates, assignees, comments, timers, and custom fields.
@@ -122,11 +107,9 @@ Gantt Chart, Actionsheet, and Org Chart are on paid plans.
 
 Format multiple tasks at once:
 
-| Step | Action |
-|---|---|
-| 1 | Highlight multiple tasks or lines of text with the mouse cursor |
-| 2 | Apply formatting using the toolbar, slash commands, or keyboard shortcuts |
-| 3 | All selected items are formatted simultaneously |
+1. Highlight multiple tasks or lines of text with the mouse cursor
+2. Apply formatting using the toolbar, slash commands, or keyboard shortcuts
+3. All selected items are formatted simultaneously
 
 ---
 

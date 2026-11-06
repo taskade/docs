@@ -7,26 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [What Is Taskade Genesis?](#what-is-taskade-genesis)
-- [What You Can Build](#what-you-can-build)
-- [What Makes Taskade Genesis Different](#what-makes-taskade-genesis-different)
-- [The Tree of Life Architecture](#the-tree-of-life-architecture)
-  - [Memory: Projects & Databases](#memory-projects-and-databases)
-  - [Intelligence: Custom AI Agents](#intelligence-custom-ai-agents)
-  - [Execution: Automations & Integrations](#execution-automations-and-integrations)
-- [The Self-Reinforcing Feedback Loop](#the-self-reinforcing-feedback-loop)
-- [Workspace Intelligence Score](#workspace-intelligence-score)
-- [EVE: The Unified Intelligence](#eve-the-unified-intelligence)
-- [What EVE Can Do](#what-eve-can-do)
-- [Kits & Bundles](#kits-and-bundles-package-your-entire-workspace)
-- [Memory Architecture: 5 Memory Types](#memory-architecture-5-memory-types)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 This guide explains the core architecture behind **Taskade Genesis** — the AI platform that transforms natural language into complete, living business applications. You'll learn:
@@ -191,7 +171,6 @@ Execution means **intelligent automation workflows** — the nervous system that
 | **CRM & Sales** | HubSpot, Apollo |
 | **Social & Marketing** | Twitter/X, LinkedIn, Facebook, YouTube, Reddit, WordPress, Webflow, RSS |
 | **Development** | GitHub, HTTP/Webhooks |
-| **Storage** | Google Drive |
 
 Premium integrations such as Slack, Gmail, and Stripe need a paid plan, and webhook triggers need Pro or above. Free runs the standard connectors.
 

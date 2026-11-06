@@ -1754,7 +1754,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Project creation",
+            "description": "Project created",
             "content": {
               "application/json": {
                 "schema": {
@@ -1775,7 +1775,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful Project creation"
+                  "description": "Project created"
                 },
                 "example": {
                   "ok": true,
@@ -2204,7 +2204,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Project Copied",
+            "description": "Project copied",
             "content": {
               "application/json": {
                 "schema": {
@@ -2227,7 +2227,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful Project Copied"
+                  "description": "Project copied"
                 },
                 "example": {
                   "ok": true,
@@ -2292,7 +2292,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successful Project creation",
+            "description": "Project created",
             "content": {
               "application/json": {
                 "schema": {
@@ -2315,7 +2315,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful Project creation"
+                  "description": "Project created"
                 },
                 "example": {
                   "ok": true,
@@ -3023,7 +3023,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Task deletion",
+            "description": "Task deleted",
             "content": {
               "application/json": {
                 "schema": {
@@ -3040,7 +3040,7 @@
                     "ok"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful Task deletion"
+                  "description": "Task deleted"
                 },
                 "example": {
                   "ok": true
@@ -3226,7 +3226,7 @@
                     "id": "abc123DEF456",
                     "text": "Follow up with client",
                     "parentId": "abc123DEF456",
-                    "completed": false
+                    "completed": true
                   }
                 }
               }
@@ -3272,7 +3272,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful mark the Task as incomplete",
+            "description": "Task marked as incomplete",
             "content": {
               "application/json": {
                 "schema": {
@@ -3298,7 +3298,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful mark the Task as incomplete"
+                  "description": "Task marked as incomplete"
                 },
                 "example": {
                   "ok": true,
@@ -3437,7 +3437,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Tasks creation",
+            "description": "Tasks created",
             "content": {
               "application/json": {
                 "schema": {
@@ -3461,7 +3461,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful Tasks creation"
+                  "description": "Tasks created"
                 },
                 "example": {
                   "ok": true,
@@ -3556,7 +3556,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful move Task",
+            "description": "Task moved",
             "content": {
               "application/json": {
                 "schema": {
@@ -3582,7 +3582,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful move Task"
+                  "description": "Task moved"
                 },
                 "example": {
                   "ok": true,
@@ -3732,7 +3732,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Task assignment",
+            "description": "Task assigned",
             "content": {
               "application/json": {
                 "schema": {
@@ -3758,7 +3758,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful Task assignment"
+                  "description": "Task assigned"
                 },
                 "example": {
                   "ok": true,
@@ -3820,7 +3820,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Task Assignment deletion",
+            "description": "Task assignees removed",
             "content": {
               "application/json": {
                 "schema": {
@@ -3846,7 +3846,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful Task Assignment deletion"
+                  "description": "Task assignees removed"
                 },
                 "example": {
                   "ok": true,
@@ -4008,7 +4008,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Task Date deletion",
+            "description": "Task date deleted",
             "content": {
               "application/json": {
                 "schema": {
@@ -4034,7 +4034,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful Task Date deletion"
+                  "description": "Task date deleted"
                 },
                 "example": {
                   "ok": true,
@@ -4108,7 +4108,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Task Date create or update",
+            "description": "Task date set",
             "content": {
               "application/json": {
                 "schema": {
@@ -4134,7 +4134,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful Task Date create or update"
+                  "description": "Task date set"
                 },
                 "example": {
                   "ok": true,
@@ -4290,7 +4290,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Task Note creation/update",
+            "description": "Task note set",
             "content": {
               "application/json": {
                 "schema": {
@@ -4313,7 +4313,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful Task Note creation/update"
+                  "description": "Task note set"
                 },
                 "example": {
                   "ok": true,
@@ -4363,7 +4363,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Task Note deletion",
+            "description": "Task note deleted",
             "content": {
               "application/json": {
                 "schema": {
@@ -4377,7 +4377,7 @@
                     "ok"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful Task Note deletion"
+                  "description": "Task note deleted"
                 },
                 "example": {
                   "ok": true
@@ -4587,7 +4587,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful field value deletion",
+            "description": "Field value deleted",
             "content": {
               "application/json": {
                 "schema": {
@@ -4601,7 +4601,7 @@
                     "ok"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful field value deletion"
+                  "description": "Field value deleted"
                 },
                 "example": {
                   "ok": true
@@ -4682,7 +4682,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful field value create/update",
+            "description": "Field value set",
             "content": {
               "application/json": {
                 "schema": {
@@ -4696,7 +4696,7 @@
                     "ok"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful field value create/update"
+                  "description": "Field value set"
                 },
                 "example": {
                   "ok": true
@@ -7434,7 +7434,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Media deletion",
+            "description": "Media deleted",
             "content": {
               "application/json": {
                 "schema": {
@@ -7451,7 +7451,7 @@
                     "ok"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful Media deletion"
+                  "description": "Media deleted"
                 },
                 "example": {
                   "ok": true
@@ -7491,6 +7491,17 @@
           }
         ],
         "responses": {
+          "200": {
+            "description": "The binary content of the media file.",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
           "4XX": {
             "description": "Error description",
             "content": {
@@ -7523,6 +7534,17 @@
           }
         ],
         "responses": {
+          "200": {
+            "description": "A ZIP archive of every media file in the space.",
+            "content": {
+              "application/zip": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
           "4XX": {
             "description": "Error description",
             "content": {
@@ -7863,7 +7885,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful bundle import",
+            "description": "Bundle imported",
             "content": {
               "application/json": {
                 "schema": {
@@ -7884,7 +7906,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful bundle import"
+                  "description": "Bundle imported"
                 },
                 "example": {
                   "ok": true,
@@ -7934,7 +7956,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful ZIP bundle import",
+            "description": "ZIP bundle imported",
             "content": {
               "application/json": {
                 "schema": {
@@ -7955,7 +7977,7 @@
                     "item"
                   ],
                   "additionalProperties": false,
-                  "description": "Successful ZIP bundle import"
+                  "description": "ZIP bundle imported"
                 },
                 "example": {
                   "ok": true,

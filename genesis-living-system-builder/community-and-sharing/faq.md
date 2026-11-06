@@ -241,7 +241,7 @@ Visit [taskade.com/pricing](https://taskade.com/pricing) for current pricing.
 
 ### Can I try advanced features before upgrading?
 
-Yes! Most plans include a **free trial period** where you can test advanced features before committing to a paid subscription.
+The Free plan has no time limit. Start on Free, build and publish apps, and upgrade when you need more apps, premium integrations, or custom domains.
 
 ## Getting Support
 

@@ -236,35 +236,26 @@ Mobile Layout Best Practices:
 
 #### **Actionsheet View**
 
-```yaml
-Actionsheet View Features:
-  - A simple spreadsheet-style list (paid plans)
-  - Fewer columns than Table view, quick to scan on a phone
-  - Same project data as every other view
-  - Good for lightweight client lists and task queues
-```
+- A simple spreadsheet-style list (paid plans)
+- Fewer columns than Table view, quick to scan on a phone
+- Same project data as every other view
+- Good for lightweight client lists and task queues
 
 #### **Responsive Board View**
 
-```yaml
-Mobile Board Adaptations:
-  - Horizontal scrolling for swim lanes
-  - Card stacking for narrow screens
-  - Drag indicators for touch clarity
-  - Simplified card content for readability
-  - Quick actions via long press
-```
+- Horizontal scrolling for swim lanes
+- Card stacking for narrow screens
+- Drag indicators for touch clarity
+- Simplified card content for readability
+- Quick actions via long press
 
 #### **Calendar View Mobile Enhancements**
 
-```yaml
-Mobile Calendar Features:
-  - Month/week/day views optimized for small screens
-  - Touch-friendly date selection
-  - Quick event creation with smart defaults
-  - Gesture-based navigation between time periods
-  - Integration with device calendar apps
-```
+- Month/week/day views optimized for small screens
+- Touch-friendly date selection
+- Quick event creation with smart defaults
+- Gesture-based navigation between time periods
+- Integration with device calendar apps
 
 ### **View Switching on Mobile**
 

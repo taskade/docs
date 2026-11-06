@@ -7,23 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Add Tools to Agents](#add-tools-to-agents)
-- [Use Agent Tools](#use-agent-tools)
-- [Taskade Native Tools](#taskade-native-tools)
-  - [Agent Actions (Full Reference)](#agent-actions-full-reference)
-  - [Taskade AI (Cross-Agent)](#taskade-ai-cross-agent)
-  - [Media Tools](#media-tools)
-- [App Tools (Third-Party Integrations)](#app-tools-third-party-integrations)
-- [Build Custom Agent Tools](#build-custom-agent-tools)
-- [Human in the Loop](#human-in-the-loop)
-- [Enable / Disable Tools](#enable-disable-tools)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 Agent Tools are integrated add-ons that **augment your AI agents' capabilities** — allowing them to interact with Taskade projects, third-party platforms, and custom workflows. Tools transform agents from text-only assistants into autonomous actors that can take real actions on your behalf.
@@ -34,14 +17,12 @@ Agent Tools are integrated add-ons that **augment your AI agents' capabilities**
 
 ## Add Tools to Agents
 
-| Step | Action |
-|---|---|
-| 1 | Go to the **Agents** tab |
-| 2 | Click the three dots (⋯) next to your agent → **Edit agent** |
-| 3 | Open the **Tools** tab |
-| 4 | Click **Add tools** |
-| 5 | Select from Taskade tools and/or third-party integrations |
-| 6 | Save |
+1. Go to the **Agents** tab
+2. Click the three dots (⋯) next to your agent → **Edit agent**
+3. Open the **Tools** tab
+4. Click **Add tools**
+5. Select from Taskade tools and/or third-party integrations
+6. Save
 
 <!-- Screenshot: Tools tab with available integrations -->
 
@@ -150,13 +131,11 @@ Connect your agents to external platforms for real-world actions:
 
 Turn any automation flow into a reusable agent tool:
 
-| Step | Action |
-|---|---|
-| 1 | Open your agent's **Tools** tab |
-| 2 | Click **New tool** |
-| 3 | Design the automation flow (trigger → actions) |
-| 4 | Save as a custom tool |
-| 5 | The agent can now execute this flow on command |
+1. Open your agent's **Tools** tab
+2. Click **New tool**
+3. Design the automation flow (trigger → actions)
+4. Save as a custom tool
+5. The agent can now execute this flow on command
 
 **Example custom tools:**
 
@@ -180,12 +159,10 @@ For sensitive external actions, enable approval before execution:
 | **When to use** | Sending emails, posting to social media, creating CRM records, any external action |
 | **How it works** | Agent proposes the action → You review → Approve or Reject → Agent proceeds or stops |
 
-| Step | Action |
-|---|---|
-| 1 | Open the agent's **Tools** tab |
-| 2 | Set the approval mode of each sensitive tool to **Manual Approval** (routine tools can use **Automatic Approval**) |
-| 3 | When the agent wants to use a tool set to Manual Approval, you'll see a confirmation prompt |
-| 4 | Click **Approve** to proceed or **Reject** to stop |
+1. Open the agent's **Tools** tab
+2. Set the approval mode of each sensitive tool to **Manual Approval** (routine tools can use **Automatic Approval**)
+3. When the agent wants to use a tool set to Manual Approval, you'll see a confirmation prompt
+4. Click **Approve** to proceed or **Reject** to stop
 
 > **Tip:** Use Human in the Loop during the first few weeks of agent deployment. Once you trust the agent's judgment, switch routine tools to **Automatic Approval**.
 

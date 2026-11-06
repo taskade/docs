@@ -7,26 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Explore the Knowledge Tab](#explore-the-knowledge-tab)
-- [Train Your Agent](#train-your-agent)
-- [Supported Knowledge Sources](#supported-knowledge-sources)
-- [Training Methods](#training-methods)
-  - [Upload Documents](#upload-documents)
-  - [Use Web Resources](#use-web-resources)
-  - [Create Sources Manually](#create-sources-manually)
-  - [Dynamic Knowledge (Projects)](#dynamic-knowledge-projects)
-- [Bulk Training](#bulk-training)
-- [Look Up References](#look-up-references)
-- [Knowledge Backlinks](#knowledge-backlinks)
-- [What Projects Expose to Agents](#what-projects-expose-to-agents)
-- [Knowledge Best Practices](#knowledge-best-practices)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 Agent knowledge is the information your custom AI agents use to provide **contextual, accurate responses**. It combines pre-trained AI capabilities with **your own data** — documents, URLs, projects, and media — to create agents that truly understand your business.

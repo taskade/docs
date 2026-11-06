@@ -18,7 +18,7 @@ Taskade can receive data sent to the Webhook URL through parameters. The paramet
 }
 ```
 
-This example shows a webhook trigger and its data:
+This example shows the data that a webhook trigger receives:
 
 ```
 {
@@ -26,7 +26,5 @@ This example shows a webhook trigger and its data:
     "Title": "CEO of Taskade"
 }
 ```
-
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="A webhook trigger with Name and Title parameters"><figcaption></figcaption></figure>
 
 Setting up an inbound webhook involves setting up an automation flow. Learn more in the [Taskade Automation guide](https://www.taskade.com/learn/automation).

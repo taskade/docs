@@ -1,6 +1,6 @@
 ---
 description: >-
-  Remove Project from Agent Knowledge — Taskade REST API v1 reference: DELETE /agents/{agentId}/knowledge/project/{projectId}. Parameters, authentication,…
+  Taskade REST API v1 reference: DELETE /agents/{agentId}/knowledge/project/{projectId}. Parameters, authentication, and response schema.
 ---
 
 # Remove Project from Agent Knowledge

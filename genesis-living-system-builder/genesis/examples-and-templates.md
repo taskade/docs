@@ -148,7 +148,7 @@ Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace
 
 | Taskade Genesis App             | Prompt Used                                                                                                                                                                   | Preview Link                                                  |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| **SaaS Product Page**   | `"Create a modern project management SaaS landing page with a dark theme, dashboard mockup showing tasks and team collaboration features, animated elements, and clear CTAs"` | [Try it →](https://landing-page-mirage-jdglsxqn.taskade.app/) |
+| **SaaS Product Page**   | "Create a modern project management SaaS landing page with a dark theme, dashboard mockup showing tasks and team collaboration features, animated elements, and clear CTAs" | [Try it →](https://landing-page-mirage-jdglsxqn.taskade.app/) |
 | **Designer Portfolio**  | `"Build a clean portfolio landing page for a UX designer showcasing projects, testimonials, and contact information with modern design"`                                      | [Try it →](https://portfolio-palette-2fl0un79.taskade.app/)   |
 | **Local Business Site** | `"Design a homepage for my dental practice with booking feature, service descriptions, and testimonials"`                                                                     | [Try it →](https://dental-home-s4xmcak6.taskade.app/)         |
 
@@ -158,7 +158,7 @@ Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | **Lead Capture Form**  | `"Build a lead generation form for my digital marketing agency with fields for name, email, company, and budget range"`         | [Try it →](https://lead-capture-form-pmtoelno.taskade.app/)  |
 | **Event Registration** | `"Create an event registration form with attendee details, meal preferences, and payment integration via Stripe"`               | [Try it →](https://event-registration-68n46o73.taskade.app/) |
-| **Product Order Form** | `"Build a custom product order form for my handmade jewelry business with image gallery, size options, and quantity selection"` | [Try it →](https://product-order-form-xpi6oe6j.taskade.app/) |
+| **Product Order Form** | "Build a custom product order form for my handmade jewelry business with image gallery, size options, and quantity selection" | [Try it →](https://product-order-form-xpi6oe6j.taskade.app/) |
 
 💡 **Pro Tip:** These are real, working apps. Click the preview links to see exactly what Taskade Genesis can build for your business!
 
@@ -179,7 +179,7 @@ I run a restaurant and need customers to submit feedback about their dining expe
 **What Taskade Genesis Built:**
 
 * **Smart Feedback Form** - Easy rating system with photo uploads
-* **Instant Manager Alerts** - Slack notifications for low ratings (≤3 stars)
+* **Instant Manager Alerts** - Slack notifications for low ratings (3 stars or lower)
 * **Customer Thank You System** - Automated personalized emails
 * **Performance Dashboard** - Weekly analytics and trend tracking
 * **Response Management** - Track follow-up actions taken

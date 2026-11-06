@@ -59,7 +59,7 @@ If your first build didn't add sign-in, just tell Taskade Genesis *"add sign-in 
 {% step %}
 ### Show each client only their record
 
-This is what makes it a *portal* instead of a shared page: every client sees only their own data. Conceptually, each record in your portal is tied to the client it belongs to, and the login decides which records that person can open. Client A signs in and sees Client A's projects; Client B never sees them.
+This is what makes it a *portal* instead of a shared page: every client sees only their own data. When **Private entries** is on and the owner field is set, each record is tied to its owner, so Client A sees only Client A's projects. Without that setting, every signed-in client can open every record.
 
 Sign-in confirms who each client is, but it does not hide other clients' records by itself. Per-user data is off by default: open **Publish → More options → Private entries**, turn it on, and pick the field that stores each record's owner — see [Give each user only their own rows](add-login-and-roles.md#give-each-user-only-their-own-rows). Describe the goal in your prompt too (*"each client sees only their own projects and documents"*) so Taskade Genesis builds the app around it. To shape what's stored and shown, see how [Projects & Databases](../workspaces/projects-databases.md) hold your records, and how [GenesisAuth](../community-and-sharing/genesis-auth.md) confirms which client is signed in.
 

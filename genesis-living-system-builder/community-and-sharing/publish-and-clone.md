@@ -7,28 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [What "Publish" Means](#what-publish-means)
-- [App Visibility Settings](#app-visibility-settings)
-- [Publishing Strategies](#publishing-strategies)
-- [Password Protection](#password-protection)
-- [Publish to the Taskade App Factory](#publish-to-the-taskade-app-factory)
-- [Clone and Remix Apps](#clone-and-remix-apps)
-- [Paid Apps](#paid-apps)
-- [Custom Domains](#custom-domains)
-- [Advanced Sharing Options](#advanced-sharing-options)
-- [Embedding Your App](#embedding-your-app)
-- [SEO Customization](#seo-customization)
-- [White-Label Branding](#white-label-branding)
-- [App Sign-In (OIDC)](#app-sign-in-oidc)
-- [Security Considerations](#security-considerations)
-- [Sharing Methods at a Glance](#sharing-methods-at-a-glance)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 Once you've built an app with Taskade Genesis, you can share it with the world in multiple ways — from private team tools to public community templates. This guide covers every publishing, sharing, and distribution option available.
@@ -97,12 +75,10 @@ Genesis supports two publishing strategies:
 
 Add an extra layer of security to any published app:
 
-| Step | Action |
-|---|---|
-| 1 | Click **Publish** |
-| 2 | Under **Who can open it**, pick **Anyone with the password** |
-| 3 | Type your password and click **Update password** |
-| 4 | Share the password separately with authorized users |
+1. Click **Publish**
+2. Under **Who can open it**, pick **Anyone with the password**
+3. Type your password and click **Update password**
+4. Share the password separately with authorized users
 
 | Feature | Detail |
 |---|---|
@@ -117,12 +93,10 @@ Add an extra layer of security to any published app:
 
 Share your app with the entire Taskade community:
 
-| Step | Action |
-|---|---|
-| 1 | Under **More options**, turn on **Show in public listings** |
-| 2 | Click **"Publish to Community"** |
-| 3 | Your app enters the community approval queue |
-| 4 | Once approved, it appears in the public Taskade App Factory |
+1. Under **More options**, turn on **Show in public listings**
+2. Click **"Publish to Community"**
+3. Your app enters the community approval queue
+4. Once approved, it appears in the public Taskade App Factory
 
 ### Community App Metrics
 
@@ -145,12 +119,10 @@ Cloning is the fastest way to start — pick a working app, copy it to your work
 
 A public app is not cloneable by default. An app can be cloned only when its creator turns on **Let others clone** (**Free** or **Paid**). A kit with a **PRO** badge needs a paid plan to clone.
 
-| Step | Action |
-|---|---|
-| 1 | Open the app's public listing |
-| 2 | Click **"Clone"** (shown only on a free or paid kit) |
-| 3 | Review the contents Taskade lists, then choose the destination workspace |
-| 4 | The app is copied to your workspace with its components |
+1. Open the app's public listing
+2. Click **"Clone"** (shown only on a free or paid kit)
+3. Review the contents Taskade lists, then choose the destination workspace
+4. The app is copied to your workspace with its components
 
 To let others clone your own app, open **Publish → Let others clone** and pick **Free** or **Paid** (**Off** stops new clones). This control was called "Share as Template" and then "Share as kit" in earlier versions.
 
@@ -209,7 +181,7 @@ Taskade Genesis lets creators sell original apps as paid App Kits. Buyers pay be
 | **Scope** | Cloned paid apps are scoped to the buyer's workspace only. |
 | **Re-selling** | Buyers can customize and publish their copy, but cannot sell it as their original work. |
 | **Clone ancestry** | Taskade tracks clone lineage — each paid copy is linked to the original app and its creator. |
-| **No revenue figures here** | Payout terms and percentages are shown in **Earnings**, not documented here — they may change. |
+| **Payouts** | See **Earnings** for current payout terms. |
 
 {% hint style="info" %}
 Paid apps do not affect the buyer's ability to customize or extend the app within their own workspace. An app cloned from another creator cannot be sold as original work, which protects creator rights.
@@ -228,13 +200,11 @@ Connect your own domain to any published Genesis app:
 | **SSL** | Automatic |
 | **Configuration** | App settings → Launch → Domains |
 
-| Step | Action |
-|---|---|
-| 1 | Open **App settings** → **Launch** → **Domains** |
-| 2 | Enter your custom domain (e.g., `app.yourcompany.com`) |
-| 3 | Add the provided CNAME record (and the SSL record) to your DNS provider |
-| 4 | Wait for DNS propagation (up to 48 hours) |
-| 5 | SSL certificate is provisioned automatically |
+1. Open **App settings** → **Launch** → **Domains**
+2. Enter your custom domain (e.g., `app.yourcompany.com`)
+3. Add the provided CNAME record (and the SSL record) to your DNS provider
+4. Wait for DNS propagation (up to 48 hours)
+5. SSL certificate is provisioned automatically
 
 ---
 

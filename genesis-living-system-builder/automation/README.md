@@ -128,20 +128,13 @@ Connect your workflows to popular tools across the [Taskade integrations](https:
 | AI & Media       | Web Search, Web Scraping, YouTube Transcription, Document Extraction |
 | Utilities        | Schedule, Delay, Loop, Branch, Filter                                |
 
-### Where to go next
-
-* Build your first workflow: [Actions & Triggers](actions.md)
-* Step catalog: [Actions & Triggers](actions.md)
-* Pick tools to connect: [Integration Overview](comprehensive-integration-guide.md)
-* Full list of connectors: [Integration Options](integrations.md)
-* **Reach external tools** (Slack, Stripe, Gmail, HubSpot) with [integrations](integrations.md), or call any MCP server from an automation with the MCP Client step — see [MCP Connectors](../genesis/mcp-connectors.md).
-* Troubleshoot: [Living System Troubleshooting](../community-and-sharing/troubleshooting.md)
-
 ## Next steps
 
 * [Action & Trigger Reference](actions.md) — pick a trigger and add your first actions
 * [Automation Recipes](recipes.md) — start from a proven workflow
 * [Integration Overview](comprehensive-integration-guide.md) — connect the tools you already use
+* [Integration Options](integrations.md) — see the full list of connectors
+* [MCP Connectors](../genesis/mcp-connectors.md) — call any MCP server from an automation with the MCP Client step
 * [Living System Troubleshooting](../community-and-sharing/troubleshooting.md) — fix issues and get help
 
 {% hint style="info" %}

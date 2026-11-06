@@ -15,9 +15,11 @@ The quality of your prompt directly impacts the quality of your app. Here's how 
 
 **Industry + Users + Problem + Solution + Outcome = Great Results**
 
+{% code overflow="wrap" %}
 ```
 I run a [INDUSTRY] and [USERS] need to [PROBLEM] because [CONTEXT]. They should be able to [SOLUTION] and when they do, [OUTCOME] should happen automatically.
 ```
+{% endcode %}
 
 ### Be Specific About Your Industry
 
@@ -100,14 +102,18 @@ I run a [INDUSTRY] and [USERS] need to [PROBLEM] because [CONTEXT]. They should 
 ### Make One Change at a Time
 
 ❌ **Too many changes at once:**
+{% code overflow="wrap" %}
 ```
 "Make the button bigger, change the colors, add a progress bar, connect to our CRM, and add a payment system"
 ```
+{% endcode %}
 
 ✅ **One focused change:**
+{% code overflow="wrap" %}
 ```
 "Make the submit button bigger and more prominent so it's easier to find on mobile devices"
 ```
+{% endcode %}
 
 **Why this matters:** When you change multiple things at once, you can't tell which change caused which result. If something breaks, you won't know what to fix.
 
@@ -201,50 +207,66 @@ I run a [INDUSTRY] and [USERS] need to [PROBLEM] because [CONTEXT]. They should 
 ### Over-Engineering
 
 ❌ **Building for imaginary future needs:**
+{% code overflow="wrap" %}
 ```
 "Add advanced analytics, multi-language support, and integration with 10 different services in case we need them someday"
 ```
+{% endcode %}
 
 ✅ **Building for current reality:**
+{% code overflow="wrap" %}
 ```
 "Build a simple feedback form that works well for our current customers and can be enhanced later if needed"
 ```
+{% endcode %}
 
 ### Ignoring User Feedback
 
 ❌ **Assuming you know what users want:**
+{% code overflow="wrap" %}
 ```
 "The app is perfect as designed, users just need to learn how to use it properly"
 ```
+{% endcode %}
 
 ✅ **Listening and adapting:**
+{% code overflow="wrap" %}
 ```
 "Three people mentioned the same confusion, let's fix that before rolling out to more users"
 ```
+{% endcode %}
 
 ### Perfectionism Paralysis
 
 ❌ **Waiting for perfection:**
+{% code overflow="wrap" %}
 ```
 "We can't launch until every possible feature is built and every edge case is handled"
 ```
+{% endcode %}
 
 ✅ **Iterative improvement:**
+{% code overflow="wrap" %}
 ```
 "Let's launch with the core features working well and add enhancements based on real usage"
 ```
+{% endcode %}
 
 ### Feature Creep
 
 ❌ **Adding features without purpose:**
+{% code overflow="wrap" %}
 ```
 "Let's add a chat feature and social media integration because other apps have them"
 ```
+{% endcode %}
 
 ✅ **Purpose-driven development:**
+{% code overflow="wrap" %}
 ```
 "Our users are asking for a way to communicate with our team, so let's add a simple contact form"
 ```
+{% endcode %}
 
 ## Success Metrics
 
@@ -271,6 +293,7 @@ I run a [INDUSTRY] and [USERS] need to [PROBLEM] because [CONTEXT]. They should 
 ### Leverage the AI Agent
 
 **Use the built-in AI for ongoing improvements:**
+{% code overflow="wrap" %}
 ```
 "What features should I add to make this app better for my restaurant customers?"
 
@@ -278,6 +301,7 @@ I run a [INDUSTRY] and [USERS] need to [PROBLEM] because [CONTEXT]. They should 
 
 "What integrations would be most useful for a customer feedback app?"
 ```
+{% endcode %}
 
 ### Stay Updated
 

@@ -276,10 +276,12 @@ Every Monday at 9 AM:
 
 **Begin with single-step automations:**
 
+{% code overflow="wrap" %}
 ```
 Simple: "When task completed → Send notification"
 Complex: "When high-priority task completed → Update CRM → Send personalized thank-you → Schedule follow-up"
 ```
+{% endcode %}
 
 ### Test Thoroughly Before Activation
 

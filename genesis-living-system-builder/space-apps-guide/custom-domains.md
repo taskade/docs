@@ -145,7 +145,7 @@ If HTTPS is still off after about 10 minutes, the panel offers an optional extra
 
 **Latest Enhancement:** Advanced custom domain support with seamless Cloudflare SSL integration for maximum security and performance.
 
-### Cloudflare SSL Benefits:
+### Cloudflare SSL Benefits
 
 **Automatic SSL Certificate Management:**
 
@@ -167,14 +167,14 @@ If HTTPS is still off after about 10 minutes, the panel offers an optional extra
 * **Analytics Integration** - Cloudflare analytics integrated with Taskade insights
 * **Rate Limiting** - Advanced protection against abuse
 
-### How Cloudflare SSL Works:
+### How Cloudflare SSL Works
 
 1. **Domain Connection** - Connect your domain to Taskade from any DNS provider
 2. **Automatic SSL** - Cloudflare provisions and manages SSL certificates
 3. **DNS Propagation** - Cloudflare handles DNS routing and optimization
 4. **Live Deployment** - Your Genesis app is live with enterprise-grade security
 
-### Setup with Cloudflare:
+### Setup with Cloudflare
 
 1. **Any DNS provider works** - Taskade serves custom domains through Cloudflare's network on your behalf; you do **not** need a Cloudflare account — any DNS provider that can create a CNAME record works
 2. **Add CNAME Record** - Point your subdomain to `external.taskade.com`. If your DNS is on Cloudflare, set the record to **DNS only** (gray cloud), not Proxied
@@ -263,7 +263,7 @@ Once your app is on a custom domain, enhance the branding:
 
 ```
 ❌ "Powered by Taskade"
-✅ "© 2025 Your Company Name"
+✅ "© Your Company Name"
 
 ❌ "Built with Genesis"  
 ✅ Custom footer with your branding

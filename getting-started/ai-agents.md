@@ -12,13 +12,13 @@ Taskade turns one prompt into a running app. Your own AI agent (Claude, Codex, C
 {% endhint %}
 
 ```text
-┌──────────────────────────┐      ┌──────────────────────────┐
+┌──────────────────────────┐      ┌───────────────────────────┐
 │  Your AI agent           │      │  Taskade workspace        │
 │  Claude · Codex · Cursor │─MCP─▶│  Projects   (memory)      │
 │  ChatGPT · VS Code       │      │  Agents     (intelligence)│
 │                          │      │  Automations (execution)  │
 │  reads SKILL.md first    │      │  Taskade Genesis app      │
-└──────────────────────────┘      └──────────────────────────┘
+└──────────────────────────┘      └───────────────────────────┘
 ```
 
 ## Connect in two minutes
@@ -52,9 +52,11 @@ Full setup for each client, the tool list, and fixes: [Hosted Taskade MCP](../ap
 
 [`https://www.taskade.com/SKILL.md`](https://www.taskade.com/SKILL.md) is a short skill file written for AI agents. It tells an agent how to connect, which tools fit each job, how app kits work, and the safety rules. Paste this into your agent:
 
+{% code overflow="wrap" %}
 ```text
 Read https://www.taskade.com/SKILL.md, then connect to Taskade and list my workspaces.
 ```
+{% endcode %}
 
 ## Machine-readable entry points
 

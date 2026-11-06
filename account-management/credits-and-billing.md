@@ -7,22 +7,6 @@ description: >-
 
 ***
 
-## Table of Contents
-
-* [How AI Credits Work](credits-and-billing.md#how-ai-credits-work)
-* [Free Credits](credits-and-billing.md#free-credits)
-* [Paid Plan Credits](credits-and-billing.md#paid-plan-credits)
-* [What Your App Will Cost](credits-and-billing.md#what-your-app-will-cost)
-* [Credit Packs](credits-and-billing.md#credit-packs)
-* [Auto Top-Up](credits-and-billing.md#auto-top-up)
-* [Model-Specific Pricing](credits-and-billing.md#model-specific-pricing)
-* [Viewing Your Usage](credits-and-billing.md#viewing-your-usage)
-* [What Happens When You Run Out](credits-and-billing.md#what-happens-when-you-run-out)
-* [FAQ](credits-and-billing.md#faq)
-* [Related](credits-and-billing.md#related)
-
-***
-
 ## How AI Credits Work
 
 Every AI request in Taskade — prompting an agent, running an automation with AI, generating a Taskade Genesis app — consumes credits. The credit cost depends on the model:

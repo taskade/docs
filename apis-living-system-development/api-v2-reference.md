@@ -53,7 +53,7 @@ Taskade ships **two** public HTTP APIs. They share the same authentication.
 | Live spec | [/api/documentation/v1](https://www.taskade.com/api/documentation/v1) | [/api/documentation/v2](https://www.taskade.com/api/documentation/v2) |
 | Task create / update / delete | ✅ Full CRUD | ✅ Create, update, delete, move |
 | Task assignees / dates / notes / fields | ✅ | ✅ |
-| Read a **single** task, date, note or field | ✅ `GET /projects/{projectId}/tasks/{taskId}`, `…/date`, `…/note`, `…/fields/{fieldId}` | ❌ list-only (`listTasks`, `listBlocks`, `listFields`) |
+| Read a **single** task, date, note or field | ✅ `GET …/tasks/{taskId}`, `…/date`, `…/note`, `…/fields/{fieldId}` | ❌ list-only (`listTasks`, `listBlocks`, `listFields`) |
 | Project rename, archive, or export | ❌ (`GET /projects/{projectId}` is read-only) | ✅ `renameProject`, `archiveProject`, `exportProject` |
 | Project delete | ❌ | ❌ |
 | Prompt an agent | ❌ | ✅ `promptAgent` |
@@ -66,7 +66,7 @@ The v2 task operations are `createTask`, `updateTask`, `deleteTask` and `moveTas
 
 Use **v2** for LLM tools, agent prompts, or webhook registration. One verb per endpoint maps directly to a tool definition.
 
-Use **v1** for its longer stability record. Also use v1 to read one task, date, note, or field directly.
+Use **v1** for its longer stability record. Also use v1 to read one task, date, note, or field directly, with `GET /projects/{projectId}/tasks/{taskId}` and its `/date`, `/note` and `/fields/{fieldId}` sub-paths.
 
 Every row in this table is checkable. Each row comes from the two live OpenAPI documents. The generated [Action API reference](https://www.taskade.com/docs/actions) and [REST API reference](https://www.taskade.com/docs/rest) are built from those same specs.
 
@@ -153,8 +153,6 @@ export AGENT_ID="your_agent_id"
 
 {% tab title="cURL" %}
 
-#### cURL
-
 ```bash
 curl -s -X POST https://www.taskade.com/api/v2/listSpaces \
   -H "Authorization: Bearer $TASKADE_TOKEN" \
@@ -165,8 +163,6 @@ curl -s -X POST https://www.taskade.com/api/v2/listSpaces \
 {% endtab %}
 
 {% tab title="Python" %}
-
-#### Python
 
 ```python
 import os
@@ -183,8 +179,6 @@ print(res.json()["items"])
 {% endtab %}
 
 {% tab title="TypeScript" %}
-
-#### TypeScript
 
 ```typescript
 const res = await fetch("https://www.taskade.com/api/v2/listSpaces", {
@@ -264,8 +258,6 @@ curl -s -X POST https://www.taskade.com/api/v2/getProject \
 
 {% tab title="cURL" %}
 
-#### cURL
-
 ```bash
 curl -s -X POST https://www.taskade.com/api/v2/createProject \
   -H "Authorization: Bearer $TASKADE_TOKEN" \
@@ -282,8 +274,6 @@ EOF
 {% endtab %}
 
 {% tab title="Python" %}
-
-#### Python
 
 ```python
 import os
@@ -359,8 +349,6 @@ Each call uses the workspace's AI credits, the same as an agent chat in the app.
 
 {% tab title="cURL" %}
 
-#### cURL
-
 ```bash
 curl -s -X POST https://www.taskade.com/api/v2/promptAgent \
   -H "Authorization: Bearer $TASKADE_TOKEN" \
@@ -377,8 +365,6 @@ EOF
 {% endtab %}
 
 {% tab title="Python" %}
-
-#### Python
 
 ```python
 import os
@@ -399,8 +385,6 @@ print(res.json()["summary"])
 {% endtab %}
 
 {% tab title="TypeScript" %}
-
-#### TypeScript
 
 ```typescript
 const res = await fetch("https://www.taskade.com/api/v2/promptAgent", {

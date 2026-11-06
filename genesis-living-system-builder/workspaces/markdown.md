@@ -7,22 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Where Markdown Works in Taskade](#where-markdown-works-in-taskade)
-- [Supported Syntax Reference](#supported-syntax-reference)
-- [Markdown in the Project Editor](#markdown-in-the-project-editor)
-- [Markdown in Chat & Comments](#markdown-in-chat-and-comments)
-- [Markdown in Agent Chat](#markdown-in-agent-chat)
-- [Markdown in AI Project Studio](#markdown-in-ai-project-studio)
-- [Markdown in Browser Widgets & Quick Add](#markdown-in-browser-widgets-and-quick-add)
-- [Import & Export Markdown](#import-and-export-markdown)
-- [Add Markdown to Agent Knowledge](#add-markdown-to-agent-knowledge)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 Markdown is a lightweight markup language that uses characters like `*`, `#`, and `-` to format text. Taskade supports Markdown across **several surfaces** — from the project editor to AI agent chats, import/export, and browser widgets.
@@ -97,19 +81,15 @@ Type Markdown syntax directly while editing tasks:
 
 ### Chat
 
-| Step | Action |
-|---|---|
-| 1 | Open the project chat box |
-| 2 | Wrap your message in Markdown syntax |
-| 3 | Taskade renders the formatted text |
+1. Open the project chat box
+2. Wrap your message in Markdown syntax
+3. Taskade renders the formatted text
 
 ### Comments
 
-| Step | Action |
-|---|---|
-| 1 | Select a task → Click **+** → Select **Comments** (or press C) |
-| 2 | Type your comment with Markdown syntax |
-| 3 | Click send — Markdown is rendered |
+1. Select a task → Click **+** → Select **Comments** (or press C)
+2. Type your comment with Markdown syntax
+3. Click send — Markdown is rendered
 
 ---
 
@@ -130,13 +110,11 @@ Use Markdown to structure prompts and get better AI responses:
 
 Use `.md` files as context for AI-generated projects:
 
-| Step | Action |
-|---|---|
-| 1 | Click **+ Create new** → **AI Project** |
-| 2 | Describe the project you want |
-| 3 | Click the upload dropdown → **Upload Files** |
-| 4 | Upload your `.md` files as context |
-| 5 | Generate the project — AI uses your Markdown as input |
+1. Click **+ Create new** → **AI Project**
+2. Describe the project you want
+3. Click the upload dropdown → **Upload Files**
+4. Upload your `.md` files as context
+5. Generate the project — AI uses your Markdown as input
 
 ---
 
@@ -161,11 +139,9 @@ Use `.md` files as context for AI-generated projects:
 
 ### Export
 
-| Step | Action |
-|---|---|
-| 1 | Click the three dots (⋯) at the top-right of your project |
-| 2 | Select **Export** → Choose **Markdown** |
-| 3 | Download the `.md` file |
+1. Click the three dots (⋯) at the top-right of your project
+2. Select **Export** → Choose **Markdown**
+3. Download the `.md` file
 
 ---
 
@@ -173,14 +149,12 @@ Use `.md` files as context for AI-generated projects:
 
 Create Markdown knowledge sources directly in your agent:
 
-| Step | Action |
-|---|---|
-| 1 | Go to your workspace → **AI Agents** tab → Click the arrow next to the name of your agent → **Edit agent** |
-| 2 | Open the **Knowledge** tab |
-| 3 | Click **Add Markdown/Text** |
-| 4 | Paste Markdown or plain text into the pop-up |
-| 5 | Click **Add to Knowledge** |
-| 6 | Click **Update** in the Knowledge tab to save |
+1. Go to your workspace → **AI Agents** tab → Click the arrow next to the name of your agent → **Edit agent**
+2. Open the **Knowledge** tab
+3. Click **Add Markdown/Text**
+4. Paste Markdown or plain text into the pop-up
+5. Click **Add to Knowledge**
+6. Click **Update** in the Knowledge tab to save
 
 ---
 

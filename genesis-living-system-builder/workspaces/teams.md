@@ -7,21 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Key Terminology](#key-terminology)
-- [Workspace Organization Methods](#workspace-organization-methods)
-  - [Method 1: Workspace per Department](#method-1-workspace-per-department)
-  - [Method 2: One Workspace, Folders per Department](#method-2-one-workspace-folders-per-department)
-  - [Method 3: One Workspace, Folders per Function](#method-3-one-workspace-folders-per-function)
-- [Permission System](#permission-system)
-- [Step-by-Step Setup](#step-by-step-setup)
-- [AI-Powered Team Features](#ai-powered-team-features)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 Taskade is designed for teams of any size. This guide covers the different ways to organize your workspace — from small teams to large enterprises — and how AI-powered features amplify team productivity.
@@ -124,31 +109,25 @@ Taskade uses **role-based access from Owner to Viewer**:
 
 ### Create a Workspace
 
-| Step | Action |
-|---|---|
-| 1 | In your dashboard, click the **+** icon on the left sidebar |
-| 2 | Enter the workspace name |
-| 3 | _(Optional)_ Choose a workspace logo |
-| 4 | _(Optional)_ Invite team members |
+1. In your dashboard, click the **+** icon on the left sidebar
+2. Enter the workspace name
+3. _(Optional)_ Choose a workspace logo
+4. _(Optional)_ Invite team members
 
 ### Create Folders
 
-| Step | Action |
-|---|---|
-| 1 | Open your workspace |
-| 2 | Click **New folder** under Home |
-| 3 | Enter the folder name |
-| 4 | _(Optional)_ Choose a folder logo |
-| 5 | _(Optional)_ Share the folder with specific team members |
+1. Open your workspace
+2. Click **New folder** under Home
+3. Enter the folder name
+4. _(Optional)_ Choose a folder logo
+5. _(Optional)_ Share the folder with specific team members
 
 ### Create Projects
 
-| Step | Action |
-|---|---|
-| 1 | Open a folder |
-| 2 | Click **+ Create new** (top-right corner) |
-| 3 | Type the project title |
-| 4 | _(Optional)_ Share the project to collaborate |
+1. Open a folder
+2. Click **+ Create new** (top-right corner)
+3. Type the project title
+4. _(Optional)_ Share the project to collaborate
 
 ---
 

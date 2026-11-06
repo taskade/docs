@@ -205,9 +205,11 @@ If the problem stays, file an issue at [github.com/taskade/taskade/issues](https
 
 Paste this block into your coding agent to connect it.
 
+{% code overflow="wrap" %}
 ```text
 Start the local Taskade MCP server with "npx -y @taskade/mcp-server" over stdio. Set the environment variable TASKADE_API_KEY to a personal access token from https://www.taskade.com/settings/api. First call workspacesGet and report the workspaces you can see. Do not write anything until I confirm.
 ```
+{% endcode %}
 
 ## Next steps
 

@@ -225,8 +225,8 @@ Every suggestion, whether it's a small improvement or a major feature idea, help
 Love using Taskade? Here's how you can help spread the word and support our growth:
 
 #### **⭐ Leave App Store Reviews**
-Your positive reviews help others discover Taskade:
-- **App Store**: Search for "Taskade" and leave a 5-star review
+Your reviews help others discover Taskade:
+- **App Store**: Search for "Taskade" and leave a review
 - **Google Play**: Find Taskade and share your experience
 - **Why it matters**: Reviews help new users find our apps in searches
 

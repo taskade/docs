@@ -7,17 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Analytics Dashboard](#analytics-dashboard)
-- [Metrics Breakdown](#metrics-breakdown)
-- [Using Analytics to Improve Your App](#using-analytics-to-improve-your-app)
-- [Troubleshooting](#troubleshooting)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 On Business plans and up, every published Taskade Genesis app includes a **built-in analytics dashboard**. Track visitors, understand behavior, and optimize your apps — no third-party tools required.

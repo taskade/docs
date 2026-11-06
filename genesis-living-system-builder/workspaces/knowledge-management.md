@@ -524,56 +524,6 @@ Team Responsibilities:
 
 ***
 
-## Success Stories & ROI
-
-### **Knowledge Management Impact**
-
-#### **Customer Support Transformation**
-
-```yaml
-Before Knowledge Management:
-  - Average response time: 4.5 hours
-  - First-contact resolution: 62%
-  - Agent confidence score: 6.8/10
-  - Training time for new agents: 3 weeks
-
-After Knowledge Management:
-  - Average response time: 45 minutes (-83%)
-  - First-contact resolution: 89% (+44%)
-  - Agent confidence score: 9.1/10 (+34%)
-  - Training time for new agents: 1 week (-67%)
-
-ROI Impact:
-  - 60% reduction in support costs
-  - 40% increase in customer satisfaction
-  - 75% faster agent onboarding
-  - 300% improvement in knowledge utilization
-```
-
-#### **Sales Enablement Success**
-
-```yaml
-Sales Team Results:
-  Knowledge Implementation:
-    - Centralized sales materials and playbooks
-    - Real-time competitor intelligence
-    - Customer case study library
-    - Product information automation
-
-  Performance Improvements:
-    - Sales cycle length: -35%
-    - Win rate: +28%
-    - Quote accuracy: +45%
-    - New rep ramp time: -50%
-    
-  Business Impact:
-    - $2.3M additional revenue from faster sales cycles
-    - 40% reduction in proposal preparation time
-    - 90% of reps exceeding quota (vs 65% before)
-```
-
-***
-
 ## Getting Started Checklist
 
 ### **Week 1: Foundation Setup**

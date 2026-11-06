@@ -15,7 +15,7 @@ description: >-
 
 ## What Are Space Apps?
 
-Space Apps are Genesis's way of turning your ideas into real, professional websites. Instead of building internal tools for your team, Space Apps create polished websites that your customers can visit and use—complete with their own web address!
+Space Apps are the Taskade Genesis way of turning your ideas into real, professional websites. Instead of building internal tools for your team, Space Apps create polished websites that your customers can visit and use—complete with their own web address!
 
 ### **Space Apps vs. Project-Based Apps**
 
@@ -80,16 +80,7 @@ Space Apps deploy automatically with global distribution:
 
 ### Responsive Design & Mobile Optimization
 
-Space Apps are built mobile-first using Tailwind CSS:
-
-```css
-/* Generated responsive components */
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-    {/* Card content */}
-  </div>
-</div>
-```
+Space Apps are built mobile-first using Tailwind CSS.
 
 **Mobile Optimization Features:**
 
@@ -278,23 +269,6 @@ Space Apps include enterprise-grade security:
 * **SQL injection prevention**
 * **XSS attack protection**
 * **HTTPS/TLS encryption** for all traffic
-
-### Data Privacy & GDPR
-
-Compliance features for data protection:
-
-```javascript
-// Generated privacy controls
-const PrivacyConsent = () => {
-  return (
-    <div className="privacy-notice">
-      <p>We use cookies to enhance your experience...</p>
-      <button onClick={handleAccept}>Accept</button>
-      <button onClick={handleDecline}>Decline</button>
-    </div>
-  );
-};
-```
 
 ### Access Control & Authentication
 

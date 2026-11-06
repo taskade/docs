@@ -71,16 +71,18 @@ The outbound direction runs through automations, not through agents.
 
 Paste this block into your coding agent to connect it.
 
+{% code overflow="wrap" %}
 ```text
 Connect to the hosted Taskade MCP server at https://www.taskade.com/mcp over Streamable HTTP. If you support interactive sign-in, use OAuth 2.0 with PKCE and dynamic client registration. If you can only send headers, send "Authorization: Bearer <token>" with a personal access token from https://www.taskade.com/settings/api. The workspace must be on a paid Taskade plan. First call list_spaces and page until hasNextPage is false. Then call inspect_space on one workspace and report what you can see. Do not write anything until I confirm.
 ```
+{% endcode %}
 
 ## Next steps
 
 - [Hosted Taskade MCP](genesis-app-mcp.md): set up Claude, Claude Code, Codex, Cursor, VS Code, ChatGPT, or Windsurf.
 - [Workspace MCP](workspace-mcp.md): install the local server.
 - [MCP Client connector](https://www.taskade.com/learn/connect/mcp-client-integration): call another MCP server from an automation.
-- [Taskade API overview](developers/api.md): every Taskade API surface in one table.
+- [Taskade API overview](developers/api.md): every Taskade API surface on one page.
 
 ---
 

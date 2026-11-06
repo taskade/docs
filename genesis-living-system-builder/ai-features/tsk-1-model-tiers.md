@@ -16,7 +16,7 @@ TSK-1 is not a single model. It is an **orchestration layer** — the intelligen
 ## How TSK-1 fits in the stack
 
 ```
-Taskade → Genesis → EVE → TSK-1 → Workspace DNA → Running workspace
+Taskade → Taskade Genesis → Taskade EVE → TSK-1 → Workspace DNA → Running workspace
 ```
 
 TSK-1 sits between the **Taskade EVE** persona and **Workspace DNA** — it is the engine that decides *how* to execute a given request across the Memory (projects), Intelligence (agents), and Execution (automations) pillars, and the Taskade Genesis apps built on them.

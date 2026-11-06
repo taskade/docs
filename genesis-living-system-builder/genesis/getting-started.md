@@ -11,15 +11,9 @@ description: >-
 
 ## What is Taskade Genesis?
 
-Taskade Genesis turns a single prompt into a working app.
+Taskade Genesis turns a single prompt into a working app. It creates the UI and connects it to your workspace. You iterate by describing changes in plain English.
 
-It creates the UI and connects it to your workspace.
-
-You iterate by describing changes in plain English.
-
-Want the deeper “why it works” model?
-
-Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
+Want the deeper “why it works” model? Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
 {% hint style="info" %}
 **Two ways to start.** Build from a blank prompt (this guide), or **clone a ready-made app** — browse the [community gallery](https://www.taskade.com/apps) and [Taskade's official kits](https://www.taskade.com/@taskade), clone one, and customize it. Either way, you land in the same Taskade Genesis editor.
@@ -72,14 +66,6 @@ Start by thinking about something in your business that could work better. Commo
 **Your turn:** Write down the ONE business problem you want to solve first.
 
 ***
-
-{% hint style="info" %}
-Skip the theory.
-
-Follow the steps below.
-
-If you want the underlying model, read [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
-{% endhint %}
 
 ## Step 2: Craft Your App Description (2 minutes)
 

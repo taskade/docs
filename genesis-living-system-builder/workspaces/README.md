@@ -5,7 +5,7 @@ description: >-
 
 # Workspaces: Living DNA Control
 
-Workspaces are the enhanced foundational containers that organize your teams, projects, and resources in Taskade. Each workspace creates an isolated collaborative environment with dedicated members, customizable settings, granular permission controls, and advanced enterprise capabilities. To see how workspaces fit alongside the full set of [Taskade features](https://www.taskade.com/features), explore the complete product overview.
+Workspaces are the containers that organize your teams, projects, and resources in Taskade. Each workspace creates an isolated collaborative environment with dedicated members, customizable settings, granular permission controls, and advanced enterprise capabilities. To see how workspaces fit alongside the full set of [Taskade features](https://www.taskade.com/features), explore the complete product overview.
 
 ## What is a Workspace?
 
@@ -18,12 +18,11 @@ Workspaces are the enhanced foundational containers that organize your teams, pr
 
 **Key Benefits**
 
-* **Enhanced Organized Collaboration**: Keep different teams and projects clearly separated with advanced coordination
-* **Enterprise Security Control**: Advanced access control with audit capabilities and enhanced data protection
-* **Superior Unified Communication**: Enhanced centralized chat, video calls, and intelligent notifications
-* **Advanced Seamless Integration**: Superior AI agents, intelligent automations, and shared templates across workspace
-* **Mission-Critical Reliability**: Enterprise-grade stability for business operations
-* **Global Performance**: Worldwide synchronization and speed optimization
+* **Separate teams and projects**: Keep each team's projects, members, and files in their own workspace
+* **Access control**: Give each member a role, with role-based access from Owner to Viewer
+* **Built-in communication**: Chat, video calls, and notifications inside your projects
+* **Shared AI and automation**: AI agents, automations, and templates are available across the workspace
+* **Real-time sync**: Changes sync across the web, desktop, and mobile apps
 
 ## Creating a Workspace
 

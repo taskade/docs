@@ -7,20 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Let Taskade EVE Fix It First](#let-taskade-eve-fix-it-first)
-- [Taskade Genesis Debugging Framework (GDF)](#genesis-debugging-framework-gdf)
-  - [Layer 1: Failure Classification](#layer-1-failure-classification)
-  - [Layer 2: Diagnostic Checklist](#layer-2-diagnostic-checklist)
-  - [Layer 3: Root Cause Documentation](#layer-3-root-cause-documentation)
-- [Genesis Prompting Protocol (GPP)](#genesis-prompting-protocol-gpp)
-- [Putting It All Together](#putting-it-all-together)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 When building apps with Genesis, you may run into issues where components don't render, navigation breaks, or data doesn't display correctly. These are common growing pains of AI-generated codebases and they follow predictable patterns.

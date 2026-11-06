@@ -7,19 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [What You Can Use as Context](#what-you-can-use-as-context)
-- [Provide App Context](#provide-app-context)
-  - [Initial Prompt (New App)](#initial-prompt-new-app)
-  - [Follow-Up Prompts (Existing App)](#follow-up-prompts-existing-app)
-- [Context Best Practices](#context-best-practices)
-- [How Context Powers Workspace DNA](#how-context-powers-workspace-dna)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 When you build apps with Taskade Genesis, you can **upload reference files** to provide context and guidance. The additional context helps AI understand your requirements, match your brand, and follow specific design patterns — producing apps that feel like they were custom-built by your team.
@@ -89,12 +76,10 @@ There are two ways to provide context depending on where you are in the building
 
 When first creating an app, attach context alongside your prompt:
 
-| Step | Action |
-|---|---|
-| 1 | Open Taskade Genesis and type your initial app prompt |
-| 2 | Add files: **Drag & drop** into the prompt box, or click the **Attachment** button |
-| 3 | Choose source: **Upload Files** (device), **Add from Workspace** (existing files), or **Add from Cloud** (cloud storage) |
-| 4 | Submit the prompt — Genesis creates the app using your text + uploaded context |
+1. Open Taskade Genesis and type your initial app prompt
+2. Add files: **Drag & drop** into the prompt box, or click the **Attachment** button
+3. Choose source: **Upload Files** (device), **Add from Workspace** (existing files), or **Add from Cloud** (cloud storage)
+4. Submit the prompt — Genesis creates the app using your text + uploaded context
 
 <!-- Screenshot: Initial prompt with attachment button and file upload options -->
 
@@ -106,11 +91,9 @@ When first creating an app, attach context alongside your prompt:
 
 After Genesis creates your app, upload additional context to refine it:
 
-| Step | Action |
-|---|---|
-| 1 | Open your Genesis app in **Preview** mode |
-| 2 | Add files: **Drag & drop** into the chat box, or use the **Attachment** button |
-| 3 | Ask Genesis to update the app using the new context |
+1. Open your Genesis app in **Preview** mode
+2. Add files: **Drag & drop** into the chat box, or use the **Attachment** button
+3. Ask Genesis to update the app using the new context
 
 **Example follow-up prompts:**
 

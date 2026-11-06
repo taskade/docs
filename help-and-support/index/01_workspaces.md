@@ -220,8 +220,6 @@ But you don't need to understand the technical details—the magic happens autom
 
 _What questions do you have about workspaces? This living foundation concept can seem magical at first, but once you start using it, you'll wonder how you ever worked without it!_
 
-[← Back to Tutorial Overview](README.md) | [Next: Projects →](02_projects.md)
-
 ---
 
 _Step-by-step guides on taskade.com/learn: [What is a Workspace?](https://www.taskade.com/learn/account/workspaces), [Create a Workspace](https://www.taskade.com/learn/projects/create-workspace), [Create a Team (Folder)](https://www.taskade.com/learn/projects/team-folders)._

@@ -56,25 +56,19 @@ flowchart TD
 
 **Quick Add Widget - Instant Productivity:**
 
-```
-Home Screen Widget Features:
-├── ⚡ One-tap task creation
-├── 🎤 Voice input support
-├── 📅 Smart date recognition
-├── 🔄 Auto-sync when online
-└── 🎯 Default project assignment
-```
+* One-tap task creation
+* Voice input support
+* Smart date recognition
+* Auto-sync when online
+* Default project assignment
 
 **Share to Taskade - Capture from Anywhere:**
 
-```
-Universal Share Integration:
-├── 📱 Photos and images
-├── 📄 Documents and PDFs
-├── 🌐 Web links and articles
-├── 📝 Text snippets
-└── 🎵 Audio recordings
-```
+* Photos and images
+* Documents and PDFs
+* Web links and articles
+* Text snippets
+* Audio recordings
 
 ### Desktop Applications
 
@@ -280,27 +274,20 @@ Multi-platform voice support:
 
 #### Touch Interactions
 
-```
-Gesture Support:
-├── 👆 Tap: Select and open
-├── 👆👆 Double-tap: Quick edit
-├── 👈👉 Swipe: Complete or archive
-├── 👆 Hold: Context menu
-├── 🔍 Pinch: Zoom and navigate
-└── 📱 Multi-touch: Collaborative editing
-```
+* **Tap**: Select and open
+* **Double-tap**: Quick edit
+* **Swipe**: Complete or archive
+* **Hold**: Context menu
+* **Pinch**: Zoom and navigate
 
 #### Mobile UI Patterns
 
-```
-Mobile-First Design:
-├── 📱 Single-hand operation
-├── 👁️ Clear visual hierarchy
-├── ⚡ Fast loading and response
-├── 🔋 Battery optimization
-├── 📶 Low-bandwidth friendly
-└── 🌙 Dark mode support
-```
+* Single-hand operation
+* Clear visual hierarchy
+* Fast loading and response
+* Battery optimization
+* Low-bandwidth friendly
+* Dark mode support
 
 ### Desktop Power Features
 

@@ -16,6 +16,7 @@ This is the **internal** counterpart to a client portal. Here the people logging
 
 Open Taskade Genesis and tell it, in plain English, what your team needs to see and do every day. Name the stages, the fields you track, and the views you want. Taskade Genesis turns that one description into a working app — the UI, the database behind it, and the structure to keep it organized.
 
+{% code overflow="wrap" %}
 ```
 I run field operations for a construction company and need my project
 managers to track every active job from bid to close-out. Show jobs as a
@@ -25,6 +26,7 @@ target completion, and current status. Let managers drag jobs between
 columns and add notes and photos. I want a dashboard view that shows how
 many jobs sit in each stage so I can see where we're stuck at a glance.
 ```
+{% endcode %}
 
 Start with one workflow you already run on whiteboards or spreadsheets. You can refine wording, add fields, or change views later just by asking. For the full describe-and-build loop, see [Getting Started with Taskade Genesis](../genesis/getting-started.md).
 {% endstep %}

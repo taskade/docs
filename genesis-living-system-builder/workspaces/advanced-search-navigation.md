@@ -231,14 +231,12 @@ Search does not answer questions. To ask a question about your work in plain lan
 * **Use Specific Terms**: Choose precise keywords over general terms
 * **Include Context**: Add context words to narrow results
 * **Use Synonyms**: Try alternative words if initial search doesn't work
-* **Combine Operators**: Use multiple search operators together
 
 #### Result Analysis
 
 * **Review All Categories**: Check different result categories (projects, tasks, people)
 * **Use Filters Progressively**: Start broad, then narrow with filters
 * **Check Related Suggestions**: Explore AI-suggested related content
-* **Save Successful Queries**: Bookmark effective search queries
 
 ### Search Performance Tips
 
@@ -257,26 +255,6 @@ Search does not answer questions. To ask a question about your work in plain lan
 * **Typos and Misspellings**: Double-check spelling in search queries
 * **Outdated Information**: Update search expectations as content evolves
 * **Ignoring Filters**: Use filters to narrow down large result sets
-
-## Search Analytics and Insights
-
-### Search Performance Metrics
-
-**Understand how search is used in your workspace:**
-
-#### Usage Analytics
-
-* **Popular Search Terms**: Most frequently searched keywords
-* **Search Success Rates**: Percentage of searches that lead to content access
-* **Result Click-Through**: Which types of results are clicked most often
-* **Search Abandonment**: Queries that don't result in content access
-
-#### Content Discovery Insights
-
-* **Frequently Accessed Content**: Most popular projects and tasks
-* **Search-Driven Discovery**: Content found primarily through search
-* **Navigation Patterns**: How users move through your workspace
-* **Collaboration Networks**: How search facilitates team collaboration
 
 ### Improving Searchability
 
@@ -338,7 +316,7 @@ Provide training on advanced search techniques and best practices.
 {% step %}
 #### Monitor and Optimize
 
-Regularly review search analytics and optimize content discoverability.
+Regularly ask your team which content is hard to find, and improve its titles and tags.
 {% endstep %}
 {% endstepper %}
 
@@ -352,7 +330,7 @@ Regularly review search analytics and optimize content discoverability.
 * ✅ **Maintain Consistent Terminology**: Use standard language across similar content
 * ✅ **Regular Content Cleanup**: Archive or delete outdated and irrelevant content
 * ✅ **Train Team Members**: Educate users on effective search techniques
-* ✅ **Monitor Search Performance**: Review search analytics and user feedback
+* ✅ **Monitor Search Performance**: Ask your team which content is hard to find
 * ✅ **Optimize for Mobile**: Ensure search works well on mobile devices
 
 {% hint style="info" %}

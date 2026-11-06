@@ -7,17 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Embed a Project](#embed-a-project)
-- [Embed Settings](#embed-settings)
-- [Supported Embed Sources (In Taskade)](#supported-embed-sources-in-taskade)
-- [Embed Taskade Genesis Apps](#embed-genesis-apps)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 You can embed entire Taskade projects on your website or blog and keep everyone on the same page. Any changes you make will be **instantly visible** to your audience. You can also embed external content inside Taskade projects.
@@ -30,14 +19,12 @@ You can embed entire Taskade projects on your website or blog and keep everyone 
 
 ### Step-by-Step Tutorial
 
-| Step | Action |
-|---|---|
-| 1 | Open a project and switch to your desired project view |
-| 2 | Click the **Share** button in the top-right corner |
-| 3 | Select **Invite to project**, then the **< > Embed** tab |
-| 4 | Click **Copy embed code** |
-| 5 | Paste the embed code into your website or blog HTML |
-| 6 | _(Optional)_ Customize the view, theme, dimensions, and footer visibility before you copy |
+1. Open a project and switch to your desired project view
+2. Click the **Share** button in the top-right corner
+3. Select **Invite to project**, then the **< > Embed** tab
+4. Click **Copy embed code**
+5. Paste the embed code into your website or blog HTML
+6. _(Optional)_ Customize the view, theme, dimensions, and footer visibility before you copy
 
 ### Embed Code Example
 
@@ -109,9 +96,9 @@ You can embed external content inside Taskade projects using the Embed add-on:
 
 ---
 
-## Embed Genesis Apps
+## Embed Taskade Genesis Apps
 
-Genesis apps can be embedded on any website:
+Taskade Genesis apps can be embedded on any website:
 
 | Method | How | Plan |
 |---|---|---|
