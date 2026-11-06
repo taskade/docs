@@ -5,6 +5,10 @@ description: >-
 
 # Agents
 
+{% hint style="info" %}
+**Generated reference:** This reference is also at [taskade.com/docs/rest](https://www.taskade.com/docs/rest), generated from the live OpenAPI spec. AI agents can do most of this work through the [hosted Taskade MCP server](../../genesis-app-mcp.md).
+{% endhint %}
+
 The **Intelligence Layer** is the brain of your application. It's where reasoning, logic, and autonomous action take place. This layer is powered by **Taskade's AI Agents**.
 
 An Agent is more than just a chatbot. It is an autonomous worker that can be configured with a specific personality, skillset, and access to knowledge. You can use Agents to:

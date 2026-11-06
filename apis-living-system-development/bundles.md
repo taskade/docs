@@ -1,86 +1,87 @@
 ---
 description: >-
-  Export and import complete Taskade Genesis apps and workspaces as portable bundles
-  using the Action API v2.
+  Export and import complete Taskade Genesis apps and workspaces as portable bundles.
 ---
 
 # Bundles & App Kits
 
-## What Are Bundles?
+Export a whole Taskade Genesis app or workspace as a bundle, then import it into another workspace with the REST API or the Action API. A **bundle** is a portable snapshot of projects, agents, automations, templates, media, and app source.
 
-A **bundle** is a portable snapshot of a workspace's building blocks — projects, agents, automations, templates, media, and Genesis app source — packaged so you can move it between workspaces, accounts, and environments. Bundles power app sharing, backups, and the community App Kits.
+You can move bundles between workspaces, accounts, and environments. Bundles support app sharing, backups, and community App Kits.
 
 Bundles come in two flavors:
 
 | Flavor | Format | Includes media? | Use when |
 | --- | --- | --- | --- |
-| **JSON** (`SpaceBundleData`) | application/json | No (media items are skipped) | Programmatic export/import, diffing, version control |
+| **JSON** (`SpaceBundleData`) | application/json | No (a JSON import that contains media items returns `400`) | Programmatic export/import, diffing, version control |
 | **ZIP / `.tsk`** | binary archive | Yes (media files included) | Full-fidelity transfer, backups, distribution |
 
-{% hint style="info" %}
-Bundle endpoints are part of the [Action API v2](api-v2-reference.md). Authenticate with a [personal access token](developers/authentication.md). Exporting requires the bundle permission on the space; importing is gated by your plan (see [Plan Limits](#plan-limits)).
-{% endhint %}
+## Before you start
 
-***
+- A personal access token from [taskade.com/settings/api](https://www.taskade.com/settings/api). See [Authentication](developers/authentication.md).
+- To export, a source workspace on the **Pro plan or higher**, and permission to create a bundle in it. Free and Starter workspaces get `402`.
+- To import, a target workspace where you can create projects, agents, and automations. The plan limits in [Import behavior](#import-behavior) apply.
+- `curl` in a terminal.
 
-## What's Included in a Bundle
+Save the token and the workspace IDs in your terminal:
+
+```bash
+export TASKADE_TOKEN="tskdp_your_token_here"
+export SPACE_ID="your_source_workspace_id"
+export WORKSPACE_ID="your_target_workspace_id"
+```
+
+## What a bundle includes
 
 | Component | Details |
 | --- | --- |
 | **Projects** | Tasks, custom fields, views, and structure |
 | **Templates** | Reusable project/task templates |
 | **AI Agents** | System prompts, tone, and knowledge configuration |
-| **Automations** | Triggers, actions, and full flow logic |
-| **Genesis apps** | App source files (`apps/{id}/…`) |
+| **Agent teams** | Team membership and member roles, resolved to the agents carried in the same bundle |
+| **Automations** | Automation triggers, actions, and settings |
+| **Taskade Genesis apps** | App files stored as a directory tree under `apps/{id}/` |
 | **Media** | Uploaded files and assets (ZIP/`.tsk` only) |
 
 ***
 
-## API Reference
+## Bundle endpoints
 
-### Export a Bundle (JSON) — v1
+Both APIs carry the same four bundle operations. This page shows the Action API v2 calls. Each v1 endpoint has its own generated reference page:
 
-{% openapi src="../.gitbook/assets/api-0.1.0.json" path="/bundles/{spaceId}/export" method="get" expanded="true" %}
-[api-0.1.0.json](../.gitbook/assets/api-0.1.0.json)
-{% endopenapi %}
+| Operation | REST API v1 | Action API v2 |
+| --- | --- | --- |
+| Export as JSON | [`GET /bundles/{spaceId}/export`](https://www.taskade.com/docs/rest/bundle-export) | [`POST /exportBundle`](https://www.taskade.com/docs/actions/export-bundle) |
+| Export as ZIP or `.tsk` | [`GET /bundles/{spaceId}/export/zip`](https://www.taskade.com/docs/rest/bundle-export-zip) | [`GET /bundles/{spaceId}/export/zip`](https://www.taskade.com/docs/actions/bundles-export-zip) |
+| Import JSON | [`POST /bundles/{workspaceId}/import`](https://www.taskade.com/docs/rest/bundle-import) | [`POST /importBundle`](https://www.taskade.com/docs/actions/import-bundle) |
+| Import ZIP or `.tsk` | [`POST /bundles/{workspaceId}/import/zip`](https://www.taskade.com/docs/rest/bundle-import-zip) | [`POST /importBundleZip`](https://www.taskade.com/docs/actions/import-bundle-zip) |
 
-### Export a Bundle (ZIP / `.tsk`) — v1
+A successful ZIP export streams the binary file. Errors return the standard JSON error object.
 
-{% openapi src="../.gitbook/assets/api-0.1.0.json" path="/bundles/{spaceId}/export/zip" method="get" expanded="true" %}
-[api-0.1.0.json](../.gitbook/assets/api-0.1.0.json)
-{% endopenapi %}
+### Export a bundle as JSON
 
-A successful response streams the file's binary content; errors return the standard JSON error object.
-
-### Import a Bundle (JSON) — v1
-
-{% openapi src="../.gitbook/assets/api-0.1.0.json" path="/bundles/{workspaceId}/import" method="post" expanded="true" %}
-[api-0.1.0.json](../.gitbook/assets/api-0.1.0.json)
-{% endopenapi %}
-
-### Import a Bundle (ZIP / `.tsk`) — v1
-
-{% openapi src="../.gitbook/assets/api-0.1.0.json" path="/bundles/{workspaceId}/import/zip" method="post" expanded="true" %}
-[api-0.1.0.json](../.gitbook/assets/api-0.1.0.json)
-{% endopenapi %}
-
-***
-
-### Export a bundle (JSON) — Action API v2
-
-**`POST /api/v2/exportBundle`** — returns the full `SpaceBundleData` object (no binary media).
+**`POST /api/v2/exportBundle`** returns the `SpaceBundleData` object with `version` and `items`. Binary media is not included.
 
 {% tabs %}
+
 {% tab title="cURL" %}
+
+#### cURL
+
 ```bash
-curl -X POST https://www.taskade.com/api/v2/exportBundle \
-  -H "Authorization: Bearer YOUR_TOKEN" \
+curl -s -X POST https://www.taskade.com/api/v2/exportBundle \
+  -H "Authorization: Bearer $TASKADE_TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{ "spaceId": "SPACE_ID" }'
+  -d "{\"spaceId\": \"$SPACE_ID\"}" \
+  --output bundle.json
 ```
+
 {% endtab %}
 
 {% tab title="TypeScript" %}
+
+#### TypeScript
+
 ```typescript
 const res = await fetch("https://www.taskade.com/api/v2/exportBundle", {
   method: "POST",
@@ -88,39 +89,68 @@ const res = await fetch("https://www.taskade.com/api/v2/exportBundle", {
     Authorization: `Bearer ${process.env.TASKADE_TOKEN}`,
     "Content-Type": "application/json",
   },
-  body: JSON.stringify({ spaceId: "SPACE_ID" }),
+  body: JSON.stringify({ spaceId: process.env.SPACE_ID }),
 });
 const { item: bundleData } = await res.json();
 ```
+
 {% endtab %}
+
 {% endtabs %}
 
-**Response:**
+**Response:** the `item` holds exactly two keys, `version` and `items`. `items` is a map of bundle items keyed by ID:
 
 ```json
 {
   "ok": true,
   "item": {
     "version": "1",
-    "name": "Sales CRM",
-    "description": "Pipeline + outreach agent",
     "items": {
-      "proj_abc": { "type": "space-bundle-project-item", "projectId": "proj_abc", "root": { } },
-      "agent_xyz": { "type": "space-bundle-agent-item", "agentId": "agent_xyz", "template": { } }
+      "Pj8sK2nV4wQx6ZbE": {
+        "type": "space-bundle-project-item",
+        "rank": "a0",
+        "projectId": "Pj8sK2nV4wQx6ZbE",
+        "root": {}
+      },
+      "Ag2bN6mK9pL4xQ7w": {
+        "type": "space-bundle-agent-item",
+        "rank": "a1",
+        "agentId": "Ag2bN6mK9pL4xQ7w",
+        "template": {}
+      }
     }
   }
 }
 ```
 
-### Import a bundle (JSON)
+In a real export, `root` holds the full task tree of the project, and `template` holds the full agent definition. The example leaves them empty to stay short.
 
-**`POST /api/v2/importBundle`** — installs a `SpaceBundleData` object into a target workspace.
+{% hint style="info" %}
+**Note:** The JSON export has no bundle `name`, `description`, or `metaData`. The JSON import drops those keys if you send them. A `.zip` or `.tsk` export carries the name and description in `manifest.json`.
+{% endhint %}
+
+A workspace on the Free or Starter plan gets `402`:
+
+```json
+{
+  "ok": false,
+  "message": "Exporting app bundles requires a paid plan (Pro or higher). Upgrade to export this app.",
+  "code": "PAYMENT_REQUIRED",
+  "statusMessage": "Payment Required",
+  "featureId": "space.bundle.export"
+}
+```
+
+### Import a bundle as JSON
+
+**`POST /api/v2/importBundle`** installs a `SpaceBundleData` object into a target workspace. The body wraps the bundle in `bundleData`, with `version` and `items`. This example reads the `item` from the export that you saved in `bundle.json`, and it needs `jq`:
 
 ```bash
-curl -X POST https://www.taskade.com/api/v2/importBundle \
-  -H "Authorization: Bearer YOUR_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{ "workspaceId": "WORKSPACE_ID", "bundleData": { "version": "1", "items": { } } }'
+jq --arg ws "$WORKSPACE_ID" '{workspaceId: $ws, bundleData: .item}' bundle.json \
+  | curl -s -X POST https://www.taskade.com/api/v2/importBundle \
+      -H "Authorization: Bearer $TASKADE_TOKEN" \
+      -H "Content-Type: application/json" \
+      --data @-
 ```
 
 **Response** reports what was created:
@@ -129,7 +159,7 @@ curl -X POST https://www.taskade.com/api/v2/importBundle \
 {
   "ok": true,
   "item": {
-    "id": "WORKSPACE_ID",
+    "id": "Bi2mK8rT4vQn6YzA",
     "projectCount": 3,
     "flowCount": 1,
     "agentCount": 2,
@@ -140,94 +170,157 @@ curl -X POST https://www.taskade.com/api/v2/importBundle \
 }
 ```
 
+The `id` identifies this import record, not the target workspace.
+
 {% hint style="warning" %}
-The JSON import **skips media items** — use the ZIP/`.tsk` flavor to carry media. Importing always **creates new resources**; it never overwrites existing projects or agents.
+**Warning:** The JSON import **rejects a bundle that contains media items** with `400`. Remove the media items first, or use ZIP or `.tsk` to transfer media.
 {% endhint %}
 
-### Export / import as ZIP (`.tsk`)
+Import always **creates new resources**. It never overwrites existing projects or agents.
 
-For full-fidelity transfer including media, use the binary endpoints:
+### Export and import as ZIP or `.tsk`
+
+For a full-fidelity transfer that includes media, use the binary endpoints:
 
 ```bash
-# Export as a binary .tsk archive (or ?format=zip)
-curl -X GET "https://www.taskade.com/api/v2/bundles/SPACE_ID/export/zip?format=tsk" \
-  -H "Authorization: Bearer YOUR_TOKEN" \
+# Export as a binary archive. format is "zip" (default) or "tsk".
+curl -s "https://www.taskade.com/api/v2/bundles/$SPACE_ID/export/zip?format=tsk" \
+  -H "Authorization: Bearer $TASKADE_TOKEN" \
   --output workspace.tsk
 
-# Import a .tsk / .zip archive (raw binary body, max 50 MB)
-curl -X POST "https://www.taskade.com/api/v2/importBundleZip?workspaceId=WORKSPACE_ID" \
-  -H "Authorization: Bearer YOUR_TOKEN" \
+# Import a .tsk or .zip archive as a raw binary body.
+# Content-Type: application/zip, application/octet-stream, or application/x-tsk
+curl -s -X POST "https://www.taskade.com/api/v2/importBundleZip?workspaceId=$WORKSPACE_ID" \
+  -H "Authorization: Bearer $TASKADE_TOKEN" \
   -H "Content-Type: application/zip" \
   --data-binary @workspace.tsk
 ```
 
+The ZIP import returns the same `{ "ok": true, "item": { "id", "projectCount", ... } }` summary as the JSON import.
+
 ***
 
-## The `SpaceBundleData` Schema
+## The `SpaceBundleData` schema
 
-The JSON bundle is a flat map of items keyed by id:
+The JSON bundle is a flat map of items keyed by ID. The JSON export returns this shape, and the JSON import accepts it:
 
 ```typescript
 interface SpaceBundleData {
   version: "1";
-  name?: string;
-  description?: string;
   items: Record<string, SpaceBundleDataItem>;
 }
 
-type SpaceBundleDataItem =
-  | { type: "space-bundle-project-item";  projectId: string; root: object; preferences?: object }
-  | { type: "space-bundle-template-item"; projectId: string; root: object }
-  | { type: "space-bundle-agent-item";    agentId: string;   template: object; dependsOn?: string[] }
-  | { type: "space-bundle-flow-item";     flowId: string;    template: object; dependsOn?: string[] }
-  | { type: "space-bundle-app-item";      appId: string;     files: object; branding?: object }
-  | { type: "space-bundle-media-item";    mediaId: string };
+// Every item carries these two base fields.
+interface SpaceBundleDataItemBase {
+  rank: string;
+  dependsOn?: string[];
+}
+
+type SpaceBundleDataItem = SpaceBundleDataItemBase & (
+  | { type: "space-bundle-project-item";    projectId: string; root: object; preferences?: object; pinnedAt?: string }
+  | { type: "space-bundle-template-item";   projectId: string; root: object; preferences?: object; pinnedAt?: string }
+  | { type: "space-bundle-agent-item";      agentId: string;   template: object }
+  | { type: "space-bundle-agent-team-item"; agentTeamId: string; name: string; data?: object; agentIds: string[] }
+  | { type: "space-bundle-flow-item";       flowId: string;    template: object }
+  | { type: "space-bundle-app-item";        appId: string;     files: object; branding?: object }
+  | { type: "space-bundle-media-item";      mediaId: string }
+);
 ```
 
-## The `.tsk` Format
+### Agent team items
+
+`agentIds` on an agent-team item holds **source** agent ids. The installer remaps every id through the same id map it uses for the other items.
+
+The installer drops a member whose agent did not come along in the bundle. As a result, a partial bundle yields a smaller team, not a dangling membership.
+
+Export an agent team together with every agent it names.
+
+The `data` object of an agent-team item can hold `members`, a map from a source agent id to that member's role:
+
+```json
+{
+  "members": {
+    "<source agent id>": { "role": "Researcher" }
+  }
+}
+```
+
+A role is one line of at most 60 characters. The installer moves each role to the new agent id. It joins a role with line breaks into one line. It drops a role that is then empty or longer than 60 characters, and the role of an agent that is not in `agentIds` or did not come along. The rest of the team still installs.
+
+## The `.tsk` format
 
 A `.tsk` file is a **ZIP archive** with a manifest and type-based directories:
 
-```
+```text
 manifest.json          # { version, exportedAt, spaceId, spaceMetadata, name?, description? }
 projects/{id}.json
 templates/{id}.json
 agents/{id}.json
 automations/{id}.json
-apps/{id}/…             # Genesis app source as a real directory tree
+apps/{id}/…             # Taskade Genesis app source as a directory tree
+agent-teams/{id}.json
 media/{mediaId}/metadata.json
 media/{mediaId}/{originalFilename}
 ```
 
-Two manifest format versions exist: **1.0** stored apps as a single JSON blob; **1.1** (current export) spreads app source as a real directory tree. Import accepts both.
+Two manifest versions exist. Version **1.0** stores app source as one JSON object.
+
+Version **1.1**, the current export version, stores app source as a directory tree. Import accepts both versions.
+
+Version 1.1 archives can include agent teams under `agent-teams/{id}.json`. The importer remaps their source agent IDs in the same way as JSON bundle imports.
 
 ***
 
-## Plan Limits
+## Import behavior
 
-Imports are checked per item type against your plan:
+Import creates new resources. It does not overwrite matching projects, agents, automations, or apps.
 
-| Item | Free | Paid |
+The importer validates each item against the target workspace's current access and limits. If an item cannot be created, use the returned error `code` to select the next step. Do not parse the human-readable message.
+
+The Action API checks the target workspace's plan before an import creates anything. A bundle that goes over a limit returns `402` with `code: "PAYMENT_REQUIRED"`:
+
+| Bundle content | Limit on the target workspace |
+| --- | --- |
+| AI agents | Free holds 1 agent. Starter holds 3 agents at the base level, and a higher plan level multiplies that. Pro and above have no limit |
+| Taskade Genesis apps | Free holds 3 apps. Starter and above have no limit |
+| Automations | Every paid plan. A Free workspace cannot import them |
+| Agent teams | Pro and above |
+
+A bundle of only projects, templates, and media imports on every plan. A ZIP or `.tsk` upload can be at most **50 MB**.
+
+Export requires permission to create a bundle in the source workspace.
+
+Read the live `X-Rate-Limit-*` response headers for the current request budget. See [Rate Limits](api-v2-reference.md#rate-limits).
+
+## Fix common errors
+
+| What you see | Cause | Fix |
 | --- | --- | --- |
-| Agents | 1 | Varies by plan |
-| Genesis apps | 3 | Unlimited |
-| Automations (flows) | — (paid only) | Enabled |
+| `Exporting app bundles requires a paid plan (Pro or higher). Upgrade to export this app.` | The source workspace is on Free or Starter | Upgrade the source workspace to Pro or higher. |
+| `This bundle contains media items which cannot be imported via the JSON endpoint. Remove media items from the bundle and upload them separately via the media upload endpoint.` | The JSON import got a media item | Remove the media items, or use the ZIP or `.tsk` import. |
+| `Invalid ZIP file.` | The body is not a ZIP archive | Send the file with `--data-binary @file.tsk`, not `-d`. |
+| `Invalid bundle ZIP. Ensure the archive contains valid bundle data from a Taskade export.` | The archive is not a Taskade bundle | Export the archive from Taskade again. |
+| `Importing N agent(s) would exceed your N agent limit. Upgrade to increase your limit.` | The target workspace has no room for the agents | Upgrade the target workspace, or remove agents from the bundle. |
+| `Importing N app(s) would exceed your N app limit. Upgrade to increase your limit.` | The target workspace has no room for the apps | Upgrade the target workspace, or remove apps from the bundle. |
+| `Automations require a paid plan. Upgrade to import automation workflows.` | The target workspace is on Free | Upgrade the target workspace, or remove the automations. |
+| `AI Teams require a paid plan. Upgrade to import agent teams.` | The target plan does not include agent teams | Upgrade the target workspace, or remove the agent-team items. |
 
-The public ZIP import is limited to **50 MB** per archive. Bundle operations are rate-limited to protect large transfers.
+## Use cases
+
+- **Share apps across workspaces.** Export from one workspace. Import into another.
+- **Back up before big changes.** Snapshot a workspace. Restore it later.
+- **Distribute through the community.** Publish a `.tsk` so others can import a working app.
+- **Create templates.** Build once. Export the bundle. Import it for a fresh copy.
 
 ***
 
-## Use Cases
+## Next steps
 
-- **Share apps across workspaces** — export from one workspace, import into another.
-- **Back up before big changes** — snapshot a workspace and restore later.
-- **Distribute through the community** — publish a `.tsk` so others import a working app in seconds.
-- **Template creation** — build once, export, and reimport for fresh copies.
+* [Action API guide](api-v2-reference.md): the full v2 operation set.
+* [Authentication](developers/authentication.md): get your API token.
+* [REST API guide](comprehensive-api-guide/README.md): the v1 bundle endpoints and rate limits.
+* [Outbound MCP](workspace-mcp-advanced.md#outbound-mcp-the-mcp-client-connector): call a remote MCP server's tools from an automation in your imported app.
 
-***
+---
 
-## Next Steps
-
-* [Action API v2 Reference](api-v2-reference.md) — the full v2 operation set
-* [Authentication](developers/authentication.md) — get your API token
-* [MCP Connectors](workspace-mcp-advanced.md#mcp-connectors) — connect your imported apps to external services
+_This page is also published at [taskade.com/docs/guides/bundles](https://www.taskade.com/docs/guides/bundles)._

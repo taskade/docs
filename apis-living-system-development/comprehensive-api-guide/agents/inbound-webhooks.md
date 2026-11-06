@@ -7,6 +7,10 @@ description: >-
 # Inbound Webhooks
 
 {% hint style="info" %}
+**Generated reference:** The maintained webhooks guide is at [taskade.com/docs/guides/webhooks](https://www.taskade.com/docs/guides/webhooks). An inbound webhook starts an automation, and you create the automation in Taskade. MCP cannot create or edit an automation.
+{% endhint %}
+
+{% hint style="info" %}
 **Canonical guide:** [Webhooks](../../webhooks.md) covers inbound webhooks, outbound HTTP requests, and the signed Webhook Registration API. This page documents the automation webhook trigger's parameter format.
 {% endhint %}
 

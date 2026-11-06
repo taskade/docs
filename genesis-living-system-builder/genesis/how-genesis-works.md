@@ -202,7 +202,7 @@ Execution means **intelligent automation workflows** — the nervous system that
 
 > **Deep dive:** [Automations: The Execution Pillar](../automation/README.md)
 
-Connect your agents to Slack, Stripe, Shopify, and more with [MCP Connectors](mcp-connectors.md).
+Connect your automations to Slack, Stripe, Shopify, and more with [integrations](../automation/integrations.md), or call any MCP server from an automation — see [MCP Connectors](mcp-connectors.md).
 
 ---
 

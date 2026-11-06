@@ -1,134 +1,147 @@
 ---
 description: >-
-  Connect your Taskade Genesis apps and AI agents to 31+ external services using MCP
-  (Model Context Protocol) — the universal standard for AI tool integration.
+  The Model Context Protocol (MCP) is an open standard that lets AI tools talk to each other's data and capabilities. Taskade runs a hosted MCP server, so external AI clients like Claude Desktop and Cursor can connect into your workspace.
 ---
 
 # MCP Connectors
 
-> **Not sure which Taskade MCP you need?** See [Which Taskade MCP do I want?](../../apis-living-system-development/mcp-overview.md).
+## Overview
 
-## What is MCP?
-
-**Model Context Protocol (MCP)** is an open standard that lets AI agents connect to external tools and services. Think of it as **USB-C for AI** — one universal, standardized, vendor-agnostic protocol that works across platforms and providers.
-
-With MCP connectors, your Taskade agents and automations can read from Google Sheets, send Slack messages, create GitHub issues, process Stripe payments, and much more — without writing custom integration code.
+The **Model Context Protocol (MCP)** is an open standard that lets AI tools use the data and actions of other apps. Taskade uses MCP in two directions. Your AI tool can work in your workspace, and your automations can call other MCP servers.
 
 {% hint style="info" %}
-MCP connectors work with both **AI Agents** (conversational) and **Automations** (workflow-based). Set up once, use everywhere.
+**TL;DR:** The hosted Taskade MCP server lets Claude, ChatGPT, Cursor, or VS Code work in your workspace on **every paid plan**. Setup: [Taskade MCP Server](https://www.taskade.com/learn/connect/mcp-server). The other direction runs in an [automation](https://www.taskade.com/learn/automation/automations-execution), where the [MCP Client connector](https://www.taskade.com/learn/connect/mcp-client-integration) calls a remote MCP server on every plan.
 {% endhint %}
 
-***
+![Taskade Genesis MCP integrations](https://www.taskade.com/static_images/learn/genesis/mcp-connectors-9bd0c183.gif)
 
-## Two Ways to Connect
+## Keep the MCP Paths Apart
 
-### Hosted MCP (Recommended)
+Each MCP path has its own setup and its own plan rule. Pick the path by what starts the work:
 
-Taskade manages the connection for you. No servers to deploy, no infrastructure to maintain.
+```text
+AI TOOL STARTS       TASKADE STARTS
+┌────────────────┐   ┌────────────────┐
+│ Claude, Cursor │   │ An automation  │
+└───────┬────────┘   └───────┬────────┘
+        ▼                    ▼
+┌────────────────┐   ┌────────────────┐
+│ Hosted MCP or  │   │ MCP Client     │
+│ open-source    │   │ connector      │
+└───────┬────────┘   └───────┬────────┘
+        ▼                    ▼
+┌────────────────┐   ┌────────────────┐
+│ Your workspace │   │ External MCP   │
+│                │   │ server         │
+└────────────────┘   └────────────────┘
+```
 
-* **Zero setup** — authenticate and start using tools immediately
-* **Automatic auth** — OAuth and API key management handled for you
-* **High availability** — Taskade keeps connections reliable and up to date
+| Path | What it does | Plan |
+| --- | --- | --- |
+| Hosted MCP server | Your AI tool connects to `https://www.taskade.com/mcp` and works in your workspace | Every paid plan |
+| Open-source server | The `taskade/mcp` server runs on your computer with a personal access token | Every plan, Free included |
+| Automation calls out | An automation uses the MCP Client connector to call a remote MCP server | Every plan, Free included |
+| Agent calls out alone | An agent calls a remote MCP server with no automation | Not available in production |
 
-### Custom MCP Servers
+## Call Another MCP Server from Taskade
 
-Run your own MCP server when you need full control over the integration layer.
+Use these steps when Taskade must call *out* to another MCP server.
 
-* **Full control** — define exactly which tools are available and how they behave
-* **Custom tools** — build tools tailored to your internal systems
-* **On-premises data** — keep sensitive data behind your firewall
+### Step 1: Open Automations
 
-{% hint style="success" %}
-**Start with Hosted MCP.** You can always add custom servers later for advanced use cases.
-{% endhint %}
+Open the **Automations** tab in your workspace.
 
-***
+### Step 2: Add the MCP Client connector
 
-## Native Integrations
+Add a step and pick the **MCP Client** connector. Enter the address of the remote server.
 
-Taskade includes **31 hosted MCP integrations** across these categories:
+### Step 3: Save and run the automation
 
-| Category | Services |
+Save the automation. Run it, so the step can list the tools on that server and call the one you pick.
+
+You are done when the run shows the result of the tool. In production, an agent cannot reach an outside MCP server on its own. Let the agent decide, then hand the call to an automation. Full setup: [MCP Client Integration](https://www.taskade.com/learn/connect/mcp-client-integration).
+
+## Reach Workspace DNA and Your App
+
+Over the hosted server, your AI tool works with the three parts of Workspace DNA, and with the app built on top of them:
+
+| Part | Your AI tool can |
 | --- | --- |
-| **Communication** | Slack, Discord, Telegram, MS Teams, WhatsApp, Twilio |
-| **Email** | Gmail, Mailchimp |
-| **Google Workspace** | Sheets, Drive, Calendar, Docs, Forms |
-| **CRM** | HubSpot, Apollo |
-| **E-Commerce** | Shopify, Stripe |
-| **Social Media** | LinkedIn, X/Twitter, Facebook, Reddit, YouTube |
-| **Developer** | GitHub, HTTP |
-| **Forms / CMS** | Typeform, Webflow, WordPress |
-| **Scheduling** | Calendly, Schedule |
-| **Content** | RSS, Zoom |
+| [Projects](https://www.taskade.com/learn/projects/databases) (Memory) | Read, create, and copy projects. Add and edit tasks |
+| [AI agents](https://www.taskade.com/learn/agents/custom-agents) (Intelligence) | Create, update, and ask agents. Add knowledge |
+| [Automations](https://www.taskade.com/learn/automation/automations-execution) (Execution) | List them, run one that starts with the [Agent Tool](https://www.taskade.com/learn/automation/agent-tool) trigger, read its runs |
+| [Taskade Genesis app](https://www.taskade.com/learn/genesis/first-app), built on top | Read and edit the app files |
 
-***
+## Edit Your Taskade Genesis App Over MCP
 
-## Connecting an Integration
+Your AI tool can change the source files of a Taskade Genesis app. It can write only inside the `app/` folder:
 
-1. Open your workspace **Integrations Settings**.
-2. **Browse** the available MCP connectors.
-3. Click **Add** on the integration you need.
-4. Authenticate and **Enable Tools** you want your agents and automations to access.
+- Read a file before you edit it. An edit against an old copy can fail.
+- Create a file, replace text, insert at a line, or apply a patch.
+- Delete a file that nothing imports. Taskade refuses the delete while an import still points at it.
+- Bring back a deleted file from the [version history](https://www.taskade.com/learn/genesis/version-history) of the app.
 
-{% hint style="warning" %}
-Each integration may request different permissions. Review the scopes before authorizing to ensure you only grant access your workflows require.
-{% endhint %}
+A saved edit is final, not a draft. The app rebuilds, and an app on the default publish setting goes live with the change. You do not press Publish again.
 
-***
+Some app jobs stay in Taskade. MCP cannot build a new app, or publish an app that is not live yet. It also cannot set who can use an app, or create or edit an automation. Ask Taskade EVE for those.
 
-## Using MCP with AI Agents
+## Plans and Credits
 
-Once an MCP connector is enabled, your agents discover available tools automatically. During a conversation, the agent will:
+| Path | Free | Paid plans |
+| --- | --- | --- |
+| Hosted MCP server | No | Yes |
+| Open-source server | Yes | Yes |
+| Automation calls out | Yes | Yes |
+| Agent calls out alone (production) | No | No |
 
-1. **Identify** which connected tool can fulfill the request.
-2. **Select** the best tool and parameters for the job.
-3. **Execute** the action (e.g., send a message, fetch a spreadsheet row).
-4. **Return** the results directly in the conversation.
+There is no separate MCP fee. An automation run that your AI tool starts counts toward the monthly automation runs of your plan. Runs and agent questions can use AI credits, the same as in Taskade. See [Pricing](https://www.taskade.com/pricing).
 
-You don't need to tell the agent which tool to use — it figures that out from context.
+## Frequently Asked Questions
 
-**Example prompt:**
+<details>
+<summary>Which plans include MCP?</summary>
 
-> "Check the #sales channel in Slack for any messages about the Q2 report, then summarize them here."
+The hosted Taskade MCP server is on every paid plan. The open-source `taskade/mcp` server on your computer works on every plan, Free included. An automation can call a remote MCP server on every plan, Free included. In production, an agent cannot call a remote MCP server on its own on any plan.
+</details>
 
-The agent connects to Slack via MCP, retrieves the relevant messages, and provides a summary.
+<details>
+<summary>Do MCP calls cost credits?</summary>
 
-***
+There is no separate MCP fee. When your AI tool runs an automation or asks an agent, that work counts toward your plan. It can use AI credits, the same as in Taskade.
+</details>
 
-## Using MCP with Automations
+<details>
+<summary>Is MCP secure?</summary>
 
-MCP tools are also available as action steps in automation workflows:
+Yes. Connections use encrypted HTTPS. Your AI tool signs in as you, with a Taskade sign-in or a personal access token, so it reaches only what your account can see. Remove the connector or revoke the token to cut off access.
+</details>
 
-1. Create or edit an automation flow.
-2. **Add an MCP action step** from the action picker.
-3. **Configure** the tool, operation, and input parameters.
-4. **Chain** with other actions — pass MCP output as dynamic data to subsequent steps.
+<details>
+<summary>How do built-in agent tools differ from MCP?</summary>
 
-**Example automation:**
+[Built-in tools](https://www.taskade.com/learn/agents/agent-tools) such as web search, code, and file analysis run inside Taskade and give your agents abilities. MCP lets a separate AI tool, such as Claude, work with your Taskade data from the outside.
+</details>
 
-> **Trigger:** New task created with "bug" label
-> **Action 1:** Create a GitHub issue via MCP (GitHub)
-> **Action 2:** Send a Slack notification via MCP (Slack)
+<details>
+<summary>Can an AI tool reach my Taskade Genesis apps over MCP?</summary>
 
-***
+Your AI tool connects to your workspace. It can reach the projects, tasks, and agents behind your apps, and it can edit app files. The published app stays a normal web app for your visitors.
+</details>
 
-## Building Custom MCP Servers
+<details>
+<summary>Does MCP work with every AI model?</summary>
 
-For advanced use cases, you can build and host your own MCP server:
+Yes. MCP does not depend on the model. Any AI tool that speaks MCP can connect to Taskade, whatever model it runs.
+</details>
 
-1. **Choose an SDK** — TypeScript or Python.
-2. **Define tools** — specify the actions your server exposes.
-3. **Deploy** — host on your own infrastructure.
-4. **Connect** — add the server URL in Taskade's custom MCP settings.
+## Related guides
 
-{% hint style="info" %}
-For detailed setup instructions, starter templates, and SDK documentation, visit the official repository: [github.com/taskade/mcp](https://github.com/taskade/mcp)
-{% endhint %}
+- [Taskade MCP Server](https://www.taskade.com/learn/connect/mcp-server). Connect Claude, ChatGPT, Cursor, or VS Code
+- [MCP Client Integration](https://www.taskade.com/learn/connect/mcp-client-integration). Call a remote MCP server from an automation
+- [Agents and External MCP Servers](https://www.taskade.com/learn/connect/mcp-client). How an agent hands an outside MCP call to an automation
+- [Tools for AI Agents](https://www.taskade.com/learn/agents/agent-tools). The built-in agent tools
+- [MCP Developer Docs](https://www.taskade.com/docs/mcp). Client setup, [advanced usage](../../apis-living-system-development/workspace-mcp-advanced.md), and [connector details](../../apis-living-system-development/workspace-mcp-advanced.md#outbound-mcp-the-mcp-client-connector)
 
-***
+---
 
-## Next Steps
-
-* [Getting Started with Genesis](getting-started.md) — build your first app
-* [AI Agents](../ai-features/ai-agents-getting-started.md) — learn how agents use MCP tools in conversations
-* [Automations](../automation/README.md) — create workflows that chain MCP actions together
+_This page is also published at [taskade.com/learn/genesis/mcp-connectors](https://www.taskade.com/learn/genesis/mcp-connectors)._

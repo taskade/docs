@@ -1,34 +1,30 @@
 ---
 description: >-
-  Taskade's Long-Term Memory architecture — memory that lives as real Projects
-  in your workspace, editable, browsable, and API-addressable.
+  Taskade's Long-Term Memory architecture - memory that lives as real Projects you can browse, edit, and query via the API.
 ---
 
 # Long-Term Memory
 
-Taskade EVE's long-term memory **is a Project in your workspace**. Not an opaque blob. You can browse it, edit it, version it, and query it via the Public API — just like any other project.
+Taskade EVE's long-term memory **is a Project in your workspace**. It is not an opaque data object.
 
-This architectural choice is what makes Taskade memory transparent, controllable, and composable with the rest of the platform.
+You can browse, edit, and version it in Taskade, and read or change it through the Public API.
 
-<figure><img src="../.gitbook/assets/ltm-architecture.png" alt="" width="563"><figcaption></figcaption></figure>
+This architecture keeps Taskade memory visible, editable, and reusable.
 
-## Table of Contents
 
-- [Mental Model — Memory as Projects](#mental-model-memory-as-projects)
-- [How EVE Uses Memory](#how-eve-uses-memory)
-- [Agent Memory vs EVE Memory](#agent-memory-vs-eve-memory)
-- [Model Agnosticism](#model-agnosticism)
-- [Inspecting and Editing Memory](#inspecting-and-editing-memory)
-- [API Access](#api-access)
-- [Privacy and Scoping](#privacy-and-scoping)
-- [Best Practices](#best-practices)
-- [Related](#related)
+<figure><img src="../.gitbook/assets/ltm-architecture.png" alt="Memory stored as Taskade projects" width="563"><figcaption></figcaption></figure>
+
+## Before you start
+
+- To read memory with the API, a personal access token from [taskade.com/settings/api](https://www.taskade.com/settings/api). See [Authentication](developers/authentication.md).
+- Edit access to the workspace that holds the memory project.
+- `curl` in a terminal, or Node.js 18 or later for the TypeScript examples.
 
 ---
 
-## Mental Model — Memory as Projects
+## Mental model: memory as projects
 
-Most AI platforms store memory in a hidden vector database. You can't see what the agent remembers or correct it directly.
+Most AI platforms store memory in a hidden vector database. You cannot see or directly correct the stored memory.
 
 Taskade takes a different approach.
 
@@ -38,7 +34,7 @@ graph TB
         A1[Agent] -.->|opaque blob| M1[(Hidden<br/>memory)]
     end
 
-    subgraph "Taskade — Memory as Projects"
+    subgraph "Taskade - Memory as Projects"
         A2[Taskade EVE]
         M2[Memory Project<br/>in your workspace]
         U2[User]
@@ -53,85 +49,98 @@ graph TB
 
 **Why this matters:**
 
-- **Transparency** — you see exactly what Taskade EVE remembers.
-- **Controllability** — edit or delete memory blocks like any project content.
-- **Composability** — use memory as an input to automations, agents, or other apps.
-- **Portability** — memory is part of your workspace, not locked in a separate system.
+- **Transparency** - you see exactly what Taskade EVE remembers.
+- **Controllability** - edit or delete memory blocks like any project content.
+- **Composability** - use memory as an input to automations, agents, or other apps.
+- **Portability** - memory is part of your workspace, not locked in a separate system.
 
 ---
 
-## How EVE Uses Memory
+## How Taskade EVE uses memory
 
-EVE is Taskade's meta-agent — the one you talk to when building apps and orchestrating work.
+<figure><img src="../.gitbook/assets/ltm-agent-memory.gif" alt="An agent that reads and writes its memory" width="563"><figcaption></figcaption></figure>
 
-- Memory **persists across sessions.** EVE remembers what you've been working on even after you close and reopen Taskade.
-- Memory is **workspace-scoped.** Each workspace has its own EVE memory.
-- Memory grows **automatically** as you interact — no manual tagging required.
-- EVE runs on the same Workspace DNA (Projects + Agents + Automations) it orchestrates for you.
+Taskade EVE is the meta-agent of the platform. You talk to it to build apps and orchestrate work.
 
-<figure><img src="../.gitbook/assets/ltm-agent-memory.gif" alt="" width="563"><figcaption></figcaption></figure>
+- Memory **persists across sessions.** Taskade EVE retains work context after you close and reopen Taskade.
+- Memory is **workspace-scoped.** Each workspace has its own Taskade EVE memory.
+- Personal preferences are the one exception. Taskade EVE keeps them in a single note on your account, and that note applies in every workspace. Edit or clear it in **Settings** → **Account**, under **Taskade EVE memory**.
+- Memory grows **automatically**. You do not tag entries by hand.
+- Taskade EVE runs on the same Workspace DNA (Projects + Agents + Automations) it orchestrates for you.
+
 
 ---
 
-## Agent Memory vs EVE Memory
+## Agent memory and Taskade EVE memory
 
-Taskade has two distinct memory systems. Both use the same architectural principle (memory-as-Projects), but they serve different purposes.
+Taskade has two distinct memory systems. Both use the same architectural principle (memory-as-Projects). They serve different purposes.
 
-| Dimension | Per-Agent Memory | EVE Workspace Memory |
+| Dimension | Per-Agent Memory | Taskade EVE Workspace Memory |
 | --- | --- | --- |
 | **Scope** | Single agent | Whole workspace |
 | **Persists across** | Conversations with that agent | All sessions and agents |
-| **User-editable** | Limited | Full — it's a Project |
-| **API addressable** | Via agent endpoints | Via project endpoints |
-| **Model support** | All frontier models | All frontier models |
+| **User-editable** | Limited | Full - it is a Project |
+| **API addressable** | No API operation | Via project endpoints |
+| **Model support** | Every model in the picker | Every model in the picker |
 | **Typical use** | Personalized assistant behavior | Cross-session workspace context |
 
 ---
 
-## Model Agnosticism
+## Memory works on every model
 
 Memory works across every available AI model.
 
-- Persistent memory is **not limited to specific models** — every AI agent supports memory regardless of which model you pick.
-- The memory tool is enabled for **all 11+ frontier models** currently integrated with Taskade.
-- Switching model (say, from Claude to Gemini) does not reset an agent's memory.
+- Persistent memory is **not limited to specific models**. Every AI agent supports memory on any model that you pick.
+- The memory tool is on for every model that Taskade offers.
+- A model change does not reset an agent's memory. For example, a change from TSK-Auto to a pinned model keeps the same memory.
 
 ---
 
-## Inspecting and Editing Memory
+## Inspect and edit memory
 
-### Finding the memory project
+### Find the memory project
 
-In your workspace sidebar, look for the project prefixed with **"EVE Memory"** or your agent's memory project (naming varies based on when it was created).
+Taskade EVE marks each memory project with the **Memory** tag. Taskade EVE titles the project itself, so the name has no fixed prefix. Open a project that carries the **Memory** tag to review it.
 
-### Editing manually
+### Edit memory by hand
 
-Open the memory project like any other project. You can:
+Open the memory project like any other project. Then use these controls:
 
-- **Remove entries** you don't want remembered.
-- **Correct facts** EVE got wrong.
-- **Add context** manually when you want EVE to know something it hasn't inferred yet.
+- **Remove entries** that you do not want Taskade EVE to remember.
+- **Correct facts** that Taskade EVE got wrong.
+- **Add context** for information that Taskade EVE did not infer.
 - **Version** the memory (Taskade's version history applies).
 
+
 {% hint style="info" %}
-EVE reads from the memory project at each interaction, so your edits take effect immediately in the next conversation.
+Taskade EVE reads the memory project at each interaction. Your edits take effect in the next conversation.
 {% endhint %}
+
 
 ### Common cleanup patterns
 
 - After a major project pivot, prune outdated assumptions.
-- Before sharing a workspace, review EVE memory for anything sensitive.
+- Before you share a workspace, review Taskade EVE memory for sensitive content.
 - Periodically archive resolved context so memory stays focused on current work.
 
 ---
 
-## API Access
+## API access
 
-Because memory is a Project, it's addressable via the Public API.
+Because memory is a Project, the Public API can address it.
 
 All calls use the [Action API v2](api-v2-reference.md) with a `Bearer` token.
 
 ### Find the memory project
+
+`listProjects` returns the tag names of each project in `tags`. Select the projects whose `tags` include `Memory`. The `tags` list is empty when your account is not a member of the workspace. You can also open the memory project in Taskade and copy its id. Then save the token and the id in your terminal:
+
+```bash
+export TASKADE_TOKEN="tskdp_your_token_here"
+export MEMORY_PROJECT_ID="id_copied_from_the_memory_project"
+```
+
+The TypeScript examples use the same two values:
 
 ```typescript
 const headers = {
@@ -139,82 +148,107 @@ const headers = {
   "Content-Type": "application/json",
 };
 
-const res = await fetch("https://www.taskade.com/api/v2/listProjects", {
-  method: "POST",
-  headers,
-  body: JSON.stringify({ spaceId: SPACE_ID }),
-});
-const { items } = await res.json();
-const memory = items.find(p => p.name?.startsWith("EVE Memory"));
+// Copied from the memory project in Taskade.
+const MEMORY_PROJECT_ID = process.env.MEMORY_PROJECT_ID;
 ```
 
 ### Read memory contents
 
-```typescript
-if (memory) {
-  const res = await fetch("https://www.taskade.com/api/v2/listBlocks", {
-    method: "POST",
-    headers,
-    body: JSON.stringify({ projectId: memory.id }),
-  });
-  const { items: blocks } = await res.json();
-  console.log("EVE remembers:", blocks);
+```bash
+curl -s -X POST https://www.taskade.com/api/v2/listBlocks \
+  -H "Authorization: Bearer $TASKADE_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d "{\"projectId\": \"$MEMORY_PROJECT_ID\"}"
+```
+
+The response lists each block with its `id`, `text`, and `completed` state:
+
+```json
+{
+  "ok": true,
+  "items": [
+    { "id": "Bk2mQ7xR4pL9sT1v", "text": "Prefers weekly summaries on Monday", "completed": false }
+  ]
 }
+```
+
+The same call in TypeScript:
+
+```typescript
+const res = await fetch("https://www.taskade.com/api/v2/listBlocks", {
+  method: "POST",
+  headers,
+  body: JSON.stringify({ projectId: MEMORY_PROJECT_ID }),
+});
+const { items: blocks } = await res.json();
+console.log("Taskade EVE remembers:", blocks);
 ```
 
 ### Attach memory as knowledge to another agent
 
-```typescript
-// Give a specialist agent access to workspace context
-await fetch("https://www.taskade.com/api/v2/addKnowledgeProject", {
-  method: "POST",
-  headers,
-  body: JSON.stringify({ agentId: AGENT_ID, projectId: memory.id }),
-});
+Give a specialist agent access to workspace context. Save the agent id first:
+
+```bash
+export AGENT_ID="your_agent_id"
+
+curl -s -X POST https://www.taskade.com/api/v2/addKnowledgeProject \
+  -H "Authorization: Bearer $TASKADE_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d "{\"agentId\": \"$AGENT_ID\", \"projectId\": \"$MEMORY_PROJECT_ID\"}"
 ```
 
+The response returns the updated agent as `{ "ok": true, "item": { "id", "name", "space_id", "data" } }`.
+
+### Fix common errors
+
+| What you see | Cause | Fix |
+| --- | --- | --- |
+| `"code": "UNAUTHORIZED"` | The token is missing, wrong, or revoked | Send `Authorization: Bearer $TASKADE_TOKEN`. Make sure that the variable is set in the same terminal. |
+| `"code": "FST_ERR_VALIDATION"` | `projectId` or `agentId` is missing | Set `MEMORY_PROJECT_ID` and `AGENT_ID`, then send the request again. |
+| `"code": "NOT_FOUND"` or `"code": "FORBIDDEN"` | The id is wrong, or your account cannot open that project or agent | Copy the id again from Taskade, and check your workspace access. |
+
+
 {% hint style="info" %}
-Memory projects follow the same schema as any other project: blocks, tasks, metadata. Treat them like a project you happen to read a lot.
+Memory projects use the same blocks, tasks, and metadata schema as other projects. Treat them as frequently read projects.
 {% endhint %}
+
 
 ---
 
-## Privacy and Scoping
+## Privacy and scoping
 
-- **Workspace-scoped.** EVE memory does not leak across workspaces.
+- **Workspace-scoped.** A memory project belongs to one workspace. Another workspace does not see it.
+- **Account preferences follow you.** The preferences note on your account applies in every workspace, and only that note does.
 - **Controlled by workspace members.** Anyone with edit access to the workspace can view and modify memory.
 - **No external service.** Memory lives in Taskade's infrastructure, not a third-party vector store.
 
+
 {% hint style="warning" %}
-**Memory is never included in exported bundles.** When you export an app via [Bundles](bundles.md) or GitHub, its memory project is left behind — so a scripted `exportBundle` will not carry the agent's accumulated context to the target workspace.
+**A bundle export includes memory projects as ordinary projects.** A [bundle](bundles.md) export takes every project in the workspace that is not archived. It does not carry the **Memory** tag, so the imported copy is not Taskade EVE memory in the target workspace.
+
+Review memory projects for sensitive content before you export a workspace. Your account preferences note is never part of a bundle.
 {% endhint %}
 
----
-
-## Best Practices
-
-- **Let EVE remember enough to be useful.** Resist the instinct to wipe memory frequently — context compounds.
-- **Prune when context drifts.** Major pivots are a good time to review and edit.
-- **Use memory as input to automations.** Read memory via the API to personalize triggered flows.
-- **Scope sensitive info.** Keep confidential context in a dedicated workspace if you're collaborating with external parties.
-- **Document memory assumptions in the project itself.** EVE reads it — so add explicit "please remember that…" notes as project content.
 
 ---
 
-## Related
+## Best practices
 
-{% content-ref url="api-v2-reference.md" %}
-[api-v2-reference.md](api-v2-reference.md)
-{% endcontent-ref %}
+- **Let Taskade EVE remember enough to be useful.** Do not wipe memory often. Context compounds.
+- **Prune when context drifts.** After a major pivot, review and edit memory.
+- **Use memory as input to automations.** Read memory with the API to personalize triggered automations.
+- **Scope sensitive information.** If you collaborate with external parties, keep confidential context in a dedicated workspace.
+- **Document memory assumptions in the project.** Taskade EVE reads the project, including explicit memory notes.
 
-{% content-ref url="sdk-cookbook.md" %}
-[sdk-cookbook.md](sdk-cookbook.md)
-{% endcontent-ref %}
+---
 
-{% content-ref url="autonomous-agents.md" %}
-[autonomous-agents.md](autonomous-agents.md)
-{% endcontent-ref %}
+## Next steps
 
-{% content-ref url="../genesis-living-system-builder/ai-features/agent-knowledge.md" %}
-[agent-knowledge.md](../genesis-living-system-builder/ai-features/agent-knowledge.md)
-{% endcontent-ref %}
+- [Action API guide](api-v2-reference.md): the v2 operations that these examples use.
+- [SDK Cookbook](sdk-cookbook.md): more end-to-end examples.
+- [Autonomous Agents](autonomous-agents.md): agents that run without a prompt.
+- [AI Agents in Learn Taskade](https://www.taskade.com/learn/agents): the in-app agent guide.
+
+---
+
+_This page is also published at [taskade.com/docs/guides/long-term-memory](https://www.taskade.com/docs/guides/long-term-memory)._

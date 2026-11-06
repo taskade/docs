@@ -89,7 +89,7 @@ Start here:
 
 ### What's next
 
-Edit your app's source from Claude, Cursor, or any IDE via the [Hosted Taskade MCP (Beta)](../../apis-living-system-development/genesis-app-mcp.md).
+Edit your app's source from Claude, Cursor, or any IDE via the [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md).
 
 Running a real business on a Taskade Genesis app? Follow [Run Your Business on Genesis](../run-your-business/README.md).
 

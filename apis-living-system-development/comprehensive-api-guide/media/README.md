@@ -5,6 +5,10 @@ description: >-
 
 # Media
 
+{% hint style="info" %}
+**Generated reference:** This reference is also at [taskade.com/docs/rest](https://www.taskade.com/docs/rest), generated from the live OpenAPI spec. AI agents can read media through the [hosted Taskade MCP server](../../genesis-app-mcp.md). To upload or delete media, use these endpoints or the Action API.
+{% endhint %}
+
 ## Summary of Endpoints
 
 ### Get Media
