@@ -11,14 +11,14 @@ Already have notes, docs, or spreadsheets in other tools? You can bring everythi
 
 ### Quick Start: Import in 3 Steps
 
-1. In your workspace or folder, click **➕ Create new** and choose **Import**
+1. Open the **Projects** tab of your workspace and click **Import**. On a narrow screen, click **+ New** > **Import**. You can also click **+** next to **Projects** in the sidebar and choose **Import**
 2. Pick a tab in the Import dialog:
    * **Import with AI** — turn a file, webpage, YouTube video, or pasted text into a structured project
    * **Summarize with AI** — turn the content into a summary or an outline
    * **Import CSV** — turn spreadsheet rows into a table project
 3. Drop your file, or click **Webpage**, **YouTube**, or **Paste Text & Markdown**, then follow the prompts
 
-To let an AI agent learn from content, add it in the agent's **Knowledge** tab, or open a project's **···** menu and choose **Add to Agent Knowledge**.
+To let an AI agent learn from content, open the agent's **Knowledge** tab, turn on **Enable knowledge**, and add it there, or open a project's **···** menu and choose **Add to Agent Knowledge**.
 
 {% hint style="info" %}
 **Imported content becomes a project in your workspace.** Add it to an agent's Knowledge so that the agent can learn from it — docs, spreadsheets, presentations, and more.
@@ -49,7 +49,7 @@ Uploading a PDF or another document needs a paid plan. CSV import works on every
 {% tab title="Files & Docs" %}
 Upload files directly from your computer.
 
-1. Click **➕ Create new** in your workspace and choose **Import**
+1. Open the **Projects** tab of your workspace and click **Import**
 2. Open the **Import with AI** or **Summarize with AI** tab
 3. Drag your file into the dropzone, or click to upload it
 4. Taskade turns it into a project
@@ -58,7 +58,7 @@ Upload files directly from your computer.
 {% tab title="Webpages" %}
 Import any public webpage by URL.
 
-1. Click **➕ Create new** in your workspace and choose **Import**
+1. Open the **Projects** tab of your workspace and click **Import**
 2. In the **Import with AI** tab, click **Webpage**
 3. Paste the URL
 4. Taskade extracts the content automatically
@@ -67,7 +67,7 @@ Import any public webpage by URL.
 {% tab title="YouTube" %}
 Pull in content from YouTube videos.
 
-1. Click **➕ Create new** in your workspace and choose **Import**
+1. Open the **Projects** tab of your workspace and click **Import**
 2. In the **Import with AI** tab, click **YouTube**
 3. Paste the video URL
 4. Taskade extracts the transcript and key information
@@ -76,7 +76,7 @@ Pull in content from YouTube videos.
 {% tab title="Text & Markdown" %}
 Paste text or Markdown directly.
 
-1. Click **➕ Create new** in your workspace and choose **Import**
+1. Open the **Projects** tab of your workspace and click **Import**
 2. In the **Import with AI** tab, click **Paste Text & Markdown**
 3. Paste your content
 4. Click **Create Project**
@@ -86,7 +86,7 @@ Paste text or Markdown directly.
 Use the general import flow for content from any tool.
 
 1. Export your content from the other tool (see migration guides below)
-2. Click **➕ Create new** in your workspace and choose **Import**
+2. Open the **Projects** tab of your workspace and click **Import**
 3. Upload the exported file or paste the content. Under **Or import from**, the dialog also has direct options for Todoist, Dynalist, and Workflowy
 {% endtab %}
 {% endtabs %}
@@ -103,7 +103,7 @@ Switching to Taskade? Here is how to bring your work over from popular tools.
 2. Scroll to **Export all workspace content**
 3. Choose **Markdown & CSV** format and export
 4. Unzip the downloaded file
-5. In Taskade, click **➕ Create new** > **Import** and open the **Import with AI** tab
+5. In Taskade, open the **Projects** tab, click **Import**, and open the **Import with AI** tab
 6. Upload the `.md` files. For databases exported as `.csv` files, use the **Import CSV** tab
 
 {% hint style="success" %}
@@ -114,14 +114,14 @@ Switching to Taskade? Here is how to bring your work over from popular tools.
 
 1. In Trello, open your board
 2. Click **Menu** > **More** > **Print and Export** > **Export as CSV**
-3. In Taskade, click **➕ Create new** > **Import** and open the **Import CSV** tab
+3. In Taskade, open the **Projects** tab, click **Import**, and open the **Import CSV** tab
 4. Upload the CSV file, set the column types, and import it
 
 ### From Asana
 
 1. In Asana, open your project
 2. Click the **drop-down arrow** next to the project name > **Export / Print** > **CSV**
-3. In Taskade, click **➕ Create new** > **Import** and open the **Import CSV** tab
+3. In Taskade, open the **Projects** tab, click **Import**, and open the **Import CSV** tab
 4. Upload the CSV file, set the column types, and import it
 
 ### From Google Docs
@@ -129,7 +129,7 @@ Switching to Taskade? Here is how to bring your work over from popular tools.
 1. Install the free [Docs to Markdown](https://workspace.google.com/marketplace/app/docs_to_markdown/700168918607) add-on in Google Docs
 2. Open your document and run the add-on to convert to Markdown
 3. Copy the Markdown output
-4. In Taskade, click **➕ Create new** > **Import**, then **Paste Text & Markdown**
+4. In Taskade, open the **Projects** tab, click **Import**, then click **Paste Text & Markdown**
 5. Paste and import
 
 ### From Any Other Tool
@@ -137,7 +137,7 @@ Switching to Taskade? Here is how to bring your work over from popular tools.
 Most tools let you export as CSV, Markdown, or plain text. The general pattern:
 
 1. **Export** from your current tool in the most structured format available (Markdown or CSV preferred)
-2. **Upload** the file in the **Import** dialog (**➕ Create new** > **Import**)
+2. **Upload** the file in the **Import** dialog (**Projects** tab > **Import**)
 3. **Choose** the tab — **Import with AI**, **Summarize with AI**, or **Import CSV**
 
 {% hint style="info" %}

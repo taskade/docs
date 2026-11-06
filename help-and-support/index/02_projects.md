@@ -72,7 +72,7 @@ Your project data is one tree. Each view shows the same tree in a different way,
 {% step %}
 #### Access Project Creation
 
-Open your workspace or folder, then click the ➕ **New project** button in the top-right corner
+Open your workspace or folder, then click **+** next to **Projects** in the sidebar
 {% endstep %}
 
 {% step %}
@@ -80,9 +80,9 @@ Open your workspace or folder, then click the ➕ **New project** button in the 
 
 Select from:
 
-* **Blank Project** - Start from scratch
-* **Template** - Use a pre-built structure
-* **AI Generator** - Describe the project and let AI build it
+* **AI Project** - Describe the project and let AI build it
+* **Start Blank** - Start from scratch
+* **Use Template** - Use a pre-built structure
 * **Import** - Bring in data from other tools
 {% endstep %}
 

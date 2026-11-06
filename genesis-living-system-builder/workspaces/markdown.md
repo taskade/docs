@@ -110,7 +110,7 @@ Use Markdown to structure prompts and get better AI responses:
 
 Use `.md` files as context for AI-generated projects:
 
-1. Click **+ Create new** → **AI Project**
+1. Click **+** next to **Projects** in the sidebar → **AI Project**
 2. Describe the project you want
 3. Click the upload dropdown → **Upload Files**
 4. Upload your `.md` files as context
@@ -133,9 +133,9 @@ Use `.md` files as context for AI-generated projects:
 
 | Method | Steps |
 |---|---|
-| **File upload** | **+ Create new** → **Import** → Drag `.md` files or click upload |
-| **Paste** | **+ Create new** → **Import** → **Paste Text & Markdown** → Paste content |
-| **Direct** | Visit `taskade.com/create` to start instantly |
+| **File upload** | **Projects** tab → **Import** → Drag `.md` files or click upload |
+| **Paste** | **Projects** tab → **Import** → **Paste Text & Markdown** → Paste content |
+| **Sidebar** | **+** next to **Projects** → **Import** |
 
 ### Export
 
@@ -151,10 +151,11 @@ Create Markdown knowledge sources directly in your agent:
 
 1. Go to your workspace → **AI Agents** tab → Click the arrow next to the name of your agent → **Edit agent**
 2. Open the **Knowledge** tab
-3. Click **Add Markdown/Text**
-4. Paste Markdown or plain text into the pop-up
-5. Click **Add to Knowledge**
-6. Click **Update** in the Knowledge tab to save
+3. Turn on the **Enable knowledge** switch (it is off by default)
+4. Click **Add Markdown/Text**
+5. Paste Markdown or plain text into the pop-up
+6. Click **Add to Knowledge**
+7. Click **Update** in the Knowledge tab to save
 
 ---
 

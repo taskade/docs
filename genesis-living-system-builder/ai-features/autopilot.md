@@ -119,7 +119,7 @@ After Autopilot generates your initial workspace, expand it with these tools:
 
 ### Generate New Projects
 
-1. Click **+ Create new** → **AI Project**
+1. Click **+** next to **Projects** in the sidebar → **AI Project**
 2. Describe the project you want
 3. _(Optional)_ Configure output settings:
    - **View**: Default project view (List, Board, Table, etc.)

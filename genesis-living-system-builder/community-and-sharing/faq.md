@@ -88,7 +88,7 @@ Yes! Check out:
 
 Use the **Preview feature** to interact with your app exactly as users will:
 
-1. Click the "Preview" tab in your app
+1. Open your app. It shows in the preview pane beside the chat
 2. Test all functionality like a real user
 3. Submit test data to ensure workflows work
 4. Check that notifications and integrations trigger properly
