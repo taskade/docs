@@ -8,7 +8,7 @@ description: >-
 **Transform your scattered information into organized, searchable intelligence that powers smarter AI agents and more effective workflows. Learn how to efficiently upload, organize, and manage knowledge sources for maximum AI performance.**
 
 {% hint style="success" %}
-**Smart Knowledge Strategy:** The quality and organization of your knowledge directly impacts AI agent performance. Well-structured knowledge bases can improve response accuracy by 60-80%.
+**Smart Knowledge Strategy:** The quality and organization of your knowledge directly impacts AI agent performance.
 {% endhint %}
 
 ***
@@ -17,14 +17,14 @@ description: >-
 
 ### **Supported Knowledge Sources**
 
-| **Source Type**          | **Best For**                 | **Processing**            | **AI Benefits**             |
-| ------------------------ | ---------------------------- | ------------------------- | --------------------------- |
-| **📄 Documents**         | Policies, manuals, guides    | Text extraction + OCR     | Context-aware responses     |
-| **🌐 Websites**          | Latest info, product pages   | Reads the linked page (one page, no crawl) | Up-to-date public information |
-| **📊 Spreadsheets**      | Data, lists, structured info | Data parsing + analysis   | Data-driven insights        |
-| **🎥 Videos**            | Training content, demos      | YouTube auto-generated transcript | Video content understanding |
-| **📋 Projects**          | Live workspace data          | Real-time sync            | Current project context     |
-| **🗂️ File Collections** | Document libraries           | Batch processing          | Comprehensive knowledge     |
+| **Source Type**      | **Best For**                 | **Processing**                             |
+| -------------------- | ---------------------------- | ------------------------------------------ |
+| **Documents**        | Policies, manuals, guides    | Text extraction + OCR                      |
+| **Websites**         | Latest info, product pages   | Reads the linked page (one page, no crawl) |
+| **Spreadsheets**     | Data, lists, structured info | Data parsing + analysis                    |
+| **Videos**           | Training content, demos      | YouTube auto-generated transcript          |
+| **Projects**         | Live workspace data          | Real-time sync                             |
+| **File Collections** | Document libraries           | Batch processing                           |
 
 ### **Knowledge Processing Capabilities**
 
@@ -520,56 +520,6 @@ Team Responsibilities:
     - Manage overall knowledge structure
     - Coordinate updates and reviews
     - Monitor usage analytics and optimization
-```
-
-***
-
-## Success Stories & ROI
-
-### **Knowledge Management Impact**
-
-#### **Customer Support Transformation**
-
-```yaml
-Before Knowledge Management:
-  - Average response time: 4.5 hours
-  - First-contact resolution: 62%
-  - Agent confidence score: 6.8/10
-  - Training time for new agents: 3 weeks
-
-After Knowledge Management:
-  - Average response time: 45 minutes (-83%)
-  - First-contact resolution: 89% (+44%)
-  - Agent confidence score: 9.1/10 (+34%)
-  - Training time for new agents: 1 week (-67%)
-
-ROI Impact:
-  - 60% reduction in support costs
-  - 40% increase in customer satisfaction
-  - 75% faster agent onboarding
-  - 300% improvement in knowledge utilization
-```
-
-#### **Sales Enablement Success**
-
-```yaml
-Sales Team Results:
-  Knowledge Implementation:
-    - Centralized sales materials and playbooks
-    - Real-time competitor intelligence
-    - Customer case study library
-    - Product information automation
-
-  Performance Improvements:
-    - Sales cycle length: -35%
-    - Win rate: +28%
-    - Quote accuracy: +45%
-    - New rep ramp time: -50%
-    
-  Business Impact:
-    - $2.3M additional revenue from faster sales cycles
-    - 40% reduction in proposal preparation time
-    - 90% of reps exceeding quota (vs 65% before)
 ```
 
 ***

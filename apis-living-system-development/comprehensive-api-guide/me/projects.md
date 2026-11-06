@@ -1,5 +1,6 @@
 ---
-description: Get all projects of mine
+description: >-
+  Projects — Taskade REST API v1 reference: GET /me/projects. List the projects of the user who owns the token, with paging and sort.
 ---
 
 # Projects

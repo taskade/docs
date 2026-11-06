@@ -7,20 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [What You Can Build](#what-you-can-build)
-- [How to Get Started](#how-to-get-started)
-- [Generator Modes](#generator-modes)
-- [Smart Edits & Chat Commands](#smart-edits-and-chat-commands)
-- [Key Features](#key-features)
-- [Workflow Building Blocks](#workflow-building-blocks)
-- [Example Prompts](#example-prompts)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 The Workflow Generator builds complex automation flows from **natural language**. Describe what you want in plain English, and the AI creates complete workflows with triggers, conditions, branches, loops, and integrations across 100+ services — no drag-and-drop, no manual configuration.
@@ -45,15 +31,13 @@ The Workflow Generator builds complex automation flows from **natural language**
 
 ### Step-by-Step Tutorial
 
-| Step | Action |
-|---|---|
-| 1 | Navigate to **Automations** tab → **Add automation** → **Generate With AI** (or visit `taskade.com/create/flow`) |
-| 2 | Describe your desired workflow and pick a mode (Auto, Agent Tool, Workflow, or Form) |
-| 3 | Watch the Workflow Generator build, refine, and optimize it |
-| 4 | Review the generated flow |
-| 5 | Click **Create Automation** to save it |
-| 6 | Customize triggers, actions, and conditions as needed |
-| 7 | Toggle the automation **On** |
+1. Navigate to **Automations** tab → **Add automation** → **Generate With AI** (or visit `taskade.com/create/flow`)
+2. Describe your desired workflow and pick a mode (Auto, Agent Tool, Workflow, or Form)
+3. Watch the Workflow Generator build, refine, and optimize it
+4. Review the generated flow
+5. Click **Create Automation** to save it
+6. Customize triggers, actions, and conditions as needed
+7. Toggle the automation **On**
 
 ---
 

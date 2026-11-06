@@ -12,10 +12,10 @@ This documentation is open source and we welcome contributions from the communit
 **⚠️ CRITICAL:** This is a **PUBLIC** repository. Never commit sensitive information!
 
 **Quick Security Checklist:**
-- [ ] ✅ No API keys, tokens, or credentials
-- [ ] ✅ No internal company data or strategies  
-- [ ] ✅ No `.env` files or config with secrets
-- [ ] ✅ All examples use placeholder values
+- [ ] No API keys, tokens, or credentials
+- [ ] No internal company data or strategies  
+- [ ] No `.env` files or config with secrets
+- [ ] All examples use placeholder values
 
 → **[Read Full Security Guidelines](SECURITY.md)**
 
@@ -225,8 +225,8 @@ Every suggestion, whether it's a small improvement or a major feature idea, help
 Love using Taskade? Here's how you can help spread the word and support our growth:
 
 #### **⭐ Leave App Store Reviews**
-Your positive reviews help others discover Taskade:
-- **App Store**: Search for "Taskade" and leave a 5-star review
+Your reviews help others discover Taskade:
+- **App Store**: Search for "Taskade" and leave a review
 - **Google Play**: Find Taskade and share your experience
 - **Why it matters**: Reviews help new users find our apps in searches
 

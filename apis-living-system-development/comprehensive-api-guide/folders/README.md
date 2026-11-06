@@ -1,6 +1,6 @@
 ---
 description: >-
-  Folders — Taskade REST API v1 reference: GET /folders/{folderId}/projects. Parameters, authentication, and response schema.
+  Folders — Taskade REST API v1 reference: list the projects, agents, media, and templates in a folder, and create or generate agents in a folder.
 ---
 
 # Folders
@@ -9,11 +9,11 @@ description: >-
 **Generated reference:** This reference is also at [taskade.com/docs/rest](https://www.taskade.com/docs/rest), generated from the live OpenAPI spec. AI agents can do most of this work through the [hosted Taskade MCP server](../../genesis-app-mcp.md).
 {% endhint %}
 
-A **Subspace** is the top-level container for every AI-powered application you build on Taskade. It's more than just a folder; it's the complete, self-contained ecosystem for your app, holding its unique Knowledge, Intelligence, and Action layers.
+A **Subspace** is the top-level container for every AI-powered application you build on Taskade. It's more than just a folder; it's the complete, self-contained ecosystem for your app, holding its own Memory (projects), Intelligence (agents), and Execution (automations).
 
 When you generate an app or create one manually, you are creating a Subspace. Everything related to that app—its data (Projects), its logic (Agents), and its workflows (Automations)—is organized within it.
 
-These endpoints allow you to manage the Subspaces in your workspace.
+The API calls a Subspace a folder, so each endpoint below takes a `folderId`. These endpoints manage the Subspaces in your workspace.
 
 ## Summary of Endpoints
 
@@ -41,7 +41,7 @@ These endpoints allow you to manage the Subspaces in your workspace.
 [api-0.1.0.json](../../../.gitbook/assets/api-0.1.0.json)
 {% endopenapi %}
 
-### Get Folder Medias
+### Get Folder Media
 
 {% openapi src="../../../.gitbook/assets/api-0.1.0.json" path="/folders/{folderId}/medias" method="get" expanded="true" %}
 [api-0.1.0.json](../../../.gitbook/assets/api-0.1.0.json)

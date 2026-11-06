@@ -37,8 +37,6 @@ One `fetch` call reaches either API. REST API v1 uses resource paths. Action API
 
 {% tab title="REST API v1" %}
 
-#### REST API v1
-
 List your projects with `GET /me/projects`:
 
 ```typescript
@@ -64,8 +62,6 @@ The response lists each project with its `id` and `name`:
 {% endtab %}
 
 {% tab title="Action API v2" %}
-
-#### Action API v2
 
 List your workspaces with `POST /listSpaces`. The body can be an empty object:
 
@@ -139,8 +135,6 @@ Make the same calls from a shell or from Python. Pick the tab for your tool.
 
 {% tab title="cURL" %}
 
-#### cURL
-
 List your projects (REST API v1):
 
 ```bash
@@ -176,8 +170,6 @@ curl -s -X POST "https://www.taskade.com/api/v2/promptAgent" \
 {% endtab %}
 
 {% tab title="Python" %}
-
-#### Python
 
 Python 3 with the `requests` package:
 

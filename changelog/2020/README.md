@@ -251,7 +251,7 @@ For additional 2020 foundation features and detailed release notes, visit our [b
 
 ---
 
-## The Collaboration Foundation
+## 2020 in Review
 
 **2020's Essential Contributions to Genesis:**
 

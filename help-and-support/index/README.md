@@ -5,11 +5,9 @@ description: >-
 
 # Tutorial: Taskade - The Living DNA Productivity Platform
 
-> This tutorial is AI-generated! To learn more, check out [AI Codebase Knowledge Builder](https://github.com/The-Pocket/Tutorial-Codebase-Knowledge)
+**Taskade** is a productivity platform that treats your workspace as a living organism. Instead of static tools, Taskade creates an interconnected ecosystem where AI agents, automations, and projects work together like DNA strands to build intelligent, adaptive experiences.
 
-**Taskade**<sup>[View Repo](https://github.com/taskade/docs)</sup> is a revolutionary productivity platform that treats your workspace as a living organism. Instead of static tools, Taskade creates an interconnected ecosystem where AI agents, automations, and projects work together like DNA strands to build intelligent, adaptive experiences.
-
-Imagine your workspace isn't just a collection of projects—it's a living foundation that powers unlimited business applications. Each new project you create can become a complete app, powered by your workspace's "living DNA" of intelligence, automation, and knowledge.
+Imagine your workspace isn't just a collection of projects—it's a living foundation that powers unlimited business applications. Each new project you create can become a complete app, powered by your workspace's "living DNA" of memory, intelligence, and execution.
 
 ## What Makes Taskade Special?
 
@@ -27,32 +25,20 @@ Taskade isn't built on layers—it's built on **living DNA strands** that interw
 
 ```mermaid
 flowchart TD
-    WS[Workspaces<br/>Foundation Layer] --> P[Projects<br/>Data Containers]
-    WS --> AA[AI Agents<br/>Digital Team Members]
-    WS --> AU[Automation<br/>Workflow Intelligence]
+    WS[Workspaces<br/>Foundation] --> P[Projects<br/>Memory]
+    WS --> AA[AI Agents<br/>Intelligence]
+    WS --> AU[Automations<br/>Execution]
 
-    P --> GE[Genesis<br/>App Generator]
+    P --> GE[Taskade Genesis<br/>App Builder]
     AA --> GE
     AU --> GE
 
-    GE --> AP[Apps<br/>Complete Applications]
-
-    AP --> INT[Integrations<br/>External Services]
+    GE --> AP[Apps]
+    AP --> INT[Integrations]
     INT --> AU
-
-    WS --> API[API<br/>Developer Interface]
-    P --> API
-    AA --> API
-    AU --> API
-
-    MOB[Mobile & Desktop<br/>Cross-Platform] --> WS
-    MOB --> P
-    MOB --> AP
-
-    style WS fill:#e1f5fe
-    style GE fill:#f3e5f5
-    style AP fill:#e8f5e8
 ```
+
+The API gives developers access to workspaces, projects, AI agents, and automations. The mobile and desktop apps give you your workspaces, projects, and apps on every device.
 
 ## How This Tutorial Works
 

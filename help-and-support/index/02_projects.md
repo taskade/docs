@@ -22,27 +22,16 @@ Fantastic! You've got your living workspace foundation set up. Now let's talk ab
 
 A project in Taskade is a **flexible data container** that holds your information in a tree-like structure. But here's the magic: you can view that same data in **multiple project views**, instantly.
 
-```mermaid
-flowchart TD
-    DATA[Your Project Data<br/>Tree Structure] --> VIEWS[Multiple Project Views]
+Your project data is one tree. Each view shows the same tree in a different way, and each view reveals different insights:
 
-    VIEWS --> LIST[📋 List View<br/>Hierarchical tasks]
-    VIEWS --> BOARD[📊 Board View<br/>Kanban workflow]
-    VIEWS --> TABLE[📈 Table View<br/>Spreadsheet data]
-    VIEWS --> CALENDAR[📅 Calendar View<br/>Timeline planning]
-    VIEWS --> MIND[🧠 Mind Map View<br/>Visual brainstorming]
-    VIEWS --> ORG[🏗️ Org Chart View<br/>Hierarchical structure]
-    VIEWS --> GANTT[📊 Gantt View<br/>Project scheduling]
-    VIEWS --> ACTION[⚡ Actionsheet View<br/>Simple spreadsheet]
-
-    LIST --> INSIGHT[Each view reveals<br/>different insights]
-    BOARD --> INSIGHT
-    TABLE --> INSIGHT
-    CALENDAR --> INSIGHT
-
-    style DATA fill:#e1f5fe
-    style INSIGHT fill:#e8f5e8
-```
+* **📋 List View**: Hierarchical tasks
+* **📊 Board View**: Kanban workflow
+* **📈 Table View**: Spreadsheet data
+* **📅 Calendar View**: Timeline planning
+* **🧠 Mind Map View**: Visual brainstorming
+* **🏗️ Org Chart View**: Hierarchical structure
+* **📊 Gantt View**: Project scheduling
+* **⚡ Actionsheet View**: Simple spreadsheet
 
 **Projects are:**
 

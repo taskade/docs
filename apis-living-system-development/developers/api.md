@@ -60,17 +60,31 @@ graph TD
   T -->|"Public agent embed"| D["Your website"]
 ```
 
-| Surface | What it does | Endpoint or package | Access | Start here |
-| --- | --- | --- | --- | --- |
-| **REST API v1** | Resources and HTTP verbs for workspaces, folders, projects, tasks, agents, media, and bundles | `https://www.taskade.com/api/v1` | Every plan. Personal access token or OAuth 2.0, with the permissions of the token owner. | [REST API guide](../comprehensive-api-guide/README.md) · [Reference](https://www.taskade.com/docs/rest) |
-| **Action API v2** (beta, `2.0.0-beta`) | One verb for each operation, such as `/listSpaces`, `/createTask`, and `/promptAgent`. A good fit for AI tools. | `https://www.taskade.com/api/v2` | Every plan. Same credentials as REST API v1. | [Action API guide](../api-v2-reference.md) · [Reference](https://www.taskade.com/docs/actions) |
-| **Hosted MCP server** | Lets Claude, Cursor, VS Code, ChatGPT, and other MCP clients read and change a workspace and edit Taskade Genesis app source | `https://www.taskade.com/mcp` | OAuth 2.0 with PKCE or a personal access token. Every paid plan (Starter and above). | [Hosted Taskade MCP](../genesis-app-mcp.md) |
-| **Workspace MCP** (local) | Runs a local stdio server that wraps REST API v1 | `npx -y @taskade/mcp-server` | Personal access token in `TASKADE_API_KEY`. Each call keeps its API access rules. | [Workspace MCP](../workspace-mcp.md) |
-| **Webhooks** | Sends signed Taskade events to your endpoint, or starts an automation from an incoming HTTP call | `POST https://www.taskade.com/api/v2/webhooks` | Pro plan and above | [Webhooks](../webhooks.md) |
-| **Public agent embed** | Puts a public AI agent on your site as an iframe or a chat widget | The embed code from the agent's publish settings | Every plan. No token: the agent must be public. | [Agent embeds](../agent-embeds.md) |
-| **Bundles** | Exports and imports a whole app or workspace as JSON, `.zip`, or `.tsk` | `/api/v1/bundles/…` or `/api/v2/exportBundle` | Export: Pro plan and above. Import: per-item plan limits. | [Bundles & App Kits](../bundles.md) |
-| **MCP Client connector** | Lets a Taskade automation call the tools of another MCP server | An automation step | Every plan, Free included | [Which Taskade MCP do I want?](../mcp-overview.md) |
-| **TypeScript SDK** | A generated client for the Action API v2. It is in preview and not on npm yet. | `@taskade/sdk` (preview) | Not available yet. Call the API over HTTPS. | [TypeScript SDK](../sdk-quickstart.md) |
+| Surface | What it does | Start here |
+| --- | --- | --- |
+| **REST API v1** | Resources and HTTP verbs for workspaces, folders, projects, tasks, agents, media, and bundles | [REST API guide](../comprehensive-api-guide/README.md) · [Reference](https://www.taskade.com/docs/rest) |
+| **Action API v2** (beta, `2.0.0-beta`) | One verb for each operation, such as `/listSpaces`, `/createTask`, and `/promptAgent`. A good fit for AI tools. | [Action API guide](../api-v2-reference.md) · [Reference](https://www.taskade.com/docs/actions) |
+| **Hosted MCP server** | Lets Claude, Cursor, VS Code, ChatGPT, and other MCP clients read and change a workspace and edit Taskade Genesis app source | [Hosted Taskade MCP](../genesis-app-mcp.md) |
+| **Workspace MCP** (local) | Runs a local stdio server that wraps REST API v1 | [Workspace MCP](../workspace-mcp.md) |
+| **Webhooks** | Sends signed Taskade events to your endpoint, or starts an automation from an incoming HTTP call | [Webhooks](../webhooks.md) |
+| **Public agent embed** | Puts a public AI agent on your site as an iframe or a chat widget | [Agent embeds](../agent-embeds.md) |
+| **Bundles** | Exports and imports a whole app or workspace as JSON, `.zip`, or `.tsk` | [Bundles & App Kits](../bundles.md) |
+| **MCP Client connector** | Lets a Taskade automation call the tools of another MCP server | [Which Taskade MCP do I want?](../mcp-overview.md) |
+| **TypeScript SDK** | A generated client for the Action API v2. It is in preview and not on npm yet. | [TypeScript SDK](../sdk-quickstart.md) |
+
+Each surface has its own endpoint and access rule:
+
+| Surface | Endpoint or package | Access |
+| --- | --- | --- |
+| **REST API v1** | `https://www.taskade.com/api/v1` | Every plan. Personal access token or OAuth 2.0, with the permissions of the token owner. |
+| **Action API v2** | `https://www.taskade.com/api/v2` | Every plan. Same credentials as REST API v1. |
+| **Hosted MCP server** | `https://www.taskade.com/mcp` | OAuth 2.0 with PKCE or a personal access token. Every paid plan (Starter and above). |
+| **Workspace MCP** (local) | `npx -y @taskade/mcp-server` | Personal access token in `TASKADE_API_KEY`. Each call keeps its API access rules. |
+| **Webhooks** | `POST https://www.taskade.com/api/v2/webhooks` | Pro plan and above |
+| **Public agent embed** | The embed code from the agent's publish settings | Every plan. No token: the agent must be public. |
+| **Bundles** | `/api/v1/bundles/…` or `/api/v2/exportBundle` | Export: Pro plan and above. Import: per-item plan limits. |
+| **MCP Client connector** | An automation step | Every plan, Free included |
+| **TypeScript SDK** | `@taskade/sdk` (preview) | Not available yet. Call the API over HTTPS. |
 
 ## Choose your path
 
@@ -122,121 +136,121 @@ The REST API v1 has one table for each resource. Each path links to its generate
 
 Workspaces hold your folders and projects.
 
-| Method | Path | What it does |
-| --- | --- | --- |
-| `GET` | [`/workspaces`](https://www.taskade.com/docs/rest/workspaces-get) | List the workspaces that your account can use |
-| `GET` | [`/workspaces/{workspaceId}/folders`](https://www.taskade.com/docs/rest/workspace-folders-get) | List the folders in a workspace |
-| `POST` | [`/workspaces/{workspaceId}/projects`](https://www.taskade.com/docs/rest/workspace-create-project) | Create a project in a workspace |
+| Endpoint | What it does |
+| --- | --- |
+| [`GET /workspaces`](https://www.taskade.com/docs/rest/workspaces-get) | List the workspaces that your account can use |
+| [`GET /workspaces/{workspaceId}/folders`](https://www.taskade.com/docs/rest/workspace-folders-get) | List the folders in a workspace |
+| [`POST /workspaces/{workspaceId}/projects`](https://www.taskade.com/docs/rest/workspace-create-project) | Create a project in a workspace |
 
 ### Folders
 
 Folders (subspaces) hold projects, agents, and media inside a workspace.
 
-| Method | Path | What it does |
-| --- | --- | --- |
-| `GET` | [`/folders/{folderId}/projects`](https://www.taskade.com/docs/rest/folder-projects-get) | List the projects in a folder |
-| `GET` | [`/folders/{folderId}/agents`](https://www.taskade.com/docs/rest/folder-agent-get) | List the agents in a folder |
-| `POST` | [`/folders/{folderId}/agents`](https://www.taskade.com/docs/rest/folder-create-agent) | Create an agent in a folder |
-| `POST` | [`/folders/{folderId}/agent-generate`](https://www.taskade.com/docs/rest/folder-agent-generate) | Generate an agent from a description |
-| `GET` | [`/folders/{folderId}/medias`](https://www.taskade.com/docs/rest/medias-get) | List the media files in a folder |
-| `GET` | [`/folders/{folderId}/project-templates`](https://www.taskade.com/docs/rest/folder-project-templates-get) | List the project templates in a folder |
+| Endpoint | What it does |
+| --- | --- |
+| [`GET /folders/{folderId}/projects`](https://www.taskade.com/docs/rest/folder-projects-get) | List the projects in a folder |
+| [`GET /folders/{folderId}/agents`](https://www.taskade.com/docs/rest/folder-agent-get) | List the agents in a folder |
+| [`POST /folders/{folderId}/agents`](https://www.taskade.com/docs/rest/folder-create-agent) | Create an agent in a folder |
+| [`POST /folders/{folderId}/agent-generate`](https://www.taskade.com/docs/rest/folder-agent-generate) | Generate an agent from a description |
+| [`GET /folders/{folderId}/medias`](https://www.taskade.com/docs/rest/medias-get) | List the media files in a folder |
+| [`GET /folders/{folderId}/project-templates`](https://www.taskade.com/docs/rest/folder-project-templates-get) | List the project templates in a folder |
 
 ### Projects
 
 A project holds tasks, notes, and structured data.
 
-| Method | Path | What it does |
-| --- | --- | --- |
-| `GET` | [`/projects/{projectId}`](https://www.taskade.com/docs/rest/project-get) | Get one project |
-| `POST` | [`/projects`](https://www.taskade.com/docs/rest/project-create) | Create a project |
-| `POST` | [`/projects/from-template`](https://www.taskade.com/docs/rest/project-from-template) | Create a project from a template |
-| `POST` | [`/projects/{projectId}/copy`](https://www.taskade.com/docs/rest/project-copy) | Copy a project to a folder |
-| `POST` | [`/projects/{projectId}/complete`](https://www.taskade.com/docs/rest/project-complete) | Mark a project complete |
-| `POST` | [`/projects/{projectId}/restore`](https://www.taskade.com/docs/rest/project-restore) | Restore a completed project |
-| `GET` | [`/projects/{projectId}/members`](https://www.taskade.com/docs/rest/project-members-get) | List the project members |
-| `GET` | [`/projects/{projectId}/fields`](https://www.taskade.com/docs/rest/project-fields-get) | List the custom fields |
-| `GET` | [`/projects/{projectId}/shareLink`](https://www.taskade.com/docs/rest/project-share-link-get) | Get the share link |
-| `PUT` | [`/projects/{projectId}/shareLink`](https://www.taskade.com/docs/rest/project-share-link-enable) | Turn on the share link |
-| `GET` | [`/projects/{projectId}/blocks`](https://www.taskade.com/docs/rest/project-blocks-get) | List the top-level blocks |
-| `GET` | [`/projects/{projectId}/tasks`](https://www.taskade.com/docs/rest/project-tasks-get) | List the tasks |
+| Endpoint | What it does |
+| --- | --- |
+| [`GET /projects/{projectId}`](https://www.taskade.com/docs/rest/project-get) | Get one project |
+| [`POST /projects`](https://www.taskade.com/docs/rest/project-create) | Create a project |
+| [`POST /projects/from-template`](https://www.taskade.com/docs/rest/project-from-template) | Create a project from a template |
+| [`POST /projects/{projectId}/copy`](https://www.taskade.com/docs/rest/project-copy) | Copy a project to a folder |
+| [`POST /projects/{projectId}/complete`](https://www.taskade.com/docs/rest/project-complete) | Mark a project complete |
+| [`POST /projects/{projectId}/restore`](https://www.taskade.com/docs/rest/project-restore) | Restore a completed project |
+| [`GET /projects/{projectId}/members`](https://www.taskade.com/docs/rest/project-members-get) | List the project members |
+| [`GET /projects/{projectId}/fields`](https://www.taskade.com/docs/rest/project-fields-get) | List the custom fields |
+| [`GET /projects/{projectId}/shareLink`](https://www.taskade.com/docs/rest/project-share-link-get) | Get the share link |
+| [`PUT /projects/{projectId}/shareLink`](https://www.taskade.com/docs/rest/project-share-link-enable) | Turn on the share link |
+| [`GET /projects/{projectId}/blocks`](https://www.taskade.com/docs/rest/project-blocks-get) | List the top-level blocks |
+| [`GET /projects/{projectId}/tasks`](https://www.taskade.com/docs/rest/project-tasks-get) | List the tasks |
 
 ### Tasks
 
 A task is one item in a project. It can carry assignees, a date, a note, and field values.
 
-| Method | Path | What it does |
-| --- | --- | --- |
-| `POST` | [`/projects/{projectId}/tasks/`](https://www.taskade.com/docs/rest/task-create) | Create up to 20 tasks |
-| `GET` | [`/projects/{projectId}/tasks/{taskId}`](https://www.taskade.com/docs/rest/task-get) | Get one task |
-| `PUT` | [`/projects/{projectId}/tasks/{taskId}`](https://www.taskade.com/docs/rest/task-put) | Update a task |
-| `DELETE` | [`/projects/{projectId}/tasks/{taskId}`](https://www.taskade.com/docs/rest/task-delete) | Delete a task |
-| `POST` | [`/projects/{projectId}/tasks/{taskId}/complete`](https://www.taskade.com/docs/rest/task-complete) | Mark a task complete |
-| `POST` | [`/projects/{projectId}/tasks/{taskId}/uncomplete`](https://www.taskade.com/docs/rest/task-uncomplete) | Mark a task open again |
-| `PUT` | [`/projects/{projectId}/tasks/{taskId}/move`](https://www.taskade.com/docs/rest/task-move) | Move a task in the project |
-| `GET` | [`/projects/{projectId}/tasks/{taskId}/assignees`](https://www.taskade.com/docs/rest/task-assignees-get) | List the assignees |
-| `PUT` | [`/projects/{projectId}/tasks/{taskId}/assignees`](https://www.taskade.com/docs/rest/task-put-assignees) | Set the assignees |
-| `DELETE` | [`/projects/{projectId}/tasks/{taskId}/assignees/{assigneeHandle}`](https://www.taskade.com/docs/rest/task-delete-assignees) | Remove one assignee |
-| `GET` | [`/projects/{projectId}/tasks/{taskId}/date`](https://www.taskade.com/docs/rest/task-get-date) | Get the date |
-| `PUT` | [`/projects/{projectId}/tasks/{taskId}/date`](https://www.taskade.com/docs/rest/task-put-date) | Set the date |
-| `DELETE` | [`/projects/{projectId}/tasks/{taskId}/date`](https://www.taskade.com/docs/rest/task-delete-date) | Remove the date |
-| `GET` | [`/projects/{projectId}/tasks/{taskId}/note`](https://www.taskade.com/docs/rest/task-note-get) | Get the note |
-| `PUT` | [`/projects/{projectId}/tasks/{taskId}/note`](https://www.taskade.com/docs/rest/task-note-put) | Set the note |
-| `DELETE` | [`/projects/{projectId}/tasks/{taskId}/note`](https://www.taskade.com/docs/rest/task-note-delete) | Remove the note |
-| `GET` | [`/projects/{projectId}/tasks/{taskId}/fields`](https://www.taskade.com/docs/rest/task-fields-value-get) | List all field values |
-| `GET` | [`/projects/{projectId}/tasks/{taskId}/fields/{fieldId}`](https://www.taskade.com/docs/rest/task-field-value-get) | Get one field value |
-| `PUT` | [`/projects/{projectId}/tasks/{taskId}/fields/{fieldId}`](https://www.taskade.com/docs/rest/task-field-value-put) | Set one field value |
-| `DELETE` | [`/projects/{projectId}/tasks/{taskId}/fields/{fieldId}`](https://www.taskade.com/docs/rest/task-field-value-delete) | Remove one field value |
+| Endpoint | What it does |
+| --- | --- |
+| [`POST /projects/{projectId}/tasks/`](https://www.taskade.com/docs/rest/task-create) | Create up to 20 tasks |
+| [`GET /projects/{projectId}/tasks/{taskId}`](https://www.taskade.com/docs/rest/task-get) | Get one task |
+| [`PUT /projects/{projectId}/tasks/{taskId}`](https://www.taskade.com/docs/rest/task-put) | Update a task |
+| [`DELETE /projects/{projectId}/tasks/{taskId}`](https://www.taskade.com/docs/rest/task-delete) | Delete a task |
+| [`POST /projects/{projectId}/tasks/{taskId}/complete`](https://www.taskade.com/docs/rest/task-complete) | Mark a task complete |
+| [`POST /projects/{projectId}/tasks/{taskId}/uncomplete`](https://www.taskade.com/docs/rest/task-uncomplete) | Mark a task open again |
+| [`PUT /projects/{projectId}/tasks/{taskId}/move`](https://www.taskade.com/docs/rest/task-move) | Move a task in the project |
+| [`GET /projects/{projectId}/tasks/{taskId}/assignees`](https://www.taskade.com/docs/rest/task-assignees-get) | List the assignees |
+| [`PUT /projects/{projectId}/tasks/{taskId}/assignees`](https://www.taskade.com/docs/rest/task-put-assignees) | Set the assignees |
+| [`DELETE /projects/{projectId}/tasks/{taskId}/assignees/{assigneeHandle}`](https://www.taskade.com/docs/rest/task-delete-assignees) | Remove one assignee |
+| [`GET /projects/{projectId}/tasks/{taskId}/date`](https://www.taskade.com/docs/rest/task-get-date) | Get the date |
+| [`PUT /projects/{projectId}/tasks/{taskId}/date`](https://www.taskade.com/docs/rest/task-put-date) | Set the date |
+| [`DELETE /projects/{projectId}/tasks/{taskId}/date`](https://www.taskade.com/docs/rest/task-delete-date) | Remove the date |
+| [`GET /projects/{projectId}/tasks/{taskId}/note`](https://www.taskade.com/docs/rest/task-note-get) | Get the note |
+| [`PUT /projects/{projectId}/tasks/{taskId}/note`](https://www.taskade.com/docs/rest/task-note-put) | Set the note |
+| [`DELETE /projects/{projectId}/tasks/{taskId}/note`](https://www.taskade.com/docs/rest/task-note-delete) | Remove the note |
+| [`GET /projects/{projectId}/tasks/{taskId}/fields`](https://www.taskade.com/docs/rest/task-fields-value-get) | List all field values |
+| [`GET /projects/{projectId}/tasks/{taskId}/fields/{fieldId}`](https://www.taskade.com/docs/rest/task-field-value-get) | Get one field value |
+| [`PUT /projects/{projectId}/tasks/{taskId}/fields/{fieldId}`](https://www.taskade.com/docs/rest/task-field-value-put) | Set one field value |
+| [`DELETE /projects/{projectId}/tasks/{taskId}/fields/{fieldId}`](https://www.taskade.com/docs/rest/task-field-value-delete) | Remove one field value |
 
 ### AI Agents
 
 An AI agent answers chats and runs work with its own instructions and knowledge.
 
-| Method | Path | What it does |
-| --- | --- | --- |
-| `GET` | [`/agents/{agentId}`](https://www.taskade.com/docs/rest/agent-get) | Get an agent |
-| `PATCH` | [`/agents/{agentId}`](https://www.taskade.com/docs/rest/agent-update) | Update an agent |
-| `DELETE` | [`/agents/{agentId}`](https://www.taskade.com/docs/rest/delete-agent) | Delete an agent |
-| `PUT` | [`/agents/{agentId}/publicAccess`](https://www.taskade.com/docs/rest/agent-public-access-enable) | Make an agent public |
-| `GET` | [`/agents/{agentId}/public-agent`](https://www.taskade.com/docs/rest/agent-public-get) | Get the public agent settings |
-| `PATCH` | [`/agents/{agentId}/public-agent`](https://www.taskade.com/docs/rest/agent-public-update) | Update the public agent settings |
-| `GET` | [`/public-agents/{publicAgentId}`](https://www.taskade.com/docs/rest/public-agent-get) | Get a public agent by its public ID |
-| `POST` | [`/agents/{agentId}/knowledge/project`](https://www.taskade.com/docs/rest/agent-knowledge-project-create) | Add a project to the agent knowledge |
-| `POST` | [`/agents/{agentId}/knowledge/media`](https://www.taskade.com/docs/rest/agent-knowledge-media-create) | Add a media file to the agent knowledge |
-| `DELETE` | [`/agents/{agentId}/knowledge/project/{projectId}`](https://www.taskade.com/docs/rest/agent-knowledge-project-remove) | Remove a project from the knowledge |
-| `DELETE` | [`/agents/{agentId}/knowledge/media/{mediaId}`](https://www.taskade.com/docs/rest/agent-knowledge-media-remove) | Remove a media file from the knowledge |
-| `GET` | [`/agents/{agentId}/convos/`](https://www.taskade.com/docs/rest/agent-convos-get) | List the agent conversations |
-| `GET` | [`/agents/{agentId}/convos/{convoId}`](https://www.taskade.com/docs/rest/agent-convo-get) | Get one conversation |
+| Endpoint | What it does |
+| --- | --- |
+| [`GET /agents/{agentId}`](https://www.taskade.com/docs/rest/agent-get) | Get an agent |
+| [`PATCH /agents/{agentId}`](https://www.taskade.com/docs/rest/agent-update) | Update an agent |
+| [`DELETE /agents/{agentId}`](https://www.taskade.com/docs/rest/delete-agent) | Delete an agent |
+| [`PUT /agents/{agentId}/publicAccess`](https://www.taskade.com/docs/rest/agent-public-access-enable) | Make an agent public |
+| [`GET /agents/{agentId}/public-agent`](https://www.taskade.com/docs/rest/agent-public-get) | Get the public agent settings |
+| [`PATCH /agents/{agentId}/public-agent`](https://www.taskade.com/docs/rest/agent-public-update) | Update the public agent settings |
+| [`GET /public-agents/{publicAgentId}`](https://www.taskade.com/docs/rest/public-agent-get) | Get a public agent by its public ID |
+| [`POST /agents/{agentId}/knowledge/project`](https://www.taskade.com/docs/rest/agent-knowledge-project-create) | Add a project to the agent knowledge |
+| [`POST /agents/{agentId}/knowledge/media`](https://www.taskade.com/docs/rest/agent-knowledge-media-create) | Add a media file to the agent knowledge |
+| [`DELETE /agents/{agentId}/knowledge/project/{projectId}`](https://www.taskade.com/docs/rest/agent-knowledge-project-remove) | Remove a project from the knowledge |
+| [`DELETE /agents/{agentId}/knowledge/media/{mediaId}`](https://www.taskade.com/docs/rest/agent-knowledge-media-remove) | Remove a media file from the knowledge |
+| [`GET /agents/{agentId}/convos/`](https://www.taskade.com/docs/rest/agent-convos-get) | List the agent conversations |
+| [`GET /agents/{agentId}/convos/{convoId}`](https://www.taskade.com/docs/rest/agent-convo-get) | Get one conversation |
 
 ### Media
 
 Media files are the uploads in a workspace.
 
-| Method | Path | What it does |
-| --- | --- | --- |
-| `GET` | [`/medias/{mediaId}`](https://www.taskade.com/docs/rest/media-get) | Get the media details |
-| `DELETE` | [`/medias/{mediaId}`](https://www.taskade.com/docs/rest/media-delete) | Delete a media file |
-| `GET` | [`/medias/{mediaId}/download`](https://www.taskade.com/docs/rest/media-download) | Download one media file |
-| `GET` | [`/medias/spaces/{spaceId}/download`](https://www.taskade.com/docs/rest/media-download-all) | Download the media of a space |
-| `POST` | [`/medias/spaces/{spaceId}/upload`](https://www.taskade.com/docs/rest/media-upload) | Upload a file (raw body, `?filename=`) |
+| Endpoint | What it does |
+| --- | --- |
+| [`GET /medias/{mediaId}`](https://www.taskade.com/docs/rest/media-get) | Get the media details |
+| [`DELETE /medias/{mediaId}`](https://www.taskade.com/docs/rest/media-delete) | Delete a media file |
+| [`GET /medias/{mediaId}/download`](https://www.taskade.com/docs/rest/media-download) | Download one media file |
+| [`GET /medias/spaces/{spaceId}/download`](https://www.taskade.com/docs/rest/media-download-all) | Download the media of a space |
+| [`POST /medias/spaces/{spaceId}/upload`](https://www.taskade.com/docs/rest/media-upload) | Upload a file (raw body, `?filename=`) |
 
 ### Bundles
 
 A bundle is a portable copy of a whole app or workspace. See [Bundles & App Kits](../bundles.md).
 
-| Method | Path | What it does |
-| --- | --- | --- |
-| `GET` | [`/bundles/{spaceId}/export`](https://www.taskade.com/docs/rest/bundle-export) | Export a space as JSON |
-| `GET` | [`/bundles/{spaceId}/export/zip`](https://www.taskade.com/docs/rest/bundle-export-zip) | Export a space as a `.zip` or `.tsk` file |
-| `POST` | [`/bundles/{workspaceId}/import`](https://www.taskade.com/docs/rest/bundle-import) | Import a JSON bundle |
-| `POST` | [`/bundles/{workspaceId}/import/zip`](https://www.taskade.com/docs/rest/bundle-import-zip) | Import a `.zip` or `.tsk` file |
+| Endpoint | What it does |
+| --- | --- |
+| [`GET /bundles/{spaceId}/export`](https://www.taskade.com/docs/rest/bundle-export) | Export a space as JSON |
+| [`GET /bundles/{spaceId}/export/zip`](https://www.taskade.com/docs/rest/bundle-export-zip) | Export a space as a `.zip` or `.tsk` file |
+| [`POST /bundles/{workspaceId}/import`](https://www.taskade.com/docs/rest/bundle-import) | Import a JSON bundle |
+| [`POST /bundles/{workspaceId}/import/zip`](https://www.taskade.com/docs/rest/bundle-import-zip) | Import a `.zip` or `.tsk` file |
 
 ### User projects
 
 Your own recent projects, across workspaces.
 
-| Method | Path | What it does |
-| --- | --- | --- |
-| `GET` | [`/me/projects`](https://www.taskade.com/docs/rest/me-projects-get) | List the projects of the current user |
+| Endpoint | What it does |
+| --- | --- |
+| [`GET /me/projects`](https://www.taskade.com/docs/rest/me-projects-get) | List the projects of the current user |
 
 ## Errors
 

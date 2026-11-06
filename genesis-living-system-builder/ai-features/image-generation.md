@@ -7,22 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Generate Images in Chat](#generate-images-in-chat)
-- [What to Use Images For](#what-to-use-images-for)
-- [Prompt Templates by Category](#prompt-templates-by-category)
-  - [Profile Photos](#profile-photos)
-  - [Product & Listing Images](#product-and-listing-images)
-  - [Backgrounds & Textures](#backgrounds-and-textures)
-  - [Icons & UI Elements](#icons-and-ui-elements)
-  - [Marketing & Branding](#marketing-and-branding)
-- [Image Generation Best Practices](#image-generation-best-practices)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 You can generate images for your Taskade Genesis apps **natively** — no extra tools needed. Images are created directly in chat and automatically saved to your Media library for reuse across your entire workspace.
@@ -36,19 +20,17 @@ You can generate images for your Taskade Genesis apps **natively** — no extra 
 | **Batch generation** | Generate sets of consistent images in a single prompt |
 | **Reusable everywhere** | Use in any Genesis app, project, or agent knowledge base |
 
-> **Powered by Taskade EVE:** Image generation is one of the built-in agent tools, so Taskade EVE and your agents can call it. See [How Genesis Works](../genesis/how-genesis-works.md#eve-the-unified-intelligence) to understand how EVE connects everything.
+> **Powered by Taskade EVE:** Image generation is one of the built-in agent tools, so Taskade EVE and your agents can call it. See [How Taskade Genesis Works](../genesis/how-genesis-works.md#eve-the-unified-intelligence) to understand how Taskade EVE connects everything.
 
 ---
 
 ## Generate Images in Chat
 
-| Step | Action |
-|---|---|
-| 1 | Open your Genesis app in Taskade |
-| 2 | Open Taskade EVE (Taskade Assistant Agent) chat |
-| 3 | Describe the image you want (use templates below) |
-| 4 | Send the message and wait for generation |
-| 5 | Use immediately in your app, or access anytime from the **Media** tab |
+1. Open your Taskade Genesis app
+2. Open the Taskade EVE chat
+3. Describe the image you want (use templates below)
+4. Send the message and wait for generation
+5. Use immediately in your app, or access anytime from the **Media** tab
 
 > **Note:** Images generated in chat automatically appear in Media and count toward your AI credit usage. See [Taskade AI Credits](https://www.taskade.com/learn/agents/ai-usage).
 

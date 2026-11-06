@@ -49,12 +49,10 @@ export WORKSPACE_ID="your_target_workspace_id"
 
 Both APIs carry the same four bundle operations. This page shows the Action API v2 calls. Each v1 endpoint has its own generated reference page:
 
-| Operation | REST API v1 | Action API v2 |
-| --- | --- | --- |
-| Export as JSON | [`GET /bundles/{spaceId}/export`](https://www.taskade.com/docs/rest/bundle-export) | [`POST /exportBundle`](https://www.taskade.com/docs/actions/export-bundle) |
-| Export as ZIP or `.tsk` | [`GET /bundles/{spaceId}/export/zip`](https://www.taskade.com/docs/rest/bundle-export-zip) | [`GET /bundles/{spaceId}/export/zip`](https://www.taskade.com/docs/actions/bundles-export-zip) |
-| Import JSON | [`POST /bundles/{workspaceId}/import`](https://www.taskade.com/docs/rest/bundle-import) | [`POST /importBundle`](https://www.taskade.com/docs/actions/import-bundle) |
-| Import ZIP or `.tsk` | [`POST /bundles/{workspaceId}/import/zip`](https://www.taskade.com/docs/rest/bundle-import-zip) | [`POST /importBundleZip`](https://www.taskade.com/docs/actions/import-bundle-zip) |
+- **Export as JSON**: REST API v1 [`GET /bundles/{spaceId}/export`](https://www.taskade.com/docs/rest/bundle-export). Action API v2 [`POST /exportBundle`](https://www.taskade.com/docs/actions/export-bundle).
+- **Export as ZIP or `.tsk`**: REST API v1 [`GET /bundles/{spaceId}/export/zip`](https://www.taskade.com/docs/rest/bundle-export-zip). Action API v2 [`GET /bundles/{spaceId}/export/zip`](https://www.taskade.com/docs/actions/bundles-export-zip).
+- **Import JSON**: REST API v1 [`POST /bundles/{workspaceId}/import`](https://www.taskade.com/docs/rest/bundle-import). Action API v2 [`POST /importBundle`](https://www.taskade.com/docs/actions/import-bundle).
+- **Import ZIP or `.tsk`**: REST API v1 [`POST /bundles/{workspaceId}/import/zip`](https://www.taskade.com/docs/rest/bundle-import-zip). Action API v2 [`POST /importBundleZip`](https://www.taskade.com/docs/actions/import-bundle-zip).
 
 A successful ZIP export streams the binary file. Errors return the standard JSON error object.
 

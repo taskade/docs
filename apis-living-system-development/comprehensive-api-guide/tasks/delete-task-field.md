@@ -1,9 +1,9 @@
 ---
 description: >-
-  Delete Task Field — Taskade REST API v1 reference: DELETE /projects/{projectId}/tasks/{taskId}/fields/{fieldId}. Parameters, authentication, and response…
+  Delete Task Field Value — Taskade REST API v1 reference: DELETE /projects/{projectId}/tasks/{taskId}/fields/{fieldId} clears one field value on a task.
 ---
 
-# Delete Task Field
+# Delete Task Field Value
 
 {% hint style="info" %}
 **Generated reference:** This endpoint is also at [taskade.com/docs/rest/task-field-value-delete](https://www.taskade.com/docs/rest/task-field-value-delete), generated from the live OpenAPI spec. AI agents can do most of this work through the [hosted Taskade MCP server](../../genesis-app-mcp.md).

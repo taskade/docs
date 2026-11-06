@@ -1,6 +1,6 @@
 ---
 description: >-
-  Delete Task Assignees — Taskade REST API v1 reference: DELETE /projects/{projectId}/tasks/{taskId}/assignees/{assigneeHandle}. Parameters,…
+  Taskade REST API v1 reference: DELETE /projects/{projectId}/tasks/{taskId}/assignees/{assigneeHandle}. Parameters, authentication, and response schema.
 ---
 
 # Delete Task Assignees

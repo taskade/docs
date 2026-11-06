@@ -9,19 +9,6 @@ Bring Taskade Genesis apps in from GitHub repositories and push your apps back t
 
 ***
 
-## Table of Contents
-
-* [Overview](github-import-export.md#overview)
-* [Importing a Genesis App](github-import-export.md#importing-a-genesis-app)
-* [Exporting a Genesis App](github-import-export.md#exporting-a-genesis-app)
-* [What's in an Export Bundle](github-import-export.md#whats-in-an-export-bundle)
-* [Working with the Pull Request Flow](github-import-export.md#working-with-the-pull-request-flow)
-* [Permissions & Errors](github-import-export.md#permissions-and-errors)
-* [Troubleshooting](github-import-export.md#troubleshooting)
-* [Related](github-import-export.md#related)
-
-***
-
 ## Overview
 
 GitHub Import & Export lets you treat any Genesis app like code — back it up, collaborate on it through pull requests, and share it with others as a cloneable repository.
@@ -29,8 +16,6 @@ GitHub Import & Export lets you treat any Genesis app like code — back it up, 
 * **Import** an app from a public or private GitHub repo. Import works on every plan, with the per-item limits of your plan. For example, a Free workspace can hold 1 agent and 3 apps, and cannot import automations.
 * **Export** an app to a brand-new repo or push updates to an existing repo as a pull request. Export to GitHub needs **Pro or above**, and Taskade checks the plan on the server.
 * **Round trip**: export to a repo, then import it back into any workspace.
-
-<figure><img src="../../.gitbook/assets/app-kits-share-publish.gif" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 
@@ -44,7 +29,7 @@ GitHub Import & Export lets you treat any Genesis app like code — back it up, 
 
 Import works with a repo that holds an exported Taskade app. It does not turn an ordinary code repo into an app.
 
-The entire app kit — projects, agents, and automations — comes in together. **Automations are enabled automatically** after import, so the app is ready to run without manual setup.
+If your plan allows automations, the entire app kit — projects, agents, and automations — comes in together. **Automations are enabled automatically** after import, so the app is ready to run without manual setup. On a plan without automations (Free), Taskade stops the import of an app that holds automations and asks you to upgrade.
 
 ### From a Private Repository
 
@@ -79,8 +64,6 @@ The GitHub token needs `repo` scope to read private repositories. You can revoke
 {% hint style="success" %}
 Existing files in the target repo are preserved. Only the Genesis app bundle is added or updated.
 {% endhint %}
-
-<figure><img src="../../.gitbook/assets/github-automation.gif" alt="" width="563"><figcaption></figcaption></figure>
 
 Files that you removed from the app are removed from the export folders, so your repo doesn't accumulate stale artifacts. Other files in the repo stay as they are.
 

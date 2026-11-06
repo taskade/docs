@@ -13,4 +13,10 @@ description: >-
 [api-0.1.0.json](../../../.gitbook/assets/api-0.1.0.json)
 {% endopenapi %}
 
-A successful response streams the file's binary content; errors return the standard JSON error object.
+A successful response streams a ZIP archive of every media file in the space. Errors return the standard JSON error object.
+
+```bash
+curl -L "https://www.taskade.com/api/v1/medias/spaces/$SPACE_ID/download" \
+  -H "Authorization: Bearer $TASKADE_TOKEN" \
+  -o media.zip
+```

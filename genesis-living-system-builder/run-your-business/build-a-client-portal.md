@@ -1,7 +1,7 @@
 ---
 description: >-
   Build a client or member portal with no code. Each client signs in, and with
-  Private entries on, sees only their own records. Keywords: client portal, member portal, login, no-code.
+  Private entries on, sees only their own records.
 ---
 
 # Build a client or member portal in 10 minutes
@@ -31,13 +31,15 @@ Open Taskade Genesis and describe what you want in plain English — who logs in
 
 Start with a prompt like this and edit the bracketed parts for your business:
 
-```
+{% code overflow="wrap" %}
+```text
 Build a client portal for my consulting business. Each client signs in with
 their own account and sees only their own dashboard: their active projects,
 the documents I've shared with them, an invoice list, and a status update for
 each project. Clients can never see other clients' information. I sign in as
 the owner and can see and manage every client from one admin view.
 ```
+{% endcode %}
 
 The more specific you are about *what each client sees*, the better the first build. New to Taskade Genesis? Walk through [Getting Started](../genesis/getting-started.md) first.
 {% endstep %}
@@ -57,7 +59,7 @@ If your first build didn't add sign-in, just tell Taskade Genesis *"add sign-in 
 {% step %}
 ### Show each client only their record
 
-This is what makes it a *portal* instead of a shared page: every client sees only their own data. Conceptually, each record in your portal is tied to the client it belongs to, and the login decides which records that person can open. Client A signs in and sees Client A's projects; Client B never sees them.
+This is what makes it a *portal* instead of a shared page: every client sees only their own data. When **Private entries** is on and the owner field is set, each record is tied to its owner, so Client A sees only Client A's projects. Without that setting, every signed-in client can open every record.
 
 Sign-in confirms who each client is, but it does not hide other clients' records by itself. Per-user data is off by default: open **Publish → More options → Private entries**, turn it on, and pick the field that stores each record's owner — see [Give each user only their own rows](add-login-and-roles.md#give-each-user-only-their-own-rows). Describe the goal in your prompt too (*"each client sees only their own projects and documents"*) so Taskade Genesis builds the app around it. To shape what's stored and shown, see how [Projects & Databases](../workspaces/projects-databases.md) hold your records, and how [GenesisAuth](../community-and-sharing/genesis-auth.md) confirms which client is signed in.
 

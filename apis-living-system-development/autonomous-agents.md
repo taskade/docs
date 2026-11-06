@@ -9,8 +9,6 @@ An autonomous agent in Taskade does work that a trigger starts, with no person w
 
 An autonomous agent is **an AI agent that an automation runs for you, on a schedule or an event**. Your own code can also start it with one API call. For the product side, see [AI Agents in Learn Taskade](https://www.taskade.com/learn/agents).
 
-<figure><img src="../.gitbook/assets/autonomous-agents-demo.gif" alt="An automation that runs an AI agent on its own" width="563"><figcaption></figcaption></figure>
-
 ## The Three Building Blocks
 
 Each building block removes one kind of manual prompt.
@@ -48,7 +46,7 @@ sequenceDiagram
     Schedule->>Run: Run every day at 09:00
     Run->>Agent: Prompt: "Summarize new customer signups"
     Agent->>Run: Generated summary
-    Run->>Output: Post to #growth channel
+    Run->>Output: Post to the growth channel
 ```
 
 ### What to add

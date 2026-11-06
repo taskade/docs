@@ -1,6 +1,6 @@
 ---
 description: >-
-  Tasks — Taskade REST API v1 reference: GET /projects/{projectId}/tasks/{taskId}. Parameters, authentication, and response schema.
+  Tasks — Taskade REST API v1 reference: get, create, update, move, complete, and delete tasks, plus assignees, dates, notes, and fields.
 ---
 
 # Tasks
@@ -119,7 +119,7 @@ description: >-
 [api-0.1.0.json](../../../.gitbook/assets/api-0.1.0.json)
 {% endopenapi %}
 
-### Delete Task Field
+### Delete Task Field Value
 
 {% openapi src="../../../.gitbook/assets/api-0.1.0.json" path="/projects/{projectId}/tasks/{taskId}/fields/{fieldId}" method="delete" expanded="true" %}
 [api-0.1.0.json](../../../.gitbook/assets/api-0.1.0.json)

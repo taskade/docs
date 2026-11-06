@@ -7,19 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [What Is Tracked](#what-is-tracked)
-- [View App Versions](#view-app-versions)
-- [Inspect and Configure Your App](#inspect-and-configure-your-app)
-- [Restore a Previous Version](#restore-a-previous-version)
-- [Version History & Publishing](#version-history-and-publishing)
-- [Best Practices](#best-practices)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 Taskade Genesis **automatically saves versions** of your apps as you build. Content edits and styling updates create new versions (commits) you can view, compare, and restore. This gives you a safety net for experimentation and iteration. It is not a promise of unlimited retention, so export important milestones (see [GitHub Import & Export](./github-import-export.md)).
@@ -46,13 +33,11 @@ Every version captures the design and code of your app:
 
 ## View App Versions
 
-| Step | Action |
-|---|---|
-| 1 | Open your Genesis app |
-| 2 | Click the **Version history** button (clock icon) in the toolbar above the app preview |
-| 3 | Wait for the list of saved versions to open |
-| 4 | Browse the chronological list of versions |
-| 5 | Click any version to preview what the app looked like |
+1. Open your Genesis app
+2. Click the **Version history** button (clock icon) in the toolbar above the app preview
+3. Wait for the list of saved versions to open
+4. Browse the chronological list of versions
+5. Click any version to preview what the app looked like
 
 <!-- Screenshot: Version history panel with list of commits -->
 
@@ -92,13 +77,11 @@ Only add trusted, well-understood code here. Injected `<head>` markup runs on ev
 
 ## Restore a Previous Version
 
-| Step | Action |
-|---|---|
-| 1 | Open the **Version history** panel |
-| 2 | Browse and select the version you want to restore |
-| 3 | Preview the version to confirm it's correct |
-| 4 | Click **"Restore Version"** |
-| 5 | Follow the message shown after the restore |
+1. Open the **Version history** panel
+2. Browse and select the version you want to restore
+3. Preview the version to confirm it's correct
+4. Click **"Restore Version"**
+5. Follow the message shown after the restore
 
 | Important Notes | |
 |---|---|

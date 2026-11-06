@@ -12,18 +12,12 @@ This page covers the advanced [Workspace MCP](workspace-mcp.md) topics: MCP dire
 Taskade uses MCP in two directions. Before you select an integration pattern, identify the direction.
 
 ```mermaid
-graph LR
+graph TB
     subgraph "Inbound (Taskade as MCP server)"
         direction TB
-        CLIENT1[Claude Desktop]
-        CLIENT2[Cursor]
-        CLIENT3[Claude Code]
-        CLIENT4[Windsurf / VS Code / other]
+        CLIENTS["Claude Desktop, Cursor,<br/>Claude Code, Windsurf,<br/>VS Code, and other clients"]
         MCP_LOCAL["@taskade/mcp-server<br/>local stdio server"]
-        CLIENT1 --> MCP_LOCAL
-        CLIENT2 --> MCP_LOCAL
-        CLIENT3 --> MCP_LOCAL
-        CLIENT4 --> MCP_LOCAL
+        CLIENTS --> MCP_LOCAL
         MCP_LOCAL --> TASKADE_API[Taskade API]
     end
 
@@ -32,7 +26,7 @@ graph LR
         AGENT["Taskade Agent"]
         FLOW["Automation with the<br/>MCP Client connector"]
         EXTERNAL["Remote MCP<br/>Server"]
-        AGENT -.hands off to.-> FLOW
+        AGENT -.->|triggers| FLOW
         FLOW --> EXTERNAL
     end
 ```
@@ -211,9 +205,11 @@ If the problem stays, file an issue at [github.com/taskade/taskade/issues](https
 
 Paste this block into your coding agent to connect it.
 
+{% code overflow="wrap" %}
 ```text
 Start the local Taskade MCP server with "npx -y @taskade/mcp-server" over stdio. Set the environment variable TASKADE_API_KEY to a personal access token from https://www.taskade.com/settings/api. First call workspacesGet and report the workspaces you can see. Do not write anything until I confirm.
 ```
+{% endcode %}
 
 ## Next steps
 

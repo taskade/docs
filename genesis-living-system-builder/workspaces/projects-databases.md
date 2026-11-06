@@ -7,22 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [What Are Database Projects?](#what-are-database-projects)
-- [Taskade Genesis-Generated Databases](#taskade-genesis-generated-databases)
-- [Project Views](#project-views)
-- [Manual Database Creation](#manual-database-creation)
-- [Importing Data](#importing-data)
-- [Automated App Workflows](#automated-app-workflows)
-- [AI Agents in App Databases](#ai-agents-in-app-databases)
-- [How Memory Powers Your Entire Workspace](#how-memory-powers-your-entire-workspace)
-- [Best Practices](#best-practices)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 Projects & Databases are the **Memory pillar** of your Workspace DNA — one of three pillars (Memory/Projects, Intelligence/Agents, Execution/Automations) forming the [Tree of Life architecture](../genesis/how-genesis-works.md#the-tree-of-life-architecture). They store, structure, and persist the information that powers every Taskade Genesis app, AI agent, and automation flow.
@@ -93,15 +77,13 @@ You can also create databases manually:
 
 ### Step-by-Step Tutorial
 
-| Step | Action |
-|---|---|
-| 1 | Create a new project in your workspace |
-| 2 | Switch to **Table** view for structured data |
-| 3 | Click "+" on column headers to add custom fields |
-| 4 | Define field types and options (see table below) |
-| 5 | Add records manually, via import, or via automations |
-| 6 | Switch between views (Board, Calendar, Gantt, etc.) as needed |
-| 7 | Set permissions (who can view, edit) |
+1. Create a new project in your workspace
+2. Switch to **Table** view for structured data
+3. Click "+" on column headers to add custom fields
+4. Define field types and options (see table below)
+5. Add records manually, via import, or via automations
+6. Switch between views (Board, Calendar, Gantt, etc.) as needed
+7. Set permissions (who can view, edit)
 
 ### Available Field Types
 

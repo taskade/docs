@@ -4,7 +4,7 @@ description: >-
   a client portal — with logins and your own domain. No code, no sales call.
 ---
 
-# Run Your Business on Genesis
+# Run Your Business on Taskade Genesis
 
 **Describe your business in plain English and get a real, running app — then put it on your own domain with logins and run your operation on it.** No code. No sales call.
 

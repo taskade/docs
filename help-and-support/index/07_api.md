@@ -6,7 +6,7 @@ title: 'Chapter 7: API - Developer Interfaces'
 
 # Chapter 7: API - Developer Interfaces
 
-Brilliant! You've connected your tools and built integrated workflows. Now let's **unlock unlimited possibilities** with Taskade's API—giving you programmatic access to build custom applications, advanced integrations, and automated systems that extend Taskade infinitely.
+You connected your tools and built integrated workflows. Next, use the Taskade API for programmatic access: build custom applications, advanced integrations, and automated systems that extend Taskade.
 
 {% hint style="info" %}
 For the full developer reference—authentication, endpoints, SDKs, and more—see the [Developer Home](../../apis-living-system-development/developer-home.md).
@@ -26,36 +26,6 @@ For the full developer reference—authentication, endpoints, SDKs, and more—s
 ## What is the Taskade API? (Programmatic Superpowers)
 
 The Taskade API is a **RESTful interface** that exposes core Taskade resources programmatically: workspaces, folders, projects, tasks, AI agents, media, and bundles. It transforms Taskade from a productivity tool into a development platform where you can build custom applications, integrations, and automated workflows.
-
-```mermaid
-flowchart TD
-    API[Taskade API<br/>RESTful Interface] --> RESOURCES[Core Resources]
-
-    RESOURCES --> WORKSPACES[🏢 Workspaces<br/>Team containers]
-    RESOURCES --> PROJECTS[📋 Projects<br/>Work containers]
-    RESOURCES --> TASKS[✅ Tasks<br/>Work units]
-    RESOURCES --> AGENTS[🤖 AI Agents<br/>Knowledge and chats]
-    RESOURCES --> WEBHOOKS[🔗 Webhooks<br/>Real-time events]
-
-    WORKSPACES --> OPERATIONS[Operations]
-    PROJECTS --> OPERATIONS
-    TASKS --> OPERATIONS
-    AGENTS --> OPERATIONS
-    WEBHOOKS --> OPERATIONS
-
-    OPERATIONS --> CRUD[Create, Read, Update, Delete]
-    OPERATIONS --> QUERY[Paged Lists & Reads]
-    OPERATIONS --> BATCH[Bulk Operations]
-    OPERATIONS --> REALTIME[Real-time Updates]
-
-    CRUD --> APPS[Custom Applications]
-    QUERY --> INTEGRATIONS[Advanced Integrations]
-    BATCH --> AUTOMATION[Enterprise Automation]
-    REALTIME --> MONITORING[Live Dashboards]
-
-    style API fill:#e1f5fe
-    style APPS fill:#e8f5e8
-```
 
 **The API enables:**
 
@@ -169,6 +139,38 @@ curl -X POST https://www.taskade.com/api/v1/projects/your_project_id/tasks/ \
 ## Core API Resources and Operations
 
 The examples below use a small `api` helper that wraps `fetch` with your token and the base URL `https://www.taskade.com/api/v1`. The webhook example uses an `apiV2` helper with the base URL `https://www.taskade.com/api/v2`. The official SDK is not yet published (see [SDKs and Development Tools](#sdks-and-development-tools)).
+
+```javascript
+// The api and apiV2 helpers that the examples on this page use
+function createClient(baseUrl, token = process.env.TASKADE_TOKEN) {
+  async function request(method, path, { params, body } = {}) {
+    const url = new URL(baseUrl + path);
+    for (const [key, value] of Object.entries(params ?? {})) url.searchParams.set(key, value);
+    const response = await fetch(url, {
+      method,
+      headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+      body: body === undefined ? undefined : JSON.stringify(body)
+    });
+    if (!response.ok) {
+      const error = new Error(`${method} ${path} returned ${response.status}`);
+      error.status = response.status;
+      error.retryAfter = Number(response.headers.get('Retry-After') ?? 0) * 1000;
+      throw error;
+    }
+    return response.status === 204 ? null : response.json();
+  }
+  return {
+    request,
+    get: (path, options) => request('GET', path, options),
+    post: (path, body) => request('POST', path, { body }),
+    put: (path, body) => request('PUT', path, { body }),
+    delete: (path) => request('DELETE', path)
+  };
+}
+
+const api = createClient('https://www.taskade.com/api/v1');
+const apiV2 = createClient('https://www.taskade.com/api/v2');
+```
 
 ### Workspaces API
 
@@ -319,8 +321,8 @@ do {
 
 ```javascript
 class CustomerDashboard {
-  constructor(apiKey) {
-    this.api = new TaskadeAPI(apiKey);
+  constructor(client = api) {
+    this.api = client;
   }
 
   async getCustomerTasks(projectId) {
@@ -354,8 +356,8 @@ class CustomerDashboard {
 
 ```javascript
 class ReportingSystem {
-  constructor(apiKey) {
-    this.api = new TaskadeAPI(apiKey);
+  constructor(client = api) {
+    this.api = client;
     this.scheduleDailyReports();
   }
 
@@ -421,8 +423,8 @@ try {
 
 ```javascript
 class RateLimitedAPI {
-  constructor(apiKey) {
-    this.api = new TaskadeAPI(apiKey);
+  constructor(client = api) {
+    this.api = client;
     this.requests = [];
     this.rateLimit = 40; // requests per 60 seconds, the published budget per IP address
   }
@@ -449,6 +451,10 @@ class RateLimitedAPI {
 
 ```javascript
 class ResilientAPI {
+  constructor(client = api) {
+    this.api = client;
+  }
+
   async requestWithRetry(method, path, options = {}, maxRetries = 3) {
     let lastError;
 

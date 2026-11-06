@@ -75,16 +75,13 @@ Start here:
 * Inside Taskade Genesis apps as an AI layer.
 * In automations as a decision-maker.
 
-Next:
-
-* Build apps with agents: [Living Systems That Transform Business](../genesis/)
-* Put actions on autopilot: [Living Motion Overview](../automation/)
-
 ## Next steps
 
 * [AI Agents Getting Started](ai-agents-getting-started.md) — create one agent for one job
 * [Tools for AI Agents](agent-tools.md) — let agents take action, not just write text
 * [Multi-Agent Collaboration](multi-agents.md) — coordinate agents on bigger work
+* [Taskade Genesis Overview](../genesis/) — build apps with agents
+* [Automations Overview](../automation/) — put actions on autopilot
 * [taskade.com/agents](https://www.taskade.com/agents) — browse agent templates
 
 {% hint style="info" %}

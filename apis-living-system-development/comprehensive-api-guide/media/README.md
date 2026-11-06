@@ -1,6 +1,6 @@
 ---
 description: >-
-  Media — Taskade REST API v1 reference: GET /medias/{mediaId}. Parameters, authentication, and response schema.
+  Media — Taskade REST API v1 reference: get, delete, and download media files.
 ---
 
 # Media

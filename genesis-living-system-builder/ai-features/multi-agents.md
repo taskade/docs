@@ -7,21 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Set Up Your AI Agents](#set-up-your-ai-agents)
-- [Team Up with AI Agents](#team-up-with-ai-agents)
-- [Use the Agent Sidebar](#use-the-agent-sidebar)
-- [Iterate on Output](#iterate-on-output)
-- [Chat with Agents & Your Team](#chat-with-agents-and-your-team)
-- [Copy / Duplicate Multi-Agents](#copy-duplicate-multi-agents)
-- [Share Agents](#share-agents)
-- [Multi-Agent Architecture Patterns](#multi-agent-architecture-patterns)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 Multi-Agents lets you **assign multiple AI agents to work together** on projects, tasks, and conversations. Instead of relying on a single generalist AI, you create teams of specialized agents that collaborate — each bringing domain expertise, unique knowledge, and specific tools.
@@ -32,14 +17,8 @@ Specialized agents, Taskade EVE, and people coordinate around one shared project
 graph TD
   HUMAN["Human team members<br/>direction and decisions"] --> WS["Shared project / workspace"]
   WS --> EVE["Taskade EVE<br/>orchestrates and invokes agents"]
-  EVE --> RES["Research Agent"]
-  EVE --> ANL["Analyst Agent"]
-  EVE --> WRT["Writer Agent"]
-  EVE --> COORD["Coordinator Agent"]
-  RES --> WS
-  ANL --> WS
-  WRT --> WS
-  COORD --> WS
+  EVE --> AGENTS["Specialist agents<br/>research, analysis, writing, coordination"]
+  AGENTS --> WS
 ```
 
 
@@ -53,32 +32,26 @@ graph TD
 
 ### Method 1: Build from Scratch
 
-| Step | Action |
-|---|---|
-| 1 | Open the **Agents** tab in your workspace |
-| 2 | Click **Create Agent** |
-| 3 | Configure: name, persona, tone, knowledge, tools |
-| 4 | Repeat for each specialized agent in your team |
+1. Open the **Agents** tab in your workspace
+2. Click **Create Agent**
+3. Configure: name, persona, tone, knowledge, tools
+4. Repeat for each specialized agent in your team
 
 ### Method 2: Use Templates
 
-| Step | Action |
-|---|---|
-| 1 | Browse the agent template library |
-| 2 | Select pre-built agent templates for each role |
-| 3 | Customize each agent for your specific use case |
+1. Browse the agent template library
+2. Select pre-built agent templates for each role
+3. Customize each agent for your specific use case
 
 ### Method 3: Auto-Generate a Team with AI
 
 The fastest way to create a multi-agent team:
 
-| Step | Action |
-|---|---|
-| 1 | Open the **AI Teams** tab |
-| 2 | Click **Generate** |
-| 3 | Describe your team in plain English (e.g., "I need a marketing team with a content writer, SEO specialist, social media manager, and analytics analyst") |
-| 4 | AI generates the complete team with specialized agents, knowledge sources, and tool configurations |
-| 5 | Review and customize each agent as needed |
+1. Open the **AI Teams** tab
+2. Click **Generate**
+3. Describe your team in plain English (e.g., "I need a marketing team with a content writer, SEO specialist, social media manager, and analytics analyst")
+4. AI generates the complete team with specialized agents, knowledge sources, and tool configurations
+5. Review and customize each agent as needed
 
 > **Pro tip:** Auto-generated teams include appropriate personas, knowledge connections, and tool assignments based on your description. You can always fine-tune each agent individually afterward.
 
@@ -97,29 +70,23 @@ The fastest way to create a multi-agent team:
 
 ### Assign a Single Agent
 
-| Step | Action |
-|---|---|
-| 1 | Open a project or task |
-| 2 | Click the **Agent** icon |
-| 3 | Select an agent from your workspace |
-| 4 | The agent now has context for that specific project/task |
+1. Open a project or task
+2. Click the **Agent** icon
+3. Select an agent from your workspace
+4. The agent now has context for that specific project/task
 
 ### Assign Multiple Agents
 
-| Step | Action |
-|---|---|
-| 1 | Open a project |
-| 2 | Click the **Agent** icon |
-| 3 | Select multiple agents for the project |
-| 4 | Each agent applies its specialty to the project |
+1. Open a project
+2. Click the **Agent** icon
+3. Select multiple agents for the project
+4. Each agent applies its specialty to the project
 
 ### Bulk-Assign Agents
 
-| Step | Action |
-|---|---|
-| 1 | Select multiple tasks or projects |
-| 2 | Use bulk actions to assign agents |
-| 3 | Agents are assigned to all selected items |
+1. Select multiple tasks or projects
+2. Use bulk actions to assign agents
+3. Agents are assigned to all selected items
 
 ---
 

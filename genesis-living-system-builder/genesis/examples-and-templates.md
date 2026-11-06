@@ -29,7 +29,6 @@ Try these live apps — all built with Taskade Genesis, all verified and working
 | **Invoice Generator**        | Generate professional invoices with automated calculations | [Try It →](https://www.taskade.com/app/invoice-generator-v71ywf2zs5bu9a5m) |
 | **Client Portal Dashboard**  | Project tracking, communication, document sharing          | [Try It →](https://www.taskade.com/app/client-portal-dashboard-7nj4gtlug6gjqtm6) |
 | **Simple Store Manager**     | Track orders and manage inventory for small businesses     | [Try It →](https://www.taskade.com/app/simple-store-manager-ujtqojrsimcct6io) |
-| **Smart Feedback Form**      | AI-powered feedback collection with sentiment detection    | [Try It →](https://www.taskade.com/app/feedback-form-roq58dgczybbc08l) |
 | **Support Rating Dashboard** | Track customer service quality and identify improvements   | [Try It →](https://www.taskade.com/app/support-rating-dashboard-app-f05weamthnc7akpx) |
 
 **Booking & Scheduling**
@@ -79,7 +78,6 @@ Try these live apps — all built with Taskade Genesis, all verified and working
 | App                    | What It Does                                             | Live Demo                                                       |
 | ---------------------- | -------------------------------------------------------- | --------------------------------------------------------------- |
 | **Flash Deck Maker**   | Flashcards with spaced repetition and progress analytics | [Try It →](https://www.taskade.com/app/flash-deck-maker-luyemdxzpu8lbftd) |
-| **Smart Meal Planner** | Personalized meal plans based on dietary preferences     | [Try It →](https://www.taskade.com/app/ai-meal-planner-4doegcveur9de5xc) |
 | **Mood Tracker**       | Daily mood logging with pattern recognition              | [Try It →](https://www.taskade.com/app/mood-tracker-wzdnuv9vsxvyfinj) |
 
 **Tools & Utilities**
@@ -87,7 +85,6 @@ Try these live apps — all built with Taskade Genesis, all verified and working
 | App                     | What It Does                                         | Live Demo                                                       |
 | ----------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
 | **QR Code Studio**      | Custom QR codes with branding and analytics          | [Try It →](https://www.taskade.com/app/qr-code-studio-8wydzah8zexhv5ub) |
-| **AI Prompt Evaluator** | Score and optimize AI prompts with suggestions       | [Try It →](https://www.taskade.com/app/ai-prompt-evaluation-tool-svnocpc6jk90oa6g) |
 | **RSS-Feed Inbox**      | Aggregate and filter content from multiple RSS feeds | [Try It →](https://www.taskade.com/app/rss-feed-inbox-9wtiiu6m11617l8l) |
 
 **Fun & Games** (yes, Taskade Genesis can build games too)
@@ -151,7 +148,7 @@ Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace
 
 | Taskade Genesis App             | Prompt Used                                                                                                                                                                   | Preview Link                                                  |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| **SaaS Product Page**   | `"Create a modern project management SaaS landing page with a dark theme, dashboard mockup showing tasks and team collaboration features, animated elements, and clear CTAs"` | [Try it →](https://landing-page-mirage-jdglsxqn.taskade.app/) |
+| **SaaS Product Page**   | "Create a modern project management SaaS landing page with a dark theme, dashboard mockup showing tasks and team collaboration features, animated elements, and clear CTAs" | [Try it →](https://landing-page-mirage-jdglsxqn.taskade.app/) |
 | **Designer Portfolio**  | `"Build a clean portfolio landing page for a UX designer showcasing projects, testimonials, and contact information with modern design"`                                      | [Try it →](https://portfolio-palette-2fl0un79.taskade.app/)   |
 | **Local Business Site** | `"Design a homepage for my dental practice with booking feature, service descriptions, and testimonials"`                                                                     | [Try it →](https://dental-home-s4xmcak6.taskade.app/)         |
 
@@ -161,7 +158,7 @@ Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | **Lead Capture Form**  | `"Build a lead generation form for my digital marketing agency with fields for name, email, company, and budget range"`         | [Try it →](https://lead-capture-form-pmtoelno.taskade.app/)  |
 | **Event Registration** | `"Create an event registration form with attendee details, meal preferences, and payment integration via Stripe"`               | [Try it →](https://event-registration-68n46o73.taskade.app/) |
-| **Product Order Form** | `"Build a custom product order form for my handmade jewelry business with image gallery, size options, and quantity selection"` | [Try it →](https://product-order-form-xpi6oe6j.taskade.app/) |
+| **Product Order Form** | "Build a custom product order form for my handmade jewelry business with image gallery, size options, and quantity selection" | [Try it →](https://product-order-form-xpi6oe6j.taskade.app/) |
 
 💡 **Pro Tip:** These are real, working apps. Click the preview links to see exactly what Taskade Genesis can build for your business!
 
@@ -182,7 +179,7 @@ I run a restaurant and need customers to submit feedback about their dining expe
 **What Taskade Genesis Built:**
 
 * **Smart Feedback Form** - Easy rating system with photo uploads
-* **Instant Manager Alerts** - Slack notifications for low ratings (≤3 stars)
+* **Instant Manager Alerts** - Slack notifications for low ratings (3 stars or lower)
 * **Customer Thank You System** - Automated personalized emails
 * **Performance Dashboard** - Weekly analytics and trend tracking
 * **Response Management** - Track follow-up actions taken

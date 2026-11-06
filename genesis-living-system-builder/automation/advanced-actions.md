@@ -7,10 +7,6 @@ description: >-
 
 **Master the latest automation capabilities including loop processing, WhatsApp Business integration, HTTP response schema generation, and error handling. These features turn complex workflows into simple, reliable automations.**
 
-{% hint style="success" %}
-Loop actions, WhatsApp Business messaging, HTTP response schema generation, and social media integrations make Taskade automations even more powerful.
-{% endhint %}
-
 {% hint style="info" %}
 The flows on this page use the automation editor. You add each step from the step picker, and you insert values from earlier steps with the `@` picker. Premium integrations (for example WhatsApp Business, Slack, X/Twitter, LinkedIn and Facebook Pages) need a paid plan.
 {% endhint %}
@@ -22,10 +18,6 @@ The flows on this page use the automation editor. You add each step from the ste
 ### **What Are Loop Actions?**
 
 A Loop repeats a set of steps once for each item in a list. One trigger fans out into many personalized actions, one per row, task, or item. Loops support filters, conditional branches, and nested loops.
-
-### **Loop Types**
-
-The loop has one type: for-each.
 
 #### **For Each Loop**
 A loop is a bounded for-each. It runs once for every item that already exists in the list, then stops. It does not repeat until a goal is reached, and it has no exit condition of its own.
@@ -57,7 +49,7 @@ Loop: For each task
     Action: Send an email (review reminder)
 ```
 
-#### **Loop Control & Break Conditions**
+#### **Skip Items in a Loop**
 A loop has no break condition. To skip items, add a **Filter Data** step inside the loop. An item that does not match stops there, and the loop continues with the next item.
 
 | What happens | Result |
@@ -217,7 +209,7 @@ Action: X/Twitter → Create Post (summary + link)
 ### **Smart Error Recovery**
 
 #### **Automatic Retry Strategies**
-Taskade retries a step automatically after a temporary error, such as a network error, an API rate limit, or a server error. An agent step (**Ask Agent**, **Ask Agent Team**, or **Run Agent Command**) runs once and is not retried.
+Taskade retries a step automatically after a temporary error, such as a network error, an API rate limit, or a server error. An agent step (**Ask an agent**, **Ask an agent team**, or **Run an agent command**) runs once and is not retried.
 
 To decide what happens when a step still fails, open an action step and check **Continue if this step fails**. Then pick one option:
 
@@ -231,7 +223,7 @@ Use a **Branch** step after a risky step to route on its result. Use **Stop and 
 
 ### **Comprehensive Error Monitoring**
 
-#### **Error Analytics Dashboard**
+#### **Run history**
 The automation **Runs** tab lists every run. Open a run to see the exact input and output of each step and the reason a step failed or was skipped. Click **↻** to retry a failed run after you fix the cause.
 
 ---
@@ -243,16 +235,16 @@ The automation **Runs** tab lists every run. Open a run to see the exact input a
 #### **Dynamic Agent Selection**
 | Action | Description |
 | --- | --- |
-| **Ask Agent** | Uses a custom AI agent to respond to a query |
-| **Run Agent Command** | Runs a custom agent command |
-| **Ask Agent With Structured Output** | Returns typed fields you can use in later steps |
+| **Ask an agent** | Uses a custom AI agent to respond to a query |
+| **Run an agent command** | Runs a custom agent command |
+| **Ask an agent**, with **Output Type** set to **Structured Output** | Returns typed fields you can use in later steps |
 | **Create an agent** | Creates a new AI agent in the workspace |
 | **Update an agent** | Changes the name, the greeting, or the instructions of an agent |
 
 To pick an agent per case, add a **Branch** step and call a different agent on each path.
 
 #### **Agent Collaboration Workflows**
-The **Ask Agent Team** action sends one prompt to an AI Team and returns responses from multiple agents. AI Teams need Pro and up. The **Agent Tool** trigger lets an agent run an automation as one of its tools during a conversation.
+The **Ask an agent team** action sends one prompt to an AI Team and returns responses from multiple agents. AI Teams need Pro and up. The **Agent Tool** trigger lets an agent run an automation as one of its tools during a conversation.
 
 ### **Conversation Export & Analysis**
 
@@ -284,7 +276,7 @@ Automation runs count toward the plan limit for runs per billing period. AI step
 
 ---
 
-## Build Automations with AI — Available Today
+## Build automations with AI
 
 You don't have to assemble flows by hand — Taskade already builds automations from natural language:
 

@@ -26,12 +26,16 @@ layout:
 
 # February 2026
 
+{% hint style="info" %}
+**Developer highlights.** This section tracks API, MCP, SDK, automation, and Taskade Genesis platform changes for developers. For the full product changelog see [taskade.com/changelog](https://www.taskade.com/changelog); for release newsletters see [taskade.com/blog/updates](https://www.taskade.com/blog/updates).
+{% endhint %}
+
 ***
 
 ## Releases this month
 
 * [February 27, 2026](february-27-2026.md) — Hosted MCP v2 — OAuth 2.0 PKCE + Dynamic Client Registration
-* [February 25, 2026](february-25-2026.md)
+* [February 25, 2026](february-25-2026.md) — SAML SSO Security Patch and Webhook CORS
 * [February 23, 2026](february-23-2026.md) — Upgraded LLM Models
 * [February 19, 2026](february-19-2026.md) — Top Creators
 * [February 18, 2026](february-18-2026.md) — Automation: Retry-After Header Support for 429 Responses

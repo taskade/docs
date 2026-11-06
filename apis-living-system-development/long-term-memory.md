@@ -11,9 +11,6 @@ You can browse, edit, and version it in Taskade, and read or change it through t
 
 This architecture keeps Taskade memory visible, editable, and reusable.
 
-
-<figure><img src="../.gitbook/assets/ltm-architecture.png" alt="Memory stored as Taskade projects" width="563"><figcaption></figcaption></figure>
-
 ## Before you start
 
 - To read memory with the API, a personal access token from [taskade.com/settings/api](https://www.taskade.com/settings/api). See [Authentication](developers/authentication.md).
@@ -28,24 +25,10 @@ Most AI platforms store memory in a hidden vector database. You cannot see or di
 
 Taskade takes a different approach.
 
-```mermaid
-graph TB
-    subgraph "Traditional AI Platforms"
-        A1[Agent] -.->|opaque blob| M1[(Hidden<br/>memory)]
-    end
-
-    subgraph "Taskade - Memory as Projects"
-        A2[Taskade EVE]
-        M2[Memory Project<br/>in your workspace]
-        U2[User]
-
-        A2 -.writes.-> M2
-        A2 -.reads.-> M2
-        U2 -.can browse.-> M2
-        U2 -.can edit.-> M2
-        U2 -.can query via API.-> M2
-    end
-```
+| Platform | Where memory lives | Can you read and edit it? |
+| --- | --- | --- |
+| Traditional AI platforms | A hidden memory store | No |
+| Taskade | A Memory Project in your workspace | Yes: browse it, edit it, and query it with the API |
 
 **Why this matters:**
 
@@ -58,15 +41,13 @@ graph TB
 
 ## How Taskade EVE uses memory
 
-<figure><img src="../.gitbook/assets/ltm-agent-memory.gif" alt="An agent that reads and writes its memory" width="563"><figcaption></figcaption></figure>
-
 Taskade EVE is the meta-agent of the platform. You talk to it to build apps and orchestrate work.
 
 - Memory **persists across sessions.** Taskade EVE retains work context after you close and reopen Taskade.
 - Memory is **workspace-scoped.** Each workspace has its own Taskade EVE memory.
 - Personal preferences are the one exception. Taskade EVE keeps them in a single note on your account, and that note applies in every workspace. Edit or clear it in **Settings** → **Account**, under **Taskade EVE memory**.
 - Memory grows **automatically**. You do not tag entries by hand.
-- Taskade EVE runs on the same Workspace DNA (Projects + Agents + Automations) it orchestrates for you.
+- Taskade EVE runs on the same Workspace DNA that it orchestrates for you: Memory (projects), Intelligence (agents), and Execution (automations).
 
 
 ---

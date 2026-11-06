@@ -1,23 +1,9 @@
 ---
 description: >-
-  Debug Taskade Genesis apps with the Genesis Debugging Framework: classify failures, diagnose imports, routing, schema, and namespace bugs, and prevent.
+  Debug Taskade Genesis apps: classify failures, diagnose import, routing, schema, and namespace bugs, and prevent them with better prompts.
 ---
 
 # Debugging Genesis Apps
-
----
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Let Taskade EVE Fix It First](#let-taskade-eve-fix-it-first)
-- [Taskade Genesis Debugging Framework (GDF)](#genesis-debugging-framework-gdf)
-  - [Layer 1: Failure Classification](#layer-1-failure-classification)
-  - [Layer 2: Diagnostic Checklist](#layer-2-diagnostic-checklist)
-  - [Layer 3: Root Cause Documentation](#layer-3-root-cause-documentation)
-- [Genesis Prompting Protocol (GPP)](#genesis-prompting-protocol-gpp)
-- [Putting It All Together](#putting-it-all-together)
-- [What's Next](#whats-next)
 
 ---
 
@@ -49,15 +35,13 @@ The GDF gives you a systematic way to isolate and fix failures in AI-generated c
 
 Every bug should be tagged with one of these categories:
 
-| Class | Name | Description | Typical Symptom |
-|---|---|---|---|
-| Import Graph | Missing or incorrect imports | Component referenced but not imported | Runtime ReferenceError |
-| Registry Drift | Router or component mismatch | Navigation mapped to wrong component | Wrong UI view |
-| Schema Drift | UI vs API data mismatch | Enum values or data structures differ between frontend and backend | Filters return 0 results |
-| Namespace Collision | Variable or function shadowing | Imported name overwritten locally | Unpredictable behavior |
-| State Desync | React state mismatch | Stale props or derived state | UI not updating |
-| Async Drift | Async state errors | Race conditions in async operations | Random or intermittent failures |
-| Dependency Drift | Package mismatch | Library functions missing or changed | Compile or runtime errors |
+* **Import Graph** (missing or incorrect imports): A component is referenced but not imported. Symptom: runtime ReferenceError.
+* **Registry Drift** (router or component mismatch): Navigation maps to the wrong component. Symptom: wrong UI view.
+* **Schema Drift** (UI vs API data mismatch): Enum values or data structures differ between frontend and backend. Symptom: filters return 0 results.
+* **Namespace Collision** (variable or function shadowing): An imported name is overwritten locally. Symptom: unpredictable behavior.
+* **State Desync** (React state mismatch): Props or derived state are stale. Symptom: UI not updating.
+* **Async Drift** (async state errors): Race conditions in async operations. Symptom: random or intermittent failures.
+* **Dependency Drift** (package mismatch): Library functions are missing or changed. Symptom: compile or runtime errors.
 
 {% hint style="success" %}
 **Most Genesis bugs fall into the first four classes.** Start there when diagnosing an issue.

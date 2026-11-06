@@ -7,26 +7,6 @@ description: >-
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Explore the Knowledge Tab](#explore-the-knowledge-tab)
-- [Train Your Agent](#train-your-agent)
-- [Supported Knowledge Sources](#supported-knowledge-sources)
-- [Training Methods](#training-methods)
-  - [Upload Documents](#upload-documents)
-  - [Use Web Resources](#use-web-resources)
-  - [Create Sources Manually](#create-sources-manually)
-  - [Dynamic Knowledge (Projects)](#dynamic-knowledge-projects)
-- [Bulk Training](#bulk-training)
-- [Look Up References](#look-up-references)
-- [Knowledge Backlinks](#knowledge-backlinks)
-- [What Projects Expose to Agents](#what-projects-expose-to-agents)
-- [Knowledge Best Practices](#knowledge-best-practices)
-- [What's Next](#whats-next)
-
----
-
 ## Overview
 
 Agent knowledge is the information your custom AI agents use to provide **contextual, accurate responses**. It combines pre-trained AI capabilities with **your own data** — documents, URLs, projects, and media — to create agents that truly understand your business.
@@ -37,12 +17,10 @@ Agent knowledge is the information your custom AI agents use to provide **contex
 
 ## Explore the Knowledge Tab
 
-| Step | Action |
-|---|---|
-| 1 | Go to the **Agents** tab |
-| 2 | Click the three dots (⋯) next to your agent |
-| 3 | Select **Edit agent** |
-| 4 | Open the **Knowledge** tab |
+1. Go to the **Agents** tab.
+2. Click the three dots (⋯) next to your agent.
+3. Select **Edit agent**.
+4. Open the **Knowledge** tab.
 
 <!-- Screenshot: Knowledge tab with sources listed -->
 
@@ -70,12 +48,10 @@ The Knowledge tab shows all sources your agent has been trained on, with options
 
 ### Upload Documents
 
-| Step | Action |
-|---|---|
-| 1 | Open the Knowledge tab |
-| 2 | Click the **ADD SOURCES** box to choose files from your device, or drag & drop them in |
-| 3 | Or click **Add Media** to pick a file already uploaded to your projects |
-| 4 | Click **Update** to save. Files are processed and indexed automatically |
+1. Open the Knowledge tab.
+2. Click the **ADD SOURCES** box to choose files from your device, or drag & drop them in.
+3. Or click **Add Media** to pick a file already uploaded to your projects.
+4. Click **Update** to save. Files are processed and indexed automatically.
 
 **Supported document formats:**
 
@@ -90,11 +66,9 @@ The Knowledge tab shows all sources your agent has been trained on, with options
 
 ### Use Web Resources
 
-| Step | Action |
-|---|---|
-| 1 | In the Knowledge tab, click **Add link** (web page), **Add YouTube** (videos), or add from **Google Drive**, **Dropbox**, **Box**, or **OneDrive** |
-| 2 | Paste the link or pick the file |
-| 3 | Click **Update** to save. Content is scraped/transcribed and indexed |
+1. In the Knowledge tab, click **Add link** (web page), **Add YouTube** (videos), or add from **Google Drive**, **Dropbox**, **Box**, or **OneDrive**.
+2. Paste the link or pick the file.
+3. Click **Update** to save. Content is scraped/transcribed and indexed.
 
 | Resource Type | What Gets Indexed |
 |---|---|
@@ -109,12 +83,10 @@ The Knowledge tab shows all sources your agent has been trained on, with options
 
 ### Create Sources Manually
 
-| Step | Action |
-|---|---|
-| 1 | Open the Knowledge tab |
-| 2 | Click **Add Markdown/Text** |
-| 3 | Write or paste Markdown/plain text, then click **Add to Knowledge** |
-| 4 | Click **Update** to save — the source is available to your agent on its next reply |
+1. Open the Knowledge tab.
+2. Click **Add Markdown/Text**.
+3. Write or paste Markdown/plain text, then click **Add to Knowledge**.
+4. Click **Update** to save — the source is available to your agent on its next reply.
 
 > **Tip:** Use manual sources for FAQ answers, custom instructions, edge case handling, or information not available in any file.
 
@@ -122,12 +94,10 @@ The Knowledge tab shows all sources your agent has been trained on, with options
 
 Connect Taskade projects as **living knowledge sources** that update automatically:
 
-| Step | Action |
-|---|---|
-| 1 | Open the Knowledge tab |
-| 2 | Click **Add Project** |
-| 3 | Select one or more projects |
-| 4 | Projects become live knowledge — agent always has the latest data |
+1. Open the Knowledge tab.
+2. Click **Add Project**.
+3. Select one or more projects.
+4. Projects become live knowledge — agent always has the latest data.
 
 > **Dynamic = real-time.** When you update a project, the agent's knowledge updates automatically. No re-upload needed.
 

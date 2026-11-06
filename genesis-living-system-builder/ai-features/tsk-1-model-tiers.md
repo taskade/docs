@@ -16,7 +16,7 @@ TSK-1 is not a single model. It is an **orchestration layer** — the intelligen
 ## How TSK-1 fits in the stack
 
 ```
-Taskade → Genesis → EVE → TSK-1 → Workspace DNA → Running workspace
+Taskade → Taskade Genesis → Taskade EVE → TSK-1 → Workspace DNA → Running workspace
 ```
 
 TSK-1 sits between the **Taskade EVE** persona and **Workspace DNA** — it is the engine that decides *how* to execute a given request across the Memory (projects), Intelligence (agents), and Execution (automations) pillars, and the Taskade Genesis apps built on them.
@@ -27,12 +27,12 @@ TSK-1 sits between the **Taskade EVE** persona and **Workspace DNA** — it is t
 
 The model picker shows one TSK-1 header with a capability ladder (**TSK-Instant**, **TSK-Standard**, **TSK-Thinking**, **TSK-Reasoning**). Each tier is defined by what it's good for, not by its underlying provider:
 
-| Tier | Best for | Example use | Plans |
-|------|----------|------------|--------------|
-| **Instant** | Fast edits, simple completions, quick lookups | Rename a task, fix a typo, categorize an item | All plans |
-| **Standard** | Everyday work — balanced speed and reasoning | Draft an email, summarize a document, answer a question | Paid plans |
-| **Thinking** | Planning, creation, multi-step reasoning | Design an automation flow, write a project proposal, generate a Genesis app | Paid plans |
-| **Reasoning** | Complex systems, deep analysis, multi-agent coordination | Audit a workspace, cross-reference databases, run a multi-agent team | Business and up |
+| Tier | Plans | Best for |
+|------|-------|----------|
+| **Instant** | All plans | Fast edits, simple completions, quick lookups. Example: rename a task, fix a typo, categorize an item. |
+| **Standard** | Paid plans | Everyday work — balanced speed and reasoning. Example: draft an email, summarize a document, answer a question. |
+| **Thinking** | Paid plans | Planning, creation, multi-step reasoning. Example: design an automation flow, write a project proposal, generate a Genesis app. |
+| **Reasoning** | Business and up | Complex systems, deep analysis, multi-agent coordination. Example: audit a workspace, cross-reference databases, run a multi-agent team. |
 
 Every tier is visible in the picker on every plan; manually pinning a tier requires the plan shown. **Auto** is available on every plan and picks the depth for each request based on the task.
 

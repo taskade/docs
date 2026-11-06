@@ -27,12 +27,14 @@ Your code can reach four product areas.
 
 **A code generator returns source code and a preview. Taskade Genesis returns a running app on a live workspace: the data, the agents, and the automations are part of the app.** This changes what your code connects to.
 
-| Layer | A code generator gives you | Taskade Genesis gives you | What your code calls |
-| --- | --- | --- | --- |
-| **Memory (data)** | A database that you connect and manage | Taskade Projects that the team already edits | [REST API v1](https://www.taskade.com/docs/rest) projects and tasks |
-| **Intelligence (AI)** | An AI feature that you add yourself | AI agents with knowledge, tools, and memory | `promptAgent` in the [Action API](../api-v2-reference.md) |
-| **Execution (actions)** | Background jobs that you write and host | Automations across 100+ integrations | A **Webhook Received** trigger URL (Pro and above), with its own token |
-| **App surface** | A preview that you deploy | A hosted app that you publish | [Hosted MCP](../genesis-app-mcp.md) to edit the app source |
+With a code generator, you connect and manage the database, you add the AI feature yourself, you write and host the background jobs, and you deploy the preview. Taskade Genesis gives you each layer ready to use:
+
+| Layer | Taskade Genesis gives you | What your code calls |
+| --- | --- | --- |
+| **Memory (data)** | Taskade Projects that the team already edits | [REST API v1](https://www.taskade.com/docs/rest) projects and tasks |
+| **Intelligence (AI)** | AI agents with knowledge, tools, and memory | `promptAgent` in the [Action API](../api-v2-reference.md) |
+| **Execution (actions)** | Automations across 100+ integrations | A **Webhook Received** trigger URL (Pro and above), with its own token |
+| **App surface** | A hosted app that you publish | [Hosted MCP](../genesis-app-mcp.md) to edit the app source |
 
 The three layers form Workspace DNA. Memory feeds Intelligence, Intelligence starts Execution, and Execution writes the results back to Memory. Your API credential (a personal access token or OAuth 2.0) reaches the REST API, the Action API, and hosted MCP. A **Webhook Received** trigger uses a separate token that works only for that one automation. Do not send `TASKADE_TOKEN` to a webhook URL. See [Webhooks](../webhooks.md). An integration that writes a task also feeds every app and agent that reads that project.
 
@@ -42,12 +44,12 @@ Pick a credential, then make one call.
 
 | Your goal | Credential | Start with |
 | --- | --- | --- |
-| Make your first call from a script | Personal access token (recommended for development) | [Quickstart](https://www.taskade.com/docs/getting-started/quickstart): first call, a project, and a task in about five minutes |
-| Act for other Taskade users | OAuth 2.0 (recommended for production). Each user signs in and approves access to their own account | [Authentication](authentication.md) |
+| Make your first call from a script | Personal access token | [Quickstart](https://www.taskade.com/docs/getting-started/quickstart): first call, a project, and a task in about five minutes |
+| Act for other Taskade users | OAuth 2.0 | [Authentication](authentication.md) |
 | Learn every endpoint group | Either credential | [Taskade API overview](api.md) |
 | Try a call in the browser | Personal access token | [Interactive API documentation](https://www.taskade.com/api/documentation/) |
 
-To create a token, see [Personal access tokens](personal-tokens.md).
+Use a personal access token for development. Use OAuth 2.0 for production: each user signs in and approves access to their own account. To create a token, see [Personal access tokens](personal-tokens.md).
 
 ## Developer surfaces
 

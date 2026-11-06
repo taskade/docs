@@ -59,7 +59,8 @@ OPENAI_API_KEY=your_openai_key_here
 ### **Import Scripts & Temporary Data**
 ```bash
 # ❌ These are also excluded:
-scripts/                    # Import/sync scripts (.github/scripts/ holds the public CI checks and is committed)
+# (.github/scripts/ holds the public CI checks and is committed.)
+scripts/                   # Import/sync scripts
 package.json               # Node dependencies for scripts
 *-urls.txt                 # Temporary URL lists
 help-center/_imported/     # Imported content (temporary)
@@ -152,7 +153,7 @@ Before every commit, verify:
 
 ## Repository Structure
 
-### **Public Content** (✅ Safe to commit)
+### Public content (safe to commit)
 ```
 docs.taskade.com/
 ├── README.md              # Public documentation
@@ -163,14 +164,14 @@ docs.taskade.com/
 └── .gitbook/assets/       # Public images/assets
 ```
 
-### **Private/Hidden Content** (❌ Never commit)
+### Private content (never commit)
 ```
 Local Development Only:
 ├── .env                   # Environment variables
 ├── scripts/               # Import/sync scripts
 ├── help-center/_imported/ # Temporary imported content
 ├── package.json           # Script dependencies
-└── *-urls.txt            # Temporary URL lists
+└── *-urls.txt             # Temporary URL lists
 ```
 
 ## Emergency Contacts

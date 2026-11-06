@@ -16,22 +16,20 @@ description: Connect your own branded domain to a published Taskade Genesis app 
 
 Custom domains let your Genesis apps live at your own web address instead of a shared `taskade.app` subdomain.
 
-### Before Custom Domains (Looks Amateurish)
+### Before: a shared Taskade subdomain
 
 ```
 https://random-gibberish-a7b2.taskade.app
 https://purple-elephant-xyz.taskade.site
 ```
 
-### With Custom Domains (Looks Professional)
+### After: your own domain
 
 ```
 https://app.yourcompany.com
 https://portal.clientname.com
 https://booking.restaurantname.com
 ```
-
-This simple change makes customers think you hired a team of developers when really you just described what you wanted in plain English!
 
 ***
 
@@ -40,7 +38,7 @@ This simple change makes customers think you hired a team of developers when rea
 ### **Professional Appearance**
 
 * Apps appear to be built specifically for your brand
-* Clients never see "Taskade" in the URL or interface
+* Clients see your domain in the URL, not a Taskade subdomain
 * Consistent branding throughout the user experience
 * Higher perceived value and professionalism
 
@@ -63,7 +61,7 @@ This simple change makes customers think you hired a team of developers when rea
 * Perfect for agencies delivering client solutions
 * White-label applications under client brands
 * No ongoing Taskade branding in client-facing tools
-* Complete solution ownership appearance
+* The tool looks like your own product
 
 ***
 
@@ -147,7 +145,7 @@ If HTTPS is still off after about 10 minutes, the panel offers an optional extra
 
 **Latest Enhancement:** Advanced custom domain support with seamless Cloudflare SSL integration for maximum security and performance.
 
-### Cloudflare SSL Benefits:
+### Cloudflare SSL Benefits
 
 **Automatic SSL Certificate Management:**
 
@@ -169,14 +167,14 @@ If HTTPS is still off after about 10 minutes, the panel offers an optional extra
 * **Analytics Integration** - Cloudflare analytics integrated with Taskade insights
 * **Rate Limiting** - Advanced protection against abuse
 
-### How Cloudflare SSL Works:
+### How Cloudflare SSL Works
 
 1. **Domain Connection** - Connect your domain to Taskade from any DNS provider
 2. **Automatic SSL** - Cloudflare provisions and manages SSL certificates
 3. **DNS Propagation** - Cloudflare handles DNS routing and optimization
 4. **Live Deployment** - Your Genesis app is live with enterprise-grade security
 
-### Setup with Cloudflare:
+### Setup with Cloudflare
 
 1. **Any DNS provider works** - Taskade serves custom domains through Cloudflare's network on your behalf; you do **not** need a Cloudflare account — any DNS provider that can create a CNAME record works
 2. **Add CNAME Record** - Point your subdomain to `external.taskade.com`. If your DNS is on Cloudflare, set the record to **DNS only** (gray cloud), not Proxied
@@ -265,7 +263,7 @@ Once your app is on a custom domain, enhance the branding:
 
 ```
 ❌ "Powered by Taskade"
-✅ "© 2025 Your Company Name"
+✅ "© Your Company Name"
 
 ❌ "Built with Genesis"  
 ✅ Custom footer with your branding

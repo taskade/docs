@@ -17,53 +17,23 @@ Many teams first build visually with [Taskade Genesis](https://www.taskade.com/c
 
 ## Integration surface at a glance
 
-```mermaid
-graph TB
-    subgraph "Your Application"
-        APP["Your App / Script / Agent"]
-    end
+**Calls from your app, script, or agent into Taskade:**
 
-    subgraph "Integration Surface"
-        API1[REST API v1<br/>RESTful + Bearer auth]
-        API2[Action API v2<br/>RPC + Bearer auth]
-        MCP_IN["@taskade/mcp-server<br/>Inbound MCP, npm"]
-        MCP_HOST[Hosted MCP<br/>https://www.taskade.com/mcp]
-        MCP_OUT["MCP Client connector<br/>Outbound, as an automation step"]
-        SIGNED_HOOK["Signed Webhook API<br/>Programmatic event delivery"]
-        FLOW_HOOK["Automation triggers<br/>Broader no-code catalog"]
-    end
+* **REST API v1** (RESTful, Bearer auth): projects and tasks, AI agents, media and bundles.
+* **Action API v2** (RPC, Bearer auth): projects and tasks, AI agents, media and bundles.
+* **`@taskade/mcp-server`** (inbound MCP, from npm): runs on your machine and calls REST API v1.
+* **Hosted MCP** at `https://www.taskade.com/mcp`: projects, AI agents, and Taskade Genesis app source. It also lists and runs automations.
 
-    subgraph "Taskade Workspace"
-        PROJECTS["Projects & Tasks"]
-        AGENTS["AI Agents<br/>with LTM"]
-        AUTOMATIONS[Automations]
-        MEDIA["Media & Bundles"]
-        APP_SRC["Taskade Genesis App Source"]
-    end
+**Events from Taskade to your app:**
 
-    APP --> API1
-    APP --> API2
-    APP --> MCP_IN
-    APP --> MCP_HOST
-    SIGNED_HOOK --> APP
-    FLOW_HOOK --> APP
+* **Signed Webhook API**: programmatic event delivery.
+* **Automation triggers**: the broader no-code catalog.
 
-    MCP_IN --> API1
-    MCP_HOST --> PROJECTS
-    MCP_HOST --> AGENTS
-    MCP_HOST -.lists and runs.-> AUTOMATIONS
-    MCP_HOST --> APP_SRC
-    AUTOMATIONS --> MCP_OUT
+**Calls from Taskade to other services:**
 
-    API1 --> PROJECTS
-    API1 --> AGENTS
-    API1 --> MEDIA
-    API2 --> PROJECTS
-    API2 --> AGENTS
-    API2 --> MEDIA
+* **MCP Client connector**: outbound MCP, as a step inside an automation.
 
-    AGENTS -.writes LTM.-> PROJECTS
-```
+AI agents keep long-term memory, and they write it to projects in your workspace.
 
 ## Choose a surface
 
@@ -103,12 +73,19 @@ Treat your API token like a password. Never commit it to version control or shar
 
 ## Base URLs
 
-Taskade ships **two** public HTTP APIs. Both APIs use the same token:
+Taskade ships **two** public HTTP APIs. Both APIs use the same token.
 
-| API | Base URL | Style | Use it for |
-| --- | --- | --- | --- |
-| [REST API v1](comprehensive-api-guide/README.md) | `https://www.taskade.com/api/v1` | RESTful (`GET`/`POST`/`PUT`/`DELETE`) | Full task CRUD, assignees, dates, notes, fields |
-| [Action API v2](api-v2-reference.md) | `https://www.taskade.com/api/v2` | Action / RPC (`POST /{operation}`), with REST-style exceptions for media, bundle downloads, and webhook registration | Prompting agents, agent lifecycle, bundles, signed webhooks, task CRUD |
+**[REST API v1](comprehensive-api-guide/README.md)** is RESTful (`GET`, `POST`, `PUT`, `DELETE`). Use it for full task CRUD, assignees, dates, notes, and fields.
+
+```text
+https://www.taskade.com/api/v1
+```
+
+**[Action API v2](api-v2-reference.md)** is action style (RPC, `POST /{operation}`), with REST-style exceptions for media, bundle downloads, and webhook registration. Use it to prompt agents, manage the agent lifecycle, bundles, signed webhooks, and task CRUD.
+
+```text
+https://www.taskade.com/api/v2
+```
 
 
 {% hint style="info" %}

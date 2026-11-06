@@ -25,30 +25,9 @@ Cross-platform productivity means your **entire living workspace ecosystem works
 
 ```mermaid
 flowchart TD
-    WORKSPACE[Your Living Workspace<br/>Central Truth Source] --> PLATFORMS[Access Platforms]
-
-    PLATFORMS --> MOBILE[📱 Mobile Apps<br/>iOS & Android]
-    PLATFORMS --> DESKTOP[💻 Desktop Apps<br/>Mac, Windows, Linux]
-    PLATFORMS --> WEB[🌐 Web Browsers<br/>Chrome, Safari, Firefox]
-    PLATFORMS --> TABLET[📱 Tablets<br/>iPad, Android Tablets]
-
-    MOBILE --> FEATURES[Core Features]
-    DESKTOP --> FEATURES
-    WEB --> FEATURES
-    TABLET --> FEATURES
-
-    FEATURES --> SYNC[🔄 Real-Time Sync<br/>Instant updates everywhere]
-    FEATURES --> OFFLINE[🔁 Reconnect Sync<br/>Recent edits sync on reconnect]
-    FEATURES --> VOICE[🎤 Voice Commands<br/>Hands-free interaction]
-    FEATURES --> WIDGETS[⚡ Quick Widgets<br/>Instant access]
-
-    SYNC --> RESULT[Seamless Experience<br/>Device boundaries disappear]
-    OFFLINE --> RESULT
-    VOICE --> RESULT
-    WIDGETS --> RESULT
-
-    style WORKSPACE fill:#e1f5fe
-    style RESULT fill:#e8f5e8
+    WORKSPACE["Your Living Workspace<br/>Central Truth Source"] --> PLATFORMS["📱 Mobile apps: iOS & Android<br/>💻 Desktop apps: Mac, Windows, Linux<br/>🌐 Web browsers: Chrome, Safari, Firefox<br/>📱 Tablets: iPad, Android tablets"]
+    PLATFORMS --> FEATURES["🔄 Real-Time Sync<br/>🔁 Reconnect Sync<br/>🎤 Voice Commands<br/>⚡ Quick Widgets"]
+    FEATURES --> RESULT["One workspace on every device"]
 ```
 
 **Cross-platform enables:**
@@ -77,25 +56,19 @@ flowchart TD
 
 **Quick Add Widget - Instant Productivity:**
 
-```
-Home Screen Widget Features:
-├── ⚡ One-tap task creation
-├── 🎤 Voice input support
-├── 📅 Smart date recognition
-├── 🔄 Auto-sync when online
-└── 🎯 Default project assignment
-```
+* One-tap task creation
+* Voice input support
+* Smart date recognition
+* Auto-sync when online
+* Default project assignment
 
 **Share to Taskade - Capture from Anywhere:**
 
-```
-Universal Share Integration:
-├── 📱 Photos and images
-├── 📄 Documents and PDFs
-├── 🌐 Web links and articles
-├── 📝 Text snippets
-└── 🎵 Audio recordings
-```
+* Photos and images
+* Documents and PDFs
+* Web links and articles
+* Text snippets
+* Audio recordings
 
 ### Desktop Applications
 
@@ -301,27 +274,20 @@ Multi-platform voice support:
 
 #### Touch Interactions
 
-```
-Gesture Support:
-├── 👆 Tap: Select and open
-├── 👆👆 Double-tap: Quick edit
-├── 👈👉 Swipe: Complete or archive
-├── 👆 Hold: Context menu
-├── 🔍 Pinch: Zoom and navigate
-└── 📱 Multi-touch: Collaborative editing
-```
+* **Tap**: Select and open
+* **Double-tap**: Quick edit
+* **Swipe**: Complete or archive
+* **Hold**: Context menu
+* **Pinch**: Zoom and navigate
 
 #### Mobile UI Patterns
 
-```
-Mobile-First Design:
-├── 📱 Single-hand operation
-├── 👁️ Clear visual hierarchy
-├── ⚡ Fast loading and response
-├── 🔋 Battery optimization
-├── 📶 Low-bandwidth friendly
-└── 🌙 Dark mode support
-```
+* Single-hand operation
+* Clear visual hierarchy
+* Fast loading and response
+* Battery optimization
+* Low-bandwidth friendly
+* Dark mode support
 
 ### Desktop Power Features
 

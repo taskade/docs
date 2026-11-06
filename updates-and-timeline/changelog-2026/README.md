@@ -12,5 +12,15 @@ Developer-focused highlights of API, MCP, SDK, automation, and Taskade Genesis p
 {% endhint %}
 
 {% hint style="info" %}
-**Developer highlights.** This section tracks API, MCP, SDK, automation, and Genesis platform changes for developers. For the full product changelog see [taskade.com/changelog](https://www.taskade.com/changelog); for release newsletters see [taskade.com/blog/updates](https://www.taskade.com/blog/updates).
+**Developer highlights.** This section tracks API, MCP, SDK, automation, and Taskade Genesis platform changes for developers. For the full product changelog see [taskade.com/changelog](https://www.taskade.com/changelog); for release newsletters see [taskade.com/blog/updates](https://www.taskade.com/blog/updates).
 {% endhint %}
+
+## Months
+
+* [July 2026](july-2026/README.md)
+* [June 2026](june-2026/README.md)
+* [May 2026](may-2026/README.md)
+* [April 2026](april-2026/README.md)
+* [March 2026](march-2026/README.md)
+* [February 2026](february-2026/README.md)
+* [January 2026](january-2026/README.md)

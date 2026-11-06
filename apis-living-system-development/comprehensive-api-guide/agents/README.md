@@ -1,6 +1,6 @@
 ---
 description: >-
-  Agents — Taskade REST API v1 reference: GET /public-agents/{publicAgentId}. Parameters, authentication, and response schema.
+  Agents — Taskade REST API v1 reference: get, update, and delete AI agents, manage public access and knowledge, and read agent conversations.
 ---
 
 # Agents

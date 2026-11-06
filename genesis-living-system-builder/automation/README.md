@@ -11,36 +11,31 @@ Automations let you build trigger-and-action workflows that run on their own —
 
 | I want to… | Go to |
 | --- | --- |
-| Build my first workflow | [Action & Trigger Reference](actions.md) |
+| Build my first workflow | [Getting started (fast)](#getting-started-fast) |
 | Find available triggers and actions | [Action & Trigger Reference](actions.md) |
 | Generate a workflow from a prompt | [Workflow Generator](workflow-generator.md) |
 | Connect an integration | [Integration Overview](comprehensive-integration-guide.md) |
 | See every available connector | [Integration Options](integrations.md) |
 | Start from a ready-made recipe | [Automation Recipes](recipes.md) |
 
-**Act. Execute. Evolve.** Taskade Automations are the living motion layer of Workspace DNA, transforming static workflows into intelligent, adaptive systems that act with precision and learn from every execution.
+**Act. Execute. Evolve.** Taskade Automations are the Execution layer of Workspace DNA. They turn static workflows into systems that react to events and act for you.
 
 {% hint style="success" %}
-**Living Motion Layer** — Automations that don't just execute tasks, but learn from patterns, adapt to changing conditions, and continuously improve business outcomes.
+**Execution Layer** — Automations act on events in your workspace and your connected tools. Every run is logged, so you can review it and refine the flow.
 {% endhint %}
 
-## What is Living Motion?
+## What are automations?
 
-Living Motion is Taskade’s automation layer. It’s how your workspace can **react**, **decide**, and **execute** when something happens.
+Automations are the Execution layer of your workspace. They are how your workspace can **react**, **decide**, and **execute** when something happens.
 
 Every automation follows the same shape: a trigger starts it, an optional condition routes it, and actions do the work.
 
 ```mermaid
 flowchart TD
   A["Trigger<br/>schedule, form, webhook, or project event"] --> B{"Condition / Filter"}
-  B -->|matches| C["Actions"]
+  B -->|matches| C["Actions<br/>AI step, integration, or task update"]
   B -->|no match| E["Stop"]
-  C --> D["AI step<br/>Taskade EVE classifies or drafts"]
-  C --> F["Integration<br/>notify or sync a connected tool"]
-  C --> G["Update tasks in Taskade Genesis"]
-  D --> H["Result"]
-  F --> H
-  G --> H
+  C --> H["Result"]
 ```
 
 
@@ -133,20 +128,13 @@ Connect your workflows to popular tools across the [Taskade integrations](https:
 | AI & Media       | Web Search, Web Scraping, YouTube Transcription, Document Extraction |
 | Utilities        | Schedule, Delay, Loop, Branch, Filter                                |
 
-### Where to go next
-
-* Build your first workflow: [Actions & Triggers](actions.md)
-* Step catalog: [Actions & Triggers](actions.md)
-* Pick tools to connect: [Integration Overview](comprehensive-integration-guide.md)
-* Full list of connectors: [Integration Options](integrations.md)
-* **Reach external tools** (Slack, Stripe, Gmail, HubSpot) with [integrations](integrations.md), or call any MCP server from an automation with the MCP Client step — see [MCP Connectors](../genesis/mcp-connectors.md).
-* Troubleshoot: [Living System Troubleshooting](../community-and-sharing/troubleshooting.md)
-
 ## Next steps
 
 * [Action & Trigger Reference](actions.md) — pick a trigger and add your first actions
 * [Automation Recipes](recipes.md) — start from a proven workflow
 * [Integration Overview](comprehensive-integration-guide.md) — connect the tools you already use
+* [Integration Options](integrations.md) — see the full list of connectors
+* [MCP Connectors](../genesis/mcp-connectors.md) — call any MCP server from an automation with the MCP Client step
 * [Living System Troubleshooting](../community-and-sharing/troubleshooting.md) — fix issues and get help
 
 {% hint style="info" %}

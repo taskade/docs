@@ -47,9 +47,9 @@ Developers can build on the REST API v1, the action-based Public API v2, webhook
 - [Custom Domains](https://docs.taskade.com/taskade-genesis/space-apps-guide/custom-domains): Connect your own branded domain to a published app — DNS setup and SSL.
 - [App Secrets & External API Calls](https://docs.taskade.com/taskade-genesis/space-apps-guide/app-secrets): Store API keys in a per-space vault; real credentials never leave the server.
 
-## Run Your Business on Genesis
+## Run Your Business on Taskade Genesis
 
-- [Run Your Business on Genesis](https://docs.taskade.com/run-your-business-on-genesis/run-your-business): Build and run a real business on Genesis — ops dashboard, CRM, or client portal — with logins and your own domain.
+- [Run Your Business on Taskade Genesis](https://docs.taskade.com/run-your-business-on-genesis/run-your-business): Build and run a real business on Genesis — ops dashboard, CRM, or client portal — with logins and your own domain.
 - [From Idea to Live Business](https://docs.taskade.com/run-your-business-on-genesis/run-your-business/from-idea-to-live-business): Go live in five steps: describe it, shape your data, add login, brand your domain, launch.
 - [Build a Client or Member Portal](https://docs.taskade.com/run-your-business-on-genesis/run-your-business/build-a-client-portal): A portal where each client signs in and, with Private entries on, sees only their own records — no code.
 - [Build an Internal Ops Dashboard](https://docs.taskade.com/run-your-business-on-genesis/run-your-business/build-an-ops-dashboard): An internal dashboard, CRM, or pipeline connected to live workspace data.

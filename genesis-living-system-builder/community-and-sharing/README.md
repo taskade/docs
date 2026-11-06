@@ -59,7 +59,7 @@ You can always unpublish your app if needed:
 3. **Click the arrow on the Live button** at the bottom of the menu
 4. **Select "Unpublish app"**
 
-**Note:** Unpublishing immediately removes public access, but the URL becomes inactive. Users who bookmarked the link will lose access.
+**Note:** Unpublishing immediately removes public access, and the URL becomes inactive. Users who bookmarked the link will lose access.
 
 ### **Enabling Cloning (Forking)**
 

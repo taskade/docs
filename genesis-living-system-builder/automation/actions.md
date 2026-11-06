@@ -19,39 +19,39 @@ Actions can be chained together to create complex multi-step workflows, with con
 
 ### Taskade Core Actions
 
-| Action                               | Description                                                | Use Case                                         | Parameters                                             |
-| ------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------ |
-| **Create Project**                   | Sets up a new project in your workspace/folder             | Project initialization, template-based workflows | `name`, `folderId`, `template`, `defaultView`          |
-| **Add Task**                         | Adds a new task to an existing project                     | Task creation workflows, issue tracking          | `projectId`, `title`, `content`, `assignee`, `dueDate` |
-| **Mark Task as Completed**           | Automatically marks a task as done                         | Status updates, completion workflows             | `taskId`, `completedBy`, `completionNote`              |
-| **Create Project From Template**     | Uses a pre-defined or custom template                      | Standardized project setup                       | `templateId`, `name`, `folderId`                       |
-| **Move Task**                        | Moves a task to another block in the same project          | Workflow progression, categorization             | `projectId`, `taskId`, `targetBlockId`                 |
-| **Assign Task**                      | Assigns a task to someone                                  | Work distribution, team management               | `taskId`, `userId`, `notifyAssignee`                   |
-| **Ask AI**                           | Uses AI to answer questions                                | Information retrieval, analysis                  | `query`, `context`, `model`                            |
-| **Generate with AI**                 | Uses AI to generate content or responses                   | Content creation, drafting                       | `prompt`, `style`, `length`                            |
-| **Respond with AI**                  | Automatically provides AI-generated responses              | Automated communication                          | `input`, `tone`, `format`                              |
-| **Ask Agent**                        | Uses a custom AI agent to respond to a query               | Specialized AI interactions                      | `agentId`, `query`, `parameters`                       |
-| **Run Agent Command**                | Uses a custom AI agent command                             | Agent-driven automation                          | `agentId`, `command`, `input`                          |
-| **Add Knowledge to Agent**           | Transcribes knowledge and adds it as knowledge to an agent | Agent training, content integration              | `agentId`, `content`, `source`                         |
-| **Add Project to Agent Knowledge**   | Automatically trains your AI agents with project content   | Agent enhancement, knowledge management          | `agentId`, `projectId`, `scope`                        |
-| **Ask Agent With Structured Output** | Structures the output of agent replies                     | Standardized AI responses                        | `agentId`, `query`, `outputFormat`                     |
-| **Add a comment**                    | Appends a comment to an existing task node                 | Audit trails, team communication on tasks        | `taskId`, `comment`                                    |
-| **Update a task**                    | Updates a task node's content or note field                | Inline edits, AI-driven content rewrites         | `taskId`, `content`, `note`                            |
-| **Get a task**                       | Reads a task node and returns its current data             | Conditional logic, data-driven downstream steps  | `taskId`                                               |
-| **Get project info**                 | Reads project metadata (name, dates, member list, etc.)    | Dynamic references to project context in flows   | `projectId`                                            |
-| **Attach a file**                    | Attaches a file to a task node (returns `attachmentId`, `fileId`, `projectId`, `nodeId`, `filename`, `mimetype`) | Save uploads or generated files onto a task      | `projectId` (Project), `nodeId` (Task ID, UUID), `fileUrl` (File) |
+| Action | Description | Parameters |
+| --- | --- | --- |
+| **Create Project** | Sets up a new project in your workspace/folder | `name`, `folderId`, `template`, `defaultView` |
+| **Add Task** | Adds a new task to an existing project | `projectId`, `title`, `content`, `assignee`, `dueDate` |
+| **Mark Task as Completed** | Automatically marks a task as done | `taskId`, `completedBy`, `completionNote` |
+| **Create Project From Template** | Uses a pre-defined or custom template | `templateId`, `name`, `folderId` |
+| **Move Task** | Moves a task to another block in the same project | `projectId`, `taskId`, `targetBlockId` |
+| **Assign Task** | Assigns a task to someone | `taskId`, `userId`, `notifyAssignee` |
+| **Ask AI** | Uses AI to answer questions | `query`, `context`, `model` |
+| **Generate with AI** | Uses AI to generate content or responses | `prompt`, `style`, `length` |
+| **Respond with AI** | Automatically provides AI-generated responses | `input`, `tone`, `format` |
+| **Ask Agent** | Uses a custom AI agent to respond to a query | `agentId`, `query`, `parameters` |
+| **Run Agent Command** | Uses a custom AI agent command | `agentId`, `command`, `input` |
+| **Add Knowledge to Agent** | Transcribes knowledge and adds it as knowledge to an agent | `agentId`, `content`, `source` |
+| **Add Project to Agent Knowledge** | Automatically trains your AI agents with project content | `agentId`, `projectId`, `scope` |
+| **Ask Agent With Structured Output** | Structures the output of agent replies | `agentId`, `query`, `outputFormat` |
+| **Add a comment** | Appends a comment to an existing task node | `taskId`, `comment` |
+| **Update a task** | Updates a task node's content or note field | `taskId`, `content`, `note` |
+| **Get a task** | Reads a task node and returns its current data | `taskId` |
+| **Get project info** | Reads project metadata (name, dates, member list, etc.) | `projectId` |
+| **Attach a file** | Attaches a file to a task node (returns `attachmentId`, `fileId`, `projectId`, `nodeId`, `filename`, `mimetype`) | `projectId` (Project), `nodeId` (Task ID, UUID), `fileUrl` (File) |
 
 ### Data Processing & Integration Actions
 
-| Action                       | Description                                                                   | Use Case                                    | Parameters                           |
-| ---------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------ |
-| **Scrape Webpage**           | Extract the contents of a web page                                            | Content aggregation, research               | `url`, `errorBehavior`               |
-| **Convert File to Text**     | Convert a source file into text                                               | Document processing, content extraction     | `fileId`, `outputFormat`, `encoding` |
-| **Transcribe YouTube Video** | Turn a YouTube video into text                                                | Content creation, accessibility             | `youtubeUrl`                         |
-| **Turn a recording into a project** | Transcribes an audio recording into a new project                      | Meeting notes, voice memos, podcast indexing | `audioRecording`, `projectTitle`      |
-| **Upload File to Media**     | Upload file through a URL to save in your workspace or folder's media tab     | Media management, content storage           | `url`, `fileName`, `folderId`        |
-| **Send HTTP Request**        | Makes an API request to an endpoint; authentication is optional per call     | External integrations, data synchronization | `method`, `url`, `headers`, `body`, optional auth |
-| **Search Web**               | Searches the web for information to add to a project or for the AI to analyze | Research automation, content enrichment     | `query`                              |
+| Action | Description | Parameters |
+| --- | --- | --- |
+| **Scrape Webpage** | Extract the contents of a web page | `url`, `errorBehavior` |
+| **Convert File to Text** | Convert a source file into text | `fileId`, `outputFormat`, `encoding` |
+| **Transcribe YouTube Video** | Turn a YouTube video into text | `youtubeUrl` |
+| **Turn a recording into a project** | Transcribes an audio recording into a new project | `audioRecording`, `projectTitle` |
+| **Upload File to Media** | Upload file through a URL to save in your workspace or folder's media tab | `url`, `fileName`, `folderId` |
+| **Send HTTP Request** | Makes an API request to an endpoint; authentication is optional per call | `method`, `url`, `headers`, `body`, optional auth |
+| **Search Web** | Searches the web for information to add to a project or for the AI to analyze | `query` |
 
 {% hint style="info" %}
 **Scanned documents work too.** Convert File to Text now falls back to **vision OCR** when a file has no machine-readable text — scanned PDFs, image-only documents, and photos of pages are transcribed automatically. OCR runs count toward your workspace's AI usage.
@@ -59,36 +59,36 @@ Actions can be chained together to create complex multi-step workflows, with con
 
 ### Workflow Control Actions
 
-| Action                        | Description                                                                   | Use Case                                | Parameters                                      |
-| ----------------------------- | ----------------------------------------------------------------------------- | --------------------------------------- | ----------------------------------------------- |
-| **Loop**                      | Iterates data tasks                                                           | Batch processing, data transformation   | `dataSource`, `iterationLogic`, `maxIterations` |
-| **Filter Data**               | Performs actions only when the data meets a certain condition                 | Conditional processing, data validation | `condition`, `dataSource`, `filterCriteria`     |
-| **Branch**                    | Creates different paths within your workflow, depending on certain conditions | Decision trees, conditional logic       | `condition`, `truePath`, `falsePath`            |
-| **Transform Array to String** | Converts the output of Find Task(s) and Find Row(s) actions into text         | Data formatting, reporting              | `arrayInput`, `template`, `separator`           |
-| **Run Automation**            | Runs a saved flow as a depth-guarded subflow (prevents infinite recursion)    | Reusable sub-flows, modular automation  | `flowId`, `input`                               |
+| Action | Description | Parameters |
+| --- | --- | --- |
+| **Loop** | Iterates data tasks | `dataSource`, `iterationLogic`, `maxIterations` |
+| **Filter Data** | Performs actions only when the data meets a certain condition | `condition`, `dataSource`, `filterCriteria` |
+| **Branch** | Creates different paths within your workflow, depending on certain conditions | `condition`, `truePath`, `falsePath` |
+| **Transform Array to String** | Converts the output of Find Task(s) and Find Row(s) actions into text | `arrayInput`, `template`, `separator` |
+| **Run Automation** | Runs a saved flow as a depth-guarded subflow (prevents infinite recursion) | `flowId`, `input` |
 
 ### Advanced Actions
 
-| Action                   | Description                               | Use Case                         | Parameters                                  |
-| ------------------------ | ----------------------------------------- | -------------------------------- | ------------------------------------------- |
-| **Update Custom Fields** | Updates custom fields within projects     | Data management, status tracking | `taskId`, `fieldId`, `value`, `projectId`   |
-| **Find Task(s)**         | Searches for tasks within projects        | Task retrieval, reporting        | `projectId`, `searchCriteria`, `maxResults` |
-| **Delay**                | Adds a time delay to automation workflows | Timing control, scheduling       | `duration`, `unit`                          |
+| Action | Description | Parameters |
+| --- | --- | --- |
+| **Update Custom Fields** | Updates custom fields within projects | `taskId`, `fieldId`, `value`, `projectId` |
+| **Find Task(s)** | Searches for tasks within projects | `projectId`, `searchCriteria`, `maxResults` |
+| **Delay** | Adds a time delay to automation workflows | `duration`, `unit` |
 
 ## Core Taskade Actions
 
 ### Project & Task Management
 
-| Action                           | Description                                    | Parameters                                             | Example                                          |
-| -------------------------------- | ---------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------ |
-| **Create Project**               | Sets up a new project in your workspace/folder | `name`, `folderId`, `template`, `defaultView`          | Create "Customer Feedback" project from template |
-| **Create Project From Template** | Uses a pre-defined or custom template          | `templateId`, `name`, `folderId`                       | Create project from "Support Workflow" template  |
-| **Add Task**                     | Adds a new task to an existing project         | `projectId`, `title`, `content`, `assignee`, `dueDate` | Add task "Review feedback #123"                  |
-| **Mark Task as Completed**       | Automatically marks a task as done             | `taskId`, `completedBy`, `completionNote`              | Mark task complete with resolution note          |
-| **Move Task**                    | Moves a task to another block in the same project | `projectId`, `taskId`, `targetBlockId`              | Move to the "Processed" block                    |
-| **Assign Task**                  | Assigns a task to someone                      | `taskId`, `userId`, `notifyAssignee`                   | Assign to support specialist with notification   |
-| **Update Custom Fields**         | Updates custom fields within projects          | `taskId`, `fieldId`, `value`, `projectId`              | Set priority to "High", status to "In Progress"  |
-| **Find Task(s)**                 | Searches for tasks within projects             | `projectId`, `searchCriteria`, `maxResults`            | Find all tasks assigned to user                  |
+| Action | Description | Parameters |
+| --- | --- | --- |
+| **Create Project** | Sets up a new project in your workspace/folder. Example: Create "Customer Feedback" project from template | `name`, `folderId`, `template`, `defaultView` |
+| **Create Project From Template** | Uses a pre-defined or custom template. Example: Create project from "Support Workflow" template | `templateId`, `name`, `folderId` |
+| **Add Task** | Adds a new task to an existing project. Example: Add task "Review feedback #123" | `projectId`, `title`, `content`, `assignee`, `dueDate` |
+| **Mark Task as Completed** | Automatically marks a task as done. Example: Mark task complete with resolution note | `taskId`, `completedBy`, `completionNote` |
+| **Move Task** | Moves a task to another block in the same project. Example: Move to the "Processed" block | `projectId`, `taskId`, `targetBlockId` |
+| **Assign Task** | Assigns a task to someone. Example: Assign to support specialist with notification | `taskId`, `userId`, `notifyAssignee` |
+| **Update Custom Fields** | Updates custom fields within projects. Example: Set priority to "High", status to "In Progress" | `taskId`, `fieldId`, `value`, `projectId` |
+| **Find Task(s)** | Searches for tasks within projects. Example: Find all tasks assigned to user | `projectId`, `searchCriteria`, `maxResults` |
 
 ### Find Task(s) Automation Settings
 
@@ -246,15 +246,15 @@ The Update Custom Fields action allows you to automatically update custom fields
 
 ### Agent Commands
 
-| Action                               | Description                                         | Parameters                         | Example                                             |
-| ------------------------------------ | --------------------------------------------------- | ---------------------------------- | --------------------------------------------------- |
-| **Ask AI**                           | Uses AI to answer questions                         | `question`, `context`, `model`     | "What's the priority of this ticket?"               |
-| **Generate with AI**                 | Uses AI to generate content or responses            | `prompt`, `contentType`, `length`  | Generate email response to customer                 |
-| **Respond with AI**                  | Automatically provides AI-generated responses       | `input`, `responseType`, `tone`    | Auto-respond to common inquiries                    |
-| **Ask Agent**                        | Uses a custom AI agent to respond to a query        | `agentId`, `question`, `context`   | Query specialized support agent                     |
-| **Run Agent Command**                | Uses a custom AI agent command                      | `agentId`, `commandId`, `input`    | Run "analyze\_sentiment" command                    |
-| **Ask Agent With Structured Output** | Structures the output of agent replies              | `agentId`, `query`, `outputSchema` | Get JSON response with specific fields              |
-| **Add Project to Agent Knowledge**   | Automatically trains AI agents with project content | `agentId`, `projectId`             | Keep agents updated with latest project information |
+| Action | Description | Parameters |
+| --- | --- | --- |
+| **Ask AI** | Uses AI to answer questions. Example: "What's the priority of this ticket?" | `question`, `context`, `model` |
+| **Generate with AI** | Uses AI to generate content or responses. Example: Generate email response to customer | `prompt`, `contentType`, `length` |
+| **Respond with AI** | Automatically provides AI-generated responses. Example: Auto-respond to common inquiries | `input`, `responseType`, `tone` |
+| **Ask Agent** | Uses a custom AI agent to respond to a query. Example: Query specialized support agent | `agentId`, `question`, `context` |
+| **Run Agent Command** | Uses a custom AI agent command. Example: Run "analyze\_sentiment" command | `agentId`, `commandId`, `input` |
+| **Ask Agent With Structured Output** | Structures the output of agent replies. Example: Get JSON response with specific fields | `agentId`, `query`, `outputSchema` |
+| **Add Project to Agent Knowledge** | Automatically trains AI agents with project content. Example: Keep agents updated with latest project information | `agentId`, `projectId` |
 
 {% hint style="info" %}
 **Create and change agents from a flow:** The **Create an agent** action adds a new AI agent to the workspace with a name and instructions. The **Update an agent** action changes the name, the greeting, or the instructions of an agent.
@@ -329,9 +329,9 @@ The Ask Agent With Structured Output action extracts specific information from A
 
 ***
 
-| Action          | Description                          | Parameters                               | Example                                              |
-| --------------- | ------------------------------------ | ---------------------------------------- | ---------------------------------------------------- |
-| **Prompt AI**   | Give the model detailed instructions | `prompt`, `systemMessage`, `temperature` | Custom AI processing with specific instructions      |
+| Action | Description | Parameters |
+| --- | --- | --- |
+| **Prompt AI** | Give the model detailed instructions. Example: Custom AI processing with specific instructions | `prompt`, `systemMessage`, `temperature` |
 
 ### Add Project to Agent Knowledge Automation Settings
 
@@ -409,9 +409,9 @@ Result: Comprehensive launch support and documentation
 
 ### Data Processing & Utilities
 
-| Action             | Description                        | Parameters                  | Example                                   |
-| ------------------ | ---------------------------------- | --------------------------- | ----------------------------------------- |
-| **Scrape Webpage** | Extract the contents of a web page | `url`, `errorBehavior`      | Extract product info from competitor site |
+| Action | Description | Parameters |
+| --- | --- | --- |
+| **Scrape Webpage** | Extract the contents of a web page. Example: Extract product info from competitor site | `url`, `errorBehavior` |
 
 ### Scrape Webpage Automation Settings
 
@@ -507,11 +507,11 @@ Result: Current industry news awareness
 * **Attribution**: Properly credit sources when using scraped content
 * **Fair Use**: Use scraped data responsibly and ethically
 
-| Action | Description | Parameters | Example |
-|---|---|---|---|
-| **Convert File to Text** | Convert a source file into text | `fileUrl`, `fileType`, `extractImages` | Convert PDF manual to searchable text |
-| **Transcribe YouTube Video** | Turn a YouTube video into text | `youtubeUrl`                                | Create transcript of training video |
-| **Turn a recording into a project** | Transcribes an audio recording into a new project | `audioRecording`, `projectTitle` | Turn voice memo into project notes |
+| Action | Description | Parameters |
+| --- | --- | --- |
+| **Convert File to Text** | Convert a source file into text. Example: Convert PDF manual to searchable text | `fileUrl`, `fileType`, `extractImages` |
+| **Transcribe YouTube Video** | Turn a YouTube video into text. Example: Create transcript of training video | `youtubeUrl` |
+| **Turn a recording into a project** | Transcribes an audio recording into a new project. Example: Turn voice memo into project notes | `audioRecording`, `projectTitle` |
 
 ### Transcribe YouTube Video Automation Settings
 
@@ -621,9 +621,9 @@ YouTube Video → Transcribe → Generate Quiz → Create Study Guide → Add to
 
 ***
 
-| Action                            | Description                                  | Parameters                        | Example                                   |
-| --------------------------------- | -------------------------------------------- | --------------------------------- | ----------------------------------------- |
-| **OpenAI Generate Image**         | Create images from text prompts with your own OpenAI key | `prompt`, `model`, `size`   | Generate illustrations and visual content |
+| Action | Description | Parameters |
+| --- | --- | --- |
+| **OpenAI Generate Image** | Create images from text prompts with your own OpenAI key. Example: Generate illustrations and visual content | `prompt`, `model`, `size` |
 
 ### HTTP Request Automation Settings
 
@@ -702,9 +702,9 @@ For images without an API key, ask Taskade EVE or an agent to generate them. Tha
 The **Convert an image** action converts an image from one format to another entirely within Taskade — no external service required. Useful for normalizing images before uploading them to downstream steps.
 {% endhint %}
 
-| Action                       | Description                                              | Parameters                          | Example                                     |
-| ---------------------------- | -------------------------------------------------------- | ----------------------------------- | ------------------------------------------- |
-| **Convert an image**         | Saves a copy of an image in another format: JPEG, PNG, WebP, or AVIF | `imageUrl`, `targetFormat` | Convert an uploaded PNG to WebP before storing |
+| Action | Description | Parameters |
+| --- | --- | --- |
+| **Convert an image** | Saves a copy of an image in another format: JPEG, PNG, WebP, or AVIF. Example: Convert an uploaded PNG to WebP before storing | `imageUrl`, `targetFormat` |
 
 The action strips EXIF metadata (GPS, camera info) by default. Output is returned as a file reference that can be passed to subsequent actions such as **Upload File to Media**.
 
@@ -967,9 +967,9 @@ Most third-party connectors below are premium integrations, so they need a paid 
 Taskade includes a built-in **Send an email** action that sends notifications through Taskade's own mail infrastructure. No OAuth connection or third-party email provider is required.
 {% endhint %}
 
-| Action             | Description                                                                                   | Parameters                     | Example                                    |
-| ------------------ | --------------------------------------------------------------------------------------------- | ------------------------------ | ------------------------------------------ |
-| **Send an email**  | Sends an email from Taskade's verified address to you or a verified member of this workspace | `to`, `subject`, `message`     | Alert a teammate when a task is created    |
+| Action | Description | Parameters |
+| --- | --- | --- |
+| **Send an email** | Sends an email from Taskade's verified address to you or a verified member of this workspace. Example: Alert a teammate when a task is created | `to`, `subject`, `message` |
 
 To email anyone else, use the Gmail or Outlook send email action. If the step does not send to a recipient, the run history shows the step as **Skipped** with the reason, and the automation keeps running.
 
@@ -1060,10 +1060,10 @@ To email anyone else, use the Gmail or Outlook send email action. If the step do
 
 ### HTTP/Webhook
 
-| Action                | Description                                                                 | Parameters                                   | Example                 |
-| --------------------- | --------------------------------------------------------------------------- | -------------------------------------------- | ----------------------- |
-| **Send HTTP Request** | Calls a web service with GET, POST, PUT, PATCH, DELETE, or HEAD             | `method`, `url`, `headers`, `queryParams`, `body` | Call external API  |
-| **Webhook** (trigger) | Starts the automation when an outside service posts to its private address. Needs Pro and up | —                   | Receive a payment event |
+| Action | Description | Parameters |
+| --- | --- | --- |
+| **Send HTTP Request** | Calls a web service with GET, POST, PUT, PATCH, DELETE, or HEAD. Example: Call external API | `method`, `url`, `headers`, `queryParams`, `body` |
+| **Webhook** (trigger) | Starts the automation when an outside service posts to its private address. Needs Pro and up. Example: Receive a payment event | — |
 
 ### Data Processing
 
@@ -1081,21 +1081,21 @@ These actions work on text and lists without an AI call.
 
 Pure, no-credit transform actions for reshaping data inline in a flow — no AI call required.
 
-| Action                  | Description                                                                  | Parameters                                           | Example                                |
-| ----------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------- |
-| **Generate QR Code**    | Renders text or a URL into a QR image saved to your workspace Media library  | `text` (required), `size` (150/300/600 px), `errorCorrection` (L/M/Q/H) | Encode a check-in URL as a QR code      |
-| **Convert CSV to JSON** | Parses a CSV string into structured rows                                     | `csv` (required), `hasHeader` (header/noHeader), `delimiter` (optional, auto-detect) | Turn an upload into JSON rows           |
-| **Convert JSON to CSV** | Serializes a JSON array into CSV                                             | `json` (required), `includeHeader` (yes/no), `delimiter` (optional, default `,`) | Export records to a spreadsheet         |
-| **Average**             | Mean of a list of numbers                                                   | `values` (required)                                  | Average response time                  |
-| **Sum**                 | Total of a list of numbers                                                  | `values` (required)                                  | Sum order amounts                      |
-| **Count Unique Values** | Counts the distinct values in a list                                        | `values` (required)                                  | Count unique customers                 |
-| **Min / Max**           | Highest or lowest value in a list                                           | `values` (required), `mode` (max/min)                | Find the largest invoice               |
-| **Concatenate Text**    | Joins multiple parts into one string                                        | `parts` (required), `separator` (optional)           | Build a full name from fields          |
-| **Find Text**           | Locates a search value in a string (first match or all)                     | `text` (required), `searchValue` (required), `mode` (first/all), `caseSensitivity` (optional) | Find a keyword in a message            |
-| **Slugify Text**        | Turns text into a URL-safe slug                                             | `text` (required), `casing` (optional), `separator` (default `-`) | Slugify an article title               |
-| **Strip HTML**          | Removes markup and returns plain text                                        | `html` (required)                                    | Clean HTML email body                  |
-| **HTML to Markdown**    | Converts an HTML fragment to Markdown                                        | `html` (required)                                    | Store content as Markdown              |
-| **Markdown to HTML**    | Renders Markdown to sanitized HTML                                          | `markdown` (required)                                | Publish formatted content              |
+| Action | Description | Parameters |
+| --- | --- | --- |
+| **Generate QR Code** | Renders text or a URL into a QR image saved to your workspace Media library. Example: Encode a check-in URL as a QR code | `text` (required), `size` (150/300/600 px), `errorCorrection` (L/M/Q/H) |
+| **Convert CSV to JSON** | Parses a CSV string into structured rows. Example: Turn an upload into JSON rows | `csv` (required), `hasHeader` (header/noHeader), `delimiter` (optional, auto-detect) |
+| **Convert JSON to CSV** | Serializes a JSON array into CSV. Example: Export records to a spreadsheet | `json` (required), `includeHeader` (yes/no), `delimiter` (optional, default `,`) |
+| **Average** | Mean of a list of numbers. Example: Average response time | `values` (required) |
+| **Sum** | Total of a list of numbers. Example: Sum order amounts | `values` (required) |
+| **Count Unique Values** | Counts the distinct values in a list. Example: Count unique customers | `values` (required) |
+| **Min / Max** | Highest or lowest value in a list. Example: Find the largest invoice | `values` (required), `mode` (max/min) |
+| **Concatenate Text** | Joins multiple parts into one string. Example: Build a full name from fields | `parts` (required), `separator` (optional) |
+| **Find Text** | Locates a search value in a string (first match or all). Example: Find a keyword in a message | `text` (required), `searchValue` (required), `mode` (first/all), `caseSensitivity` (optional) |
+| **Slugify Text** | Turns text into a URL-safe slug. Example: Slugify an article title | `text` (required), `casing` (optional), `separator` (default `-`) |
+| **Strip HTML** | Removes markup and returns plain text. Example: Clean HTML email body | `html` (required) |
+| **HTML to Markdown** | Converts an HTML fragment to Markdown. Example: Store content as Markdown | `html` (required) |
+| **Markdown to HTML** | Renders Markdown to sanitized HTML. Example: Publish formatted content | `markdown` (required) |
 
 ### File Operations
 

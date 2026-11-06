@@ -21,10 +21,10 @@ Send a **Bearer token** in the `Authorization` header on every request. REST API
 
 | If you are… | Use | How |
 | --- | --- | --- |
-| Writing a script, or running the local Workspace MCP server (`@taskade/mcp-server`) | **Personal access token** | `Authorization: Bearer tskdp_…` |
+| Writing a script, or running the local Workspace MCP server (`@taskade/mcp-server`) | **Personal access token** | Bearer token (`tskdp_…`) |
 | Building a third-party app that acts on behalf of other users | **OAuth 2.0** (Authorization Code + PKCE) | Redirect flow |
 | Connecting an interactive MCP client to the **hosted** server at `https://www.taskade.com/mcp` | **OAuth 2.0** | Best default. The MCP client handles sign-in and consent |
-| Calling the **hosted** MCP from your own script, service, or client that can set headers | **Personal access token** | Send `Authorization: Bearer tskdp_…` directly |
+| Calling the **hosted** MCP from your own script, service, or client that can set headers | **Personal access token** | Send it as a Bearer token |
 
 ---
 

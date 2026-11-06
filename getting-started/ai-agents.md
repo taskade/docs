@@ -12,13 +12,13 @@ Taskade turns one prompt into a running app. Your own AI agent (Claude, Codex, C
 {% endhint %}
 
 ```text
-┌──────────────────────────┐      ┌──────────────────────────┐
+┌──────────────────────────┐      ┌───────────────────────────┐
 │  Your AI agent           │      │  Taskade workspace        │
 │  Claude · Codex · Cursor │─MCP─▶│  Projects   (memory)      │
 │  ChatGPT · VS Code       │      │  Agents     (intelligence)│
 │                          │      │  Automations (execution)  │
 │  reads SKILL.md first    │      │  Taskade Genesis app      │
-└──────────────────────────┘      └──────────────────────────┘
+└──────────────────────────┘      └───────────────────────────┘
 ```
 
 ## Connect in two minutes
@@ -27,12 +27,18 @@ Pick your client. Every client uses the same server: `https://www.taskade.com/mc
 
 | Client | Do this |
 | --- | --- |
-| **Claude Code** | Run `claude mcp add --transport http taskade https://www.taskade.com/mcp`, then run `/mcp` and sign in. |
+| **Claude Code** | Run the Claude Code command below this table, then run `/mcp` and sign in. |
 | **Claude Code plugin** | Run `claude plugin marketplace add taskade/mcp`, then `claude plugin install taskade@taskade`. You get the Taskade skill plus six job skills. |
 | **Claude (desktop and web)** | **Settings → Connectors → Add custom connector**. Name it `Taskade` and paste the URL. |
 | **Cursor, VS Code** | In Taskade, open **Settings → API → MCP connection** and click **Add to Cursor** or **Add to VS Code**. |
 | **Any other MCP client** | Add the URL as a remote MCP server or connector, then sign in. |
 | **A client that only takes headers** | Create a personal access token at [Settings → API](https://www.taskade.com/settings/api) and send `Authorization: Bearer <token>`. Never commit a token to a file. |
+
+The Claude Code command:
+
+```bash
+claude mcp add --transport http taskade https://www.taskade.com/mcp
+```
 
 After you add the server, restart the client, sign in, and ask it to call `list_spaces`. Any response means the connection works, also an empty list.
 
@@ -46,9 +52,11 @@ Full setup for each client, the tool list, and fixes: [Hosted Taskade MCP](../ap
 
 [`https://www.taskade.com/SKILL.md`](https://www.taskade.com/SKILL.md) is a short skill file written for AI agents. It tells an agent how to connect, which tools fit each job, how app kits work, and the safety rules. Paste this into your agent:
 
+{% code overflow="wrap" %}
 ```text
 Read https://www.taskade.com/SKILL.md, then connect to Taskade and list my workspaces.
 ```
+{% endcode %}
 
 ## Machine-readable entry points
 

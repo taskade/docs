@@ -19,7 +19,7 @@ As your Taskade workspace grows with projects, documents, and team collaboration
 
 * **🔍 Global Search**: Search across all projects, tasks, and content simultaneously
 * **🎯 Smart Filters**: Narrow results by type, date, assignee, and custom criteria
-* **🧠 AI-Powered Search**: Natural language queries and intelligent content suggestions
+* **🧠 Semantic Search**: Finds results by meaning, not only by exact keywords
 * **📱 Cross-Platform**: Consistent search experience across web, desktop, and mobile
 * **⚡ Real-Time Results**: Instant search results as you type
 * **🔗 Contextual Navigation**: Smart links and related content discovery
@@ -46,7 +46,7 @@ Type your search terms or keywords.
 {% step %}
 #### Review Results
 
-Pick a tab to narrow the results: **Apps**, **All**, **Projects**, **Tasks**, or **Comments**. Click **Show filters** for more ways to narrow the list.
+Pick a tab to narrow the results: **Apps**, **All**, **Projects**, **Tasks**, **Comments**, **Agents**, or **Media**. Click **Show filters** for more ways to narrow the list.
 {% endstep %}
 
 {% step %}
@@ -66,101 +66,33 @@ Click any result to navigate directly to the relevant content.
 
 #### Narrow the Results
 
-Type plain keywords. To narrow the list, pick a result tab (**Apps**, **All**, **Projects**, **Tasks**, or **Comments**) or click **Show filters**. To ask a question about your work in plain language, ask an [AI agent](../ai-features/ai-agents-getting-started.md) instead.
+Type plain keywords. To narrow the list, pick a result tab (**Apps**, **All**, **Projects**, **Tasks**, **Comments**, **Agents**, or **Media**) or click **Show filters**. To ask a question about your work in plain language, ask an [AI agent](../ai-features/ai-agents-getting-started.md) instead.
 
 ## Search Filters and Categories
 
 ### Content Type Filters
 
-**Filter results by content type:**
+**Filter results by content type:** each tab above the results shows one type. **Apps** is the default tab.
 
-#### Project Content
-
-* **Projects**: Complete projects and their metadata
-* **Tasks**: Individual tasks and subtasks
-* **Notes**: Text content and documentation
-* **Comments**: Discussion threads and feedback
-* **Attachments**: Files, images, and media
-
-#### Team Content
-
-* **Team Members**: User profiles and contact information
-* **Workspaces**: Workspace descriptions and settings
-* **Folders**: Organizational structures and hierarchies
-* **Templates**: Project templates and frameworks
-* **Automations**: Workflow automations and triggers
+| Tab | What it returns |
+| --- | --- |
+| **Apps** | Apps in your workspace |
+| **All** | Every match, across every type |
+| **Projects** | Project names and project content |
+| **Tasks** | Individual tasks and subtasks |
+| **Comments** | Comments on tasks and projects |
+| **Agents** | AI agents, by name |
+| **Media** | Uploaded files, by name |
 
 ### Advanced Filtering Options
 
-**Refine search results with sophisticated filters:**
+Click **Show filters** to open the filter panel. Click **Hide filters** to close it.
 
-{% tabs %}
-{% tab title="Date Filters" %}
-**Temporal Filtering**
+* **Status**: Turn on **Not Completed** to hide completed tasks
+* **Workspace & Teams**: Limit results to the workspaces, folders, and projects that you pick
+* **Assigned to**: Show tasks assigned to you, unassigned tasks, or tasks assigned to a teammate
 
-* **Created Date**: When content was originally created
-* **Modified Date**: When content was last updated
-* **Due Date**: When tasks or projects are due
-* **Completion Date**: When items were marked complete
-
-**Date Range Options:**
-
-* Today, Yesterday, This Week, Last Week
-* This Month, Last Month, This Quarter
-* This Year, Last Year, Custom Range
-* Relative dates: "2 weeks ago", "3 months from now"
-{% endtab %}
-
-{% tab title="People Filters" %}
-**User-Based Filtering**
-
-* **Created By**: Who originally created the content
-* **Assigned To**: Who is responsible for tasks or projects
-* **Last Modified By**: Who made the most recent changes
-* **Shared With**: Who has access to the content
-
-**Team Filtering:**
-
-* Individual team members
-* User groups and roles
-* Department or team assignments
-* External collaborators and guests
-{% endtab %}
-
-{% tab title="Status Filters" %}
-**Content Status**
-
-* **Completion Status**: Complete, incomplete, in progress
-* **Project Status**: Active, archived, on hold, completed
-* **Priority Levels**: High, medium, low priority items
-* **Workflow Stages**: Custom workflow status options
-
-**Visibility Filters:**
-
-* Public vs. private content
-* Shared vs. personal items
-* Workspace vs. folder content
-* Template vs. regular projects
-{% endtab %}
-{% endtabs %}
-
-### Smart Search Suggestions
-
-**AI-powered search assistance:**
-
-#### Auto-Complete
-
-* **Query Completion**: Suggests complete search terms as you type
-* **Recent Searches**: Quick access to your recent search queries
-* **Popular Searches**: Commonly searched terms in your workspace
-* **Contextual Suggestions**: Relevant suggestions based on current project
-
-#### Related Content Discovery
-
-* **Similar Projects**: Find projects with related content or themes
-* **Connected Tasks**: Discover tasks linked to your current work
-* **Team Collaboration**: Find content you've collaborated on with specific team members
-* **Topic Clustering**: Group related content by themes or subjects
+Under the search box, hashtag chips show the hashtags in your current results. Click a chip to add that hashtag to your query.
 
 ## Navigation Shortcuts and Commands
 
@@ -253,59 +185,9 @@ Taskade opens the selected item.
 
 ## AI-Powered Search Intelligence
 
-### Natural Language Processing
+Taskade search uses semantic matching. It finds results by meaning, not only by exact keywords, and it also finds text inside your uploaded files.
 
-**Search using conversational language:**
-
-#### Question-Based Queries
-
-* "What tasks are overdue in the marketing project?"
-* "Show me all documents created by Sarah last month"
-* "Find projects related to the Q4 budget planning"
-* "Which team members are working on the website redesign?"
-
-#### Intent Recognition
-
-* **Action Queries**: "Create a new project for client onboarding"
-* **Information Queries**: "How many tasks are completed this week?"
-* **Navigation Queries**: "Go to the project dashboard"
-* **Status Queries**: "What's the status of the mobile app project?"
-
-### Contextual Search
-
-**Search that understands your current context:**
-
-#### Project-Aware Search
-
-* **Current Project Context**: Prioritize results from your current project
-* **Related Project Discovery**: Find projects connected to your current work
-* **Team Context**: Show results relevant to your current team members
-* **Workspace Scope**: Focus results within your current workspace
-
-#### Temporal Context
-
-* **Recent Activity**: Prioritize recently accessed or modified content
-* **Upcoming Deadlines**: Highlight content with approaching due dates
-* **Seasonal Relevance**: Surface content relevant to current time periods
-* **Work Pattern Recognition**: Learn from your usage patterns to improve results
-
-### Smart Content Recommendations
-
-**Proactive content discovery:**
-
-#### Related Content Suggestions
-
-* **Similar Projects**: Projects with similar themes or content
-* **Connected Tasks**: Tasks that reference or link to current content
-* **Team Collaborations**: Content you've worked on with specific team members
-* **Follow-up Items**: Tasks or projects that are logical next steps
-
-#### Learning Algorithms
-
-* **Usage Patterns**: Learn from your search and navigation behavior
-* **Collaboration Networks**: Understand your team collaboration patterns
-* **Content Relationships**: Identify connections between different pieces of content
-* **Preference Learning**: Adapt to your preferred content types and formats
+Search does not answer questions. To ask a question about your work in plain language, such as "Which tasks are overdue in the marketing project?", ask an [AI agent](../ai-features/ai-agents-getting-started.md) instead.
 
 ## Mobile Search and Navigation
 
@@ -316,14 +198,10 @@ Taskade opens the selected item.
 #### Touch-Friendly Interface
 
 * **Large Search Bar**: Easy-to-tap search interface
-* **Voice Search**: Speak your search queries using voice recognition
-* **Gesture Navigation**: Swipe through search results and categories
 * **Quick Filters**: One-tap access to common filter options
 
 #### Mobile-Specific Features
 
-* **Location-Based Search**: Find content related to your current location
-* **Push Notifications**: Get notified when searched content is updated
 * **Quick Actions**: Perform actions directly from search results
 
 ### Mobile Navigation Shortcuts
@@ -333,7 +211,6 @@ Taskade opens the selected item.
 #### Gesture Controls
 
 * **Swipe Right**: Open navigation menu
-* **Swipe Left**: Access recent items
 * **Pull Down**: Refresh current view
 * **Long Press**: Access context menu
 
@@ -341,7 +218,6 @@ Taskade opens the selected item.
 
 * **Floating Action Button**: Quick access to create new content
 * **Bottom Navigation**: Switch between main sections
-* **Search Widget**: Add search widget to home screen
 * **Shortcuts**: Create shortcuts for frequently accessed content
 
 ## Advanced Search Techniques
@@ -355,14 +231,12 @@ Taskade opens the selected item.
 * **Use Specific Terms**: Choose precise keywords over general terms
 * **Include Context**: Add context words to narrow results
 * **Use Synonyms**: Try alternative words if initial search doesn't work
-* **Combine Operators**: Use multiple search operators together
 
 #### Result Analysis
 
 * **Review All Categories**: Check different result categories (projects, tasks, people)
 * **Use Filters Progressively**: Start broad, then narrow with filters
 * **Check Related Suggestions**: Explore AI-suggested related content
-* **Save Successful Queries**: Bookmark effective search queries
 
 ### Search Performance Tips
 
@@ -381,26 +255,6 @@ Taskade opens the selected item.
 * **Typos and Misspellings**: Double-check spelling in search queries
 * **Outdated Information**: Update search expectations as content evolves
 * **Ignoring Filters**: Use filters to narrow down large result sets
-
-## Search Analytics and Insights
-
-### Search Performance Metrics
-
-**Understand how search is used in your workspace:**
-
-#### Usage Analytics
-
-* **Popular Search Terms**: Most frequently searched keywords
-* **Search Success Rates**: Percentage of searches that lead to content access
-* **Result Click-Through**: Which types of results are clicked most often
-* **Search Abandonment**: Queries that don't result in content access
-
-#### Content Discovery Insights
-
-* **Frequently Accessed Content**: Most popular projects and tasks
-* **Search-Driven Discovery**: Content found primarily through search
-* **Navigation Patterns**: How users move through your workspace
-* **Collaboration Networks**: How search facilitates team collaboration
 
 ### Improving Searchability
 
@@ -462,7 +316,7 @@ Provide training on advanced search techniques and best practices.
 {% step %}
 #### Monitor and Optimize
 
-Regularly review search analytics and optimize content discoverability.
+Regularly ask your team which content is hard to find, and improve its titles and tags.
 {% endstep %}
 {% endstepper %}
 
@@ -476,7 +330,7 @@ Regularly review search analytics and optimize content discoverability.
 * ✅ **Maintain Consistent Terminology**: Use standard language across similar content
 * ✅ **Regular Content Cleanup**: Archive or delete outdated and irrelevant content
 * ✅ **Train Team Members**: Educate users on effective search techniques
-* ✅ **Monitor Search Performance**: Review search analytics and user feedback
+* ✅ **Monitor Search Performance**: Ask your team which content is hard to find
 * ✅ **Optimize for Mobile**: Ensure search works well on mobile devices
 
 {% hint style="info" %}

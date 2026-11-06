@@ -5,24 +5,6 @@ description: >-
 
 # Credits & Billing
 
-Understand how AI credits work in Taskade, how credit packs are priced, and how Auto Top-Up keeps your workflows running.
-
-***
-
-## Table of Contents
-
-* [How AI Credits Work](credits-and-billing.md#how-ai-credits-work)
-* [Free Credits](credits-and-billing.md#free-credits)
-* [Paid Plan Credits](credits-and-billing.md#paid-plan-credits)
-* [What Your App Will Cost](credits-and-billing.md#what-your-app-will-cost)
-* [Credit Packs](credits-and-billing.md#credit-packs)
-* [Auto Top-Up](credits-and-billing.md#auto-top-up)
-* [Model-Specific Pricing](credits-and-billing.md#model-specific-pricing)
-* [Viewing Your Usage](credits-and-billing.md#viewing-your-usage)
-* [What Happens When You Run Out](credits-and-billing.md#what-happens-when-you-run-out)
-* [FAQ](credits-and-billing.md#faq)
-* [Related](credits-and-billing.md#related)
-
 ***
 
 ## How AI Credits Work
@@ -54,7 +36,7 @@ Paid plans include monthly premium credits that reset on your billing cycle.
 
 | Plan tier  | Monthly credits                                            | Key benefit                   |
 | ---------- | ---------------------------------------------------------- | ----------------------------- |
-| Starter    | 10,000                                                     | Small teams (up to 3 members) |
+| Starter    | 10,000                                                     | Individuals and small teams (up to 3 members) |
 | Pro        | 50,000                                                     | Personal productivity         |
 | Business   | 150,000                                                    | Team use, complex AI tasks    |
 | Max        | 400,000                                                    | Heavy generation, large teams |

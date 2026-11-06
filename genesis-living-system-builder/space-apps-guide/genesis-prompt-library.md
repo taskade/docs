@@ -45,9 +45,34 @@ Walk Genesis through how people will actually use your app:
 
 For bigger projects, use simple numbered steps:
 
-* **"1. Show real-time sales on a dashboard 2. Let users filter by product type 3. Add export buttons for reports 4. Send alerts when sales drop"**
-* **"1. Collect customer feedback through forms 2. Categorize responses by department 3. Route urgent issues to management 4. Generate monthly satisfaction reports 5. Send follow-up surveys automatically"**
-* **"1. Display available appointment slots 2. Let clients book and pay online 3. Send confirmation emails and calendar invites 4. Allow rescheduling with 24-hour notice 5. Collect feedback after appointments"**
+{% code overflow="wrap" %}
+```text
+1. Show real-time sales on a dashboard
+2. Let users filter by product type
+3. Add export buttons for reports
+4. Send alerts when sales drop
+```
+{% endcode %}
+
+{% code overflow="wrap" %}
+```text
+1. Collect customer feedback through forms
+2. Categorize responses by department
+3. Route urgent issues to management
+4. Generate monthly satisfaction reports
+5. Send follow-up surveys automatically
+```
+{% endcode %}
+
+{% code overflow="wrap" %}
+```text
+1. Display available appointment slots
+2. Let clients book and pay online
+3. Send confirmation emails and calendar invites
+4. Allow rescheduling with 24-hour notice
+5. Collect feedback after appointments
+```
+{% endcode %}
 
 ### 5. Connect Existing Tools
 

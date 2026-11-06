@@ -9,20 +9,6 @@ A dedicated security layer for Taskade Genesis apps. Every Taskade Genesis app c
 
 ---
 
-## Table of Contents
-
-- [What Is GenesisAuth](#what-is-genesisauth)
-- [Turning Any App Into a Multi-User Product](#turning-any-app-into-a-multi-user-product)
-- [The App Users Tab](#the-app-users-tab)
-- [Workspace Single Sign-On](#workspace-single-sign-on)
-- [Custom Domain Sign-In](#custom-domain-sign-in)
-- [Access Control](#access-control)
-- [How It Works Under the Hood](#how-it-works-under-the-hood)
-- [Security Best Practices](#security-best-practices)
-- [Related](#related)
-
----
-
 ## What Is GenesisAuth
 
 GenesisAuth is the authentication layer for apps built with Taskade Genesis. When you describe an app that needs user accounts, Taskade wires up secure sign-in automatically — session management, credential handling, and access control all work out of the box.
@@ -31,8 +17,6 @@ GenesisAuth is the authentication layer for apps built with Taskade Genesis. Whe
 * **Pre-built sign-in component** added to the generated app automatically.
 * **Scales with your app.** Handles sessions, password hashing, and session tokens securely.
 * **Turns every Taskade Genesis app into a real multi-user product.**
-
-<figure><img src="../../.gitbook/assets/genesisauth-login-signup.jpg" alt="" width="563"><figcaption></figcaption></figure>
 
 ---
 

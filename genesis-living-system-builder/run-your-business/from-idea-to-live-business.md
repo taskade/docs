@@ -11,7 +11,7 @@ You have a business problem and an idea for an app that fixes it. This guide is 
 The five steps form one path from idea to a live, branded app.
 
 ```mermaid
-graph LR
+graph TD
   A["Step 1<br/>Describe your app<br/>to Taskade Genesis"] --> B["Step 2<br/>Shape data into a<br/>system of record"]
   B --> C["Step 3<br/>Add login and roles"]
   C --> D["Step 4<br/>Put it on your<br/>own domain"]

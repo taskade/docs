@@ -16,7 +16,7 @@ Taskade turns a plain-English description of your business into a real, running 
 {% endhint %}
 
 {% hint style="success" %}
-**Running a real business on a Taskade Genesis app?** Follow [Run Your Business on Genesis](genesis-living-system-builder/run-your-business/README.md) — build it, add logins, and put it on your own domain.
+**Running a real business on a Taskade Genesis app?** Follow [Run Your Business on Taskade Genesis](genesis-living-system-builder/run-your-business/README.md) — build it, add logins, and put it on your own domain.
 {% endhint %}
 
 ## Welcome to Taskade
@@ -43,7 +43,7 @@ Software should be alive. And now, it is.
 | Capability               | Description                                                    | Learn More                                                                                                  |
 | ------------------------ | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | **AI App Builder**       | Generate full-stack applications from natural language prompts | [Create Your First App →](https://www.taskade.com/learn/genesis/first-app)              |
-| **Website Generator**    | Create responsive websites with built-in AI intelligence       | [Workspace DNA →](https://www.taskade.com/learn/genesis/workspace-dna)            |
+| **Website Generator**    | Create responsive websites with built-in AI intelligence       | [Publish Your Apps →](https://www.taskade.com/learn/genesis/publishing)            |
 | **Workflow Automation**  | Connect 100+ integrations with AI-powered decision making      | [Automations Guide →](https://www.taskade.com/learn/automation/automations-execution)        |
 | **AI Agents Platform**   | Deploy custom AI assistants with persistent memory             | [Custom AI Agents →](https://www.taskade.com/learn/agents/custom-agents) |
 | **Projects & Databases** | Structured data with real-time sync and custom fields          | [Memory Pillar →](https://www.taskade.com/learn/projects/databases)       |
@@ -98,4 +98,4 @@ Use this as the canonical overview: [Workspace DNA](genesis-living-system-builde
 
 ### Explore docs
 
-<table data-view="cards"><thead><tr><th>Topic</th><th data-card-target data-type="content-ref">Link</th></tr></thead><tbody><tr><td>Run a business on Taskade Genesis</td><td><a href="genesis-living-system-builder/run-your-business/README.md">Run Your Business</a></td></tr><tr><td>Workspace DNA (canonical)</td><td><a href="genesis-living-system-builder/genesis/workspace-dna.md">Workspace DNA</a></td></tr><tr><td>Taskade Genesis (build apps)</td><td><a href="genesis-living-system-builder/genesis/">Taskade Genesis</a></td></tr><tr><td>AI Agents</td><td><a href="genesis-living-system-builder/ai-features/ai-agents-getting-started.md">AI Agents: Getting Started</a></td></tr><tr><td>Automations</td><td><a href="genesis-living-system-builder/automation/">Automations</a></td></tr><tr><td>Connect an AI agent</td><td><a href="getting-started/ai-agents.md">Connect an AI Agent</a></td></tr><tr><td>Developers</td><td><a href="apis-living-system-development/developer-home.md">Developer Platform</a></td></tr><tr><td>Help &#x26; Support</td><td><a href="help-center/">Help &#x26; Support</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Run a business on Taskade Genesis</td><td><a href="genesis-living-system-builder/run-your-business/README.md">Run Your Business</a></td></tr><tr><td>Workspace DNA (canonical)</td><td><a href="genesis-living-system-builder/genesis/workspace-dna.md">Workspace DNA</a></td></tr><tr><td>Taskade Genesis (build apps)</td><td><a href="genesis-living-system-builder/genesis/">Taskade Genesis</a></td></tr><tr><td>AI Agents</td><td><a href="genesis-living-system-builder/ai-features/ai-agents-getting-started.md">AI Agents: Getting Started</a></td></tr><tr><td>Automations</td><td><a href="genesis-living-system-builder/automation/">Automations</a></td></tr><tr><td>Connect an AI agent</td><td><a href="getting-started/ai-agents.md">Connect an AI Agent</a></td></tr><tr><td>Developers</td><td><a href="apis-living-system-development/developer-home.md">Developer Platform</a></td></tr><tr><td>Help &#x26; Support</td><td><a href="help-center/">Help &#x26; Support</a></td></tr></tbody></table>

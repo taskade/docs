@@ -1,6 +1,6 @@
 ---
 description: >-
-  Remove Media from Agent Knowledge — Taskade REST API v1 reference: DELETE /agents/{agentId}/knowledge/media/{mediaId}. Parameters, authentication, and…
+  Taskade REST API v1 reference: DELETE /agents/{agentId}/knowledge/media/{mediaId}. Parameters, authentication, and response schema.
 ---
 
 # Remove Media from Agent Knowledge
