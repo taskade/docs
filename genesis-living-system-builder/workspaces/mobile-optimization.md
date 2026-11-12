@@ -1,14 +1,14 @@
 ---
 description: >-
-  Build mobile-first Taskade Genesis apps and workflows: iOS/Android apps, home-screen widgets, Quick Add, voice, and responsive design across devices.
+  Use Taskade on iOS and Android with home-screen widgets, Quick Add, and voice input. Build Taskade Genesis apps that work well on phones.
 ---
 
 # Mobile Living Experience
 
-**Master Taskade's mobile-first features and create apps that work beautifully across all devices. From responsive Taskade Genesis apps to native mobile workflows, ensure your users have a seamless experience whether they're on desktop, tablet, or phone.**
+**Use the Taskade mobile apps on your phone or tablet. Build Taskade Genesis apps that work well on a desktop computer, a tablet, and a phone.**
 
 {% hint style="success" %}
-**Mobile-First Approach:** The Taskade mobile apps bring the core features of the web app to your phone or tablet, with real-time collaboration and sync across devices. Some desktop features are not yet on mobile.
+**Mobile-First Approach:** The Taskade mobile apps give you the core features of the web app on your phone or tablet. The apps include real-time collaboration and sync across devices. Some desktop features are not yet on mobile.
 {% endhint %}
 
 ***
@@ -20,62 +20,62 @@ description: >-
 #### **iOS & Android Apps**
 
 * **Core features** of the web app: workspaces, multiple project views, AI, and real-time collaboration (some desktop features are not yet on mobile)
-* **Real-time sync** across devices (Taskade needs an internet connection, so there is no offline editing mode)
+* **Real-time sync** across devices (Taskade needs an internet connection. There is no offline editing mode.)
 * **Push notifications** for real-time updates and alerts
-* **Camera integration** for document scanning and photo uploads
+* **Camera integration** to scan documents and upload photos
 * **Home-screen widgets**: Quick Add, My Tasks, Recent, Starred, and Shortcuts for your AI agents
 * **Date suggestions** in Quick Add when you type a date or time, such as "tomorrow 3pm"
-* **Voice input support** for hands-free task creation
-* **Enhanced collaboration** features for better team coordination
-* **Improved search capabilities** for finding content quickly on mobile
+* **Voice input** to create tasks without your hands
+* **Collaboration** features for your team
+* **Search** to find content quickly on mobile
 
 #### **Progressive Web App (PWA)**
 
-* **Install directly from browser** - no app store required
-* **Native-like experience** on any device
-* **Automatic updates** without manual app store downloads
+* **Install from the browser** - You do not need an app store
+* **An experience like a native app** on any device
+* **Automatic updates** - You do not download updates from an app store
 
 ### **Enhanced Breadcrumb Navigation**
 
-Breadcrumb navigation with tooltips shows where you are across mobile devices.
+Breadcrumb navigation shows where you are in your workspace. A breadcrumb is the path of folders and projects that lead to the page that you see. Tooltips give short hints.
 
 **Navigation Improvements:**
 
-* **Contextual Breadcrumbs** - Clear navigation path showing your current location
-* **Interactive Tooltips** - Helpful hints when hovering over navigation elements
-* **Deep Navigation Clarity** - Easy understanding of navigation hierarchy
-* **Touch-Optimized Controls** - Larger touch targets for better mobile interaction
+* **Contextual Breadcrumbs** - A clear path that shows your current location
+* **Interactive Tooltips** - Short hints when you hover over navigation elements
+* **Deep Navigation Clarity** - A clear view of the levels in your workspace
+* **Touch-Optimized Controls** - Larger controls that are easier to tap
 
 ### **Quick Add Widget: Instant Productivity**
 
-The Quick Add widget is a powerful companion tool that lives on your device's home screen, enabling instant task creation without opening the main app.
+The Quick Add widget stays on the home screen of your device. You can create a task from the widget. It is not necessary to open the main app.
 
 #### **Widget Features**
 
-* **Home screen access** - Add tasks instantly from your device's home screen
-* **Smart date suggestions** - Type a date or time in plain words, and Quick Add suggests a due date
-* **Project selection** - Quick access to your most-used projects
-* **My Tasks, Recent, and Starred widgets** - See tasks assigned to you with a due date, recent items, and starred projects
-* **Shortcuts widget** - Start a chat with one of your custom AI agents in one tap
+* **Home screen access** - You can add tasks from the home screen of your device
+* **Smart date suggestions** - If you type a date or time in plain words, Quick Add suggests a due date
+* **Project selection** - Quick access to the projects that you use most
+* **My Tasks, Recent, and Starred widgets** - These widgets show tasks assigned to you with a due date, recent items, and starred projects
+* **Shortcuts widget** - This widget starts a chat with one of your custom AI agents in one tap
 * **Internet required** - Quick Add cannot send a task while your phone is offline
 
 #### **Setting Up Quick Add**
 
 **iOS Setup:**
 
-1. Long-press on home screen to enter edit mode
-2. Tap the "+" button to add widgets
-3. Search for "Taskade" and select Quick Add widget
-4. Choose widget size and placement
-5. Configure default project and settings
+1. Long-press the home screen to start edit mode.
+2. Tap the "+" button to add a widget.
+3. Search for "Taskade". Then select the Quick Add widget.
+4. Select the widget size and position.
+5. Configure the default project and the other settings.
 
 **Android Setup:**
 
-1. Long-press on home screen
-2. Select "Widgets" from the menu
-3. Find and drag Taskade Quick Add widget
-4. Resize and position as needed
-5. Tap to configure default settings
+1. Long-press the home screen.
+2. Select "Widgets" in the menu.
+3. Find the Taskade Quick Add widget. Then drag it to the home screen.
+4. Change the size and position of the widget.
+5. Tap the widget to configure the default settings.
 
 #### **Smart Date Suggestions**
 
@@ -131,7 +131,7 @@ Desktop (1024px+):
 * **Swipe actions** for quick navigation
 * **Long press** for context menus and advanced options
 * **Pull to refresh** for real-time content updates
-* **Drag and drop** for intuitive task and project organization
+* **Drag and drop** to organize tasks and projects
 
 #### **Mobile-Optimized Controls**
 
@@ -161,6 +161,8 @@ Touch Interface Elements:
 ### **Creating Mobile-First Apps**
 
 #### **Mobile-Optimized Prompts**
+
+Tell Taskade Genesis in your prompt that the app is for phones. Describe the controls that you want. The example that follows shows a good prompt:
 
 ```
 Good Mobile App Prompt:
@@ -223,10 +225,10 @@ Mobile Layout Best Practices:
 
 #### **Battery & Data Conservation**
 
-* **Efficient background sync** to minimize battery drain
+* **Efficient background sync** to use less battery
 * **Compressed data transfer** for slower connections
-* **Smart update scheduling** during optimal network conditions
-* **Reduced animation** on lower-powered devices
+* **Scheduled updates** when the network conditions are good
+* **Less animation** on slower devices
 
 ***
 
@@ -239,27 +241,29 @@ Mobile Layout Best Practices:
 - A simple spreadsheet-style list (paid plans)
 - Fewer columns than Table view, quick to scan on a phone
 - Same project data as every other view
-- Good for lightweight client lists and task queues
+- Good for short client lists and task queues
 
 #### **Responsive Board View**
 
-- Horizontal scrolling for swim lanes
-- Card stacking for narrow screens
-- Drag indicators for touch clarity
-- Simplified card content for readability
-- Quick actions via long press
+- Horizontal scroll across the columns (swim lanes)
+- Stacked cards on narrow screens
+- Drag indicators that make touch actions clear
+- Short card content that is easy to read
+- Quick actions with a long press
 
 #### **Calendar View Mobile Enhancements**
 
-- Month/week/day views optimized for small screens
-- Touch-friendly date selection
-- Quick event creation with smart defaults
-- Gesture-based navigation between time periods
-- Integration with device calendar apps
+- Month, week, and day views for small screens
+- Date selection that is easy to tap
+- Quick event creation with default values
+- Gestures to move between time periods
+- Integration with the calendar apps on your device
 
 ### **View Switching on Mobile**
 
 #### **Smart View Recommendations**
+
+The example that follows shows the views that work best on each type of device. It is a guide, not an automatic setting.
 
 ```javascript
 // Suggested views by device (a guide, not an automatic setting)
@@ -598,12 +602,12 @@ Results:
 
 ### **Mobile Widget Ecosystem**
 
-| **Widget Type**           | **Functionality**                   | **Business Use Case**           |
+| **Widget Type**           | **Function**                        | **Business Use Case**           |
 | ------------------------- | ----------------------------------- | ------------------------------- |
-| **Quick Add Widget**      | Add tasks with date suggestions     | Capture ideas instantly         |
-| **Shortcuts Widget**      | Start a chat with a custom AI agent | Get answers without opening app |
-| **My Tasks Widget**       | Tasks assigned to you with a due date | See today's work at a glance  |
-| **Recent Widget**         | Your recently opened items          | Jump back into work             |
+| **Quick Add Widget**      | Add tasks with date suggestions     | Save ideas quickly              |
+| **Shortcuts Widget**      | Start a chat with a custom AI agent | Get answers from the home screen |
+| **My Tasks Widget**       | Tasks assigned to you with a due date | See the work for today quickly |
+| **Recent Widget**         | Your recently opened items          | Return to your work             |
 | **Starred Widget**        | Your starred projects               | One-tap access to key projects  |
 
 ### **Mobile Automation Triggers**
@@ -611,11 +615,11 @@ Results:
 | **Trigger**       | **Mobile Advantage**  | **Example Use Case**             |
 | ----------------- | --------------------- | -------------------------------- |
 | **Time-Based**    | Background processing | Daily standup reminders          |
-| **Photo Upload**  | Camera integration    | Auto-categorize expense receipts |
+| **Photo Upload**  | Camera integration    | Sort expense receipts into categories automatically |
 
 ### **Connectivity and Sync**
 
-Taskade is cloud-based and needs a live internet connection. There is no offline editing mode on mobile, and Quick Add cannot send a task while your phone is offline.
+Taskade is cloud-based and needs a live internet connection. There is no offline editing mode on mobile. Quick Add cannot send a task while your phone is offline.
 
 * **Real-time sync** - Changes appear on every device and for every collaborator as you make them
 * **After a dropped connection** - Reconnect, then make sure that your latest changes appear in the project. See [No Internet Connection](https://www.taskade.com/learn/account/offline)
@@ -631,101 +635,23 @@ Taskade is cloud-based and needs a live internet connection. There is no offline
 
 **Battery Efficiency:**
 
-* **Smart Background Processing** - Minimize battery drain
-* **Adaptive Refresh Rates** - Reduce unnecessary updates
-* **Power-Aware Sync** - Sync less frequently on low battery
-* **Dark Mode Optimization** - Reduce OLED power consumption
+* **Smart Background Processing** - Less battery use
+* **Adaptive Refresh Rates** - Fewer unnecessary updates
+* **Power-Aware Sync** - Less frequent sync when the battery is low
+* **Dark Mode Optimization** - Less power use on OLED screens
 
 **Memory Management:**
 
-* **Intelligent Caching** - Keep frequently used data in memory
-* **Progressive Loading** - Load content as needed
-* **Memory Cleanup** - Automatic garbage collection
-* **Resource Optimization** - Efficient image and data handling
-
-## Living Systems Mobile Capabilities
-
-### **Mobile Workspace DNA**
-
-**Living Memory on Mobile:**
-
-* **Adaptive Data Structures** - Project layouts that optimize for mobile screens
-* **Intelligent Caching** - Smart data storage that learns your mobile usage patterns
-* **Contextual Sync** - Sync priorities based on your current mobile context
-
-**Living Intelligence on Mobile:**
-
-* **Taskade EVE Mobile Companion** - Your AI assistant optimized for mobile interactions
-* **Voice-First AI** - Natural voice conversations with intelligent agents
-* **Contextual Suggestions** - AI that understands your mobile environment and needs
-* **Predictive Assistance** - Proactive help based on your mobile behavior patterns
-
-**Living Execution on Mobile:**
-
-* **Mobile-Optimized Automations** - Workflows designed for mobile triggers and actions
-* **Camera-Triggered Workflows** - Automations activated by photo or video capture
-* **Touch-Optimized Controls** - Gestures and interactions designed for mobile use
-
-### **Mobile Living System Examples**
-
-#### **Field Service Living System**
-
-```
-Mobile Capabilities:
-├── GPS location tracking with intelligent routing
-├── Camera integration for photo documentation
-├── Voice notes for hands-free updates
-└── Predictive scheduling based on historical patterns
-```
-
-#### **Sales Mobile Living System**
-
-```
-Mobile Features:
-├── Contact scanning with instant CRM integration
-├── Voice-to-text meeting notes with AI summarization
-├── Location-based lead suggestions
-├── Mobile-optimized dashboards with touch gestures
-└── Predictive follow-up reminders based on engagement patterns
-```
-
-### **Mobile Living System Performance**
-
-**Adaptive Performance:**
-
-* **Context-Aware Loading** - Faster loading based on your typical mobile usage
-* **Predictive Prefetching** - Anticipate data needs based on behavior patterns
-* **Smart Compression** - Optimize data transfer for current network conditions
-* **Battery-Aware Processing** - Adjust performance based on battery level
-
-**Living Mobile Optimization:**
-
-* **Usage Pattern Learning** - Apps that adapt to your mobile workflow habits
-* **Network Condition Adaptation** - Performance optimization for varying connectivity
-* **Device Capability Detection** - Automatic feature adjustment for device capabilities
-* **Continuous Performance Improvement** - Systems that get faster with regular use
-
-### **Mobile Living Ecosystem Integration**
-
-**Cross-App Intelligence:**
-
-* **Workspace DNA Sharing** - Living systems that communicate across apps
-* **Unified Mobile Experience** - Consistent behavior across all Taskade mobile apps
-* **Context Preservation** - Seamless transitions between mobile and desktop experiences
-* **Living Data Continuity** - Information flows intelligently between all your devices
-
-**Third-Party Mobile Integration:**
-
-* **Mobile App Connectors** - Living integrations with mobile-native services
-* **Wearable Device Support** - Integration with smartwatches and fitness trackers
-* **IoT Device Integration** - Connect with mobile-connected smart devices
-* **Mobile Payment Systems** - Seamless integration with mobile payment platforms
+* **Intelligent Caching** - Taskade keeps frequently used data in memory
+* **Progressive Loading** - Taskade loads content when you need it
+* **Memory Cleanup** - Automatic release of unused memory (garbage collection)
+* **Resource Optimization** - Efficient use of images and data
 
 ***
 
-**📱 Ready to create mobile-optimized experiences?** Start with mobile-first Genesis prompts and progressive enhancement strategies to ensure your apps work beautifully on every device.
+**📱 Build for mobile:** Start with a Taskade Genesis prompt that describes a phone layout. Then make sure that your app works well on each device.
 
-_For more mobile development insights, explore our_ [_Genesis Space Apps Guide_](../space-apps-guide/) _and_ [_Advanced Automation_](../automation/advanced-actions.md) _for mobile-friendly workflows._
+_For more information about mobile-friendly workflows, read the_ [_Genesis Space Apps Guide_](../space-apps-guide/) _and_ [_Advanced Automation_](../automation/advanced-actions.md)_._
 
 ---
 

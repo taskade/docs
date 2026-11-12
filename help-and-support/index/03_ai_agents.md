@@ -6,41 +6,41 @@ title: 'Chapter 3: AI Agents - Your Digital Team'
 
 # Chapter 3: AI Agents - Your Digital Team
 
-You've built your workspace foundation and created flexible project containers. Now let's add the **intelligence layer**—AI agents that act like specialized team members, each trained for specific roles in your business.
+In this chapter, you add AI agents to your workspace. An AI agent is an assistant with one role. It answers from the knowledge and instructions that you give it.
 
 ## What Problem Do AI Agents Solve?
 
-**Traditional AI tools are generic and forgetful:**
+**A general AI chat tool does not know your business:**
 
-* ChatGPT forgets your business context after each conversation
-* Generic AI doesn't understand your specific processes or terminology
-* You have to explain your business repeatedly to get useful help
+* It does not keep your business context from one chat to the next.
+* It does not know your processes or your terms.
+* You must explain your business again in each chat.
 
-**AI agents in Taskade solve this by becoming permanent, specialized team members** who learn your business, remember your preferences, and work alongside your human team members.
+**A Taskade AI agent keeps your context.** You give it instructions and knowledge one time. The agent uses them in every chat, and it works in the same workspace as your team.
 
 ## What is an AI Agent? (Your Digital Team Member)
 
-An AI agent is a **specialized digital assistant** trained on your business knowledge, processes, and preferences. Unlike generic AI chatbots, agents become part of your team with specific roles and expertise.
+An AI agent is an assistant with one role. You give it instructions and attach your knowledge: files, links, and projects. The knowledge is the persistent memory of the agent.
 
-Each agent has one role, and you train it on the knowledge that role needs:
+Each agent has one role. Give it the knowledge that the role needs:
 
-* **🎯 Marketing Agent**: Content creation and campaign analysis. Trained on your brand guidelines and content.
-* **💼 Sales Agent**: Lead qualification and proposal drafting. Trained on your products and pricing.
-* **🛠️ Support Agent**: Ticket routing and knowledge base answers. Trained on your FAQs and procedures.
-* **🔍 Research Agent**: Data analysis and insights. Trained on your data and reports.
-* **📋 Project Agent**: Task management and progress tracking. Trained on your methodologies and templates.
+* **🎯 Marketing Agent**: Writes content and reviews campaigns. Uses your brand guidelines and past content.
+* **💼 Sales Agent**: Qualifies leads and drafts proposals. Uses your product and pricing documents.
+* **🛠️ Support Agent**: Sorts tickets and answers from your knowledge base. Uses your FAQs and procedures.
+* **🔍 Research Agent**: Analyzes data and finds insights. Uses your data and reports.
+* **📋 Project Agent**: Manages tasks and tracks progress. Uses your methods and templates.
 
-**AI agents are:**
+**What an AI agent can do:**
 
-* **🧠 Specialized Experts**: Trained for specific business roles
-* **📚 Knowledge Keepers**: Remember everything about your business
-* **⚡ Action Takers**: Can create tasks, send emails, update projects
-* **🔄 Continuous Learners**: Get smarter with every interaction
-* **🤝 Team Players**: Work alongside human colleagues
+* **🧠 Focus on one job**: Each agent has one role and one set of instructions.
+* **📚 Keep your knowledge**: The agent reads its knowledge in every chat.
+* **⚡ Take action**: With tools turned on, the agent can create tasks, send emails, and update projects.
+* **🔄 Stay current**: A connected project syncs when the project changes.
+* **🤝 Work with your team**: Agents work in the same projects as your team members.
 
 ## How AI Agents Work (The Training & Learning Process)
 
-**Agents start as blank slates and become experts through training:**
+**An agent starts with no knowledge of your business. You give it a role, then knowledge:**
 
 ### Step 1: Define the Role
 
@@ -54,33 +54,35 @@ Each agent has one role, and you train it on the knowledge that role needs:
 
 ### Step 2: Train with Knowledge
 
-**Upload documents, projects, and examples:**
+**Add documents, projects, and examples:**
 
 * Brand guidelines and style guides
-* Past successful campaigns and content
+* Past campaigns and content
 * Customer data and audience insights
 * Competitor analysis reports
-* Team procedures and best practices
+* Team procedures
 
 ### Step 3: Test and Refine
 
-**Ask questions and give feedback:**
+**Ask questions and read the answers:**
 
 * "Write a blog post about our new feature"
 * "Analyze why last month's campaign underperformed"
 * "Suggest 5 content ideas for next quarter"
 
-### Step 4: Deploy and Learn
+### Step 4: Deploy and Improve
 
-**The agent starts working and gets smarter:**
+**Put the agent to work, then improve it:**
 
-* Learns from your feedback and corrections
-* Remembers successful patterns
-* Adapts to your preferences and style
+* If an answer is wrong, correct the knowledge or the instructions.
+* Add new documents when your business changes.
+* Remove old sources that give wrong answers.
+
+The agent does not change its own knowledge from a chat. The improvements come from the changes that you make.
 
 ## Creating Your First AI Agent (Step-by-Step)
 
-**Let's create a practical agent together:**
+**Create a support agent with these steps:**
 
 {% stepper %}
 {% step %}
@@ -103,18 +105,20 @@ Description: Handles customer inquiries, creates support tickets, and provides i
 {% step %}
 #### Add Training Data
 
-Upload relevant documents and information:
+Add the documents that the agent needs:
 
 * FAQ documents
 * Product manuals
-* Previous support conversations
+* Past support conversations
 * Company policies
+
+On Free, each agent holds one knowledge source. Paid plans hold up to 50 sources for each agent. Web links, YouTube videos, and cloud files need a paid plan.
 {% endstep %}
 
 {% step %}
 #### Test the Agent
 
-Ask some questions to see how it performs:
+Ask some questions and read the answers:
 
 ```
 "How do customers reset their passwords?"
@@ -126,24 +130,24 @@ Ask some questions to see how it performs:
 {% step %}
 #### Refine and Deploy
 
-Give feedback on responses and deploy the agent to start working
+If an answer is wrong, correct the knowledge or the instructions. Then put the agent to work.
 {% endstep %}
 {% endstepper %}
 
-**Congratulations!** You now have a digital team member working 24/7!
+Your first agent is ready. It answers at any time of day.
 
 ## Industry-Specific Agent Examples (Real-World Applications)
 
 ### Healthcare Agent
 
-**Trained on:** Medical protocols, patient data handling, HIPAA compliance
+**Trained on:** Medical protocols, rules for patient data, HIPAA compliance
 
 **Capabilities:**
 
 * **Patient Documentation**: Organize and analyze medical records
-* **Research Support**: Find latest treatment protocols and studies
-* **Compliance Monitoring**: Ensure regulatory requirements are met
-* **Scheduling Optimization**: Coordinate appointments and resources
+* **Research Support**: Find current treatment protocols and studies
+* **Compliance Monitoring**: Compare procedures with regulatory requirements
+* **Scheduling**: Coordinate appointments and resources
 
 **Example Commands:**
 
@@ -160,7 +164,7 @@ Give feedback on responses and deploy the agent to start working
 * **Document Review**: Analyze contracts and legal documents
 * **Legal Research**: Search precedents and statutes
 * **Case Management**: Track deadlines and filing requirements
-* **Client Communication**: Draft responses to common inquiries
+* **Client Communication**: Draft answers to common questions
 
 **Example Commands:**
 
@@ -174,10 +178,10 @@ Give feedback on responses and deploy the agent to start working
 
 **Capabilities:**
 
-* **Content Creation**: Generate blog posts, social media, emails
+* **Content Creation**: Write blog posts, social media posts, and emails
 * **Campaign Analysis**: Review performance and suggest improvements
-* **Audience Research**: Identify trends and target demographics
-* **Competitive Intelligence**: Monitor competitor activities
+* **Audience Research**: Find trends and target groups
+* **Competitive Intelligence**: Track competitor activities
 
 **Example Commands:**
 
@@ -191,10 +195,10 @@ Give feedback on responses and deploy the agent to start working
 
 **Capabilities:**
 
-* **Ticket Routing**: Automatically categorize and prioritize requests
-* **Instant Answers**: Provide solutions from knowledge base
-* **Escalation Logic**: Identify when to involve human agents
-* **Feedback Analysis**: Spot patterns in customer issues
+* **Ticket Routing**: Sort and prioritize requests
+* **Instant Answers**: Give answers from the knowledge base
+* **Escalation**: Find the requests that need a person
+* **Feedback Analysis**: Find patterns in customer problems
 
 **Example Commands:**
 
@@ -204,31 +208,31 @@ Give feedback on responses and deploy the agent to start working
 
 ## How Agents Connect to Your Workspace DNA
 
-**Remember the living DNA concept? AI agents are the intelligence layer:**
+**AI agents are the Intelligence layer of Workspace DNA. Your projects are the Memory layer:**
 
 ### Workspace-Level Intelligence
 
-* **Global Knowledge**: Access information across all projects
-* **Consistent Voice**: Maintain brand voice across all communications
-* **Cross-Project Insights**: Connect data from different areas
+* **Shared Knowledge**: An agent can read every project that you connect to it.
+* **Consistent Voice**: Your brand guidelines keep the same voice in each answer.
+* **Cross-Project Insights**: One agent can compare data from different projects.
 
 ### Project-Specific Specialization
 
-* **Context Awareness**: Understand which project they're working in
-* **Role Adaptation**: Adjust behavior based on project requirements
-* **Team Coordination**: Communicate with other agents and humans
+* **Context Awareness**: In a project chat, the agent uses that project as context.
+* **Role**: The instructions of the agent set its behavior.
+* **Team Coordination**: Agents work next to your team members in the same projects.
 
-### Continuous Learning
+### Keep Agents Current
 
-* **Feedback Integration**: Get better with every interaction
-* **Pattern Recognition**: Learn your preferences and habits
-* **Knowledge Expansion**: Grow smarter as you add more content
+* **Corrections**: Update the knowledge or the instructions when an answer is wrong.
+* **Live Projects**: A connected project syncs when the project changes.
+* **More Knowledge**: Add sources when the agent must cover a new topic.
 
 ## Advanced Agent Techniques
 
 ### Multi-Agent Collaboration
 
-**Different agents can work together.** AI Teams (multi-agent teams) need Pro or a higher plan:
+**Several agents can work together.** AI Teams (multi-agent teams) need Pro or a higher plan:
 
 ```
 Customer Inquiry → Support Agent → Escalation Agent → Manager Agent
@@ -238,84 +242,83 @@ Sales Opportunity → Sales Agent → Proposal Agent → Contract Agent
 
 ### Agent Workflows
 
-**Chain agents together for complex processes:**
+**Connect agents in a sequence for a large process:**
 
-1. **Research Agent** gathers information
-2. **Analysis Agent** processes the data
-3. **Communication Agent** creates the response
-4. **Action Agent** implements the decisions
+1. **Research Agent** collects information.
+2. **Analysis Agent** processes the data.
+3. **Communication Agent** writes the response.
+4. **Action Agent** does the next steps.
 
 ### Custom Training Strategies
 
-**Make agents experts in your specific domain:**
+**Make each agent an expert in your domain:**
 
-* **Document Libraries**: Upload comprehensive knowledge bases
-* **Example Outputs**: Show agents your preferred formats and styles
-* **Feedback Loops**: Regularly review and improve agent responses
-* **Specialized Prompts**: Create custom instructions for specific scenarios
+* **Document Libraries**: Add your main reference documents.
+* **Example Outputs**: Show the agent the formats and styles that you want.
+* **Regular Reviews**: Read agent answers and correct the knowledge or instructions.
+* **Specialized Prompts**: Write custom instructions for specific cases.
 
 ## Agent Management Best Practices
 
 ### Regular Training Updates
 
-* **Monthly Reviews**: Check agent performance and update training
-* **New Content Integration**: Add new documents and procedures
-* **Performance Metrics**: Track accuracy and user satisfaction
+* **Monthly Reviews**: Read agent answers and update the knowledge.
+* **New Content**: Add new documents and procedures.
+* **Quality**: Track the accuracy of answers and the satisfaction of users.
 
 ### Clear Role Definitions
 
-* **Avoid Overlap**: Give each agent distinct responsibilities
-* **Escalation Paths**: Define when agents should involve humans
-* **Quality Gates**: Set standards for when responses need human review
+* **No Overlap**: Give each agent a different responsibility.
+* **Escalation Paths**: Define when an agent must hand the request to a person.
+* **Quality Gates**: Define which answers need a review by a person.
 
 ### Security and Privacy
 
-* **Access Controls**: Limit what data agents can access
-* **Audit Trails**: Track agent actions and decisions
-* **Compliance Training**: Ensure agents follow your policies
+* **Access Controls**: Give each agent only the data that its job needs.
+* **Approvals**: Set sensitive tools to **Manual Approval**.
+* **Policies**: Put your rules in the instructions of the agent.
 
-## How it Works Under the Hood
+## How AI Agents Work Internally
 
-**Technically, AI agents are:**
+**Internally, an AI agent uses:**
 
-* **Large Language Models** (frontier models from top AI labs) guided by your instructions, not fine-tuned on your data
-* **Retrieval-Augmented Generation** systems that access your knowledge
-* **Context-Aware Systems** that understand workspace and project relationships
-* **Action-Capable Interfaces** that can trigger workflows and updates
-* **Continuous Learning Systems** that improve with feedback
+* **Large language models** (frontier models from top AI labs). Your instructions guide the model. Taskade does not train the model on your data.
+* **Retrieval** of your knowledge. Before it answers, the agent searches its knowledge for the relevant parts.
+* **Context** from your workspace and the project that you work in.
+* **Tools** that can start automations and update projects.
 
-**But the magic happens automatically—you just train them and they work!**
+You do not manage these parts. You give the agent instructions, knowledge, and tools.
 
 ## Common agent patterns
 
 ### Customer support
 
-**Challenge:** The support team is overwhelmed with repetitive questions. **What you build:** A support agent trained on your product catalog and policies, so common questions get answered automatically.
+**Challenge:** The support team gets the same questions again and again. **What you build:** A support agent with your product catalog and policies as knowledge. It answers the common questions.
 
 ### Marketing content
 
-**Challenge:** Content creation for social media and blogs is a bottleneck. **What you build:** A marketing agent trained on your brand guidelines and past content, so drafts stay on-voice.
+**Challenge:** Content for social media and blogs takes too long. **What you build:** A marketing agent with your brand guidelines and past content as knowledge. Its drafts keep your voice.
 
 ### Research & review
 
-**Challenge:** Document review and research take excessive time. **What you build:** A research agent trained on your reference material to summarize and surface what matters.
+**Challenge:** Document review and research take too much time. **What you build:** A research agent with your reference material as knowledge. It summarizes the material and shows the important points.
 
-## Your AI Agents Are Learning and Growing
+## Keep Your AI Agents Up to Date
 
-**Every agent gets better over time:**
+**Each agent improves when you update it:**
 
-* **Remembers your preferences** for how you like things done
-* **Learns from feedback** on what works and what doesn't
-* **Adapts to your style** of communication and decision-making
-* **Discovers patterns** in your business that even you might not see
+* **Instructions**: Write how you want the agent to do its work.
+* **Corrections**: Fix the knowledge when an answer is wrong.
+* **Style**: Add examples of the style that you want.
+* **Patterns**: Ask the agent to find patterns in your connected projects.
 
-**Excellent progress!** You now have digital team members that understand your business, work around the clock, and continuously learn from your workspace. AI agents transform productivity from human-only efforts to true human-AI collaboration.
+You now have AI agents that know your business and work with your team.
 
-**Ready to automate the routine work?** In [Chapter 4: Automation](04_automation.md), we'll connect your agents to workflows that run automatically, creating systems that operate with minimal human intervention!
+**Next step:** In [Chapter 4: Automation](04_automation.md), you connect your agents to automations that run on their own.
 
 ***
 
-_Have you created your first AI agent yet? Start with something simple like a "Meeting Summarizer" or "Task Organizer"—the key is training them well from the beginning!_
+_Did you create your first AI agent? Start with a simple one, for example a "Meeting Summarizer" or a "Task Organizer". Give it good knowledge from the start._
 
 [← Back to Chapter 2: Projects](02_projects.md) | [Next: Automation →](04_automation.md)
 

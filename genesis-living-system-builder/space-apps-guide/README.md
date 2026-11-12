@@ -5,29 +5,29 @@ description: >-
 
 # Space Apps: Living Systems
 
-**Create professional websites and web applications just by describing what you want. No coding, no hosting headaches—just your idea turned into a live website that works everywhere.**
+**Describe a website or a web app, and Taskade Genesis builds it. You do not write code or manage hosting. Your idea becomes a live website that works on all devices.**
 
 {% hint style="success" %}
-**New to Space Apps?** Think of them as Taskade Genesis's superpower for building customer-facing websites. Perfect for businesses that need professional web presence quickly!
+**New to Space Apps?** A Space App is a customer-facing website that Taskade Genesis builds for you. It is a fast way for a business to get a professional web presence.
 {% endhint %}
 
 ***
 
 ## What Are Space Apps?
 
-Space Apps are the Taskade Genesis way of turning your ideas into real, professional websites. Instead of building internal tools for your team, Space Apps create polished websites that your customers can visit and use—complete with their own web address!
+A Space App is a professional website that Taskade Genesis builds from your idea. Your customers visit it and use it. It has its own web address.
 
 ### **Space Apps vs. Project-Based Apps**
 
-| Feature            | Space Apps                                | Project-Based Apps              |
-| ------------------ | ----------------------------------------- | ------------------------------- |
-| **What You Get**   | Real websites your customers visit        | Internal team workspaces        |
-| **Where It Lives** | Your own web address (like yoursite.com)  | Inside your Taskade workspace   |
-| **Who Uses It**    | Your customers and the public             | Your team members               |
-| **How It Looks**   | Complete control over design and branding | Uses Taskade's standard layouts |
-| **What's Inside**  | Modern website technology                 | Taskade's project tools         |
-| **Speed**          | Lightning-fast loading worldwide          | Fast within Taskade             |
-| **Tech Stuff**     | All the code if you want to see it        | No code access needed           |
+| Feature | Space Apps | Project-Based Apps |
+| --- | --- | --- |
+| **What You Get** | Real websites for your customers | Internal team workspaces |
+| **Where It Lives** | Your own web address (like yoursite.com) | Inside your Taskade workspace |
+| **Who Uses It** | Your customers and the public | Your team members |
+| **How It Looks** | Your own design and branding | The standard Taskade layouts |
+| **What's Inside** | Modern web technology | The project tools of Taskade |
+| **Speed** | Fast loading in all regions | Fast inside Taskade |
+| **Code** | You can see all the code | You do not need code access |
 
 ***
 
@@ -35,26 +35,26 @@ Space Apps are the Taskade Genesis way of turning your ideas into real, professi
 
 ### Step 1: Choose Space Apps for Your Use Case
 
-**Perfect for:**
+**Space Apps are good for:**
 
-* Customer-facing applications (booking systems, feedback forms, portals)
+* Customer-facing apps (booking systems, feedback forms, portals)
 * Marketing websites and landing pages
-* E-commerce storefronts and catalogs
-* Public dashboards and reporting tools
-* Mobile-responsive web applications
+* Online stores and catalogs
+* Public dashboards and reports
+* Web apps that work on phones
 
-**Consider Project-Based Apps for:**
+**Project-based apps are better for:**
 
 * Internal team collaboration
 * Complex workflow management
-* Heavy data manipulation and reporting
+* Large data tasks and reports
 * Advanced automation workflows
 
 ### Step 2: Create Your First Space App
 
-1. **Open Taskade Genesis** at [taskade.com/create](https://www.taskade.com/create)
-2. **Type into the prompt box**, or choose **New app → Generate with AI** in your workspace
-3. **Write your prompt** using the proven formula:
+1. Open Taskade Genesis at [taskade.com/create](https://www.taskade.com/create).
+2. Type into the prompt box, or choose **New app → Generate with AI** in your workspace.
+3. Write your prompt with this formula:
 
 ```
 I run a [BUSINESS TYPE] and need [TARGET USERS] to [PRIMARY ACTION].
@@ -67,12 +67,12 @@ The app should [VISUAL/UX REQUIREMENTS] and work well on [DEVICES].
 
 ### Step 3: Deployment and Sharing
 
-Space Apps deploy automatically with global distribution:
+Taskade puts your Space App online for you, on a global network:
 
-* **Instant URLs**: Your app gets a live URL immediately
-* **Global CDN**: Fast loading worldwide with edge caching
-* **Mobile Responsive**: Automatically optimized for all screen sizes
-* **HTTPS Enabled**: Secure connections out of the box
+* **Instant link**: The first build of a new app goes live once at its own link. It stays unlisted until you turn on **Show in public listings**.
+* **Global CDN**: A content delivery network loads the app fast in all regions.
+* **Phones**: The layout fits all screen sizes.
+* **HTTPS**: Connections are secure by default.
 
 ***
 
@@ -80,14 +80,14 @@ Space Apps deploy automatically with global distribution:
 
 ### Responsive Design & Mobile Optimization
 
-Space Apps are built mobile-first using Tailwind CSS.
+Taskade Genesis builds Space Apps for phones first, with Tailwind CSS.
 
-**Mobile Optimization Features:**
+**Phone features:**
 
-* Touch-friendly UI elements
-* Optimized form inputs for mobile keyboards
-* Swipe gestures where appropriate
-* Fast loading with code splitting
+* Buttons and controls that are easy to touch
+* Form fields that open the right phone keyboard
+* Swipe gestures where they help
+* Fast loading, because the app loads its code in parts (code splitting)
 
 ### Real-Time Data Integration
 
@@ -108,13 +108,13 @@ await refresh();
 
 ### Advanced UI Components
 
-Space Apps include a rich set of pre-built components:
+Space Apps include many ready-made components:
 
-* **Form Components**: Multi-step forms, file uploads, validation
-* **Data Display**: Tables, charts, dashboards, galleries
-* **Navigation**: Headers, sidebars, breadcrumbs, tabs
-* **Interactive Elements**: Modals, dropdowns, accordions
-* **Media**: Image galleries, video players, carousels
+* **Forms**: multi-step forms, file uploads, and validation
+* **Data**: tables, charts, dashboards, and galleries
+* **Navigation**: headers, sidebars, breadcrumbs, and tabs
+* **Interactive elements**: modals, dropdowns, and accordions
+* **Media**: image galleries, video players, and carousels
 
 ***
 
@@ -128,13 +128,13 @@ Space Apps include a rich set of pre-built components:
 Create an online product catalog for my clothing boutique where customers can browse items by category (dresses, tops, bottoms, accessories), filter by size and color, and view detailed product information with multiple photos. Include a search function and wishlist feature. The design should be modern and elegant with a clean layout that works perfectly on mobile devices.
 ```
 
-**Generated Features:**
+**What Taskade Genesis builds:**
 
-* Product grid with lazy loading
-* Advanced filtering and search
-* Product detail modals
-* Mobile-optimized image gallery
-* Wishlist functionality
+* A product grid that loads images as the visitor scrolls
+* Filters and search
+* Product detail windows
+* An image gallery for phones
+* A wishlist
 * Category navigation
 
 ### Customer Service Portal
@@ -145,14 +145,14 @@ Create an online product catalog for my clothing boutique where customers can br
 Build a customer support portal where users can submit tickets, track their status, and access our knowledge base. Include ticket categories (technical, billing, general), priority levels, file uploads, and automated email confirmations. Customers should be able to rate their support experience and see estimated response times.
 ```
 
-**Generated Features:**
+**What Taskade Genesis builds:**
 
-* Ticket submission form with validation
-* Status tracking dashboard
-* Knowledge base with search
-* File upload handling
-* Rating and feedback system
-* Email integration
+* A ticket form with validation
+* A status dashboard
+* A knowledge base with search
+* File uploads
+* Ratings and feedback
+* Email connection
 
 ### Event Registration Platform
 
@@ -162,13 +162,13 @@ Build a customer support portal where users can submit tickets, track their stat
 Create an event registration system for our conference where attendees can register, select sessions, choose meal preferences, and pay registration fees. Include speaker profiles, schedule display, and networking features. The app should handle multiple ticket types and send calendar invites upon registration.
 ```
 
-**Generated Features:**
+**What Taskade Genesis builds:**
 
-* Multi-step registration flow
-* Session selection interface
-* Payment processing integration
-* Calendar integration
-* Speaker and schedule displays
+* Registration in more than one step
+* Session selection
+* A payment connection
+* Calendar invites
+* Speaker and schedule pages
 * Networking features
 
 ***
@@ -177,7 +177,7 @@ Create an event registration system for our conference where attendees can regis
 
 ### Visual Customization
 
-Space Apps support extensive visual customization through natural language:
+To change the look of a Space App, describe the change in plain English:
 
 ```
 "Make the header navy blue with white text"
@@ -189,7 +189,7 @@ Space Apps support extensive visual customization through natural language:
 
 ### Advanced Styling with Tailwind CSS
 
-Generated apps use Tailwind CSS for styling:
+The apps that Taskade Genesis builds use Tailwind CSS for styles:
 
 ```css
 /* Custom utility classes are automatically generated */
@@ -204,7 +204,7 @@ Generated apps use Tailwind CSS for styling:
 
 ### Code Access and Modification
 
-View your app's complete source in the **Code** tab of the app's settings, or export it to GitHub (both on Pro and up):
+On Pro and up, you can see the full source of your app in the **Code** tab of the app settings. You can also export it to GitHub. The source has this structure:
 
 ```javascript
 // App structure
@@ -223,19 +223,17 @@ src/
 
 ### Automatic Deployment
 
-Space Apps deploy automatically with global infrastructure:
+Taskade puts your Space App online for you, on a global network:
 
-**Key Benefits:**
-
-* **Global Distribution**: Fast loading worldwide
-* **Edge Caching**: Static assets served from CDN
-* **Auto Scaling**: Handles traffic spikes automatically
-* **High Availability**: Enterprise-grade reliability
-* **SSL/TLS**: HTTPS enabled by default
+* **Global distribution**: fast loading in all regions
+* **Edge caching**: a CDN serves the static files
+* **Auto scaling**: the app keeps working when traffic increases
+* **High availability**: enterprise-grade reliability
+* **SSL/TLS**: HTTPS is on by default
 
 ### Performance Optimization
 
-Space Apps are optimized for performance:
+Taskade Genesis adds these speed features to each Space App:
 
 ```javascript
 // Automatic optimizations included:
@@ -247,13 +245,13 @@ Space Apps are optimized for performance:
 
 ### Custom Domains & SSL
 
-Connect your own domain name (Pro and up, up to 10 per workspace on Pro and unlimited on Business and up):
+You can connect your own domain on Pro and up. Pro includes up to 10 per workspace, and Business and up include an unlimited number.
 
-1. Open the app's settings and go to **Launch → Domains**
-2. Click **Connect a domain you own**, or buy a new domain inside Taskade
-3. Add the CNAME record (`external.taskade.com`) and the SSL Validation record that the panel shows
+1. Open the app settings and go to **Launch → Domains**.
+2. Under **Connect a domain you own**, click **Connect**.
+3. Add the CNAME record (`external.taskade.com`) and the SSL Validation record that the panel shows.
 
-SSL is provisioned automatically. See [Custom Domains](custom-domains.md) for the full steps.
+To buy a new domain inside Taskade, click **Shop domains** under **Buy a brand-new domain**. Taskade sets up SSL automatically. Read [Custom Domains](custom-domains.md) for the full steps.
 
 ***
 
@@ -272,13 +270,13 @@ Space Apps include enterprise-grade security:
 
 ### Access Control & Authentication
 
-Add sign-in and access controls to your app:
+You can add these sign-in and access controls to your app:
 
-* **App sign-in** (App Users): visitors sign in with their email on your app's own URL, with Taskade as the identity provider. It works on every plan, Free included
-* **Optional emailed sign-in code** and invite-only sign-up
-* **App user roles** (Admin or Member): with private per-user data on, the workspace owner can turn on **Admins see every row** so that admins can read and change every row
-* **Private entries** (private per-user data, or row scoping), under **Publish → More options**: off by default. Sign-in confirms who a visitor is but does not hide other people's rows until you turn this on and test it with a second account
-* **Password protection** for the whole app (Pro and up)
+* **App sign-in** (App Users): visitors sign in with their email on the own URL of your app. Taskade is the identity provider. App sign-in works on every plan, Free included.
+* **Emailed sign-in code** and **invite-only sign-up**: optional.
+* **App user roles** (Admin or Member): with private per-user data on, the workspace owner can turn on **Admins see every row**. Admins can then read and change every row.
+* **Private entries** (private per-user data, or row scoping), under **Publish → More options**: off by default. Sign-in confirms who a visitor is. It does not hide other people's rows until you turn on **Private entries** and test with a second account.
+* **Password protection** for the whole app (Pro and up).
 
 ***
 
@@ -286,7 +284,7 @@ Add sign-in and access controls to your app:
 
 ### Built-in Analytics
 
-Track app traffic with the built-in App Analytics dashboard (Business and up), with no tracking scripts to install:
+The built-in App Analytics dashboard shows the traffic of your app (Business and up). You do not install tracking scripts. The dashboard shows:
 
 ```javascript
 // Automatic analytics tracking
@@ -303,16 +301,16 @@ Track app traffic with the built-in App Analytics dashboard (Business and up), w
 
 ### Version Control
 
-Space Apps maintain complete version history:
+Space Apps keep a full version history:
 
-* **Saved revisions** as you build, listed in **Version history**
-* **Preview** any saved revision before you restore it
-* **Restore Version** to roll back to a previous revision
-* **Live badge** that marks the revision visitors see
+* **Saved revisions**: Taskade saves revisions while you build. **Version history** lists them.
+* **Preview**: you can look at a saved revision before you restore it.
+* **Restore Version**: you can roll back to an earlier revision.
+* **Live badge**: this badge marks the revision that visitors see.
 
 ### Conversational Updates
 
-Modify your app through natural language:
+To change your app, describe the change in plain English:
 
 ```
 "Add a search bar to the product page"
@@ -323,13 +321,13 @@ Modify your app through natural language:
 
 ### Automated Maintenance
 
-Built-in maintenance features:
+Taskade maintains the platform for you:
 
-* **Dependency updates** handled automatically
-* **Security patches** applied immediately
-* **Performance monitoring** with alerts
-* **Backup and recovery** systems
-* **Health checks** and uptime monitoring
+* **Dependency updates**: automatic
+* **Security patches**: applied at once
+* **Performance monitoring**: with alerts
+* **Backup and recovery**: built in
+* **Health checks**: uptime monitoring
 
 ***
 
@@ -337,17 +335,15 @@ Built-in maintenance features:
 
 ### Prompt Engineering
 
-Write effective prompts for better results:
+A good prompt gives better results. Put these items in your prompt:
 
-**Include these elements:**
+1. **Business context**: the type of business or industry
+2. **Target users**: the people who use the app
+3. **Core functions**: what the users must do
+4. **Visual choices**: brand colors, style, and layout
+5. **Devices**: phone, tablet, or desktop first
 
-1. **Business context**: What type of business/industry
-2. **Target users**: Who will use the application
-3. **Core functionality**: What users need to accomplish
-4. **Visual preferences**: Brand colors, style, layout
-5. **Device requirements**: Mobile, tablet, desktop focus
-
-**Example of a well-structured prompt:**
+**Example of a good prompt:**
 
 ```
 I run a dental practice and need patients to book appointments online. 
@@ -361,23 +357,23 @@ will book from their phones.
 
 ### Performance Guidelines
 
-Optimize your Space Apps for speed:
+To make your Space App faster, ask Taskade EVE for these changes:
 
-* **Image optimization**: Use WebP format for faster loading
-* **Lazy loading**: Load content as users scroll
-* **Code splitting**: Split large features into separate bundles
-* **Caching strategies**: Leverage browser and CDN caching
-* **Mobile-first**: Design for mobile, enhance for desktop
+* **Image format**: use WebP for faster loading.
+* **Lazy loading**: load content when users scroll to it.
+* **Code splitting**: put large features into separate bundles.
+* **Caching**: use browser and CDN caching.
+* **Phones first**: design for phones, then improve for desktops.
 
 ### Accessibility Standards
 
-Ensure your apps are accessible to all users:
+Make your app usable for all people:
 
-* **Semantic HTML**: Proper heading structure and landmarks
-* **Keyboard navigation**: All interactive elements accessible via keyboard
-* **Screen reader support**: ARIA labels and descriptions
-* **Color contrast**: Meet WCAG 2.1 AA standards
-* **Focus management**: Clear focus indicators throughout
+* **Semantic HTML**: use a correct heading structure and landmarks.
+* **Keyboard navigation**: make each control usable with a keyboard.
+* **Screen readers**: add ARIA labels and descriptions.
+* **Color contrast**: meet the WCAG 2.1 AA standard.
+* **Focus**: show a clear focus indicator on each control.
 
 ***
 
@@ -385,36 +381,37 @@ Ensure your apps are accessible to all users:
 
 ### Performance Problems
 
-**Issue**: App loading slowly **Solutions**:
+**Problem**: The app loads slowly. **Solutions**:
 
-* Check image sizes and formats
-* Review third-party scripts and integrations
-* Optimize database queries if using external data
-* Enable browser caching headers
+* Look at the size and the format of your images.
+* Examine the third-party scripts and integrations.
+* If the app uses external data, make the database queries faster.
+* Turn on the browser caching headers.
 
-**Issue**: Mobile layout issues **Solutions**:
+**Problem**: The layout is wrong on phones. **Solutions**:
 
-* Test on actual devices, not just browser dev tools
-* Review responsive breakpoints in Tailwind CSS
-* Check touch target sizes (minimum 44px)
-* Verify form inputs work with mobile keyboards
+* Test on real devices, not only in the browser developer tools.
+* Examine the responsive breakpoints in Tailwind CSS.
+* Make each touch target at least 44px.
+* Make sure that the form fields work with phone keyboards.
 
 ### Deployment Issues
 
-**Issue**: App not updating after changes **Solutions**:
+**Problem**: The app does not show your changes. **Solutions**:
 
-* Clear browser cache and hard refresh
-* Check deployment status in Taskade Genesis dashboard
-* Verify changes were committed to the codebase
-* Review deployment logs for errors
+* On a new app, Taskade saves each change as a draft. Visitors see it only after you click **Publish** again. Until you do, the publish status says **Changes not live yet**.
+* Clear the browser cache and refresh the page.
+* Look at the publish status in Taskade Genesis.
+* Make sure that Taskade EVE saved the change in the code.
+* Examine the deployment logs for errors.
 
 ### Data Integration Problems
 
-**Issue**: Taskade project data not syncing **Solutions**:
+**Problem**: The app does not show the current Taskade project data. **Solutions**:
 
-* Verify project permissions and access
-* Check API rate limits and quotas
-* Confirm project ID is correct in integration
+* Make sure that the app has permission to open the project.
+* Look at the API rate limits and quotas.
+* Make sure that the project ID in the integration is correct.
 
 ***
 
@@ -422,51 +419,51 @@ Ensure your apps are accessible to all users:
 
 ### Documentation Links
 
-* [**Genesis API Reference**](../../apis-living-system-development/developer-home.md) - Complete API documentation
-* [**Space Apps API**](../../apis-living-system-development/developer-home.md) - Specific Space Apps endpoints
-* [**Best Practices**](../community-and-sharing/best-practices.md) - General Genesis optimization tips
-* [**Examples Gallery**](../genesis/examples-and-templates.md) - Ready-to-use prompts
+* [**Genesis API Reference**](../../apis-living-system-development/developer-home.md): the full API documentation
+* [**Space Apps API**](../../apis-living-system-development/developer-home.md): the endpoints for Space Apps
+* [**Best Practices**](../community-and-sharing/best-practices.md): general tips for Taskade Genesis
+* [**Examples Gallery**](../genesis/examples-and-templates.md): ready-to-use prompts
 
 ### Development Resources
 
-* [**Tailwind CSS Documentation**](https://tailwindcss.com/docs) - Styling reference
-* [**React Documentation**](https://react.dev) - Component development guide
-* [**TypeScript Handbook**](https://www.typescriptlang.org/docs/) - Type system reference
-* [**Taskade API Documentation**](https://www.taskade.com/api/documentation/) - API reference
+* [**Tailwind CSS Documentation**](https://tailwindcss.com/docs): style reference
+* [**React Documentation**](https://react.dev): component guide
+* [**TypeScript Handbook**](https://www.typescriptlang.org/docs/): type system reference
+* [**Taskade API Documentation**](https://www.taskade.com/api/documentation/): API reference
 
 ### Community & Support
 
-* [**Community Forum**](https://www.taskade.com/feedback) - Connect with other developers
-* [**Help Center**](https://www.taskade.com/learn) - Comprehensive guides and tutorials
+* [**Community Forum**](https://www.taskade.com/feedback): talk with other developers
+* [**Help Center**](https://www.taskade.com/learn): guides and tutorials
 * **Email Support**: [support@taskade.com](mailto:support@taskade.com)
-* **Live Chat**: Available in your Taskade dashboard
+* **Live Chat**: open it in your Taskade dashboard
 
 ***
 
 ## Ready to Build Your Space App?
 
-Space Apps represent the future of no-code application development - combining the simplicity of natural language with the power of modern web technologies.
+With Space Apps, you describe an app in plain English and Taskade Genesis builds it with modern web technology.
 
 ### Quick Start Checklist
 
-* [ ] **Define your use case** - Customer-facing or internal application?
-* [ ] **Write a detailed prompt** - Include business context, users, and features
-* [ ] **Choose your style** - Brand colors, layout preferences, mobile focus
-* [ ] **Test thoroughly** - Check on multiple devices and screen sizes
-* [ ] **Deploy and iterate** - Use conversational updates to perfect your app
+* [ ] **Define your use case**: Is the app for customers or for your team?
+* [ ] **Write a detailed prompt**: Name your business, your users, and the features.
+* [ ] **Choose your style**: Give brand colors, a layout, and the devices.
+* [ ] **Test the app**: Open it on different devices and screen sizes.
+* [ ] **Publish and improve**: Describe changes in the chat until the app is right.
 
 ### Next Steps
 
-1. [**Create your first Space App**](https://taskade.com/genesis) in your workspace
-2. **Explore the** [**API documentation**](../../apis-living-system-development/developer-home.md) for advanced integrations
-3. **Join our** [**community**](https://www.taskade.com/feedback) to share your creation and get inspiration
-4. **Check out** [**advanced features**](advanced-features.md) as your app grows in complexity
+1. [**Create your first Space App**](https://taskade.com/genesis) in your workspace.
+2. Read the [**API documentation**](../../apis-living-system-development/developer-home.md) for advanced integrations.
+3. Join our [**community**](https://www.taskade.com/feedback) to share your app and see other apps.
+4. Read about [**advanced features**](advanced-features.md) when your app grows.
 
 ***
 
-**🎯 Transform your ideas into production-ready React applications today.**
+**🎯 Turn your ideas into production-ready React apps.**
 
-_With Space Apps, the only limit is your imagination - from simple landing pages to complex business applications, all accessible through natural language prompts._
+_Space Apps cover simple landing pages and complex business apps. You build each one with a plain-English prompt._
 
 ---
 

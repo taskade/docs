@@ -1,6 +1,6 @@
 ---
 description: >-
-  Build Taskade database projects: custom fields, relationships, and multiple project views. See how Taskade Genesis auto-generates schemas that power apps and agents.
+  Build Taskade database projects: custom fields, relationships, and multiple project views. See how Taskade Genesis builds the databases for apps and agents.
 ---
 
 # Projects & Databases: The Memory Pillar
@@ -28,13 +28,13 @@ Database projects are structured data containers that serve as your app's persis
 | **Permissions** | Control who can view and edit data |
 | **API access** | Programmatic access for integrations (every plan) — see the [REST API reference](../../apis-living-system-development/comprehensive-api-guide/README.md) |
 | **Real-time sync** | Changes reflect instantly across all connected apps and agents |
-| **Revision tracking** | Every change tracked via operational transform (OT) |
+| **Revision tracking** | Taskade keeps a record of every change |
 
 ---
 
 ## Taskade Genesis-Generated Databases
 
-When Genesis builds an app, it **automatically creates the database structures** your app needs:
+When Taskade Genesis builds an app, it **automatically creates the database structures** your app needs:
 
 | App Type | Databases Created | Fields Generated |
 |---|---|---|
@@ -45,13 +45,13 @@ When Genesis builds an app, it **automatically creates the database structures**
 | **Help Desk** | Tickets, Agents, Categories | Title (text), Description (text), Priority (select), Status (select), Assignee (built-in), SLA (date) |
 | **Course Platform** | Courses, Students, Enrollments | Title (text), Content (text), Progress (number), Grade (number), Status (select), Certificate issued (select) |
 
-> **Fully automatic:** You don't need to define these structures. Genesis infers them from your prompt and creates optimized schemas.
+> **Fully automatic:** You do not need to define these structures. Taskade Genesis reads your prompt and makes the databases and fields for you.
 
 ---
 
 ## Project Views
 
-Every project database supports multiple project views — switch between them without changing your data. List, Board, Table, and Mind Map sit in the view bar. The others are under **More Views**.
+Every project database supports multiple project views — switch between them without changing your data. List, Board, Table, and Mind Map sit in the view bar. The others are under **More views**.
 
 | View | Description | Best For |
 |---|---|---|
@@ -63,7 +63,7 @@ Every project database supports multiple project views — switch between them w
 | **Mind Map** | Connected nodes radiating from center for visualization | Brainstorming, concept mapping, planning |
 | **Org Chart** | Hierarchical organizational structure | Team structure, process hierarchy |
 | **Actionsheet** | Compact action-oriented format | Quick task management |
-| **Docs (Beta)** | Continuous rich-text document editing | Specs, knowledge bases, long-form writing |
+| **Docs** | Continuous rich-text document editing | Specs, knowledge bases, long-form writing |
 
 Gantt Chart, Actionsheet, and Org Chart are on paid plans. The timeline is part of Gantt Chart, not a separate view.
 
@@ -79,7 +79,7 @@ You can also create databases manually:
 
 1. Create a new project in your workspace
 2. Switch to **Table** view for structured data
-3. Click "+" on column headers to add custom fields
+3. Click **+** at the end of the header to open the **Add field** menu
 4. Define field types and options (see table below)
 5. Add records manually, via import, or via automations
 6. Switch between views (Board, Calendar, Gantt, etc.) as needed
@@ -93,7 +93,7 @@ You can also create databases manually:
 | **Number** | Quantities, scores, prices, budgets | Stock level, product price, completion rate | Formats: decimal, currency, unit (such as %) |
 | **DateTime** | Deadlines, timestamps, schedules | Due date, appointment time | Date only, date + time; Table view footers can aggregate Earliest / Latest / Range |
 | **Select** | Single-choice categories | Status, priority, category | Color-coded options |
-| **Relationship** | Link a record to another project | Order → Customers project, Lead → Deals project | Shows the linked project |
+| **Relationship** | Link to a record in another project | Order → Customers project, Lead → Deals project | Shows the linked project |
 | **Password** | Sensitive values, such as app user passwords | Sign-in password | Stored as a one-way hash; nobody can read the value back |
 
 For a team member, use the built-in **Assignee** field. For several labels on one record, use tags (`#tag`).
@@ -105,7 +105,7 @@ For a team member, use the built-in **Assignee** field. For several labels on on
 | **Due dates** | Start and end dates with optional times | All views |
 | **Assignees** | Assign tasks to team members | All views |
 | **Labels/Tags** | Color-coded tags for categorization | All views |
-| **Timers** | Track time spent on tasks | List, Table views |
+| **Timers** | A countdown for a focus session on a task | List, Table views |
 | **Custom fields** | Any field type from the table above | Table view (configurable per view) |
 | **Comments** | Thread discussions on any task | Task detail view |
 

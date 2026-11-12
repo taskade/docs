@@ -1,46 +1,46 @@
 ---
 description: >-
-  Find anything in Taskade fast with global search, result tabs and filters, the command palette, and keyboard navigation.
+  Find content in Taskade with global search, result tabs and filters, the command palette, and keyboard shortcuts.
 ---
 
 # Advanced Search & Discovery
 
-Master Taskade's powerful search capabilities and navigation features to quickly find information, projects, and content across your entire workspace ecosystem.
+Use search and navigation in Taskade to find your apps, projects, tasks, and other content in all your workspaces.
 
 {% hint style="success" %}
-Taskade's advanced search and navigation system transforms how you discover and access information. With intelligent search algorithms, contextual filters, and smart navigation shortcuts, you can find exactly what you need in seconds, not minutes.
+**Ctrl/Cmd + K** opens quick search from anywhere in Taskade. Type a few words, and Taskade finds the project, agent, workspace, or automation that you want.
 {% endhint %}
 
 ## Overview
 
-As your Taskade workspace grows with projects, documents, and team collaboration, finding specific information becomes crucial for productivity. Our advanced search and navigation features provide multiple ways to quickly locate content, understand relationships between projects, and navigate efficiently across your entire workspace.
+When your workspace grows, it holds more projects, documents, and comments. Taskade gives you several ways to find content and to move between projects.
 
 ### Key Search Features
 
-* **🔍 Global Search**: Search across all projects, tasks, and content simultaneously
-* **🎯 Smart Filters**: Narrow results by type, date, assignee, and custom criteria
-* **🧠 Semantic Search**: Finds results by meaning, not only by exact keywords
-* **📱 Cross-Platform**: Consistent search experience across web, desktop, and mobile
-* **⚡ Real-Time Results**: Instant search results as you type
-* **🔗 Contextual Navigation**: Smart links and related content discovery
+* **🔍 Global Search**: Search your apps, projects, tasks, comments, agents, and files at the same time
+* **🎯 Smart Filters**: Narrow the results by type, status, location, and assignee
+* **🧠 Semantic Search**: Find results by meaning, not only by exact keywords
+* **📱 Cross-Platform**: Search works the same way on web, desktop, and mobile
+* **⚡ Real-Time Results**: See results while you type
+* **🔗 Contextual Navigation**: Each result links to the matching content
 
 ## Global Search System
 
 ### Universal Search Bar
 
-**Access everything from one search interface:**
+**Do these steps to search your workspaces:**
 
 {% stepper %}
 {% step %}
 #### Access Global Search
 
-Click the **🔍 Search** button at the top of the left navigation pane, or press **Ctrl/Cmd + K** to open quick search.
+Click the **🔍 Search** button at the top of the left navigation pane. For quick search, press **Ctrl/Cmd + K**.
 {% endstep %}
 
 {% step %}
 #### Enter Search Query
 
-Type your search terms or keywords.
+Type your search words. Then press **Enter**.
 {% endstep %}
 
 {% step %}
@@ -52,17 +52,17 @@ Pick a tab to narrow the results: **Apps**, **All**, **Projects**, **Tasks**, **
 {% step %}
 #### Navigate to Content
 
-Click any result to navigate directly to the relevant content.
+Click a result to open its content.
 {% endstep %}
 {% endstepper %}
 
 ### Search Query Types
 
-**Different ways to search for content:**
+**You can search in these ways:**
 
 #### Keyword Search
 
-* **Simple Keywords**: `meeting notes`, `budget planning`, `client feedback`
+* **Keywords**: `meeting notes`, `budget planning`, `client feedback`
 
 #### Narrow the Results
 
@@ -72,7 +72,7 @@ Type plain keywords. To narrow the list, pick a result tab (**Apps**, **All**, *
 
 ### Content Type Filters
 
-**Filter results by content type:** each tab above the results shows one type. **Apps** is the default tab.
+Each tab above the results shows one type of content. **Apps** is the default tab.
 
 | Tab | What it returns |
 | --- | --- |
@@ -81,8 +81,8 @@ Type plain keywords. To narrow the list, pick a result tab (**Apps**, **All**, *
 | **Projects** | Project names and project content |
 | **Tasks** | Individual tasks and subtasks |
 | **Comments** | Comments on tasks and projects |
-| **Agents** | AI agents, by name |
-| **Media** | Uploaded files, by name |
+| **Agents** | AI agents that you can view, by name. Click one to open its chat in a new tab |
+| **Media** | Files in your workspaces, by name, newest first. Click one to preview it |
 
 ### Advanced Filtering Options
 
@@ -94,11 +94,21 @@ Click **Show filters** to open the filter panel. Click **Hide filters** to close
 
 Under the search box, hashtag chips show the hashtags in your current results. Click a chip to add that hashtag to your query.
 
+### Build What You Cannot Find
+
+If a search finds nothing on any tab except **Media**, Taskade shows a **Build it with Taskade EVE** button under the empty result.
+
+1. Click **Build it with Taskade EVE**.
+2. Taskade opens Create in your own workspace. The chat box holds the draft "Build an app for" and your search words.
+3. Edit the draft, then send it to Taskade EVE.
+
+Taskade EVE does not start until you send the message.
+
 ## Navigation Shortcuts and Commands
 
 ### Keyboard Navigation
 
-**Efficient keyboard shortcuts for power users:**
+**Use these keyboard shortcuts to move around Taskade:**
 
 #### Global Navigation
 
@@ -112,22 +122,22 @@ Under the search box, hashtag chips show the hashtags in your current results. C
 
 #### Within Projects
 
-* **Enter**: Create a new task below the current one
+* **Enter**: Create a new task below the current task
 * **Tab** / **Shift + Tab**: Indent or outdent a task
 * **Ctrl/Cmd + Enter**: Complete or uncomplete a task
-* **Ctrl/Cmd + D**: Duplicate current task
+* **Ctrl/Cmd + D**: Duplicate the current task
 * **Ctrl/Cmd + /**: Open the add-ons menu
 
 #### Search Navigation
 
-* **↑/↓ Arrow Keys**: Navigate search results
-* **Enter**: Open selected result
-* **Ctrl/Cmd + Enter**: Open in new tab
-* **Esc**: Close search interface
+* **↑/↓ Arrow Keys**: Move between search results
+* **Enter**: Open the selected result
+* **Ctrl/Cmd + Enter**: Open the result in a new tab
+* **Esc**: Close search
 
 ### Command Palette
 
-**Quick access to all Taskade features:**
+**Use the command palette to open an item fast:**
 
 {% stepper %}
 {% step %}
@@ -139,13 +149,13 @@ Press **Ctrl/Cmd + K** from anywhere in Taskade.
 {% step %}
 #### Type Command
 
-Start typing a few words of the project, agent, workspace, or automation you want, in any order.
+Type a few words of the name of the project, agent, workspace, or automation that you want. The words can be in any order.
 {% endstep %}
 
 {% step %}
 #### Select Action
 
-Use arrow keys to select the result you want and press Enter.
+Select the result with the arrow keys. Then press **Enter**.
 {% endstep %}
 
 {% step %}
@@ -158,183 +168,180 @@ Taskade opens the selected item.
 #### Available Commands
 
 * **Actions**: **Quick Add** to capture a task or note
-* **Recent**: Projects and apps you opened recently
+* **Recent**: Projects and apps that you opened recently
 * **Projects**: Projects that match your words
 * **AI Agents**: Every AI agent that you can view
-* **Automations**: The automations of the app you are in
+* **Automations**: The automations of the app that you are in
 * **Chats**: Your own Taskade EVE chats, with a **Running** list for chats where Taskade EVE still works
 * **Workspaces**: Your workspaces
 
 ### Quick Navigation Panels
 
-**Streamlined access to frequently used content:**
+**These panels show the content that you use most:**
 
 #### Recent Items Panel
 
-* **Recent Projects**: Last 10 projects you've accessed
-* **Recent Tasks**: Recently created or modified tasks
-* **Recent Documents**: Recently opened or edited documents
+* **Recent Projects**: The last 10 projects that you opened
+* **Recent Tasks**: Tasks that you created or changed recently
+* **Recent Documents**: Documents that you opened or edited recently
 * **Recent Searches**: Your most recent search queries
 
 #### Favorites and Bookmarks
 
-* **Starred Projects**: Projects you've marked as favorites
-* **Bookmarked Tasks**: Important tasks saved for quick access
-* **Frequent Collaborators**: Team members you work with most
-* **Saved Searches**: Frequently used search queries
+* **Starred Projects**: Projects that you marked as favorites
+* **Bookmarked Tasks**: Important tasks that you saved for quick access
+* **Frequent Collaborators**: The team members that you work with most
 
 ## AI-Powered Search Intelligence
 
-Taskade search uses semantic matching. It finds results by meaning, not only by exact keywords, and it also finds text inside your uploaded files.
+Taskade search uses semantic matching. It finds results by meaning, not only by exact keywords. It also finds text inside your uploaded files.
 
-Search does not answer questions. To ask a question about your work in plain language, such as "Which tasks are overdue in the marketing project?", ask an [AI agent](../ai-features/ai-agents-getting-started.md) instead.
+Search does not answer questions. To ask a question about your work in plain language, ask an [AI agent](../ai-features/ai-agents-getting-started.md) instead. For example, ask "Which tasks are overdue in the marketing project?"
 
 ## Mobile Search and Navigation
 
 ### Mobile-Optimized Search
 
-**Full search capabilities on mobile devices:**
+**Search works on mobile devices too:**
 
 #### Touch-Friendly Interface
 
-* **Large Search Bar**: Easy-to-tap search interface
-* **Quick Filters**: One-tap access to common filter options
+* **Large Search Bar**: A search bar that is easy to tap
+* **Quick Filters**: Open common filters with one tap
 
 #### Mobile-Specific Features
 
-* **Quick Actions**: Perform actions directly from search results
+* **Quick Actions**: Do actions directly from the search results
 
 ### Mobile Navigation Shortcuts
 
-**Efficient mobile navigation:**
+**Use these gestures and controls on mobile:**
 
 #### Gesture Controls
 
-* **Swipe Right**: Open navigation menu
-* **Pull Down**: Refresh current view
-* **Long Press**: Access context menu
+* **Swipe Right**: Open the navigation menu
+* **Pull Down**: Refresh the current view
+* **Long Press**: Open the context menu
 
 #### Quick Access
 
-* **Floating Action Button**: Quick access to create new content
-* **Bottom Navigation**: Switch between main sections
-* **Shortcuts**: Create shortcuts for frequently accessed content
+* **Floating Action Button**: Create new content
+* **Bottom Navigation**: Switch between the main sections
+* **Shortcuts**: Make shortcuts to content that you open often
 
 ## Advanced Search Techniques
 
 ### Search Optimization Strategies
 
-**Get better search results with advanced techniques:**
+**Use these tips to get better results:**
 
 #### Query Refinement
 
-* **Use Specific Terms**: Choose precise keywords over general terms
-* **Include Context**: Add context words to narrow results
-* **Use Synonyms**: Try alternative words if initial search doesn't work
+* **Use Specific Terms**: Choose exact keywords instead of general terms
+* **Include Context**: Add words that narrow the results
+* **Use Synonyms**: If a search finds nothing, try other words
 
 #### Result Analysis
 
-* **Review All Categories**: Check different result categories (projects, tasks, people)
-* **Use Filters Progressively**: Start broad, then narrow with filters
-* **Check Related Suggestions**: Explore AI-suggested related content
+* **Review All Categories**: Look at each result tab, for example **Projects**, **Tasks**, and **Comments**
+* **Use Filters Progressively**: Start with a broad search, then narrow it with filters
 
 ### Search Performance Tips
 
-**Optimize search speed and accuracy:**
+**These habits make search results more accurate:**
 
 #### Best Practices
 
-* **Keep Keywords Relevant**: Use terms that actually appear in your content
-* **Use Consistent Naming**: Maintain consistent naming conventions across projects
-* **Tag Important Content**: Use tags to make content more discoverable
-* **Regular Content Review**: Periodically review and organize content
+* **Keep Keywords Relevant**: Search for words that are in your content
+* **Use Consistent Naming**: Use the same naming rules across projects
+* **Tag Important Content**: Add tags so that search can find content by tag
+* **Regular Content Review**: Review and organize your content at regular intervals
 
-#### Common Pitfalls to Avoid
+#### Common Problems
 
-* **Too Broad Queries**: Avoid single-word searches that return too many results
-* **Typos and Misspellings**: Double-check spelling in search queries
-* **Outdated Information**: Update search expectations as content evolves
-* **Ignoring Filters**: Use filters to narrow down large result sets
+* **Too Broad Queries**: If a one-word search gives too many results, add more words
+* **Typos and Misspellings**: Make sure that you spell your search words correctly
+* **Ignoring Filters**: Use filters to narrow a long list of results
 
 ### Improving Searchability
 
-**Make your content more discoverable:**
+**Make your content easier to find:**
 
 #### Content Optimization
 
-* **Descriptive Titles**: Use clear, descriptive project and task titles
-* **Comprehensive Tags**: Apply relevant tags to categorize content
-* **Detailed Descriptions**: Include searchable keywords in descriptions
-* **Consistent Terminology**: Use consistent language across similar content
+* **Descriptive Titles**: Give projects and tasks clear titles
+* **Relevant Tags**: Add tags that describe the content
+* **Detailed Descriptions**: Put searchable keywords in descriptions
+* **Consistent Terminology**: Use the same words for the same things
 
 #### Workspace Organization
 
-* **Logical Structure**: Organize content in intuitive hierarchies
-* **Clear Naming Conventions**: Establish and follow naming standards
-* **Regular Cleanup**: Archive or delete outdated content
-* **Search Training**: Train team members on effective search techniques
+* **Logical Structure**: Put content in clear folders and projects
+* **Clear Naming Conventions**: Agree on naming rules, and use them
+* **Regular Cleanup**: Archive or delete old content
+* **Search Training**: Show your team how to search well
 
 ## Integration with External Search
 
-Taskade search covers what is in your workspace: apps, projects, tasks, and comments. It does not search Google Drive, Slack, email, or other outside tools directly. To make outside content findable in Taskade, bring it into the workspace first:
+Taskade search covers what is in your workspace: apps, projects, tasks, comments, agents, and files. It does not search Google Drive, Slack, email, or other outside tools directly. To find outside content in Taskade, add it to your workspace first:
 
-* **Files from cloud storage**: add files from Google Drive and other cloud storage as [agent knowledge](../ai-features/agent-knowledge.md), so an agent can answer questions about them.
-* **Messages and records**: use an [automation](../automation/README.md) to copy new Slack messages, emails, form entries, or CRM records into a project. Once they are tasks, search finds them.
-* **Your own tools**: use the [REST API](../../apis-living-system-development/developer-home.md) or the [hosted Taskade MCP server](../../apis-living-system-development/genesis-app-mcp.md) to write content into projects from another system.
+* **Files from cloud storage**: Add files from Google Drive and other cloud storage as [agent knowledge](../ai-features/agent-knowledge.md). An agent can then answer questions about them.
+* **Messages and records**: Use an [automation](../automation/README.md) to copy new Slack messages, emails, form entries, or CRM records into a project. Search then finds them as tasks.
+* **Your own tools**: Use the [REST API](../../apis-living-system-development/developer-home.md) or the [hosted Taskade MCP server](../../apis-living-system-development/genesis-app-mcp.md) to write content into projects from another system.
 
 ## Getting Started with Advanced Search
 
 ### Search Setup and Configuration
 
-**Optimize search for your workspace:**
+**Do these steps to make your workspace easier to search:**
 
 {% stepper %}
 {% step %}
 #### Review Current Content
 
-Audit your existing projects and content organization.
+Look at the structure of your projects and content.
 {% endstep %}
 
 {% step %}
 #### Establish Naming Conventions
 
-Create consistent naming standards for projects, tasks, and files.
+Agree on naming rules for projects, tasks, and files.
 {% endstep %}
 
 {% step %}
 #### Implement Tagging Strategy
 
-Develop a comprehensive tagging system for content categorization.
+Make a tag system to sort your content into categories.
 {% endstep %}
 
 {% step %}
 #### Train Your Team
 
-Provide training on advanced search techniques and best practices.
+Show your team the search tips on this page.
 {% endstep %}
 
 {% step %}
 #### Monitor and Optimize
 
-Regularly ask your team which content is hard to find, and improve its titles and tags.
+Ask your team at regular intervals which content is hard to find. Then improve the titles and tags of that content.
 {% endstep %}
 {% endstepper %}
 
 ### Search Best Practices Checklist
 
-**Ensure optimal search performance:**
+**Use this checklist:**
 
-* ✅ **Use Descriptive Titles**: Create clear, searchable project and task names
-* ✅ **Apply Relevant Tags**: Tag content with appropriate keywords and categories
-* ✅ **Include Rich Descriptions**: Add detailed descriptions with searchable content
-* ✅ **Maintain Consistent Terminology**: Use standard language across similar content
-* ✅ **Regular Content Cleanup**: Archive or delete outdated and irrelevant content
-* ✅ **Train Team Members**: Educate users on effective search techniques
+* ✅ **Use Descriptive Titles**: Give projects and tasks clear names that search can find
+* ✅ **Apply Relevant Tags**: Tag content with matching keywords and categories
+* ✅ **Include Rich Descriptions**: Add descriptions that hold searchable words
+* ✅ **Maintain Consistent Terminology**: Use the same words across similar content
+* ✅ **Regular Content Cleanup**: Archive or delete old content that you do not need
+* ✅ **Train Team Members**: Show your team how to search well
 * ✅ **Monitor Search Performance**: Ask your team which content is hard to find
-* ✅ **Optimize for Mobile**: Ensure search works well on mobile devices
+* ✅ **Optimize for Mobile**: Make sure that search works well on your mobile devices
 
 {% hint style="info" %}
-**Pro Tip**: The most effective search strategies combine good content organization with smart search techniques. Invest time in organizing your workspace structure and training your team on search best practices for maximum productivity gains.
+**Pro Tip**: Search gives the best results in a well-organized workspace. Clear titles, tags, and folders help you and your team find content.
 {% endhint %}
 
 ---

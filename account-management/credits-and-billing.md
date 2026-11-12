@@ -9,11 +9,11 @@ description: >-
 
 ## How AI Credits Work
 
-Every AI request in Taskade — prompting an agent, running an automation with AI, generating a Taskade Genesis app — consumes credits. The credit cost depends on the model:
+Each AI request in Taskade uses credits. An AI request can be a prompt to an agent, an AI step in an automation, or the build of a Taskade Genesis app. The credit cost depends on the model:
 
-* **Lightweight models** cost fewer credits per request.
-* **Frontier models** (top-tier reasoning models) cost more.
-* **Auto mode** picks a model for each request, so you don't need to pick the right model for each task by hand. Auto is the default.
+* **Lightweight models** cost fewer credits for each request.
+* **Frontier models** (the models with the deepest reasoning) cost more.
+* **Auto mode** picks a model for each request, so you do not pick a model for each task. Auto is the default.
 
 ***
 
@@ -21,18 +21,18 @@ Every AI request in Taskade — prompting an agent, running an automation with A
 
 A Free workspace starts with 0 AI credits. On Free, you earn free AI credits with referrals and invites, and you can upgrade any time.
 
-* **Referrals:** you earn credits when someone signs up for Taskade through your referral link and verifies their email, up to a limit. Find your link in [Settings → Earn credits](https://www.taskade.com/settings/credits).
-* **Paid plans:** every paid plan includes a monthly AI credit allowance. See the [plan table](README.md#current-plans).
+* **Referrals:** You earn credits when a person signs up for Taskade through your referral link and verifies their email, up to a limit. Your link is in [Settings → Earn credits](https://www.taskade.com/settings/credits).
+* **Paid plans:** Each paid plan includes a monthly AI credit allowance. See the [plan table](README.md#current-plans).
 
 {% hint style="info" %}
-Check the [pricing page](https://www.taskade.com/pricing) for the current plans.
+The current plans are on the [pricing page](https://www.taskade.com/pricing).
 {% endhint %}
 
 ***
 
 ## Paid Plan Credits
 
-Paid plans include monthly premium credits that reset on your billing cycle.
+Paid plans include Monthly Credits. Monthly Credits reset on each billing cycle.
 
 | Plan tier  | Monthly credits                                            | Key benefit                   |
 | ---------- | ---------------------------------------------------------- | ----------------------------- |
@@ -40,104 +40,113 @@ Paid plans include monthly premium credits that reset on your billing cycle.
 | Pro        | 50,000                                                     | Personal productivity         |
 | Business   | 150,000                                                    | Team use, complex AI tasks    |
 | Max        | 400,000                                                    | Heavy generation, large teams |
-| Enterprise | Custom allowance + admin controls                          | Organization-wide deployments |
+| Enterprise | 1,100,000                                                  | Organization-wide deployments |
 
 {% hint style="info" %}
-Exact credit amounts per tier may change. See the [pricing page](https://www.taskade.com/pricing) for current allocations.
+The credit amounts for each tier can change. The [pricing page](https://www.taskade.com/pricing) shows the current amounts.
 {% endhint %}
 
-Max and Enterprise plans get refined credit limits designed for bursty workloads — you won't get throttled mid-task during a heavy generation run.
+Max and Enterprise plans have credit limits for large bursts of work. Taskade does not stop these plans in the middle of a large build.
 
 ***
 
 ## What Your App Will Cost
 
-If you're building and running a real app on Genesis, the question isn't "how many credits does one request cost" — it's "what in my app burns credits, and how much will it burn as I grow." Use this as a decision guide. For exact, current per-request numbers, always check the in-app model picker; published figures drift as models and pricing change.
+If you build and operate an app on Taskade Genesis, the important question is which parts of the app use credits. The second question is how that use grows with your app. Use this section to decide on a plan. For the current cost of each request, look at the model picker in the app. Published numbers change when models and prices change.
 
-### What drives your credit use
+### What uses your credits
 
-| What consumes credits                | What drives the cost (relative)                                                                                       |
+| What uses credits                    | What changes the cost                                                                                                |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
-| **Genesis app generation & iteration** | Heaviest up front, while you build. Each generate and each "edit with AI" pass costs credits; settles down once the app is stable. |
-| **AI automation steps**              | Scales with how often your automations run and how many AI steps each run includes. A trigger that fires all day costs more than one that fires occasionally. |
-| **An agent answering end-users**     | Scales with the number of people using your published app and how chatty each session is. This is the line item that grows as your app gets traffic. |
-| **Agent / Taskade EVE chat**         | Scales with how much you and your team use AI assistance day to day — drafting, summarizing, asking questions in your workspace. |
+| **Taskade Genesis app builds and edits** | The largest cost comes at the start, while you build. Each build and each "edit with AI" pass uses credits. The cost decreases when the app is stable. |
+| **AI automation steps**              | The cost grows with the number of runs and the number of AI steps in each run. A trigger that fires all day costs more than a trigger that fires once a week. |
+| **An agent that answers your app users** | The cost grows with the number of people who use your published app and the length of each chat. This cost grows as your app gets more traffic. |
+| **Agent and Taskade EVE chat**       | The cost grows with the AI help that you and your team use each day: drafts, summaries, and questions in your workspace. |
 
-Steps that don't call AI — plain forms, stored data, non-AI automation actions — don't draw from your credit balance.
+Steps that do not call AI use no credits. Examples are plain forms, stored data, and automation actions with no AI.
 
-### Right-size it
+### Pick the right plan
 
-* **Low usage** — You're building for yourself or a small team, with light traffic and occasional automations. A personal paid tier (Pro direction) is usually enough; top up with a credit pack during a build sprint.
-* **Medium usage** — A team relies on the app, automations run regularly, and a handful of end-users hit your agent daily. Lean toward the Business tier.
-* **High usage** — A public-facing app with steady traffic, an agent answering many end-users, and automations firing throughout the day. Lean toward Max or Enterprise, which are tuned for bursty, high-volume AI workloads without mid-task throttling.
+* **Low use:** You build for yourself or a small team. Traffic is light and automations run once in a while. A personal paid tier, such as Pro, is usually enough. Buy a credit pack for a large build.
+* **Medium use:** A team relies on the app, automations run regularly, and some app users talk to your agent each day. The Business tier is a good fit.
+* **High use:** A public app has steady traffic, an agent answers many app users, and automations run all day. Max or Enterprise is a good fit. These plans have limits for large bursts of AI work.
 
-Don't over-buy on day one. Watch your [usage page](credits-and-billing.md#viewing-your-usage) for the first month, then size to what your app actually draws.
+Do not buy too much on the first day. Watch your [usage page](credits-and-billing.md#viewing-your-usage) for one month. Then pick the plan that matches the credits that your app uses.
 
-### Keep your app from running dry
+### Keep your app running
 
-If real customers use your published app, an agent that runs out of credits mid-session is the worst time to find out. Turn on [**Auto Top-Up**](credits-and-billing.md#auto-top-up) so your balance refills automatically before it hits zero — your customer-facing agent keeps answering instead of stalling on an out-of-credits screen.
+If customers use your published app, an agent with no credits stops in the middle of a chat. Turn on [**Auto Top-Up**](credits-and-billing.md#auto-top-up) to refill your balance before it gets to zero. Then your agent continues to answer your customers.
 
 ***
 
 ## Credit Packs
 
-Credit packs are one-time purchases on top of your monthly allocation.
+A credit pack is a one-time purchase. It adds credits to your monthly allowance.
 
-* **Volume-tiered pricing** — bigger packs come with bigger bonuses.
-* **Purchased credits never expire** — top up once, use over time. Taskade uses your Monthly Credits first, then these Extra Credits.
-* Purchases appear in the workspace activity log for audit visibility.
+* **Prices by volume:** A larger pack gives a larger bonus.
+* **No expiry:** Purchased credits do not expire. Taskade uses your Monthly Credits first, then these Extra Credits.
+* **Audit record:** Each purchase shows in the workspace activity log.
 
 <figure><img src="../.gitbook/assets/earn-credits.gif" alt="" width="563"><figcaption></figcaption></figure>
 
-Use packs when you expect a heavy AI month — during a product launch, a big content sprint, or a large Genesis app build.
+A pack is useful for a month with a lot of AI work, for example a product launch, a large content project, or a large Taskade Genesis app build.
 
 ***
 
 ## Auto Top-Up
 
-Auto Top-Up prevents you from running out of credits in the middle of a workflow.
+Auto Top-Up buys credits for you before your balance runs out in the middle of a workflow.
 
 ### How It Works
 
-1. Set a **balance threshold** (the default is 9,000 credits).
-2. Set a **top-up amount** in dollars (the default is $20).
-3. When your balance drops below the threshold, or gets too low for the next AI step, Taskade automatically buys a credit pack with your saved card.
+1. Set a **balance threshold**. The default is 9,000 credits.
+2. Set a **top-up amount** in dollars. The default is $20.
+3. Taskade buys a credit pack with your saved card when your balance drops below the threshold. It also buys a pack when the balance is too low for the next AI step.
 
-### Setting It Up
+### Turn On Auto Top-Up
 
 1. Open [Settings → Credits](https://www.taskade.com/settings/usage) in a web browser.
-2. Find the **Auto-reload** row on the **Credits** card and turn the switch on.
-3. To change the amounts, click **Manage**, then **Change settings**.
-4. Pick the **Top up amount** and the **When credit balance drops below** value, then click **Save changes**.
+2. Find the **Auto-reload** row on the **Credits** card.
+3. Turn on the switch.
+4. To change the amounts, click **Manage**, then **Change settings**.
+5. Pick the **Top up amount** and the **When credit balance drops below** value.
+6. Click **Save changes**.
 
 <figure><img src="../.gitbook/assets/auto-credit-top-up.gif" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-Auto Top-Up charges your payment method automatically when triggered. Set a reasonable threshold and top-up amount to match your expected usage.
+Set a threshold and a top-up amount that match your usual use. Auto Top-Up charges your card each time it buys a pack.
 {% endhint %}
 
-Auto Top-Up is available on every paid plan. The mobile apps and the app-store desktop apps hide this control.
+Auto Top-Up is available on every paid plan. The mobile apps and the app-store desktop apps do not show this control.
 
 ***
 
 ## Model-Specific Pricing
 
-Each AI model has its own credit cost per request. Pricing is adjusted periodically to track provider costs.
+Each AI model has its own credit cost for each request. Taskade changes these prices from time to time to match the costs of the providers.
 
-* You can see the current per-model credit cost in the model picker before selecting a model.
+* The model picker shows the current credit cost of each model before you select it.
 * Auto mode picks a model for each request.
-* For the authoritative current list, check the in-app model picker.
+* The model picker in the app always has the current list.
 
 ***
 
 ## Viewing Your Usage
 
-Taskade surfaces credit usage in several places.
+Taskade shows your credit use in these places:
 
-* **Usage page** in your account settings shows monthly credit consumption.
-* **Workspace activity log** records every credit pack purchase.
-* **Per-agent usage analytics** show which agents consume the most credits.
-* **Automation run reports** show credits used per run.
+* **Usage page:** Your account settings show the credits that you used this month.
+* **Workspace activity log:** The log records each credit pack purchase.
+* **Usage for each agent:** The analytics show which agents use the most credits.
+* **Automation run reports:** Each report shows the credits that one run used.
+
+To see what used your credits:
+
+1. Open [Settings → Credits](https://www.taskade.com/settings/usage).
+2. Expand **Usage this month**.
+3. Read the **Where your credits went** list. It shows the credits of the last 30 days by source: **Taskade EVE builds and edits**, **Agents**, **Automations**, and **Other (files, voice, images)**. Only the person who pays for a paid plan sees it.
+4. To see each day and each model, click **See where credits went**.
 
 <figure><img src="../.gitbook/assets/app-analytics-landing.gif" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -145,18 +154,18 @@ Taskade surfaces credit usage in several places.
 
 ## What Happens When You Run Out
 
-Taskade never silently fails an AI request due to insufficient credits.
+Taskade always tells you when an AI request stops because of low credits.
 
-* **Paid users**: You're routed to the upgrade or credit-pack screen.
-* **Free users**: You're prompted to upgrade.
-* **Out-of-credits error** surfaces cleanly in the UI — no mysterious silent drops.
+* **Paid users:** Taskade opens the upgrade screen or the credit pack screen.
+* **Free users:** Taskade asks you to upgrade.
+* **Clear message:** The out-of-credits error shows in the app. A request does not stop without a message.
 
 {% hint style="info" %}
-Public agent visitors never see internal billing errors. If your app's agent runs out of credits, external users see a neutral error message, not billing details.
+Visitors of a public agent never see billing errors. If the agent of your app runs out of credits, visitors see a neutral error message with no billing details.
 {% endhint %}
 
 {% hint style="info" %}
-Building against the API? See the [REST API guide](../apis-living-system-development/comprehensive-api-guide/README.md) for rate limits and error-handling conventions when requests fail.
+If you build with the API, read the [REST API guide](../apis-living-system-development/comprehensive-api-guide/README.md). It gives the rate limits and the error codes for a request that fails.
 {% endhint %}
 
 ***
@@ -167,7 +176,7 @@ Building against the API? See the [REST API guide](../apis-living-system-develop
 
 <summary>Do credits expire?</summary>
 
-On paid plans, purchased credit packs don't expire. Monthly premium credits reset each billing cycle. A Free workspace has no monthly allowance — check the pricing page for current policy.
+On paid plans, purchased credit packs do not expire. Monthly Credits reset each billing cycle. A Free workspace has no monthly allowance. The pricing page shows the current policy.
 
 </details>
 
@@ -175,7 +184,7 @@ On paid plans, purchased credit packs don't expire. Monthly premium credits rese
 
 <summary>Can I refund unused credits?</summary>
 
-Refund policies vary. Contact support for case-by-case review.
+Refund policies are different for each case. Contact support for a review of your case.
 
 </details>
 
@@ -183,7 +192,7 @@ Refund policies vary. Contact support for case-by-case review.
 
 <summary>Does Auto Top-Up have a spending cap?</summary>
 
-Yes. Auto Top-Up buys at most 5 times in 24 hours. If you set a monthly spend limit, it stops for the rest of the month at that limit. Monitor your usage page during the first month to tune the settings.
+Yes. Auto Top-Up buys a maximum of 5 times in 24 hours. If you set a monthly spend limit, Auto Top-Up stops for the rest of the month at that limit. Watch your usage page in the first month, and then adjust the settings.
 
 </details>
 
@@ -191,15 +200,15 @@ Yes. Auto Top-Up buys at most 5 times in 24 hours. If you set a monthly spend li
 
 <summary>Which models use the fewest credits?</summary>
 
-Lightweight models have the lowest per-request cost. The model picker shows current pricing for each available model.
+Lightweight models have the lowest cost for each request. The model picker shows the current price of each model.
 
 </details>
 
 <details>
 
-<summary>Does a Genesis app clone cost me credits?</summary>
+<summary>Does a Taskade Genesis app clone cost me credits?</summary>
 
-Cloning a Genesis app does not consume credits on its own. AI usage inside the cloned app consumes credits normally.
+A clone of a Taskade Genesis app uses no credits. AI use inside the cloned app uses credits as usual.
 
 </details>
 

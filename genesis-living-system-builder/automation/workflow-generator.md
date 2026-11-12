@@ -1,6 +1,6 @@
 ---
 description: >-
-  Build complex automations in Taskade from plain English: the Workflow Generator creates triggers, branches, loops, and 100+ integrations with no drag-and-drop.
+  Build Taskade automations from plain English. The Workflow Generator creates triggers, branches, loops, and steps for 100+ integrations.
 ---
 
 # Workflow Generator
@@ -9,21 +9,21 @@ description: >-
 
 ## Overview
 
-The Workflow Generator builds complex automation flows from **natural language**. Describe what you want in plain English, and the AI creates complete workflows with triggers, conditions, branches, loops, and integrations across 100+ services — no drag-and-drop, no manual configuration.
+With the Workflow Generator, you describe an automation in plain English. The AI then builds the full flow for you. The flow can have triggers, conditions, branches, loops, and steps for 100+ integrations. You do not drag steps or configure each step by hand.
 
-> **Taskade Genesis connection:** Taskade Genesis apps can include workflow automations as part of the Execution pillar. The Workflow Generator lets you create additional automations or modify existing ones. Each automation adds **+5 points** to your [Intelligence Score](https://www.taskade.com/learn/genesis), up to 30 points.
+> **Taskade Genesis connection:** A Taskade Genesis app can include automations as part of its Execution pillar. Use the Workflow Generator to add automations or to change the automations that you have. Each automation adds to your [Intelligence Score](https://www.taskade.com/learn/genesis).
 
 ---
 
 ## What You Can Build
 
-| Category | Example Prompt | What's Created |
+| Category | Example Prompt | What the Generator Makes |
 |---|---|---|
-| **Multi-step workflows** | "When a form is submitted, create a task, notify the team, and send follow-up emails" | Form trigger → Task creation → Slack notification → Gmail follow-up |
-| **Content pipelines** | "Monitor X for new content, summarize it, and create a new project for each item" | RSS trigger → AI summary → Project creation loop |
-| **Scheduled reports** | "Every Monday, generate a progress report and share with stakeholders" | Weekly schedule → AI report generation → Email distribution |
+| **Multi-step workflows** | "When a form is submitted, create a task, notify the team, and send follow-up emails" | Form trigger → Add task → Slack message → Gmail follow-up |
+| **Content pipelines** | "Monitor X for new content, summarize it, and create a new project for each item" | RSS trigger → AI summary → Loop that creates one project for each item |
+| **Scheduled reports** | "Every Monday, generate a progress report and share with stakeholders" | Weekly schedule → AI report → Email to each stakeholder |
 | **Agent-powered flows** | "Create an AI Agent that processes customer feedback and assigns follow-up" | Agent trigger → Sentiment analysis → Task assignment |
-| **Social distribution** | "Build an automation that posts our blog content to social media" | RSS/webhook trigger → AI rewrite → Multi-platform posting |
+| **Social distribution** | "Build an automation that posts our blog content to social media" | RSS or webhook trigger → AI rewrite → Posts on more than one platform |
 
 ---
 
@@ -31,40 +31,41 @@ The Workflow Generator builds complex automation flows from **natural language**
 
 ### Step-by-Step Tutorial
 
-1. Navigate to **Automations** tab → **Add automation** → **Generate With AI** (or visit `taskade.com/create/flow`)
-2. Describe your desired workflow and pick a mode (Auto, Agent Tool, Workflow, or Form)
-3. Watch the Workflow Generator build, refine, and optimize it
-4. Review the generated flow
-5. Click **Create Automation** to save it
-6. Customize triggers, actions, and conditions as needed
-7. Toggle the automation **On**
+1. Open the **Automations** tab. Click **Add automation**, then click **Generate With AI**. You can also go to `taskade.com/create/flow`.
+2. Describe the workflow that you want.
+3. Select a mode: Auto, Agent Tool, Workflow, or Form. Then press **Enter**.
+4. Wait until the Workflow Generator finishes the flow.
+5. Examine the flow that it made.
+6. Click **Create Automation** to save the flow.
+7. Change the triggers, actions, and conditions if necessary.
+8. Set the automation to **On**.
 
 ---
 
 ## Generator Modes
 
-| Mode | Description | Best For |
+| Mode | What It Does | Use It For |
 |---|---|---|
-| **Auto** (default) | AI selects the optimal mode for your task | Most use cases — let AI decide |
-| **Agent Tool Mode** | Generates intelligent workflows as an AI agent tool | Agent-powered decision-making |
-| **Workflow Mode** | Sets up standard project automations and flows | Task management, notifications |
-| **Form Mode** | Generates smart forms that trigger actions on submission | Lead capture, surveys, intake |
+| **Auto** (default) | Selects the best mode for your prompt | Most tasks, when you are not sure which mode to use |
+| **Agent Tool Mode** | Makes an automation that an AI agent can use as a tool | Decisions that an agent makes |
+| **Workflow Mode** | Makes a standard automation | Task management and notifications |
+| **Form Mode** | Makes a form. A form submission starts the automation | Lead capture, surveys, and intake |
 
 ---
 
 ## Smart Edits & Chat Commands
 
-After generating a workflow, modify it with natural language:
+After the generator makes a workflow, you can change it with plain-English requests:
 
-| Edit Type | Example Prompt | What Happens |
+| Edit Type | Example Prompt | Result |
 |---|---|---|
-| **Add step** | "Add a Slack notification to this workflow" | New Slack action added |
-| **Add logic** | "Add branching logic based on the form response" | Conditional branch inserted |
-| **Change trigger** | "Change the trigger to run daily instead of weekly" | Schedule trigger updated |
-| **Add loop** | "Loop through all tasks and send a reminder for each" | Loop action added |
-| **Modify action** | "Change the email to send to managers instead" | Action recipient updated |
-| **Add integration** | "Also post a summary to our Slack channel" | New integration step added |
-| **Optimize** | "Make this workflow more efficient" | AI suggests improvements |
+| **Add step** | "Add a Slack notification to this workflow" | The generator adds a Slack step |
+| **Add logic** | "Add branching logic based on the form response" | The generator adds a branch |
+| **Change trigger** | "Change the trigger to run daily instead of weekly" | The schedule trigger changes |
+| **Add loop** | "Loop through all tasks and send a reminder for each" | The generator adds a Loop step |
+| **Modify action** | "Change the email to send to managers instead" | The email goes to the new recipients |
+| **Add integration** | "Also post a summary to our Slack channel" | The generator adds a new integration step |
+| **Optimize** | "Make this workflow more efficient" | The AI gives suggestions to improve the flow |
 
 ---
 
@@ -72,35 +73,35 @@ After generating a workflow, modify it with natural language:
 
 | Feature | What It Means |
 |---|---|
-| **Instant Creation** | Build complex flows in minutes, not hours |
-| **Natural Language** | Describe any complexity — AI handles the implementation |
-| **Intelligent Editing** | Modify existing workflows with plain-English requests |
-| **Smart Recommendations** | AI-driven optimization tips and improvements |
-| **Built-in Integrations** | Connect with 100+ apps — you connect each account with **Connect**. Premium integrations need a paid plan |
-| **Branching** | Conditional paths based on data values |
-| **Looping** | Iterate over lists of items |
-| **Variables** | Dynamic data passing between steps (Liquid expressions) |
-| **AI Steps** | Agent-powered reasoning within workflows |
+| **Fast creation** | You get a complex flow in minutes |
+| **Natural Language** | You describe the flow in your words. The AI builds the steps |
+| **Plain-English edits** | You change a flow with a short request |
+| **Suggestions** | The AI suggests how to improve a flow |
+| **Built-in Integrations** | You can connect 100+ apps. Connect each account one time with **Connect**. Premium integrations need a paid plan |
+| **Branching** | A flow can follow different paths, based on the values in the data |
+| **Looping** | A Loop step runs its steps one time for each item in a list |
+| **Variables** | Steps send data to later steps with Liquid expressions |
+| **AI Steps** | An agent can make decisions inside the flow |
 
 ---
 
 ## Workflow Building Blocks
 
-| Block | Description | Example |
+| Block | What It Does | Example |
 |---|---|---|
-| **Trigger** | What starts the flow | Form submitted, schedule, webhook, new email |
-| **Action** | What happens | Send email, create task, post to Slack |
-| **Branch** | Conditional logic (if/else) | If rating < 3, alert manager; else, log to database |
-| **Loop** | Iterate over a list | For each attachment, upload to Media |
-| **Delay** | Pause execution | Wait 24 hours, then send follow-up |
-| **AI Step** | Agent-powered processing | Agent categorizes ticket, generates response |
-| **Variable** | Dynamic data | `{{trigger.email}}`, `{{step1.output}}` |
+| **Trigger** | Starts the flow | A form submission, a schedule, a webhook, or a new email |
+| **Action** | Does the work | Send an email, create a task, or post to Slack |
+| **Branch** | Selects a path (if/else) | If the rating is less than 3, alert a manager. If not, log the result |
+| **Loop** | Runs its steps one time for each item | For each attachment, save the file to Media |
+| **Delay** | Stops the flow for a time | Wait 24 hours, then send a follow-up |
+| **AI Step** | Lets an agent do the work | An agent sorts a ticket and writes a reply |
+| **Variable** | Carries data between steps | `{{trigger.email}}`, `{{step1.output}}` |
 
 ---
 
 ## Example Prompts
 
-| Prompt | Flow Generated |
+| Prompt | Flow That the Generator Makes |
 |---|---|
 | "When a customer submits feedback with a rating below 3, alert the support manager on Slack and create a high-priority task" | Form Trigger → Branch (rating < 3) → Slack Message → Create Task (priority: high) |
 | "Every day at 9 AM, summarize all overdue tasks and email them to team leads" | Daily Schedule → Find overdue tasks → AI summarize → Send Email |
@@ -110,12 +111,21 @@ After generating a workflow, modify it with natural language:
 
 ---
 
+## Use an Agent in a Generated Flow
+
+You can add a custom AI agent to a flow that the generator made:
+
+* Use the **Agent Tool** trigger. Then an agent can start the automation during a chat.
+* Add a **Run an agent command** step. Then the agent works at the exact step that you select.
+
+---
+
 ## What's Next
 
-| Guide | What You'll Learn |
+| Guide | What You Learn |
 |---|---|
-| [Automation Triggers](./README.md) | All available triggers for your workflows |
-| [Taskade Autopilot](../ai-features/autopilot.md) | Generate entire workspace ecosystems |
+| [Automation Triggers](./README.md) | The triggers that you can use in your workflows |
+| [Taskade Autopilot](../ai-features/autopilot.md) | Generate a full workspace from a prompt |
 
 ---
 

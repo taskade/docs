@@ -58,20 +58,22 @@ Settings > Members > click the **✕** icon next to the member.
 | Plan | Price | AI Credits/mo |
 |------|-------|--------------|
 | **Free** | $0 | 0 (earn credits with referrals and invites) |
-| **Starter** | $6/mo, billed annually | 10,000 |
+| **Starter** | $6/mo, billed annually (yearly only) | 10,000 |
 | **Pro** | $10/mo billed annually, or $20 monthly | 50,000 |
 | **Business** | $25/mo billed annually, or $50 monthly | 150,000 |
 | **Max** | $100/mo billed annually, or $200 monthly | 400,000 |
-| **Enterprise** | Custom (contact sales) | Custom |
+| **Enterprise** | $250/mo billed annually, or $500 monthly (contact sales) | 1,100,000 |
 
 Key features of each plan:
 
-- **Free**: 2 members, 3 Taskade Genesis apps, 1 AI agent, 10 automation runs a month.
+- **Free**: 2 members, 3 Taskade Genesis apps, 1 AI agent, 10 automation runs a billing period.
 - **Starter**: 3 members, unlimited apps, premium integrations, hosted MCP access.
 - **Pro**: 10 members, custom domains (up to 10), webhooks, your own AI key (BYOK), app bundle export.
 - **Business**: Unlimited members, unlimited custom domains, SSO/SAML, app analytics, custom branding.
-- **Max**: Everything in Business, with higher AI limits.
+- **Max**: Everything in Business, with higher AI limits. Business allows 80,000 AI requests a day, and Max allows 320,000.
 - **Enterprise**: Everything in Max, plus SCIM provisioning and the highest AI limits.
+
+Automation runs a billing period are 10 on Free, 350 on Starter, 1,000 on Pro, and 10,000 on Business and up. The whole workspace shares the Monthly Credits and the automation runs. The table shows the base level of each plan. A higher **credits / month** level on the upgrade page raises both.
 
 Full details: [taskade.com/pricing](https://www.taskade.com/pricing)
 

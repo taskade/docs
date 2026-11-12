@@ -5,23 +5,25 @@ description: >-
 
 # Tutorial: Taskade - The Living DNA Productivity Platform
 
-**Taskade** is a productivity platform that treats your workspace as a living organism. Instead of static tools, Taskade creates an interconnected ecosystem where AI agents, automations, and projects work together like DNA strands to build intelligent, adaptive experiences.
+**Taskade** is an AI workspace. Your projects, AI agents, and automations work together in one place. Taskade Genesis builds a live app from one plain-English prompt.
 
-Imagine your workspace isn't just a collection of projects—it's a living foundation that powers unlimited business applications. Each new project you create can become a complete app, powered by your workspace's "living DNA" of memory, intelligence, and execution.
+**Start here:**
 
-## What Makes Taskade Special?
+* **New to Taskade?** Read [Chapter 1: Workspaces](01_workspaces.md), then follow the chapters in order.
+* **Do you want to build an app now?** Go to [Chapter 5: Genesis](05_genesis.md).
+* **Do you want the short version?** Read the [Quick Start Guide](../../getting-started/README.md).
 
-**Taskade transforms productivity from static tools to living systems:**
+## What You Can Do With Taskade
 
-- **🏠 Living Workspace Foundation** - Your workspace becomes the DNA that powers everything you build
-- **🧬 Taskade Genesis AI Builder** - Describe apps in plain English, get working applications in minutes
-- **🤖 AI Agent Team** - Deploy specialized digital assistants trained on your business
-- **⚡ Smart Automation** - Connect 100+ tools with intelligent workflow orchestration
-- **📱 Cross-Platform Magic** - Seamless experience across web, desktop, and mobile
+* **🏠 Keep your work in one workspace**: notes, tasks, databases, AI chat, automations, and apps use the same data.
+* **🧬 Build apps with Taskade Genesis**: describe an app in plain English and get a working app with a link.
+* **🤖 Use AI agents**: an agent reads your projects and answers from them.
+* **⚡ Automate repeat work**: connect 100+ integrations, and let automations create tasks and send messages for you.
+* **📱 Work on every device**: use Taskade on the web, on the desktop, and on mobile.
 
-## The Core DNA Strands
+## How the Parts Fit Together
 
-Taskade isn't built on layers—it's built on **living DNA strands** that interweave:
+Your workspace holds three parts. Projects are the memory. AI agents are the intelligence. Automations are the execution. Taskade calls these three parts Workspace DNA.
 
 ```mermaid
 flowchart TD
@@ -38,56 +40,48 @@ flowchart TD
     INT --> AU
 ```
 
-The API gives developers access to workspaces, projects, AI agents, and automations. The mobile and desktop apps give you your workspaces, projects, and apps on every device.
+Taskade Genesis uses all three parts to build an app. The API gives developers access to workspaces, projects, AI agents, and automations. The mobile and desktop apps show your workspaces, projects, and apps on every device.
 
 ## How This Tutorial Works
 
-Welcome to your journey through Taskade's living architecture! This tutorial is designed for beginners who want to understand how Taskade's interconnected systems work together.
+This tutorial is for beginners. Each chapter uses what you learned in the chapter before it:
 
-**Each chapter builds on the previous one**, just like how Taskade's features build upon each other:
-
-- **Chapter 1: Workspaces** - Learn the foundation that powers everything
-- **Chapter 2: Projects** - Discover flexible data containers that adapt to any workflow
-- **Chapter 3: AI Agents** - Meet your digital team members that learn and grow
-- **Chapter 4: Automation** - Connect tools and automate repetitive tasks
-- **Chapter 5: Genesis** - Build complete apps from simple descriptions
-- **Chapter 6: Integrations** - Connect Taskade to your favorite tools
-- **Chapter 7: API** - Access Taskade programmatically for custom solutions
-- **Chapter 8: Mobile & Desktop** - Take productivity anywhere
-
-**Ready to begin?** Let's explore how Taskade transforms productivity into living, intelligent systems!
+- **Chapter 1: Workspaces**: the home for all your work
+- **Chapter 2: Projects**: the place where you keep tasks, notes, and data
+- **Chapter 3: AI Agents**: assistants that learn from your work
+- **Chapter 4: Automation**: workflows that do repeat tasks for you
+- **Chapter 5: Genesis**: complete apps from a plain-English description
+- **Chapter 6: Integrations**: connections to the tools that you use
+- **Chapter 7: API**: access to Taskade from your own code
+- **Chapter 8: Mobile & Desktop**: Taskade on every device
 
 ## Chapter Overview
 
 ### Chapter 1: [Workspaces - The Living Foundation](01_workspaces.md)
-*Learn how your workspace becomes the DNA foundation for everything you build*
+*Learn how your workspace holds everything that you build*
 
 ### Chapter 2: [Projects - Your Data Containers](02_projects.md)
-*Discover flexible structures that adapt to any workflow or business need*
+*Keep tasks, notes, and data in a structure that fits your work*
 
 ### Chapter 3: [AI Agents - Your Digital Team](03_ai_agents.md)
-*Deploy specialized assistants that learn from your business and become expert team members*
+*Make assistants that learn from your work and help your team*
 
 ### Chapter 4: [Automation - Workflows on Autopilot](04_automation.md)
-*Connect tools and automate repetitive tasks with intelligent orchestration*
+*Connect your tools and let automations do repeat tasks*
 
 ### Chapter 5: [Genesis - Building Apps with AI](05_genesis.md)
-*Transform plain English descriptions into complete working applications*
+*Turn a plain-English description into a working app*
 
 ### Chapter 6: [Integrations - Connecting Your Tools](06_integrations.md)
-*Link Taskade to 100+ services for seamless workflow automation*
+*Connect Taskade to 100+ services*
 
 ### Chapter 7: [API - Developer Interfaces](07_api.md)
-*Access Taskade programmatically to build custom solutions and integrations*
+*Use the API to build your own solutions and integrations*
 
 ### Chapter 8: [Mobile & Desktop - Cross-Platform Productivity](08_mobile_desktop.md)
-*Take your living workspace anywhere with native apps and web interfaces*
+*Use Taskade with the native apps and the web app*
 
 ---
-
-**🎉 Ready to transform your productivity?** This tutorial will show you how Taskade's living DNA creates intelligent, adaptive experiences that grow smarter with every interaction.
-
-**Let's start building!** 🚀
 
 *Generated by [AI Codebase Knowledge Builder](https://github.com/The-Pocket/Tutorial-Codebase-Knowledge)*
 

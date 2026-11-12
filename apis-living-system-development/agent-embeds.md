@@ -5,27 +5,27 @@ description: >-
 
 # Embed a Public AI Agent
 
-Add a public Taskade AI agent to your website with an iframe or a chat widget. You publish the agent, copy the code from **Publish** → **Embed**, and paste the code into your page.
+You can put a public Taskade AI agent on your website as an iframe or as a chat widget. Publish the agent, copy the code from **Publish** → **Embed**, and paste the code into your page.
 
 ## Before you start
 
-You need an AI agent and edit access to your website's HTML.
+You must have these items:
 
-- **An AI agent in your workspace.** Publishing and embedding are on every plan.
-- **Access to your site's HTML.** You paste one `<iframe>` or two `<script>` tags.
-- **Optional, Business and above:** **Hide Branding**, a custom background, and a meta image for the public agent.
+- **An AI agent in your workspace.** Every plan can publish and embed an agent.
+- **Edit access to the HTML of your website.** You paste one `<iframe>` or two `<script>` tags.
+- **Optional, Business and up:** **Hide Branding**, a custom background, and a meta image for the public agent.
 
 ## Publish the agent and copy the code
 
-Turn on public access, then copy the code that Taskade generates for you.
+Turn on public access. Then copy the code that Taskade makes for you.
 
-1. Open the agent, then open the **Publish** tab. In the agent list, the **Share** menu item opens the same screen.
+1. Open the agent, then open the **Publish** tab. The **Share** menu item in the agent list opens the same screen.
 2. Turn on the **Publish Agent** switch.
 3. Open the **Embed** sub-tab.
 4. Pick **Add to your website** for an iframe, or **Add a chat widget** for a widget.
 5. Copy the generated code.
 
-The generated code holds the current public agent ID and only the options that the selected mode supports. The **Customize** sub-tab sets the look. **Tool Permissions** shows only when the agent has tools.
+The code holds the current public agent ID. It holds only the options that the selected mode supports. The **Customize** sub-tab sets the look. **Tool Permissions** shows only when the agent has tools.
 
 ```mermaid
 graph TD
@@ -38,7 +38,7 @@ graph TD
 
 ## Choose an embed type
 
-Pick the smallest surface that fits the page.
+Pick the smallest embed that fits the page.
 
 | Embed | What visitors see | Best fit |
 | --- | --- | --- |
@@ -49,19 +49,19 @@ Pick the smallest surface that fits the page.
 | `searchBar` | An Ask AI pill mounted inside your layout | Headers and documentation |
 | `inline` | An open chat panel mounted inside your layout | Dedicated assistant sections |
 
-`bubble` is the widget default. Taskade leaves it out of the generated config.
+`bubble` is the widget default, so Taskade does not put it in the generated code. An agent with saved widget settings is different. Read [Save the widget settings as the default](#save-the-widget-settings-as-the-default).
 
-`inline` must mount into a page element. `searchBar` can mount into one, for a pill in a site header. The generated snippet includes this host element:
+An `inline` widget must mount into a page element. A `searchBar` widget can also mount into one, for a pill in a site header. The generated snippet includes this host element:
 
 ```html
 <div id="taskade-agent"></div>
 ```
 
-Move this element to the place where the pill or panel must appear. Keep its ID aligned with the `target` value. A `searchBar` without a `target` is a pill fixed to the corner that `popup.position` sets.
+Move this element to the place where the pill or panel must show. Keep its ID the same as the `target` value. A `searchBar` with no `target` is a pill in the corner that `popup.position` sets.
 
 ## Add an iframe
 
-Use the iframe when the agent must stay open inside a known area.
+Use the iframe if the agent must stay open inside a fixed area of the page.
 
 ```html
 <iframe
@@ -92,9 +92,9 @@ Place the generated script near the end of the page body.
 </script>
 ```
 
-Keep the double `TaskadeEmbed.TaskadeEmbed.init` name. The CDN bundle exposes the current initializer at that path.
+Keep the double name `TaskadeEmbed.TaskadeEmbed.init`. The CDN bundle gives the current initializer at that path.
 
-The snippet stores the widget handle on `window.taskadeAgent`. Your page code can call these methods:
+The snippet keeps the widget handle on `window.taskadeAgent`. The code of your page can call these methods:
 
 | Method | Effect |
 | --- | --- |
@@ -116,6 +116,14 @@ For an inline panel, add the host element. Then set the mode and the target:
   });
 </script>
 ```
+
+### Save the widget settings as the default
+
+**Save as default** on the **Embed** sub-tab stores the widget settings on the agent. You can save a default for the `bubble`, `modal`, and `sidebar` modes. A `searchBar` or `inline` widget sits inside your page, so its settings stay in the snippet.
+
+If the settings on the screen match the saved default, Taskade makes a short snippet that holds only `publicAgentId`. The widget loads the saved settings when it starts. A `trigger` or `interface` option stays in the snippet, because Taskade does not save those two. A later save updates every site that uses the short snippet.
+
+If a snippet sets one of `mode`, `theme`, `popup`, `launcher`, `behavior`, or `visibility`, the widget ignores all saved settings. To show the plain widget on one site, set `"mode": "bubble"` in the snippet of that site.
 
 ## Configure the widget
 
@@ -144,42 +152,49 @@ Pass only the options that the selected mode uses.
 
 Some options apply only to some modes:
 
-- The `theme` radius, density, and font style the widget around the chat, not the chat transcript.
+- The `theme` radius, density, and font change the widget around the chat. They do not change the chat transcript.
 - `launcher.size` does not apply to `searchBar` or `inline`.
 - `popup.position` applies to `searchBar` only when it has no `target`.
-- `inline` is always open. It uses no label, proactive message, auto-open delay, custom trigger, or hotkey.
+- An `inline` widget is always open. It uses no label, proactive message, auto-open delay, custom trigger, or hotkey.
 
 ## Keep public access safe
 
-Treat the embed as public access to the agent.
+The embed gives the public access to the agent. Do these steps before and after you publish:
 
 - Review the agent's instructions and knowledge before you publish it.
 - Keep secrets and private records out of public knowledge sources.
 - Turn off tools that a public visitor must not use.
+- If the public agent does not need the web, keep **Search the web** and **Read a web page** off for visitors.
 - Test the public page in a signed-out browser.
-- Turn off the **Publish Agent** switch if the link reaches the wrong audience.
-- Keep your API token out of the page. The embed code needs only the public agent ID. Your own server code uses a token, as [Authentication](developers/authentication.md) shows.
+- If the wrong people get the link, turn off the **Publish Agent** switch.
+- Keep your API token out of the page. The embed code needs only the public agent ID. Only your server code uses a token. Read [Authentication](developers/authentication.md).
 
 {% hint style="info" %}
 **Note:** A public agent keeps no memory between visitor chats. Read what visitors asked in the agent's **Messages** tab.
 {% endhint %}
 
+A public chat can search the web or read a page only when the matching tool is on for visitors. A visitor does not see tool results or the reasoning of the agent. Taskade also hides the input of most tool calls from the visitor. The visitor sees the reply and the web sources of a search. A signed-in member of the workspace of the agent still sees the tool details.
+
 ## Review questions the agent did not answer
 
-The Agent Inbox collects the public questions that your agent did not answer well, so you can teach it the answer. It covers chats on the public agent page and in the embed. A private chat in your workspace never goes to the inbox.
+The Agent Inbox collects the public questions that your agent did not answer well. You can then teach the agent the answer. The inbox covers chats on the public agent page and in the embed. A private chat in your workspace never goes to the inbox.
 
 Two things add a question to the inbox:
 
-- After the agent replies in a public chat, Taskade checks the chat for a question that the agent did not answer.
-- A visitor clicks the thumbs-down button (**Bad response**) on a reply. The question behind that reply goes to the inbox, with the reason that the visitor typed. The reason box tells the visitor that the agent owner can see it.
+- After each agent reply in a public chat, Taskade looks for a question that the agent did not answer.
+- A visitor clicks the thumbs-down button (**Bad response**) on a reply. The question of that reply goes to the inbox with the reason that the visitor typed. The reason box tells the visitor that the agent owner can read it.
 
 To review the questions:
 
 1. Open the agent, then open the **Knowledge** tab.
 2. Open the **Inbox** sub-tab. It shows after Taskade adds the first question.
-3. For each question, click **Answer & save**, write the answer, then click **Save as knowledge**. To skip a question, click **Dismiss**.
+3. For each question, click **Answer & save**.
+4. Write the answer.
+5. Click **Save as knowledge**.
 
-The saved answer becomes agent knowledge, so the agent can use it with the next visitor. Taskade also keeps the questions in a workspace project named `Agent Inbox - <agent name>`, which every member who can view agents can read.
+To skip a question, click **Dismiss**.
+
+The saved answer becomes agent knowledge, so the agent can use it with the next visitor. Taskade also keeps the questions in a workspace project named `Agent Inbox - <agent name>`. Every member who can view agents can read this project.
 
 | Limit | Value |
 | --- | --- |

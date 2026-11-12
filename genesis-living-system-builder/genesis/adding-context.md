@@ -9,48 +9,48 @@ description: >-
 
 ## Overview
 
-When you build apps with Taskade Genesis, you can **upload reference files** to provide context and guidance. The additional context helps AI understand your requirements, match your brand, and follow specific design patterns — producing apps that feel like they were custom-built by your team.
+When you build an app with Taskade Genesis, you can **upload reference files** as context. Context tells the AI your requirements, your brand, and the design that you want. The app that you get then looks like your team made it.
 
-> **Any files you upload are automatically added to the Media tab** and become part of your Workspace DNA, enriching all future app builds and AI agent responses.
+> **Taskade adds each file that you upload to the Media tab.** The file becomes part of your Workspace DNA. Future app builds and AI agents can use it.
 
 ---
 
 ## What You Can Use as Context
 
-Taskade Genesis works with a wide range of file types to understand your requirements:
+Taskade Genesis reads many types of files. Each table that follows shows what to upload and how Taskade Genesis uses it.
 
 ### Brand & Design Files
 
 | File Type | What to Upload | How Genesis Uses It |
 |---|---|---|
-| **Brand guidelines** (PDF) | Color codes, typography, logo usage, design principles | Matches your exact brand identity |
-| **Logo files** (PNG, JPG) | Primary logos, variations, icons, brand marks | Places logos and creates consistent visual identity |
-| **Color palettes** | Hex codes, color combinations, visual hierarchy | Applies your exact color scheme throughout the app |
-| **Website screenshots** | Current site design, layout patterns, UI elements | Replicates your existing design language |
-| **Mockups / wireframes** | App layouts, user interface designs, navigation flows | Builds to your exact specifications |
+| **Brand guidelines** (PDF) | Color codes, typography, logo rules, design principles | Matches your brand identity |
+| **Logo files** (PNG, JPG) | Primary logos, variations, icons, brand marks | Puts your logo in the app with a consistent look |
+| **Color palettes** | Hex codes, color combinations, visual hierarchy | Uses your colors in the full app |
+| **Website screenshots** | Your current site design, layout patterns, UI elements | Copies your design language |
+| **Mockups / wireframes** | App layouts, screen designs, navigation flows | Builds to your plan |
 
 ### Data & Structure Files
 
 | File Type | What to Upload | How Genesis Uses It |
 |---|---|---|
-| **Existing forms** (PDF) | Contact forms, registration forms, surveys | Recreates your form structure digitally |
-| **Data examples** | Table structures, field definitions, sample records | Creates matching database schemas |
+| **Existing forms** (PDF) | Contact forms, registration forms, surveys | Makes a digital copy of your form structure |
+| **Data examples** | Table structures, field definitions, sample records | Makes databases with the same fields |
 | **Workflow documents** | Process flows, SOPs, business rules | Builds automation logic and business rules |
-| **Spreadsheets** (XLSX, CSV) | Customer data, inventory lists, schedules | Pre-populates databases and creates appropriate views |
-| **Code snippets** | Validation rules, integration examples | Implements specific logic requirements |
+| **Spreadsheets** (XLSX, CSV) | Customer data, inventory lists, schedules | Fills databases and makes the correct views |
+| **Code snippets** | Validation rules, integration examples | Adds the logic that you need |
 
 ### Reference Materials
 
 | File Type | What to Upload | How Genesis Uses It |
 |---|---|---|
-| **App screenshots** | UI inspiration, feature examples, interaction patterns | Replicates design patterns you like |
-| **Competitor tools** | Screenshots of competitor apps | Builds competitive alternatives |
-| **Process documentation** | Standard procedures, user manuals, training materials | Creates apps that follow your processes |
-| **Requirements docs** | Feature specs, acceptance criteria, use cases | Implements exact feature requirements |
-| **API/Tech docs** | API specs, integration guides, config files | Connects to your existing systems |
+| **App screenshots** | UI ideas, feature examples, interaction patterns | Copies the design patterns that you like |
+| **Other tools** | Screenshots of tools that you use today | Builds the same steps into your app |
+| **Process documentation** | Standard procedures, user manuals, training materials | Makes apps that follow your processes |
+| **Requirements docs** | Feature specs, acceptance criteria, use cases | Adds the features that you list |
+| **API/Tech docs** | API specs, integration guides, config files | Connects to the systems that you have |
 
 {% hint style="info" %}
-Connecting Genesis to Taskade programmatically? See the [Public API reference](../../apis-living-system-development/comprehensive-api-guide/README.md).
+Do you want to connect Taskade Genesis to Taskade with code? See the [Public API reference](../../apis-living-system-development/comprehensive-api-guide/README.md).
 {% endhint %}
 
 ### Supported Upload Formats
@@ -63,23 +63,23 @@ Connecting Genesis to Taskade programmatically? See the [Public API reference](.
 | **Cloud storage** | Google Drive, Dropbox, Box, OneDrive |
 
 {% hint style="info" %}
-On the Free plan you can upload images. Documents, spreadsheets, and other non-image files need a paid plan, and the largest file size you can upload also grows with your plan. See [taskade.com/pricing](https://www.taskade.com/pricing).
+On the Free plan, you can upload images. Documents, spreadsheets, and other files that are not images need a paid plan. The largest file size that you can upload also increases with your plan. See [taskade.com/pricing](https://www.taskade.com/pricing).
 {% endhint %}
 
 ---
 
 ## Provide App Context
 
-There are two ways to provide context depending on where you are in the building process.
+You can add context in two ways. The way depends on your stage in the build.
 
 ### Initial Prompt (New App)
 
-When first creating an app, attach context alongside your prompt:
+Attach context to your first prompt:
 
-1. Open Taskade Genesis and type your initial app prompt
-2. Add files: **Drag & drop** into the prompt box, or click the **Attachment** button
-3. Choose source: **Upload Files** (device), **Add from Workspace** (existing files), or **Add from Cloud** (cloud storage)
-4. Submit the prompt — Genesis creates the app using your text + uploaded context
+1. Open Taskade Genesis and type your first app prompt.
+2. Drag the files into the prompt box, or click the **Attachment** button.
+3. Select a source: **Upload Files** (device), **Add from Workspace** (files in your workspace), or **Add from Cloud** (cloud storage).
+4. Submit the prompt. Taskade Genesis makes the app from your text and your files.
 
 <!-- Screenshot: Initial prompt with attachment button and file upload options -->
 
@@ -89,11 +89,11 @@ When first creating an app, attach context alongside your prompt:
 
 ### Follow-Up Prompts (Existing App)
 
-After Genesis creates your app, upload additional context to refine it:
+After Taskade Genesis makes your app, add more context to improve it:
 
-1. Open your Genesis app in **Preview** mode
-2. Add files: **Drag & drop** into the chat box, or use the **Attachment** button
-3. Ask Genesis to update the app using the new context
+1. Open your app in **Preview** mode.
+2. Drag the files into the chat box, or use the **Attachment** button.
+3. Ask Taskade Genesis to update the app with the new context.
 
 **Example follow-up prompts:**
 
@@ -107,43 +107,49 @@ After Genesis creates your app, upload additional context to refine it:
 
 <!-- Screenshot: Follow-up prompt with file attached in chat -->
 
+### Files Your App's Users Send You
+
+Context files teach Taskade Genesis about your business. Uploads from your users go the other way. For example, a client attaches a signed agreement to your intake form. A technician sends a photo of a paper work order.
+
+These files arrive with the submission. They go to the same Media tab as your context files. A **Turn a file into text** step in an automation can then read the words, also from a scan or a phone photo. Each file that a person sends through a published app can be up to 10 MB.
+
 ---
 
 ## Context Best Practices
 
 | Practice | Why | Example |
 |---|---|---|
-| **Upload brand files first** | Sets the visual foundation for everything | Brand PDF + logos before any styling prompts |
-| **Include data samples** | Helps Genesis create accurate database schemas | 5-10 sample records with all field types |
-| **Show, don't just tell** | Screenshots and mockups are more precise than words | Upload a wireframe instead of describing layout |
-| **Add incrementally** | Too much context at once can dilute focus | Brand first, then data, then workflows |
-| **Use specific file names** | Helps you reference files in prompts | "brand-guidelines-2025.pdf" not "document1.pdf" |
-| **Include edge cases** | Prevents gaps in logic | "Here's an example of a canceled order..." |
+| **Upload brand files first** | They set the look for all other work | Brand PDF and logos before style prompts |
+| **Include data samples** | Taskade Genesis makes more accurate databases | 5-10 sample records with all field types |
+| **Show, do not only tell** | Screenshots and mockups are more exact than words | Upload a wireframe, do not describe the layout |
+| **Add context in steps** | Too much context at one time makes the result less focused | Brand first, then data, then workflows |
+| **Use clear file names** | You can name the file in a prompt | "brand-guidelines-2025.pdf", not "document1.pdf" |
+| **Include edge cases** | The app then handles unusual cases | "Here's an example of a canceled order..." |
 
 ---
 
 ## How Context Powers Workspace DNA
 
-Every file you upload becomes part of your workspace's living memory:
+Each file that you upload becomes part of the memory of your workspace:
 
-| Context Added | DNA Impact | Future Benefit |
+| Context Added | Effect on Workspace DNA | Future Benefit |
 |---|---|---|
-| Brand guidelines | Future builds can reuse your brand files without a new upload | Consistent brand across every app |
-| Data samples | AI agents understand your data structures | Smarter agent responses and queries |
-| Process documents | Automations follow your business rules | More accurate workflow generation |
-| Competitor screenshots | Genesis understands your market position | Better feature recommendations |
-| Customer data | Databases pre-populated and properly structured | Faster app deployment |
+| Brand guidelines | Future builds can use your brand files again with no new upload | The same brand in every app |
+| Data samples | AI agents know your data structures | Better answers from agents |
+| Process documents | Automations follow your business rules | More accurate workflows |
+| Screenshots of other tools | Taskade Genesis knows the steps that you use today | Better feature suggestions |
+| Customer data | Databases start full and with the correct structure | Faster launch of the app |
 
-> **Workspace DNA hint:** Context uploads increase the richness of your workspace memory, and you can reuse them in every future build. An app's [Intelligence Score](./how-genesis-works.md#workspace-intelligence-score) counts its projects, agents, and automations, not its uploaded files.
+> **Workspace DNA hint:** Context uploads add to the memory of your workspace, and you can use them again in each future build. The [Intelligence Score](./how-genesis-works.md#workspace-intelligence-score) of an app counts its projects, agents, and automations. It does not count uploaded files.
 
 ---
 
-## What's Next
+## Next Steps
 
-| Guide | What You'll Learn |
+| Guide | What You Learn |
 |---|---|
-| [Image Generation](../ai-features/image-generation.md) | Generate custom images for your apps |
-| [Advanced Features](../space-apps-guide/advanced-features.md) | Use your brand context to customize app appearance |
+| [Image Generation](../ai-features/image-generation.md) | Make custom images for your apps |
+| [Advanced Features](../space-apps-guide/advanced-features.md) | Use your brand context to change the look of an app |
 | [Agent Knowledge & Memory](../ai-features/agent-knowledge.md) | Train AI agents on your uploaded files |
 | [Projects & Databases](../workspaces/projects-databases.md) | How uploaded data becomes structured databases |
 

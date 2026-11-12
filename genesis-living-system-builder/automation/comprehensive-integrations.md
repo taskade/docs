@@ -5,10 +5,12 @@ description: >-
 
 # Comprehensive Integrations
 
-This document provides a reference of popular integrations, triggers, and actions in Taskade's automation system. It does not list every connector or every action. For the full, current list, open the step picker in the automation editor. For step-by-step guides, see the [Taskade Automation learn center](https://www.taskade.com/learn/automation). Every integration below also has a full setup page in the [Taskade Integrations directory](https://www.taskade.com/integrations).
+This page lists popular integrations with their triggers and actions. Each row gives the step ID, the step name, and its properties. The list does not show every connector or every action.
+
+To see the full, current list, open the step picker in the automation editor. For step-by-step guides, read the [Taskade Automation learn center](https://www.taskade.com/learn/automation). Each integration below also has a setup page in the [Taskade Integrations directory](https://www.taskade.com/integrations).
 
 {% hint style="info" %}
-Premium integrations (for example Slack, Gmail, Google Sheets, HubSpot, GitHub and Stripe) need a paid plan. The Free plan runs the built-in Taskade steps and the standard connectors (HTTP Request, RSS, Pushover and MCP Client). The Every X Minutes schedule also needs a paid plan.
+Premium integrations (for example Slack, Gmail, Google Sheets, HubSpot, GitHub, and Stripe) need a paid plan. The Free plan runs the built-in Taskade steps and the standard connectors (HTTP Request, RSS, Pushover, and MCP Client). The Every X Minutes schedule also needs a paid plan.
 {% endhint %}
 
 ## Core Taskade Tools
@@ -51,16 +53,16 @@ Premium integrations (for example Slack, Gmail, Google Sheets, HubSpot, GitHub a
 | Action | Properties |
 | --- | --- |
 | `ai.ask` — Ask AI | `prompt`, `input` |
-| `ai.generate` — Generate with AI | `prompt`, `input` |
-| `ai.respond` — Respond with AI | `prompt`, `input` |
+| `ai.generate` — Write with AI | `prompt`, `input` |
+| `ai.respond` — Reply with AI | `prompt`, `input` |
 | `ai.categorize` — Categorize with AI | `input`, `output` |
 | `ai.prompt` — Prompt AI | `prompt`, `modelName` |
-| `agent.ask` — Ask Agent | `agentId`, `input`, `outputType`, `output` |
-| `agent.run_command` — Run Agent Command | `agentId`, `commandId`, `input` |
-| `agent.add_knowledge` — Add Knowledge To Agent | `agentId`, `knowledgeType`, `title`, `knowledge` |
-| `agent.add_knowledge.v2` — Add Knowledge To Agent (v2) | `agentId`, `knowledgeType`, `title`, `knowledge` |
-| `agent.add_project_as_knowledge` — Add Project to Agent Knowledge | `agentId`, `projectId` |
-| `agentTeam.ask` — Ask Agent Team | `agentTeamId`, `executionMode`, `input`, `output` |
+| `agent.ask` — Ask an agent | `agentId`, `input`, `outputType`, `output` |
+| `agent.run_command` — Run an agent command | `agentId`, `commandId`, `input` |
+| `agent.add_knowledge` — Add knowledge to an agent | `agentId`, `knowledgeType`, `title`, `knowledge` |
+| `agent.add_knowledge.v2` — Add knowledge to an agent (v2) | `agentId`, `knowledgeType`, `title`, `knowledge` |
+| `agent.add_project_as_knowledge` — Add a project to an agent | `agentId`, `projectId` |
+| `agentTeam.ask` — Ask an agent team | `agentTeamId`, `executionMode`, `input`, `output` |
 
 ### Schedule
 
@@ -68,7 +70,7 @@ Premium integrations (for example Slack, Gmail, Google Sheets, HubSpot, GitHub a
 
 | Trigger | Properties |
 | --- | --- |
-| `schedule.minutes` — Every X Minutes (Scheduled) — sub-hourly polling, paid-plan gated | `intervalMinutes` (5 / 10 / 15 / 30) |
+| `schedule.minutes` — Every X Minutes (Scheduled). Runs more than one time each hour. Needs a paid plan | `intervalMinutes` (5 / 10 / 15 / 30) |
 | `schedule.hourly` — Every Hour (Scheduled) | - |
 | `schedule.daily` — Every Day (Scheduled) | `timeOfDay`, `timezone` |
 | `schedule.weekly` — Every Week (Scheduled) | `dayOfWeek`, `timeOfDay`, `timezone` |
@@ -80,12 +82,12 @@ Premium integrations (for example Slack, Gmail, Google Sheets, HubSpot, GitHub a
 
 | Action | Properties |
 | --- | --- |
-| `web.search` — Search Web | `query` |
-| `website.extract` — Scrape Webpage | `websiteUrl`, `errorBehavior` |
-| `pdf.convertToText` — Convert File to Text | `pdfUrl` |
-| `youtube.transcribeVideo` — Transcribe YouTube Video | `youtubeUrl` |
-| `url.addToMedia` — Upload File to Media | `url`, `emptyUrlBehavior` |
-| `text.addToMedia` — Upload Text to Media | `text`, `title` |
+| `web.search` — Search the web | `query` |
+| `website.extract` — Read a web page | `websiteUrl`, `errorBehavior` |
+| `pdf.convertToText` — Turn a file into text | `pdfUrl` |
+| `youtube.transcribeVideo` — Transcribe a YouTube video | `youtubeUrl` |
+| `url.addToMedia` — Save a file to Media | `url`, `emptyUrlBehavior` |
+| `text.addToMedia` — Save text to Media | `text`, `title` |
 
 ### Utilities
 
@@ -93,7 +95,7 @@ Premium integrations (for example Slack, Gmail, Google Sheets, HubSpot, GitHub a
 
 | Action | Properties |
 | --- | --- |
-| `transform.arrayIntoString` — Transform Array Into String | `transformEachItemIntoString`, `joinMechanism` |
+| `transform.arrayIntoString` — Transform Array to String | `transformEachItemIntoString`, `joinMechanism` |
 
 ## Communication & Collaboration
 
@@ -494,26 +496,26 @@ Premium integrations (for example Slack, Gmail, Google Sheets, HubSpot, GitHub a
 
 * **Forms**: [AI Forms Documentation](https://www.taskade.com/learn/automation/forms-trigger)
 * **Webhooks**: [Webhooks Documentation](https://www.taskade.com/learn/automation/webhook-trigger)
-* **Agent Triggers**: Built-in agent conversation triggers
+* **Agent Triggers**: built-in triggers that start from an agent conversation
 
 ### Control Actions
 
-* **Delay**: Wait/Sleep actions for timing control
-* **Branch**: [Conditional logic documentation](https://www.taskade.com/learn/automation/branch-action)
-* **Loop**: [Iteration control documentation](https://www.taskade.com/learn/automation/loop-action)
-* **Filter Data**: [Data filtering documentation](https://www.taskade.com/learn/automation/filter-data)
+* **Delay**: stops the automation for a time, then continues
+* **Branch**: sends the run down different paths ([Branch guide](https://www.taskade.com/learn/automation/branch-action))
+* **Loop**: runs steps one time for each item in a list ([Loop guide](https://www.taskade.com/learn/automation/loop-action))
+* **Filter Data**: lets the run continue only when the data meets a condition ([Filter Data guide](https://www.taskade.com/learn/automation/filter-data))
 
 ## Getting Started
 
-To learn more about setting up and using these integrations:
+For more about how to connect and use these integrations, read these pages:
 
-1. [**Getting Started with Automation**](https://www.taskade.com/learn/automation) - Complete beginner's guide
-2. [**AI Automation Collection**](https://www.taskade.com/learn/automation) - All automation resources
-3. [**Developer API**](../../apis-living-system-development/developers/api.md) - Build custom integrations
+1. [**Getting Started with Automation**](https://www.taskade.com/learn/automation): a guide for new users
+2. [**AI Automation Collection**](https://www.taskade.com/learn/automation): all automation guides
+3. [**Developer API**](../../apis-living-system-development/developers/api.md): build your own integrations
 
 ***
 
-_This reference is updated regularly with new integrations and features. For the latest updates, visit our_ [_Changelog_](../../changelog/)_._
+_We add new integrations and features to this reference. For the newest changes, read the_ [_Changelog_](../../changelog/)_._
 
 ---
 

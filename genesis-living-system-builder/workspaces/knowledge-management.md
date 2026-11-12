@@ -5,10 +5,10 @@ description: >-
 
 # Knowledge Organization
 
-**Transform your scattered information into organized, searchable intelligence that powers smarter AI agents and more effective workflows. Learn how to efficiently upload, organize, and manage knowledge sources for maximum AI performance.**
+This page shows how to add, sort, and maintain the knowledge that your AI agents answer from. Knowledge is the set of files, links, and projects on the **Knowledge** tab of an agent.
 
 {% hint style="success" %}
-**Smart Knowledge Strategy:** The quality and organization of your knowledge directly impacts AI agent performance.
+**Knowledge quality:** An agent answers only as well as its knowledge. Clear, current, and well-named sources give better answers.
 {% endhint %}
 
 ***
@@ -19,12 +19,14 @@ description: >-
 
 | **Source Type**      | **Best For**                 | **Processing**                             |
 | -------------------- | ---------------------------- | ------------------------------------------ |
-| **Documents**        | Policies, manuals, guides    | Text extraction + OCR                      |
-| **Websites**         | Latest info, product pages   | Reads the linked page (one page, no crawl) |
+| **Documents**        | Policies, manuals, guides    | Text extraction                            |
+| **Websites** (paid)  | Latest info, product pages   | Reads the linked page (one page, no crawl) |
 | **Spreadsheets**     | Data, lists, structured info | Data parsing + analysis                    |
-| **Videos**           | Training content, demos      | YouTube auto-generated transcript          |
+| **Videos** (paid)    | Training content, demos      | YouTube auto-generated transcript          |
 | **Projects**         | Live workspace data          | Real-time sync                             |
 | **File Collections** | Document libraries           | Batch processing                           |
+
+The Knowledge tab does not accept image files, and it does not read text from scanned pages. To use a scanned file, convert the file to text first.
 
 ### **Knowledge Processing Capabilities**
 
@@ -32,7 +34,7 @@ description: >-
 
 ```yaml
 Processing Features:
-  Text Extraction: PDFs, Word docs, images with OCR
+  Text Extraction: PDFs, Word docs, spreadsheets
   Video Transcripts: YouTube auto-generated transcripts
   Semantic Indexing: Meaning-based search optimization
 ```
@@ -67,24 +69,31 @@ Processing Features:
 
 **Bulk Upload Process:**
 
-1. **Prepare folders** with logical organization
-2. **Turn on Enable knowledge** on the agent's **Knowledge** tab. It is off by default
-3. **Drag the files** into the **ADD SOURCES** box
-4. **Add a one-line description** to each file, so the agent finds the right file
-5. **Click Update** to save
-6. **Test knowledge** with sample questions
+1. **Sort your files** into folders by topic.
+2. **Turn on Enable knowledge** on the **Sources** sub-tab of the agent's **Knowledge** tab. It is off by default.
+3. Under **Local Upload**, click **Upload from Computer**. You can also drag the files into the upload box.
+4. **Add a one-line description** to each file. The agent uses the description to find the right file.
+5. **Make sure that each file shows under Trained Sources.**
+6. **Ask the agent sample questions** to test the new knowledge.
 
-If Taskade cannot read a file, it skips that file, names it in a notice, and uploads the rest. A Free workspace allows one knowledge source per agent. Paid plans allow 50 sources per agent.
+If Taskade cannot read a file, Taskade skips that file and names it in a notice. The other files still upload. A Free workspace allows one knowledge source for each agent. Paid plans allow 50 sources for each agent.
 
 #### **Method 2: URL Batch Import**
 
-On the agent's **Knowledge** tab, turn on **Enable knowledge**, then use **Add link** for web pages and **Add YouTube** for videos. Click **Add another** to add several sources in one go, then click **Update**.
+Web sources and cloud imports need a paid plan. On Free, they show an upgrade badge.
 
-Taskade reads each link as one page. It does not crawl the internal links inside a page or a sitemap. To refresh a web page on a schedule, open **Knowledge → Automation** and pick the **Web scraping** or **Scheduled updates** recipe.
+1. On the agent's **Knowledge** tab, turn on **Enable knowledge**.
+2. Under **Web Sources**, pick **Website URL**, **Blog / Article**, **YouTube Video**, **RSS / Atom Feed**, or **Sitemap XML**.
+3. To add files from cloud storage, pick **Google Drive**, **Dropbox**, **OneDrive**, or **Box** under **Cloud Import**.
+4. Paste the link, or pick the files.
+5. To add more than one source, click **Add another**.
+6. Confirm the selection. Each source then shows under **Trained Sources**.
+
+Taskade reads each link as one page. It does not follow the internal links inside a page or a sitemap. Taskade reads a web source when you add it. Click **Retrain** to read the page again after it changes. To refresh a web page on a schedule, open **Knowledge → Automation** and pick the **Web scraping** or **Scheduled updates** recipe.
 
 #### **Method 3: API — Add Knowledge to an Agent**
 
-The public REST API adds knowledge to an agent by attaching an existing **project** or **media** file. There is no bulk endpoint in v1 — loop over items to add several.
+For developers: the public REST API adds an existing **project** or **media** file to the knowledge of an agent. v1 has no bulk endpoint. To add several items, send one request for each item.
 
 ```bash
 # Attach a project to an agent's knowledge base
@@ -104,7 +113,7 @@ curl -X POST "https://www.taskade.com/api/v1/agents/{agentId}/knowledge/media" \
 
 #### **Categorization Rules**
 
-Taskade does not sort knowledge into categories for you. Apply rules like these when you name projects and files, and when you write each file's description:
+Taskade does not sort knowledge into categories for you. Use rules like these when you name projects and files, and when you write the description of each file:
 
 ```yaml
 Categorization Rules:
@@ -157,10 +166,12 @@ Categorization Rules:
 
 When you add a source, Taskade prepares it for the agent:
 
-* **Files** (PDF, DOCX, CSV, TXT, MD, PPTX, XLSX, EPUB): Taskade extracts the text
-* **Images**: Taskade reads the text inside the picture with built-in OCR
-* **YouTube videos**: Taskade uses the auto-generated transcript
-* **Connected projects**: the agent reads text, custom fields, due dates, and assignees, and it gets each change on its next reply
+* **Files** (PDF, DOCX, CSV, TXT, MD, PPTX, XLSX, XLS, EPUB): Taskade extracts the text.
+* **YouTube videos**: Taskade uses the auto-generated transcript.
+* **Web sources**: Taskade reads the page when you add it. **Retrain** reads it again.
+* **Connected projects**: The agent reads text, custom fields, due dates, and assignees. It gets each change on its next reply.
+
+Image files are not accepted. Convert a scanned file to text before you add it.
 
 #### **Real-Time Content Updates**
 
@@ -183,7 +194,7 @@ Live Sync Configuration:
 ### **Quality Control & Optimization**
 
 {% hint style="info" %}
-Taskade does not generate the metrics and checks below. Use them as a review framework that you track yourself. For real signals on a public agent, open the **Inbox** sub-tab on the agent's **Knowledge** tab: it lists questions the agent could not answer and replies that visitors rated down.
+Taskade does not make the metrics and checks that follow. They are an example of a review that you track yourself. For a public agent, open the **Inbox** sub-tab on the **Knowledge** tab. It lists the questions that the agent cannot answer and the replies that visitors rated down.
 {% endhint %}
 
 #### **Knowledge Quality Metrics**
@@ -251,6 +262,10 @@ Taskade does not generate the metrics and checks below. Use them as a review fra
 ### **Knowledge-to-Performance Mapping**
 
 #### **Training Data Quality Impact**
+
+{% hint style="info" %}
+The percentages in the example that follows are illustrations, not Taskade measurements.
+{% endhint %}
 
 ```yaml
 Knowledge Quality Factors:
@@ -338,7 +353,7 @@ Optimal Knowledge Structure:
 ### **Usage Analytics Dashboard**
 
 {% hint style="info" %}
-This dashboard is an example of a report that you build yourself. Taskade does not generate it. For a public agent, the **Inbox** sub-tab on the **Knowledge** tab shows the questions the agent could not answer.
+This dashboard is an example of a report that you make yourself. Taskade does not make it. For a public agent, the **Inbox** sub-tab on the **Knowledge** tab shows the questions that the agent cannot answer.
 {% endhint %}
 
 #### **Knowledge Performance Metrics**
@@ -374,6 +389,8 @@ This dashboard is an example of a report that you build yourself. Taskade does n
 
 #### **Content Recommendations**
 
+Taskade does not make these suggestions for you. Use the list that follows as a plan for your own reviews.
+
 ```yaml
 AI-Powered Suggestions:
   Missing Knowledge:
@@ -400,7 +417,7 @@ AI-Powered Suggestions:
 
 #### **Agent Knowledge API**
 
-The public REST API manages agent knowledge by attaching or removing **projects** and **media** per agent. v1 has no bulk-upload, bulk-update, or knowledge-search endpoint — iterate to add items, and query knowledge by prompting the agent.
+The public REST API adds and removes **projects** and **media** in the knowledge of each agent. v1 has no endpoint for bulk upload, bulk update, or knowledge search. Send one request for each item. To query the knowledge, send a prompt to the agent.
 
 ```bash
 # Add a project to an agent's knowledge base
@@ -447,7 +464,7 @@ const syncCMS = async (agentId, token) => {
 
 #### **Real-Time Updates**
 
-Taskade does not expose a public WebSocket API. Knowledge changes take effect immediately when you add or remove items via the REST endpoints above. To react to changes programmatically, use an automation trigger (for example, **File Added to Media**) rather than a live socket.
+Taskade has no public WebSocket API. A knowledge change through the REST endpoints in the previous section takes effect at once. To start work when a change occurs, use an automation trigger, for example **File Added to Media**.
 
 ***
 
@@ -477,6 +494,8 @@ Layer 3 - Specialized Content (5% of queries):
 #### **Maintenance Strategies**
 
 **Monthly Knowledge Audit:**
+
+Use this schedule as a guide for a monthly review:
 
 ```yaml
 Review Process:
@@ -529,39 +548,39 @@ Team Responsibilities:
 
 ### **Week 1: Foundation Setup**
 
-* [ ] Audit existing knowledge sources
+* [ ] Review your current knowledge sources
 * [ ] Define knowledge categories and structure
-* [ ] Set up bulk upload processes
-* [ ] Configure automated processing rules
+* [ ] Prepare folders for bulk upload
+* [ ] Add descriptions to your files
 
 ### **Week 2: Content Migration**
 
-* [ ] Bulk upload core documents
-* [ ] Connect live data sources (projects, websites)
-* [ ] Set up automated content updates
-* [ ] Test knowledge search and retrieval
+* [ ] Upload your core documents
+* [ ] Connect live sources (projects, websites)
+* [ ] Add an automation that refreshes web content
+* [ ] Ask sample questions to test the knowledge
 
 ### **Week 3: AI Agent Training**
 
-* [ ] Connect knowledge to relevant AI agents
-* [ ] Test agent responses with knowledge base
-* [ ] Refine knowledge organization based on performance
-* [ ] Set up knowledge analytics tracking
+* [ ] Add knowledge to the agents that need it
+* [ ] Test the answers of each agent
+* [ ] Improve the sources of weak answers
+* [ ] Read the **Inbox** of each public agent
 
 ### **Week 4: Optimization & Scaling**
 
-* [ ] Review usage analytics and optimize
-* [ ] Set up maintenance schedules and workflows
-* [ ] Train team on knowledge management best practices
-* [ ] Plan ongoing content expansion strategy
+* [ ] Remove old and duplicate sources
+* [ ] Make a monthly review schedule
+* [ ] Show your team how to add and name sources
+* [ ] Plan which content to add next
 
 ***
 
-**🧠 Ready to transform your scattered information into AI-powered intelligence?** Start with organizing your most frequently needed documents, then expand to comprehensive knowledge coverage.
+**🧠 Start small.** Add the documents that your team uses most. Then add more sources topic by topic.
 
-_For advanced AI agent training techniques, see our_ [_AI Agents Guide_](../ai-features/ai-agents-getting-started.md)_. For automation of knowledge processes, check out_ [_Advanced Automation Actions_](../automation/advanced-actions.md)_._
+_For more about agents, read the_ [_AI Agents Guide_](../ai-features/ai-agents-getting-started.md)_. To automate knowledge updates, read_ [_Advanced Automation Actions_](../automation/advanced-actions.md)_._
 
-_To build programmatic knowledge workflows like the bulk upload and search examples above, see the_ [_Developer Hub_](../../apis-living-system-development/developer-home.md) _and the_ [_REST API Guide_](../../apis-living-system-development/comprehensive-api-guide/README.md)_._
+_To add knowledge from code, read the_ [_Developer Hub_](../../apis-living-system-development/developer-home.md) _and the_ [_REST API Guide_](../../apis-living-system-development/comprehensive-api-guide/README.md)_._
 
 ---
 

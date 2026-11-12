@@ -1,27 +1,27 @@
 ---
 description: >-
-  Build Taskade automations with triggers, conditions, and actions: connect projects, AI agents, and 100+ tools to handle repetitive work and follow-ups.
+  Build Taskade automations with triggers, conditions, and actions. Connect projects, AI agents, and 100+ tools to do repeated work and follow-ups.
 title: 'Chapter 4: Automation - Workflows on Autopilot'
 ---
 
 # Chapter 4: Automation - Workflows on Autopilot
 
-Outstanding! You've built your workspace foundation, created flexible projects, and deployed AI agents. Now let's connect everything with **automation**—the nervous system that makes your entire ecosystem work together automatically.
+In the earlier chapters, you made a workspace, projects, and AI agents. In this chapter, you connect them with **automation**. An automation does routine work for you when an event occurs.
 
 ## What Problem Does Automation Solve?
 
-**Manual processes create bottlenecks and waste:**
+**Manual work causes delays and errors:**
 
-* **Repetitive Tasks**: Copying data between systems, sending follow-up emails
-* **Missed Deadlines**: Forgetting to follow up or check in
-* **Inconsistent Processes**: Different team members doing things differently
-* **Delayed Responses**: Waiting for someone to notice and act
+* **Repeated tasks**: People copy data between tools and send the same follow-up emails.
+* **Missed deadlines**: People forget to follow up.
+* **Different methods**: Each team member does the same job in a different way.
+* **Slow responses**: Work waits until a person sees it.
 
-**Automation solves this by creating intelligent workflows** that react instantly to events, coordinate across systems, and handle routine work automatically.
+An automation reacts to an event at once. It does the same steps each time, across your workspace and your connected tools.
 
-## What is Automation? (The Nervous System of Your Workspace)
+## What is Automation?
 
-Automation in Taskade is the **intelligent coordination layer** that connects your workspace, projects, agents, and external tools. It follows simple "if this, then that" logic but becomes incredibly powerful when combined with AI.
+An automation connects your workspace, projects, agents, and outside tools. It follows "if this, then that" logic. AI steps let it make decisions too.
 
 ```mermaid
 flowchart TD
@@ -30,55 +30,54 @@ flowchart TD
     ACTION --> RESULT["Result<br/>Work gets done"]
 ```
 
-**Automation is:**
+**An automation:**
 
-* **⚡ Event-Driven**: Reacts instantly to changes and events
-* **🤖 AI-Enhanced**: Uses intelligence to make decisions
-* **🔗 Cross-System**: Connects your tools and workflows
-* **📈 Scalable**: Handles growing workloads automatically
+* **⚡ Reacts to events**: It starts when something changes.
+* **🤖 Uses AI**: An agent step can make a decision.
+* **🔗 Connects tools**: It reads from one app and writes to another.
+* **📈 Grows with your work**: It runs as often as the trigger fires, within the run limit of your plan.
 
-## How Automation Works (The "If This, Then That" Magic)
+## How Automation Works
 
-**Automation follows three simple steps:**
+**An automation has three parts:**
 
 ### Step 1: Define the Trigger (When to Start)
 
-* **Task events:** created, completed, assigned, due
-* **Time events:** schedules, delays, deadlines
-* **External events:** webhooks, emails, form submissions
-* **Integration events:** Slack messages, Google Sheets updates
-* **Agent events:** AI conversations, commands executed
+* **Task events:** A task is added, completed, assigned, or due.
+* **Time events:** A schedule fires.
+* **Outside events:** A webhook, an email, or a form submission arrives.
+* **Integration events:** A Slack message arrives, or a Google Sheets row changes.
+* **Agent events:** A public agent chat ends, or an agent runs the automation as a tool.
 
-### Step 2: Add Conditions (Smart Filtering)
+### Step 2: Add Conditions (Filter the Runs)
 
-* **Filter by:** priority, assignee, project, custom fields
-* **Check values:** amount > $1000, status = "urgent"
-* **Time windows:** business hours, weekdays only
-* **Complex logic:** AND/OR combinations
+* **Filter by:** Priority, assignee, project, or custom fields.
+* **Compare values:** For example, amount > $1000 or status = "urgent".
+* **Combine rules:** Use AND and OR.
 
-### Step 3: Execute Actions (What to Do)
+### Step 3: Add Actions (What to Do)
 
-* **Task management:** create, assign, update, move tasks
-* **Communication:** send emails, Slack messages, notifications
-* **AI processing:** analyze data, generate content, make decisions
-* **External systems:** update CRMs, spreadsheets, APIs
-* **Flow control:** wait, loop, branch based on conditions
+* **Tasks:** Create, assign, update, or move tasks.
+* **Messages:** Send emails, Slack messages, and notifications.
+* **AI steps:** Analyze data, write content, and make decisions.
+* **Outside tools:** Update CRMs, spreadsheets, and other apps.
+* **Flow control:** Wait, loop over a list, or branch on a condition.
 
-## Creating Your First Automation (Step-by-Step)
+## Create Your First Automation
 
-**Let's build a practical automation together:**
+**Follow these steps to build an automation:**
 
 {% stepper %}
 {% step %}
-#### Access Automation Builder
+#### Open the Automation Builder
 
-In your workspace, open **Automations** in the sidebar. Start from scratch, click **Create with AI** and describe the flow, or pick a template. You can also click **Automate** at the top of any project.
+In your workspace, open **Automations** in the sidebar. Start from scratch, or click **Create with AI** and describe the flow. You can also select a template. Another way is to click **Automate** at the top of a project.
 {% endstep %}
 
 {% step %}
 #### Choose Your Trigger
 
-Select what starts the automation:
+Select the event that starts the automation:
 
 ```
 "When a new task is created in my Support project"
@@ -86,9 +85,9 @@ Select what starts the automation:
 {% endstep %}
 
 {% step %}
-#### Add Smart Conditions
+#### Add Conditions
 
-Filter when the automation should run:
+Add a filter that decides when the automation continues:
 
 ```
 Only if: Priority = "High" AND Assignee is empty
@@ -98,7 +97,7 @@ Only if: Priority = "High" AND Assignee is empty
 {% step %}
 #### Define Actions
 
-Specify what should happen:
+Add the steps that do the work:
 
 ```
 Then: Assign to next available support agent
@@ -108,73 +107,73 @@ Then: Assign to next available support agent
 {% endstep %}
 
 {% step %}
-#### Test and Activate
+#### Test and Turn On
 
-If the trigger shows a **Test** button in its **Test Run** section, test with a sample. Then turn the automation on and check each run in the **Runs** tab.
+If the trigger shows a **Test** button in its **Test Run** section, test the automation with a sample. Then turn the automation on. Examine each run in the **Runs** tab.
 {% endstep %}
 {% endstepper %}
 
-**Congratulations!** You just eliminated manual work and ensured instant, consistent responses!
+The automation now does this work each time the trigger fires.
 
 ## Real-World Automation Examples
 
 ### Customer Support Workflow
 
-**Trigger:** New support ticket submitted
+**Trigger:** A customer submits a new support ticket.
 
 **Condition:** Priority = "High"
 
 **Actions:**
 
-* Assign to senior support agent
-* Send urgent Slack notification
-* Create escalation task for 2 hours
-* Update CRM with ticket details
+* Assign the ticket to a senior support agent.
+* Send an urgent Slack message.
+* Create an escalation task due in 2 hours.
+* Update the CRM with the ticket details.
 
 ### Content Publishing Pipeline
 
-**Trigger:** Blog post marked as "Ready to Publish"
+**Trigger:** A blog post gets the status "Ready to Publish".
 
-**Condition:** All review tasks completed
+**Condition:** All review tasks are complete.
 
 **Actions:**
 
-* Generate social media posts with AI
-* Schedule posts across platforms
-* Send newsletter to subscribers
-* Create engagement tracking tasks
+* Write social media posts with AI.
+* Schedule the posts.
+* Send the newsletter to subscribers.
+* Create tasks to track engagement.
 
 ### Sales Lead Management
 
-**Trigger:** New lead form submission
+**Trigger:** A person submits the lead form.
 
 **Condition:** Company size > 100 employees
 
 **Actions:**
 
-* Create qualified lead task
-* Assign to appropriate sales rep
-* Send welcome email with AI personalization
-* Add lead to CRM with scoring
+* Create a task for the qualified lead.
+* Assign the task to a sales representative.
+* Send a welcome email that AI writes for this lead.
+* Add the lead and its score to the CRM.
 
 ### Project Status Updates
 
-**Trigger:** Project due date approaching (7 days)
+**Trigger:** The project due date is 7 days away.
 
 **Condition:** Project completion < 80%
 
 **Actions:**
 
-* Send progress reminder to project owner
-* Escalate to manager if overdue
-* Generate status report with AI
-* Schedule daily check-ins until complete
+* Send a reminder to the project owner.
+* Alert a manager if the project is late.
+* Write a status report with AI.
+* Schedule daily check-ins until the project is complete.
 
 ## Advanced Automation Techniques
 
-### Conditional Branching (Smart Decision Making)
+### Branches (Different Paths for Different Cases)
 
-**Different actions based on conditions:**
+**A Branch step runs different actions for different conditions:**
 
 ```
 If task priority = "Critical"
@@ -185,9 +184,9 @@ Else
 ├── Then: Add to regular queue + normal notification
 ```
 
-### Loops and Batch Processing
+### Loops (One Run for Each Item)
 
-**Handle multiple items automatically:**
+**A Loop step runs its steps once for each item in a list:**
 
 ```
 For each: Overdue tasks in project
@@ -196,9 +195,9 @@ For each: Overdue tasks in project
 └── Escalate to manager if 3+ reminders sent
 ```
 
-### AI-Enhanced Automation
+### AI Steps
 
-**Use intelligence in your workflows:**
+**An AI step adds a decision to your workflow:**
 
 ```
 When: Customer feedback received
@@ -208,9 +207,11 @@ When: Customer feedback received
 └── Updates customer satisfaction metrics
 ```
 
-### Time-Based Automation
+To get typed fields back from an **Ask an agent** step, set **Output Type** to **Structured Output**. Later steps can then use each field.
 
-**Schedule recurring tasks:**
+### Scheduled Automations
+
+**A schedule runs an automation at fixed times:**
 
 ```
 Every Monday at 9 AM:
@@ -220,61 +221,67 @@ Every Monday at 9 AM:
 └── Create next week's priority tasks
 ```
 
-## Integration Power (Connecting 100+ Tools)
+### Approvals and Failed Steps
 
-**Automation becomes exponentially powerful when connected to external tools.** Automations run on every plan, Free included (10 runs per billing period on Free). Free runs the standard connectors, and premium integrations such as Slack and Gmail need a paid plan. Webhook triggers need Pro and up:
+* **Wait for approval**: The run stops until a teammate approves or rejects it. A rejection stops the run.
+* **Retry if this step fails**: The step tries again when an app is busy or down for a few minutes. You select the wait (1 to 5 minutes) and the number of tries (1 to 5).
+* **Continue if this step fails**: The run continues after a failed step, or stops at that step without a failed status.
+
+## Connect 100+ Tools
+
+**Integrations let your automations work in the tools that you use.** Automations run on every plan, Free included. The Free plan has 10 runs for each billing period. Free runs the standard connectors. Premium integrations such as Slack and Gmail need a paid plan. Webhook triggers need Pro and up.
 
 ### Communication Integrations
 
-* **Slack/Discord**: Instant team notifications and updates
-* **Email**: Automated customer communications and reminders
-* **SMS**: Critical alerts and urgent notifications
+* **Slack and Discord**: Send team notifications and updates.
+* **Email**: Send customer messages and reminders.
+* **SMS**: Send urgent alerts.
 
 ### Business Tools
 
-* **CRM Systems**: HubSpot, Salesforce, Pipedrive updates
-* **Project Management**: Jira, Asana, Trello synchronization
-* **Calendars**: Google Calendar, Outlook event creation
+* **CRM systems**: Update HubSpot, Salesforce, and Pipedrive.
+* **Project management**: Sync with Jira, Asana, and Trello.
+* **Calendars**: Create events in Google Calendar and Outlook.
 
-### Data and Analytics
+### Data and Reports
 
-* **Spreadsheets**: Google Sheets automatic updates
-* **Databases**: Airtable, Notion data synchronization
-* **Analytics**: Custom dashboards and reporting
+* **Spreadsheets**: Update Google Sheets.
+* **Databases**: Sync data with Airtable and Notion.
+* **Reports**: Send data to dashboards and reports.
 
 ### Development Tools
 
-* **GitHub**: Issue tracking and release notifications
-* **CI/CD**: Build status updates and deployment tracking
-* **Monitoring**: System alerts and performance tracking
+* **GitHub**: Track issues and send release notifications.
+* **HTTP requests**: Call other web services.
+* **Monitoring**: Send system alerts.
 
 ## How Automation Connects to Your Workspace DNA
 
-**Remember the living DNA concept? Automation is the Execution layer:**
+**Automation is the Execution layer of Workspace DNA:**
 
-### Event-Driven Intelligence
+### Events Start the Work
 
-* **Triggers** detect changes across your entire ecosystem
-* **AI Agents** can be triggered by automation events
-* **Projects** update automatically based on external data
+* **Triggers** find changes in your workspace and connected tools.
+* **AI agents** can run as steps in an automation.
+* **Projects** get updates from outside data.
 
-### Cross-System Coordination
+### One Automation Can Use Many Parts of the Workspace
 
-* **Workspace-wide awareness**: Automation can span multiple projects
-* **Agent collaboration**: Automations can trigger AI agent actions
-* **External integration**: Connect your workspace to the wider business ecosystem
+* **Many projects**: One automation can read and write more than one project.
+* **Agents**: An automation can ask an agent, and an agent can run an automation.
+* **Outside tools**: Integrations connect your workspace to the other tools of your business.
 
-### Learning and Adaptation
+### Improve From the Run History
 
-* **Run history**: The **Runs** tab logs every run with the data at each step
-* **Refinement**: You adjust triggers, conditions, and steps based on what the runs show
-* **Scalability**: Handles growing complexity without additional effort
+* **Run history**: The **Runs** tab logs every run, with the data at each step.
+* **Changes**: You change the triggers, conditions, and steps based on what the runs show.
+* **More work, same setup**: The same automation handles more runs without more work from you.
 
 ## Best Practices for Automation
 
-### Start Simple, Build Complexity
+### Start Simple
 
-**Begin with single-step automations:**
+**Start with an automation that has one step:**
 
 {% code overflow="wrap" %}
 ```
@@ -283,43 +290,32 @@ Complex: "When high-priority task completed → Update CRM → Send personalized
 ```
 {% endcode %}
 
-### Test Thoroughly Before Activation
+### Test Before You Turn It On
 
-**Use test data to verify behavior:**
+**Use test data to make sure that the automation does what you expect:**
 
-* Create sample tasks and see what happens
-* Test edge cases and error conditions
-* Monitor for unexpected side effects
+* Create sample tasks and look at the result.
+* Test unusual cases and errors.
+* Look for results that you did not expect.
 
-### Monitor and Optimize
+### Examine and Improve
 
-**Track automation performance:**
+**Examine your automations on a regular schedule:**
 
-* Success rates and failure patterns
-* Processing times and bottlenecks
-* User feedback and satisfaction
-* ROI in time saved vs. setup effort
+* Look at the success rate and the causes of failures.
+* Find slow steps.
+* Ask your team for feedback.
+* Compare the time saved with the time to build the automation.
 
-### Documentation and Maintenance
+### Keep Automations Easy to Manage
 
-**Keep automations manageable:**
+* Give each automation a clear name.
+* Review your automations on a regular schedule.
+* Write down the logic of a complex automation.
 
-* Clear naming conventions
-* Regular reviews and updates
-* Documentation of complex logic
-* Version control for automation changes
+## How Automations Run
 
-## How it Works Under the Hood
-
-**Technically, automations are:**
-
-* **Event-driven systems** that monitor for trigger conditions
-* **State machines** that manage complex workflow logic
-* **Integration hubs** that connect to external APIs
-* **AI orchestration engines** that coordinate intelligent actions
-* **Scalable architectures** that handle high-volume processing
-
-**But you don't need to understand the tech—the workflows just work!**
+Taskade runs each automation on its servers. Each run waits for its trigger, follows its conditions, and calls the connected apps for you. You do not need to know these details to build a workflow.
 
 ## Common Automation Patterns
 
@@ -335,6 +331,8 @@ New customer signs up → Create welcome project → Assign onboarding tasks →
 Content draft completed → Notify reviewers → Collect feedback → AI summarizes comments → Route for approval → Auto-publish when approved
 ```
 
+For the approval in this pattern, add a **Wait for approval** step.
+
 ### Pattern 3: Project Health Monitoring
 
 ```
@@ -347,22 +345,20 @@ Daily at 6 PM → Check project status → Calculate completion percentage → S
 Lead enters system → Score lead quality → Assign to sales rep → Send personalized email → Schedule follow-up → Update CRM status
 ```
 
-## Your Automations Improve as You Refine Them
+## Improve Your Automations Over Time
 
-**Every automation gets better as you refine it:**
+**Each change that you make improves the automation:**
 
-* **Run logs** show the data and the result of each step
-* **One-click retry** reruns a failed run after you fix the cause
-* **AI steps** let an agent make a decision inside the flow
-* **Your edits** to triggers and steps apply to every later run
+* **Run logs** show the data and the result of each step.
+* **One-click retry** runs a failed run again after you fix the cause.
+* **AI steps** let an agent make a decision inside the flow.
+* **Your edits** to triggers and steps apply to every later run.
 
-**Fantastic work!** You now have intelligent workflows that coordinate your entire ecosystem automatically. Automation transforms reactive work into proactive systems that anticipate needs and handle routine tasks without human intervention.
-
-**Ready to build complete applications?** In [Chapter 5: Taskade Genesis](05_genesis.md), we'll use AI to create entire business applications from simple descriptions—no coding required!
+**Next:** In [Chapter 5: Taskade Genesis](05_genesis.md), you use AI to build business apps from a description. You write no code.
 
 ***
 
-_What's your most repetitive task that could be automated? Start there—every automation you create eliminates hours of manual work and ensures consistency across your team!_
+_Find your most repeated task, and automate it first._
 
 [← Back to Chapter 3: AI Agents](03_ai_agents.md) | [Next: Genesis →](05_genesis.md)
 

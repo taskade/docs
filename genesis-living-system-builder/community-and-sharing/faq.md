@@ -9,73 +9,73 @@ description: >-
 
 ### What is Taskade Genesis?
 
-Taskade Genesis is like having a personal app developer who works instantly. You describe a business problem in plain English (like "I need customers to book appointments online"), and Genesis builds a complete working app for you - no coding, no setup, no technical knowledge required.
+Taskade Genesis builds apps for you from a description. You describe a business problem in plain English, for example "I need customers to book appointments online". Taskade Genesis then builds a full working app. You write no code, you configure no servers, and you need no technical knowledge.
 
 ### How is this different from other app builders?
 
-Genesis gives you the complete backend: Databases, Automation Workflows, AI Agents, and Integrations. Other tools just make interfaces.
+Many app builders make only the screens. Taskade Genesis also makes the backend: databases, automation workflows, AI agents, and integrations.
 
-**Genesis provides:**
+**Taskade Genesis gives you:**
 
-* **Smart database** that stores your data automatically
-* **AI assistant** that learns your business and helps customers
-* **Automatic actions** that connect to your email, Slack, payment systems, etc.
-* **Real functionality** - not just mockups or prototypes
-* **Complete backend infrastructure** - hosting, security, and scaling handled automatically
+* **A database** that stores your data
+* **An AI assistant** that learns your business and helps your customers
+* **Automatic actions** that connect to your email, Slack, payment systems, and more
+* **Real functions**, not mockups or prototypes
+* **A full backend**: Taskade manages hosting, security, and scaling for you
 
-**Other app builders require:**
+**With many other app builders, you must:**
 
-* Manual database setup and configuration
-* Separate hosting and deployment
-* Third-party integrations you have to configure yourself
-* Technical knowledge for backend functionality
+* Set up and configure the database yourself
+* Find hosting and deploy the app yourself
+* Configure the integrations from other companies yourself
+* Know how a backend works
 
-Genesis handles all the technical complexity so you can focus on your business.
+Taskade Genesis does the technical work, so you can work on your business.
 
 ### What kinds of apps can I build?
 
 **Popular app types:**
 
-* **Customer portals** for service requests and communication
-* **Team dashboards** for monitoring KPIs and workflows
+* **Customer portals** for service requests and messages
+* **Team dashboards** to monitor KPIs and workflows
 * **Booking systems** for appointments and events
-* **Inventory trackers** with smart alerts and reporting
-* **Feedback forms** with automated response workflows
-* **Project trackers** for task and deadline management
-* **Workflow automation** for repetitive business processes
-* **Custom tools** for industry-specific needs
+* **Inventory trackers** with alerts and reports
+* **Feedback forms** with automatic response workflows
+* **Project trackers** for tasks and deadlines
+* **Workflow automation** for business tasks that occur again and again
+* **Custom tools** for the needs of your industry
 
 ### Do I need to know how to code?
 
-No. Genesis understands business language and handles all technical implementation automatically. You focus on describing your business needs, and Genesis handles the programming.
+No. You describe your business needs in plain English. Taskade Genesis writes the code for you.
 
 ## Building Your App
 
 ### How long does it take to build an app?
 
-**Typical timeframes:**
+**Typical times:**
 
 * **Simple apps:** 2-5 minutes (basic forms, simple workflows)
-* **Complex business applications:** 10-15 minutes including customization and testing
-* **Enterprise-level apps:** 20-30 minutes with advanced features and integrations
+* **Complex business applications:** 10-15 minutes, with customization and tests
+* **Enterprise-level apps:** 20-30 minutes, with advanced features and integrations
 
-### Can I change my app after Genesis builds it?
+### Can I change my app after Taskade Genesis builds it?
 
-Yes! Describe any changes you want and Genesis implements them immediately. Your app evolves with your business needs - just tell Genesis what you want to adjust.
+Yes. Describe the change in the chat, and Taskade Genesis makes it. Your first clean build goes live one time, at an unlisted link. After that, each change stays a draft until you click **Publish**.
 
-### What if the first version isn't quite right?
+### What if the first version is not correct?
 
-You have several options:
+You have these options:
 
-* **Make specific requests** for changes ("make the button bigger")
-* **Provide more context** about what's not working
-* **Start fresh** with a more detailed description if major changes are needed
+* **Ask for a specific change**, for example "make the button bigger"
+* **Give more context** about what does not work
+* **If you need large changes, start again** with a more detailed description
 
-Genesis gets better results with clearer requirements, so don't hesitate to be more specific about what you need.
+Clear requirements give better results. Tell Taskade Genesis exactly what you need.
 
 ### Can I see examples of what other people have built?
 
-Yes! Check out:
+Yes. Look at these sources:
 
 * [**Examples and templates**](../genesis/examples-and-templates.md) in this documentation
 * **Taskade App Factory** at [taskade.com/apps](https://www.taskade.com/apps)
@@ -86,79 +86,91 @@ Yes! Check out:
 
 ### How do I test my app before sharing it?
 
-Use the **Preview feature** to interact with your app exactly as users will:
+Use the **Preview** to use your app as your users will:
 
-1. Open your app. It shows in the preview pane beside the chat
-2. Test all functionality like a real user
-3. Submit test data to ensure workflows work
-4. Check that notifications and integrations trigger properly
-5. Test on mobile devices if users will access via phone
+1. Open your app. It shows in the preview pane next to the chat.
+2. Test each feature as a real user.
+3. Submit test data, and make sure that the workflows run.
+4. Make sure that the notifications and integrations start correctly.
+5. If your users will use a phone, test the app on a phone.
 
 ### How do I publish my app?
 
-Every app gets an **individual URL**. Your first build goes live once at its link, unlisted:
+Each app gets its own URL. Your first clean build goes live one time at its link, unlisted. Later changes stay a draft until you publish them:
 
-1. Click **Publish** in the top-right of your app
-2. Under **Who can open it**, pick **Anyone with the link**, **Anyone with the password** (Pro and up), or **Each person signs in**
-3. Copy the app's address and share it anywhere: email, social media, your website
-4. No downloads or installations required for users
+1. Click **Publish** in the top-right corner of your app.
+2. Under **Who can open it**, pick **Anyone with the link**, **Anyone with the password** (Pro and up), or **Each person signs in**.
+3. To keep the app out of search, leave **Show in public listings** off under **More options**.
+4. Click **Publish**, then click **Copy link**.
+5. Share the link anywhere: email, social media, or your website.
+
+Your users do not download or install the app. They do not need a Taskade account to open it.
 
 ### Can I use my own domain name?
 
-**Yes — custom domains are live on Pro and up** (up to 10 per workspace on Pro, unlimited on Business and up). You can connect your own branded URL (like `app.yourcompany.com`) to a published Genesis app instead of the default Genesis link, giving your apps a professional appearance that matches your brand.
+**Yes. Custom domains work on Pro and up** (up to 10 per workspace on Pro, unlimited on Business and up). Connect your own URL, for example `app.yourcompany.com`, to a published Taskade Genesis app. The app then shows your brand and not the default link.
 
 ### How do users access my app?
 
-**Simple access:**
+**Access is simple:**
 
-* Send them the link - no downloads or installations required
-* Apps work in any web browser on desktop, tablet, or mobile phone
-* Users can bookmark the link for easy return access
+* Send them the link. They do not download or install anything.
+* The app works in each web browser, on a desktop computer, a tablet, or a phone.
+* Users can save the link as a bookmark and come back later.
 
 ### Can I control who uses my app?
 
-Yes! Tell Genesis what access you want and it sets it up:
+Yes. Tell Taskade Genesis what access you want, and it adds that access:
 
 * **"Make this app private with password protection"**
 * **"Only allow users with company email addresses"**
 * **"Require login for staff but allow public access for customers"**
 
-If you set a password (Pro and up), make sure to share it along with the app link. Sign-in works on every plan. Sign-in confirms who a visitor is, but it does not hide other people's records: turn on **Private entries** to show each person only their own rows, and test with a second account.
+If you set a password (Pro and up), share it together with the app link. Sign-in works on every plan. Sign-in confirms who a visitor is, but it does not hide the records of other people. To show each person only their own rows:
+
+1. Open **Publish** → **Private entries**.
+2. Pick the owner field of each private project, then click **Enable row scoping**.
+3. Pick **Each person signs in** too. Without it, anyone with the link sees all entries.
+4. Test the app with a second account.
+
+### Can other people clone my app?
+
+Only if you let them. A public app is not cloneable until you turn on cloning. Open **Publish** → **Let others clone**, and pick **Off**, **Free**, or **Paid**. A clone copies the code, agents, automations, and projects. It never copies connected accounts or secrets.
 
 ## Data and Security
 
 ### Where does my app data live?
 
-Your app and all its data live in **Taskade's secure cloud infrastructure**. This includes:
+Your app and all its data are in the **secure cloud infrastructure of Taskade**. This data includes:
 
-* Your app's projects and databases
+* The projects and databases of your app
 * Automation workflows and settings
 * AI agent configurations
-* User-submitted data and files
+* Data and files that users submit
 
 ### Who owns the apps I create?
 
-**You do.** Your apps, data, and intellectual property belong to you completely. We provide the platform and infrastructure, but everything you build and all the content within your apps remains your property. You can modify or delete data at any time.
+**You do.** Your apps, data, and intellectual property belong to you. We supply the platform and infrastructure. All that you build and all the content in your apps stay your property. You can change or delete data at any time.
 
 ### Is my data secure?
 
 Yes. Taskade uses enterprise-grade security:
 
 * **Encryption in transit and at rest**
-* **Security monitoring** and automated vulnerability scanning
-* **SOC 2 Type II readiness program** (the independent audit is not yet complete)
+* **Security monitoring** and automatic vulnerability scans
+* **SOC 2 Type II readiness program** (the independent audit is not yet completed)
 * **Role-based access controls**
 * **Automatic backups** to prevent data loss
 
 ### Can I export my data?
 
-Yes. You can export your app data in standard formats (CSV, JSON) at any time. This ensures you're never locked into the platform and can migrate data if needed.
+Yes. You can export your app data in standard formats (CSV, JSON) at any time. You are never locked in to the platform, and you can move your data. On Pro and up, you can also download the full app as a `.tsk` file or export it to GitHub.
 
 ### What about GDPR and privacy compliance?
 
-Taskade's practices are designed to align with GDPR (full compliance is in progress), and Taskade provides tools to help you meet privacy requirements:
+Taskade designs its practices to align with GDPR (full compliance is in progress). Taskade also gives you tools for privacy requirements:
 
-* **User consent management** built into apps
+* **User consent management** in apps
 * **Data deletion tools** for user requests
 * **Privacy policy templates** for your apps
 
@@ -166,7 +178,7 @@ Taskade's practices are designed to align with GDPR (full compliance is in progr
 
 ### What integrations are available?
 
-**100+ integrations** including:
+**100+ integrations**, for example:
 
 * **Communication:** Slack, Microsoft Teams, Discord
 * **Email:** Gmail, Outlook, Mailchimp
@@ -174,19 +186,23 @@ Taskade's practices are designed to align with GDPR (full compliance is in progr
 * **Payments:** Stripe
 * **CRM:** HubSpot, Salesforce, Pipedrive
 * **Project management:** Trello, Asana, Monday.com
-* **And many more...**
+* **And more**
 
-Can't find what you need? Contact support - we add new integrations regularly.
+If you cannot find the integration that you need, contact support. We add new integrations regularly.
 
 ### Can I connect to my existing systems?
 
-Yes! Genesis can integrate with:
+Yes. Taskade Genesis can connect to:
 
 * **Your current CRM or database**
-* **Existing email marketing tools**
-* **Accounting software** through webhooks or HTTP requests
+* **Your email marketing tools**
+* **Accounting software**, through webhooks or HTTP requests
 * **Calendar systems** for scheduling
 * **Custom APIs** with webhook support
+
+### Can people send files through my app?
+
+Yes. Add a file upload field to a form. People then attach a document or a photo when they submit. The file goes to your Media Files. A **Turn a file into text** step in an automation can read the words, also from a scan or a phone photo. Each file can be up to 10 MB, on every plan.
 
 ### What happens if Taskade goes down?
 
@@ -195,53 +211,56 @@ Yes! Genesis can integrate with:
 * **High-availability infrastructure** with redundancy
 * **Automatic failover** systems
 * **Real-time status monitoring** at taskade.statuspage.io
-* **Data backups** stored in multiple locations
+* **Data backups** in more than one location
 
 ### Can I get help with complex integrations?
 
-Yes! Several support options:
+Yes. You have these support options:
 
 * **Email support** for technical questions
-* **Live chat** for immediate help
-* **Community forums** for peer assistance
-* **Professional services** for enterprise implementations
+* **Live chat** for fast help
+* **Community forums** for help from other users
+* **Professional services** for enterprise projects
 
 ## Billing and Plans
 
 ### How much does Genesis cost?
 
-Genesis is included with Taskade subscriptions:
+Taskade Genesis is part of each Taskade plan:
 
-* **Free plan:** up to 3 Genesis apps, 1 AI agent, and 2 workspace members
+* **Free plan:** up to 3 Taskade Genesis apps, 1 AI agent, and 2 workspace members
 * **Starter and up:** unlimited apps
 * **Pro and up:** custom domains, webhooks, and app bundle export
 * **Business and up:** SSO/SAML, app analytics, and unlimited members
 
-Visit [taskade.com/pricing](https://taskade.com/pricing) for current pricing.
+See [taskade.com/pricing](https://taskade.com/pricing) for current prices.
 
-### What's included in the free plan?
+### What is included in the Free plan?
 
-**Free plan includes:**
+**The Free plan includes:**
 
 * **App creation** with Taskade Genesis (up to 3 apps)
+* **Free cloning** of app kits from Taskade App Factory
 * **Automations** with standard connectors (10 runs per billing period). Premium integrations need a paid plan.
-* **AI credits** you earn with referrals and invites (a Free workspace starts with 0)
-* **Standard support** via help center
-* **Community access** for questions and inspiration
+* **AI credits** that you earn with referrals and invites (a Free workspace starts with 0)
+* **Standard support** in the help center
+* **Community access** for questions and ideas
 
-### When should I upgrade to a paid plan?
+On Free, Taskade EVE asks you to pick a plan before your first build.
 
-**Consider upgrading when you need:**
+### When do I upgrade to a paid plan?
 
-* **More than 3 apps** for different business functions
+**Upgrade when you need:**
+
+* **More than 3 apps** for different parts of your business
 * **Advanced integrations** with business tools
 * **Team collaboration** features
-* **Priority support** for business-critical apps
+* **Priority support** for apps that your business depends on
 * **Custom branding** and domain options
 
 ### Can I try advanced features before upgrading?
 
-The Free plan has no time limit. Start on Free, build and publish apps, and upgrade when you need more apps, premium integrations, or custom domains.
+The Free plan has no time limit. Start on Free and clone an app kit at no cost. When you need to build your own apps, more apps, premium integrations, or custom domains, upgrade.
 
 ## Getting Support
 
@@ -251,42 +270,42 @@ The Free plan has no time limit. Start on Free, build and publish apps, and upgr
 
 * **Help documentation:** [taskade.com/learn/genesis](https://www.taskade.com/learn/genesis)
 * **Video tutorials:** [youtube.com/taskade](https://youtube.com/taskade)
-* **Community forums:** Connect with other users
-* **This documentation:** Comprehensive guides and examples
+* **Community forums:** Talk with other users
+* **This documentation:** Guides and examples
 
 **Direct support:**
 
 * **Email support:** [support@taskade.com](mailto:support@taskade.com)
-* **Live chat:** Available in your Taskade dashboard
+* **Live chat:** In your Taskade dashboard
 * **Community help:** Forums and user groups
 
 ### How do I report a bug or request a feature?
 
-**For bugs:**
+**For bugs, send an email to support with:**
 
-* **Email support** with detailed description
-* **Include screenshots** if helpful
-* **Provide your app URL** for faster troubleshooting
+* **A detailed description** of the bug
+* **Screenshots**, if they help
+* **Your app URL**, so that we can find the problem faster
 
-**For feature requests:**
+**For feature requests, use these channels:**
 
-* **Community forums** to see if others want the same feature
-* **Email support** with business justification
-* **User feedback** surveys when available
+* **Community forums**, to see if other users want the same feature
+* **Email support**, with the business reason for the feature
+* **User feedback** surveys, when we send them
 
-### What should I include in a support request?
+### What do I put in a support request?
 
-**Essential information:**
+**Give this information:**
 
-* **What you're trying to build** (copy your prompt)
-* **What you expected** to happen
-* **What actually happened** (include screenshots if helpful)
-* **Your app URL** if you need help with a specific issue
-* **Error messages** if any appeared
+* **What you want to build** (copy your prompt)
+* **What you expected** to occur
+* **What occurred** (add screenshots if they help)
+* **Your app URL**, if the problem is in one app
+* **Error messages**, if they showed
 
 ### Can Genesis itself help me?
 
-Yes! **Ask the AI agent directly:**
+Yes. **Ask the AI agent in the chat:**
 
 ```
 "What features should I add to make this app better for my customers?"
@@ -296,161 +315,161 @@ Yes! **Ask the AI agent directly:**
 "What integrations would be most useful for a restaurant feedback app?"
 ```
 
-The Genesis AI agent can provide suggestions, troubleshoot issues, and help you improve your apps.
+The AI agent in Taskade Genesis gives suggestions, finds the cause of problems, and helps you improve your apps.
 
 ## Best Practices
 
 ### How do I write better prompts?
 
-**Follow the formula:** Industry + Users + Problem + Solution + Outcome
+**Use the formula:** Industry + Users + Problem + Solution + Outcome
 
-**Be specific about:**
+**Give these details:**
 
-* **Your industry** and business type
+* **Your industry** and type of business
 * **Who will use** the app and how
-* **What problem** you're solving
-* **What should happen** when users complete actions
+* **The problem** that the app solves
+* **What must occur** when users finish a task
 
-**Genesis AI Tip:** Ask the AI agent itself for suggestions! Try prompts like "What features should I add to make this app better?" or "How can I improve the user experience?"
+**Tip:** Ask the AI agent for suggestions. Try prompts such as "What features should I add to make this app better?" or "How can I improve the user experience?"
 
 See our [Best Practices guide](best-practices.md) for detailed examples.
 
-### Should I build one big app or several smaller ones?
+### Do I build one big app or several smaller ones?
 
-**Generally, smaller focused apps work better:**
+**Usually, small apps with one purpose work better:**
 
-* **Easier to build** and test thoroughly
-* **Simpler for users** to understand and use
-* **Faster performance** and loading times
-* **Easier to maintain** and update
+* **They are easier to build** and to test fully
+* **They are simpler for users** to understand and use
+* **They load faster**
+* **They are easier to maintain** and update
 
-**Consider one large app when:**
+**Build one large app in these cases:**
 
-* Users need to access multiple functions in one session
-* Data needs to be shared between different functions
-* You want a unified dashboard for everything
+* Users need many functions in one session.
+* Different functions must share the same data.
+* You want one dashboard for everything.
 
-### How often should I update my app?
+### How often do I update my app?
 
-**Regular maintenance schedule:**
+**A regular maintenance schedule:**
 
-* **Weekly:** Check that integrations are working
-* **Monthly:** Review user feedback and usage data
-* **Quarterly:** Consider new features or improvements
-* **As needed:** Fix bugs or address user complaints immediately
+* **Each week:** Make sure that the integrations work.
+* **Each month:** Read user feedback and usage data.
+* **Each quarter:** Plan new features or improvements.
+* **When a problem occurs:** Fix bugs and user complaints at once.
 
 ### How do I get inspiration for app ideas?
 
-**Multiple sources of inspiration:**
+**Sources of ideas:**
 
-* **Community showcase:** Browse real apps built by other users
-* **Examples and templates:** Review our curated collection of app ideas
-* **Industry-specific guides:** See how Genesis is used in your field
-* **AI assistance:** Ask Genesis "What apps are popular in \[your industry]?"
-* **Video tutorials:** Watch real examples being built on YouTube
+* **Community showcase:** Real apps that other users built
+* **Examples and templates:** Our collection of app ideas
+* **Industry guides:** How people in your field use Taskade Genesis
+* **AI aid:** Ask Taskade Genesis "What apps are popular in \[your industry]?"
+* **Video tutorials:** Real builds on YouTube
 
 ***
 
 ## Quick Answers
 
-**Q: Can I duplicate an app I've built?** A: Yes. Open the app's menu and choose **Duplicate app**. On Free, each copy counts toward your 3 apps.
+**Q: Can I duplicate an app that I built?** A: Yes. Open the menu of the app and choose **Duplicate app**. On Free, each copy counts toward your 3 apps.
 
-**Q: What's the maximum number of users per app?** A: No hard limits, but performance may vary based on your plan and usage patterns.
+**Q: What is the maximum number of users for each app?** A: There is no hard limit. Performance can change with your plan and your usage.
 
 **Q: Can I white-label my apps?** A: Every paid plan can hide the "Powered by Taskade" badge. Custom app colors and SEO fields need Business and up.
 
-**Q: Do my apps work offline?** A: Basic functionality may work offline, but most features require an internet connection.
+**Q: Do my apps work offline?** A: Some basic functions can work offline. Most features need an internet connection.
 
-**Q: Can I get my app code?** A: Yes, on Pro and up. Read and edit the source in the Code tab, download the app bundle, or export it to GitHub. Apps stay hosted on Taskade's platform.
+**Q: Can I get my app code?** A: Yes, on Pro and up. Read and edit the source in the Code tab, download the app bundle, or export it to GitHub. Apps stay hosted on the Taskade platform.
 
 ***
 
 ## Getting Support
 
-**Multiple ways to get help:**
+**You can get help in three ways:**
 
-1. **Start with our guides and video tutorials** - Comprehensive documentation and video walkthroughs
-2. **Email support@taskade.com with details** - Direct support from our technical team
-3. **Browse our community showcase for examples** - See real apps built by other users for inspiration
+1. **Start with our guides and video tutorials.** They show the full steps.
+2. **Send the details to support@taskade.com.** Our technical team answers you.
+3. **Look at our community showcase.** It shows real apps that other users built.
 
-**⚡️ Pro tip:** Ask Genesis itself for suggestions! Try prompts like "What features should I add to make this app better?" or "How can I improve the user experience?" Genesis can recommend enhancements tailored for your app.
+**⚡️ Tip:** Ask Taskade Genesis for suggestions. Try prompts such as "What features should I add to make this app better?" or "How can I improve the user experience?" Taskade Genesis suggests improvements for your app.
 
-**Still have questions?**
+**Do you have more questions?**
 
-* **Browse our help center:** [taskade.com/learn/genesis](https://www.taskade.com/learn/genesis)
+* **Read our help center:** [taskade.com/learn/genesis](https://www.taskade.com/learn/genesis)
 * **Email us:** [support@taskade.com](mailto:support@taskade.com)
-* **Browse community apps:** [taskade.com/apps](https://www.taskade.com/apps)
+* **See community apps:** [taskade.com/apps](https://www.taskade.com/apps)
 
-**Ready to start building?** [Open Genesis in your workspace →](https://taskade.com)
+**Ready to build?** [Open Taskade Genesis in your workspace →](https://taskade.com)
 
 ***
 
 ## Living Software FAQ
 
-**Understanding the paradigm shift from static apps to living systems.**
+**How living systems differ from static apps.**
 
 ### What is Living Software?
 
-Living software actively learns, adapts, and evolves based on usage patterns, user interactions, and environmental changes. Unlike traditional static software that requires manual updates, living software continuously improves its capabilities and intelligence.
+Living software learns from use. It changes with the needs of your users and your business. A static app keeps the same features until a person updates it. Living software adds to its capabilities over time.
 
 ### How is living software different from regular apps?
 
-Traditional apps are static tools with fixed features and manual maintenance. Living systems are dynamic ecosystems that:
+A traditional app is a static tool with fixed features. A person must maintain it by hand. A living system:
 
-* Learn from every user interaction
-* Adapt to changing business needs
-* Connect insights across all components
-* Evolve their capabilities over time
+* Learns from each user action
+* Changes when your business needs change
+* Connects data across all its parts
+* Adds capabilities over time
 
 ### What is Workspace DNA?
 
-Workspace DNA is the fundamental architecture of living software, consisting of three interconnected layers: Memory, Intelligence, and Execution. This trinity enables systems that think, learn, and act intelligently.
+Workspace DNA is the architecture of living software. It has three connected layers: Memory, Intelligence, and Execution. Together, these layers let a system think, learn, and act.
 
 ### How do AI agents become "living"?
 
-AI agents become living through continuous learning from interactions, context awareness, and adaptation to user needs. They improve with every conversation and task.
+AI agents learn from each conversation and task. They use the context of your workspace and change to fit the needs of your users.
 
 ### How do automations become "living"?
 
-Living automations learn from success patterns, adapt timing and conditions, and continuously optimize performance based on real-world results.
+Living automations use the results of earlier runs. You can change their timing and conditions as you learn what works best.
 
 ### What are Living Systems?
 
-Living Systems are complete business solutions that combine the three DNA layers into cohesive, evolving ecosystems. Unlike static applications, they grow more valuable with use.
+A living system is a full business solution. It combines the three DNA layers into one system that changes with your business. A living system becomes more valuable as people use it.
 
 ### How do I build a living system?
 
-Describe your needs in natural language using Genesis, and the system automatically creates a complete living solution with memory, intelligence, and execution layers working together.
+Describe your needs in plain language to Taskade Genesis. It builds a full system with memory, intelligence, and execution layers that work together.
 
 ### Can living systems work together?
 
-Yes! Living systems share intelligence and learn from each other. A customer feedback system can inform inventory management, which can trigger marketing automations.
+Yes. Living systems can share data. For example, a customer feedback system can send data to an inventory system, and that data can start a marketing automation.
 
 ### Do I need to rebuild my existing workflows?
 
-No! Living systems can enhance and evolve your existing processes. You can start with simple automations and gradually add intelligence and memory layers.
+No. Living systems can improve the processes that you have today. You can start with simple automations, then add intelligence and memory layers step by step.
 
 ### Is living software more expensive?
 
-Living software provides better ROI through continuous improvement and reduced maintenance. Systems that learn and adapt require less manual intervention over time.
+Living software gives a better return because it improves over time. A system that learns and changes needs less manual work.
 
 ### How do I get started with living software?
 
-Start with Taskade Genesis to build your first living system, or explore App Kits for ready-to-deploy solutions. The Workspace DNA foundation works with your existing tools.
+Build your first living system with Taskade Genesis, or start from an App Kit. The Workspace DNA foundation works with the tools that you use today.
 
 ### What business benefits do living systems provide?
 
-Living systems deliver continuous improvement, predictive capabilities, scalable intelligence, adaptive resilience, and operational excellence.
+Living systems improve over time, help you plan, grow with your business, and keep your operations stable when needs change.
 
 ### Can living systems handle compliance and security?
 
-Yes! Living systems can be designed with enterprise-grade security, compliance features, and governance controls that evolve with regulatory requirements.
+Yes. You can design living systems with enterprise-grade security, compliance features, and governance controls.
 
 ### How will living software evolve?
 
-Future living systems will feature more sophisticated learning algorithms, deeper cross-system intelligence sharing, advanced predictive capabilities, and seamless human-AI collaboration.
+Future living systems will learn better, share more data across systems, predict more, and work more closely with people.
 
-**Living software represents the next evolution of business systems - from tools that humans use to intelligent partners that work alongside us.**
+**Living software is the next step for business systems: from tools that people use to AI partners that work with them.**
 
 ---
 

@@ -5,7 +5,7 @@ description: >-
 
 # AI Features Overview
 
-AI features let you build agents that reason over your workspace, learn from your knowledge, use tools, and work together in teams.
+With AI features, you can make AI agents that read your workspace, answer from your knowledge, use tools, and work together in teams.
 
 ## I want to…
 
@@ -17,36 +17,36 @@ AI features let you build agents that reason over your workspace, learn from you
 | Build a team of agents | [AI Agent Teams](agent-teams.md) |
 | Run multiple agents together | [Multi-Agent Collaboration](multi-agents.md) |
 
-**Think. Learn. Adapt.** Taskade AI features form the living intelligence layer of Workspace DNA, creating systems that understand, evolve, and provide increasingly intelligent value with every interaction.
+AI features are the Intelligence layer of Workspace DNA. Your agents use your projects and files to answer questions and do work.
 
 {% hint style="success" %}
-**Living Intelligence Layer** — AI that doesn't just assist, but learns from your business, adapts to your needs, and continuously improves. Powered by Taskade EVE, your living AI companion.
+**Intelligence layer:** Your agents answer from your business knowledge and obey your instructions. Taskade EVE, the AI assistant of Taskade, helps you build and use them.
 {% endhint %}
 
-## What is Living Intelligence?
+## What is the Intelligence layer?
 
-Living Intelligence is the agent layer in Taskade. It’s how your workspace can **reason**, **draft**, **classify**, and **take action** using context from your projects.
+The Intelligence layer is the agent layer in Taskade. With it, your workspace can **reason**, **draft**, **classify**, and **take action** with the context of your projects.
 
-Canonical foundation: [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
+Read the foundation first: [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
-### What you use it for
+### What you can do with it
 
-* **Customer-facing help**: answer questions, route requests, propose next steps.
-* **Ops + admin**: summarize updates, draft emails, generate reports, fill data gaps.
-* **Sales + marketing**: qualify leads, personalize outreach, reuse brand voice.
-* **Research**: extract key points from docs, compare options, track decisions.
+* **Help customers:** Answer questions, send requests to the right person, and suggest next steps.
+* **Do operations work:** Summarize updates, draft emails, make reports, and fill gaps in data.
+* **Support sales and marketing:** Qualify leads, personalize outreach, and write in your brand voice.
+* **Do research:** Find the key points in documents, compare options, and record decisions.
 
 ### Core building blocks
 
 #### AI agents
 
-Agents are persistent assistants. You can scope them to a workspace, project, or use case. Learn more about [Taskade AI Agents](https://www.taskade.com/agents).
+An agent is an AI assistant that stays in your workspace. You can give it one job, one project, or one use case. Read more about [Taskade AI Agents](https://www.taskade.com/agents).
 
 Start here: [AI Agents Getting Started](ai-agents-getting-started.md).
 
-#### Knowledge (what agents learn from)
+#### Knowledge (what agents answer from)
 
-Most “smartness” comes from the knowledge you give agents. That includes project data and uploaded docs.
+The quality of the answers of an agent comes mostly from the knowledge that you give it. Knowledge includes project data and uploaded documents. This knowledge is the persistent memory of the agent.
 
 Start here:
 
@@ -55,37 +55,38 @@ Start here:
 
 #### Tools (what agents can do)
 
-Tools let agents do more than write text. They can create tasks, call integrations, and move work forward.
+With tools, an agent can do more than write text. It can create tasks, call integrations, and move work forward.
 
 Start here:
 
 * [Integration Overview](../automation/comprehensive-integration-guide.md)
 * [Actions & Triggers](../automation/actions.md)
 
-### Getting started (fast)
+### Get started fast
 
 1. Create one agent for one job.
-2. Give it 2–3 knowledge sources.
+2. Give it 2–3 knowledge sources. On Free, each agent holds one knowledge source. Paid plans hold up to 50.
 3. Run it on real inputs.
-4. Tighten prompts and add tools only if needed.
+4. Make the instructions more exact.
+5. If the agent must act, add tools.
 
-### Where it shows up
+### Where agents work
 
-* In your workspace as an assistant.
-* Inside Taskade Genesis apps as an AI layer.
-* In automations as a decision-maker.
+* In your workspace, as an assistant
+* Inside Taskade Genesis apps, as the AI layer
+* In automations, as the step that makes decisions
 
 ## Next steps
 
-* [AI Agents Getting Started](ai-agents-getting-started.md) — create one agent for one job
-* [Tools for AI Agents](agent-tools.md) — let agents take action, not just write text
-* [Multi-Agent Collaboration](multi-agents.md) — coordinate agents on bigger work
-* [Taskade Genesis Overview](../genesis/) — build apps with agents
-* [Automations Overview](../automation/) — put actions on autopilot
-* [taskade.com/agents](https://www.taskade.com/agents) — browse agent templates
+* [AI Agents Getting Started](ai-agents-getting-started.md): create one agent for one job.
+* [Tools for AI Agents](agent-tools.md): let agents take action, not only write text.
+* [Multi-Agent Collaboration](multi-agents.md): let agents work together on larger work.
+* [Taskade Genesis Overview](../genesis/): build apps with agents.
+* [Automations Overview](../automation/): let actions run on their own.
+* [taskade.com/agents](https://www.taskade.com/agents): browse agent templates.
 
 {% hint style="info" %}
-This page stays overview-level. Model comparisons, tool catalogs, and deep agent training patterns live in the linked guides.
+This page is an overview. The linked guides give model comparisons, tool lists, and detailed patterns for agent knowledge.
 {% endhint %}
 
 ---

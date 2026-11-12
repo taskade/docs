@@ -66,7 +66,7 @@ A schedule does not start at the exact minute that you set. Taskade spreads the 
 | Every hour, or less often | 30 minutes |
 | More often than every hour | Half the interval, at most 10 minutes |
 
-So a run set for **Every day** at 09:00 starts between 09:00 and 09:30. Do not build an automation that needs the run to start at an exact minute.
+Thus a run set for **Every day** at 09:00 starts between 09:00 and 09:30. Do not make an automation that must start at an exact minute.
 
 ## Pattern: Event-Triggered Agent
 
@@ -135,7 +135,7 @@ The step does not support Agent App tools. If a tool needs manual approval, the 
 
 A team member can have a role, for example Researcher or Writer. When you edit a team, click **Add role** next to a member. A role is one line of at most 60 characters.
 
-The team manager reads the roles when it picks the member for each task or step. In **Orchestrate** mode, Taskade tells the manager to give a member with the role `Verifier` (in any letter case) review steps only, never a step that creates, changes, or sends data. This is an instruction to the manager, not a tool limit: the member keeps its tools. A team with no roles works as before.
+The team manager reads the roles when it picks the member for each task or step. In **Orchestrate** mode, Taskade tells the manager to give only review steps to a member with the role `Verifier` (in any letter case). The manager never gives this member a step that creates, changes, or sends data. This is an instruction to the manager, not a tool limit. The member keeps its tools. A team with no roles works as before.
 
 You can also ask Taskade EVE to rename a team, change its instruction, add or remove a member, or set a role.
 
@@ -209,11 +209,31 @@ The response is the same shape as any `promptAgent` call:
 }
 ```
 
-Cross-agent invocation moves the orchestration into Taskade. Your app sends one request, and the automation does the handoff.
+With cross-agent invocation, Taskade does the orchestration. Your app sends one request, and the automation gives the work to the next agent.
+
+## Pattern: Human Approval
+
+A **Wait for approval** step pauses a run until a person approves or rejects the request. Use it after an agent step and before an action that you cannot undo, such as a payment or a message to a customer.
+
+| Setting | What it does |
+| --- | --- |
+| **Who approves** | The workspace members that you pick. The first answer counts |
+| **What they see** | A short line that says what to approve |
+| **Details** | Values from earlier steps that help the approver decide |
+| **Wait for** | 1 day, 3 days, or 7 days. The default is 3 days |
+| **Then** | **Approve** or **Reject** when the wait ends with no answer. The default is **Reject** |
+
+The approver gets an email and can decide in Taskade. An approval continues the run. A rejection, or a timeout set to **Reject**, stops the run.
+
+Later steps can read the decision fields `approved`, `decision`, `decidedBy`, `decidedAt`, and `comment`. The `decision` field is `approved`, `rejected`, or `timed_out`. While the run waits, its status is `waiting`. The `get_flow_runs` tool of the [hosted Taskade MCP](genesis-app-mcp.md) reports the same status.
+
+A connector can also send the request in its own channel. Gmail, Outlook, Slack, Microsoft Teams, Telegram, Discord, Twilio (SMS), and WhatsApp have request-approval actions. These connectors need a paid plan. A request-approval action waits 3 days, then rejects if no one decides.
+
+An agent does not get a request-approval action as a tool. If an agent calls one, Taskade refuses the call.
 
 ## Monitoring and Observability
 
-Watch each run, and let Taskade stop an automation that keeps failing.
+Watch each run. Taskade stops an automation that fails again and again.
 
 ### Run history
 
@@ -223,7 +243,7 @@ The automation's **Runs** tab shows the **Run History**. Filter it with **All**,
 
 AI steps use credits. These screens show where the credits go:
 
-- **Settings** → **Credits**: the **Detailed Usage Breakdown** for the account.
+- **Settings** → **Credits**: **Usage this month** for the account, with the **Where your credits went** list for the person who pays for a paid plan.
 - **App Settings** → **Insights** → **AI Usage**: the credits, tokens, and builds for one app.
 
 ### Continue after a failed step
@@ -236,6 +256,21 @@ An action step has a **Continue if this step fails** setting. Turn it on for a s
 | **Go to the next step** | The run goes on to the next step, which reads the results of the failed step as empty |
 
 With either choice, Taskade does not mark the run failed, and the failed step still shows in **Runs**. This also applies to a step inside a **Choose a path** branch.
+
+### Retry a step when a service is down
+
+An action step has a **Retry if this step fails** setting. Use it for a step that calls a service that can be busy or down for a short time.
+
+| Setting | Values |
+| --- | --- |
+| **Wait** | 1 to 5 minutes between tries. The default is 5 minutes |
+| **then try again, up to** | 1 to 5 more tries. The default is 3 |
+
+Taskade retries only a failure that a later try can fix. A step with bad input or a broken connection fails at once, with no retry. **Continue if this step fails** applies after the last try. Agent steps, such as **Ask an agent** and **Ask an agent team**, do not have this setting.
+
+{% hint style="warning" %}
+**Warning:** If a step sends a message, turn on retries only if a second copy is permitted. A retry can send the message twice. Retries can also delay later runs of the automation.
+{% endhint %}
 
 ### Automatic pause after failures
 

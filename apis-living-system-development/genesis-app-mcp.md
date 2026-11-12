@@ -31,7 +31,7 @@ Connect Claude, Codex, Cursor, VS Code, ChatGPT, or any MCP client to your Taska
 └──────────────────────────────┘
 ```
 
-This is the **inbound** direction: an AI client reaches into Taskade. For Taskade calling another MCP server, see [Which Taskade MCP do I want?](mcp-overview.md).
+This is the **inbound** direction: an AI client reaches into Taskade. If you want Taskade to call another MCP server, see [Which Taskade MCP do I want?](mcp-overview.md).
 
 ## Before you start
 
@@ -69,6 +69,7 @@ Every client uses the same endpoint and the same two sign-in options.
 | Sign-in for interactive clients | OAuth 2.0 with PKCE. The server supports dynamic client registration, so you do not register an app. |
 | Sign-in for header-based clients | `Authorization: Bearer <personal access token>` |
 | OAuth discovery | `https://www.taskade.com/.well-known/oauth-protected-resource/mcp` |
+| API catalog (RFC 9727) | `https://www.taskade.com/.well-known/api-catalog`. It links this server, the REST API v1 spec, and the Action API v2 spec |
 
 ## What you can do
 
@@ -140,6 +141,8 @@ Any other agent can read the Taskade skill at `https://www.taskade.com/SKILL.md`
 ```bash
 npx skills add https://www.taskade.com
 ```
+
+The skill also tells the agent how to read any Taskade page as Markdown. The agent sends `Accept: text/markdown` to the normal page URL.
 
 To add only the server, run one command:
 
@@ -310,7 +313,7 @@ Use the Taskade tools to list my workspaces. For each one, show the name and my 
 You are done when the client calls `list_spaces` and shows your paid workspaces. The list comes in pages, and a page can be empty while more pages remain. If no page lists a workspace, no workspace of this account has MCP access.
 
 {% hint style="info" %}
-**Note:** A `HEAD` request or `curl -I` to `https://www.taskade.com/mcp` returns `401` with `content-type: application/json` and a `WWW-Authenticate: Bearer` header. That response is expected, because the probe sends no token. Do not change the server URL.
+**Note:** A `HEAD` request or `curl -I` to `https://www.taskade.com/mcp` returns `401` with `content-type: application/json` and a `WWW-Authenticate: Bearer` header. This response is normal, because the probe sends no token. Do not change the server URL.
 {% endhint %}
 
 | You send | You get |
@@ -327,7 +330,14 @@ Most tools mirror an [Action API v2](api-v2-reference.md) operation. The MCP-nat
 
 Every tool states the MCP hints `readOnlyHint`, `destructiveHint`, and `openWorldHint`. A client can use the hints to approve read tools without a prompt and to ask before a write. Three tools state `openWorldHint: true`, because their effects reach outside the workspace: `prompt_agent`, `run_flow`, and `publish_kit_version`.
 
-Most tools take a `spaceId`. Call `list_spaces` first to find it. That list is **plan-filtered and paginated**, so a page can be empty while more pages remain. Keep paginating until `hasNextPage` is false.
+The server also adds two Taskade keys to the `_meta` of a tool. A client that does not know them ignores them.
+
+| `_meta` key | Tools | Use it to |
+| --- | --- | --- |
+| `taskade/write: true` | Every tool that is not read-only | Ask the user before a write |
+| `taskade/billed: true` | `prompt_agent` and `run_flow` | Ask the user before a call that uses AI credits or counts toward the monthly automation runs |
+
+Most tools take a `spaceId`. Call `list_spaces` first to find it. That list is **plan-filtered and paginated**, so a page can be empty when more pages remain. Request the next page until `hasNextPage` is false.
 
 ### Browse & app editing
 
@@ -374,7 +384,7 @@ These tools mirror the [Action API v2](api-v2-reference.md) task operations:
 | `set_task_field_value` / `delete_task_field_value` | Set or clear a custom field value on a task |
 | `delete_task` | Delete a task |
 
-If Google Calendar is connected on an eligible workspace, dates set with `set_task_date` can sync the same way as dates set in Taskade.
+If an eligible workspace has a Google Calendar connection, a date from `set_task_date` can sync the same way as a date that you set in Taskade.
 
 ### Create & orchestrate
 
@@ -403,7 +413,7 @@ You can change this setting later with `update_agent`. This setting also enables
 `run_flow` starts a real run. The run counts toward the monthly automation runs of the plan, and AI steps use credits. A step can also send email or act in a connected app. Call it once for each run that you want.
 {% endhint %}
 
-`run_flow` returns before the run ends. Call `get_flow_runs` to read the result. A run status is `running`, `completed`, `failed`, or `filtered`. A `filtered` run stopped early on purpose and did not fail. If `run_flow` returns the status `unknown` or `running`, do not start the run again. Read it with `get_flow_runs`.
+`run_flow` returns before the run ends. Call `get_flow_runs` to read the result. A run status is `running`, `waiting`, `completed`, `failed`, or `filtered`. A `waiting` run is paused on an approval step until a person decides, or until the step times out. Its `endedAt` is `null`, the same as a `running` run. A `filtered` run stopped early on purpose and did not fail. If `run_flow` returns the status `unknown`, `running`, or `waiting`, do not start the run again. Read it with `get_flow_runs`.
 
 ### App kits
 
@@ -417,7 +427,7 @@ An app kit is a Taskade Genesis app that you published so other people can add a
 Only the workspace owner can call `publish_kit_version`. `list_my_kits` lists kits from workspaces that you own, and it hides a kit whose workspace has no MCP access. Archived and removed kits are not listed.
 
 {% hint style="warning" %}
-`publish_kit_version` releases the app as it is now. People who add the kit from then on get this version, and people who already added it keep their copy. From version 2 on, buyers get one email a day at most. Only the newest 20 versions keep a saved copy, so each call removes the saved copy of an older version past that limit.
+`publish_kit_version` releases the app as it is now. People who add the kit from then on get this version, and people who already added it keep their copy. From version 2 on, buyers get one email a day at most. Only the newest 20 versions keep a saved copy. Each call removes the saved copy of an older version past that limit.
 {% endhint %}
 
 A paid kit keeps its price. You can publish 5 versions of one kit in an hour.
@@ -505,16 +515,50 @@ Match the message that your client shows to a fix.
 | `MCP access is not available on this workspace's current plan.` | The workspace is on the Free plan | Upgrade the workspace to a paid plan, or pick a paid workspace. |
 | `Access denied: you are not a member of this space.` | Your account is not a member of the workspace | Make sure that the workspace ID is correct, or ask for an invitation. |
 | `Access denied: your role "…" does not have write access. Requires collaborator or above.` | `write_file` needs the Editor role or above | Ask the workspace owner for the Editor role. A read-only role can still browse. |
-| `list_spaces` returns an empty page | The list comes in pages, and it hides workspaces without MCP access | Keep paging until `hasNextPage` is `false`. |
+| `list_spaces` returns an empty page | The list comes in pages, and it hides workspaces without MCP access | Request the next page until `hasNextPage` is `false`. |
 | `You do not have permission to run automations in this workspace.` | Your role cannot run automations in this workspace | Ask the workspace owner for a role that can run automations. |
 | `"…" is Off. Turn it On in Taskade, then run it again.` | `run_flow` starts only an automation that is On | Turn the automation On in Taskade, then call `run_flow` again. |
 | `run_flow starts only an automation that starts "When asked" (a manual trigger).` | The automation starts on another trigger | Change the trigger to **Agent Tool** (the "When asked" trigger), or let the trigger start the automation. |
 | `Too many agent prompts in a short time, so the agent did not run. Try again in about … min.` | The account sent 60 `prompt_agent` calls in 10 minutes | Wait the number of minutes in the message, then call `prompt_agent` again. Do not call it in a loop. |
+| `Failed to prompt agent`, with the error code `credits_exhausted` | The workspace has no AI credits left | Upgrade the plan in Taskade, or add credits on a paid plan. A retry does not help. |
+| `Too many runs of "…" in a short time, so nothing ran. Try again in about … min.` | The account started this automation 30 times in 10 minutes | Wait the number of minutes in the message, then call `run_flow` once. Do not call it in a loop. |
+| `Nothing ran. This workspace used all of its … for this month on the … plan.` | `run_flow` reached the monthly limit of automation runs or steps for the plan | Wait for the limit to reset, or upgrade the plan. |
+| `…, so "…" did not run.`, with the error code `connector_plan_required` | A step of the automation uses a connector that the plan does not include | Upgrade the workspace plan, or remove that step. |
 | `Only the workspace owner can publish a kit version.` | `publish_kit_version` needs the Owner role in the workspace of the kit | Ask the workspace owner to publish, or to run the tool from their account. |
 | `No live kit listing with this id. An archived or removed listing takes no new version.` | The `publicSpaceAppId` is wrong, or the kit is archived or removed | Call `list_my_kits` and use a `publicSpaceAppId` from its result. |
 | `Too many versions of this kit in a short time, so nothing was published. Try again in about … min.` | You published 5 versions of this kit in the last hour | Wait the number of minutes in the message, then publish once. |
 | The OAuth sign-in starts again and again | The browser is signed in to another Taskade account, or the stored credential is old | Sign in to the right Taskade account in your browser. Remove the Taskade server from the client, then add it again. |
 | `401` from a header-based client | The personal access token is wrong or revoked | Create a new token, and update the `Authorization` header. |
+
+### Read a tool error in code
+
+A tool error is a result with `isError: true`. The text block holds the message from the table above. Many refusals also carry `structuredContent.error`, so a script or an agent can branch without a text match:
+
+```json
+{
+  "isError": true,
+  "structuredContent": {
+    "error": {
+      "class": "rate",
+      "code": "rate_limited",
+      "message": "Too many agent prompts in a short time, so the agent did not run. Try again in about 3 min.",
+      "retry": "after_wait",
+      "retryAfterSec": 142
+    }
+  }
+}
+```
+
+| Field | Value |
+| --- | --- |
+| `class` | `auth` (membership or role), `plan` (the plan has no access), `input` (fix the call), `refused` (the target is not in a state to run), `rate` (too many calls), `limit` (a usage or size limit), or `error` |
+| `code` | A short code, for example `plan_wall`, `not_member`, `forbidden`, `flow_off`, `not_manual`, `connector_plan_required`, `over_limit`, `rate_limited`, `credits_exhausted`, or `too_large` |
+| `message` | The same text as the text block |
+| `next` | Optional. Text to show the user, for example the upgrade step |
+| `retry` | `no` (the same call fails again), `safe` (you can call again now), or `after_wait` (call again after `retryAfterSec` seconds) |
+| `retryAfterSec` | Optional. The number of seconds to wait before you call again. An `after_wait` error carries it |
+
+An error with no `structuredContent.error` is a general failure. Read its text.
 
 ## Set this up with your coding agent
 
@@ -528,7 +572,7 @@ Connect to the hosted Taskade MCP server at https://www.taskade.com/mcp over Str
 
 - [Which Taskade MCP do I want?](mcp-overview.md): compare hosted MCP, local Workspace MCP, and the MCP Client connector.
 - [Workspace MCP](workspace-mcp.md): run a local server that wraps REST API v1.
-- [Run your live app with AI](run-your-app-with-ai.md): run a Taskade Genesis app by talking to Claude.
+- [Run your live app with AI](run-your-app-with-ai.md): run a Taskade Genesis app from a chat with Claude.
 - [Action API guide](api-v2-reference.md): the API that most hosted MCP tools mirror.
 - [Authentication](developers/authentication.md): personal tokens and OAuth 2.0 in detail.
 

@@ -5,10 +5,10 @@ description: >-
 
 # Advanced Automation Actions
 
-**Master the latest automation capabilities including loop processing, WhatsApp Business integration, HTTP response schema generation, and error handling. These features turn complex workflows into simple, reliable automations.**
+This page shows how to repeat steps for each item in a list and send WhatsApp Business messages. It also shows how to read API responses and control what happens when a step fails.
 
 {% hint style="info" %}
-The flows on this page use the automation editor. You add each step from the step picker, and you insert values from earlier steps with the `@` picker. Premium integrations (for example WhatsApp Business, Slack, X/Twitter, LinkedIn and Facebook Pages) need a paid plan.
+The flows on this page use the automation editor. You add each step from the step picker. You insert values from earlier steps with the `@` picker. Premium integrations need a paid plan, for example WhatsApp Business, Slack, X/Twitter, LinkedIn, and Facebook Pages.
 {% endhint %}
 
 ---
@@ -17,17 +17,17 @@ The flows on this page use the automation editor. You add each step from the ste
 
 ### **What Are Loop Actions?**
 
-A Loop repeats a set of steps once for each item in a list. One trigger fans out into many personalized actions, one per row, task, or item. Loops support filters, conditional branches, and nested loops.
+A Loop repeats a set of steps one time for each item in a list. One trigger can start one personalized action for each row, task, or item. A loop can contain filters, branches, and other loops.
 
 #### **For Each Loop**
-A loop is a bounded for-each. It runs once for every item that already exists in the list, then stops. It does not repeat until a goal is reached, and it has no exit condition of its own.
+A loop runs one time for each item that is in the list when the loop starts. Then it stops. It does not repeat until a goal occurs, and it has no exit condition of its own.
 
-Point the loop at a list in one of two ways:
+Under **Variable**, select the source of the list:
 
-| Field | Description |
+| Option | Description |
 | --- | --- |
-| **List** | Type a custom list of items by hand. The loop processes each item in order. |
-| **Variable** | Connect the loop to a list from an earlier step, such as **Find Row(s)** in Google Sheets or **Find Task(s)** in Taskade. |
+| **Manual List** | You type a custom list of items. The loop uses the items in their order. |
+| **Link to Variable** | You connect the loop to a list from an earlier step, for example **Find Row(s)** in Google Sheets or **Find Task(s)** in Taskade. |
 
 ```
 Trigger: Schedule (weekly)
@@ -40,7 +40,7 @@ Loop: For each row
 ### **Advanced Loop Features**
 
 #### **Nested Loops**
-Put a loop inside another loop when each item holds its own list, for example projects that each hold tasks.
+If each item holds its own list, put a loop inside another loop. For example, each project can hold tasks.
 
 ```
 Action: Find Task(s) (tasks to review)
@@ -50,14 +50,14 @@ Loop: For each task
 ```
 
 #### **Skip Items in a Loop**
-A loop has no break condition. To skip items, add a **Filter Data** step inside the loop. An item that does not match stops there, and the loop continues with the next item.
+A loop has no break condition. To skip items, add a **Filter Data** step inside the loop. An item that does not match stops at the filter. Then the loop continues with the next item.
 
-| What happens | Result |
+| What occurs | Result |
 | --- | --- |
-| The list is empty | The loop runs zero times, and the automation continues after it. |
-| A step inside the loop fails | The loop stops at that item and the run is recorded as **Failed**. Earlier items keep their work. |
+| The list is empty | The loop runs zero times. The automation continues after the loop. |
+| A step inside the loop fails | The loop stops at that item, and the run shows as **Failed**. Earlier items keep their work. |
 | A failed step has **Continue if this step fails** checked, with **Stop here** | The loop moves to the next item. |
-| A failed step has **Continue if this step fails** checked, with **Go to the next step** | The next step inside the loop runs for the same item and reads the result of the failed step as empty. |
+| A failed step has **Continue if this step fails** checked, with **Go to the next step** | The next step inside the loop runs for the same item. It reads the result of the failed step as empty. |
 
 ---
 
@@ -66,25 +66,28 @@ A loop has no break condition. To skip items, add a **Filter Data** step inside 
 ### **Setup & Authentication**
 
 #### **WhatsApp Business API Configuration**
-1. Add a WhatsApp Business action to an automation and click **Connect**.
-2. In [Meta for Developers](https://developers.facebook.com/apps/), create a **Business** app and click **Set Up WhatsApp**.
-3. Link your Business Portfolio and click **Start using API**.
-4. Click **Generate Access Token**. Paste it in the **System User Access Token** field.
-5. Copy the **WhatsApp Business Account ID** from the same page.
+1. Add a WhatsApp Business action to an automation.
+2. Click **Connect**.
+3. In [Meta for Developers](https://developers.facebook.com/apps/), create a **Business** app.
+4. Click **Set Up WhatsApp**.
+5. Link your Business Portfolio, then click **Start using API**.
+6. Click **Generate Access Token**.
+7. Paste the token in the **System User Access Token** field.
+8. Copy the **WhatsApp Business Account ID** from the same page.
 
 {% hint style="info" %}
-**Building your own webhook receiver?** See the developer [Webhooks reference](../../apis-living-system-development/webhooks.md) for payload formats and event types.
+**Do you build your own webhook receiver?** The developer [Webhooks reference](../../apis-living-system-development/webhooks.md) gives the payload formats and the event types.
 {% endhint %}
 
 ### **Message Types & Templates**
 
-A trigger from any source starts the automation, and the WhatsApp step sends the message. WhatsApp Business also has a New Message Received trigger.
+A trigger from any source starts the automation. Then the WhatsApp step sends the message. WhatsApp Business also has a New Message Received trigger.
 
 | Action | Description |
 | --- | --- |
-| **Send Message** | Sends a text message to a contact or group |
-| **Send Template Message** | Sends a pre-approved template message |
-| **Send Media** | Sends an image or other media file |
+| **Send Message** | Sends a text message to a contact or a group |
+| **Send Template Message** | Sends a template message that Meta approved |
+| **Send Media** | Sends an image or another media file |
 
 #### **Text Messages**
 ```
@@ -129,20 +132,28 @@ Action: WhatsApp Business → Send Message
   Text: "Your order is being prepared!"
 ```
 
+#### **If a message does not arrive**
+
+| What you see | What to do |
+| --- | --- |
+| "WhatsApp delivers a free-form message only within 24 hours" (Meta error 131047) | Use **Send Template Message**. |
+| "WhatsApp could not deliver to this number" (Meta error 131026) | Make sure that the number is correct and includes the country code. If the person does not use WhatsApp, contact them another way. |
+| "The WhatsApp access token expired or was revoked" (Meta error 190) | Connect again with a permanent System User token. |
+
 ---
 
 ## HTTP Schema Generator
 
 ### **Auto-Generate API Schemas**
 
-The **Send HTTP Request** action can build a response schema for you. Later steps can then pick fields from the response with the `@` picker.
+The **Send HTTP Request** action can make a response schema for you. A schema lists the fields of the response. Later steps can then select these fields with the `@` picker.
 
 #### **Automatic Schema Detection**
-1. Set up the HTTP request as usual.
+1. Configure the HTTP request.
 2. Under **Response Body Schema**, select **JSON**.
-3. Click **Generate Automatically**. A dialog opens where you send a test request.
-4. Taskade extracts the available fields from the JSON response.
-5. Review the extracted fields, and keep or remove each one.
+3. Click **Generate Automatically**.
+4. In the dialog, send a test request. Taskade reads the fields from the JSON response.
+5. Examine the fields. Keep or remove each field.
 
 #### **Generated Schema Output**
 ```json
@@ -157,7 +168,7 @@ The **Send HTTP Request** action can build a response schema for you. Later step
 ```
 
 ### **Schema-Driven Validations**
-To check a response before you act on it, add a **Branch** or **Filter Data** step after the request. For example, continue only when `email` is not empty. To stop the run on bad data, use **Stop and mark as failed**.
+To examine a response before the next steps use it, add a **Branch** or **Filter Data** step after the request. For example, continue only when `email` is not empty. To stop the run when the data is bad, use **Stop and mark as failed**.
 
 ---
 
@@ -174,7 +185,7 @@ To check a response before you act on it, add a **Branch** or **Filter Data** st
 
 ```
 Trigger: Task Completed (launch checklist)
-Action: Generate with AI (write a short launch post)
+Action: Write with AI (write a short launch post)
 Action: X/Twitter → Create Post
 ```
 
@@ -198,9 +209,9 @@ Action: X/Twitter → Create Post (summary + link)
 #### **Multi-Format Content Publishing**
 | Action | Description |
 | --- | --- |
-| **Create Post** | Creates a post on a Facebook Page you manage |
-| **Create Post with Image** | Creates a post with an image on a Facebook Page you manage |
-| **Create Video Post** | Creates a video post on a Facebook Page you manage |
+| **Create Post** | Creates a post on a Facebook Page that you manage |
+| **Create Post with Image** | Creates a post with an image on a Facebook Page that you manage |
+| **Create Video Post** | Creates a video post on a Facebook Page that you manage |
 
 ---
 
@@ -209,22 +220,30 @@ Action: X/Twitter → Create Post (summary + link)
 ### **Smart Error Recovery**
 
 #### **Automatic Retry Strategies**
-Taskade retries a step automatically after a temporary error, such as a network error, an API rate limit, or a server error. An agent step (**Ask an agent**, **Ask an agent team**, or **Run an agent command**) runs once and is not retried.
+Taskade tries a step again automatically after a temporary error. Examples are a network error, an API rate limit, or a server error. An agent step runs one time only, and Taskade does not try it again. The agent steps are **Ask an agent**, **Ask an agent team**, and **Run an agent command**.
 
-To decide what happens when a step still fails, open an action step and check **Continue if this step fails**. Then pick one option:
+You can select what occurs when a step still fails. Open an action step and check **Continue if this step fails**. Then select one option:
 
-* **Stop here** ends the work on that item. In a loop, the loop moves to the next item. Outside a loop, the automation stops at that step, and the run is not marked as failed.
-* **Go to the next step** runs the next step as if the failed step returned nothing. The run is not marked as failed.
+* **Stop here** ends the work on that item. In a loop, the loop moves to the next item. Outside a loop, the automation stops at that step, and the run does not show as failed.
+* **Go to the next step** runs the next step as if the failed step returned nothing. The run does not show as failed.
 
-Some steps, such as Scrape Webpage, also have an **Error Behavior** setting with **Continue** or **Fail**.
+Some steps also have an **Error Behavior** setting with **Continue** or **Fail**. Read a web page is one of these steps.
+
+#### **Retry a step when an app is down**
+Open an action step and check **Retry if this step fails**. Select how long to **Wait** (1 to 5 minutes). Then select how many times to try again (1 to 5).
+
+This option helps when a connected app is busy or down for a few minutes. A bad input or a broken connection still fails at once. Retries can delay later runs of the same automation. A step that sends a message can send it two times. An agent step does not have this option.
+
+#### **Pause for a person**
+Add a **Wait for approval** step. The run waits until a teammate approves or rejects it. A rejection stops the run.
 
 #### **Context-Aware Error Classification**
-Use a **Branch** step after a risky step to route on its result. Use **Stop and mark as failed** to end a run on purpose when the data is wrong.
+To send the flow on a different path after a step that can fail, add a **Branch** step after it. To end a run on purpose when the data is wrong, use **Stop and mark as failed**.
 
 ### **Comprehensive Error Monitoring**
 
 #### **Run history**
-The automation **Runs** tab lists every run. Open a run to see the exact input and output of each step and the reason a step failed or was skipped. Click **↻** to retry a failed run after you fix the cause.
+The automation **Runs** tab lists every run. Open a run to see the input and the output of each step. The run also shows why a step failed or why Taskade skipped it. After you correct the cause, click **↻** to run a failed run again.
 
 ---
 
@@ -235,27 +254,27 @@ The automation **Runs** tab lists every run. Open a run to see the exact input a
 #### **Dynamic Agent Selection**
 | Action | Description |
 | --- | --- |
-| **Ask an agent** | Uses a custom AI agent to respond to a query |
-| **Run an agent command** | Runs a custom agent command |
-| **Ask an agent**, with **Output Type** set to **Structured Output** | Returns typed fields you can use in later steps |
+| **Ask an agent** | Uses a custom AI agent to answer a query |
+| **Run an agent command** | Runs a command of a custom agent |
+| **Ask an agent**, with **Output Type** set to **Structured Output** | Returns typed fields that you can use in later steps |
 | **Create an agent** | Creates a new AI agent in the workspace |
 | **Update an agent** | Changes the name, the greeting, or the instructions of an agent |
 
-To pick an agent per case, add a **Branch** step and call a different agent on each path.
+To use a different agent for each case, add a **Branch** step. Then call a different agent on each path.
 
 #### **Agent Collaboration Workflows**
-The **Ask an agent team** action sends one prompt to an AI Team and returns responses from multiple agents. AI Teams need Pro and up. The **Agent Tool** trigger lets an agent run an automation as one of its tools during a conversation.
+The **Ask an agent team** action sends one prompt to an AI Team. It returns the answers of more than one agent. AI Teams need Pro and up. With the **Agent Tool** trigger, an agent can run an automation as one of its tools during a chat.
 
 ### **Conversation Export & Analysis**
 
 #### **Automated Conversation Processing**
-The **Agent Public Chat Ended** trigger starts an automation when a public agent conversation stays inactive for 5 minutes. The trigger passes the full transcript to later steps.
+The **Agent Public Chat Ended** trigger starts an automation when a public agent chat has no activity for 5 minutes. The trigger sends the full transcript to later steps.
 
 ```
 Trigger: Agent Public Chat Ended
 Action: Categorize with AI (Sentiment Analysis)
 Action: Google Sheets → Insert Row (transcript + sentiment)
-Action: Add Knowledge to Agent (transcript)
+Action: Add knowledge to an agent (transcript)
 ```
 
 ---
@@ -265,30 +284,28 @@ Action: Add Knowledge to Agent (transcript)
 ### **Batch Processing Optimization**
 
 #### **Intelligent Batching**
-* Put a **Filter Data** step early, so later steps run only for the items you need.
-* Keep expensive steps, such as AI steps, after the filter inside a loop.
-* Use **Delay** to space out calls to a service with rate limits.
+* Put a **Filter Data** step early. Then later steps run only for the items that you need.
+* Inside a loop, put steps that cost more, such as AI steps, after the filter.
+* If a service has rate limits, add **Delay** steps between the calls to it.
 
 ### **Resource Management**
 
 #### **Memory & Processing Limits**
-Automation runs count toward the plan limit for runs per billing period. AI steps use AI credits, and utility actions use no AI credits. See [pricing](https://www.taskade.com/pricing) for the limits of each plan.
+Each automation run counts toward the limit of runs for each billing period of your plan. AI steps use AI credits. Utility actions use no AI credits. The [pricing](https://www.taskade.com/pricing) page gives the limits of each plan.
 
 ---
 
 ## Build automations with AI
 
-You don't have to assemble flows by hand — Taskade already builds automations from natural language:
+You do not have to build each flow step by step. Taskade can make an automation from a plain-English description:
 
-* **Taskade EVE** — describe the outcome you want and Taskade EVE drafts the automation: trigger, actions, and connected integrations.
-* **Workflow Generator** at [taskade.com/create/flow](https://www.taskade.com/create/flow), or **Add automation → Generate With AI** in the Automations tab — describe the workflow and pick a mode: Auto, Agent Tool, Workflow, or Form.
-* Generated flows are normal automations — open them in the flow editor to adjust triggers, actions, and conditions like any hand-built workflow.
+* **Taskade EVE**: Describe the result that you want. Taskade EVE writes the automation with its trigger, actions, and connected integrations.
+* **Workflow Generator**: Go to [taskade.com/create/flow](https://www.taskade.com/create/flow), or click **Add automation → Generate With AI** in the Automations tab. Describe the workflow and select a mode: Auto, Agent Tool, Workflow, or Form.
+* **Generated flows**: A generated flow is a normal automation. You can open it in the flow editor and change its triggers, actions, and conditions.
 
 ---
 
-**🚀 Ready to use these advanced automation capabilities?** Start with loop actions to handle batch processing, then explore WhatsApp Business integration to reach customers where they are.
-
-*For more automation examples and tutorials, check out our [Automation Recipes](./recipes.md) and [Integration Guide](./integrations.md).*
+For more automation examples, read [Automation Recipes](./recipes.md) and the [Integration Guide](./integrations.md).
 
 ---
 

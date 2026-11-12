@@ -6,9 +6,9 @@ description: >-
 
 # From idea to live business — the 5 steps
 
-You have a business problem and an idea for an app that fixes it. This guide is the spine: five steps that take you from a plain-English idea to a real, branded app your customers can sign in to and use. Each step links to a full guide when you want the detail.
+You have a business problem and an idea for an app that solves it. This guide gives you five steps from a plain-English idea to a real, branded app. Your customers can sign in to this app and use it. Each step links to a full guide.
 
-The five steps form one path from idea to a live, branded app.
+The five steps make one path from idea to a live, branded app.
 
 ```mermaid
 graph TD
@@ -23,47 +23,51 @@ graph TD
 
 ## Step 1 — Describe your app to Genesis
 
-Start with the problem, not the software. Tell Taskade Genesis what you do, who will use the app, and what should happen when they use it. Taskade EVE turns that description into a working app — the screens, the data behind them, and the logic that connects them. This is where your idea becomes something you can click. You build by describing changes in plain English, so refining is just another sentence.
+Start with the problem, not the software. Tell Taskade Genesis what you do, who uses the app, and what happens when they use it. Taskade EVE turns that description into a working app: the screens, the data, and the logic that connects them. To change the app, describe the change in plain English.
 
 → Full guide: [Getting Started with Taskade Genesis](../genesis/getting-started.md)
 
 ## Step 2 — Shape your data into a system of record
 
-Every real business app remembers things — customers, bookings, orders, requests. Taskade Genesis creates the databases your app needs automatically, and this is where you shape them: name your fields clearly, link related records, and choose the view (table, board, calendar, and more) that matches how you actually work. Get this right and your app stops being a form and becomes a single source of truth your whole business runs on.
+A business app keeps records: customers, bookings, orders, and requests. Taskade Genesis makes the databases that your app needs. In this step, you give your fields clear names and link related records. Then you pick the view that matches your work, for example a table, a board, or a calendar. A good data structure makes your app the one source of truth for your business.
 
 → Full guide: [Projects & Databases](../workspaces/projects-databases.md)
 
 ## Step 3 — Add login and roles
 
-The moment real people use your app, you need accounts. GenesisAuth gives every app secure sign-in with no setup, on every plan — you describe that users should log in, and the sign-in screen is built for you. From the App Users tab you add people, disable access, and choose who can sign up. Sign-in confirms who each person is. To show each person only their own records, turn on **Private entries** and test with a second account. This is what turns a shared link into a real multi-user product.
+Real users need accounts. GenesisAuth gives each app a sign-in screen on every plan, with no setup. Tell Taskade EVE that users must log in, and it builds the sign-in screen. In the **App Users** tab, you add people, turn off access, and choose who can sign up.
+
+Sign-in confirms who each person is. It does not hide other people's records. To show each person only their own records, turn on **Private entries**. Then test with a second account.
 
 → Full guide: [GenesisAuth](../community-and-sharing/genesis-auth.md)
 
 ## Step 4 — Put it on your own domain
 
-A branded web address makes your app look like software you commissioned, not a tool you borrowed. Connect a domain like `app.yourcompany.com` (Pro and up), add a CNAME record that points at Taskade plus the short SSL record Taskade gives you, and your app goes live with automatic HTTPS — your customers see your brand, never a random link. This is the difference between a prototype and a product people trust with their data.
+A branded web address tells your customers that the app is yours. Custom domains are on Pro and up. To connect a domain such as `app.yourcompany.com`, add a CNAME record that points at Taskade. Then add the short SSL record that Taskade gives you. Your app then goes live with automatic HTTPS.
+
+No domain yet? Open **App settings → Launch → Domains**. Under **Buy a brand-new domain**, click **Shop domains**. Taskade then sets up DNS and SSL for you.
 
 → Full guide: [Custom Domains & Branding](../space-apps-guide/custom-domains.md)
 
 ## Step 5 — Right-size your plan and go live
 
-Your app runs on AI, and AI runs on credits. Before launch, match your plan and credit balance to how much you expect to use — turn on Auto Top-Up so a busy day never stops your workflows mid-task. Confirm billing is in order, then publish. You are live.
+Your app uses AI, and AI uses credits. Before you launch, match your plan and your credit balance to your expected use. Turn on Auto Top-Up so that your workflows do not stop on a busy day. Make sure that your billing is correct, then publish.
 
 → Full guide: [Credits & Billing](../../account-management/credits-and-billing.md)
 
 ***
 
 {% hint style="success" %}
-**Before you announce it, run the checklist.** Walk the [Go-Live Checklist](./go-live-checklist.md) to confirm sign-in, data, domain, and billing are all ready for real customers.
+**Run the checklist before you announce your app.** Use the [Go-Live Checklist](./go-live-checklist.md) to make sure that sign-in, data, domain, and billing are ready for real customers.
 {% endhint %}
 
 ## Next steps
 
-* [Go-Live Checklist](./go-live-checklist.md) — final pre-launch pass before you share the link
-* [Add Login & Roles](./add-login-and-roles.md) — go deeper on accounts and access control
-* [Getting Started with Taskade Genesis](../genesis/getting-started.md) — revisit Step 1 to refine your app
-* [Custom Domains & Branding](../space-apps-guide/custom-domains.md) — polish your branded launch
-* [Run your live app by talking to Claude](../../apis-living-system-development/run-your-app-with-ai.md) — once you're live, read and update your app's data in plain English
+* [Go-Live Checklist](./go-live-checklist.md): a last pass before you share the link
+* [Add Login & Roles](./add-login-and-roles.md): more about accounts and access control
+* [Getting Started with Taskade Genesis](../genesis/getting-started.md): go back to Step 1 to improve your app
+* [Custom Domains & Branding](../space-apps-guide/custom-domains.md): put your brand on your launch
+* [Run your live app by talking to Claude](../../apis-living-system-development/run-your-app-with-ai.md): after launch, read and update the data of your app in plain English
 
 ---
 

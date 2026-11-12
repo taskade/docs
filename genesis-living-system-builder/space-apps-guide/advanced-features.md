@@ -5,27 +5,27 @@ description: >-
 
 # Advanced Features
 
-Ready to take your Taskade Genesis app to the next level? These powerful features help you build even smarter and more capable applications. No coding required—just plain English descriptions of what you want!
+Use these features to make your Taskade Genesis app do more. You do not write code. You describe what you want in plain English.
 
-## How Genesis Gets So Smart
+## What Taskade Genesis Builds for You
 
-Genesis works like having a whole tech team at your fingertips. Behind the scenes, it coordinates different tools to make your app intelligent:
+When you describe an app, Taskade Genesis builds these parts for you:
 
-* **Smart Data Storage** - Organizes information automatically
-* **AI Assistants** - Learns your business and helps users
-* **Workflow Automation** - Connects to your favorite business tools
-* **File Handling** - Manages documents, photos, and uploads seamlessly
-* **Easy Navigation** - Creates user-friendly interfaces that just work
+* **Data storage** - Keeps the information of your app in order
+* **AI agents** - Learn your business and help your users
+* **Automations** - Connect your app to your business tools
+* **File handling** - Keeps documents, photos, and uploads
+* **Navigation** - Gives your users clear pages and menus
 
-The best part? You describe what you want, and Genesis handles all the technical complexity for you.
+You describe the result. Taskade Genesis does the technical work.
 
-## Organizing Your Data Like a Pro
+## Organize Your Data
 
-Genesis automatically creates smart storage for your information, but you can make it even better organized for your specific needs.
+Taskade Genesis makes the data storage for your app. You can describe a structure that fits your business.
 
-### Making Data Work for Your Business
+### Make Data Fit Your Business
 
-**Organize information into clear categories:**
+**Put information into clear categories:**
 
 {% code overflow="wrap" %}
 ```
@@ -33,7 +33,7 @@ Genesis automatically creates smart storage for your information, but you can ma
 ```
 {% endcode %}
 
-**Use dropdowns to keep things consistent:**
+**Use dropdowns to keep values the same:**
 
 {% code overflow="wrap" %}
 ```
@@ -41,7 +41,7 @@ Genesis automatically creates smart storage for your information, but you can ma
 ```
 {% endcode %}
 
-**Track important details:**
+**Keep important details:**
 
 {% code overflow="wrap" %}
 ```
@@ -59,7 +59,7 @@ Genesis automatically creates smart storage for your information, but you can ma
 ```
 {% endcode %}
 
-**Create parent-child relationships:**
+**Put items under other items (parent and child):**
 
 {% code overflow="wrap" %}
 ```
@@ -67,19 +67,19 @@ Genesis automatically creates smart storage for your information, but you can ma
 ```
 {% endcode %}
 
-## Making Your AI Assistant Amazing
+## Improve Your AI Agent
 
-Every Genesis app comes with its own AI assistant that learns about your business. Think of it as hiring a super-smart employee who never sleeps and always knows exactly what to do!
+Each Taskade Genesis app has its own AI agent. The agent learns about your business and helps your users at any hour.
 
 ### Choose an AI Model
 
-Taskade Genesis uses Auto by default, which picks a frontier model for each request. You can choose a specific model from the model picker.
+Taskade Genesis uses Auto by default. Auto picks a frontier model for each request. You can choose a specific model in the model picker.
 
-### Comprehensive Agent Training
+### Train the Agent
 
-**Three Types of Knowledge Sources:**
+**Three types of knowledge sources:**
 
-**1. Dynamic Knowledge (Real-Time Data):**
+**1. Live knowledge (project data that changes):**
 
 {% code overflow="wrap" %}
 ```
@@ -87,7 +87,7 @@ Taskade Genesis uses Auto by default, which picks a frontier model for each requ
 ```
 {% endcode %}
 
-**2. Static Knowledge (Uploaded Files):**
+**2. Fixed knowledge (uploaded files):**
 
 {% code overflow="wrap" %}
 ```
@@ -95,7 +95,7 @@ Taskade Genesis uses Auto by default, which picks a frontier model for each requ
 ```
 {% endcode %}
 
-**3. Web Knowledge (Current Information):**
+**3. Web knowledge (public web pages):**
 
 {% code overflow="wrap" %}
 ```
@@ -103,9 +103,9 @@ Taskade Genesis uses Auto by default, which picks a frontier model for each requ
 ```
 {% endcode %}
 
-### Advanced Agent Capabilities
+### More Agent Capabilities
 
-**Multi-Modal Understanding:**
+**Read photos and text together:**
 
 {% code overflow="wrap" %}
 ```
@@ -113,7 +113,7 @@ Taskade Genesis uses Auto by default, which picks a frontier model for each requ
 ```
 {% endcode %}
 
-**Cross-Project Intelligence:**
+**Compare data from more than one project:**
 
 {% code overflow="wrap" %}
 ```
@@ -121,7 +121,7 @@ Taskade Genesis uses Auto by default, which picks a frontier model for each requ
 ```
 {% endcode %}
 
-**Predictive Analytics:**
+**Forecast from past data:**
 
 {% code overflow="wrap" %}
 ```
@@ -131,9 +131,9 @@ Taskade Genesis uses Auto by default, which picks a frontier model for each requ
 
 ### Custom Agent Commands
 
-Create specialized commands for specific business tasks:
+A command is a `/` shortcut that runs a saved prompt. Make commands for your frequent business tasks:
 
-**Customer Service Commands:**
+**Customer service commands:**
 
 {% code overflow="wrap" %}
 ```
@@ -143,7 +143,7 @@ Create specialized commands for specific business tasks:
 ```
 {% endcode %}
 
-**Sales and Marketing Commands:**
+**Sales and marketing commands:**
 
 {% code overflow="wrap" %}
 ```
@@ -153,7 +153,7 @@ Create specialized commands for specific business tasks:
 ```
 {% endcode %}
 
-**Operations Commands:**
+**Operations commands:**
 
 {% code overflow="wrap" %}
 ```
@@ -163,11 +163,11 @@ Create specialized commands for specific business tasks:
 ```
 {% endcode %}
 
-### Agent Personality and Communication
+### Agent Tone and Style
 
-**Industry-Specific Personalities:**
+**Tone for each industry:**
 
-**Healthcare/Wellness:**
+**Healthcare and wellness:**
 
 {% code overflow="wrap" %}
 ```
@@ -175,7 +175,7 @@ Create specialized commands for specific business tasks:
 ```
 {% endcode %}
 
-**Retail/E-commerce:**
+**Retail and online stores:**
 
 {% code overflow="wrap" %}
 ```
@@ -183,7 +183,7 @@ Create specialized commands for specific business tasks:
 ```
 {% endcode %}
 
-**Professional Services:**
+**Professional services:**
 
 {% code overflow="wrap" %}
 ```
@@ -191,13 +191,13 @@ Create specialized commands for specific business tasks:
 ```
 {% endcode %}
 
-### Agent Teams and Collaboration
+### AI Teams
 
 {% hint style="info" %}
 AI Teams (multi-agent teams) are available on **Pro and up**.
 {% endhint %}
 
-**Multi-Agent Workflows:**
+**Agents that work together:**
 
 {% code overflow="wrap" %}
 ```
@@ -205,7 +205,7 @@ AI Teams (multi-agent teams) are available on **Pro and up**.
 ```
 {% endcode %}
 
-**Handoff Protocols:**
+**Send a chat from one agent to another (handoff):**
 
 {% code overflow="wrap" %}
 ```
@@ -213,11 +213,11 @@ AI Teams (multi-agent teams) are available on **Pro and up**.
 ```
 {% endcode %}
 
-### AI-Powered Agent Creation
+### Let Taskade EVE Make Agents
 
-**EVE Creates Agents for You:**
+**Taskade EVE makes agents for you:**
 
-Taskade EVE can now build custom AI agents automatically based on your needs:
+Ask Taskade EVE for an agent, and Taskade EVE builds it:
 
 {% code overflow="wrap" %}
 ```
@@ -227,20 +227,20 @@ Taskade EVE can now build custom AI agents automatically based on your needs:
 ```
 {% endcode %}
 
-**Automatic Configuration:**
+**What Taskade EVE sets for the agent:**
 
-* EVE determines the optimal agent personality and tone
-* Uses **Auto** to pick a frontier model for each task
-* Configures relevant tools and integrations
-* Sets up proper knowledge sources and training
+* The tone and personality of the agent
+* **Auto**, which picks a frontier model for each task
+* The tools and integrations that the job needs
+* The knowledge sources of the agent
 
 ### Public Agent Publishing
 
-**Share Your Agents with the World:**
+**Share your agents with anyone:**
 
-Transform your private AI agents into public resources accessible to anyone:
+You can make a private AI agent public. Then anyone with the link can chat with it.
 
-**One-Click Publishing:**
+**Publish with one prompt:**
 
 {% code overflow="wrap" %}
 ```
@@ -250,45 +250,48 @@ Transform your private AI agents into public resources accessible to anyone:
 ```
 {% endcode %}
 
-**Public Agent Features:**
+**Public agent features:**
 
-* Unique public URL for each agent (e.g., `taskade.com/a/support-bot-01JK82XFM2`)
-* Customizable branding and appearance
-* Visitor conversations collected in the agent's **Visitor Inbox**
-* Optional password (Pro and up) and per-tool permissions for visitors
+* A public URL for each agent (for example, `taskade.com/a/support-bot-01JK82XFM2`)
+* Your own look and branding
+* Visitor chats in the agent's **Visitor Inbox**
+* An optional password (Pro and up) and tool permissions for visitors
+* Hide Branding and a background image (Business and up)
+
+A public chat searches the web only when the agent has **Search the web** turned on. It reads a web page only when **Read a web page** is on. In both cases, the **Media** row on **Tool Permissions** must read **Visitors can use this**. A visitor does not see the tool input, the tool output, or the reasoning of the agent.
 
 ### Embeddable AI Agents
 
-**Agents Anywhere on the Web:**
+**Put agents on your website:**
 
-Embed your public agent using the in-product “Embed” option.
+To put your public agent on a web page, use the **Embed** option in the product.
 
-Use it for support chat, onboarding, or interactive docs.
+You can use the embed for support chat, onboarding, or interactive docs.
 
-If you need setup help, start with [AI Agents Getting Started](../ai-features/ai-agents-getting-started.md).
+For setup help, read [AI Agents Getting Started](../ai-features/ai-agents-getting-started.md).
 
-**Embedding Use Cases:**
+**What you can use an embed for:**
 
-* **Customer Support**: Add help chat to any page
-* **Product Guides**: Interactive product exploration
-* **Lead Qualification**: Pre-qualify visitors before sales calls
-* **Documentation**: Interactive help within knowledge bases
-* **Training**: Embedded learning assistants in educational content
+* **Customer support**: Help chat on a page
+* **Product guides**: Questions and answers about your product
+* **Lead qualification**: Questions for visitors before a sales call
+* **Documentation**: Help inside your knowledge base
+* **Training**: An AI tutor in your course content
 
-**Embedding Customization:**
+**What you can change in an embed:**
 
-* Match your website's design and branding
-* Control agent positioning and behavior
-* Customize conversation starters and prompts
-* Set up analytics and conversation tracking
+* The design and branding, to match your website
+* The position and behavior of the agent
+* The conversation starters and prompts
+* Analytics and conversation records
 
 ## Advanced Automations
 
-Connect your app to your existing business tools and create sophisticated workflows.
+Connect your app to the business tools that you use, and build workflows with many steps.
 
 ### Multi-Step Workflows
 
-**Complex approval processes:**
+**Approvals with more than one step:**
 
 {% code overflow="wrap" %}
 ```
@@ -296,7 +299,7 @@ Connect your app to your existing business tools and create sophisticated workfl
 ```
 {% endcode %}
 
-**Customer journey automation:**
+**Steps for each stage of the customer journey:**
 
 {% code overflow="wrap" %}
 ```
@@ -306,7 +309,7 @@ Connect your app to your existing business tools and create sophisticated workfl
 
 ### Conditional Logic
 
-**Smart routing based on conditions:**
+**Send work to the right place by condition:**
 
 {% code overflow="wrap" %}
 ```
@@ -314,7 +317,7 @@ Connect your app to your existing business tools and create sophisticated workfl
 ```
 {% endcode %}
 
-**Dynamic content based on user data:**
+**Show content that matches the user data:**
 
 {% code overflow="wrap" %}
 ```
@@ -322,38 +325,38 @@ Connect your app to your existing business tools and create sophisticated workfl
 ```
 {% endcode %}
 
-### Enterprise-Grade Integrations
+### Business Integrations
 
-Genesis apps can connect to **100+ business tools** through Taskade's unified integration system. The Free plan includes the standard connectors only. Premium integrations need a paid plan.
+Taskade Genesis apps can connect to **100+ business tools** through Taskade integrations. The Free plan includes the standard connectors only. Premium integrations need a paid plan.
 
-#### Communication & Collaboration
+#### Communication and Collaboration
 
 * **Slack, Microsoft Teams, Discord** - Team notifications and alerts
-* **Gmail, Outlook** - Email automation and customer communication
-* **WhatsApp Business** - Customer messaging and support
+* **Gmail, Outlook** - Email automation and customer messages
+* **WhatsApp Business** - Customer messages and support
 * **Twilio** - SMS notifications and reminders
 
-#### Productivity & Storage
+#### Productivity and Storage
 
-* **Google Workspace** (Sheets, Docs, Drive, Calendar) - Document management and scheduling
-* **Microsoft Outlook, Microsoft To Do** - Email, calendar, and task synchronization
+* **Google Workspace** (Sheets, Docs, Drive, Calendar) - Documents and schedules
+* **Microsoft Outlook, Microsoft To Do** - Sync of email, calendar, and tasks
 * **Trello, Asana, Monday.com** - Project management integration
 
-#### Sales & Marketing
+#### Sales and Marketing
 
-* **HubSpot, Salesforce, Pipedrive** - CRM synchronization and lead management
+* **HubSpot, Salesforce, Pipedrive** - CRM sync and lead management
 * **Mailchimp, Brevo** - Email marketing automation
-* **Stripe** - Payment processing and subscription management
-* **LinkedIn, X/Twitter** - Social media management and posting
+* **Stripe** - Payments and subscriptions
+* **LinkedIn, X/Twitter** - Social media posts
 
-#### Specialized Business Tools
+#### Other Business Tools
 
-* **Calendly** - Meeting scheduling
-* **WordPress** - Content management and publishing
+* **Calendly** - Meeting schedules
+* **WordPress** - Content management and publication
 
-### Advanced Integration Examples
+### Integration Examples
 
-**CRM + AI + Automation:**
+**CRM, AI, and automation together:**
 
 {% code overflow="wrap" %}
 ```
@@ -361,7 +364,7 @@ Genesis apps can connect to **100+ business tools** through Taskade's unified in
 ```
 {% endcode %}
 
-**Multi-Platform Workflow:**
+**One workflow across many tools:**
 
 {% code overflow="wrap" %}
 ```
@@ -369,7 +372,7 @@ Genesis apps can connect to **100+ business tools** through Taskade's unified in
 ```
 {% endcode %}
 
-**Intelligent Content Distribution:**
+**Send new content to many channels:**
 
 {% code overflow="wrap" %}
 ```
@@ -379,12 +382,12 @@ Genesis apps can connect to **100+ business tools** through Taskade's unified in
 
 ## Access Control and Permissions
 
-Create sophisticated permission systems for different types of users.
+Give each type of user the access that the user needs.
 
 ### Role-Based Access
 
 {% hint style="warning" %}
-App sign-in (App Users) works on every plan, Free included, and confirms who a visitor is. It does not hide other people's rows. To show each user only their own records, turn on **Private entries** (private per-user data, or row scoping) under **Publish → More options**. It is off by default. Test it with a second account.
+App sign-in (App Users) works on every plan, Free included. It confirms who a visitor is. It does not hide the rows of other people. To show each user only their own records, turn on **Private entries** under **Publish → More options**. This setting (private data for each user, or row scoping) is off by default. Test it with a second account.
 {% endhint %}
 
 **Define user roles:**
@@ -395,7 +398,7 @@ App sign-in (App Users) works on every plan, Free included, and confirms who a v
 ```
 {% endcode %}
 
-**Granular permissions:**
+**Detailed permissions:**
 
 {% code overflow="wrap" %}
 ```
@@ -403,9 +406,9 @@ App sign-in (App Users) works on every plan, Free included, and confirms who a v
 ```
 {% endcode %}
 
-### Dynamic Access Control
+### Access That Changes by Condition
 
-**Time-based permissions:**
+**Access by time:**
 
 {% code overflow="wrap" %}
 ```
@@ -413,7 +416,7 @@ App sign-in (App Users) works on every plan, Free included, and confirms who a v
 ```
 {% endcode %}
 
-**Location-based access:**
+**Access by location:**
 
 {% code overflow="wrap" %}
 ```
@@ -423,9 +426,9 @@ App sign-in (App Users) works on every plan, Free included, and confirms who a v
 
 ## Advanced User Interface Features
 
-### Progressive Disclosure
+### Show Fields Step by Step
 
-**Guided user experiences:**
+**Guide your users:**
 
 {% code overflow="wrap" %}
 ```
@@ -433,7 +436,7 @@ App sign-in (App Users) works on every plan, Free included, and confirms who a v
 ```
 {% endcode %}
 
-**Smart defaults:**
+**Fill in fields with known values:**
 
 {% code overflow="wrap" %}
 ```
@@ -441,9 +444,9 @@ App sign-in (App Users) works on every plan, Free included, and confirms who a v
 ```
 {% endcode %}
 
-### Mobile Optimization
+### Phones and Tablets
 
-**Touch-friendly interfaces:**
+**Screens that are easy to tap:**
 
 {% code overflow="wrap" %}
 ```
@@ -451,7 +454,7 @@ App sign-in (App Users) works on every plan, Free included, and confirms who a v
 ```
 {% endcode %}
 
-**Offline capability:**
+**Work with a weak connection:**
 
 {% code overflow="wrap" %}
 ```
@@ -461,11 +464,11 @@ App sign-in (App Users) works on every plan, Free included, and confirms who a v
 
 ## Advanced Media Management
 
-Genesis apps include sophisticated media handling capabilities that go far beyond simple file uploads.
+Taskade Genesis apps can do more with files than store uploads.
 
-### Intelligent File Processing
+### File Processing
 
-**Automatic Content Analysis:**
+**Sort uploads by content:**
 
 {% code overflow="wrap" %}
 ```
@@ -473,7 +476,7 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 {% endcode %}
 
-**Document Intelligence:**
+**Get data from documents:**
 
 {% code overflow="wrap" %}
 ```
@@ -481,7 +484,7 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 {% endcode %}
 
-**Multi-Format Support:**
+**Accept many file types:**
 
 {% code overflow="wrap" %}
 ```
@@ -490,12 +493,12 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 {% endcode %}
 
 {% hint style="info" %}
-**File uploads flow end-to-end.** When your app's form includes a file upload, the file is delivered into the triggered automation, saved to your workspace's media library, and readable by downstream steps like [Convert File to Text](../automation/actions.md) — including scanned or image-only documents, which are transcribed with vision OCR automatically.
+**File uploads go through every step.** When a form in your app has a file upload, the triggered automation gets the file. Taskade saves the file to the media library of your workspace. Later steps can read it, for example [Convert File to Text](../automation/actions.md). This step also reads scanned or image-only documents with vision OCR (text recognition).
 {% endhint %}
 
 ### Media as Agent Knowledge
 
-**Dynamic Training:**
+**Train agents on new files:**
 
 {% code overflow="wrap" %}
 ```
@@ -503,7 +506,7 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 {% endcode %}
 
-**Visual Understanding:**
+**Read photos:**
 
 {% code overflow="wrap" %}
 ```
@@ -511,7 +514,7 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 {% endcode %}
 
-**Video Transcription:**
+**Learn from video transcripts:**
 
 {% code overflow="wrap" %}
 ```
@@ -521,7 +524,7 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 
 ### Automated Media Workflows
 
-**Content Generation:**
+**Make content from new files:**
 
 {% code overflow="wrap" %}
 ```
@@ -529,7 +532,7 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 {% endcode %}
 
-**Quality Control:**
+**Review uploads before you publish them:**
 
 {% code overflow="wrap" %}
 ```
@@ -537,7 +540,7 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 {% endcode %}
 
-**Archive Management:**
+**Keep files in order:**
 
 {% code overflow="wrap" %}
 ```
@@ -549,7 +552,7 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 
 ### Custom Dashboards
 
-**Executive summaries:**
+**Summaries for managers:**
 
 {% code overflow="wrap" %}
 ```
@@ -557,7 +560,7 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 {% endcode %}
 
-**Operational metrics:**
+**Numbers for daily work:**
 
 {% code overflow="wrap" %}
 ```
@@ -565,9 +568,9 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 {% endcode %}
 
-### Automated Reporting
+### Automated Reports
 
-**Scheduled reports:**
+**Reports on a schedule:**
 
 {% code overflow="wrap" %}
 ```
@@ -575,7 +578,7 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 {% endcode %}
 
-**Alert-based reporting:**
+**Reports when a value changes:**
 
 {% code overflow="wrap" %}
 ```
@@ -583,11 +586,11 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 {% endcode %}
 
-## Performance Optimization
+## Speed
 
-### Smart Loading
+### Load the Most Important Content First
 
-**Prioritized content:**
+**Show the key content first:**
 
 {% code overflow="wrap" %}
 ```
@@ -595,7 +598,7 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 {% endcode %}
 
-**Lazy loading:**
+**Load details only on request:**
 
 {% code overflow="wrap" %}
 ```
@@ -603,9 +606,9 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 {% endcode %}
 
-### Caching Strategies
+### Keep Frequent Data Ready (Cache)
 
-**Frequently accessed data:**
+**Data that users open often:**
 
 {% code overflow="wrap" %}
 ```
@@ -625,7 +628,7 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 ```
 {% endcode %}
 
-**Third-party services:**
+**Other services:**
 
 {% code overflow="wrap" %}
 ```
@@ -635,9 +638,9 @@ Genesis apps include sophisticated media handling capabilities that go far beyon
 
 ### Webhook Automation
 
-Automation webhooks are available on **Pro and up**.
+A webhook sends an event from one app to another at the time that it occurs. Automation webhooks are available on **Pro and up**.
 
-**Real-time updates:**
+**Updates at the time of the change:**
 
 {% code overflow="wrap" %}
 ```
@@ -657,7 +660,7 @@ Automation webhooks are available on **Pro and up**.
 ```
 {% endcode %}
 
-**Audit trails:**
+**Access records (audit trails):**
 
 {% code overflow="wrap" %}
 ```
@@ -675,11 +678,11 @@ Automation webhooks are available on **Pro and up**.
 ```
 {% endcode %}
 
-## Testing and Quality Assurance
+## Tests and Quality
 
-### Automated Testing
+### Automated Tests
 
-**Workflow validation:**
+**Make sure that workflows operate correctly:**
 
 {% code overflow="wrap" %}
 ```
@@ -687,9 +690,9 @@ Automation webhooks are available on **Pro and up**.
 ```
 {% endcode %}
 
-### User Acceptance Testing
+### Tests With Real Users
 
-**Feedback collection:**
+**Collect feedback:**
 
 {% code overflow="wrap" %}
 ```
@@ -697,11 +700,11 @@ Automation webhooks are available on **Pro and up**.
 ```
 {% endcode %}
 
-## Scaling Your App
+## Grow Your App
 
-### Performance Monitoring
+### Usage Analytics
 
-**Usage analytics:**
+**See how people use the app:**
 
 {% code overflow="wrap" %}
 ```
@@ -709,9 +712,9 @@ Automation webhooks are available on **Pro and up**.
 ```
 {% endcode %}
 
-### Capacity Planning
+### Busy Periods
 
-**Growth preparation:**
+**Prepare for growth:**
 
 {% code overflow="wrap" %}
 ```
@@ -721,33 +724,33 @@ Automation webhooks are available on **Pro and up**.
 
 ## Best Practices for Advanced Features
 
-### Start Simple, Add Complexity
+### Start Small
 
-1. **Build the core functionality first** and ensure it works perfectly
-2. **Add one advanced feature at a time** and test thoroughly
-3. **Get user feedback** before adding more complexity
-4. **Document your workflows** so team members understand how everything works
+1. **Build the core function first.** Make sure that it operates correctly.
+2. **Add one advanced feature at a time.** Test each feature.
+3. **Get user feedback** before you add more features.
+4. **Write down your workflows**, so that your team knows how the app operates.
 
-### Maintain User Focus
+### Keep the Focus on Your Users
 
-1. **Every advanced feature should solve a real problem** for your users
-2. **Don't add complexity just because you can** - keep the user experience simple
-3. **Test with actual users** to ensure advanced features improve rather than complicate their experience
+1. **Add a feature only if it solves a real problem** for your users.
+2. **Keep the experience simple.** Do not add a feature only because you can.
+3. **Test with real users.** Make sure that each advanced feature makes their work easier.
 
 ### Plan for Maintenance
 
-1. **Document your automations and integrations** so others can understand and maintain them
-2. **Test regularly** to ensure external integrations continue working
-3. **Have backup plans** for critical workflows in case integrations fail
-4. **Train your team** on how to use and troubleshoot advanced features
+1. **Write down your automations and integrations**, so that other people can maintain them.
+2. **Test external integrations at regular intervals.**
+3. **Have a backup plan** for each important workflow, for the time when an integration stops.
+4. **Train your team** to use and repair advanced features.
 
-## **Power User Prompts & Use Cases**
+## **Advanced Prompts and Use Cases**
 
-Ready to unlock Genesis's full potential? Here are advanced prompts and real-world scenarios that show how Taskade powers your business success.
+These prompts and examples show what an advanced Taskade Genesis app can do for your business.
 
-### **🎯 Smart Business Prompts**
+### **🎯 Business Prompts**
 
-**Customer Experience Apps:**
+**Customer experience apps:**
 
 {% code overflow="wrap" %}
 ```
@@ -755,7 +758,7 @@ Ready to unlock Genesis's full potential? Here are advanced prompts and real-wor
 ```
 {% endcode %}
 
-**Team Productivity Apps:**
+**Team productivity apps:**
 
 {% code overflow="wrap" %}
 ```
@@ -763,7 +766,7 @@ Ready to unlock Genesis's full potential? Here are advanced prompts and real-wor
 ```
 {% endcode %}
 
-**Sales & Lead Management:**
+**Sales and lead management:**
 
 {% code overflow="wrap" %}
 ```
@@ -771,21 +774,21 @@ Ready to unlock Genesis's full potential? Here are advanced prompts and real-wor
 ```
 {% endcode %}
 
-### **🔗 Connecting the Dots: How Taskade Powers You**
+### **🔗 How Your Apps Share One Workspace**
 
-**Your Workspace = Your Business Brain:** Every Genesis app you build learns from your workspace's existing knowledge. Your customer data, team processes, and business intelligence all work together automatically.
+**Your workspace holds your business knowledge.** Each Taskade Genesis app that you build learns from the knowledge in your workspace. Your customer data, team processes, and business data work together.
 
-**Example: Restaurant Chain Owner**
+**Example: the owner of a restaurant chain**
 
-* **Morning**: Check your feedback app (powered by customer data from all locations)
-* **Afternoon**: Your inventory app (connected to the same customer preferences) suggests menu adjustments
-* **Evening**: Your staff scheduling app (knowing busy periods from feedback data) optimizes tomorrow's shifts
+* **Morning**: The owner opens the feedback app. It shows customer data from all locations.
+* **Afternoon**: The inventory app uses the same customer preferences. It suggests changes to the menu.
+* **Evening**: The staff schedule app knows the busy periods from the feedback data. It plans the shifts for the next day.
 
-**The Magic:** All three apps share the same business intelligence, making each one smarter.
+**The result:** The three apps use the same business data, so each app gives better results.
 
 ### **🎨 Creative Workflow Prompts**
 
-**Content Production Pipeline:**
+**Content production:**
 
 {% code overflow="wrap" %}
 ```
@@ -793,7 +796,7 @@ Ready to unlock Genesis's full potential? Here are advanced prompts and real-wor
 ```
 {% endcode %}
 
-**Brand Asset Management:**
+**Brand assets:**
 
 {% code overflow="wrap" %}
 ```
@@ -801,9 +804,9 @@ Ready to unlock Genesis's full potential? Here are advanced prompts and real-wor
 ```
 {% endcode %}
 
-### **📊 Data-Driven Decision Making**
+### **📊 Decisions From Data**
 
-**Business Intelligence Prompts:**
+**Business data prompts:**
 
 {% code overflow="wrap" %}
 ```
@@ -811,7 +814,7 @@ Ready to unlock Genesis's full potential? Here are advanced prompts and real-wor
 ```
 {% endcode %}
 
-**Performance Tracking:**
+**Team results:**
 
 {% code overflow="wrap" %}
 ```
@@ -819,100 +822,100 @@ Ready to unlock Genesis's full potential? Here are advanced prompts and real-wor
 ```
 {% endcode %}
 
-### **⚡ Automation That Actually Helps**
+### **⚡ Useful Automations**
 
-**Smart Follow-ups:**
+**Follow-ups:**
 
-* When a customer books a service, automatically send them preparation instructions 24 hours before
-* If a project deadline is approaching and tasks aren't complete, notify the team lead
-* When inventory runs low, create a reorder task and assign it to the purchasing manager
+* A customer books a service. The automation sends preparation instructions 24 hours before the service.
+* A project deadline is near and tasks are open. The automation tells the team lead.
+* Stock of an item is low. The automation makes a reorder task for the purchasing manager.
 
-**Intelligent Routing:**
+**Routing:**
 
-* Route customer complaints to different departments based on keywords
-* Assign leads to sales reps based on territory and availability
-* Escalate urgent issues to managers automatically
+* The automation sends each customer complaint to a department by its keywords.
+* The automation gives each lead to a sales rep by territory and availability.
+* The automation sends urgent issues to a manager.
 
-### **🌟 Real Success Stories**
+### **🌟 Example Stories**
 
 **"I built our entire client onboarding system in 20 minutes"** _Marketing Agency Owner_
 
-* New clients fill out a detailed intake form
-* Automatically creates project folders with their brand assets
-* Assigns team members based on service type
-* Sends welcome email with timeline and next steps
+* New clients fill out an intake form.
+* The app makes project folders with their brand assets.
+* The app gives the work to team members by service type.
+* The app sends a welcome email with the timeline and next steps.
 
 **"My food truck's daily operations run themselves now"** _Food Truck Entrepreneur_
 
-* Morning inventory check creates shopping lists
-* Customer orders track popular items for tomorrow's prep
-* End-of-day sales automatically update ingredient needs
-* Weather alerts suggest menu adjustments
+* A morning inventory check makes shopping lists.
+* Customer orders show the popular items for the preparation of the next day.
+* End-of-day sales update the ingredient needs.
+* Weather alerts suggest changes to the menu.
 
 **"Our remote team finally feels connected"** _Startup Founder_
 
-* Daily standup app collects updates without meetings
-* Project handoffs include all context and files
-* Team celebration app highlights wins and milestones
-* Knowledge sharing app captures lessons learned
+* A daily standup app collects updates with no meeting.
+* Project handoffs include all context and files.
+* A team celebration app shows wins and milestones.
+* A knowledge app keeps the lessons that the team learned.
 
-### **💡 Pro Tips for Advanced Users**
+### **💡 Tips for Advanced Users**
 
-**Start Small, Think Big:** Begin with one workflow that annoys you daily, then gradually connect it to other parts of your business.
+**Start small:** Start with one workflow that gives you trouble each day. Then connect it to other parts of your business, one at a time.
 
-**Use Natural Language:** Don't overthink the technical details. Describe what you want like you're talking to a smart assistant.
+**Use plain language:** Describe what you want, as you do to a colleague. You do not need technical details.
 
-**Connect Everything:** The more your apps share data, the smarter they become. Let Taskade's intelligence work for you.
+**Connect your apps:** Apps that share data give better results.
 
-**Iterate Quickly:** Build a basic version first, use it for a week, then refine based on what you learn.
+**Make changes in small steps:** Build a basic version first. Use it for a week. Then improve it with what you learned.
 
 ***
 
 ## **Genesis Version History**
 
-Taskade Genesis saves revisions of your app as you build. Open **Version history** to preview a saved revision and restore it.
+Taskade Genesis saves revisions of your app while you build it. To preview a saved revision and restore it, open **Version history**.
 
-### **What Gets Tracked**
+### **What a Revision Keeps**
 
-Each saved revision captures the app itself:
+Each saved revision keeps the app itself:
 
 | **Change Type**            | **Details Captured**                          |
 | -------------------------- | --------------------------------------------- |
 | **Content Modifications**  | Text updates, layout changes                  |
-| **Feature Additions**      | New pages, components, and functionality      |
+| **Feature Additions**      | New pages, components, and features           |
 
-A restore brings back the app's design and code. Your project data stays as it is.
+A restore brings back the design and code of the app. Your project data does not change.
 
-### **Restoration Made Simple**
+### **Restore a Revision**
 
-**Restore Version**: Bring back any saved revision
+**Restore Version**: Bring back a saved revision.
 
-* Preview a revision before you restore it
-* See which revision is live: the **Live** badge marks the version visitors use
-* After a restore, a manually published app asks you to publish the restored version
+* Preview a revision before you restore it.
+* Find the live revision: the **Live** badge marks the version that visitors use.
+* If you publish your app manually, publish the restored version after the restore. The app asks you to do this.
 
-### **Professional Development Benefits**
+### **Why Version History Helps**
 
-* **Client Confidence**: Show complete development history
-* **Safe Experimentation**: Try bold changes knowing you can always revert
-* **Milestone Backups**: Export important versions to GitHub for an external copy
+* **Client trust**: Show the full history of the app.
+* **Safe tests**: Try large changes. You can always go back.
+* **Backups of milestones**: Export important versions to GitHub for an external copy.
 
 ***
 
 ## **Database Projects: Your App's Data Foundation**
 
-When Genesis creates an app, it automatically generates database projects that serve as your app's intelligent data layer.
+When Taskade Genesis makes an app, it also makes database projects. These projects keep the data of your app.
 
 ### **What Are Database Projects?**
 
-Database projects are smart storage systems that:
+A database project is a Taskade project that stores the data of your app. Database projects do these things:
 
-* **Structure Data Automatically** based on your app's needs
-* **Sync in Real-Time** between your app interface and database
-* **Train AI Agents** with your business data and patterns
-* **Trigger Automations** when data changes or meets conditions
+* **Structure the data** to fit the needs of your app
+* **Sync at once** between the app screens and the database
+* **Train AI agents** on your business data and patterns
+* **Start automations** when data changes or meets a condition
 
-### **Perfect For Business Applications**
+### **Database Projects for Business Apps**
 
 | **App Type**          | **Database Use**                 | **Smart Features**                            |
 | --------------------- | -------------------------------- | --------------------------------------------- |
@@ -921,20 +924,20 @@ Database projects are smart storage systems that:
 | **Support Platforms** | Ticket data, resolution patterns | Smart routing and response suggestions        |
 | **Sales Dashboards**  | Lead data, conversion metrics    | Predictive analytics and follow-up automation |
 
-### **Database Intelligence Features**
+### **Database Features**
 
-* **Smart Relationships**: Automatically connects related data
-* **Pattern Recognition**: Identifies trends and anomalies
-* **Predictive Insights**: Suggests actions based on data patterns
-* **Real-Time Sync**: Updates instantly across all connected systems
+* **Relationships**: Connects related data
+* **Patterns**: Finds trends and unusual values
+* **Forecasts**: Suggests actions from data patterns
+* **Sync**: Updates all connected parts at once
 
-### **Getting Started with Database Projects**
+### **Start With Database Projects**
 
-1. **Let Genesis Create**: Your database structure is built automatically
-2. **Review the Structure**: Check the generated fields and relationships
-3. **Customize as Needed**: Add custom fields or modify relationships
-4. **Connect Automations**: Set up triggers for data changes
-5. **Train AI Agents**: Let agents learn from your data patterns
+1. **Let Taskade Genesis make the database.** It builds the structure for you.
+2. **Review the structure.** Look at the generated fields and relationships.
+3. **Change it to fit your needs.** Add custom fields or change relationships.
+4. **Connect automations.** Add triggers for data changes.
+5. **Train AI agents.** Let agents learn from your data patterns.
 
 ***
 
@@ -942,26 +945,25 @@ Database projects are smart storage systems that:
 
 ### **Preview and Live Versions**
 
-Each Genesis app has a working version and a live version:
+Each Taskade Genesis app has a working version and a live version:
 
 | **Version**         | **Purpose**                 | **Features**                                  |
 | ------------------- | --------------------------- | --------------------------------------------- |
-| **Current**         | Testing and iteration       | Full editing access in the builder and preview |
-| **Live**            | Live public access          | The revision visitors see after you publish   |
+| **Current**         | Tests and changes           | Full edit access in the builder and preview   |
+| **Live**            | Public access               | The revision visitors see after you publish   |
 
 ### **Custom Domain Integration**
 
-Brand your Genesis apps with professional custom domains:
+You can give your Taskade Genesis app the domain of your company.
 
-What you get with a custom domain:
+A custom domain gives you:
 
-* Branded URL (e.g., `app.yourcompany.com`)
-
+* A branded URL (for example, `app.yourcompany.com`)
 * Automatic SSL
 * Fast global delivery
-* A cleaner, professional sharing experience
+* A clean, professional link to share
 
-See [Custom Domains & Branding](custom-domains.md).
+Read [Custom Domains & Branding](custom-domains.md).
 
 ### **Advanced Security & Access Control**
 
@@ -969,30 +971,30 @@ See [Custom Domains & Branding](custom-domains.md).
 | ------------------------ | ----------------------------- | ---------------------- |
 | **Password Protection**  | App-level password (Pro and up) | Client-specific access |
 | **App Sign-In**          | Email sign-in for app users (every plan) | Client portals |
-| **User Role Management** | Granular permission control   | Team collaboration     |
+| **User Role Management** | Detailed permission control   | Team collaboration     |
 
-### **Performance Optimization**
+### **App Speed**
 
-**Automatic Optimizations:**
+**Automatic improvements:**
 
-* **Code Splitting** - Load only necessary components
-* **Image Optimization** - Automatic compression and format selection
-* **Caching Strategy** - Intelligent content caching
-* **Mobile Optimization** - Responsive design and touch optimization
+* **Code splitting** - Loads only the necessary components
+* **Image optimization** - Compresses images and selects the format
+* **Caching** - Keeps frequent content ready
+* **Mobile optimization** - Responsive design for touch screens
 
-**Performance Monitoring:**
+**Performance monitoring:**
 
-* **Real-Time Analytics** - Visits, traffic sources, and device metrics (Business and up)
-* **Error Tracking** - Automatic bug detection and reporting
-* **Load Testing** - Simulate high-traffic scenarios
-* **Performance Alerts** - Notifications for performance issues
+* **Real-time analytics** - Visits, traffic sources, and device metrics (Business and up)
+* **Error tracking** - Finds and reports bugs automatically
+* **Load tests** - Simulate periods of high traffic
+* **Performance alerts** - Notifications about performance problems
 
 ***
 
-**Ready to implement advanced features?** Start with one area that would have the biggest impact on your business, implement it thoroughly, and then gradually add more sophisticated capabilities.
+**Add advanced features:** Start with the area that helps your business most. Finish it, then add more features one at a time.
 
-**Need help with complex implementations?** The Genesis AI agent can guide you through setting up advanced features and troubleshooting complex workflows.
+**Get help with complex setups:** The Taskade Genesis AI agent can guide you through advanced features. It can also help you repair complex workflows.
 
 ---
 
-_Step-by-step guides on taskade.com/learn: [App Revisions & Restore](https://www.taskade.com/learn/genesis/version-history), [Publish Agents Publicly](https://www.taskade.com/learn/agents/public-agents)._
+_Step-by-step guides on taskade.com/learn: [Version History & Restore](https://www.taskade.com/learn/genesis/version-history), [Publish Agents Publicly](https://www.taskade.com/learn/agents/public-agents)._

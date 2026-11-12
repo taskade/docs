@@ -5,124 +5,127 @@ description: >-
 
 # GenesisAuth
 
-A dedicated security layer for Taskade Genesis apps. Every Taskade Genesis app can ship with real user accounts and secure sign-in — no code, no third-party provider setup, no DevOps.
+GenesisAuth gives each Taskade Genesis app real user accounts and secure sign-in. You write no code. You do not configure a sign-in service from another company, and you do not manage servers.
 
 ---
 
 ## What Is GenesisAuth
 
-GenesisAuth is the authentication layer for apps built with Taskade Genesis. When you describe an app that needs user accounts, Taskade wires up secure sign-in automatically — session management, credential handling, and access control all work out of the box.
+GenesisAuth is the sign-in system for apps that you build with Taskade Genesis. When you describe an app that needs user accounts, Taskade adds secure sign-in to the app. It also manages the sessions, the passwords, and the access control for you.
 
-* **Built-in user accounts.** No Auth0 or Clerk to wire up, no schema to design.
-* **Pre-built sign-in component** added to the generated app automatically.
-* **Scales with your app.** Handles sessions, password hashing, and session tokens securely.
-* **Turns every Taskade Genesis app into a real multi-user product.**
+* **Built-in user accounts.** You do not connect Auth0 or Clerk, and you do not design a schema.
+* **Sign-in component.** Taskade adds a ready sign-in screen to the app that it builds.
+* **Grows with your app.** GenesisAuth keeps sessions, password hashes, and session tokens secure.
+* **Many users in one app.** Each person who uses your app gets their own account.
 
 ---
 
 ## Turning Any App Into a Multi-User Product
 
-You don't configure GenesisAuth manually — you describe the need.
+You do not configure GenesisAuth by hand. You describe what you need:
 
-1. In Taskade Genesis, describe your app in plain language. Include phrases like:
+1. In Taskade Genesis, describe your app in plain language. Use words such as:
    * *"a client portal where each client has their own dashboard"*
    * *"users can sign in to see their own habit streaks"*
    * *"a members-only knowledge base"*
-2. Taskade EVE generates the app **with the sign-in component in place**.
-3. Open the app's settings to review the **App Users** tab.
+2. Wait for Taskade EVE to build the app **with the sign-in component in place**.
+3. Open the settings of the app and go to the **App Users** tab.
 
-That's it. Your app now accepts user sign-ups and handles sign-in. Sign-in confirms who a visitor is. It does not hide other people's records: to show each person only their own rows, turn on **Private entries** (row scoping, off by default) and test with a second account. See [Give each user only their own rows](../run-your-business/add-login-and-roles.md#give-each-user-only-their-own-rows).
+Your app then accepts sign-ups and sign-ins. Sign-in confirms who a visitor is. It does not hide the records of other people. To show each person only their own rows, turn on **Private entries** (row scoping, off by default). Then pick the owner field that matches each row to a login, and test with a second account. See [Give each user only their own rows](../run-your-business/add-login-and-roles.md#give-each-user-only-their-own-rows).
 
 {% hint style="info" %}
-If your first prompt doesn't trigger auth setup, you can add it later by asking Taskade EVE to *"add sign-in for users"* while editing the app.
+If your first prompt does not add sign-in, you can add it later. Ask Taskade EVE to *"add sign-in for users"* while you edit the app.
 {% endhint %}
 
 {% hint style="success" %}
-**Sign-in is always real.** If a build or edit ever produces a login screen that doesn't actually authenticate, Taskade EVE detects it and automatically replaces it with working, persistent authentication — GenesisAuth sign-in by default, or secure hashed-credential storage for apps that manage their own user directory. EVE tells you when it makes this repair.
+**Sign-in is always real.** Sometimes a build or an edit makes a login screen that does not sign people in. Taskade EVE finds that screen and replaces it with working, persistent sign-in. By default, it uses GenesisAuth. An app that keeps its own list of users gets secure hashed-credential storage. Taskade EVE tells you when it makes this repair.
 {% endhint %}
 
 ---
 
 ## The App Users Tab
 
-The **App Users** tab lives in your Taskade Genesis app's settings (**App settings → People & access → App users**). It's a first-class user management dashboard.
+The **App Users** tab is in the settings of your Taskade Genesis app (**App settings → People & access → App users**). On this tab, you manage the people who use your app.
 
 ### What You Can Do
 
-* See the list of end users who have signed in to your app.
+On the **App Users** tab, you can:
+
+* See the list of the people who signed in to your app.
 * Add a person by email with **Add person**. Taskade emails them a link to set a password.
 * Choose who can sign up: **Anyone** or **Invite only**.
-* Disable an account without deleting it, and re-enable it later.
-* Delete accounts entirely.
+* Make a person an **Admin** or a **Member** of the app. A role decides what the app shows. It is not a data permission, with two narrow exceptions such as **Admins see every row** in **Private entries**. See [Give admins the full view](../run-your-business/add-login-and-roles.md#give-admins-the-full-view).
+* Disable an account without deleting it, and enable it again later.
+* Delete an account.
 
-All without touching code.
+You do all of this with no code.
 
 {% hint style="info" %}
-The App Users tab is currently in Beta. App Users and app sign-in work on every plan, Free included — bug reports welcome at [github.com/taskade/taskade/issues](https://github.com/taskade/taskade/issues).
+The App Users tab is in Beta. App Users and app sign-in work on every plan, Free included. Send bug reports to [github.com/taskade/taskade/issues](https://github.com/taskade/taskade/issues).
 {% endhint %}
 
 ---
 
 ## Workspace Single Sign-On
 
-Workspace SSO (SAML) is company single sign-on for your own team members inside Taskade. It is available on Business and up. See [Account Management](../../account-management/README.md).
+Workspace SSO (SAML) is company single sign-on for the members of your team inside Taskade. It is available on Business and up. See [Account Management](../../account-management/README.md).
 
-* Workspace SSO is a separate feature from GenesisAuth.
-* Taskade workspace credentials do not open an app account. People who use a published app, your teammates included, sign in with an app account.
+* Workspace SSO is a different feature from GenesisAuth.
+* Taskade workspace credentials do not open an app account. Each person who uses a published app signs in with an app account. This rule also applies to your teammates.
 * For an internal tool, add each teammate on the **App Users** tab, or set **Who can sign up** to **Invite only**.
 
 ---
 
 ## Custom Domain Sign-In
 
-GenesisAuth works seamlessly on apps hosted at your own domain.
+GenesisAuth also works on apps that use your own domain.
 
-* No additional configuration required when you connect a custom domain.
-* Session cookies and redirects handle custom domains correctly.
-* Specific reliability improvements were added for sign-in flows on custom domains.
+* You do not configure more settings when you connect a custom domain.
+* Session cookies and redirects work correctly on custom domains.
+* Taskade made sign-in on custom domains more reliable.
 
 {% hint style="success" %}
-Combine GenesisAuth with a [custom domain](../space-apps-guide/custom-domains.md) to deliver a fully branded, production-ready product to end users.
+Use GenesisAuth together with a [custom domain](../space-apps-guide/custom-domains.md). Your users then get a product with your own brand and address.
 {% endhint %}
 
 ---
 
 ## Access Control
 
-GenesisAuth is part of a broader access-control story.
+GenesisAuth is one of several access controls. This table compares them:
 
 | Control | What It Does | When to Use |
 | --- | --- | --- |
-| GenesisAuth (App Users) | Account-based sign-in for app end users, on every plan | Any multi-user app, internal tools included |
+| GenesisAuth (App Users) | Sign-in with an account for the people who use your app, on every plan | Each app with more than one user, internal tools included |
 | Private entries (row scoping) | Shows each signed-in person only the rows that match their login. Off by default | Client portals, member areas |
-| Workspace SSO | Company single sign-on for your team inside Taskade (Business and up). It does not sign people in to a published app | Your own team's Taskade accounts |
-| Password-protected public links | Single shared password for a link (Pro and up) | Quick gated preview |
-| Listed / Unlisted | Controls discoverability (**Show in public listings**) | Non-indexed sharing |
+| Workspace SSO | Company single sign-on for your team inside Taskade (Business and up). It does not sign people in to a published app | The Taskade accounts of your own team |
+| Password-protected public links | One shared password for a link (Pro and up) | A quick preview with a lock |
+| Listed / Unlisted | Controls if people can find the app (**Show in public listings**) | Share by link only, not in search |
 | Public agent tool opt-out | Sensitive tools stay workspace-only | Published agents |
 
 <figure><img src="../../.gitbook/assets/genesisauth-password-protection.gif" alt="" width="563"><figcaption></figcaption></figure>
 
 ---
 
-## How It Works Under the Hood
+## How It Works Internally
 
-You don't need to know these details to use GenesisAuth, but they matter if you're auditing the security model.
+You do not need these details to use GenesisAuth. They help if you review the security model.
 
-* **Token-based session management.** Sign-in produces a secure session token stored in an HTTP-only cookie.
-* **Sessions persist across updates.** Signed-in users stay signed in through app updates — no forced re-login.
-* **No credentials in the app bundle.** Exported app bundles never contain end-user credentials or session tokens — only the app structure.
-* **Per-app user isolation.** Each Genesis app's App Users list is scoped to that app.
+* **Token-based session management.** Sign-in makes a secure session token. The browser keeps it in an HTTP-only cookie.
+* **Sessions persist across updates.** Signed-in users stay signed in after an app update. They do not sign in again.
+* **No credentials in the app bundle.** An exported app bundle never holds the credentials or session tokens of your users. It holds only the app structure.
+* **Per-app user isolation.** Each Taskade Genesis app has its own App Users list.
 
 ---
 
 ## Security Best Practices
 
-* **Review exposed tools.** For public agents, opt sensitive tools out so external users can't invoke them.
-* **Disable instead of delete** when you want to retain a user's history but block access.
-* **Use a custom domain with TLS** for any app that handles user data in production.
-* **OIDC sign-in is hardened by default.** App sign-in runs on OIDC, with Taskade as the identity provider. PKCE is an OAuth security check that stops intercepted sign-in codes from being replayed. Taskade accepts only the S256 PKCE method and validates that `redirect_uri` matches your app's own origin. See [App Sign-In (OIDC)](publish-and-clone.md#app-sign-in-oidc) and the [authentication guide](../../apis-living-system-development/developers/authentication.md).
-* **Monitor sign-in activity** via the App Users tab and your workspace activity log.
-* **Rotate workspace tokens** periodically if you also expose the app via the [Public API](../../apis-living-system-development/developers/authentication.md).
+* **Review exposed tools.** For a public agent, turn off the sensitive tools. People outside your workspace then cannot use them.
+* **Disable instead of delete.** If you want to keep the history of a user but block access, disable the account.
+* **Use a custom domain with TLS** for each production app that holds user data.
+* **OIDC sign-in is hardened by default.** App sign-in runs on OIDC, with Taskade as the identity provider. PKCE is an OAuth security check. It stops a person from using a stolen sign-in code again. Taskade accepts only the S256 PKCE method. Taskade also makes sure that `redirect_uri` matches the origin of your app. See [App Sign-In (OIDC)](publish-and-clone.md#app-sign-in-oidc) and the [authentication guide](../../apis-living-system-development/developers/authentication.md).
+* **Monitor sign-in activity** on the App Users tab and in the activity log of your workspace.
+* **Rotate workspace tokens.** If you also give access to the app through the [Public API](../../apis-living-system-development/developers/authentication.md), rotate the tokens at regular intervals.
 
 ---
 

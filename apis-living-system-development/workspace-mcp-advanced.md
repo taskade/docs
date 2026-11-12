@@ -157,7 +157,7 @@ When the remote server requires a token, add the optional bearer token.
 
 **An agent cannot reach an MCP server on its own.** Taskade has no per-agent MCP connector settings on any plan.
 
-To let an agent use a remote MCP tool, configure the agent to trigger an automation that carries the MCP Client step. The automation hands the result back.
+To let an agent use a remote MCP tool, use an automation. Configure the agent to trigger an automation that has the MCP Client step. The automation gives the result back.
 
 The connector applies these connection rules:
 
@@ -165,7 +165,7 @@ The connector applies these connection rules:
 - It rejects credentials embedded in the URL.
 - It rejects `localhost`, `*.localhost`, `*.local`, and `*.internal`.
 - It rejects loopback, private, link-local, CGNAT, unspecified, and IPv4-mapped internal IP literals.
-- It rejects redirects instead of following them.
+- It rejects redirects and does not follow them.
 - It gives each transport 20 seconds to complete the handshake.
 
 See **[MCP Client connector](https://www.taskade.com/learn/connect/mcp-client-integration)** for setup. See **[Which Taskade MCP do I want?](mcp-overview.md)** to compare directions.
@@ -186,19 +186,19 @@ For services without MCP, use the [100+ native integrations](https://www.taskade
 | Tool timeout | Large response or slow upstream | Examine the upstream service. Reduce the query scope |
 
 
-If the problem stays, file an issue at [github.com/taskade/taskade/issues](https://github.com/taskade/taskade/issues) with your MCP logs.
+If the problem stays, file an issue at [github.com/taskade/mcp/issues](https://github.com/taskade/mcp/issues) with your MCP logs. That repository holds the source of `@taskade/mcp-server`.
 
 
 
 ## Security Best Practices
 
 - **Audit tool exposure for public agents.** Opt sensitive tools (file access, automation triggers) out of public agent configurations.
-- **Assume a leaked token is a full account compromise.** Personal access tokens carry no workspace or resource scope. A leak exposes every workspace the owning account can reach. Revoke the token at [settings/api](https://www.taskade.com/settings/api) instead of reasoning about the blast radius.
+- **Assume a leaked token is a full account compromise.** Personal access tokens carry no workspace or resource scope. A leak exposes every workspace that the account of the token can reach. Revoke the token at [settings/api](https://www.taskade.com/settings/api). Do not try to measure the damage first.
 - **Isolate by account, not by token.** If an integration must access one workspace, give it a dedicated Taskade account.
 - Invite that account only to the required workspace. Then issue the token from that account.
 - **Rotate on every personnel change.** When a teammate leaves, rotate any shared tokens.
 - **Monitor the workspace activity log** for unexpected MCP-initiated actions.
-- The hosted Taskade MCP is always served over TLS at `https://www.taskade.com/mcp`.
+- Taskade always serves the hosted Taskade MCP over TLS at `https://www.taskade.com/mcp`.
 
 
 ## Set this up with your coding agent
@@ -213,7 +213,7 @@ Start the local Taskade MCP server with "npx -y @taskade/mcp-server" over stdio.
 
 ## Next steps
 
-- [Workspace MCP](workspace-mcp.md): install the local server and set up your client.
+- [Workspace MCP](workspace-mcp.md): install the local server and configure your client.
 - [Hosted Taskade MCP](genesis-app-mcp.md): the no-install server with OAuth.
 - [Action API guide](api-v2-reference.md): the API behind the v2 tools.
 - [MCP Client connector](https://www.taskade.com/learn/connect/mcp-client-integration): call another MCP server from an automation.

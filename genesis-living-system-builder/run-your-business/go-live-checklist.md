@@ -6,38 +6,40 @@ description: >-
 
 # Is your app production-ready? A go-live checklist
 
-You described an app, shaped your data, and it works. Before you put it in front of real customers or your team, run this checklist. Each item links to the page that covers it in full — work top to bottom and you'll launch with confidence.
+Your app works. Before real customers or your team use it, do this checklist. Each item links to the page with the full steps. Start at the top and work down.
 
 ***
 
 ### Security
 
-* [ ] **Secrets are vaulted, not hardcoded.** Any API key, token, or password your app uses lives in the secret vault — never pasted into a prompt or page. → [App Secrets](../space-apps-guide/app-secrets.md)
-* [ ] **The publish guard passed.** Taskade Genesis blocks publishing if it spots a hardcoded credential; resolve any warning before launch. → [App Secrets](../space-apps-guide/app-secrets.md)
+* [ ] **Keep secrets in the vault.** Put each API key, token, or password that your app uses in the secret vault. Do not paste a secret into a prompt or a page. → [App Secrets](../space-apps-guide/app-secrets.md)
+* [ ] **Pass the publish guard.** Taskade Genesis stops a publish when it finds a credential in the code. Correct each warning before launch. → [App Secrets](../space-apps-guide/app-secrets.md)
 
 ### Access & data
 
-* [ ] **Login and roles are configured.** The right people can sign in, and the app shows each role the right screens. → [Add login and roles](add-login-and-roles.md)
-* [ ] **Per-user data isolation is verified.** Sign-in alone does not hide other people's records. Turn on **Private entries**, then sign in as a test client and confirm they can see only their own record — never anyone else's. → [Add login and roles](add-login-and-roles.md)
+* [ ] **Configure login and roles.** Make sure that the right people can sign in, and that each role sees the right screens. → [Add login and roles](add-login-and-roles.md)
+* [ ] **Test the data for each user.** Sign-in alone does not hide other people's records. Turn on **Private entries**. Then sign in as a test client and make sure that the client sees only their own records. → [Add login and roles](add-login-and-roles.md)
 
 ### Domain & publishing
 
-* [ ] **Your custom domain is live with HTTPS (Pro and up).** Your app loads at your own address with the padlock showing. → [Put your app on your own domain](../space-apps-guide/custom-domains.md)
-* [ ] **Visibility and publish strategy are set correctly.** Under **Who can open it**, pick the link, a password, or each person signs in. Turn **Show in public listings** on or off — match it to who should reach the app. → [Publishing & cloning](../community-and-sharing/publish-and-clone.md)
+* [ ] **Make sure that your custom domain is live with HTTPS (Pro and up).** Open your app at your own address and look for the padlock. → [Put your app on your own domain](../space-apps-guide/custom-domains.md)
+* [ ] **Set who can open the app.** Under **Who can open it**, pick the link, a password, or each person signs in. Then turn **Show in public listings** on or off for your audience. → [Publishing & cloning](../community-and-sharing/publish-and-clone.md)
+* [ ] **Test the shared password (Pro and up).** If you picked **Anyone with the password**, click **Save password**. The line "Password protection is on" shows. Wait about a minute, then test the password in a private browser window. → [Publishing & cloning](../community-and-sharing/publish-and-clone.md)
+* [ ] **Publish your latest changes.** On a new app, Taskade saves each change as a draft. If the publish status says **Changes not live yet**, click **Publish** again. → [Publishing & cloning](../community-and-sharing/publish-and-clone.md)
 
 ### Cost & reliability
 
-* [ ] **Auto Top-Up is enabled.** A customer-facing agent should never hit an out-of-credits screen mid-session — set a top-up so credits replenish automatically. → [Credits & billing](../../account-management/credits-and-billing.md)
+* [ ] **Turn on Auto Top-Up.** Set a top-up so that your credits fill again automatically. Then a customer-facing agent does not stop with an out-of-credits screen. → [Credits & billing](../../account-management/credits-and-billing.md)
 
 ### Final checks
 
-* [ ] **Test data is purged.** Remove the dummy records you created while building.
-* [ ] **A known-good version is noted** in Version history, so you can roll back if a later change misbehaves. → [Version history](../genesis/version-history.md)
+* [ ] **Delete the test data.** Remove the sample records that you made during the build.
+* [ ] **Note a good version.** Find a version that works in Version history. If a later change causes a problem, you can roll back to it. → [Version history](../genesis/version-history.md)
 
 ***
 
 {% hint style="success" %}
-**You're ready to launch.** Every box checked means your app is secure, access-controlled, on your domain, and won't run out of credits in front of a customer.
+**You are ready to launch.** When you check each box, your app is secure, has access control, runs on your domain, and has credits for your customers.
 {% endhint %}
 
 ## Next steps
