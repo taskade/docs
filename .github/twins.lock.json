@@ -583,7 +583,7 @@
     ]
   },
   "https://www.taskade.com/learn/genesis/version-history": {
-    "sha256": "bd0439be658fb248b5ef4a47411ecaa395354ad03f4c06ce2a7e8daff31a9803",
+    "sha256": "129ef36107380409f1243396d51dc1dbf07e971c644d01d73ceba3b140d24f1c",
     "pages": [
       "genesis-living-system-builder/genesis/version-history.md",
       "genesis-living-system-builder/space-apps-guide/advanced-features.md"

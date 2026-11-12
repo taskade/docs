@@ -149,4 +149,4 @@ Prefer **Manual** publish for any Genesis app in active use. It gives you a revi
 
 ---
 
-_Step-by-step guide on taskade.com/learn: [App Revisions & Restore](https://www.taskade.com/learn/genesis/version-history)._
+_Step-by-step guide on taskade.com/learn: [Version History & Restore](https://www.taskade.com/learn/genesis/version-history)._

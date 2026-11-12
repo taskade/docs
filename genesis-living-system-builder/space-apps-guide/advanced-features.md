@@ -995,4 +995,4 @@ See [Custom Domains & Branding](custom-domains.md).
 
 ---
 
-_Step-by-step guides on taskade.com/learn: [App Revisions & Restore](https://www.taskade.com/learn/genesis/version-history), [Publish Agents Publicly](https://www.taskade.com/learn/agents/public-agents)._
+_Step-by-step guides on taskade.com/learn: [Version History & Restore](https://www.taskade.com/learn/genesis/version-history), [Publish Agents Publicly](https://www.taskade.com/learn/agents/public-agents)._
