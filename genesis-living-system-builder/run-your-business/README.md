@@ -1,77 +1,70 @@
 ---
 description: >-
-  Build and run a real business on Taskade Genesis — an ops dashboard, a CRM, or
-  a client portal — with logins and your own domain. No code, no sales call.
+  Build a business app with Taskade Genesis, such as an ops dashboard, a CRM, or a client portal. Add logins, put it on your own domain, and go live.
 ---
 
 # Run Your Business on Taskade Genesis
 
-**Describe your business in plain English and get a real, running app — then put it on your own domain with logins and run your operation on it.** No code. No sales call.
+Describe your business in plain English, and Taskade Genesis builds a running app. You can add logins, put the app on your own domain, and run your work on it. You write no code.
 
-Thousands of operators — consultants, clinics, realtors, agencies, construction and logistics teams — already run their day-to-day on a Taskade Genesis app. This track stitches the pieces into one path: **build → add your data → add logins → put it on your domain → go live.**
-
-***
-
-## Pick what you're building
+The track has five steps: build the app, add your data, add logins, put it on your domain, and go live.
 
 {% hint style="info" %}
-New to Taskade Genesis? Start with [Your first app in 5 minutes](../genesis/getting-started.md), then come back here to turn it into a business you run.
+If you are new to Taskade Genesis, start with [Your first app in 5 minutes](../genesis/getting-started.md). Then come back to this page.
 {% endhint %}
 
-**Build your own, or start from a kit.** Describe your business and [build from scratch](https://www.taskade.com/create), or clone a ready-made app from Taskade App Factory at [taskade.com/apps](https://www.taskade.com/apps) or [Taskade's official kits](https://www.taskade.com/apps/official) and make it yours. Free kits clone on every plan, except kits with a **PRO** badge, which need a paid plan. Both paths lead to the same steps below.
+## Pick what you build
 
-| You want to… | Start here |
+You can build an app from a prompt at [taskade.com/create](https://www.taskade.com/create). You can also clone a ready-made app from [taskade.com/apps](https://www.taskade.com/apps) or from [Taskade's official kits](https://www.taskade.com/apps/official). Free kits clone on every plan. A kit with a **PRO** badge needs a paid plan. Both paths continue with the same steps.
+
+| You want to | Start here |
 | --- | --- |
-| See the whole journey end to end | [From idea to live business — the 5 steps](from-idea-to-live-business.md) |
+| See the full path from idea to launch | [From idea to live business](from-idea-to-live-business.md) |
 | Give clients or members a private login | [Build a client or member portal](build-a-client-portal.md) |
-| Run internal operations with your team | [Build an internal ops dashboard](build-an-ops-dashboard.md) |
-| Add sign-in and roles to any app | [Add login and roles](add-login-and-roles.md) |
-| Launch to real users with confidence | [Is your app production-ready?](go-live-checklist.md) |
+| Run internal work with your team | [Build an internal ops dashboard](build-an-ops-dashboard.md) |
+| Add sign-in and roles to an app | [Add login and roles](add-login-and-roles.md) |
+| Make sure that the app is ready for real users | [Go-live checklist](go-live-checklist.md) |
 
-***
-
-## How the track fits together
+## The five steps
 
 {% stepper %}
 {% step %}
 #### Build it
 
-Describe the app you want to Taskade Genesis and iterate until it works. → [Getting started](../genesis/getting-started.md)
+Describe the app to Taskade Genesis. Change the prompt until the app does what you want. Read [Getting started](../genesis/getting-started.md).
 {% endstep %}
 
 {% step %}
 #### Make it your system of record
 
-Shape your data and views so the app holds the real records your business runs on. → [Projects & databases](../workspaces/projects-databases.md)
+Shape your data and views. The app then holds the real records of your business. Read [Projects & databases](../workspaces/projects-databases.md).
 {% endstep %}
 
 {% step %}
 #### Add logins and roles
 
-Let the right people in — your team internally, or your clients externally. Sign-in confirms who each person is. Turn on **Private entries** so each person sees only their own rows. → [Add login and roles](add-login-and-roles.md)
+Give access to your team or to your clients. Sign-in confirms who each person is. Turn on **Private entries** to show each person only their own rows. Read [Add login and roles](add-login-and-roles.md).
 {% endstep %}
 
 {% step %}
 #### Put it on your domain
 
-Launch the app at your own web address with automatic HTTPS (Pro and up). → [Custom domains](../space-apps-guide/custom-domains.md)
+Publish the app at your own web address with automatic HTTPS (Pro and up). Read [Custom domains](../space-apps-guide/custom-domains.md).
 {% endstep %}
 
 {% step %}
 #### Go live
 
-Run the checklist, right-size your plan and credits, and launch. → [Go-live checklist](go-live-checklist.md)
+Do the checklist, select the correct plan and credits, and launch. Read [Go-live checklist](go-live-checklist.md).
 {% endstep %}
 {% endstepper %}
 
-## Next steps
+## After you go live
 
-* [From idea to live business — the 5 steps](from-idea-to-live-business.md)
-* [Build a client or member portal](build-a-client-portal.md)
-* [Build an internal ops dashboard](build-an-ops-dashboard.md)
-* **Operate your live app by talking to Claude** — read and update your app's data in plain English. See [Run your live app by talking to Claude](../../apis-living-system-development/run-your-app-with-ai.md).
-* [What your app will cost](../../account-management/credits-and-billing.md)
-* **Extend your live system:** read & write your data with [Workspace MCP](../../apis-living-system-development/workspace-mcp.md), orchestrate agents and edit your app's code with the [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md), or connect external tools with [MCP Connectors](../genesis/mcp-connectors.md).
+* [What your app costs](../../account-management/credits-and-billing.md): plans and AI credits.
+* [Run your live app by talking to Claude](../../apis-living-system-development/run-your-app-with-ai.md): read and change the data of your app in plain English.
+* [Workspace MCP](../../apis-living-system-development/workspace-mcp.md) and [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md): let an AI client read and write your data and edit the code of your app.
+* [MCP Connectors](../genesis/mcp-connectors.md): connect outside tools.
 
 ---
 

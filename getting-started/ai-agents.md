@@ -1,6 +1,6 @@
 ---
 description: >-
-  Connect Claude, Codex, Cursor, ChatGPT, or any MCP client to Taskade in two minutes. One URL, one sign-in, plus the machine-readable entry points every AI agent needs to learn Taskade Genesis.
+  Connect Claude, Codex, Cursor, ChatGPT, or any MCP client to Taskade in two minutes with one URL and one sign-in. Then give your agent the Taskade skill.
 ---
 
 # Connect an AI Agent
@@ -40,7 +40,7 @@ The Claude Code command:
 claude mcp add --transport http taskade https://www.taskade.com/mcp
 ```
 
-After you add the server, restart the client, sign in, and ask it to call `list_spaces`. Any response means the connection works, also an empty list.
+After you add the server, restart the client and sign in. Then ask the client to call `list_spaces`. If you get a response, the connection works. An empty list is also a response.
 
 {% hint style="warning" %}
 MCP access is part of every paid plan. A workspace on the Free plan does not appear in `list_spaces`. When the response has `hiddenForPlan` and a `hint`, the agent shows the hint to you.
