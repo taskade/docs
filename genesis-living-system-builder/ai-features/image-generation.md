@@ -1,6 +1,6 @@
 ---
 description: >-
-  Generate images for Taskade Genesis apps natively in Taskade EVE chat with ready-to-use prompt templates. Auto-saved to Media in 1:1, 16:9, or 9:16.
+  Make images for Taskade Genesis apps in Taskade EVE chat with prompt templates. Taskade saves each image to Media in 1:1, 16:9 or 9:16.
 ---
 
 # Image Generation
@@ -9,30 +9,30 @@ description: >-
 
 ## Overview
 
-You can generate images for your Taskade Genesis apps **natively** — no extra tools needed. Images are created directly in chat and automatically saved to your Media library for reuse across your entire workspace.
+You can make images for your Taskade Genesis apps in the chat. You do not need other tools. Taskade saves each image to your Media library, and you can use it again anywhere in your workspace.
 
 | Feature | Detail |
 |---|---|
-| **Chat-native creation** | Describe what you need, generate instantly in Taskade EVE chat |
-| **Auto-save to Media** | Every generated image is stored in your workspace Media tab |
-| **Built for Taskade Genesis apps** | Use images in websites, tools, dashboards, and more |
+| **Chat-native creation** | Describe the image in Taskade EVE chat and get it in seconds |
+| **Auto-save to Media** | Taskade keeps each image in the Media tab of your workspace |
+| **Built for Taskade Genesis apps** | Use images in websites, tools, dashboards and more |
 | **Multiple aspect ratios** | 1:1 (square), 16:9 (landscape), 9:16 (portrait) |
-| **Batch generation** | Generate sets of consistent images in a single prompt |
-| **Reusable everywhere** | Use in any Genesis app, project, or agent knowledge base |
+| **Batch generation** | Make a set of matching images with one prompt |
+| **Reusable everywhere** | Use them in a Genesis app, a project or the knowledge of an agent |
 
-> **Powered by Taskade EVE:** Image generation is one of the built-in agent tools, so Taskade EVE and your agents can call it. See [How Taskade Genesis Works](../genesis/how-genesis-works.md#eve-the-unified-intelligence) to understand how Taskade EVE connects everything.
+> **Powered by Taskade EVE:** Image generation is one of the built-in agent tools. Taskade EVE and your agents can use it. To learn how Taskade EVE connects all parts, read [How Taskade Genesis Works](../genesis/how-genesis-works.md#eve-the-unified-intelligence).
 
 ---
 
 ## Generate Images in Chat
 
-1. Open your Taskade Genesis app
-2. Open the Taskade EVE chat
-3. Describe the image you want (use templates below)
-4. Send the message and wait for generation
-5. Use immediately in your app, or access anytime from the **Media** tab
+1. Open your Taskade Genesis app.
+2. Open the Taskade EVE chat.
+3. Describe the image that you want. You can use a template from the next sections.
+4. Send the message and wait for the image.
+5. Use the image in your app. You can also find it later in the **Media** tab.
 
-> **Note:** Images generated in chat automatically appear in Media and count toward your AI credit usage. See [Taskade AI Credits](https://www.taskade.com/learn/agents/ai-usage).
+> **Note:** Each image from the chat goes to Media and uses AI credits. Read [Taskade AI Credits](https://www.taskade.com/learn/agents/ai-usage).
 
 <!-- Screenshot: EVE chat with generated image result -->
 
@@ -40,21 +40,21 @@ You can generate images for your Taskade Genesis apps **natively** — no extra 
 
 ## What to Use Images For
 
-| Use Case | Examples | Impact |
+| Use Case | Examples | Result |
 |---|---|---|
-| **App branding** | Cover images, headers, section banners, icons | Professional first impression |
-| **Records & databases** | Product photos, client logos, listing visuals | Rich, visual data presentation |
-| **Dashboards** | Tiles, category images, visual summaries | Easier information scanning |
-| **Documentation** | How-to visuals, onboarding screens, SOP illustrations | Better user comprehension |
-| **Marketing** | Social media cards, promotional banners, hero images | Engagement and conversion |
-| **Placeholder content** | Demo data visuals, sample profiles, example products | Polished prototypes |
-| **Agent avatars** | Custom profile images for AI agents | Personalized AI interactions |
+| **App branding** | Cover images, headers, section banners, icons | A professional first impression |
+| **Records & databases** | Product photos, client logos, listing visuals | Data that is easy to see |
+| **Dashboards** | Tiles, category images, visual summaries | Faster reading of information |
+| **Documentation** | How-to visuals, onboarding screens, SOP illustrations | Users understand more |
+| **Marketing** | Social media cards, promotional banners, hero images | More clicks and sign-ups |
+| **Placeholder content** | Demo data visuals, sample profiles, example products | Prototypes that look finished |
+| **Agent avatars** | Custom profile images for AI agents | Agents with their own face |
 
 ---
 
 ## Prompt Templates by Category
 
-Copy these prompts directly — swap in your specific details.
+Copy a prompt and replace the details with your own.
 
 ### Profile Photos
 
@@ -102,24 +102,24 @@ Copy these prompts directly — swap in your specific details.
 
 | Practice | Why | Example |
 |---|---|---|
-| **Specify aspect ratio** | Prevents cropping issues | "1:1 (square)" or "16:9 (landscape)" |
-| **State "No text"** | AI-generated text often has errors | Always include "No text, no logos" |
-| **Request "No transparency"** | Ensures usable backgrounds | "Solid [color] background" |
-| **Use "consistent" for sets** | Keeps visual coherence across images | "Keep identical framing, lighting, and style" |
-| **Describe lighting** | Controls mood and professionalism | "Studio lighting" or "Soft, natural lighting" |
-| **Reference your brand** | Maintains consistency with your app | "Use our brand colors: navy #1a365d" |
-| **Be specific about subject** | Reduces generation attempts | "Stainless-steel water bottle" not "a product" |
+| **Give the aspect ratio** | Prevents bad cropping | "1:1 (square)" or "16:9 (landscape)" |
+| **Write "No text"** | Text in AI images often has errors | Always add "No text, no logos" |
+| **Ask for "No transparency"** | Gives you a background that you can use | "Solid [color] background" |
+| **Use "consistent" for sets** | All images in the set look the same | "Keep identical framing, lighting, and style" |
+| **Describe lighting** | Sets the mood of the image | "Studio lighting" or "Soft, natural lighting" |
+| **Name your brand colors** | Images match your app | "Use our brand colors: navy #1a365d" |
+| **Name the exact subject** | You need fewer attempts | "Stainless-steel water bottle" not "a product" |
 
 ---
 
 ## What's Next
 
-| Guide | What You'll Learn |
+| Guide | What You Learn |
 |---|---|
-| [Adding Genesis Context](../genesis/adding-context.md) | Upload brand assets and design references |
-| [Advanced Features](../space-apps-guide/advanced-features.md) | Customize app branding and appearance |
+| [Adding Genesis Context](../genesis/adding-context.md) | Upload brand files and design examples |
+| [Advanced Features](../space-apps-guide/advanced-features.md) | Change the branding and look of your app |
 | [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md) | Deploy your app with custom images |
-| [Media AI Chat](./media-ai-chat.md) | Chat with media files and images using AI |
+| [Media AI Chat](./media-ai-chat.md) | Ask AI about your media files and images |
 
 ---
 

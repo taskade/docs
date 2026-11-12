@@ -1,31 +1,33 @@
 ---
 description: >-
-  Reference for the Public API v2 - an action-based (RPC-over-HTTP) API. Most operations are a POST to a named endpoint.
+  The Action API v2 sends each operation as a POST to a named endpoint. Read the calls, limits and errors, then make your first call.
 ---
 
 # Action API Guide
 
 The Action API **v2** is an **action-based** API. Each operation sends a JSON body with `POST` to a named endpoint.
 
-It is not RESTful. It has no `GET /workspaces` or `PUT /tasks/{id}` endpoints.
+It is not a REST API. It has no `GET /workspaces` or `PUT /tasks/{id}` endpoints.
 
-Media downloads, bundle downloads, and [webhook registration](webhooks.md#webhook-registration-api) are the REST-style exceptions.
+Three parts use REST-style endpoints: media downloads, bundle downloads, and [webhook registration](webhooks.md#webhook-registration-api).
+
+To make your first call now, save a token as shown in [Before you start](#before-you-start). Then run the `listMyProjects` call in [Calling convention](#calling-convention).
 
 {% hint style="info" %}
 **v2 is in beta (`2.0.0-beta`) and runs alongside v1.** It adds **`promptAgent`** and signed webhook registration.
 
-**Tasks are fully writable in v2.**
+**In v2, you can create, change and delete tasks.**
 
 Content: `createTask`, `updateTask`, `deleteTask`, `moveTask`, `completeTask`, `uncompleteTask`.
 
 Metadata: `assignTask`, `unassignTask`, `setTaskDate`, `deleteTaskDate`, `setTaskNote`, `deleteTaskNote`, `setTaskFieldValue`, `deleteTaskFieldValue`.
 
-v1 has the longest track record. It alone reads a single task, at `GET /projects/{projectId}/tasks/{taskId}`.
+v1 is the older and more stable API. Only v1 reads a single task, at `GET /projects/{projectId}/tasks/{taskId}`.
 
 v2 renames, archives, and exports a project with `renameProject`, `archiveProject`, and `exportProject`. Neither version deletes a project. See [Choose an API](#choose-an-api).
 {% endhint %}
 
-The live OpenAPI spec is published at [taskade.com/api/documentation/v2](https://www.taskade.com/api/documentation/v2).
+Taskade publishes the live OpenAPI spec at [taskade.com/api/documentation/v2](https://www.taskade.com/api/documentation/v2).
 
 ## Before you start
 
@@ -43,7 +45,7 @@ export TASKADE_TOKEN="tskdp_your_token_here"
 
 ## Choose an API
 
-Taskade ships **two** public HTTP APIs. They share the same authentication.
+Taskade has **two** public HTTP APIs. Both use the same authentication.
 
 | | **REST API v1** | **Action API v2** |
 | --- | --- | --- |
@@ -64,23 +66,23 @@ Taskade ships **two** public HTTP APIs. They share the same authentication.
 
 The v2 task operations are `createTask`, `updateTask`, `deleteTask` and `moveTask`, plus `assignTask`, `setTaskDate`, `setTaskNote`, `setTaskFieldValue` and more.
 
-Use **v2** for LLM tools, agent prompts, or webhook registration. One verb per endpoint maps directly to a tool definition.
+Use **v2** for LLM tools, agent prompts, or webhook registration. Each endpoint does one action, so each endpoint maps to one tool definition.
 
-Use **v1** for its longer stability record. Also use v1 to read one task, date, note, or field directly, with `GET /projects/{projectId}/tasks/{taskId}` and its `/date`, `/note` and `/fields/{fieldId}` sub-paths.
+Use **v1** when you need the more stable API. Also use v1 to read one task, date, note, or field directly, with `GET /projects/{projectId}/tasks/{taskId}` and its `/date`, `/note` and `/fields/{fieldId}` sub-paths.
 
-Every row in this table is checkable. Each row comes from the two live OpenAPI documents. The generated [Action API reference](https://www.taskade.com/docs/actions) and [REST API reference](https://www.taskade.com/docs/rest) are built from those same specs.
+Each row in this table comes from the two live OpenAPI documents. Taskade builds the [Action API reference](https://www.taskade.com/docs/actions) and the [REST API reference](https://www.taskade.com/docs/rest) from the same specs.
 
 ---
 
 ## Base URL and authentication
 
-All v2 operations live under:
+All v2 operations use this base URL:
 
 ```text
 https://www.taskade.com/api/v2
 ```
 
-Send a personal access token, or an OAuth 2.0 access token for apps that act for other users, in the `Authorization` header:
+Send your token in the `Authorization` header. Use a personal access token, or an OAuth 2.0 access token for an app that acts for other users:
 
 ```http
 Authorization: Bearer <your token>
@@ -96,7 +98,7 @@ Every v2 call sends a JSON body with `POST` to an operation name. The API return
 
 A successful response has `"ok": true`. A list operation adds an `items` array, and a single-item operation adds an `item` object.
 
-Here is a single Action API v2 call, from authentication to JSON response.
+This diagram shows one Action API v2 call, from authentication to the JSON response.
 
 ```mermaid
 sequenceDiagram
@@ -147,7 +149,7 @@ export AGENT_ID="your_agent_id"
 
 ### List spaces (workspaces)
 
-**`POST /listSpaces`** is every integration's entry point. Send a JSON body. Every field in it is optional, so send `{}` when you do not filter.
+**`POST /listSpaces`** is the first call of most integrations. Send a JSON body. All fields in the body are optional, so send `{}` when you do not filter.
 
 {% tabs %}
 
@@ -207,7 +209,7 @@ const { items } = await res.json();
 }
 ```
 
-Filter with `{ "filterBy": { "name": { "operator": "contains", "value": "Marketing" } } }`.
+To filter by name, send `{ "filterBy": { "name": { "operator": "contains", "value": "Marketing" } } }`.
 
 ---
 
@@ -252,7 +254,7 @@ curl -s -X POST https://www.taskade.com/api/v2/getProject \
 
 ### Create a project
 
-**`POST /createProject`** seeds a project from Markdown.
+**`POST /createProject`** creates a project from Markdown content.
 
 {% tabs %}
 
@@ -305,7 +307,7 @@ print(res.json()["item"]["id"])
 
 ### List tasks
 
-**`POST /listTasks`** is paginated with `after` / `before` cursors. Each task is `{ id, text, parentId?, completed }`. Set `completed` to `false` to list only open tasks, or to `true` to list only completed tasks. The cursors and `limit` apply to the filtered list.
+**`POST /listTasks`** returns tasks in pages. Use the `after` and `before` cursors to move between pages. Each task is `{ id, text, parentId?, completed }`. Set `completed` to `false` to list only open tasks, or to `true` to list only completed tasks. The cursors and `limit` apply to the filtered list.
 
 ```bash
 curl -s -X POST https://www.taskade.com/api/v2/listTasks \
@@ -335,15 +337,15 @@ To set metadata, see [`assignTask`](https://www.taskade.com/docs/actions/assign-
 To read **one** task, use the [REST API v1 Tasks endpoints](https://www.taskade.com/docs/rest).
 {% endhint %}
 
-If Google Calendar is connected on an eligible workspace, dates set with `setTaskDate` can sync the same way as dates set in Taskade.
+If an eligible workspace connects Google Calendar, dates from `setTaskDate` can sync like dates that you set in Taskade.
 
 ---
 
 ### Prompt an agent
 
-**`POST /promptAgent`** sends a single prompt to a workspace agent. The endpoint returns a synchronous text response. This capability is **v2-only**.
+**`POST /promptAgent`** sends one prompt to a workspace agent. The endpoint returns a synchronous text response. Only **v2** has this operation.
 
-Each call uses the workspace's AI credits, the same as an agent chat in the app. If the workspace has no AI credits left, the call fails before the agent runs.
+Each call uses AI credits from the workspace, the same as an agent chat in the app. If the workspace has no AI credits left, the call fails before the agent runs.
 
 {% tabs %}
 
@@ -442,7 +444,7 @@ Pass `"includeTranscript": true` to add a Markdown `transcript` field to the res
 
 ### Attach knowledge to an agent
 
-**`POST /addKnowledgeProject`** grounds an agent in a project. (`removeKnowledgeProject`, `addKnowledgeMedia`, `removeKnowledgeMedia` mirror it.)
+**`POST /addKnowledgeProject`** adds a project to the knowledge of an agent. `removeKnowledgeProject`, `addKnowledgeMedia` and `removeKnowledgeMedia` work the same way.
 
 ```bash
 curl -s -X POST https://www.taskade.com/api/v2/addKnowledgeProject \
@@ -486,7 +488,7 @@ The response is `{ "ok": true, "item": { "version": "1", "items": { ... } } }`.
 * **Bundles:** `exportBundle`, `importBundle`, `importBundleZip`, plus `GET /bundles/{spaceId}/export/zip`.
 * **Webhooks:** `POST /webhooks`, `GET /webhooks`, `GET /webhooks/{id}`, `DELETE /webhooks/{id}`. See [Webhooks](webhooks.md#webhook-registration-api). `subscribeWebhook` and `unsubscribeWebhook` are deprecated.
 
-The authoritative, always-current list is the [live v2 spec](https://www.taskade.com/api/documentation/v2).
+The [live v2 spec](https://www.taskade.com/api/documentation/v2) always has the complete, current list.
 
 ---
 
@@ -508,7 +510,7 @@ curl -s -X POST https://www.taskade.com/api/v2/listTasks \
 
 ## Rate limits
 
-Every rate-limited response carries the current budget in two sets of headers. Header names are case-insensitive:
+Each response with a rate limit shows the current budget in two sets of headers. Header names are not case-sensitive:
 
 | Header | Meaning |
 | --- | --- |
@@ -518,9 +520,9 @@ Every rate-limited response carries the current budget in two sets of headers. H
 | `X-Rate-Limit-Reset` | Seconds until the window reopens. This value can be fractional |
 | `Retry-After` | Sent on a `429` response only. Whole seconds to wait before you retry |
 
-v2 operations share the public API's per-**IP** budget with every other public request. The budget is 40 requests per 60 seconds for each IP address, as the [live v2 spec](https://www.taskade.com/api/documentation/v2) states. Taskade can change it without a docs release, so read the headers for the live values.
+v2 operations share one budget for each **IP** address with all other public API requests. The budget is 40 requests per 60 seconds for each IP address, as the [live v2 spec](https://www.taskade.com/api/documentation/v2) states. Taskade can change it without a docs release. Read the headers for the live values.
 
-A `429` response carries `Retry-After`, in whole seconds. Wait that number of seconds before you retry. Earlier retries are also rejected.
+A `429` response carries `Retry-After`, in whole seconds. Wait that number of seconds before you retry. The API also rejects a retry that comes earlier.
 
 ```typescript
 async function withRetry<T>(fn: () => Promise<T>, retries = 3): Promise<T> {
@@ -541,13 +543,17 @@ async function withRetry<T>(fn: () => Promise<T>, retries = 3): Promise<T> {
 }
 ```
 
-For sustained throughput, batch operations such as `/createTask`, which takes a `tasks` array. Reduce polling frequency. Stagger scheduled jobs.
+To send many requests over a long time, do these steps:
+
+- Send items in batches. For example, `/createTask` takes a `tasks` array.
+- Poll less frequently.
+- Start scheduled jobs at different times.
 
 ---
 
 ## Errors
 
-Every error response carries `ok: false`, `message`, `code`, and `statusMessage`. A missing or wrong token returns `401`:
+Every error response has `ok: false`, `message`, `code`, and `statusMessage`. A missing or wrong token returns `401`:
 
 ```json
 {
@@ -585,8 +591,8 @@ Never retry on `400`, `401`, `403`, or `404`. Fix the request first.
 
 - **Never commit tokens.** Use environment variables or a secret manager.
 - **Use OAuth, not personal tokens**, for multi-user applications.
-- **Rotate personal tokens** periodically. You can hold up to 5 at a time.
-- **Encrypt refresh tokens at rest.** They are long-lived.
+- **Replace personal tokens** at regular intervals. You can have up to 5 at a time.
+- **Encrypt stored refresh tokens.** They stay valid for a long time.
 
 ## Next steps
 

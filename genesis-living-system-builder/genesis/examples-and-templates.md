@@ -1,25 +1,25 @@
 ---
 description: >-
-  Copy proven Taskade Genesis prompts to build CRM dashboards, booking systems, forms, and landing pages in minutes, with live app templates to clone.
+  Copy tested Taskade Genesis prompts to build CRM dashboards, booking systems, forms and landing pages in minutes. Clone live apps to start fast.
 ---
 
 # Examples & Templates
 
-**Copy these proven prompts and build working business apps in minutes.**
+**Copy these tested prompts and build business apps that work, in minutes.**
 
-Each example includes the exact prompt and what the resulting app does.
+Each example gives the exact prompt and tells what the app does.
 
 {% hint style="success" %}
-**Looking for more examples?** Browse kits by category at [**taskade.com/apps/categories**](https://www.taskade.com/apps/categories) or clone from [**taskade.com/apps**](https://www.taskade.com/apps).
+**Do you want more examples?** Find kits by category at [**taskade.com/apps/categories**](https://www.taskade.com/apps/categories), or clone an app from [**taskade.com/apps**](https://www.taskade.com/apps).
 {% endhint %}
 
 ## Taskade Genesis App Gallery
 
-Explore interactive demos built by real users with their exact prompts. Clone an app that its creator shares with **Let others clone** to use as a starting point for your own project.
+Try live demos that real users built, with their exact prompts. If the creator turned on **Let others clone**, you can clone the app and use it as the start of your own project.
 
 ### Featured App Templates
 
-Try these live apps — all built with Taskade Genesis, all verified and working:
+Try these live apps. Each one was built with Taskade Genesis, and we tested each one.
 
 **Business & Operations**
 
@@ -95,12 +95,12 @@ Try these live apps — all built with Taskade Genesis, all verified and working
 | **Etch-a-Sketch**         | Digital drawing canvas inspired by the classic toy     | [Try It →](https://www.taskade.com/app/etch-a-sketch-qi09802b4qqvd31e) |
 
 {% hint style="success" %}
-**These are only a sample** — from CRM dashboards to playable games. Every one of these was built by typing a prompt into Taskade Genesis. [**Browse all categories →**](https://www.taskade.com/apps/categories)
+**These are only a sample**, from CRM dashboards to games that you can play. Each app came from one prompt in Taskade Genesis. [**Browse all categories →**](https://www.taskade.com/apps/categories)
 {% endhint %}
 
 ### **📚 Template Gallery**
 
-Taskade features hundreds of project frameworks you can use to kickstart all kinds of projects. All templates in the [**Template Gallery**](https://www.taskade.com/templates) are fully customizable and Taskade Genesis-ready.
+Taskade has hundreds of project templates to start all types of projects. You can change each template in the [**Template Gallery**](https://www.taskade.com/templates), and each one works with Taskade Genesis.
 
 **Available Template Categories:**
 
@@ -113,20 +113,18 @@ Taskade features hundreds of project frameworks you can use to kickstart all kin
 * 🎨 **Creative** - Content planning, design workflows
 * 🔬 **Research** - Data collection, analysis frameworks
 
-Want the deeper “why templates become apps” explanation?
-
-Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
+To learn why a template can become an app, read [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
 ### **📊 App Categories & Business Impact**
 
-| Category                | Most Popular Living System  | Business Problem Solved                       | What It Does                                       | Build Time |
-| ----------------------- | --------------------------- | --------------------------------------------- | ------------------------------------------------- | ---------- |
-| **Customer Experience** | Adaptive Feedback Portal    | "Never know when customers are unhappy"       | Learns sentiment patterns                         | 3 min      |
-| **Sales & Marketing**   | Intelligent Lead Engine     | "Sales team wastes time on unqualified leads" | Predicts lead quality                             | 5 min      |
-| **Operations**          | Predictive Inventory System | "Always running out of popular items"         | Forecasts demand patterns                         | 4 min      |
-| **Team Productivity**   | Living Project Intelligence | "No visibility into team progress"            | Optimizes workflows                               | 6 min      |
-| **Customer Service**    | Evolving Support Ecosystem  | "Customer issues get lost in email"           | Learns from every interaction                     | 4 min      |
-| **Content & Creative**  | Adaptive Content Engine     | "Social media posting is inconsistent"        | Optimizes content strategy                        | 7 min      |
+| Category and popular app | Business Problem Solved | What It Does (build time) |
+| --- | --- | --- |
+| **Customer Experience**: Adaptive Feedback Portal | "Never know when customers are unhappy" | Learns sentiment patterns (3 min) |
+| **Sales & Marketing**: Intelligent Lead Engine | "Sales team wastes time on unqualified leads" | Predicts lead quality (5 min) |
+| **Operations**: Predictive Inventory System | "Always running out of popular items" | Forecasts demand patterns (4 min) |
+| **Team Productivity**: Living Project Intelligence | "No visibility into team progress" | Optimizes workflows (6 min) |
+| **Customer Service**: Evolving Support Ecosystem | "Customer issues get lost in email" | Learns from every interaction (4 min) |
+| **Content & Creative**: Adaptive Content Engine | "Social media posting is inconsistent" | Optimizes content strategy (7 min) |
 
 ### **🏆 Popular Template Patterns**
 
@@ -140,9 +138,9 @@ Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace
 
 ### **How to Use These Examples**
 
-1. **Try the live demo** - Click "Preview" to interact with the actual app
-2. **Copy the prompt** - Use the exact prompt to build your own version
-3. **Customize for your business** - Modify the prompt with your specific details
+1. **Try the live demo**: Click **Try it →** to use the real app.
+2. **Copy the prompt**: Use the exact prompt to build your own version.
+3. **Customize for your business**: Change the details in the prompt to fit your business.
 
 ### **Landing Pages**
 
@@ -160,7 +158,7 @@ Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace
 | **Event Registration** | `"Create an event registration form with attendee details, meal preferences, and payment integration via Stripe"`               | [Try it →](https://event-registration-68n46o73.taskade.app/) |
 | **Product Order Form** | "Build a custom product order form for my handmade jewelry business with image gallery, size options, and quantity selection" | [Try it →](https://product-order-form-xpi6oe6j.taskade.app/) |
 
-💡 **Pro Tip:** These are real, working apps. Click the preview links to see exactly what Taskade Genesis can build for your business!
+💡 **Pro Tip:** These apps are real, and they work. Click the preview links to see what Taskade Genesis can build for your business.
 
 ***
 
@@ -178,17 +176,17 @@ I run a restaurant and need customers to submit feedback about their dining expe
 
 **What Taskade Genesis Built:**
 
-* **Smart Feedback Form** - Easy rating system with photo uploads
-* **Instant Manager Alerts** - Slack notifications for low ratings (3 stars or lower)
-* **Customer Thank You System** - Automated personalized emails
-* **Performance Dashboard** - Weekly analytics and trend tracking
-* **Response Management** - Track follow-up actions taken
+* **Smart Feedback Form**: Simple ratings with photo uploads
+* **Instant Manager Alerts**: Slack messages for low ratings (3 stars or lower)
+* **Customer Thank You System**: Personal emails that go out automatically
+* **Performance Dashboard**: Weekly analytics and trends
+* **Response Management**: A record of each follow-up action
 
 **What this app gives you:**
 
-* Instant Slack alerts to your manager whenever a customer rates 3 stars or lower
-* Automated thank-you emails to every customer who submits feedback
-* Weekly summary reports of all ratings and comments for team meetings
+* A Slack alert to your manager each time a customer gives 3 stars or lower
+* An automatic thank-you email to each customer who submits feedback
+* A weekly summary of all ratings and comments for team meetings
 
 ### Online Reservation System
 
@@ -200,9 +198,9 @@ I own a fine dining restaurant and need customers to make reservations online fo
 
 **What this app gives you:**
 
-* Online reservation booking by date, time slot, party size, and special notes
-* Automatic confirmation emails with address and parking info, plus a Google Calendar entry
-* Slack notifications to host staff and next-slot suggestions when a time is full
+* Online reservations by date, time slot, party size and special notes
+* Automatic confirmation emails with the address and parking information, plus a Google Calendar entry
+* Slack messages to the host staff, and the next free slot when a time is full
 
 ***
 
@@ -218,9 +216,9 @@ I run a yoga studio with 4 instructors and need clients to book classes online a
 
 **What this app gives you:**
 
-* Online class booking with instructor names, class types, and live remaining-spot counts
-* Stripe deposit collection plus confirmation emails and Google Calendar entries
-* Automatic deposit refunds and update emails to all participants when a class is canceled
+* Online class booking with instructor names, class types and the number of free spots
+* Stripe deposits, confirmation emails and Google Calendar entries
+* Automatic deposit refunds and update emails to all participants when you cancel a class
 
 ### Personal Training Client Portal
 
@@ -232,9 +230,9 @@ I'm a personal trainer and need clients to schedule sessions, track their progre
 
 **What this app gives you:**
 
-* Client session booking with progress photos, weight, measurements, and energy-level tracking
-* Automatic calendar entries and workout prep instructions when a session is booked
-* Weekly check-in summaries sent to you so you can prepare personalized feedback
+* Session booking for clients, with progress photos, weight, measurements and energy levels
+* Automatic calendar entries and workout prep instructions for each booked session
+* A weekly check-in summary for you, so that you can prepare personal feedback
 
 ***
 
@@ -250,9 +248,9 @@ I run a boutique clothing store and need to track inventory levels and automate 
 
 **What this app gives you:**
 
-* Per-product tracking of current stock, minimum thresholds, suppliers, and lead times
-* Automatic supplier reorder emails, Slack notifications, and purchase orders when stock runs low
-* Weekly low-stock reports highlighting trends and seasonal patterns
+* The current stock, minimum level, supplier and lead time of each product
+* Automatic reorder emails to suppliers, Slack messages and purchase orders when stock is low
+* A weekly low-stock report with trends and seasonal patterns
 
 ### Customer Loyalty Program
 
@@ -264,9 +262,9 @@ I need a customer loyalty system for my coffee shop where customers earn points 
 
 **What this app gives you:**
 
-* Points balances, available rewards, and QR-code redemption for customers
-* Automatic points accrual on purchases plus congratulations emails at reward milestones
-* Tracking of popular rewards and spending patterns for marketing insights
+* Points balances, available rewards and QR-code redemption for customers
+* Automatic points for each purchase, and a congratulations email at each reward level
+* Data about popular rewards and spending patterns for your marketing
 
 ***
 
@@ -282,9 +280,9 @@ I'm a marketing consultant and need potential clients to request proposals throu
 
 **What this app gives you:**
 
-* Proposal request intake covering challenges, current activities, outcomes, budget, and timeline, with document uploads
-* Instant Slack notifications with each prospect's key details when a request is submitted
-* Automatic HubSpot CRM entry plus a response with next steps and your calendar link
+* A proposal request form for challenges, current activities, outcomes, budget and timeline, with document uploads
+* A Slack message with the key details of each new request
+* An automatic HubSpot CRM entry, and a reply with next steps and your calendar link
 
 ***
 
@@ -292,7 +290,7 @@ I'm a marketing consultant and need potential clients to request proposals throu
 
 ### The Proven Formula
 
-Use this structure for any business application:
+Use this structure for a business app:
 
 ```
 I [YOUR ROLE] and need [WHO WILL USE THIS] to [MAIN ACTION THEY TAKE].
@@ -306,11 +304,11 @@ I want to [HOW YOU'LL USE THE DATA] so I can [BUSINESS OUTCOME].
 
 ### Success Tips
 
-1. **Be Specific About Users** - "Customers," "employees," "vendors" - who exactly?
-2. **Define Clear Actions** - What should happen and when?
-3. **Specify Integrations** - Email, Slack, calendar, payment systems
-4. **Include Success Metrics** - How will you measure if this works?
-5. **Think About Mobile** - Will users access this on phones?
+1. **Be Specific About Users**: "Customers", "employees", "vendors"? Name the exact users.
+2. **Define Clear Actions**: Tell what must occur, and when.
+3. **Specify Integrations**: Email, Slack, calendar, payment systems.
+4. **Include Success Metrics**: Tell how you will know that the app works.
+5. **Think About Mobile**: Tell the AI if users will open the app on phones.
 
 ### Common Prompt Mistakes
 
@@ -329,13 +327,13 @@ I want to [HOW YOU'LL USE THE DATA] so I can [BUSINESS OUTCOME].
 
 | Resource                                                   | Description                               |
 | ---------------------------------------------------------- | ----------------------------------------- |
-| [**Community Gallery**](https://www.taskade.com/apps) | Browse and clone apps and kits built by the community |
-| [**Template Library**](https://www.taskade.com/templates)  | Project templates for any use case        |
-| [**AI Agent Gallery**](https://www.taskade.com/agents)     | Pre-built AI assistants ready to deploy   |
+| [**Community Gallery**](https://www.taskade.com/apps) | Find and clone apps and kits from the community |
+| [**Template Library**](https://www.taskade.com/templates) | Project templates for many use cases |
+| [**AI Agent Gallery**](https://www.taskade.com/agents) | Ready AI assistants that you can deploy |
 
 ### Taskade Featured Apps
 
-See what Taskade itself built with Taskade Genesis:
+See the apps that the Taskade team built with Taskade Genesis:
 
 | App                                                                                       | Description                                  |
 | ----------------------------------------------------------------------------------------- | -------------------------------------------- |
@@ -348,7 +346,7 @@ See what Taskade itself built with Taskade Genesis:
 
 [**Browse Community Apps →**](https://www.taskade.com/apps) | [**Browse Templates →**](https://www.taskade.com/templates)
 
-_Copy any prompt above, customize it for your business, and have a working app in minutes._
+_Copy a prompt from this page, change it for your business, and get an app that works in minutes._
 
 ---
 

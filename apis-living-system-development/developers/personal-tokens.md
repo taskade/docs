@@ -11,7 +11,7 @@ Taskade supports two credentials: personal access tokens and [OAuth 2.0](authent
 
 ## Before you start
 
-Make sure that your account is ready for a new token.
+Make sure that you have these items:
 
 - A Taskade account with a verified email address. Taskade does not create a token for an unverified account.
 - Fewer than 5 active tokens on the account.
@@ -64,7 +64,7 @@ You are done when the request in step 3 returns `"ok": true`. A missing, wrong, 
 
 ## Replace a compromised token
 
-If you think that a token is compromised, revoke it and create a new token immediately.
+If you think that another person has a token, revoke it. Then create a new token immediately.
 
 1. Go to [taskade.com/settings/api](https://www.taskade.com/settings/api).
 2. Revoke the token in the **Personal access tokens** list.
@@ -75,7 +75,7 @@ A password reset also revokes every personal access token and every OAuth app gr
 
 ## Where the token works
 
-One token authenticates every developer surface. The Workspace MCP server reads it from a different variable.
+One token works on every developer surface. The Workspace MCP server reads it from a different variable.
 
 | Surface | How to send the token |
 | --- | --- |
@@ -93,10 +93,10 @@ These limits apply to every account.
 | Limit | Value |
 | --- | --- |
 | Prefix | Every token starts with `tskdp_` |
-| Visibility | Taskade shows the value once, at creation |
+| Visibility | Taskade shows the value once, when you create the token |
 | Tokens per account | **5**. Taskade refuses a sixth with the message `Cannot create more than 5 personal access tokens.` |
-| Scopes | **None**. A token grants everything that the owning account can reach |
-| Email | Your account email must be verified before you can create a token |
+| Scopes | **None**. A token can do everything that the account of its owner can do |
+| Email | You must verify your account email before you can create a token |
 | Password reset | A password reset revokes every personal access token of the account. Taskade sends an email that says so |
 
 ## Fix common errors
@@ -107,7 +107,7 @@ Match the message to a fix.
 | --- | --- | --- |
 | `"code": "UNAUTHORIZED"` | The token is missing, wrong, or revoked | Send `Authorization: Bearer $TASKADE_TOKEN`. Make sure that the variable is set in the same terminal. |
 | `"code": "UNAUTHORIZED"` after a password reset | The password reset revoked every personal access token of the account | Create a new token, then replace the old value everywhere that you use it. |
-| `Cannot create more than 5 personal access tokens.` | The account holds 5 tokens | Revoke a token that you do not use. |
+| `Cannot create more than 5 personal access tokens.` | The account already has 5 tokens | Revoke a token that you do not use. |
 
 ## Next steps
 

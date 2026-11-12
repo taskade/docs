@@ -1,11 +1,11 @@
 ---
 description: >-
-  Once your Taskade Genesis app is live, run its day-to-day operations by talking to Claude - read, update, and flag what needs attention.
+  Run the daily work of a live Taskade Genesis app from Claude. Read records, update fields, and find what needs your attention.
 ---
 
 # Run Your Live App by Talking to Claude
 
-Run the day-to-day work of a live Taskade Genesis app from Claude or another AI client. You read records, update fields, complete work, and ask the client to flag what needs attention.
+Run the daily work of a live Taskade Genesis app from Claude or another AI client. You can read records, update fields, and complete work. You can also ask the client to show what needs your attention.
 
 ## Before you start
 
@@ -15,12 +15,12 @@ You need one MCP connection and the link to your app.
 | --- | --- |
 | MCP connection | The [hosted Taskade MCP](genesis-app-mcp.md) at `https://www.taskade.com/mcp` (paid plans, OAuth or a token), or the local [Workspace MCP](workspace-mcp.md) with `TASKADE_API_KEY` |
 | Token | Only for a token-based setup. Create it at [taskade.com/settings/api](https://www.taskade.com/settings/api). |
-| App link | The link to your Taskade Genesis app, or the name of the workspace that holds it. The app reads its data from projects in that workspace |
+| App link | The link to your Taskade Genesis app, or the name of the workspace that has the app. The app reads its data from projects in that workspace |
 | Fields | Every custom field that you want to update. Neither MCP server creates a new custom field. |
 
 ## 1. Point your assistant at your app
 
-Paste your app link, or give the workspace and project names. Your assistant calls `list_spaces` and `list_projects` to find the project, so you do not copy an ID out of the URL.
+Paste your app link, or give the workspace and project names. Your assistant calls `list_spaces` and `list_projects` to find the project. You do not copy an ID from the URL.
 
 {% code overflow="wrap" %}
 ```text
@@ -76,7 +76,7 @@ Set the priority field on every overdue task to High.
 
 ## 4. Let it keep watch
 
-Ask for one summary of what needs you today.
+Ask for one summary of what needs your attention today.
 
 {% code overflow="wrap" %}
 ```text

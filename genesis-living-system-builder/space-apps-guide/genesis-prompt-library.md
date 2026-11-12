@@ -1,25 +1,25 @@
 ---
 description: >-
-  Copy-paste Taskade Genesis prompts by business function: CRM, ops, sales, scheduling, plus styling and anatomy tips for building better apps faster.
+  Copy Taskade Genesis prompts for each business function: CRM, operations, sales, scheduling. Get tips on style and prompt structure for better apps.
 ---
 
 # Intelligent Prompt Library
 
-Master Taskade Genesis with proven prompts organized by business function. Copy, paste, and customize these prompts to build your perfect app in minutes.
+Use these tested Taskade Genesis prompts, sorted by business function. Copy a prompt, paste it and change it. You can build your app in minutes.
 
 ## The Complete Guide to Writing Effective Genesis Prompts
 
 {% hint style="success" %}
-AI prompts are the secret to building exactly what you envision. This comprehensive guide will help you communicate with Genesis more effectively to create better apps faster.
+A good prompt gets you the app that you have in mind. This guide helps you tell Genesis clearly what you want. Then you get better apps in less time.
 {% endhint %}
 
 ### What is a Prompt?
 
-A prompt is simply the description of what you want to build. Think of it as explaining your app idea to a smart colleague who can build it for you. The clearer your explanation, the better your app turns out.
+A prompt is the description of what you want to build. Write it as if you explain your app idea to a smart colleague who builds it for you. A clearer explanation gives you a better app.
 
 ### 1. Set Clear Objectives
 
-Explain who uses the app and why it matters to your business:
+Tell who uses the app and why it is important to your business:
 
 * **"My restaurant staff needs to track inventory daily and get alerts when we're running low on key ingredients."**
 * **"My real estate team needs to track property leads and automatically follow up with prospects who haven't responded in 48 hours."**
@@ -27,7 +27,7 @@ Explain who uses the app and why it matters to your business:
 
 ### 2. Describe Specific Outcomes
 
-Be specific about functionality. Vague requests get vague results:
+Say exactly what the app must do. A vague request gives a vague result:
 
 * **"Customers upload project files, see progress updates, message our team, and download final files. Everyone gets notifications for each step."**
 * **"Employees submit expense reports with receipts, managers approve or reject them, accounting gets notified, and reimbursements are tracked until payment."**
@@ -35,7 +35,7 @@ Be specific about functionality. Vague requests get vague results:
 
 ### 3. Explain the User Journey
 
-Walk Genesis through how people will actually use your app:
+Tell Genesis, step by step, how people will use your app:
 
 * **"New users sign up, answer a few questions about their needs, get matched with relevant resources, then receive weekly personalized updates."**
 * **"Customers browse our service catalog, request quotes, upload requirements, review proposals, approve work, and rate their experience afterward."**
@@ -43,7 +43,7 @@ Walk Genesis through how people will actually use your app:
 
 ### 4. Break Down Complex Ideas
 
-For bigger projects, use simple numbered steps:
+For a large project, write simple numbered steps:
 
 {% code overflow="wrap" %}
 ```text
@@ -76,7 +76,7 @@ For bigger projects, use simple numbered steps:
 
 ### 5. Connect Existing Tools
 
-Tell Genesis what you're already using so it can connect everything:
+Tell Genesis which tools you use. Then it can connect them:
 
 * **"Import customer data from Google Sheets and send automated email notifications via Gmail. Connect to Slack for team alerts and let customers update their information directly in the app."**
 * **"Connect to WhatsApp Business for client communication. Integrate with our existing project database for customer records."**
@@ -84,7 +84,7 @@ Tell Genesis what you're already using so it can connect everything:
 
 ### 6. Define the Communication Tone
 
-Your app should sound like your business. Tell Genesis how to communicate:
+Make your app sound like your business. Tell Genesis which tone to use:
 
 * **"Keep it professional but friendly, like talking to customers in person. Make error messages helpful, not technical."**
 * **"Use an encouraging, supportive tone like a personal fitness coach. Celebrate user achievements and make setbacks feel manageable."**
@@ -92,7 +92,7 @@ Your app should sound like your business. Tell Genesis how to communicate:
 
 ### 7. Specify Look & Feel
 
-Tell Genesis how you want your app to look—colors, images, and overall vibe:
+Tell Genesis how your app must look: colors, images and general style:
 
 * **"Use a clean, modern design with our brand colors: navy blue headers and bright green accent buttons. Include our company logo in the top left. Make it feel professional but approachable, like our website."**
 * **"Create a warm, welcoming design with soft colors—think spa-like with cream backgrounds and sage green accents. Use rounded corners and gentle shadows to feel calming and trustworthy."**
@@ -100,7 +100,7 @@ Tell Genesis how you want your app to look—colors, images, and overall vibe:
 
 ### 8. Define Access Permissions
 
-Apps need different permission levels. Be clear about who can do what:
+Apps need different permission levels. Say clearly who can do what:
 
 * **"Staff can view all projects and add updates. Clients only see their own projects and can't edit. Managers access everything plus analytics."**
 * **"Students can access their courses and submit assignments. Instructors can grade work and message students. Administrators can manage all users and see system-wide reports."**
@@ -108,7 +108,7 @@ Apps need different permission levels. Be clear about who can do what:
 
 ### 9. Plan for Easy Iteration
 
-Your app is not set in stone. Refine it and iterate with simple follow-up requests:
+You can always change your app. Improve it with short follow-up requests:
 
 * **"The form works great—can you add file upload after the description and make the submit button bigger?"**
 * **"Love the dashboard, but can you move the notifications to the top right and make the charts more colorful?"**
@@ -116,7 +116,7 @@ Your app is not set in stone. Refine it and iterate with simple follow-up reques
 
 ### 10. Reference Similar Apps
 
-Mention apps or websites with features you like:
+Name apps or websites that have features you like:
 
 * **"Make the dashboard layout similar to Stripe's interface—clean cards with key metrics up top and detailed tables below. But simplify the navigation for less tech-savvy users."**
 * **"Create a course layout like Udemy—video player on the left, course outline on the right, with a clean progress bar. But make it feel more personal and less corporate."**
@@ -124,7 +124,7 @@ Mention apps or websites with features you like:
 
 ### 11. Provide Specific Examples
 
-Demonstrate workflows by describing complete scenarios:
+Describe full situations to show how a workflow goes:
 
 * **"Customer inquiry: Contact form submitted → Create lead record → Send welcome email → Notify sales team → Set 3-day follow-up reminder"**
 * **"New employee: HR creates profile → Send welcome email with login → Employee completes onboarding forms → Manager gets notification → Training modules assigned automatically"**
@@ -132,7 +132,7 @@ Demonstrate workflows by describing complete scenarios:
 
 ### 12. Experiment Boldly
 
-Genesis saves your work automatically. Try bold changes and see what happens:
+Genesis saves your work automatically. Try large changes and look at the result:
 
 * **"Let's completely redesign the homepage layout" or "Remove the entire pricing section and replace it with a simple contact form."**
 * **"What if we made this a single-page app instead of multiple screens?" or "Can we turn this form into a conversational chatbot experience?"**
@@ -140,21 +140,21 @@ Genesis saves your work automatically. Try bold changes and see what happens:
 
 ## The Anatomy of a Great Prompt
 
-Understanding what makes a Genesis prompt effective will help you build better apps faster.
+When you know what makes a good Genesis prompt, you build better apps in less time.
 
 ### **What Is a Prompt?**
 
-A prompt is your conversation with Genesis. It's how you describe your business problem and the solution you envision. Think of it as explaining your needs to a trusted colleague who can build anything.
+A prompt is your conversation with Genesis. In the prompt, you describe your business problem and the solution that you want. Write it as if you explain your needs to a colleague who can build all things.
 
 ### **Essential Prompt Components**
 
 | Component              | Description                              | Example                                                       |
 | ---------------------- | ---------------------------------------- | ------------------------------------------------------------- |
-| **Problem Statement**  | What business challenge are you solving? | "Customers keep calling to book appointments when we're busy" |
-| **Core Functionality** | What should the app do?                  | "Create an online booking system with calendar availability"  |
-| **User Experience**    | How should people interact with it?      | "Simple form with service selection and time slots"           |
-| **Automation**         | What should happen automatically?        | "Send confirmation emails and reminder texts"                 |
-| **Data Structure**     | What information needs to be captured?   | "Customer contact, service type, date/time, special requests" |
+| **Problem Statement**  | Which business problem do you solve?     | "Customers keep calling to book appointments when we're busy" |
+| **Core Functionality** | What must the app do?                    | "Create an online booking system with calendar availability"  |
+| **User Experience**    | How do people use it?                    | "Simple form with service selection and time slots"           |
+| **Automation**         | What must occur automatically?           | "Send confirmation emails and reminder texts"                 |
+| **Data Structure**     | Which information must the app collect?  | "Customer contact, service type, date/time, special requests" |
 
 ### **Prompt Quality Levels**
 
@@ -164,7 +164,7 @@ A prompt is your conversation with Genesis. It's how you describe your business 
 "Make a booking app"
 ```
 
-_Too vague - Genesis doesn't know what to build_
+_Too vague. Genesis does not know what to build._
 
 #### **⚠️ Basic Prompt**
 
@@ -172,7 +172,7 @@ _Too vague - Genesis doesn't know what to build_
 "Create a booking system for appointments"
 ```
 
-_Better but lacks detail about functionality_
+_Better, but it does not tell what the app must do._
 
 #### **✅ Strong Prompt**
 
@@ -183,11 +183,11 @@ confirmation emails. Include a calendar view for staff to manage
 bookings and send reminder texts 24 hours before appointments."
 ```
 
-_Clear, specific, includes user experience and automation_
+_Clear and exact. It describes the user experience and the automation._
 
 ## "Wow Moment" Prompts
 
-_These create instant user delight and viral sharing - the kind of results that make people say "how did it do that?"_
+_These prompts give results that surprise people. People ask, "how did it do that?", and they share the results._
 
 ### **✨ The Complete Business Generator**
 
@@ -197,7 +197,7 @@ include a client portal, project tracking, automated follow-ups,
 and a feedback collection system"
 ```
 
-**The Magic**: Taskade AI creates interconnected systems from one request
+**The Magic**: Taskade AI makes connected systems from one request
 
 * 📋 Project template with phases and milestones
 * 💻 Client portal app with progress tracking via Genesis Preview
@@ -205,7 +205,7 @@ and a feedback collection system"
 * 🤖 Customer success agent that answers questions
 * 📊 Analytics dashboard showing client health
 
-**Why It Works**: Shows Taskade's unified intelligence - one request, complete business system.
+**Why It Works**: It shows how Taskade connects all parts. One request gives a full business system.
 
 ### **🎪 The Event Orchestrator**
 
@@ -214,7 +214,7 @@ and a feedback collection system"
 handle registration, logistics, feedback, and follow-up"
 ```
 
-**The Magic**: Taskade AI orchestrates the entire event lifecycle
+**The Magic**: Taskade AI manages all stages of the event
 
 * 📅 Registration app with dietary preferences and room assignments
 * 📋 Logistics project with vendor coordination and timelines
@@ -222,7 +222,7 @@ handle registration, logistics, feedback, and follow-up"
 * ⚡ Automated check-in system with badges and welcome packets
 * 📊 Real-time feedback collection during sessions
 
-**Why It Works**: Demonstrates end-to-end automation and intelligence coordination.
+**Why It Works**: It shows automation and AI that work together from start to end.
 
 ### **🚀 The Growth Machine**
 
@@ -240,7 +240,7 @@ automated nurturing sequences, and performance analytics"
 * ⚡ Automated nurturing sequences based on engagement
 * 📊 Analytics tracking content performance to customer acquisition
 
-**Why It Works**: Shows how AI can handle complex, multi-step business processes.
+**Why It Works**: It shows how AI can do complex business processes with many steps.
 
 ### **🎯 The Mind Reader**
 
@@ -257,11 +257,11 @@ routes them to the right team, drafts responses, and tracks resolution"
 * ✉️ Draft responses that match your company tone
 * 📊 Resolution tracking and customer satisfaction monitoring
 
-**Why It Works**: Demonstrates AI understanding and intelligent automation.
+**Why It Works**: It shows how AI understands requests and automates work.
 
 ## Starter App Prompts
 
-Start small and focus on one clear idea. Here are quick wins to try first:
+Start small, with one clear idea. Try these fast results first:
 
 ### **Simple Foundation Apps**
 
@@ -272,11 +272,11 @@ Start small and focus on one clear idea. Here are quick wins to try first:
 | **Mood Tracker**    | `"Make a daily mood tracker with a calendar view."`      | Time-based data, visual representation |
 | **Recipe Book**     | `"Design a recipe book app with ingredients and steps."` | Structured content, clear organization |
 
-💡 **Pro Tip:** Keep your first prompts focused on your core idea/problem. Clear, easy-to-understand instructions help Genesis build exactly what you need.
+💡 **Pro Tip:** Keep your first prompts on your main idea or problem. Clear instructions help Genesis build what you need.
 
 ## Adding Features to Existing Apps
 
-Once your starter app works, add features to make it more powerful:
+When your first app works, add features to it:
 
 ### **Enhancement Prompts**
 
@@ -288,11 +288,11 @@ Once your starter app works, add features to make it more powerful:
 | **Data Export**         | `"Add ability to export data to CSV"`             | Data portability              |
 | **Search & Filter**     | `"Add search bar and filter by category"`         | Better data discovery         |
 
-💡 **Pro Tip:** Genesis will suggest context-aware changes and improvements to your app in the chat window. Click the prompt pills to request changes.
+💡 **Pro Tip:** In the chat window, Genesis suggests changes that fit your app. Click a prompt pill to ask for that change.
 
 ## App Styling & Visual Design
 
-Want your app to look cutting-edge? Here's how to request specific visual styles:
+Do you want a modern look for your app? Ask for a visual style with these prompts:
 
 ### **Popular Design Styles**
 
@@ -314,7 +314,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 | **Simplification** | `"Simplify the interface to just tasks and deadlines"` | Remove extra features, keep it lean |
 | **Branding**       | `"Rebrand the app with my logo and colors"`            | Personalize look and feel           |
 
-💡 **Pro Tip:** Visual styles are like clothing for apps. You can always switch to a different look without changing anything else. Keep modifications specific and avoid asking for multiple unrelated changes in one prompt.
+💡 **Pro Tip:** You can always change the look of your app, and nothing else changes. Ask for exact changes. Do not ask for many unrelated changes in one prompt.
 
 ## Genesis App Creation Prompts
 
@@ -454,7 +454,7 @@ Want your app to look cutting-edge? Here's how to request specific visual styles
 
 ## Quick Start Templates
 
-Copy these complete prompts for instant apps:
+Copy these full prompts to get an app fast:
 
 ### Customer Feedback (Restaurant)
 
@@ -478,13 +478,13 @@ Copy these complete prompts for instant apps:
 
 **🚀 Pro Tips:**
 
-* **Be Specific:** Include exact fields, workflows, and business rules
-* **Think Mobile:** Mention mobile optimization if users will access on phones
-* **Plan Notifications:** Specify when, how, and who should be notified
-* **Include Branding:** Add your colors, logo, and company voice
-* **Test First:** Start simple, then add complexity based on results
+* **Be Specific:** Name the exact fields, workflows and business rules.
+* **Think Mobile:** If users open the app on phones, ask for a mobile layout.
+* **Plan Notifications:** Say when to send a notification, how, and to whom.
+* **Include Branding:** Add your colors, logo and company voice.
+* **Test First:** Start simple. Then add more from the results.
 
-**Need help customizing these prompts?** Visit our [Genesis Getting Started Guide](../genesis/getting-started.md) for detailed instructions!
+**Do you need help to change these prompts?** Read the [Genesis Getting Started Guide](../genesis/getting-started.md) for detailed instructions.
 
 ---
 

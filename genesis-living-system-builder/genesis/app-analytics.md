@@ -1,6 +1,6 @@
 ---
 description: >-
-  Track visitors, pageviews, bounce rate, traffic sources, and devices for a published Taskade Genesis app with the built-in analytics dashboard (Business and up).
+  See the visitors, pageviews, bounce rate, traffic sources and devices of a published Taskade Genesis app in the built-in analytics dashboard (Business and up).
 ---
 
 # App Analytics
@@ -9,15 +9,21 @@ description: >-
 
 ## Overview
 
-On Business plans and up, every published Taskade Genesis app includes a **built-in analytics dashboard**. Track visitors, understand behavior, and optimize your apps — no third-party tools required.
+On Business plans and up, each published Taskade Genesis app has a **built-in analytics dashboard**. You can see your visitors, learn what they do and make your app better. You do not need other tools.
 
-> **Requirements:** Analytics only track **published** apps, and the workspace must be on a **Business plan or higher**. Unpublished apps don't generate visitor data. On other plans the Analytics tab opens with sample data and an upgrade prompt instead of your own numbers. See [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md) to get your app live.
+> **Requirements:** Analytics count visits only for **published** apps. The workspace must be on a **Business plan or higher**. An app that is not published gets no visitor data. On other plans, the Analytics tab shows sample data and an upgrade prompt, not your own numbers. To make your app live, read [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md).
 
 ---
 
 ## Analytics Dashboard
 
-Open your published app, click **App settings** (gear icon), then click **Analytics**. Data updates in real-time.
+To open the dashboard:
+
+1. Open your published app.
+2. Click **App settings** (gear icon).
+3. Click **Analytics**.
+
+The data updates in real time.
 
 <!-- Screenshot: Full analytics dashboard overview -->
 
@@ -29,19 +35,19 @@ Open your published app, click **App settings** (gear icon), then click **Analyt
 
 | Metric | What It Measures | Why It Matters |
 |---|---|---|
-| **Visitors** | Number of unique visitors | Overall app reach |
-| **Pageviews** | Total pages viewed, with the average per visit | Content engagement depth |
-| **Bounce Rate** | % of visitors who leave after one page | UX quality indicator |
-| **Avg. Visit** | Average time spent per visit | User engagement level |
-| **Visitors Online** | Real-time concurrent users | Live demand indicator |
+| **Visitors** | The number of unique visitors | How many people your app gets to |
+| **Pageviews** | All pages viewed, with the average for each visit | How much of your content people read |
+| **Bounce Rate** | The % of visitors who leave after one page | A sign of the quality of the user experience |
+| **Avg. Visit** | The average time of one visit | How interested users are |
+| **Visitors Online** | The users on the app at this time | The live demand |
 
 ### Time-Based Trends
 
 | Feature | Detail |
 |---|---|
-| **Daily visitor trends** | Line chart showing visitors per day |
-| **Pageview trends** | Line chart showing pageviews per day |
-| **Period selection** | Switch between the last 7, 30, or 90 days |
+| **Daily visitor trends** | A line chart of visitors each day |
+| **Pageview trends** | A line chart of pageviews each day |
+| **Period selection** | Select the last 7, 30 or 90 days |
 | **Comparison** | Each summary card compares the period with the days before it |
 
 <!-- Screenshot: Time-based trend charts -->
@@ -50,89 +56,89 @@ Open your published app, click **App settings** (gear icon), then click **Analyt
 
 | Column | What It Shows |
 |---|---|
-| **Page Path** | URL path within your app |
+| **Page Path** | The URL path in your app |
 | **Visitors** | Unique visitors to that page |
-| **Views** | Total views of that page |
+| **Views** | All views of that page |
 
-> **Insight:** If a page has high views but low engagement (short time), consider improving its content or layout.
+> **Insight:** If a page has many views but people stay only a short time, improve its content or layout.
 
 ### Geographic Distribution
 
 | Column | What It Shows |
 |---|---|
-| **Location** | Country of visitors |
-| **Visitors** | Number of unique visitors from that location |
+| **Location** | The country of the visitors |
+| **Visitors** | The number of unique visitors from that location |
 
-> **Insight:** If most visitors come from a specific region, consider localizing content or adjusting timezone-sensitive features.
+> **Insight:** If most visitors come from one region, you can translate your content or change features that use time zones.
 
 ### Traffic Sources
 
 | Column | What It Shows |
 |---|---|
-| **Source** | Where traffic comes from (direct, social, referral, search) |
+| **Source** | Where visitors come from (direct, social, referral, search) |
 | **Visitors** | Unique visitors from that source |
-| **Views** | Total pageviews from that source |
+| **Views** | All pageviews from that source |
 
-> **Insight:** High traffic from social means your sharing strategy is working. Low direct traffic means you need better link distribution.
+> **Insight:** Much traffic from social media shows that your sharing works. Low direct traffic shows that you must share your link in more places.
 
 ### Device Analytics
 
 | Column | What It Shows |
 |---|---|
 | **Device Type** | Desktop, mobile, tablet |
-| **Visitors** | Unique visitors per device |
+| **Visitors** | Unique visitors for each device |
 
-> **Insight:** If mobile visitors exceed desktop, prioritize mobile UX in your next iteration.
+> **Insight:** If you have more mobile visitors than desktop visitors, improve the mobile experience first in your next change.
 
 ### Browser Analytics
 
 | Column | What It Shows |
 |---|---|
-| **Browser** | Chrome, Safari, Firefox, Edge, etc. |
-| **Visitors** | Unique visitors per browser |
+| **Browser** | Chrome, Safari, Firefox, Edge and more |
+| **Visitors** | Unique visitors for each browser |
 
-> **Insight:** Test your app on the top 2-3 browsers in this list to ensure compatibility.
+> **Insight:** Do a test of your app on the top 2-3 browsers in this list. Make sure that it works on each one.
 
 ---
 
 ## Using Analytics to Improve Your App
 
-| Signal | What It Means | Action to Take |
-|---|---|---|
-| **High bounce rate (>70%)** | Visitors leave quickly | Improve first impression — clearer headline, faster load, better CTA |
-| **Low Avg. Visit (<30s)** | Users aren't engaging | Add more interactive content, simplify navigation |
-| **Top page is NOT your main feature** | Users miss your core value | Reorganize navigation, add prominent links to key features |
-| **Mobile > desktop visitors** | Mobile is your primary audience | Optimize mobile layout, larger tap targets, simpler forms |
-| **One traffic source dominates** | Over-reliance on single channel | Diversify: share on multiple platforms, add SEO, use embed |
-| **Geographic concentration** | Localized audience | Consider language options, timezone adjustments, local references |
-| **Declining trend** | Losing engagement over time | Refresh content, add new features, re-promote on social |
-| **Growing trend** | Momentum is building | Double down on what's working, add sharing prompts |
+| Signal and meaning | Action to Take |
+|---|---|
+| **High bounce rate (>70%)**: visitors leave fast | Make the first screen better: a clearer headline, faster load, a better call to action |
+| **Low Avg. Visit (<30s)**: users do not stay | Add more interactive content and make the navigation simpler |
+| **Top page is NOT your main feature**: users miss the main value | Change the navigation and add clear links to the main features |
+| **Mobile > desktop visitors**: most of your users are on phones | Improve the mobile layout: larger buttons, simpler forms |
+| **One traffic source dominates**: you depend on one channel | Share on more platforms, add SEO, use embeds |
+| **Geographic concentration**: your users are in one area | Think about other languages, time zones and local references |
+| **Declining trend**: people use the app less over time | Update the content, add new features, share it again on social media |
+| **Growing trend**: use of the app increases | Do more of what works and add prompts to share |
 
-> **Iterate with data:** Use these insights to inform your next Genesis prompt. Example: "My analytics show 60% mobile users — optimize the layout for mobile with larger buttons and a single-column design."
+> **Iterate with data:** Use these results in your next Genesis prompt. Example: "My analytics show 60% mobile users — optimize the layout for mobile with larger buttons and a single-column design."
 
 ---
 
 ## Troubleshooting
 
-| Issue | Cause | Solution |
-|---|---|---|
-| No analytics data showing | App is not published | Publish your app first |
-| Dashboard shows sample data and an upgrade prompt | Workspace is below Business | App Analytics needs a Business plan or higher |
-| Data seems delayed | Real-time updates may have brief lag | Wait a few minutes, refresh the dashboard |
-| Visitor count seems low | App may be unlisted, or still a draft | Publish it and turn on **Show in public listings** under **More options**. Listed apps get more traffic |
-| Bounce rate is 100% | Single-page app or landing page | This is normal for single-page apps; focus on Avg. Visit instead |
-| Geographic data missing | Privacy/VPN usage by visitors | Some visitor locations can't be determined — this is normal |
+| Problem and cause | Solution |
+|---|---|
+| **No analytics data shows**: the app is not published | Publish your app first. |
+| **The dashboard shows sample data and an upgrade prompt**: the workspace is below Business | App Analytics needs a Business plan or higher. |
+| **The data is late**: real-time updates can have a short delay | Wait a few minutes, then refresh the dashboard. |
+| **The visitor count is low**: the app can be unlisted, or still a draft | Publish it. Under **More options**, turn on **Show in public listings**. Listed apps get more traffic. |
+| **The bounce rate is 100%**: the app is a single-page app or a landing page | This is normal for single-page apps. Look at Avg. Visit instead. |
+| **Geographic data is missing**: visitors use privacy tools or a VPN | Taskade cannot find the location of some visitors. This is normal. |
 
 ---
 
 ## What's Next
 
-| Guide | What You'll Learn |
+| Guide | What You Learn |
 |---|---|
-| [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md) | Sharing strategies to drive more traffic |
-| [A Maker's Guide to AI Prompts](./prompt-guide.md) | Use analytics insights to write better iteration prompts |
-| [Custom AI Agents](../ai-features/ai-agents-getting-started.md) | Add AI agents to increase engagement |
-| [Automations](../automation/README.md) | Automate responses to visitor behavior |
+| [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md) | Ways to share your app and get more traffic |
+| [A Maker's Guide to AI Prompts](./prompt-guide.md) | Use analytics results to write better prompts for changes |
+| [Custom AI Agents](../ai-features/ai-agents-getting-started.md) | Add AI agents that keep users interested |
+| [Automations](../automation/README.md) | Start automatic actions from what visitors do |
 
 ---
 

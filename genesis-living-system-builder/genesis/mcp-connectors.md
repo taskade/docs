@@ -1,6 +1,6 @@
 ---
 description: >-
-  Connect Claude, Cursor, and other AI tools to your Taskade workspace through the hosted MCP server, and call other MCP servers from automations.
+  Connect Claude, Cursor and other AI tools to your Taskade workspace through the hosted MCP server. Call other MCP servers from automations.
 ---
 
 # MCP Connectors
@@ -10,12 +10,12 @@ description: >-
 The **Model Context Protocol (MCP)** is an open standard that lets AI tools use the data and actions of other apps. Taskade uses MCP in two directions. Your AI tool can work in your workspace, and your automations can call other MCP servers.
 
 {% hint style="info" %}
-**TL;DR:** The hosted Taskade MCP server lets Claude, ChatGPT, Cursor, or VS Code work in your workspace on **every paid plan**. Setup: [Taskade MCP Server](https://www.taskade.com/learn/connect/mcp-server). The other direction runs in an [automation](https://www.taskade.com/learn/automation/automations-execution), where the [MCP Client connector](https://www.taskade.com/learn/connect/mcp-client-integration) calls a remote MCP server on every plan.
+**TL;DR:** With the hosted Taskade MCP server, Claude, ChatGPT, Cursor or VS Code can work in your workspace on **every paid plan**. Setup: [Taskade MCP Server](https://www.taskade.com/learn/connect/mcp-server). The other direction runs in an [automation](https://www.taskade.com/learn/automation/automations-execution), where the [MCP Client connector](https://www.taskade.com/learn/connect/mcp-client-integration) calls a remote MCP server on every plan.
 {% endhint %}
 
 ## Keep the MCP Paths Apart
 
-Each MCP path has its own setup and its own plan rule. Pick the path by what starts the work:
+Each MCP path has its own setup and its own plan rule. Pick the path from the thing that starts the work:
 
 ```text
 AI TOOL STARTS       TASKADE STARTS
@@ -43,7 +43,7 @@ AI TOOL STARTS       TASKADE STARTS
 
 ## Call Another MCP Server from Taskade
 
-Use these steps when Taskade must call *out* to another MCP server.
+If Taskade must call *out* to another MCP server, do these steps.
 
 ### Step 1: Open Automations
 
@@ -51,17 +51,17 @@ Open the **Automations** tab in your workspace.
 
 ### Step 2: Add the MCP Client connector
 
-Add a step and pick the **MCP Client** connector. Enter the address of the remote server.
+Add a step and pick the **MCP Client** connector. Then enter the address of the remote server.
 
 ### Step 3: Save and run the automation
 
-Save the automation. Run it, so the step can list the tools on that server and call the one you pick.
+Save the automation, then run it. The step lists the tools on that server and calls the tool that you pick.
 
-You are done when the run shows the result of the tool. In production, an agent cannot reach an outside MCP server on its own. Let the agent decide, then hand the call to an automation. Full setup: [MCP Client Integration](https://www.taskade.com/learn/connect/mcp-client-integration).
+When the run shows the result of the tool, the setup is done. In production, an agent cannot connect to an outside MCP server alone. Let the agent decide, then give the call to an automation. Full setup: [MCP Client Integration](https://www.taskade.com/learn/connect/mcp-client-integration).
 
 ## Reach Workspace DNA and Your App
 
-Over the hosted server, your AI tool works with the three parts of Workspace DNA, and with the app built on top of them:
+Through the hosted server, your AI tool works with the three parts of Workspace DNA, and with the app on top of them:
 
 | Part | Your AI tool can |
 | --- | --- |
@@ -72,16 +72,16 @@ Over the hosted server, your AI tool works with the three parts of Workspace DNA
 
 ## Edit Your Taskade Genesis App Over MCP
 
-Your AI tool can change the source files of a Taskade Genesis app. It can write only inside the `app/` folder:
+Your AI tool can change the source files of a Taskade Genesis app. It can write only in the `app/` folder:
 
 - Read a file before you edit it. An edit against an old copy can fail.
 - Create a file, replace text, insert at a line, or apply a patch.
-- Delete a file that nothing imports. Taskade refuses the delete while an import still points at it.
+- Delete a file that nothing imports. If an import still points at the file, Taskade refuses the delete.
 - Bring back a deleted file from the [version history](https://www.taskade.com/learn/genesis/version-history) of the app.
 
-A saved edit is final, not a draft. The app rebuilds, and an app on the default publish setting goes live with the change. You do not press Publish again.
+A saved edit is final, not a draft. The app builds again. If the app uses the default publish setting, the change goes live. You do not press Publish again.
 
-Some app jobs stay in Taskade. MCP cannot build a new app, or publish an app that is not live yet. It also cannot set who can use an app, or create or edit an automation. Ask Taskade EVE for those.
+You must do some app jobs in Taskade. MCP cannot build a new app or publish an app that is not live yet. MCP also cannot set who can use an app, or create or edit an automation. Ask Taskade EVE to do these jobs.
 
 ## Plans and Credits
 
@@ -92,7 +92,7 @@ Some app jobs stay in Taskade. MCP cannot build a new app, or publish an app tha
 | Automation calls out | Yes | Yes |
 | Agent calls out alone (production) | No | No |
 
-There is no separate MCP fee. An automation run that your AI tool starts counts toward the monthly automation runs of your plan. Runs and agent questions can use AI credits, the same as in Taskade. See [Pricing](https://www.taskade.com/pricing).
+MCP has no separate fee. If your AI tool starts an automation run, the run counts toward the monthly automation runs of your plan. Runs and agent questions can use AI credits, the same as in Taskade. Read [Pricing](https://www.taskade.com/pricing).
 
 ## Frequently Asked Questions
 
@@ -105,31 +105,31 @@ The hosted Taskade MCP server is on every paid plan. The open-source `taskade/mc
 <details>
 <summary>Do MCP calls cost credits?</summary>
 
-There is no separate MCP fee. When your AI tool runs an automation or asks an agent, that work counts toward your plan. It can use AI credits, the same as in Taskade.
+MCP has no separate fee. When your AI tool runs an automation or asks an agent, that work counts toward your plan. The work can use AI credits, the same as in Taskade.
 </details>
 
 <details>
 <summary>Is MCP secure?</summary>
 
-Yes. Connections use encrypted HTTPS. Your AI tool signs in as you, with a Taskade sign-in or a personal access token, so it reaches only what your account can see. Remove the connector or revoke the token to cut off access.
+Yes. Connections use encrypted HTTPS. Your AI tool signs in as you, with a Taskade sign-in or a personal access token. Thus it can only get to the data that your account can see. To stop the access, remove the connector or revoke the token.
 </details>
 
 <details>
 <summary>How do built-in agent tools differ from MCP?</summary>
 
-[Built-in tools](https://www.taskade.com/learn/agents/agent-tools) such as web search, code, and file analysis run inside Taskade and give your agents abilities. MCP lets a separate AI tool, such as Claude, work with your Taskade data from the outside.
+[Built-in tools](https://www.taskade.com/learn/agents/agent-tools), for example web search, code and file analysis, run in Taskade and give skills to your agents. With MCP, a separate AI tool, for example Claude, works with your Taskade data from the outside.
 </details>
 
 <details>
 <summary>Can an AI tool reach my Taskade Genesis apps over MCP?</summary>
 
-Your AI tool connects to your workspace. It can reach the projects, tasks, and agents behind your apps, and it can edit app files. The published app stays a normal web app for your visitors.
+Your AI tool connects to your workspace. It can use the projects, tasks and agents behind your apps, and it can edit app files. For your visitors, the published app stays a normal web app.
 </details>
 
 <details>
 <summary>Does MCP work with every AI model?</summary>
 
-Yes. MCP does not depend on the model. Any AI tool that speaks MCP can connect to Taskade, whatever model it runs.
+Yes. MCP does not depend on the model. Each AI tool that supports MCP can connect to Taskade, with all models.
 </details>
 
 ## Related guides

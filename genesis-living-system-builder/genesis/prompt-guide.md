@@ -1,6 +1,6 @@
 ---
 description: >-
-  Write better Taskade Genesis prompts with 12 principles: set objectives, describe outcomes, connect tools, define access, and iterate to build the app you.
+  Write better Taskade Genesis prompts with 12 principles: set goals, describe results, connect tools, define access and improve your app in small steps.
 ---
 
 # A Maker's Guide to AI Prompts
@@ -9,11 +9,11 @@ description: >-
 
 ## Overview
 
-AI prompts are the key to building exactly what you envision. A prompt is simply the description of what you want to build — think of it as explaining your app idea to a colleague who can build it for you. The clearer your explanation, the better your app turns out.
+A prompt tells Taskade Genesis what to build. Write it as if you explain your app idea to a colleague who builds it for you. A clearer explanation gives you a better app.
 
-This guide covers **12 proven principles** for writing effective Taskade Genesis prompts.
+This guide gives **12 tested principles** for good Taskade Genesis prompts.
 
-> **Workspace DNA hint:** The better your prompts, the richer your workspace DNA becomes. The projects, agents, and automations a prompt creates raise the app's [Intelligence Score](./how-genesis-works.md#workspace-intelligence-score) and make future apps smarter.
+> **Workspace DNA hint:** Better prompts make your Workspace DNA richer. The projects, agents and automations from a prompt increase the [Intelligence Score](./how-genesis-works.md#workspace-intelligence-score) of the app. They also make your future apps smarter.
 
 ---
 
@@ -21,13 +21,13 @@ This guide covers **12 proven principles** for writing effective Taskade Genesis
 
 ### 1. Set Objectives
 
-**Explain who uses this and why it matters.**
+**Tell who uses the app and why it is important.**
 
 | Principle | What It Does |
 |---|---|
 | Name the user | Tells Genesis who the interface is for |
-| State the purpose | Defines the core problem being solved |
-| Add business context | Helps Genesis make smarter design decisions |
+| State the purpose | Names the main problem that the app solves |
+| Add business context | Helps Genesis make better design decisions |
 
 **Examples:**
 
@@ -41,7 +41,7 @@ This guide covers **12 proven principles** for writing effective Taskade Genesis
 
 ### 2. Describe Outcomes
 
-**Be specific about functionality. Vague requests get vague results.**
+**Say exactly what the app must do. A vague request gives a vague result.**
 
 | Vague (Avoid) | Specific (Use) |
 |---|---|
@@ -53,7 +53,7 @@ This guide covers **12 proven principles** for writing effective Taskade Genesis
 
 ### 3. Explain the Journey
 
-**Walk Genesis through how people will actually use your app.**
+**Tell Genesis, step by step, how people will use your app.**
 
 | Step | Example User Journey |
 |---|---|
@@ -66,7 +66,7 @@ This guide covers **12 proven principles** for writing effective Taskade Genesis
 
 ### 4. Break Down Ideas
 
-**For bigger projects, use numbered steps.**
+**For a large project, write numbered steps.**
 
 | App Type | Numbered Prompt |
 |---|---|
@@ -78,9 +78,9 @@ This guide covers **12 proven principles** for writing effective Taskade Genesis
 
 ### 5. Connect Tools
 
-**Tell Genesis what you already use so it can connect everything.**
+**Tell Genesis which tools you use. Then it can connect them.**
 
-Genesis supports 100+ integrations. Mention your tools and Genesis creates the automation flows automatically.
+Genesis supports 100+ integrations. Name your tools, and Genesis makes the automation flows for you.
 
 | Integration | Example Prompt |
 |---|---|
@@ -88,7 +88,7 @@ Genesis supports 100+ integrations. Mention your tools and Genesis creates the a
 | **WhatsApp + Database** | "Connect to WhatsApp Business for client communication. Integrate with our existing project database for customer records." |
 | **Multi-tool** | "Pull inventory from Google Sheets, connect to accounting project for cost tracking, send low-stock alerts to Slack." |
 
-**Available integrations include:**
+**Some of the available integrations:**
 
 | Category | Tools |
 |---|---|
@@ -100,17 +100,17 @@ Genesis supports 100+ integrations. Mention your tools and Genesis creates the a
 | Dev | GitHub, HTTP/Webhooks |
 | Content | WordPress, Webflow |
 
-Premium integrations such as Slack, Gmail, and Google Sheets need a paid plan. Free runs the standard connectors.
+Premium integrations, for example Slack, Gmail and Google Sheets, need a paid plan. Free runs the standard connectors.
 
 ---
 
 ### 6. Set the Tone
 
-**Your app should sound like your business.**
+**Make your app sound like your business.**
 
 | Tone | Prompt Example | Best For |
 |---|---|---|
-| **Professional & friendly** | "Keep it professional but friendly, like talking to customers in person. Make error messages helpful, not technical." | Customer-facing portals |
+| **Professional & friendly** | "Keep it professional but friendly, like talking to customers in person. Make error messages helpful, not technical." | Portals for customers |
 | **Encouraging & supportive** | "Use an encouraging, supportive tone like a personal fitness coach. Celebrate achievements and make setbacks feel manageable." | Wellness, education apps |
 | **Authoritative & trustworthy** | "Sound like a trusted financial advisor — authoritative but not intimidating. Simple language for complex topics." | Finance, legal, healthcare |
 | **Casual & energetic** | "Keep it casual and fun, like texting a friend. Use short sentences and emojis where appropriate." | Consumer apps, social tools |
@@ -119,7 +119,7 @@ Premium integrations such as Slack, Gmail, and Google Sheets need a paid plan. F
 
 ### 7. Choose Look & Feel
 
-**Tell Genesis how you want your app to look.**
+**Tell Genesis how your app must look.**
 
 | Visual Style | Prompt Example |
 |---|---|
@@ -128,13 +128,13 @@ Premium integrations such as Slack, Gmail, and Google Sheets need a paid plan. F
 | **Bold & energetic** | "Bold orange and black colors. Strong typography and high-contrast buttons that motivate action." |
 | **Dark & premium** | "Dark theme with neon accents, like a high-tech dashboard. Charcoal backgrounds with electric blue highlights." |
 
-> **Deep dive:** [Advanced Features](../space-apps-guide/advanced-features.md) covers customizing your app's branding, appearance, and behavior.
+> **Deep dive:** Read [Advanced Features](../space-apps-guide/advanced-features.md) to change the branding, look and behavior of your app.
 
 ---
 
 ### 8. Define Access
 
-**Be clear about who can do what.**
+**Say clearly who can do what.**
 
 | Role | Prompt Example |
 |---|---|
@@ -143,14 +143,14 @@ Premium integrations such as Slack, Gmail, and Google Sheets need a paid plan. F
 | **Corporate** | "Employees log hours and submit requests. Department heads approve their team's requests. HR accesses all data and generates reports." |
 
 {% hint style="warning" %}
-**Sign-in confirms identity. It does not hide other people's records.** To show each user only their own records, turn on **Private entries** under **Publish → More options** (private per-user data, off by default), match the records to the login, and test with a second account.
+**Sign-in confirms identity. It does not hide the records of other people.** To show each user only their own records, do these steps. Under **Publish → More options**, turn on **Private entries** (private data for each user, off by default). Match the records to the login. Then do a test with a second account.
 {% endhint %}
 
 ---
 
 ### 9. Iterate Easily
 
-**Your app is never set in stone. Refine with follow-up prompts.**
+**You can always change your app. Improve it with more prompts.**
 
 | Iteration Type | Example Prompt |
 |---|---|
@@ -164,7 +164,7 @@ Premium integrations such as Slack, Gmail, and Google Sheets need a paid plan. F
 
 ### 10. Reference
 
-**Mention apps or websites with features you like.**
+**Name apps or websites that have features you like.**
 
 | Reference | Prompt Example |
 |---|---|
@@ -176,7 +176,7 @@ Premium integrations such as Slack, Gmail, and Google Sheets need a paid plan. F
 
 ### 11. Provide Examples
 
-**Demonstrate workflows by describing specific scenarios.**
+**Describe exact situations to show how a workflow goes.**
 
 | Scenario | Workflow Example |
 |---|---|
@@ -188,7 +188,7 @@ Premium integrations such as Slack, Gmail, and Google Sheets need a paid plan. F
 
 ### 12. Experiment
 
-**Genesis saves your work automatically. Try bold changes.**
+**Genesis saves your work automatically. Try large changes.**
 
 | Experiment Type | Example Prompt |
 |---|---|
@@ -197,13 +197,13 @@ Premium integrations such as Slack, Gmail, and Google Sheets need a paid plan. F
 | **Paradigm shift** | "Turn this form into a conversational chatbot experience" |
 | **Gamification** | "Make this feel like a game with points and achievements instead of a boring business tool" |
 
-> **Safety net:** Use [Genesis Version History](./version-history.md) to restore any previous version if an experiment doesn't work out.
+> **Safety net:** If an experiment does not work, use [Genesis Version History](./version-history.md) to restore a previous version.
 
 ---
 
 ## Prompt Anatomy Quick Reference
 
-Use this cheat sheet when building:
+Use these phrases when you build:
 
 | Category | Phrases |
 |---|---|
@@ -220,23 +220,23 @@ Use this cheat sheet when building:
 
 | Mistake | Problem | Better Approach |
 |---|---|---|
-| "Make me an app" | Too vague — Genesis can't read your mind | "Build a customer feedback form with star ratings and email notifications" |
-| Asking for everything at once | Overloaded prompt produces confused results | Start simple, iterate with follow-ups |
-| Ignoring integrations | Misses the power of 100+ connected tools | Always mention your existing tools |
-| Not testing iteratively | Bugs compound if you don't catch them early | Test after every change |
-| Forgetting about agents | Misses the intelligence pillar entirely | Consider: "Who would I hire to manage this?" — that's your agent |
-| Skipping permissions | Everyone sees everything | Define roles and access levels |
+| "Make me an app" | Too vague. Genesis cannot guess what you want. | "Build a customer feedback form with star ratings and email notifications" |
+| You ask for all features at one time | A prompt with too much gives confused results. | Start simple, then improve with more prompts. |
+| You forget integrations | You do not use the 100+ tools that Genesis can connect. | Always name the tools that you use. |
+| You do not test after each change | Errors add up if you do not find them early. | Do a test after each change. |
+| You forget agents | You lose the Intelligence pillar. | Ask: "Who would I hire to manage this?" That person is your agent. |
+| You skip permissions | All users see all data. | Define roles and access levels. |
 
 ---
 
 ## What's Next
 
-| Guide | What You'll Learn |
+| Guide | What You Learn |
 |---|---|
-| [App Starter Prompts](../space-apps-guide/genesis-prompt-library.md) | Copy-ready prompts for common app types |
-| [Advanced Features](../space-apps-guide/advanced-features.md) | Customize app branding, appearance, and behavior |
-| [Adding Genesis Context](./adding-context.md) | Upload reference files for richer apps |
-| [Prompt Templates Library](./examples-and-templates.md) | Browse the full prompt template collection |
+| [App Starter Prompts](../space-apps-guide/genesis-prompt-library.md) | Prompts to copy for frequent app types |
+| [Advanced Features](../space-apps-guide/advanced-features.md) | Change the branding, look and behavior of your app |
+| [Adding Genesis Context](./adding-context.md) | Upload reference files for better apps |
+| [Prompt Templates Library](./examples-and-templates.md) | See all the prompt templates |
 
 ---
 

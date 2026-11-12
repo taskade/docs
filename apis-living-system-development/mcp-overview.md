@@ -5,10 +5,10 @@ description: >-
 
 # Which Taskade MCP Do I Want?
 
-Taskade uses MCP in two directions across three distinct paths. Choose by what starts the connection: an AI client that reaches into Taskade, or a Taskade automation that calls out.
+Taskade uses MCP in two directions, with three separate paths. Choose a path by what starts the connection: an AI client that connects to Taskade, or a Taskade automation that calls out.
 
 {% hint style="info" %}
-**TL;DR:** To use Taskade from Claude, Codex, Cursor, VS Code, or ChatGPT, use the [hosted Taskade MCP](genesis-app-mcp.md) at `https://www.taskade.com/mcp` (paid plans). To call another MCP server from Taskade, use the [MCP Client connector](https://www.taskade.com/learn/connect/mcp-client-integration) in an automation (every plan).
+**In short:** To use Taskade from Claude, Codex, Cursor, VS Code, or ChatGPT, use the [hosted Taskade MCP](genesis-app-mcp.md) at `https://www.taskade.com/mcp` (paid plans). To call another MCP server from Taskade, use the [MCP Client connector](https://www.taskade.com/learn/connect/mcp-client-integration) in an automation (every plan).
 {% endhint %}
 
 ## Pick a path in two questions
@@ -30,9 +30,9 @@ Answer the questions from the top. Stop at the first match:
                   (every paid plan)
 ```
 
-## Inbound: an AI client reaching into Taskade
+## Inbound: an AI client connects to Taskade
 
-Pick the hosted server unless you need a REST API v1 operation that it does not expose.
+If you need a REST API v1 operation that the hosted server does not expose, use Workspace MCP. Otherwise, use the hosted server.
 
 | I want to | Use | Where and auth |
 |---|---|---|
@@ -52,9 +52,11 @@ Pick the hosted server unless you need a REST API v1 operation that it does not 
 **Note:** Neither MCP server uploads media. Upload a file with the REST API ([`media-upload`](https://www.taskade.com/docs/rest/media-upload)) or the Action API ([`upload-media`](https://www.taskade.com/docs/actions/upload-media)).
 {% endhint %}
 
-Neither server creates or edits an automation, or builds a new app. Neither one publishes an app that is not live yet, or sets who can use an app. Send those jobs to Taskade EVE inside Taskade. Hosted MCP can edit the source of an existing app, and an edit to a live app can go live on its own.
+Neither server creates or edits an automation, or builds a new app. Neither one publishes an app that is not live yet, or sets who can use an app. For those jobs, use Taskade EVE inside Taskade.
 
-## Outbound: Taskade calling another MCP server
+Hosted MCP can edit the source of an existing app. An edit to a live app can go live on its own.
+
+## Outbound: Taskade calls another MCP server
 
 The outbound direction runs through automations, not through agents.
 
@@ -63,9 +65,9 @@ The outbound direction runs through automations, not through agents.
 | **Call the tools of another MCP server from Taskade** | **[MCP Client connector](https://www.taskade.com/learn/connect/mcp-client-integration)** | An automation step with the HTTPS URL of the remote server and an optional bearer token |
 
 - The MCP Client connector runs on every plan, including Free.
-- In production, an agent cannot reach an arbitrary MCP server directly.
-- To give an agent a remote MCP tool, configure the agent to trigger an automation that contains an **MCP Client** step. The automation returns the result.
-- For services without MCP, use the [100+ native integrations](https://www.taskade.com/integrations). Premium integrations, for example Slack, Gmail, and Notion, need a paid plan.
+- In production, an agent cannot call an outside MCP server directly.
+- To use a remote MCP tool, an agent must trigger an automation that has an **MCP Client** step. The automation returns the result.
+- For services without MCP, Taskade has [100+ native integrations](https://www.taskade.com/integrations). Premium integrations, for example Slack, Gmail, and Notion, need a paid plan.
 
 ## Set this up with your coding agent
 

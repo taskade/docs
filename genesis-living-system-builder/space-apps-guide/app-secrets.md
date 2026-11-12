@@ -1,52 +1,52 @@
 ---
 description: >-
-  Store API keys and tokens in a per-space vault, then reference them safely in Taskade Genesis app code — real credentials never leave the server.
+  Keep API keys and tokens in a safe store for each space, and use them in Taskade Genesis app code. The real credentials never leave the server.
 ---
 
 # App Secrets & External API Calls
 
-**Connect your Taskade Genesis app to third-party services — weather APIs, payment providers, CRMs, or any HTTP endpoint — without ever exposing credentials in your app's source code.**
+**Connect your Taskade Genesis app to other services: weather APIs, payment providers, CRMs or any HTTP endpoint. Your credentials never show in the source code of your app.**
 
 {% hint style="info" %}
-**App Secrets** are part of every Taskade Genesis app. The **Secrets** tab is in the app's settings, and only workspace Owners and Admins can manage secrets.
+Each Taskade Genesis app has **App Secrets**. The **Secrets** tab is in the settings of the app. Only workspace Owners and Admins can manage secrets.
 {% endhint %}
 
 ***
 
 ## What Are App Secrets?
 
-App Secrets is a per-space credential vault found in your app's settings under **Developer → Secrets**. Each secret has two parts:
+App Secrets is a safe store for the credentials of one space. You find it in the settings of your app, under **Developer → Secrets**. Each secret has two parts:
 
-- **Key** (the alias) — a short name you choose (e.g., `MY_API_KEY`, `STRIPE_SECRET`, `WEATHER_TOKEN`)
-- **Value** — the actual API key, token, or password
+- **Key** (the alias): a short name that you choose, for example `MY_API_KEY`, `STRIPE_SECRET` or `WEATHER_TOKEN`
+- **Value**: the real API key, token or password
 
-Once saved, the value is encrypted at rest and is never returned to the browser. Your Genesis app code references secrets only by their alias — the real value is substituted server-side at request time.
+After you save a secret, Taskade encrypts the value and never sends it to the browser. Your Genesis app code uses only the alias of a secret. The server puts in the real value when the request goes out.
 
 ***
 
 ## Adding a Secret
 
-1. Open your app's settings and go to **Developer → Secrets**.
+1. Open the settings of your app and go to **Developer → Secrets**.
 2. Click **Add secret**.
-3. Enter a **Key**, the alias your code uses (letters, numbers, dashes, dots, or underscores; no spaces; start with a letter or number).
+3. Enter a **Key**. This is the alias that your code uses.
 4. Paste the **Value** (your API key or token).
 5. Click **Save secret**.
 
-The alias is now available to any code running inside that Genesis app.
+A key can have letters, numbers, dashes, dots and underscores. A key cannot have spaces, and it must start with a letter or a number. After you save, all code in that Genesis app can use the alias.
 
 {% hint style="warning" %}
-Secret values are write-only after saving: Taskade never shows a saved value again. To rotate a credential, click **Edit secret** and enter the **New value** (leave it blank to keep the current one). The key stays the same, so your code references remain unchanged.
+After you save a secret, you cannot read its value again. Taskade never shows a saved value. To change a credential, click **Edit secret** and enter the **New value**. If you leave it empty, the current value stays. The key does not change, so your code does not change.
 {% endhint %}
 
 ***
 
 ## Calling External APIs Safely
 
-Genesis routes all outbound HTTP calls through a server-side proxy. When your app makes a request, the proxy scans the headers and body for `{{secret}}` placeholders and substitutes the real secret value (identified by the accompanying alias field) before the request leaves Taskade's infrastructure. The substituted value is never sent to the browser.
+Genesis sends all outbound HTTP calls through a proxy on the server. The proxy finds the `{{secret}}` placeholders in the headers and body of each request. The alias field of the request tells the proxy which secret to use. The proxy puts in the real value before the request leaves Taskade. The browser never gets the real value.
 
 ### Conceptual example
 
-The following illustrates the placeholder pattern. This is not a specific SDK call — it shows the shape of what your Genesis app code would generate or reference when the proxy is configured.
+This example shows the placeholder pattern. It is not an exact SDK call. It shows the type of code that your Genesis app makes or uses with the proxy.
 
 ```javascript
 // CONCEPTUAL EXAMPLE — illustrates the {{secret}} substitution pattern
@@ -73,10 +73,10 @@ const response = await fetch(/* <Genesis-managed proxy endpoint> */, {
 const data = await response.json();
 ```
 
-At request time the proxy resolves `secretAlias` to the stored secret and replaces `{{secret}}` in the outbound request with the real credential value. The browser bundle only ever contains the alias string, not the credential itself.
+When the request goes out, the proxy finds the stored secret for `secretAlias`. Then it replaces `{{secret}}` in the request with the real credential. The code in the browser holds only the alias, not the credential.
 
 {% hint style="info" %}
-The exact proxy surface is managed by Genesis. You describe the integration you need in plain English and Genesis generates the appropriate outbound call — the `{{secret}}` substitution happens automatically, with the target secret selected via the alias you specify.
+Genesis manages the proxy. Describe the integration that you need in plain English, and Genesis writes the outbound call. The `{{secret}}` replacement occurs automatically. The alias that you give selects the secret.
 {% endhint %}
 
 ***
@@ -85,35 +85,35 @@ The exact proxy surface is managed by Genesis. You describe the integration you 
 
 | Layer | What Taskade does |
 | ----- | ----------------- |
-| **Storage** | Secret values are encrypted at rest; the raw value is never returned to the client after saving |
-| **Substitution** | `{{secret}}` replacement happens server-side inside the proxy (the alias field selects which stored secret is used), never in the browser bundle |
-| **SSRF protection** | The proxy blocks requests to internal network ranges and loopback addresses (e.g., `169.254.x.x`, `10.x.x.x`, `127.0.0.1`); destination-host allowlisting is being rolled out |
-| **Response scrubbing** | Sensitive upstream response headers (e.g., `Set-Cookie` from the external API) are stripped before the response reaches your app |
-| **Audit scope** | Secret access is scoped to the space where the secret is defined; other spaces cannot reference it |
+| **Storage** | Taskade encrypts secret values. After you save a value, Taskade never sends it back to the client. |
+| **Substitution** | The proxy on the server replaces `{{secret}}`, never the browser. The alias field selects the stored secret. |
+| **SSRF protection** | The proxy blocks requests to internal network ranges and loopback addresses (for example `169.254.x.x`, `10.x.x.x`, `127.0.0.1`). Taskade adds an allowlist of destination hosts in stages. |
+| **Response scrubbing** | The proxy removes sensitive headers from the external response (for example `Set-Cookie`) before the response gets to your app. |
+| **Audit scope** | A secret works only in the space where you made it. Other spaces cannot use it. |
 
 ***
 
 ## Publish Guard
 
-Before Genesis publishes or deploys your app, it scans the app source for patterns that look like hardcoded credentials (long random strings in assignment statements, common key-prefix patterns, etc.).
+Before Genesis publishes or deploys your app, it scans the source code for text that looks like a credential. Examples are long random strings in assignments and frequent key prefixes.
 
-If a potential hardcoded secret is detected, **publishing is blocked** and Genesis surfaces a warning identifying the suspicious line. To resolve it:
+If Genesis finds a credential in the code, it **blocks the publish**. Genesis shows a warning that names the line. To correct it:
 
-1. Move the credential to **Developer → Secrets** with an appropriate key.
-2. Remove the hardcoded value from your source and call the upstream API through the proxy, with `secretAlias: 'YOUR_KEY'` and the `{{secret}}` placeholder where the credential goes.
-3. Re-publish.
+1. Move the credential to **Developer → Secrets** with a good key.
+2. Remove the credential from your source code. Call the external API through the proxy, with `secretAlias: 'YOUR_KEY'` and the `{{secret}}` placeholder where the credential goes.
+3. Publish again.
 
-This guard runs on every publish attempt and cannot be bypassed — it is a safety rail, not an optional lint check.
+This guard runs on each publish, and you cannot skip it. It is a safety rule, not an optional check.
 
 ***
 
 ## Best Practices
 
-- **Use descriptive aliases** — `SENDGRID_API_KEY` is clearer than `KEY1` when you return to the project later.
-- **One secret per credential** — avoid bundling multiple keys into a single secret value; granular secrets are easier to rotate.
-- **Rotate regularly** — update the secret value in the vault; your app code references the alias and picks up the new value immediately.
-- **Least privilege** — where the external API supports scoped tokens (read-only, single-resource, etc.), use the narrowest scope that your app requires.
-- **Never log secret aliases in output** — even the alias name can hint at what services your app connects to.
+- **Use clear aliases**: `SENDGRID_API_KEY` is clearer than `KEY1` when you open the project again later.
+- **Use one secret for each credential**: Do not put many keys in one secret value. When each secret holds one key, it is faster to change a key.
+- **Change credentials regularly**: Update the secret value in the store. Your app code uses the alias and gets the new value at once.
+- **Give the smallest access**: If the external API has limited tokens (read-only, one resource), use the smallest access that your app needs.
+- **Never write secret aliases in logs or output**: The alias name can show which services your app connects to.
 
 ---
 

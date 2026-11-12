@@ -5,10 +5,10 @@ description: >-
 
 # Taskade API Overview
 
-The Taskade API lets your code read and change workspaces, projects, tasks, AI agents, media, and app bundles over HTTPS. This page starts the Taskade API documentation: one first call, every API surface, and the path that fits your task.
+The Taskade API lets your code read and change workspaces, projects, tasks, AI agents, media, and app bundles over HTTPS. This page gives you one first call, a list of every API surface, and the path that fits your task.
 
 {% hint style="info" %}
-**TL;DR:** Create a personal access token at [taskade.com/settings/api](https://www.taskade.com/settings/api). Send it as `Authorization: Bearer $TASKADE_TOKEN` to `https://www.taskade.com/api/v1`. For AI clients, connect to the hosted MCP server at `https://www.taskade.com/mcp`.
+**In short:** Create a personal access token at [taskade.com/settings/api](https://www.taskade.com/settings/api). Send it as `Authorization: Bearer $TASKADE_TOKEN` to `https://www.taskade.com/api/v1`. For AI clients, connect to the hosted MCP server at `https://www.taskade.com/mcp`.
 {% endhint %}
 
 ## Make your first call in 30 seconds
@@ -46,11 +46,11 @@ The response lists each workspace with its `id` and `name`:
 }
 ```
 
-You are done when the response holds `"ok": true` and the names of your workspaces. To create a project and add tasks next, follow the [Quickstart](https://www.taskade.com/docs/getting-started/quickstart).
+You are done when the response has `"ok": true` and the names of your workspaces. To create a project and add tasks next, follow the [Quickstart](https://www.taskade.com/docs/getting-started/quickstart).
 
 ## Taskade API surfaces
 
-Every surface below uses the workspaces that your Taskade account already has. Pick one by what calls what.
+Every surface below uses the workspaces that your Taskade account already has. Choose a surface by who starts the call: your code, an AI client, or Taskade.
 
 ```mermaid
 graph TD
@@ -63,7 +63,7 @@ graph TD
 | Surface | What it does | Start here |
 | --- | --- | --- |
 | **REST API v1** | Resources and HTTP verbs for workspaces, folders, projects, tasks, agents, media, and bundles | [REST API guide](../comprehensive-api-guide/README.md) · [Reference](https://www.taskade.com/docs/rest) |
-| **Action API v2** (beta, `2.0.0-beta`) | One verb for each operation, such as `/listSpaces`, `/createTask`, and `/promptAgent`. A good fit for AI tools. | [Action API guide](../api-v2-reference.md) · [Reference](https://www.taskade.com/docs/actions) |
+| **Action API v2** (beta, `2.0.0-beta`) | One verb for each operation, such as `/listSpaces`, `/createTask`, and `/promptAgent`. It works well for AI tools. | [Action API guide](../api-v2-reference.md) · [Reference](https://www.taskade.com/docs/actions) |
 | **Hosted MCP server** | Lets Claude, Cursor, VS Code, ChatGPT, and other MCP clients read and change a workspace and edit Taskade Genesis app source | [Hosted Taskade MCP](../genesis-app-mcp.md) |
 | **Workspace MCP** (local) | Runs a local stdio server that wraps REST API v1 | [Workspace MCP](../workspace-mcp.md) |
 | **Webhooks** | Sends signed Taskade events to your endpoint, or starts an automation from an incoming HTTP call | [Webhooks](../webhooks.md) |
@@ -81,8 +81,8 @@ Each surface has its own endpoint and access rule:
 | **Hosted MCP server** | `https://www.taskade.com/mcp` | OAuth 2.0 with PKCE or a personal access token. Every paid plan (Starter and above). |
 | **Workspace MCP** (local) | `npx -y @taskade/mcp-server` | Personal access token in `TASKADE_API_KEY`. Each call keeps its API access rules. |
 | **Webhooks** | `POST https://www.taskade.com/api/v2/webhooks` | Pro plan and above |
-| **Public agent embed** | The embed code from the agent's publish settings | Every plan. No token: the agent must be public. |
-| **Bundles** | `/api/v1/bundles/…` or `/api/v2/exportBundle` | Export: Pro plan and above. Import: per-item plan limits. |
+| **Public agent embed** | The embed code in the publish settings of the agent | Every plan. No token: the agent must be public. |
+| **Bundles** | `/api/v1/bundles/…` or `/api/v2/exportBundle` | Export: Pro plan and above. Import: the plan limit for each item type. |
 | **MCP Client connector** | An automation step | Every plan, Free included |
 | **TypeScript SDK** | `@taskade/sdk` (preview) | Not available yet. Call the API over HTTPS. |
 
@@ -103,7 +103,7 @@ Use REST API v1 for scripts and back-end jobs. Use the Action API v2 or MCP when
 
 ## Base URL and authentication
 
-Each API has one base URL. Every request carries a token in the `Authorization` header.
+Each API has one base URL. Every request sends a token in the `Authorization` header.
 
 | API | Base URL | Spec version |
 | --- | --- | --- |
@@ -121,7 +121,7 @@ A list call returns `{ "ok": true, "items": [...] }`. A single-item call returns
 
 | Credential | Use it when | Get it |
 | --- | --- | --- |
-| Personal access token | Your own scripts, back-end jobs, and local MCP servers. An account holds 5 active tokens maximum. | [Personal access tokens](personal-tokens.md) |
+| Personal access token | Your own scripts, back-end jobs, and local MCP servers. An account can have a maximum of 5 active tokens. | [Personal access tokens](personal-tokens.md) |
 | OAuth 2.0 access token | Your app acts for other Taskade users | [Authentication](authentication.md) |
 
 ## Core API resources
@@ -176,7 +176,7 @@ A project holds tasks, notes, and structured data.
 
 ### Tasks
 
-A task is one item in a project. It can carry assignees, a date, a note, and field values.
+A task is one item in a project. It can have assignees, a date, a note, and field values.
 
 | Endpoint | What it does |
 | --- | --- |
@@ -246,7 +246,7 @@ A bundle is a portable copy of a whole app or workspace. See [Bundles & App Kits
 
 ### User projects
 
-Your own recent projects, across workspaces.
+This table lists your own recent projects, from all workspaces.
 
 | Endpoint | What it does |
 | --- | --- |
@@ -266,12 +266,12 @@ Every error returns `"ok": false` and an upper-case `code`. Branch on `ok` and `
 | `402 Payment Required` | The operation needs a higher plan, or the account has no credits left |
 | `403 Forbidden` | Your account does not have permission |
 | `404 Not Found` | The item does not exist, or your account cannot see it |
-| `429 Too Many Requests` | You hit a rate limit |
+| `429 Too Many Requests` | You sent too many requests |
 | Other `4XX` | Another client error. Read the response body. |
 
 ### Error response format
 
-Every error carries `ok`, `message`, `code`, and `statusMessage`. A missing token returns `401`:
+Every error has `ok`, `message`, `code`, and `statusMessage`. A missing token returns `401`:
 
 ```json
 {
@@ -282,7 +282,7 @@ Every error carries `ok`, `message`, `code`, and `statusMessage`. A missing toke
 }
 ```
 
-A plan error can also carry `featureId`, the plan feature that the call needs. The bundle export returns `"featureId": "space.bundle.export"` with its `402`.
+A plan error can also have `featureId`. It names the plan feature that the call needs. The bundle export returns `"featureId": "space.bundle.export"` with its `402`.
 
 ### Fix common errors
 
@@ -293,12 +293,12 @@ Match the `code` in the response to a fix.
 | `"code": "UNAUTHORIZED"` | The token is missing, wrong, or revoked | Send `Authorization: Bearer $TASKADE_TOKEN`. Make sure that the variable is set in the same terminal. |
 | `"code": "FST_ERR_VALIDATION"` | A field or parameter does not match the schema | Read `message`. It names each field that failed, then the reason. |
 | `"code": "PAYMENT_REQUIRED"` | The workspace plan does not include the operation | Read `featureId` if it is present. Upgrade the workspace, or use a workspace on a higher plan. |
-| `"code": "NOT_FOUND"` | The ID is wrong, or your account cannot see the item | Check the ID and your workspace access. |
-| `"code": "TOO_MANY_REQUESTS"` | You hit a rate limit | Wait for the number of seconds in the `Retry-After` header, then send the request again. |
+| `"code": "NOT_FOUND"` | The ID is wrong, or your account cannot see the item | Make sure that the ID is correct and that you have access to the workspace. |
+| `"code": "TOO_MANY_REQUESTS"` | You sent too many requests | Wait for the number of seconds in the `Retry-After` header, then send the request again. |
 
 ## Code examples
 
-The same calls in three runtimes. Each example reads the token from the `TASKADE_TOKEN` environment variable.
+These examples show the same calls in three runtimes. Each example reads the token from the `TASKADE_TOKEN` environment variable.
 
 ### JavaScript (Node.js 18 or later)
 
@@ -400,7 +400,7 @@ Follow these rules to keep an integration safe, fast, and correct.
 ### Performance
 
 - Page through large lists. Tasks and blocks use cursor pagination.
-- Cache responses when the data permits it.
+- Cache responses when the data allows it.
 - Retry a `429` after the number of seconds in its `Retry-After` header.
 
 ### Data management

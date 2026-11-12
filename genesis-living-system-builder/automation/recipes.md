@@ -1,14 +1,14 @@
 ---
 description: >-
-  Ready-to-use Taskade automation recipes with flow outlines: AI blog publishing, social posting, lead capture, ticket routing, GitHub sync, and cart.
+  Taskade automation recipes with flow outlines: AI blog posts, social posts, lead capture, ticket routing, GitHub sync and abandoned carts.
 ---
 
 # Automation Recipes
 
-Real-world automation workflows that you can implement immediately. Each recipe includes a flow outline, setup instructions, and customization options.
+Use these recipes to build real automations. Each recipe has a flow outline, setup steps and ideas to change it.
 
 {% hint style="info" %}
-The JSON blocks on this page are outlines of each flow, not an import format. Build each recipe in the automation editor: add the trigger, then add each step from the step picker. Premium integrations (for example WordPress, X/Twitter, LinkedIn, HubSpot, Slack and Gmail) need a paid plan.
+The JSON blocks on this page show the outline of each flow. You cannot import them. Build each recipe in the automation editor. Add the trigger, then add each step from the step picker. Premium integrations (for example WordPress, X/Twitter, LinkedIn, HubSpot, Slack and Gmail) need a paid plan.
 {% endhint %}
 
 ## Content Creation & Marketing
@@ -16,19 +16,19 @@ The JSON blocks on this page are outlines of each flow, not an import format. Bu
 ### Recipe 1: Daily Blog Article Generator
 
 {% hint style="success" %}
-Automatically generate and publish blog articles from titles using AI agents and WordPress integration. Perfect for content marketers and bloggers who need consistent publishing.
+An AI agent writes blog articles from your titles, and the WordPress integration publishes them. Use it if you must publish on a regular schedule.
 {% endhint %}
 
-**Use Case**: Turn article titles into full blog posts automatically, then publish them to WordPress on a daily schedule.
+**Use Case**: The automation makes full blog posts from article titles. Then it publishes them to WordPress each day.
 
 **Workflow**: Daily Schedule → Find Unprocessed Titles → Generate Articles → Publish to WordPress → Update Status
 
 **Setup Requirements**:
 
-* AI Blog Writing Agent (created via Agent Generator)
-* WordPress integration configured
-* Taskade project with custom fields for tracking post status
-* Article titles stored as tasks in the project
+* An AI Blog Writing Agent (made with the Agent Generator)
+* A connected WordPress integration
+* A Taskade project with custom fields for the post status
+* Article titles as tasks in the project
 
 ```json
 {
@@ -105,13 +105,13 @@ Automatically generate and publish blog articles from titles using AI agents and
 {% step %}
 #### Create Blog Writing Agent
 
-Use the AI Agent Generator to create a "Blog Writer" agent. Train it with examples of your blog style and content guidelines.
+Make a "Blog Writer" agent with the AI Agent Generator. Give it examples of your blog style and your content guidelines.
 {% endstep %}
 
 {% step %}
 #### Set Up Content Tracking Project
 
-Create a Taskade project called "Blog Content Tracker" with custom fields:
+Make a Taskade project with the name "Blog Content Tracker". Add these custom fields:
 
 * `post_status` (dropdown: draft, generated, posted)
 * `wordpress_url` (text field for published URL)
@@ -122,45 +122,45 @@ Create a Taskade project called "Blog Content Tracker" with custom fields:
 {% step %}
 #### Configure WordPress Integration
 
-Connect your WordPress site to Taskade and ensure proper permissions for post creation.
+Connect your WordPress site to Taskade. Make sure that the connection has permission to make posts.
 {% endstep %}
 
 {% step %}
 #### Create the Automation
 
-Build the automation with daily scheduling, task finding, looping, and WordPress publishing actions.
+Build the automation with these parts: a daily schedule, a step that finds tasks, a loop and a WordPress publish action.
 {% endstep %}
 
 {% step %}
 #### Test and Refine
 
-Start with one article, review the output, and adjust the agent prompts or automation logic as needed.
+Start with one article and read the result. If the result is not correct, change the agent prompts or the automation steps.
 {% endstep %}
 {% endstepper %}
 
 **Customization Options**:
 
-* **Scheduling**: Change frequency from daily to weekly or custom intervals
-* **Content Types**: Modify for social media posts, newsletters, or other content formats
-* **Quality Control**: Add human review steps before publishing
-* **Multi-platform**: Extend to publish to LinkedIn, Facebook Pages, or other platforms
-* **SEO Optimization**: Include keyword research and meta description generation
+* **Scheduling**: Run it each week or at a custom interval, not each day
+* **Content Types**: Make social media posts, newsletters or other content
+* **Quality Control**: Add a step where a person reviews the post before it goes live
+* **Multi-platform**: Also publish to LinkedIn, Facebook Pages or other platforms
+* **SEO Optimization**: Add keyword research and write meta descriptions
 
 ### Recipe 2: Automated Social Media Posting
 
 {% hint style="success" %}
-Schedule and automate social media posts using due dates and custom fields. Perfect for social media managers and digital marketers who need consistent posting schedules.
+Post to social media on a schedule with due dates and custom fields. Use it if you must post on a regular schedule.
 {% endhint %}
 
-**Use Case**: Automatically post content to social media platforms (like X/Twitter) when tasks reach their due date, maintaining consistent online presence.
+**Use Case**: When a task gets to its due date, the automation posts its content to social media (for example X/Twitter).
 
 **Workflow**: Task Due → Post to Social Media → Update Status
 
 **Setup Requirements**:
-- Taskade project with social media content
-- Custom fields for tracking post status
-- Social media integration (Twitter/X, LinkedIn, Facebook)
-- Due dates set on tasks for scheduling
+- A Taskade project with your social media content
+- Custom fields for the post status
+- A social media integration (Twitter/X, LinkedIn, Facebook)
+- A due date on each task, for the schedule
 
 **Example Project Structure:**
 ```
@@ -230,82 +230,82 @@ Schedule and automate social media posts using due dates and custom fields. Perf
 
 #### Create Content Calendar Project
 
-Set up a Taskade project using Table view to organize your social media content
+Make a Taskade project in Table view for your social media content.
 {% endstep %}
 
 {% step %}
 
 #### Add Custom Fields
 
-Create fields for Status (dropdown: draft, scheduled, posted), Platform, and Posted_At (date)
+Add these fields: Status (dropdown: draft, scheduled, posted), Platform and Posted_At (date).
 {% endstep %}
 
 {% step %}
 
 #### Set Up Automation Trigger
 
-Create a "Task Due" trigger that fires when content is scheduled to post
+Add a "Task Due" trigger. It starts the automation when a post is due.
 {% endstep %}
 
 {% step %}
 
 #### Configure Social Media Actions
 
-Add conditional actions for each platform (Twitter, LinkedIn, Facebook) based on custom field values
+Add one conditional action for each platform (Twitter, LinkedIn, Facebook). Each action reads the Platform field.
 {% endstep %}
 
 {% step %}
 
 #### Add Status Updates
 
-Include actions to update the task status and posting timestamp after successful publication
+Add actions that change the task status and the post time after the post goes live.
 {% endstep %}
 
 {% endstepper %}
 
 **Platform-Specific Configuration:**
 
-| **Platform**  | **Integration Required** | **Content Limits** | **Best Practices**                       |
-| ------------- | ------------------------ | ------------------ | ---------------------------------------- |
-| **Twitter/X** | Twitter API connection   | 280 characters     | Use hashtags, engage with trends         |
-| **LinkedIn**  | LinkedIn Business API    | 3000 characters    | Professional tone, industry insights     |
-| **Facebook**  | Facebook Graph API       | 63206 characters   | Visual content, community engagement     |
+| **Platform and integration** | **Content Limits** | **Best Practices** |
+| --- | --- | --- |
+| **Twitter/X** (Twitter API connection) | 280 characters | Use hashtags, join current topics |
+| **LinkedIn** (LinkedIn Business API) | 3000 characters | Professional tone, industry news |
+| **Facebook** (Facebook Graph API) | 63206 characters | Images and video, talk with your community |
 
 **Advanced Features:**
 
 {% hint style="info" %}
-**Multi-Platform Posting**: Set up conditional logic to post the same content across multiple platforms simultaneously.
+**Multi-Platform Posting**: With conditional steps, one automation can post the same content to many platforms at the same time.
 {% endhint %}
 
 **Content Personalization:**
 
-* Use variables to customize posts for different audiences
-* Include platform-specific hashtags and formatting
-* Adapt tone and style based on target platform
+* Use variables to change posts for different audiences
+* Add hashtags and formats for each platform
+* Change the tone and style for each platform
 
 **Reporting:**
 
-* Log each published post to a project or a Google Sheet
-* Generate a weekly posting report with an AI step
+* Record each published post in a project or a Google Sheet
+* Make a weekly report of your posts with an AI step
 
 **Bulk Scheduling:**
 
 * Import content calendars from spreadsheets
-* Schedule multiple posts at once
-* Use recurring tasks for consistent posting
+* Schedule many posts at one time
+* Use recurring tasks to post on a regular schedule
 
 **Customization Options:**
 
-* **Content Variations**: Create platform-specific versions of posts
-* **A/B Testing**: Test different content approaches
-* **Approval Workflows**: Add review steps before posting
-* **Performance Tracking**: Log each post and review it in a weekly AI summary
+* **Content Variations**: Make a different version of a post for each platform
+* **A/B Testing**: Compare two versions of your content
+* **Approval Workflows**: Add a review step before each post
+* **Performance Tracking**: Record each post and read about it in a weekly AI summary
 
 ## Lead Generation & Sales
 
 ### Recipe 3: Lead Capture & Qualification
 
-**Use Case**: Automatically capture leads from your website form, qualify them with AI, and route to the appropriate sales team.
+**Use Case**: The automation gets leads from the form on your website. An AI agent scores each lead, and the automation sends it to the right sales team.
 
 **Workflow**: Form Submission → AI Qualification → CRM Creation → Team Notification
 
@@ -372,14 +372,14 @@ Include actions to update the task status and posting timestamp after successful
 
 **Setup Instructions**:
 
-1. Create a lead qualification agent with prompts for scoring leads based on company size, industry, and message content.
-2. Connect your HubSpot and Slack integrations in Taskade.
-3. Create an email template in your email service with the ID `nurture_sequence_start`.
-4. Create a public Taskade form titled "Contact Form" with `name`, `email`, `company`, and `message` fields.
+1. Make a lead qualification agent. Give it prompts that score a lead from the company size, the industry and the message.
+2. In Taskade, connect your HubSpot and Slack integrations.
+3. In your email service, make an email template with the ID `nurture_sequence_start`.
+4. Make a public Taskade form with the title "Contact Form". Add the `name`, `email`, `company`, and `message` fields.
 
 ### Recipe 4: Deal Stage Automation
 
-**Use Case**: Automatically update deal stages based on customer actions and notify relevant team members.
+**Use Case**: The automation changes the deal stage when a customer acts. Then it tells the right team members.
 
 ```json
 {
@@ -418,15 +418,15 @@ Include actions to update the task status and posting timestamp after successful
 
 **Setup Instructions**:
 
-1. Connect your HubSpot, Email, and Slack integrations.
-2. Ensure your HubSpot deal pipeline has a stage named "proposal\_sent".
-3. Create an email template named `proposal_followup`.
+1. Connect your HubSpot, Email and Slack integrations.
+2. Make sure that your HubSpot deal pipeline has a stage with the name "proposal\_sent".
+3. Make an email template with the name `proposal_followup`.
 
 ## Customer Support
 
 ### Recipe 5: Intelligent Ticket Routing
 
-**Use Case**: Automatically categorize support tickets and route them to the right team with appropriate priority.
+**Use Case**: An AI agent puts each support ticket in a category and gives it a priority. Then the automation sends it to the right team.
 
 ```json
 {
@@ -482,15 +482,15 @@ Include actions to update the task status and posting timestamp after successful
 
 **Setup Instructions**:
 
-1. Create a "Support Classifier" agent trained to analyze ticket content and output a structured JSON with `project_id`, `category`, `priority`, and `assignee`.
+1. Make a "Support Classifier" agent. It reads each ticket and returns JSON with `project_id`, `category`, `priority`, and `assignee`.
 2. Connect your email and Slack integrations.
-3. Set up Taskade projects corresponding to the `project_id` your agent will return.
+3. Make one Taskade project for each `project_id` that your agent can return.
 
 ## Content Operations
 
 ### Recipe 6: Content Creation Pipeline
 
-**Use Case**: Generate blog content ideas, create drafts, and manage the approval process.
+**Use Case**: Get ideas for blog posts, make drafts and manage the approval of each post.
 
 ```json
 {
@@ -532,7 +532,7 @@ Include actions to update the task status and posting timestamp after successful
 
 ### Recipe 7: GitHub Issue to Project Task
 
-**Use Case**: Automatically create project tasks from GitHub issues and sync status updates.
+**Use Case**: The automation makes a project task from each new GitHub issue and keeps the status the same in both places.
 
 ```json
 {
@@ -567,7 +567,7 @@ Include actions to update the task status and posting timestamp after successful
 
 ### Recipe 8: Weekly Analytics Report
 
-**Use Case**: Generate and distribute weekly analytics reports to stakeholders.
+**Use Case**: Make a weekly analytics report and send it to the people who need it.
 
 ```json
 {
@@ -602,7 +602,7 @@ Include actions to update the task status and posting timestamp after successful
 
 ### Recipe 9: Employee Onboarding Automation
 
-**Use Case**: Automate the employee onboarding process with task creation and notifications.
+**Use Case**: Make the onboarding tasks and messages for each new employee automatically.
 
 ```json
 {
@@ -634,9 +634,9 @@ Include actions to update the task status and posting timestamp after successful
 
 ### Recipe 10: Abandoned Cart Recovery
 
-**Use Case**: Automatically follow up with customers who abandon their shopping carts.
+**Use Case**: Send a message to each customer who leaves items in the shopping cart and does not buy.
 
-Send the abandoned-checkout event from your store platform to the automation's webhook address. The webhook trigger needs Pro and up.
+Send the abandoned-checkout event from your store platform to the webhook address of the automation. The webhook trigger needs Pro and up.
 
 ```json
 {
@@ -687,19 +687,19 @@ Send the abandoned-checkout event from your store platform to the automation's w
 
 ### Best Practices
 
-1. **Start Simple**: Begin with basic trigger-action pairs
-2. **Add Conditions**: Use conditional logic for complex workflows
-3. **Handle Errors**: Decide what each step does when it fails (**Continue if this step fails**)
-4. **Test Thoroughly**: Test with sample data before deployment
-5. **Monitor Performance**: Track automation success rates and timing
+1. **Start Simple**: Start with one trigger and one action.
+2. **Add Conditions**: Use conditional steps for complex workflows.
+3. **Handle Errors**: Decide what each step does if it fails (**Continue if this step fails**).
+4. **Test Thoroughly**: Run a test with sample data before you turn the automation on.
+5. **Monitor Performance**: Watch how often the automation succeeds and how long it takes.
 
 ***
 
 > **Need help with a custom recipe?**\
-> → [Browse the automation guides](https://www.taskade.com/learn/automation) for support and examples
+> → [Read the automation guides](https://www.taskade.com/learn/automation) for help and examples
 
 > **Want to share your recipe?**\
-> → [Browse the Taskade template gallery](https://www.taskade.com/templates)
+> → [Look at the Taskade template gallery](https://www.taskade.com/templates)
 
 → **Next:** [**Set up your first automation**](README.md)
 

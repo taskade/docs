@@ -1,6 +1,6 @@
 ---
 description: >-
-  Use Taskade Autopilot to turn one prompt into a full workspace of connected projects, AI agents, agent teams, and automations, then expand it or build apps.
+  Use Taskade Autopilot to make a full workspace of connected projects, AI agents, agent teams and automations from one prompt. Then add to it or build apps.
 ---
 
 # Taskade Autopilot
@@ -9,22 +9,22 @@ description: >-
 
 ## Overview
 
-Taskade Autopilot is a **workspace generation system** that transforms a single prompt into an entire interconnected ecosystem of projects, agents, and automations. Unlike traditional project management that requires manual setup, Autopilot constructs complete operational workspaces instantly.
+With Taskade Autopilot, you type one prompt and get a full workspace. The workspace holds projects, agents and automations that work together. You do not have to build each part by hand.
 
-> **Taskade Genesis connection:** Autopilot creates workspace ecosystems (projects + agents + automations). Taskade Genesis goes further — building full **deployable web applications** with UI, databases, and hosting. Together, they're the fastest way to build your complete Workspace DNA.
+> **Taskade Genesis connection:** Autopilot makes a workspace (projects, agents and automations). Taskade Genesis also builds a **web app that you can deploy**, with a user interface, databases and hosting. Use the two together to build your full Workspace DNA.
 
 ---
 
 ## What Autopilot Creates
 
-From a single prompt, Autopilot generates:
+From one prompt, Autopilot makes these parts:
 
 | Component | What's Created | Example |
 |---|---|---|
-| **Projects** | Multiple connected projects with task structures and timelines | Sprint board, backlog, docs, meeting notes |
-| **AI Agents** | Specialized agents trained for workspace roles | Project Manager agent, QA agent, Copywriter agent |
-| **Agent Teams** | Groups of agents that collaborate | Marketing team, Engineering team |
-| **Automations** | Workflows that connect projects, agents, and tools | Daily standup → Slack, task completion → report |
+| **Projects** | Connected projects with tasks and timelines | Sprint board, backlog, docs, meeting notes |
+| **AI Agents** | Agents with one role each in the workspace | Project Manager agent, QA agent, Copywriter agent |
+| **Agent Teams** | Groups of agents that work together | Marketing team, Engineering team |
+| **Automations** | Workflows that connect projects, agents and tools | Daily standup → Slack, task completion → report |
 
 ---
 
@@ -32,11 +32,11 @@ From a single prompt, Autopilot generates:
 
 | Scenario | Why Autopilot Helps |
 |---|---|
-| **New team setup** | Need complete operational structure with projects, agents, and workflows from day one |
-| **Scattered workflows** | Current tools are disconnected — need a unified, interconnected workspace |
-| **Urgent projects** | Need a full workspace running immediately for a new initiative |
-| **Manual process replacement** | Want to replace repetitive processes with AI-driven automation |
-| **Department onboarding** | Need a structured workspace for a new department or function |
+| **New team setup** | You get projects, agents and workflows from the first day. |
+| **Scattered workflows** | Your tools are not connected. Autopilot puts them in one workspace. |
+| **Urgent projects** | You need a full workspace for a new project at once. |
+| **Manual process replacement** | You want AI automations to do repeated work. |
+| **Department onboarding** | A new department or team needs a structured workspace. |
 
 ---
 
@@ -44,14 +44,14 @@ From a single prompt, Autopilot generates:
 
 | Feature | Autopilot | Taskade Genesis |
 |---|---|---|
-| **What it creates** | Workspace ecosystem (projects + agents + automations) | Full deployable web application |
-| **Output** | Interconnected Taskade workspace | Live app with UI, databases, hosting |
-| **Use case** | Internal team operations | Customer-facing apps, tools, portals |
-| **Deployment** | Instant workspace | Published URL + optional custom domain |
-| **What you get** | Projects, agents, and automations | The same, plus a deployable app |
+| **What it creates** | A workspace (projects, agents and automations) | A full web app that you can deploy |
+| **Output** | Connected Taskade workspace | Live app with a user interface, databases and hosting |
+| **Use case** | Work inside your team | Apps, tools and portals for your customers |
+| **Deployment** | The workspace is ready at once | Published URL, and a custom domain if you add one |
+| **What you get** | Projects, agents and automations | The same, plus an app that you can deploy |
 | **Best for** | "Set up my team's workspace" | "Build me an app for my customers" |
 
-> **Use both:** Autopilot to create your operational workspace, Taskade Genesis to build customer-facing apps powered by that workspace.
+> **Use both:** Make your team workspace with Autopilot. Then build apps for customers with Taskade Genesis on top of that workspace.
 
 ---
 
@@ -59,11 +59,11 @@ From a single prompt, Autopilot generates:
 
 ### Step-by-Step
 
-1. Click the **+** button in the left sidebar → **Create with AI** (or visit `taskade.com/create` directly)
-2. Type a description of the workspace you need in the prompt bar
-3. Click the arrow button or press **Enter**
-4. Wait for Autopilot to generate: AI Agents, Teams, Projects, Automation Flows
-5. Click **Deploy to Taskade** to add the workspace to your account
+1. In the left sidebar, click the **+** button → **Create with AI**. You can also go to `taskade.com/create`.
+2. In the prompt bar, describe the workspace that you need.
+3. Click the arrow button or press **Enter**.
+4. Wait while Autopilot makes the AI Agents, Teams, Projects and Automation Flows.
+5. Click **Deploy to Taskade** to add the workspace to your account.
 
 ### Example Prompts
 
@@ -77,7 +77,7 @@ From a single prompt, Autopilot generates:
 
 ### Suggested Templates
 
-Autopilot offers built-in templates for common use cases:
+Autopilot has templates for frequent use cases:
 
 | Template | Description |
 |---|---|
@@ -91,54 +91,53 @@ Autopilot offers built-in templates for common use cases:
 
 ## Expand Your Workspace
 
-After Autopilot generates your initial workspace, expand it with these tools:
+After Autopilot makes your first workspace, you can add more parts to it.
 
 ### Generate New Automations
 
-1. Go to the **Automations** tab in your workspace
-2. Click **Add automation** → **Generate With AI**
-3. Describe what you want the automation to achieve
+1. In your workspace, go to the **Automations** tab.
+2. Click **Add automation** → **Generate With AI**.
+3. Describe what the automation must do.
 4. Choose a generator mode:
-   - **Auto** (default): AI selects the optimal mode for your task
-   - **Agent Tool Mode**: Generates an automation as an AI agent tool
-   - **Workflow Mode**: Standard project automation flow
-   - **Form Mode**: Generates a smart form that triggers actions on submission
-5. Press Enter and wait for the result
-6. Click **Create Automation** to add it
-7. Customize and enable the automation
+   - **Auto** (default): The AI selects the best mode for your task
+   - **Agent Tool Mode**: Makes an automation that an AI agent can use as a tool
+   - **Workflow Mode**: Makes a standard automation flow for a project
+   - **Form Mode**: Makes a smart form that starts actions when a person submits it
+5. Press Enter and wait for the result.
+6. Click **Create Automation** to add it.
+7. Change the automation to fit your needs, then turn it on.
 
 ### Generate New AI Agents
 
-1. Go to the **Agents** tab
-2. Click **Create agent** → **Generate**
-3. **Option A:** Describe the agent you want
-4. **Option B:** Choose from prompt examples
-5. Press Enter and wait for generation
-6. _(Optional)_ Customize: Name, Instructions, Commands, Language
-7. Click **Create & Launch Agent**
+1. Go to the **Agents** tab.
+2. Click **Create agent** → **Generate**.
+3. Describe the agent that you want, or choose a prompt example.
+4. Press Enter and wait.
+5. _(Optional)_ Change the Name, Instructions, Commands or Language.
+6. Click **Create & Launch Agent**.
 
 ### Generate New Projects
 
-1. Click **+** next to **Projects** in the sidebar → **AI Project**
-2. Describe the project you want
-3. _(Optional)_ Configure output settings:
-   - **View**: Default project view (List, Board, Table, etc.)
-   - **Language**: Output language
-   - **Upload Files**: Seed documents (.pdf, .docx, .txt, .md, .pptx, .xlsx, .xls, .csv, .epub)
-   - **Add Links**: Link to online resources
-   - **Agent Mode**: Generate a default agent for the project
-4. Press Enter to generate
-5. Choose: **Create project**, **Continue writing**, or **Make longer**
+1. In the sidebar, click **+** next to **Projects** → **AI Project**.
+2. Describe the project that you want.
+3. _(Optional)_ Set the output settings:
+   - **View**: The first view of the project (List, Board, Table and more)
+   - **Language**: The language of the output
+   - **Upload Files**: Source files (.pdf, .docx, .txt, .md, .pptx, .xlsx, .xls, .csv, .epub)
+   - **Add Links**: Links to online sources
+   - **Agent Mode**: Also make a default agent for the project
+4. Press Enter.
+5. Choose **Create project**, **Continue writing** or **Make longer**.
 
 ---
 
 ## What's Next
 
-| Guide | What You'll Learn |
+| Guide | What You Learn |
 |---|---|
-| [How Genesis Works](https://www.taskade.com/learn/genesis) | Build deployable apps from your workspace |
-| [Workflow Generator](../automation/workflow-generator.md) | Build automations with natural language |
-| [Taskade for Teams](../workspaces/teams.md) | Organize teams within your workspace |
+| [How Genesis Works](https://www.taskade.com/learn/genesis) | Build apps from your workspace and deploy them |
+| [Workflow Generator](../automation/workflow-generator.md) | Build automations from a plain-language description |
+| [Taskade for Teams](../workspaces/teams.md) | Organize teams in your workspace |
 
 ---
 

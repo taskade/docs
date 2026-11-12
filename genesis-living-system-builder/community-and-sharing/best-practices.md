@@ -1,15 +1,15 @@
 ---
 description: >-
-  Best practices for building Taskade Genesis apps: write effective prompts, test on mobile, iterate one change at a time, and avoid common pitfalls.
+  Build better Taskade Genesis apps: write clear prompts, test on a phone, make one change at a time and prevent frequent mistakes.
 ---
 
 # Best Practices for Genesis Success
 
-Learn from successful Taskade Genesis users to build better apps faster and avoid common pitfalls.
+These tips come from Taskade Genesis users who build good apps. Use them to build better apps in less time.
 
 ## Writing Effective Prompts
 
-The quality of your prompt directly impacts the quality of your app. Here's how to write prompts that get great results.
+A better prompt gives you a better app. This section shows how to write a good prompt.
 
 ### The Perfect Prompt Formula
 
@@ -27,7 +27,7 @@ I run a [INDUSTRY] and [USERS] need to [PROBLEM] because [CONTEXT]. They should 
 
 ✅ **Industry-specific:** "I run a veterinary clinic and pet owners need to book appointments for their animals"
 
-**Why this matters:** Different industries have different requirements, terminology, and user expectations. A booking system for a vet clinic needs different features than one for a hair salon.
+**Why this matters:** Each industry has its own needs, words and user expectations. A booking system for a vet clinic needs different features from a booking system for a hair salon.
 
 ### Describe the Complete User Journey
 
@@ -43,7 +43,7 @@ I run a [INDUSTRY] and [USERS] need to [PROBLEM] because [CONTEXT]. They should 
 
 ### Specify Your Audience
 
-**Consider these factors:**
+**Tell the AI about your users:**
 - **Technical comfort level:** "Elderly clients who prefer simple interfaces"
 - **Device usage:** "Busy parents who primarily use mobile phones"
 - **Context of use:** "Staff who need to quickly enter data between customer interactions"
@@ -52,14 +52,14 @@ I run a [INDUSTRY] and [USERS] need to [PROBLEM] because [CONTEXT]. They should 
 
 ### Test Like a Real User
 
-**Use realistic scenarios:**
+**Use real situations:**
 ```
 ✅ Book an appointment for your actual pet with real dates
 ✅ Submit feedback about a meal you actually ate
 ✅ Upload a real document that your customers would submit
 ```
 
-**Avoid testing shortcuts:**
+**Do not use test shortcuts:**
 ```
 ❌ Using "test@test.com" as an email
 ❌ Entering "asdf" in text fields
@@ -68,34 +68,34 @@ I run a [INDUSTRY] and [USERS] need to [PROBLEM] because [CONTEXT]. They should 
 
 ### Mobile-First Testing
 
-**Test on actual devices:**
-- Pull out your phone and use the app
-- Try typing on the mobile keyboard
-- Test with poor internet connection
-- Check how it looks in both portrait and landscape
+**Do a test on a real phone:**
+- Open the app on your phone and use it.
+- Type with the phone keyboard.
+- Use the app on a slow internet connection.
+- Look at the app in portrait and in landscape.
 
-**Common mobile issues to watch for:**
-- Buttons too small to tap easily
-- Text too small to read
-- Forms that don't work with mobile keyboards
-- Images that don't load on slower connections
+**Look for these frequent problems on phones:**
+- Buttons that are too small to tap
+- Text that is too small to read
+- Forms that do not work with phone keyboards
+- Images that do not load on slow connections
 
 ### Test Edge Cases
 
-**What happens when:**
-- Someone uploads a very large file?
-- A user enters special characters or emojis?
-- Multiple people try to book the same time slot?
-- Someone leaves required fields blank?
-- The internet connection is slow or interrupted?
+**Find out what occurs when:**
+- A person uploads a very large file
+- A user types special characters or emojis
+- Two or more people try to book the same time slot
+- A person leaves a required field empty
+- The internet connection is slow or stops
 
 ### Get Real User Feedback
 
 **Start with a small group:**
-- Choose 3-5 people who represent your actual users
-- Watch them use the app (don't just ask for their opinion)
-- Take notes on where they hesitate or seem confused
-- Ask specific questions: "Was it clear how to submit your request?"
+- Choose 3-5 people who are like your real users.
+- Watch them use the app. Do not only ask for their opinion.
+- Write down where they stop or look confused.
+- Ask exact questions, for example: "Was it clear how to submit your request?"
 
 ## Iterating and Improving
 
@@ -115,23 +115,23 @@ I run a [INDUSTRY] and [USERS] need to [PROBLEM] because [CONTEXT]. They should 
 ```
 {% endcode %}
 
-**Why this matters:** When you change multiple things at once, you can't tell which change caused which result. If something breaks, you won't know what to fix.
+**Why this matters:** If you change many things at one time, you cannot tell which change caused which result. If something breaks, you do not know what to fix.
 
 ### Test Each Change
 
-**After each modification:**
-1. **Test the specific change** you made
-2. **Make sure you didn't break** anything else
-3. **Get feedback** from users if it's a significant change
-4. **Document what worked** and what didn't
+**After each change:**
+1. **Do a test of the change** that you made.
+2. **Make sure that nothing else broke.**
+3. **Get feedback** from users if the change is large.
+4. **Write down what worked** and what did not work.
 
 ### Use Data to Guide Decisions
 
-**Track meaningful metrics:**
-- How many people complete the main action (conversion rate)
-- Where people drop off in the process
-- How long it takes people to complete tasks
-- What questions or problems come up most often
+**Measure the numbers that matter:**
+- How many people finish the main action (conversion rate)
+- Where people stop in the process
+- How long people take to finish tasks
+- Which questions or problems come up most
 
 **Ask the right questions:**
 - "Where do people get stuck?"
@@ -142,65 +142,65 @@ I run a [INDUSTRY] and [USERS] need to [PROBLEM] because [CONTEXT]. They should 
 
 ### Document Your Setup
 
-**Keep track of:**
-- **Integrations:** Which services are connected and how
-- **Automations:** What triggers what actions
-- **User roles:** Who has access to what features
+**Write down:**
+- **Integrations:** Which services are connected, and how
+- **Automations:** Which trigger starts which action
+- **User roles:** Who can use which features
 - **Business rules:** Special policies or requirements
 
-**Why this matters:** When you need to make changes or train new team members, you'll want to remember how everything works.
+**Why this matters:** You need this record when you change the app or train new team members.
 
 ### Plan for Growth
 
-**Start simple, scale thoughtfully:**
-1. **Build for your current needs** first
-2. **Monitor usage patterns** to see what's working
-3. **Add features based on actual user requests** rather than assumptions
-4. **Test new features with a small group** before rolling out to everyone
+**Start simple and grow with care:**
+1. **Build for the needs of today** first.
+2. **Watch how people use the app** to see what works.
+3. **Add the features that real users ask for.** Do not add features from guesses.
+4. **Do a test of new features with a small group** before you give them to all users.
 
 ### Maintain Your App
 
-**Regular maintenance tasks:**
-- **Test integrations** to make sure they're still working
-- **Review user feedback** for improvement opportunities
-- **Update content** like pricing or service descriptions
-- **Clean up old data** that's no longer needed
+**Do these tasks regularly:**
+- **Do a test of your integrations** to make sure that they still work.
+- **Read user feedback** to find things to improve.
+- **Update content** like prices or service descriptions.
+- **Delete old data** that you do not need.
 
 ## Team Collaboration
 
 ### Getting Team Buy-In
 
-**Include your team in the process:**
-- **Show them early versions** and get their input
-- **Train them on how to use** the app effectively
-- **Ask for their ideas** on improvements
-- **Celebrate successes** when the app helps the business
+**Include your team:**
+- **Show them early versions** and ask for their opinion.
+- **Train them** to use the app well.
+- **Ask for their ideas** to improve it.
+- **Tell the team** when the app helps the business.
 
 ### Assign Ownership
 
-**Clear responsibilities:**
+**Decide who does each job:**
 - **Who updates content** like prices or service descriptions?
-- **Who monitors** for problems or user feedback?
-- **Who responds** to customer questions about the app?
-- **Who makes decisions** about new features or changes?
+- **Who watches** for problems and user feedback?
+- **Who answers** customer questions about the app?
+- **Who decides** about new features or changes?
 
 ## Security and Privacy
 
 ### Protect User Data
 
-**Essential security practices:**
-- **Use strong passwords** for admin accounts
-- **Limit access** to only the people who need it
-- **Regular backups** of important data
-- **Monitor for suspicious activity** or unauthorized access
+**Do these security tasks:**
+- **Use strong passwords** for admin accounts.
+- **Give access** only to the people who need it.
+- **Make backups** of important data regularly.
+- **Watch for strange activity** and access without permission.
 
 ### Be Transparent
 
-**Clear communication with users:**
-- **Explain what data you collect** and why
-- **Provide options** for users to control their information
-- **Make it easy** for users to update or delete their data
-- **Respond quickly** to privacy concerns or questions
+**Tell your users clearly:**
+- **Explain what data you collect** and why.
+- **Give users options** to control their information.
+- **Make it easy** for users to change or delete their data.
+- **Answer quickly** when users ask about privacy.
 
 ## Common Mistakes to Avoid
 
@@ -272,27 +272,27 @@ I run a [INDUSTRY] and [USERS] need to [PROBLEM] because [CONTEXT]. They should 
 
 ### Define Success Early
 
-**Before building, decide what success looks like:**
+**Before you build, decide what success means:**
 - **Usage metrics:** How many people use the app?
 - **Completion rates:** Do people finish the main action?
-- **Time savings:** Does this make processes faster?
-- **Customer satisfaction:** Are people happier with this experience?
-- **Business impact:** Does this help achieve business goals?
+- **Time savings:** Does the app make work faster?
+- **Customer satisfaction:** Do people like the new experience more?
+- **Business impact:** Does the app help you get to your business goals?
 
 ### Regular Check-Ins
 
-**Monthly review questions:**
-- Is the app being used as expected?
-- What feedback are we getting from users?
-- Are our integrations still working properly?
-- What improvements would have the biggest impact?
-- Should we add new features or simplify existing ones?
+**Ask these questions each month:**
+- Do people use the app as you expected?
+- What feedback do users give?
+- Do your integrations still work correctly?
+- Which improvement has the largest effect?
+- Do you add new features, or make the current features simpler?
 
 ## Getting the Most from Genesis
 
 ### Leverage the AI Agent
 
-**Use the built-in AI for ongoing improvements:**
+**Ask the built-in AI how to improve your app:**
 {% code overflow="wrap" %}
 ```
 "What features should I add to make this app better for my restaurant customers?"
@@ -306,50 +306,50 @@ I run a [INDUSTRY] and [USERS] need to [PROBLEM] because [CONTEXT]. They should 
 ### Stay Updated
 
 **Keep learning:**
-- **Follow Genesis updates** for new features and capabilities
-- **Join the community** to see what other users are building
-- **Experiment with new features** as they become available
-- **Share your successes** to help other users learn
+- **Read the Genesis updates** to learn about new features.
+- **Join the community** to see what other users build.
+- **Try new features** when they become available.
+- **Share your results** to help other users learn.
 
 ### Think Beyond Your First App
 
-**Once you've mastered one app:**
-- **Identify other processes** that could benefit from automation
-- **Consider apps for different audiences** (customers vs. internal team)
-- **Build connected systems** where apps work together
-- **Help other team members** build their own solutions
+**After your first app works well:**
+- **Find other work** that an automation can do.
+- **Think about apps for other people**, for example customers or your own team.
+- **Build connected systems** where apps work together.
+- **Help other team members** build their own apps.
 
 ---
 
 ## Quick Reference Checklist
 
 ### Before Building
-- [ ] Clearly define the problem you're solving
-- [ ] Identify who will use the app and how
+- [ ] Write down the problem that the app solves
+- [ ] Know who will use the app, and how
 - [ ] Write a detailed prompt with business context
-- [ ] Plan how you'll test the app
+- [ ] Plan how you will test the app
 
 ### During Development
-- [ ] Test each feature as it's built
+- [ ] Do a test of each feature after the AI builds it
 - [ ] Make one change at a time
 - [ ] Get feedback from real users early
-- [ ] Document important decisions and setup
+- [ ] Write down important decisions and settings
 
 ### After Launch
-- [ ] Monitor usage and gather feedback
+- [ ] Watch how people use the app and collect feedback
 - [ ] Plan regular maintenance and updates
-- [ ] Train team members on using the app
-- [ ] Measure success against your original goals
+- [ ] Train team members to use the app
+- [ ] Compare the results with your first goals
 
 ### Ongoing Success
-- [ ] Listen to user feedback and iterate
+- [ ] Listen to user feedback and improve the app
 - [ ] Keep security and privacy in mind
-- [ ] Share successes and learn from others
-- [ ] Look for opportunities to build additional apps
+- [ ] Share your results and learn from others
+- [ ] Look for more apps that you can build
 
 ---
 
-**Remember:** The best Genesis apps are built iteratively. Start with something simple that works, get it in front of real users, and improve based on their actual needs and feedback.
+**Remember:** Build the best Genesis apps in small steps. Start with a simple app that works. Give it to real users, and improve it from their real needs and feedback.
 
 ---
 

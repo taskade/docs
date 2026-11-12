@@ -8,7 +8,7 @@ description: >-
 Send a **Bearer token** in the `Authorization` header on every request. REST API v1, Action API v2, and the MCP servers all accept it.
 
 {% hint style="info" %}
-**TL;DR:** To act as yourself, create a personal access token at [taskade.com/settings/api](https://www.taskade.com/settings/api) and send `Authorization: Bearer $TASKADE_TOKEN`. To act for other users, use OAuth 2.0 with PKCE. An access token lasts 1 hour, and each refresh returns a new refresh token.
+**In short:** To act as yourself, create a personal access token at [taskade.com/settings/api](https://www.taskade.com/settings/api) and send `Authorization: Bearer $TASKADE_TOKEN`. To act for other users, use OAuth 2.0 with PKCE. An access token lasts 1 hour, and each refresh returns a new refresh token.
 {% endhint %}
 
 ## Before you start
@@ -19,24 +19,24 @@ Send a **Bearer token** in the `Authorization` header on every request. REST API
 
 ## Choose a credential
 
-| If you are… | Use | How |
+| If you want to… | Use | How |
 | --- | --- | --- |
-| Writing a script, or running the local Workspace MCP server (`@taskade/mcp-server`) | **Personal access token** | Bearer token (`tskdp_…`) |
-| Building a third-party app that acts on behalf of other users | **OAuth 2.0** (Authorization Code + PKCE) | Redirect flow |
-| Connecting an interactive MCP client to the **hosted** server at `https://www.taskade.com/mcp` | **OAuth 2.0** | Best default. The MCP client handles sign-in and consent |
-| Calling the **hosted** MCP from your own script, service, or client that can set headers | **Personal access token** | Send it as a Bearer token |
+| Write a script, or run the local Workspace MCP server (`@taskade/mcp-server`) | **Personal access token** | Bearer token (`tskdp_…`) |
+| Build a third-party app that acts for other users | **OAuth 2.0** (Authorization Code + PKCE) | Redirect flow |
+| Connect an interactive MCP client to the **hosted** server at `https://www.taskade.com/mcp` | **OAuth 2.0** | The best default. The MCP client does the sign-in and consent steps |
+| Call the **hosted** MCP from your own script, service, or client that can set headers | **Personal access token** | Send it as a Bearer token |
 
 ---
 
 ## Personal access tokens
 
-Personal access tokens authenticate requests as yourself. They work well for server scripts, the local Workspace MCP server, and early development.
+A personal access token sends requests as you. Personal access tokens work well for server scripts, the local Workspace MCP server, and early development.
 
 ### Create a token
 
 1. Go to [taskade.com/settings/api](https://www.taskade.com/settings/api).
 2. Go to **Personal access tokens** and click **Create token**.
-3. Give the token a descriptive name.
+3. Give the token a name that tells you what it is for.
 4. Copy the token immediately. Taskade shows it **only once**.
 5. Save the token in your terminal:
 
@@ -44,17 +44,17 @@ Personal access tokens authenticate requests as yourself. They work well for ser
 export TASKADE_TOKEN="tskdp_your_token_here"
 ```
 
-A personal access token starts with the prefix `tskdp_`. You can hold up to **5 tokens** per account, and your email must be verified to create one.
+A personal access token starts with the prefix `tskdp_`. An account can have up to **5 tokens**. You must verify your email address before you can create a token.
 
 {% hint style="warning" %}
-A personal access token grants **full access to your account**. Treat it like a password.
+A personal access token gives **full access to your account**. Keep it secret, like a password.
 
 Never commit or share the token. Store it in an environment variable or secret manager.
 {% endhint %}
 
 ### Use a token
 
-Send it in the `Authorization` header on every request:
+Send the token in the `Authorization` header on every request:
 
 ```bash
 # REST API v1
@@ -94,17 +94,17 @@ Content-Type: application/json
 
 Choose this option for a script, server process, CI job, or MCP client where you control the request headers.
 
-The connection acts as your Taskade account. Personal tokens carry no OAuth scopes and grant their owner's access. Do not distribute them.
+The connection acts as your Taskade account. Personal tokens have no OAuth scopes. A personal token has all the access of its owner. Do not give it to other people.
 
-For Claude, Cursor, and other interactive clients with remote MCP OAuth support, prefer the OAuth flow. The flow keeps a full-account personal token out of the client. It also gives each user a separate consent flow.
+For Claude, Cursor, and other interactive clients that support OAuth for remote MCP, use the OAuth flow. Then the client does not hold a personal token with full account access. Each user also gets a separate consent step.
 
 ---
 
 ## OAuth 2.0
 
-Use OAuth 2.0 when your application acts **on behalf of other users**. Each user signs in and grants access.
+Use OAuth 2.0 when your application acts **for other users**. Each user signs in and grants access.
 
-Also use OAuth 2.0 for interactive clients that connect to hosted MCP. Header-controlled scripts can use a personal access token instead.
+Also use OAuth 2.0 for interactive clients that connect to hosted MCP. A script that sets its own headers can use a personal access token instead.
 
 ### Endpoints
 
@@ -117,9 +117,13 @@ Also use OAuth 2.0 for interactive clients that connect to hosted MCP. Header-co
 
 ### Register an application
 
-Go to [taskade.com/settings/api](https://www.taskade.com/settings/api) → **OAuth2 Applications**. Click **Create application**, then register your app and set its redirect URI(s). Your email must be verified before you can create an application.
+You must verify your email address before you can create an application.
 
-Taskade gives you a **Client ID** and **Client Secret**. Save them, and the redirect URI, in your terminal:
+1. Go to [taskade.com/settings/api](https://www.taskade.com/settings/api) → **OAuth2 Applications**.
+2. Click **Create application**.
+3. Register your app and set its redirect URI(s).
+
+Taskade gives you a **Client ID** and **Client Secret**. Save them and the redirect URI in your terminal:
 
 ```bash
 export CLIENT_ID="your_client_id"
@@ -129,7 +133,7 @@ export REDIRECT_URI="https://your-app.example.com/callback"
 
 ### Authorization Code flow (with PKCE)
 
-Taskade supports the **Authorization Code** grant with **PKCE (S256)**, the recommended flow for both confidential and public clients.
+Taskade supports the **Authorization Code** grant with **PKCE (S256)**. This is the recommended flow for confidential clients and for public clients.
 
 ```mermaid
 sequenceDiagram
@@ -146,7 +150,7 @@ sequenceDiagram
     App->>Taskade: API request with Bearer access_token
 ```
 
-1. **Redirect** the user to `/oauth2/authorize` with `client_id`, `redirect_uri`, `response_type=code`, `code_challenge`, and `code_challenge_method=S256`. If the token must reach the hosted MCP server, add `scope=mcp`. Taskade supports no other scope, and the REST and Action APIs ignore scope.
+1. **Redirect** the user to `/oauth2/authorize` with `client_id`, `redirect_uri`, `response_type=code`, `code_challenge`, and `code_challenge_method=S256`. If the token must reach the hosted MCP server, add `scope=mcp`. Taskade supports no other scope. The REST and Action APIs ignore the scope.
 2. **Exchange** the returned `code` at `/oauth2/token` with `grant_type=authorization_code` and your `code_verifier`.
    - For confidential apps, also send `client_secret`.
    - For public clients, omit `client_secret`.
@@ -168,7 +172,7 @@ Send `code_challenge` (with `code_challenge_method=S256`) on the authorize reque
 
 ### Exchange the code for tokens
 
-Your redirect URI receives the authorization code in the `code` query parameter. Save it, then exchange it in the same terminal that holds `code_verifier`:
+Your redirect URI receives the authorization code in the `code` query parameter. Save the code. Then exchange it in the same terminal that has `code_verifier`:
 
 ```bash
 export AUTH_CODE="code_from_the_redirect"
@@ -183,7 +187,7 @@ curl -s -X POST https://www.taskade.com/oauth2/token \
   -d "redirect_uri=$REDIRECT_URI"
 ```
 
-A public client omits the `client_secret` line. The response carries both tokens:
+A public client omits the `client_secret` line. The response has both tokens:
 
 ```json
 {
@@ -198,7 +202,7 @@ Send `access_token` as `Authorization: Bearer <access_token>` on each API or MCP
 
 ### Refresh an expired token
 
-Access tokens expire after one hour. Exchange the stored refresh token for a new pair:
+Access tokens expire after one hour. Exchange the stored refresh token for a new pair of tokens:
 
 ```bash
 export REFRESH_TOKEN="your_stored_refresh_token"
@@ -213,7 +217,7 @@ curl -s -X POST https://www.taskade.com/oauth2/token \
 
 Every refresh request must send `client_id`. A confidential app must also send `client_secret`, the same as on the code exchange. A public client omits the `client_secret` line.
 
-The response has the same shape as the code exchange. It carries a **new** `refresh_token`, and the old refresh token stops working:
+The response has the same shape as the code exchange. It has a **new** `refresh_token`, and the old refresh token stops working:
 
 ```json
 {
@@ -245,7 +249,7 @@ Taskade supports the `authorization_code` and `refresh_token` grants only. Taska
 
 ### Scopes and the hosted MCP
 
-When you use OAuth, the hosted MCP server at [https://www.taskade.com/mcp](../genesis-app-mcp.md) requires an access token with the **`mcp`** scope. When you add the server URL, MCP clients (Claude Desktop, Cursor, Claude Code) do this handshake automatically, with dynamic client registration.
+When you use OAuth, the hosted MCP server at [https://www.taskade.com/mcp](../genesis-app-mcp.md) requires an access token with the **`mcp`** scope. MCP clients (Claude Desktop, Cursor, Claude Code) do this handshake automatically when you add the server URL. They use dynamic client registration.
 
 Personal access tokens do not use OAuth scopes. If you set the `Authorization` header yourself, as shown earlier, use a personal token.
 
@@ -262,7 +266,7 @@ The token endpoint returns OAuth errors with status `400`, in the RFC 6749 shape
 | What you see | Cause | Fix |
 | --- | --- | --- |
 | `"code": "UNAUTHORIZED"` on an API call | The token is missing, wrong, revoked, or expired | Send `Authorization: Bearer $TASKADE_TOKEN`, or refresh the OAuth access token. |
-| `Cannot create more than 5 personal access tokens.` | An account holds 5 tokens maximum | Revoke a token that you do not use. |
+| `Cannot create more than 5 personal access tokens.` | An account can have a maximum of 5 tokens | Revoke a token that you do not use. |
 | `"error_description": "Grant not found"` | The code is wrong, expired, already used, or sent with a different `redirect_uri` | Start the authorize step again. Send the same `redirect_uri` on both steps. |
 | `"error_description": "Missing code_verifier"` | The token request has no `code_verifier` | Send the verifier that produced the `code_challenge`. |
 | `"error_description": "Invalid code_verifier"` | The verifier does not match the `code_challenge` | Keep the verifier from the authorize step, and send it without changes. |
@@ -275,17 +279,17 @@ The token endpoint returns OAuth errors with status `400`, in the RFC 6749 shape
 
 ## Security best practices
 
-- **Never expose tokens in client-side code.** Personal tokens grant full account access.
+- **Never expose tokens in client-side code.** Personal tokens give full account access.
 - **Use OAuth, not personal tokens,** for an app that more than one person uses.
-- **Store refresh tokens encrypted at rest.** They are long-lived.
-- **Rotate personal tokens** periodically. You can keep up to 5 active.
+- **Encrypt stored refresh tokens.** They stay valid for a long time.
+- **Replace personal tokens** at regular intervals. You can have up to 5 active tokens.
 - **Always use HTTPS.**
 
 ## Next steps
 
 - [Quickstart](https://www.taskade.com/docs/getting-started/quickstart): make your first call with a personal access token.
 - [Personal access tokens](personal-tokens.md): limits and token management.
-- [Action API guide](../api-v2-reference.md): call the API with the token you created.
+- [Action API guide](../api-v2-reference.md): call the API with the token that you created.
 - [Hosted MCP](../genesis-app-mcp.md): connect an MCP client with OAuth or a personal token.
 
 ---

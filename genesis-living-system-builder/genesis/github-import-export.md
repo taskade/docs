@@ -1,21 +1,21 @@
 ---
 description: >-
-  Import Taskade Genesis apps from GitHub repos and export them back via branch-and-PR flows for version-controlled, two-way app sync.
+  Import Taskade Genesis apps from GitHub repos, and export them back with a branch and a pull request. Keep each app in version control.
 ---
 
 # GitHub Import & Export
 
-Bring Taskade Genesis apps in from GitHub repositories and push your apps back to GitHub with branch-and-PR workflows. Two-way sync turns every Genesis app into a portable, version-controlled kit.
+You can import Taskade Genesis apps from GitHub repositories. You can also send your apps back to GitHub on a new branch with a pull request. With this two-way sync, each Genesis app becomes a kit that you can move and keep in version control.
 
 ***
 
 ## Overview
 
-GitHub Import & Export lets you treat any Genesis app like code — back it up, collaborate on it through pull requests, and share it with others as a cloneable repository.
+With GitHub Import & Export, you can use a Genesis app like code. You can make a backup, work on it with pull requests and share it as a repository that other people can clone.
 
-* **Import** an app from a public or private GitHub repo. Import works on every plan, with the per-item limits of your plan. For example, a Free workspace can hold 1 agent and 3 apps, and cannot import automations.
-* **Export** an app to a brand-new repo or push updates to an existing repo as a pull request. Export to GitHub needs **Pro or above**, and Taskade checks the plan on the server.
-* **Round trip**: export to a repo, then import it back into any workspace.
+* **Import** an app from a public or private GitHub repo. Import works on every plan, with the item limits of your plan. For example, a Free workspace can hold 1 agent and 3 apps, and cannot import automations.
+* **Export** an app to a new repo, or send updates to a repo that exists as a pull request. Export to GitHub needs **Pro or above**. Taskade checks the plan on the server.
+* **Round trip**: Export to a repo, then import it back into a workspace.
 
 ***
 
@@ -23,24 +23,27 @@ GitHub Import & Export lets you treat any Genesis app like code — back it up, 
 
 ### From a Public Repository
 
-1. Open the workspace where you want the app. In the workspace header, open the **More** menu and click **Import from GitHub**.
-2. If Taskade asks, click **Connect GitHub account** and sign in. You need this step for public repos too.
-3. Paste the repository URL and click **Import**. Taskade fetches the app bundle and imports it into your workspace.
+1. Open the workspace for the app. In the workspace header, open the **More** menu and click **Import from GitHub**.
+2. If Taskade asks, click **Connect GitHub account** and sign in. You must do this step for public repos too.
+3. Paste the repository URL and click **Import**.
 
-Import works with a repo that holds an exported Taskade app. It does not turn an ordinary code repo into an app.
+Taskade gets the app bundle and imports it into your workspace.
 
-If your plan allows automations, the entire app kit — projects, agents, and automations — comes in together. **Automations are enabled automatically** after import, so the app is ready to run without manual setup. On a plan without automations (Free), Taskade stops the import of an app that holds automations and asks you to upgrade.
+Import works with a repo that holds an exported Taskade app. Import does not change a normal code repo into an app.
+
+If your plan includes automations, the full app kit comes in: projects, agents and automations. Taskade **turns on the automations automatically** after the import. Thus the app is ready to run, and you do not have to configure it. On a plan without automations (Free), Taskade stops the import of an app that holds automations and asks you to upgrade.
 
 ### From a Private Repository
 
-Private repositories require authenticated access.
+To import from a private repository, you must sign in to GitHub.
 
-1. Click **Connect GitHub account** and authorize Taskade.
-2. Paste the private repo URL. The import works when your connected GitHub account can read the repo.
-3. Taskade reads the repo contents directly and imports the same way as a public repo.
+1. Click **Connect GitHub account** and give Taskade access.
+2. Paste the URL of the private repo.
+
+The import works if your connected GitHub account can read the repo. Taskade reads the content of the repo and imports it as it does a public repo.
 
 {% hint style="info" %}
-The GitHub token needs `repo` scope to read private repositories. You can revoke access anytime from your GitHub account settings.
+The GitHub token needs `repo` scope to read private repositories. You can remove this access at any time in the settings of your GitHub account.
 {% endhint %}
 
 ***
@@ -50,76 +53,79 @@ The GitHub token needs `repo` scope to read private repositories. You can revoke
 ### Create a New Repository
 
 1. Open your Genesis app, click **Publish**, then click the **Advanced Settings** icon. You can also open **App settings → Developer → Code**.
-2. Click **Export to GitHub**. Connect your GitHub account if you haven't already.
-3. Choose **Create new repo**, then pick an **Owner** and type a **Repository name**. You can also make it a **Private repository**.
-4. Click **Export**. Taskade creates the repo and pushes your complete app kit.
+2. Click **Export to GitHub**. If your GitHub account is not connected, connect it.
+3. Choose **Create new repo**. Pick an **Owner** and type a **Repository name**.
+4. To keep the repo private, select **Private repository**.
+5. Click **Export**.
+
+Taskade makes the repo and sends your full app kit to it.
 
 ### Push to an Existing Repository
 
 1. In the Export modal, choose **Update existing**.
 2. Enter the **Repository owner** and **Repository name**, then click **Create PR**.
-3. Taskade opens a pull request containing your app bundle.
-4. Review the diff in GitHub and merge when you're ready.
+3. Taskade opens a pull request with your app bundle.
+4. Review the changes in GitHub. Merge the pull request when you are ready.
 
 {% hint style="success" %}
-Existing files in the target repo are preserved. Only the Genesis app bundle is added or updated.
+Taskade keeps the files that are already in the repo. Taskade only adds or updates the Genesis app bundle.
 {% endhint %}
 
-Files that you removed from the app are removed from the export folders, so your repo doesn't accumulate stale artifacts. Other files in the repo stay as they are.
+If you removed a file from the app, Taskade also removes it from the export folders. Thus old files do not collect in your repo. Other files in the repo do not change.
 
 ***
 
 ## What's in an Export Bundle
 
-An export captures everything needed to reconstruct the app in another workspace.
+An export holds all that is necessary to build the app again in another workspace.
 
 | Included                                              | Not Included                                   |
 | ----------------------------------------------------- | ---------------------------------------------- |
-| Projects (structure, tasks, notes)                    | Runtime state (live users, sessions)           |
-| AI agents (definitions, tools, knowledge attachments) | API tokens or connected account credentials    |
-| Automations (triggers, actions, flow logic)           | Workspace-level settings                       |
-| Media assets                                          | End-user account data (handled by GenesisAuth) |
-| App configuration (branding, theming)                 | Billing / plan state                           |
+| Projects (structure, tasks, notes)                    | Live state (users who are online, sessions)    |
+| AI agents (definitions, tools, knowledge attachments) | API tokens or the credentials of connected accounts |
+| Automations (triggers, actions, flow logic)           | Workspace settings                             |
+| Media assets                                          | Accounts of app users (GenesisAuth keeps them) |
+| App configuration (branding, theming)                 | Billing and plan state                         |
 
 ***
 
 ## Working with the Pull Request Flow
 
-When you push to an existing repo, Taskade does not commit directly to the base branch. Instead:
+When you send an app to a repo that exists, Taskade does not commit directly to the base branch. Taskade does these steps:
 
-1. Taskade creates a new branch in the target repo.
-2. The Genesis app bundle is committed to that branch.
-3. A pull request opens automatically with the diff.
-4. You review and merge in GitHub like any other PR.
+1. Taskade makes a new branch in the target repo.
+2. Taskade commits the Genesis app bundle to that branch.
+3. Taskade opens a pull request with the changes.
+4. You review and merge it in GitHub, as you do with other pull requests.
 
-Each re-export creates a new branch and opens a new pull request against the repo's default branch.
+Each new export makes a new branch and a new pull request against the default branch of the repo.
 
 ***
 
 ## Permissions & Errors
 
-| Scenario                             | What You See                            | How to Fix                                     |
-| ------------------------------------ | --------------------------------------- | ---------------------------------------------- |
-| Workspace plan is below Pro          | Upgrade prompt instead of the export    | Upgrade the workspace to Pro or above          |
-| Collaborator lacks export permission | Clear error message in the Export modal | Workspace owner must grant export rights       |
-| GitHub token expired                 | "Unable to access repository"           | Reconnect GitHub from workspace settings       |
-| Private repo import fails            | "Repository not found" after connecting | Confirm your connected GitHub account can read the repo, then reconnect |
-| Merge conflict on re-export          | GitHub shows conflict markers           | Resolve in GitHub as you would any PR conflict |
+| Problem and message | How to Fix |
+| --- | --- |
+| **The workspace plan is below Pro**: an upgrade prompt shows instead of the export | Upgrade the workspace to Pro or above. |
+| **A collaborator does not have export permission**: an error message shows in the Export modal | The workspace owner must give export rights. |
+| **The GitHub token expired**: "Unable to access repository" | Connect GitHub again from the workspace settings. |
+| **A private repo import fails**: "Repository not found" after you connect | Make sure that your connected GitHub account can read the repo. Then connect again. |
+| **A merge conflict occurs after a new export**: GitHub shows conflict markers | Correct the conflict in GitHub, as for other pull requests. |
 
 ***
 
 ## Troubleshooting
 
 {% hint style="warning" %}
-**"Repository not found" on import**: Double-check the URL and confirm the repo is either public or that your connected GitHub account has access.
+**"Repository not found" on import**: Examine the URL again. Make sure that the repo is public, or that your connected GitHub account has access to it.
 {% endhint %}
 
 {% hint style="warning" %}
-**Exported bundle shows stale data**: Export runs on your current app state. If you expect newer content, confirm your latest edits are saved before exporting.
+**The exported bundle shows old data**: Export uses the current state of your app. Make sure that Taskade saved your last changes before you export.
 {% endhint %}
 
 {% hint style="warning" %}
-**PR didn't open automatically**: Check your GitHub account's pending authorizations and confirm the Taskade app has write access to the target repository.
+**The pull request did not open automatically**: Look at the pending authorizations of your GitHub account. Make sure that the Taskade app has write access to the target repository.
 {% endhint %}
 
 ***
