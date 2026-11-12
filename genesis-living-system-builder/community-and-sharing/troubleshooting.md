@@ -5,39 +5,39 @@ description: >-
 
 # Troubleshooting Your Genesis App
 
-Building with AI is like explaining your business to a really smart assistant who wants to help but sometimes needs more details. Don't worry if your first app isn't perfect - that's completely normal! Think of it as refining your idea until Taskade Genesis understands exactly what you need.
+Your first app does not have to be perfect. Taskade Genesis builds from what you tell it. If the result is not correct, give it more details about your business. Each new detail makes the next version better.
 
 ## Why Things Go Sideways
 
-Before diving into fixes, let's understand why Genesis might miss the mark:
+Most apps miss the mark because the prompt leaves out a fact about the business. This list shows the usual gaps and the fix for each one.
 
 ### Common Reasons Apps Miss the Mark
 
 **❌ "I assumed Genesis would know my business"**
-- Genesis is smart, but it doesn't know that your yoga studio focuses on beginners or that your restaurant is fast-casual
-- Solution: Explain your business type and what makes it unique
+- Taskade Genesis does not know that your yoga studio is for beginners, or that your restaurant is fast-casual.
+- Fix: Tell it your type of business and what makes it different.
 
 **❌ "I asked for features instead of describing my problem"**
-- Saying "I need a booking system" doesn't tell Genesis why customers currently struggle
-- Solution: Explain the real problem - "Customers call during busy hours to book, interrupting service"
+- "I need a booking system" does not tell Taskade Genesis why your customers have a problem today.
+- Fix: Give the real problem. For example: "Customers call during busy hours to book, and the calls interrupt service."
 
 **❌ "I forgot to mention who will use this"**
-- An app for tech-savvy millennials needs different design than one for elderly customers
-- Solution: Describe your typical customer and how they prefer to interact
+- An app for young, tech-savvy customers needs a different design than an app for older customers.
+- Fix: Describe your typical customer and how they like to use an app.
 
 **❌ "I was too vague about what I wanted"**
-- "Make it look professional" could mean corporate, medical, artistic, or trendy
-- Solution: Be specific - "Clean and medical-looking for our dental practice"
+- "Make it look professional" can mean corporate, medical, artistic, or modern.
+- Fix: Give the exact style. For example: "Clean and medical-looking for our dental practice."
 
 ## Get Back on Track
 
 **Problem:** "I asked for a booking system and got... something else entirely"
 
-This usually means Genesis needed more context about your specific business.
+This result usually means that Taskade Genesis did not get enough facts about your business.
 
 ### How to Fix It
 
-**Start by explaining the real-world problem you're solving:**
+**Tell Taskade Genesis the real-world problem that the app must solve:**
 
 ❌ **Too vague:** "I need a booking system"
 
@@ -59,21 +59,22 @@ This usually means Genesis needed more context about your specific business.
 "Remote team members need to reserve conference rooms because we're back in the office 2 days a week, and it should prevent double-bookings, send calendar invites, and remind people 15 minutes before their meeting."
 ```
 
-💡 **Pro tip:** Pretend you're explaining your business to someone who's never worked in your industry. That level of detail will get Genesis on the right track.
+💡 **Tip:** Write your prompt for a person who never worked in your industry. That level of detail gives Taskade Genesis the facts it needs.
 
 ## Add Missing Features
 
-**Problem:** Genesis built exactly what you asked for, but you forgot something important.
+**Problem:** Taskade Genesis built what you asked for, but you forgot an important part.
 
-This happens when we focus on the main feature and miss supporting processes.
+This problem occurs when you think about the main feature and forget the steps around it.
 
 ### How to Fix It
 
-**Walk through the complete user journey from start to finish:**
+**Go through the full journey of a user, from start to finish:**
 
-1. What happens **before** someone uses your main feature?
-2. What needs to happen **during** the main interaction?
-3. What should happen **afterward**?
+1. Write down what happens **before** a person uses the main feature.
+2. Write down what must happen **during** the main task.
+3. Write down what must happen **after** it.
+4. Ask Taskade Genesis to add each missing step.
 
 **Example: Contact Form Missing File Uploads**
 
@@ -87,17 +88,17 @@ This happens when we focus on the main feature and miss supporting processes.
 "The booking system works well, but I need to add our cancellation policy. Customers should be able to cancel up to 24 hours before their appointment, and cancellations within 24 hours should charge a 50% fee. Send confirmation emails for all cancellations."
 ```
 
-💡 **Think like your users:** What would frustrate them if it was missing? What would make their experience smooth and complete?
+💡 **Think like your users:** A missing step that annoys a user is a step that you must add.
 
 ## Build On Brand
 
-**Problem:** Your app looks generic and could belong to any business.
+**Problem:** Your app looks generic. It can belong to any business.
 
-Generic-looking apps don't inspire trust or excitement.
+A generic app does not give your customers trust or interest.
 
 ### How to Fix It
 
-**Describe your business personality in simple terms:**
+**Describe the personality of your business in simple words:**
 
 **For a yoga studio:**
 ```
@@ -116,23 +117,25 @@ Generic-looking apps don't inspire trust or excitement.
 
 ### Brand Elements to Specify
 
-- **Colors:** Use specific hex codes if you have them
-- **Tone:** Professional, friendly, energetic, calming, etc.
-- **Language style:** Formal, casual, technical, simple
-- **Visual style:** Clean, bold, minimal, detailed
-- **Logo placement:** Where and how prominent
+Tell Taskade Genesis these parts of your brand:
 
-💡 **Don't just say "make it look professional."** Tell Genesis what professional means for your specific business and audience.
+- **Colors:** The hex codes, if you have them
+- **Tone:** Professional, friendly, energetic, or calm
+- **Language style:** Formal, casual, technical, or simple
+- **Visual style:** Clean, bold, minimal, or detailed
+- **Logo placement:** Where the logo goes and how large it is
+
+💡 **"Make it look professional" is not enough.** Tell Taskade Genesis what professional means for your business and your customers.
 
 ## Connect Integrations
 
-**Problem:** Your integrations aren't working as expected.
+**Problem:** Your integrations do not work as you expect.
 
-Integration issues usually come down to unclear instructions about data flow.
+Most problems with integrations come from unclear instructions about which data goes where.
 
 ### How to Fix It
 
-**Be specific about what information goes where and when:**
+**Tell Taskade Genesis which information goes where, and when:**
 
 ❌ **Too vague:** "Connect this to Slack"
 
@@ -140,13 +143,13 @@ Integration issues usually come down to unclear instructions about data flow.
 
 ### Integration Checklist
 
-**For each integration, specify:**
+**For each integration, give these five facts:**
 
-1. **Trigger:** What event starts the integration?
-2. **Data:** What specific information should be sent?
-3. **Destination:** Where exactly should it go?
-4. **Format:** How should the information be presented?
-5. **Timing:** When should this happen?
+1. **Trigger:** The event that starts the integration
+2. **Data:** The exact information to send
+3. **Destination:** The place where the information goes
+4. **Format:** How the information looks when it arrives
+5. **Timing:** When the integration runs
 
 **Example: CRM Integration**
 
@@ -154,60 +157,60 @@ Integration issues usually come down to unclear instructions about data flow.
 "When someone books an appointment, automatically create a new contact in our HubSpot CRM with their name, email, phone, service booked, and appointment date. Tag them as 'New Client' and assign them to the team member who will provide their service."
 ```
 
-💡 **Test with real accounts:** Use your actual Slack workspace, email address, and CRM system, not dummy accounts. This helps catch permission issues early.
+💡 **Test with real accounts:** Use your real Slack workspace, email address, and CRM, not test accounts. Real accounts show permission problems early.
 
 ## Speed Things Up
 
-**Problem:** Your app loads too slowly or feels sluggish.
+**Problem:** Your app loads slowly or feels slow.
 
-Speed issues usually come from trying to do too much at once.
+Speed problems usually come from too much work on one screen.
 
 ### Common Performance Problems
 
-- **Large images** that take forever to load
-- **Too many items** displayed on one screen
-- **Heavy animations** that make scrolling choppy
-- **Complex layouts** with lots of competing elements
+- **Large images** that load slowly
+- **Too many items** on one screen
+- **Heavy animations** that make the page jump when you scroll
+- **Complex layouts** with many parts on one screen
 
 ### How to Fix It
 
-**Prioritize what users need to see first:**
+**Show what users need first:**
 
 ```
 "Make this load faster by showing the booking calendar first, then loading the service descriptions and pricing in the background. Most people just want to see available times right away."
 ```
 
-**Optimize heavy content:**
+**Make heavy content lighter:**
 
 ```
 "The homepage is loading too slowly because of all those high-resolution photos. Compress the images and only show 3-4 key services upfront, with a 'See More' button for the rest."
 ```
 
-**Simplify complex dashboards:**
+**Make dashboards simpler:**
 
 ```
 "Simplify the dashboard by showing just the essential metrics first—revenue, bookings, and alerts. Move the detailed charts and reports to a separate tab so the main view loads instantly."
 ```
 
-💡 **Genesis can optimize automatically:** Just say "make this faster" and it will identify the biggest performance bottlenecks.
+💡 **Ask for one measurable improvement at a time.** For example, ask Taskade Genesis to make the images on the first screen smaller before you change the full dashboard.
 
 ## Start Fresh
 
-Sometimes it's faster to rebuild than keep patching. Consider starting over if:
+Sometimes a new build is faster than more fixes. Start again in these cases:
 
-- You've made **multiple major change requests** and it still doesn't feel right
-- You **learned something fundamental** about your users that changes everything
-- The app became **overly complex** while trying to fix multiple issues
-- You realized you need a **completely different type** of solution
+- You asked for **many large changes**, and the app is still not correct.
+- You **learned an important fact** about your users that changes the app.
+- The app became **too complex** after many fixes.
+- You need a **different type of app**.
 
 ### How to Start Over Successfully
 
-1. **Write down everything you learned** from the first attempt
-2. **Create a much more detailed prompt** using those insights
-3. **Include specific examples** of what should and shouldn't happen
-4. **Reference other apps:** "Like the booking flow on [website], but simpler"
+1. **Write down what you learned** from the first attempt.
+2. **Write a more detailed prompt** with those facts.
+3. **Give examples** of what must happen and what must not happen.
+4. **Name other apps that you like:** "Like the booking flow on [website], but simpler"
 
-**Starting over isn't failure** - it's using valuable learning to build something better.
+**A new start is not a failure.** You use what you learned to build a better app.
 
 ## Common Error Messages
 
@@ -218,22 +221,22 @@ Sometimes it's faster to rebuild than keep patching. Consider starting over if:
 "input length and `max_tokens` exceed context limit: 197180 + 8192 > 200000"
 ```
 
-**What it means:** Your prompt or changes are too large for the AI to handle in one go.
+**What it means:** Your request is too large for the AI to do in one step.
 
-**Why it happens:**
-- Your prompt is extremely detailed (which is usually good, but can be too much)
-- You're trying to change too many things at once
-- The app has become very complex with lots of features
+**Why it occurs:**
+- Your prompt is very long.
+- You ask for too many changes at the same time.
+- The app has many features, so it is large.
 
 **How to fix it:**
-1. **Click "Try again"** for a temporary failure, or **"Fix with AI"** when the preview reports an app error
-2. **Break your request into smaller pieces:**
+1. **Start a new chat.** Name one page or feature, and ask for one clear change. Test it before you ask for the next change.
+2. **Break your request into smaller parts:**
    ```
    Instead of: "Change the colors, add file uploads, connect to Slack, update the layout, and add a payment system"
    
    Try: "First, let's change the colors to match our brand: blue (#1e40af) and white"
    ```
-3. **Use simpler language:**
+3. **Use simpler words:**
    ```
    Instead of: "Implement a comprehensive customer relationship management system with advanced analytics..."
    
@@ -242,29 +245,52 @@ Sometimes it's faster to rebuild than keep patching. Consider starting over if:
 
 ### "Generation Failed"
 
-**What it means:** Something went wrong during the app creation process.
+**What it means:** The build of the app stopped with an error.
 
 **How to fix it:**
-1. **Check your internet connection**, then click **Try again**
-2. **Try a simpler version** of your prompt first
-3. **Refresh the page** and try again
-4. **Contact support** if it keeps happening
+1. **Make sure that your internet connection works**, then click **Try again**.
+2. **Try a simpler version** of your prompt first.
+3. **Refresh the page** and try again.
+4. If the error continues, **contact support**.
 
 ### "Integration Error"
 
-**What it means:** Genesis couldn't connect to an external service.
+**What it means:** Taskade Genesis cannot connect to an outside service.
 
 **How to fix it:**
-1. **Check your account permissions** for the service you're trying to connect
-2. **Make sure you're using the correct account** (not a personal account for business integrations)
-3. **Try connecting manually** first to test the integration
-4. **Simplify the integration** and add complexity later
+1. **Make sure that your account has permission** to use the service.
+2. **Make sure that you use the correct account.** Do not use a personal account for a business integration.
+3. **Connect the service by hand** first, and test the connection.
+4. **Make the integration simpler**, then add steps one at a time.
+
+### A Button That Runs an Automation Says Wait
+
+A button or form in your app can start an automation. Two messages tell you that the automation works and only needs time:
+
+| What you see | Cause | Fix |
+| --- | --- | --- |
+| A test submission in Taskade shows **Still saving** and "is still running. Check its runs." | The automation takes longer than the app waits for an answer | Do not submit again. A second submit runs the automation a second time. Click **See run** or open the **Runs** tab to watch it finish. |
+| A visitor sees "Too many requests from your network. Wait a minute, then try again." or "Too many requests from your network today. Try again tomorrow." | Each network can start each automation of the app only a limited number of times in a minute and in a day | Ask the visitor to wait a minute, or to try again the next day. The limit protects your credits and your automation runs. |
+
+If the run in the **Runs** tab failed, open the run and fix the step. Then run the automation again.
+
+### Restore a Working Version
+
+If your app breaks after a change and a repair does not correct it, go back to an earlier version:
+
+1. Open your app and go to Preview.
+2. Open **Version history** from the toolbar.
+3. Find the **Live** badge. It shows the version that visitors see now.
+4. Preview the version that you want.
+5. Click **Restore Version**, then test the app.
+
+See [Version History](../genesis/version-history.md).
 
 ## When to Get Help
 
 ### Self-Service First
 
-**Ask Genesis itself for help:**
+**Ask Taskade Genesis for help in the chat:**
 ```
 "This booking system isn't quite right for my massage therapy business. What features should I add to make it work better for clients booking wellness appointments?"
 
@@ -275,45 +301,45 @@ Sometimes it's faster to rebuild than keep patching. Consider starting over if:
 
 ### Contact Support
 
-**Email [support@taskade.com](mailto:support@taskade.com) when:**
-- You've tried multiple approaches and nothing works
-- You're getting consistent error messages
-- You need help with account or billing issues
-- You want to integrate with a service that's not listed
+**Send an email to [support@taskade.com](mailto:support@taskade.com) in these cases:**
+- You tried many fixes, and the problem continues.
+- The same error message shows again and again.
+- You need help with your account or your bill.
+- You want an integration that is not on the list.
 
-**Include in your support request:**
-- **What you're trying to build** (copy your prompt)
-- **What you expected** to happen
-- **What actually happened** (include screenshots if helpful)
-- **Your app URL** if you need help with a specific issue
-- **The Error ID** shown on the error card, if one appears
+**Put this information in your request:**
+- **What you want to build** (copy your prompt)
+- **What you expected** to occur
+- **What occurred** (add screenshots if they help)
+- **Your app URL**, if the problem is in one app
+- **The Error ID** on the error card, if one shows
 
 ### Community Help
 
-**Join the community** for:
-- **Inspiration** from other users' creations
-- **Tips and tricks** for better prompts
-- **Industry-specific advice** from other business owners
-- **Collaboration opportunities** on bigger projects
+**Join the community to get:**
+- **Ideas** from apps that other users built
+- **Tips** for better prompts
+- **Advice for your industry** from other business owners
+- **Partners** for larger projects
 
 ---
 
 ## Quick Troubleshooting Checklist
 
-When your app isn't working as expected, try this checklist:
+If your app does not work as you expect, answer these questions:
 
-- [ ] **Is my prompt specific enough?** (Industry, users, business rules)
-- [ ] **Did I explain the complete user journey?** (Before, during, after)
-- [ ] **Am I testing with real data?** (Actual email addresses, real scenarios)
-- [ ] **Have I described my brand personality?** (Colors, tone, style)
-- [ ] **Are my integration instructions clear?** (What data goes where and when)
-- [ ] **Am I trying to change too many things at once?** (Make one change at a time)
+- [ ] **Is my prompt specific?** (Industry, users, business rules)
+- [ ] **Did I give the full journey of a user?** (Before, during, after)
+- [ ] **Do I test with real data?** (Real email addresses, real cases)
+- [ ] **Did I describe the personality of my brand?** (Colors, tone, style)
+- [ ] **Are my integration instructions clear?** (Which data goes where, and when)
+- [ ] **Do I ask for too many changes at the same time?** (Make one change at a time)
 
-**Remember:** Every "failed" attempt teaches Genesis more about your business. Use what you learn to make your next prompt even better!
+**Remember:** Each attempt that misses the mark teaches Taskade Genesis more about your business. Use what you learn in your next prompt.
 
 ---
 
-**Still stuck?** The AI agent in Genesis is always available to help troubleshoot issues and suggest improvements. Just describe what's not working and ask for specific help!
+**Still stuck?** Describe the problem in the chat, and ask Taskade Genesis for a specific fix.
 
 ---
 

@@ -5,39 +5,39 @@ description: >-
 
 # AI Agents Getting Started
 
-Transform your workspace with smart AI assistants that understand your business and can handle tasks automatically!
+An AI agent is an assistant that knows your business. You can give it your documents and projects. Then it answers questions and does tasks for you.
 
 ## What are AI Agents?
 
-AI Agents are specialized assistants designed to automate activities like research, data analysis, and content creation. Learn more about [Taskade AI Agents](https://www.taskade.com/agents) and what they can do for your team. Think of them as smart team members who:
+An AI agent is an assistant with one job, such as research, data analysis, or content creation. Read more about [Taskade AI Agents](https://www.taskade.com/agents). An agent is like a team member that can do these things:
 
-* **Learn your business** by reading your documents and projects
-* **Answer questions** about your work and processes
-* **Take actions** like creating tasks, sending emails, or updating spreadsheets
-* **Work 24/7** without breaks, weekends, or vacations
-* **Specialize in specific roles** like marketing, legal, customer service, or research
+* **Learn your business**: It reads your documents and projects.
+* **Answer questions**: It answers questions about your work and processes.
+* **Take actions**: It creates tasks, sends emails, or updates spreadsheets.
+* **Work at all hours**: It works 24/7, also on weekends.
+* **Do one role**: It works as a marketing, legal, customer service, or research specialist.
 
-**Real example:** Your "Customer Service Agent" can instantly answer questions about your products, create support tickets, and even draft response emails - all based on your existing knowledge base.
+**Example:** A "Customer Service Agent" answers questions about your products. It also creates support tickets and drafts reply emails. It uses your existing knowledge base for all of these tasks.
 
 ### What Can AI Agents Help With?
 
 | **Area**                   | **Tasks**                                                                                                                                 |
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| **Task Automation**        | <p>• Auto-categorize tasks<br>• Prioritize by keywords<br>• Estimate duration<br>• Recommend task owners</p>                              |
-| **Knowledge Retrieval**    | <p>• Fetch relevant documents<br>• Answer team questions<br>• Recommend reading material<br>• Suggest internal resources</p>              |
-| **Feedback & Improvement** | <p>• Collect and analyze feedback<br>• Offer improvement insights<br>• Benchmark against past projects<br>• Highlight success stories</p> |
-| **Meetings**               | <p>• Summarize discussions<br>• Recommend next steps<br>• Extract action items</p>                                                        |
-| **Creative Assistance**    | <p>• Offer writing/editing aid<br>• Generate content ideas<br>• Review and improve copy</p>                                               |
+| **Task Automation**        | <p>• Sort tasks into categories<br>• Prioritize by keywords<br>• Estimate duration<br>• Recommend task owners</p>                         |
+| **Knowledge Retrieval**    | <p>• Find related documents<br>• Answer team questions<br>• Recommend reading material<br>• Suggest internal resources</p>                 |
+| **Feedback & Improvement** | <p>• Collect and analyze feedback<br>• Suggest improvements<br>• Compare with past projects<br>• Show success stories</p>                 |
+| **Meetings**               | <p>• Summarize discussions<br>• Recommend next steps<br>• Find action items</p>                                                           |
+| **Creative Assistance**    | <p>• Help with writing and editing<br>• Generate content ideas<br>• Review and improve copy</p>                                          |
 
-## When Should You Create an AI Agent?
+## When to Create an AI Agent
 
-Create an agent if you:
+An agent is a good choice when one of these conditions is true:
 
-* **Repeat the same tasks** multiple times per week
-* **Spend 2+ hours weekly** on similar activities
-* **Answer the same questions** over and over
-* **Need help** with research, writing, or analysis
-* **Want to streamline** team processes
+* You do the same tasks many times each week.
+* You spend 2 or more hours each week on similar work.
+* You answer the same questions again and again.
+* You want help with research, writing, or analysis.
+* You want to make team processes faster.
 
 ## Industry-Specific AI Agent Examples
 
@@ -46,16 +46,16 @@ Create an agent if you:
 **Custom AI Agents for Legal Practice:**
 
 {% hint style="success" %}
-Legal AI agents can automate document review, conduct legal research, and manage cases efficiently, saving lawyers significant time on routine tasks while maintaining accuracy and compliance.
+A legal agent can review documents, do legal research, and help manage cases. Lawyers then spend less time on routine work.
 {% endhint %}
 
 **Legal Agent Capabilities:**
 
-* **Document Review**: Analyze contracts, briefs, and legal documents for key clauses and potential issues
-* **Legal Research**: Search through case law, statutes, and legal precedents
-* **Case Management**: Track deadlines, court dates, and document filing requirements
-* **Client Communication**: Draft responses to common legal inquiries
-* **Compliance Monitoring**: Stay updated on regulatory changes and requirements
+* **Document Review**: Find key clauses and possible problems in contracts, briefs, and other legal documents.
+* **Legal Research**: Search case law, statutes, and legal precedents.
+* **Case Management**: Track deadlines, court dates, and filing requirements.
+* **Client Communication**: Draft replies to common legal questions.
+* **Compliance Monitoring**: Track changes to regulations and requirements.
 
 **Training Your Legal Agent:**
 
@@ -66,13 +66,13 @@ Legal AI agents can automate document review, conduct legal research, and manage
 * Statutes, regulations, and legislative history
 * Citation guidelines and legal journal articles
 * Argumentation and negotiation materials
-* Precedent-setting case laws and historical documents
+* Precedent cases and historical documents
 * Legal textbooks, treatises, and specialized databases
 
 **Legal Agent Templates:**
 
 * **👩‍⚖️ Legal Advisor**: General legal guidance and document analysis
-* **📋 Contract Reviewer**: Specialized in contract analysis and risk assessment
+* **📋 Contract Reviewer**: Contract analysis and risk assessment
 * **🔍 Research Assistant**: Legal research and case law analysis
 * **⚖️ Compliance Monitor**: Regulatory compliance and updates
 
@@ -82,10 +82,10 @@ Legal AI agents can automate document review, conduct legal research, and manage
 
 **Healthcare Agent Capabilities:**
 
-* **Patient Documentation**: Assist with medical record organization and analysis
-* **Research Support**: Find latest medical research and treatment protocols
-* **Compliance Assistance**: Help maintain HIPAA and regulatory compliance
-* **Scheduling Optimization**: Coordinate appointments and resource allocation
+* **Patient Documentation**: Help organize and analyze medical records.
+* **Research Support**: Find recent medical research and treatment protocols.
+* **Compliance Assistance**: Help with HIPAA and other regulatory requirements.
+* **Scheduling**: Coordinate appointments and resources.
 
 ### Marketing Teams
 
@@ -93,10 +93,10 @@ Legal AI agents can automate document review, conduct legal research, and manage
 
 **Marketing Agent Capabilities:**
 
-* **Content Creation**: Generate blog posts, social media content, and marketing copy
-* **Campaign Analysis**: Analyze performance metrics and suggest optimizations
-* **Audience Research**: Identify target demographics and market trends
-* **Competitive Intelligence**: Monitor competitor activities and strategies
+* **Content Creation**: Write blog posts, social media content, and marketing copy.
+* **Campaign Analysis**: Analyze performance metrics and suggest improvements.
+* **Audience Research**: Find target audiences and market trends.
+* **Competitive Intelligence**: Track the activities and strategies of competitors.
 
 ### Customer Service Teams
 
@@ -104,58 +104,62 @@ Legal AI agents can automate document review, conduct legal research, and manage
 
 **Customer Service Agent Capabilities:**
 
-* **Ticket Routing**: Automatically categorize and prioritize support requests
-* **Knowledge Base**: Provide instant answers to common customer questions
-* **Escalation Management**: Identify when to escalate issues to human agents
-* **Customer Feedback**: Analyze feedback patterns and suggest improvements
+* **Ticket Routing**: Sort and prioritize support requests.
+* **Knowledge Base**: Answer common customer questions at once.
+* **Escalation Management**: Find the requests that need a human.
+* **Customer Feedback**: Find patterns in feedback and suggest improvements.
 
 ## Create Your First AI Agent in 5 Steps
 
-### Step 1: Go to the Agents Tab
+### Step 1: Open AI Agents
 
-1. Open your Taskade workspace
-2. Click the **🤖 Agents** tab at the top
-3. Click **➕ Create agent**
+1. Open your Taskade workspace.
+2. In the workspace sidebar, open **🤖 AI Agents**.
+3. Click **Generate** to describe the agent, **Templates** to pick one, or **Create** to start blank.
+
+{% hint style="info" %}
+Every plan includes custom agents. Free includes one custom agent with one knowledge source. Pro and up have no agent limit.
+{% endhint %}
 
 ### Step 2: Choose How to Create Your Agent
 
-Pick the best option for you:
+Pick the option that fits your work:
 
-**🎯 Describe What You Need** (Recommended for beginners)
+**🎯 Describe What You Need** (best for beginners)
 
-* Simply tell Taskade what you want your assistant to do
-* We'll build it automatically for you
-* Works great for common business tasks
+* Click **Generate** and tell Taskade what the agent must do.
+* Taskade builds the agent for you.
+* This option works well for common business tasks.
 
 **🛠️ Build It Yourself**
 
-* Create a custom assistant with specific abilities
-* You decide exactly how it behaves and responds
-* Best when you have unique requirements
+* Click **Create** to start with a blank agent.
+* You decide how the agent behaves and replies.
+* This option is best for special requirements.
 
 **📋 Pick from Ready-Made Templates**
 
-* Choose from assistants for Marketing, Support, HR, and more
-* They're ready to work immediately
-* You can customize them anytime
+* Click **Templates** and pick an agent for Marketing, Support, HR, or another role.
+* A template agent is ready to use at once.
+* You can change it at any time.
 
 **👥 Use Community Templates**
 
-* Browse assistants created by other businesses
-* Copy the ones that work for your needs
-* Learn from successful setups
+* Browse agents that other businesses made.
+* Copy the agents that fit your needs.
+* Learn from setups that work.
 
-### Step 3: Tell Your Assistant What to Do
+### Step 3: Tell Your Agent What to Do
 
-Give your AI assistant a clear role and personality - just like hiring a new team member:
+Give your agent a clear role and personality. Do this as you do for a new team member.
 
-**Name:** Make it memorable and relevant\
+**Name:** Use a name that is easy to remember and relevant.\
 _Examples: "Sarah - Customer Success", "Marketing Mike", "Data Dave"_
 
-**Description:** Explain what your agent does\
+**Description:** Write what your agent does.\
 _Example: "You are a customer success specialist who helps clients get the most value from our product. You're friendly, knowledgeable, and always focused on solving problems."_
 
-**Tone:** Choose how your agent should communicate
+**Tone:** Pick how your agent writes:
 
 * Friendly and casual
 * Professional and formal
@@ -164,25 +168,25 @@ _Example: "You are a customer success specialist who helps clients get the most 
 
 ### Step 4: Train Your Agent with Knowledge
 
-Make your agent smart by giving it information:
+Give your agent information to answer from. These are the source types:
 
 **📄 Upload Documents**
 
-* Drag and drop PDFs, Word docs, spreadsheets
-* Include product manuals, processes, FAQs
-* Add training materials and guidelines
+* Drag PDFs, Word documents, and spreadsheets into the agent.
+* Add product manuals, processes, and FAQs.
+* Add training materials and guidelines.
 
 **🌐 Add Websites**
 
 * Your company website and blog
-* Competitor information
+* Information about competitors
 * Industry resources and news
 
 **📋 Connect Projects**
 
-* Link existing Taskade projects as knowledge
-* Agent learns from your current work
-* Stays updated as projects change
+* Link existing Taskade projects as knowledge.
+* The agent learns from your current work.
+* The agent gets each change when a project changes.
 
 **🎥 YouTube Videos**
 
@@ -190,89 +194,94 @@ Make your agent smart by giving it information:
 * Product demos and presentations
 * Industry webinars and conferences
 
+Website links, YouTube videos, and cloud files (Google Drive, Dropbox, Box, OneDrive) need a paid plan. On Free, each agent holds one knowledge source. Paid plans hold up to 50 sources for each agent.
+
 ### Step 4.5: Choose Your AI Model
 
-Taskade's model picker is powered by **TSK-1**, the intelligence layer that auto-routes every request to the right capability tier. You pick what you need the agent to do; TSK-1 handles which model executes it:
+The model picker uses **TSK-1**. TSK-1 is the Taskade system that sends each request to the correct capability tier. You pick what the agent must do. TSK-1 picks the model that does it.
 
 | Tier | When to use it |
 |------|---------------|
-| **Auto** (recommended) | TSK-1 picks the right tier per request — fast when you need speed, deep when you need reasoning. New agents default to Auto on every plan |
+| **Auto** (recommended) | TSK-1 picks the correct tier for each request. It is fast for simple work and deep for hard reasoning. New agents use Auto on every plan |
 | **Instant** | Fast edits, simple completions, quick lookups |
-| **Standard** | Everyday work — balanced speed and reasoning |
+| **Standard** | Everyday work, with a balance of speed and reasoning |
 | **Thinking** | Planning, creation, multi-step reasoning |
 | **Reasoning** | Complex systems, deep analysis, multi-agent coordination |
 
 {% hint style="info" %}
-**Vendor-agnostic.** TSK-1 runs on the latest frontier models. The tier describes what the system is good at, not which provider powers it — providers may change. Auto and Instant work on every plan. Standard and Thinking need a paid plan, and Reasoning needs Business or a higher plan. Agents pinned to a specific model (each model shows its plan badge in the picker) bypass TSK-1 routing. See [TSK-1 Model Tiers](tsk-1-model-tiers.md) for the full reference.
+**Vendor-agnostic.** TSK-1 runs on frontier models from top AI labs. A tier describes what the system does well, not which provider runs it. Providers can change. Auto and Instant work on every plan. Standard and Thinking need a paid plan, and Reasoning needs Business or a higher plan. An agent set to one specific model does not use TSK-1 routing. Each model shows its plan badge in the picker. See [TSK-1 Model Tiers](tsk-1-model-tiers.md) for the full reference.
 {% endhint %}
 
 ## Understanding Agent Knowledge & Memory
 
-Your agent's knowledge is what makes it truly powerful for your business. This is the foundation that powers Taskade Genesis apps - your workspace's living DNA.
+The knowledge of your agent decides how useful it is for your business. The same knowledge also feeds your Taskade Genesis apps. Taskade calls this shared base the Workspace DNA of your workspace.
 
 ### Types of Agent Memory
 
 #### **Session Memory**
 
-* Remembers conversation context during a chat
-* Maintains topic continuity
-* Resets when conversation ends
+* Keeps the context of the current chat
+* Keeps the chat on topic
+* Ends when the chat ends
 
 #### **Knowledge Memory**
 
-* Permanent information from uploaded documents
-* Your business-specific data and processes
-* Forms the core intelligence for Genesis apps
+* Keeps the information from your uploaded documents
+* Holds your business data and processes
+* Gives your Taskade Genesis apps their core knowledge
+
+This knowledge is the persistent memory of the agent. It stays with the agent in every chat.
 
 #### **Project Memory**
 
-* Live connection to your workspace projects
-* Updates automatically as your data changes
-* Powers the "living DNA" that makes each Genesis app unique
+* Keeps a live connection to your workspace projects
+* Updates when your data changes
+* Makes each Taskade Genesis app specific to your workspace
 
 ### Advanced Knowledge Training
 
 #### **Bulk Training**
 
-Upload multiple knowledge sources at once:
+You can add many knowledge sources at the same time:
 
-* Multiple files simultaneously
-* Several web links in one batch
-* Connect multiple projects together
-* Perfect for comprehensive agent training
+* Many files in one upload
+* Many web links in one batch
+* Many projects in one selection
 
 #### **Knowledge Formats Supported**
 
 | **File Types**            | **Web Resources**     |
 | ------------------------- | --------------------- |
-| 📄 .pdf, .docx, .txt, .md | 🎥 YouTube videos     |
-| 📊 .xlsx, .csv            | 📰 Blog articles      |
-| 📋 .pptx                  | 🐦 Social media posts |
-| 📚 .epub                  | 📰 News websites      |
+| 📄 .pdf, .docx, .txt, .md | 🌐 Website URLs       |
+| 📊 .xlsx, .xls, .csv      | 📰 Blog articles      |
+| 📋 .pptx                  | 🎥 YouTube videos     |
+| 📚 .epub                  | 📡 RSS / Atom feeds, sitemap XML |
+
+The Knowledge tab does not accept image files. Web resources need a paid plan.
 
 #### **Knowledge Management Best Practices**
 
-* **Review sources** regularly for relevance
-* **Update documents** when business information changes
-* **Remove outdated** resources to maintain accuracy
-* **Test knowledge** by asking your agent questions
-* **Monitor performance** and refine training data
+* **Review sources** at regular intervals.
+* **Update documents** when your business information changes.
+* **Remove old** resources to keep answers correct.
+* **Test knowledge**: ask your agent questions.
+* **Monitor answers** and improve the sources.
 
 ### Step 5: Create Custom Commands
 
-Give your agent specific skills with custom commands:
+A custom command gives your agent a specific skill. You start a command when you type `/` and its name.
 
 **Examples for a Sales Agent:**
 
-* `/qualify-lead` - Analyze if a prospect is worth pursuing
-* `/write-proposal` - Generate a custom proposal
-* `/follow-up` - Create follow-up email sequences
+* `/qualify-lead`: Find out if a prospect is worth the effort
+* `/write-proposal`: Write a custom proposal
+* `/follow-up`: Write a series of follow-up emails
 
 **Examples for a Support Agent:**
 
-* `/troubleshoot` - Help diagnose customer problems
-* `/escalate` - Determine when to involve a human
-* `/knowledge-search` - Find relevant help articles
+* `/troubleshoot`: Find the cause of a customer problem
+* `/escalate`: Decide when a human must help
+* `/knowledge-search`: Find related help articles
 
 ## Popular Agent Types & Examples
 
@@ -284,13 +293,13 @@ Give your agent specific skills with custom commands:
 
 ### Customer Support Agent
 
-**What it does:** Answer questions, troubleshoot issues, route tickets\
+**What it does:** Answer questions, find the cause of problems, route tickets\
 **Sample prompt:** "A customer can't log into their account. What should I tell them?"\
 **Best for:** Support teams, customer success, help desks
 
 ### Data Analysis Agent
 
-**What it does:** Interpret data, create reports, find insights\
+**What it does:** Read data, create reports, find insights\
 **Sample prompt:** "Analyze this month's sales data and highlight key trends"\
 **Best for:** Analytics teams, managers, business owners
 
@@ -302,7 +311,7 @@ Give your agent specific skills with custom commands:
 
 ### Research Agent
 
-**What it does:** Gather information, summarize findings, competitive analysis\
+**What it does:** Collect information, summarize findings, analyze competitors\
 **Sample prompt:** "Research the top 5 competitors in the project management space"\
 **Best for:** Strategy teams, consultants, analysts
 
@@ -310,53 +319,53 @@ Give your agent specific skills with custom commands:
 
 ### Method 1: Agent Chat
 
-1. Go to the **Agents** tab
-2. Select your agent
-3. Click **➕ New chat**
-4. Start asking questions or giving tasks
+1. Open **AI Agents** in your workspace sidebar.
+2. Select your agent.
+3. On the **Messages** tab, click **➕** to start a new chat.
+4. Ask questions or give tasks.
 
 ### Method 2: Project Integration
 
-1. Open any project
-2. Click the chat icon (💬) at the top right
-3. Select your agent from the dropdown
-4. Get help with that specific project
+1. Open a project.
+2. Click the chat icon (💬) at the top right.
+3. Select your agent from the dropdown.
+4. Ask for help with that project.
 
 ### Method 3: Quick Commands
 
-1. In any project, type **/** followed by your command name
-2. Example: `/write-summary` or `/analyze-data`
-3. Press Enter to execute
+1. In a project, type **/** and then the name of your command.
+2. For example, type `/write-summary` or `/analyze-data`.
+3. Press Enter to run the command.
 
 ### Method 4: Agent Sidebar
 
-1. Click the **⊞ Manage agents** button
-2. Star your favorite agents
-3. Access them quickly from the right sidebar
+1. Click the **⊞ Manage agents** button.
+2. Star your favorite agents.
+3. Open them from the right sidebar.
 
 ## **Enhanced File Attachments**
 
-Taskade EVE conversations now support rich file interactions with complete visibility and context.
+You can attach files to a chat with Taskade EVE, the AI assistant of your workspace. The files show in the chat with your messages.
 
-### **Drag & Drop File Magic**
+### **Drag and Drop Files**
 
-Simply drag any file directly into your EVE chat:
+Drag a file into your Taskade EVE chat. Taskade EVE accepts these file types:
 
-* **Images**: JPG, PNG, GIF, WebP (up to 20 MB each) - EVE analyzes visual content
-* **Documents**: PDF (up to 20 MB each), TXT, MD - EVE reads and processes text
-* **Data**: CSV, JSON (text files up to 200 KB each) - EVE analyzes data and creates insights
-* **Code**: paste a snippet into the message - EVE reviews and suggests improvements
+* **Images**: JPG, PNG, GIF, WebP (up to 20 MB each). Taskade EVE analyzes the image.
+* **Documents**: PDF (up to 20 MB each), TXT, MD. Taskade EVE reads the text.
+* **Data**: CSV, JSON (text files up to 200 KB each). Taskade EVE analyzes the data.
+* **Code**: Paste a code snippet into the message. Taskade EVE reviews it and suggests improvements.
 
-For larger files or material the agent needs on every reply, add them to the agent's knowledge instead.
+If a file is larger, or the agent needs it in every reply, add the file to the knowledge of the agent.
 
 ### **Visible File Context**
 
-Files now appear directly alongside your messages instead of being hidden:
+Each file shows next to the message that it came with:
 
-* **Chronological Organization**: See exactly when each file was shared
-* **Visual Thumbnails**: Quick preview of images and documents
-* **File Status Indicators**: Clear confirmation when files are processed
-* **Conversation Flow**: Files integrate naturally with your discussion
+* **Chronological Organization**: You see when each file came into the chat.
+* **Visual Thumbnails**: You see a small preview of images and documents.
+* **File Status Indicators**: You see when Taskade finished with a file.
+* **Conversation Flow**: The files stay in the order of the chat.
 
 ### **Professional Use Cases**
 
@@ -390,126 +399,120 @@ EVE: "I've reviewed your Python code. Here are potential security concerns..."
 
 ### **File Management Features**
 
-* **Rename Conversations**: Turn "Chat with EVE" into "Q3 Report Analysis"
-* **File History**: Access previously shared files from conversation history
-* **Cross-Reference**: EVE remembers files from earlier in the conversation
-* **Batch Processing**: Upload multiple related files for comprehensive analysis
+* **Rename Conversations**: Change "Chat with EVE" to a clear name, such as "Q3 Report Analysis".
+* **File History**: Open files from earlier in the chat history.
+* **Cross-Reference**: Taskade EVE remembers files from earlier in the same chat.
+* **Batch Processing**: Upload many related files for one analysis.
 
 ## Advanced Features
 
 ### Agent Tools
 
-Give your agents superpowers by enabling tools:
+Tools let your agent do work, not only write text. Turn on the tools that the agent needs:
 
-**📝 Taskade Tools** - Create tasks, update projects, manage data\
-**🌐 Web Search** - Find real-time information online\
-**📧 Email Integration** - Send emails through Gmail\
-**💬 Communication** - Post to Slack, Teams, Discord\
-**📊 Data Tools** - Work with Google Sheets, databases\
-**🔄 Automation** - Trigger workflows and processes
+**📝 Taskade Tools**: Create tasks, update projects, and manage data\
+**🌐 Web Search**: Find current information on the web\
+**📧 Email Integration**: Send emails with Gmail\
+**💬 Communication**: Post to Slack, Teams, and Discord\
+**📊 Data Tools**: Work with Google Sheets and databases\
+**🔄 Automation**: Start automations and processes
 
 ### Multi-Agent Teams (Advanced)
 
 {% hint style="success" %}
-Multi-Agent Teams put specialized AI agents in one chat, so each specialist handles its part of the work while you focus on strategic work. AI Teams need Pro or a higher plan.
+A Multi-Agent Team puts specialized AI agents in one chat. Each specialist does its part of the work. AI Teams need Pro or a higher plan.
 {% endhint %}
 
 #### What Are Multi-Agent Teams?
 
-Multi-agents are an evolution of Taskade's agentic workflow designed to:
+A multi-agent team is a group of agents that work together:
 
-* **Split the work** so each agent handles the part it knows best
-* **Collaborate intelligently** with each agent bringing specialized expertise
-* **Learn your preferences** and adapt to your communication style
-* **Maintain context** across complex, multi-step workflows
+* **Split the work**: Each agent does the part that it knows best.
+* **Collaborate**: Each agent adds its own specialty.
+* **Learn your preferences**: The agents adapt to your style of communication.
+* **Keep context**: The agents keep the context across work with many steps.
 
 #### Setting Up Your Multi-Agent Team
 
 **Method 1: Build from Existing Agents**
 
-1. Open **AI Teams** in your workspace sidebar
-2. Click **Create** and type a team name
-3. Under **Add to team**, add existing agents with complementary skills
-4. Click **Create**, then use **Edit team** to give each agent a role
+1. Open **AI Teams** in your workspace sidebar.
+2. Click **Create** and type a team name.
+3. Under **Add to team**, add existing agents with different skills.
+4. Click **Create**.
+5. Use **Edit team** to give each agent a role.
 
 **Method 2: Create New Team from Templates**
 
-1. Go to **AI Teams** section
-2. Click **Templates**
-3. Choose from pre-built team configurations:
-   * **Marketing Team**: Content + Social Media + Analytics agents
-   * **Customer Success Team**: Support + Documentation + Training agents
-   * **Product Development Team**: Research + Design + Testing agents
-   * **Operations Team**: Logistics + Communication + Reporting agents
+1. Open **AI Teams**.
+2. Click **Templates**.
+3. Pick a team template. These are examples:
+   * **Marketing Team**: Content, Social Media, and Analytics agents
+   * **Customer Success Team**: Support, Documentation, and Training agents
+   * **Product Development Team**: Research, Design, and Testing agents
+   * **Operations Team**: Logistics, Communication, and Reporting agents
 
 **Method 3: Custom Team Creation**
 
-1. Start with the **AI Team Generator** (see below)
-2. Describe your ideal team composition and goals
-3. Let AI automatically configure specialized roles and behaviors
-4. Fine-tune the team based on your specific requirements
+1. Start with the **AI Team Generator**. Read [AI Team Generator: Multi-Agent Teams](#ai-team-generator-multi-agent-teams) on this page.
+2. Describe the team and its goals.
+3. Let Taskade create the roles and instructions.
+4. Change the team to fit your requirements.
 
 #### Using Multi-Agent Teams in Projects
 
 **Option 1: Agent Sidebar Integration**
 
-* Access your multi-agent team through the persistent agent sidebar
-* Agents work in the background with real-time updates
-* Pre-trained on your knowledge base and third-party integrations
-* Quick access without leaving your current project context
+* Open your team from the agent sidebar.
+* The agents use your knowledge and your connected apps.
+* You stay in the current project.
 
 **Option 2: Bulk Task Assignment**
 
-* Assign multiple tasks to your agent team simultaneously
-* Each agent handles tasks within their area of expertise
-* Automatic task distribution and progress tracking
-* Consolidated reporting on team performance
+* Assign many tasks to your team at the same time.
+* Each agent does the tasks in its area of expertise.
 
 **Option 3: Conversational Collaboration**
 
-* Chat with your entire agent team as a unified group
-* Agents collaborate on complex problems and provide comprehensive solutions
-* Shared conversation history for context and continuity
-* Team members can participate alongside AI agents
+* Chat with your whole team in one chat.
+* The agents work together on hard problems.
+* The chat history stays available for context.
+* Your team members can join the chat with the agents.
 
 #### Advanced Multi-Agent Features
 
 **Memory and Context Management**
 
-* **Short-term memory** for immediate conversation context
-* **Long-term memory** for persistent knowledge and preferences
-* **Cross-agent knowledge sharing** for improved collaboration
-* **Conversation history** for iteration and refinement
+* **Short-term memory**: The context of the current chat
+* **Long-term memory**: The persistent knowledge of each agent
+* **Shared knowledge**: Agents can use the knowledge of the team
+* **Conversation history**: Earlier messages that you can use again
 
 **Iterative Output Development**
 
-* Browse complete conversation histories
-* Refine and improve outputs through multiple iterations
-* Learn from previous interactions and feedback
-* Build upon successful approaches and templates
+* Browse the full history of a chat.
+* Improve an output over many replies.
+* Start again from approaches that worked.
 
 **Team Communication and Sharing**
 
-* Shared agent chats for team-wide collaboration
-* Real-time collaboration on problem-solving
-* Collective brainstorming and idea generation
-* Distributed AI insights accessible to all team members
+* Share agent chats with your team.
+* Solve problems together in real time.
+* Brainstorm ideas as a group.
 
 #### Managing Multi-Agent Teams
 
 **Copy and Duplicate Teams**
 
-* Save successful team configurations as templates
-* Duplicate teams for similar projects or client work
-* Share team setups across workspaces and organizations
-* Version control for team configuration changes
+* Save a team setup that works as a template.
+* Duplicate a team for a similar project or client.
+* Share team setups with other workspaces.
 
 **Sharing and Collaboration**
 
-* Share agent teams with team members and stakeholders
-* Granular permission controls for team access
-* Public sharing options for community contributions
-* Template marketplace for proven team configurations
+* Share agent teams with team members and stakeholders.
+* Control who can open each team.
+* Publish teams for the community.
 
 #### Popular Multi-Agent Team Examples
 
@@ -519,81 +522,86 @@ Multi-agents are an evolution of Taskade's agentic workflow designed to:
 | **Customer Success Team**       | Support Agent + Documentation Specialist + Training Coordinator   | Onboarding, support tickets, knowledge base                      |
 | **Product Launch Team**         | Market Researcher + Copywriter + Analytics Expert                 | Product announcements, launch campaigns, performance tracking    |
 | **Research & Development Team** | Data Analyst + Technical Writer + Innovation Specialist           | Competitive analysis, technical documentation, trend reports     |
-| **Operations Team**             | Logistics Coordinator + Communication Manager + Reporting Analyst | Process optimization, team communication, performance dashboards |
+| **Operations Team**             | Logistics Coordinator + Communication Manager + Reporting Analyst | Process improvement, team communication, performance dashboards  |
 
 ### Human in the Loop Controls
 
-For sensitive operations, multi-agent teams incorporate human oversight:
+You can keep a human in control of sensitive work:
 
-* **Action Approval**: Agents request permission before critical actions
-* **Escalation Protocols**: Automatic human involvement for high-impact decisions
-* **Audit Trails**: Complete logging of all agent actions and approvals
-* **Override Capabilities**: Human ability to modify or stop agent processes
+* **Action Approval**: The agent asks for your approval before an action that you set to **Manual Approval**.
+* **Escalation**: You decide when a human must make the decision.
+* **Review**: You can read the actions of the agent in the chat.
+* **Stop**: You can reject an action before it runs.
 
 ## Agent Tools & Integrations
 
 ### Enable Agent Tools
 
-Agent Tools extend your multi-agent teams' capabilities by connecting to external services:
+Agent tools connect your agents and teams to other services. Turn them on in the **Tools** sub-tab of the agent's **Actions** tab:
 
-**Taskade Tools** - Create projects, update tasks, manage data **Web Search** - Find real-time information online **Email Integration** - Send emails through Gmail **Communication** - Post to Slack, Teams, Discord **Data Tools** - Work with Google Sheets, databases **Automation** - Trigger workflows and processes
+* **Taskade Tools**: Create projects, update tasks, and manage data.
+* **Web Search**: Find current information on the web.
+* **Email Integration**: Send emails with Gmail.
+* **Communication**: Post to Slack, Teams, and Discord.
+* **Data Tools**: Work with Google Sheets and databases.
+* **Automation**: Start automations and processes.
 
 ## Best Practices
 
 ### Writing Good Prompts
 
-* **Be specific:** "Write a welcome email for new customers" vs "Write an email"
-* **Give context:** Include relevant background information
-* **Set expectations:** Explain the tone, length, and format you want
-* **Provide examples:** Show the agent what good output looks like
+* **Be specific:** "Write a welcome email for new customers" is better than "Write an email".
+* **Give context:** Add the related background information.
+* **Set expectations:** Tell the agent the tone, length, and format.
+* **Give examples:** Show the agent a good output.
 
 ### Training Your Agent
 
-* **Start with quality content** - Upload your best documents first
-* **Update regularly** - Keep knowledge current and relevant
-* **Test thoroughly** - Try different questions to ensure good responses
-* **Iterate and improve** - Refine based on real usage
+* **Start with good content**: Upload your best documents first.
+* **Update regularly**: Keep the knowledge current.
+* **Test**: Ask different questions and read the answers.
+* **Improve**: Change the agent when real use shows a problem.
 
 ### Managing Multiple Agents
 
-* **Specialize agents** - Give each one a clear, focused role
-* **Use descriptive names** - Make it easy to pick the right agent
-* **Organize by function** - Group similar agents together
-* **Share successful agents** - Let teammates copy your best configurations
+* **Give each agent one role**: A clear role gives better answers.
+* **Use descriptive names**: Make it easy to pick the correct agent.
+* **Organize by function**: Keep similar agents together.
+* **Share agents that work**: Let teammates copy your best agents.
 
 ## Troubleshooting
 
 ### Agent Giving Wrong Answers?
 
-✅ Check if it has the right knowledge documents\
-✅ Make sure information is up-to-date\
-✅ Improve your questions - be more specific\
-✅ Add more training examples to the knowledge base
+✅ Make sure that the agent has the correct knowledge documents.\
+✅ Make sure that the information is current.\
+✅ Ask a more specific question.\
+✅ Add more examples to the knowledge.
 
 ### Agent Not Understanding Questions?
 
-✅ Rephrase your question more clearly\
-✅ Provide more context about what you need\
-✅ Check if the agent has relevant knowledge about the topic\
-✅ Try breaking complex questions into smaller parts
+✅ Write your question more clearly.\
+✅ Give more context about what you need.\
+✅ Make sure that the agent has knowledge about the topic.\
+✅ Divide a complex question into smaller questions.
 
 ### Agent Actions Not Working?
 
-✅ Verify tool permissions are enabled\
-✅ Check if external services (Gmail, Slack) are connected\
-✅ Make sure you approved any required actions\
-✅ Look for error messages in the agent chat
+✅ Make sure that the tool is turned on.\
+✅ Make sure that external services (Gmail, Slack) are connected.\
+✅ Make sure that you approved the actions that need approval.\
+✅ Look for error messages in the agent chat.
 
 ## Next Steps
 
-Ready to build your AI team?
+Do these steps to build your AI team:
 
-1. **Start with one agent** - Pick your biggest time drain
-2. **Train it well** - Upload quality knowledge and test thoroughly
-3. **Use it daily** - The more you use it, the more time you save
-4. **Expand gradually** - Add more agents as you see value
+1. **Start with one agent**: Pick the task that takes the most of your time.
+2. **Train it well**: Upload good knowledge and test the agent.
+3. **Use it daily**: Regular use saves more time.
+4. **Add more agents**: Add agents when you see value.
 
-**Need inspiration?**
+**Ideas and examples:**
 
 * [Browse the AI Agent Gallery](https://taskade.com/agents) for community examples
 * [Watch tutorial videos](https://youtube.com/taskade) for step-by-step guides
@@ -603,96 +611,96 @@ Ready to build your AI team?
 
 ### **Build Without Permission**
 
-You don't need permission to start. Not to ship. Not to define the system.
+You can start to build at once. You do not need approval to ship or to design your system.
 
-Your AI agents are just the beginning. Transform them into complete business applications with Genesis - the HyperCard moment for the AI era.
+Your AI agents can also become full business apps with Taskade Genesis. Taskade Genesis builds an app from one prompt.
 
 [**Read the Manifesto →**](https://www.taskade.com/blog/build-without-permission) - Build Without Permission
 
 ### **Build Genesis Apps with Your Agents**
 
-Transform your AI agents into complete business applications. One prompt = one app. Your workspace = the backend. Your agents = the team.
+Turn your AI agents into business apps. One prompt makes one app. Your workspace holds the data, and your agents do the work.
 
 * [**Genesis Getting Started →**](../genesis/getting-started.md) - Build your first app in 5 minutes
-* [**Genesis Examples →**](../genesis/examples-and-templates.md) - See what others have built
+* [**Genesis Examples →**](../genesis/examples-and-templates.md) - See apps that other people built
 
 ### **Connect Agents to Automations**
 
-Make your agents work automatically:
+Automations run your agents without a manual start:
 
-* [**Automation Getting Started →**](../automation/README.md) - Put agents on autopilot
+* [**Automation Getting Started →**](../automation/README.md) - Run agents on a schedule or an event
 * [**Integration Guide →**](../automation/integrations.md) - Connect to 100+ services
 
 #### **Build Agent-Centric Automations**
 
-Create automation workflows with your AI agents at the center:
+You can build automations that have an AI agent at the center.
 
 **Access Agent Automation:**
 
-1. Navigate to the **Agents** tab in your workspace/folder
-2. Select an existing agent or create a new one
-3. Click **Edit Agent** in the top-right corner
-4. Go to the **Automation** tab on the left sidebar
+1. Open **AI Agents** in your workspace sidebar.
+2. Select an existing agent or create a new one.
+3. Open the agent's **Actions** tab.
+4. Open the **Automation** sub-tab.
 
 **Create Agent Automation Flow:**
 
-1. **Choose a connector** from available automation triggers
-2. **Configure the trigger** to initiate your workflow
-3. **Set up your agent** as the central processing component
-4. **Add additional actions** before or after agent processing
-5. **Test and deploy** your agent automation
+1. **Choose a connector** from the available automation triggers.
+2. **Configure the trigger** that starts your automation.
+3. **Add your agent** as the main step.
+4. **Add more actions** before or after the agent step.
+5. **Test and turn on** your agent automation.
 
 **Supported Triggers for Agent Automations:**
 
-* Task creation, updates, and completion events
-* Project and folder activity triggers
-* External service integrations (Gmail, Slack, etc.)
+* Task creation, updates, and completion
+* Activity in projects and folders
+* Events from external services (Gmail, Slack, and more)
 * Time-based and scheduled triggers
 * Custom webhook and API triggers
 
 **Agent Automation Benefits:**
 
-* **Centralized Intelligence**: AI agents process and respond to complex scenarios
-* **Seamless Integration**: Connect AI capabilities directly to business workflows
-* **Autonomous Operation**: Agents handle sequences of tasks without manual intervention
-* **Contextual Processing**: Maintain conversation context and memory across interactions
-* **Scalable Automation**: Deploy intelligent workflows across multiple use cases
+* **Central knowledge**: The agent handles complex cases with its knowledge.
+* **Direct connection**: The AI step sits inside your business automations.
+* **No manual start**: The agent does a series of tasks without your input.
+* **Context**: The agent keeps the context and memory of the chat.
+* **Reuse**: You can use the same automation for many use cases.
 
 ### **Advanced Knowledge Management**
 
-Supercharge your agents with better knowledge:
+Give your agents better knowledge:
 
-* [**Knowledge Management Guide →**](../workspaces/knowledge-management.md) - Organize information effectively
-* [**Project Views →**](../workspaces/project-views.md) - Structure data for AI understanding
+* [**Knowledge Management Guide →**](../workspaces/knowledge-management.md) - Organize your information
+* [**Project Views →**](../workspaces/project-views.md) - Structure data so that the AI can read it
 
 ## Advanced Agent Features
 
 ### **Command Modes: How Your Agent Thinks**
 
-Command modes dictate how your AI agents approach tasks - whether by following specific instructions or by autonomously setting goals and working towards them.
+A command mode sets how an agent does a task. In one mode, the agent follows your instructions directly. In the other mode, the agent sets goals and makes a plan.
 
 #### **Available Command Modes**
 
 | Mode                  | Description                                 | Best For                           | Example                                                     |
 | --------------------- | ------------------------------------------- | ---------------------------------- | ----------------------------------------------------------- |
-| **Default**           | Follows specific instructions directly      | Simple, straightforward tasks      | "Write an email to customer about order delay"              |
-| **Plan and execute**  | Sets goals, breaks the task into steps, and reasons through them | Complex multi-step goals | "Increase sales revenue" → Agent creates strategy plan      |
+| **Default**           | Follows specific instructions directly      | Simple, direct tasks               | "Write an email to customer about order delay"              |
+| **Plan and execute**  | Sets goals, divides the task into steps, and reasons through them | Complex goals with many steps | "Increase sales revenue" → Agent creates strategy plan      |
 
 #### **When to Use Plan & Execute Modes**
 
 **✅ Use Plan & Execute for:**
 
-* Complex business problems without clear solutions
-* Goals that require research and analysis
-* Multi-step processes that need coordination
-* Strategic planning and decision-making
+* Complex business problems with no clear solution
+* Goals that need research and analysis
+* Processes with many steps that need coordination
+* Strategic planning and decisions
 
 **❌ Use Default Mode for:**
 
-* Simple, direct tasks with clear instructions
-* Quick responses and straightforward actions
-* Tasks where you want specific output format
-* Routine operations with established procedures
+* Simple tasks with clear instructions
+* Quick replies and direct actions
+* Tasks where you want a specific output format
+* Routine work with known procedures
 
 #### **Plan & Execute Examples**
 
@@ -731,126 +739,126 @@ Agent Process:
 
 #### **Configuring Command Modes**
 
-1. **Edit your agent** and go to the **Commands** tab
-2. **Select a command** you want to modify
-3. **Choose the command mode** from the dropdown
-4. **Test the command** with sample input
-5. **Adjust as needed** based on results
+1. Open your agent's **Actions** tab, then the **Commands** sub-tab.
+2. Select the command that you want to change.
+3. Choose the command mode from the dropdown.
+4. Test the command with sample input.
+5. If the result is not correct, change the command and test again.
 
 ### **Bulk AI Commands: Process Multiple Tasks at Once**
 
-Apply AI commands to multiple tasks simultaneously for efficient batch processing.
+You can run one AI command on many tasks at the same time.
 
 #### **How Bulk Commands Work**
 
-1. **Select multiple tasks** in your project (click one task, then hold Shift and click the last task)
-2. **Click AI Assistant** in the selection toolbar
-3. **Choose a bulk command** from the available options
-4. **AI reads the whole selection** and gives one result
-5. **Insert** the result after the tasks, or **Replace** the selected tasks
+1. Select the tasks in your project. Click the first task, then hold Shift and click the last task.
+2. Click **AI Assistant** in the selection toolbar.
+3. Choose a bulk command.
+4. Read the result. The AI reads the whole selection and gives one result.
+5. Click **Insert** to add the result after the tasks, or **Replace** to replace the selected tasks.
 
 #### **Available Bulk AI Commands**
 
 | Command                         | Action                                | Best For                               | Example                                      |
 | ------------------------------- | ------------------------------------- | -------------------------------------- | -------------------------------------------- |
-| **🟪 Research**                 | Search the web to learn about topics  | Market research, fact-checking         | Research competitors for each product        |
-| **🟪 SEO**                      | Fetch top Google Search results       | Content optimization, keyword research | Find SEO keywords for blog topics            |
-| **🟠 Summarize**                | Shrink down long discussions or notes | Meeting notes, document reviews        | Summarize customer feedback responses        |
-| **🟤 Turn into Action Items**   | Convert ideas into actionable steps   | Project planning, brainstorming        | Turn feature requests into development tasks |
-| **🟡 Prioritize**               | Prioritize tasks based on importance  | Task management, sprint planning       | Rank support tickets by urgency              |
-| **🔴 Continue Writing**         | Expand on existing content            | Content creation, documentation        | Expand product descriptions                  |
-| **⚪️ Brainstorm**               | Develop ideas in seconds              | Creative projects, problem-solving     | Generate marketing campaign ideas            |
-| **🔵 Rewrite**                  | Refine words for clarity and impact   | Content editing, communication         | Improve email templates                      |
-| **🟢 Outline**                  | Turn ideas into structured plans      | Project planning, content strategy     | Create article outlines from topics          |
-| **🟥 Fix Spelling and Grammar** | Edit out mistakes                     | Content review, documentation          | Clean up imported content                    |
+| **🟪 Research**                 | Search the web about a topic          | Market research, fact checks           | Research competitors for each product        |
+| **🟪 SEO**                      | Get the top Google Search results     | Content improvement, keyword research  | Find SEO keywords for blog topics            |
+| **🟠 Summarize**                | Make long discussions or notes short  | Meeting notes, document reviews        | Summarize customer feedback responses        |
+| **🟤 Turn into Action Items**   | Change ideas into steps               | Project planning, brainstorms          | Turn feature requests into development tasks |
+| **🟡 Prioritize**               | Sort tasks by importance              | Task management, sprint planning       | Rank support tickets by urgency              |
+| **🔴 Continue Writing**         | Add to existing content               | Content creation, documentation        | Expand product descriptions                  |
+| **⚪️ Brainstorm**               | Find new ideas fast                   | Creative projects, problem solving     | Generate marketing campaign ideas            |
+| **🔵 Rewrite**                  | Make text clearer                     | Content editing, communication         | Improve email templates                      |
+| **🟢 Outline**                  | Change ideas into structured plans    | Project planning, content strategy     | Create article outlines from topics          |
+| **🟥 Fix Spelling and Grammar** | Correct mistakes                      | Content review, documentation          | Clean up imported content                    |
 
 #### **Custom Agent Bulk Commands**
 
-You can also use your custom AI agent commands with multiple tasks:
+You can also run your custom agent commands on many tasks:
 
-1. **Create custom commands** in your agent settings
-2. **Select multiple tasks** that need the same processing
-3. **Choose your custom agent command** from the bulk options
-4. **AI applies your specialized command** to all selected tasks
+1. Create custom commands in the agent's **Actions** tab.
+2. Select the tasks that need the same command.
+3. Choose your custom agent command from the bulk options.
+4. Read the result. The AI applies your command to all selected tasks.
 
 **Example Use Cases:**
 
-* **Sales Agent**: Qualify multiple leads simultaneously
-* **Content Agent**: Generate social media posts for multiple products
-* **Support Agent**: Categorize multiple customer inquiries
-* **Research Agent**: Analyze multiple competitor websites
+* **Sales Agent**: Qualify many leads at the same time.
+* **Content Agent**: Write social media posts for many products.
+* **Support Agent**: Sort many customer questions.
+* **Research Agent**: Analyze many competitor websites.
 
 #### **Bulk Command Best Practices**
 
 **✅ Do:**
 
-* Group similar tasks for bulk processing
-* Review results and refine as needed
-* Use consistent formatting across tasks
-* Test commands on small batches first
+* Group similar tasks in one bulk command.
+* Review the results and improve them.
+* Use the same format in all tasks.
+* Test a command on a small batch first.
 
-**❌ Don't:**
+**❌ Do not:**
 
-* Mix different task types in one bulk operation
-* Apply complex commands to too many tasks at once
-* Skip reviewing AI-generated results
-* Use bulk commands for tasks requiring individual attention
+* Mix different types of tasks in one bulk command.
+* Run a complex command on too many tasks at the same time.
+* Accept AI results without a review.
+* Use bulk commands for tasks that need individual attention.
 
 ***
 
 ## **Mobile Agent Development**
 
-Build and train AI agents directly from your mobile device, making agent development truly accessible anywhere.
+You can build and train AI agents on your mobile device.
 
 ### **Mobile Agent Creation**
 
 | **Feature**                 | **Capability**                     | **Use Case**                      |
 | --------------------------- | ---------------------------------- | --------------------------------- |
-| **Quick Agent Setup**       | Create agents with voice prompts   | Build agents while commuting      |
+| **Quick Agent Setup**       | Create agents with voice prompts   | Build agents while you travel     |
 | **Mobile Knowledge Upload** | Add photos, documents, voice memos | Train agents with real-world data |
-| **Agent Testing**           | Test agent responses on mobile     | Validate agent behavior instantly |
-| **Mobile Commands**         | Create custom commands via touch   | Build agent tools on the go       |
+| **Agent Testing**           | Test agent responses on mobile     | See agent behavior at once        |
+| **Mobile Commands**         | Create custom commands with touch  | Build agent commands anywhere     |
 
 ### **Mobile-Specific Agent Tools**
 
 | **Tool**               | **Mobile Advantage**          | **Business Impact**           |
 | ---------------------- | ----------------------------- | ----------------------------- |
-| **Photo Analysis**     | Analyze images from camera    | Instant product cataloging    |
-| **Voice Commands**     | Speak to agents naturally     | Hands-free agent interaction  |
+| **Photo Analysis**     | Analyze images from camera    | Fast product catalogs         |
+| **Voice Commands**     | Speak to agents naturally     | Hands-free agent chats        |
 | **Push Notifications** | Receive agent alerts anywhere | Real-time business monitoring |
 
 ### **Mobile Agent Use Cases**
 
 **Field Service Agent:**
 
-* Take photos of equipment issues
-* Get instant diagnostic suggestions
-* Create work orders automatically
-* Access repair manuals contextually
+* Take photos of equipment problems.
+* Get diagnostic suggestions at once.
+* Create work orders.
+* Open the related repair manuals.
 
 **Sales Agent:**
 
-* Capture client meeting notes via voice
-* Get real-time product recommendations
-* Access pricing and availability instantly
-* Generate follow-up tasks automatically
+* Record client meeting notes with your voice.
+* Get product recommendations in real time.
+* Get pricing and availability at once.
+* Create follow-up tasks.
 
 ## **AI Team Generator: Multi-Agent Teams**
 
-Create entire teams of specialized AI agents with a single prompt using the revolutionary AI Team Generator.
+The AI Team Generator creates a team of specialized AI agents from one prompt.
 
 ### **What is AI Team Generator?**
 
-The AI Team Generator lets you create complete multi-agent teams instantly. Just describe your use case, and Taskade automatically generates a fully configured AI Team with tailored roles, behaviors, and specialized toolkits.
+You describe your use case, and Taskade generates an AI Team. Each agent in the team gets its own role, instructions, and tools.
 
 ### **When to Use AI Team Generator**
 
-| **Scenario**               | **Why It's Perfect**                                 |
+| **Scenario**               | **Why It Helps**                                     |
 | -------------------------- | ---------------------------------------------------- |
-| **Complex Workflows**      | Multiple agents tackle different parts of a workflow |
-| **Uncertain Structure**    | AI designs the optimal team composition for you      |
-| **Time Constraints**       | Save hours of manual agent configuration             |
-| **Best Practice Learning** | See how experts structure multi-agent systems        |
+| **Complex Workflows**      | Many agents do different parts of the work           |
+| **Unknown Structure**      | Taskade designs the team for you                     |
+| **Little Time**            | You do not configure each agent by hand              |
+| **Learning**               | You see how a multi-agent team is structured         |
 
 ### **Example AI Team Generations**
 
@@ -858,29 +866,31 @@ The AI Team Generator lets you create complete multi-agent teams instantly. Just
 
 **Generated Team:**
 
-* **🎯 Product Manager Agent** - Roadmap planning, feature prioritization
-* **📊 Market Research Agent** - Competitor analysis, user research
-* **✍️ Content Marketing Agent** - Blog posts, social media, email campaigns
-* **📈 Growth Marketing Agent** - SEO optimization, conversion tracking
-* **🎨 Design Agent** - Visual assets, UI/UX feedback
-* **💬 Customer Success Agent** - Onboarding flows, support documentation
+* **🎯 Product Manager Agent**: Roadmap planning, feature priorities
+* **📊 Market Research Agent**: Competitor analysis, user research
+* **✍️ Content Marketing Agent**: Blog posts, social media, email campaigns
+* **📈 Growth Marketing Agent**: SEO, conversion tracking
+* **🎨 Design Agent**: Visual assets, UI/UX feedback
+* **💬 Customer Success Agent**: Onboarding flows, support documentation
 
 **Prompt:** _"Build a legal compliance team for healthcare"_
 
 **Generated Team:**
 
-* **⚖️ Compliance Officer Agent** - HIPAA regulations, audit preparation
-* **📋 Documentation Agent** - Policy creation, procedure updates
-* **🔍 Risk Assessment Agent** - Vulnerability analysis, mitigation strategies
-* **📊 Reporting Agent** - Compliance reports, regulatory filings
-* **🎓 Training Agent** - Staff education, certification tracking
+* **⚖️ Compliance Officer Agent**: HIPAA regulations, audit preparation
+* **📋 Documentation Agent**: Policy creation, procedure updates
+* **🔍 Risk Assessment Agent**: Vulnerability analysis, mitigation strategies
+* **📊 Reporting Agent**: Compliance reports, regulatory filings
+* **🎓 Training Agent**: Staff education, certification tracking
 
 ### **How It Works**
 
-1. **Describe Your Need** - "I need a team for \[specific use case]"
-2. **AI Analyzes Requirements** - Identifies roles, skills, and workflows needed
-3. **Generates Specialized Agents** - Each with custom instructions and tools
-4. **Ready to Deploy** - Start using your team immediately
+The generator does these steps:
+
+1. **You describe your need**: For example, "I need a team for \[specific use case]".
+2. **Taskade analyzes the request**: It finds the roles, skills, and work that the team needs.
+3. **Taskade generates the agents**: Each agent gets custom instructions and tools.
+4. **The team is ready**: You can use the team at once.
 
 ### **How to Use AI Team Generator**
 
@@ -890,14 +900,14 @@ The AI Team Generator lets you create complete multi-agent teams instantly. Just
 
 #### **Access the Generator**
 
-1. Open **AI Teams** in your workspace sidebar
-2. Click **Generate**
-3. Describe the work in the **Generate Your AI Agent Team** dialog
+1. Open **AI Teams** in your workspace sidebar.
+2. Click **Generate**.
+3. Describe the work in the **Generate Your AI Agent Team** dialog.
 
 #### **Craft Your Prompt**
 
 {% hint style="info" %}
-The quality of your prompt determines the quality of your generated team. Be specific about your use case, industry, and requirements.
+A better prompt gives a better team. A good prompt names your use case, your industry, and your requirements.
 {% endhint %}
 
 **Effective Prompt Examples:**
@@ -909,18 +919,18 @@ The quality of your prompt determines the quality of your generated team. Be spe
 ### **Editing and Customizing Generated Teams**
 
 {% hint style="warning" %}
-All generated teams can be fine-tuned after creation to better fit your specific needs.
+You can change every generated team after Taskade creates it.
 {% endhint %}
 
 #### **Available Customizations**
 
-| **Customization Type**   | **What You Can Modify**                          | **Impact**                               |
+| **Customization Type**   | **What You Can Change**                          | **Result**                               |
 | ------------------------ | ------------------------------------------------ | ---------------------------------------- |
-| **Agent Roles**          | Change titles, responsibilities, and specialties | Better alignment with your workflow      |
-| **Instructions**         | Adjust behavior, tone, and response guidelines   | More accurate and helpful responses      |
-| **Tools & Integrations** | Add/remove connected services and APIs           | Enhanced capabilities and automation     |
-| **Knowledge Base**       | Upload additional training materials             | More informed and knowledgeable agents   |
-| **Communication Style**  | Modify how agents interact and collaborate       | Better team dynamics and user experience |
+| **Agent Roles**          | Titles, responsibilities, and specialties        | A better fit with your work              |
+| **Instructions**         | Behavior, tone, and reply guidelines             | More correct and useful replies          |
+| **Tools & Integrations** | Add or remove connected services and APIs        | More actions and automation              |
+| **Knowledge Base**       | Upload more training materials                   | Agents that know more                    |
+| **Communication Style**  | How agents talk and work together                | Better teamwork and user experience      |
 
 #### **Advanced Editing Features**
 
@@ -928,25 +938,25 @@ All generated teams can be fine-tuned after creation to better fit your specific
 {% step %}
 #### Access Team Settings
 
-Click **···** next to your team, then **Edit team**
+Click **···** next to your team, then click **Edit team**.
 {% endstep %}
 
 {% step %}
 #### Modify Agent Configuration
 
-Select individual agents to adjust their parameters
+Select an agent and change its settings.
 {% endstep %}
 
 {% step %}
 #### Test Changes
 
-Use the **preview chat** to test modified behavior
+Use the **preview chat** to test the changed behavior.
 {% endstep %}
 
 {% step %}
 #### Save and Deploy
 
-Apply changes and make the team available for use
+Save the changes. The team is then ready to use.
 {% endstep %}
 {% endstepper %}
 
@@ -958,77 +968,74 @@ Apply changes and make the team available for use
 
 #### **Method 1: Direct Team Chat**
 
-* Access through the **AI Teams** tab
-* Chat with the entire team as a unified group
-* Pick **Auto**, **Everyone**, **Manual**, or **Orchestrate** to decide which agents reply
-* Perfect for brainstorming and complex problem-solving
+* Open the team in **AI Teams**.
+* Chat with the whole team in one chat.
+* Pick **Auto**, **Everyone**, **Manual**, or **Orchestrate** to decide which agents reply.
+* Use the team chat for brainstorms and hard problems.
 
 #### **Method 2: Project Integration**
 
-* Assign teams to specific projects
-* Agents work within project context
-* Automatic task generation and updates
-* Seamless integration with existing workflows
+* Open the team in the chat of a project.
+* The agents use the project as context.
 
 #### **Method 3: Task Assignment**
 
-* Type **/** and the team name in a task to assign it
-* Taskade picks the single best agent from the team for each task
-* Insert or replace the task with the result
+* In a task, type **/** and the team name to assign the task.
+* Taskade picks the single best agent from the team for each task.
+* Insert the result after the task, or replace the task with the result.
 
 #### **Method 4: Automation Integration**
 
-* Connect teams to automation workflows
-* Trigger team actions based on events
-* Automated responses and follow-ups
-* Continuous background processing
+* Add the **Ask an agent team** step to an automation.
+* Start the team from an event, such as a new form entry.
+* Send the replies of the team to the next steps.
 
 ### **AI Team Use Cases and Examples**
 
 | **Industry**    | **Team Type**      | **Key Agents**                        | **Benefits**                   |
 | --------------- | ------------------ | ------------------------------------- | ------------------------------ |
-| **Marketing**   | Content Creation   | Research, Writing, Design, SEO        | Complete content pipeline      |
-| **Sales**       | Lead Management    | Qualification, Follow-up, Analytics   | Streamlined sales process      |
-| **Support**     | Customer Service   | Triage, Resolution, Feedback          | 24/7 customer support          |
-| **Development** | Project Management | Planning, Coding, Testing, Deployment | Accelerated development cycles |
-| **HR**          | Recruitment        | Sourcing, Screening, Interviewing     | Efficient hiring process       |
+| **Marketing**   | Content Creation   | Research, Writing, Design, SEO        | Full content process           |
+| **Sales**       | Lead Management    | Qualification, Follow-up, Analytics   | Faster sales process           |
+| **Support**     | Customer Service   | Triage, Resolution, Feedback          | Customer support at all hours  |
+| **Development** | Project Management | Planning, Coding, Testing, Deployment | Faster development cycles      |
+| **HR**          | Recruitment        | Sourcing, Screening, Interviewing     | Faster hiring                  |
 
 ### **Best Practices for AI Teams**
 
 {% hint style="info" %}
-**Optimization Strategies for Maximum Impact**
+**Tips for Better Teams**
 {% endhint %}
 
 #### **Team Composition**
 
-* **Start Small**: Begin with 3-5 agents for focused teams
-* **Role Clarity**: Ensure each agent has distinct, non-overlapping responsibilities
-* **Skill Balance**: Include a mix of specialized and general-purpose agents
+* **Start Small**: Start with 3 to 5 agents in one team.
+* **Clear Roles**: Give each agent different responsibilities.
+* **Skill Balance**: Use a mix of specialized and general agents.
 
 #### **Performance Tuning**
 
-* **Prompt Refinement**: Iterate on team prompts for better results
-* **Tool Integration**: Connect relevant external services and APIs
-* **Knowledge Updates**: Regularly refresh agent knowledge bases
+* **Prompt Refinement**: Improve your team prompts over time.
+* **Tool Integration**: Connect the external services and APIs that the team needs.
+* **Knowledge Updates**: Update the knowledge of each agent at regular intervals.
 
 #### **Workflow Integration**
 
-* **Clear Triggers**: Define when and how teams should be activated
-* **Output Standards**: Establish consistent formatting and quality expectations
-* **Feedback Loops**: Implement review processes for continuous improvement
+* **Clear Triggers**: Decide when and how the team starts.
+* **Output Standards**: Set the format and quality that you expect.
+* **Feedback Loops**: Review the output of the team at regular intervals.
 
 ### **Troubleshooting AI Teams**
 
 | **Issue**                   | **Common Causes**         | **Solutions**                                  |
 | --------------------------- | ------------------------- | ---------------------------------------------- |
-| **Uncoordinated Responses** | Overlapping agent roles   | Clarify responsibilities in team configuration |
-| **Slow Response Times**     | Too many agents active    | Reduce team size or optimize prompts           |
-| **Inconsistent Quality**    | Unclear instructions      | Refine agent prompts and guidelines            |
-| **Integration Problems**    | API/authentication issues | Verify tool connections and permissions        |
+| **Uncoordinated Responses** | Agent roles overlap       | Give each agent a clear role in the team setup |
+| **Slow Response Times**     | Too many agents reply     | Use fewer agents or shorter prompts            |
+| **Inconsistent Quality**    | Unclear instructions      | Improve agent prompts and guidelines           |
+| **Integration Problems**    | API or sign-in problems   | Make sure that tool connections and permissions are correct |
 
 ***
 
-**💡 Pro Tip:** Your best agent team is one that solves a real problem you face daily. Start with a specific use case, measure results, and expand as you discover new possibilities!
+**💡 Pro Tip:** The best agent team solves a real problem that you have each day. Start with one use case, measure the results, and then add more.
 
 ---
 

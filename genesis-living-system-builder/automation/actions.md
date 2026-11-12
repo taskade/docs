@@ -5,14 +5,14 @@ description: >-
 
 # Action & Trigger Reference
 
-Actions are the tasks that automations can perform. Each action connects to a specific service or system to create, update, or retrieve data. Actions can be chained together to create complex workflows.
+Actions are the steps that an automation does. Each action connects to a service or to your workspace. It creates, updates, or reads data. You can put actions one after the other to make a workflow.
 
 ## Overview
 
-Actions are the "then" part of automation workflows - the tasks that get performed when trigger conditions are met. Taskade provides a comprehensive set of actions that can create projects, manage tasks, interact with AI, integrate with external services, and perform complex data operations.
+A trigger starts an automation. The actions are the "then" part: they do the work when the trigger conditions are true. With actions, you can create projects, manage tasks, ask AI, send data to other apps, and change data.
 
 {% hint style="success" %}
-Actions can be chained together to create complex multi-step workflows, with conditional logic and data transformation capabilities that enable truly intelligent automation.
+You can connect actions in a chain. Add a condition to choose a path, and transform data between steps.
 {% endhint %}
 
 ## Complete Action Reference
@@ -21,59 +21,59 @@ Actions can be chained together to create complex multi-step workflows, with con
 
 | Action | Description | Parameters |
 | --- | --- | --- |
-| **Create Project** | Sets up a new project in your workspace/folder | `name`, `folderId`, `template`, `defaultView` |
-| **Add Task** | Adds a new task to an existing project | `projectId`, `title`, `content`, `assignee`, `dueDate` |
-| **Mark Task as Completed** | Automatically marks a task as done | `taskId`, `completedBy`, `completionNote` |
-| **Create Project From Template** | Uses a pre-defined or custom template | `templateId`, `name`, `folderId` |
+| **Create Project** | Creates a new project in your workspace or folder | `name`, `folderId`, `template`, `defaultView` |
+| **Add Task** | Adds a new task to a project | `projectId`, `title`, `content`, `assignee`, `dueDate` |
+| **Mark Task as Completed** | Marks a task as done | `taskId`, `completedBy`, `completionNote` |
+| **Create Project From Template** | Creates a project from a Taskade template or your own template | `templateId`, `name`, `folderId` |
 | **Move Task** | Moves a task to another block in the same project | `projectId`, `taskId`, `targetBlockId` |
-| **Assign Task** | Assigns a task to someone | `taskId`, `userId`, `notifyAssignee` |
-| **Ask AI** | Uses AI to answer questions | `query`, `context`, `model` |
-| **Generate with AI** | Uses AI to generate content or responses | `prompt`, `style`, `length` |
-| **Respond with AI** | Automatically provides AI-generated responses | `input`, `tone`, `format` |
-| **Ask Agent** | Uses a custom AI agent to respond to a query | `agentId`, `query`, `parameters` |
-| **Run Agent Command** | Uses a custom AI agent command | `agentId`, `command`, `input` |
-| **Add Knowledge to Agent** | Transcribes knowledge and adds it as knowledge to an agent | `agentId`, `content`, `source` |
-| **Add Project to Agent Knowledge** | Automatically trains your AI agents with project content | `agentId`, `projectId`, `scope` |
-| **Ask Agent With Structured Output** | Structures the output of agent replies | `agentId`, `query`, `outputFormat` |
-| **Add a comment** | Appends a comment to an existing task node | `taskId`, `comment` |
-| **Update a task** | Updates a task node's content or note field | `taskId`, `content`, `note` |
-| **Get a task** | Reads a task node and returns its current data | `taskId` |
-| **Get project info** | Reads project metadata (name, dates, member list, etc.) | `projectId` |
-| **Attach a file** | Attaches a file to a task node (returns `attachmentId`, `fileId`, `projectId`, `nodeId`, `filename`, `mimetype`) | `projectId` (Project), `nodeId` (Task ID, UUID), `fileUrl` (File) |
+| **Assign Task** | Assigns a task to a person | `taskId`, `userId`, `notifyAssignee` |
+| **Ask AI** | Uses AI to answer a question | `query`, `context`, `model` |
+| **Write with AI** | Uses AI to write content or a reply | `prompt`, `style`, `length` |
+| **Reply with AI** | Writes a reply with AI | `input`, `tone`, `format` |
+| **Ask an agent** | Sends a question to one of your custom AI agents | `agentId`, `query`, `parameters` |
+| **Run an agent command** | Runs a saved command of a custom AI agent | `agentId`, `command`, `input` |
+| **Add knowledge to an agent** | Gives an agent a file, a website, a YouTube video, or text to learn from | `agentId`, `content`, `source` |
+| **Add a project to an agent** | Lets an agent read a project as knowledge | `agentId`, `projectId`, `scope` |
+| **Structured output** | Set **Output Type** to **Structured Output** on an **Ask an agent** or **Run an agent command** step. The step returns typed fields instead of free text | `outputType`, `output` |
+| **Add a comment** | Adds a comment to a task | `taskId`, `comment` |
+| **Update a task** | Changes the content or the note of a task | `taskId`, `content`, `note` |
+| **Get a task** | Reads a task and returns its current data | `taskId` |
+| **Get project info** | Reads the project data: name, dates, and members | `projectId` |
+| **Attach a file** | Attaches a file to a task. It returns `attachmentId`, `fileId`, `projectId`, `nodeId`, `filename`, and `mimetype` | `projectId` (Project), `nodeId` (Task ID, UUID), `fileUrl` (File) |
 
 ### Data Processing & Integration Actions
 
 | Action | Description | Parameters |
 | --- | --- | --- |
-| **Scrape Webpage** | Extract the contents of a web page | `url`, `errorBehavior` |
-| **Convert File to Text** | Convert a source file into text | `fileId`, `outputFormat`, `encoding` |
-| **Transcribe YouTube Video** | Turn a YouTube video into text | `youtubeUrl` |
-| **Turn a recording into a project** | Transcribes an audio recording into a new project | `audioRecording`, `projectTitle` |
-| **Upload File to Media** | Upload file through a URL to save in your workspace or folder's media tab | `url`, `fileName`, `folderId` |
-| **Send HTTP Request** | Makes an API request to an endpoint; authentication is optional per call | `method`, `url`, `headers`, `body`, optional auth |
-| **Search Web** | Searches the web for information to add to a project or for the AI to analyze | `query` |
+| **Read a web page** | Gets the content of a web page | `url`, `errorBehavior` |
+| **Turn a file into text** | Changes a source file into text | `fileId`, `outputFormat`, `encoding` |
+| **Transcribe a YouTube video** | Changes a YouTube video into text | `youtubeUrl` |
+| **Turn a recording into a project** | Writes an audio recording as text in a new project | `audioRecording`, `projectTitle` |
+| **Save a file to Media** | Downloads a file from a link into Media | `url`, `fileName`, `folderId` |
+| **Send HTTP Request** | Sends a request to an API endpoint. Authentication is optional for each call | `method`, `url`, `headers`, `body`, optional auth |
+| **Search the web** | Searches the web for information. You can add the result to a project or give it to AI | `query` |
 
 {% hint style="info" %}
-**Scanned documents work too.** Convert File to Text now falls back to **vision OCR** when a file has no machine-readable text — scanned PDFs, image-only documents, and photos of pages are transcribed automatically. OCR runs count toward your workspace's AI usage.
+**Scanned documents work too.** If a file has no text that a computer can read, Turn a file into text uses **vision OCR**. OCR reads the words in scanned PDFs, image-only documents, and photos of pages. OCR runs count toward the AI usage of your workspace.
 {% endhint %}
 
 ### Workflow Control Actions
 
 | Action | Description | Parameters |
 | --- | --- | --- |
-| **Loop** | Iterates data tasks | `dataSource`, `iterationLogic`, `maxIterations` |
-| **Filter Data** | Performs actions only when the data meets a certain condition | `condition`, `dataSource`, `filterCriteria` |
-| **Branch** | Creates different paths within your workflow, depending on certain conditions | `condition`, `truePath`, `falsePath` |
-| **Transform Array to String** | Converts the output of Find Task(s) and Find Row(s) actions into text | `arrayInput`, `template`, `separator` |
-| **Run Automation** | Runs a saved flow as a depth-guarded subflow (prevents infinite recursion) | `flowId`, `input` |
+| **Loop** | Runs the steps inside it once for each item | `dataSource`, `iterationLogic` |
+| **Filter Data** | Continues only when the data meets a condition | `condition`, `dataSource`, `filterCriteria` |
+| **Branch** | Makes different paths in your workflow. Each path has a condition | `condition`, `truePath`, `falsePath` |
+| **Transform Array to String** | Changes the output of Find Task(s) and Find Row(s) into text | `arrayInput`, `template`, `separator` |
+| **Run Automation** | Runs a saved automation as a subflow. A depth limit stops an endless chain | `flowId`, `input` |
 
 ### Advanced Actions
 
 | Action | Description | Parameters |
 | --- | --- | --- |
-| **Update Custom Fields** | Updates custom fields within projects | `taskId`, `fieldId`, `value`, `projectId` |
-| **Find Task(s)** | Searches for tasks within projects | `projectId`, `searchCriteria`, `maxResults` |
-| **Delay** | Adds a time delay to automation workflows | `duration`, `unit` |
+| **Update Custom Fields** | Changes the custom fields of a task | `taskId`, `fieldId`, `value`, `projectId` |
+| **Find Task(s)** | Finds tasks in projects | `projectId`, `searchCriteria`, `maxResults` |
+| **Delay** | Stops the automation for a time, then continues | `duration`, `unit` |
 
 ## Core Taskade Actions
 
@@ -81,30 +81,30 @@ Actions can be chained together to create complex multi-step workflows, with con
 
 | Action | Description | Parameters |
 | --- | --- | --- |
-| **Create Project** | Sets up a new project in your workspace/folder. Example: Create "Customer Feedback" project from template | `name`, `folderId`, `template`, `defaultView` |
-| **Create Project From Template** | Uses a pre-defined or custom template. Example: Create project from "Support Workflow" template | `templateId`, `name`, `folderId` |
-| **Add Task** | Adds a new task to an existing project. Example: Add task "Review feedback #123" | `projectId`, `title`, `content`, `assignee`, `dueDate` |
-| **Mark Task as Completed** | Automatically marks a task as done. Example: Mark task complete with resolution note | `taskId`, `completedBy`, `completionNote` |
-| **Move Task** | Moves a task to another block in the same project. Example: Move to the "Processed" block | `projectId`, `taskId`, `targetBlockId` |
-| **Assign Task** | Assigns a task to someone. Example: Assign to support specialist with notification | `taskId`, `userId`, `notifyAssignee` |
-| **Update Custom Fields** | Updates custom fields within projects. Example: Set priority to "High", status to "In Progress" | `taskId`, `fieldId`, `value`, `projectId` |
-| **Find Task(s)** | Searches for tasks within projects. Example: Find all tasks assigned to user | `projectId`, `searchCriteria`, `maxResults` |
+| **Create Project** | Creates a new project in your workspace or folder. Example: Create a "Customer Feedback" project from a template | `name`, `folderId`, `template`, `defaultView` |
+| **Create Project From Template** | Creates a project from a Taskade template or your own template. Example: Create a project from the "Support Workflow" template | `templateId`, `name`, `folderId` |
+| **Add Task** | Adds a new task to a project. Example: Add the task "Review feedback #123" | `projectId`, `title`, `content`, `assignee`, `dueDate` |
+| **Mark Task as Completed** | Marks a task as done. Example: Mark a task as done with a resolution note | `taskId`, `completedBy`, `completionNote` |
+| **Move Task** | Moves a task to another block in the same project. Example: Move the task to the "Processed" block | `projectId`, `taskId`, `targetBlockId` |
+| **Assign Task** | Assigns a task to a person. Example: Assign the task to a support specialist and send a notification | `taskId`, `userId`, `notifyAssignee` |
+| **Update Custom Fields** | Changes the custom fields of a task. Example: Set the priority to "High" and the status to "In Progress" | `taskId`, `fieldId`, `value`, `projectId` |
+| **Find Task(s)** | Finds tasks in projects. Example: Find all tasks of one person | `projectId`, `searchCriteria`, `maxResults` |
 
 ### Find Task(s) Automation Settings
 
 {% hint style="info" %}
-The Find Task(s) action enables dynamic task retrieval within automation workflows. Search, filter, and process tasks based on specific criteria to create intelligent, data-driven automations.
+With the Find Task(s) action, an automation can get tasks while it runs. You can search and filter tasks by your criteria. Then later steps use the tasks that the action finds.
 {% endhint %}
 
 #### When to Use Find Tasks
 
-**Perfect for:**
+**Use it to:**
 
-* **Bulk processing** - Handle multiple tasks at once
-* **Conditional workflows** - Process tasks meeting specific criteria
-* **Reporting** - Generate summaries of task collections
-* **Data synchronization** - Keep external systems updated
-* **Quality control** - Identify tasks needing attention
+* **Process many tasks** - Do the same work on many tasks at one time
+* **Run conditional workflows** - Process only the tasks that meet your criteria
+* **Make reports** - Write summaries of a group of tasks
+* **Synchronize data** - Keep other apps up to date
+* **Control quality** - Find the tasks that need attention
 
 #### Search Criteria Options
 
@@ -116,7 +116,7 @@ The Find Task(s) action enables dynamic task retrieval within automation workflo
 | **Task Status**       | Equals, Not Equals                                                                     | Status           | `"completed"` |
 | **Assignee**          | Equals, Not Equals, Empty, Not Empty                                                   | User             | `"john.doe"`  |
 | **Due Date**          | Before, After, Empty, Not Empty                                                        | Date             | `today()`     |
-| **Custom Fields**     | Various conditions based on field type                                                 | Depends on field | `"high"`      |
+| **Custom Fields**     | The conditions depend on the field type                                                | Depends on field | `"high"`      |
 
 #### Output Data Structure
 
@@ -141,13 +141,13 @@ The Find Task(s) action enables dynamic task retrieval within automation workflo
 
 #### Find Tasks Use Cases
 
-| Use Case                    | Automation Flow                                               | Business Impact                   |
+| Use Case                    | Automation Flow                                               | Result                            |
 | --------------------------- | ------------------------------------------------------------- | --------------------------------- |
 | **Overdue Task Alerts**     | Schedule → Find Tasks (overdue) → Send Email                  | Fewer missed deadlines            |
-| **Weekly Progress Reports** | Schedule → Find Tasks (completed this week) → Generate Report | Better project visibility         |
-| **Workload Balancing**      | Schedule → Find Tasks (by assignee) → Reassign Tasks          | Optimized team productivity       |
-| **Quality Assurance**       | Schedule → Find Tasks (missing details) → Flag for Review     | Improved task quality             |
-| **Performance Analytics**   | Schedule → Find Tasks (by criteria) → Update Dashboard        | Data-driven insights              |
+| **Weekly Progress Reports** | Schedule → Find Tasks (completed this week) → Generate Report | A clear view of project progress  |
+| **Workload Balancing**      | Schedule → Find Tasks (by assignee) → Reassign Tasks          | Work divided fairly in the team   |
+| **Quality Assurance**       | Schedule → Find Tasks (missing details) → Flag for Review     | Tasks with complete details       |
+| **Performance Analytics**   | Schedule → Find Tasks (by criteria) → Update Dashboard        | Decisions based on data           |
 
 #### Advanced Filtering Examples
 
@@ -203,25 +203,25 @@ Find Tasks → Transform Array → Export to CSV
 
 #### Best Practices
 
-* **Limit result sets** to prevent performance issues (max 1000 tasks)
-* **Use specific filters** to narrow down results efficiently
-* **Combine with sorting** for predictable processing order
-* **Handle empty results** gracefully in your workflows
-* **Test with small datasets** before scaling to large projects
+* **Limit the results** - Smaller results run faster
+* **Use specific filters** - Narrow the results to the tasks that you need
+* **Sort the results** - Then the automation processes the tasks in a known order
+* **Plan for no results** - Make sure that the workflow works when the action finds no task
+* **Test on a small project first** - Then use the automation on large projects
 
 ***
 
 ### Custom Fields Automation Settings
 
 {% hint style="info" %}
-The Update Custom Fields action allows you to automatically update custom fields in projects, ensuring your task data stays current without manual updates.
+The Update Custom Fields action changes the custom fields of a task for you. Your task data stays current, and you do not update it by hand.
 {% endhint %}
 
 **Available Parameters:**
 
-* **PROJECT ID**: ID of the target project
-* **TASK ID**: ID of the task you want to update
-* **FIELDS**: Add fields that should be updated with their new values
+* **PROJECT ID**: The ID of the project
+* **TASK ID**: The ID of the task to update
+* **FIELDS**: The fields to update, each with its new value
 
 **Example Usage:**
 
@@ -248,55 +248,55 @@ The Update Custom Fields action allows you to automatically update custom fields
 
 | Action | Description | Parameters |
 | --- | --- | --- |
-| **Ask AI** | Uses AI to answer questions. Example: "What's the priority of this ticket?" | `question`, `context`, `model` |
-| **Generate with AI** | Uses AI to generate content or responses. Example: Generate email response to customer | `prompt`, `contentType`, `length` |
-| **Respond with AI** | Automatically provides AI-generated responses. Example: Auto-respond to common inquiries | `input`, `responseType`, `tone` |
-| **Ask Agent** | Uses a custom AI agent to respond to a query. Example: Query specialized support agent | `agentId`, `question`, `context` |
-| **Run Agent Command** | Uses a custom AI agent command. Example: Run "analyze\_sentiment" command | `agentId`, `commandId`, `input` |
-| **Ask Agent With Structured Output** | Structures the output of agent replies. Example: Get JSON response with specific fields | `agentId`, `query`, `outputSchema` |
-| **Add Project to Agent Knowledge** | Automatically trains AI agents with project content. Example: Keep agents updated with latest project information | `agentId`, `projectId` |
+| **Ask AI** | Uses AI to answer a question. Example: "What is the priority of this ticket?" | `question`, `context`, `model` |
+| **Write with AI** | Uses AI to write content or a reply. Example: Write an email reply to a customer | `prompt`, `contentType`, `length` |
+| **Reply with AI** | Writes a reply with AI. Example: Reply to common questions | `input`, `responseType`, `tone` |
+| **Ask an agent** | Sends a question to one of your custom AI agents. Example: Ask a support agent | `agentId`, `question`, `context` |
+| **Run an agent command** | Runs a saved command of a custom AI agent. Example: Run the "analyze\_sentiment" command | `agentId`, `commandId`, `input` |
+| **Structured output** | Set **Output Type** to **Structured Output** on an **Ask an agent** or **Run an agent command** step. Example: Get typed fields back instead of free text | `outputType`, `output` |
+| **Add a project to an agent** | Lets an agent read a project as knowledge. Example: Keep an agent up to date with the newest project data | `agentId`, `projectId` |
 
 {% hint style="info" %}
 **Create and change agents from a flow:** The **Create an agent** action adds a new AI agent to the workspace with a name and instructions. The **Update an agent** action changes the name, the greeting, or the instructions of an agent.
 {% endhint %}
 
-### Ask Agent With Structured Output Settings
+### Structured Output Settings
 
 {% hint style="info" %}
-The Ask Agent With Structured Output action extracts specific information from AI agent responses and formats it as structured data that can be used as variables in subsequent automation steps.
+Structured output is a setting on the **Ask an agent** and **Run an agent command** steps, not a separate action. Set **Output Type** to **Structured Output**, then add the typed fields that you want back. Later steps can use each field as a variable.
 
-**BYOK support:** When a Bring Your Own Key (BYOK) model is configured on the target agent, the one-shot structured-output path honors that key, so inference runs against your own API account rather than Taskade's shared quota.
+**BYOK support:** You can give the agent a model on your own API key (BYOK). Then the structured output step uses your key, and your own API account pays for the call.
 {% endhint %}
 
 #### When to Use Structured Output
 
-**Perfect for:**
+**Use it to:**
 
-* Extracting specific data points from unstructured text
-* Converting AI responses into usable variables
-* Filling spreadsheet columns automatically
-* Creating conditional logic based on AI analysis
-* Standardizing data formats across automations
+* Get specific data points from text that has no fixed format
+* Change AI replies into variables that later steps can use
+* Fill spreadsheet columns for you
+* Choose a path in the workflow from the AI result
+* Use the same data format in all your automations
 
 #### Output Schema Types
 
 | Type              | Description                    | Example Use Case                            |
 | ----------------- | ------------------------------ | ------------------------------------------- |
-| **String**        | Text data                      | Extract product names, titles, descriptions |
-| **Number**        | Numeric values                 | Calculate costs, scores, percentages        |
-| **Boolean**       | True/false values              | Check conditions, validate data             |
-| **Date**          | Date values                    | Extract deadlines, schedule dates           |
-| **Single Select** | Choose from predefined options | Status: "pending", "approved", "rejected"   |
+| **String**        | Text data                      | Get product names, titles, descriptions     |
+| **Number**        | Numbers                        | Calculate costs, scores, percentages        |
+| **Boolean**       | True or false                  | Examine conditions, validate data           |
+| **Date**          | Dates                          | Get deadlines and schedule dates            |
+| **Single Select** | One value from a list          | Status: "pending", "approved", "rejected"   |
 
 #### Structured Output Use Cases
 
 | Use Case                | Automation Flow                               | Example                                   |
 | ----------------------- | --------------------------------------------- | ----------------------------------------- |
-| **Cost Analysis**       | Task Added → Ask Agent → Update Fields        | Calculate budget variance automatically   |
-| **Lead Qualification**  | Form Submitted → Ask Agent → Route Lead       | Score and qualify incoming leads          |
-| **Content Scoring**     | Task Added → Ask Agent → Update Status        | Rate content quality and assign reviewers |
-| **Performance Metrics** | Schedule → Ask Agent → Update Dashboard       | Calculate completion rates and KPIs       |
-| **Approval Routing**    | Task Created → Ask Agent → Conditional Action | Route tasks based on AI evaluation        |
+| **Cost Analysis**       | Task Added → Ask an agent → Update Fields        | Calculate the budget difference           |
+| **Lead Qualification**  | Form Submitted → Ask an agent → Route Lead       | Score and qualify new leads               |
+| **Content Scoring**     | Task Added → Ask an agent → Update Status        | Rate content quality and assign reviewers |
+| **Performance Metrics** | Schedule → Ask an agent → Update Dashboard       | Calculate completion rates and KPIs       |
+| **Approval Routing**    | Task Created → Ask an agent → Conditional Action | Send tasks to a path from the AI result   |
 
 #### Example Schema Configuration
 
@@ -320,51 +320,51 @@ The Ask Agent With Structured Output action extracts specific information from A
 }
 ```
 
-**Pro Tips:**
+**Tips:**
 
-* Use descriptive field names that match your workflow
-* Include clear descriptions for better AI understanding
-* Test schemas with sample data before deploying
-* Combine with conditional actions for powerful automation flows
+* Give each field a clear name that matches your workflow
+* Write a clear description for each field. The AI uses it to fill the field
+* Test the fields with sample data before you turn the automation on
+* Use the fields in a Branch or a Filter Data step
 
 ***
 
 | Action | Description | Parameters |
 | --- | --- | --- |
-| **Prompt AI** | Give the model detailed instructions. Example: Custom AI processing with specific instructions | `prompt`, `systemMessage`, `temperature` |
+| **Prompt AI** | Gives the model detailed instructions. Example: Process text with your own instructions | `prompt`, `systemMessage`, `temperature` |
 
-### Add Project to Agent Knowledge Automation Settings
+### Add a project to an agent Automation Settings
 
 {% hint style="info" %}
-The Add Project to Agent Knowledge action automatically trains AI agents with project content, enabling context-aware responses and keeping agents updated with the latest information.
+The Add a project to an agent action lets an agent read a project as knowledge. The agent can then use the project details in its replies. The agent stays up to date with the newest project data.
 {% endhint %}
 
-#### When to Use Add Project to Agent Knowledge
+#### When to Use Add a project to an agent
 
-**Perfect for:**
+**Use it to:**
 
-* **Training agents on new work** - Keep agents current with project information
-* **Enabling context-aware responses** - Allow agents to reference specific project details
-* **Supporting onboarding** - Feed previous projects to help new team members
-* **Powering research assistants** - Make agents smarter with research project content
-* **Preparing for launches** - Train agents on feature launch or campaign plans
+* **Teach agents about new work** - Give agents the newest project data
+* **Get replies with context** - Let agents use the details of a project
+* **Help new team members** - Give an agent past projects, so it can answer questions
+* **Make a research assistant** - Give an agent the content of research projects
+* **Prepare a launch** - Give an agent the plan of a feature launch or a campaign
 
-#### Add Project to Agent Knowledge Parameters
+#### Add a project to an agent Parameters
 
 | Parameter                   | Description                                     | Example                            |
 | --------------------------- | ----------------------------------------------- | ---------------------------------- |
-| **Agent ID**                | ID of the AI agent to train                     | `agent_123456`                     |
-| **Project ID**              | ID of the project to add to knowledge           | `proj_789012`                      |
+| **Agent ID**                | The ID of the AI agent                          | `agent_123456`                     |
+| **Project ID**              | The ID of the project to add as knowledge       | `proj_789012`                      |
 
-#### Add Project to Agent Knowledge Use Cases
+#### Add a project to an agent Use Cases
 
-| Use Case                   | Automation Flow                                                  | Business Impact                            |
+| Use Case                   | Automation Flow                                                  | Result                                     |
 | -------------------------- | ---------------------------------------------------------------- | ------------------------------------------ |
-| **New Project Onboarding** | Project Created → Add Project to Agent → Welcome Message         | Instant agent training for new initiatives |
-| **Research Assistant**     | Task Added → Add Project to Agent → Enable Queries               | Context-aware research support             |
-| **Customer Support**       | Project Completed → Add Project to Agent → Update Knowledge Base | Enhanced support with project insights     |
-| **Team Collaboration**     | Task Added → Add Project to Agent → Notify Team                  | Improved team coordination                 |
-| **Knowledge Management**   | Schedule → Add Project to Agent → Update Documentation           | Automated knowledge base maintenance       |
+| **New Project Onboarding** | Project Created → Add a project to an agent → Welcome Message         | The agent knows each new project at once   |
+| **Research Assistant**     | Task Added → Add a project to an agent → Enable Queries               | Research help with context                 |
+| **Customer Support**       | Project Completed → Add a project to an agent → Update Knowledge Base | Support replies that use project data      |
+| **Team Collaboration**     | Task Added → Add a project to an agent → Notify Team                  | The team gets the same information         |
+| **Knowledge Management**   | Schedule → Add a project to an agent → Update Documentation           | The knowledge base stays current           |
 
 #### Integration Examples
 
@@ -372,7 +372,7 @@ The Add Project to Agent Knowledge action automatically trains AI agents with pr
 
 ```
 Trigger: Project Created
-Action: Add Project to Agent Knowledge
+Action: Add a project to an agent
 Action: Send Channel Message (Agent trained on new project)
 Result: Agents immediately knowledgeable about new projects
 ```
@@ -381,8 +381,8 @@ Result: Agents immediately knowledgeable about new projects
 
 ```
 Trigger: Task Added (to the research project)
-Action: Add Project to Agent Knowledge
-Action: Ask Agent (Summarize new findings)
+Action: Add a project to an agent
+Action: Ask an agent (Summarize new findings)
 Action: Update Dashboard (With insights)
 Result: Real-time research insights and summaries
 ```
@@ -391,19 +391,19 @@ Result: Real-time research insights and summaries
 
 ```
 Trigger: Task Added (To launch project)
-Action: Add Project to Agent Knowledge
-Action: Ask Agent (Generate FAQ)
+Action: Add a project to an agent
+Action: Ask an agent (Generate FAQ)
 Action: Send Email (Team preparation)
 Result: Comprehensive launch support and documentation
 ```
 
 #### Best Practices
 
-* **Strategic Timing** - Add projects when they're most relevant to agent needs
-* **Content Filtering** - Add focused projects to avoid information overload
-* **Regular Updates** - Schedule periodic knowledge refreshes for evolving projects
-* **Agent Specialization** - Create dedicated agents for different project types
-* **Performance Monitoring** - Track agent response quality after knowledge updates
+* **Add projects at the right time** - Add a project when the agent needs it
+* **Add focused projects** - Too much data in one agent can make its replies less clear
+* **Refresh the knowledge** - Use a schedule to add a project again when it changes
+* **Use specialized agents** - Make one agent for each type of project
+* **Examine the replies** - Read the agent replies after you add new knowledge
 
 ***
 
@@ -411,40 +411,40 @@ Result: Comprehensive launch support and documentation
 
 | Action | Description | Parameters |
 | --- | --- | --- |
-| **Scrape Webpage** | Extract the contents of a web page. Example: Extract product info from competitor site | `url`, `errorBehavior` |
+| **Read a web page** | Gets the content of a web page. Example: Get product information from a public site | `url`, `errorBehavior` |
 
-### Scrape Webpage Automation Settings
+### Read a web page Automation Settings
 
 {% hint style="info" %}
-The Scrape Webpage action enables automated data extraction from websites. Perfect for competitor monitoring, market research, lead generation, and price tracking without manual data collection.
+The Read a web page action gets data from a website for you. You can use it for market research, lead lists, and price tracking. You do not copy the data by hand.
 {% endhint %}
 
-#### When to Use Scrape Webpage
+#### When to Use Read a web page
 
-**Perfect for:**
+**Use it to:**
 
-* **Competitor monitoring** - Track pricing, products, and promotions
-* **Market research** - Gather data from multiple sources automatically
-* **Lead generation** - Extract contact information from directories
-* **Price monitoring** - Track product prices across e-commerce sites
-* **Content aggregation** - Collect news, reviews, and industry updates
+* **Monitor other companies** - Track prices, products, and promotions
+* **Do market research** - Get data from many sources
+* **Find leads** - Get contact information from public directories
+* **Monitor prices** - Track product prices on store sites
+* **Collect content** - Collect news, reviews, and industry updates
 
-#### Scrape Webpage Parameters
+#### Read a web page Parameters
 
 | Parameter       | Description                         | Example                               |
 | --------------- | ----------------------------------- | ------------------------------------- |
-| **URL**            | Target webpage URL to scrape                          | `https://competitor.com/products` |
-| **Error Behavior** | What to do when the scrape fails: Continue or Fail    | `Fail` (default)                  |
+| **URL**            | The address of the web page                           | `https://competitor.com/products` |
+| **Error Behavior** | What the step does if it cannot read the page: Continue or Fail | `Fail` (default)        |
 
-#### Scrape Webpage Use Cases
+#### Read a web page Use Cases
 
-| Use Case                | Automation Flow                                                        | Business Impact                    |
+| Use Case                | Automation Flow                                                        | Result                             |
 | ----------------------- | ---------------------------------------------------------------------- | ---------------------------------- |
-| **Competitor Analysis** | Schedule → Scrape Webpage → Analyze with AI → Update Dashboard         | Real-time competitive intelligence |
-| **Price Monitoring**    | Schedule → Scrape Webpage → Compare Prices → Send Alerts               | Dynamic pricing optimization       |
-| **Lead Generation**     | Task Added → Scrape Webpage → Extract Contacts → Create Leads          | Automated prospect discovery       |
-| **Market Research**     | Schedule → Scrape Webpage → Aggregate Data → Generate Reports          | Comprehensive market insights      |
-| **Content Monitoring**  | Schedule → Scrape Webpage → Categorize Content → Update Knowledge Base | Current industry awareness         |
+| **Competitor Analysis** | Schedule → Read a web page → Analyze with AI → Update Dashboard         | Current data about the market      |
+| **Price Monitoring**    | Schedule → Read a web page → Compare Prices → Send Alerts               | Fast reaction to price changes     |
+| **Lead Generation**     | Task Added → Read a web page → Extract Contacts → Create Leads          | New leads without manual search    |
+| **Market Research**     | Schedule → Read a web page → Aggregate Data → Generate Reports          | Regular market reports             |
+| **Content Monitoring**  | Schedule → Read a web page → Categorize Content → Update Knowledge Base | Current industry news              |
 
 #### Integration Examples
 
@@ -452,8 +452,8 @@ The Scrape Webpage action enables automated data extraction from websites. Perfe
 
 ```
 Trigger: Schedule (Daily)
-Action: Scrape Webpage (Competitor Pricing Page)
-Action: Ask Agent With Structured Output (Extract and compare prices)
+Action: Read a web page (Competitor Pricing Page)
+Action: Ask an agent with structured output (Extract and compare prices)
 Action: Send Slack Alert (If Significant Changes)
 Result: Automated competitive pricing intelligence
 ```
@@ -462,8 +462,8 @@ Result: Automated competitive pricing intelligence
 
 ```
 Trigger: Task Added (Industry Research)
-Action: Scrape Webpage (Industry Directory)
-Action: Ask Agent With Structured Output (Extract company details)
+Action: Read a web page (Industry Directory)
+Action: Ask an agent with structured output (Extract company details)
 Action: Categorize with AI (Lead Qualification)
 Action: Create Tasks (Follow-up Actions)
 Result: Automated lead discovery and qualification
@@ -473,7 +473,7 @@ Result: Automated lead discovery and qualification
 
 ```
 Trigger: Schedule (Hourly)
-Action: Scrape Webpage (Industry News Sites)
+Action: Read a web page (Industry News Sites)
 Action: Categorize with AI (Document Classification)
 Action: Add to Knowledge Base
 Result: Current industry news awareness
@@ -481,7 +481,7 @@ Result: Current industry news awareness
 
 #### Output Data Structure
 
-**Scraped Content Format:**
+**Page Content Format:**
 
 ```json
 {
@@ -493,58 +493,58 @@ Result: Current industry news awareness
 
 #### Best Practices
 
-* **Respect robots.txt** and website terms of service
-* **Use appropriate delays** between requests to avoid overloading servers
-* **Monitor scraping success** rates in the **Runs** tab
-* **Cache results** appropriately to reduce unnecessary requests
-* **Implement error handling** for network issues and site changes
+* **Obey robots.txt** and the terms of service of each website
+* **Do not send too many requests** to one server in a short time
+* **Monitor the results** in the **Runs** tab
+* **Keep results that you need again** - Then you send fewer requests
+* **Plan for errors** - A site can be down or change its layout
 
 #### Legal and Ethical Considerations
 
-* **Terms of Service**: Review and comply with website terms
-* **Rate Limiting**: Avoid overwhelming target servers
-* **Data Usage**: Ensure compliance with data protection regulations
-* **Attribution**: Properly credit sources when using scraped content
-* **Fair Use**: Use scraped data responsibly and ethically
+* **Terms of Service**: Read the terms of each website and obey them
+* **Request Rate**: Do not send too many requests to a server
+* **Data Usage**: Obey the data protection laws that apply to you
+* **Attribution**: Name your sources when you use their content
+* **Fair Use**: Use the data in a responsible way
 
 | Action | Description | Parameters |
 | --- | --- | --- |
-| **Convert File to Text** | Convert a source file into text. Example: Convert PDF manual to searchable text | `fileUrl`, `fileType`, `extractImages` |
-| **Transcribe YouTube Video** | Turn a YouTube video into text. Example: Create transcript of training video | `youtubeUrl` |
-| **Turn a recording into a project** | Transcribes an audio recording into a new project. Example: Turn voice memo into project notes | `audioRecording`, `projectTitle` |
+| **Turn a file into text** | Changes a source file into text. Example: Change a PDF manual into text that you can search | `fileUrl`, `fileType`, `extractImages` |
+| **Transcribe a YouTube video** | Changes a YouTube video into text. Example: Make a transcript of a training video | `youtubeUrl` |
+| **Turn a recording into a project** | Writes an audio recording as text in a new project. Example: Turn a voice memo into project notes | `audioRecording`, `projectTitle` |
 
-### Transcribe YouTube Video Automation Settings
+### Transcribe a YouTube video Automation Settings
 
 {% hint style="info" %}
-The Transcribe YouTube Video action converts video audio into searchable, readable text using advanced AI transcription. Perfect for content indexing, accessibility, educational resources, and content repurposing.
+The Transcribe a YouTube video action changes the audio of a video into text that you can read and search. You can use the text for an index, for accessibility, for study material, or for new content.
 {% endhint %}
 
-#### When to Use Transcribe YouTube Video
+#### When to Use Transcribe a YouTube video
 
-**Perfect for:**
+**Use it to:**
 
-* **Content indexing** - Make video content searchable and referenceable
-* **Educational resources** - Create study guides and learning materials
-* **Content repurposing** - Transform video content into blogs, articles, and social posts
-* **Accessibility** - Provide text transcripts for hearing-impaired users
-* **Research and analysis** - Extract insights from video presentations
-* **Knowledge management** - Build searchable video content libraries
+* **Index content** - Make video content searchable
+* **Make study material** - Write study guides from a video
+* **Reuse content** - Change a video into a blog post, an article, or social posts
+* **Improve accessibility** - Give a text transcript to users who cannot hear the video
+* **Do research** - Get the main points of a video presentation
+* **Manage knowledge** - Make a library of video transcripts that you can search
 
-#### Transcribe YouTube Video Parameters
+#### Transcribe a YouTube video Parameters
 
 | Parameter                  | Description                               | Example                                       |
 | -------------------------- | ----------------------------------------- | --------------------------------------------- |
-| **YouTube URL**            | YouTube video URL to transcribe           | `https://www.youtube.com/watch?v=VIDEO_ID`    |
+| **YouTube URL**            | The address of the YouTube video          | `https://www.youtube.com/watch?v=VIDEO_ID`    |
 
-#### Transcribe YouTube Video Use Cases
+#### Transcribe a YouTube video Use Cases
 
-| Use Case                  | Automation Flow                                | Business Impact                         |
+| Use Case                  | Automation Flow                                | Result                                  |
 | ------------------------- | ---------------------------------------------- | --------------------------------------- |
 | **Content Indexing**      | Schedule → Transcribe → Index in Search        | Searchable transcripts of your videos   |
-| **Educational Resources** | Task Added → Transcribe → Generate Study Guide | Accelerated learning materials creation |
-| **Content Repurposing**   | Video Upload → Transcribe → Generate Blog Post | Multi-platform content distribution     |
-| **Accessibility**         | Video Published → Transcribe → Add Captions    | Improved content accessibility          |
-| **Research Analysis**     | Video Found → Transcribe → Extract Insights    | Faster research and analysis            |
+| **Educational Resources** | Task Added → Transcribe → Generate Study Guide | Faster study guides                     |
+| **Content Repurposing**   | Video Upload → Transcribe → Generate Blog Post | The same content on more channels       |
+| **Accessibility**         | Video Published → Transcribe → Add Captions    | Content that more people can use        |
+| **Research Analysis**     | Video Found → Transcribe → Extract Insights    | Faster research                         |
 
 #### Integration Examples
 
@@ -552,8 +552,8 @@ The Transcribe YouTube Video action converts video audio into searchable, readab
 
 ```
 Trigger: Video Added to Course
-Action: Transcribe YouTube Video
-Action: Generate Study Guide with AI
+Action: Transcribe a YouTube video
+Action: Write with AI (Study guide)
 Action: Create Quiz Questions
 Action: Add to Learning Management System
 Result: Automated course content creation
@@ -563,9 +563,9 @@ Result: Automated course content creation
 
 ```
 Trigger: YouTube Video Published
-Action: Transcribe YouTube Video
-Action: Ask Agent With Structured Output (Extract key points)
-Action: Generate Blog Post with AI
+Action: Transcribe a YouTube video
+Action: Ask an agent with structured output (Extract key points)
+Action: Write with AI (Blog post)
 Action: Publish to Website
 Result: Multi-platform content distribution
 ```
@@ -574,8 +574,8 @@ Result: Multi-platform content distribution
 
 ```
 Trigger: Weekly Schedule
-Action: Search Web (Industry videos)
-Action: Transcribe YouTube Video (Top results)
+Action: Search the web (Industry videos)
+Action: Transcribe a YouTube video (Top results)
 Action: Categorize with AI (Topics)
 Action: Generate Research Summary
 Action: Add to Knowledge Base
@@ -584,20 +584,20 @@ Result: Automated industry research
 
 #### Output Data Structure
 
-The action returns the video title, a metadata section, and a transcript section. Pass the transcript to an AI step to summarize it or pull out key points.
+The action returns the video title, a metadata section, and a transcript section. Give the transcript to an AI step to summarize it or to get the main points.
 
 #### Best Practices
 
-* **Video Quality Matters** - Clear audio produces better transcripts
-* **Privacy Considerations** - Review content before public sharing
-* **Cost Management** - Long videos may incur higher processing costs
-* **Quality Validation** - Review important transcripts for accuracy
-* **Integration Planning** - Consider downstream processing of transcript data
+* **Use videos with clear audio** - Clear audio gives better transcripts
+* **Protect privacy** - Read the content before you share it in public
+* **Control cost** - Long videos can cost more to process
+* **Examine the quality** - Read important transcripts for errors
+* **Plan the next steps** - Decide how later steps use the transcript
 
-#### Rate Limiting & Performance
+#### Processing Time
 
-* **Processing Time** - Longer videos take more time to process
-* **Caching** - Store transcripts to avoid re-processing
+* **Processing Time** - A longer video takes more time to process
+* **Saved Transcripts** - Save transcripts, so you do not process the same video again
 
 #### Content Repurposing Workflows
 
@@ -623,106 +623,106 @@ YouTube Video → Transcribe → Generate Quiz → Create Study Guide → Add to
 
 | Action | Description | Parameters |
 | --- | --- | --- |
-| **OpenAI Generate Image** | Create images from text prompts with your own OpenAI key. Example: Generate illustrations and visual content | `prompt`, `model`, `size` |
+| **OpenAI Generate Image** | Makes images from text prompts with your own OpenAI key. Example: Make illustrations for your content | `prompt`, `model`, `size` |
 
 ### HTTP Request Automation Settings
 
 {% hint style="info" %}
-HTTP (HyperText Transfer Protocol) is the foundation of web communication. The HTTP Request action allows you to connect Taskade with any web service or API, enabling seamless data exchange and integration.
+With the HTTP Request action, Taskade can send data to almost any web service or API, and get data back. HTTP (HyperText Transfer Protocol) is the protocol that the web uses.
 {% endhint %}
 
 #### HTTP Request Parameters
 
 | Parameter              | Description                                      | Example                                         |
 | ---------------------- | ------------------------------------------------ | ----------------------------------------------- |
-| **Method**             | HTTP method (GET, POST, PUT, DELETE, etc.)       | `POST`                                          |
-| **URL**                | The endpoint URL to send the request to          | `https://api.example.com/v1/users`              |
-| **Headers**            | HTTP headers (Authorization, Content-Type, etc.) | `Authorization: Bearer token123`                |
-| **Query Params**       | URL query parameters                             | `?limit=10&sort=date`                           |
-| **Body Type**          | Request body format (JSON, Form Data, Raw, XML)  | `JSON`                                          |
-| **Body Content**       | The actual data to send                          | `{"name": "John", "email": "john@example.com"}` |
-| **Response Body Type** | How to process the response (JSON or None)       | `JSON`                                          |
+| **Method**             | The HTTP method: GET, POST, PUT, DELETE, and more | `POST`                                         |
+| **URL**                | The endpoint address for the request             | `https://api.example.com/v1/users`              |
+| **Headers**            | HTTP headers, for example Authorization and Content-Type | `Authorization: Bearer token123`        |
+| **Query Params**       | The query parameters in the URL                  | `?limit=10&sort=date`                           |
+| **Body Type**          | The format of the request body: JSON, Form Data, Raw, or XML | `JSON`                              |
+| **Body Content**       | The data to send                                 | `{"name": "John", "email": "john@example.com"}` |
+| **Response Body Type** | How the step reads the response: JSON or None    | `JSON`                                          |
 
 #### HTTP Request Use Cases
 
 | Use Case                | Automation Flow                               | Example                                   |
 | ----------------------- | --------------------------------------------- | ----------------------------------------- |
-| **Weather Data**        | Schedule → HTTP Request → Add Task            | Get daily weather for project planning    |
-| **Email Validation**    | Task Added → HTTP Request → Update Fields     | Validate contact emails automatically     |
-| **Content Translation** | Task Added → HTTP Request → Append Text       | Translate content for international teams |
-| **Stock Prices**        | Schedule → HTTP Request → Insert Row          | Track investment portfolio data           |
+| **Weather Data**        | Schedule → HTTP Request → Add Task            | Get the daily weather for project plans   |
+| **Email Validation**    | Task Added → HTTP Request → Update Fields     | Validate contact emails                   |
+| **Content Translation** | Task Added → HTTP Request → Append Text       | Translate content for teams in other countries |
+| **Stock Prices**        | Schedule → HTTP Request → Insert Row          | Track the data of your investments        |
 | **Public Holidays**     | Project Created → HTTP Request → Create Event | Add holidays to project calendars         |
-| **Business Lookup**     | Form Submitted → HTTP Request → Update Fields | Enrich contact data with company info     |
+| **Business Lookup**     | Form Submitted → HTTP Request → Update Fields | Add company data to a contact             |
 
 ### OpenAI Generate Image Settings
 
 {% hint style="info" %}
-The OpenAI **Generate Image** step creates an image from a text prompt with your own OpenAI API key. OpenAI bills your account for the image, and the step uses a fixed step fee in Taskade credits. The step needs Pro and up. OpenAI retired its older DALL·E image models.
+The OpenAI **Generate Image** step makes an image from a text prompt with your own OpenAI API key. OpenAI bills your account for the image, and the step uses a fixed step fee in Taskade credits. The step needs Pro and up. OpenAI retired its older DALL·E image models.
 {% endhint %}
 
 #### Setup Requirements
 
 **OpenAI API Key Required:**
 
-1. Visit [OpenAI Platform](https://platform.openai.com/api-keys) and create an API key
-2. In the automation, add a step and pick **OpenAI** → **Generate Image**
-3. Click **Connect** and paste the key. Taskade checks the key before it stores it
+1. Go to [OpenAI Platform](https://platform.openai.com/api-keys) and create an API key.
+2. In the automation, add a step and select **OpenAI** → **Generate Image**.
+3. Click **Connect** and paste the key. Taskade examines the key before it saves it.
 
 #### Generate Image Parameters
 
 | Parameter  | Description                               | Options                                  | Default         |
 | ---------- | ----------------------------------------- | ---------------------------------------- | --------------- |
-| **Prompt** | Text description of the image to generate | Any descriptive text                     | Required        |
-| **Model**  | Image model to use                        | Leave empty for the current default      | Current default |
-| **Size**   | Image dimensions                          | `1024x1024`, `1536x1024`, `1024x1536`    | Optional        |
+| **Prompt** | A text description of the image           | Any descriptive text                     | Required        |
+| **Model**  | The image model                           | Leave empty for the current default      | Current default |
+| **Size**   | The size of the image in pixels           | `1024x1024`, `1536x1024`, `1024x1536`    | Optional        |
 
-The step returns a hosted `url` for the image, plus `revisedPrompt` when the model returns one.
+The step returns a hosted `url` for the image. It also returns `revisedPrompt` when the model gives one.
 
 #### Generate Image Use Cases
 
 | Use Case                      | Automation Flow                                  | Example                             |
 | ----------------------------- | ------------------------------------------------ | ----------------------------------- |
-| **Visual Content Generation** | Task Added → Generate Image → Add to Project     | Create illustrations for blog posts |
-| **Creative Project Support**  | Task Added → Generate Image → Attach to Task     | Add moodboards and concept images   |
-| **Social Media Visuals**      | Schedule → Generate Image → Post to Social       | Create dynamic social media content |
-| **Learning Materials**        | Task Added → Generate Image → Embed in Content   | Make educational materials engaging |
-| **Product Prototyping**       | Task Added → Generate Image → Review & Iterate   | Produce concept images for products |
+| **Visual Content Generation** | Task Added → Generate Image → Add to Project     | Make illustrations for blog posts   |
+| **Creative Project Support**  | Task Added → Generate Image → Attach to Task     | Add mood boards and concept images  |
+| **Social Media Visuals**      | Schedule → Generate Image → Post to Social       | Make images for social media        |
+| **Learning Materials**        | Task Added → Generate Image → Embed in Content   | Add images to study materials       |
+| **Product Prototyping**       | Task Added → Generate Image → Review & Iterate   | Make concept images for products    |
 
-**Prompt Engineering Tips:**
+**Tips for prompts:**
 
-* Be specific about style, lighting, and composition
-* Specify image format and intended use
-* Use descriptive adjectives for better results
+* Describe the style, the light, and the composition
+* Say the image format and how you will use the image
+* Use clear adjectives
 
-For images without an API key, ask Taskade EVE or an agent to generate them. That path uses Taskade AI credits and saves the file to Media.
+To make images without an API key, ask Taskade EVE or an agent. That path uses Taskade AI credits and saves the file to Media.
 
 ### Taskade Genesis — Image Format Conversion
 
 {% hint style="info" %}
-The **Convert an image** action converts an image from one format to another entirely within Taskade — no external service required. Useful for normalizing images before uploading them to downstream steps.
+The **Convert an image** action changes an image from one format to another in Taskade. It needs no outside service. Use it to give all images the same format before later steps use them.
 {% endhint %}
 
 | Action | Description | Parameters |
 | --- | --- | --- |
-| **Convert an image** | Saves a copy of an image in another format: JPEG, PNG, WebP, or AVIF. Example: Convert an uploaded PNG to WebP before storing | `imageUrl`, `targetFormat` |
+| **Convert an image** | Saves a copy of an image in another format: JPEG, PNG, WebP, or AVIF. Example: Convert an uploaded PNG to WebP before you save it | `imageUrl`, `targetFormat` |
 
-The action strips EXIF metadata (GPS, camera info) by default. Output is returned as a file reference that can be passed to subsequent actions such as **Upload File to Media**.
+By default, the action removes EXIF metadata, for example the GPS location and the camera data. The output is a file reference. Later actions, such as **Save a file to Media**, can use it.
 
 ### Categorize with AI Automation Settings
 
 {% hint style="info" %}
-The Categorize with AI action automatically analyzes, classifies, and organizes information using AI. Choose a preset or define a custom output schema for your specific needs.
+The Categorize with AI action uses AI to analyze, classify, and sort information. Select a preset, or make your own output schema.
 {% endhint %}
 
 #### When to Use Categorize with AI
 
-**Perfect for:**
+**Use it to:**
 
-* **Sentiment analysis** - Determine positive, neutral, or negative sentiment in feedback
-* **Lead qualification** - Score and prioritize potential customers
-* **Content moderation** - Filter inappropriate or sensitive content
-* **Support prioritization** - Route tickets based on urgency and type
-* **Data organization** - Automatically tag and sort incoming information
+* **Analyze sentiment** - Find out if feedback is positive, neutral, or negative
+* **Qualify leads** - Score and sort possible customers
+* **Moderate content** - Find content that is not correct for your community
+* **Prioritize support** - Send tickets to a path by urgency and type
+* **Organize data** - Tag and sort new information
 
 #### Preset Categories Available
 
@@ -730,15 +730,26 @@ The Categorize with AI action automatically analyzes, classifies, and organizes 
 | --------------------------------- | ---------------------------------------- | ----------------------------------------------------------------- |
 | **Sentiment Analysis**            | Customer feedback, reviews, social media | Sentiment (Positive/Neutral/Negative), intensity, confidence, key phrases |
 | **Lead Qualification**            | Sales inquiries, prospect data           | Qualification (Hot Lead/Warm Lead/Cold Lead), fit score, budget match |
-| **Content Moderation**            | User-generated content, comments         | Status (Approved/Flagged/Rejected), reason, risk level, action    |
+| **Content Moderation**            | User content, comments                   | Status (Approved/Flagged/Rejected), reason, risk level, action    |
 | **Support Ticket Prioritization** | Help tickets, customer issues            | Priority (High/Medium/Low), category, response time, escalation level |
 | **Document Classification**       | Articles, documents                      | Type, quarter, year, relevance (Low/Medium/High)                 |
 
-More presets cover recruitment candidate scoring, customer feedback analysis, churn risk prediction, meeting agendas, marketing campaigns, project status, competitor analysis, expense categorization, email response prioritization, and social media engagement.
+More presets are available for these jobs:
+
+* Recruitment candidate scoring
+* Customer feedback analysis
+* Churn risk prediction
+* Meeting agendas
+* Marketing campaigns
+* Project status
+* Competitor analysis
+* Expense categorization
+* Email response prioritization
+* Social media engagement
 
 #### Custom Category Configuration
 
-If no preset fits, define a custom output schema. Each field you add becomes a variable for later steps.
+If no preset is correct for your job, make a custom output schema. Each field that you add becomes a variable for later steps.
 
 **Example: Customer Support Ticket Classification**
 
@@ -759,13 +770,13 @@ If no preset fits, define a custom output schema. Each field you add becomes a v
 
 #### Categorize with AI Use Cases
 
-| Use Case               | Automation Flow                                 | Business Impact                         |
+| Use Case               | Automation Flow                                 | Result                                  |
 | ---------------------- | ----------------------------------------------- | --------------------------------------- |
-| **Sentiment Analysis** | Form Submission → Categorize → Route Response   | Faster, routed customer responses       |
-| **Lead Qualification** | New Contact → Categorize → Assign Sales Rep     | Leads routed to the right rep           |
-| **Support Routing**    | Ticket Created → Categorize → Assign Agent      | Tickets categorized and assigned        |
-| **Content Moderation** | User Post → Categorize → Approve/Reject         | Maintains community standards           |
-| **Feedback Analysis**  | Survey Response → Categorize → Update Dashboard | Data-driven product improvements        |
+| **Sentiment Analysis** | Form Submission → Categorize → Route Response   | Faster replies to customers             |
+| **Lead Qualification** | New Contact → Categorize → Assign Sales Rep     | Each lead goes to the correct rep       |
+| **Support Routing**    | Ticket Created → Categorize → Assign Agent      | Each ticket gets a category and an owner |
+| **Content Moderation** | User Post → Categorize → Approve/Reject         | Your community rules stay in force      |
+| **Feedback Analysis**  | Survey Response → Categorize → Update Dashboard | Product decisions based on data         |
 
 #### Integration Examples
 
@@ -802,11 +813,11 @@ Branch: If "Approved" → Publish Immediately
 
 #### Configuration Best Practices
 
-* **Start with presets** before creating custom categories
-* **Branch on the confidence field** where a preset returns one, to balance accuracy vs. coverage
-* **Test with sample data** to validate categorization accuracy
-* **Monitor and refine** categories based on real-world performance
-* **Combine with human review** for critical decisions
+* **Try the presets first** - Make custom categories only if no preset is correct
+* **Branch on the confidence field** - Some presets return a confidence value. Use it to decide which results need a person
+* **Test with sample data** - Make sure that the categories are correct
+* **Improve the categories** - Change them when real results show a problem
+* **Let a person decide important cases** - Add a review step for critical decisions
 
 #### Output Data Structure
 
@@ -823,37 +834,37 @@ Branch: If "Approved" → Publish Immediately
 
 ***
 
-### Search Web Automation Settings
+### Search the web Automation Settings
 
 {% hint style="info" %}
-The Search Web action enables automations to gather real-time information from the internet. Perfect for research, content creation, market analysis, and keeping your workflows updated with the latest information.
+With the Search the web action, an automation gets current information from the internet. You can use it for research, content, and market analysis. Your workflows then use the newest information.
 {% endhint %}
 
-#### When to Use Search Web
+#### When to Use Search the web
 
-**Perfect for:**
+**Use it to:**
 
-* **Research automation** - Gather up-to-date information for reports and presentations
-* **Content creation** - Find relevant data and trends for blog posts and articles
-* **Market analysis** - Monitor competitor activity and industry trends
-* **Background checking** - Verify information and gather additional context
-* **Data enrichment** - Enhance existing data with web-sourced information
+* **Do research** - Get current information for reports and presentations
+* **Write content** - Find data and trends for blog posts and articles
+* **Analyze the market** - Monitor other companies and industry trends
+* **Examine information** - Make sure that information is correct, and get more context
+* **Add to your data** - Add information from the web to the data that you have
 
-#### Search Web Use Cases
+#### Search the web Use Cases
 
-| Use Case                  | Automation Flow                           | Business Impact            |
+| Use Case                  | Automation Flow                           | Result                     |
 | ------------------------- | ----------------------------------------- | -------------------------- |
-| **Resume Verification**   | Task Added → Search Web → Compare Results | Improved hiring quality    |
-| **Content Research**      | Schedule → Search Web → Generate Article  | Faster content creation    |
-| **Market Intelligence**   | Schedule → Search Web → Update Dashboard  | Better strategic decisions |
-| **Competitor Analysis**   | Task Added → Search Web → Analyze Trends  | Competitive advantage      |
-| **Automated Newsletters** | Schedule → Search Web → Curate Content    | Engaging communications    |
+| **Resume Verification**   | Task Added → Search the web → Compare Results | Better hiring decisions    |
+| **Content Research**      | Schedule → Search the web → Generate Article  | Faster content             |
+| **Market Intelligence**   | Schedule → Search the web → Update Dashboard  | Better plans               |
+| **Competitor Analysis**   | Task Added → Search the web → Analyze Trends  | Current market knowledge   |
+| **Automated Newsletters** | Schedule → Search the web → Curate Content    | Regular newsletters        |
 
 #### Configuration Options
 
 | Setting   | Description                        | Example                 |
 | --------- | ---------------------------------- | ----------------------- |
-| **Query** | Search terms to use for web search | "latest AI trends 2026" |
+| **Query** | The words to search for            | "latest AI trends 2026" |
 
 #### Integration Examples
 
@@ -861,8 +872,8 @@ The Search Web action enables automations to gather real-time information from t
 
 ```
 Trigger: Task Added (Research Topic)
-Action: Search Web (Query from task name)
-Action: Ask Agent With Structured Output (Summarize findings)
+Action: Search the web (Query from task name)
+Action: Ask an agent with structured output (Summarize findings)
 Action: Create Project (Research Report)
 Result: Automated research compilation
 ```
@@ -871,9 +882,9 @@ Result: Automated research compilation
 
 ```
 Trigger: Schedule (Daily)
-Action: Search Web (Industry news)
+Action: Search the web (Industry news)
 Action: Categorize with AI (Topic classification)
-Action: Generate with AI (News summary)
+Action: Write with AI (News summary)
 Action: Publish to Blog
 Result: Automated content publishing
 ```
@@ -882,7 +893,7 @@ Result: Automated content publishing
 
 ```
 Trigger: Schedule (Weekly)
-Action: Search Web (Competitor name + news)
+Action: Search the web (Competitor name + news)
 Action: Analyze with AI (Impact assessment)
 Action: Update Custom Fields (Competitor activity)
 Action: Send Slack Alert (If significant changes)
@@ -891,7 +902,7 @@ Result: Proactive competitive intelligence
 
 #### Output Data Structure
 
-The action returns an AI-generated summary of the top results:
+The action returns an AI summary of the top results:
 
 ```json
 {
@@ -901,18 +912,16 @@ The action returns an AI-generated summary of the top results:
 
 #### Best Practices
 
-* **Craft specific queries** for better, more relevant results
-* **Name the time frame in the query** to focus on recent information
-* **Combine with AI analysis** to process and summarize findings
-* **Set reasonable limits** to avoid overwhelming downstream actions
-* **Monitor search costs** for high-volume automations
+* **Write specific queries** - Specific words give better results
+* **Name the time frame in the query** - Then you get recent information
+* **Add an AI step** - Use AI to process and summarize the results
+* **Keep the results small** - Too much data can slow later steps
+* **Monitor the cost** - Examine the cost of automations that search many times
 
-#### Rate Limiting & Performance
+#### Performance
 
-* **API quotas** may apply depending on search provider
-* **Response times** vary based on query complexity
-* **Caching** can be implemented for repeated searches
-* **Error handling** important for network-dependent actions
+* **Response times** - A complex query can take more time
+* **Error handling** - The action needs the network. Plan for a failed search
 
 ***
 
@@ -926,52 +935,52 @@ Most third-party connectors below are premium integrations, so they need a paid 
 
 | Action                       | Description                                                        | Example                         |
 | ---------------------------- | ------------------------------------------------------------------ | ------------------------------- |
-| **Send Channel Message**     | Posts a message to a selected channel                              | Notify team of new ticket       |
-| **Send Direct Message**      | Sends a personal message to a user                                 | Alert assignee of urgent task   |
-| **Create Channel**           | Creates a new Slack channel                                        | Create project-specific channel |
-| **Add User to Channel**      | Adds a user to a channel                                           | Add stakeholder to discussion   |
-| **Set User's Current Slack Status** | Sets status text and emoji                                  | Set "In meeting" status         |
-| **Schedule Channel Message** | Schedules a message to post to a channel later, up to 120 days ahead | Send reminder tomorrow        |
+| **Send Channel Message**     | Sends a message to a channel                                       | Tell the team about a new ticket |
+| **Send Direct Message**      | Sends a personal message to a user                                 | Tell the assignee about an urgent task |
+| **Create Channel**           | Creates a new Slack channel                                        | Create a channel for a project  |
+| **Add User to Channel**      | Adds a user to a channel                                           | Add a stakeholder to a discussion |
+| **Set User's Current Slack Status** | Sets the status text and emoji                              | Set the "In meeting" status     |
+| **Schedule Channel Message** | Sends a message to a channel later, up to 120 days ahead           | Send a reminder tomorrow        |
 | **Find User by Handle** / **Find User by Email** | Finds a user by Slack handle or email address  | Match a form email to a user    |
-| **List Thread Replies**      | Reads the parent message of a thread and its replies               | Summarize a thread with AI      |
-| **Fetch Channel Messages**   | Reads recent messages from a channel                               | Build a daily digest            |
-| **Add Reaction to Message** / **Pin Message to Channel** | Reacts to or pins a message            | Pin the release note            |
-| **Request Approval in a Channel** | Posts an approval request and waits for a reply              | Approve a post before it goes out |
+| **List Thread Replies**      | Reads the first message of a thread and its replies                | Summarize a thread with AI      |
+| **Fetch Channel Messages**   | Reads the recent messages of a channel                             | Make a daily digest             |
+| **Add Reaction to Message** / **Pin Message to Channel** | Adds a reaction to a message, or pins it | Pin the release note          |
+| **Request Approval in a Channel** | Sends an approval request and waits for a reply               | Approve a post before it goes out |
 
 ### Email
 
 | Action                              | Description                                         | Example                           |
 | ----------------------------------- | --------------------------------------------------- | --------------------------------- |
-| **Gmail: Send Email**               | Sends an email through Gmail to a recipient         | Send confirmation to customer     |
-| **Gmail: Reply to Email** / **Forward Email** | Replies to or forwards an email           | Reply to a support request        |
+| **Gmail: Send Email**               | Sends an email through Gmail                        | Send a confirmation to a customer |
+| **Gmail: Reply to Email** / **Forward Email** | Replies to an email, or forwards it       | Reply to a support request        |
 | **Gmail: Find Email(s)**            | Finds emails in your Gmail account                  | Find the last order email         |
-| **Gmail: Create Draft Email**       | Creates a new draft email message                   | Draft a reply for review          |
-| **Gmail: Get Thread**               | Gets every message of an email thread, oldest first | Summarize a thread                |
-| **Gmail: Create Draft Reply**       | Saves a reply in an existing thread as a draft      | Let a person review an AI reply   |
+| **Gmail: Create Draft Email**       | Creates a new draft email                           | Write a draft reply for review    |
+| **Gmail: Get Thread**               | Gets all messages of an email thread, oldest first  | Summarize a thread                |
+| **Gmail: Create Draft Reply**       | Saves a reply in a thread as a draft                | Let a person examine an AI reply  |
 | **Gmail: Request Approval by Email** | Sends an approval request by email                 | Approve a refund                  |
-| **Mailchimp: Add Contact**          | Adds a contact to a Mailchimp audience              | Subscribe to newsletter           |
-| **Mailchimp: Update Contact Status** | Changes the subscription status of a contact       | Unsubscribe user                  |
+| **Mailchimp: Add Contact**          | Adds a contact to a Mailchimp audience              | Add a subscriber to a newsletter  |
+| **Mailchimp: Update Contact Status** | Changes the subscription status of a contact       | Unsubscribe a user                |
 
 ### Discord
 
 | Action                     | Description                           | Example                         |
 | -------------------------- | ------------------------------------- | ------------------------------- |
-| **Send Message**           | Sends a message to a Discord channel  | Post update to community        |
-| **Create Guild Role**      | Creates a new role                    | Create "Beta Tester" role       |
-| **Add Guild Member Role**  | Assigns a role to a member            | Grant access to private channel |
+| **Send Message**           | Sends a message to a Discord channel  | Send an update to the community |
+| **Create Guild Role**      | Creates a new role                    | Create a "Beta Tester" role     |
+| **Add Guild Member Role**  | Gives a role to a member              | Give access to a private channel |
 | **Create Channel** / **Rename Channel** / **Delete Channel** | Manages channels | Create a channel for each event |
 
 ### Notify by Email (Native)
 
 {% hint style="success" %}
-Taskade includes a built-in **Send an email** action that sends notifications through Taskade's own mail infrastructure. No OAuth connection or third-party email provider is required.
+Taskade has a built-in **Send an email** action. It sends notifications through the Taskade mail service. You do not need an OAuth connection or another email provider.
 {% endhint %}
 
 | Action | Description | Parameters |
 | --- | --- | --- |
-| **Send an email** | Sends an email from Taskade's verified address to you or a verified member of this workspace. Example: Alert a teammate when a task is created | `to`, `subject`, `message` |
+| **Send an email** | Sends an email from the verified Taskade address to you or a verified member of this workspace. Example: Tell a teammate about a new task | `to`, `subject`, `message` |
 
-To email anyone else, use the Gmail or Outlook send email action. If the step does not send to a recipient, the run history shows the step as **Skipped** with the reason, and the automation keeps running.
+To email another person, use the Gmail or Outlook send email action. If the step does not send to a recipient, the run history shows the step as **Skipped** with the reason. The automation continues.
 
 ## Data & CRM Actions
 
@@ -979,41 +988,41 @@ To email anyone else, use the Gmail or Outlook send email action. If the step do
 
 | Action                        | Description                          | Example                  |
 | ----------------------------- | ------------------------------------ | ------------------------ |
-| **Create New Contact**        | Creates a new contact in HubSpot CRM | Add lead from form       |
-| **Create or Update Contact**  | Creates a contact, or updates it if it exists | Upsert a lead   |
-| **Update Contact**            | Updates contact properties           | Update lead score        |
-| **Create New Deal**           | Creates a new deal in HubSpot CRM    | Create sales opportunity |
-| **Update Deal**               | Updates deal properties              | Move to next stage       |
-| **Find Contact** / **Find Deal** / **Search Contacts** / **Search Deals** | Looks up records | Check for an existing lead |
+| **Create New Contact**        | Creates a new contact in HubSpot CRM | Add a lead from a form   |
+| **Create or Update Contact**  | Creates a contact, or updates it if it exists | Add or update a lead |
+| **Update Contact**            | Changes the properties of a contact  | Update a lead score      |
+| **Create New Deal**           | Creates a new deal in HubSpot CRM    | Create a sales opportunity |
+| **Update Deal**               | Changes the properties of a deal     | Move a deal to the next stage |
+| **Find Contact** / **Find Deal** / **Search Contacts** / **Search Deals** | Finds records | Find an existing lead |
 
 ### Salesforce
 
 | Action                    | Description                                                     | Example                 |
 | ------------------------- | --------------------------------------------------------------- | ----------------------- |
-| **Create Record**         | Creates a new record (Lead, Contact, Account, and more)         | Add qualified lead      |
-| **Update Record**         | Updates an existing Salesforce record                           | Update lead status      |
-| **Find Records by Query** | Searches for Salesforce records with a SOQL query               | Find a customer record  |
+| **Create Record**         | Creates a new record (Lead, Contact, Account, and more)         | Add a qualified lead    |
+| **Update Record**         | Changes a Salesforce record                                     | Update a lead status    |
+| **Find Records by Query** | Finds Salesforce records with a SOQL query                      | Find a customer record  |
 
 ### Google Sheets
 
 | Action          | Description                                                      | Example                  |
 | --------------- | ---------------------------------------------------------------- | ------------------------ |
-| **Insert Row**  | Adds a new row to a sheet                                        | Log form submission      |
-| **Add or Update Multiple Rows** | Writes several rows in one step                  | Sync a list of orders    |
-| **Update Row**  | Updates a row in a sheet                                         | Update status column     |
-| **Find Row(s)** | Retrieves rows that match defined criteria (works with loops)    | Find customer record     |
+| **Insert Row**  | Adds a new row to a sheet                                        | Save a form submission   |
+| **Add or Update Multiple Rows** | Writes many rows in one step                     | Sync a list of orders    |
+| **Update Row**  | Changes a row in a sheet                                         | Update a status column   |
+| **Find Row(s)** | Gets the rows that match your criteria. It works with loops      | Find a customer record   |
 | **Get Rows** / **Get Row by Row Number** | Reads rows from a sheet                 | Load a price list        |
 | **Read Range** / **Clear Range** | Reads or clears the cells of a range in A1 notation | Read `A1:D20`    |
-| **Delete Row**  | Deletes a row in a sheet                                         | Remove processed entry   |
+| **Delete Row**  | Deletes a row in a sheet                                         | Remove a processed entry |
 | **Create Spreadsheet** / **Create Worksheet** | Creates a new spreadsheet or tab   | Start a monthly report   |
 
 ### Airtable
 
 | Action            | Description                                     | Example               |
 | ----------------- | ----------------------------------------------- | --------------------- |
-| **Create Record** | Creates a new record in an Airtable base        | Add customer to CRM   |
-| **List Records**  | Lists records from a base with optional filters | Find open orders      |
-| **Update Record** | Updates an existing Airtable record             | Update project status |
+| **Create Record** | Creates a new record in an Airtable base        | Add a customer to a CRM |
+| **List Records**  | Lists the records of a base, with optional filters | Find open orders   |
+| **Update Record** | Changes an Airtable record                      | Update a project status |
 
 ## Development Actions
 
@@ -1021,21 +1030,21 @@ To email anyone else, use the Gmail or Outlook send email action. If the step do
 
 | Action                    | Description                         | Example                  |
 | ------------------------- | ----------------------------------- | ------------------------ |
-| **Create Issue**          | Opens a new issue in a repository   | Report bug from feedback |
-| **Update Issue**          | Updates an issue                    | Close resolved issue     |
+| **Create Issue**          | Opens a new issue in a repository   | Report a bug from feedback |
+| **Update Issue**          | Changes an issue                    | Close a resolved issue   |
 | **Create Comment**        | Adds a comment to an issue or pull request | Add investigation notes |
-| **Get Issue Information** | Retrieves details about an issue    | Read issue status        |
-| **Lock Issue** / **Unlock Issue** | Locks or unlocks comments on an issue | Lock a resolved thread |
+| **Get Issue Information** | Gets the details of an issue        | Read the issue status    |
+| **Lock Issue** / **Unlock Issue** | Locks or unlocks the comments of an issue | Lock a resolved thread |
 
 ### Jira
 
 | Action                  | Description                           | Example                     |
 | ----------------------- | ------------------------------------- | --------------------------- |
-| **Create Issue**        | Creates a new Jira issue              | Create bug ticket           |
-| **Update Issue**        | Updates issue fields                  | Update priority or assignee |
+| **Create Issue**        | Creates a new Jira issue              | Create a bug ticket         |
+| **Update Issue**        | Changes the fields of an issue        | Update the priority or assignee |
 | **Move Issue to Status** | Changes the issue status             | Move to "In Progress"       |
 | **Add Comment**         | Adds a comment                        | Add troubleshooting notes   |
-| **Get Issue** / **Search Issues** | Reads an issue or searches with JQL | Find open bugs     |
+| **Get Issue** / **Search Issues** | Reads an issue, or searches with JQL | Find open bugs   |
 
 ## Web & Content Actions
 
@@ -1043,18 +1052,18 @@ To email anyone else, use the Gmail or Outlook send email action. If the step do
 
 | Action          | Description                                                                 | Example              |
 | --------------- | --------------------------------------------------------------------------- | -------------------- |
-| **Create Post** | Publishes a new post, or saves it as a draft. Add a Featured Image URL to set the featured image | Publish blog article |
+| **Create Post** | Publishes a new post, or saves it as a draft. Add a Featured Image URL to set the featured image | Publish a blog article |
 
 ### Webflow
 
 | Action               | Description                                  | Example              |
 | -------------------- | -------------------------------------------- | -------------------- |
-| **List Sites**       | Lists the Webflow sites available to the connection | Pick a site     |
-| **List Collections** | Lists CMS collections for a selected site    | Pick a collection    |
-| **Create CMS Item**  | Creates a staged collection item             | Add new blog post    |
-| **Get CMS Item**     | Retrieves an item and its fields             | Read product details |
-| **Update CMS Item**  | Changes fields on an existing item           | Edit product details |
-| **Publish CMS Item** | Publishes a staged item to the live site     | Deploy updates live  |
+| **List Sites**       | Lists the Webflow sites of the connection    | Select a site        |
+| **List Collections** | Lists the CMS collections of a site          | Select a collection  |
+| **Create CMS Item**  | Creates a staged collection item             | Add a new blog post  |
+| **Get CMS Item**     | Gets an item and its fields                  | Read product details |
+| **Update CMS Item**  | Changes the fields of an item                | Edit product details |
+| **Publish CMS Item** | Publishes a staged item to the live site     | Make updates live    |
 
 ## Utility Actions
 
@@ -1062,51 +1071,51 @@ To email anyone else, use the Gmail or Outlook send email action. If the step do
 
 | Action | Description | Parameters |
 | --- | --- | --- |
-| **Send HTTP Request** | Calls a web service with GET, POST, PUT, PATCH, DELETE, or HEAD. Example: Call external API | `method`, `url`, `headers`, `queryParams`, `body` |
-| **Webhook** (trigger) | Starts the automation when an outside service posts to its private address. Needs Pro and up. Example: Receive a payment event | — |
+| **Send HTTP Request** | Calls a web service with GET, POST, PUT, PATCH, DELETE, or HEAD. Example: Call an outside API | `method`, `url`, `headers`, `queryParams`, `body` |
+| **Webhook** (trigger) | Starts the automation when an outside service sends data to its private address. Needs Pro and up. Example: Receive a payment event | — |
 
 ### Data Processing
 
-These actions work on text and lists without an AI call.
+These actions change text and lists without AI.
 
 | Action                          | Description                                                  | Example                              |
 | ------------------------------- | ------------------------------------------------------------ | ------------------------------------ |
-| **Split Text into a List**      | Splits a text string into a list on a delimiter              | Split CSV line into fields           |
-| **Trim Extra Spaces**           | Removes leading and trailing whitespace from a text string   | Clean user-submitted input           |
-| **Change Capitalization**       | Converts text case                                           | Normalize status labels to lowercase |
-| **Merge Two Sets of Data**      | Combines two sets of data and picks which one wins on a shared field | Combine multiple sources     |
-| **Get Multiple Values (JSONPath)** | Pulls values out of the data an earlier step returned     | Read a nested field                  |
+| **Split Text into a List**      | Divides text into a list at a delimiter                      | Divide a CSV line into fields        |
+| **Trim Extra Spaces**           | Removes the spaces at the start and at the end of text       | Clean user input                     |
+| **Change Capitalization**       | Changes the case of text                                     | Make status labels lowercase         |
+| **Merge Two Sets of Data**      | Combines two sets of data. You select which set wins on a shared field | Combine two sources        |
+| **Get Multiple Values (JSONPath)** | Gets values from the data that an earlier step returned   | Read a nested field                  |
 
 ### Utilities
 
-Pure, no-credit transform actions for reshaping data inline in a flow — no AI call required.
+These actions change data in the flow. They do not call AI and use no credits.
 
 | Action | Description | Parameters |
 | --- | --- | --- |
-| **Generate QR Code** | Renders text or a URL into a QR image saved to your workspace Media library. Example: Encode a check-in URL as a QR code | `text` (required), `size` (150/300/600 px), `errorCorrection` (L/M/Q/H) |
-| **Convert CSV to JSON** | Parses a CSV string into structured rows. Example: Turn an upload into JSON rows | `csv` (required), `hasHeader` (header/noHeader), `delimiter` (optional, auto-detect) |
-| **Convert JSON to CSV** | Serializes a JSON array into CSV. Example: Export records to a spreadsheet | `json` (required), `includeHeader` (yes/no), `delimiter` (optional, default `,`) |
-| **Average** | Mean of a list of numbers. Example: Average response time | `values` (required) |
-| **Sum** | Total of a list of numbers. Example: Sum order amounts | `values` (required) |
-| **Count Unique Values** | Counts the distinct values in a list. Example: Count unique customers | `values` (required) |
-| **Min / Max** | Highest or lowest value in a list. Example: Find the largest invoice | `values` (required), `mode` (max/min) |
-| **Concatenate Text** | Joins multiple parts into one string. Example: Build a full name from fields | `parts` (required), `separator` (optional) |
-| **Find Text** | Locates a search value in a string (first match or all). Example: Find a keyword in a message | `text` (required), `searchValue` (required), `mode` (first/all), `caseSensitivity` (optional) |
-| **Slugify Text** | Turns text into a URL-safe slug. Example: Slugify an article title | `text` (required), `casing` (optional), `separator` (default `-`) |
-| **Strip HTML** | Removes markup and returns plain text. Example: Clean HTML email body | `html` (required) |
-| **HTML to Markdown** | Converts an HTML fragment to Markdown. Example: Store content as Markdown | `html` (required) |
-| **Markdown to HTML** | Renders Markdown to sanitized HTML. Example: Publish formatted content | `markdown` (required) |
+| **Generate QR Code** | Makes a QR image from text or a URL and saves it to your workspace Media library. Example: Make a QR code for a check-in URL | `text` (required), `size` (150/300/600 px), `errorCorrection` (L/M/Q/H) |
+| **Convert CSV to JSON** | Changes a CSV string into rows of data. Example: Turn an upload into JSON rows | `csv` (required), `hasHeader` (header/noHeader), `delimiter` (optional, auto-detect) |
+| **Convert JSON to CSV** | Changes a JSON array into CSV. Example: Export records to a spreadsheet | `json` (required), `includeHeader` (yes/no), `delimiter` (optional, default `,`) |
+| **Average** | The mean of a list of numbers. Example: Average response time | `values` (required) |
+| **Sum** | The total of a list of numbers. Example: Sum order amounts | `values` (required) |
+| **Count Unique Values** | Counts the different values in a list. Example: Count unique customers | `values` (required) |
+| **Min / Max** | The highest or lowest value in a list. Example: Find the largest invoice | `values` (required), `mode` (max/min) |
+| **Concatenate Text** | Joins many parts into one string. Example: Make a full name from fields | `parts` (required), `separator` (optional) |
+| **Find Text** | Finds a value in a string (the first match or all matches). Example: Find a keyword in a message | `text` (required), `searchValue` (required), `mode` (first/all), `caseSensitivity` (optional) |
+| **Slugify Text** | Changes text into a slug that is safe in a URL. Example: Make a slug from an article title | `text` (required), `casing` (optional), `separator` (default `-`) |
+| **Strip HTML** | Removes markup and returns plain text. Example: Clean an HTML email body | `html` (required) |
+| **HTML to Markdown** | Changes HTML into Markdown. Example: Save content as Markdown | `html` (required) |
+| **Markdown to HTML** | Changes Markdown into safe HTML. Example: Publish formatted content | `markdown` (required) |
 
 ### File Operations
 
 | Action                       | Description                                                  | Example                |
 | ---------------------------- | ------------------------------------------------------------ | ---------------------- |
-| **Upload File to Media**     | Uploads a file from a URL to the Media tab                   | Store form attachment  |
+| **Save a file to Media**     | Downloads a file from a link into Media                      | Save a form attachment |
 | **Save text to Media**       | Saves text as a file in the Media tab                        | Save an AI report      |
-| **Find Files in Media**      | Lists files by folder, file type, and name                   | Find this week's uploads |
+| **Find Files in Media**      | Lists files by folder, file type, and name                   | Find the uploads of this week |
 | **Convert an image**         | Saves a copy of an image as JPEG, PNG, WebP, or AVIF         | PNG to WebP            |
-| **Make a smaller video**     | Saves a smaller copy of a video                              | Reduce file size       |
-| **Convert File to Text**     | Converts a source file into text                             | PDF to text            |
+| **Make a smaller video**     | Saves a smaller copy of a video                              | Make a file smaller    |
+| **Turn a file into text**     | Changes a source file into text                             | PDF to text            |
 
 ## Conditional Actions
 
@@ -1114,21 +1123,21 @@ Pure, no-credit transform actions for reshaping data inline in a flow — no AI 
 
 | Action                       | Description                                                       | Example                             |
 | ---------------------------- | ----------------------------------------------------------------- | ----------------------------------- |
-| **Branch**                   | Creates different paths depending on conditions                  | If priority is high, notify manager |
+| **Branch**                   | Makes different paths. Each path has a condition                  | If the priority is high, tell the manager |
 | **Filter Data**              | Continues only when the data meets a condition                    | Skip low-value leads                |
 | **Loop**                     | Runs the steps inside it once for each item in a list             | Process each item                   |
-| **Delay**                    | Pauses the automation for a set time or until a date              | Wait 5 minutes before the next step |
-| **Run Automation**           | Starts another automation from this one                           | Reuse a shared sub-flow             |
+| **Delay**                    | Stops the automation for a set time or until a date               | Wait 5 minutes before the next step |
+| **Run Automation**           | Starts another automation from this one                           | Use a shared subflow again          |
 
 ## Error Handling
 
 | Action or setting               | Description                                                                 | Example                 |
 | ------------------------------- | --------------------------------------------------------------------------- | ----------------------- |
-| **Stop and mark as failed**     | Stops a run on purpose and marks it as failed                               | Stop on missing data    |
-| **Get run info**                | Reads the ID and the start time of the current run                          | Log the run ID          |
-| **Error Behavior** (step setting) | On steps that offer it, choose **Continue** or **Fail** when the step errors | Keep going after a failed scrape |
+| **Stop and mark as failed**     | Stops a run on purpose and marks it as failed                               | Stop when data is missing |
+| **Get run info**                | Reads the ID and the start time of the current run                          | Save the run ID         |
+| **Error Behavior** (step setting) | On steps that have it, select **Continue** or **Fail** for when the step has an error | Continue after a page cannot be read |
 
-Every run is listed in the automation **Runs** tab, with the input and output of each step.
+The **Runs** tab of the automation lists every run, with the input and the output of each step.
 
 ## Usage Examples
 
@@ -1165,11 +1174,11 @@ Branch: If the response is missing a required field
 
 ## **Advanced File Handling**
 
-Recent updates have significantly enhanced automation file processing capabilities.
+Automations can send, receive, and process files.
 
 ### **Multipart File Uploads**
 
-HTTP actions now support multipart file uploads, enabling seamless integration with modern APIs:
+HTTP actions can send files as a multipart upload. Many modern APIs accept files in this format:
 
 ```json
 {
@@ -1190,23 +1199,23 @@ HTTP actions now support multipart file uploads, enabling seamless integration w
 }
 ```
 
-### **Enhanced Webhook File Processing**
+### **Webhook File Processing**
 
-Webhooks can now receive and process multipart/form-data, perfect for:
+Webhooks can receive and process multipart/form-data. Use this for:
 
-* **Document Processing Workflows**: Automatically process uploaded files
-* **Image Analysis Pipelines**: Analyze images submitted through forms
-* **File Validation Systems**: Check file types and sizes before processing
+* **Document workflows**: Process uploaded files
+* **Image analysis**: Analyze images that people send through forms
+* **File validation**: Examine the file type and size before later steps
 
-### **Smart Form Field Mapping**
+### **Form Field Mapping**
 
-When forms trigger automations that create tasks, the system intelligently maps form field labels to task custom fields:
+A form can start an automation that creates tasks. Taskade then matches the form field labels to the task custom fields:
 
-* **Automatic Matching**: "Priority Level" dropdown → Priority custom field
-* **Type Recognition**: Date fields map to date custom fields automatically
-* **Dynamic Options**: Dropdown values sync with custom field options
+* **Name match**: A "Priority Level" dropdown goes to the Priority custom field
+* **Type match**: A date field goes to a date custom field
+* **Dropdown options**: The dropdown values match the options of the custom field
 
-### **Professional Use Cases**
+### **Example Use Cases**
 
 **Document Approval Workflow:**
 
@@ -1228,7 +1237,7 @@ Document Collection → Verification → CRM Update → Welcome Email
 
 ### **File Type Support**
 
-Automations now handle a wide range of file types:
+Automations can process these file types:
 
 * **Documents**: PDF, DOC, DOCX, TXT, RTF
 * **Images**: JPG, PNG, GIF, WebP, SVG

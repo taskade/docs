@@ -37,7 +37,7 @@ export WORKSPACE_ID="your_target_workspace_id"
 | --- | --- |
 | **Projects** | Tasks, custom fields, views, and structure |
 | **Templates** | Reusable project/task templates |
-| **AI Agents** | System prompts, tone, and knowledge configuration |
+| **AI Agents** | System prompts, tone, knowledge configuration, and tools. An import keeps the tools of each agent as they are and adds no tool |
 | **Agent teams** | Team membership and member roles, resolved to the agents carried in the same bundle |
 | **Automations** | Automation triggers, actions, and settings |
 | **Taskade Genesis apps** | App files stored as a directory tree under `apps/{id}/` |
@@ -58,7 +58,7 @@ A successful ZIP export streams the binary file. Errors return the standard JSON
 
 ### Export a bundle as JSON
 
-**`POST /api/v2/exportBundle`** returns the `SpaceBundleData` object with `version` and `items`. Binary media is not included.
+**`POST /api/v2/exportBundle`** returns the `SpaceBundleData` object with `version` and `items`. It does not include binary media.
 
 {% tabs %}
 
@@ -151,7 +151,7 @@ jq --arg ws "$WORKSPACE_ID" '{workspaceId: $ws, bundleData: .item}' bundle.json 
       --data @-
 ```
 
-**Response** reports what was created:
+**Response** lists the resources that the import created:
 
 ```json
 {
@@ -229,7 +229,7 @@ type SpaceBundleDataItem = SpaceBundleDataItemBase & (
 
 `agentIds` on an agent-team item holds **source** agent ids. The installer remaps every id through the same id map it uses for the other items.
 
-The installer drops a member whose agent did not come along in the bundle. As a result, a partial bundle yields a smaller team, not a dangling membership.
+The installer drops a member whose agent is not in the bundle. As a result, a partial bundle gives a smaller team, not a member with no agent.
 
 Export an agent team together with every agent it names.
 
@@ -243,7 +243,7 @@ The `data` object of an agent-team item can hold `members`, a map from a source 
 }
 ```
 
-A role is one line of at most 60 characters. The installer moves each role to the new agent id. It joins a role with line breaks into one line. It drops a role that is then empty or longer than 60 characters, and the role of an agent that is not in `agentIds` or did not come along. The rest of the team still installs.
+A role is one line of at most 60 characters. The installer moves each role to the new agent id. It joins a role with line breaks into one line. It drops a role that is then empty or longer than 60 characters. It also drops the role of an agent that is not in `agentIds` or not in the bundle. The rest of the team still installs.
 
 ## The `.tsk` format
 
@@ -273,7 +273,7 @@ Version 1.1 archives can include agent teams under `agent-teams/{id}.json`. The 
 
 Import creates new resources. It does not overwrite matching projects, agents, automations, or apps.
 
-The importer validates each item against the target workspace's current access and limits. If an item cannot be created, use the returned error `code` to select the next step. Do not parse the human-readable message.
+The importer validates each item against the target workspace's current access and limits. If the importer cannot create an item, use the returned error `code` to select the next step. Do not parse the human-readable message.
 
 The Action API checks the target workspace's plan before an import creates anything. A bundle that goes over a limit returns `402` with `code: "PAYMENT_REQUIRED"`:
 

@@ -5,24 +5,32 @@ description: >-
 
 # Supported Integrations
 
-Taskade connects to **100+ tools and services** across communication, productivity, AI, and developer ecosystems. Integrations run inside automations: triggers (events that start automations) and actions (tasks that automations can perform). Some connectors offer only actions or only triggers.
+You can connect Taskade automations to **100+ tools and services** for communication, productivity, AI, and development. Each integration gives you triggers, actions, or both. A trigger is an event that starts an automation. An action is a step that the automation does. Some connectors have only actions or only triggers.
 
 {% hint style="info" %}
-**Plans:** Premium integrations need a paid plan. Pro integrations need Pro and up. The Free plan runs the built-in Taskade steps and the standard connectors: HTTP Request, RSS, Pushover and MCP Client. The step picker shows the plan badge on each step.
+**Plans:** Premium integrations need a paid plan. Pro integrations need Pro and up. The Free plan runs the built-in Taskade steps and the standard connectors: HTTP Request, RSS, Pushover, and MCP Client. The step picker shows the plan badge on each step.
 {% endhint %}
 
-## Enhanced Integration Features
+## What Integrations Give You
 
-### **Enterprise-Grade Reliability**
-- **Run history** for every automation, with the input and output of each step in the **Runs** tab
-- **Error handling** per step: **Continue if this step fails**, with **Stop here** or **Go to the next step**
-- **Secure connections**: you connect each account once with **Connect**, and every step in the workspace can reuse the connection
+### **Reliable Runs**
 
-### **Advanced Integration Capabilities**
-- **Data transformation** with utility actions that use no AI credits
-- **Complex multi-step workflows** spanning multiple services, with Branch, Filter Data, and Loop
-- **File processing** with Media actions and Convert File to Text
-- **Calendar integration** with Google Calendar, Microsoft Outlook Calendar, Cal.com, Calendly, and iCal feeds
+Each automation has these controls:
+
+- **Run history**: the **Runs** tab shows the input and the output of each step.
+- **Continue if this step fails**: you select **Stop here** or **Go to the next step** for each step.
+- **Retry if this step fails**: the step tries again when a connected app is busy or down for a few minutes.
+- **Wait for approval**: the run stops until a teammate approves or rejects it.
+- **Connections**: you connect each account one time with **Connect**. Every step in the workspace can use that connection again.
+
+### **What You Can Build**
+
+You can use integrations for these tasks:
+
+- **Change data**: utility actions change the format of data and use no AI credits.
+- **Connect many services in one automation**: use Branch, Filter Data, and Loop to control the flow.
+- **Read files**: use Media actions and Turn a file into text.
+- **Work with calendars**: connect Google Calendar, Microsoft Outlook Calendar, Cal.com, Calendly, and iCal feeds.
 
 ## Categories
 
@@ -110,31 +118,31 @@ Taskade connects to **100+ tools and services** across communication, productivi
 | **Pushover** | — | Send a push notification | Every plan |
 | **Forms** | Form submitted | — | Every plan |
 
-> **Related developer docs:** Build custom integrations programmatically with the [Developer Hub](../../apis-living-system-development/developer-home.md) and [Webhooks](../../apis-living-system-development/webhooks.md), or contribute to the open-source [Integration Kit](https://github.com/taskade/integrations) (Zapier & n8n actions and triggers).
+> **Related developer docs:** To build an integration in code, read the [Developer Hub](../../apis-living-system-development/developer-home.md) and [Webhooks](../../apis-living-system-development/webhooks.md). You can also add to the open-source [Integration Kit](https://github.com/taskade/integrations) (Zapier & n8n actions and triggers).
 
-## Integration Setup
+## Connect and Test an Integration
 
-### 1. **Authentication**
-Most integrations require authentication to access your accounts:
-- **OAuth 2.0**: Secure authorization flow (recommended)
-- **API Keys**: Simple token-based authentication
-- **Personal Access Tokens**: User-specific tokens with limited scope
+### 1. **Sign In to the Service**
+Most integrations need access to your account in the other service. The service uses one of these sign-in types:
+- **OAuth 2.0**: you sign in to the service in a browser window. Use this type when the service offers it.
+- **API key**: you paste a key from the service.
+- **Personal access token**: you paste a token that belongs to your user in the service.
 
-### 2. **Configuration**
-Each integration has specific configuration options:
-- **Endpoints**: Which API endpoints to use
-- **Data Mapping**: How to map fields between systems
-- **Rate Limits**: Respect service limitations
-- **Error Handling**: What to do when requests fail
+### 2. **Set the Step Fields**
+Each integration step has its own fields. Decide on these items:
+- **Endpoint**: the part of the service that the step calls.
+- **Field mapping**: which data goes into which field of the other service.
+- **Rate limits**: how many calls the service accepts in a period.
+- **Failures**: what the step does when a call fails.
 
-### 3. **Testing**
-Before deploying automations:
-- Test with sample data
-- Verify authentication works
-- Check data mapping accuracy
-- Monitor for errors and edge cases
+### 3. **Test the Automation**
+Do these steps before you turn the automation on:
+1. Run the automation with sample data.
+2. Make sure that the connection works.
+3. Make sure that each field gets the correct data.
+4. Read the **Runs** tab for errors.
 
-## Popular Integration Patterns
+## Common Integration Patterns
 
 ### **CRM Sync**
 ```
@@ -164,39 +172,39 @@ Google Sheets Update → AI Data Enrichment → Airtable Record Creation → Rep
 ## Advanced Features
 
 ### **Conditional Routing**
-Route data to different services based on content, priority, or other criteria.
+Send data to different services by its content, its priority, or other conditions. Use a **Branch** step for this.
 
 ### **Data Transformation**
-Clean, format, and enrich data as it flows between systems.
+Clean the data, change its format, and add data to it between two services.
 
 ### **Error Recovery**
-Choose what happens when a step fails: stop the run, skip the item, or go to the next step. Read the reason in the **Runs** tab.
+Select what happens when a step fails: stop the run, skip the item, or go to the next step. The **Runs** tab shows the reason for the failure.
 
 ### **Rate Limiting**
-Add a **Delay** step to space out calls to a service with rate limits.
+If a service limits the number of calls, add a **Delay** step between the calls.
 
 ### **Batch Processing**
-Process multiple records with **Loop**, or write several rows at once with Google Sheets **Add or Update Multiple Rows**.
+Use **Loop** to process many records. To write many rows in one step, use Google Sheets **Add or Update Multiple Rows**.
 
 ## Custom Integrations
 
-Don't see your service listed? You can create custom integrations using:
+If your service is not in the list, you can connect it with these tools.
 
 ### **HTTP Webhooks**
-- Send data to any REST API
-- Receive webhooks from external services (Pro and up)
-- Custom authentication headers
-- JSON, form data, raw, XML, and multipart file bodies
+- Send data to any REST API.
+- Receive webhooks from other services (Pro and up).
+- Add your own authentication headers.
+- Send a body as JSON, form data, raw text, XML, or multipart files.
 
 ### **Database Connections**
-- Use the **Supabase** connector (Pro and up) for a Postgres database
-- Call any other database through its HTTP API with **Send HTTP Request**
+- Connect a Postgres database with the **Supabase** connector (Pro and up).
+- Call another database through its HTTP API with **Send HTTP Request**.
 
 ### **File Processing**
-- Read uploaded files with **Convert File to Text**
-- Convert CSV to a list and a list to CSV with utility actions
-- Convert images and video with Media actions
-- Use Google Drive for cloud storage
+- Read uploaded files with **Turn a file into text**.
+- Change CSV into a list, and a list into CSV, with utility actions.
+- Convert images and video with Media actions.
+- Keep files in the cloud with Google Drive.
 
 ## Detailed Integration Examples
 
@@ -205,61 +213,61 @@ Don't see your service listed? You can create custom integrations using:
 **Automatic Event Creation:**
 - **Trigger:** Task with due date added
 - **Action:** Create Google Calendar event
-- **Use Case:** Never miss project deadlines
+- **Use Case:** Show each project deadline in your calendar.
 
 **Meeting Follow-up:**
 - **Trigger:** New event in Google Calendar
 - **Action:** Create follow-up tasks in Taskade
-- **Use Case:** Ensure meeting action items are tracked
+- **Use Case:** Keep a task for each action item from a meeting.
 
 **Project Milestone Sync:**
 - **Trigger:** Project completed
 - **Action:** Create a calendar event for the next milestone
-- **Use Case:** Keep stakeholders informed of progress
+- **Use Case:** Tell stakeholders about the progress of the project.
 
 ### Google Sheets Integration
 
 **Data Collection:**
 - **Trigger:** Form submission
 - **Action:** Add row to Google Sheets
-- **Use Case:** Centralized data tracking and analysis
+- **Use Case:** Keep all form data in one sheet for analysis.
 
 **Inventory Management:**
 - **Trigger:** Task completed (inventory check)
 - **Action:** Update stock levels in spreadsheet
-- **Use Case:** Real-time inventory tracking
+- **Use Case:** Keep the stock levels current.
 
 **Performance Reporting:**
 - **Trigger:** Weekly schedule
-- **Action:** Generate report from Taskade data to Sheets
-- **Use Case:** Automated team performance dashboards
+- **Action:** Write a report from Taskade data to Sheets
+- **Use Case:** Keep a dashboard of team performance up to date.
 
 ### Social Media Integrations
 
 **LinkedIn Content Sharing:**
 - **Trigger:** Content approved in review project
 - **Action:** Post to LinkedIn company page
-- **Use Case:** Automated content distribution
+- **Use Case:** Publish approved content with no manual step.
 
 **Twitter/X Publishing:**
 - **Trigger:** Task completed in the content calendar project
 - **Action:** Create post on X/Twitter
-- **Use Case:** Publish approved posts on time
+- **Use Case:** Publish approved posts on time.
 
 **YouTube Content Workflow:**
 - **Trigger:** New video on your channel
 - **Action:** Create promotion tasks and schedule posts
-- **Use Case:** Comprehensive video marketing automation
+- **Use Case:** Promote each new video.
 
 ### WhatsApp Business Integration
 
-WhatsApp Business integration enhances your communication strategy by automating customer interactions, managing inquiries, and enabling AI-powered responses.
+With WhatsApp Business, your automations can answer customers, log their questions, and send AI replies.
 
-#### **Setup & Configuration**
-1. **Connect WhatsApp Business Account** - Link your verified business account
-2. **Configure System User Access Token** - Set up API authentication
-3. **Verify Business Account ID** - Ensure proper account linking
-4. **Test Connection** - Send test message to verify setup
+#### **Connect WhatsApp Business**
+1. Connect your verified WhatsApp Business account.
+2. Paste your token in the **System User Access Token** field.
+3. Make sure that the **WhatsApp Business Account ID** is correct.
+4. Send a test message to make sure that the connection works.
 
 #### **Available Actions**
 
@@ -274,31 +282,33 @@ WhatsApp Business integration enhances your communication strategy by automating
 
 **Customer Support Automation:**
 - **Trigger:** WhatsApp message received
-- **Action:** Create support ticket, auto-reply with case number
-- **AI Enhancement:** Sentiment analysis, automatic categorization
-- **Follow-up:** Route to appropriate specialist based on message content
+- **Action:** Create a support ticket and reply with the case number.
+- **AI step:** AI finds the mood of the message and puts it in a category.
+- **Next step:** Send the ticket to the correct specialist for the message content.
 
 **Order Management:**
 - **Trigger:** Stripe payment or webhook from your order system
-- **Action:** Send WhatsApp notification with tracking info
-- **Personalization:** Include customer name, order details, estimated delivery
-- **Escalation:** Alert if delivery is delayed
+- **Action:** Send a WhatsApp message with the tracking information.
+- **Personal details:** Add the customer name, the order details, and the expected delivery date.
+- **Escalation:** Send an alert if the delivery is late.
 
 **Lead Qualification:**
 - **Trigger:** WhatsApp message from new contact
-- **Action:** Run AI agent to qualify lead, update CRM
-- **Automation:** Schedule follow-up, assign to sales rep
-- **Integration:** Sync with HubSpot, Salesforce, or other CRM
+- **Action:** An AI agent qualifies the lead and updates the CRM.
+- **Next step:** Schedule a follow-up and assign it to a sales rep.
+- **CRM:** Sync the lead with HubSpot, Salesforce, or another CRM.
 
 **Appointment Reminders:**
-- **Trigger:** Daily schedule that finds tomorrow's appointments
-- **Action:** Send WhatsApp reminder with appointment details
-- **Options:** Include reschedule link and location
-- **Confirmation:** Send a Request Approval message to confirm the time
+- **Trigger:** Daily schedule that finds the appointments for tomorrow
+- **Action:** Send a WhatsApp reminder with the appointment details.
+- **Options:** Add a link to change the time, and the location.
+- **Confirmation:** Send a Request Approval message to confirm the time.
 
 ---
 
 ## **Enterprise Integration Patterns**
+
+The examples below give the steps of each automation in outline.
 
 ### **Advanced CRM Workflows**
 
@@ -524,17 +534,17 @@ Onboarding Automation:
 ## Getting Help
 
 ### **Documentation**
-Each integration has detailed setup guides and examples in our help center.
+Each integration has a setup guide and examples in the help center.
 
 ### **Support**
-Contact support for help with an integration. For Enterprise plans, contact sales.
+For help with an integration, contact support. For Enterprise plans, contact sales.
 
 ---
 
-> **Need a custom integration?**  
-> → [Contact our team](https://taskade.com/contact) for enterprise solutions
+> **Do you need a custom integration?**  
+> → [Contact our team](https://taskade.com/contact) about enterprise solutions
 
-> **Want to contribute an integration?**  
+> **Do you want to add an integration?**  
 > → Open a PR on the open-source [Integration Kit](https://github.com/taskade/integrations) (Zapier & n8n actions and triggers)
 
 → **Next: [Browse Actions & Triggers](./actions.md)**  

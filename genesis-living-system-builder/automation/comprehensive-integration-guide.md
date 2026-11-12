@@ -1,40 +1,40 @@
 ---
 description: >-
-  Connect Taskade to Slack, Gmail, HubSpot, Sheets and more with trigger-and-action automations, plus custom HTTP, webhook, and API integrations.
+  Connect Taskade to Slack, Gmail, HubSpot, Google Sheets, and more with automations. Use HTTP requests, webhooks, or the API for other tools.
 ---
 
 # Integration Overview
 
-**Transform isolated tools into intelligent, living ecosystems that learn, adapt, and evolve together.**
+**Connect Taskade to the tools that you use, and let your automations do the work between them.**
 
 {% hint style="success" %}
-**Living Integrations** go beyond static connections—they create intelligent relationships between systems that learn from data flow patterns, adapt to changing business needs, and continuously optimize performance. Your connected tools become a living ecosystem that works smarter with every interaction.
+**Integrations** connect your workspace to other apps. An event in one app can start an automation. The automation can then write the result to another app or to a project.
 {% endhint %}
 
 ## Integrations in Taskade
 
-Integrations connect Taskade to the tools you already use. They run through Automations using **triggers** (events) and **actions** (what happens next).
+Integrations connect Taskade to the tools that you use now. They run inside Automations. A **trigger** is the event that starts the automation. An **action** is the work that follows.
 
-If you want the bigger model, start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
+For the full model, start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
 ### What you can do
 
-* **Notify and route work**: Slack/Teams alerts, assignments, escalations.
-* **Sync data**: push form submissions into a CRM, write rows to Sheets, create tickets.
-* **Move faster**: auto-create tasks, summaries, follow-ups, and reports.
-* **Close loops**: trigger workflows from app events and write results back into projects.
+* **Send and route work**: Send Slack or Microsoft Teams alerts, assign tasks, and escalate issues.
+* **Sync data**: Send form submissions to a CRM, write rows to Google Sheets, and create tickets.
+* **Save time**: Create tasks, summaries, follow-ups, and reports automatically.
+* **Close the loop**: Start a workflow from an app event, and write the result back into a project.
 
 ### Typical workflows
 
 * Lead capture → qualify → create CRM record → notify team
-* Support email/webhook → categorize → create ticket → assign owner
-* Schedule trigger → generate report → send to stakeholders
+* Support email or webhook → categorize → create ticket → assign owner
+* Schedule trigger → write report → send to stakeholders
 
 ### Quick start
 
-1. Create an automation with a trigger + action.
-2. Add the tool's step and click **Connect** to link your account.
-3. Test with real data.
+1. Create an automation with a trigger and an action.
+2. Add the step for the tool. Click **Connect** to link your account.
+3. Test the automation with real data.
 
 Start here:
 
@@ -44,45 +44,49 @@ Start here:
 
 ## Popular Integrations
 
-Most teams start with:
+Most teams start with these tools:
 
 * Communication: Slack, Microsoft Teams, email
 * Productivity: Google Workspace, Microsoft Outlook, Microsoft To Do
 * Data: Google Sheets, Airtable
 * CRM: HubSpot, Salesforce
-* Dev: GitHub, Jira
+* Development: GitHub, Jira
 
-Premium integrations (for example Slack, Gmail, Google Sheets, HubSpot and Salesforce) need a paid plan. The Free plan runs the built-in steps and the standard connectors (HTTP Request, RSS, Pushover and MCP Client).
+Premium integrations (for example Slack, Gmail, Google Sheets, HubSpot, and Salesforce) need a paid plan. The Free plan runs the built-in steps and the standard connectors (HTTP Request, RSS, Pushover, and MCP Client).
 
-Full list and setup details: [Integration Options](integrations.md)
+For the full list and the setup details, read [Integration Options](integrations.md).
+
+## Files and Agent Knowledge
+
+You can also bring outside content into Taskade without an automation. Drop a file into a project, into the knowledge of an agent, or into **Media Files**. Taskade reads the text, and it can read the text in scans and images. Agent knowledge accepts every supported file format except images.
 
 ## Advanced Integration Patterns
 
-Start with one trigger and one outcome. Then add steps and branches.
+Start with one trigger and one result. Then add steps and branches.
 
 Common patterns:
 
 * Form submission → qualify → create CRM record → notify Slack
-* Support email/webhook → categorize → create ticket → assign owner
-* Schedule trigger → generate report → send digest
+* Support email or webhook → categorize → create ticket → assign owner
+* Schedule trigger → write report → send digest
 
-See the full building blocks:
+For all the building blocks, read:
 
 * [Automation Getting Started](./)
 * [Actions & Triggers](actions.md)
 
 ## Integration Best Practices
 
-Keep these four things tight:
+Follow these four rules:
 
-* **Scope**: grant the minimum permissions you need.
-* **Test**: run with real data, not placeholders.
-* **Handle failures**: decide what to do when an API call fails.
-* **Observe**: monitor errors and retries for critical workflows.
+* **Scope**: Give each connection only the permissions that it needs.
+* **Test**: Test with real data, not sample text.
+* **Failures**: Decide what the automation does when a step fails. You can check **Retry if this step fails** or **Continue if this step fails** on a step.
+* **Monitoring**: Examine the errors and retries of important workflows in the **Runs** tab.
 
 ## Custom Integration Development
 
-Don’t see your tool? Use HTTP requests/webhooks or the Taskade API.
+If your tool is not in the list, use an HTTP request, a webhook, or the Taskade API.
 
 Start here:
 
@@ -91,24 +95,24 @@ Start here:
 
 ## Getting Started with Integrations
 
-### Planning Your Integration Strategy
+### Plan Your Integration
 
 Keep it simple:
 
-1. Pick one workflow you want to automate end-to-end.
-2. Choose one trigger and one destination tool.
-3. Add steps only after the core path works.
+1. Select one workflow that you want to automate from start to end.
+2. Select one trigger and one destination tool.
+3. Add more steps only after the main path works.
 
 ### Implementation Checklist
 
 * ✅ Connect the integration
 * ✅ Build one automation
 * ✅ Test with real data
-* ✅ Add notifications for failure cases
+* ✅ Add notifications for failed runs
 
 ## Support and Resources
 
-Use these when you get stuck:
+Use these pages when you need help:
 
 * Full integration list: [Integration Options](integrations.md)
 * Workflow basics: [Automation Getting Started](./)

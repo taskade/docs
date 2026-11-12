@@ -5,45 +5,46 @@ description: >-
 
 # Getting Started
 
-**Ready to build your first business app? This guide will take you from idea to working application in just 5 minutes.**
+**This guide takes you from an idea to a working business app in about 5 minutes.**
 
 ***
 
 ## What is Taskade Genesis?
 
-Taskade Genesis turns a single prompt into a working app. It creates the UI and connects it to your workspace. You iterate by describing changes in plain English.
+Taskade Genesis turns one prompt into a working app. It makes the screens and connects them to your workspace. To change the app, you describe the change in plain English.
 
-Want the deeper “why it works” model? Start with [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
+For the full model, read [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
 {% hint style="info" %}
-**Two ways to start.** Build from a blank prompt (this guide), or **clone a ready-made app** — browse the [community gallery](https://www.taskade.com/apps) and [Taskade's official kits](https://www.taskade.com/@taskade), clone one, and customize it. Either way, you land in the same Taskade Genesis editor.
+**You can start in two ways.** Build from a blank prompt, as this guide shows. Or clone a ready-made app from the [community gallery](https://www.taskade.com/apps) or [Taskade's official kits](https://www.taskade.com/@taskade), then change it. Both ways open the same Taskade Genesis editor.
 {% endhint %}
 
 ## Before You Start
 
 ### What You Need
 
-* ✅ **A Taskade account** - [Sign up free](https://taskade.com/signup) if you don't have one
-* ✅ **AI credits** - Free starts with no AI credits. On Free, you earn free AI credits with referrals and invites, and you can upgrade any time
-* ✅ **A business problem to solve** - Something that wastes your time or frustrates customers
-* ✅ **5 minutes of focused time** - No distractions, just you and your business challenge
+* ✅ **A Taskade account**: [Sign up free](https://taskade.com/signup) if you do not have one.
+* ✅ **AI credits**: Every paid plan includes AI credits. A new Free account starts with 0 AI credits. If your Free account never had AI credits, Taskade EVE shows **Pick a plan to start building** at your first prompt. On Free, you earn free AI credits with referrals and invites, and you can upgrade at any time.
+* ✅ **No plan yet?** Clone a free app kit from the [Taskade App Factory](https://www.taskade.com/apps). A free kit clones at no cost, and the copy is yours to change. Some kits clone only on a paid plan or for a price. A change by prompt uses AI credits.
+* ✅ **A business problem**: a task that takes too much of your time or annoys your customers.
+* ✅ **5 minutes**: time to work on one problem.
 
 ### What You Can Build
 
-By the end of this guide, you'll have built and published a fully functional app. It can be a client portal, tracker, or dashboard. The only limitation is your imagination. Taskade Genesis handles the technical complexity, you focus on business value.
+At the end of this guide, you have a working app that you published. It can be a client portal, a tracker, or a dashboard. Taskade Genesis does the technical work. You decide what the app must do for your business.
 
-### What You'll Learn
+### What You Learn
 
-* How to turn business problems into app descriptions
-* How to use Taskade Genesis to build complete applications
-* How to test and refine your app
-* How to share and use your app with customers or team members
+* How to turn a business problem into an app description
+* How to build a complete app with Taskade Genesis
+* How to test and improve your app
+* How to share your app with customers or team members
 
 ***
 
 ## Step 1: Identify Your Business Problem (1 minute)
 
-Start by thinking about something in your business that could work better. Common problems Taskade Genesis solves:
+Think of one part of your business that does not work well. Taskade Genesis often solves problems like these:
 
 ### **Customer Frustrations**
 
@@ -63,13 +64,13 @@ Start by thinking about something in your business that could work better. Commo
 * _"I can't see which products are performing well"_
 * _"Team performance data is hard to track"_
 
-**Your turn:** Write down the ONE business problem you want to solve first.
+**Your turn:** Write down the ONE business problem that you want to solve first.
 
 ***
 
 ## Step 2: Craft Your App Description (2 minutes)
 
-Now turn your problem into a clear description using this proven formula:
+Turn your problem into a clear description. Use this formula.
 
 ### **The Magic Formula**
 
@@ -105,57 +106,58 @@ I run a yoga studio and need clients to book classes online and pay in advance. 
 I'm a business consultant and need potential clients to request proposals through my website. They should fill out their business challenges, budget range, and timeline, plus upload any relevant documents. When someone submits a request, send me an instant Slack notification and add their information to my CRM. I want to track which types of projects people request most so I can focus my marketing.
 ```
 
-**Your turn:** Write your app description using the template above.
+**Your turn:** Write your app description with the template.
 
 ***
 
 ## Step 3: Build Your App with Genesis (1 minute)
 
-Now the magic happens - Taskade Genesis turns your description into a working app.
+In this step, Taskade Genesis turns your description into a working app.
 
 ### **Access Genesis**
 
-1. **Log into Taskade** at [taskade.com/create](https://www.taskade.com/create)
-2. **Navigate to your workspace** (create one if you don't have it)
-3. **Click Create** — a prompt field appears at the center of the screen
-4. **Leave the creation mode on Taskade Genesis** (the default)
+1. Log in to Taskade at [taskade.com/create](https://www.taskade.com/create).
+2. Open your workspace home. It shows a prompt box at the center of the screen. A new account opens there right after sign-up.
+3. Leave **Agent Mode** on. It is on by default. Taskade EVE then plans and builds the whole app.
+
+To work on one part of the app later, turn **Agent Mode** off. Then pick a focus, such as **App** or **Projects**.
 
 ### **Generate Your App**
 
-1. **Paste your description** into the prompt box
-2. **Click "Generate"** or press Enter
-3. **Watch Taskade Genesis work** - it will show you progress as it builds
-4. **Wait about 60-120 seconds**, depending on app complexity, for your complete app to appear
+1. Paste your description into the prompt box.
+2. Click the **Send** arrow, or press Enter.
+3. Watch the progress. Taskade Genesis shows each part as it builds.
+4. Wait about 60 to 120 seconds. A larger app takes more time.
 
 ### **What Genesis Creates**
 
-While you wait, Taskade Genesis is building all four layers of your app:
+Taskade Genesis builds four layers of your app:
 
-* **📊 Projects** - Databases that store all your business data
-* **🤖 AI Agents** - Learn your business and help users
-* **⚡ Automations** - Connect to email, Slack, and other tools
-* **🖥️ App UI** - The pages, forms, and dashboards your users see
+* **📊 Projects**: databases that store your business data
+* **🤖 AI Agents**: assistants that learn your business and help users
+* **⚡ Automations**: connections to email, Slack, and other tools
+* **🖥️ App UI**: the pages, forms, and dashboards that your users see
 
 ***
 
 ## Step 3.5: Add Context Files (Optional - 30 seconds)
 
-**Supercharge your app with reference materials.** Taskade Genesis can analyze uploaded files to better understand your brand, requirements, and design preferences.
+**Give Taskade Genesis reference files.** Taskade Genesis reads the files that you upload. It uses them to learn your brand, your requirements, and your design choices.
 
 ### **Why Add Context?**
 
-Taskade Genesis becomes significantly more powerful when you provide reference materials:
+Reference files give Taskade Genesis better information:
 
-* **🎨 Brand Consistency** - Upload logos, color palettes, and style guides
-* **📋 Form Examples** - Share existing forms or data structures
-* **🖼️ Visual Inspiration** - Include screenshots or mockups of desired layouts
-* **📊 Data Samples** - Provide examples of how you want information organized
+* **🎨 Brand**: logos, color palettes, and style guides
+* **📋 Forms**: your current forms or data structures
+* **🖼️ Layout**: screenshots or mockups of the layout that you want
+* **📊 Data**: examples of how you organize information
 
 ### **Adding Context Files**
 
-1. **After app creation**, open the chat with Taskade EVE beside the preview
-2. **Upload files** by dragging them into the chat or clicking the attachment button (📎)
-3. **Describe your changes** referencing the uploaded files
+1. After the build, open the chat with Taskade EVE beside the preview.
+2. Drag files into the chat, or click the attachment button (📎).
+3. Describe your change, and name the uploaded files.
 
 **Example Prompt:**
 
@@ -165,56 +167,59 @@ Taskade Genesis becomes significantly more powerful when you provide reference m
 
 ### **Types of Context Files**
 
-| File Type           | Purpose         | Examples                              |
-| ------------------- | --------------- | ------------------------------------- |
-| **Brand Assets**    | Visual identity | Logos, color palettes, fonts          |
-| **Reference Forms** | Data structure  | Existing forms, surveys, applications |
-| **Screenshots**     | UI inspiration  | Website designs, competitor apps      |
-| **Documents**       | Requirements    | Business rules, process flows, SOPs   |
+| File Type | Purpose | Examples |
+| --- | --- | --- |
+| **Brand Assets** | Visual identity | Logos, color palettes, fonts |
+| **Reference Forms** | Data structure | Forms, surveys, applications |
+| **Documents** | Requirements | Business rules, process flows, SOPs |
+
+Screenshots of website designs also help Taskade Genesis with the layout.
 
 ### **File Upload Tips**
 
-* **PDF files** work great for brand guidelines and documentation
-* **Images** (PNG/JPG) perfect for logos and screenshots
-* **Text files** useful for code snippets and requirements
-* **All uploaded files** are stored in your workspace's Media files for future reference
-* **On the Free plan**, you can upload images only. Other file types need a paid plan
+* **PDF files** are good for brand guidelines and documents.
+* **Images** (PNG/JPG) are good for logos and screenshots.
+* **Text files** are good for code snippets and requirements.
+* **All uploaded files** go into the Media files of your workspace.
+* **On the Free plan**, you can upload images only. Other file types need a paid plan.
 
 ***
 
 ## Step 4: Test Your App (1 minute)
 
-Your app is ready! Now test it thoroughly before sharing with others.
+When the build finishes, a bar shows the app name with **is ready**, for example **Customer Feedback Portal is ready**. The bar also has a **Publish** button.
+
+The first clean build of a new app also goes live once at its own `your-app.taskade.app` address. That first version is unlisted. It is not in public listings, and search engines do not index it. If the app has a sign-in screen and you did not choose who can open it, the app stays a draft.
 
 ### **Preview Your App**
 
-1. **Click "Preview"** to see your live app
-2. **Open it like a real user would** - try booking, submitting feedback, etc.
-3. **Fill out forms completely** - use realistic test data
-4. **Check your email and Slack** - did you get the automated notifications?
+1. Click **Preview** to see your app.
+2. Use the app as a real user does. For example, make a booking or submit feedback.
+3. Fill in each form with realistic test data.
+4. Look in your email and Slack for the automatic notifications.
 
 ### **Test Checklist**
 
-* ✅ **User experience:** Is it easy to understand and use?
-* ✅ **Mobile-friendly:** Does it work well on phones and tablets?
-* ✅ **Data capture:** Is important information being saved?
-* ✅ **Automations:** Are emails and notifications working?
-* ✅ **File uploads:** Can users attach photos/documents seamlessly?
-* ✅ **File processing:** Are uploaded files being handled correctly by automations?
-* ✅ **Professional appearance:** Does it look polished and branded appropriately?
+* ✅ **User experience**: The app is easy to understand and use.
+* ✅ **Phones**: The app works on phones and tablets.
+* ✅ **Data capture**: The app saves the important information.
+* ✅ **Automations**: The emails and notifications arrive.
+* ✅ **File uploads**: Users can attach photos and documents.
+* ✅ **File processing**: The automations use the uploaded files correctly.
+* ✅ **Appearance**: The app looks finished and matches your brand.
 
 ### **Common First-Time Issues**
 
-* **No notifications received?** Check your email/Slack integration settings. Slack and other premium integrations need a paid plan
-* **Form looks wrong?** Describe the visual changes you want
-* **Missing fields?** Tell Taskade Genesis what additional information you need
-* **Wrong automation timing?** Specify exactly when actions should happen
+* **No notifications?** Look at the settings of your email or Slack integration. Slack and other premium integrations need a paid plan.
+* **The form looks wrong?** Describe the visual changes that you want.
+* **Fields are missing?** Tell Taskade Genesis which information to add.
+* **An automation runs at the wrong time?** Tell Taskade Genesis when each action must occur.
 
 ***
 
 ## Step 5: Perfect Your App (30 seconds)
 
-Need adjustments? Taskade Genesis makes changes instantly through conversation.
+To change your app, describe the change in the chat.
 
 ### **Common Refinements**
 
@@ -244,131 +249,140 @@ Need adjustments? Taskade Genesis makes changes instantly through conversation.
 
 ### **Making Changes**
 
-1. **Describe what you want to change** in plain English
-2. **Send the message** in the chat
-3. **Wait for Taskade Genesis to implement** your changes (usually 10-30 seconds)
-4. **Test the changes** to make sure they work as expected
+1. Describe the change in plain English.
+2. Send the message in the chat.
+3. Wait for Taskade Genesis to make the change. This usually takes 10 to 30 seconds.
+4. Test the change.
+
+On a new app, Taskade saves each change as a draft. Visitors see a change only after you click **Publish** again. Until you do, the publish status says **Changes not live yet**. You can also roll back to an earlier version from the version history.
 
 ***
 
 ## Step 6: Share It!
 
-Your app is ready for the real world! You've built something that solves a real business problem, and now it's time to put it in front of actual users.
+Your app solves a real business problem. In this step, you put it in front of real users.
 
 {% hint style="warning" %}
-**Secure your API keys before publishing.** If your app calls external APIs, store credentials in the Secrets vault (**App settings → Developer → Secrets**) and route calls through the outbound proxy so keys never ship in client code. Taskade Genesis blocks publish if hardcoded secrets are detected. See [App Secrets](../space-apps-guide/app-secrets.md) for setup steps.
+**Keep your API keys in the Secrets vault.** If your app calls external APIs, store each key in **App settings → Developer → Secrets**. Send the calls through the outbound proxy. Then no key ships in client code. Taskade Genesis stops a publish when it finds a secret in the code. Read [App Secrets](../space-apps-guide/app-secrets.md) for the steps.
 {% endhint %}
 
 ### **Publishing Options**
 
-1. **Private Use**: Keep it within your workspace for team use
-2. **Custom Domain**: Publish under your branded domain (e.g., `app.yourcompany.com`) on Pro and up
-3. **Share with Community**: List your app in the Community Gallery. To let others clone it, set **Let others clone** to **Free** or **Paid**
-4. **Public Link**: Get a shareable URL for external users
-5. **Hosted Taskade MCP** (paid plans): Connect Claude, Cursor, or any MCP client to your workspace — create projects, manage agents, and edit your app's source from your IDE — see [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md)
+1. **Private use**: Keep the app in your workspace for your team.
+2. **Custom domain**: Publish on your own domain, for example `app.yourcompany.com`, on Pro and up.
+3. **Community**: List your app in the Community Gallery. To let others clone it, set **Let others clone** to **Free** or **Paid**.
+4. **Public link**: Share one link with external users.
+5. **Hosted Taskade MCP** (paid plans): Connect Claude, Cursor, or another MCP client to your workspace. You can then make projects, manage agents, and edit the source of your app from your IDE. Read [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md).
 
 ### **Getting It Live**
 
-1. **Click "Publish"** in the top-right corner
-2. **Choose who can open it:** anyone with the link, anyone with the password (Pro and up), or each person signs in with their own account
-3. **Choose how people find it:**
-   * **Public Link**: Instant shareable URL
-   * **Custom Domain**: Professional branded experience (Pro and up)
-   * **Community Sharing**: Turn on **Show in public listings** under **More options**
-4. **Copy the link** and share with your intended audience
+1. Click **Publish** in the top-right corner.
+2. Under **Who can open it**, pick one choice:
+   * **Anyone with the link**
+   * **Anyone with the password** (Pro and up)
+   * **Each person signs in**, with their own account
+3. Choose how people find the app:
+   * **Public link**: share the link.
+   * **Custom domain**: use your own address (Pro and up).
+   * **Community**: turn on **Show in public listings** under **More options**.
+4. Copy the link and share it with your audience.
+
+{% hint style="info" %}
+**Private customer data?** Sign-in confirms who a visitor is. It does not hide other rows by itself. Before you show private customer data, open **Publish**, pick **Each person signs in**, turn on **Private entries**, and pick the owner field. Then test with a second account.
+{% endhint %}
 
 ### **Community Sharing Benefits**
 
-If you've built something that could help other businesses:
+If your app can help other businesses, share it with the community:
 
-* **Share with Community**: Your app appears in the Community Gallery
-* **Help Others**: With **Let others clone** on, teams worldwide can clone and use your solution
-* **Build Reputation**: Showcase your problem-solving skills
-* **Get Feedback**: Community reviews help improve your solutions
+* **Community Gallery**: your app shows in the gallery.
+* **Clones**: with **Let others clone** on, other teams can clone your app and use it.
+* **Reputation**: other builders see your work.
+* **Feedback**: community reviews help you improve your app.
 
 ### **Professional Deployment**
 
-For business use, consider these options:
+For business use, you can add these options:
 
-* **Custom Domain**: `portal.yourcompany.com` instead of random URLs (Pro and up)
-* **Branded Experience**: Turn off the "Powered by Taskade" badge (paid plans)
-* **SSL Security**: Automatic HTTPS for professional trust
-* **Global CDN**: Fast loading worldwide
+* **Custom domain**: `portal.yourcompany.com` instead of a random link (Pro and up)
+* **Your brand**: turn off the "Powered by Taskade" badge (paid plans)
+* **SSL**: automatic HTTPS
+* **Global CDN**: fast loading in all regions
 
-Share your success story and get featured:
+Share your app with others:
 
-* **Post** about your creation on LinkedIn, Twitter, Reddit, or your favorite platform
-* **Show** before/after: "I had this business problem, now I have this solution"
-* Tag us @taskade — we love seeing what you've built
-* **Join** our community to see what other makers are working on
+* **Post** about your app on LinkedIn, Twitter, Reddit, or another platform.
+* **Show** the problem that you had and the app that solves it.
+* Tag us @taskade. We like to see what you build.
+* **Join** our community to see what other makers build.
 
 ***
 
 ## What people build in their first 5 minutes
 
-A few common starting points — each began as a single plain-English prompt:
+Each of these apps started as one plain-English prompt:
 
 ### Restaurant feedback system
 
-**Problem:** Reviews landed on Google too late to act on.
+**Problem:** Reviews arrived on Google too late to act on.
 
 **Prompt:** "I need customers to rate their dining experience and leave comments, with instant Slack alerts for any rating below 4 stars."
 
-**What you get:** A live feedback form, a place to triage responses, and real-time alerts so low ratings surface immediately instead of days later.
+**What you get:** A live feedback form, a place to sort the answers, and real-time alerts. You see a low rating at once, not days later.
 
 ### Yoga studio booking
 
-**Problem:** Booking was all phone calls, and double-bookings were common.
+**Problem:** All bookings came by phone, and double bookings were common.
 
 **Prompt:** "I need clients to book yoga classes online, pay deposits, and get calendar invites, with automatic confirmations."
 
-**What you get:** An online booking flow with deposits, calendar invites, and automatic confirmations — no more phone-tag or double-bookings.
+**What you get:** An online booking flow with deposits, calendar invites, and automatic confirmations. Phone calls and double bookings stop.
 
 ### Inventory alerts
 
-**Problem:** Stock ran low before anyone noticed.
+**Problem:** Stock was low before anyone saw it.
 
 **Prompt:** "I need to track inventory levels and get email alerts when items drop below 10 units, with automatic reorder suggestions."
 
-**What you get:** A stock tracker that emails you before items run out and suggests reorders automatically.
+**What you get:** A stock tracker that sends you an email before an item runs out. It also suggests reorders.
 
 ***
 
 ## What's Next?
 
-Congratulations! You've built your first Taskade Genesis app. Here's how to take it further, in two phases.
+You built your first Taskade Genesis app. Use these two phases to do more with it.
 
 ### **Phase 1 — Build**
 
 #### **Immediate Next Steps**
 
-1. **Share your app** with real users and customers
-2. **Monitor the data** coming in and usage patterns
-3. **Collect feedback** on what works well and what could be improved
-4. **Make refinements** based on real-world usage
+1. Share your app with real users and customers.
+2. Look at the data that comes in and at how people use the app.
+3. Ask for feedback on what works and what does not.
+4. Improve the app from that feedback.
 
 #### **Expanding Your App**
 
-* **Add more automation** connections to other business tools
-* **Create related apps** for other business processes
-* **Train team members** to build their own solutions
-* **Scale up** with enterprise features as you grow
+* **Add automations** that connect to more business tools.
+* **Build related apps** for other business processes.
+* **Teach team members** to build their own apps.
+* **Upgrade** to get enterprise features when your team grows.
 
 ### **Phase 2 — Run it as a business**
 
-Turn your 5-minute app into a business you run.
+Turn your 5-minute app into a business that you run.
 
-* [**Run Your Business on Taskade Genesis →**](../run-your-business/README.md) - The full track, from a working app to a live business
-* [**Add login & roles →**](../run-your-business/add-login-and-roles.md) - Gate access and give each user the right view
-* [**Put it on your own domain →**](../space-apps-guide/custom-domains.md) - Publish under your branded domain
-* [**Go-live checklist →**](../run-your-business/go-live-checklist.md) - Final checks before you send real customers in
+* [**Run Your Business on Taskade Genesis →**](../run-your-business/README.md): the full track, from a working app to a live business
+* [**Add login & roles →**](../run-your-business/add-login-and-roles.md): control access and give each user the right view
+* [**Put it on your own domain →**](../space-apps-guide/custom-domains.md): publish on your own domain
+* [**Go-live checklist →**](../run-your-business/go-live-checklist.md): last checks before real customers use the app
 
 ### **Learning Resources**
 
-* [**Examples & Templates →**](examples-and-templates.md) - Explore apps for your industry
-* [**Best Practices →**](../community-and-sharing/best-practices.md) - Write better prompts and get better results
-* [**Advanced Features →**](../space-apps-guide/advanced-features.md) - Unlock sophisticated business capabilities
-* [**Troubleshooting →**](../community-and-sharing/troubleshooting.md) - Fix common issues and optimization tips
+* [**Examples & Templates →**](examples-and-templates.md): apps for your industry
+* [**Best Practices →**](../community-and-sharing/best-practices.md): better prompts give better results
+* [**Advanced Features →**](../space-apps-guide/advanced-features.md): more business features
+* [**Troubleshooting →**](../community-and-sharing/troubleshooting.md): solutions to common problems
 
 ### **Get Help**
 
@@ -381,15 +395,15 @@ Turn your 5-minute app into a business you run.
 
 ## Quick Reference Card
 
-Keep this handy for your next app:
+Use this card for your next app.
 
 ### **The 5-Minute Process**
 
-1. **Identify problem** - What frustrates you or your customers?
-2. **Write description** - WHO + WHAT + AUTOMATIC ACTIONS
-3. **Build with Taskade Genesis** - Paste prompt and click Generate
-4. **Test thoroughly** - Try all features as real user would
-5. **Perfect & share** - Make adjustments and go live
+1. **Find the problem**: What annoys you or your customers?
+2. **Write the description**: WHO + WHAT + AUTOMATIC ACTIONS.
+3. **Build with Taskade Genesis**: Paste the prompt and click **Send**.
+4. **Test the app**: Use each feature as a real user does.
+5. **Improve and share**: Make changes, then publish.
 
 ### **Magic Formula Template**
 
@@ -401,20 +415,20 @@ They should [SPECIFIC STEPS], and when they do,
 
 ### **Testing Checklist**
 
-* ✅ User experience smooth and intuitive
-* ✅ Mobile-friendly design
-* ✅ All data being captured correctly
-* ✅ Automations sending notifications
-* ✅ File uploads working if needed
+* ✅ The app is easy to use.
+* ✅ The app works on phones.
+* ✅ The app saves all the data correctly.
+* ✅ The automations send the notifications.
+* ✅ File uploads work, if your app needs them.
 
 ***
 
 ### Next steps
 
 * Copy a working prompt: [Living System Examples & Templates](examples-and-templates.md)
-- Improve prompts: [Living System Best Practices](../community-and-sharing/best-practices.md)
-- Publish professionally: [Custom Domains & Branding](../space-apps-guide/custom-domains.md)
-- Fix common issues: [Living System Troubleshooting](../community-and-sharing/troubleshooting.md)
+* Improve prompts: [Living System Best Practices](../community-and-sharing/best-practices.md)
+* Publish professionally: [Custom Domains & Branding](../space-apps-guide/custom-domains.md)
+* Fix common problems: [Living System Troubleshooting](../community-and-sharing/troubleshooting.md)
 
 ---
 

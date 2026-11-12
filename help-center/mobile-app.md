@@ -1,7 +1,7 @@
 ---
 description: >-
-  Get productive on the go with Taskade for iOS and Android. Create projects,
-  manage tasks, use AI agents, and collaborate — all from your phone.
+  Use Taskade for iOS and Android to create projects, manage tasks, use AI
+  agents, and work with your team from your phone.
 ---
 
 # Mobile App
@@ -10,25 +10,30 @@ description: >-
 
 Taskade is available on **iOS** and **Android**. Download it from the [App Store](https://apps.apple.com/app/taskade-team-productivity/id1490048917) or [Google Play](https://play.google.com/store/apps/details?id=com.taskade.mobile).
 
-Once you sign in, you will see the same workspace structure as on desktop:
+After you sign in, you see the same workspace structure as on desktop:
 
 **Workspaces** > **Folders / Apps** > **Projects** > **Tasks**
 
-Everything syncs automatically between your phone, tablet, and computer.
+Taskade syncs all your work automatically between your phone, tablet, and computer.
 
 ***
 
 ## Create a New Project
 
-1. Tap the **(+) Create New** button (bottom-right corner)
-2. Choose an option:
-   * **Blank Project** — start from scratch
-   * **AI Agent** — create a new AI agent
-   * **Add Task** — quickly add a task to an existing project
-   * **AI Project Studio** — describe what you need and AI builds it for you
+The **(+) Create New** menu has these options:
+
+* **Blank Project** — An empty project.
+* **AI Agent** — A new AI agent.
+* **Add Task** — A quick way to add a task to a project that you already have.
+* **AI Project Studio** — You describe what you need, and AI builds the project for you.
+
+To create a project:
+
+1. Tap the **(+) Create New** button in the bottom-right corner.
+2. Select one of the options.
 
 {% hint style="success" %}
-**Try this now:** Tap **(+)** > **AI Project Studio**, type "weekly team meeting agenda," and watch Taskade generate a ready-to-use project in seconds.
+**Try this now:** Tap **(+)** > **AI Project Studio**. Type "weekly team meeting agenda". Taskade generates a ready-to-use project in seconds.
 {% endhint %}
 
 ***
@@ -37,107 +42,106 @@ Everything syncs automatically between your phone, tablet, and computer.
 
 ### Bottom Toolbar
 
-When you tap on a task, a toolbar appears at the bottom of the screen with quick actions:
+When you tap a task, a toolbar with quick actions shows at the bottom of the screen:
 
 | Action         | What It Does                              |
 | -------------- | ----------------------------------------- |
-| **AI**         | Get AI assistance for the selected task   |
+| **AI**         | Get AI help for the selected task         |
 | **Complete**   | Mark the task as done                     |
-| **Format**     | Open formatting options                   |
+| **Format**     | Open the formatting options               |
 | **@Mention**   | Tag a teammate                            |
 | **Tag**        | Add a label or tag                        |
-| **Duplicate**  | Create a copy of the task                 |
+| **Duplicate**  | Make a copy of the task                   |
 | **Copy**       | Copy the task content                     |
-| **Move**       | Move the task to another project          |
-| **Delete**     | Remove the task                           |
+| **Move**       | Move the task to a different project      |
+| **Delete**     | Delete the task                           |
 
 ### Formatting Toolbar
 
-Tap the **Format** button to access text formatting. Swipe left for more options:
+Tap **Format** to open the formatting options. Swipe left to see more options:
 
-* **Indent / Outdent** — organize task hierarchy
-* **Move Up / Down** — reorder tasks
-* **Bold**, **Italic**, **Underline** — style your text
-* **Highlight** — draw attention to key items
+* **Indent / Outdent** — Change the level of a task in the list.
+* **Move Up / Down** — Change the order of tasks.
+* **Bold**, **Italic**, **Underline** — Change the style of your text.
+* **Highlight** — Mark important items.
 
 ### Task Add-Ons
 
-Tap the **(+)** icon on any task to add more detail:
+To add more detail to a task, tap the **(+)** icon on the task. You can add these items:
 
-* **Due Date** — set a deadline
-* **Assign** — assign to a teammate
-* **Comment** — leave a note or update
-* **Upload File** — attach documents or images
-* **Timer** — track time spent
-* **Note** — add a longer description below the task
+* **Due Date** — A deadline for the task.
+* **Assign** — A teammate who owns the task.
+* **Comment** — A note or an update.
+* **Upload File** — A document or an image.
+* **Timer** — A record of the time that you spend on the task.
+* **Note** — A longer description below the task.
 
 ***
 
 ## AI Features on Mobile
 
-Taskade's full AI capabilities are available on your phone.
+You can use the full AI features of Taskade on your phone.
 
 ### AI Project Studio
 
-Generate complete projects from a simple prompt:
+To make a full project from a short prompt:
 
-1. Tap **(+)** > **AI Project Studio**
-2. Describe what you need (e.g., "product launch checklist for a SaaS app")
-3. Taskade generates the full project with tasks, structure, and details
+1. Tap **(+)** > **AI Project Studio**.
+2. Describe what you need, for example "product launch checklist for a SaaS app". Taskade generates the full project with tasks, structure, and details.
 
 ### AI Chat
 
-Get instant AI help inside any project:
+To get AI help in a project:
 
-1. Open a project
-2. Tap the **AI** button
-3. Ask questions, get summaries, brainstorm ideas, or draft content
+1. Open a project.
+2. Tap the **AI** button.
+3. Ask a question, or ask for a summary, ideas, or a draft.
 
 ### Custom AI Agents
 
-Create AI agents that know your business and can take action.
+You can create AI agents that know your business and can act for you.
 
 {% tabs %}
 {% tab title="Create an Agent" %}
-1. Tap **(+)** > **AI Agent**, or open **AI Agents** in the workspace menu and tap **New agent**
-2. Choose **Generate with AI**, **Templates**, or **Blank agent**
-3. If you picked **Generate with AI**, describe the agent, review the result, and tap **Create & Launch Agent**
-4. Customize your agent (see next tab)
+1. Tap **(+)** > **AI Agent**. You can also open **AI Agents** in the workspace menu and tap **New agent**.
+2. Select **Generate with AI**, **Templates**, or **Blank agent**.
+3. If you selected **Generate with AI**, describe the agent. Then review the result and tap **Create & Launch Agent**.
+4. Customize your agent. The next tab shows how.
 {% endtab %}
 
 {% tab title="Customize an Agent" %}
-Open the agent and configure it with two tabs:
+Open the agent. Then configure it on these two tabs:
 
-* **Knowledge** — change the instructions and the AI model, and add files, projects, or URLs for the agent to learn from
-* **Actions** — enable **Tools** like web search, image generation, or code execution, create custom slash **Commands** (e.g., `/summarize`, `/draft-email`), and connect an **Automation**
+* **Knowledge** — Change the instructions and the AI model. Add files, projects, or URLs that the agent learns from.
+* **Actions** — Enable **Tools**, for example web search, image generation, or code execution. Create custom slash **Commands**, for example `/summarize` or `/draft-email`. Connect an **Automation**.
 {% endtab %}
 
 {% tab title="Use an Agent" %}
-Three ways to interact with your agents on mobile:
+Use one of these three ways to work with an agent on mobile:
 
-1. **Chat directly** — open the agent and have a conversation
-2. **Slash commands in projects** — type `/` followed by a command name in any project
-3. **AI Agent assistant** — invoke the agent from the AI button in any project
+1. **Chat directly** — Open the agent and chat with it.
+2. **Slash commands in projects** — In a project, type `/` and then the command name.
+3. **AI Agent assistant** — In a project, start the agent from the AI button.
 {% endtab %}
 {% endtabs %}
 
 ### AI Agent Teams
 
-Combine multiple agents into a team for more complex work. AI Teams are available on **Pro and up**.
+You can put several agents into a team for larger work. AI Teams are available on **Pro and up**.
 
-1. Open **AI Teams** in the workspace menu
-2. Open a team to chat with it
-3. Pick a mode above the message box:
+1. Open **AI Teams** in the workspace menu.
+2. Open a team to chat with it.
+3. Select a mode above the message box:
 
 | Mode            | How It Works                                                  |
 | --------------- | ------------------------------------------------------------- |
-| **Auto**        | The single best agent for the message replies                 |
+| **Auto**        | The one agent that best fits the message replies              |
 | **Everyone**    | Every agent on the team replies, one after another            |
-| **Manual**      | Only the agents you select reply, one after another           |
+| **Manual**      | Only the agents that you select reply, one after another      |
 | **Orchestrate** | A lead plans the steps and gives each step to an agent        |
 
 {% hint style="info" %}
-**Auto mode** is the best starting point. A new team chat starts in Auto, and it uses one agent reply for each message.
+**Auto mode** is the best mode to start with. A new team chat starts in Auto. Auto uses one agent reply for each message.
 {% endhint %}
 
 ***
@@ -146,34 +150,34 @@ Combine multiple agents into a team for more complex work. AI Teams are availabl
 
 ### Share a Project
 
-1. Open the project
-2. Tap the **(...)** menu (top-right corner)
-3. Tap **Share**
-4. Enter an email address **or** copy the share link
+1. Open the project.
+2. Tap the **(...)** menu in the top-right corner.
+3. Tap **Share**.
+4. Enter an email address **or** copy the share link.
 
 ### Set Permissions
 
-When sharing, you can set a role for each person. Taskade uses role-based access from Owner to Viewer:
+When you share a project, you can give a role to each person. Taskade uses role-based access from Owner to Viewer:
 
-* **Editor** — full editing access
-* **Checker** — can view, comment, and check off tasks, but not edit content (paid plans)
-* **Viewer** — can view and comment, but not edit or check off tasks
+* **Editor** — Can edit all content.
+* **Checker** — Can view, comment, and mark tasks as done, but cannot edit content (paid plans).
+* **Viewer** — Can view and comment, but cannot edit content or mark tasks as done.
 
 {% hint style="info" %}
-**Real-time collaboration works on mobile too.** You will see teammates' cursors and changes appear live as they happen.
+**Real-time collaboration works on mobile too.** You see the cursors and the changes of your teammates at the time that they make them.
 {% endhint %}
 
 ***
 
 ## Offline Mode
 
-Taskade needs a live internet connection to open and sync your projects, so there is no offline editing mode on mobile.
+Taskade needs a live internet connection to open and sync your projects. There is no offline editing mode on mobile.
 
-* **Brief drops** — Taskade holds changes from the moments before a disconnection and tries to sync them when you reconnect
-* **Quick Add** — cannot send a task while your phone is offline
+* **Brief drops** — Taskade keeps the changes from the moments before a disconnection. When you reconnect, Taskade tries to sync them.
+* **Quick Add** — Quick Add cannot send a task while your phone is offline.
 
 {% hint style="warning" %}
-**Keep in mind:** After you reconnect, make sure that your latest changes appear in the project.
+**Important:** After you reconnect, make sure that your latest changes appear in the project.
 {% endhint %}
 
 ***

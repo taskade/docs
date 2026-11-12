@@ -1,14 +1,14 @@
 ---
 description: >-
-  Build Taskade AI Forms that start an automation on every submission, then use AI steps to analyze, categorize, and route responses into your workspace and CRM.
+  Build Taskade AI Forms that start an automation on each submission. AI steps then analyze, sort, and route the responses to your workspace and CRM.
 ---
 
 # AI Forms: Intelligent Data Collection
 
-**Create forms that start an automation the moment someone submits them. AI Forms collect the data, and the AI steps in your automation analyze each response, categorize it, and run the follow-up actions.**
+With AI Forms, you can collect answers and act on them at once. Each submission starts an automation. The AI steps in that automation read each answer, sort it, and run the follow-up actions.
 
 {% hint style="success" %}
-**New to AI Forms?** Start with a simple feedback form, then add one AI step after the trigger to see how a basic form turns into an automated workflow.
+**Is this your first AI Form?** Start with a simple feedback form. Then add one AI step after the trigger and see the result of each submission.
 {% endhint %}
 
 ***
@@ -19,19 +19,19 @@ description: >-
 
 | Feature               | Traditional Forms             | AI Forms                                          |
 | --------------------- | ----------------------------- | ------------------------------------------------- |
-| **Data Processing**   | Store raw responses           | AI steps analyze each response                    |
-| **Follow-up Actions** | Manual review required        | Automation routes each submission                 |
-| **Integration**       | Basic webhook/email           | Taskade projects, agents, and 100+ integrations   |
-| **Result Display**    | Static thank-you page         | Custom end page after submission                  |
+| **Data Processing**   | Keep the raw answers          | AI steps read and sort each answer                |
+| **Follow-up Actions** | A person reviews each answer  | The automation sends each submission to the correct place |
+| **Integration**       | A basic webhook or email      | Taskade projects, agents, and 100+ integrations   |
+| **Result Display**    | A fixed thank-you page        | A custom end page after the submission            |
 
 ### **Key AI Capabilities**
 
-The form is the trigger. The AI work happens in the steps that follow it:
+The form is the trigger. The AI work occurs in the steps after the trigger:
 
-* **Sentiment Analysis**: Add **Categorize with AI** with the Sentiment Analysis preset to detect the tone of text responses
-* **Auto-categorization**: Use **Categorize with AI** or **Ask Agent With Structured Output** to tag and organize responses
-* **Intelligent Routing**: Add a **Branch** step on the AI result to pick the next action
-* **File Reading**: Add **Convert File to Text** to read an uploaded file, including a scanned PDF or a phone photo
+* **Sentiment Analysis**: Add **Categorize with AI** with the Sentiment Analysis preset. It finds the tone of text answers.
+* **Auto-categorization**: Use **Categorize with AI**, or an **Ask an agent** step with structured output. These steps tag and sort the answers.
+* **Intelligent Routing**: Add a **Branch** step on the AI result. The branch selects the next action.
+* **File Reading**: Add **Turn a file into text** to read an uploaded file. It also reads a scanned PDF or a photo from a phone.
 
 ***
 
@@ -41,7 +41,9 @@ The form is the trigger. The AI work happens in the steps that follow it:
 
 #### **Option A: AI Generation (Recommended)**
 
-In the Automations tab, click **Add automation → Generate With AI** and pick **Form** mode. Describe the form and what happens after a submission:
+1. In the Automations tab, click **Add automation → Generate With AI**.
+2. Select **Form** mode.
+3. Describe the form and the actions after a submission:
 
 ```
 "Create a customer satisfaction survey for my restaurant with:
@@ -54,42 +56,42 @@ In the Automations tab, click **Add automation → Generate With AI** and pick *
 
 #### **Option B: Form Builder Interface**
 
-1. Go to your workspace **Automations** tab
-2. Click **Add automation**, then pick a template, or click **Create** to start from scratch
-3. Click **➕ Add Trigger → Form**
-4. Configure form settings and fields in the sidebar
-5. Add automation actions for processing responses
+1. Open the **Automations** tab of your workspace.
+2. Click **Add automation**. Then select a template, or click **Create** to start with an empty automation.
+3. Click **➕ Add Trigger → Form**.
+4. Configure the form settings and the fields in the sidebar.
+5. Add the automation actions that process the answers.
 
 ### **Step 2: Configure Form Settings**
 
 | Setting                | Description                              | Example                                    |
 | ---------------------- | ---------------------------------------- | ------------------------------------------ |
-| **Form Title**         | Choose a unique title for your form      | "Customer Feedback Survey"                 |
-| **Form Description**   | Describe the purpose of the form         | "Help us improve your experience"          |
-| **Submit Button Text** | Choose a title for the submission button | "Submit Feedback"                          |
-| **Form End Page**      | Display an end screen with custom text   | "Thank you! We'll respond within 24 hours" |
+| **Form Title**         | A unique title for your form             | "Customer Feedback Survey"                 |
+| **Form Description**   | The purpose of the form                  | "Help us improve your experience"          |
+| **Submit Button Text** | The text on the submit button            | "Submit Feedback"                          |
+| **Form End Page**      | An end screen with custom text           | "Thank you! We'll respond within 24 hours" |
 
 ### **Step 3: Choose Form Fields**
 
-AI Forms include customizable field types to collect different kinds of information:
+AI Forms have many field types. Each type collects a different kind of information:
 
-| Field Type          | Description                             | Best For                       | Pair With                                  |
+| Field Type          | Description                             | Use It For                     | Next Step to Add                           |
 | ------------------- | --------------------------------------- | ------------------------------ | ------------------------------------------ |
-| **Short Text**      | For short answers like a name or title  | Names, titles, keywords        | Add Task, Insert Row                       |
-| **Long Text**       | For longer answers like comments        | Feedback, descriptions         | Categorize with AI (sentiment, topic)      |
-| **Option Dropdown** | A list of choices where one is selected | Categories, preferences        | Branch on the selected option              |
-| **Number**          | For numbers like age or quantity        | Ages, quantities, scores       | Filter Data on a range                     |
-| **File**            | Lets users upload a file                | Documents, images, attachments | Convert File to Text, then Ask Agent       |
-| **Phone**           | For phone numbers                       | Contact information            | Twilio Send SMS, WhatsApp Business         |
-| **Email**           | For email addresses                     | Contact information            | Gmail Send Email, CRM contact              |
-| **Date**            | A calendar to pick a date               | Appointments, deadlines        | Google Calendar Create Event               |
-| **Rating**          | For giving a rating                     | Satisfaction, quality scores   | Branch on low ratings                      |
-| **Single-Select**   | Allow one option from predefined list   | Multiple choice questions      | Branch on the answer                       |
-| **Multi-Select**    | Allow multiple options                  | Interests, features, tags      | Loop over the selected options             |
-| **Checkbox**        | A yes/no checkbox submitting true/false | Consent boxes, opt-ins, toggles | Branch or filter automations on the value |
-| **URL**             | Accept web addresses or links           | Website links, references      | Scrape Webpage                             |
+| **Short Text**      | A short answer, like a name or a title  | Names, titles, keywords        | Add Task, Insert Row                       |
+| **Long Text**       | A longer answer, like a comment         | Feedback, descriptions         | Categorize with AI (sentiment, topic)      |
+| **Option Dropdown** | A list of choices. The user selects one | Categories, preferences        | Branch on the selected option              |
+| **Number**          | A number, like an age or a quantity     | Ages, quantities, scores       | Filter Data on a range                     |
+| **File**            | The user uploads a file                 | Documents, images, attachments | Turn a file into text, then Ask an agent   |
+| **Phone**           | A phone number                          | Contact information            | Twilio Send SMS, WhatsApp Business         |
+| **Email**           | An email address                        | Contact information            | Gmail Send Email, CRM contact              |
+| **Date**            | A calendar to select a date             | Appointments, deadlines        | Google Calendar Create Event               |
+| **Rating**          | A rating                                | Satisfaction, quality scores   | Branch on low ratings                      |
+| **Single-Select**   | One option from a list                  | Multiple-choice questions      | Branch on the answer                       |
+| **Multi-Select**    | More than one option from a list        | Interests, features, tags      | Loop over the selected options             |
+| **Checkbox**        | A yes or no box. It sends true or false | Consent boxes, opt-ins, toggles | Branch or Filter Data on the value        |
+| **URL**             | A web address or a link                 | Website links, references      | Read a web page                            |
 
-A **File** upload is saved with the submission and shows up in the Media tab.
+Taskade saves a **File** upload with the submission. The file shows in the Media tab.
 
 ### **Step 4: Configure AI-Powered Processing**
 
@@ -115,7 +117,7 @@ Action: Update Custom Fields (Sentiment)
 
 #### **Dynamic Question Logic**
 
-Form questions are fixed. To act differently on different answers, add **Branch** steps after the trigger.
+The questions of a form do not change. To do different actions for different answers, add **Branch** steps after the trigger.
 
 ### **Step 5: Set Up AI Processing Rules**
 
@@ -123,7 +125,7 @@ Form questions are fixed. To act differently on different answers, add **Branch*
 
 ```
 Trigger: Form
-Action: Ask Agent With Structured Output
+Action: Ask an agent with structured output
   Output: Category (Single Select:
             complaint, compliment, suggestion, question)
           Urgent (Boolean)
@@ -132,7 +134,7 @@ Branch: If Urgent is true → Slack → Send Direct Message (on-call)
 
 #### **Smart Validation Rules**
 
-Each field type checks its own format, for example Email, Phone, Number, Date, and URL. For checks after submission, add a **Filter Data** step, or an **Ask Agent With Structured Output** step that flags incomplete answers.
+Each field type examines its own format, for example Email, Phone, Number, Date, and URL. To examine answers after a submission, add a **Filter Data** step. You can also add an **Ask an agent** step with structured output that finds incomplete answers.
 
 ***
 
@@ -146,14 +148,14 @@ Set the title, the description, the submit button text, and the end page text in
 
 #### **Dynamic Visual Elements**
 
-* **Hide Branding**: Remove the "Powered by Taskade" footer from your public form (paid plans)
-* **Form End Page**: Show a custom end screen after submission
+* **Hide Branding**: Removes the "Powered by Taskade" footer from your public form (paid plans).
+* **Form End Page**: Shows a custom end screen after a submission.
 
 ### **Multi-Step Forms with AI Logic**
 
 #### **Smart Step Progression**
 
-A form is one page. To collect more information later, send a second form link from the automation, for example in a follow-up email.
+A form has one page only. To collect more information later, send a link to a second form from the automation. For example, put the link in a follow-up email.
 
 ***
 
@@ -161,38 +163,45 @@ A form is one page. To collect more information later, send a second form link f
 
 ### **Start with AI Form Templates**
 
-Don't want to build forms from scratch? Click **➕ Add Trigger**, go to the **Forms** category, and choose a template on the right. Then customize it. Common uses:
+You can start from a template instead of an empty form:
+
+1. Click **➕ Add Trigger**.
+2. Open the **Forms** category.
+3. Select a template on the right.
+4. Change the template to fit your needs.
+
+Common templates:
 
 | Template Type          | Use Case                         | Included Fields                         | Automation Actions                       |
 | ---------------------- | -------------------------------- | --------------------------------------- | ---------------------------------------- |
-| **Customer Feedback**  | Collect product/service feedback | Rating, comments, contact info          | Auto-categorize, notify team             |
-| **Lead Qualification** | Qualify potential customers      | Company, budget, timeline               | Score leads, assign to sales             |
-| **Support Ticket**     | Technical support requests       | Issue type, priority, description       | Route to specialists, create tasks       |
-| **Event Registration** | Event sign-ups and RSVPs         | Name, email, dietary restrictions       | Send confirmations, update attendee list |
+| **Customer Feedback**  | Collect feedback on a product or service | Rating, comments, contact info  | Sort the feedback, notify the team       |
+| **Lead Qualification** | Qualify possible customers       | Company, budget, timeline               | Score leads, assign them to sales        |
+| **Support Ticket**     | Technical support requests       | Issue type, priority, description       | Send to specialists, create tasks        |
+| **Event Registration** | Event sign-ups and RSVPs         | Name, email, dietary restrictions       | Send confirmations, update the attendee list |
 | **Job Application**    | Collect job applications         | Resume upload, experience, availability | Screen candidates, schedule interviews   |
-| **Survey Research**    | Market research and surveys      | Multiple choice, ratings, demographics  | Analyze trends, generate reports         |
+| **Survey Research**    | Market research and surveys      | Multiple choice, ratings, demographics  | Find trends, make reports                |
 
 ### **Share and Use Forms**
 
-1. Go to the **Automations** tab and open your form automation.
-2. Go to the **Form** tab at the top.
-3. Use the run button to test the form.
-4. Click **Publish** in the top-right corner to share the form.
+1. Open the **Automations** tab, then open your form automation.
+2. Open the **Form** tab at the top.
+3. Click the run button to test the form.
+4. To share the form, click **Publish** in the top-right corner.
 
 #### **Public Link Sharing**
 
-* Share the form link by email, social media, or messaging
-* Publish forms on your own domain with a [custom domain](https://www.taskade.com/learn/genesis/custom-domains) (Pro and up)
-* See every submission in the automation **Runs** tab
+* You can share the form link by email, on social media, or in a message.
+* You can publish forms on your own domain with a [custom domain](https://www.taskade.com/learn/genesis/custom-domains) (Pro and up).
+* The automation **Runs** tab shows every submission.
 
 #### **Website Embedding**
 
-You can embed a published form on your website as well as share its link. Click **Publish**, then copy the **Embed Code**.
+You can also put a published form on your website. Click **Publish**, then copy the **Embed Code**.
 
 #### **Configure Form Visibility**
 
-* **Public link**: Anyone with the link can open and submit the form
-* **Require Password**: Anyone who opens the link must enter the password before viewing or submitting (Pro and up)
+* **Public link**: Anyone with the link can open and submit the form.
+* **Require Password**: A visitor must enter the password before the visitor can see or submit the form (Pro and up).
 
 ***
 
@@ -211,10 +220,10 @@ Action: Add Task (customer name, rating, and category)
 
 #### **AI Agent Collaboration**
 
-* **Response Analysis**: An **Ask Agent** step reviews each submission
-* **Quality Scoring**: **Ask Agent With Structured Output** returns a score field
-* **Follow-up Suggestions**: The agent drafts the next step, and a person reviews it
-* **Pattern Recognition**: A weekly **Schedule** automation with **Find Task(s)** and **Ask Agent** summarizes trends
+* **Response Analysis**: An **Ask an agent** step reviews each submission.
+* **Quality Scoring**: An **Ask an agent** step with structured output returns a score field.
+* **Follow-up Suggestions**: The agent writes a draft of the next step. Then a person reviews it.
+* **Pattern Recognition**: A weekly **Schedule** automation with **Find Task(s)** and **Ask an agent** summarizes trends.
 
 ### **External Service Integration**
 
@@ -253,18 +262,18 @@ Branch on the Lead Qualification result:
 
 #### **Completion Intelligence**
 
-The automation **Runs** tab lists each submission with the input and output of every step.
+The automation **Runs** tab lists each submission. It shows the input and the output of each step.
 
 #### **Response Quality Metrics**
 
-To track quality, save the AI results of each submission (for example sentiment and category) to a project or a Google Sheet. Then review or chart that data.
+To track quality, save the AI results of each submission to a project or a Google Sheet. Examples are the sentiment and the category. Then review that data or make a chart of it.
 
 ### **Smart Reporting Dashboard**
 
 #### **Auto-Generated Insights**
 
-* **Weekly Intelligence Reports**: A **Schedule** automation finds the week's submissions and asks an agent to summarize trends
-* **Actionable Recommendations**: Ask the agent to suggest form and process improvements in the same summary
+* **Weekly Intelligence Reports**: A **Schedule** automation finds the submissions of the week. Then it asks an agent to summarize trends.
+* **Actionable Recommendations**: In the same summary, the agent can suggest improvements to the form and to the process.
 
 ***
 
@@ -274,13 +283,19 @@ To track quality, save the AI results of each submission (for example sentiment 
 
 #### **Direct Website Embed**
 
-Publish the form, then share its link or embed it on your website.
+Publish the form. Then share its link or put it on your website.
 
 ### **API Access**
 
 #### **Form Data**
 
-AI Forms does not currently expose a public REST API for reading submissions in API v1 (there is no `/forms` endpoint). To work with submission data programmatically, capture it with an **automation** when a form is submitted — route responses into a project, forward them to an external service via the HTTP/Webhook action, or hand them to an agent. See [Webhooks](../../apis-living-system-development/webhooks.md) and the [Action & Trigger Reference](./actions.md).
+API v1 has no public REST endpoint to read form submissions (there is no `/forms` endpoint). To use submission data in your own code, catch it with an **automation** when a user submits the form. The automation can:
+
+* Add the answers to a project
+* Send the answers to an outside service with the HTTP or Webhook action
+* Give the answers to an agent
+
+Read [Webhooks](../../apis-living-system-development/webhooks.md) and the [Action & Trigger Reference](./actions.md).
 
 ### **Webhook Integration**
 
@@ -303,30 +318,30 @@ Action: Send HTTP Request
 
 #### **AI-Driven UX Principles**
 
-* **Start small**: Ask only for the fields your automation uses
-* **Use the right field type**: Email, Phone, Date, and URL fields check their own format
-* **Use a Checkbox for consent**: Branch or filter on the true/false value
+* **Start small**: Ask only for the fields that your automation uses.
+* **Use the correct field type**: Email, Phone, Date, and URL fields examine their own format.
+* **Use a Checkbox for consent**: Branch or filter on the true or false value.
 
 #### **Response Quality Enhancement**
 
-* **Question Clarity**: Write short, specific questions
-* **Response Validation**: Add a Filter Data step, or an AI step that flags incomplete answers
-* **Test first**: Submit a test entry and read the run before you publish
+* **Question Clarity**: Write short and specific questions.
+* **Response Validation**: Add a Filter Data step, or an AI step that finds incomplete answers.
+* **Test first**: Before you publish, submit a test entry and read the run.
 
 ### **Data Privacy & Security**
 
 #### **AI-Enhanced Privacy Controls**
 
-* **Require Password**: Protect a form that is not for the public (Pro and up)
-* **Collect less**: Do not ask for data the automation does not need
-* **Review the steps**: Check which connected tools receive each submission
+* **Require Password**: Protect a form that is not for the public (Pro and up).
+* **Collect less**: Do not ask for data that the automation does not need.
+* **Review the steps**: Find out which connected tools get each submission.
 
 ### **Performance Optimization**
 
 #### **Loading Speed & Responsiveness**
 
-* Put **Filter Data** early, so later steps run only for submissions that need them
-* Keep AI steps after the filter to save AI credits
+* Put **Filter Data** early. Then later steps run only for the submissions that need them.
+* Put AI steps after the filter. This uses fewer AI credits.
 
 ***
 
@@ -337,7 +352,7 @@ Action: Send HTTP Request
 ```
 Use Case: Restaurant feedback collection
 Steps:
-  - Convert File to Text or Ask Agent on uploaded meal photos
+  - Turn a file into text or Ask an agent on uploaded meal photos
   - Categorize with AI (Sentiment Analysis) on written feedback
   - Branch: route complaints to managers
   - Weekly Schedule automation: summarize service quality trends
@@ -358,7 +373,7 @@ Steps:
 ```
 Use Case: Conference attendee registration
 Steps:
-  - Ask Agent: recommend sessions from the attendee's interests
+  - Ask an agent: recommend sessions from the attendee's interests
   - Gmail → Send Email (confirmation with the recommendations)
   - Google Sheets → Insert Row (attendee list)
 ```
@@ -371,29 +386,27 @@ Steps:
 
 #### **AI Analysis Not Working**
 
-* **Check AI credits**: AI steps use the workspace AI credits
-* **Check the runs**: Open the run in the **Runs** tab and read the input and output of each step
-* **Response Quality**: AI steps need meaningful text responses for analysis
-* **Check the input**: Make sure that the AI step points at the right form field with the `@` picker
+* **AI credits**: AI steps use the AI credits of the workspace. Make sure that credits are available.
+* **Runs**: Open the run in the **Runs** tab. Read the input and the output of each step.
+* **Response Quality**: An AI step needs a text answer with real content.
+* **Input**: Make sure that the AI step points at the correct form field. Use the `@` picker.
 
 #### **Integration Problems**
 
-* **Plan**: Premium integrations need a paid plan
-* **Data Mapping**: Verify the field mapping between the form and the destination step
-* **Authentication**: Reconnect the integration if its connection expired
-* **Rate Limits**: Add a Delay step for a service with rate limits
+* **Plan**: Premium integrations need a paid plan.
+* **Data Mapping**: Make sure that each form field goes to the correct field of the next step.
+* **Authentication**: If the connection of an integration expired, connect it again.
+* **Rate Limits**: If a service has rate limits, add a Delay step.
 
 ### **Getting Help**
 
 * **Documentation**: [Taskade Developer API](../../apis-living-system-development/developer-home.md)
-* **Support**: Contact support for advanced configuration assistance
-* **Templates**: Browse pre-built AI form templates in your workspace
+* **Support**: Contact support for help with advanced configuration.
+* **Templates**: Find ready-made AI form templates in your workspace.
 
 ***
 
-**🚀 Ready to transform your data collection with AI?** Start with a simple feedback form and discover how AI steps can make every form submission more valuable and actionable.
-
-_For more advanced AI integrations, explore our_ [_AI Agents documentation_](../ai-features/ai-agents-getting-started.md) _and_ [_Automation workflows_](./)_._
+_For more AI integrations, read the_ [_AI Agents documentation_](../ai-features/ai-agents-getting-started.md) _and_ [_Automation workflows_](./)_._
 
 ---
 

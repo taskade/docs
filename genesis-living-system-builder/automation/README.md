@@ -1,11 +1,11 @@
 ---
 description: >-
-  Automate work 24/7 with Taskade's trigger-and-action engine — connect 100+ integrations and let AI agents run your workflows from start to finish.
+  Build Taskade automations that run 24/7. A trigger starts each one, and its steps use AI agents and 100+ integrations to do the work.
 ---
 
 # Automations Overview
 
-Automations let you build trigger-and-action workflows that run on their own — connecting Taskade to your tools and letting agents act 24/7.
+Automations are workflows that run on their own. A trigger starts each automation, and its steps do the work in Taskade and in your connected tools.
 
 ## I want to…
 
@@ -18,17 +18,17 @@ Automations let you build trigger-and-action workflows that run on their own —
 | See every available connector | [Integration Options](integrations.md) |
 | Start from a ready-made recipe | [Automation Recipes](recipes.md) |
 
-**Act. Execute. Evolve.** Taskade Automations are the Execution layer of Workspace DNA. They turn static workflows into systems that react to events and act for you.
+Automations are the Execution layer of Workspace DNA. They react to events and do the work for you.
 
 {% hint style="success" %}
-**Execution Layer** — Automations act on events in your workspace and your connected tools. Every run is logged, so you can review it and refine the flow.
+**Execution Layer**: Automations act on events in your workspace and in your connected tools. Taskade keeps a log of every run. You can examine each run and improve the flow.
 {% endhint %}
 
 ## What are automations?
 
-Automations are the Execution layer of your workspace. They are how your workspace can **react**, **decide**, and **execute** when something happens.
+An automation lets your workspace react to an event, make a decision, and do the work.
 
-Every automation follows the same shape: a trigger starts it, an optional condition routes it, and actions do the work.
+Every automation has the same shape. A trigger starts it. An optional condition sends it on the correct path. Then the actions do the work.
 
 ```mermaid
 flowchart TD
@@ -39,72 +39,76 @@ flowchart TD
 ```
 
 
-Canonical foundation: [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
+For the full model, read [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
-### What you use it for
+### What you can do with automations
 
-* **Notifications**: send Slack/Teams/email alerts.
-* **Routing**: assign work based on content, priority, or owner.
-* **Sync**: keep CRMs, Sheets, and databases updated.
-* **Reporting**: scheduled summaries and digests.
-* **Approvals**: add a human-in-the-loop before publishing or sending.
+* **Notifications**: Send alerts to Slack, Microsoft Teams, or email.
+* **Routing**: Assign work by content, priority, or owner.
+* **Sync**: Keep CRMs, spreadsheets, and databases up to date.
+* **Reports**: Send scheduled summaries and digests.
+* **Approvals**: Add a **Wait for approval** step. The run waits until a teammate approves or rejects it.
 
 ### Core building blocks
 
 #### Triggers
 
-Triggers start workflows. Common ones are schedules, forms, webhooks, and project events.
+A trigger starts a workflow. Common triggers are schedules, forms, webhooks, and project events.
 
 #### Actions
 
-Actions do work. Create tasks, update fields, call webhooks, send notifications, and more.
+An action does the work. Actions create tasks, update fields, call webhooks, and send notifications.
 
-#### Conditions and branching
+#### Conditions and branches
 
-Use branches to route different cases. Example: urgent → page someone, normal → add to queue.
+A **Branch** step sends different cases on different paths. For example, an urgent case alerts a person, and a normal case goes into a queue.
 
 #### AI steps
 
-Use an agent to classify, extract, or draft. Then route or act on the structured result.
+An **Ask an agent** step can sort, extract, or write text. To get typed fields back, set **Output Type** to **Structured Output**. Later steps can then use each field.
+
+#### Failed steps
+
+If an app is busy or down for a few minutes, check **Retry if this step fails** on that step. To let the run go on after a failure, check **Continue if this step fails**.
 
 ### Getting started (fast)
 
-1. Pick one workflow you want end-to-end.
-2. Choose one trigger.
-3. Add 1–3 actions.
-4. Test with real data.
-5. Add branching and AI only if needed.
+1. Select one workflow that you want to automate from start to end.
+2. Select one trigger.
+3. Add 1 to 3 actions.
+4. Test the automation with real data.
+5. Add branches and AI steps only when you need them.
 
 ### Typical workflows
 
-* Form submission → classify → create task → notify channel
-* Webhook → normalize data → update CRM → log result
-* Schedule → build weekly summary → send digest
+* Form submission → sort with AI → create task → send a channel message
+* Webhook → clean the data → update the CRM → log the result
+* Schedule → write a weekly summary → send a digest
 
 ### Available Triggers
 
 **Project Events:**
 
-* **Task Added** — when a new task is created
-* **Task Completed** — when a task is marked done
-* **Task Assigned** — when a task is assigned to someone
-* **Task Due** — when a task reaches its due date
-* **New Comment** — when a comment is added
-* **New Due Date** — when a due date is set
-* **Custom Field Updated** — when a custom field value changes
-* **Project Completed** — when all tasks are done
-* **Public Agent Chat Ended** — when a public agent conversation finishes
-* **Task Moved** — when a task moves to another block within a project
-* **Project Created** — when a new project is created in a space
-* **Due Date Removed** — when a due date is cleared from a task
-* **File Added to Media** — when a file is uploaded to the media library
+* **Task Added**: a person or a step adds a task
+* **Task Completed**: a task is marked as done
+* **Task Assigned**: a person gets a task
+* **Task Due**: a task reaches its due date
+* **New Comment**: a person adds a comment
+* **New Due Date**: a task gets a due date
+* **Custom Field Updated**: the value of a custom field changes
+* **Project Completed**: all tasks in the project are done
+* **Public Agent Chat Ended**: a public agent conversation ends
+* **Task Moved**: a task moves to another block in the same project
+* **Project Created**: a new project starts in a space
+* **Due Date Removed**: a task loses its due date
+* **File Added to Media**: a person uploads a file to Media
 
 **External Triggers:**
 
-* **Webhook** — receive data from any external service via HTTP POST (Pro and up)
-* **Form** — custom input forms with text, email, date, and time fields
-* **Schedule** — run every X minutes (sub-hourly intervals, paid plans), hourly, daily, weekly, or monthly
-* **Mailhook** — trigger from incoming emails
+* **Webhook**: receives data from an outside service with an HTTP POST request (Pro and up)
+* **Form**: a person submits a form that you build
+* **Schedule**: runs every few minutes (paid plans), every hour, day, week, or month
+* **Mailhook**: an email arrives at the address of the automation
 
 **Integration Triggers** (from connected services):
 
@@ -112,7 +116,7 @@ Calendly, Slack, Typeform, Gmail, Google Sheets, Google Forms, Google Drive, Web
 
 ### Integration Pieces
 
-Connect your workflows to popular tools across the [Taskade integrations](https://www.taskade.com/integrations) directory. Premium integrations (for example Gmail, Slack, Google Sheets, HubSpot and Stripe) need a paid plan. The Free plan runs the built-in steps and the standard connectors (HTTP Request, RSS, Pushover and MCP Client).
+You can connect your workflows to the tools in the [Taskade integrations](https://www.taskade.com/integrations) directory. Premium integrations (for example Gmail, Slack, Google Sheets, HubSpot, and Stripe) need a paid plan. The Free plan runs the built-in steps and the standard connectors (HTTP Request, RSS, Pushover, and MCP Client).
 
 | Category         | Services                                                             |
 | ---------------- | -------------------------------------------------------------------- |
@@ -125,20 +129,20 @@ Connect your workflows to popular tools across the [Taskade integrations](https:
 | Developer        | GitHub, HTTP                                                         |
 | Forms & CMS      | Typeform, Webflow, WordPress                                         |
 | Scheduling       | Calendly, Cal.com                                                    |
-| AI & Media       | Web Search, Web Scraping, YouTube Transcription, Document Extraction |
+| AI & Media       | Search the web, Read a web page, Transcribe a YouTube video, Turn a file into text |
 | Utilities        | Schedule, Delay, Loop, Branch, Filter                                |
 
 ## Next steps
 
-* [Action & Trigger Reference](actions.md) — pick a trigger and add your first actions
-* [Automation Recipes](recipes.md) — start from a proven workflow
-* [Integration Overview](comprehensive-integration-guide.md) — connect the tools you already use
-* [Integration Options](integrations.md) — see the full list of connectors
-* [MCP Connectors](../genesis/mcp-connectors.md) — call any MCP server from an automation with the MCP Client step
-* [Living System Troubleshooting](../community-and-sharing/troubleshooting.md) — fix issues and get help
+* [Action & Trigger Reference](actions.md): select a trigger and add your first actions
+* [Automation Recipes](recipes.md): start from a workflow that works
+* [Integration Overview](comprehensive-integration-guide.md): connect the tools that you use now
+* [Integration Options](integrations.md): see the full list of connectors
+* [MCP Connectors](../genesis/mcp-connectors.md): call an MCP server from an automation with the MCP Client step
+* [Living System Troubleshooting](../community-and-sharing/troubleshooting.md): fix problems and get help
 
 {% hint style="info" %}
-This page stays overview-level. Deep trigger/action lists, templates, and advanced patterns live in the reference pages above.
+This page gives an overview only. The reference pages above have the full lists of triggers and actions, the templates, and the advanced patterns.
 {% endhint %}
 
 ---

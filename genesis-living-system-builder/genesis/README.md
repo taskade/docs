@@ -5,7 +5,7 @@ description: >-
 
 # Taskade Genesis Overview
 
-Taskade Genesis lets you turn a plain-English prompt into a live application — UI, data, agents, and automations — running on your own workspace.
+Taskade Genesis turns a plain-English prompt into a live app. The app has screens, data, AI agents, and automations, and it runs in your own workspace.
 
 ## I want to…
 
@@ -24,10 +24,10 @@ Taskade Genesis lets you turn a plain-English prompt into a live application —
 
 ## What Genesis can build
 
-* **Web apps**: dashboards, portals, lightweight CRMs
+* **Web apps**: dashboards, portals, and small CRMs
 * **Websites**: landing pages with live content and AI
-* **Internal tools**: admin panels, trackers, ops consoles
-* **Data collection**: lead capture, intake forms, surveys
+* **Internal tools**: admin panels, trackers, and operations consoles
+* **Data collection**: lead capture, intake forms, and surveys
 
 Browse examples: [taskade.com/apps](https://www.taskade.com/apps).\
 See templates: [Living System Examples & Templates](examples-and-templates.md).
@@ -35,21 +35,18 @@ See templates: [Living System Examples & Templates](examples-and-templates.md).
 ## How Genesis works (short version)
 
 1. You describe an app and its workflow.
-2. Taskade Genesis generates a UI and data model.
-3. The app runs on your workspace, not a separate backend.
+2. Taskade Genesis makes the screens and the data structure.
+3. The app runs in your workspace. It does not need a separate backend.
 
-The key idea is reuse.\
-Your apps reuse the same **memory**, **intelligence**, and **execution**.
+Your apps use the same three parts of your workspace: **memory**, **intelligence**, and **execution**.
 
 ## Workspace DNA
 
-Workspace DNA is how Taskade stays one system.\
-It connects data (memory), agents (intelligence), and automations (execution).
+Workspace DNA is the name for these three parts. It connects your data (memory), your agents (intelligence), and your automations (execution). Because of this, Taskade works as one system.
 
 ### 1) Living Memory (data)
 
-Projects and databases store structured knowledge.\
-This is what agents read and automations update.
+Projects and databases store your structured knowledge. Agents read this data, and automations update it.
 
 Start here:
 
@@ -58,8 +55,7 @@ Start here:
 
 ### 2) Living Intelligence (agents)
 
-AI agents reason with workspace context.\
-They draft, classify, summarize, and run tools across projects.
+AI agents use the context of your workspace. They write drafts, sort items, make summaries, and use tools across your projects.
 
 Start here:
 
@@ -68,8 +64,7 @@ Start here:
 
 ### 3) Living Execution (automations)
 
-Automations execute event-driven workflows.\
-They connect Taskade to external tools and services.
+Automations run a workflow when an event occurs. They connect Taskade to external tools and services.
 
 Start here:
 
@@ -79,11 +74,11 @@ Start here:
 
 ## Next steps
 
-* [Getting Started](getting-started.md) — build your first living system in 5 minutes
-* [Prompt Guide](prompt-guide.md) — get sharper results from your prompts
-* [Run Your Business on Taskade Genesis](../run-your-business/README.md) — take an app to production
-* [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md) — on a paid plan, edit your app's source from Claude, Cursor, or any IDE
-* [taskade.com/apps](https://www.taskade.com/apps) — browse community apps
+* [Getting Started](getting-started.md): build your first living system in 5 minutes
+* [Prompt Guide](prompt-guide.md): get better results from your prompts
+* [Run Your Business on Taskade Genesis](../run-your-business/README.md): take an app to production
+* [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md): on a paid plan, edit the source of your app from Claude, Cursor, or another IDE
+* [taskade.com/apps](https://www.taskade.com/apps): browse community apps
 
 ---
 

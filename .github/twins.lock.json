@@ -42,19 +42,19 @@
     ]
   },
   "https://www.taskade.com/docs/guides/agent-embeds": {
-    "sha256": "b6659a4e1ff04627d730dc5e8dcdad52861164f503f8b5cbe209f09e835c90aa",
+    "sha256": "a7d1b03f0c90c730a21b1e7c0dea494f1f4ea5597226900651aedff63c084b4f",
     "pages": [
       "apis-living-system-development/agent-embeds.md"
     ]
   },
   "https://www.taskade.com/docs/guides/autonomous-agents": {
-    "sha256": "f90bc9f0458735abb030603ca38b1b11eb102ef44ca4742fed743f13286a18b3",
+    "sha256": "89d3a489ad7ce5e622c4e129200d062531e72b684eb41ed956bac0609077f98f",
     "pages": [
       "apis-living-system-development/autonomous-agents.md"
     ]
   },
   "https://www.taskade.com/docs/guides/bundles": {
-    "sha256": "1bde99cef7f5004e22c1f4d0dcb8b8269c693bf3e63c02ad0f1fa8d218c0f5ae",
+    "sha256": "9b456b4fb95d3d472c302b05c10603da7cde6afac8eff843d67f7012c65ef1fc",
     "pages": [
       "apis-living-system-development/bundles.md"
     ]
@@ -84,7 +84,7 @@
     ]
   },
   "https://www.taskade.com/docs/mcp/hosted-mcp": {
-    "sha256": "504248e682a104d817930c61d531dcf2d2be7754fae576443e8cb6124ae85298",
+    "sha256": "5abd7c829654bc143c749917ece3b1f07865cff223ad8f303b3df82b8568e286",
     "pages": [
       "apis-living-system-development/genesis-app-mcp.md"
     ]
@@ -108,7 +108,7 @@
     ]
   },
   "https://www.taskade.com/docs/mcp/workspace-mcp-advanced": {
-    "sha256": "60f5fd3c5bf583315dd75e5ccc13f80df1145223db19dc1eae5ac238995fa2a6",
+    "sha256": "e665cfc3293d4df239b7c03ccb9e31930468213b0c399e80666df2d6dd34d73e",
     "pages": [
       "apis-living-system-development/workspace-mcp-advanced.md"
     ]
@@ -120,13 +120,13 @@
     ]
   },
   "https://www.taskade.com/learn/account/billing-faq": {
-    "sha256": "2f1df92a824dc1e96cadf2bb68613447bb7123dbcb14defc390fb5648fe18b5f",
+    "sha256": "4ee0dd386acb4998bf3591459bd894f755c4e4a230bc1cf5c95c21bc2c2c88de",
     "pages": [
       "account-management/credits-and-billing.md"
     ]
   },
   "https://www.taskade.com/learn/account/desktop-settings": {
-    "sha256": "ee1c33816d441482b4e6147ceab4a97fc1beefedab77e439c23714bd308b0eb1",
+    "sha256": "e5c7abf5b402c42469ccec6b753185329fd42bb15d1b045dfde275e5808772a0",
     "pages": [
       "help-and-support/index/08_mobile_desktop.md"
     ]
@@ -150,7 +150,7 @@
     ]
   },
   "https://www.taskade.com/learn/account/plan-matrix": {
-    "sha256": "de47a9ca5c0d9a076aca40c484a5100b99cc10ccf2ac3a772bc360197299d4cf",
+    "sha256": "d1c891596381bc30be48b5806bdc75c42f0ad9e0d38c12c0605ad96dd73f14cd",
     "pages": [
       "account-management/README.md"
     ]
@@ -170,7 +170,7 @@
     ]
   },
   "https://www.taskade.com/learn/account/what-is-taskade": {
-    "sha256": "0418d5f8e2771897d8a4d9591d54c5674650cb79be9b5bc31211659a4e8fd876",
+    "sha256": "9597c9976434afe17eafeaf21035df406c32947c98db23d6e9c2e992572b4863",
     "pages": [
       "help-and-support/index/README.md"
     ]
@@ -183,13 +183,13 @@
     ]
   },
   "https://www.taskade.com/learn/agents/agent-playbook": {
-    "sha256": "b9e792b092f8bf21018ddd215f34521e3ea5b398683aad2fc7a3248e75f518d3",
+    "sha256": "1748d41cb1df8c8f9b1072f2fc418ffa0530d71b855b3a5a41191a9199e78c52",
     "pages": [
       "genesis-living-system-builder/ai-features/ai-agents-getting-started.md"
     ]
   },
   "https://www.taskade.com/learn/agents/agent-tools": {
-    "sha256": "af1d57add24a8f40769685bb5cb8ff88d1b18cc80b687328a69d4cc5c8a61f45",
+    "sha256": "fd8cb02ac897b83e99e67012ba1c2efc92072ef5791358f31dc5661f65f7087d",
     "pages": [
       "genesis-living-system-builder/ai-features/agent-tools.md"
     ]
@@ -207,7 +207,7 @@
     ]
   },
   "https://www.taskade.com/learn/agents/ai-teams": {
-    "sha256": "fa6a9ad91518f22bf13247ff3931ff7542b51d2d8e565ec70997e7da6cbd8d01",
+    "sha256": "09bce12882c317b1f0122e09bb7e6d5f5931b69838edf8104c0243a93f2719ee",
     "pages": [
       "genesis-living-system-builder/ai-features/agent-teams.md",
       "genesis-living-system-builder/ai-features/ai-agents-getting-started.md",
@@ -216,13 +216,13 @@
     ]
   },
   "https://www.taskade.com/learn/agents/ai-usage": {
-    "sha256": "0863a83b341e7d699ff1d5525c24327538624666f1ace48817ff464634572907",
+    "sha256": "d963e6cab59bb6bf476af40da5971c56d700a316f00676494cf24d992f51bff7",
     "pages": [
       "account-management/credits-and-billing.md"
     ]
   },
   "https://www.taskade.com/learn/agents/custom-agents": {
-    "sha256": "d2d659a4654cff7214db06cd17d3d7e8821fbd512938969dc10dee84f90385a7",
+    "sha256": "2c202daea097fab83fac2f567ae515fa941dea7407e42d0c412e831b812522c6",
     "pages": [
       "genesis-living-system-builder/ai-features/README.md",
       "genesis-living-system-builder/ai-features/ai-agents-getting-started.md",
@@ -236,7 +236,7 @@
     ]
   },
   "https://www.taskade.com/learn/agents/knowledge": {
-    "sha256": "4934c2e685619b875906a77a8176a9e6be21b7e9d05d7aa75bd7a4e6d22c65b6",
+    "sha256": "eb2842c9a1b8de0cac0b21e1402c680393865eed82703e256d98b5b5d96f771d",
     "pages": [
       "genesis-living-system-builder/ai-features/agent-knowledge.md",
       "genesis-living-system-builder/workspaces/knowledge-management.md",
@@ -269,13 +269,13 @@
     ]
   },
   "https://www.taskade.com/learn/agents/public-agents": {
-    "sha256": "b0b6115aaa8402e202037b21fd4045f730d9b84d9958e679a62f78d89e1b0985",
+    "sha256": "96c54f1df895f5ac20c7561efbc2c20f3347babec956da8dcaac86d128dc8ac2",
     "pages": [
       "genesis-living-system-builder/space-apps-guide/advanced-features.md"
     ]
   },
   "https://www.taskade.com/learn/agents/team-generator": {
-    "sha256": "601de076424c7818693e0f190fb7aa20e82e92a551819532d7733ab4dfaaa3db",
+    "sha256": "154ae3a9823fca622a41f64acebfd2fb0eb9fa0e7c50916b4bc3bac6e163d317",
     "pages": [
       "genesis-living-system-builder/ai-features/agent-teams.md"
     ]
@@ -287,7 +287,7 @@
     ]
   },
   "https://www.taskade.com/learn/automation/actions": {
-    "sha256": "fadadfc24346279c9b12b1f8da49a70ab9e30afffaadd9fa7555d4fffe6396c0",
+    "sha256": "318e3f0d887ef0394cc4bdeac1963a0e9a77fcc79f059206eec3b6641d099de0",
     "pages": [
       "genesis-living-system-builder/automation/README.md",
       "genesis-living-system-builder/automation/actions.md",
@@ -297,14 +297,14 @@
     ]
   },
   "https://www.taskade.com/learn/automation/automations-execution": {
-    "sha256": "9e1c909481f0549d136d53d51c686676c9ed8c96f9013fdea37332d20cde8963",
+    "sha256": "d29e8731ec3540076b4d283ab4c5a2bae4dc2ecfc36f3d0f665e1f08c774cdd2",
     "pages": [
       "genesis-living-system-builder/automation/README.md",
       "help-and-support/index/04_automation.md"
     ]
   },
   "https://www.taskade.com/learn/automation/forms-trigger": {
-    "sha256": "33e2729f1c14aa896fab760e0cc70a8225c45f72ba4dd629960f5161308261e7",
+    "sha256": "7add84d309dc58743e7fa95ed055de547837b0a8f88145fe3ee5f8a6ca359dbf",
     "pages": [
       "genesis-living-system-builder/automation/ai-forms.md"
     ]
@@ -316,7 +316,7 @@
     ]
   },
   "https://www.taskade.com/learn/automation/loop-action": {
-    "sha256": "0f2554610e9c16a3675869458dc1c75f40cd203b8a18a76d63d7ed85bcde40be",
+    "sha256": "02592f33bb3febd19db439a502c74667b5d6e4216068d9daaa140ad184dc9474",
     "pages": [
       "genesis-living-system-builder/automation/advanced-actions.md"
     ]
@@ -337,7 +337,7 @@
     ]
   },
   "https://www.taskade.com/learn/automation/workflow-generator": {
-    "sha256": "7becd1afae78266fb8d7fdc7c12bdf118c95e885bf2756677bf5a4804cf56bc7",
+    "sha256": "7312acc2f69cfde0593afe0c706b8c317b66539e04310adb3ca4856bdd654efc",
     "pages": [
       "genesis-living-system-builder/automation/workflow-generator.md"
     ]
@@ -355,7 +355,7 @@
     ]
   },
   "https://www.taskade.com/learn/connect/everywhere": {
-    "sha256": "86db68bebb34668d55b05368f232dc2b864aedb2d579cf48207c8dbbaf6c605a",
+    "sha256": "5ad60c9235fa17159afbcc86c6f16318c1fb7d3d154239cf60d1b62c665b8c69",
     "pages": [
       "genesis-living-system-builder/automation/comprehensive-integration-guide.md",
       "genesis-living-system-builder/automation/integrations.md",
@@ -363,7 +363,7 @@
     ]
   },
   "https://www.taskade.com/learn/connect/google-drive": {
-    "sha256": "83031415674e614614c1ae807aa3f71c08e15ba35e76e6166b9335beae8e4364",
+    "sha256": "480981e4623f247a852d73061f01e3cf0aac4201eb201c116db0eb62e6e394d8",
     "pages": [
       "help-and-support/index/06_integrations.md"
     ]
@@ -375,13 +375,13 @@
     ]
   },
   "https://www.taskade.com/learn/connect/slack-integration": {
-    "sha256": "7f95b7a9d8dea84245ca46ec1bc1b6981cc46635ab3d7f0b2d3193fdad872163",
+    "sha256": "7d95709615a8e94ebdd3138fb58113e7d18dc10bd6bfc75778ccb5b3000a9ec7",
     "pages": [
       "help-and-support/index/06_integrations.md"
     ]
   },
   "https://www.taskade.com/learn/connect/whatsapp": {
-    "sha256": "3b73fd07d5d294106ced87d1311abdcd776e11c39ceef2ba07c04b41ed6222ea",
+    "sha256": "cd34cd6fdb503183b476399358f7977f4d2ac33b9c4045b55709609fb142eff3",
     "pages": [
       "genesis-living-system-builder/automation/advanced-actions.md"
     ]
@@ -393,7 +393,7 @@
     ]
   },
   "https://www.taskade.com/learn/genesis/app-context": {
-    "sha256": "1b1e2d31c203f1fd47fa9a9e3f11b860258fe9fe853597671a4ba9109d6d1d2a",
+    "sha256": "9d8343b235f331e13f093d22d390ad8a1b179b4d3ebc7605fd1fdf8d8d85ce4c",
     "pages": [
       "genesis-living-system-builder/genesis/adding-context.md"
     ]
@@ -405,7 +405,7 @@
     ]
   },
   "https://www.taskade.com/learn/genesis/app-users": {
-    "sha256": "9eb714c80fb28042098834c61b3baf0eb60efcf7fe8c9feda065cb320c51bc6c",
+    "sha256": "427662cc73d4b124f7da70153482aedfd70b1e73382ab1f50819195ae748651c",
     "pages": [
       "genesis-living-system-builder/community-and-sharing/genesis-auth.md",
       "genesis-living-system-builder/run-your-business/add-login-and-roles.md",
@@ -413,7 +413,7 @@
     ]
   },
   "https://www.taskade.com/learn/genesis/build-ai-dashboard": {
-    "sha256": "3832d7149f681eae1f83f3f6bfc40b1c0ed6c74d266711c8b91a648749bea947",
+    "sha256": "1c58a88429f291a2acb498bd8085451d26978a6c0d2e40809faf71a0f4dd53c4",
     "pages": [
       "genesis-living-system-builder/run-your-business/build-an-ops-dashboard.md"
     ]
@@ -433,7 +433,7 @@
     ]
   },
   "https://www.taskade.com/learn/genesis/buy-domain": {
-    "sha256": "ad01d8e6660085666f39911f1542f1e73926fb27d689ff5d814de394e86a10dd",
+    "sha256": "7f77dd23a308e14b3bfa6621886d8fa68cab651a474229ccb272a18533b18df6",
     "pages": [
       "genesis-living-system-builder/space-apps-guide/custom-domains.md"
     ]
@@ -446,14 +446,14 @@
     ]
   },
   "https://www.taskade.com/learn/genesis/community-kits": {
-    "sha256": "1723d614aa5a35b0d31a7918b0487a24bd8a49ddca10cb126c0a1f3ccbcea319",
+    "sha256": "3644d4f30b62e7c49cd7e4319daee519197a7705a531a276c285c2a897d99f26",
     "pages": [
       "genesis-living-system-builder/community-and-sharing/README.md",
       "genesis-living-system-builder/community-and-sharing/publish-and-clone.md"
     ]
   },
   "https://www.taskade.com/learn/genesis/custom-domains": {
-    "sha256": "bee856f19ba6c49e5f332ace7825f549d30299fb409f2af466253752adb051b1",
+    "sha256": "ffcc884f1d8969bddcb77ae9f6220777d5e8ff60110298d349dc09a3bd90249b",
     "pages": [
       "genesis-living-system-builder/run-your-business/from-idea-to-live-business.md",
       "genesis-living-system-builder/space-apps-guide/custom-domains.md"
@@ -466,20 +466,20 @@
     ]
   },
   "https://www.taskade.com/learn/genesis/error-fixing": {
-    "sha256": "6cca2941d5d21aa210f03f508f8273eae33b2484db68dd6e1174887b96a50577",
+    "sha256": "3d36458f73141266b9a6b1d290fc4a23fe506523af3e7f2621a93a4140f6a316",
     "pages": [
       "genesis-living-system-builder/community-and-sharing/troubleshooting.md",
       "genesis-living-system-builder/genesis/debugging-genesis-apps.md"
     ]
   },
   "https://www.taskade.com/learn/genesis/faq": {
-    "sha256": "d7cddbc79f83edc44e354b43979dbd4150903d069326654c89adca8ec0b9841a",
+    "sha256": "39116f18c554cbcef6a9ba2b12cdb7d6993e5e0445dcb40ebe8003b2980999fc",
     "pages": [
       "genesis-living-system-builder/community-and-sharing/faq.md"
     ]
   },
   "https://www.taskade.com/learn/genesis/first-app": {
-    "sha256": "163cb6b2dfa31f8404c4dca628996333d9c9979fd6843f21d9465043f2b3a3af",
+    "sha256": "128b5b25a363bd5aa18ff29096867447967fdc586fde4a27379563adbf476d96",
     "pages": [
       "genesis-living-system-builder/genesis/getting-started.md",
       "getting-started/README.md",
@@ -512,7 +512,7 @@
     ]
   },
   "https://www.taskade.com/learn/genesis/overview": {
-    "sha256": "4e724c54114bba76cea1f15093f6c9286f1b27d2021c2e9af177faaa63671cf2",
+    "sha256": "4769ac690d8e43948bb784e8046246ed6d1cf489636da17d3992f372571a409c",
     "pages": [
       "genesis-living-system-builder/genesis/README.md",
       "genesis-living-system-builder/space-apps-guide/README.md",
@@ -533,7 +533,7 @@
     ]
   },
   "https://www.taskade.com/learn/genesis/publishing": {
-    "sha256": "d01c362d272c1abfc2ba1ffb51f4456e0164d7551f2deb7a84d8418f9f955b8b",
+    "sha256": "7ee3cf1bb439f04af06e9eb01afb8133d171e2729881101eed232fd25e202991",
     "pages": [
       "genesis-living-system-builder/community-and-sharing/README.md",
       "genesis-living-system-builder/community-and-sharing/publish-and-clone.md",
@@ -544,14 +544,14 @@
     ]
   },
   "https://www.taskade.com/learn/genesis/quickstart": {
-    "sha256": "1b6681265c36ce99bcd198b0189be669d96299e1fa9152191f0d083006d6f030",
+    "sha256": "6a804c26b22ccb13cf779103ef920110efc398adc10d3c58f520e47713dca731",
     "pages": [
       "getting-started/README.md",
       "help-and-support/index/README.md"
     ]
   },
   "https://www.taskade.com/learn/genesis/sell-app-kits": {
-    "sha256": "978f7f46c8e699c747c5d10194e1385a18b8dd8418bc14bfb3d63bdd125a6043",
+    "sha256": "66066e749ff42d72eb10a99bf93734d3c5da1eb7c68ae960e7d673367d78c875",
     "pages": [
       "genesis-living-system-builder/community-and-sharing/publish-and-clone.md"
     ]
@@ -564,7 +564,7 @@
     ]
   },
   "https://www.taskade.com/learn/genesis/troubleshooting": {
-    "sha256": "bfc2b4e6eaf1f1d5d9560147262a633572556bb25e501c2053f8566899d42a26",
+    "sha256": "5f1d9d2091adb52e25e43e5a854d939eb45dc4402c31a9a87eecbd9879f4e43f",
     "pages": [
       "genesis-living-system-builder/community-and-sharing/troubleshooting.md",
       "genesis-living-system-builder/genesis/debugging-genesis-apps.md"
@@ -590,14 +590,14 @@
     ]
   },
   "https://www.taskade.com/learn/genesis/workspace-dna": {
-    "sha256": "d28b020268fec55320e0944f0e0daa8ee63842355ec7c57748702ecaf369d7e1",
+    "sha256": "f403ad011d4386cfbbd85afe64bd0e146f2fdb6ea7922ed3686febaeac9479ee",
     "pages": [
       "genesis-living-system-builder/genesis/how-genesis-works.md",
       "genesis-living-system-builder/genesis/workspace-dna.md"
     ]
   },
   "https://www.taskade.com/learn/import/convert": {
-    "sha256": "344892f483de39ff84947a5079503f2da49fe94b757dc6f987b6261498588743",
+    "sha256": "0d2e2e2aacce7f86d9774558626070a9ef718aecaf88610267f4562cc60c7061",
     "pages": [
       "help-center/import-and-export.md"
     ]
@@ -639,7 +639,7 @@
     ]
   },
   "https://www.taskade.com/learn/projects/create-project": {
-    "sha256": "b274345cd4a60d44c312d273bacfb902b2d8d8a6441d8090e483936f622b744f",
+    "sha256": "d65e58b2413488fdf00049f553e7a3ca6cc3b2a6fb96a0a0f691d8298ed42293",
     "pages": [
       "help-and-support/index/02_projects.md"
     ]
@@ -658,7 +658,7 @@
     ]
   },
   "https://www.taskade.com/learn/projects/databases": {
-    "sha256": "968cb528382206cbf86ed026f38f07344140c427e670ab928615d477d8d6ce8c",
+    "sha256": "3d02f2bbc1417aecd40725b46bbe251bb70b0b0ba0c366eb43f5c8c9e166d258",
     "pages": [
       "genesis-living-system-builder/workspaces/projects-databases.md",
       "help-and-support/index/02_projects.md"
@@ -689,13 +689,13 @@
     ]
   },
   "https://www.taskade.com/learn/projects/markdown-support": {
-    "sha256": "b6aff1885d85a1aac274b8587fb0491fa035d039447ff2c2a5af3f9ebc834ac6",
+    "sha256": "a3b73c684b18db681c2cdbb8642f21e2ff791786171d09890ca66436f8796aef",
     "pages": [
       "genesis-living-system-builder/workspaces/markdown.md"
     ]
   },
   "https://www.taskade.com/learn/projects/mobile-guide": {
-    "sha256": "92e06f6c95814c5867df09049c44b1e98d2f571009a981afdbb86b893ee179c2",
+    "sha256": "d762b83fa59c039cc8729b6c95dc658e09926da9ce08037f6498a2d0d1cfb476",
     "pages": [
       "genesis-living-system-builder/workspaces/mobile-optimization.md",
       "help-and-support/index/08_mobile_desktop.md",
@@ -716,26 +716,26 @@
     ]
   },
   "https://www.taskade.com/learn/projects/project-views": {
-    "sha256": "3c22cb58b5ffd611edef57aaa99aae847a296d76c24d70a92d213ab1d50b8f13",
+    "sha256": "926a9a4c6e88809ae3985e77e72bbc79f2e5d0ae1aa29ca4e2597a323f6ec549",
     "pages": [
       "genesis-living-system-builder/workspaces/project-views.md",
       "help-and-support/index/02_projects.md"
     ]
   },
   "https://www.taskade.com/learn/projects/search": {
-    "sha256": "0cd26c77f7d33d8dc59f3b0d0b384821215e056058cbe4741a57db69f6a84f06",
+    "sha256": "6dfbfd63f4811dbb9b92e621f534a220bb7610391c08a4f42883171652c3b897",
     "pages": [
       "genesis-living-system-builder/workspaces/advanced-search-navigation.md"
     ]
   },
   "https://www.taskade.com/learn/projects/slash-commands": {
-    "sha256": "db65f675617d2384829a08414f0fd196009fdd52b25ceaa63f8532f01968d530",
+    "sha256": "bd3d40c5e16481b377783a8066928b4fc756cfa32c68e522705f247127fdeba6",
     "pages": [
       "genesis-living-system-builder/workspaces/editing-formatting.md"
     ]
   },
   "https://www.taskade.com/learn/projects/start-here": {
-    "sha256": "cf4b7f5c4639b6823a30a66cf33528dd5a0034735f13758cc46a8e55c0adba31",
+    "sha256": "e923ef460c3d0d6d4b011e1e59e7b525708d4d65a2c4cd54e696e6f94c167608",
     "pages": [
       "help-and-support/index/README.md"
     ]

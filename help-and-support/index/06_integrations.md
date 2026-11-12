@@ -1,27 +1,27 @@
 ---
 description: >-
-  Connect Taskade to 100+ tools like Slack, Google Workspace, HubSpot, and GitHub for two-way data sync, event triggers, and AI-orchestrated workflows.
+  Connect Taskade to 100+ tools such as Slack, Google Workspace, HubSpot, and GitHub. Sync data both ways, react to events, and add AI steps.
 title: 'Chapter 6: Integrations - Connecting Your Tools'
 ---
 
 # Chapter 6: Integrations - Connecting Your Tools
 
-Perfect! You've mastered building apps with Taskade Genesis. Now let's **connect your entire ecosystem**—linking Taskade to 100+ business tools for seamless workflows. This is where your workspace becomes the central nervous system of your business!
+In the last chapter, you built apps with Taskade Genesis. In this chapter, you connect Taskade to the other tools of your business. Taskade has 100+ integrations.
 
 ## What Problem Do Integrations Solve?
 
-**Business tools work in isolation:**
+**Without integrations, each tool works alone:**
 
-* **Data silos** where information lives in separate systems
-* **Manual copying** between spreadsheets, CRMs, and project tools
-* **Lost context** when switching between different applications
-* **Delayed updates** because systems don't talk to each other
+* **Separate data**: Each system keeps its own copy of the information.
+* **Manual copies**: People copy data between spreadsheets, CRMs, and project tools.
+* **Lost context**: People move between apps and lose track of the work.
+* **Late updates**: One system does not know when another system changes.
 
-**Integrations solve this by creating a connected ecosystem** where tools work together automatically, sharing data and triggering actions across your entire business stack.
+Integrations connect your tools. Data moves between them, and an event in one tool can start work in another tool.
 
-## What are Integrations? (The Connected Ecosystem)
+## What are Integrations?
 
-Integrations in Taskade are **bridges between systems** that enable automatic data flow and coordinated actions. Instead of switching between tools, your workspace becomes the central hub that orchestrates everything.
+An integration is a connection between Taskade and another app. Your workspace becomes the center that coordinates the work.
 
 ```mermaid
 flowchart TD
@@ -34,160 +34,155 @@ flowchart TD
 
 **Integration categories:**
 
-* **Communication**: Slack, Teams, Discord
+* **Communication**: Slack, Microsoft Teams, Discord
 * **Productivity**: Google Workspace, Notion
-* **Sales & CRM**: HubSpot, Salesforce
-* **Cloud Storage**: Google Drive, OneDrive
-* **Social Media**: Twitter, LinkedIn, Facebook
+* **Sales and CRM**: HubSpot, Salesforce
+* **Cloud storage**: Google Drive, OneDrive
+* **Social media**: X/Twitter, LinkedIn, Facebook
 * **Development**: GitHub, Jira, Figma
 
-**Integrations enable:**
+**With integrations, you can:**
 
-* **🔄 Bidirectional Data Flow**: Information syncs both ways
-* **⚡ Event-Driven Actions**: Tools trigger actions in other systems
-* **🤖 Automated Workflows**: Multi-step processes across platforms
-* **📊 Unified Analytics**: See data from all tools in one place
-* **🔗 Connected Intelligence**: AI agents access data from all integrated tools
+* **🔄 Move data both ways**: A trigger brings events in. An action sends work out.
+* **⚡ React to events**: An event in one tool starts an action in another tool.
+* **🤖 Automate workflows**: One automation runs steps in many apps.
+* **🔗 Give agents more context**: AI agents can use data from connected tools.
 
-## How Integrations Work (The Connection Architecture)
+## How Integrations Work
 
-**Integration happens at three levels:**
+**Integrations work at three levels:**
 
-### Level 1: Data Synchronization
+### Level 1: Data Sync
 
-**Tools share information automatically:**
+**Tools share information:**
 
-* New contacts in your CRM appear as tasks in Taskade
-* Project updates in Taskade sync to your team calendar
-* Files uploaded to Taskade appear in your cloud storage
-* New Slack or Discord messages trigger Taskade notifications
+* A new contact in your CRM becomes a task in Taskade.
+* A project update in Taskade goes to your team calendar.
+* A file in Taskade goes to your cloud storage.
+* A new Slack or Discord message sends a Taskade notification.
 
 ### Level 2: Event Triggers
 
-**Tools notify each other of important events:**
+**An event in one tool starts work in another tool:**
 
-* When a deal closes in your CRM → Create celebration task in Taskade
-* When code is pushed to GitHub → Update project status in Taskade
-* When a customer emails support → Create support ticket in Taskade
-* When inventory runs low → Generate reorder task in Taskade
+* A deal closes in your CRM → Taskade creates a task.
+* A developer pushes code to GitHub → Taskade updates the project status.
+* A customer emails support → Taskade creates a support ticket.
+* Stock gets low → Taskade creates a reorder task.
 
-### Level 3: Intelligent Orchestration
+### Level 3: AI Workflows
 
-**AI coordinates complex multi-tool workflows:**
+**AI steps make decisions in workflows that use many tools:**
 
-* Customer inquiry → AI analyzes → Routes to right team → Updates CRM → Sends personalized response
-* Project deadline approaching → AI assesses progress → Adjusts resources → Updates stakeholders
-* Sales lead qualifies → AI scores → Creates nurturing sequence → Syncs with marketing tools
+* Customer question → AI analyzes it → The right team gets it → The CRM updates → The customer gets a reply.
+* Project deadline is near → AI examines the progress → The team gets an update.
+* A sales lead qualifies → AI scores it → The lead goes into a follow-up sequence.
 
-## Setting Up Your First Integration (Step-by-Step)
+## Connect Your First Integration
 
-**Let's connect Slack for instant team notifications.** Slack is a premium integration, so it needs a paid plan. Free runs the standard connectors:
+**Connect Slack to send team notifications.** Slack is a premium integration, so it needs a paid plan. The Free plan runs the standard connectors.
 
 {% stepper %}
 {% step %}
-#### Access Integration Settings
+#### Open an Automation
 
-In your workspace, open **Automations** and create an automation. Add a Slack trigger or action to it (you can also add Slack as an agent tool)
+In your workspace, open **Automations** and create an automation. Click **Add step** and add a Slack trigger or action. You can also add Slack to an agent as a tool.
 {% endstep %}
 
 {% step %}
 #### Choose Your Tool
 
-In the Slack step, click **Connect**
+In the Slack step, click **Connect**.
 {% endstep %}
 
 {% step %}
-#### Authorize the Connection
+#### Allow the Connection
 
-Follow the OAuth flow to grant Taskade access to your Slack workspace
+Sign in to Slack and allow Taskade to use your Slack workspace.
 {% endstep %}
 
 {% step %}
-#### Configure Settings
+#### Configure the Step
 
-Choose which channels receive notifications and what events trigger them
+Select the channel that gets the messages. Select the event that sends them.
 {% endstep %}
 
 {% step %}
 #### Test the Integration
 
-Create a test task and mark it complete—watch the Slack notification appear instantly
+Create a test task and mark it complete. Make sure that the Slack message arrives.
 {% endstep %}
 {% endstepper %}
 
-**Excellent!** Your tools are now talking to each other!
+Your tools now share work.
 
 ## Integration Categories and Use Cases
 
 ### Communication Platforms
 
-**Keep teams informed instantly:**
+**Keep your team up to date:**
 
 #### Slack Integration
 
-* **Project Updates**: Notify channels when milestones are reached
-* **Task Assignments**: Alert team members of new responsibilities
-* **Deadline Alerts**: Send reminders before due dates
-* **Status Changes**: Keep stakeholders updated on progress
+* **Project updates**: Send a channel message when the team reaches a milestone.
+* **Task assignments**: Tell team members about new work.
+* **Deadline alerts**: Send reminders before due dates.
+* **Status changes**: Tell stakeholders about progress.
 
 #### Microsoft Teams
 
-* **Channel Notifications**: Send updates to relevant Teams channels
-* **Chat Messages**: Send a Teams chat message when work changes
-* **Channel Creation**: Create a channel for a new project
+* **Channel notifications**: Send updates to the correct Teams channel.
+* **Chat messages**: Send a Teams chat message when work changes.
+* **Channel creation**: Create a channel for a new project.
 
 #### Discord
 
-* **Community Management**: Connect gaming or community teams
-* **Role-Based Alerts**: Notify specific user groups
-* **Bot Commands**: Control Taskade from Discord chat
+* **Community updates**: Send messages to your community or team channels.
+* **Group alerts**: Tell a specific group about an event.
 
 ### Productivity Tools
 
-**Streamline daily workflows:**
+**Make daily work faster:**
 
 #### Google Workspace
 
-* **Gmail**: Convert emails to tasks, send automated responses
-* **Calendar**: Sync deadlines, create events from tasks
-* **Sheets**: Update spreadsheets automatically, import data
-* **Docs**: Generate documents from project data
+* **Gmail**: Turn emails into tasks, and send automatic replies.
+* **Calendar**: Create events from tasks and deadlines.
+* **Sheets**: Update spreadsheets and import data.
+* **Docs**: Create documents from project data.
 
 #### Notion
 
-* **Database Sync**: Keep Notion databases updated with Taskade data
-* **Page Creation**: Generate Notion pages from Taskade projects
-* **Template Integration**: Use Notion templates in Taskade workflows
+* **Database sync**: Keep Notion databases up to date with Taskade data.
+* **Page creation**: Create Notion pages from Taskade projects.
 
 ### Sales & CRM Systems
 
-**Close deals faster:**
+**Track your deals:**
 
 #### HubSpot
 
-* **Contact Sync**: Keep contacts updated between systems
-* **Deal Tracking**: Update CRM when project milestones are hit
-* **Email Integration**: Log Taskade communications in HubSpot
+* **Contact sync**: Keep contacts the same in both systems.
+* **Deal tracking**: Update the CRM when the project reaches a milestone.
 
 #### Salesforce
 
-* **Lead Management**: Convert Taskade leads to Salesforce opportunities
-* **Account Updates**: Sync customer information automatically
-* **Pipeline Tracking**: Update sales stages from project progress
+* **Lead management**: Send Taskade leads to Salesforce.
+* **Account updates**: Keep customer information up to date.
 
 ### Cloud Storage
 
-**Files follow your work:**
+**Keep files with your work:**
 
 #### Google Drive
 
-* **File Attachments**: Upload files to Drive folders from automations
-* **Sharing Permissions**: Add or remove sharing permissions from an automation
+* **File uploads**: Upload files to Drive folders from an automation.
+* **Share settings**: Add or remove share permissions from an automation.
 
 #### OneDrive
 
-* **Document Management**: Pull OneDrive files into projects, tasks, chat, and comments
-* **Agent Knowledge**: Add OneDrive files as knowledge sources for your AI agents
+* **Documents**: Add OneDrive files to projects, tasks, chat, and comments.
+* **Agent knowledge**: Add OneDrive files as knowledge for your AI agents.
 
 ### Social Media & Marketing
 
@@ -195,35 +190,34 @@ Create a test task and mark it complete—watch the Slack notification appear in
 
 #### Twitter/X
 
-* **Content Publishing**: Post updates from Taskade campaigns
-* **Replies**: Reply to posts from an automation or an AI agent
+* **Posts**: Post updates from your Taskade campaigns.
+* **Replies**: Reply to posts from an automation or an AI agent.
 
 #### LinkedIn
 
-* **Post Scheduling**: Automate professional content publishing
-* **Company Updates**: Share project milestones on a company page
+* **Posts**: Publish professional content from an automation.
+* **Company updates**: Share project milestones on a company page.
 
 ### Development Tools
 
-**Connect code and business:**
+**Connect code and business work:**
 
 #### GitHub
 
-* **Issue Tracking**: Create tasks from GitHub issues
-* **PR Notifications**: Alert teams when code is ready for review
-* **Release Tracking**: Update projects when deployments happen
+* **Issues**: Create tasks from GitHub issues.
+* **Pull requests**: Tell the team when code is ready for review.
+* **Releases**: Update projects when a release ships.
 
 #### Jira
 
-* **Ticket Sync**: Keep Jira tickets updated with Taskade progress
-* **Sprint Planning**: Create Taskade projects from Jira sprints
-* **Status Updates**: Sync task completion across platforms
+* **Ticket sync**: Keep Jira tickets up to date with Taskade progress.
+* **Status updates**: Show task completion in both tools.
 
 ## Advanced Integration Patterns
 
-### Multi-Tool Workflows
+### Workflows Across Many Tools
 
-**Complex processes spanning multiple systems:**
+**One process can use many systems:**
 
 ```
 Customer Inquiry → Slack Alert → Taskade Ticket → AI Analysis → CRM Update → Email Response → Follow-up Task
@@ -231,7 +225,7 @@ Customer Inquiry → Slack Alert → Taskade Ticket → AI Analysis → CRM Upda
 
 ### Conditional Routing
 
-**Smart decisions based on data:**
+**A Branch step makes a decision from the data:**
 
 ```
 If deal value > $10K → Create executive review task + schedule meeting
@@ -240,15 +234,15 @@ If deal value < $10K → Assign to junior rep + send standard proposal
 
 ### Data Transformation
 
-**Convert information between formats:**
+**Utility steps change data from one format to another:**
 
 ```
 Form submission → Transform data → Update spreadsheet → Generate report → Send to stakeholders
 ```
 
-### Time-Based Automation
+### Scheduled Automations
 
-**Schedule cross-platform actions:**
+**A schedule runs actions in many tools at fixed times:**
 
 ```
 Every Monday 9 AM → Pull analytics → Generate report → Email to team → Update dashboard
@@ -256,131 +250,102 @@ Every Monday 9 AM → Pull analytics → Generate report → Email to team → U
 
 ## Integration Security and Permissions
 
-### OAuth and API Keys
+### Sign-In Methods
 
-**Secure authentication methods:**
-
-* OAuth 2.0 for most services (Google, Slack, Microsoft)
-* API tokens for custom integrations
-* Scoped permissions (read-only vs. read-write access)
+* Most services (Google, Slack, Microsoft) use OAuth 2.0. You sign in to the service, and you allow access.
+* Custom integrations use API tokens.
+* Many services let you give read-only access or read-write access.
 
 ### Data Privacy
 
-**Your data stays protected:**
+* Taskade uses TLS encryption for data in transit, and AES-256 for backups and stored credentials.
+* Taskade works toward SOC 2 Type II. The independent audit is not complete yet.
+* You control who can use each connection.
+* The **Runs** tab of each automation logs every run.
 
-* TLS encryption for data in transit, and AES-256 for backups and stored credentials
-* Work toward SOC 2 Type II (the independent audit is not complete yet)
-* Granular permission controls
-* Audit trails for all integration activities
+### Reliability
 
-### Rate Limiting and Reliability
-
-**Built for scale:**
-
-* Smart rate limiting prevents API quota issues
-* Automatic retry logic for failed connections
-* Circuit breaker patterns for system reliability
-* Monitoring and alerting for integration health
+* Taskade retries a step after a short network error, a rate limit, or a server error.
+* If an app is busy or down for a few minutes, check **Retry if this step fails** on that step.
+* To let a run go on after a failed step, check **Continue if this step fails**.
 
 ## Troubleshooting Integrations
 
-### Common Issues and Solutions
+### Common Problems and Solutions
 
 #### Connection Problems
 
-* **Check API Keys**: Verify credentials are current and correct
-* **Review Permissions**: Ensure Taskade has necessary access rights
-* **Network Issues**: Check firewall settings and connectivity
-* **Service Outages**: Monitor status pages of integrated services
+* **Credentials**: Make sure that your keys and sign-ins are current and correct.
+* **Permissions**: Make sure that Taskade has the access that it needs.
+* **Network**: Examine your firewall settings and your connection.
+* **Service outages**: Examine the status page of the connected service.
 
-#### Data Sync Issues
+#### Data Sync Problems
 
-* **Field Mapping**: Verify data fields are correctly mapped
-* **Format Compatibility**: Ensure data formats are compatible
-* **Duplicate Prevention**: Set up rules to avoid duplicate entries
-* **Update Frequency**: Adjust sync intervals based on needs
+* **Field mapping**: Make sure that each field goes to the correct field.
+* **Formats**: Make sure that the data formats agree.
+* **Duplicates**: Add a filter or a match rule so that the automation does not add the same item two times.
+* **Schedule**: Change how often a scheduled automation runs.
 
-#### Performance Optimization
+#### Performance
 
-* **Batch Operations**: Group multiple operations to reduce API calls
-* **Caching Strategies**: Cache frequently accessed data locally
-* **Async Processing**: Use background processing for heavy operations
-* **Monitoring**: Track integration performance and success rates
+* **Fewer calls**: Find many items in one step, then use a loop.
+* **Monitoring**: Examine the success rate of each automation in the **Runs** tab.
 
-## Integration Analytics and Insights
+## Measure the Value of Your Integrations
 
-### Performance Monitoring
-
-**Track integration effectiveness:**
+### Monitor Performance
 
 * Success rates and failure patterns
-* Processing times and bottlenecks
-* Data volume and transfer statistics
-* User adoption and engagement metrics
+* Slow steps
+* The amount of data that moves
+* How many people on your team use each automation
 
-### ROI Measurement
+### Measure the Return
 
-**Quantify integration value:**
+* Time saved
+* Fewer errors from manual work
+* More accurate data
+* Faster decisions
 
-* Time saved through automation
-* Error reduction from manual processes
-* Improved data accuracy
-* Faster decision-making capabilities
+### Find Improvements
 
-### Optimization Opportunities
+* Integrations that you can use more
+* Manual tasks that you can automate
+* Separate data that you can connect
+* Slow steps that you can fix
 
-**Identify improvement areas:**
+## How Integrations Run
 
-* Underutilized integrations that could be expanded
-* Manual processes that could be automated
-* Data silos that could be connected
-* Performance bottlenecks to address
-
-## How it Works Under the Hood
-
-**Technically, integrations are:**
-
-* **API Connectors**: Standardized interfaces to external services
-* **Webhook Handlers**: Real-time event processing systems
-* **Data Transformers**: Format conversion and mapping engines
-* **Queue Systems**: Asynchronous processing for reliability
-* **Security Layers**: Authentication and authorization frameworks
-* **Monitoring Systems**: Health checks and performance tracking
-
-**But you don't need to understand the tech—integrations just work!**
+Taskade connects to each service through its API. It receives events through webhooks or scheduled checks, and it changes the data format where necessary. You do not need to know these details to connect a tool.
 
 ## Integration Templates and Quick Starts
 
 ### Business Process Templates
 
-* **Customer Onboarding**: CRM + Email + Project Management
-* **Content Creation**: Calendar + Social Media + Analytics
-* **Lead Management**: Forms + CRM + Email Marketing
-* **Support Operations**: Ticketing + Knowledge Base + Chat
+* **Customer onboarding**: CRM + Email + Project Management
+* **Content creation**: Calendar + Social Media + Analytics
+* **Lead management**: Forms + CRM + Email Marketing
+* **Support operations**: Ticketing + Knowledge Base + Chat
 
-### Industry-Specific Setups
+### Industry Examples
 
 * **Agencies**: Project Management + Time Tracking + Invoicing
 * **E-commerce**: Inventory + Shipping + Customer Service
 * **Healthcare**: Patient Management + Scheduling + Compliance
 * **Education**: LMS + Communication + Assessment Tools
 
-## Your Integrated Ecosystem Grows Smarter
+## Your Connected Workspace
 
-**Connected tools learn and improve together:**
+* **Run history**: Each run shows what happened, so you can improve the workflow.
+* **Shared context**: AI agents can use data from connected tools.
+* **Your changes**: Each edit to a trigger or step applies to every later run.
 
-* **Pattern Recognition**: Systems learn your workflow preferences
-* **Predictive Actions**: Tools anticipate what you'll need next
-* **Unified Intelligence**: AI agents access data from all connected systems
-* **Adaptive Automation**: Workflows optimize based on performance data
-
-**Outstanding progress!** Your workspace is now the central hub of a connected business ecosystem. Tools work together seamlessly, sharing data and coordinating actions automatically.
-
-**Ready to go deeper?** In [Chapter 7: API](07_api.md), we'll explore programmatic access to Taskade for custom integrations and advanced automation!
+**Next:** In [Chapter 7: API](07_api.md), you learn how to use the Taskade API for custom integrations.
 
 ***
 
-_What's the most frustrating manual process in your business? Find the integration that automates it, and watch hours of repetitive work disappear. Your connected ecosystem will thank you!_
+_Find the manual process that takes the most time in your business. Then find the integration that automates it._
 
 [← Back to Chapter 5: Genesis](05_genesis.md) | [Next: API →](07_api.md)
 
