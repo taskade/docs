@@ -5,10 +5,10 @@ description: >-
 
 # Troubleshooting Guide
 
-Resolve common Taskade issues quickly with our comprehensive troubleshooting guide covering everything from basic connectivity problems to advanced workflow debugging.
+Use this guide to correct frequent Taskade problems, from connection problems to errors in workflows.
 
 {% hint style="success" %}
-This guide provides step-by-step solutions for the most common Taskade issues. If you can't find a solution here, our support team at support@taskade.com can help you get back to productivity.
+This guide gives step-by-step solutions for the most frequent Taskade problems. If you cannot find a solution here, write to our support team at support@taskade.com.
 {% endhint %}
 
 ## Quick Diagnostic Tools
@@ -81,7 +81,7 @@ Click "Forgot Password" on the login page and check your email for reset instruc
 {% step %}
 #### Check Email Verification
 
-Ensure you've verified your email address by clicking the link in your welcome email.
+Make sure that you verified your email address. Click the link in your welcome email.
 {% endstep %}
 
 {% step %}
@@ -180,7 +180,7 @@ Taskade has no offline editing mode. When the connection drops, Taskade holds yo
 #### Formatting Issues
 
 * **Copy-Paste Problems**: Avoid pasting complex formatting from other applications
-* **Character Encoding**: Check for special characters that might cause display issues
+* **Character Encoding**: Look for special characters that can cause display problems
 * **File Corruption**: Re-upload corrupted files or attachments
 * **Browser Rendering**: Try viewing the content in a different browser
 
@@ -208,7 +208,7 @@ Clear browser cache, cookies, and stored data for Taskade.
 {% step %}
 #### Disable Extensions
 
-Temporarily disable browser extensions that might interfere.
+For a short time, turn off browser extensions that can interfere.
 {% endstep %}
 
 {% step %}
@@ -240,7 +240,7 @@ Close unnecessary tabs and applications to free up system resources.
 
 * **Large Projects**: Break down very large projects into smaller, manageable ones
 * **Media Files**: Optimize or compress large images and attachments
-* **Complex Automations**: Simplify complex automation workflows that might consume resources
+* **Complex Automations**: Make complex automation workflows simpler, because they can use many resources
 * **Real-time Features**: Temporarily disable real-time collaboration if not needed
 
 ## AI and Automation Issues
@@ -417,7 +417,7 @@ Verify your credentials for the third-party service are still valid.
 
 * **Account Type**: Verify you're using the correct Microsoft account type
 * **Exchange Settings**: Check Exchange server settings if using corporate Outlook
-* **Sync Conflicts**: Resolve any calendar sync conflicts that may arise
+* **Sync Conflicts**: Correct calendar sync conflicts when they occur
 * **Recurring Events**: Test that recurring events sync properly
 
 ## Workspace and Collaboration Issues
@@ -588,7 +588,7 @@ Browsers only allow camera and microphone on a secure connection. Make sure the 
 {% step %}
 #### Check the hardware and other apps
 
-Close other apps that may be holding the camera or microphone (other video tools, recording software), and verify the device works in your system settings.
+Close other apps that can hold the camera or microphone (other video tools, recording software). Then make sure that the device works in your system settings.
 {% endstep %}
 
 {% step %}
@@ -598,7 +598,7 @@ Video calls work best in Chrome, Edge, or Safari on a stable connection. A wired
 {% endstep %}
 {% endstepper %}
 
-On corporate networks, video may require your IT team to allow Taskade through the firewall. See [Collaboration](../genesis-living-system-builder/workspaces/collaboration.md) for video call features.
+On a company network, your IT team can have to allow Taskade through the firewall before video works. See [Collaboration](../genesis-living-system-builder/workspaces/collaboration.md) for video call features.
 
 These login scenarios go beyond standard email, password, and 2FA issues.
 
@@ -615,7 +615,7 @@ If the login page keeps reloading or bounces you back after signing in:
 For organizations using Single Sign-On (available on the Business, Max, and Enterprise plans):
 
 * **Domain login flow**: Enter your work email, continue, complete your company's normal sign-in, and you'll be redirected back to Taskade.
-* **Not provisioned**: If access is denied, you may not yet be added to Taskade in your identity provider — contact your IT administrator.
+* **Not provisioned**: If access is denied, your identity provider possibly does not have you in Taskade yet. Contact your IT administrator.
 * **Provider downtime or conditional access**: SSO failures often originate with the identity provider; your admin can confirm configuration and status.
 
 See [Account Management](../account-management/README.md) for SSO/SAML setup details.
@@ -665,7 +665,7 @@ Update any other accounts that shared the same password, then report the activit
 
 **Additional help resources:**
 
-* **📚 Help Center**: Comprehensive articles at [taskade.com/learn](https://www.taskade.com/learn)
+* **📚 Help Center**: Articles at [taskade.com/learn](https://www.taskade.com/learn)
 * **🎥 Video Tutorials**: Step-by-step video guides for common tasks
 * **💬 Community Forum**: Connect with other users and share solutions
 * **📖 Documentation**: Complete feature documentation and guides

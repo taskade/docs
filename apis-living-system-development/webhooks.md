@@ -1,6 +1,6 @@
 ---
 description: >-
-  Trigger Taskade automations with inbound webhooks, verify Stripe and HMAC signatures, and verify signed Taskade webhook deliveries.
+  Start Taskade automations with inbound webhooks, call other APIs, and get signed Taskade events. Webhooks need the Pro plan or higher.
 ---
 
 # Taskade Webhooks
@@ -8,10 +8,10 @@ description: >-
 Use webhooks to connect Taskade to other services. Start an automation from another service, call another API from an automation, or get a signed `POST` when something changes in Taskade.
 
 {% hint style="info" %}
-**TL;DR:** To start an automation, `POST` JSON to its webhook URL with a Bearer token or a signature. To get Taskade events in your app, register a signed webhook with `POST /api/v2/webhooks`, then check `X-Taskade-Signature-V2` and `X-Taskade-Timestamp` on each delivery. Both need the Pro plan or higher.
+**In short:** To start an automation, `POST` JSON to its webhook URL with a Bearer token or a signature. To get Taskade events in your app, register a signed webhook with `POST /api/v2/webhooks`, then check `X-Taskade-Signature-V2` and `X-Taskade-Timestamp` on each delivery. Both need the Pro plan or higher.
 {% endhint %}
 
-| You want to | Use | Jump to |
+| You want to | Use | Go to |
 | --- | --- | --- |
 | Start an automation from another service | Inbound webhook | [Inbound webhooks](#inbound-webhooks) |
 | Call another API from an automation | Send HTTP Request action | [Outbound HTTP requests](#outbound-http-requests) |
@@ -32,9 +32,9 @@ graph TB
     FLOW -->|"HTTP action"| APP
 ```
 
-When your integration needs registrations managed in code and verifiable HMAC deliveries, use the signed API. Its events are the explicit list in [Supported events](#supported-events).
+If you want to manage registrations in code and verify HMAC deliveries, use the signed API. Its events are the list in [Supported events](#supported-events).
 
-The no-code route is broader. Automation triggers also cover events such as task added, task completed, due-date changes, custom-field updates, schedules, and connected services. You choose the outgoing payload in the HTTP action.
+The no-code route covers more events. Automation triggers also cover events such as task added, task completed, due-date changes, custom-field updates, schedules, and connected services. You choose the payload that goes out in the HTTP action.
 
 ## Before you start
 
@@ -53,20 +53,20 @@ export TASKADE_TOKEN="tskdp_your_token_here"
 
 ## Inbound webhooks
 
-Receive data from an external service to start a Taskade automation.
+Use an inbound webhook to start a Taskade automation with data from an external service.
 
 ### How it works
 
 1. **Create a webhook trigger** in an automation.
 2. Copy the URL from the **Webhook URL** field in the trigger panel.
 3. In **Verify requests**, choose how Taskade checks each call: a Bearer token, a Stripe signature, or an HMAC-SHA256 signature. See [Authentication](#authentication).
-4. Enable the automation. For a Bearer token, Taskade generates the token at this step.
+4. Enable the automation. If you chose a Bearer token, Taskade generates the token at this step.
 5. Configure your external service to **POST JSON data** to the URL, with the token or the signature that you chose.
-6. Use the webhook payload as **dynamic data** in subsequent actions.
+6. Use the webhook payload as **dynamic data** in the actions that follow.
 
 
 {% hint style="info" %}
-Taskade generates one webhook URL per automation. The URL has the form `https://www.taskade.com/webhooks/flow/<automation-id>/sync`. It identifies the automation, so it does not change.
+Taskade generates one webhook URL per automation. The URL has the form `https://www.taskade.com/webhooks/flow/<automation-id>/sync`. The URL identifies the automation. Thus the URL does not change.
 
 Webhook triggers run on **Pro and above**. On Free and Starter, a call returns `402` with `code: "PAYMENT_REQUIRED"`, and the automation does not run.
 {% endhint %}
@@ -76,7 +76,9 @@ Webhook triggers run on **Pro and above**. On Free and Starter, a call returns `
 
 The webhook accepts `application/json`, `multipart/form-data`, or `application/x-www-form-urlencoded`. Taskade rejects any other content type with `400`.
 
-A JSON body larger than about 1.1 MB returns `413`. Taskade applies the limit after it encodes the body, so the message of a `PAYLOAD_TOO_LARGE` error states about 1.5 MB. Each payload field becomes a **dynamic variable** for subsequent actions.
+A JSON body larger than about 1.1 MB returns `413`. Taskade applies the limit after it encodes the body. Thus the message of a `PAYLOAD_TOO_LARGE` error states about 1.5 MB.
+
+Each payload field becomes a **dynamic variable** for the actions that follow.
 
 **Example payload:**
 
@@ -93,7 +95,7 @@ All four fields (`event`, `name`, `email`, `message`) are available as dynamic v
 
 ### Authentication
 
-The **Verify requests** setting in the webhook trigger panel decides which calls start the automation. A new webhook trigger starts at **None**, so anyone with the URL can start it. Pick a check before you share the URL.
+The **Verify requests** setting in the webhook trigger panel decides which calls start the automation. A new webhook trigger starts at **None**. With **None**, anyone with the URL can start the automation. Pick a check before you share the URL.
 
 | Verify requests | What the caller sends | Use it for |
 | --- | --- | --- |
@@ -108,11 +110,11 @@ With **None**, the panel shows this message:
 This webhook is public. Anyone with the URL can trigger this flow.
 ```
 
-The URL does not change, so the token or the signing secret is the only thing that protects the automation.
+The URL does not change. Thus only the token or the signing secret protects the automation.
 
 #### Use a Bearer token
 
-Taskade generates the token when you enable the automation, and then rejects every call that does not send it.
+Taskade generates the token when you enable the automation. Then Taskade rejects every call that does not send the token.
 
 **Get the token:**
 
@@ -143,18 +145,20 @@ If you set **Verify requests** to **None**, validate each payload in your automa
 
 
 {% hint style="warning" %}
-Treat the authorization token like a password. Do not share it publicly. Do not commit it to source control.
+Keep the authorization token secret, like a password. Do not share it publicly. Do not commit it to source control.
 {% endhint %}
 
 
 ### Verify Stripe and HMAC-signed webhook calls
 
-A signature check lets a sender that cannot set an `Authorization` header start an automation. Taskade rejects a forged call and a call more than 5 minutes old. Taskade stores no request id, so a copy of a signed call that arrives inside those 5 minutes still starts the automation. Design the automation to handle a repeat. Stripe is the common case. A signature check replaces the Bearer token check for that automation.
+With a signature check, a sender that cannot set an `Authorization` header can start an automation. Stripe is the common case. A signature check replaces the Bearer token check for that automation.
+
+Taskade rejects a forged call and a call more than 5 minutes old. Taskade stores no request id. Thus a copy of a signed call that arrives in those 5 minutes still starts the automation. Design the automation so that a repeated call does no harm.
 
 1. Open the webhook trigger panel in your automation.
 2. In **Verify requests**, select **Stripe signature** or **HMAC-SHA256 signature**.
 3. Paste the signing secret into **Signing secret**. For Stripe, use the signing secret of your Stripe webhook endpoint.
-4. For **HMAC-SHA256 signature** only, set **Signature header** and **Timestamp header** if your sender uses other names. Empty fields use `X-Taskade-Signature-V2` and `X-Taskade-Timestamp`.
+4. For **HMAC-SHA256 signature** only: if your sender uses other header names, set **Signature header** and **Timestamp header**. If these fields are empty, Taskade uses `X-Taskade-Signature-V2` and `X-Taskade-Timestamp`.
 5. Enable the automation.
 
 {% hint style="warning" %}
@@ -167,7 +171,7 @@ Taskade checks each signed call in this order:
 | --- | --- |
 | Body size | The raw body must be 1 MB or smaller. A larger body returns `413` before any other check. |
 | Signature | HMAC-SHA256 of `<timestamp>.<raw body>`, keyed with the signing secret, compared in constant time. The value is hex, with or without a `sha256=` prefix. |
-| Stripe header | Taskade reads `t=` and every `v1=` value from `Stripe-Signature`. During a Stripe secret roll, one saved secret is enough. |
+| Stripe header | Taskade reads `t=` and every `v1=` value from `Stripe-Signature`. When Stripe rolls the secret, one saved secret is enough. |
 | Timestamp | Unix seconds. A call more than 5 minutes away from the Taskade clock returns `401`. |
 
 To test the HMAC-SHA256 mode from a terminal, sign the body the same way a sender does:
@@ -187,7 +191,7 @@ curl -s -X POST "$WEBHOOK_URL" \
   -d "$BODY"
 ```
 
-A Taskade [signed webhook](#webhook-registration-api) sends these two headers on every delivery. So you can point a signed webhook from one Taskade account at an automation URL, and use its secret as the signing secret.
+A Taskade [signed webhook](#webhook-registration-api) sends these two headers on every delivery. Thus you can send a signed webhook from one Taskade account to an automation URL. Use the webhook secret as the signing secret.
 
 #### Return a response to the caller
 
@@ -195,17 +199,17 @@ The URL ends in `/sync`. If the automation defines a **Webhook Response** output
 
 #### What the run stores
 
-Each run keeps the request method, the query parameters, the request headers, and the body as trigger data. Later steps can read them. Before Taskade stores a run, it removes the headers that carry a credential:
+Each run keeps the request method, the query parameters, the request headers, and the body as trigger data. Later steps can read them. Before Taskade stores a run, it removes the headers that contain a credential:
 
 | Header removed from the run | Why |
 | --- | --- |
-| `Authorization`, `Proxy-Authorization` | They carry the webhook token or another bearer credential |
-| `Cookie`, `Set-Cookie` | They carry session cookies |
-| `X-Api-Key`, `X-Auth-Token` | They carry an API key of the sender |
+| `Authorization`, `Proxy-Authorization` | They contain the webhook token or another bearer credential |
+| `Cookie`, `Set-Cookie` | They contain session cookies |
+| `X-Api-Key`, `X-Auth-Token` | They contain an API key of the sender |
 
 Taskade also removes its own internal headers. Signature headers stay, for example `Stripe-Signature`, `X-Taskade-Signature-V2`, and `X-Taskade-Timestamp`. A custom header that you choose stays too, for example `X-Status-Secret`.
 
-So a step cannot check an `X-Api-Key` value that a sender puts on the call. To protect the automation, use a Bearer token or a signature check in **Verify requests**.
+Thus a step cannot check an `X-Api-Key` value that a sender puts on the call. To protect the automation, use a Bearer token or a signature check in **Verify requests**.
 
 {% hint style="warning" %}
 **Warning:** Do not use a custom header as a secret store. Its value stays in the run, and every member who can view automations can read it in **Runs**.
@@ -230,8 +234,8 @@ A member who can view automations but cannot edit them does not see the webhook 
 
 | Source                        | What Happens in Taskade                   |
 | ----------------------------- | ----------------------------------------- |
-| **External form submission**  | Create a task + notify the team           |
-| **Stripe payment webhook**    | Update project status + send confirmation |
+| **External form submission**  | Create a task and notify the team         |
+| **Stripe payment webhook**    | Update project status and send a confirmation |
 | **GitHub CI/CD webhook**      | Update deployment status in a project     |
 | **CRM event (HubSpot and others)** | Sync contact data to a Taskade project |
 
@@ -239,7 +243,7 @@ A member who can view automations but cannot edit them does not see the webhook 
 
 ## Outbound HTTP requests
 
-For outbound communication, use the **Send HTTP Request** action in an automation. It can call an external API. Later steps can use the response.
+To call an external API from an automation, use the **Send HTTP Request** action. Later steps can use the response.
 
 ### Configuration
 
@@ -251,28 +255,28 @@ For outbound communication, use the **Send HTTP Request** action in an automatio
 | **Query params** | Values added to the URL query string |
 | **Request Body Type** | `none`, `json`, `raw`, `formData`, or `multipart` |
 | **Response Body Type** | No parsed body, or JSON |
-| **Timeout (ms)** | Maximum wait. Invalid, zero, or negative values use 30 seconds |
-| **Follow Redirects** | Off by default. When enabled, Taskade follows up to five safe redirects |
-| **Return Status On Error** | Return the response and status instead of failing on a non-2xx response |
+| **Timeout (ms)** | The maximum wait. If the value is not valid, zero, or negative, Taskade uses 30 seconds |
+| **Follow Redirects** | Off by default. When you turn it on, Taskade follows up to five safe redirects |
+| **Return Status On Error** | On a non-2xx response, return the response and status. The step does not fail |
 
 
 {% hint style="info" %}
-Response data from the HTTP request becomes dynamic variables in subsequent automation steps. Use these variables to chain API calls.
+Response data from the HTTP request becomes dynamic variables in the automation steps that follow. You can use these variables to connect API calls in a chain.
 {% endhint %}
 
 ### Choose a body type
 
-Match the body mode to the API contract.
+Pick the body type that the receiving API expects.
 
 | Body type | What Taskade sends | Use it for |
 | --- | --- | --- |
-| `none` | No request body | `GET`, `HEAD`, or another bodyless request |
+| `none` | No request body | `GET`, `HEAD`, or another request without a body |
 | `json` | A JSON value or supported structured value | JSON APIs |
 | `raw` | The configured body without JSON conversion | Text, XML, or another raw payload |
 | `formData` | Object fields as form data | Simple form submissions |
 | `multipart` | Validated multipart fields and files | File uploads and mixed form data |
 
-JSON mode sets `Content-Type: application/json` when you do not provide another content type. If the body is text, enter valid JSON when the receiving API expects JSON.
+If you do not set another content type, JSON mode sets `Content-Type: application/json`. If the receiving API expects JSON and the body is text, enter valid JSON.
 
 Use `none` for a request without a body. Do not send an empty JSON object as a placeholder.
 
@@ -302,21 +306,21 @@ Insert dynamic values with the variable controls in the automation editor. The e
 
 
 {% hint style="info" %}
-Registration returns a **signing secret exactly once**, so store it before anything else. The authoritative schema is the live [Action API v2 spec](https://www.taskade.com/api/documentation/v2).
+Registration returns a **signing secret exactly once**. Store it before you do anything else. The live [Action API v2 spec](https://www.taskade.com/api/documentation/v2) has the authoritative schema.
 {% endhint %}
 
 
-Register **signed** outbound webhooks through the public API. You do not need an automation.
+Register **signed** outbound webhooks with the public API. You do not need an automation.
 
 Taskade sends the event payload with `POST`. It signs every delivery with an HMAC secret.
 
-The programmatic event list is smaller than the no-code automation trigger catalog.
+The API has fewer events than the catalog of no-code automation triggers.
 
-This API supersedes the unsigned `subscribeWebhook` and `unsubscribeWebhook` operations. Those operations still work and are deprecated. See [Legacy unsigned subscriptions](#legacy-unsigned-subscriptions-deprecated).
+This API replaces the unsigned `subscribeWebhook` and `unsubscribeWebhook` operations. Those operations still work, but they are deprecated. See [Legacy unsigned subscriptions](#legacy-unsigned-subscriptions-deprecated).
 
 ### Register a webhook
 
-**`POST /api/v2/webhooks`** takes one target URL, one or more events, and optional workspace scoping:
+**`POST /api/v2/webhooks`** takes one target URL, one or more events, and an optional list of workspaces:
 
 ```bash
 curl -s -X POST https://www.taskade.com/api/v2/webhooks \
@@ -341,7 +345,7 @@ curl -s -X POST https://www.taskade.com/api/v2/webhooks \
 }
 ```
 
-A webhook's **`id` is its target URL**. When you use it as a path parameter, URL-encode it.
+The **`id` of a webhook is its target URL**. When you use the id as a path parameter, URL-encode it.
 
 ### Supported events
 
@@ -349,16 +353,16 @@ The `events` array accepts only these six names. Any other value returns `400`:
 
 | Event | Fires when |
 | --- | --- |
-| `task.due` | A task's due date arrives |
-| `task.assigned` | A task is assigned to someone |
-| `comment.created` | A comment is added to a task |
-| `project.created` | A project is created |
-| `project.assigned` | A project is assigned to someone |
+| `task.due` | The due date of a task arrives |
+| `task.assigned` | Someone assigns a task to a person |
+| `comment.created` | Someone adds a comment to a task |
+| `project.created` | Someone creates a project |
+| `project.assigned` | Someone assigns a project to a person |
 | `project.joined` | Someone joins a project |
 
 ### Delivery payload
 
-The delivery body is the event's own object. **There is no event-name envelope**. Branch on the fields you require rather than on a type discriminator:
+The delivery body is the object of the event. **The body has no envelope with the event name**. Branch on the fields that you need, not on a type discriminator:
 
 | Event | Top-level fields |
 | --- | --- |
@@ -369,7 +373,7 @@ The delivery body is the event's own object. **There is no event-name envelope**
 | `project.assigned` | `spaceName`, `spaceId`, `projectName`, `projectId`, `assignerName`, `assigneeName`, `assigneeId` |
 | `project.joined` | `spaceId`, `projectName`, `projectId`, `joinerName`, `joinerUserId` |
 
-When your handler needs to know which event arrived, register one URL per event. Otherwise, key off a field that only one event carries.
+If your handler must know which event arrived, register one URL for each event. Otherwise, use a field that only one event has.
 
 ### Scope to specific workspaces
 
@@ -416,7 +420,11 @@ Every signed delivery is a `POST` with a JSON body and three signature headers. 
 | `X-Taskade-Timestamp` | The send time, in unix seconds |
 | `X-Taskade-Signature-V2` | `sha256=<hex>` of `<timestamp>.<raw body>`, with the `X-Taskade-Timestamp` value as `<timestamp>` |
 
-Check `X-Taskade-Signature-V2` in new receivers. The timestamp is part of the signed data, so a captured delivery fails the check after 5 minutes. A copy that arrives inside those 5 minutes still passes, so make your handler idempotent, or record each delivery that you process and skip a repeat. `X-Taskade-Signature` does not change, and receivers that check it keep working.
+In a new receiver, check `X-Taskade-Signature-V2`. The timestamp is part of the signed data. Thus a captured delivery fails the check after 5 minutes.
+
+A copy that arrives in those 5 minutes still passes. Make your handler idempotent, or record each delivery that you process and skip a repeat.
+
+`X-Taskade-Signature` does not change. Receivers that check it continue to work.
 
 ```mermaid
 sequenceDiagram
@@ -437,7 +445,7 @@ To check V2:
 1. Read the raw request body before you parse the JSON.
 2. Compute the HMAC-SHA256 of the `X-Taskade-Timestamp` value, a period (`.`), and the raw body. Use your `secret` as the key.
 3. Compare `sha256=<your hex>` with `X-Taskade-Signature-V2` in constant time.
-4. Reject the delivery if the timestamp is more than 5 minutes away from your clock.
+4. If the timestamp is more than 5 minutes away from your clock, reject the delivery.
 5. Skip a delivery that you processed before, or make the handler idempotent. The timestamp check does not stop a copy that arrives inside the 5 minutes.
 
 This Node.js 18 function does steps 1 to 4:
@@ -473,15 +481,15 @@ function verifyTaskadeWebhook(
 }
 ```
 
-Reject each delivery that fails the check. A delivery that passes the check can still be a copy, so do step 5 in your handler. A receiver that verifies only `X-Taskade-Signature` compares `sha256=<hex>` of the raw body, with no timestamp. That check still works, but it does not stop a replay.
+Reject each delivery that fails the check. A delivery that passes the check can still be a copy. Thus do step 5 in your handler. A receiver that verifies only `X-Taskade-Signature` compares `sha256=<hex>` of the raw body, with no timestamp. That check still works, but it does not stop a replay.
 
 ### Limits & requirements
 
 | Rule | Detail |
 | --- | --- |
-| Plan | **Pro or above**, otherwise `402` with `code: "PAYMENT_REQUIRED"`. Deleting is always allowed, so a downgraded account can still clean up. |
+| Plan | **Pro or above**, otherwise `402` with `code: "PAYMENT_REQUIRED"`. You can always delete a webhook. Thus an account on a lower plan can still remove its webhooks. |
 | Account | The account email must be verified, otherwise `403` with `code: "FORBIDDEN"`. |
-| Target URL | Must be **`https`**. Max **2,048 characters** once URL-encoded, because the encoded URL is the `:id` path parameter. |
+| Target URL | Must be **`https`**. Maximum **2,048 characters** after URL encoding. The encoded URL is the `:id` path parameter. |
 | Limit | **100** event-workspace combinations per account. One webhook with 3 events scoped to 2 workspaces counts as 6. |
 | Scope | All workspaces by default. Narrow the scope with `spaceIds`. |
 | Dashboard | You can also create and manage outgoing webhooks in **[Settings > API](https://www.taskade.com/settings/api)**. |
@@ -490,7 +498,7 @@ Reject each delivery that fails the check. A delivery that passes the check can 
 
 The `subscribeWebhook` and `unsubscribeWebhook` operations still work, but they are **deprecated**.
 
-Each subscription covers one event. Its scope is account-wide. Deliveries are **not signed**.
+Each subscription covers one event. Its scope is the whole account. Taskade does **not sign** the deliveries.
 
 Use `POST /api/v2/webhooks` for new integrations. To migrate, register the same URL there. Then remove the old subscription.
 
@@ -514,7 +522,7 @@ Every registration error uses the standard JSON error envelope. For example, a F
 | `url must use https` | The target URL uses `http` | Serve your endpoint over HTTPS. |
 | `"code": "FST_ERR_VALIDATION"` | An event name is not in [Supported events](#supported-events), or a field is missing | Read `message`, fix each field that it names, then send the request again. |
 | `A webhook for this URL already exists.` | You registered this target URL before | Delete the old registration, or use a different URL. |
-| `Webhook limit reached (max 100 per account).` | The account holds 100 event-workspace combinations | Delete registrations that you do not use. |
+| `Webhook limit reached (max 100 per account).` | The account already has 100 event-workspace combinations | Delete registrations that you do not use. |
 
 ***
 
@@ -522,11 +530,11 @@ Every registration error uses the standard JSON error envelope. For example, a F
 
 To send Taskade events to your app, build an automation with two ends. Start it with a Taskade **trigger**, such as a new task or a completed task.
 
-End it with an [Outbound HTTP Request](#outbound-http-requests) to your endpoint. The trigger's fields are available as dynamic variables in the HTTP body.
+End it with an [Outbound HTTP Request](#outbound-http-requests) to your endpoint. The fields of the trigger are available as dynamic variables in the HTTP body.
 
 ### Common triggers and their payloads
 
-**Task added** fires when a new task is added to a project:
+**Task added** fires when someone adds a new task to a project:
 
 ```json
 {
@@ -542,7 +550,7 @@ End it with an [Outbound HTTP Request](#outbound-http-requests) to your endpoint
 }
 ```
 
-**Task completed** fires when a task is marked complete:
+**Task completed** fires when a task becomes complete:
 
 ```json
 {
@@ -558,7 +566,7 @@ End it with an [Outbound HTTP Request](#outbound-http-requests) to your endpoint
 }
 ```
 
-Task custom-field values appear as additional keys. Other triggers use the same pattern.
+The custom-field values of the task show as more keys. Other triggers use the same pattern.
 
 See the [Action & Trigger Reference](../genesis-living-system-builder/automation/actions.md) for new comments, dates, project completion, and schedules.
 
@@ -566,7 +574,7 @@ See the [Action & Trigger Reference](../genesis-living-system-builder/automation
 
 ## Rate limits
 
-Taskade can throttle excessive inbound webhook calls. For high-volume traffic, batch events. You can also add a queue on the sender.
+If a sender makes too many inbound webhook calls, Taskade can throttle them. If you send a high volume of calls, send events in batches. You can also add a queue on the sender.
 
 ***
 

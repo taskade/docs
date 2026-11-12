@@ -1,14 +1,14 @@
 ---
 description: >-
-  TSK-1 (Taskade System Kernel) is the intelligence layer that auto-routes AI work across four capability tiers — vendor-agnostic, always current.
+  TSK-1 (Taskade System Kernel) sends each AI request to one of four tiers. The tiers name what the AI can do, not which vendor runs it.
 ---
 
 # TSK-1 Model Tiers
 
-TSK-1 is not a single model. It is an **orchestration layer** — the intelligence system that coordinates how AI models, memory, agents, and workflows operate inside your workspace. When you pick a tier, TSK-1 routes your request to the best available model for that capability level.
+TSK-1 is not one model. It is the layer that controls how AI models, memory, agents and workflows work together in your workspace. When you pick a tier, TSK-1 sends your request to the best model that is available for that tier.
 
 {% hint style="success" %}
-**The short version.** Set your agent to **Auto** and TSK-1 picks the right tier per request. The four tiers — Instant, Standard, Thinking, Reasoning — describe what the system is good at, not which provider powers it.
+**The short version.** Set your agent to **Auto**. TSK-1 then picks the right tier for each request. The four tiers are Instant, Standard, Thinking and Reasoning. Each name tells you what the tier does well, not which provider runs it.
 {% endhint %}
 
 ***
@@ -19,35 +19,35 @@ TSK-1 is not a single model. It is an **orchestration layer** — the intelligen
 Taskade → Taskade Genesis → Taskade EVE → TSK-1 → Workspace DNA → Running workspace
 ```
 
-TSK-1 sits between the **Taskade EVE** persona and **Workspace DNA** — it is the engine that decides *how* to execute a given request across the Memory (projects), Intelligence (agents), and Execution (automations) pillars, and the Taskade Genesis apps built on them.
+TSK-1 is between **Taskade EVE** and **Workspace DNA**. TSK-1 decides *how* to do each request. It works across Memory (projects), Intelligence (agents) and Execution (automations), and across the Taskade Genesis apps that use them.
 
 ***
 
 ## The four tiers
 
-The model picker shows one TSK-1 header with a capability ladder (**TSK-Instant**, **TSK-Standard**, **TSK-Thinking**, **TSK-Reasoning**). Each tier is defined by what it's good for, not by its underlying provider:
+The model picker shows one TSK-1 header with four tiers: **TSK-Instant**, **TSK-Standard**, **TSK-Thinking** and **TSK-Reasoning**. Each tier name tells you what the tier does well, not which provider runs it.
 
 | Tier | Plans | Best for |
 |------|-------|----------|
-| **Instant** | All plans | Fast edits, simple completions, quick lookups. Example: rename a task, fix a typo, categorize an item. |
-| **Standard** | Paid plans | Everyday work — balanced speed and reasoning. Example: draft an email, summarize a document, answer a question. |
-| **Thinking** | Paid plans | Planning, creation, multi-step reasoning. Example: design an automation flow, write a project proposal, generate a Genesis app. |
-| **Reasoning** | Business and up | Complex systems, deep analysis, multi-agent coordination. Example: audit a workspace, cross-reference databases, run a multi-agent team. |
+| **Instant** | All plans | Fast edits, short answers, fast lookups. Example: rename a task, fix a typo, put an item in a category. |
+| **Standard** | Paid plans | Daily work with a balance of speed and thought. Example: write an email, summarize a document, answer a question. |
+| **Thinking** | Paid plans | Plans, new content, tasks with many steps. Example: design an automation flow, write a project proposal, make a Genesis app. |
+| **Reasoning** | Business and up | Complex systems, deep analysis, teams of agents. Example: audit a workspace, compare data across databases, run a team of agents. |
 
-Every tier is visible in the picker on every plan; manually pinning a tier requires the plan shown. **Auto** is available on every plan and picks the depth for each request based on the task.
+The picker shows every tier on every plan. To pin a tier, you must have the plan in the table. **Auto** is available on every plan. Auto picks the depth for each request from the task.
 
 ***
 
 ## Auto (recommended)
 
-Set your agent to **Auto** and TSK-1 dynamically routes each request to the appropriate tier — fast when you need speed, deep when you need reasoning. Auto is the default for new agents on every plan.
+When you set your agent to **Auto**, TSK-1 sends each request to the right tier. A fast tier answers simple requests, and a deep tier answers hard requests. Auto is the default for new agents on every plan.
 
-**Every plan, Free included.** Auto is the default on every plan. A Free workspace starts with 0 AI credits: you earn free AI credits with referrals and invites, and you can upgrade any time. See [Credits & Billing](../../account-management/credits-and-billing.md).
+**Every plan, Free included.** Auto is the default on every plan. A Free workspace starts with 0 AI credits. You earn free AI credits with referrals and invites, and you can upgrade at any time. Read [Credits & Billing](../../account-management/credits-and-billing.md).
 
-Agents or automations **pinned to a specific tier** stay on that tier until you change them. The tier definitions are stable; the underlying models that serve each tier may change as the frontier improves.
+If you pin an agent or automation **to one tier**, it stays on that tier until you change it. The tier definitions do not change. The models behind each tier can change when better models become available.
 
 {% hint style="info" %}
-**Model lineup may change.** TSK-1 runs on the latest frontier models. Because the tiers describe capability rather than provider, Taskade can upgrade the underlying models without you needing to reconfigure anything. The in-app model picker always reflects the current tier lineup.
+**Model lineup can change.** TSK-1 runs on the latest frontier models. The tiers name a capability, not a provider. Thus Taskade can upgrade the models, and you do not have to change your settings. The model picker in the app always shows the current tiers.
 {% endhint %}
 
 ***
@@ -56,45 +56,45 @@ Agents or automations **pinned to a specific tier** stay on that tier until you 
 
 | Scenario | Recommendation |
 |----------|---------------|
-| General-purpose agent — chat, answer questions, draft content | **Auto** — let TSK-1 decide |
-| High-volume automation that needs low latency and low cost | **Instant** or **Standard** |
-| Agent that designs workflows, apps, or complex plans | **Thinking** |
-| Agent that audits, cross-references, or coordinates other agents | **Reasoning** |
-| You have a specific model preference from prior testing | A specific model from **All Models** (each row shows its credit cost and any plan badge) |
+| An agent for all tasks: chat, answers, drafts | **Auto**. TSK-1 decides. |
+| An automation that runs many times and must be fast and cheap | **Instant** or **Standard** |
+| An agent that designs workflows, apps or complex plans | **Thinking** |
+| An agent that audits, compares data or controls other agents | **Reasoning** |
+| You tested the models and prefer one model | One model from **All Models**. Each row shows its credit cost and its plan badge, if it has one. |
 
-Agents pinned to a **specific model** bypass TSK-1 routing entirely — they always use that model. Each model in the picker shows the plan it needs. Claude runs on your own API key (BYOK) in custom agents on Pro and up.
+If you pin an agent to **one model**, TSK-1 does not route its requests. The agent always uses that model. Each model in the picker shows the plan that it needs. Claude runs on your own API key (BYOK) in custom agents on Pro and up.
 
 ***
 
 ## Credits
 
-Each tier has its own credit rate, shown in the in-app model picker. Auto routes to the tier it selects, billing at that tier's rate. Pinned custom models bill at the model's own rate.
+Each tier has its own credit rate. The model picker in the app shows the rates. Auto bills at the rate of the tier that it selects. A pinned custom model bills at the rate of that model.
 
-See [Credits & Billing](../../account-management/credits-and-billing.md) for current rates.
+Read [Credits & Billing](../../account-management/credits-and-billing.md) for the current rates.
 
 ***
 
 ## Workspace DNA
 
-TSK-1 powers the three Workspace DNA pillars and the apps built on them:
+TSK-1 runs the three Workspace DNA pillars and the apps on top of them:
 
-1. **Projects remember** — your data and context stay connected.
-2. **Agents reason** — multi-agent teams understand goals and take action.
-3. **Workflows run** — automations continue after chat ends.
-4. **Apps launch** — one prompt, one live app.
+1. **Projects remember**: your data and context stay connected.
+2. **Agents reason**: teams of agents understand goals and take action.
+3. **Workflows run**: automations continue after the chat ends.
+4. **Apps launch**: one prompt gives one live app.
 
-For the full architecture, see [How Taskade Genesis Works](../genesis/how-genesis-works.md).
+For the full architecture, read [How Taskade Genesis Works](../genesis/how-genesis-works.md).
 
 ***
 
 ## What's next
 
-| Guide | What you'll learn |
+| Guide | What you learn |
 |-------|------------------|
-| [AI Agents Getting Started](ai-agents-getting-started.md) | Set up your first agent and choose a TSK-1 tier |
+| [AI Agents Getting Started](ai-agents-getting-started.md) | Make your first agent and choose a TSK-1 tier |
 | [Agent Knowledge & Memory](agent-knowledge.md) | Give agents context from your projects |
-| [Multi-Agent Collaboration](multi-agents.md) | Coordinate multiple agents with TSK-1 Reasoning |
-| [Credits & Billing](../../account-management/credits-and-billing.md) | Understand credit costs per tier |
+| [Multi-Agent Collaboration](multi-agents.md) | Make agents work together with TSK-1 Reasoning |
+| [Credits & Billing](../../account-management/credits-and-billing.md) | The credit cost of each tier |
 
 ---
 

@@ -5,7 +5,7 @@ description: >-
 
 # Collaboration: Team Intelligence
 
-Taskade enables seamless real-time and asynchronous collaboration across teams. Use chat, video, presence, and comments to stay aligned while work happens in projects, agents, and automations.
+In Taskade, your team can work together at the same time or at different times. Use chat, video, presence and comments to stay aligned while you work in projects, agents and automations.
 
 ## Real-Time Collaboration
 
@@ -26,7 +26,7 @@ Taskade enables seamless real-time and asynchronous collaboration across teams. 
 **Cross-Platform Sync**
 
 * Changes appear instantly across all devices
-* Seamless handoff between desktop, web, and mobile
+* Move between desktop, web and mobile and continue where you stopped
 * If the connection drops, Taskade tries to sync your last changes when you reconnect
 * Version consistency maintained automatically
 
@@ -34,7 +34,7 @@ Taskade enables seamless real-time and asynchronous collaboration across teams. 
 
 ### Asynchronous vs Real-Time Collaboration
 
-Taskade supports both asynchronous and synchronous (real-time) collaboration, allowing teams to choose the best communication method for their workflow. Asynchronous collaboration enables flexible communication without requiring everyone to be online simultaneously.
+Taskade supports work at the same time (real-time) and at different times (asynchronous). Your team can choose the best method for each workflow. With asynchronous work, people do not have to be online at the same time.
 
 **When to Use Asynchronous Collaboration:**
 
@@ -156,11 +156,11 @@ Begin your private conversation in the project's chat panel.
 * **No External Tools**: Record directly within Taskade without third-party software
 * **Multiple Formats**: Record full screen, specific windows, or selected areas
 * **Instant Sharing**: Video uploads automatically and is immediately viewable
-* **Team Collaboration**: Perfect for explaining processes, demonstrating bugs, or training
+* **Team Collaboration**: Explain processes, show bugs or train people
 
 ### Setting Up Project Collaboration
 
-Before starting conversations, ensure your team is properly invited to collaborate:
+Before you start a conversation, make sure that you invited your team to the project:
 
 #### Inviting Team Members to Projects
 
@@ -633,7 +633,7 @@ Project Menu (⚙️) → Settings Tab → Chat/Comments Toggles → Save
 
 #### Notification Management
 
-**Stay organized with powerful notification controls:**
+**Control your notifications:**
 
 **Activity Space Overview:** The Activity space aggregates updates across your folders and workspaces, including project updates, new comments, and due dates. Access it by clicking the bell icon (🔔) in the top-right corner.
 
@@ -701,9 +701,9 @@ Taskade automatically processes and makes your files available for AI chat and t
 
 #### Supported File Formats
 
-**Comprehensive file format support for all your content:**
+**Taskade accepts these file formats:**
 
-Images upload on every plan. Uploading other file types (documents, video, audio, archives) is available on paid plans.
+You can upload images on every plan. To upload other file types (documents, video, audio, archives), you need a paid plan.
 
 **🏞 Image/Design Formats:**
 
@@ -748,7 +748,7 @@ Images upload on every plan. Uploading other file types (documents, video, audio
 **Engage in AI-powered Q\&A sessions with your files and documents:**
 
 {% hint style="success" %}
-Transform the way you interact with documents and projects. Engage in productive Q\&A sessions with Taskade AI and ask questions about the contents of your projects, files, and attachments.
+Ask Taskade AI questions about the content of your projects, files and attachments.
 {% endhint %}
 
 #### Method 1: Chat with Projects
@@ -766,7 +766,7 @@ Transform the way you interact with documents and projects. Engage in productive
 
 * Team members and AI can participate in the same conversation
 * AI provides insights while team members contribute expertise
-* Perfect for collaborative document analysis and decision-making
+* Study documents and make decisions together
 * Maintains conversation history for future reference
 
 #### Method 3: Chat with Attachments
@@ -806,7 +806,7 @@ Receive intelligent responses based on the file's actual content
 * Access AI chat directly from the Media Manager
 * Query multiple files simultaneously
 * Organize and analyze your media library with AI assistance
-* Perfect for managing large document collections
+* Manage large collections of documents
 
 #### Media AI Chat Benefits
 

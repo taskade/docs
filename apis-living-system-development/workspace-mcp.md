@@ -8,7 +8,7 @@ description: >-
 Workspace MCP runs `@taskade/mcp-server` on your computer and connects your MCP client to Taskade projects, tasks, agents, and media. The local server wraps [REST API v1](comprehensive-api-guide/README.md) and adds a small set of Action API v2 tools.
 
 {% hint style="success" %}
-**Tip:** Most readers want the [hosted Taskade MCP](genesis-app-mcp.md) instead. It needs no install, signs in with OAuth, and can edit Taskade Genesis app source. Not sure? See [Which Taskade MCP do I want?](mcp-overview.md).
+**Tip:** Most readers want the [hosted Taskade MCP](genesis-app-mcp.md) instead. It needs no install, signs in with OAuth, and can edit Taskade Genesis app source. If you are not sure, see [Which Taskade MCP do I want?](mcp-overview.md).
 {% endhint %}
 
 ## Before you start
@@ -37,16 +37,16 @@ graph TD
 
 ## Install & run
 
-The server is published as **`@taskade/mcp-server`** on npm. Your client runs it with `npx`, so you do not install it globally.
+Taskade publishes the server as **`@taskade/mcp-server`** on npm. Your client runs it with `npx`. Thus you do not install it globally.
 
 ```bash
 TASKADE_API_KEY="your_api_token_placeholder" npx -y @taskade/mcp-server
 ```
 
-The server reads the personal access token from `TASKADE_API_KEY`. Settings → **API** also manages OAuth 2.0 clients and webhooks.
+The server reads the personal access token from `TASKADE_API_KEY`. On the Settings → **API** page, you can also manage OAuth 2.0 clients and webhooks.
 
 {% hint style="warning" %}
-**Warning:** Do not commit a config file that holds a real token. The token can do everything that your account can do.
+**Warning:** Do not commit a config file that has a real token. The token can do everything that your account can do.
 {% endhint %}
 
 ## Set up your client
@@ -104,7 +104,7 @@ Cursor uses the same shape, in `~/.cursor/mcp.json` (all projects) or `.cursor/m
 
 ### VS Code
 
-Add `.vscode/mcp.json` to your workspace. VS Code uses `servers`. The `${input:…}` value asks for the token on the first run, so the file holds no secret:
+Add `.vscode/mcp.json` to your workspace. VS Code uses `servers`. The `${input:…}` value asks for the token on the first run. Thus the file has no secret:
 
 ```json
 {
@@ -149,11 +149,11 @@ Add the server to `~/.codeium/windsurf/mcp_config.json`:
 
 ### ChatGPT and other remote-only clients
 
-ChatGPT connects only to remote MCP servers, so it cannot start this local server. Connect ChatGPT to the [hosted Taskade MCP](genesis-app-mcp.md#chatgpt) instead.
+ChatGPT connects only to remote MCP servers. Thus it cannot start this local server. Connect ChatGPT to the [hosted Taskade MCP](genesis-app-mcp.md#chatgpt) instead.
 
 ## HTTP / SSE mode
 
-The npm package runs over stdio only. An HTTP mode exists in the source code.
+The npm package runs over stdio only. The source code also has an HTTP mode.
 
 {% hint style="info" %}
 **Note:** For HTTP or SSE, clone [github.com/taskade/mcp](https://github.com/taskade/mcp) and run the HTTP entry of the server package. The server listens on `http://localhost:3000`. Set `PORT` to change the port.
@@ -162,7 +162,7 @@ The npm package runs over stdio only. An HTTP mode exists in the source code.
 Connect over SSE at `http://localhost:3000/sse?access_token=your_api_token_placeholder`.
 
 {% hint style="warning" %}
-**Warning:** Use HTTP mode only on a trusted local network or behind TLS. The token travels as a query parameter (`?access_token=…`).
+**Warning:** Use HTTP mode only on a trusted local network or behind TLS. The token goes in a query parameter (`?access_token=…`).
 {% endhint %}
 
 ## Example Usage in Claude
@@ -187,9 +187,9 @@ Show me the tasks in my Sales Pipeline project and mark the first one complete.
 
 ## Full tool reference
 
-Every tool that the local server exposes, grouped by area. Use the names to configure exact tool calls.
+This table lists every tool that the local server exposes, by area. Use the names to configure exact tool calls.
 
-The tool catalog mirrors [REST API v1](comprehensive-api-guide/README.md) and adds agent chat and legacy webhook subscription tools from Action API v2.
+The tool catalog follows [REST API v1](comprehensive-api-guide/README.md). It also adds tools from Action API v2 for agent chat and legacy webhook subscriptions.
 
 | Area | Tools |
 | --- | --- |
@@ -209,11 +209,11 @@ The tool catalog mirrors [REST API v1](comprehensive-api-guide/README.md) and ad
 
 ## Access Behavior
 
-Workspace MCP keeps the authentication, permission, and plan rules of each API operation that it calls. It does not use the plan check of the hosted server, which admits paid workspaces only.
+Workspace MCP keeps the authentication, permission, and plan rules of each API operation that it calls. It does not use the plan check of the hosted server. That check allows paid workspaces only.
 
 - The `subscribeWebhook` and `unsubscribeWebhook` tools call the legacy unsigned subscription operations.
 - The signed [Webhook Registration API](webhooks.md#webhook-registration-api) is a separate surface. This server has no tool for it.
-- If a tool returns an access error, check the requirements of that operation and the permissions of the token owner.
+- If a tool returns an access error, read the requirements of that operation. Then make sure that the token owner has the correct permissions.
 
 ## Set this up with your coding agent
 

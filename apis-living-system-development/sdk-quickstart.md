@@ -5,7 +5,7 @@ description: >-
 
 # TypeScript SDK
 
-Call the Taskade API from TypeScript today with the built-in `fetch`. The `@taskade/sdk` client is a preview and is not on npm yet, so this page shows the calls without it.
+Call the Taskade API from TypeScript today with the built-in `fetch`. The `@taskade/sdk` client is a preview and is not on npm yet. Thus this page shows the calls without it.
 
 {% hint style="warning" %}
 **Important:** `@taskade/sdk` is not published on the public npm registry. `npm install @taskade/sdk` returns `404 Not Found` today. Use `fetch`, as the examples on this page do.
@@ -31,7 +31,7 @@ export TASKADE_TOKEN="tskdp_your_token_here"
 
 ## Call the API today (no SDK required)
 
-One `fetch` call reaches either API. REST API v1 uses resource paths. Action API v2 sends most operations as a `POST` to `/{operation}`. The binary downloads and the webhook list, get, and delete calls use `GET` or `DELETE`.
+You can call either API with one `fetch` call. REST API v1 uses resource paths. Action API v2 sends most operations as a `POST` to `/{operation}`. The binary downloads and the webhook list, get, and delete calls use `GET` or `DELETE`.
 
 {% tabs %}
 
@@ -96,7 +96,7 @@ The response lists each workspace with its `id` and `name`:
 
 ### Add a typed wrapper
 
-Most integrations need only one small helper for Action API v2. It sends the operation, and it throws on an `ok: false` body:
+Most integrations need only one small helper for Action API v2. It sends the operation. If the body has `ok: false`, it throws an error:
 
 ```typescript
 type TaskadeError = { ok: false; message: string; code: string; statusMessage: string };
@@ -125,7 +125,7 @@ type Space = { id: string; name: string };
 const { items } = await taskade<{ ok: true; items: Space[] }>("listSpaces");
 ```
 
-`items` holds the same array as the `listSpaces` response above. Branch on `status` and `code`. Do not parse `message`.
+`items` has the same array as the `listSpaces` response above. Branch on `status` and `code`. Do not parse `message`.
 
 ## cURL and Python
 
@@ -209,7 +209,7 @@ The two calls return the same JSON as the cURL tab: an `items` array, then an ob
 
 `@taskade/sdk` is a **generated client** for the [Action API v2](api-v2-reference.md). Do not install it yet. The code below shows the planned shape only.
 
-When it ships, it will provide `HttpClient` and `TaskadePublicApi`. Its methods map directly to v2 operations:
+When Taskade releases the SDK, it will provide `HttpClient` and `TaskadePublicApi`. Its methods map directly to v2 operations:
 
 ```typescript
 import { HttpClient, TaskadePublicApi } from "@taskade/sdk";
@@ -241,7 +241,7 @@ Match what you see to a fix.
 | `npm install @taskade/sdk` returns `404 Not Found` | The package is not on the public npm registry | Use `fetch` and the `taskade()` wrapper on this page |
 | `"code": "UNAUTHORIZED"` | The token is missing, wrong, or revoked | Send `Authorization: Bearer $TASKADE_TOKEN`. Make sure that the variable is set in the same terminal |
 | `"code": "FST_ERR_VALIDATION"` | A body field is missing or has the wrong type | Read `message`, fix each field that it names, then send the request again |
-| `"code": "TOO_MANY_REQUESTS"` | You hit a rate limit | Wait for the number of seconds in the `Retry-After` header, then retry |
+| `"code": "TOO_MANY_REQUESTS"` | You sent too many requests | Wait for the number of seconds in the `Retry-After` header, then retry |
 | `ReferenceError: fetch is not defined` | The Node.js version is older than 18 | Upgrade to Node.js 18 or later |
 
 ## Next steps

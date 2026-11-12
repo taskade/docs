@@ -19,13 +19,13 @@ For the full developer reference—authentication, endpoints, SDKs, and more—s
 * **Generic functionality** that doesn't match your specific needs
 * **Missing features** that your business requires
 * **Proprietary systems** that can't connect to anything else
-* **Manual processes** that should be automated but aren't available
+* **Manual processes** that no ready automation can do
 
-**The API solves this by giving you complete programmatic access**—build exactly what you need, connect anything to anything, and create custom solutions that perfectly fit your business.
+**The API gives you access to Taskade from your own code.** You can build what you need, connect your other systems and make solutions that fit your business.
 
 ## What is the Taskade API? (Programmatic Superpowers)
 
-The Taskade API is a **RESTful interface** that exposes core Taskade resources programmatically: workspaces, folders, projects, tasks, AI agents, media, and bundles. It transforms Taskade from a productivity tool into a development platform where you can build custom applications, integrations, and automated workflows.
+The Taskade API is a **RESTful interface**. Your code can use it to work with workspaces, folders, projects, tasks, AI agents, media and bundles. With the API, you can build custom applications, integrations and automated workflows on Taskade.
 
 **The API enables:**
 
@@ -94,7 +94,7 @@ Base URL: `https://www.taskade.com/api/v1`. Signed webhooks use API v2 (`/api/v2
 
 ## Getting Started with the API (Step-by-Step)
 
-**Let's make your first API call:**
+**Make your first API call:**
 
 {% stepper %}
 {% step %}
@@ -117,7 +117,7 @@ curl -H "Authorization: Bearer your_api_token_placeholder" \
 {% step %}
 #### Parse the Response
 
-You'll get a JSON object with `"ok": true` and an `items` array of your projects
+The response is a JSON object with `"ok": true` and an `items` array of your projects.
 {% endstep %}
 
 {% step %}
@@ -134,7 +134,7 @@ curl -X POST https://www.taskade.com/api/v1/projects/your_project_id/tasks/ \
 {% endstep %}
 {% endstepper %}
 
-**Congratulations!** You're now a Taskade API developer!
+Your first API call works.
 
 ## Core API Resources and Operations
 
@@ -447,7 +447,7 @@ class RateLimitedAPI {
 
 ### Error Handling and Resilience
 
-**Build robust API integrations:**
+**Make your API integrations handle errors:**
 
 ```javascript
 class ResilientAPI {
@@ -538,7 +538,7 @@ The official TypeScript SDK (`@taskade/sdk`) is in preview and **not yet publish
 * **Caching Layer**: Performance optimization for frequently accessed data
 * **Audit Logging**: Complete activity tracking for security
 
-**But you don't need to understand the tech—powerful applications just work!**
+You do not have to know these technical details to use the API.
 
 ## API Use Cases and Examples
 
@@ -588,13 +588,13 @@ The official TypeScript SDK (`@taskade/sdk`) is in preview and **not yet publish
 * **Mobile Innovation**: Native apps that extend Taskade's reach
 * **AI Integration**: Combine Taskade's AI with your custom logic
 
-**Exceptional work!** You now have complete programmatic control over Taskade. The API transforms Taskade from a productivity tool into a development platform where you can build anything your business needs.
+You now know how to control Taskade from your own code.
 
-**Ready for the final chapter?** In [Chapter 8: Mobile & Desktop](08_mobile_desktop.md), we'll ensure your living workspace works perfectly everywhere!
+**Next chapter:** Read [Chapter 8: Mobile & Desktop](08_mobile_desktop.md) to use your workspace on all your devices.
 
 ***
 
-_What's the custom application your business has always needed? With the API, you can now build it. The possibilities are literally endless—start small, dream big!_
+_Start with one small integration, and add more when it works._
 
 [← Back to Chapter 6: Integrations](06_integrations.md) | [Next: Mobile & Desktop →](08_mobile_desktop.md)
 

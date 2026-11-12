@@ -9,7 +9,7 @@ description: >-
 
 ## Overview
 
-Taskade is designed for teams of any size. This guide covers the different ways to organize your workspace — from small teams to large enterprises — and how AI-powered features amplify team productivity.
+Taskade works for teams of all sizes. This guide shows ways to organize your workspace, from small teams to large companies. It also shows the AI features that help teams.
 
 > **Taskade Genesis hint:** Teams that use Genesis apps can give every department custom internal tools, dashboards, and client portals — all connected to the same Workspace DNA.
 
@@ -142,7 +142,7 @@ Taskade uses **role-based access from Owner to Viewer**:
 | **Genesis Apps** | Build internal tools and dashboards for teams | [Taskade Genesis](https://www.taskade.com/learn/genesis) |
 | **Shared Agent Chats** | AI + human conversations together | [AI Agent Chat for Teams](https://www.taskade.com/learn/agents/team-chat) |
 | **Version History** | Restore an earlier version of a Taskade Genesis app | [Version History](../genesis/version-history.md) |
-| **Real-time Collaboration** | Multiple users editing simultaneously (OT-based) | Built-in |
+| **Real-time Collaboration** | Many users edit at the same time | Built-in |
 
 ---
 

@@ -121,7 +121,7 @@ Create `.md` files directly in Taskade and use them as project sources:
 
 ### Overview
 
-Taskade supports PDF import in three powerful ways: convert PDFs to structured projects, use them as AI agent knowledge, or add them as context for AI-generated projects. PDFs can also be processed in automation flows using the `pdf.convertToText` action.
+You can use a PDF in Taskade in three ways. Convert it to a structured project, use it as AI agent knowledge, or add it as context for an AI project. Automation flows can also read PDFs with the `pdf.convertToText` action.
 
 > **Genesis connection:** Upload PDFs as Genesis context to create apps that match your existing documents, forms, and processes.
 
@@ -167,7 +167,7 @@ Use PDFs as seed data for AI-generated projects:
 1. Click **+** next to **Projects** in the sidebar → **AI Project**
 2. Describe the project you want to generate
 3. Click **Upload Files** and upload your `.pdf` files
-4. Click Enter to generate the project
+4. Press Enter to generate the project
 
 > **What happens:** AI reads the PDF content and uses it as context to generate a more relevant, customized project.
 

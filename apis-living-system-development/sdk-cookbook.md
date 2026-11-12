@@ -1,6 +1,6 @@
 ---
 description: >-
-  Integration patterns for Taskade: agents, automations, projects, bundles, webhooks, and pagination.
+  Copy code patterns for a Taskade integration: agents, automations, projects, bundles, webhooks, errors, and pagination.
 ---
 
 # SDK Cookbook
@@ -27,7 +27,7 @@ Add one helper that every recipe on this page uses.
 
 ### A tiny HTTP helper
 
-The helper sends a JSON body to `POST /{operation}`. It throws on an error and attaches the HTTP status, the error `code`, and the number of seconds to wait after a `429`:
+The helper sends a JSON body to `POST /{operation}`. If a call fails, the helper throws an error. The error has the HTTP status, the error `code`, and the number of seconds to wait after a `429`:
 
 ```typescript
 export async function taskade(operation: string, body: unknown = {}) {
@@ -59,7 +59,7 @@ export async function taskade(operation: string, body: unknown = {}) {
 
 ### Per-request token override
 
-A multi-tenant app sends each caller's own token. It does not read one shared token from the environment:
+An app with many users (multi-tenant) sends the token of each caller. It does not read one shared token from the environment:
 
 ```typescript
 async function taskadeAs(token: string, operation: string, body: unknown = {}) {
@@ -87,7 +87,7 @@ The response lists the workspaces that this caller can see:
 
 ## TypeScript Types
 
-Declare the shapes that you read, so the compiler catches a wrong field.
+Declare the shapes that you read. Then the compiler finds a wrong field.
 
 The future generated client will export `TaskadePublicApi` plus request and response types. Until then, declare your own:
 
@@ -100,7 +100,7 @@ async function findProject(spaceId: string, name: string): Promise<Project | und
 }
 ```
 
-`listProjects` returns `{ "ok": true, "items": [{ "id": "…", "name": "…" }] }`. Only `id` is always present. An item can also carry `icon`, `completed`, `archived`, `color`, and `tags`.
+`listProjects` returns `{ "ok": true, "items": [{ "id": "…", "name": "…" }] }`. Only `id` is always present. An item can also have `icon`, `completed`, `archived`, `color`, and `tags`.
 
 Use a **type guard** on the `{ ok }` union that v2 returns:
 
@@ -138,7 +138,7 @@ console.log(summary);
 
 ### Review past conversations
 
-List an agent's conversations, then get one with its transcript:
+List the conversations of an agent. Then get one conversation with its transcript:
 
 ```typescript
 const { items } = await taskade("listConversations", { agentId: AGENT_ID, limit: 20, page: 1 });
@@ -154,7 +154,7 @@ Each conversation has an `id`, a `space_agent_id`, a `status` (`in_progress`, `i
 
 ### Attach knowledge to an agent
 
-Ground the agent in a project, or in an uploaded media file:
+Add a project or an uploaded media file to the knowledge of the agent:
 
 ```typescript
 await taskade("addKnowledgeProject", {
@@ -197,17 +197,17 @@ async function promptWithRetry(
 }
 ```
 
-A `429` response carries a `Retry-After` header, in whole seconds. A retry before that time fails again.
+A `429` response has a `Retry-After` header, in whole seconds. A retry before that time fails again.
 
 ## Automations
 
-Start an automation from code by changing the data that its trigger watches.
+To start an automation from code, change the data that its trigger watches.
 
 {% hint style="info" %}
-**Note:** No API operation runs an automation directly. A Taskade trigger starts the run, such as **When a task is added** or **When a task is completed**. The run then acts through its steps, for example **Send HTTP Request**.
+**Note:** No API operation runs an automation directly. A Taskade trigger starts the run, for example **When a task is added** or **When a task is completed**. Then the run does the work in its steps, for example **Send HTTP Request**.
 {% endhint %}
 
-### Kick off an automation from code
+### Start an automation from code
 
 Create the object that the trigger watches. For example, a new task starts an automation with a **When a task is added** trigger on that project:
 
@@ -242,7 +242,7 @@ The response returns the new task in an `item` array:
 }
 ```
 
-To push outside data **into** an automation, use an inbound [Webhook trigger](webhooks.md#inbound-webhooks):
+To send outside data **into** an automation, use an inbound [Webhook trigger](webhooks.md#inbound-webhooks):
 
 - `POST` your payload to the URL that Taskade gives you.
 - If the trigger has **Verify requests** set to **Bearer token**, send that token in the `Authorization` header.
@@ -254,7 +254,7 @@ Create a project from Markdown, add tasks to it, and mark a task complete.
 
 ### Create a project from Markdown
 
-The v2 `createProject` operation builds a whole project, outline included, from one Markdown string:
+The v2 `createProject` operation creates a whole project, with its outline, from one Markdown string:
 
 ```typescript
 const { item: project } = await taskade("createProject", {
@@ -276,7 +276,7 @@ const { item: project } = await taskade("createProject", {
 The v1 call below adds tasks to the project. Each entry needs `contentType`, `content`, and `placement`. Send 20 entries or fewer in one call.
 
 {% hint style="info" %}
-**Note:** Action API v2 also writes tasks: `createTask`, `updateTask`, `deleteTask`, `moveTask`, `completeTask`, and `uncompleteTask`. It also sets assignees, dates, notes, and custom fields. [`createTask`](https://www.taskade.com/docs/actions/create-task) is the v2 twin of this call.
+**Note:** Action API v2 also writes tasks: `createTask`, `updateTask`, `deleteTask`, `moveTask`, `completeTask`, and `uncompleteTask`. It also sets assignees, dates, notes, and custom fields. [`createTask`](https://www.taskade.com/docs/actions/create-task) is the v2 version of this call.
 {% endhint %}
 
 ```typescript
@@ -372,13 +372,20 @@ const { webhook, secret } = await fetch("https://www.taskade.com/api/v2/webhooks
 }
 ```
 
-An empty `spaceIds` array covers all spaces. For each delivery, make sure that the `X-Taskade-Signature-V2` header is valid and that `X-Taskade-Timestamp` is less than 5 minutes old before you act on it. A copy of a delivery that arrives inside those 5 minutes still passes the check, so skip a delivery that you already processed. The [Webhooks guide](webhooks.md#validate-delivery-signatures) has a function that does this check.
+An empty `spaceIds` array covers all spaces.
+
+Before you act on a delivery, make sure that:
+
+- The `X-Taskade-Signature-V2` header is valid.
+- `X-Taskade-Timestamp` is less than 5 minutes old.
+
+A copy of a delivery that arrives in those 5 minutes also passes the check. Thus, skip a delivery that you already processed. The [Webhooks guide](webhooks.md#validate-delivery-signatures) has a function that does this check.
 
 Use `GET /api/v2/webhooks` to list registrations. Use `GET` or `DELETE /api/v2/webhooks/{id}` to read or remove one. The `{id}` is the URL-encoded target URL.
 
 ### Receive an event in your app
 
-A no-code automation sends the JSON body that you set in its **Send HTTP Request** step. Make the handler idempotent, so a repeated delivery does no harm:
+A no-code automation sends the JSON body that you set in its **Send HTTP Request** step. Make the handler idempotent. Then a repeated delivery does no harm:
 
 ```typescript
 const processed = new Set<string>();
@@ -401,7 +408,7 @@ Export a Taskade Genesis app as a portable bundle, then import it into another w
 | Operation | Plan gate |
 | --- | --- |
 | `exportBundle` | Pro and above. Lower plans get `402` with `"featureId": "space.bundle.export"` |
-| `importBundle` | No bundle gate. Each item counts against the target plan's limits for agents, apps, automations, and agent teams |
+| `importBundle` | No bundle gate. Each item counts against the limits of the target plan for agents, apps, automations, and agent teams |
 
 ```typescript
 import { promises as fs } from "node:fs";
@@ -439,7 +446,7 @@ console.log(imported.item);
 
 Branch on the HTTP status and the `code`. Never parse `message`.
 
-v2 reports a failure with an HTTP error status and an `{ ok: false, message, code, statusMessage }` body. The `taskade` helper attaches `status` and `code` to the thrown error:
+v2 reports a failure with an HTTP error status and an `{ ok: false, message, code, statusMessage }` body. The `taskade` helper adds `status` and `code` to the error that it throws:
 
 ```typescript
 try {
@@ -465,7 +472,7 @@ try {
 | `"code": "FST_ERR_VALIDATION"` or `"code": "BAD_REQUEST"` | 400 | No | Fix the request body |
 | `"code": "UNAUTHORIZED"` | 401 | No | Refresh or regenerate the token |
 | `"code": "PAYMENT_REQUIRED"` | 402 | No | Upgrade the plan. If the body has `featureId`, it names the missing feature |
-| `"code": "FORBIDDEN"` | 403 | No | Change the membership or the role. Personal access tokens have no scopes, so a new token does not help |
+| `"code": "FORBIDDEN"` | 403 | No | Change the membership or the role. Personal access tokens have no scopes. A new token does not help |
 | `"code": "NOT_FOUND"` | 404 | No | Make sure that the ID and the workspace access are correct |
 | `"code": "TOO_MANY_REQUESTS"` | 429 | Yes | Wait for the number of seconds in the `Retry-After` header, then retry |
 | `5xx` status | 5xx | Yes | Retry up to 3 times with backoff |
@@ -517,7 +524,7 @@ Test your integration without calls to a live workspace.
 
 ### Environment-based client
 
-Swap the helper for a mock in tests, so the tests make no network calls. `createMockTaskade()` is your own test double:
+In tests, replace the helper with a mock. Then the tests make no network calls. `createMockTaskade()` is your own test double:
 
 ```typescript
 // client.ts
@@ -542,13 +549,13 @@ const callTaskade = vi.fn().mockResolvedValue({
 
 ### Integration tests with a sandbox workspace
 
-Run live tests against a workspace that holds no production data:
+Run live tests against a workspace that has no production data:
 
 1. Create a dedicated "SDK Test" workspace.
-2. Create a separate Taskade account for CI, and issue the CI token from it.
+2. Create a separate Taskade account for CI. Create the CI token from this account.
 3. Make that account a member of the test workspace only.
 
-A personal access token has no workspace scope. It reaches every workspace that its account can reach. So the separate account keeps the CI pipeline away from production workspaces.
+A personal access token has no workspace scope. It can open every workspace that its account can open. Thus the separate account keeps the CI pipeline away from production workspaces.
 
 ## Next steps
 
