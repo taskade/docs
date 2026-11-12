@@ -7,36 +7,28 @@ coverY: 0
 
 # Build on Taskade
 
-Taskade turns a plain-English description of your business into a real, running app — CRM, client portal, or ops dashboard — with logins, your own domain, and a full developer platform: REST API, Action API, MCP, a TypeScript SDK (preview), and signed webhooks.
+Describe your business in plain English, and Taskade builds a running app for it. You can add logins, put the app on your own domain, and connect your own code or AI agent. Pick where to start:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>🛠️ Build a business app — no code</strong></td><td>Describe it in plain English. Get a CRM, client portal, or ops dashboard — with logins and your own domain.</td><td><a href="genesis-living-system-builder/genesis/getting-started.md">Start building →</a></td></tr><tr><td><strong>🤖 Connect your AI agent</strong></td><td>Let Claude, Codex, Cursor, or ChatGPT work in your workspace with one URL and one sign-in.</td><td><a href="getting-started/ai-agents.md">Connect an agent →</a></td></tr><tr><td><strong>💻 Build on the API — developers</strong></td><td>REST API v1, Action API v2, MCP, and webhooks for programmatic access.</td><td><a href="apis-living-system-development/developer-home.md">Developer platform →</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>🛠️ Build a business app, no code</strong></td><td>Describe it in plain English. Get a CRM, a client portal, or an ops dashboard, with logins and your own domain.</td><td><a href="genesis-living-system-builder/genesis/getting-started.md">Start building →</a></td></tr><tr><td><strong>🤖 Connect your AI agent</strong></td><td>Let Claude, Codex, Cursor, or ChatGPT work in your workspace with one URL and one sign-in.</td><td><a href="getting-started/ai-agents.md">Connect an agent →</a></td></tr><tr><td><strong>💻 Build on the API</strong></td><td>REST API v1, Action API v2, MCP, and webhooks for your own code.</td><td><a href="apis-living-system-development/developer-home.md">Developer platform →</a></td></tr></tbody></table>
 
 {% hint style="info" %}
-**Don't want to start from a blank prompt?** Clone a ready-made app for free — browse the [app gallery](https://www.taskade.com/apps) and [Taskade's official kits](https://www.taskade.com/apps/official), then customize it in Taskade Genesis. Or [start from scratch](https://www.taskade.com/create).
+**Do not want to start from a blank prompt?** Clone a ready-made app from the [app gallery](https://www.taskade.com/apps) or from [Taskade's official kits](https://www.taskade.com/apps/official). Then change it in Taskade Genesis. You can also [start from scratch](https://www.taskade.com/create).
 {% endhint %}
 
 {% hint style="success" %}
-**Running a real business on a Taskade Genesis app?** Follow [Run Your Business on Taskade Genesis](genesis-living-system-builder/run-your-business/README.md) — build it, add logins, and put it on your own domain.
+**Do you run a real business on your app?** Read [Run Your Business on Taskade Genesis](genesis-living-system-builder/run-your-business/README.md): build the app, add logins, and put it on your own domain.
 {% endhint %}
 
-## Welcome to Taskade
+## What Taskade does
 
-**Describe your business in plain English — get a real, running app you can put on your own domain.**
+Taskade puts four parts in one workspace: an AI app builder ([Taskade Genesis](https://www.taskade.com/create)), AI agents, automations, and hosting for your apps.
 
-Build complete business applications, websites, and tools using natural language. Taskade combines an **AI app builder** ([Taskade Genesis](https://www.taskade.com/create)), **workflow automation engine**, **AI agents platform**, and **automatic deployment** into a unified workspace.
+* One prompt gives you one app.
+* Your workspace holds the data of the app.
+* Your AI agents do the work of a team.
+* Your automations run the steps.
 
-**Build Without Permission. Start with Taskade Genesis. Your workspace is the foundation.**
-
-We believe the future of work isn't just humans using AI. It's humans and AI working as one.
-
-* One prompt = one app.
-* Your workspace = the backend.
-* Your agents = the team.
-* Your automations = the execution.
-
-Software should be alive. And now, it is.
-
-<figure><img src=".gitbook/assets/genesis-overview.gif" alt="Build a full app from one prompt with Taskade Genesis"><figcaption>One prompt → a working app — agents, integrations, and automations built in.</figcaption></figure>
+<figure><img src=".gitbook/assets/genesis-overview.gif" alt="Build a full app from one prompt with Taskade Genesis"><figcaption>One prompt → a working app, with agents, integrations, and automations.</figcaption></figure>
 
 ### Platform capabilities
 
@@ -66,19 +58,19 @@ Use this as the canonical overview: [Workspace DNA](genesis-living-system-builde
 
 #### Build your first app (5 minutes)
 
-1. [**Follow the Tutorial**](genesis-living-system-builder/genesis/getting-started.md) - Step-by-step app building
-2. [**Copy Working Prompts**](genesis-living-system-builder/genesis/examples-and-templates.md) - Proven templates
-3. [**Browse Community Apps**](https://www.taskade.com/apps) - Apps, templates, and workflows for every industry
+1. [**Getting Started**](genesis-living-system-builder/genesis/getting-started.md) - build your first app, step by step
+2. [**Examples & Templates**](genesis-living-system-builder/genesis/examples-and-templates.md) - prompts you can copy
+3. [**Community apps**](https://www.taskade.com/apps) - apps you can clone
 
 #### Create AI agents (10 minutes)
 
-1. [**AI Agent Tutorial**](genesis-living-system-builder/ai-features/ai-agents-getting-started.md) - Your first AI assistant
-2. [**Agent Prompt Library**](genesis-living-system-builder/space-apps-guide/genesis-prompt-library.md) - Ready-to-use configurations
+1. [**AI Agents Getting Started**](genesis-living-system-builder/ai-features/ai-agents-getting-started.md) - create your first agent
+2. [**Prompt Library**](genesis-living-system-builder/space-apps-guide/genesis-prompt-library.md) - prompts by business task
 
 #### Set up automations (15 minutes)
 
-1. [**Automation Getting Started**](genesis-living-system-builder/automation/) - Build your first workflow
-2. [**Integration Guide**](genesis-living-system-builder/automation/integrations.md) - 100+ supported services
+1. [**Automations Overview**](genesis-living-system-builder/automation/) - build your first workflow
+2. [**Integration Options**](genesis-living-system-builder/automation/integrations.md) - 100+ integrations
 
 #### Connect an AI agent (2 minutes)
 

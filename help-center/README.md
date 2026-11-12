@@ -1,80 +1,61 @@
 ---
 description: >-
-  Find answers about Taskade — Taskade Genesis app building, AI agents, automations, workspaces, billing, and troubleshooting, organized by topic.
+  Find answers about Taskade by topic: Taskade Genesis apps, AI agents, automations, workspaces, your account, and fixes for common problems.
 ---
 
 # Help Center
 
-Find answers fast. Pick the topic that matches what you need.
+Find the page that matches your goal. If the page does not answer your question, contact the Taskade team at the end of this page.
 
-## I want to...
+## Find your page
 
-| Goal                              | Go here                                                                                                |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| **Get started with Taskade**      | [Quick Start Guide](../getting-started/)                                                               |
-| **Build an app with Taskade Genesis** | [Your First App in 5 Minutes](../genesis-living-system-builder/genesis/getting-started.md)             |
-| **Create an AI agent**            | [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md) |
-| **Set up automations**            | [Automations Overview](../genesis-living-system-builder/automation/)                                   |
-| **Import data from another tool** | [Import & Export](import-and-export.md)                                                                |
-| **Use Taskade on mobile**         | [Mobile App Guide](mobile-app.md)                                                                      |
-| **Connect to other tools**        | [Integration Options](../genesis-living-system-builder/automation/integrations.md)                     |
-| **Use the API or MCP**            | [Build on Taskade](../apis-living-system-development/developer-home.md)                                |
-| **Manage my account**             | [Account Management](../account-management/)                                                           |
-| **Fix a problem**                 | [Troubleshooting Guide](../help-and-support/comprehensive-troubleshooting-guide.md)                    |
+| I want to | Go here |
+| --- | --- |
+| **Start with Taskade** | [Quick Start Guide](../getting-started/) |
+| **Build an app with Taskade Genesis** | [Getting Started](../genesis-living-system-builder/genesis/getting-started.md) |
+| **Create an AI agent** | [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md) |
+| **Automate a workflow** | [Automations Overview](../genesis-living-system-builder/automation/) |
+| **Connect other tools** | [Integration Options](../genesis-living-system-builder/automation/integrations.md) |
+| **Import data from another tool** | [Import & Export](import-and-export.md) |
+| **Use Taskade on my phone** | [Mobile App](mobile-app.md) |
+| **Manage my plan and credits** | [Account Management](../account-management/) |
+| **Use the API or MCP** | [Developer Platform](../apis-living-system-development/developer-home.md) |
+| **Fix a problem** | [Troubleshooting Guide](../help-and-support/comprehensive-troubleshooting-guide.md) |
 
-## Platform Guides
+## More guides by topic
 
-### Getting Started
+**Taskade Genesis**
 
-* [Quick Start Guide](../getting-started/) — sign up, create your first app, share it
-* [Workspace DNA](../genesis-living-system-builder/genesis/workspace-dna.md) — understand how Memory, Intelligence, and Execution work together
+* [Examples & Templates](../genesis-living-system-builder/genesis/examples-and-templates.md): prompts you can copy.
+* [Put Your App on Your Own Domain](../genesis-living-system-builder/space-apps-guide/custom-domains.md): publish at your own web address.
+* [Best Practices](../genesis-living-system-builder/community-and-sharing/best-practices.md): build better apps.
 
-### Genesis (App Builder)
+**AI agents**
 
-* [What Genesis Can Build](../genesis-living-system-builder/genesis/) — dashboards, portals, tools, websites
-* [Your First App](../genesis-living-system-builder/genesis/getting-started.md) — step-by-step in 5 minutes
-* [Examples & Templates](../genesis-living-system-builder/genesis/examples-and-templates.md) — copy proven prompts
-* [MCP Connectors](../genesis-living-system-builder/genesis/mcp-connectors.md) — the hosted MCP server for AI clients, and the MCP Client step for automations
-* [Custom Domains](../genesis-living-system-builder/space-apps-guide/custom-domains.md) — brand your published apps
-* [Best Practices](../genesis-living-system-builder/community-and-sharing/best-practices.md) — build better apps
+* [Tools for AI Agents](../genesis-living-system-builder/ai-features/agent-tools.md): built-in tools, app tools, and custom tools.
+* [Agent Knowledge & Memory](../genesis-living-system-builder/ai-features/agent-knowledge.md): train an agent on your data.
+* [AI Agent Teams](../genesis-living-system-builder/ai-features/agent-teams.md): agents that work together.
 
-### AI Agents
+**Automations**
 
-* [AI Agents Getting Started](../genesis-living-system-builder/ai-features/ai-agents-getting-started.md) — create your first agent
-* [Agent Tools Reference](../genesis-living-system-builder/ai-features/agent-tools.md) — built-in tools, app tools, and custom tools
-* [Agent Knowledge & Memory](../genesis-living-system-builder/ai-features/agent-knowledge.md) — train agents with your data
-* [AI Agent Teams](../genesis-living-system-builder/ai-features/agent-teams.md) — multi-agent collaboration
+* [Action & Trigger Reference](../genesis-living-system-builder/automation/actions.md): every step you can add.
+* [Automation Recipes](../genesis-living-system-builder/automation/recipes.md): workflows you can copy.
 
-### Automations
+**Workspaces and projects**
 
-* [Automations Overview](../genesis-living-system-builder/automation/) — triggers, actions, and branching
-* [Actions & Triggers](../genesis-living-system-builder/automation/actions.md) — complete reference
-* [Integration Options](../genesis-living-system-builder/automation/integrations.md) — 100+ supported services
-* [Automation Recipes](../genesis-living-system-builder/automation/recipes.md) — ready-to-use workflows
+* [Workspaces Overview](../genesis-living-system-builder/workspaces/): organize your work.
+* [Project Views](../genesis-living-system-builder/workspaces/project-views.md): List, Board, Calendar, Gantt, Mind Map, and more.
+* [Collaboration](../genesis-living-system-builder/workspaces/collaboration.md): work with your team in real time.
+* [Advanced Search & Navigation](../genesis-living-system-builder/workspaces/advanced-search-navigation.md): find a project, a task, or a file.
 
-### Workspaces & Projects
+**Developers**
 
-* [Workspaces Overview](../genesis-living-system-builder/workspaces/) — organize your work
-* [Project Views](../genesis-living-system-builder/workspaces/project-views.md) — List, Board, Calendar, Gantt, Mind Map, and more
-* [Collaboration](../genesis-living-system-builder/workspaces/collaboration.md) — real-time teamwork
-* [Search & Discovery](../genesis-living-system-builder/workspaces/advanced-search-navigation.md) — find anything fast
+* [Workspace MCP](../apis-living-system-development/workspace-mcp.md) and [Hosted Taskade MCP](../apis-living-system-development/genesis-app-mcp.md): connect Claude, Cursor, or VS Code to your workspace.
+* [REST API v1 Reference](../apis-living-system-development/comprehensive-api-guide/README.md): every endpoint.
+* [Webhooks](../apis-living-system-development/webhooks.md): get an event when your data changes.
+* [Bundles & App Kits](../apis-living-system-development/bundles.md): export and share a full app.
 
-### Import, Export & Mobile
+## Contact the team
 
-* [Import & Export](import-and-export.md) — migrate from Notion, Trello, Asana, and more
-* [Mobile App](mobile-app.md) — Taskade on iOS and Android
-
-### For Developers
-
-* [Build on Taskade](../apis-living-system-development/developer-home.md) — developer starting point
-* [Workspace MCP](../apis-living-system-development/workspace-mcp.md) — manage projects, tasks, and agents from Claude, Cursor, or VS Code
-* [Hosted Taskade MCP](../apis-living-system-development/genesis-app-mcp.md) — orchestrate your workspace and edit your Genesis app's source from your IDE
-* [REST API Reference](../apis-living-system-development/developers/api.md) — the full endpoint reference
-* [Webhooks](../apis-living-system-development/webhooks.md) — inbound and outbound
-* [Bundles & App Kits](../apis-living-system-development/bundles.md) — export and share complete apps
-
-## Still Need Help?
-
-* [Contact Support](https://www.taskade.com/contact) — reach the team directly
-* [Community Forum](https://www.taskade.com/feedback) — ask questions, share ideas
-* [Troubleshooting Guide](../help-and-support/comprehensive-troubleshooting-guide.md) — step-by-step fixes
+* [Contact Support](https://www.taskade.com/contact): send a message to the Taskade team.
+* [Community Forum](https://www.taskade.com/feedback): ask a question or share an idea.

@@ -3,11 +3,11 @@ description: >-
   Taskade changelog archive (2017-2025) — historical release notes, feature launches, and platform updates.
 ---
 
-# Changelog (2017 - 2025)
+# Changelog (2017-2025)
 
-For 2026 release notes, see the [2026 changelog](../updates-and-timeline/changelog-2026/README.md).
+For 2026 release notes, read the [2026 changelog](../updates-and-timeline/changelog-2026/README.md).
 
-Welcome to Taskade's changelog! This chronicles our journey from a simple task management tool to **Taskade Genesis** — an AI-powered platform that turns a single prompt into a living, intelligent application.
+This archive lists the Taskade releases from 2017 to 2025, one page per year. It shows how Taskade grew from a task manager into **Taskade Genesis**, which turns one prompt into a running app. Pick a year in the menu, or read the summary of each year on this page.
 
 > _"From humble beginnings to the HyperCard moment for the AI era. This is the story of how teams learned to think in tasks, not prompts, and how one prompt became one app."_
 
