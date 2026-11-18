@@ -6,7 +6,7 @@ Developers can build on the REST API v1, the action-based Public API v2, webhook
 
 ## For AI agents
 
-- [Agent skill](https://www.taskade.com/SKILL.md): Start here. How an AI agent connects to Taskade, which tools fit each job, app kits, and safety rules.
+- [Agent skill](https://www.taskade.com/SKILL.md): Start here. How an AI agent connects to Taskade, which tools fit each job, App Kits, and safety rules.
 - [Connect an AI Agent](https://docs.taskade.com/quick-start/ai-agents): Every MCP client, every machine-readable entry point, and what an agent can and cannot do.
 - Hosted MCP server: https://www.taskade.com/mcp (Streamable HTTP, OAuth 2.0 with PKCE, or a personal access token as a Bearer header). Every paid plan.
 - [API catalog (RFC 9727)](https://www.taskade.com/.well-known/api-catalog): The machine-readable list of Taskade APIs.
@@ -19,11 +19,11 @@ Developers can build on the REST API v1, the action-based Public API v2, webhook
 
 ## Clone a live app
 
-- [All app kit categories](https://www.taskade.com/apps/categories): Browse kits by type, team, or industry, then clone a workspace.
-- App kit URL: `https://www.taskade.com/app/{slug}-{id}` (legacy `/share/apps/{id}` redirects here).
-- [Client Connect Dashboard](https://www.taskade.com/app/client-connect-dashboard-avl35iqxc8t7wk3e): CRM kit.
+- [All App Kit categories](https://www.taskade.com/apps/categories): Browse App Kits in Taskade App Factory by type, team, or industry, then clone a workspace.
+- App Kit URL: `https://www.taskade.com/app/{slug}-{id}` (legacy `/share/apps/{id}` redirects here).
+- [Client Connect Dashboard](https://www.taskade.com/app/client-connect-dashboard-avl35iqxc8t7wk3e): CRM App Kit.
 - [Invoice Generator](https://www.taskade.com/app/invoice-generator-v71ywf2zs5bu9a5m): invoices and payment follow-up.
-- [Research Chat Bot](https://www.taskade.com/app/research-chat-bot-ckhj4d7yyntrkyb8): chatbot kit.
+- [Research Chat Bot](https://www.taskade.com/app/research-chat-bot-ckhj4d7yyntrkyb8): chatbot App Kit.
 
 ## Platform
 

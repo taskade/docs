@@ -78,7 +78,7 @@ Start here:
 * [Prompt Guide](prompt-guide.md): get better results from your prompts
 * [Run Your Business on Taskade Genesis](../run-your-business/README.md): take an app to production
 * [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md): on a paid plan, edit the source of your app from Claude, Cursor, or another IDE
-* [taskade.com/apps](https://www.taskade.com/apps): browse community apps
+* [taskade.com/apps](https://www.taskade.com/apps): browse App Kits in Taskade App Factory
 
 ---
 

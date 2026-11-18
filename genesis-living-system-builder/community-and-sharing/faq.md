@@ -398,7 +398,7 @@ See our [Best Practices guide](best-practices.md) for detailed examples.
 
 * **Read our help center:** [taskade.com/learn/genesis](https://www.taskade.com/learn/genesis)
 * **Email us:** [support@taskade.com](mailto:support@taskade.com)
-* **See community apps:** [taskade.com/apps](https://www.taskade.com/apps)
+* **Browse Taskade App Factory:** [taskade.com/apps](https://www.taskade.com/apps)
 
 **Ready to build?** [Open Taskade Genesis in your workspace →](https://taskade.com)
 
@@ -467,7 +467,7 @@ Yes. You can design living systems with enterprise-grade security, compliance fe
 
 ### How will living software evolve?
 
-Future living systems will learn better, share more data across systems, predict more, and work more closely with people.
+Taskade ships new features often. To see what is new, read the [changelog](../../changelog/README.md).
 
 **Living software is the next step for business systems: from tools that people use to AI partners that work with them.**
 
