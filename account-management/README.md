@@ -62,7 +62,7 @@ Settings > Members > click the **✕** icon next to the member.
 | **Pro** | $10/mo billed annually, or $20 monthly | 50,000 |
 | **Business** | $25/mo billed annually, or $50 monthly | 150,000 |
 | **Max** | $100/mo billed annually, or $200 monthly | 400,000 |
-| **Enterprise** | $250/mo billed annually, or $500 monthly (contact sales) | 1,100,000 |
+| **Enterprise** | Custom (contact sales) | 1,100,000 |
 
 Key features of each plan:
 

@@ -11,7 +11,7 @@ description: >-
 
 You can embed a full Taskade project on your website or blog. When you change the project, your visitors **see the change at once**. You can also embed external content inside Taskade projects.
 
-> **Genesis connection:** Taskade Genesis apps can be embedded on any website using iframe. Published apps also support custom domains on Pro and up. See [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md).
+> **Taskade Genesis connection:** Taskade Genesis apps can be embedded on any website using iframe. Published apps also support custom domains on Pro and up. See [Publish and Clone Your Apps](../community-and-sharing/publish-and-clone.md).
 
 ---
 
