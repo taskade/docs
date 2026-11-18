@@ -92,7 +92,7 @@ These links cover the specs, examples, and support channels.
 | [Autonomous agents guide](../autonomous-agents.md) | Agent use cases and architecture patterns |
 | [Sample app](https://github.com/taskade/taskade-sample-app) | A Taskade Genesis app example |
 | [Integration Kit](https://github.com/taskade/integrations) | Open-source Zapier and n8n actions and triggers, built on the public API |
-| [Community apps](https://www.taskade.com/apps) | Taskade Genesis apps built by the community |
+| [Taskade App Factory](https://www.taskade.com/apps) | Taskade Genesis App Kits built by the community |
 | [GitHub repository](https://github.com/taskade/docs) | Documentation contributions and feature requests |
 | [Status page](https://status.taskade.com/) | API uptime and service announcements |
 | [Contact support](https://www.taskade.com/contact) | Help from the Taskade team |

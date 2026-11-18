@@ -665,11 +665,11 @@ Share your feedback system, inventory tracker, or team dashboard with the Taskad
 
 ### Next Steps
 
-1. Browse community apps for ideas, and see which apps are popular.
+1. Browse Taskade App Factory for ideas, and see which App Kits are popular.
 2. Fork a few apps to learn the user experience.
 3. Find gaps in the marketplace where your knowledge can help.
 4. Build your solution, and plan to share it.
-5. Publish your first community app.
+5. Publish your first app to Taskade App Factory.
 
 ***
 

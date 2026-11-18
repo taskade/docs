@@ -43,7 +43,7 @@ One prompt gives you these parts:
 | **Security** | Role-based access control, app sign-in on every plan, password protection (Pro and up), and custom domains (Pro and up) |
 | **Analytics** | Visitor counts, locations, traffic sources, and devices (Business and up) |
 | **Version Control** | Version history. Restore the design and code of an earlier version with one click |
-| **Publishing** | A link that you can share, custom domains, and the community gallery. The first clean build goes live one time, unlisted. Later changes stay a draft until you click **Publish**. Manual Updates work on every plan |
+| **Publishing** | A link that you can share, custom domains, and Taskade App Factory. The first clean build goes live one time, unlisted. Later changes stay a draft until you click **Publish**. Manual Updates work on every plan |
 
 > **Taskade Genesis hint:** Your AI credits pay for app creation. Different models use different amounts of credits. See [Taskade AI Credits](https://www.taskade.com/learn/agents/ai-usage) for details.
 
@@ -293,7 +293,7 @@ You can package a Taskade Genesis workspace as a **Bundle (Kit)**. A bundle is a
 | **Create** | Package your workspace into a bundle that you can share (empty, or with all items) |
 | **Dependencies** | Taskade adds all linked resources for you |
 | **Install** | Other people clone the full bundle to their workspace with one click |
-| **Public sharing** | Publish to the Community Gallery, and set **Let others clone** to **Free** or **Paid** |
+| **Public sharing** | Publish to Taskade App Factory, and set **Let others clone** to **Free** or **Paid** |
 | **Export** | Download a `.tsk` bundle or export to GitHub on Pro and above. Taskade checks the plan on the server |
 | **Import limits** | Each item counts against the plan of the workspace that imports it. For example, Free cannot import automations |
 

@@ -16,7 +16,7 @@ Taskade Genesis turns one prompt into a working app. It makes the screens and co
 For the full model, read [Workspace DNA](../../genesis-living-system-builder/genesis/workspace-dna.md).
 
 {% hint style="info" %}
-**You can start in two ways.** Build from a blank prompt, as this guide shows. Or clone a ready-made app from the [community gallery](https://www.taskade.com/apps) or [Taskade's official kits](https://www.taskade.com/@taskade), then change it. Both ways open the same Taskade Genesis editor.
+**You can start in two ways.** Build from a blank prompt, as this guide shows. Or clone a ready-made app from [Taskade App Factory](https://www.taskade.com/apps) or [Taskade's official App Kits](https://www.taskade.com/@taskade), then change it. Both ways open the same Taskade Genesis editor.
 {% endhint %}
 
 ## Before You Start
@@ -270,7 +270,7 @@ Your app solves a real business problem. In this step, you put it in front of re
 
 1. **Private use**: Keep the app in your workspace for your team.
 2. **Custom domain**: Publish on your own domain, for example `app.yourcompany.com`, on Pro and up.
-3. **Community**: List your app in the Community Gallery. To let others clone it, set **Let others clone** to **Free** or **Paid**.
+3. **Community**: List your app in Taskade App Factory. To let others clone it, set **Let others clone** to **Free** or **Paid**.
 4. **Public link**: Share one link with external users.
 5. **Hosted Taskade MCP** (paid plans): Connect Claude, Cursor, or another MCP client to your workspace. You can then make projects, manage agents, and edit the source of your app from your IDE. Read [Hosted Taskade MCP](../../apis-living-system-development/genesis-app-mcp.md).
 
@@ -295,7 +295,7 @@ Your app solves a real business problem. In this step, you put it in front of re
 
 If your app can help other businesses, share it with the community:
 
-* **Community Gallery**: your app shows in the gallery.
+* **Taskade App Factory**: your app shows in the public gallery.
 * **Clones**: with **Let others clone** on, other teams can clone your app and use it.
 * **Reputation**: other builders see your work.
 * **Feedback**: community reviews help you improve your app.
