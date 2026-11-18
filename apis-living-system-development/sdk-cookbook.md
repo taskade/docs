@@ -89,7 +89,7 @@ The response lists the workspaces that this caller can see:
 
 Declare the shapes that you read. Then the compiler finds a wrong field.
 
-The future generated client will export `TaskadePublicApi` plus request and response types. Until then, declare your own:
+Declare a type for each response that you read:
 
 ```typescript
 type Project = { id: string; name?: string };

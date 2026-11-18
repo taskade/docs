@@ -178,7 +178,7 @@ Some `PAYMENT_REQUIRED` errors also have a `featureId` field. It names the plan 
 | [Bundles & App Kits](bundles.md) | Import or export full Taskade Genesis apps as portable `.tsk` bundles |
 | [Long-Term Memory](long-term-memory.md) | Taskade stores agent memory as projects. You can edit it, query it, and reach it with the API |
 | [Autonomous Agents](autonomous-agents.md) | Automations, orchestration, and patterns for one agent to call another |
-| [TypeScript SDK (Preview)](sdk-quickstart.md) | Generated client for v2. It is not yet on public npm, so use the REST API |
+| [TypeScript SDK (Preview)](sdk-quickstart.md) | Call the API from TypeScript with the built-in `fetch` |
 | [Contact support](https://www.taskade.com/contact) | Help from the Taskade team |
 
 ## What you can build

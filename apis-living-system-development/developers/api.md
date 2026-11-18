@@ -70,7 +70,7 @@ graph TD
 | **Public agent embed** | Puts a public AI agent on your site as an iframe or a chat widget | [Agent embeds](../agent-embeds.md) |
 | **Bundles** | Exports and imports a whole app or workspace as JSON, `.zip`, or `.tsk` | [Bundles & App Kits](../bundles.md) |
 | **MCP Client connector** | Lets a Taskade automation call the tools of another MCP server | [Which Taskade MCP do I want?](../mcp-overview.md) |
-| **TypeScript SDK** | A generated client for the Action API v2. It is in preview and not on npm yet. | [TypeScript SDK](../sdk-quickstart.md) |
+| **TypeScript SDK** | Calls the API from TypeScript with the built-in `fetch`. No package to install. | [TypeScript SDK](../sdk-quickstart.md) |
 
 Each surface has its own endpoint and access rule:
 
@@ -84,7 +84,7 @@ Each surface has its own endpoint and access rule:
 | **Public agent embed** | The embed code in the publish settings of the agent | Every plan. No token: the agent must be public. |
 | **Bundles** | `/api/v1/bundles/…` or `/api/v2/exportBundle` | Export: Pro plan and above. Import: the plan limit for each item type. |
 | **MCP Client connector** | An automation step | Every plan, Free included |
-| **TypeScript SDK** | `@taskade/sdk` (preview) | Not available yet. Call the API over HTTPS. |
+| **TypeScript SDK** | The built-in `fetch` | No package. Call the API over HTTPS. |
 
 ## Choose your path
 

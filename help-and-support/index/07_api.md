@@ -513,7 +513,7 @@ data = res.json()
 The official TypeScript SDK (`@taskade/sdk`) is in preview and **not yet published to the public npm registry**. Until it ships, use the REST API directly as shown above.
 {% endhint %}
 
-* [**TypeScript SDK (Preview)**](../../apis-living-system-development/sdk-quickstart.md) — generated client for API v2; the quickstart shows the HTTP-first path you can use today
+* [**TypeScript SDK (Preview)**](../../apis-living-system-development/sdk-quickstart.md) — call the API from TypeScript with the built-in `fetch`
 * [**Workspace MCP Server**](https://github.com/taskade/mcp) — `@taskade/mcp-server` on npm; connect Claude Desktop, Cursor, and any MCP client to your workspace
 * [**Integration Kit**](https://github.com/taskade/integrations) — open-source Zapier and n8n actions & triggers built on this public API
 
