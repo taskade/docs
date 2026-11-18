@@ -50,11 +50,11 @@ Full setup for each client, the tool list, and fixes: [Hosted Taskade MCP](../ap
 
 ## Give your agent the Taskade skill
 
-[`https://www.taskade.com/SKILL.md`](https://www.taskade.com/SKILL.md) is a short skill file written for AI agents. It tells an agent how to connect, which tools fit each job, how app kits work, and the safety rules. Paste this into your agent:
+[`https://www.taskade.com/SKILL.md`](https://www.taskade.com/SKILL.md) is a short skill file written for AI agents. It tells an agent how to connect, which tools fit each job, how App Kits work, and the safety rules. Paste this into your agent:
 
 {% code overflow="wrap" %}
 ```text
-Read https://www.taskade.com/SKILL.md, then connect to Taskade and list my workspaces.
+Set up Taskade for me. Read and follow https://www.taskade.com/SKILL.md
 ```
 {% endcode %}
 
@@ -76,6 +76,7 @@ Every URL below is public and works without a sign-in.
 | This docs site | [`docs.taskade.com/llms.txt`](https://docs.taskade.com/llms.txt) and [`docs.taskade.com/llms-full.txt`](https://docs.taskade.com/llms-full.txt). Each page also has a Markdown copy: add `.md` to its URL |
 | Source of this docs site | [github.com/taskade/docs](https://github.com/taskade/docs) |
 | MCP server and plugin source | [github.com/taskade/mcp](https://github.com/taskade/mcp) |
+| Agent skills source | [github.com/taskade/skills](https://github.com/taskade/skills) |
 
 ## Let your agent search these docs
 
@@ -108,7 +109,7 @@ MCP reads and changes what exists. It cannot create or edit an automation, build
 
 ## App kits
 
-An app kit is a finished Taskade Genesis app that anyone can copy into a workspace, with its projects, agents, and automations. Browse kits at [taskade.com/apps](https://www.taskade.com/apps) and [taskade.com/apps/categories](https://www.taskade.com/apps/categories). MCP cannot copy a kit: your agent gives you the **Clone to Workspace** link of the kit, and you open it while signed in. After the clone, the agent reads the copy with `inspect_space` and changes its app with `write_file`.
+An App Kit is a finished Taskade Genesis app that anyone can copy into a workspace, with its projects, agents, and automations. Browse App Kits in Taskade App Factory at [taskade.com/apps](https://www.taskade.com/apps) and [taskade.com/apps/categories](https://www.taskade.com/apps/categories). MCP cannot copy a kit: your agent gives you the **Clone to Workspace** link of the kit, and you open it while signed in. After the clone, the agent reads the copy with `inspect_space` and changes its app with `write_file`.
 
 ## Rules for agents
 

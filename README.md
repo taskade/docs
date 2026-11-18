@@ -12,7 +12,7 @@ Describe your business in plain English, and Taskade builds a running app for it
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>🛠️ Build a business app, no code</strong></td><td>Describe it in plain English. Get a CRM, a client portal, or an ops dashboard, with logins and your own domain.</td><td><a href="genesis-living-system-builder/genesis/getting-started.md">Start building →</a></td></tr><tr><td><strong>🤖 Connect your AI agent</strong></td><td>Let Claude, Codex, Cursor, or ChatGPT work in your workspace with one URL and one sign-in.</td><td><a href="getting-started/ai-agents.md">Connect an agent →</a></td></tr><tr><td><strong>💻 Build on the API</strong></td><td>REST API v1, Action API v2, MCP, and webhooks for your own code.</td><td><a href="apis-living-system-development/developer-home.md">Developer platform →</a></td></tr></tbody></table>
 
 {% hint style="info" %}
-**Do not want to start from a blank prompt?** Clone a ready-made app from the [app gallery](https://www.taskade.com/apps) or from [Taskade's official kits](https://www.taskade.com/apps/official). Then change it in Taskade Genesis. You can also [start from scratch](https://www.taskade.com/create).
+**Do not want to start from a blank prompt?** Clone a ready-made app from [Taskade App Factory](https://www.taskade.com/apps) or from [Taskade's official App Kits](https://www.taskade.com/apps/official). Then change it in Taskade Genesis. You can also [start from scratch](https://www.taskade.com/create).
 {% endhint %}
 
 {% hint style="success" %}
@@ -40,7 +40,7 @@ Taskade puts four parts in one workspace: an AI app builder ([Taskade Genesis](h
 | **AI Agents Platform**   | Deploy custom AI assistants with persistent memory             | [Custom AI Agents →](https://www.taskade.com/learn/agents/custom-agents) |
 | **Projects & Databases** | Structured data with real-time sync and custom fields          | [Memory Pillar →](https://www.taskade.com/learn/projects/databases)       |
 
-[**Start Building →**](https://www.taskade.com/create) | [**Browse Community Apps →**](https://www.taskade.com/apps)
+[**Start Building →**](https://www.taskade.com/create) | [**Browse Taskade App Factory →**](https://www.taskade.com/apps)
 
 ### How Taskade fits together
 
@@ -60,7 +60,7 @@ Use this as the canonical overview: [Workspace DNA](genesis-living-system-builde
 
 1. [**Getting Started**](genesis-living-system-builder/genesis/getting-started.md) - build your first app, step by step
 2. [**Examples & Templates**](genesis-living-system-builder/genesis/examples-and-templates.md) - prompts you can copy
-3. [**Community apps**](https://www.taskade.com/apps) - apps you can clone
+3. [**Taskade App Factory**](https://www.taskade.com/apps) - App Kits you can clone
 
 #### Create AI agents (10 minutes)
 
@@ -85,8 +85,8 @@ Use this as the canonical overview: [Workspace DNA](genesis-living-system-builde
 * [**REST API v1**](apis-living-system-development/comprehensive-api-guide/README.md) - Complete RESTful reference (full task CRUD)
 * [**Action API v2**](apis-living-system-development/api-v2-reference.md) - The newer action-based API (agent prompting, bundles)
 * [**Authentication**](apis-living-system-development/developers/authentication.md) - Personal tokens & OAuth 2.0
-* [**Open Source**](https://github.com/taskade) - Public repos: [taskade/mcp](https://github.com/taskade/mcp) (MCP server and Claude Code plugin), [taskade/docs](https://github.com/taskade/docs) (this documentation), [taskade/awesome-vibe-coding](https://github.com/taskade/awesome-vibe-coding) (curated tools index), [taskade/tasks.md](https://github.com/taskade/tasks.md) (agent build ledger spec), [taskade/integrations](https://github.com/taskade/integrations) (Integration Kit)
-* [**Awesome Vibe Coding**](https://github.com/taskade/awesome-vibe-coding) - Curated vibe-coding tools, agents, and community Genesis app kits
+* [**Open Source**](https://github.com/taskade) - Public repos: [taskade/mcp](https://github.com/taskade/mcp) (MCP server and Claude Code plugin), [taskade/skills](https://github.com/taskade/skills) (agent skills), [taskade/docs](https://github.com/taskade/docs) (this documentation), [taskade/awesome-vibe-coding](https://github.com/taskade/awesome-vibe-coding) (curated tools index), [taskade/tasks.md](https://github.com/taskade/tasks.md) (agent build ledger spec), [taskade/integrations](https://github.com/taskade/integrations) (Integration Kit)
+* [**Awesome Vibe Coding**](https://github.com/taskade/awesome-vibe-coding) - Curated vibe-coding tools, agents, and Taskade Genesis App Kits
 
 ### Explore docs
 

@@ -53,7 +53,7 @@ AI agents keep long-term memory. They write this memory to projects in your work
 | Understand long-term memory | [Long-Term Memory](long-term-memory.md) |
 | Build agents that run without a prompt | [Autonomous Agents](autonomous-agents.md) |
 | Build automations without code | [Automations Engine](https://www.taskade.com/automate) |
-| Browse community apps and templates | [taskade.com/apps](https://www.taskade.com/apps) |
+| Browse App Kits in Taskade App Factory | [taskade.com/apps](https://www.taskade.com/apps) |
 
 ## Get a token
 
@@ -172,6 +172,7 @@ Some `PAYMENT_REQUIRED` errors also have a `featureId` field. It names the plan 
 | [Hosted Taskade MCP](genesis-app-mcp.md) | Connect to `https://www.taskade.com/mcp` with OAuth or a Personal Access Token. Create and manage projects, edit tasks, manage and prompt agents, and edit Taskade Genesis app source |
 | [MCP Client connector](https://www.taskade.com/learn/connect/mcp-client-integration) | Outbound MCP through an **automation**. Point the connector at a remote MCP server. Agents do not call MCP servers directly ([which MCP?](mcp-overview.md)) |
 | [Integration Kit (GitHub)](https://github.com/taskade/integrations) | Open-source Zapier and n8n actions and triggers that use the public API. You can contribute or self-host |
+| [Agent skills (GitHub)](https://github.com/taskade/skills) | Skills that teach an AI agent to connect to Taskade and work in your workspace |
 | [Webhooks](webhooks.md) | Trigger automations from external events and call any API |
 | [Agent Embeds](agent-embeds.md) | Add a public AI agent with an iframe or configurable widget |
 | [Bundles & App Kits](bundles.md) | Import or export full Taskade Genesis apps as portable `.tsk` bundles |
@@ -194,7 +195,7 @@ Some `PAYMENT_REQUIRED` errors also have a `featureId` field. It names the plan 
 - [Authentication](developers/authentication.md): use OAuth 2.0 when your app acts for other Taskade users.
 - [Taskade API overview](developers/api.md): the REST and Action APIs, side by side.
 - [Webhooks](webhooks.md): get an event when data changes, instead of polling.
-- [Community apps](https://www.taskade.com/apps): working examples built with Taskade.
+- [Taskade App Factory](https://www.taskade.com/apps): App Kits built with Taskade, as working examples.
 
 ---
 
