@@ -16,7 +16,7 @@ coverY: 0
 ## Releases this month
 
 * [March 31, 2026](march-31-2026.md) — New v8 Max and Enterprise plans
-* [March 28, 2026](march-28-2026.md) — @taskade/embed Migrated into Monorepo with Security Hardening
+* [March 28, 2026](march-28-2026.md) — Agent Chat Embed Widget Security Hardening
 * [March 26, 2026](march-26-2026.md) — Appkit Template UI Refresh
 * [March 22, 2026](march-22-2026.md) — MCP SDK Upgraded to ^1.27.1 / mcp-proxy ^6.4.4
 * [March 19, 2026](march-19-2026.md) — New Pieces for Automations

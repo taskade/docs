@@ -5,7 +5,7 @@ description: >-
 
 # TypeScript SDK
 
-Call the Taskade API from TypeScript today with the built-in `fetch`. The `@taskade/sdk` client is a preview and is not on npm yet. Thus this page shows the calls without it.
+Call the Taskade API from TypeScript with the built-in `fetch`. You do not need to install a package.
 
 {% hint style="warning" %}
 **Important:** `@taskade/sdk` is not published on the public npm registry. `npm install @taskade/sdk` returns `404 Not Found` today. Use `fetch`, as the examples on this page do.
@@ -205,33 +205,6 @@ The two calls return the same JSON as the cURL tab: an `items` array, then an ob
 
 {% endtabs %}
 
-## What the SDK will look like
-
-`@taskade/sdk` is a **generated client** for the [Action API v2](api-v2-reference.md). Do not install it yet. The code below shows the planned shape only.
-
-When Taskade releases the SDK, it will provide `HttpClient` and `TaskadePublicApi`. Its methods map directly to v2 operations:
-
-```typescript
-import { HttpClient, TaskadePublicApi } from "@taskade/sdk";
-
-const http = new HttpClient({
-  baseUrl: "https://www.taskade.com/api/v2",
-  securityWorker: () => ({
-    headers: { Authorization: `Bearer ${process.env.TASKADE_TOKEN}` },
-  }),
-});
-const taskade = new TaskadePublicApi(http);
-
-const { data } = await taskade.promptAgent({ spaceId, agentId, prompt: "Hi" });
-// data is the response body: { ok: true, summary: "..." }
-```
-
-{% hint style="info" %}
-**Note:** Method names match the v2 operations: `listSpaces`, `createProject`, `promptAgent`, `exportBundle`, and more. The preview client does not cover every v2 operation. For example, it has no task-write or webhook-registration methods.
-{% endhint %}
-
-For an operation that the preview does not cover, call it over HTTPS with the wrapper above. See the [Action API v2 reference](api-v2-reference.md) for the full list and the request shapes.
-
 ## Fix common errors
 
 Match what you see to a fix.
@@ -247,7 +220,7 @@ Match what you see to a fix.
 ## Next steps
 
 - [REST API v1 guide](comprehensive-api-guide/README.md): full task create, update, and complete calls.
-- [Action API v2 guide](api-v2-reference.md): every operation that the SDK will wrap.
+- [Action API v2 guide](api-v2-reference.md): every v2 operation and its request shape.
 - [Authentication](developers/authentication.md): personal access tokens and OAuth 2.0.
 - [SDK Cookbook](sdk-cookbook.md): retries, pagination, webhooks, and tests.
 - [Workspace MCP](workspace-mcp.md): connect AI tools to your workspace.

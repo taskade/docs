@@ -108,7 +108,7 @@ Developers can build on the REST API v1, the action-based Public API v2, webhook
 - [Personal Tokens](https://docs.taskade.com/developers/authentication/personal-tokens): Generate a Personal Access Token and authenticate with the Authorization Bearer header.
 - [REST API v1 Reference](https://docs.taskade.com/developers/comprehensive-api-guide): Manage workspaces, projects, tasks, agents, folders, and media with full CRUD and code examples.
 - [Action API v2 Reference](https://docs.taskade.com/developers/api-v2-reference): The action-based (RPC-over-HTTP) Public API v2 — every call is a POST to a named operation.
-- [TypeScript SDK (Preview)](https://docs.taskade.com/developers/sdk-quickstart): Call the API today with plain HTTP, and what the generated client will look like.
+- [TypeScript SDK (Preview)](https://docs.taskade.com/developers/sdk-quickstart): Call the API from TypeScript with plain HTTP and the built-in `fetch`.
 - [SDK Cookbook](https://docs.taskade.com/developers/sdk-quickstart/sdk-cookbook): Integration patterns — agents, automations, projects, bundles, error handling, pagination, testing.
 - [Webhooks](https://docs.taskade.com/developers/webhooks): Inbound webhooks to trigger automations and signed outbound webhooks over the Public API v2.
 - [Bundles & App Kits](https://docs.taskade.com/developers/bundles): Export and import complete Genesis apps and workspaces as portable bundles via the Action API v2.

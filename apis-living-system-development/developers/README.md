@@ -64,7 +64,7 @@ Each surface below reads or changes the same workspace data. Pick the row that m
 | **Webhooks** | Signed event delivery to your endpoint, and inbound webhook triggers. Both need Pro and above | [Webhooks](../webhooks.md) |
 | **Hosted Taskade MCP** | Use your workspace from an MCP client, and edit Taskade Genesis app source from your IDE. Every paid plan | [Hosted MCP](../genesis-app-mcp.md) |
 | **Workspace MCP** | [`@taskade/mcp-server`](https://github.com/taskade/mcp), a local MCP server for Claude, Cursor, and Claude Code | [Workspace MCP](../workspace-mcp.md) |
-| **TypeScript SDK** | `@taskade/sdk`, a generated client. It is in preview and not yet on public npm | [TypeScript SDK](../sdk-quickstart.md) |
+| **TypeScript SDK** | Call the API from TypeScript with the built-in `fetch`. No package to install | [TypeScript SDK](../sdk-quickstart.md) |
 | **Bundles** | Export a whole app as a `.tsk` bundle (Pro and above), and import one into a workspace | [Bundles](../bundles.md) |
 | **Automations** | A trigger starts a run, and the steps run in order. After 5 failed runs in a row, the automation turns off and the owners get an email | [Automations](https://www.taskade.com/automate) |
 | **Triggers and actions** | A trigger reacts to an event. An action does the work, with its own error handling and timeout for an outside service | [Action and trigger reference](https://www.taskade.com/automate) |
